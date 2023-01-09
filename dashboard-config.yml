@@ -32,112 +32,32 @@ ontologies:
   #registry: "https://raw.githubusercontent.com/OBOFoundry/OBOFoundry.github.io/master/registry/ontologies.yml"
   #todo, deal with: bto chebi dron gaz ncbitaxon ncit pr uberon
   custom:
-    - id: vario
-    - id: mcro
-      mirror_from: https://raw.githubusercontent.com/UTHealth-Ontology/MCRO/main/mcro.owl
-      title: "Model Card Report Ontology"
-      contact:
-        email: muhammad.f.amith@uth.tmc.edu
-        label: Tuan Amith
-        orcid: 0000-0003-4333-1857
-        github: UTH-Tuan
-      description: Model card reports are documents detailing transparent metadata information relating to machine learning models. Similar to what we have with drug labels and nutritional labels, the goal of model cards are to communicate relevant information on all aspects of a machine learning model that have undergone any experimentation. However these important reports of the machine learning models are presented in static documents. This work encodes the structure of model card reports and align them to standard OBO Foundry ontologies to help formalize and enrich these documents. The end result is computable model of the model card that can be used to standardize reporting and be integrated in future software tooling (searching and indexing, etc.).
-      domain: information technology
-      homepage: https://github.com/UTHealth-Ontology/MCRO
-      products:
-        - id: mcro.owl
-      dependencies:
-        - id: iao
-        - id: swo
-      tracker: https://github.com/UTHealth-Ontology/MCRO/issues
-      license:
-        url: https://creativecommons.org/licenses/by/3.0/
-        label: CC BY 3.0
-    - id: bpdo
-      title: Bipolar Disorder Ontology
-      contact:
-        email: alpha.tom.kodamullil@scai.fraunhofer.de
-        label: Alpha Tom Kodamullil
-        github: akodamullil
-        orcid: 0000-0001-9896-3531
-      description: The Bipolar Disorder ontology includes bipolar disorder-related concepts, terms and related synonyms, collected from wide variety of sources such us publications and websites.
-      domain: health
-      homepage: https://github.com/SCAI-BIO/bipolar-disorder-ontology
-      products:
-        - id: bpdo.owl
-      dependencies:
-        - id: bfo
-      tracker: https://github.com/SCAI-BIO/bipolar-disorder-ontology/issues
-      license:
-        url: https://creativecommons.org/licenses/by/4.0/
-        label: CC BY 4.0
-      repository: https://github.com/SCAI-BIO/bipolar-disorder-ontology
-      preferredPrefix: BPDO
-      mirror_from: https://raw.githubusercontent.com/SCAI-BIO/bipolar-disorder-ontology/main/releases/2022-06-17/BPDO.owl
-    - id: ngbo
-      mirror_from: https://raw.githubusercontent.com/Dalalghamdi/NGBO/master/ngbo.owl
-      title: Next generation biobanking ontology
-      contact:
-        email: dal.alghamdi92@gmail.com
-        label: Dalia Alghamdi
-        github: dalalghamdi
-        orcid: 0000-0002-2801-0767
-      description: "The Next Generation Biobanking Ontology (NGBO) is an open application ontology representing contextual data about omics digital assets in biobank. The ontology focuses on capturing the information about three main activities: wet bench analysis used to generate omics data, bioinformatics analysis used to analyze and interpret data, and data management."
-      domain: biobanking
-      homepage: https://github.com/Dalalghamdi/NGBO
-      products:
-        - id: ngbo.owl
-      dependencies:
-        - id: ro
-      tracker: https://github.com/Dalalghamdi/NGBO/issues
-      license:
-        url: https://creativecommons.org/licenses/by/4.0/
-        label: CC BY 4.0
-    - id: scho
-      title: Schizophrenia Ontology
-      contact:
-        email: alpha.tom.kodamullil@scai.fraunhofer.de
-        label: Alpha Tom Kodamullil
-        github: akodamullil
-        orcid: 0000-0001-9896-3531
-      description: A disease ontology for the mental disorder Schizophrenia
-      domain: health
-      homepage: https://github.com/SCAI-BIO/schizophrenia-ontology
-      products:
-        - id: bfo.owl
-      dependencies:
-        - id: bfo
-      tracker: https://github.com/SCAI-BIO/schizophrenia-ontology/issues
-      license:
-        url: https://creativecommons.org/licenses/by/4.0/
-        label: CC BY 4.0
-      repository: https://github.com/SCAI-BIO/schizophrenia-ontology
-      preferredPrefix: SCHO
-      mirror_from: https://raw.githubusercontent.com/SCAI-BIO/schizophrenia-ontology/main/releases/1.0.0/SCHO.owl
-    - id: t4fs
-      mirror_from: "https://raw.githubusercontent.com/terms4fairskills/FAIRterminology/obo-foundry-updates/development/t4fs.owl"
-      title: terms4FAIRskills
-      contact:
-        email: pete_mcq@protonmail.com
-        label: Peter McQuilton
-        orcid: 0000-0003-2687-1982
-        github: drosophilic
-      description: A terminology for the skills necessary to make data FAIR and to keep it FAIR.
-      domain: skills for enabling FAIR data, applicable across all research areas including the life sciences
-      homepage: https://github.com/terms4fairskills/FAIRterminology
-      products:
-        - id: t4fs.owl
-      tracker: https://github.com/terms4fairskills/FAIRterminology/issues
-      license:
-        url: https://creativecommons.org/licenses/by/4.0/
-        label: CC BY 4.0
-      usages:
-        - user: http://t4fs.esciencedatafactory.com/
-          description: Semaphora integrates terms4FAIRskills, allowing users to annotate training materials with the ontology.
-        - user: https://fairassist.org
-          description: FAIRassist is designed to offer personalised guidance to all stakeholders to enable the discovery of standards and repositories in FAIRsharing, which should be used to make data FAIR, as well as to signpost FAIR assessment resources.
-        - user: https://www.fairsfair.eu/
-          description: FAIRsFAIR Competence Centre (project wp6) will provide a platform for training materials resulting from project training activities, annotated with the terms4FAIRskills terminology for simple finding and comparison. 
+    - id: pmdco
+      mirror_from: https://raw.githubusercontent.com/materialdigital/core-ontology/main/pmdco_core.ttl
+      title: "PMDCO"
+      #contact:
+      #  email: muhammad.f.amith@uth.tmc.edu
+      #  label: Tuan Amith
+      #  orcid: 0000-0003-4333-1857
+      #  github: UTH-Tuan
+      description: Materials Science experiment
+      domain: Materials Science
+      homepage: https://github.com/materialdigital/core-ontology 
+      #products:
+      #  - id: mcro.owl
+      #dependencies:
+      #  - id: iao
+      #tracker: https://github.com/UTHealth-Ontology/MCRO/issues
+      #license:
+      #  url: https://creativecommons.org/licenses/by/3.0/
+      #  label: CC BY 3.0
+      #repository: https://github.com/SCAI-BIO/bipolar-disorder-ontology
+      #preferredPrefix: BPDO
+      #usages:
+      #  - user: http://t4fs.esciencedatafactory.com/
+      #    description: Semaphora integrates terms4FAIRskills, allowing users to annotate training materials with the ontology.
+      #  - user: https://fairassist.org
+      #    description: FAIRassist is designed to offer personalised guidance to all stakeholders to enable the discovery of standards and repositories in FAIRsharing, which should be used to make data FAIR, as well as to signpost FAIR assessment resources.
 prefer_base: True
 profile:
   baseprofile: "https://raw.githubusercontent.com/ontodev/robot/master/robot-core/src/main/resources/report_profile.txt"
