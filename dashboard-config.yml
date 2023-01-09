@@ -72,17 +72,6 @@ ontologies:
       repository: https://github.com/SCAI-BIO/schizophrenia-ontology
       preferredPrefix: SCHO
       mirror_from: https://raw.githubusercontent.com/SCAI-BIO/schizophrenia-ontology/main/releases/1.0.0/SCHO.owl
-    - id: emmo-mechanical-testing
-      mirror_from: https://raw.githubusercontent.com/emmo-repo/domain-mechanical-testing/master/emmo-mechanical-testing.owl
-      title: "emmo-mechanical-testing"
-      #contact:
-      #  email: muhammad.f.amith@uth.tmc.edu
-      #  label: Tuan Amith
-      #  orcid: 0000-0003-4333-1857
-      #  github: UTH-Tuan
-      description: emmo-mechanical-testing
-      domain: Materials Science
-      homepage: https://github.com/emmo-repo/domain-mechanical-testing 
       #products:
       #  - id: mcro.owl
       #dependencies:
