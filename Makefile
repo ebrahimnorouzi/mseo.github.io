@@ -9,3 +9,6 @@ dependencies:
 .PRECIOUS: run_dashboard
 run_dashboard: | dependencies dashboard/ ontologies/
 	obodash -C dashboard-config.yml
+
+dashboard/analysis.html:
+	jupyter nbconvert dashboard_analysis.ipynb  --no-input --execute --to html --output $@
