@@ -3,7 +3,11 @@ base_prefixes:
 - MCRO
 - MCROALT
 changed: true
+<<<<<<< HEAD
+date: 2023-01-23 13:38:49.728035
+=======
 date: 2023-01-23 13:23:56.974207
+>>>>>>> master
 metrics:
   'Axioms: Breakdown of axiom types':
     AnnotationAssertion: 5352
