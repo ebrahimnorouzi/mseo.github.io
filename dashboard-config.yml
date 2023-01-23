@@ -93,15 +93,15 @@ ontologies:
       license:
         url: https://creativecommons.org/licenses/by/4.0/
         label: CC BY 4.0
-    #- id: scho
-      #description: A disease ontology for the mental disorder Schizophrenia
-      #homepage: https://github.com/SCAI-BIO/schizophrenia-ontology
+    - id: MDO
+      description: An Ontology for the Materials Design Domain 
+      homepage: https://github.com/LiUSemWeb/Materials-Design-Ontology
       #products:
       #  - id: bfo.owl
-      #tracker: https://github.com/SCAI-BIO/schizophrenia-ontology/issues
-      #repository: https://github.com/SCAI-BIO/schizophrenia-ontology
-      #preferredPrefix: SCHO
-      #mirror_from: https://raw.githubusercontent.com/SCAI-BIO/schizophrenia-ontology/main/releases/1.0.0/SCHO.owl
+      tracker: https://github.com/LiUSemWeb/Materials-Design-Ontology/issues
+      repository: https://github.com/LiUSemWeb/Materials-Design-Ontology
+      preferredPrefix: MDO
+      mirror_from: https://raw.githubusercontent.com/LiUSemWeb/Materials-Design-Ontology/master/mdo-full.owl
 prefer_base: True
 profile:
   baseprofile: "https://raw.githubusercontent.com/ontodev/robot/master/robot-core/src/main/resources/report_profile.txt"
