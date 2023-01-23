@@ -3,11 +3,7 @@ base_prefixes:
 - MDO
 - MDOALT
 changed: true
-<<<<<<< HEAD
-date: 2023-01-23 13:39:04.950837
-=======
-date: 2023-01-23 13:24:11.362253
->>>>>>> master
+date: 2023-01-23 13:59:53.921742
 metrics:
   'Axioms: Breakdown of axiom types':
     AnnotationAssertion: 177
