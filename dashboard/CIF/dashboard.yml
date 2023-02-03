@@ -1,0 +1,6 @@
+base_generated: true
+changed: true
+failure: failed_robot_base
+mirror_from: https://raw.githubusercontent.com/emmo-repo/CIF-ontology/main/ontology/cif-core.ttl
+namespace: CIF
+sha256_hash: 4264ad9011709d7819a72f7bd5a913a5361ebd49e614ddf63314ccfa8e7d919a

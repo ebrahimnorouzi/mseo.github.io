@@ -1,0 +1,6 @@
+base_generated: true
+changed: true
+failure: failed_robot_base
+mirror_from: http://rest.matportal.org/ontologies/LPBFO/submissions/8/download?apikey=66c82e77-ce0d-4385-8056-a95898e47ebb
+namespace: LPBFO
+sha256_hash: 02605e024b021dcb7f3871f54fba835755144c7828aa5d8cc8aec54012b68527

@@ -1,0 +1,6 @@
+base_generated: true
+changed: true
+failure: failed_robot_base
+mirror_from: https://raw.githubusercontent.com/tetherless-world/nanomine-ontology/master/nanomine.ttl
+namespace: NanoMine
+sha256_hash: 239cef4992dffca1c0201725597a61732ddd51ee4075bd71b2d3ead840244d50

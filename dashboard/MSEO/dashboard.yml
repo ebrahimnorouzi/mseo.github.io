@@ -1,0 +1,126 @@
+base_generated: true
+base_prefixes:
+- mseo
+- MSEOALT
+changed: true
+date: 2023-02-03 08:50:53.382726
+metrics:
+  'Axioms: Breakdown of axiom types':
+    AnnotationAssertion: 8311
+    AsymmetricObjectProperty: 6
+    ClassAssertion: 516
+    DataPropertyAssertion: 731
+    DataPropertyDomain: 12
+    DataPropertyRange: 16
+    Declaration: 2313
+    DisjointClasses: 35
+    DisjointObjectProperties: 5
+    EquivalentClasses: 61
+    EquivalentDataProperties: 4
+    EquivalentObjectProperties: 4
+    FunctionalObjectProperty: 11
+    InverseFunctionalObjectProperty: 11
+    InverseObjectProperties: 126
+    IrrefexiveObjectProperty: 9
+    ObjectPropertyAssertion: 823
+    ObjectPropertyDomain: 133
+    ObjectPropertyRange: 144
+    SubAnnotationPropertyOf: 14
+    SubClassOf: 1688
+    SubDataPropertyOf: 10
+    SubObjectPropertyOf: 214
+    SubPropertyChainOf: 10
+    SymmetricObjectProperty: 14
+    TransitiveObjectProperty: 13
+  'Axioms: Number of axioms': 15234
+  'Entities: % of entities reused': 100.0
+  'Entities: Number of annotation properties': 63
+  'Entities: Number of classes': 1595
+  'Entities: Number of data properties': 30
+  'Entities: Number of individuals': 504
+  'Entities: Number of object properties': 287
+  'Entities: Number of unsatisfiable classes': 0
+  'Info: Breakdown of OWL class expressions used':
+    Class: 5985
+    DataAllValuesFrom: 8
+    DataExactCardinality: 4
+    ObjectAllValuesFrom: 10
+    ObjectExactCardinality: 3
+    ObjectIntersectionOf: 21
+    ObjectOneOf: 3
+    ObjectSomeValuesFrom: 142
+    ObjectUnionOf: 9
+  'Info: Does the ontology fall under OWL 2 DL?': false
+  'Info: Experimental OBO score':
+    _dashboard: 0.444
+    _formula: (1*impact+1*dashboard)/2
+    _impact: 0.0
+    _impact_external: 0
+    _reuse: 1.0
+    oboscore: 0.222
+  'Info: How many externally documented uses?': 0
+  'Info: How many ontologies use it?': 0
+  'Info: Logical consistency': true
+  'Info: Syntax': Turtle
+  'Info: Usage of namespaces in axioms':
+    BFO: 650
+    IAO: 612
+    RO: 193
+    dc: 1
+    dc11: 5
+    foaf: 2
+    oboInOwl: 18
+    owl: 40
+    prefix_unknown: 16803
+    rdfs: 2586
+    xsd: 755
+  'Info: Which ontologies use it?': []
+mirror_from: https://raw.githubusercontent.com/Mat-O-Lab/MSEO/main/MSEO_mid.ttl
+namespace: MSEO
+results:
+  FP01 Open:
+    comment: Missing ontology license. Missing registry license.
+    status: ERROR
+  FP02 Common Format:
+    comment: OWL syntax (Turtle), but should be RDF/XML
+    status: WARN
+  FP03 URIs:
+    comment: 0 invalid IRIs. The Ontology IRI is not valid.
+    file: fp3
+    status: ERROR
+  FP04 Versioning:
+    comment: Missing version IRI
+    status: ERROR
+  FP05 Scope:
+    comment: Missing domain (scope)
+    status: ERROR
+  FP06 Textual Definitions:
+    status: PASS
+  FP07 Relations:
+    status: PASS
+  FP08 Documented:
+    status: PASS
+  FP09 Plurality of Users:
+    comment: Missing usages
+    status: ERROR
+  FP11 Locus of Authority:
+    comment: Missing contact information
+    status: ERROR
+  FP12 Naming Conventions:
+    status: PASS
+  FP16 Maintenance:
+    comment: Missing version IRI to check date
+    status: ERROR
+  FP20 Responsiveness:
+    status: PASS
+  ROBOT Report:
+    status: PASS
+sha256_hash: 2c1d973ae623e014ecf33ed3d8b7fab28be05b14f85be9ad6b4546e6ddc2b848
+summary:
+  comment: 7 errors
+  status: ERROR
+  summary_count:
+    ERROR: 7
+    INFO: 0
+    WARN: 1
+version: null

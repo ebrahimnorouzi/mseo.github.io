@@ -1,0 +1,6 @@
+base_generated: true
+changed: true
+failure: failed_robot_base
+mirror_from: https://gitlab.cc-asp.fraunhofer.de/EMI_datamanagement/bwmd_ontology/-/raw/master/BWMD_domain.owl
+namespace: BWMD-DOMAIN
+sha256_hash: 056b0a973f027ece2cf0cdd8533e60ba82a6f52f1c6615a10375384d349b7594
