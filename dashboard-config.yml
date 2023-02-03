@@ -340,6 +340,18 @@ ontologies:
       repository: https://github.com/emmo-repo/domain-characterisation-methodology
       preferredPrefix: CHAMEO
       mirror_from: https://raw.githubusercontent.com/emmo-repo/domain-characterisation-methodology/main/chameo.ttl
+    - id: OM
+      description: models concepts and relations important to scientific research
+      homepage: https://github.com/HajoRijgersberg/OM
+      tracker: https://github.com/HajoRijgersberg/OM/issues
+      repository: https://github.com/HajoRijgersberg/OM
+      preferredPrefix: om
+      mirror_from: https://raw.githubusercontent.com/HajoRijgersberg/OM/master/om-2.0.rdf
+    - id: QUDV
+      description: units, quantities, measurements, and dimensions
+      homepage: https://www.omgwiki.org/OMGSysML/doku.php?id=sysml-qudv:quantities_units_dimensions_values_qudv
+      preferredPrefix: qudv
+      mirror_from: https://www.omgwiki.org/OMGSysML/lib/exe/fetch.php?media=sysml-qudv:qudv-owl:sysml-qudv-si.owl
     - id: mvc
       description: described using W3C RDF Schema and the Web Ontology Language to satisfy the requirements of the STREAM project
       homepage: https://github.com/stream-project/ontology
