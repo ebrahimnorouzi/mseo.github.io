@@ -3,7 +3,7 @@ base_prefixes:
 - foaf
 - FOAFALT
 changed: true
-date: 2023-02-03 08:50:50.214377
+date: 2023-02-03 09:33:47.217648
 metrics:
   'Axioms: Breakdown of axiom types':
     AnnotationAssertion: 245
@@ -30,10 +30,10 @@ metrics:
   'Info: Experimental OBO score':
     _dashboard: 0.333
     _formula: (1*impact+1*dashboard)/2
-    _impact: 0.229
+    _impact: 0.234
     _impact_external: 0
     _reuse: 0.146
-    oboscore: 0.281
+    oboscore: 0.284
   'Info: How many externally documented uses?': 0
   'Info: How many ontologies use it?': 11
   'Info: Logical consistency': true
