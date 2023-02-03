@@ -1,0 +1,6 @@
+base_generated: true
+changed: true
+failure: failed_robot_base
+mirror_from: https://raw.githubusercontent.com/emmo-repo/domain-mechanical-testing/master/emmo-mechanical-testing.owl
+namespace: EMMO_mechanical_testing
+sha256_hash: 6a8b8d9f88d01522db24125468a071ee0df9f63f5617deb7f7cb2ddb07ac5505

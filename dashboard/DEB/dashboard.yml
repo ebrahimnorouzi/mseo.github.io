@@ -1,0 +1,97 @@
+base_generated: true
+base_prefixes:
+- deb
+- DEBALT
+changed: true
+date: 2023-02-03 08:51:38.969797
+metrics:
+  'Axioms: Breakdown of axiom types':
+    AnnotationAssertion: 296
+    DataPropertyDomain: 235
+    DataPropertyRange: 97
+    Declaration: 729
+    EquivalentClasses: 8
+    EquivalentDataProperties: 5
+    ObjectPropertyDomain: 22
+    ObjectPropertyRange: 14
+    SubClassOf: 666
+    SubDataPropertyOf: 63
+  'Axioms: Number of axioms': 2135
+  'Entities: % of entities reused': 100.0
+  'Entities: Number of annotation properties': 11
+  'Entities: Number of classes': 601
+  'Entities: Number of data properties': 109
+  'Entities: Number of individuals': 0
+  'Entities: Number of object properties': 12
+  'Entities: Number of unsatisfiable classes': 0
+  'Info: Breakdown of OWL class expressions used':
+    Class: 2147
+    DataHasValue: 73
+  'Info: Does the ontology fall under OWL 2 DL?': true
+  'Info: Experimental OBO score':
+    _dashboard: 0.467
+    _formula: (1*impact+1*dashboard)/2
+    _impact: 0.0
+    _impact_external: 0
+    _reuse: 1.0
+    oboscore: 0.234
+  'Info: How many externally documented uses?': 0
+  'Info: How many ontologies use it?': 0
+  'Info: Logical consistency': true
+  'Info: Syntax': RDF/XML Syntax
+  'Info: Usage of namespaces in axioms':
+    dc: 64
+    owl: 4
+    prefix_unknown: 2891
+    rdfs: 31
+    skos: 158
+    xsd: 170
+  'Info: Which ontologies use it?': []
+mirror_from: https://raw.githubusercontent.com/ProjectDebbie/Ontology_DEB/master/DEB_ont.owl
+namespace: DEB
+results:
+  FP01 Open:
+    comment: Missing ontology license. Missing registry license.
+    status: ERROR
+  FP02 Common Format:
+    status: PASS
+  FP03 URIs:
+    comment: 0 invalid IRIs. The Ontology IRI is not valid.
+    file: fp3
+    status: ERROR
+  FP04 Versioning:
+    comment: Missing version IRI
+    status: ERROR
+  FP05 Scope:
+    comment: Missing domain (scope)
+    status: ERROR
+  FP06 Textual Definitions:
+    status: PASS
+  FP07 Relations:
+    status: PASS
+  FP08 Documented:
+    status: PASS
+  FP09 Plurality of Users:
+    comment: Missing usages
+    status: ERROR
+  FP11 Locus of Authority:
+    comment: Missing contact information
+    status: ERROR
+  FP12 Naming Conventions:
+    status: PASS
+  FP16 Maintenance:
+    comment: Missing version IRI to check date
+    status: ERROR
+  FP20 Responsiveness:
+    status: PASS
+  ROBOT Report:
+    status: PASS
+sha256_hash: e03f95bc624b67253f3974898fb88320ca97be0d5510f59b7cee193797e022a1
+summary:
+  comment: 7 errors
+  status: ERROR
+  summary_count:
+    ERROR: 7
+    INFO: 0
+    WARN: 0
+version: null

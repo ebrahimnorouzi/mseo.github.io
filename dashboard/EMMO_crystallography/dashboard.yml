@@ -1,0 +1,127 @@
+base_generated: true
+base_prefixes:
+- emmo_crystallography
+- EMMO_CRYSTALLOGRAPHYALT
+changed: true
+date: 2023-02-03 08:51:06.719711
+metrics:
+  'Axioms: Breakdown of axiom types':
+    AnnotationAssertion: 9482
+    AnnotationPropertyDomain: 2
+    AnnotationPropertyRangeOf: 20
+    AsymmetricObjectProperty: 16
+    ClassAssertion: 1
+    DataPropertyDomain: 2
+    DataPropertyRange: 6
+    Declaration: 1896
+    DisjointClasses: 2
+    DisjointUnion: 116
+    EquivalentClasses: 68
+    EquivalentObjectProperties: 7
+    FunctionalDataProperty: 2
+    FunctionalObjectProperty: 9
+    InverseFunctionalObjectProperty: 6
+    InverseObjectProperties: 8
+    IrrefexiveObjectProperty: 17
+    ObjectPropertyDomain: 22
+    ObjectPropertyRange: 30
+    ReflexiveObjectProperty: 1
+    SubAnnotationPropertyOf: 25
+    SubClassOf: 3325
+    SubDataPropertyOf: 7
+    SubObjectPropertyOf: 55
+    SymmetricObjectProperty: 8
+    TransitiveObjectProperty: 10
+  'Axioms: Number of axioms': 15143
+  'Entities: % of entities reused': 100.0
+  'Entities: Number of annotation properties': 42
+  'Entities: Number of classes': 1806
+  'Entities: Number of data properties': 9
+  'Entities: Number of individuals': 1
+  'Entities: Number of object properties': 47
+  'Entities: Number of unsatisfiable classes': 0
+  'Info: Breakdown of OWL class expressions used':
+    Class: 9700
+    DataAllValuesFrom: 3
+    DataExactCardinality: 9
+    DataHasValue: 135
+    DataSomeValuesFrom: 4
+    ObjectAllValuesFrom: 162
+    ObjectComplementOf: 6
+    ObjectExactCardinality: 31
+    ObjectHasValue: 1
+    ObjectIntersectionOf: 10
+    ObjectMaxCardinality: 894
+    ObjectSomeValuesFrom: 253
+    ObjectUnionOf: 13
+  'Info: Does the ontology fall under OWL 2 DL?': false
+  'Info: Experimental OBO score':
+    _dashboard: 0.549
+    _formula: (1*impact+1*dashboard)/2
+    _impact: 0.0
+    _impact_external: 0
+    _reuse: 1.0
+    oboscore: 0.275
+  'Info: How many externally documented uses?': 0
+  'Info: How many ontologies use it?': 0
+  'Info: Logical consistency': true
+  'Info: Syntax': Turtle
+  'Info: Usage of namespaces in axioms':
+    dc: 6
+    owl: 53
+    prefix_unknown: 15530
+    rdf: 115
+    rdfs: 1396
+    skos: 4123
+    xsd: 42
+  'Info: Which ontologies use it?': []
+mirror_from: https://raw.githubusercontent.com/emmo-repo/domain-crystallography/master/crystallography.ttl
+namespace: EMMO_crystallography
+results:
+  FP01 Open:
+    comment: Missing registry license.
+    status: ERROR
+  FP02 Common Format:
+    comment: OWL syntax (Turtle), but should be RDF/XML
+    status: WARN
+  FP03 URIs:
+    comment: 0 invalid IRIs. The Ontology IRI is not valid.
+    file: fp3
+    status: ERROR
+  FP04 Versioning:
+    comment: Version IRI 'http://emmo.info/domain-crystallography/0.0.1/crystallography'
+      is not in recommended format
+    status: WARN
+  FP05 Scope:
+    comment: Missing domain (scope)
+    status: ERROR
+  FP06 Textual Definitions:
+    status: PASS
+  FP07 Relations:
+    status: PASS
+  FP08 Documented:
+    status: PASS
+  FP09 Plurality of Users:
+    comment: Missing usages
+    status: ERROR
+  FP11 Locus of Authority:
+    comment: Missing contact information
+    status: ERROR
+  FP12 Naming Conventions:
+    status: PASS
+  FP16 Maintenance:
+    comment: Version IRI does not have date information
+    status: INFO
+  FP20 Responsiveness:
+    status: PASS
+  ROBOT Report:
+    status: PASS
+sha256_hash: ba194d6a152b2103d8ca4f6d2980961870b581a8d2a1d4bcf02ab46cb3805503
+summary:
+  comment: 5 errors
+  status: ERROR
+  summary_count:
+    ERROR: 5
+    INFO: 1
+    WARN: 2
+version: http://emmo.info/domain-crystallography/0.0.1/crystallography
