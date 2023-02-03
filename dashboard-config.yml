@@ -32,15 +32,6 @@ ontologies:
   #registry: "https://raw.githubusercontent.com/OBOFoundry/OBOFoundry.github.io/master/registry/ontologies.yml"
   #todo, deal with: bto chebi dron gaz ncbitaxon ncit pr uberon
   custom:
-    - id: MDO
-      description: An Ontology for the Materials Design Domain 
-      homepage: https://github.com/LiUSemWeb/Materials-Design-Ontology
-      #products:
-      #  - id: bfo.owl
-      tracker: https://github.com/LiUSemWeb/Materials-Design-Ontology/issues
-      repository: https://github.com/LiUSemWeb/Materials-Design-Ontology
-      preferredPrefix: mdo
-      mirror_from: https://raw.githubusercontent.com/LiUSemWeb/Materials-Design-Ontology/master/mdo-full.owl
     - id: PMD
       description: An Ontology for the Materials Design Domain 
       homepage: https://github.com/materialdigital/core-ontology
@@ -69,7 +60,6 @@ ontologies:
       repository: https://github.com/emmo-repo/domain-mechanical-testing
       preferredPrefix: emmo_mechanical_testing
       mirror_from: https://raw.githubusercontent.com/emmo-repo/domain-mechanical-testing/master/emmo-mechanical-testing.owl
-
     - id: EMMO_microstructure
       description: An Ontology for Metallic microstructures
       homepage: https://github.com/jesper-friis/emmo-microstructure
@@ -84,11 +74,6 @@ ontologies:
       repository: https://github.com/BFO-ontology/BFO-2020 
       preferredPrefix: obo
       mirror_from: https://raw.githubusercontent.com/BFO-ontology/BFO-2020/master/21838-2/owl/bfo-2020.owl
-    - id: dcterms
-      description: Specification of all metadata terms 
-      homepage: https://www.dublincore.org/specifications/dublin-core/dcmi-terms/
-      preferredPrefix: dcterms
-      mirror_from: https://www.dublincore.org/specifications/dublin-core/dcmi-terms/dublin_core_terms.ttl
     - id: SSN
       description: Describing sensors and their observations
       homepage: https://w3c.github.io/sdw/ssn/
