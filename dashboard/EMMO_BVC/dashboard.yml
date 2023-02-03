@@ -1,0 +1,6 @@
+base_generated: true
+changed: true
+failure: failed_robot_base
+mirror_from: https://raw.githubusercontent.com/Battery-Value-Chain-Ontology/ontology/master/BVCO.ttl
+namespace: EMMO_BVC
+sha256_hash: 18cfc0a54e1724f00b2d488b91088dae795bbf8b1099cf7ce3abaab1cc8f0025

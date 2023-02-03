@@ -1,0 +1,125 @@
+base_generated: true
+base_prefixes:
+- CHAMEO
+- CHAMEOALT
+changed: true
+date: 2023-02-03 08:52:20.472614
+metrics:
+  'Axioms: Breakdown of axiom types':
+    AnnotationAssertion: 1816
+    AnnotationPropertyRangeOf: 12
+    AsymmetricObjectProperty: 13
+    ClassAssertion: 1
+    DataPropertyDomain: 4
+    DataPropertyRange: 3
+    Declaration: 659
+    DisjointClasses: 3
+    DisjointObjectProperties: 8
+    DisjointUnion: 22
+    EquivalentClasses: 66
+    FunctionalDataProperty: 3
+    FunctionalObjectProperty: 2
+    InverseFunctionalObjectProperty: 3
+    IrrefexiveObjectProperty: 22
+    ObjectPropertyDomain: 76
+    ObjectPropertyRange: 83
+    Rule: 8
+    SubAnnotationPropertyOf: 20
+    SubClassOf: 533
+    SubDataPropertyOf: 1
+    SubObjectPropertyOf: 156
+    SymmetricObjectProperty: 11
+  'Axioms: Number of axioms': 3525
+  'Entities: % of entities reused': 100.0
+  'Entities: Number of annotation properties': 44
+  'Entities: Number of classes': 480
+  'Entities: Number of data properties': 5
+  'Entities: Number of individuals': 1
+  'Entities: Number of object properties': 139
+  'Entities: Number of unsatisfiable classes': 0
+  'Info: Breakdown of OWL class expressions used':
+    Class: 2038
+    DataAllValuesFrom: 3
+    DataExactCardinality: 3
+    DataHasValue: 8
+    DataSomeValuesFrom: 3
+    ObjectAllValuesFrom: 14
+    ObjectComplementOf: 5
+    ObjectExactCardinality: 5
+    ObjectHasValue: 1
+    ObjectIntersectionOf: 12
+    ObjectMinCardinality: 1
+    ObjectSomeValuesFrom: 83
+    ObjectUnionOf: 55
+  'Info: Does the ontology fall under OWL 2 DL?': false
+  'Info: Experimental OBO score':
+    _dashboard: 0.549
+    _formula: (1*impact+1*dashboard)/2
+    _impact: 0.0
+    _impact_external: 0
+    _reuse: 1.0
+    oboscore: 0.275
+  'Info: How many externally documented uses?': 0
+  'Info: How many ontologies use it?': 0
+  'Info: Logical consistency': true
+  'Info: Syntax': Turtle
+  'Info: Usage of namespaces in axioms':
+    dc: 12
+    foaf: 1
+    owl: 22
+    prefix_unknown: 3796
+    rdf: 19
+    rdfs: 315
+    skos: 710
+    xsd: 12
+  'Info: Which ontologies use it?': []
+mirror_from: https://raw.githubusercontent.com/emmo-repo/domain-characterisation-methodology/main/chameo.ttl
+namespace: CHAMEO
+results:
+  FP01 Open:
+    comment: Missing registry license.
+    status: ERROR
+  FP02 Common Format:
+    comment: OWL syntax (Turtle), but should be RDF/XML
+    status: WARN
+  FP03 URIs:
+    comment: 0 invalid IRIs. The Ontology IRI is not valid.
+    file: fp3
+    status: ERROR
+  FP04 Versioning:
+    comment: Version IRI 'http://emmo.info/emmo/domain/chameo/chameo' is not in recommended
+      format
+    status: WARN
+  FP05 Scope:
+    comment: Missing domain (scope)
+    status: ERROR
+  FP06 Textual Definitions:
+    status: PASS
+  FP07 Relations:
+    status: PASS
+  FP08 Documented:
+    status: PASS
+  FP09 Plurality of Users:
+    comment: Missing usages
+    status: ERROR
+  FP11 Locus of Authority:
+    comment: Missing contact information
+    status: ERROR
+  FP12 Naming Conventions:
+    status: PASS
+  FP16 Maintenance:
+    comment: Version IRI does not have date information
+    status: INFO
+  FP20 Responsiveness:
+    status: PASS
+  ROBOT Report:
+    status: PASS
+sha256_hash: 24e76fa7da656e3641c37acfd4445b8c90fd9720633c9b9daf21165eb0318a23
+summary:
+  comment: 5 errors
+  status: ERROR
+  summary_count:
+    ERROR: 5
+    INFO: 1
+    WARN: 2
+version: http://emmo.info/emmo/domain/chameo/chameo

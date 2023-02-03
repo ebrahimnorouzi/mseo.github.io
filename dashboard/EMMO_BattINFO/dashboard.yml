@@ -1,0 +1,113 @@
+base_generated: true
+base_prefixes:
+- emmo_battinfo
+- EMMO_BATTINFOALT
+changed: true
+date: 2023-02-03 08:51:47.499108
+metrics:
+  'Axioms: Breakdown of axiom types':
+    AnnotationAssertion: 5377
+    ClassAssertion: 3
+    DataPropertyDomain: 1
+    DataPropertyRange: 1
+    Declaration: 2030
+    DisjointClasses: 7
+    EquivalentClasses: 50
+    FunctionalDataProperty: 4
+    InverseObjectProperties: 11
+    ObjectPropertyDomain: 17
+    ObjectPropertyRange: 18
+    ReflexiveObjectProperty: 1
+    SubAnnotationPropertyOf: 28
+    SubClassOf: 2946
+    SubObjectPropertyOf: 148
+    SymmetricObjectProperty: 8
+    TransitiveObjectProperty: 6
+  'Axioms: Number of axioms': 10656
+  'Entities: % of entities reused': 100.0
+  'Entities: Number of annotation properties': 48
+  'Entities: Number of classes': 1875
+  'Entities: Number of data properties': 5
+  'Entities: Number of individuals': 1
+  'Entities: Number of object properties': 106
+  'Entities: Number of unsatisfiable classes': 0
+  'Info: Breakdown of OWL class expressions used':
+    Class: 7866
+    DataHasValue: 60
+    ObjectAllValuesFrom: 5
+    ObjectExactCardinality: 114
+    ObjectIntersectionOf: 1
+    ObjectMinCardinality: 1
+    ObjectSomeValuesFrom: 470
+    ObjectUnionOf: 5
+  'Info: Does the ontology fall under OWL 2 DL?': false
+  'Info: Experimental OBO score':
+    _dashboard: 0.549
+    _formula: (1*impact+1*dashboard)/2
+    _impact: 0.0
+    _impact_external: 0
+    _reuse: 1.0
+    oboscore: 0.275
+  'Info: How many externally documented uses?': 0
+  'Info: How many ontologies use it?': 0
+  'Info: Logical consistency': true
+  'Info: Syntax': Turtle
+  'Info: Usage of namespaces in axioms':
+    dc: 419
+    owl: 25
+    prefix_unknown: 11525
+    rdf: 45
+    rdfs: 601
+    skos: 2388
+    xsd: 16
+  'Info: Which ontologies use it?': []
+mirror_from: https://raw.githubusercontent.com/BIG-MAP/BattINFO/master/battinfo.ttl
+namespace: EMMO_BattINFO
+results:
+  FP01 Open:
+    comment: Missing registry license.
+    status: ERROR
+  FP02 Common Format:
+    comment: OWL syntax (Turtle), but should be RDF/XML
+    status: WARN
+  FP03 URIs:
+    comment: 0 invalid IRIs. The Ontology IRI is not valid.
+    file: fp3
+    status: ERROR
+  FP04 Versioning:
+    comment: Version IRI 'https://big-map.github.io/BattINFO/ontology/BattINFO/0.3.0/battinfo.ttl'
+      is not in recommended format
+    status: WARN
+  FP05 Scope:
+    comment: Missing domain (scope)
+    status: ERROR
+  FP06 Textual Definitions:
+    status: PASS
+  FP07 Relations:
+    status: PASS
+  FP08 Documented:
+    status: PASS
+  FP09 Plurality of Users:
+    comment: Missing usages
+    status: ERROR
+  FP11 Locus of Authority:
+    comment: Missing contact information
+    status: ERROR
+  FP12 Naming Conventions:
+    status: PASS
+  FP16 Maintenance:
+    comment: Version IRI does not have date information
+    status: INFO
+  FP20 Responsiveness:
+    status: PASS
+  ROBOT Report:
+    status: PASS
+sha256_hash: 34453f71071d496184101058aca18ee7c47c3d7745969f0a161b0b48bd921bd5
+summary:
+  comment: 5 errors
+  status: ERROR
+  summary_count:
+    ERROR: 5
+    INFO: 1
+    WARN: 2
+version: https://big-map.github.io/BattINFO/ontology/BattINFO/0.3.0/battinfo.ttl

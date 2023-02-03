@@ -1,0 +1,123 @@
+base_generated: true
+base_prefixes:
+- qudt
+- QUDTALT
+changed: true
+date: 2023-02-03 08:52:06.917811
+metrics:
+  'Axioms: Breakdown of axiom types':
+    AnnotationAssertion: 1321
+    AnnotationPropertyRangeOf: 19
+    ClassAssertion: 53
+    DataPropertyAssertion: 111
+    DataPropertyDomain: 2
+    DataPropertyRange: 79
+    DatatypeDefinition: 1
+    Declaration: 360
+    DisjointClasses: 6
+    EquivalentClasses: 12
+    FunctionalDataProperty: 7
+    FunctionalObjectProperty: 7
+    InverseFunctionalObjectProperty: 1
+    InverseObjectProperties: 20
+    ObjectPropertyAssertion: 9
+    ObjectPropertyDomain: 9
+    ObjectPropertyRange: 53
+    SubAnnotationPropertyOf: 10
+    SubClassOf: 342
+    SubDataPropertyOf: 18
+    SubObjectPropertyOf: 50
+    SymmetricObjectProperty: 5
+    TransitiveObjectProperty: 5
+  'Axioms: Number of axioms': 2500
+  'Entities: % of entities reused': 100.0
+  'Entities: Number of annotation properties': 58
+  'Entities: Number of classes': 143
+  'Entities: Number of data properties': 102
+  'Entities: Number of individuals': 80
+  'Entities: Number of object properties': 148
+  'Entities: Number of unsatisfiable classes': 0
+  'Info: Breakdown of OWL class expressions used':
+    Class: 829
+    DataAllValuesFrom: 4
+    DataExactCardinality: 13
+    DataMaxCardinality: 61
+    DataMinCardinality: 14
+    ObjectAllValuesFrom: 68
+    ObjectExactCardinality: 4
+    ObjectMaxCardinality: 31
+    ObjectMinCardinality: 11
+    ObjectOneOf: 9
+    ObjectUnionOf: 3
+  'Info: Does the ontology fall under OWL 2 DL?': false
+  'Info: Experimental OBO score':
+    _dashboard: 0.549
+    _formula: (1*impact+1*dashboard)/2
+    _impact: 0.0
+    _impact_external: 0
+    _reuse: 1.0
+    oboscore: 0.275
+  'Info: How many externally documented uses?': 0
+  'Info: How many ontologies use it?': 0
+  'Info: Logical consistency': true
+  'Info: Syntax': Turtle
+  'Info: Usage of namespaces in axioms':
+    dc: 182
+    dc11: 7
+    owl: 86
+    prefix_unknown: 1829
+    prov: 1
+    rdf: 29
+    rdfs: 1117
+    skos: 172
+    xsd: 192
+  'Info: Which ontologies use it?': []
+mirror_from: http://qudt.org/2.1/schema/qudt
+namespace: QUDT
+results:
+  FP01 Open:
+    comment: Missing ontology license. Missing registry license.
+    status: ERROR
+  FP02 Common Format:
+    comment: OWL syntax (Turtle), but should be RDF/XML
+    status: WARN
+  FP03 URIs:
+    comment: 0 invalid IRIs. The Ontology IRI is not valid.
+    file: fp3
+    status: ERROR
+  FP04 Versioning:
+    comment: Version IRI 'http://qudt.org/2.1/schema/qudt' is not in recommended format
+    status: WARN
+  FP05 Scope:
+    comment: Missing domain (scope)
+    status: ERROR
+  FP06 Textual Definitions:
+    status: PASS
+  FP07 Relations:
+    status: PASS
+  FP08 Documented:
+    status: PASS
+  FP09 Plurality of Users:
+    comment: Missing usages
+    status: ERROR
+  FP11 Locus of Authority:
+    comment: Missing contact information
+    status: ERROR
+  FP12 Naming Conventions:
+    status: PASS
+  FP16 Maintenance:
+    comment: Version IRI does not have date information
+    status: INFO
+  FP20 Responsiveness:
+    status: PASS
+  ROBOT Report:
+    status: PASS
+sha256_hash: ab63705c5d0ff851df1a8352db57c520f81934cd3455b664fba08e2575af6c8e
+summary:
+  comment: 5 errors
+  status: ERROR
+  summary_count:
+    ERROR: 5
+    INFO: 1
+    WARN: 2
+version: http://qudt.org/2.1/schema/qudt

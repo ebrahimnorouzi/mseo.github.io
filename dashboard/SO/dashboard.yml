@@ -1,0 +1,92 @@
+base_generated: true
+base_prefixes:
+- service
+- SOALT
+changed: true
+date: 2023-02-03 08:48:37.987674
+metrics:
+  'Axioms: Breakdown of axiom types':
+    AnnotationAssertion: 41
+    ClassAssertion: 1
+    DataPropertyDomain: 2
+    DataPropertyRange: 1
+    Declaration: 12
+    InverseObjectProperties: 3
+    ObjectPropertyDomain: 6
+    ObjectPropertyRange: 6
+    SubClassOf: 2
+  'Axioms: Number of axioms': 74
+  'Entities: % of entities reused': 100.0
+  'Entities: Number of annotation properties': 11
+  'Entities: Number of classes': 7
+  'Entities: Number of data properties': 2
+  'Entities: Number of individuals': 1
+  'Entities: Number of object properties': 6
+  'Entities: Number of unsatisfiable classes': 0
+  'Info: Breakdown of OWL class expressions used':
+    Class: 23
+  'Info: Does the ontology fall under OWL 2 DL?': false
+  'Info: Experimental OBO score':
+    _dashboard: 0.467
+    _formula: (1*impact+1*dashboard)/2
+    _impact: 0.0
+    _impact_external: 0
+    _reuse: 1.0
+    oboscore: 0.234
+  'Info: How many externally documented uses?': 0
+  'Info: How many ontologies use it?': 0
+  'Info: Logical consistency': true
+  'Info: Syntax': RDF/XML Syntax
+  'Info: Usage of namespaces in axioms':
+    prefix_unknown: 53
+    rdfs: 41
+    xsd: 1
+  'Info: Which ontologies use it?': []
+mirror_from: http://dini-ag-kim.github.io/service-ontology/service.owl
+namespace: SO
+results:
+  FP01 Open:
+    comment: Missing ontology license. Missing registry license.
+    status: ERROR
+  FP02 Common Format:
+    status: PASS
+  FP03 URIs:
+    comment: 0 invalid IRIs. The Ontology IRI is not valid.
+    file: fp3
+    status: ERROR
+  FP04 Versioning:
+    comment: Missing version IRI
+    status: ERROR
+  FP05 Scope:
+    comment: Missing domain (scope)
+    status: ERROR
+  FP06 Textual Definitions:
+    status: PASS
+  FP07 Relations:
+    status: PASS
+  FP08 Documented:
+    status: PASS
+  FP09 Plurality of Users:
+    comment: Missing usages
+    status: ERROR
+  FP11 Locus of Authority:
+    comment: Missing contact information
+    status: ERROR
+  FP12 Naming Conventions:
+    status: PASS
+  FP16 Maintenance:
+    comment: Missing version IRI to check date
+    status: ERROR
+  FP20 Responsiveness:
+    status: PASS
+  ROBOT Report:
+    status: PASS
+sha256_hash: 6c4fd361d464c2b1a4745aff2a6cc518ba21fd906606829512a2067fc0565083
+summary:
+  comment: 7 errors
+  status: ERROR
+  summary_count:
+    ERROR: 7
+    INFO: 0
+    WARN: 0
+version: null
