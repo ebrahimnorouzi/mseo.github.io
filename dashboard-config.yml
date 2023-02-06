@@ -39,13 +39,6 @@ ontologies:
       repository: https://github.com/materialdigital/core-ontology
       preferredPrefix: pmdco
       mirror_from: https://raw.githubusercontent.com/materialdigital/core-ontology/main/pmdco_core.ttl
-    - id: PMD
-      description: An Ontology for the Materials Design Domain 
-      homepage: https://github.com/materialdigital/core-ontology
-      tracker: https://github.com/materialdigital/core-ontology/issues
-      repository: https://github.com/materialdigital/core-ontology
-      preferredPrefix: pmdco
-      mirror_from: https://raw.githubusercontent.com/materialdigital/core-ontology/main/pmdco_core.ttl
     - id: EMMO
       description: Elementary Multiperspective Material Ontology (EMMO) 
       homepage: https://github.com/emmo-repo/EMMO
@@ -53,20 +46,20 @@ ontologies:
       repository: https://github.com/emmo-repo/EMMO
       preferredPrefix: emmo
       mirror_from: https://raw.githubusercontent.com/emmo-repo/EMMO/master/emmo.ttl
-    - id: EMMO_mechanical_testing
-      description: Mechanical testing
-      homepage: https://github.com/emmo-repo/domain-mechanical-testing
-      tracker: https://github.com/emmo-repo/domain-mechanical-testing/issues
-      repository: https://github.com/emmo-repo/domain-mechanical-testing
-      preferredPrefix: emmo_mechanical_testing
-      mirror_from: https://raw.githubusercontent.com/emmo-repo/domain-mechanical-testing/master/emmo-mechanical-testing.owl
-    - id: EMMO_microstructure
-      description: An Ontology for Metallic microstructures
-      homepage: https://github.com/jesper-friis/emmo-microstructure
-      tracker: https://github.com/jesper-friis/emmo-microstructure/issues
-      repository: https://github.com/jesper-friis/emmo-microstructure
-      preferredPrefix: emmo_microstructure
-      mirror_from: https://raw.githubusercontent.com/jesper-friis/emmo-microstructure/master/emmo-microstructure.owl
+    #- id: EMMO_mechanical_testing
+      #description: Mechanical testing
+      #homepage: https://github.com/emmo-repo/domain-mechanical-testing
+      #tracker: https://github.com/emmo-repo/domain-mechanical-testing/issues
+      #repository: https://github.com/emmo-repo/domain-mechanical-testing
+      #preferredPrefix: emmo_mechanical_testing
+      #mirror_from: https://raw.githubusercontent.com/emmo-repo/domain-mechanical-testing/master/emmo-mechanical-testing.owl
+    #- id: EMMO_microstructure
+      #description: An Ontology for Metallic microstructures
+      #homepage: https://github.com/jesper-friis/emmo-microstructure
+      #tracker: https://github.com/jesper-friis/emmo-microstructure/issues
+      #repository: https://github.com/jesper-friis/emmo-microstructure
+      #preferredPrefix: emmo_microstructure
+      #mirror_from: https://raw.githubusercontent.com/jesper-friis/emmo-microstructure/master/emmo-microstructure.owl
     - id: OBO
       description: An Ontology for supporting information retrieval, analysis and integration in scientific and other domains
       homepage: https://github.com/BFO-ontology/BFO-2020 
@@ -124,10 +117,10 @@ ontologies:
       repository: https://gitlab.cc-asp.fraunhofer.de/EMI_datamanagement/bwmd_ontology
       preferredPrefix: BWMD-DOMAIN
       mirror_from: https://gitlab.cc-asp.fraunhofer.de/EMI_datamanagement/bwmd_ontology/-/raw/master/BWMD_domain.owl
-    - id: MOL_TENSILE
-      description: An ontology for describing the tensile test process, made in the Materials Open Lab Project.
-      preferredPrefix: MOL_TENSILE
-      mirror_from: http://rest.matportal.org/ontologies/MOL_TENSILE/submissions/2/download?apikey=66c82e77-ce0d-4385-8056-a95898e47ebb
+    #- id: MOL_TENSILE
+      #description: An ontology for describing the tensile test process, made in the Materials Open Lab Project.
+      #preferredPrefix: MOL_TENSILE
+      #mirror_from: http://rest.matportal.org/ontologies/MOL_TENSILE/submissions/2/download?apikey=66c82e77-ce0d-4385-8056-a95898e47ebb
     - id: LPBFO
       description: An Ontology for the additive manufacturing of a component via Laser Powder Bed Fusion (LPBF) / Selective Laser Melting (SLM)
       preferredPrefix: LPBFO
@@ -151,13 +144,13 @@ ontologies:
       repository: https://github.com/General-Process-Ontology/ontology 
       preferredPrefix: gpo
       mirror_from: https://raw.githubusercontent.com/General-Process-Ontology/ontology/master/GPO_inferred.ttl
-    - id: EMMO_BVC
-      description: EMMO Ontology for the Battery Value Chain (BVC)
-      homepage: https://github.com/Battery-Value-Chain-Ontology/ontology 
-      tracker: https://github.com/Battery-Value-Chain-Ontology/ontology /issues
-      repository: https://github.com/Battery-Value-Chain-Ontology/ontology 
-      preferredPrefix: emmo_bvc
-      mirror_from: https://raw.githubusercontent.com/Battery-Value-Chain-Ontology/ontology/master/BVCO.ttl
+    #- id: EMMO_BVC
+      #description: EMMO Ontology for the Battery Value Chain (BVC)
+      #homepage: https://github.com/Battery-Value-Chain-Ontology/ontology 
+      #tracker: https://github.com/Battery-Value-Chain-Ontology/ontology /issues
+      #repository: https://github.com/Battery-Value-Chain-Ontology/ontology 
+      #preferredPrefix: emmo_bvc
+      #mirror_from: https://raw.githubusercontent.com/Battery-Value-Chain-Ontology/ontology/master/BVCO.ttl
     - id: EMMO_crystallography
       description: Crystallography
       homepage: https://github.com/materialdigital/core-ontology
@@ -172,13 +165,13 @@ ontologies:
       repository: https://github.com/emmo-repo/CIF-ontology
       preferredPrefix: cif-core
       mirror_from: https://raw.githubusercontent.com/emmo-repo/CIF-ontology/main/ontology/cif-core.ttl
-    - id: EMMO_Datamodel
-      description: Ontology-Based Data Modelling
-      homepage: https://github.com/emmo-repo/datamodel
-      tracker: https://github.com/emmo-repo/datamodel/issues
-      repository: https://github.com/emmo-repo/datamodel
-      preferredPrefix: emmo_datamodel
-      mirror_from: https://raw.githubusercontent.com/emmo-repo/datamodel/master/datamodel.ttl
+    #- id: EMMO_Datamodel
+      #description: Ontology-Based Data Modelling
+      #homepage: https://github.com/emmo-repo/datamodel
+      #tracker: https://github.com/emmo-repo/datamodel/issues
+      #repository: https://github.com/emmo-repo/datamodel
+      #preferredPrefix: emmo_datamodel
+      #mirror_from: https://raw.githubusercontent.com/emmo-repo/datamodel/master/datamodel.ttl
     - id: EMMO_mappings
       description: Mapping to domains and ontological concepts
       homepage: https://github.com/emmo-repo/domain-mappings 
@@ -249,13 +242,13 @@ ontologies:
       repository: https://github.com/LiUSemWeb/Materials-Design-Ontology 
       preferredPrefix: mdo
       mirror_from: https://raw.githubusercontent.com/LiUSemWeb/Materials-Design-Ontology/master/mdo-full.owl
-    - id: NanoMine
-      description: Polymer nanocomposites
-      homepage: https://github.com/tetherless-world/nanomine-ontology
-      tracker: https://github.com/tetherless-world/nanomine-ontology/issues
-      repository: https://github.com/tetherless-world/nanomine-ontology
-      preferredPrefix: nanomine
-      mirror_from: https://raw.githubusercontent.com/tetherless-world/nanomine-ontology/master/nanomine.ttl
+    #- id: NanoMine
+      #description: Polymer nanocomposites
+      #homepage: https://github.com/tetherless-world/nanomine-ontology
+      #tracker: https://github.com/tetherless-world/nanomine-ontology/issues
+      #repository: https://github.com/tetherless-world/nanomine-ontology
+      #preferredPrefix: nanomine
+      #mirror_from: https://raw.githubusercontent.com/tetherless-world/nanomine-ontology/master/nanomine.ttl
     - id: DEB
       description: The Devices, Experimental scaffolds and Biomaterials Ontology
       homepage: https://github.com/ProjectDebbie/Ontology_DEB
@@ -347,11 +340,11 @@ ontologies:
       repository: https://github.com/HajoRijgersberg/OM
       preferredPrefix: om
       mirror_from: https://raw.githubusercontent.com/HajoRijgersberg/OM/master/om-2.0.rdf
-    - id: QUDV
-      description: units, quantities, measurements, and dimensions
-      homepage: https://www.omgwiki.org/OMGSysML/doku.php?id=sysml-qudv:quantities_units_dimensions_values_qudv
-      preferredPrefix: qudv
-      mirror_from: https://www.omgwiki.org/OMGSysML/lib/exe/fetch.php?media=sysml-qudv:qudv-owl:sysml-qudv-si.owl
+    #- id: QUDV
+    #  description: units, quantities, measurements, and dimensions
+    #  homepage: https://www.omgwiki.org/OMGSysML/doku.php?id=sysml-qudv:quantities_units_dimensions_values_qudv
+    #  preferredPrefix: qudv
+    #  mirror_from: https://www.omgwiki.org/OMGSysML/lib/exe/fetch.php?media=sysml-qudv:qudv-owl:sysml-qudv-si.owl
     - id: mvc
       description: described using W3C RDF Schema and the Web Ontology Language to satisfy the requirements of the STREAM project
       homepage: https://github.com/stream-project/ontology
