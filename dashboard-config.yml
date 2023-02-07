@@ -115,13 +115,13 @@ ontologies:
       homepage: https://gitlab.cc-asp.fraunhofer.de/EMI_datamanagement/bwmd_ontology
       repository: https://gitlab.cc-asp.fraunhofer.de/EMI_datamanagement/bwmd_ontology
       preferredPrefix: BWMD-MID
-      mirror_from: https://gitlab.cc-asp.fraunhofer.de/EMI_datamanagement/bwmd_ontology/-/raw/master/BWMD_mid.owl
+      mirror_from: https://raw.githubusercontent.com/ebrahimnorouzi/mseo.github.io/master/dashboard/BWMD-MID/BWMD_mid.owl
     - id: BWMD-DOMAIN
       description: An Ontology for the Materials Design Domain 
       homepage: https://gitlab.cc-asp.fraunhofer.de/EMI_datamanagement/bwmd_ontology
       repository: https://gitlab.cc-asp.fraunhofer.de/EMI_datamanagement/bwmd_ontology
       preferredPrefix: BWMD-DOMAIN
-      mirror_from: https://gitlab.cc-asp.fraunhofer.de/EMI_datamanagement/bwmd_ontology/-/raw/master/BWMD_domain.owl
+      mirror_from: https://raw.githubusercontent.com/ebrahimnorouzi/mseo.github.io/master/dashboard/BWMD-DOMAIN/BWMD_domain.owl
     - id: MOL_TENSILE
       description: An ontology for describing the tensile test process, made in the Materials Open Lab Project.
       preferredPrefix: MOL_TENSILE
@@ -129,7 +129,7 @@ ontologies:
     - id: LPBFO
       description: An Ontology for the additive manufacturing of a component via Laser Powder Bed Fusion (LPBF) / Selective Laser Melting (SLM)
       preferredPrefix: LPBFO
-      mirror_from: http://rest.matportal.org/ontologies/LPBFO/submissions/8/download?apikey=66c82e77-ce0d-4385-8056-a95898e47ebb
+      mirror_from: https://raw.githubusercontent.com/ebrahimnorouzi/mseo.github.io/master/dashboard/LPBFO/LPBFO.owl
     - id: PROVO
       description: represent and interchange provenance information
       homepage: https://www.w3.org/TR/prov-o/ 
@@ -169,7 +169,7 @@ ontologies:
       tracker: https://github.com/emmo-repo/CIF-ontology/issues
       repository: https://github.com/emmo-repo/CIF-ontology
       preferredPrefix: cif-core
-      mirror_from: https://raw.githubusercontent.com/emmo-repo/CIF-ontology/main/ontology/cif-core.ttl
+      mirror_from: https://raw.githubusercontent.com/ebrahimnorouzi/mseo.github.io/master/dashboard/CIF/cif-core.ttl
     - id: EMMO_Datamodel
       description: Ontology-Based Data Modelling
       homepage: https://github.com/emmo-repo/datamodel
@@ -240,6 +240,11 @@ ontologies:
       repository: https://github.com/Materials-Data-Science-and-Informatics/dislocation-ontology
       preferredPrefix: diso
       mirror_from: https://raw.githubusercontent.com/Materials-Data-Science-and-Informatics/dislocation-ontology/master/dislocation-ontology.ttl
+    - id: matinfo
+      description: Exchanging Materials Information and Knowledge
+      homepage: https://www.researchgate.net/publication/262004148_MaterialOntology
+      preferredPrefix: matinfo
+      mirror_from: 
     - id: MDO
       description: Materials design
       homepage: https://github.com/LiUSemWeb/Materials-Design-Ontology 
