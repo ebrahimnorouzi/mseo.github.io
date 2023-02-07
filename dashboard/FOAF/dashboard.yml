@@ -3,7 +3,11 @@ base_prefixes:
 - foaf
 - FOAFALT
 changed: true
+<<<<<<< HEAD
+date: 2023-02-07 10:43:00.968174
+=======
 date: 2023-02-07 10:19:48.609322
+>>>>>>> master
 metrics:
   'Axioms: Breakdown of axiom types':
     AnnotationAssertion: 245
@@ -30,12 +34,21 @@ metrics:
   'Info: Experimental OBO score':
     _dashboard: 0.333
     _formula: (1*impact+1*dashboard)/2
+<<<<<<< HEAD
+    _impact: 0.321
+    _impact_external: 0
+    _reuse: 0.146
+    oboscore: 0.327
+  'Info: How many externally documented uses?': 0
+  'Info: How many ontologies use it?': 18
+=======
     _impact: 0.245
     _impact_external: 0
     _reuse: 0.146
     oboscore: 0.289
   'Info: How many externally documented uses?': 0
   'Info: How many ontologies use it?': 12
+>>>>>>> master
   'Info: Logical consistency': true
   'Info: Syntax': RDF/XML Syntax
   'Info: Usage of namespaces in axioms':
@@ -46,17 +59,26 @@ metrics:
     rdfs: 205
   'Info: Which ontologies use it?':
   - AMONTOLOGY
+<<<<<<< HEAD
+  - BWMD-DOMAIN
+  - BWMD-MID
+=======
+>>>>>>> master
   - CCO
   - CHAMEO
   - IAO
+  - LPBFO
   - MSEO
   - OA
   - OEO
   - OM
+  - PATO
   - SEMMD
   - SSN
   - enanomapper
+  - m4i
   - mvc
+  - opmw
 mirror_from: https://raw.githubusercontent.com/ESIPFed/toolmatch-ontology/master/v3/foaf.owl
 namespace: FOAF
 results:
