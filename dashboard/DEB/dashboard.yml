@@ -3,11 +3,7 @@ base_prefixes:
 - deb
 - DEBALT
 changed: true
-<<<<<<< HEAD
-date: 2023-02-07 10:44:06.141789
-=======
-date: 2023-02-07 10:20:43.316510
->>>>>>> master
+date: 2023-02-07 12:03:28.444743
 metrics:
   'Axioms: Breakdown of axiom types':
     AnnotationAssertion: 296

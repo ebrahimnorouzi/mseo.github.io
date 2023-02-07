@@ -1,6 +1,108 @@
 base_generated: true
+base_prefixes:
+- MOL_TENSILE
+- MOL_TENSILEALT
 changed: true
-failure: failed_robot_base
-mirror_from: http://rest.matportal.org/ontologies/MOL_TENSILE/submissions/2/download?apikey=66c82e77-ce0d-4385-8056-a95898e47ebb
+date: 2023-02-07 12:02:36.304643
+metrics:
+  'Axioms: Breakdown of axiom types':
+    AnnotationAssertion: 1354
+    ClassAssertion: 20
+    DataPropertyAssertion: 13
+    DataPropertyDomain: 2
+    DataPropertyRange: 14
+    Declaration: 532
+    DisjointClasses: 21
+    FunctionalObjectProperty: 1
+    InverseObjectProperties: 1
+    ObjectPropertyDomain: 9
+    ObjectPropertyRange: 14
+    SubAnnotationPropertyOf: 2
+    SubClassOf: 386
+    SubDataPropertyOf: 16
+    SubObjectPropertyOf: 83
+  'Axioms: Number of axioms': 2468
+  'Entities: % of entities reused': 100.0
+  'Entities: Number of annotation properties': 29
+  'Entities: Number of classes': 387
+  'Entities: Number of data properties': 17
+  'Entities: Number of individuals': 20
+  'Entities: Number of object properties': 84
+  'Entities: Number of unsatisfiable classes': 0
+  'Info: Breakdown of OWL class expressions used':
+    Class: 1331
+  'Info: Does the ontology fall under OWL 2 DL?': true
+  'Info: Experimental OBO score':
+    _dashboard: 0.416
+    _formula: (1*impact+1*dashboard)/2
+    _impact: 0.0
+    _impact_external: 0
+    _reuse: 1.0
+    oboscore: 0.208
+  'Info: How many externally documented uses?': 0
+  'Info: How many ontologies use it?': 0
+  'Info: Logical consistency': true
+  'Info: Syntax': Turtle
+  'Info: Usage of namespaces in axioms':
+    BFO: 253
+    IAO: 426
+    dc: 1
+    dc11: 2
+    foaf: 2
+    owl: 23
+    prefix_unknown: 1553
+    rdfs: 987
+    xsd: 27
+  'Info: Which ontologies use it?': []
+mirror_from: https://raw.githubusercontent.com/ebrahimnorouzi/mseo.github.io/master/Ontology_files/mol_tensile_test.owl
 namespace: MOL_TENSILE
-sha256_hash: dcb3ad660f6971c0f6c198380dd8fd965bad76ed091f801186d0869b888a0410
+results:
+  FP01 Open:
+    comment: Missing ontology license. Missing registry license.
+    status: ERROR
+  FP02 Common Format:
+    comment: OWL syntax (Turtle), but should be RDF/XML
+    status: WARN
+  FP03 URIs:
+    comment: 0 invalid IRIs. The Ontology IRI is not valid.
+    file: fp3
+    status: ERROR
+  FP04 Versioning:
+    comment: Version IRI 'https://gitlab.cc-asp.fraunhofer.de/hart/matolab_mechanik/-/raw/master/mol_tt.owl'
+      is not in recommended format
+    status: WARN
+  FP05 Scope:
+    comment: Missing domain (scope)
+    status: ERROR
+  FP06 Textual Definitions:
+    status: PASS
+  FP07 Relations:
+    status: PASS
+  FP08 Documented:
+    comment: Missing homepage
+    status: ERROR
+  FP09 Plurality of Users:
+    comment: Missing tracker and usages
+    status: ERROR
+  FP11 Locus of Authority:
+    comment: Missing contact information
+    status: ERROR
+  FP12 Naming Conventions:
+    status: PASS
+  FP16 Maintenance:
+    comment: Version IRI does not have date information
+    status: INFO
+  FP20 Responsiveness:
+    comment: Missing tracker and usages
+    status: ERROR
+  ROBOT Report:
+    status: PASS
+sha256_hash: 75270bf4e235acf81cb73ad9b9e9eaed49b3aa1901d0e286122814bb8fdd2f85
+summary:
+  comment: 7 errors
+  status: ERROR
+  summary_count:
+    ERROR: 7
+    INFO: 1
+    WARN: 2
+version: https://gitlab.cc-asp.fraunhofer.de/hart/matolab_mechanik/-/raw/master/mol_tt.owl

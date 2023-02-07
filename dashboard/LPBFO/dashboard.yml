@@ -3,7 +3,7 @@ base_prefixes:
 - LPBFO
 - LPBFOALT
 changed: true
-date: 2023-02-07 10:43:18.254323
+date: 2023-02-07 12:02:39.362412
 metrics:
   'Axioms: Breakdown of axiom types':
     AnnotationAssertion: 1579
@@ -52,7 +52,7 @@ metrics:
     rdfs: 1214
     xsd: 10
   'Info: Which ontologies use it?': []
-mirror_from: https://raw.githubusercontent.com/ebrahimnorouzi/mseo.github.io/master/dashboard/LPBFO/LPBFO.owl
+mirror_from: https://raw.githubusercontent.com/ebrahimnorouzi/mseo.github.io/master/Ontology_files/LPBFO.owl
 namespace: LPBFO
 results:
   FP01 Open:
@@ -94,7 +94,7 @@ results:
     status: ERROR
   ROBOT Report:
     status: PASS
-sha256_hash: 4f50644f6eaf58a366a28ff46b3e036b094f6ab858d36801209a19821b7af1f1
+sha256_hash: 0d015a2265fe2a45682032a77b6c72708d6e73223e312f5a123e5b87adf7c9d4
 summary:
   comment: 7 errors
   status: ERROR

@@ -3,7 +3,7 @@ base_prefixes:
 - BWMD-DOMAIN
 - BWMD-DOMAINALT
 changed: true
-date: 2023-02-07 10:43:15.013057
+date: 2023-02-07 12:02:33.268619
 metrics:
   'Axioms: Breakdown of axiom types':
     AnnotationAssertion: 2151
@@ -51,7 +51,7 @@ metrics:
     rdfs: 1788
     xsd: 10
   'Info: Which ontologies use it?': []
-mirror_from: https://raw.githubusercontent.com/ebrahimnorouzi/mseo.github.io/master/dashboard/BWMD-DOMAIN/BWMD_domain.owl
+mirror_from: https://raw.githubusercontent.com/ebrahimnorouzi/mseo.github.io/master/Ontology_files/BWMD_domain.owl
 namespace: BWMD-DOMAIN
 results:
   FP01 Open:
@@ -92,7 +92,7 @@ results:
     status: ERROR
   ROBOT Report:
     status: PASS
-sha256_hash: b6cabc8d56cf7839d2ea9228ceb7f0df7420bc651a47a9cc2bdd51c077263a53
+sha256_hash: f1665b26bb03163d7f01211626356bbc30863f9f42f94494358a7c563bfb6bf9
 summary:
   comment: 6 errors
   status: ERROR

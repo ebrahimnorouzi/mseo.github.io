@@ -3,11 +3,7 @@ base_prefixes:
 - emmo_atomistic
 - EMMO_ATOMISTICALT
 changed: true
-<<<<<<< HEAD
-date: 2023-02-07 10:43:38.823981
-=======
-date: 2023-02-07 10:20:14.187428
->>>>>>> master
+date: 2023-02-07 12:02:58.642859
 metrics:
   'Axioms: Breakdown of axiom types':
     AnnotationAssertion: 1921

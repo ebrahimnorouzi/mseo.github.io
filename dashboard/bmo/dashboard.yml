@@ -1,6 +1,6 @@
 base_generated: true
 changed: true
 failure: failed_robot_base
-mirror_from: http://rest.matportal.org/ontologies/BUILDMAT/submissions/1/download?apikey=66c82e77-ce0d-4385-8056-a95898e47ebb
+mirror_from: https://raw.githubusercontent.com/ebrahimnorouzi/mseo.github.io/master/Ontology_files/BuildingMaterials.ttl
 namespace: bmo
 sha256_hash: 433ebbd502a8d0bb5feb65494a506611a76f9a8d78dd532a082f66a77b2bba17
