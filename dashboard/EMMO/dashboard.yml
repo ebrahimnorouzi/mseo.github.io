@@ -3,7 +3,11 @@ base_prefixes:
 - emmo
 - EMMOALT
 changed: true
+<<<<<<< HEAD
 date: 2023-02-07 10:40:35.980381
+=======
+date: 2023-02-07 10:17:23.394858
+>>>>>>> master
 metrics:
   'Axioms: Breakdown of axiom types':
     AnnotationAssertion: 1743

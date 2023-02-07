@@ -3,7 +3,11 @@ base_prefixes:
 - mvc
 - MVCALT
 changed: true
+<<<<<<< HEAD
 date: 2023-02-07 10:45:08.709623
+=======
+date: 2023-02-07 10:21:33.569626
+>>>>>>> master
 metrics:
   'Axioms: Breakdown of axiom types':
     AnnotationAssertion: 75
