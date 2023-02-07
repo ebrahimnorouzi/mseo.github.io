@@ -39,6 +39,11 @@ ontologies:
       repository: https://github.com/materialdigital/core-ontology
       preferredPrefix: pmdco
       mirror_from: https://raw.githubusercontent.com/materialdigital/core-ontology/main/pmdco_core.ttl
+    - id: OSMO
+      description: An Ontology for Materials modeling and simulation
+      homepage: https://zenodo.org/record/5084394#.Y-DOjK3MJPY
+      preferredPrefix: osmo
+      mirror_from: http://www.molmod.info/semantics/osmo.ttl
     - id: EMMO
       description: Elementary Multiperspective Material Ontology (EMMO) 
       homepage: https://github.com/emmo-repo/EMMO
@@ -280,6 +285,11 @@ ontologies:
       repository: https://github.com/information-artifact-ontology/IAO
       preferredPrefix: iao
       mirror_from: http://purl.obolibrary.org/obo/iao.owl
+    - id: bmo
+      description: Linked data and Ontologies for Semantic Interoperability, BIM4EEB
+      homepage: https://matportal.org/ontologies/BUILDMAT
+      preferredPrefix: bmo
+      mirror_from: http://rest.matportal.org/ontologies/BUILDMAT/submissions/1/download?apikey=66c82e77-ce0d-4385-8056-a95898e47ebb
     - id: SAREF
       description: An Ontology for the Materials Design Domain 
       homepage: https://labs.etsi.org/rep/saref/saref-core/-/tree/develop-v3.1.1
@@ -291,6 +301,11 @@ ontologies:
       homepage: https://databus.dbpedia.org/ontologies/purl.org/wild--vocab/2022.03.04-103146
       preferredPrefix: wild
       mirror_from: https://databus.dbpedia.org/ontologies/purl.org/wild--vocab/2022.03.04-103146/wild--vocab_type=parsed.owl
+    - id: P-Plan
+      description: describes how the plans are composed and their correspondence to provenance records
+      homepage: http://vocab.linkeddata.es/p-plan/index.html
+      preferredPrefix: P-Plan
+      mirror_from: http://www.opmw.org/p-plan.owl
     - id: OA
       description:  a common approach to express annotations
       homepage: https://github.com/w3c/web-annotation
@@ -305,6 +320,13 @@ ontologies:
       repository: https://github.com/qudt/qudt-public-repo
       preferredPrefix: qudt
       mirror_from: http://qudt.org/2.1/schema/qudt
+    - id: OM
+      description: units, quantities, measurements, and dimensions
+      homepage: https://github.com/HajoRijgersberg/OM
+      tracker: https://github.com/HajoRijgersberg/OM/issues
+      repository: https://github.com/HajoRijgersberg/OM
+      preferredPrefix: om
+      mirror_from: https://raw.githubusercontent.com/HajoRijgersberg/OM/master/om-2.0.rdf
     - id: UO
       description: An Ontology for the Materials Design Domain 
       homepage: https://github.com/bio-ontology-research-group/unit-ontology
@@ -319,6 +341,13 @@ ontologies:
       repository: https://github.com/OpenEnergyPlatform/ontology
       preferredPrefix: oeo
       mirror_from: http://openenergy-platform.org/ontology/oeo/releases/oeo.owl
+    - id: PATO
+      description: An ontology of phenotypic qualities (properties, attributes or characteristics).
+      homepage: https://github.com/pato-ontology/pato
+      tracker: https://github.com/pato-ontology/pato/issues
+      repository: https://github.com/pato-ontology/pato
+      preferredPrefix: PATO
+      mirror_from: http://purl.obolibrary.org/obo/pato.owl
     - id: AMONTOLOGY
       description: An Ontology for knowledge about additive manufacturing processes
       homepage: https://github.com/iassouroko/AMontology
@@ -352,6 +381,17 @@ ontologies:
       repository: https://github.com/stream-project/ontology
       preferredPrefix: mvc
       mirror_from: https://raw.githubusercontent.com/stream-project/ontology/master/MatVoc-Core.ttl
+    - id: m4i
+      description: workflow modeling
+      homepage: https://git.rwth-aachen.de/nfdi4ing/metadata4ing/metadata4ing
+      repository: https://git.rwth-aachen.de/nfdi4ing/metadata4ing/metadata4ing
+      preferredPrefix: m4i
+      mirror_from: https://git.rwth-aachen.de/nfdi4ing/metadata4ing/metadata4ing/-/raw/develop/metadata4ing.ttl
+    - id: opmw
+      description: workflow modeling
+      homepage: https://www.opmw.org/model/OPMW/
+      preferredPrefix: m4i
+      mirror_from: https://www.opmw.org/model/OPMW/opmw3.1.owl
     - id: ssos
       description: An Ontology for life cycle information
       homepage: https://www.niso.org/standards-committees/ssos
