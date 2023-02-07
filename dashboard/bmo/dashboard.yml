@@ -3,4 +3,4 @@ changed: true
 failure: failed_robot_base
 mirror_from: https://raw.githubusercontent.com/ebrahimnorouzi/mseo.github.io/master/Ontology_files/BuildingMaterials.ttl
 namespace: bmo
-sha256_hash: 433ebbd502a8d0bb5feb65494a506611a76f9a8d78dd532a082f66a77b2bba17
+sha256_hash: bbc849d0d291be39d2f2384b8b0ab75345b4d873ecb627105b59e27c4cc92f00
