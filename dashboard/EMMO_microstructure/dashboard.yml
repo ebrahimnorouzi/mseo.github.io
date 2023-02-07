@@ -1,6 +1,0 @@
-base_generated: true
-changed: true
-failure: failed_robot_base
-mirror_from: https://raw.githubusercontent.com/jesper-friis/emmo-microstructure/master/emmo-microstructure.owl
-namespace: EMMO_microstructure
-sha256_hash: de8f58923787c918592bcaf9a7be5e779c74ad22f6f5b9e07ef00bdf98b81b36
