@@ -1,0 +1,47 @@
+<?xml version="1.0"?>
+<rdf:RDF
+    xmlns="http://www.owl-ontologies.com/Ontology1195612079.owl#"
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:property="http://www.property#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+    xmlns:matinfo="http://www.matinfo#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+  xml:base="http://www.owl-ontologies.com/Ontology1195612079.owl">
+  <owl:Ontology rdf:about=""/>
+  <owl:Class rdf:about="http://www.property#Property">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://www.matinfo#Property"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.matinfo#EngineeringMaterial">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://www.matinfo#Specimen"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.property#UnitDimension">
+    <rdfs:subClassOf rdf:resource="http://www.property#Property"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.property#UnitSystem">
+    <rdfs:subClassOf rdf:resource="http://www.property#Property"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.matinfo#Property">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://www.matinfo#MaterialProperty"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.matinfo#Specimen">
+    <rdfs:subClassOf rdf:resource="http://www.matinfo#MaterialProperty"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.matinfo#ChemicalComposition">
+    <rdfs:subClassOf rdf:resource="http://www.matinfo#EngineeringMaterial"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.matinfo#CommonName">
+    <rdfs:subClassOf rdf:resource="http://www.matinfo#EngineeringMaterial"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.property#Value">
+    <rdfs:subClassOf rdf:resource="http://www.property#Property"/>
+  </owl:Class>
+</rdf:RDF>
+
+<!-- Created with Protege (with OWL Plugin 3.2.1, Build 365)  http://protege.stanford.edu -->

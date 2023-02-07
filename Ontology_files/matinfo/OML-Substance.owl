@@ -1,0 +1,1735 @@
+<?xml version="1.0"?>
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns="http://codata.jp/OML-Substance.owl#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+  xml:base="http://codata.jp/OML-Substance.owl">
+  <owl:Ontology rdf:about="">
+    <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    ></owl:versionInfo>
+  </owl:Ontology>
+  <owl:Class rdf:ID="OtherWroughtAlAlloy">
+    <rdfs:subClassOf>
+      <owl:Class rdf:ID="AluminumAlloy"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="Polyethersulfone">
+    <rdfs:subClassOf>
+      <owl:Class rdf:ID="Thermoplastic"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="Mo">
+    <rdfs:subClassOf>
+      <owl:Class rdf:ID="Atom"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="Zr">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#Atom"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="As">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#Atom"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="Clay">
+    <rdfs:subClassOf>
+      <owl:Class rdf:ID="Mixture"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="Sb">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#Atom"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="AluminumAlloy_6000Series">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#AluminumAlloy"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="Potting_CastingCeramic">
+    <rdfs:subClassOf>
+      <owl:Class rdf:ID="CompoundSubstance"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="Uus">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#Atom"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="Mn">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#Atom"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="Polyester-TS">
+    <rdfs:subClassOf>
+      <owl:Class rdf:ID="Thermoset"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="PolybutyleneTerephthalate-PBT">
+    <rdfs:subClassOf>
+      <owl:Class rdf:ID="Polyester-TP"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="AluminumAlloy_4000Series">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#AluminumAlloy"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="FerrousAlloy">
+    <rdfs:subClassOf>
+      <owl:Class rdf:ID="Alloy"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="Tb">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#Atom"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="P">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#Atom"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="Semiconductor">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#CompoundSubstance"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="Polydienes">
+    <rdfs:subClassOf>
+      <owl:Class rdf:ID="Polymer_OrganicCompound"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="Sr">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#Atom"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="LLDPE">
+    <rdfs:subClassOf>
+      <owl:Class rdf:ID="Polyethylene"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="Electronic_MagneticAlloy">
+    <rdfs:subClassOf rdf:resource="#FerrousAlloy"/>
+  </owl:Class>
+  <owl:Class rdf:ID="Cd">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#Atom"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="Yb">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#Atom"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="IntermetallicCompound">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#CompoundSubstance"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="CompositeFibers">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#CompoundSubstance"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="Polycarbonates_Thiocarbonates">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#Polymer_OrganicCompound"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="Ce">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#Atom"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="Uut">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#Atom"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="Substance"/>
+  <owl:Class rdf:ID="Ar">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#Atom"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="Ta">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#Atom"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="CopperAlloy">
+    <rdfs:subClassOf>
+      <owl:Class rdf:ID="Non-FerrousAlloy"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="Br">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#Atom"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="Li">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#Atom"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="Fluoropolymer">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#Thermoplastic"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="Be">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#Atom"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="Gd">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#Atom"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="EthyleneVinylAlcohol">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#Thermoplastic"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="Rn">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#Atom"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="Polysulfone">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#Thermoplastic"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="S">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#Atom"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="GrayCastIron">
+    <rdfs:subClassOf rdf:resource="#FerrousAlloy"/>
+  </owl:Class>
+  <owl:Class rdf:ID="Uub">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#Atom"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="Ba">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#Atom"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="Elastomer_TPE">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#Thermoplastic"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="MalleableIron">
+    <rdfs:subClassOf rdf:resource="#FerrousAlloy"/>
+  </owl:Class>
+  <owl:Class rdf:ID="TS40000SeriesStainlessSteel">
+    <rdfs:subClassOf>
+      <owl:Class rdf:ID="StainlessSteel"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="Carbide">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#CompoundSubstance"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="OrganicMetalloid">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#CompoundSubstance"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="Uuq">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#Atom"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="B">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#Atom"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="Cf">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#Atom"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="Fluoropolymer-TS">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#Thermoset"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="In">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#Atom"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="Polyarylamide">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#Thermoplastic"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="Cellulosic">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#Thermoplastic"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="Ge">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#Atom"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="Acetal">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#Thermoplastic"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="Fr">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#Atom"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="TS10000SeriesStainlessSteel">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#StainlessSteel"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="ASAPolymer">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#Thermoplastic"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="Metal">
+    <rdfs:subClassOf>
+      <owl:Class rdf:ID="ElementalSubstance"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="PrecipitationHardeningStainless">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#StainlessSteel"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="C">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#Atom"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="Polysulfones_Sulfoxides_Sulfonates_Suloamides">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#Polymer_OrganicCompound"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="EthyleneMethylAcrylate">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#Thermoplastic"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="Boride">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#CompoundSubstance"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="LiquidCrystalPolymer-LCP">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#Thermoplastic"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="Tc">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#Atom"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="Homopolymer">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#Polymer_OrganicCompound"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="Air-HardeningSteel">
+    <rdfs:subClassOf>
+      <owl:Class rdf:ID="ToolSteel"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="Polyamides_Thioamides">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#Polymer_OrganicCompound"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="Brass">
+    <rdfs:subClassOf rdf:resource="#CopperAlloy"/>
+  </owl:Class>
+  <owl:Class rdf:ID="Phosphide_Pnictide">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#CompoundSubstance"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="Uuh">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#Atom"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="Copolymer">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#Polymer_OrganicCompound"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="Nylon46">
+    <rdfs:subClassOf>
+      <owl:Class rdf:ID="Nylon"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="Hg">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#Atom"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="Tm">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#Atom"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="Styrene-Butadiene">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#Thermoplastic"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="Sm">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#Atom"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="U">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#Atom"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="Bh">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#Atom"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="Ionomer">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#Thermoplastic"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="PolyethyleneTerephthalate-PET">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#Polyester-TP"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="NickelBase">
+    <rdfs:subClassOf>
+      <owl:Class rdf:ID="SuperAlloy"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="GlassCeramic">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#CompoundSubstance"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="#CompoundSubstance">
+    <rdfs:subClassOf>
+      <owl:Class rdf:ID="PureSubstance"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="Cork">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#Mixture"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="T300SeriesStainlessSteel">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#StainlessSteel"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="Paper">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#Mixture"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="Vinyl">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#Thermoplastic"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="MagnesiumAlloy">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#Non-FerrousAlloy"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="Polysulfides">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#Polymer_OrganicCompound"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="Polysiloxanes-Polysilanes">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#Polymer_OrganicCompound"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="EthyleneVinylAcetate">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#Thermoplastic"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="#Thermoplastic">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#Polymer_OrganicCompound"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="Polyphthalamide">
+    <rdfs:subClassOf rdf:resource="#Thermoplastic"/>
+  </owl:Class>
+  <owl:Class rdf:ID="Polyureas_Thioureas">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#Polymer_OrganicCompound"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="Sn">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#Atom"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="Polyvinyls">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#Polymer_OrganicCompound"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="Cyanoacrylate">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#Thermoset"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="Bi">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#Atom"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="PolyphenyleneSulfide">
+    <rdfs:subClassOf rdf:resource="#Thermoplastic"/>
+  </owl:Class>
+  <owl:Class rdf:ID="MetalMatrixComposite">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#Non-FerrousAlloy"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="MachinableCeramic">
+    <rdfs:subClassOf rdf:resource="#CompoundSubstance"/>
+  </owl:Class>
+  <owl:Class rdf:ID="TungstenAlloy">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#Non-FerrousAlloy"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="Alpha_NearAlphaTitaniumAlloy">
+    <rdfs:subClassOf>
+      <owl:Class rdf:ID="TitaniumAlloy"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="He">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#Atom"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="Au">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#Atom"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="Polyesters_Thioesters">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#Polymer_OrganicCompound"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="W">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#Atom"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="Dy">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#Atom"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="Halide">
+    <rdfs:subClassOf rdf:resource="#CompoundSubstance"/>
+  </owl:Class>
+  <owl:Class rdf:ID="AluminumOxide">
+    <rdfs:subClassOf>
+      <owl:Class rdf:ID="Oxide"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="Polystyrenes">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#Polymer_OrganicCompound"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="Am">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#Atom"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="PolyphenyleneEther_PPO">
+    <rdfs:subClassOf rdf:resource="#Thermoplastic"/>
+  </owl:Class>
+  <owl:Class rdf:ID="Fe">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#Atom"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="#AluminumAlloy">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#Non-FerrousAlloy"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="Cu">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#Atom"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="F">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#Atom"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="FRP">
+    <rdfs:subClassOf rdf:resource="#CompoundSubstance"/>
+  </owl:Class>
+  <owl:Class rdf:ID="Monomer">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#Polymer_OrganicCompound"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="Hf">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#Atom"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="#Thermoset">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#Polymer_OrganicCompound"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="#SuperAlloy">
+    <rdfs:subClassOf rdf:resource="#FerrousAlloy"/>
+  </owl:Class>
+  <owl:Class rdf:ID="At">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#Atom"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="AISI8000SeriesSteel">
+    <rdfs:subClassOf rdf:resource="#FerrousAlloy"/>
+  </owl:Class>
+  <owl:Class rdf:ID="V">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#Atom"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="T600SeriesStainlessSteel">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#StainlessSteel"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="Polycarbonate">
+    <rdfs:subClassOf rdf:resource="#Thermoplastic"/>
+  </owl:Class>
+  <owl:Class rdf:ID="Al">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#Atom"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="AluminumAlloy_2000Series">
+    <rdfs:subClassOf rdf:resource="#AluminumAlloy"/>
+  </owl:Class>
+  <owl:Class rdf:ID="Mg">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#Atom"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="CarbonSteel">
+    <rdfs:subClassOf rdf:resource="#FerrousAlloy"/>
+  </owl:Class>
+  <owl:Class rdf:ID="Ac">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#Atom"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="Foams">
+    <rdfs:subClassOf rdf:resource="#CompoundSubstance"/>
+  </owl:Class>
+  <owl:Class rdf:about="#Mixture">
+    <rdfs:subClassOf rdf:resource="#Substance"/>
+  </owl:Class>
+  <owl:Class rdf:ID="InorganicMetalloid">
+    <rdfs:subClassOf rdf:resource="#CompoundSubstance"/>
+  </owl:Class>
+  <owl:Class rdf:ID="Cl">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#Atom"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="Polyurethane-TP">
+    <rdfs:subClassOf rdf:resource="#Thermoplastic"/>
+  </owl:Class>
+  <owl:Class rdf:ID="Ni">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#Atom"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="Pr">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#Atom"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="Polystyrene">
+    <rdfs:subClassOf rdf:resource="#Thermoplastic"/>
+  </owl:Class>
+  <owl:Class rdf:ID="I">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#Atom"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="Sulfide_Chalcogenide">
+    <rdfs:subClassOf rdf:resource="#CompoundSubstance"/>
+  </owl:Class>
+  <owl:Class rdf:ID="Silicone">
+    <rdfs:subClassOf rdf:resource="#Thermoset"/>
+  </owl:Class>
+  <owl:Class rdf:ID="Bronze">
+    <rdfs:subClassOf rdf:resource="#CopperAlloy"/>
+  </owl:Class>
+  <owl:Class rdf:ID="GlassFiber">
+    <rdfs:subClassOf rdf:resource="#CompoundSubstance"/>
+  </owl:Class>
+  <owl:Class rdf:ID="Phenolic">
+    <rdfs:subClassOf rdf:resource="#Thermoset"/>
+  </owl:Class>
+  <owl:Class rdf:ID="Ti">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#Atom"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="Rh">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#Atom"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="CarbonFiber_ThermosetComposite">
+    <rdfs:subClassOf rdf:resource="#Thermoset"/>
+  </owl:Class>
+  <owl:Class rdf:ID="ZincAlloy">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#Non-FerrousAlloy"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="Fm">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#Atom"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="Si">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#Atom"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="Non-MetalicCompound">
+    <rdfs:subClassOf rdf:resource="#CompoundSubstance"/>
+  </owl:Class>
+  <owl:Class rdf:ID="Epoxy">
+    <rdfs:subClassOf rdf:resource="#Thermoset"/>
+  </owl:Class>
+  <owl:Class rdf:ID="Glass-Amorphous">
+    <rdfs:subClassOf rdf:resource="#CompoundSubstance"/>
+  </owl:Class>
+  <owl:Class rdf:ID="AISI9000SeriesSteel">
+    <rdfs:subClassOf rdf:resource="#FerrousAlloy"/>
+  </owl:Class>
+  <owl:Class rdf:ID="Nylon6">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#Nylon"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="Md">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#Atom"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="TitaniumOxide">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#Oxide"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="Cm">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#Atom"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="H">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#Atom"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="Concrete">
+    <rdfs:subClassOf rdf:resource="#CompoundSubstance"/>
+  </owl:Class>
+  <owl:Class rdf:ID="Lr">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#Atom"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="#TitaniumAlloy">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#Non-FerrousAlloy"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="Polyimides_Thioimides">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#Polymer_OrganicCompound"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="Bamboo">
+    <rdfs:subClassOf rdf:resource="#Mixture"/>
+  </owl:Class>
+  <owl:Class rdf:ID="EthyleneAcrylicAcid">
+    <rdfs:subClassOf rdf:resource="#Thermoplastic"/>
+  </owl:Class>
+  <owl:Class rdf:ID="Eu">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#Atom"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="#StainlessSteel">
+    <rdfs:subClassOf rdf:resource="#FerrousAlloy"/>
+  </owl:Class>
+  <owl:Class rdf:ID="T400SeriesStainlessSteel">
+    <rdfs:subClassOf rdf:resource="#StainlessSteel"/>
+  </owl:Class>
+  <owl:Class rdf:ID="ZirconiumOxide">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#Oxide"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="Wood">
+    <rdfs:subClassOf rdf:resource="#Mixture"/>
+  </owl:Class>
+  <owl:Class rdf:ID="Rg">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#Atom"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="ParticulateComposites">
+    <rdfs:subClassOf rdf:resource="#CompoundSubstance"/>
+  </owl:Class>
+  <owl:Class rdf:ID="PolyimidePolymer">
+    <rdfs:subClassOf rdf:resource="#Thermoplastic"/>
+  </owl:Class>
+  <owl:Class rdf:ID="Pt">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#Atom"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="AluminumAlloy_1000Series">
+    <rdfs:subClassOf rdf:resource="#AluminumAlloy"/>
+  </owl:Class>
+  <owl:Class rdf:ID="Polyacrylics">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#Polymer_OrganicCompound"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="BerylliumAlloy">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#Non-FerrousAlloy"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="MDPE">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#Polyethylene"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="ColdWorkSteel">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#ToolSteel"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="Db">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#Atom"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="Hs">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#Atom"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="Ne">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#Atom"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="SolidSolution">
+    <rdfs:subClassOf rdf:resource="#CompoundSubstance"/>
+  </owl:Class>
+  <owl:Class rdf:about="#Nylon">
+    <rdfs:subClassOf rdf:resource="#Thermoplastic"/>
+  </owl:Class>
+  <owl:Class rdf:ID="HighTempCeramicResin">
+    <rdfs:subClassOf rdf:resource="#CompoundSubstance"/>
+  </owl:Class>
+  <owl:Class rdf:ID="K">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#Atom"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="#Polyethylene">
+    <rdfs:subClassOf rdf:resource="#Thermoplastic"/>
+  </owl:Class>
+  <owl:Class rdf:ID="Lu">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#Atom"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="MaragingSteel">
+    <rdfs:subClassOf rdf:resource="#FerrousAlloy"/>
+  </owl:Class>
+  <owl:Class rdf:ID="AlloyCastIron">
+    <rdfs:subClassOf rdf:resource="#FerrousAlloy"/>
+  </owl:Class>
+  <owl:Class rdf:ID="AISI6000SeriesSteel">
+    <rdfs:subClassOf rdf:resource="#FerrousAlloy"/>
+  </owl:Class>
+  <owl:Class rdf:ID="Rf">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#Atom"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="Polyolefines">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#Polymer_OrganicCompound"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="AluminumCastingAlloy">
+    <rdfs:subClassOf rdf:resource="#AluminumAlloy"/>
+  </owl:Class>
+  <owl:Class rdf:ID="Sg">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#Atom"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="NickelAlloy">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#Non-FerrousAlloy"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="Nylon11">
+    <rdfs:subClassOf rdf:resource="#Nylon"/>
+  </owl:Class>
+  <owl:Class rdf:ID="Alpha_BetaTitaniumAlloy">
+    <rdfs:subClassOf rdf:resource="#TitaniumAlloy"/>
+  </owl:Class>
+  <owl:Class rdf:ID="Pu">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#Atom"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="FRM">
+    <rdfs:subClassOf rdf:resource="#CompoundSubstance"/>
+  </owl:Class>
+  <owl:Class rdf:about="#ToolSteel">
+    <rdfs:subClassOf rdf:resource="#FerrousAlloy"/>
+  </owl:Class>
+  <owl:Class rdf:ID="PVDC">
+    <rdfs:subClassOf rdf:resource="#Thermoplastic"/>
+  </owl:Class>
+  <owl:Class rdf:ID="TS20000SeriesStainlessSteel">
+    <rdfs:subClassOf rdf:resource="#StainlessSteel"/>
+  </owl:Class>
+  <owl:Class rdf:ID="Bk">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#Atom"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="Co">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#Atom"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="Tl">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#Atom"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="AISI4000SeriesSteel">
+    <rdfs:subClassOf rdf:resource="#FerrousAlloy"/>
+  </owl:Class>
+  <owl:Class rdf:about="#Non-FerrousAlloy">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#Alloy"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="ABSPolymer">
+    <rdfs:subClassOf rdf:resource="#Thermoplastic"/>
+  </owl:Class>
+  <owl:Class rdf:ID="AdhesivePolymer">
+    <rdfs:subClassOf rdf:resource="#Thermoset"/>
+  </owl:Class>
+  <owl:Class rdf:ID="Mt">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#Atom"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="Re">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#Atom"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="AluminumAlloy_7000Series">
+    <rdfs:subClassOf rdf:resource="#AluminumAlloy"/>
+  </owl:Class>
+  <owl:Class rdf:ID="Ds">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#Atom"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="SiliconOxide">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#Oxide"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="Te">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#Atom"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="Ru">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#Atom"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="ASTMSteel">
+    <rdfs:subClassOf rdf:resource="#FerrousAlloy"/>
+  </owl:Class>
+  <owl:Class rdf:ID="Uup">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#Atom"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="Unalloyed_ModifiedTitanium">
+    <rdfs:subClassOf rdf:resource="#TitaniumAlloy"/>
+  </owl:Class>
+  <owl:Class rdf:ID="Acrylic">
+    <rdfs:subClassOf rdf:resource="#Thermoplastic"/>
+  </owl:Class>
+  <owl:Class rdf:ID="Nylon610">
+    <rdfs:subClassOf rdf:resource="#Nylon"/>
+  </owl:Class>
+  <owl:Class rdf:about="#Oxide">
+    <rdfs:subClassOf rdf:resource="#CompoundSubstance"/>
+  </owl:Class>
+  <owl:Class rdf:ID="Ag">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#Atom"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="Pd">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#Atom"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="Xe">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#Atom"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="Se">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#Atom"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="PolytrimethyleneTerephthalate-PTT">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#Polyester-TP"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="Pm">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#Atom"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="SMAPolymer">
+    <rdfs:subClassOf rdf:resource="#Thermoplastic"/>
+  </owl:Class>
+  <owl:Class rdf:ID="MediumCarbonSteel">
+    <rdfs:subClassOf rdf:resource="#CarbonSteel"/>
+  </owl:Class>
+  <owl:Class rdf:ID="LowAlloySteel">
+    <rdfs:subClassOf rdf:resource="#FerrousAlloy"/>
+  </owl:Class>
+  <owl:Class rdf:ID="Nitride">
+    <rdfs:subClassOf rdf:resource="#CompoundSubstance"/>
+  </owl:Class>
+  <owl:Class rdf:ID="Nd">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#Atom"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="Polyketones_Thioketones">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#Polymer_OrganicCompound"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="Polyanhydrides_Thioanhydrides">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#Polymer_OrganicCompound"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="Elastomer-TS">
+    <rdfs:subClassOf rdf:resource="#Thermoset"/>
+  </owl:Class>
+  <owl:Class rdf:ID="Polyurethane-TS">
+    <rdfs:subClassOf rdf:resource="#Thermoset"/>
+  </owl:Class>
+  <owl:Class rdf:ID="HighCarbonSteel">
+    <rdfs:subClassOf rdf:resource="#CarbonSteel"/>
+  </owl:Class>
+  <owl:Class rdf:ID="Nylon66">
+    <rdfs:subClassOf rdf:resource="#Nylon"/>
+  </owl:Class>
+  <owl:Class rdf:ID="Ceramic_MetallicCoating">
+    <rdfs:subClassOf rdf:resource="#CompoundSubstance"/>
+  </owl:Class>
+  <owl:Class rdf:ID="AISI5000SeriesSteel">
+    <rdfs:subClassOf rdf:resource="#FerrousAlloy"/>
+  </owl:Class>
+  <owl:Class rdf:ID="Kr">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#Atom"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="IronBase">
+    <rdfs:subClassOf rdf:resource="#SuperAlloy"/>
+  </owl:Class>
+  <owl:Class rdf:ID="FibreComposites">
+    <rdfs:subClassOf rdf:resource="#CompoundSubstance"/>
+  </owl:Class>
+  <owl:Class rdf:ID="Nylon12">
+    <rdfs:subClassOf rdf:resource="#Nylon"/>
+  </owl:Class>
+  <owl:Class rdf:ID="PolyhaloOlefins">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#Polymer_OrganicCompound"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="#Alloy">
+    <rdfs:subClassOf rdf:resource="#Mixture"/>
+    <rdfs:subClassOf rdf:resource="#CompoundSubstance"/>
+  </owl:Class>
+  <owl:Class rdf:ID="Zn">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#Atom"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="Uuo">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#Atom"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="#Polymer_OrganicCompound">
+    <rdfs:subClassOf rdf:resource="#CompoundSubstance"/>
+  </owl:Class>
+  <owl:Class rdf:ID="Grass">
+    <rdfs:subClassOf rdf:resource="#Mixture"/>
+  </owl:Class>
+  <owl:Class rdf:ID="SolderAlloy">
+    <rdfs:subClassOf rdf:resource="#Non-FerrousAlloy"/>
+  </owl:Class>
+  <owl:Class rdf:ID="CobaltBase">
+    <rdfs:subClassOf rdf:resource="#SuperAlloy"/>
+  </owl:Class>
+  <owl:Class rdf:ID="Os">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#Atom"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="#Polyester-TP">
+    <rdfs:subClassOf rdf:resource="#Thermoplastic"/>
+  </owl:Class>
+  <owl:Class rdf:ID="Ga">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#Atom"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="Na">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#Atom"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="TS30000SeriesStainlessSteel">
+    <rdfs:subClassOf rdf:resource="#StainlessSteel"/>
+  </owl:Class>
+  <owl:Class rdf:ID="WhiteCastIron">
+    <rdfs:subClassOf rdf:resource="#FerrousAlloy"/>
+  </owl:Class>
+  <owl:Class rdf:ID="O">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#Atom"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="Cr">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#Atom"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="Polyurethanes_Thiourethanes">
+    <rdfs:subClassOf rdf:resource="#Polymer_OrganicCompound"/>
+  </owl:Class>
+  <owl:Class rdf:ID="AmorphousMetal">
+    <rdfs:subClassOf rdf:resource="#CompoundSubstance"/>
+  </owl:Class>
+  <owl:Class rdf:ID="AISI1000SeriesSteel">
+    <rdfs:subClassOf rdf:resource="#FerrousAlloy"/>
+  </owl:Class>
+  <owl:Class rdf:ID="Pb">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#Atom"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="AluminumAlloy_5000Series">
+    <rdfs:subClassOf rdf:resource="#AluminumAlloy"/>
+  </owl:Class>
+  <owl:Class rdf:about="#Atom">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#ElementalSubstance"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="Nylon612">
+    <rdfs:subClassOf rdf:resource="#Nylon"/>
+  </owl:Class>
+  <owl:Class rdf:ID="Sc">
+    <rdfs:subClassOf rdf:resource="#Atom"/>
+  </owl:Class>
+  <owl:Class rdf:ID="DiallylPhthalate-DAP">
+    <rdfs:subClassOf rdf:resource="#Thermoset"/>
+  </owl:Class>
+  <owl:Class rdf:ID="Rubber">
+    <rdfs:subClassOf rdf:resource="#Mixture"/>
+  </owl:Class>
+  <owl:Class rdf:ID="No">
+    <rdfs:subClassOf rdf:resource="#Atom"/>
+  </owl:Class>
+  <owl:Class rdf:ID="Rb">
+    <rdfs:subClassOf rdf:resource="#Atom"/>
+  </owl:Class>
+  <owl:Class rdf:ID="Polyamide-imide">
+    <rdfs:subClassOf rdf:resource="#Thermoplastic"/>
+  </owl:Class>
+  <owl:Class rdf:ID="Polyetherimide">
+    <rdfs:subClassOf rdf:resource="#Thermoplastic"/>
+  </owl:Class>
+  <owl:Class rdf:about="#ElementalSubstance">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#PureSubstance"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="Ho">
+    <rdfs:subClassOf rdf:resource="#Atom"/>
+  </owl:Class>
+  <owl:Class rdf:about="#PureSubstance">
+    <rdfs:subClassOf rdf:resource="#Substance"/>
+  </owl:Class>
+  <owl:Class rdf:ID="Np">
+    <rdfs:subClassOf rdf:resource="#Atom"/>
+  </owl:Class>
+  <owl:Class rdf:ID="Polyimines-Polyamines">
+    <rdfs:subClassOf rdf:resource="#Polymer_OrganicCompound"/>
+  </owl:Class>
+  <owl:Class rdf:ID="PolyetherBlockAmide-PEBA">
+    <rdfs:subClassOf rdf:resource="#Nylon"/>
+  </owl:Class>
+  <owl:Class rdf:ID="Po">
+    <rdfs:subClassOf rdf:resource="#Atom"/>
+  </owl:Class>
+  <owl:Class rdf:ID="Polyethers">
+    <rdfs:subClassOf rdf:resource="#Polymer_OrganicCompound"/>
+  </owl:Class>
+  <owl:Class rdf:ID="Glass">
+    <rdfs:subClassOf rdf:resource="#CompoundSubstance"/>
+  </owl:Class>
+  <owl:Class rdf:ID="La">
+    <rdfs:subClassOf rdf:resource="#Atom"/>
+  </owl:Class>
+  <owl:Class rdf:ID="Polyimide-TS">
+    <rdfs:subClassOf rdf:resource="#Thermoset"/>
+  </owl:Class>
+  <owl:Class rdf:ID="AluminumAlloy_3000Series">
+    <rdfs:subClassOf rdf:resource="#AluminumAlloy"/>
+  </owl:Class>
+  <owl:Class rdf:ID="Er">
+    <rdfs:subClassOf rdf:resource="#Atom"/>
+  </owl:Class>
+  <owl:Class rdf:ID="LowCarbonSteel">
+    <rdfs:subClassOf rdf:resource="#CarbonSteel"/>
+  </owl:Class>
+  <owl:Class rdf:ID="SANPolymer">
+    <rdfs:subClassOf rdf:resource="#Thermoplastic"/>
+  </owl:Class>
+  <owl:Class rdf:ID="Glaze">
+    <rdfs:subClassOf rdf:resource="#Mixture"/>
+  </owl:Class>
+  <owl:Class rdf:ID="Nb">
+    <rdfs:subClassOf rdf:resource="#Atom"/>
+  </owl:Class>
+  <owl:Class rdf:ID="PurgingCompound">
+    <rdfs:subClassOf rdf:resource="#Thermoplastic"/>
+  </owl:Class>
+  <owl:Class rdf:ID="N">
+    <rdfs:subClassOf rdf:resource="#Atom"/>
+  </owl:Class>
+  <owl:Class rdf:ID="Cs">
+    <rdfs:subClassOf rdf:resource="#Atom"/>
+  </owl:Class>
+  <owl:Class rdf:ID="Ir">
+    <rdfs:subClassOf rdf:resource="#Atom"/>
+  </owl:Class>
+  <owl:Class rdf:ID="Polypropylene">
+    <rdfs:subClassOf rdf:resource="#Thermoplastic"/>
+  </owl:Class>
+  <owl:Class rdf:ID="Y">
+    <rdfs:subClassOf rdf:resource="#Atom"/>
+  </owl:Class>
+  <owl:Class rdf:ID="Additive_Filler">
+    <rdfs:subClassOf rdf:resource="#Thermoplastic"/>
+  </owl:Class>
+  <owl:Class rdf:ID="BetaTitaniumAlloy">
+    <rdfs:subClassOf rdf:resource="#TitaniumAlloy"/>
+  </owl:Class>
+  <owl:Class rdf:ID="Ra">
+    <rdfs:subClassOf rdf:resource="#Atom"/>
+  </owl:Class>
+  <owl:Class rdf:ID="HDPE">
+    <rdfs:subClassOf rdf:resource="#Polyethylene"/>
+  </owl:Class>
+  <owl:Class rdf:ID="MagnesiumOxide">
+    <rdfs:subClassOf rdf:resource="#Oxide"/>
+  </owl:Class>
+  <owl:Class rdf:ID="Rock">
+    <rdfs:subClassOf rdf:resource="#Mixture"/>
+  </owl:Class>
+  <owl:Class rdf:ID="DuctileIron">
+    <rdfs:subClassOf rdf:resource="#FerrousAlloy"/>
+  </owl:Class>
+  <owl:Class rdf:ID="Pa">
+    <rdfs:subClassOf rdf:resource="#Atom"/>
+  </owl:Class>
+  <owl:Class rdf:ID="Ca">
+    <rdfs:subClassOf rdf:resource="#Atom"/>
+  </owl:Class>
+  <owl:Class rdf:ID="CompositeCoreMaterial">
+    <rdfs:subClassOf rdf:resource="#CompoundSubstance"/>
+  </owl:Class>
+  <owl:Class rdf:ID="Polyphenylenes">
+    <rdfs:subClassOf rdf:resource="#Polymer_OrganicCompound"/>
+  </owl:Class>
+  <owl:Class rdf:ID="Th">
+    <rdfs:subClassOf rdf:resource="#Atom"/>
+  </owl:Class>
+  <owl:Class rdf:ID="Shell">
+    <rdfs:subClassOf rdf:resource="#Mixture"/>
+  </owl:Class>
+  <owl:Class rdf:ID="Es">
+    <rdfs:subClassOf rdf:resource="#Atom"/>
+  </owl:Class>
+  <owl:Class rdf:ID="Polyketone">
+    <rdfs:subClassOf rdf:resource="#Thermoplastic"/>
+  </owl:Class>
+  <owl:Class rdf:ID="LDPE">
+    <rdfs:subClassOf rdf:resource="#Polyethylene"/>
+  </owl:Class>
+  <owl:Class rdf:ID="Biological">
+    <rdfs:subClassOf rdf:resource="#Mixture"/>
+  </owl:Class>
+  <owl:DatatypeProperty rdf:ID="MinimumContentRatio"/>
+  <owl:DatatypeProperty rdf:ID="State">
+    <rdfs:domain rdf:resource="#Substance"/>
+    <rdfs:range>
+      <owl:DataRange>
+        <owl:oneOf rdf:parseType="Resource">
+          <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+          >Gas</rdf:first>
+          <rdf:rest rdf:parseType="Resource">
+            <rdf:rest rdf:parseType="Resource">
+              <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+              <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+              >Liquid</rdf:first>
+            </rdf:rest>
+            <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+            >Solid</rdf:first>
+          </rdf:rest>
+        </owl:oneOf>
+      </owl:DataRange>
+    </rdfs:range>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:ID="UnitOfRatio">
+    <rdfs:range>
+      <owl:DataRange>
+        <owl:oneOf rdf:parseType="Resource">
+          <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+          >wt%</rdf:first>
+          <rdf:rest rdf:parseType="Resource">
+            <rdf:rest rdf:parseType="Resource">
+              <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+              >mol%</rdf:first>
+              <rdf:rest rdf:parseType="Resource">
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+                >volume%</rdf:first>
+              </rdf:rest>
+            </rdf:rest>
+            <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+            >at%</rdf:first>
+          </rdf:rest>
+        </owl:oneOf>
+      </owl:DataRange>
+    </rdfs:range>
+    <rdfs:domain rdf:resource="#Substance"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:ID="MaximumContentRatio"/>
+  <owl:DatatypeProperty rdf:ID="ContentRatio">
+    <rdfs:domain rdf:resource="#Substance"/>
+  </owl:DatatypeProperty>
+  <Epoxy rdf:ID="epoxy"/>
+  <Carbide rdf:ID="carbide"/>
+  <Nitride rdf:ID="nitride"/>
+  <Ba rdf:ID="ba"/>
+  <PolyphenyleneSulfide rdf:ID="polyphenylene_sulfide"/>
+  <Sg rdf:ID="sg"/>
+  <ABSPolymer rdf:ID="ABS_polymer"/>
+  <Nb rdf:ID="nb"/>
+  <Polyesters_Thioesters rdf:ID="polyesters_thioesters"/>
+  <FibreComposites rdf:ID="fibre_composites"/>
+  <IronBase rdf:ID="iron_base"/>
+  <Cf rdf:ID="cf"/>
+  <Polyamides_Thioamides rdf:ID="polyamides_thioamides"/>
+  <FRM rdf:ID="frm"/>
+  <Rb rdf:ID="rb"/>
+  <Polyvinyls rdf:ID="polyvinyls"/>
+  <Fluoropolymer-TS rdf:ID="fluoropolymer-TS"/>
+  <Cd rdf:ID="cd"/>
+  <TitaniumAlloy rdf:ID="titanium_alloy"/>
+  <W rdf:ID="w"/>
+  <Additive_Filler rdf:ID="additive_filler"/>
+  <Ce rdf:ID="ce"/>
+  <StainlessSteel rdf:ID="stainless_steel"/>
+  <FRP rdf:ID="frp"/>
+  <Ti rdf:ID="ti"/>
+  <SolidSolution rdf:ID="solid_solution"/>
+  <Potting_CastingCeramic rdf:ID="potting_casting_ceramic"/>
+  <Ra rdf:ID="ra"/>
+  <Polyimide-TS rdf:ID="polyimide-TS"/>
+  <Si rdf:ID="si"/>
+  <Uuh rdf:ID="uuh"/>
+  <Zn rdf:ID="zn"/>
+  <Fe rdf:ID="fe"/>
+  <V rdf:ID="v"/>
+  <PolyphenyleneEther_PPO rdf:ID="polyphenylene_ether_PPO"/>
+  <Metal rdf:ID="metal"/>
+  <Th rdf:ID="th"/>
+  <Phosphide_Pnictide rdf:ID="phosphide_pnictide"/>
+  <Ac rdf:ID="ac"/>
+  <NickelBase rdf:ID="nickel_base"/>
+  <Na rdf:ID="na"/>
+  <Monomer rdf:ID="monomer"/>
+  <Shell rdf:ID="shell"/>
+  <Rock rdf:ID="rock"/>
+  <U rdf:ID="u"/>
+  <IntermetallicCompound rdf:ID="intermetallic_compound"/>
+  <ParticulateComposites rdf:ID="particulate_composites"/>
+  <Polyamide-imide rdf:ID="polyamide-imide"/>
+  <Polyurethanes_Thiourethanes rdf:ID="polyurethanes_thiourethanes"/>
+  <Nylon11 rdf:ID="nylon11"/>
+  <Polyacrylics rdf:ID="polyacrylics"/>
+  <Nylon610 rdf:ID="nylon610"/>
+  <ZirconiumOxide rdf:ID="zirconium_oxide"/>
+  <Air-HardeningSteel rdf:ID="air-hardening_steel"/>
+  <Uub rdf:ID="uub"/>
+  <OrganicMetalloid rdf:ID="organic_metalloid"/>
+  <AluminumAlloy_3000Series rdf:ID="aluminum_alloy_3000_series"/>
+  <Rg rdf:ID="rg"/>
+  <Polyetherimide rdf:ID="polyetherimide"/>
+  <GrayCastIron rdf:ID="gray_castIron"/>
+  <WhiteCastIron rdf:ID="white_cast_iron"/>
+  <Sc rdf:ID="sc"/>
+  <Nylon12 rdf:ID="nylon12"/>
+  <Non-FerrousAlloy rdf:ID="non-ferrous_alloy"/>
+  <Db rdf:ID="db"/>
+  <CompositeCoreMaterial rdf:ID="composite_core_material"/>
+  <Rf rdf:ID="rf"/>
+  <Sb rdf:ID="sb"/>
+  <S rdf:ID="s"/>
+  <Be rdf:ID="be"/>
+  <Se rdf:ID="se"/>
+  <Nylon612 rdf:ID="nylon612"/>
+  <Nd rdf:ID="nd"/>
+  <Md rdf:ID="md"/>
+  <Mixture rdf:ID="mixture"/>
+  <FerrousAlloy rdf:ID="ferrous_alloy"/>
+  <Re rdf:ID="re"/>
+  <Ge rdf:ID="ge"/>
+  <Te rdf:ID="te"/>
+  <ASTMSteel rdf:ID="ASTM_steel"/>
+  <Pd rdf:ID="pd"/>
+  <T600SeriesStainlessSteel rdf:ID="T600_series_stainless_steel"/>
+  <Bh rdf:ID="bh"/>
+  <Copolymer rdf:ID="copolymer"/>
+  <Ne rdf:ID="ne"/>
+  <Alpha_NearAlphaTitaniumAlloy rdf:ID="alpha_near_alpha_titanium_alloy"/>
+  <MetalMatrixComposite rdf:ID="metal_matrix_composite"/>
+  <Gd rdf:ID="gd"/>
+  <AdhesivePolymer rdf:ID="adhesive_polymer"/>
+  <Fluoropolymer rdf:ID="fluoropolymer"/>
+  <Paper rdf:ID="paper"/>
+  <Ionomer rdf:ID="ionomer"/>
+  <P rdf:ID="p"/>
+  <Lu rdf:ID="lu"/>
+  <Pb rdf:ID="pb"/>
+  <Polyurethane-TP rdf:ID="polyurethane-TP"/>
+  <SolderAlloy rdf:ID="solder_alloy"/>
+  <Xe rdf:ID="xe"/>
+  <TS20000SeriesStainlessSteel rdf:ID="TS20000_series_stainless_steel"/>
+  <Hf rdf:ID="hf"/>
+  <T400SeriesStainlessSteel rdf:ID="T400_series_stainless_steel"/>
+  <LowAlloySteel rdf:ID="low_alloy_steel"/>
+  <PrecipitationHardeningStainless rdf:ID="precipitation_hardening_stainless"/>
+  <SMAPolymer rdf:ID="SMA_polymer"/>
+  <T300SeriesStainlessSteel rdf:ID="T300_series_stainless_steel"/>
+  <Bi rdf:ID="bi"/>
+  <Cm rdf:ID="cm"/>
+  <EthyleneVinylAcetate rdf:ID="ethylene_vinyl_acetate"/>
+  <AluminumAlloy rdf:ID="aluminum_alloy"/>
+  <Non-MetalicCompound rdf:ID="non-metalic_compound"/>
+  <Hg rdf:ID="hg"/>
+  <Sn rdf:ID="sn"/>
+  <Cu rdf:ID="cu"/>
+  <Cellulosic rdf:ID="cellulosic"/>
+  <O rdf:ID="o"/>
+  <Polyester-TS rdf:ID="polyester-TS"/>
+  <Am rdf:ID="am"/>
+  <Uuo rdf:ID="uuo"/>
+  <CopperAlloy rdf:ID="copper_alloy"/>
+  <Uup rdf:ID="uup"/>
+  <Yb rdf:ID="yb"/>
+  <Cl rdf:ID="cl"/>
+  <Ga rdf:ID="ga"/>
+  <Polyethers rdf:ID="polyethers"/>
+  <SANPolymer rdf:ID="SAN_polymer"/>
+  <Boride rdf:ID="boride"/>
+  <AISI9000SeriesSteel rdf:ID="AISI9000_series_steel"/>
+  <N rdf:ID="n"/>
+  <Al rdf:ID="al"/>
+  <Uuq rdf:ID="uuq"/>
+  <ToolSteel rdf:ID="tool_steel"/>
+  <Elastomer-TS rdf:ID="elastomer-TS"/>
+  <Polyurethane-TS rdf:ID="polyurethane-TS"/>
+  <Kr rdf:ID="kr"/>
+  <Bk rdf:ID="bk"/>
+  <Cs rdf:ID="cs"/>
+  <Rh rdf:ID="rh"/>
+  <He rdf:ID="he"/>
+  <Polydienes rdf:ID="polydienes"/>
+  <Pa rdf:ID="pa"/>
+  <Bronze rdf:ID="bronze"/>
+  <Oxide rdf:ID="oxide"/>
+  <CobaltBase rdf:ID="cobalt_base"/>
+  <Acetal rdf:ID="acetal"/>
+  <Polystyrene rdf:ID="polystyrene"/>
+  <HighCarbonSteel rdf:ID="high_carbon_steel"/>
+  <Electronic_MagneticAlloy rdf:ID="electronic_magnetic_alloy"/>
+  <Nylon46 rdf:ID="nylon46"/>
+  <Cr rdf:ID="cr"/>
+  <MagnesiumOxide rdf:ID="magnesium_oxide"/>
+  <Silicone rdf:ID="silicone"/>
+  <Semiconductor rdf:ID="semiconductor"/>
+  <CompositeFibers rdf:ID="composite_fibers"/>
+  <Brass rdf:ID="brass"/>
+  <CarbonFiber_ThermosetComposite rdf:ID="carbon_fiber_thermoset_composite"/>
+  <Bamboo rdf:ID="bamboo"/>
+  <Rn rdf:ID="rn"/>
+  <AlloyCastIron rdf:ID="alloy_castIron"/>
+  <AmorphousMetal rdf:ID="amorphous_metal"/>
+  <K rdf:ID="k"/>
+  <Dy rdf:ID="dy"/>
+  <PolyimidePolymer rdf:ID="polyimide_polymer"/>
+  <Cyanoacrylate rdf:ID="cyanoacrylate"/>
+  <Tm rdf:ID="tm"/>
+  <AISI8000SeriesSteel rdf:ID="AISI8000_series_steel"/>
+  <Sm rdf:ID="sm"/>
+  <MaragingSteel rdf:ID="maraging_steel"/>
+  <AISI4000SeriesSteel rdf:ID="AISI4000_series_steel"/>
+  <Thermoset rdf:ID="thermoset"/>
+  <Co rdf:ID="co"/>
+  <HDPE rdf:ID="hdpe"/>
+  <Vinyl rdf:ID="vinyl"/>
+  <I rdf:ID="i"/>
+  <In rdf:ID="in"/>
+  <Ag rdf:ID="ag"/>
+  <SiliconOxide rdf:ID="silicon_oxide"/>
+  <Halide rdf:ID="halide"/>
+  <Styrene-Butadiene rdf:ID="styrene-butadiene"/>
+  <AluminumAlloy_6000Series rdf:ID="aluminum_alloy_6000_series"/>
+  <Tl rdf:ID="tl"/>
+  <AluminumCastingAlloy rdf:ID="aluminum_casting_alloy"/>
+  <Unalloyed_ModifiedTitanium rdf:ID="unalloyed_modified_titanium"/>
+  <PolyetherBlockAmide-PEBA rdf:ID="polyether_block_amide-PEBA"/>
+  <Glaze rdf:ID="glaze"/>
+  <LowCarbonSteel rdf:ID="low_carbon_steel"/>
+  <Ru rdf:ID="ru"/>
+  <Ho rdf:ID="ho"/>
+  <AluminumAlloy_5000Series rdf:ID="aluminum_alloy_5000_series"/>
+  <TS30000SeriesStainlessSteel rdf:ID="TS30000_series_stainless_steel"/>
+  <Polyimines-Polyamines rdf:ID="polyimines-polyamines"/>
+  <H rdf:ID="h"/>
+  <Nylon6 rdf:ID="nylon6"/>
+  <Thermoplastic rdf:ID="thermoplastic"/>
+  <OtherWroughtAlAlloy rdf:ID="other_wrought_Al_alloy"/>
+  <Clay rdf:ID="clay"/>
+  <Sulfide_Chalcogenide rdf:ID="sulfide_chalcogenide"/>
+  <Pm rdf:ID="pm"/>
+  <TitaniumOxide rdf:ID="titanium_oxide"/>
+  <Polyanhydrides_Thioanhydrides rdf:ID="polyanhydrides_thioanhydrides"/>
+  <ColdWorkSteel rdf:ID="cold_work_steel"/>
+  <PolybutyleneTerephthalate-PBT rdf:ID="polybutylene_terephthalate-PBT"/>
+  <Ir rdf:ID="ir"/>
+  <Polyarylamide rdf:ID="polyarylamide"/>
+  <AluminumAlloy_1000Series rdf:ID="aluminum_alloy_1000_series"/>
+  <AluminumOxide rdf:ID="aluminum_oxide"/>
+  <Concrete rdf:ID="concrete"/>
+  <DiallylPhthalate-DAP rdf:ID="diallyl_phthalate-DAP"/>
+  <F rdf:ID="f"/>
+  <Mn rdf:ID="mn"/>
+  <Alpha_BetaTitaniumAlloy rdf:ID="alpha_beta_titanium_alloy"/>
+  <MediumCarbonSteel rdf:ID="medium_carbon_steel"/>
+  <Er rdf:ID="er"/>
+  <Br rdf:ID="br"/>
+  <Ar rdf:ID="ar"/>
+  <Homopolymer rdf:ID="homopolymer"/>
+  <Mo rdf:ID="mo"/>
+  <Po rdf:ID="po"/>
+  <Polystyrenes rdf:ID="polystyrenes"/>
+  <TungstenAlloy rdf:ID="tungsten_alloy"/>
+  <C rdf:ID="c"/>
+  <As rdf:ID="as"/>
+  <Nylon rdf:ID="nylon"/>
+  <Ds rdf:ID="ds"/>
+  <MachinableCeramic rdf:ID="machinable_ceramic"/>
+  <Ceramic_MetallicCoating rdf:ID="ceramic_metallic_coating"/>
+  <GlassFiber rdf:ID="glass_fiber"/>
+  <HighTempCeramicResin rdf:ID="high_temp_ceramic_resin"/>
+  <Lr rdf:ID="lr"/>
+  <Uus rdf:ID="uus"/>
+  <Polyphenylenes rdf:ID="polyphenylenes"/>
+  <Es rdf:ID="es"/>
+  <Nylon66 rdf:ID="nylon66"/>
+  <Hs rdf:ID="hs"/>
+  <At rdf:ID="at"/>
+  <Polyester-TP rdf:ID="polyester-TP"/>
+  <MDPE rdf:ID="mdpe"/>
+  <Pr rdf:ID="pr"/>
+  <SuperAlloy rdf:ID="super_alloy"/>
+  <PolyethyleneTerephthalate-PET rdf:ID="polyethylene_terephthalate-PET"/>
+  <Polysulfone rdf:ID="polysulfone"/>
+  <Polycarbonate rdf:ID="polycarbonate"/>
+  <MagnesiumAlloy rdf:ID="magnesium_alloy"/>
+  <Polymer_OrganicCompound rdf:ID="polymer_organic_compound"/>
+  <Foams rdf:ID="foams"/>
+  <BetaTitaniumAlloy rdf:ID="beta_titanium_alloy"/>
+  <Cork rdf:ID="cork"/>
+  <Polycarbonates_Thiocarbonates rdf:ID="polycarbonates_thiocarbonates"/>
+  <Sr rdf:ID="sr"/>
+  <Polyethersulfone rdf:ID="polyethersulfone"/>
+  <Polyethylene rdf:ID="polyethylene"/>
+  <Au rdf:ID="au"/>
+  <Mt rdf:ID="mt"/>
+  <Eu rdf:ID="eu"/>
+  <AluminumAlloy_2000Series rdf:ID="aluminum_alloy_2000_series"/>
+  <EthyleneMethylAcrylate rdf:ID="ethylene_methyl_acrylate"/>
+  <AISI5000SeriesSteel rdf:ID="AISI5000_series_steel"/>
+  <Pt rdf:ID="pt"/>
+  <Grass rdf:ID="grass"/>
+  <Fr rdf:ID="fr"/>
+  <B rdf:ID="b"/>
+  <Os rdf:ID="os"/>
+  <GlassCeramic rdf:ID="glass_ceramic"/>
+  <LLDPE rdf:ID="lldpe"/>
+  <Polysulfides rdf:ID="polysulfides"/>
+  <Uut rdf:ID="uut"/>
+  <Glass-Amorphous rdf:ID="glass-amorphous"/>
+  <Phenolic rdf:ID="phenolic"/>
+  <Polyolefines rdf:ID="polyolefines"/>
+  <Tb rdf:ID="tb"/>
+  <BerylliumAlloy rdf:ID="beryllium_alloy"/>
+  <La rdf:ID="la"/>
+  <Pu rdf:ID="pu"/>
+  <LDPE rdf:ID="ldpe"/>
+  <TS10000SeriesStainlessSteel rdf:ID="TS10000_series_stainless_steel"/>
+  <ZincAlloy rdf:ID="zinc_alloy"/>
+  <Tc rdf:ID="tc"/>
+  <PurgingCompound rdf:ID="purging_compound"/>
+  <Polyureas_Thioureas rdf:ID="polyureas_thioureas"/>
+  <ASAPolymer rdf:ID="ASA_polymer"/>
+  <LiquidCrystalPolymer-LCP rdf:ID="liquid_crystal_polymer-LCP"/>
+  <No rdf:ID="no"/>
+  <NickelAlloy rdf:ID="nickel_alloy"/>
+  <Mg rdf:ID="mg"/>
+  <Polysiloxanes-Polysilanes rdf:ID="polysiloxanes-polysilanes"/>
+  <Np rdf:ID="np"/>
+  <PolyhaloOlefins rdf:ID="polyhalo_olefins"/>
+  <Fm rdf:ID="fm"/>
+  <AluminumAlloy_7000Series rdf:ID="aluminum_alloy_7000_series"/>
+  <Polypropylene rdf:ID="polypropylene"/>
+  <Ta rdf:ID="ta"/>
+  <Glass rdf:ID="glass"/>
+  <Elastomer_TPE rdf:ID="elastomer_TPE"/>
+  <Polyphthalamide rdf:ID="polyphthalamide"/>
+  <Polyketones_Thioketones rdf:ID="polyketones_thioketones"/>
+  <PVDC rdf:ID="pvdc"/>
+  <Ni rdf:ID="ni"/>
+  <Acrylic rdf:ID="acrylic"/>
+  <Y rdf:ID="y"/>
+  <TS40000SeriesStainlessSteel rdf:ID="TS40000_series_stainless_steel"/>
+  <Li rdf:ID="li"/>
+  <PolytrimethyleneTerephthalate-PTT rdf:ID="polytrimethylene_terephthalate-PTT"/>
+  <DuctileIron rdf:ID="ductileIron"/>
+  <Biological rdf:ID="biological"/>
+  <AISI1000SeriesSteel rdf:ID="AISI1000_series_steel"/>
+  <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#Thing">
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    ></rdfs:comment>
+  </rdf:Description>
+  <AISI6000SeriesSteel rdf:ID="AISI6000_series_steel"/>
+  <Ca rdf:ID="ca"/>
+  <AluminumAlloy_4000Series rdf:ID="aluminum_alloy_4000_series"/>
+  <EthyleneVinylAlcohol rdf:ID="ethylene_vinyl_alcohol"/>
+  <MalleableIron rdf:ID="malleableIron"/>
+  <EthyleneAcrylicAcid rdf:ID="ethylene_acrylic_acid"/>
+  <InorganicMetalloid rdf:ID="inorganic_metalloid"/>
+  <Polysulfones_Sulfoxides_Sulfonates_Suloamides rdf:ID="polysulfones_sulfoxides_sulfonates_suloamides"/>
+  <Polyimides_Thioimides rdf:ID="polyimides_thioimides"/>
+  <Wood rdf:ID="wood"/>
+  <CarbonSteel rdf:ID="carbon_steel"/>
+  <Polyketone rdf:ID="polyketone"/>
+  <Rubber rdf:ID="rubber"/>
+  <Zr rdf:ID="zr"/>
+</rdf:RDF>
+
+<!-- Created with Protege (with OWL Plugin 3.2.1, Build 365)  http://protege.stanford.edu -->

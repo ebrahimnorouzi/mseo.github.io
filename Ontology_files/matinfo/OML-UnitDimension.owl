@@ -1,0 +1,338 @@
+<?xml version="1.0"?>
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns="http://codata.jp/OML-UnitDimension.owl#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+  xml:base="http://codata.jp/OML-UnitDimension.owl">
+  <owl:Ontology rdf:about="">
+    <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    ></owl:versionInfo>
+  </owl:Ontology>
+  <owl:Class rdf:ID="Pressure">
+    <rdfs:subClassOf>
+      <owl:Class rdf:ID="Base"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="Time">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#Base"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="VolumeFlow">
+    <rdfs:subClassOf>
+      <owl:Class rdf:ID="Compound"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="Exposure">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#Compound"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="Mass">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#Base"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="MolarEntropy">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#Compound"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="Area">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#Compound"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="Energy">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#Base"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="Power">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#Base"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="LinearMassDensity">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#Compound"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="DynamicViscosity">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#Compound"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="LuminousIntensity">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#Base"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="ElectricInductance">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#Base"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="ThermalConductivity">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#Compound"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="MomentOfForce">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#Compound"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="ElectricCharge">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#Base"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="UnitDimension"/>
+  <owl:Class rdf:ID="RadiantIntenstiy">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#Compound"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="MagneticFlux">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#Base"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="ThermodynamicTemperature">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#Base"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="CGS_units">
+    <rdfs:subClassOf>
+      <owl:Class rdf:ID="UnitSystem"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="Action">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#Compound"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="AmountOfSubstance">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#Base"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="Permeability">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#Compound"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="MagneticFluxDensity">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#Base"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="Permittivity">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#Compound"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="AmountOfInformation">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#Base"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="SpecificEnergy">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#Compound"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="Force">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#Base"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="ElectricChargeDensity">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#Compound"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="PowerDensity">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#Compound"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="SurfaceTension">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#Compound"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="CurrentDensity">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#Compound"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="MolarHeatCapacity">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#Compound"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="SpecificHeatCapacity">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#Compound"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="MassDensity">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#Compound"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="Luminance">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#Compound"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="Illuminance">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#Base"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="#Base">
+    <rdfs:subClassOf rdf:resource="#UnitDimension"/>
+  </owl:Class>
+  <owl:Class rdf:ID="MolarEnergy">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#Compound"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="AngularSpeed">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#Compound"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="PlaneAngle">
+    <rdfs:subClassOf rdf:resource="#Base"/>
+  </owl:Class>
+  <owl:Class rdf:ID="Volume">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#Compound"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="LuminousFlux">
+    <rdfs:subClassOf rdf:resource="#Base"/>
+  </owl:Class>
+  <owl:Class rdf:ID="LinearFrequency">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#Compound"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="ElectricPotentialDifference">
+    <rdfs:subClassOf rdf:resource="#Base"/>
+  </owl:Class>
+  <owl:Class rdf:ID="KinematicViscosity">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#Compound"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="SurfaceEnergyDensity">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#Compound"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="Frequency">
+    <rdfs:subClassOf rdf:resource="#Base"/>
+  </owl:Class>
+  <owl:Class rdf:about="#Compound">
+    <rdfs:subClassOf rdf:resource="#UnitDimension"/>
+  </owl:Class>
+  <owl:Class rdf:ID="ElectricFluxDensity">
+    <rdfs:subClassOf rdf:resource="#Compound"/>
+  </owl:Class>
+  <owl:Class rdf:ID="ElectricFieldStrength">
+    <rdfs:subClassOf rdf:resource="#Compound"/>
+  </owl:Class>
+  <owl:Class rdf:ID="Concentration">
+    <rdfs:subClassOf rdf:resource="#Compound"/>
+  </owl:Class>
+  <owl:Class rdf:ID="Radiance">
+    <rdfs:subClassOf rdf:resource="#Compound"/>
+  </owl:Class>
+  <owl:Class rdf:ID="Speed">
+    <rdfs:subClassOf rdf:resource="#Compound"/>
+  </owl:Class>
+  <owl:Class rdf:ID="SurfacePowerDensity">
+    <rdfs:subClassOf rdf:resource="#Compound"/>
+  </owl:Class>
+  <owl:Class rdf:ID="EnergyDensity">
+    <rdfs:subClassOf rdf:resource="#Compound"/>
+  </owl:Class>
+  <owl:Class rdf:ID="SpecificEntropy">
+    <rdfs:subClassOf rdf:resource="#Compound"/>
+  </owl:Class>
+  <owl:Class rdf:ID="WaveNumber">
+    <rdfs:subClassOf rdf:resource="#Compound"/>
+  </owl:Class>
+  <owl:Class rdf:ID="ElectricResistance">
+    <rdfs:subClassOf rdf:resource="#Base"/>
+  </owl:Class>
+  <owl:Class rdf:ID="Irradiance">
+    <rdfs:subClassOf rdf:resource="#Compound"/>
+  </owl:Class>
+  <owl:Class rdf:ID="SolidAngle">
+    <rdfs:subClassOf rdf:resource="#Base"/>
+  </owl:Class>
+  <owl:Class rdf:ID="HeatFluxDensity">
+    <rdfs:subClassOf rdf:resource="#Compound"/>
+  </owl:Class>
+  <owl:Class rdf:ID="ElectricCapacitance">
+    <rdfs:subClassOf rdf:resource="#Base"/>
+  </owl:Class>
+  <owl:Class rdf:ID="AbsorbedDoseRate">
+    <rdfs:subClassOf rdf:resource="#Compound"/>
+  </owl:Class>
+  <owl:Class rdf:ID="Entropy">
+    <rdfs:subClassOf rdf:resource="#Compound"/>
+  </owl:Class>
+  <owl:Class rdf:ID="MagneticFieldStrength">
+    <rdfs:subClassOf rdf:resource="#Compound"/>
+  </owl:Class>
+  <owl:Class rdf:ID="HeatCapacity">
+    <rdfs:subClassOf rdf:resource="#Compound"/>
+  </owl:Class>
+  <owl:Class rdf:ID="SI_units">
+    <rdfs:subClassOf rdf:resource="#UnitSystem"/>
+  </owl:Class>
+  <owl:Class rdf:ID="SpecificVolume">
+    <rdfs:subClassOf rdf:resource="#Compound"/>
+  </owl:Class>
+  <owl:Class rdf:ID="AngularAcceleration">
+    <rdfs:subClassOf rdf:resource="#Compound"/>
+  </owl:Class>
+  <owl:Class rdf:ID="ElectricCurrent">
+    <rdfs:subClassOf rdf:resource="#Base"/>
+  </owl:Class>
+  <owl:Class rdf:ID="Momentum">
+    <rdfs:subClassOf rdf:resource="#Compound"/>
+  </owl:Class>
+  <owl:Class rdf:ID="Acceleration">
+    <rdfs:subClassOf rdf:resource="#Compound"/>
+  </owl:Class>
+  <owl:Class rdf:ID="ElectricConductance">
+    <rdfs:subClassOf rdf:resource="#Base"/>
+  </owl:Class>
+  <owl:Class rdf:ID="Length">
+    <rdfs:subClassOf rdf:resource="#Base"/>
+  </owl:Class>
+  <owl:Class rdf:ID="MomentOfInertia">
+    <rdfs:subClassOf rdf:resource="#Compound"/>
+  </owl:Class>
+  <Time rdf:ID="AmountOfTime"/>
+  <ThermalConductivity rdf:ID="Thermal_Conductivity"/>
+  <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#Thing">
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    ></rdfs:comment>
+  </rdf:Description>
+  <SI_units rdf:ID="SI"/>
+  <ThermodynamicTemperature rdf:ID="Temperature"/>
+</rdf:RDF>
+
+<!-- Created with Protege (with OWL Plugin 3.2.1, Build 365)  http://protege.stanford.edu -->
