@@ -295,6 +295,10 @@ ontologies:
       homepage: https://matportal.org/ontologies/BUILDMAT
       preferredPrefix: bmo
       mirror_from: https://raw.githubusercontent.com/ebrahimnorouzi/mseo.github.io/master/Ontology_files/BuildingMaterials.ttl
+    - id: ontorule
+      description: Quality control system for galvanizing process of the coilcoils, defects, phenomena
+      preferredPrefix: ontorule
+      mirror_from: https://raw.githubusercontent.com/ebrahimnorouzi/mseo.github.io/master/Ontology_files/ONTORULEsteel.ttl
     - id: SAREF
       description: An Ontology for the Materials Design Domain 
       homepage: https://labs.etsi.org/rep/saref/saref-core/-/tree/develop-v3.1.1
@@ -378,7 +382,7 @@ ontologies:
       description: units, quantities, measurements, and dimensions
       homepage: https://www.omgwiki.org/OMGSysML/doku.php?id=sysml-qudv:quantities_units_dimensions_values_qudv
       preferredPrefix: qudv
-      mirror_from: https://www.omgwiki.org/OMGSysML/lib/exe/fetch.php?media=sysml-qudv:qudv-owl:sysml-qudv.owl
+      mirror_from: https://raw.githubusercontent.com/ebrahimnorouzi/mseo.github.io/master/Ontology_files/sysml-qudv.owl
     - id: mvc
       description: described using W3C RDF Schema and the Web Ontology Language to satisfy the requirements of the STREAM project
       homepage: https://github.com/stream-project/ontology

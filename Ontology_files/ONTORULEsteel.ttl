@@ -1,0 +1,1571 @@
+@prefix : <http://ontorule-project.eu/resources/steel#> .
+@prefix i: <http://niem.gov/niem/appinfo/2.0#> .
+@prefix j: <http://niem.gov/niem/domains/jxdm/4.0#> .
+@prefix o: <http://omeka.org/s/vocabs/o#> .
+@prefix s: <http://niem.gov/niem/structures/2.0#> .
+@prefix ba: <http://www.ics.forth.gr/isl/CRMba/> .
+@prefix bb: <https://blackbowl.uni.com/ns/> .
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix cd: <http://www.recshop.fake/cd#> .
+@prefix cl: <http://purl.obolibrary.org/obo/cl#> .
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix ex: <http://semantics.id/ns/example#> .
+@prefix fx: <http://sparql.xyz/facade-x/ns/> .
+@prefix gf: <http://www.gra.fo/schema/untitled-ekg#> .
+@prefix gn: <http://www.geonames.org/ontology#> .
+@prefix go: <http://purl.obolibrary.org/obo/go#> .
+@prefix gr: <http://purl.org/goodrelations/v1#> .
+@prefix hp: <http://purl.obolibrary.org/obo/hp#> .
+@prefix id: <https://gameinc.com/> .
+@prefix l0: <https://w3id.org/italia/onto/l0/> .
+@prefix mu: <https://w3id.org/italia/onto/MU/> .
+@prefix mv: <http://schema.mobivoc.org/> .
+@prefix nc: <http://niem.gov/niem/niem-core/2.0#> .
+@prefix ns: <http://caminosSantiago.org/ontology/> .
+@prefix pr: <http://purl.obolibrary.org/obo/pr#> .
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix si: <https://www.w3schools.com/rdf/> .
+@prefix sm: <http://www.omg.org/techprocess/ab/SpecificationMetadata/> .
+@prefix sp: <http://spinrdf.org/sp#> .
+@prefix sw: <http://www.kunsan.ac.kr/sw/> .
+@prefix ts: <http://www.yso.fi/onto/tervesuomi-schema/> .
+@prefix tx: <http://dps.state.tx.us/niem/extensions/1.0#> .
+@prefix ub: <http://swat.cse.lehigh.edu/onto/univ-bench.owl##> .
+@prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+@prefix xi: <http://www.w3.org/2001/XInclude> .
+@prefix abc: <http://metadata.net/harmony/abc#> .
+@prefix ace: <http://attempto.ifi.uzh.ch/ace#> .
+@prefix bgn: <http://data.biographynet.nl/rdf/> .
+@prefix cdt: <http://w3id.org/lindt/custom_datatypes#> .
+@prefix cim: <http://iec.ch/TC57/2010/CIM-schema-cim15#> .
+@prefix cl1: <http://purl.obolibrary.org/obo/cl#3> .
+@prefix cl2: <http://purl.obolibrary.org/obo/cl#2> .
+@prefix cl3: <http://purl.obolibrary.org/obo/cl#1> .
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix dba: <https://w3id.org/dba/ontology/> .
+@prefix dbo: <http://dbpedia.org/ontology/> .
+@prefix dbp: <http://dbpedia.org> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix dpa: <http://ontologie.politie.nl/def/dpm-autorisation#> .
+@prefix dpm: <http://ontologie.politie.nl/def/dpm-core#> .
+@prefix dpt: <http://ontologie.politie.nl/def/dpm-template#> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix efo: <http://www.ebi.ac.uk/efo/> .
+@prefix ftn: <http://www.ftnydro.com/CIM15/2010/extension#> .
+@prefix fun: <http://w3id.org/sparql-generate/fn/> .
+@prefix geo: <http://rdf.geospecies.org/ont/geospecies#> .
+@prefix ggg: <http://www.semanticweb.org/admin/ontologies/2022/4/MKTaxonomy/> .
+@prefix inf: <http://www.ics.forth.gr/isl/CRMinf/> .
+@prefix j.0: <http://lca.jrc.it/ILCD/Common_Data_Types#> .
+@prefix j.1: <http://www.w3.org/XML/1998/namespace#> .
+@prefix naf: <http://id.insee.fr/codes/nafr2/> .
+@prefix nmo: <http://nomisma.org/ontology#> .
+@prefix ns0: <#> .
+@prefix ns1: <http://example.com/nodetypes/2012/04/24/vehicle/> .
+@prefix ns2: <http://www.semanticweb.org/ing/ontologies/2022/11/recommenderSerie#> .
+@prefix ns4: <http://bio2rdf.org/bio2rdf_vocabulary:> .
+@prefix obo: <http://www.geneontology.org/formats/oboInOwl#http://purl.obolibrary.org/obo/> .
+@prefix ocs: <https://w3id.org/ocs/ont/> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pav: <http://purl.org/pav/> .
+@prefix pfn: <https://polifonia-project.eu/resource/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix sci: <http://www.ics.forth.gr/isl/CRMsci/> .
+@prefix shi: <http://example.org/shippingCompany#> .
+@prefix ssn: <http://www.w3.org/ns/ssn/> .
+@prefix top: <https://w3id.org/italia/env/onto/top/> .
+@prefix ukm: <http://www.maranatha.edu/resources/ontologies/2023/0/ukm#> .
+@prefix vin: <http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#> .
+@prefix www: <http://www.EconomicField.com#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix xsi: <http://www.w3.org/2001/XMLSchema-instance> .
+@prefix xsp: <http://www.owl-ontologies.com/2005/08/07/xsp.owl#> .
+@prefix xyz: <http://sparql.xyz/facade-x/data/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+@prefix base: <http://www.semanticweb.org/lg/ontologies/2023/0/untitled-ontology-8#> .
+@prefix bspo: <http://purl.obolibrary.org/obo/bspo#> .
+@prefix cito: <http://purl.org/spar/cito/> .
+@prefix core: <http://purl.obolibrary.org/obo/uberon/core#> .
+@prefix daml: <http://www.daml.org/2001/03/daml+oil#> .
+@prefix dasp: <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix eafp: <https://data.microcosm.systems/ns/eafp> .
+@prefix ecrm: <http://erlangen-crm.org/current/> .
+@prefix emmo: <http://emmo.info/emmo#> .
+@prefix evoc: <http://eurovoc.europa.eu/schema#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix food: <http://www.w3.org/TR/2003/PR-owl-guide-20031209/food#> .
+@prefix iepd: <http://dps.state.tx.us/niem/exchange/bookingReport/1.0#> .
+@prefix isbd: <http://iflastandards.info/ns/isbd/elements/> .
+@prefix item: <https://gameinc.com/ns/item#> .
+@prefix iter: <http://w3id.org/sparql-generate/iter/> .
+@prefix juso: <http://rdfs.co/juso/kr/> .
+@prefix km4c: <http://www.disit.org/km4city/> .
+@prefix main: <http://schema.geolink.org/1.0/base/main#> .
+@prefix meta: <https://ontology.okp4.space/metadata/dataset/> .
+@prefix obda: <https://w3id.org/obda/vocabulary#> .
+@prefix obo1: <http://purl.obolibrary.org/obo/> .
+@prefix obo2: <http://purl.obolibrary.org/obo#> .
+@prefix ocss: <https://w3id.org/ocs/schema#> .
+@prefix opla: <http://ontologydesignpatterns.org/opla#> .
+@prefix pato: <http://purl.obolibrary.org/obo/pato#> .
+@prefix pext: <http://www.ontotext.com/proton/protonext.html#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix sosa: <http://www.w3.org/ns/sosa/> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix swrl: <http://www.w3.org/2003/11/swrl#> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix unit: <http://qudt.org/vocab/unit#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix voaf: <http://purl.org/vocommons/voaf#> .
+@prefix void: <http://rdfs.org/ns/void#> .
+@prefix xkos: <http://rdf-vocabulary.ddialliance.org/xkos#> .
+@prefix admin: <http://webns.net/mvcb/> .
+@prefix align: <http://knowledgeweb.semanticweb.org/heterogeneity/alignment#> .
+@prefix arsol: <http://arsol.univ-tours.fr/4DACTION/WFICHEWEB/> .
+@prefix books: <http://www.uni.lodz.pl/st/books/> .
+@prefix chebi: <http://purl.obolibrary.org/obo/chebi/> .
+@prefix class: <https://www.asociadrid.es/ontology/class#> .
+@prefix crmba: <http://www.ics.forth.gr/isl/CRMba/> .
+@prefix dtype: <http://www.srdc.com.tr/ontmalizer#> .
+@prefix idref: <https://www.idref.fr/> .
+@prefix insee: <http://rdf.insee.fr/def/base#> .
+@prefix mondo: <http://purl.obolibrary.org/obo/mondo#> .
+@prefix pizza: <http://www.co-ode.org/ontologies/pizza/pizza.owl#> .
+@prefix rsctx: <http://softeng.polito.it/rsctx/> .
+@prefix swrla: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
+@prefix swrlb: <http://www.w3.org/2003/11/swrlb#> .
+@prefix terms: <http://purl.org/dc/terms/> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xlink: <http://www.w3.org/1999/xlink> .
+@prefix biopax: <http://www.biopax.org/release/biopax-level2.owl#> .
+@prefix chebi3: <http://purl.obolibrary.org/obo/chebi#> .
+@prefix chebi4: <http://purl.obolibrary.org/obo/chebi#2> .
+@prefix chebi5: <http://purl.obolibrary.org/obo/chebi#3> .
+@prefix chebi6: <http://purl.obolibrary.org/obo/chebi#1> .
+@prefix cocoon: <https://w3id.org/cocoon/v1.0#> .
+@prefix frbroo: <http://iflastandards.info/ns/fr/frbr/frbroo/> .
+@prefix gr_ont: <http://genomic-resources.eu/ontology/> .
+@prefix icarus: <urn:absolute:icarus#> .
+@prefix lcc-cr: <https://www.omg.org/spec/LCC/Countries/CountryRepresentation/> .
+@prefix lcc-lr: <https://www.omg.org/spec/LCC/Languages/LanguageRepresentation/> .
+@prefix oboRel: <http://www.obofoundry.org/ro/ro.owl#> .
+@prefix radion: <http://www.w3.org/ns/radion#> .
+@prefix schema: <http://schema.org/> .
+@prefix skosxl: <http://www.w3.org/2008/05/skos-xl#> .
+@prefix ubprop: <http://purl.obolibrary.org/obo/ubprop#> .
+@prefix archaeo: <http://www.ics.forth.gr/isl/CRMarchaeo/> .
+@prefix dbpedia: <http://dbpedia.org/resource/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix efrbroo: <http://erlangen-crm.org/efrbroo/> .
+@prefix gr_data: <http://genomic-resources.eu/resource/> .
+@prefix jisnaqa: <http://www.jabenitez.com/ontologias/jisnaqa#> .
+@prefix license: <https://ontology.okp4.space/thesaurus/license/> .
+@prefix owl2xml: <http://www.w3.org/2006/12/owl2-xml#> .
+@prefix protege: <http://protege.stanford.edu/plugins/owl/protege#> .
+@prefix subsets: <http://purl.obolibrary.org/obo/ro/subsets#> .
+@prefix uniprot: <http://purl.uniprot.org/core/> .
+@prefix admsapit: <https://w3id.org/italia/onto/ADMS/> .
+@prefix biomanta: <http://biomanta.sourceforge.net/2007/07/biomanta_extension_02.owl#> .
+@prefix dcatapit: <http://dati.gov.it/onto/dcatapit#> .
+@prefix dcmitype: <http://purl.org/dc/dcmitype/> .
+@prefix oboInOwl: <http://www.geneontology.org/formats/oboInOwl#> .
+@prefix patterns: <http://www.co-ode.org/patterns#> .
+@prefix property: <https://www.asociadrid.es/ontology/property#> .
+@prefix qudt-1-1: <http://qudt.org/1.1/schema/qudt#> .
+@prefix fibo-prod: <https://spec.edmcouncil.org/fibo/ontology/AboutFIBOProd/> .
+@prefix frbr_core: <http://purl.org/vocab/frbr/core#> .
+@prefix geosparql: <http://www.opengis.net/ont/geosparql#> .
+@prefix ncbitaxon: <http://purl.obolibrary.org/obo/ncbitaxon#> .
+@prefix thesaurus: <https://ontology.okp4.space/thesaurus/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix DOLCE-Lite: <http://www.loa-cnr.it/ontologies/DOLCE-Lite.owl#> .
+@prefix JBOntology: <http://www.movies.org/ontologies/JBOntology#> .
+@prefix ssn-system: <http://www.w3.org/ns/ssn/systems/> .
+@prefix webprotege: <http://webprotege.stanford.edu/> .
+@prefix annotations: <http://emmo.info/emmo/top/annotations#> .
+@prefix dbpedia-owl: <http://dbpedia.org/ontology/> .
+@prefix fibo-be-all: <https://spec.edmcouncil.org/fibo/ontology/BE/AllBE/> .
+@prefix fibo-be-mod: <https://spec.edmcouncil.org/fibo/ontology/BE/MetadataBE/> .
+@prefix fibo-bp-mod: <https://spec.edmcouncil.org/fibo/ontology/BP/MetadataBP/> .
+@prefix fibo-md-mod: <https://spec.edmcouncil.org/fibo/ontology/MD/MetadataMD/> .
+@prefix kolaci-onto: <http://oziz.ffos.hr/lilincic/kolaci-onto#> .
+@prefix fibo-bena-ex: <https://spec.edmcouncil.org/fibo/ontology/BE/AllBE-NorthAmericanExamples/> .
+@prefix fibo-cae-mod: <https://spec.edmcouncil.org/fibo/ontology/CAE/MetadataCAE/> .
+@prefix fibo-civ-mod: <https://spec.edmcouncil.org/fibo/ontology/CIV/MetadataCIV/> .
+@prefix fibo-der-all: <https://spec.edmcouncil.org/fibo/ontology/DER/AllDER/> .
+@prefix fibo-der-mod: <https://spec.edmcouncil.org/fibo/ontology/DER/MetadataDER/> .
+@prefix fibo-fbc-all: <https://spec.edmcouncil.org/fibo/ontology/FBC/AllFBC/> .
+@prefix fibo-fbc-mod: <https://spec.edmcouncil.org/fibo/ontology/FBC/MetadataFBC/> .
+@prefix fibo-fnd-all: <https://spec.edmcouncil.org/fibo/ontology/FND/AllFND/> .
+@prefix fibo-fnd-mod: <https://spec.edmcouncil.org/fibo/ontology/FND/MetadataFND/> .
+@prefix fibo-ind-all: <https://spec.edmcouncil.org/fibo/ontology/IND/AllIND/> .
+@prefix fibo-ind-mod: <https://spec.edmcouncil.org/fibo/ontology/IND/MetadataIND/> .
+@prefix fibo-sec-all: <https://spec.edmcouncil.org/fibo/ontology/SEC/AllSEC/> .
+@prefix fibo-sec-mod: <https://spec.edmcouncil.org/fibo/ontology/SEC/MetadataSEC/> .
+@prefix arviva_oeuvre: <https://arviva.univ-tours.fr/oeuvre/> .
+@prefix arviva_person: <https://arviva.univ-tours.fr/personne/> .
+@prefix fibo-be-ge-ge: <https://spec.edmcouncil.org/fibo/ontology/BE/GovernmentEntities/GovernmentEntities/> .
+@prefix fibo-be-le-cb: <https://spec.edmcouncil.org/fibo/ontology/BE/LegalEntities/CorporateBodies/> .
+@prefix fibo-be-le-lp: <https://spec.edmcouncil.org/fibo/ontology/BE/LegalEntities/LegalPersons/> .
+@prefix fibo-be-tr-tr: <https://spec.edmcouncil.org/fibo/ontology/BE/Trusts/Trusts/> .
+@prefix fibo-beeu-all: <https://spec.edmcouncil.org/fibo/ontology/BE/AllBE-Europe/> .
+@prefix fibo-bena-all: <https://spec.edmcouncil.org/fibo/ontology/BE/AllBE-NorthAmerica/> .
+@prefix fibo-loan-all: <https://spec.edmcouncil.org/fibo/ontology/LOAN/AllLOAN/> .
+@prefix fibo-loan-mod: <https://spec.edmcouncil.org/fibo/ontology/LOAN/MetadataLOAN/> .
+@prefix qudt-unit-1-1: <http://qudt.org/1.1/vocab/unit#> .
+@prefix fibo-be-ge-caj: <https://spec.edmcouncil.org/fibo/ontology/BE/GovernmentEntities/NorthAmericanJurisdiction/CAGovernmentEntitiesAndJurisdictions/> .
+@prefix fibo-be-ge-euj: <https://spec.edmcouncil.org/fibo/ontology/BE/GovernmentEntities/EuropeanJurisdiction/EUGovernmentEntitiesAndJurisdictions/> .
+@prefix fibo-be-ge-mod: <https://spec.edmcouncil.org/fibo/ontology/BE/GovernmentEntities/MetadataBEGovernmentEntities/> .
+@prefix fibo-be-ge-ukj: <https://spec.edmcouncil.org/fibo/ontology/BE/GovernmentEntities/EuropeanJurisdiction/UKGovernmentEntitiesAndJurisdictions/> .
+@prefix fibo-be-ge-usj: <https://spec.edmcouncil.org/fibo/ontology/BE/GovernmentEntities/NorthAmericanJurisdiction/USGovernmentEntitiesAndJurisdictions/> .
+@prefix fibo-be-le-fbo: <https://spec.edmcouncil.org/fibo/ontology/BE/LegalEntities/FormalBusinessOrganizations/> .
+@prefix fibo-be-le-lei: <https://spec.edmcouncil.org/fibo/ontology/BE/LegalEntities/LEIEntities/> .
+@prefix fibo-be-le-mod: <https://spec.edmcouncil.org/fibo/ontology/BE/LegalEntities/MetadataBELegalEntities/> .
+@prefix fibo-be-tr-mod: <https://spec.edmcouncil.org/fibo/ontology/BE/Trusts/MetadataBETrusts/> .
+@prefix fibo-der-fx-sp: <https://spec.edmcouncil.org/fibo/ontology/DER/FxDerivatives/FxSpots/> .
+@prefix fibo-der-fx-sw: <https://spec.edmcouncil.org/fibo/ontology/DER/FxDerivatives/FxSwaps/> .
+@prefix fibo-derri-all: <https://spec.edmcouncil.org/fibo/ontology/DER/AllDER-ReferenceIndividuals/> .
+@prefix fibo-fbc-fi-fi: <https://spec.edmcouncil.org/fibo/ontology/FBC/FinancialInstruments/FinancialInstruments/> .
+@prefix fibo-fbc-fi-ip: <https://spec.edmcouncil.org/fibo/ontology/FBC/FinancialInstruments/InstrumentPricing/> .
+@prefix fibo-fbceu-all: <https://spec.edmcouncil.org/fibo/ontology/FBC/AllFBC-Europe/> .
+@prefix fibo-fbcna-all: <https://spec.edmcouncil.org/fibo/ontology/FBC/AllFBC-NorthAmerica/> .
+@prefix fibo-fnd-dt-bd: <https://spec.edmcouncil.org/fibo/ontology/FND/DatesAndTimes/BusinessDates/> .
+@prefix fibo-fnd-dt-fd: <https://spec.edmcouncil.org/fibo/ontology/FND/DatesAndTimes/FinancialDates/> .
+@prefix fibo-fnd-dt-oc: <https://spec.edmcouncil.org/fibo/ontology/FND/DatesAndTimes/Occurrences/> .
+@prefix fibo-fndna-all: <https://spec.edmcouncil.org/fibo/ontology/FND/AllFND-NorthAmerica/> .
+@prefix fibo-ind-ei-ei: <https://spec.edmcouncil.org/fibo/ontology/IND/EconomicIndicators/EconomicIndicators/> .
+@prefix fibo-ind-fx-fx: <https://spec.edmcouncil.org/fibo/ontology/IND/ForeignExchange/ForeignExchange/> .
+@prefix fibo-ind-ir-cm: <https://spec.edmcouncil.org/fibo/ontology/IND/InterestRates/CommonInterestRates/> .
+@prefix fibo-ind-ir-ir: <https://spec.edmcouncil.org/fibo/ontology/IND/InterestRates/InterestRates/> .
+@prefix fibo-indna-all: <https://spec.edmcouncil.org/fibo/ontology/IND/AllIND-NorthAmerica/> .
+@prefix fibo-indrr-all: <https://spec.edmcouncil.org/fibo/ontology/IND/AllIND-ReferenceRates/> .
+@prefix fibo-sec-eq-dr: <https://spec.edmcouncil.org/fibo/ontology/SEC/Equities/DepositaryReceipts/> .
+@prefix fibo-sec-eq-eq: <https://spec.edmcouncil.org/fibo/ontology/SEC/Equities/EquityInstruments/> .
+@prefix fibo-secex-all: <https://spec.edmcouncil.org/fibo/ontology/SEC/AllSEC-ExampleIndividuals/> .
+@prefix fibo-secri-all: <https://spec.edmcouncil.org/fibo/ontology/SEC/AllSEC-ReferenceIndividuals/> .
+@prefix fibo-be-fct-fct: <https://spec.edmcouncil.org/fibo/ontology/BE/FunctionalEntities/FunctionalEntities/> .
+@prefix fibo-be-fct-mod: <https://spec.edmcouncil.org/fibo/ontology/BE/FunctionalEntities/MetadataBEFunctionalEntities/> .
+@prefix fibo-be-fct-pub: <https://spec.edmcouncil.org/fibo/ontology/BE/FunctionalEntities/Publishers/> .
+@prefix fibo-be-le-usee: <https://spec.edmcouncil.org/fibo/ontology/BE/LegalEntities/NorthAmericanEntities/USExampleEntities/> .
+@prefix fibo-be-oac-mod: <https://spec.edmcouncil.org/fibo/ontology/BE/OwnershipAndControl/MetadataBEOwnershipAndControl/> .
+@prefix fibo-be-plc-mod: <https://spec.edmcouncil.org/fibo/ontology/BE/PrivateLimitedCompanies/MetadataBEPrivateLimitedCompanies/> .
+@prefix fibo-be-plc-plc: <https://spec.edmcouncil.org/fibo/ontology/BE/PrivateLimitedCompanies/PrivateLimitedCompanies/> .
+@prefix fibo-be-ptr-mod: <https://spec.edmcouncil.org/fibo/ontology/BE/Partnerships/MetadataBEPartnerships/> .
+@prefix fibo-be-ptr-ptr: <https://spec.edmcouncil.org/fibo/ontology/BE/Partnerships/Partnerships/> .
+@prefix fibo-be-sps-mod: <https://spec.edmcouncil.org/fibo/ontology/BE/SoleProprietorships/MetadataBESoleProprietorships/> .
+@prefix fibo-be-sps-sps: <https://spec.edmcouncil.org/fibo/ontology/BE/SoleProprietorships/SoleProprietorships/> .
+@prefix fibo-beeuna-all: <https://spec.edmcouncil.org/fibo/ontology/BE/AllBE-EuropeAndNorthAmerica/> .
+@prefix fibo-beexin-all: <https://spec.edmcouncil.org/fibo/ontology/BE/AllBE-ExampleIndividuals/> .
+@prefix fibo-bp-iss-doc: <https://spec.edmcouncil.org/fibo/ontology/BP/SecuritiesIssuance/IssuanceDocuments/> .
+@prefix fibo-bp-iss-ipo: <https://spec.edmcouncil.org/fibo/ontology/BP/SecuritiesIssuance/EquitiesIPOIssuance/> .
+@prefix fibo-bp-iss-mbs: <https://spec.edmcouncil.org/fibo/ontology/BP/SecuritiesIssuance/MBSIssuance/> .
+@prefix fibo-bp-iss-mod: <https://spec.edmcouncil.org/fibo/ontology/BP/SecuritiesIssuance/MetadataBPSecuritiesIssuance/> .
+@prefix fibo-bp-iss-prc: <https://spec.edmcouncil.org/fibo/ontology/BP/SecuritiesIssuance/IssuanceProcess/> .
+@prefix fibo-bp-prc-fcp: <https://spec.edmcouncil.org/fibo/ontology/BP/Process/FinancialContextAndProcess/> .
+@prefix fibo-bp-prc-mod: <https://spec.edmcouncil.org/fibo/ontology/BP/Process/MetadataBPProcess/> .
+@prefix fibo-cae-ce-cae: <https://spec.edmcouncil.org/fibo/ontology/CAE/CorporateEvents/CorporateActionsEvents/> .
+@prefix fibo-cae-ce-mod: <https://spec.edmcouncil.org/fibo/ontology/CAE/CorporateEvents/MetadataCAECorporateEvents/> .
+@prefix fibo-der-ass-bo: <https://spec.edmcouncil.org/fibo/ontology/DER/AssetDerivatives/BondOptions/> .
+@prefix fibo-der-com-sp: <https://spec.edmcouncil.org/fibo/ontology/DER/CommoditiesDerivatives/CommoditySpots/> .
+@prefix fibo-der-com-sw: <https://spec.edmcouncil.org/fibo/ontology/DER/CommoditiesDerivatives/CommoditySwaps/> .
+@prefix fibo-der-cr-cds: <https://spec.edmcouncil.org/fibo/ontology/DER/CreditDerivatives/CreditDefaultSwaps/> .
+@prefix fibo-der-cr-mod: <https://spec.edmcouncil.org/fibo/ontology/DER/CreditDerivatives/MetadataDERCreditDerivatives/> .
+@prefix fibo-der-der-sp: <https://spec.edmcouncil.org/fibo/ontology/DER/DerivativesContracts/Spots/> .
+@prefix fibo-der-drc-ma: <https://spec.edmcouncil.org/fibo/ontology/DER/DerivativesContracts/DerivativesMasterAgreements/> .
+@prefix fibo-der-drc-pn: <https://spec.edmcouncil.org/fibo/ontology/DER/DerivativesContracts/ParticipationNotes/> .
+@prefix fibo-der-fx-ctr: <https://spec.edmcouncil.org/fibo/ontology/DER/FxDerivatives/FxContracts/> .
+@prefix fibo-der-fx-fwd: <https://spec.edmcouncil.org/fibo/ontology/DER/FxDerivatives/FxForwards/> .
+@prefix fibo-der-fx-mod: <https://spec.edmcouncil.org/fibo/ontology/DER/FxDerivatives/MetadataDERFxDerivatives/> .
+@prefix fibo-der-fx-opt: <https://spec.edmcouncil.org/fibo/ontology/DER/FxDerivatives/FxOptions/> .
+@prefix fibo-fbc-fct-bc: <https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/BusinessCenters/> .
+@prefix fibo-fbc-fct-ra: <https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/RegistrationAuthorities/> .
+@prefix fibo-fbc-fi-mod: <https://spec.edmcouncil.org/fibo/ontology/FBC/FinancialInstruments/MetadataFBCFinancialInstruments/> .
+@prefix fibo-fbc-fi-stl: <https://spec.edmcouncil.org/fibo/ontology/FBC/FinancialInstruments/Settlement/> .
+@prefix fibo-fnd-arr-id: <https://spec.edmcouncil.org/fibo/ontology/FND/Arrangements/IdentifiersAndIndices/> .
+@prefix fibo-fnd-arr-rt: <https://spec.edmcouncil.org/fibo/ontology/FND/Arrangements/Ratings/> .
+@prefix fibo-fnd-dt-mod: <https://spec.edmcouncil.org/fibo/ontology/FND/DatesAndTimes/MetadataFNDDatesAndTimes/> .
+@prefix fibo-fnd-gao-gl: <https://spec.edmcouncil.org/fibo/ontology/FND/GoalsAndObjectives/Goals/> .
+@prefix fibo-fnd-org-fm: <https://spec.edmcouncil.org/fibo/ontology/FND/Organizations/FormalOrganizations/> .
+@prefix fibo-fnd-pty-rl: <https://spec.edmcouncil.org/fibo/ontology/FND/Parties/Roles/> .
+@prefix fibo-fnd-qt-mod: <https://spec.edmcouncil.org/fibo/ontology/FND/Quantities/MetadataFNDQuantities/> .
+@prefix fibo-fnd-qt-qtu: <https://spec.edmcouncil.org/fibo/ontology/FND/Quantities/QuantitiesAndUnits/> .
+@prefix fibo-fnd-txn-ev: <https://spec.edmcouncil.org/fibo/ontology/FND/TransactionsExt/TransactionEvents/> .
+@prefix fibo-fnd-txn-qr: <https://spec.edmcouncil.org/fibo/ontology/FND/TransactionsExt/QuantifiedResources/> .
+@prefix fibo-fnd-utl-av: <https://spec.edmcouncil.org/fibo/ontology/FND/Utilities/AnnotationVocabulary/> .
+@prefix fibo-ind-ei-mod: <https://spec.edmcouncil.org/fibo/ontology/IND/EconomicIndicators/MetadataINDEconomicIndicators/> .
+@prefix fibo-ind-ei-pub: <https://spec.edmcouncil.org/fibo/ontology/IND/EconomicIndicators/EconomicIndicatorPublishers/> .
+@prefix fibo-ind-fx-mod: <https://spec.edmcouncil.org/fibo/ontology/IND/ForeignExchange/MetadataINDForeignExchange/> .
+@prefix fibo-ind-ir-mdp: <https://spec.edmcouncil.org/fibo/ontology/IND/InterestRates/MarketDataProviders/> .
+@prefix fibo-ind-ir-mod: <https://spec.edmcouncil.org/fibo/ontology/IND/InterestRates/MetadataINDInterestRates/> .
+@prefix fibo-loan-ln-ln: <https://spec.edmcouncil.org/fibo/ontology/LOAN/LoanContracts/LoanCore/> .
+@prefix fibo-md-dbtx-py: <https://spec.edmcouncil.org/fibo/ontology/MD/DebtTemporal/DebtPricingYields/> .
+@prefix fibo-md-der-fut: <https://spec.edmcouncil.org/fibo/ontology/MD/DerivativesTemporal/FuturesTemporal/> .
+@prefix fibo-sec-dbt-ex: <https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/ExerciseConventions/> .
+@prefix fibo-sec-eq-mod: <https://spec.edmcouncil.org/fibo/ontology/SEC/Equities/MetadataSECEquities/> .
+@prefix fibo-sec-sec-id: <https://spec.edmcouncil.org/fibo/ontology/SEC/Securities/SecuritiesIdentification/> .
+@prefix einsteins_riddle: <http://persons.iis.nsk.su/files/persons/pages/einsteins_riddle.owl#> .
+@prefix electrochemistry: <https://big-map.github.io/BattINFO/ontology/electrochemistry#> .
+@prefix fibo-be-corp-mod: <https://spec.edmcouncil.org/fibo/ontology/BE/Corporations/MetadataBECorporations/> .
+@prefix fibo-be-oac-cctl: <https://spec.edmcouncil.org/fibo/ontology/BE/OwnershipAndControl/CorporateControl/> .
+@prefix fibo-be-oac-cown: <https://spec.edmcouncil.org/fibo/ontology/BE/OwnershipAndControl/CorporateOwnership/> .
+@prefix fibo-be-oac-cpty: <https://spec.edmcouncil.org/fibo/ontology/BE/OwnershipAndControl/ControlParties/> .
+@prefix fibo-be-oac-exec: <https://spec.edmcouncil.org/fibo/ontology/BE/OwnershipAndControl/Executives/> .
+@prefix fibo-be-oac-opty: <https://spec.edmcouncil.org/fibo/ontology/BE/OwnershipAndControl/OwnershipParties/> .
+@prefix fibo-bp-iss-ambs: <https://spec.edmcouncil.org/fibo/ontology/BP/SecuritiesIssuance/AgencyMBSIssuance/> .
+@prefix fibo-bp-iss-dbti: <https://spec.edmcouncil.org/fibo/ontology/BP/SecuritiesIssuance/DebtIssuance/> .
+@prefix fibo-bp-iss-muni: <https://spec.edmcouncil.org/fibo/ontology/BP/SecuritiesIssuance/MuniIssuance/> .
+@prefix fibo-bp-iss-pmbs: <https://spec.edmcouncil.org/fibo/ontology/BP/SecuritiesIssuance/PrivateLabelMBSIssuance/> .
+@prefix fibo-civ-fnd-civ: <https://spec.edmcouncil.org/fibo/ontology/CIV/Funds/CIV/> .
+@prefix fibo-civ-fnd-mod: <https://spec.edmcouncil.org/fibo/ontology/CIV/Funds/MetadataCIVFunds/> .
+@prefix fibo-der-ass-ass: <https://spec.edmcouncil.org/fibo/ontology/DER/AssetDerivatives/AssetDerivatives/> .
+@prefix fibo-der-ass-bas: <https://spec.edmcouncil.org/fibo/ontology/DER/AssetDerivatives/AssetBaskets/> .
+@prefix fibo-der-ass-brs: <https://spec.edmcouncil.org/fibo/ontology/DER/AssetDerivatives/BondReturnSwaps/> .
+@prefix fibo-der-ass-eqf: <https://spec.edmcouncil.org/fibo/ontology/DER/AssetDerivatives/EquityForwards/> .
+@prefix fibo-der-ass-eqo: <https://spec.edmcouncil.org/fibo/ontology/DER/AssetDerivatives/EquityOptions/> .
+@prefix fibo-der-ass-eqs: <https://spec.edmcouncil.org/fibo/ontology/DER/AssetDerivatives/EquitySwaps/> .
+@prefix fibo-der-ass-mod: <https://spec.edmcouncil.org/fibo/ontology/DER/AssetDerivatives/MetadataDERAssetDerivatives/> .
+@prefix fibo-der-com-com: <https://spec.edmcouncil.org/fibo/ontology/DER/CommoditiesDerivatives/Commodities/> .
+@prefix fibo-der-com-ctr: <https://spec.edmcouncil.org/fibo/ontology/DER/CommoditiesDerivatives/CommoditiesContracts/> .
+@prefix fibo-der-com-fwd: <https://spec.edmcouncil.org/fibo/ontology/DER/CommoditiesDerivatives/CommodityForwards/> .
+@prefix fibo-der-com-mod: <https://spec.edmcouncil.org/fibo/ontology/DER/CommoditiesDerivatives/MetadataDERCommoditiesDerivatives/> .
+@prefix fibo-der-com-opt: <https://spec.edmcouncil.org/fibo/ontology/DER/CommoditiesDerivatives/CommodityOptions/> .
+@prefix fibo-der-der-cof: <https://spec.edmcouncil.org/fibo/ontology/DER/DerivativesContracts/OptionContractsOnFutures/> .
+@prefix fibo-der-der-fwd: <https://spec.edmcouncil.org/fibo/ontology/DER/DerivativesContracts/Forwards/> .
+@prefix fibo-der-der-opt: <https://spec.edmcouncil.org/fibo/ontology/DER/DerivativesContracts/Options/> .
+@prefix fibo-der-der-rsw: <https://spec.edmcouncil.org/fibo/ontology/DER/DerivativesContracts/ReturnSwaps/> .
+@prefix fibo-der-der-spn: <https://spec.edmcouncil.org/fibo/ontology/DER/DerivativesContracts/Swaptions/> .
+@prefix fibo-der-drc-bsc: <https://spec.edmcouncil.org/fibo/ontology/DER/DerivativesContracts/DerivativesBasics/> .
+@prefix fibo-der-drc-cfd: <https://spec.edmcouncil.org/fibo/ontology/DER/DerivativesContracts/ContractsForDifference/> .
+@prefix fibo-der-drc-mod: <https://spec.edmcouncil.org/fibo/ontology/DER/DerivativesContracts/MetadataDERDerivativesContracts/> .
+@prefix fibo-der-drc-raw: <https://spec.edmcouncil.org/fibo/ontology/DER/DerivativesContracts/RightsAndWarrants/> .
+@prefix fibo-der-drc-swp: <https://spec.edmcouncil.org/fibo/ontology/DER/DerivativesContracts/Swaps/> .
+@prefix fibo-der-etd-eto: <https://spec.edmcouncil.org/fibo/ontology/DER/ExchangeTradedDerivatives/ExchangeTradedOptions/> .
+@prefix fibo-der-etd-fut: <https://spec.edmcouncil.org/fibo/ontology/DER/ExchangeTradedDerivatives/Futures/> .
+@prefix fibo-der-etd-mod: <https://spec.edmcouncil.org/fibo/ontology/DER/ExchangeTradedDerivatives/MetadataDERExchangeTradedDerivatives/> .
+@prefix fibo-der-etd-std: <https://spec.edmcouncil.org/fibo/ontology/DER/ExchangeTradedDerivatives/DerivativesStandardizedTerms/> .
+@prefix fibo-der-rat-fra: <https://spec.edmcouncil.org/fibo/ontology/DER/RateDerivatives/ForwardRateAgreements/> .
+@prefix fibo-der-rat-iro: <https://spec.edmcouncil.org/fibo/ontology/DER/RateDerivatives/IROptions/> .
+@prefix fibo-der-rat-mod: <https://spec.edmcouncil.org/fibo/ontology/DER/RateDerivatives/MetadataDERRateDerivatives/> .
+@prefix fibo-der-rtd-isw: <https://spec.edmcouncil.org/fibo/ontology/DER/RateDerivatives/InflationSwaps/> .
+@prefix fibo-der-rtd-rtd: <https://spec.edmcouncil.org/fibo/ontology/DER/RateDerivatives/RateDerivatives/> .
+@prefix fibo-fbc-dae-cre: <https://spec.edmcouncil.org/fibo/ontology/FBC/DebtAndEquities/CreditEvents/> .
+@prefix fibo-fbc-dae-crf: <https://spec.edmcouncil.org/fibo/ontology/FBC/DebtAndEquities/CreditFacilities/> .
+@prefix fibo-fbc-dae-crt: <https://spec.edmcouncil.org/fibo/ontology/FBC/DebtAndEquities/CreditRatings/> .
+@prefix fibo-fbc-dae-dbt: <https://spec.edmcouncil.org/fibo/ontology/FBC/DebtAndEquities/Debt/> .
+@prefix fibo-fbc-dae-gty: <https://spec.edmcouncil.org/fibo/ontology/FBC/DebtAndEquities/Guaranty/> .
+@prefix fibo-fbc-dae-mod: <https://spec.edmcouncil.org/fibo/ontology/FBC/DebtAndEquities/MetadataFBCDebtAndEquities/> .
+@prefix fibo-fbc-fct-bci: <https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/BusinessCentersIndividuals/> .
+@prefix fibo-fbc-fct-fse: <https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/FinancialServicesEntities/> .
+@prefix fibo-fbc-fct-mkt: <https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/Markets/> .
+@prefix fibo-fbc-fct-mod: <https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/MetadataFBCFunctionalEntities/> .
+@prefix fibo-fbc-fct-rga: <https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/RegulatoryAgencies/> .
+@prefix fibo-fbc-pas-caa: <https://spec.edmcouncil.org/fibo/ontology/FBC/ProductsAndServices/ClientsAndAccounts/> .
+@prefix fibo-fbc-pas-mod: <https://spec.edmcouncil.org/fibo/ontology/FBC/ProductsAndServices/MetadataFBCProductsAndServices/> .
+@prefix fibo-fbceuna-all: <https://spec.edmcouncil.org/fibo/ontology/FBC/AllFBC-EuropeAndNorthAmerica/> .
+@prefix fibo-fbcnaex-all: <https://spec.edmcouncil.org/fibo/ontology/FBC/AllFBC-NorthAmericanExamples/> .
+@prefix fibo-fnd-aap-agt: <https://spec.edmcouncil.org/fibo/ontology/FND/AgentsAndPeople/Agents/> .
+@prefix fibo-fnd-aap-mod: <https://spec.edmcouncil.org/fibo/ontology/FND/AgentsAndPeople/MetadataFNDAgentsAndPeople/> .
+@prefix fibo-fnd-aap-ppl: <https://spec.edmcouncil.org/fibo/ontology/FND/AgentsAndPeople/People/> .
+@prefix fibo-fnd-acc-aeq: <https://spec.edmcouncil.org/fibo/ontology/FND/Accounting/AccountingEquity/> .
+@prefix fibo-fnd-acc-cur: <https://spec.edmcouncil.org/fibo/ontology/FND/Accounting/CurrencyAmount/> .
+@prefix fibo-fnd-acc-mod: <https://spec.edmcouncil.org/fibo/ontology/FND/Accounting/MetadataFNDAccounting/> .
+@prefix fibo-fnd-agr-agr: <https://spec.edmcouncil.org/fibo/ontology/FND/Agreements/Agreements/> .
+@prefix fibo-fnd-agr-ctr: <https://spec.edmcouncil.org/fibo/ontology/FND/Agreements/Contracts/> .
+@prefix fibo-fnd-agr-mod: <https://spec.edmcouncil.org/fibo/ontology/FND/Agreements/MetadataFNDAgreements/> .
+@prefix fibo-fnd-arr-arr: <https://spec.edmcouncil.org/fibo/ontology/FND/Arrangements/Arrangements/> .
+@prefix fibo-fnd-arr-cls: <https://spec.edmcouncil.org/fibo/ontology/FND/Arrangements/ClassificationSchemes/> .
+@prefix fibo-fnd-arr-com: <https://spec.edmcouncil.org/fibo/ontology/FND/Arrangements/Communications/> .
+@prefix fibo-fnd-arr-doc: <https://spec.edmcouncil.org/fibo/ontology/FND/Arrangements/Documents/> .
+@prefix fibo-fnd-arr-lif: <https://spec.edmcouncil.org/fibo/ontology/FND/Arrangements/Lifecycles/> .
+@prefix fibo-fnd-arr-mod: <https://spec.edmcouncil.org/fibo/ontology/FND/Arrangements/MetadataFNDArrangements/> .
+@prefix fibo-fnd-arr-rep: <https://spec.edmcouncil.org/fibo/ontology/FND/Arrangements/Reporting/> .
+@prefix fibo-fnd-gao-mod: <https://spec.edmcouncil.org/fibo/ontology/FND/GoalsAndObjectives/MetadataFNDGoalsAndObjectives/> .
+@prefix fibo-fnd-gao-obj: <https://spec.edmcouncil.org/fibo/ontology/FND/GoalsAndObjectives/Objectives/> .
+@prefix fibo-fnd-law-cor: <https://spec.edmcouncil.org/fibo/ontology/FND/Law/LegalCore/> .
+@prefix fibo-fnd-law-jur: <https://spec.edmcouncil.org/fibo/ontology/FND/Law/Jurisdiction/> .
+@prefix fibo-fnd-law-mod: <https://spec.edmcouncil.org/fibo/ontology/FND/Law/MetadataFNDLaw/> .
+@prefix fibo-fnd-oac-ctl: <https://spec.edmcouncil.org/fibo/ontology/FND/OwnershipAndControl/Control/> .
+@prefix fibo-fnd-oac-mod: <https://spec.edmcouncil.org/fibo/ontology/FND/OwnershipAndControl/MetadataFNDOwnershipAndControl/> .
+@prefix fibo-fnd-oac-oac: <https://spec.edmcouncil.org/fibo/ontology/FND/OwnershipAndControl/OwnershipAndControl/> .
+@prefix fibo-fnd-oac-own: <https://spec.edmcouncil.org/fibo/ontology/FND/OwnershipAndControl/Ownership/> .
+@prefix fibo-fnd-org-mod: <https://spec.edmcouncil.org/fibo/ontology/FND/Organizations/MetadataFNDOrganizations/> .
+@prefix fibo-fnd-org-org: <https://spec.edmcouncil.org/fibo/ontology/FND/Organizations/Organizations/> .
+@prefix fibo-fnd-pas-mod: <https://spec.edmcouncil.org/fibo/ontology/FND/ProductsAndServices/MetadataFNDProductsAndServices/> .
+@prefix fibo-fnd-pas-pas: <https://spec.edmcouncil.org/fibo/ontology/FND/ProductsAndServices/ProductsAndServices/> .
+@prefix fibo-fnd-plc-adr: <https://spec.edmcouncil.org/fibo/ontology/FND/Places/Addresses/> .
+@prefix fibo-fnd-plc-fac: <https://spec.edmcouncil.org/fibo/ontology/FND/Places/Facilities/> .
+@prefix fibo-fnd-plc-loc: <https://spec.edmcouncil.org/fibo/ontology/FND/Places/Locations/> .
+@prefix fibo-fnd-plc-mod: <https://spec.edmcouncil.org/fibo/ontology/FND/Places/MetadataFNDPlaces/> .
+@prefix fibo-fnd-plc-vrt: <https://spec.edmcouncil.org/fibo/ontology/FND/Places/VirtualPlaces/> .
+@prefix fibo-fnd-pty-mod: <https://spec.edmcouncil.org/fibo/ontology/FND/Parties/MetadataFNDParties/> .
+@prefix fibo-fnd-pty-pty: <https://spec.edmcouncil.org/fibo/ontology/FND/Parties/Parties/> .
+@prefix fibo-fnd-rel-mod: <https://spec.edmcouncil.org/fibo/ontology/FND/Relations/MetadataFNDRelations/> .
+@prefix fibo-fnd-rel-rel: <https://spec.edmcouncil.org/fibo/ontology/FND/Relations/Relations/> .
+@prefix fibo-fnd-txn-acc: <https://spec.edmcouncil.org/fibo/ontology/FND/TransactionsExt/TransactionAccounting/> .
+@prefix fibo-fnd-txn-cle: <https://spec.edmcouncil.org/fibo/ontology/FND/TransactionsExt/REAClaimsEvents/> .
+@prefix fibo-fnd-txn-ecr: <https://spec.edmcouncil.org/fibo/ontology/FND/TransactionsExt/EconomicResources/> .
+@prefix fibo-fnd-txn-mkt: <https://spec.edmcouncil.org/fibo/ontology/FND/TransactionsExt/MarketTransactions/> .
+@prefix fibo-fnd-txn-mod: <https://spec.edmcouncil.org/fibo/ontology/FND/TransactionsExt/MetadataFNDTransactionsExt/> .
+@prefix fibo-fnd-txn-rea: <https://spec.edmcouncil.org/fibo/ontology/FND/TransactionsExt/REATransactions/> .
+@prefix fibo-fnd-txn-sec: <https://spec.edmcouncil.org/fibo/ontology/FND/TransactionsExt/SecuritiesTransactions/> .
+@prefix fibo-fnd-txn-sup: <https://spec.edmcouncil.org/fibo/ontology/FND/TransactionsExt/SupplyTransactions/> .
+@prefix fibo-fnd-utl-alx: <https://spec.edmcouncil.org/fibo/ontology/FND/Utilities/Analytics/> .
+@prefix fibo-fnd-utl-mod: <https://spec.edmcouncil.org/fibo/ontology/FND/Utilities/MetadataFNDUtilities/> .
+@prefix fibo-fnd-utl-val: <https://spec.edmcouncil.org/fibo/ontology/FND/Utilities/Values/> .
+@prefix fibo-ind-ei-caei: <https://spec.edmcouncil.org/fibo/ontology/IND/EconomicIndicators/NorthAmericanIndicators/CAEconomicIndicators/> .
+@prefix fibo-ind-ei-usei: <https://spec.edmcouncil.org/fibo/ontology/IND/EconomicIndicators/NorthAmericanIndicators/USEconomicIndicators/> .
+@prefix fibo-ind-ind-ind: <https://spec.edmcouncil.org/fibo/ontology/IND/Indicators/Indicators/> .
+@prefix fibo-ind-ind-mod: <https://spec.edmcouncil.org/fibo/ontology/IND/Indicators/MetadataINDIndicators/> .
+@prefix fibo-ind-mkt-bas: <https://spec.edmcouncil.org/fibo/ontology/IND/MarketIndices/BasketIndices/> .
+@prefix fibo-ind-mkt-mod: <https://spec.edmcouncil.org/fibo/ontology/IND/MarketIndices/MetadataINDMarketIndices/> .
+@prefix fibo-loan-ln-mod: <https://spec.edmcouncil.org/fibo/ontology/LOAN/LoanContracts/MetadataLOANLoanContracts/> .
+@prefix fibo-loan-tem-cl: <https://spec.edmcouncil.org/fibo/ontology/LOAN/LoansTemporal/ConstructionLoansTemporal/> .
+@prefix fibo-loan-tem-ev: <https://spec.edmcouncil.org/fibo/ontology/LOAN/LoansTemporal/LoansEvents/> .
+@prefix fibo-loan-tem-ph: <https://spec.edmcouncil.org/fibo/ontology/LOAN/LoansTemporal/LoanPhases/> .
+@prefix fibo-loan-typ-cl: <https://spec.edmcouncil.org/fibo/ontology/LOAN/LoanTypes/ConstructionLoans/> .
+@prefix fibo-loan-typ-cr: <https://spec.edmcouncil.org/fibo/ontology/LOAN/LoanTypes/CreditProducts/> .
+@prefix fibo-md-civx-fun: <https://spec.edmcouncil.org/fibo/ontology/MD/CIVTemporal/FundsTemporal/> .
+@prefix fibo-md-civx-mod: <https://spec.edmcouncil.org/fibo/ontology/MD/CIVTemporal/MetadataMDCIVTemporal/> .
+@prefix fibo-md-dbtx-aly: <https://spec.edmcouncil.org/fibo/ontology/MD/DebtTemporal/DebtAnalytics/> .
+@prefix fibo-md-dbtx-mod: <https://spec.edmcouncil.org/fibo/ontology/MD/DebtTemporal/MetadataMDDebtTemporal/> .
+@prefix fibo-md-derx-eto: <https://spec.edmcouncil.org/fibo/ontology/MD/DerivativesTemporal/ETOptionsTemporal/> .
+@prefix fibo-md-derx-mod: <https://spec.edmcouncil.org/fibo/ontology/MD/DerivativesTemporal/MetadataMDDerivativesTemporal/> .
+@prefix fibo-md-temx-crs: <https://spec.edmcouncil.org/fibo/ontology/MD/TemporalCore/SecurityCreditStatuses/> .
+@prefix fibo-md-temx-mod: <https://spec.edmcouncil.org/fibo/ontology/MD/TemporalCore/MetadataMDTemporalCore/> .
+@prefix fibo-md-temx-trs: <https://spec.edmcouncil.org/fibo/ontology/MD/TemporalCore/SecurityTradingStatuses/> .
+@prefix fibo-sec-dbt-bnd: <https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/Bonds/> .
+@prefix fibo-sec-dbt-mod: <https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/MetadataSECDebt/> .
+@prefix fibo-sec-sec-ast: <https://spec.edmcouncil.org/fibo/ontology/SEC/Securities/SecurityAssets/> .
+@prefix fibo-sec-sec-bsk: <https://spec.edmcouncil.org/fibo/ontology/SEC/Securities/Baskets/> .
+@prefix fibo-sec-sec-cls: <https://spec.edmcouncil.org/fibo/ontology/SEC/Securities/SecuritiesClassification/> .
+@prefix fibo-sec-sec-iss: <https://spec.edmcouncil.org/fibo/ontology/SEC/Securities/SecuritiesIssuance/> .
+@prefix fibo-sec-sec-lst: <https://spec.edmcouncil.org/fibo/ontology/SEC/Securities/SecuritiesListings/> .
+@prefix fibo-sec-sec-mod: <https://spec.edmcouncil.org/fibo/ontology/SEC/Securities/MetadataSECSecurities/> .
+@prefix fibo-sec-sec-pls: <https://spec.edmcouncil.org/fibo/ontology/SEC/Securities/Pools/> .
+@prefix fibo-sec-sec-rst: <https://spec.edmcouncil.org/fibo/ontology/SEC/Securities/SecuritiesRestrictions/> .
+@prefix fibo-sec-sec-sch: <https://spec.edmcouncil.org/fibo/ontology/SEC/Securities/ParametricSchedules/> .
+@prefix adeel-cv-ontology: <http://users.jyu.fi/~matahivv/cv-ontology.owl#> .
+@prefix fibo-be-corp-corp: <https://spec.edmcouncil.org/fibo/ontology/BE/Corporations/Corporations/> .
+@prefix fibo-der-rat-indo: <https://spec.edmcouncil.org/fibo/ontology/DER/RateDerivatives/OTCIndexOptions/> .
+@prefix fibo-fbc-fct-breg: <https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/BusinessRegistries/> .
+@prefix fibo-fbc-fct-ireg: <https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/InternationalRegistriesAndAuthorities/> .
+@prefix fibo-fbc-fct-mkti: <https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/MarketsIndividuals/> .
+@prefix fibo-fbc-pas-fpas: <https://spec.edmcouncil.org/fibo/ontology/FBC/ProductsAndServices/FinancialProductsAndServices/> .
+@prefix fibo-fbcexind-all: <https://spec.edmcouncil.org/fibo/ontology/FBC/AllFBC-ExampleIndividuals/> .
+@prefix fibo-fnd-acc-4217: <https://spec.edmcouncil.org/fibo/ontology/FND/Accounting/ISO4217-CurrencyCodes/> .
+@prefix fibo-fnd-agrx-ele: <https://spec.edmcouncil.org/fibo/ontology/FND/AgreementsExt/ContractElements/> .
+@prefix fibo-fnd-agrx-mod: <https://spec.edmcouncil.org/fibo/ontology/FND/AgreementsExt/MetadataFNDAgreementsExt/> .
+@prefix fibo-fnd-arr-asmt: <https://spec.edmcouncil.org/fibo/ontology/FND/Arrangements/Assessments/> .
+@prefix fibo-fnd-law-lcap: <https://spec.edmcouncil.org/fibo/ontology/FND/Law/LegalCapacity/> .
+@prefix fibo-fnd-pas-psch: <https://spec.edmcouncil.org/fibo/ontology/FND/ProductsAndServices/PaymentsAndSchedules/> .
+@prefix fibo-fnd-txn-txnx: <https://spec.edmcouncil.org/fibo/ontology/FND/TransactionsExt/TransactionsExtended/> .
+@prefix fibo-loan-ln-hmda: <https://spec.edmcouncil.org/fibo/ontology/LOAN/LoanContracts/LoanHMDA/> .
+@prefix fibo-loan-tem-app: <https://spec.edmcouncil.org/fibo/ontology/LOAN/LoansTemporal/LoanApplicationsTemporal/> .
+@prefix fibo-loan-tem-mod: <https://spec.edmcouncil.org/fibo/ontology/LOAN/LoansTemporal/MetadataLOANLoansTemporal/> .
+@prefix fibo-loan-tem-sta: <https://spec.edmcouncil.org/fibo/ontology/LOAN/LoansTemporal/LoansStatus/> .
+@prefix fibo-loan-tem-tem: <https://spec.edmcouncil.org/fibo/ontology/LOAN/LoansTemporal/LoansTemporal/> .
+@prefix fibo-loan-typ-com: <https://spec.edmcouncil.org/fibo/ontology/LOAN/LoanTypes/CommercialLoans/> .
+@prefix fibo-loan-typ-gen: <https://spec.edmcouncil.org/fibo/ontology/LOAN/LoanTypes/GeneralLoans/> .
+@prefix fibo-loan-typ-mod: <https://spec.edmcouncil.org/fibo/ontology/LOAN/LoanTypes/MetadataLOANLoanTypes/> .
+@prefix fibo-loan-typ-mtg: <https://spec.edmcouncil.org/fibo/ontology/LOAN/LoanTypes/MortgageLoans/> .
+@prefix fibo-loan-typ-per: <https://spec.edmcouncil.org/fibo/ontology/LOAN/LoanTypes/PersonalLoans/> .
+@prefix fibo-loan-typ-sec: <https://spec.edmcouncil.org/fibo/ontology/LOAN/LoanTypes/SecuredLoans/> .
+@prefix fibo-loan-typ-stu: <https://spec.edmcouncil.org/fibo/ontology/LOAN/LoanTypes/StudentLoans/> .
+@prefix fibo-loan-typ-uns: <https://spec.edmcouncil.org/fibo/ontology/LOAN/LoanTypes/UnsecuredLoans/> .
+@prefix fibo-sec-dbt-dbti: <https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/DebtInstruments/> .
+@prefix fibo-sec-dbt-tstd: <https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/TradedShortTermDebt/> .
+@prefix fibo-sec-eq-eqind: <https://spec.edmcouncil.org/fibo/ontology/SEC/Equities/EquitiesExampleIndividuals/> .
+@prefix fibo-der-rtd-irswp: <https://spec.edmcouncil.org/fibo/ontology/DER/RateDerivatives/IRSwaps/> .
+@prefix fibo-fbc-fct-cafse: <https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/NorthAmericanEntities/CAFinancialServicesEntities/> .
+@prefix fibo-fbc-fct-eufse: <https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/EuropeanEntities/EUFinancialServicesEntities/> .
+@prefix fibo-fbc-fct-eurga: <https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/EuropeanEntities/EURegulatoryAgencies/> .
+@prefix fibo-fbc-fct-usfse: <https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/NorthAmericanEntities/USFinancialServicesEntities/> .
+@prefix fibo-fbc-fct-usind: <https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/NorthAmericanEntities/USExampleIndividuals/> .
+@prefix fibo-fbc-fct-usmkt: <https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/NorthAmericanEntities/USMarketsAndExchangesIndividuals/> .
+@prefix fibo-fnd-plc-uspsa: <https://spec.edmcouncil.org/fibo/ontology/FND/Places/NorthAmerica/USPostalServiceAddresses/> .
+@prefix fibo-ind-mkt-eqind: <https://spec.edmcouncil.org/fibo/ontology/IND/MarketIndices/EquityIndexExampleIndividuals/> .
+@prefix fibo-loan-loan-mod: <https://spec.edmcouncil.org/fibo/ontology/LOAN/Loans/MetadataLOANLoans/> .
+@prefix fibo-loan-loan-reg: <https://spec.edmcouncil.org/fibo/ontology/LOAN/Loans/LoansRegulatory/> .
+@prefix fibo-loan-typ-prod: <https://spec.edmcouncil.org/fibo/ontology/LOAN/LoanTypes/LoanProducts/> .
+@prefix fibo-sec-sec-idind: <https://spec.edmcouncil.org/fibo/ontology/SEC/Securities/SecuritiesIdentificationIndividuals/> .
+@prefix fibo-der-drc-swpind: <https://spec.edmcouncil.org/fibo/ontology/DER/DerivativesContracts/SwapsIndividuals/> .
+@prefix fibo-fbc-fct-cajrga: <https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/NorthAmericanEntities/CARegulatoryAgencies/> .
+@prefix fibo-fbc-fct-usjrga: <https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/NorthAmericanEntities/USRegulatoryAgencies/> .
+@prefix fibo-fnd-plc-uspsai: <https://spec.edmcouncil.org/fibo/ontology/FND/Places/NorthAmerica/USPostalServiceAddressesIndividuals/> .
+@prefix fibo-loan-loan-loan: <https://spec.edmcouncil.org/fibo/ontology/LOAN/Loans/LoanBasicTerms/> .
+@prefix fibo-sec-dbt-ab-abs: <https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/AssetBackedSecurities/AssetBackedSecurities/> .
+@prefix fibo-sec-dbt-ab-cbo: <https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/AssetBackedSecurities/CBOs/> .
+@prefix fibo-sec-dbt-ab-cdo: <https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/AssetBackedSecurities/CDOs/> .
+@prefix fibo-sec-dbt-ab-clo: <https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/AssetBackedSecurities/CLOs/> .
+@prefix fibo-sec-dbt-ab-cmo: <https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/AssetBackedSecurities/CMOs/> .
+@prefix fibo-sec-dbt-ab-lpn: <https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/AssetBackedSecurities/LoanParticipationNotes/> .
+@prefix fibo-sec-dbt-ab-mbs: <https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/AssetBackedSecurities/MortgageBackedSecurities/> .
+@prefix fibo-sec-dbt-ab-mod: <https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/AssetBackedSecurities/MetadataSECDebtAssetBackedSecurities/> .
+@prefix fibo-sec-dbt-ab-pbs: <https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/AssetBackedSecurities/PoolBackedSecurities/> .
+@prefix fibo-sec-dbt-ab-spv: <https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/AssetBackedSecurities/AssetBackedSPVs/> .
+@prefix fibo-sec-dbt-ab-syn: <https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/AssetBackedSecurities/SyntheticCDOs/> .
+@prefix CommonCoreOntologies: <http://www.ontologyrepository.com/CommonCoreOntologies/> .
+@prefix fibo-fbc-fct-usfsind: <https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/NorthAmericanEntities/USFinancialServicesEntitiesIndividuals/> .
+@prefix Ontology1276789747686: <http://www.semanticweb.org/ontologies/2010/5/Ontology1276789747686.owl#> .
+@prefix fibo-fbc-fct-eufseind: <https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/EuropeanEntities/EuropeanFinancialServicesEntitiesIndividuals/> .
+@prefix ontologyofspatialobject: <http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#> .
+@base <http://ontorule-project.eu/resources/steel> .
+
+<http://ontorule-project.eu/resources/steel> rdf:type owl:Ontology ;
+                                             
+                                             dc:date "2010-05-31"^^xsd:date ;
+                                             
+                                             owl:versionInfo "Final version"^^xsd:string ;
+                                             
+                                             rdfs:comment "Ontology of the Steel Industry Case Study"^^xsd:string ;
+                                             
+                                             dc:creator "Luis Polo" ;
+                                             
+                                             vann:preferredNamespacePrefix "steel" ;
+                                             
+                                             dc:contributor "Emilio Rubiera" ,
+                                                            "Diego Berrueta" ;
+                                             
+                                             dc:creator "Diego Díaz" ;
+                                             
+                                             dc:contributor "Pablo Valledor" ;
+                                             
+                                             dc:publisher <http://ontorule-project.eu/> .
+
+
+#################################################################
+#
+#    Annotation properties
+#
+#################################################################
+
+
+###  http://purl.org/dc/terms/creator
+
+dc:creator rdf:type owl:AnnotationProperty .
+
+
+
+###  http://purl.org/dc/terms/date
+
+dc:date rdf:type owl:AnnotationProperty .
+
+
+
+###  http://www.w3.org/2000/01/rdf-schema#comment
+
+rdfs:comment rdf:type owl:AnnotationProperty .
+
+
+
+###  http://www.w3.org/2000/01/rdf-schema#label
+
+rdfs:label rdf:type owl:AnnotationProperty .
+
+
+
+
+
+#################################################################
+#
+#    Object Properties
+#
+#################################################################
+
+
+###  http://ontorule-project.eu/resources/steel#action
+
+:action rdf:type owl:FunctionalProperty ,
+                 owl:ObjectProperty ;
+        
+        rdfs:label "action"@en ;
+        
+        rdfs:comment "This is the final assignment of a coil to an order (a customer)" ;
+        
+        rdfs:range :Action ;
+        
+        rdfs:domain :Coil ;
+        
+        rdfs:subPropertyOf owl:topObjectProperty .
+
+
+
+###  http://ontorule-project.eu/resources/steel#derivesFrom
+
+:derivesFrom rdf:type owl:ObjectProperty ;
+             
+             rdfs:label "derives from"@en ;
+             
+             rdfs:comment "A given phenomenon derives from a set of defects." ;
+             
+             rdfs:range :Defect ;
+             
+             rdfs:domain :Phenomenon ;
+             
+             rdfs:subPropertyOf owl:topObjectProperty .
+
+
+
+###  http://ontorule-project.eu/resources/steel#hasPhenomenon
+
+:hasPhenomenon rdf:type owl:ObjectProperty ;
+               
+               rdfs:label "has phenomenon"@en ;
+               
+               rdfs:domain :Coil ;
+               
+               rdfs:range :Phenomenon ;
+               
+               rdfs:subPropertyOf owl:topObjectProperty .
+
+
+
+###  http://ontorule-project.eu/resources/steel#hasSamplingPoint
+
+:hasSamplingPoint rdf:type owl:ObjectProperty ;
+                  
+                  rdfs:label "has sampling point"@en ;
+                  
+                  rdfs:domain :Coil ;
+                  
+                  rdfs:range :SamplingPoint ;
+                  
+                  owl:inverseOf :inCoil ;
+                  
+                  rdfs:subPropertyOf owl:topObjectProperty .
+
+
+
+###  http://ontorule-project.eu/resources/steel#inCoil
+
+:inCoil rdf:type owl:FunctionalProperty ,
+                 owl:ObjectProperty ;
+        
+        rdfs:label "in coil"@en ;
+        
+        rdfs:comment "This property links sampling points, used by the system to measure some physical parameters such as the yield strength, to the product (a given coil)." ;
+        
+        rdfs:range :Coil ;
+        
+        rdfs:domain :SamplingPoint ;
+        
+        rdfs:subPropertyOf owl:topObjectProperty .
+
+
+
+###  http://ontorule-project.eu/resources/steel#location
+
+:location rdf:type owl:FunctionalProperty ,
+                   owl:ObjectProperty ;
+          
+          rdfs:label "location"@en ;
+          
+          rdfs:comment "A defect is detected comparing coil data with order specifications in sampling points. Thus a defect is relative to a position in the coil." ;
+          
+          rdfs:domain :Defect ;
+          
+          rdfs:range :SamplingPoint ;
+          
+          rdfs:subPropertyOf owl:topObjectProperty .
+
+
+
+###  http://ontorule-project.eu/resources/steel#locationOf
+
+:locationOf rdf:type owl:ObjectProperty ;
+            
+            rdfs:label "location of"@en ;
+            
+            rdfs:range :Defect ;
+            
+            rdfs:domain :SamplingPoint ;
+            
+            owl:inverseOf :location ;
+            
+            rdfs:subPropertyOf owl:topObjectProperty .
+
+
+
+###  http://ontorule-project.eu/resources/steel#order
+
+:order rdf:type owl:FunctionalProperty ,
+                owl:ObjectProperty ;
+       
+       rdfs:label "order"@en ;
+       
+       rdfs:comment "This is the initial assignment of a coil to an order (a customer). It will define the production goal to be validated by the rule system." ;
+       
+       rdfs:domain :Coil ;
+       
+       rdfs:range :Order ;
+       
+       rdfs:subPropertyOf owl:topObjectProperty .
+
+
+
+###  http://ontorule-project.eu/resources/steel#phenomenonOf
+
+:phenomenonOf rdf:type owl:FunctionalProperty ,
+                       owl:ObjectProperty ;
+              
+              rdfs:label "phenomenon of"@en ;
+              
+              rdfs:range :Coil ;
+              
+              rdfs:domain :Phenomenon ;
+              
+              owl:inverseOf :hasPhenomenon ;
+              
+              rdfs:subPropertyOf owl:topObjectProperty .
+
+
+
+###  http://ontorule-project.eu/resources/steel#steelGrade
+
+:steelGrade rdf:type owl:FunctionalProperty ,
+                     owl:ObjectProperty ;
+            
+            rdfs:label "steel grade"@en ;
+            
+            rdfs:domain :Coil ;
+            
+            rdfs:range :ProductType ;
+            
+            rdfs:subPropertyOf owl:topObjectProperty .
+
+
+
+###  http://www.w3.org/2002/07/owl#topObjectProperty
+
+owl:topObjectProperty rdf:type owl:ObjectProperty ;
+                      
+                      rdfs:label "top object property"@en .
+
+
+
+
+
+#################################################################
+#
+#    Data properties
+#
+#################################################################
+
+
+###  http://ontorule-project.eu/resources/steel#avgFlattenerElongation
+
+:avgFlattenerElongation rdf:type owl:DatatypeProperty ,
+                                 owl:FunctionalProperty ;
+                        
+                        rdfs:label "average flattener elongation"@en ;
+                        
+                        rdfs:domain :Coil ;
+                        
+                        rdfs:subPropertyOf :coilProperty ;
+                        
+                        rdfs:range xsd:float .
+
+
+
+###  http://ontorule-project.eu/resources/steel#avgSkinPassElongation
+
+:avgSkinPassElongation rdf:type owl:DatatypeProperty ,
+                                owl:FunctionalProperty ;
+                       
+                       rdfs:label "average skin-pass elongation"@en ;
+                       
+                       rdfs:domain :Coil ;
+                       
+                       rdfs:subPropertyOf :coilProperty ;
+                       
+                       rdfs:range xsd:float .
+
+
+
+###  http://ontorule-project.eu/resources/steel#avgTemperature
+
+:avgTemperature rdf:type owl:DatatypeProperty ,
+                         owl:FunctionalProperty ;
+                
+                rdfs:label "average temperature"@en ;
+                
+                rdfs:domain :Coil ;
+                
+                rdfs:subPropertyOf :coilProperty ;
+                
+                rdfs:range xsd:float .
+
+
+
+###  http://ontorule-project.eu/resources/steel#coilIdentifier
+
+:coilIdentifier rdf:type owl:DatatypeProperty ,
+                         owl:FunctionalProperty ;
+                
+                rdfs:label "coil identifier"@en ;
+                
+                rdfs:comment "Unique identifier of the product." ;
+                
+                rdfs:domain :Coil ;
+                
+                rdfs:subPropertyOf :coilProperty ;
+                
+                rdfs:range xsd:integer .
+
+
+
+###  http://ontorule-project.eu/resources/steel#coilProperty
+
+:coilProperty rdf:type owl:DatatypeProperty ;
+              
+              rdfs:label "coil property"@en ;
+              
+              rdfs:domain :Coil ;
+              
+              rdfs:subPropertyOf owl:topDataProperty .
+
+
+
+###  http://ontorule-project.eu/resources/steel#flattenerElongation
+
+:flattenerElongation rdf:type owl:DatatypeProperty ,
+                              owl:FunctionalProperty ;
+                     
+                     rdfs:label "flattener elongation"@en ;
+                     
+                     rdfs:domain :SamplingPoint ;
+                     
+                     rdfs:subPropertyOf :samplingPointProperty ;
+                     
+                     rdfs:range xsd:float .
+
+
+
+###  http://ontorule-project.eu/resources/steel#lengthScope
+
+:lengthScope rdf:type owl:DatatypeProperty ,
+                      owl:FunctionalProperty ;
+             
+             rdfs:label "length scope"@en ;
+             
+             rdfs:comment "Length of the coil in which the sampling applies. It is associated to a single coil sampling point." ;
+             
+             rdfs:domain :SamplingPoint ;
+             
+             rdfs:subPropertyOf :samplingPointProperty ;
+             
+             rdfs:range xsd:float .
+
+
+
+###  http://ontorule-project.eu/resources/steel#position
+
+:position rdf:type owl:DatatypeProperty ,
+                   owl:FunctionalProperty ;
+          
+          rdfs:label "position"@en ;
+          
+          rdfs:comment "Position of the coil where a sampling is performed. There is a sampling point each 10 meters from the head to the tail of the coil, so the position indicates the distance in meters from the head to a given sampling point." ;
+          
+          rdfs:domain :SamplingPoint ;
+          
+          rdfs:subPropertyOf :samplingPointProperty ;
+          
+          rdfs:range xsd:float .
+
+
+
+###  http://ontorule-project.eu/resources/steel#productTypeCode
+
+:productTypeCode rdf:type owl:DatatypeProperty ,
+                          owl:FunctionalProperty ;
+                 
+                 rdfs:label "product type code"@en ;
+                 
+                 rdfs:domain :ProductType ;
+                 
+                 rdfs:range xsd:string ;
+                 
+                 rdfs:subPropertyOf owl:topDataProperty .
+
+
+
+###  http://ontorule-project.eu/resources/steel#samplingPointProperty
+
+:samplingPointProperty rdf:type owl:DatatypeProperty ;
+                       
+                       rdfs:label "sampling point property"@en ;
+                       
+                       rdfs:domain :SamplingPoint ;
+                       
+                       rdfs:subPropertyOf owl:topDataProperty .
+
+
+
+###  http://ontorule-project.eu/resources/steel#skinPassElongation
+
+:skinPassElongation rdf:type owl:DatatypeProperty ,
+                             owl:FunctionalProperty ;
+                    
+                    rdfs:label "skin-pass elongation"@en ;
+                    
+                    rdfs:domain :SamplingPoint ;
+                    
+                    rdfs:subPropertyOf :samplingPointProperty ;
+                    
+                    rdfs:range xsd:float .
+
+
+
+###  http://ontorule-project.eu/resources/steel#skinPassElongationMax
+
+:skinPassElongationMax rdf:type owl:DatatypeProperty ,
+                                owl:FunctionalProperty ;
+                       
+                       rdfs:label "skin-pass elongation maximum"@en ;
+                       
+                       rdfs:subPropertyOf :targetParameter ;
+                       
+                       rdfs:range xsd:float .
+
+
+
+###  http://ontorule-project.eu/resources/steel#skinPassElongationMin
+
+:skinPassElongationMin rdf:type owl:DatatypeProperty ,
+                                owl:FunctionalProperty ;
+                       
+                       rdfs:label "skin-pass elongation minimum"@en ;
+                       
+                       rdfs:subPropertyOf :targetParameter ;
+                       
+                       rdfs:range xsd:float .
+
+
+
+###  http://ontorule-project.eu/resources/steel#targetParameter
+
+:targetParameter rdf:type owl:DatatypeProperty ;
+                 
+                 rdfs:label "target parameter"@en ;
+                 
+                 rdfs:domain :Order ;
+                 
+                 rdfs:subPropertyOf owl:topDataProperty .
+
+
+
+###  http://ontorule-project.eu/resources/steel#temperature
+
+:temperature rdf:type owl:DatatypeProperty ,
+                      owl:FunctionalProperty ;
+             
+             rdfs:label "temperature"@en ;
+             
+             rdfs:domain :SamplingPoint ;
+             
+             rdfs:subPropertyOf :samplingPointProperty ;
+             
+             rdfs:range xsd:float .
+
+
+
+###  http://ontorule-project.eu/resources/steel#temperatureMax
+
+:temperatureMax rdf:type owl:DatatypeProperty ,
+                         owl:FunctionalProperty ;
+                
+                rdfs:label "temperature maximum"@en ;
+                
+                rdfs:subPropertyOf :targetParameter ;
+                
+                rdfs:range xsd:float .
+
+
+
+###  http://ontorule-project.eu/resources/steel#temperatureMin
+
+:temperatureMin rdf:type owl:DatatypeProperty ,
+                         owl:FunctionalProperty ;
+                
+                rdfs:label "temperature minimum"@en ;
+                
+                rdfs:subPropertyOf :targetParameter ;
+                
+                rdfs:range xsd:float .
+
+
+
+###  http://ontorule-project.eu/resources/steel#thicknessTarget
+
+:thicknessTarget rdf:type owl:DatatypeProperty ,
+                          owl:FunctionalProperty ;
+                 
+                 rdfs:label "thickness target"@en ;
+                 
+                 rdfs:subPropertyOf :targetParameter ;
+                 
+                 rdfs:range xsd:float .
+
+
+
+###  http://ontorule-project.eu/resources/steel#weightMax
+
+:weightMax rdf:type owl:DatatypeProperty ,
+                    owl:FunctionalProperty ;
+           
+           rdfs:label "weight maximum"@en ;
+           
+           rdfs:subPropertyOf :targetParameter ;
+           
+           rdfs:range xsd:float .
+
+
+
+###  http://ontorule-project.eu/resources/steel#weightMin
+
+:weightMin rdf:type owl:DatatypeProperty ,
+                    owl:FunctionalProperty ;
+           
+           rdfs:label "weight minimum"@en ;
+           
+           rdfs:subPropertyOf :targetParameter ;
+           
+           rdfs:range xsd:float .
+
+
+
+###  http://ontorule-project.eu/resources/steel#widthTarget
+
+:widthTarget rdf:type owl:DatatypeProperty ,
+                      owl:FunctionalProperty ;
+             
+             rdfs:label "width target"@en ;
+             
+             rdfs:subPropertyOf :targetParameter ;
+             
+             rdfs:range xsd:float .
+
+
+
+###  http://ontorule-project.eu/resources/steel#yieldStrength
+
+:yieldStrength rdf:type owl:DatatypeProperty ,
+                        owl:FunctionalProperty ;
+               
+               rdfs:label "yield strength"@en ;
+               
+               rdfs:comment "This parameter is calculated in every sampling point along the coil. So the yieldStrength is associated with a given sampling point to allow the comparison with the yieldStrength value of the target specified in the order. Deviations from the target imply a defect in the coil." ;
+               
+               rdfs:domain :SamplingPoint ;
+               
+               rdfs:subPropertyOf :samplingPointProperty ;
+               
+               rdfs:range xsd:float .
+
+
+
+###  http://ontorule-project.eu/resources/steel#yieldStrengthMax
+
+:yieldStrengthMax rdf:type owl:DatatypeProperty ,
+                           owl:FunctionalProperty ;
+                  
+                  rdfs:label "yield strength upper tolerance"@en ;
+                  
+                  rdfs:subPropertyOf :targetParameter ;
+                  
+                  rdfs:range xsd:float .
+
+
+
+###  http://ontorule-project.eu/resources/steel#yieldStrengthMin
+
+:yieldStrengthMin rdf:type owl:DatatypeProperty ,
+                           owl:FunctionalProperty ;
+                  
+                  rdfs:label "yield strength lower tolerance"@en ;
+                  
+                  rdfs:subPropertyOf :targetParameter ;
+                  
+                  rdfs:range xsd:float .
+
+
+
+###  http://ontorule-project.eu/resources/steel#zincThicknessTarget
+
+:zincThicknessTarget rdf:type owl:DatatypeProperty ,
+                              owl:FunctionalProperty ;
+                     
+                     rdfs:label "zinc thickness target"@en ;
+                     
+                     rdfs:subPropertyOf :targetParameter ;
+                     
+                     rdfs:range xsd:float .
+
+
+
+###  http://www.w3.org/2002/07/owl#topDataProperty
+
+owl:topDataProperty rdf:type owl:DatatypeProperty ;
+                    
+                    rdfs:label "top data property"@en .
+
+
+
+
+
+#################################################################
+#
+#    Classes
+#
+#################################################################
+
+
+###  http://ontorule-project.eu/resources/steel#Action
+
+:Action rdf:type owl:Class ;
+        
+        rdfs:label "Action"@en ;
+        
+        rdfs:comment "This category comprises the actions to be done with the product after the system has completed its evaluation"@en .
+
+
+
+###  http://ontorule-project.eu/resources/steel#Clinching
+
+:Clinching rdf:type owl:Class ;
+           
+           rdfs:label "Clinching"@en ;
+           
+           rdfs:subClassOf :ProductType ;
+           
+           rdfs:comment "Clinching steels are those obtained by a non-continuous method of joining whereby the points of joinage are produced by punching two or more steel sheets together simultaneously by means of a punch and die."@en .
+
+
+
+###  http://ontorule-project.eu/resources/steel#Coil
+
+:Coil rdf:type owl:Class ;
+      
+      rdfs:label "Coil"@en ;
+      
+      rdfs:comment "A coil is a physical object which is the metallurgical product to be analysed during the process."@en .
+
+
+
+###  http://ontorule-project.eu/resources/steel#Defect
+
+:Defect rdf:type owl:Class ;
+        
+        rdfs:label """An imperfection or defect detected in the coil.
+"""@en ,
+                   "Defect"@en .
+
+
+
+###  http://ontorule-project.eu/resources/steel#DualPhase
+
+:DualPhase rdf:type owl:Class ;
+           
+           rdfs:label "Dual-phase steel"@en ;
+           
+           rdfs:subClassOf :ProductType ;
+           
+           rdfs:comment """Dual-phase steel (DPA) is a high-strength steel that has a ferrite and martensitic microstructure. DPA starts as a low or medium carbon steel and is quenched from a temperature above A1 but below A3 on a continuous cooling transformation diagram. This results in a microstructure consisting of a soft ferrite matrix containing islands of martensite as the secondary phase (martensite increases the tensile strength).
+It features advantages such as low yield strength;low yield to tensile strength ratio (yield strength / tensile strength = 0.5); high initial strain hardening rates; good uniform elongation; high strain rate sensitivity (the faster it is crushed the more energy it absorbs); and good fatigue resistance."""@en .
+
+
+
+###  http://ontorule-project.eu/resources/steel#HSLA
+
+:HSLA rdf:type owl:Class ;
+      
+      rdfs:label "High-strength low-alloy steel"@en ;
+      
+      rdfs:subClassOf :ProductType ;
+      
+      rdfs:comment "High-strength low-alloy (HSLA) steel is a type of alloy steel that provides better mechanical properties or greater resistance to corrosion than carbon steel. HSLA steels vary from other steels in that they aren't made to meet a specific chemical composition, but rather to specific mechanical properties. They have a carbon content between 0.05?0.25% to retain formability and weldability."@en .
+
+
+
+###  http://ontorule-project.eu/resources/steel#InterstitialFree
+
+:InterstitialFree rdf:type owl:Class ;
+                  
+                  rdfs:label "Intertitial free metallurgy steel"@en ;
+                  
+                  rdfs:subClassOf :ProductType ;
+                  
+                  rdfs:comment """Steels designed to provide an excellent combination of drawability and mechanical strength based on their specific interstitial free (IF) metallurgy.  
+These steels are hardened by adding manganese, silicon and phosphorous in solid solution to the ferrite. The metallurgy of IF steels optimizes their drawability."""@en .
+
+
+
+###  http://ontorule-project.eu/resources/steel#MechanicalDefect
+
+:MechanicalDefect rdf:type owl:Class ;
+                  
+                  rdfs:label "Mechanical defect"@en ;
+                  
+                  rdfs:subClassOf :Defect ;
+                  
+                  owl:disjointWith :SurfaceAspectDefect ;
+                  
+                  rdfs:comment "A defect having to do with the mechanical process."@en .
+
+
+
+###  http://ontorule-project.eu/resources/steel#MechanicalPhenomenon
+
+:MechanicalPhenomenon rdf:type owl:Class ;
+                      
+                      rdfs:label "Mechanical phenomenon"@en ;
+                      
+                      rdfs:subClassOf :Phenomenon ;
+                      
+                      owl:disjointWith :SurfaceAspectPhenomenon ;
+                      
+                      rdfs:comment "An effect detected in the coil related to the mechanical process."@en .
+
+
+
+###  http://ontorule-project.eu/resources/steel#Order
+
+:Order rdf:type owl:Class ;
+       
+       rdfs:label "Order"@en ;
+       
+       rdfs:comment "An order defines the target specifications of the product. The order also specifies the tolerance allowed with respect to the target parameters."@en .
+
+
+
+###  http://ontorule-project.eu/resources/steel#ParameterDefect
+
+:ParameterDefect rdf:type owl:Class ;
+                 
+                 rdfs:label "Parameter defect"@en ;
+                 
+                 rdfs:subClassOf :MechanicalDefect ;
+                 
+                 rdfs:comment "It is a defect having to do with a deviation of the measured skin-pass elongation, flattener elongation or temperature from the specified values."@en .
+
+
+
+###  http://ontorule-project.eu/resources/steel#Phenomenon
+
+:Phenomenon rdf:type owl:Class ;
+            
+            rdfs:label "Phenomenon"@en ;
+            
+            rdfs:comment "An effect detected in the coil, based on the identified defects along the coil sampling points."@en .
+
+
+
+###  http://ontorule-project.eu/resources/steel#ProductType
+
+:ProductType rdf:type owl:Class ;
+             
+             rdfs:label "Product type"@en ;
+             
+             rdfs:comment "The type identifies the kind of steel, defined by a set of physical and chemical properties"@en .
+
+
+
+###  http://ontorule-project.eu/resources/steel#Rephosphorised
+
+:Rephosphorised rdf:type owl:Class ;
+                
+                rdfs:label "Rephosphorised steel"@en ;
+                
+                rdfs:subClassOf :ProductType ;
+                
+                rdfs:comment "It is a kind of steel that contains phosphorus as its main alloying agent."@en .
+
+
+
+###  http://ontorule-project.eu/resources/steel#SamplingPoint
+
+:SamplingPoint rdf:type owl:Class ;
+               
+               rdfs:label "Sampling point"@en ;
+               
+               rdfs:comment "A sampling point is an abstract concept which represents a given location within a coil where some physical parameters are measured."@en .
+
+
+
+###  http://ontorule-project.eu/resources/steel#SkinPassElongationDefect
+
+:SkinPassElongationDefect rdf:type owl:Class ;
+                          
+                          rdfs:label "Skin-pass elongation defect"@en ;
+                          
+                          rdfs:subClassOf :MechanicalDefect ;
+                          
+                          rdfs:comment "A skin-pass elongation defect has to do with any deviation of the measured skin-pass elongation from the requirements for the product."@en .
+
+
+
+###  http://ontorule-project.eu/resources/steel#SkinPassElongationPhenomenon
+
+:SkinPassElongationPhenomenon rdf:type owl:Class ;
+                              
+                              rdfs:label "Skin-pass elongation phenomenon"@en ;
+                              
+                              rdfs:subClassOf :MechanicalPhenomenon ;
+                              
+                              rdfs:comment "An effect detected in the coil related to the skin-pass elongation."@en .
+
+
+
+###  http://ontorule-project.eu/resources/steel#SurfaceAspectDefect
+
+:SurfaceAspectDefect rdf:type owl:Class ;
+                     
+                     rdfs:label "Surface aspect defect"@en ;
+                     
+                     rdfs:subClassOf :Defect ;
+                     
+                     rdfs:comment "A defect found in the surface of the coil."@en .
+
+
+
+###  http://ontorule-project.eu/resources/steel#SurfaceAspectPhenomenon
+
+:SurfaceAspectPhenomenon rdf:type owl:Class ;
+                         
+                         rdfs:label "Surface aspect phenomenon"@en ;
+                         
+                         rdfs:subClassOf :Phenomenon ;
+                         
+                         rdfs:comment "An effect detected in the coil specifically on the surface of the product."@en .
+
+
+
+###  http://ontorule-project.eu/resources/steel#TemperatureDefect
+
+:TemperatureDefect rdf:type owl:Class ;
+                   
+                   rdfs:label "Temperature defect"@en ;
+                   
+                   rdfs:subClassOf :MechanicalDefect ;
+                   
+                   rdfs:comment "It is a defect having to do with temperature issues. At the exit of the furnace it is necessary to check the temperature ranges of the steel strip, depending on the maximum and minimum end of heating temperature set by the order (measured in ºC) and the steel grade."@en .
+
+
+
+###  http://ontorule-project.eu/resources/steel#TemperaturePhenomenon
+
+:TemperaturePhenomenon rdf:type owl:Class ;
+                       
+                       rdfs:label "Temperature phenomenon"@en ;
+                       
+                       rdfs:subClassOf :MechanicalPhenomenon ;
+                       
+                       rdfs:comment "An effect detected in the coil related to the temperature."@en .
+
+
+
+###  http://ontorule-project.eu/resources/steel#YieldStrengthDefect
+
+:YieldStrengthDefect rdf:type owl:Class ;
+                     
+                     rdfs:label "Yield strength defect"@en ;
+                     
+                     rdfs:subClassOf :MechanicalDefect ;
+                     
+                     rdfs:comment "It is a mechanical defect having to do with the target yield strength. A defect of this category is identified if the yield strength is outside of the target range at any point."@en .
+
+
+
+###  http://ontorule-project.eu/resources/steel#YieldStrengthPhenomenon
+
+:YieldStrengthPhenomenon rdf:type owl:Class ;
+                         
+                         rdfs:label "Yield strength phenomenon"@en ;
+                         
+                         rdfs:subClassOf :MechanicalPhenomenon ;
+                         
+                         rdfs:comment "An effect detected in the coil related to the yield strength."@en .
+
+
+
+###  http://www.w3.org/2002/07/owl#Thing
+
+owl:Thing rdf:type owl:Class .
+
+
+
+
+
+#################################################################
+#
+#    Individuals
+#
+#################################################################
+
+
+###  http://ontorule-project.eu/resources/steel#A200
+
+:A200 rdf:type :DualPhase ,
+               owl:NamedIndividual ,
+               owl:Thing ;
+      
+      rdfs:label "A200" ;
+      
+      :productTypeCode "A200" .
+
+
+
+###  http://ontorule-project.eu/resources/steel#B102
+
+:B102 rdf:type :InterstitialFree ,
+               owl:NamedIndividual ,
+               owl:Thing ;
+      
+      rdfs:label "B102" ;
+      
+      :productTypeCode "B102" .
+
+
+
+###  http://ontorule-project.eu/resources/steel#B105
+
+:B105 rdf:type :InterstitialFree ,
+               owl:NamedIndividual ,
+               owl:Thing ;
+      
+      rdfs:label "B105" ;
+      
+      :productTypeCode "B105" .
+
+
+
+###  http://ontorule-project.eu/resources/steel#C114
+
+:C114 rdf:type :Rephosphorised ,
+               owl:NamedIndividual ,
+               owl:Thing ;
+      
+      rdfs:label "C114" ;
+      
+      :productTypeCode "C114" .
+
+
+
+###  http://ontorule-project.eu/resources/steel#C116
+
+:C116 rdf:type :Rephosphorised ,
+               owl:NamedIndividual ,
+               owl:Thing ;
+      
+      rdfs:label "C116" ;
+      
+      :productTypeCode "C116" .
+
+
+
+###  http://ontorule-project.eu/resources/steel#C119
+
+:C119 rdf:type :Rephosphorised ,
+               owl:NamedIndividual ,
+               owl:Thing ;
+      
+      rdfs:label "C119" ;
+      
+      :productTypeCode "C119" .
+
+
+
+###  http://ontorule-project.eu/resources/steel#D012
+
+:D012 rdf:type :HSLA ,
+               owl:NamedIndividual ,
+               owl:Thing ;
+      
+      rdfs:label "D012" ;
+      
+      :productTypeCode "D012" .
+
+
+
+###  http://ontorule-project.eu/resources/steel#D071
+
+:D071 rdf:type :HSLA ,
+               owl:NamedIndividual ,
+               owl:Thing ;
+      
+      rdfs:label "D071" ;
+      
+      :productTypeCode "D071" .
+
+
+
+###  http://ontorule-project.eu/resources/steel#K012
+
+:K012 rdf:type :Clinching ,
+               owl:NamedIndividual ,
+               owl:Thing ;
+      
+      rdfs:label "K012" ;
+      
+      :productTypeCode "K012" .
+
+
+
+###  http://ontorule-project.eu/resources/steel#evaluation
+
+:evaluation rdf:type :Action ,
+                     owl:NamedIndividual ,
+                     owl:Thing ;
+            
+            rdfs:label "evaluation"@en ;
+            
+            rdfs:comment "The coil is sent to experts when it is not clear whether it meets order requirements" .
+
+
+
+###  http://ontorule-project.eu/resources/steel#keepAssignment
+
+:keepAssignment rdf:type :Action ,
+                         owl:NamedIndividual ,
+                         owl:Thing ;
+                
+                rdfs:label "Keep assignment"@en .
+
+
+
+###  http://ontorule-project.eu/resources/steel#repair
+
+:repair rdf:type :Action ,
+                 owl:NamedIndividual ,
+                 owl:Thing ;
+        
+        rdfs:label "repair"@en ;
+        
+        rdfs:comment "When the quality of coil is low but it could be repaired, it is sent again to the production line." .
+
+
+
+###  http://ontorule-project.eu/resources/steel#scrap
+
+:scrap rdf:type :Action ,
+                owl:NamedIndividual ,
+                owl:Thing ;
+       
+       rdfs:label "scrap"@en ;
+       
+       rdfs:comment "When the quality of the coil is very low, it is sent to scrap" .
+
+
+
+
+###  Generated by the OWL API (version 3.4.5-SNAPSHOT) http://owlapi.sourceforge.net
+

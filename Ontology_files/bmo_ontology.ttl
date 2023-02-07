@@ -1,0 +1,1255 @@
+@prefix : <https://w3id.org/digitalconstruction/Entities#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <https://w3id.org/digitalconstruction/Entities> .
+
+<https://w3id.org/digitalconstruction/Entities> rdf:type owl:Ontology ;
+                                                 owl:imports <https://raw.githubusercontent.com/BFO-ontology/BFO/master/bfo.owl> ,
+                                                             <https://digitalconstruction.github.io/Contexts/latest/ontology.ttl> ,
+                                                             <https://digitalconstruction.github.io/Variables/latest/ontology.ttl> ;
+                                                 <http://purl.org/dc/elements/1.1/date> "2020-03-20" ;
+                                                 <http://purl.org/dc/elements/1.1/title> "Digital Construction Entities" ;
+                                                 <http://purl.org/dc/terms/created> "2020-01-12" ;
+                                                 <http://purl.org/dc/terms/creator> "Seppo Törmä" ,
+                                                                                    "Yuan Zheng" ;
+                                                 <http://purl.org/dc/terms/license> <https://creativecommons.org/licenses/by/4.0/> ;
+                                                 <http://purl.org/vocab/vann/preferredNamespacePrefix> "dice" ;
+                                                 <http://purl.org/vocab/vann/preferredNamespaceUri> "https://w3id.org/digitalconstruction/Entities" ;
+                                                 rdfs:comment "Digital Construction Entities Ontology defines the essential entities that can be referred to in construction and renovation projects by people or systems." ;
+                                                 rdfs:label "Digital Construction Entities" ;
+                                                 rdfs:seeAlso <https://w3id.org/digitalconstruction> .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://purl.org/dc/elements/1.1/creator
+<http://purl.org/dc/elements/1.1/creator> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/date
+<http://purl.org/dc/elements/1.1/date> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/title
+<http://purl.org/dc/elements/1.1/title> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/abstract
+<http://purl.org/dc/terms/abstract> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/created
+<http://purl.org/dc/terms/created> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/creator
+<http://purl.org/dc/terms/creator> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/description
+<http://purl.org/dc/terms/description> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/license
+<http://purl.org/dc/terms/license> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/vocab/vann/preferredNamespacePrefix
+<http://purl.org/vocab/vann/preferredNamespacePrefix> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/vocab/vann/preferredNamespaceUri
+<http://purl.org/vocab/vann/preferredNamespaceUri> rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://purl.obolibrary.org/obo/BFO_0000082
+<http://purl.obolibrary.org/obo/BFO_0000082> rdf:type owl:ObjectProperty .
+
+
+###  http://purl.obolibrary.org/obo/BFO_0000118
+<http://purl.obolibrary.org/obo/BFO_0000118> rdf:type owl:ObjectProperty .
+
+
+###  http://purl.obolibrary.org/obo/BFO_0000138
+<http://purl.obolibrary.org/obo/BFO_0000138> rdf:type owl:ObjectProperty .
+
+
+###  http://purl.obolibrary.org/obo/BFO_0000170
+<http://purl.obolibrary.org/obo/BFO_0000170> rdf:type owl:ObjectProperty .
+
+
+###  http://purl.obolibrary.org/obo/BFO_0000196
+<http://purl.obolibrary.org/obo/BFO_0000196> rdf:type owl:ObjectProperty .
+
+
+###  http://purl.obolibrary.org/obo/BFO_0000197
+<http://purl.obolibrary.org/obo/BFO_0000197> rdf:type owl:ObjectProperty .
+
+
+###  http://purl.obolibrary.org/obo/BFO_0000199
+<http://purl.obolibrary.org/obo/BFO_0000199> rdf:type owl:ObjectProperty .
+
+
+###  http://purl.obolibrary.org/obo/BFO_0000221
+<http://purl.obolibrary.org/obo/BFO_0000221> rdf:type owl:ObjectProperty .
+
+
+###  http://purl.obolibrary.org/obo/BFO_0000222
+<http://purl.obolibrary.org/obo/BFO_0000222> rdf:type owl:ObjectProperty .
+
+
+###  http://purl.obolibrary.org/obo/BFO_0000223
+<http://purl.obolibrary.org/obo/BFO_0000223> rdf:type owl:ObjectProperty .
+
+
+###  http://purl.obolibrary.org/obo/BFO_0000224
+<http://purl.obolibrary.org/obo/BFO_0000224> rdf:type owl:ObjectProperty .
+
+
+###  https://w3id.org/digitalconstruction/Entities#after
+:after rdf:type owl:ObjectProperty ;
+       owl:inverseOf :before ;
+       rdfs:domain <http://purl.obolibrary.org/obo/BFO_0000003> ;
+       rdfs:range <http://purl.obolibrary.org/obo/BFO_0000003> ;
+       rdfs:label "after" .
+
+
+###  https://w3id.org/digitalconstruction/Entities#before
+:before rdf:type owl:ObjectProperty ;
+        rdfs:domain <http://purl.obolibrary.org/obo/BFO_0000003> ;
+        rdfs:range <http://purl.obolibrary.org/obo/BFO_0000003> ;
+        rdfs:label "before" .
+
+
+###  https://w3id.org/digitalconstruction/Entities#belongsTo
+:belongsTo rdf:type owl:ObjectProperty ;
+           owl:equivalentProperty :classifiedBy ;
+           rdfs:subPropertyOf :labeledBy ;
+           owl:inverseOf :categorises ;
+           rdfs:label "belongsTo" .
+
+
+###  https://w3id.org/digitalconstruction/Entities#categorises
+:categorises rdf:type owl:ObjectProperty ;
+             owl:equivalentProperty :classifies ;
+             rdfs:subPropertyOf :labels .
+
+
+###  https://w3id.org/digitalconstruction/Entities#classifiedBy
+:classifiedBy rdf:type owl:ObjectProperty ;
+              rdfs:subPropertyOf :labeledBy ;
+              owl:inverseOf :classifies ;
+              rdfs:domain <http://purl.obolibrary.org/obo/BFO_0000001> ;
+              rdfs:range :Category ;
+              rdfs:label "classifiedBy" .
+
+
+###  https://w3id.org/digitalconstruction/Entities#classifies
+:classifies rdf:type owl:ObjectProperty ;
+            rdfs:subPropertyOf :labels ;
+            rdfs:domain :Category ;
+            rdfs:range <http://purl.obolibrary.org/obo/BFO_0000001> ;
+            rdfs:label "classifies" .
+
+
+###  https://w3id.org/digitalconstruction/Entities#contentRepresentedIn
+:contentRepresentedIn rdf:type owl:ObjectProperty ;
+                      owl:inverseOf :representsContentOf ;
+                      rdfs:domain :InformationContentEntity ;
+                      rdfs:range <https://w3id.org/digitalconstruction/Contexts#Context> ;
+                      rdfs:comment "The context in which the content of the information content entity is represented" ;
+                      rdfs:label "contentRepresentedIn" .
+
+
+###  https://w3id.org/digitalconstruction/Entities#hasActivity
+:hasActivity rdf:type owl:ObjectProperty ;
+             owl:inverseOf :hasState ;
+             rdfs:domain :ActivityContext ;
+             rdfs:range :Activity ;
+             rdfs:label "hasActivity" .
+
+
+###  https://w3id.org/digitalconstruction/Entities#hasAgent
+:hasAgent rdf:type owl:ObjectProperty ;
+          rdfs:subPropertyOf :hasParticipant ;
+          owl:inverseOf :isAgentIn ;
+          rdfs:domain :Activity ;
+          rdfs:range :Agent ;
+          rdfs:label "hasAgent" .
+
+
+###  https://w3id.org/digitalconstruction/Entities#hasAsset
+:hasAsset rdf:type owl:ObjectProperty ;
+          owl:inverseOf :hasOwner ;
+          rdfs:domain :Agent ;
+          rdfs:range [ rdf:type owl:Class ;
+                       owl:unionOf ( <http://purl.obolibrary.org/obo/BFO_0000029>
+                                     <http://purl.obolibrary.org/obo/BFO_0000040>
+                                     :InformationContentEntity
+                                   )
+                     ] ;
+          rdfs:label "hasAsset" .
+
+
+###  https://w3id.org/digitalconstruction/Entities#hasCapability
+:hasCapability rdf:type owl:ObjectProperty ;
+               rdfs:subPropertyOf <http://purl.obolibrary.org/obo/BFO_0000196> ;
+               owl:inverseOf :isCapabilityOf ;
+               rdfs:domain :Agent ;
+               rdfs:range :Capability ;
+               rdfs:label "hasCapability" .
+
+
+###  https://w3id.org/digitalconstruction/Entities#hasContinuantPart
+:hasContinuantPart rdf:type owl:ObjectProperty ;
+                   owl:inverseOf :isContinuantPartOf ;
+                   rdfs:label "hasContinuantPart" .
+
+
+###  https://w3id.org/digitalconstruction/Entities#hasDuration
+:hasDuration rdf:type owl:ObjectProperty ;
+             rdfs:domain :TimeInterval ;
+             rdfs:range :TimeDuration ;
+             rdfs:label "hasDuration" .
+
+
+###  https://w3id.org/digitalconstruction/Entities#hasEnd
+:hasEnd rdf:type owl:ObjectProperty ;
+        rdfs:subPropertyOf <http://purl.obolibrary.org/obo/BFO_0000224> ;
+        owl:inverseOf :isEndOf ;
+        rdfs:domain :TimeInterval ;
+        rdfs:range :TimeInstant ;
+        rdfs:label "hasEnd" .
+
+
+###  https://w3id.org/digitalconstruction/Entities#hasEntitiesFrom
+:hasEntitiesFrom rdf:type owl:ObjectProperty ;
+                 rdfs:domain :EntityScope ;
+                 rdfs:range <http://purl.obolibrary.org/obo/BFO_0000001> ;
+                 rdfs:label "hasEntitiesFrom" .
+
+
+###  https://w3id.org/digitalconstruction/Entities#hasEquipment
+:hasEquipment rdf:type owl:ObjectProperty ;
+              rdfs:subPropertyOf :hasParticipant ;
+              owl:inverseOf :isEquipmentIn ;
+              rdfs:domain :Activity ;
+              rdfs:range :Equipment ;
+              rdfs:label "hasEquipment" .
+
+
+###  https://w3id.org/digitalconstruction/Entities#hasInformation
+:hasInformation rdf:type owl:ObjectProperty ;
+                rdfs:subPropertyOf :hasParticipant ;
+                owl:inverseOf :isInformationIn ;
+                rdfs:domain :Activity ;
+                rdfs:range :InformationContentEntity ;
+                rdfs:label "hasInformation" .
+
+
+###  https://w3id.org/digitalconstruction/Entities#hasIntention
+:hasIntention rdf:type owl:ObjectProperty ;
+              rdfs:subPropertyOf <http://purl.obolibrary.org/obo/BFO_0000196> ;
+              owl:inverseOf :isIntentionOf ;
+              rdfs:domain :Agent ;
+              rdfs:range :Intention ;
+              rdfs:label "hasIntention" .
+
+
+###  https://w3id.org/digitalconstruction/Entities#hasMaterial
+:hasMaterial rdf:type owl:ObjectProperty ;
+             rdfs:subPropertyOf :hasParticipant ;
+             owl:inverseOf :isMaterialIn ;
+             rdfs:domain :Activity ;
+             rdfs:range :MaterialBatch ;
+             rdfs:label "hasMaterial" .
+
+
+###  https://w3id.org/digitalconstruction/Entities#hasMaximumCartesianPosition
+:hasMaximumCartesianPosition rdf:type owl:ObjectProperty ;
+                             rdfs:domain :CartesianBoundingBox ;
+                             rdfs:range :CartesianPosition ;
+                             rdfs:label "hasMaximumCartesianPosition" .
+
+
+###  https://w3id.org/digitalconstruction/Entities#hasMaximumGeodeticPosition
+:hasMaximumGeodeticPosition rdf:type owl:ObjectProperty ;
+                            rdfs:domain :GeodeticBoundingBox ;
+                            rdfs:range :GeodeticPosition ;
+                            rdfs:label "hasMaximumGeodeticPosition" .
+
+
+###  https://w3id.org/digitalconstruction/Entities#hasMember
+:hasMember rdf:type owl:ObjectProperty ;
+           rdfs:subPropertyOf owl:topObjectProperty ;
+           owl:inverseOf :memberOf ;
+           rdfs:domain :Group ;
+           rdfs:range <http://purl.obolibrary.org/obo/BFO_0000001> ;
+           rdfs:label "hasMember" .
+
+
+###  https://w3id.org/digitalconstruction/Entities#hasMemberPart
+:hasMemberPart rdf:type owl:ObjectProperty ;
+               owl:inverseOf :isMemberPartOf ;
+               rdfs:label "hasMemberPart" .
+
+
+###  https://w3id.org/digitalconstruction/Entities#hasMinimumCartesianPosition
+:hasMinimumCartesianPosition rdf:type owl:ObjectProperty ;
+                             rdfs:domain :CartesianBoundingBox ;
+                             rdfs:range :CartesianPosition ;
+                             rdfs:label "hasMinumumCartesianPosition" .
+
+
+###  https://w3id.org/digitalconstruction/Entities#hasMinimumGeodeticPosition
+:hasMinimumGeodeticPosition rdf:type owl:ObjectProperty ;
+                            rdfs:domain :GeodeticBoundingBox ;
+                            rdfs:range :GeodeticPosition ;
+                            rdfs:label "hasMinimumGeodeticPosition" .
+
+
+###  https://w3id.org/digitalconstruction/Entities#hasOwner
+:hasOwner rdf:type owl:ObjectProperty ;
+          rdfs:domain [ rdf:type owl:Class ;
+                        owl:unionOf ( <http://purl.obolibrary.org/obo/BFO_0000029>
+                                      <http://purl.obolibrary.org/obo/BFO_0000040>
+                                      :InformationContentEntity
+                                    )
+                      ] ;
+          rdfs:range :Agent ;
+          rdfs:label "hasOwner" .
+
+
+###  https://w3id.org/digitalconstruction/Entities#hasParticipant
+:hasParticipant rdf:type owl:ObjectProperty ;
+                owl:inverseOf :isParticipantIn ;
+                rdfs:label "hasParticipant" .
+
+
+###  https://w3id.org/digitalconstruction/Entities#hasQuality
+:hasQuality rdf:type owl:ObjectProperty ;
+            rdfs:subPropertyOf <http://purl.obolibrary.org/obo/BFO_0000196> ;
+            owl:inverseOf :isQualityOf ;
+            rdfs:range <http://purl.obolibrary.org/obo/BFO_0000019> ;
+            rdfs:label "hasQuality" .
+
+
+###  https://w3id.org/digitalconstruction/Entities#hasRole
+:hasRole rdf:type owl:ObjectProperty ;
+         rdfs:subPropertyOf <http://purl.obolibrary.org/obo/BFO_0000196> ;
+         owl:inverseOf :isRoleOf ;
+         rdfs:domain :Agent ;
+         rdfs:range <http://purl.obolibrary.org/obo/BFO_0000023> ;
+         rdfs:label "hasRole" .
+
+
+###  https://w3id.org/digitalconstruction/Entities#hasScope
+:hasScope rdf:type owl:ObjectProperty ;
+          rdfs:domain :Labeling ;
+          rdfs:range :Category ;
+          rdfs:comment "Defines the broader category that is the scope of the label" ;
+          rdfs:label "hasScope" .
+
+
+###  https://w3id.org/digitalconstruction/Entities#hasSpatialExtent
+:hasSpatialExtent rdf:type owl:ObjectProperty ;
+                  rdfs:domain <http://purl.obolibrary.org/obo/BFO_0000006> ;
+                  rdfs:range :SpatialExtent ;
+                  rdfs:label "hasSpatialExtent" .
+
+
+###  https://w3id.org/digitalconstruction/Entities#hasSpatialOrientation
+:hasSpatialOrientation rdf:type owl:ObjectProperty ;
+                       rdfs:domain :CartesianPosition ;
+                       rdfs:range :SpatialOrientation ;
+                       rdfs:label "hasSpatialOrientation" .
+
+
+###  https://w3id.org/digitalconstruction/Entities#hasSpatialOrigin
+:hasSpatialOrigin rdf:type owl:ObjectProperty ;
+                  rdfs:domain :CartesianPosition ;
+                  rdfs:range :SpatialPosition ;
+                  rdfs:label "hasSpatialOrigin" .
+
+
+###  https://w3id.org/digitalconstruction/Entities#hasSpatialPosition
+:hasSpatialPosition rdf:type owl:ObjectProperty ;
+                    rdfs:domain <http://purl.obolibrary.org/obo/BFO_0000006> ;
+                    rdfs:range :SpatialPosition ;
+                    rdfs:label "hasSpatialPosition" .
+
+
+###  https://w3id.org/digitalconstruction/Entities#hasStart
+:hasStart rdf:type owl:ObjectProperty ;
+          rdfs:subPropertyOf <http://purl.obolibrary.org/obo/BFO_0000222> ;
+          owl:inverseOf :isStartOf ;
+          rdfs:domain :TimeInterval ;
+          rdfs:range :TimeInstant ;
+          rdfs:label "hasStart" .
+
+
+###  https://w3id.org/digitalconstruction/Entities#hasState
+:hasState rdf:type owl:ObjectProperty ;
+          rdfs:domain :Activity ;
+          rdfs:range :ActivityContext ;
+          rdfs:label "hasState" .
+
+
+###  https://w3id.org/digitalconstruction/Entities#hasSubActivity
+:hasSubActivity rdf:type owl:ObjectProperty ;
+                rdfs:subPropertyOf <http://purl.obolibrary.org/obo/BFO_0000118> ;
+                owl:inverseOf :isSubActivityOf ;
+                rdfs:domain :Activity ;
+                rdfs:range :Activity ;
+                rdfs:label "hasSubActivity" .
+
+
+###  https://w3id.org/digitalconstruction/Entities#hasSubLocation
+:hasSubLocation rdf:type owl:ObjectProperty ;
+                rdfs:subPropertyOf <http://purl.obolibrary.org/obo/BFO_0000170> ;
+                owl:inverseOf :isSubLocationOf ;
+                rdfs:domain :Location ;
+                rdfs:range :Location ;
+                rdfs:label "hasSubLocation" .
+
+
+###  https://w3id.org/digitalconstruction/Entities#identifiedBy
+:identifiedBy rdf:type owl:ObjectProperty ;
+              rdfs:subPropertyOf :labeledBy ;
+              owl:inverseOf :identifies ;
+              rdfs:domain <http://purl.obolibrary.org/obo/BFO_0000001> ;
+              rdfs:range :Identifier ;
+              rdfs:label "identifiedBy" .
+
+
+###  https://w3id.org/digitalconstruction/Entities#identifies
+:identifies rdf:type owl:ObjectProperty ;
+            rdfs:subPropertyOf :labels ;
+            rdfs:domain :Identifier ;
+            rdfs:range <http://purl.obolibrary.org/obo/BFO_0000001> ;
+            rdfs:label "identifies" .
+
+
+###  https://w3id.org/digitalconstruction/Entities#includesRole
+:includesRole rdf:type owl:ObjectProperty ;
+              owl:inverseOf :isIncludedRoleIn ;
+              rdfs:domain <http://purl.obolibrary.org/obo/BFO_0000001> ;
+              rdfs:range <http://purl.obolibrary.org/obo/BFO_0000023> ;
+              rdfs:label "includesRole" .
+
+
+###  https://w3id.org/digitalconstruction/Entities#isAbout
+:isAbout rdf:type owl:ObjectProperty ;
+         rdfs:domain :InformationContentEntity ;
+         rdfs:range <http://purl.obolibrary.org/obo/BFO_0000001> ;
+         rdfs:label "isAbout" .
+
+
+###  https://w3id.org/digitalconstruction/Entities#isAgentIn
+:isAgentIn rdf:type owl:ObjectProperty ;
+           rdfs:subPropertyOf :isParticipantIn ;
+           rdfs:domain :Agent ;
+           rdfs:range :Activity ;
+           rdfs:label "isAgentIn" .
+
+
+###  https://w3id.org/digitalconstruction/Entities#isCapabilityOf
+:isCapabilityOf rdf:type owl:ObjectProperty ;
+                rdfs:subPropertyOf <http://purl.obolibrary.org/obo/BFO_0000197> ;
+                rdfs:domain :Capability ;
+                rdfs:range :Agent ;
+                rdfs:label "isCapabilityOf" .
+
+
+###  https://w3id.org/digitalconstruction/Entities#isContinuantPartOf
+:isContinuantPartOf rdf:type owl:ObjectProperty ;
+                    rdfs:label "isContinuantPartOf" .
+
+
+###  https://w3id.org/digitalconstruction/Entities#isEndOf
+:isEndOf rdf:type owl:ObjectProperty ;
+         rdfs:subPropertyOf <http://purl.obolibrary.org/obo/BFO_0000223> ;
+         rdfs:domain :TimeInstant ;
+         rdfs:range :TimeInterval ;
+         rdfs:label "isEndOf" .
+
+
+###  https://w3id.org/digitalconstruction/Entities#isEnvironmentOf
+:isEnvironmentOf rdf:type owl:ObjectProperty ;
+                 owl:inverseOf :occursIn ;
+                 rdfs:label "isEnvironmentOf" .
+
+
+###  https://w3id.org/digitalconstruction/Entities#isEquipmentIn
+:isEquipmentIn rdf:type owl:ObjectProperty ;
+               rdfs:subPropertyOf :isParticipantIn ;
+               rdfs:domain :Equipment ;
+               rdfs:range :Activity ;
+               rdfs:label "isEquipmentIn" .
+
+
+###  https://w3id.org/digitalconstruction/Entities#isIncludedRoleIn
+:isIncludedRoleIn rdf:type owl:ObjectProperty ;
+                  rdfs:domain <http://purl.obolibrary.org/obo/BFO_0000023> ;
+                  rdfs:range <http://purl.obolibrary.org/obo/BFO_0000001> ;
+                  rdfs:label "isIncludedRoleIn" .
+
+
+###  https://w3id.org/digitalconstruction/Entities#isInformationIn
+:isInformationIn rdf:type owl:ObjectProperty ;
+                 rdfs:subPropertyOf :isParticipantIn ;
+                 rdfs:domain :InformationContentEntity ;
+                 rdfs:range :Activity ;
+                 rdfs:label "isInformationIn" .
+
+
+###  https://w3id.org/digitalconstruction/Entities#isIntentionOf
+:isIntentionOf rdf:type owl:ObjectProperty ;
+               rdfs:subPropertyOf <http://purl.obolibrary.org/obo/BFO_0000197> ;
+               rdfs:domain :Intention ;
+               rdfs:range :Agent ;
+               rdfs:label "isIntentionOf" .
+
+
+###  https://w3id.org/digitalconstruction/Entities#isLocatedIn
+:isLocatedIn rdf:type owl:ObjectProperty ;
+             owl:inverseOf :isLocationOf ;
+             rdfs:domain <http://purl.obolibrary.org/obo/BFO_0000040> ;
+             rdfs:range :Location ;
+             rdfs:label "isLocatedIn" .
+
+
+###  https://w3id.org/digitalconstruction/Entities#isLocationOf
+:isLocationOf rdf:type owl:ObjectProperty ;
+              rdfs:domain :Location ;
+              rdfs:range <http://purl.obolibrary.org/obo/BFO_0000040> ;
+              rdfs:label "isLocationOf" .
+
+
+###  https://w3id.org/digitalconstruction/Entities#isMaterialIn
+:isMaterialIn rdf:type owl:ObjectProperty ;
+              rdfs:subPropertyOf :isParticipantIn ;
+              rdfs:domain :MaterialBatch ;
+              rdfs:range :Activity ;
+              rdfs:label "isMaterialIn" .
+
+
+###  https://w3id.org/digitalconstruction/Entities#isMemberPartOf
+:isMemberPartOf rdf:type owl:ObjectProperty ;
+                rdfs:label "isMemberPartOf" .
+
+
+###  https://w3id.org/digitalconstruction/Entities#isOccupiedByActivity
+:isOccupiedByActivity rdf:type owl:ObjectProperty ;
+                      owl:inverseOf :occupiesTimeInterval ;
+                      rdfs:domain :TimeInterval ;
+                      rdfs:range :Activity ;
+                      rdfs:label "isOccupiedByActivity" .
+
+
+###  https://w3id.org/digitalconstruction/Entities#isParticipantIn
+:isParticipantIn rdf:type owl:ObjectProperty ;
+                 rdfs:label "isParticipantIn" .
+
+
+###  https://w3id.org/digitalconstruction/Entities#isQualityOf
+:isQualityOf rdf:type owl:ObjectProperty ;
+             rdfs:subPropertyOf <http://purl.obolibrary.org/obo/BFO_0000197> ;
+             rdfs:domain <http://purl.obolibrary.org/obo/BFO_0000019> ;
+             rdfs:label "isQualityOf" .
+
+
+###  https://w3id.org/digitalconstruction/Entities#isRoleOf
+:isRoleOf rdf:type owl:ObjectProperty ;
+          rdfs:subPropertyOf <http://purl.obolibrary.org/obo/BFO_0000197> ;
+          rdfs:domain <http://purl.obolibrary.org/obo/BFO_0000023> ;
+          rdfs:range :Agent ;
+          rdfs:label "isRoleOf" .
+
+
+###  https://w3id.org/digitalconstruction/Entities#isStartOf
+:isStartOf rdf:type owl:ObjectProperty ;
+           rdfs:subPropertyOf <http://purl.obolibrary.org/obo/BFO_0000221> ;
+           rdfs:domain :TimeInstant ;
+           rdfs:range :TimeInterval ;
+           rdfs:label "isStartOf" .
+
+
+###  https://w3id.org/digitalconstruction/Entities#isSubActivityOf
+:isSubActivityOf rdf:type owl:ObjectProperty ;
+                 rdfs:subPropertyOf <http://purl.obolibrary.org/obo/BFO_0000138> ;
+                 rdfs:domain :Activity ;
+                 rdfs:range :Activity ;
+                 rdfs:label "isSubActivityOf" .
+
+
+###  https://w3id.org/digitalconstruction/Entities#isSubLocationOf
+:isSubLocationOf rdf:type owl:ObjectProperty ;
+                 rdfs:subPropertyOf <http://purl.obolibrary.org/obo/BFO_0000082> ;
+                 rdfs:domain :Location ;
+                 rdfs:range :Location ;
+                 rdfs:label "isSubLocationOf" .
+
+
+###  https://w3id.org/digitalconstruction/Entities#labeledBy
+:labeledBy rdf:type owl:ObjectProperty ;
+           owl:inverseOf :labels ;
+           rdfs:domain <http://purl.obolibrary.org/obo/BFO_0000001> ;
+           rdfs:range :Labeling ;
+           rdfs:label "labeledBy" .
+
+
+###  https://w3id.org/digitalconstruction/Entities#labels
+:labels rdf:type owl:ObjectProperty ;
+        rdfs:domain :Labeling ;
+        rdfs:range <http://purl.obolibrary.org/obo/BFO_0000001> .
+
+
+###  https://w3id.org/digitalconstruction/Entities#memberOf
+:memberOf rdf:type owl:ObjectProperty ;
+          rdfs:domain <http://purl.obolibrary.org/obo/BFO_0000001> ;
+          rdfs:range :Group ;
+          rdfs:label "memberOf" .
+
+
+###  https://w3id.org/digitalconstruction/Entities#occupiesTimeInterval
+:occupiesTimeInterval rdf:type owl:ObjectProperty ;
+                      rdfs:subPropertyOf <http://purl.obolibrary.org/obo/BFO_0000199> ;
+                      rdfs:domain :Activity ;
+                      rdfs:range :TimeInterval ;
+                      rdfs:label "occupiesTimeInterval" .
+
+
+###  https://w3id.org/digitalconstruction/Entities#occursIn
+:occursIn rdf:type owl:ObjectProperty ;
+          rdfs:label "occursIn" .
+
+
+###  https://w3id.org/digitalconstruction/Entities#qualityQuantityKind
+:qualityQuantityKind rdf:type owl:ObjectProperty ;
+                     rdfs:domain <http://purl.obolibrary.org/obo/BFO_0000019> ;
+                     rdfs:range <http://qudt.org/schema/qudt/QuantityKind> ;
+                     rdfs:label "qualityQuantityKind" .
+
+
+###  https://w3id.org/digitalconstruction/Entities#qualityUnit
+:qualityUnit rdf:type owl:ObjectProperty ;
+             rdfs:domain <http://purl.obolibrary.org/obo/BFO_0000019> ;
+             rdfs:range <http://qudt.org/schema/qudt/Unit> ;
+             rdfs:label "qualityUnit" .
+
+
+###  https://w3id.org/digitalconstruction/Entities#representsContentOf
+:representsContentOf rdf:type owl:ObjectProperty ;
+                     rdfs:domain <https://w3id.org/digitalconstruction/Contexts#Context> ;
+                     rdfs:range :InformationContentEntity ;
+                     rdfs:comment "The information content entity that is the source of the data represented in this context" ;
+                     rdfs:label "representsContentOf" .
+
+
+###  https://w3id.org/digitalconstruction/Variables#isVariableOf
+<https://w3id.org/digitalconstruction/Variables#isVariableOf> rdfs:subPropertyOf :isAbout .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  https://w3id.org/digitalconstruction/Entities#hasAltitude
+:hasAltitude rdf:type owl:DatatypeProperty ;
+             rdfs:domain :GeodeticPosition ;
+             rdfs:range xsd:decimal ;
+             rdfs:label "hasAltitude" .
+
+
+###  https://w3id.org/digitalconstruction/Entities#hasAmount
+:hasAmount rdf:type owl:DatatypeProperty ;
+           rdfs:domain :MaterialBatch ;
+           rdfs:range owl:real ;
+           rdfs:label "hasAmount" .
+
+
+###  https://w3id.org/digitalconstruction/Entities#hasDipAngle
+:hasDipAngle rdf:type owl:DatatypeProperty ;
+             rdfs:domain :TwoAngleOrientation ;
+             rdfs:range xsd:double ;
+             rdfs:label "hasDipAngle" .
+
+
+###  https://w3id.org/digitalconstruction/Entities#hasGeodeticCoordinateSystem
+:hasGeodeticCoordinateSystem rdf:type owl:DatatypeProperty ;
+                             rdfs:domain :GeodeticPosition ;
+                             rdfs:range xsd:string ;
+                             rdfs:label "hasGeodeticCoordinateSystem" .
+
+
+###  https://w3id.org/digitalconstruction/Entities#hasLabel
+:hasLabel rdf:type owl:DatatypeProperty ;
+          rdfs:domain :Labeling ;
+          rdfs:range xsd:string ;
+          rdfs:label "hasLabel" .
+
+
+###  https://w3id.org/digitalconstruction/Entities#hasLatitude
+:hasLatitude rdf:type owl:DatatypeProperty ;
+             rdfs:domain :GeodeticPosition ;
+             rdfs:range xsd:decimal ;
+             rdfs:label "hasLatitude" .
+
+
+###  https://w3id.org/digitalconstruction/Entities#hasLongitude
+:hasLongitude rdf:type owl:DatatypeProperty ;
+              rdfs:domain :GeodeticPosition ;
+              rdfs:range xsd:decimal ;
+              rdfs:label "hasLongitude" .
+
+
+###  https://w3id.org/digitalconstruction/Entities#hasMaxLoad
+:hasMaxLoad rdf:type owl:DatatypeProperty ;
+            rdfs:domain :Vehicle ;
+            rdfs:range owl:real ;
+            rdfs:label "hasMaxLoad" .
+
+
+###  https://w3id.org/digitalconstruction/Entities#hasNorthAngle
+:hasNorthAngle rdf:type owl:DatatypeProperty ;
+               rdfs:domain :OneAngleOrientation ;
+               rdfs:range xsd:double ;
+               rdfs:label "hasNorthAngle" .
+
+
+###  https://w3id.org/digitalconstruction/Entities#hasStrikeAngle
+:hasStrikeAngle rdf:type owl:DatatypeProperty ;
+                rdfs:domain :TwoAngleOrientation ;
+                rdfs:range xsd:double ;
+                rdfs:label "hasStrikeAngle" .
+
+
+###  https://w3id.org/digitalconstruction/Entities#hasX
+:hasX rdf:type owl:DatatypeProperty ;
+      rdfs:domain :CartesianPosition ;
+      rdfs:range xsd:double ;
+      rdfs:label "hasX" .
+
+
+###  https://w3id.org/digitalconstruction/Entities#hasXAngle
+:hasXAngle rdf:type owl:DatatypeProperty ;
+           rdfs:domain :ThreeAngleOrientation ;
+           rdfs:range xsd:double ;
+           rdfs:label "hasXAngle" .
+
+
+###  https://w3id.org/digitalconstruction/Entities#hasXLength
+:hasXLength rdf:type owl:DatatypeProperty ;
+            rdfs:domain :CartesianVolume ;
+            rdfs:range xsd:double ;
+            rdfs:label "hasXLength" .
+
+
+###  https://w3id.org/digitalconstruction/Entities#hasY
+:hasY rdf:type owl:DatatypeProperty ;
+      rdfs:domain :CartesianPosition ;
+      rdfs:range xsd:double ;
+      rdfs:label "hasY" .
+
+
+###  https://w3id.org/digitalconstruction/Entities#hasYAngle
+:hasYAngle rdf:type owl:DatatypeProperty ;
+           rdfs:domain :ThreeAngleOrientation ;
+           rdfs:range xsd:double ;
+           rdfs:label "hasYAngle" .
+
+
+###  https://w3id.org/digitalconstruction/Entities#hasYLength
+:hasYLength rdf:type owl:DatatypeProperty ;
+            rdfs:domain :CartesianVolume ;
+            rdfs:range xsd:double ;
+            rdfs:label "hasYLength" .
+
+
+###  https://w3id.org/digitalconstruction/Entities#hasZ
+:hasZ rdf:type owl:DatatypeProperty ;
+      rdfs:domain :CartesianPosition ;
+      rdfs:range xsd:double ;
+      rdfs:label "hasZ" .
+
+
+###  https://w3id.org/digitalconstruction/Entities#hasZAngle
+:hasZAngle rdf:type owl:DatatypeProperty ;
+           rdfs:domain :ThreeAngleOrientation ;
+           rdfs:range xsd:double ;
+           rdfs:label "hasZAngle" .
+
+
+###  https://w3id.org/digitalconstruction/Entities#hasZLength
+:hasZLength rdf:type owl:DatatypeProperty ;
+            rdfs:domain :CartesianVolume ;
+            rdfs:range xsd:double ;
+            rdfs:label "hasZLength" .
+
+
+###  https://w3id.org/digitalconstruction/Entities#qualityValue
+:qualityValue rdf:type owl:DatatypeProperty ;
+              rdfs:domain <http://purl.obolibrary.org/obo/BFO_0000019> ;
+              rdfs:range rdfs:Literal ;
+              rdfs:label "qualityValue" .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://purl.obolibrary.org/obo/BFO_0000001
+<http://purl.obolibrary.org/obo/BFO_0000001> rdf:type owl:Class .
+
+
+###  http://purl.obolibrary.org/obo/BFO_0000003
+<http://purl.obolibrary.org/obo/BFO_0000003> rdf:type owl:Class .
+
+
+###  http://purl.obolibrary.org/obo/BFO_0000004
+<http://purl.obolibrary.org/obo/BFO_0000004> rdf:type owl:Class .
+
+
+###  http://purl.obolibrary.org/obo/BFO_0000006
+<http://purl.obolibrary.org/obo/BFO_0000006> rdf:type owl:Class .
+
+
+###  http://purl.obolibrary.org/obo/BFO_0000015
+<http://purl.obolibrary.org/obo/BFO_0000015> rdf:type owl:Class .
+
+
+###  http://purl.obolibrary.org/obo/BFO_0000016
+<http://purl.obolibrary.org/obo/BFO_0000016> rdf:type owl:Class .
+
+
+###  http://purl.obolibrary.org/obo/BFO_0000019
+<http://purl.obolibrary.org/obo/BFO_0000019> rdf:type owl:Class .
+
+
+###  http://purl.obolibrary.org/obo/BFO_0000023
+<http://purl.obolibrary.org/obo/BFO_0000023> rdf:type owl:Class .
+
+
+###  http://purl.obolibrary.org/obo/BFO_0000027
+<http://purl.obolibrary.org/obo/BFO_0000027> rdf:type owl:Class .
+
+
+###  http://purl.obolibrary.org/obo/BFO_0000029
+<http://purl.obolibrary.org/obo/BFO_0000029> rdf:type owl:Class .
+
+
+###  http://purl.obolibrary.org/obo/BFO_0000030
+<http://purl.obolibrary.org/obo/BFO_0000030> rdf:type owl:Class .
+
+
+###  http://purl.obolibrary.org/obo/BFO_0000031
+<http://purl.obolibrary.org/obo/BFO_0000031> rdf:type owl:Class .
+
+
+###  http://purl.obolibrary.org/obo/BFO_0000040
+<http://purl.obolibrary.org/obo/BFO_0000040> rdf:type owl:Class .
+
+
+###  http://purl.obolibrary.org/obo/BFO_0000202
+<http://purl.obolibrary.org/obo/BFO_0000202> rdf:type owl:Class .
+
+
+###  http://purl.obolibrary.org/obo/BFO_0000203
+<http://purl.obolibrary.org/obo/BFO_0000203> rdf:type owl:Class .
+
+
+###  http://purl.obolibrary.org/obo/IAO_0000030
+<http://purl.obolibrary.org/obo/IAO_0000030> rdf:type owl:Class ;
+                                             owl:equivalentClass :InformationContentEntity ;
+                                             rdfs:label "iao:InformationContentEntity" .
+
+
+###  http://qudt.org/schema/qudt/QuantityKind
+<http://qudt.org/schema/qudt/QuantityKind> rdf:type owl:Class .
+
+
+###  http://qudt.org/schema/qudt/Unit
+<http://qudt.org/schema/qudt/Unit> rdf:type owl:Class .
+
+
+###  http://www.w3.org/ns/prov#Activity
+<http://www.w3.org/ns/prov#Activity> rdf:type owl:Class .
+
+
+###  http://www.w3.org/ns/prov#Agent
+<http://www.w3.org/ns/prov#Agent> rdf:type owl:Class .
+
+
+###  http://www.w3.org/ns/prov#Entity
+<http://www.w3.org/ns/prov#Entity> rdf:type owl:Class .
+
+
+###  http://xmlns.com/foaf/0.1/Agent
+<http://xmlns.com/foaf/0.1/Agent> rdf:type owl:Class ;
+                                  owl:equivalentClass :Agent .
+
+
+###  https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcElement
+<https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcElement> rdf:type owl:Class ;
+                                                                           rdfs:subClassOf :BuildingObject .
+
+
+###  https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcSpatialElement
+<https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcSpatialElement> rdf:type owl:Class ;
+                                                                                  rdfs:subClassOf :Location .
+
+
+###  https://w3id.org/bot#Element
+<https://w3id.org/bot#Element> rdf:type owl:Class ;
+                               rdfs:subClassOf :BuildingObject .
+
+
+###  https://w3id.org/bot#Zone
+<https://w3id.org/bot#Zone> rdf:type owl:Class ;
+                            rdfs:subClassOf :Location .
+
+
+###  https://w3id.org/digitalconstruction/Entities#Activity
+:Activity rdf:type owl:Class ;
+          rdfs:subClassOf <http://purl.obolibrary.org/obo/BFO_0000015> ,
+                          <http://www.w3.org/ns/prov#Activity> ;
+          rdfs:comment "Def: A process that is intentionally performed by an agent." ;
+          rdfs:label "Activity" .
+
+
+###  https://w3id.org/digitalconstruction/Entities#ActivityContext
+:ActivityContext rdf:type owl:Class ;
+                 rdfs:subClassOf <https://w3id.org/digitalconstruction/Contexts#Context> ;
+                 rdfs:comment "A Context relative to an Activity, representing the situation, for example, at the start, at execution time, or at the end of an activity" ;
+                 rdfs:label "ActivityContext" .
+
+
+###  https://w3id.org/digitalconstruction/Entities#Agent
+:Agent rdf:type owl:Class ;
+       rdfs:subClassOf <http://purl.obolibrary.org/obo/BFO_0000040> ,
+                       <http://www.w3.org/ns/prov#Agent> ;
+       rdfs:comment "Agents are actors or stakeholders associated with construction lifecycles" ;
+       rdfs:label "Agent" .
+
+
+###  https://w3id.org/digitalconstruction/Entities#AllOver
+:AllOver rdf:type owl:Class ;
+         rdfs:subClassOf :ActivityContext ;
+         rdfs:label "AllOver" .
+
+
+###  https://w3id.org/digitalconstruction/Entities#AtEnd
+:AtEnd rdf:type owl:Class ;
+       rdfs:subClassOf :ActivityContext ;
+       rdfs:label "AtEnd" .
+
+
+###  https://w3id.org/digitalconstruction/Entities#AtStart
+:AtStart rdf:type owl:Class ;
+         rdfs:subClassOf :ActivityContext ;
+         rdfs:label "AtStart" .
+
+
+###  https://w3id.org/digitalconstruction/Entities#BuildingObject
+:BuildingObject rdf:type owl:Class ;
+                rdfs:subClassOf <http://purl.obolibrary.org/obo/BFO_0000030> ;
+                rdfs:comment "Constituent of a construction entity with a characteristic technical function, form or position." ;
+                rdfs:label "BuildingObject" .
+
+
+###  https://w3id.org/digitalconstruction/Entities#Capability
+:Capability rdf:type owl:Class ;
+            rdfs:subClassOf <http://purl.obolibrary.org/obo/BFO_0000016> ;
+            rdfs:label "Capability" .
+
+
+###  https://w3id.org/digitalconstruction/Entities#CartesianBoundingBox
+:CartesianBoundingBox rdf:type owl:Class ;
+                      rdfs:subClassOf :SpatialExtent ;
+                      rdfs:comment "Minimum bounding box of an entity given by a minimum cartesian position and maximum cartesian position" ;
+                      rdfs:label "CartesianBoundingBox" .
+
+
+###  https://w3id.org/digitalconstruction/Entities#CartesianPosition
+:CartesianPosition rdf:type owl:Class ;
+                   rdfs:subClassOf :SpatialPosition ;
+                   rdfs:comment "Cartesian position expressed as x, y, and z coordinates with respect to a spatial origin and spatial orientation" ;
+                   rdfs:label "CartesianPosition" .
+
+
+###  https://w3id.org/digitalconstruction/Entities#CartesianVolume
+:CartesianVolume rdf:type owl:Class ;
+                 rdfs:subClassOf :SpatialExtent ;
+                 rdfs:comment "Cartesian volume given by the lengths to x, y, and z directions" ;
+                 rdfs:label "CartesianVolume" .
+
+
+###  https://w3id.org/digitalconstruction/Entities#Category
+:Category rdf:type owl:Class ;
+          rdfs:subClassOf :Labeling ;
+          owl:disjointWith :Identifier ;
+          rdfs:comment "Category is a labeling of an entity the associates it with some defined class of things. For example, an object can be associated with a particular class in a classification system such as OmniClass, UniFormat, CoClass, or Talo2000. Category allows also to associate an entity with a category of entities represented in an external system or belonging to a particular project." ;
+          rdfs:label "Category" .
+
+
+###  https://w3id.org/digitalconstruction/Entities#Crane
+:Crane rdf:type owl:Class ;
+       rdfs:subClassOf :Equipment ;
+       rdfs:comment "An equipment for moving objects. The crane remains stationary during the movement and usually there is a difference in altitude in the origin and target location of the object movement." ;
+       rdfs:label "Crane" .
+
+
+###  https://w3id.org/digitalconstruction/Entities#Device
+:Device rdf:type owl:Class ;
+        rdfs:subClassOf <http://purl.obolibrary.org/obo/BFO_0000030> ;
+        rdfs:comment "An object made or adapted for a particular purpose, such as a piece of mechanical or electronic equipment, and used in the operation of a building" ;
+        rdfs:label "Device" .
+
+
+###  https://w3id.org/digitalconstruction/Entities#EntityScope
+:EntityScope rdf:type owl:Class ;
+             rdfs:subClassOf :Category ;
+             rdfs:comment "Category that contains all entities in a scope of a given entity. For example, all entities in a system, or within a scope of a plan." ;
+             rdfs:label "EntityScope" .
+
+
+###  https://w3id.org/digitalconstruction/Entities#Equipment
+:Equipment rdf:type owl:Class ;
+           rdfs:subClassOf <http://purl.obolibrary.org/obo/BFO_0000030> ;
+           rdfs:comment "Machinery and tools used in construction activities. Equipment do not have a capability to operate activities by itself automatically." ;
+           rdfs:label "Equipment" .
+
+
+###  https://w3id.org/digitalconstruction/Entities#GeodeticBoundingBox
+:GeodeticBoundingBox rdf:type owl:Class ;
+                     rdfs:subClassOf :SpatialExtent ;
+                     rdfs:comment "Minimum bounding box of a geodetic area determined by its minimum geodetic position and maximum geodetic position" ;
+                     rdfs:label "GeodeticBoundingBox" .
+
+
+###  https://w3id.org/digitalconstruction/Entities#GeodeticPosition
+:GeodeticPosition rdf:type owl:Class ;
+                  rdfs:subClassOf :SpatialPosition ;
+                  rdfs:comment "Geodetic position expressed in longitude, latitude and altitude with respect to a geodetic coordinate system." ;
+                  rdfs:label "GeodeticPosition" .
+
+
+###  https://w3id.org/digitalconstruction/Entities#Goal
+:Goal rdf:type owl:Class ;
+      rdfs:subClassOf :Intention ;
+      rdfs:label "Goal" .
+
+
+###  https://w3id.org/digitalconstruction/Entities#Group
+:Group rdf:type owl:Class ;
+       rdfs:subClassOf <http://purl.obolibrary.org/obo/BFO_0000001> ;
+       rdfs:comment "A set of entities. Examples are a procurement package, a shipment, a workgroup, or the walls of a space." ;
+       rdfs:label "Group" .
+
+
+###  https://w3id.org/digitalconstruction/Entities#Identifier
+:Identifier rdf:type owl:Class ;
+            rdfs:subClassOf :Labeling ;
+            rdfs:comment "Identifier allows the specification of a (global or local) identifier, based on the given identification system (GUID, URI, room number in a building, etc.)" ;
+            rdfs:label "Identifier" .
+
+
+###  https://w3id.org/digitalconstruction/Entities#InformationContentEntity
+:InformationContentEntity rdf:type owl:Class ;
+                          rdfs:subClassOf <http://purl.obolibrary.org/obo/BFO_0000031> ,
+                                          <http://www.w3.org/ns/prov#Entity> ;
+                          rdfs:comment "Identifiable information content. Examples are a BIM model, a drawing, a specification, an image, a message, and an issue. Separate from physical information carriers." ;
+                          rdfs:label "InformationContentEntity" .
+
+
+###  https://w3id.org/digitalconstruction/Entities#Intention
+:Intention rdf:type owl:Class ;
+           rdfs:subClassOf <http://purl.obolibrary.org/obo/BFO_0000016> ;
+           rdfs:label "Intention" .
+
+
+###  https://w3id.org/digitalconstruction/Entities#Labeling
+:Labeling rdf:type owl:Class ;
+          rdfs:subClassOf :InformationContentEntity ;
+          rdfs:comment "Labeling is a generic mechanism to associate entities with any number of labels that are unique within a given category. The purpose is to enable the representation of connections to existing systems, databases or classification schemes." ;
+          rdfs:label "Labeling" .
+
+
+###  https://w3id.org/digitalconstruction/Entities#Location
+:Location rdf:type owl:Class ;
+          rdfs:subClassOf <http://purl.obolibrary.org/obo/BFO_0000029> ;
+          rdfs:comment "A (logical) place where material entities can be located or activities can occur. Locations can form a hierarchy, for example, in a location breakdown structure consisting of a site, buildings, floors, zones, spaces, and workspaces" ;
+          rdfs:label "Location" .
+
+
+###  https://w3id.org/digitalconstruction/Entities#MaterialBatch
+:MaterialBatch rdf:type owl:Class ;
+               rdfs:subClassOf <http://purl.obolibrary.org/obo/BFO_0000040> ;
+               rdfs:comment "Material batch refers to the collection of homogeneous physical substance that participates in the construction project as the input of a process." ;
+               rdfs:label "MaterialBatch" .
+
+
+###  https://w3id.org/digitalconstruction/Entities#OneAngleOrientation
+:OneAngleOrientation rdf:type owl:Class ;
+                     rdfs:subClassOf :SpatialOrientation ;
+                     rdfs:comment "Orientation in two dimensions given by the orientation angle from true north" ;
+                     rdfs:label "OneAngleOrientation" .
+
+
+###  https://w3id.org/digitalconstruction/Entities#ProcurementPackage
+:ProcurementPackage rdf:type owl:Class ;
+                    rdfs:subClassOf <http://purl.obolibrary.org/obo/BFO_0000027> ,
+                                    :Group ;
+                    rdfs:label "ProcurementPackage" .
+
+
+###  https://w3id.org/digitalconstruction/Entities#Shipment
+:Shipment rdf:type owl:Class ;
+          rdfs:subClassOf <http://purl.obolibrary.org/obo/BFO_0000027> ,
+                          :Group ;
+          rdfs:label "Shipment" .
+
+
+###  https://w3id.org/digitalconstruction/Entities#SpatialExtent
+:SpatialExtent rdf:type owl:Class ;
+               rdfs:subClassOf :SpatialQuality ;
+               rdfs:comment "The dimensions of a spatial region" ;
+               rdfs:label "SpatialExtent" .
+
+
+###  https://w3id.org/digitalconstruction/Entities#SpatialOrientation
+:SpatialOrientation rdf:type owl:Class ;
+                    rdfs:subClassOf :SpatialQuality ;
+                    rdfs:label "SpatialOrientation" .
+
+
+###  https://w3id.org/digitalconstruction/Entities#SpatialPosition
+:SpatialPosition rdf:type owl:Class ;
+                 rdfs:subClassOf :SpatialQuality ;
+                 rdfs:comment "A position in a space" ;
+                 rdfs:label "SpatialPosition" .
+
+
+###  https://w3id.org/digitalconstruction/Entities#SpatialQuality
+:SpatialQuality rdf:type owl:Class ;
+                rdfs:subClassOf <http://purl.obolibrary.org/obo/BFO_0000019> ;
+                rdfs:comment "A quality that concerns the spatial aspects of an entity" ;
+                rdfs:label "SpatialQuality" .
+
+
+###  https://w3id.org/digitalconstruction/Entities#TemporalExtent
+:TemporalExtent rdf:type owl:Class ;
+                rdfs:subClassOf :TemporalQuality ;
+                rdfs:label "TemporalExtent" .
+
+
+###  https://w3id.org/digitalconstruction/Entities#TemporalQuality
+:TemporalQuality rdf:type owl:Class ;
+                 rdfs:subClassOf <http://purl.obolibrary.org/obo/BFO_0000019> ;
+                 rdfs:label "TemporalQuality" .
+
+
+###  https://w3id.org/digitalconstruction/Entities#ThreeAngleOrientation
+:ThreeAngleOrientation rdf:type owl:Class ;
+                       rdfs:subClassOf :SpatialOrientation ;
+                       rdfs:comment "Orientation given by three angles: angle about x-axis (alpha), angle about y-axis(beta) and angle about z-axis (gamma)" ;
+                       rdfs:label "ThreeAngleOrientation" .
+
+
+###  https://w3id.org/digitalconstruction/Entities#TimeDuration
+:TimeDuration rdf:type owl:Class ;
+              rdfs:subClassOf :TemporalExtent ,
+                              <https://www.w3.org/2006/time#Duration> ;
+              rdfs:label "TimeDuration" .
+
+
+###  https://w3id.org/digitalconstruction/Entities#TimeInstant
+:TimeInstant rdf:type owl:Class ;
+             rdfs:subClassOf <http://purl.obolibrary.org/obo/BFO_0000203> ,
+                             <https://www.w3.org/2006/time#Instant> ;
+             rdfs:label "TimeInstant" .
+
+
+###  https://w3id.org/digitalconstruction/Entities#TimeInterval
+:TimeInterval rdf:type owl:Class ;
+              rdfs:subClassOf <http://purl.obolibrary.org/obo/BFO_0000202> ,
+                              <https://www.w3.org/2006/time#Interval> ;
+              rdfs:label "TimeInterval" .
+
+
+###  https://w3id.org/digitalconstruction/Entities#TwoAngleOrientation
+:TwoAngleOrientation rdf:type owl:Class ;
+                     rdfs:subClassOf :SpatialOrientation ;
+                     rdfs:comment "Orientation of a plane in two dimensions given by its angle about true north (the strike) and the angle of its slope (the dip)" ;
+                     rdfs:label "TwoAngleOrientation" .
+
+
+###  https://w3id.org/digitalconstruction/Entities#Vehicle
+:Vehicle rdf:type owl:Class ;
+         rdfs:subClassOf :Equipment ;
+         rdfs:comment "An equipment for transporting shipments. The vehice also moves from origin to the target of the transportation activity. Examples are trucks or forklifts." ;
+         rdfs:label "Vehicle" .
+
+
+###  https://w3id.org/digitalconstruction/Entities#Workspace
+:Workspace rdf:type owl:Class ;
+           rdfs:subClassOf :Location ;
+           rdfs:comment "A site of work. There can be multiple different kinds of workspaces needed by an activity: labor crew space, equipment space, hazard space, and so on." ;
+           rdfs:label "Workspace" .
+
+
+###  https://w3id.org/digitalconstruction/Variables#Comparison
+<https://w3id.org/digitalconstruction/Variables#Comparison> rdfs:subClassOf :InformationContentEntity .
+
+
+###  https://w3id.org/digitalconstruction/Variables#Constraint
+<https://w3id.org/digitalconstruction/Variables#Constraint> rdfs:subClassOf :InformationContentEntity .
+
+
+###  https://w3id.org/digitalconstruction/Variables#Operator
+<https://w3id.org/digitalconstruction/Variables#Operator> rdfs:subClassOf :InformationContentEntity .
+
+
+###  https://w3id.org/digitalconstruction/Variables#Variable
+<https://w3id.org/digitalconstruction/Variables#Variable> rdfs:subClassOf :InformationContentEntity .
+
+
+###  https://w3id.org/digitalconstruction/Variables#VariableDomain
+<https://w3id.org/digitalconstruction/Variables#VariableDomain> rdfs:subClassOf :InformationContentEntity .
+
+
+###  https://www.w3.org/2006/time#Duration
+<https://www.w3.org/2006/time#Duration> rdf:type owl:Class .
+
+
+###  https://www.w3.org/2006/time#Instant
+<https://www.w3.org/2006/time#Instant> rdf:type owl:Class .
+
+
+###  https://www.w3.org/2006/time#Interval
+<https://www.w3.org/2006/time#Interval> rdf:type owl:Class .
+
+
+#################################################################
+#    General axioms
+#################################################################
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :BuildingObject
+                :Equipment
+                :Location
+                :MaterialBatch
+              )
+] .
+
+
+###  Generated by the OWL API (version 5.1.14) https://github.com/owlcs/owlapi/
