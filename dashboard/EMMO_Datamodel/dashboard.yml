@@ -1,0 +1,6 @@
+base_generated: true
+changed: true
+failure: failed_robot_base
+mirror_from: https://raw.githubusercontent.com/emmo-repo/datamodel/master/datamodel.ttl
+namespace: EMMO_Datamodel
+sha256_hash: 9cf8f04e8b44133fecaaa971e83cd3f1d0b70748955c98695e55f05f577b9231

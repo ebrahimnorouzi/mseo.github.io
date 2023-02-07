@@ -3,7 +3,7 @@ base_prefixes:
 - mambo
 - MAMBOALT
 changed: true
-date: 2023-02-06 13:52:36.630941
+date: 2023-02-07 10:20:33.574243
 metrics:
   'Axioms: Breakdown of axiom types':
     ClassAssertion: 21
