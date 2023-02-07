@@ -10,7 +10,7 @@
 
 <http://emmo.info/datamodel> rdf:type owl:Ontology ;
                               owl:versionIRI <http://emmo.info/datamodel/0.0.2> ;
-                              owl:imports <https://raw.githubusercontent.com/emmo-repo/datamodel/master/collection.ttl> ,
+                              owl:imports <https://raw.githubusercontent.com/ebrahimnorouzi/mseo.github.io/master/Ontology_files/collection.ttl> ,
                                           <https://raw.githubusercontent.com/emmo-repo/EMMO/1.0.0-beta4/disciplines/math.ttl> ,
                                           <https://raw.githubusercontent.com/emmo-repo/EMMO/1.0.0-beta4/multiperspective/persholistic.ttl> ,
                                           <https://raw.githubusercontent.com/emmo-repo/EMMO/1.0.0-beta4/multiperspective/symbolic.ttl> ,

@@ -244,7 +244,7 @@ ontologies:
       description: Exchanging Materials Information and Knowledge
       homepage: https://www.researchgate.net/publication/262004148_MaterialOntology
       preferredPrefix: matinfo
-      mirror_from: 
+      mirror_from: https://raw.githubusercontent.com/ebrahimnorouzi/mseo.github.io/master/Ontology_files/matinfo/OML-MaterialInformation.owl
     - id: MDO
       description: Materials design
       homepage: https://github.com/LiUSemWeb/Materials-Design-Ontology 
@@ -378,7 +378,7 @@ ontologies:
       description: units, quantities, measurements, and dimensions
       homepage: https://www.omgwiki.org/OMGSysML/doku.php?id=sysml-qudv:quantities_units_dimensions_values_qudv
       preferredPrefix: qudv
-      mirror_from: https://www.omgwiki.org/OMGSysML/lib/exe/fetch.php?media=sysml-qudv:qudv-owl:sysml-qudv-si.owl
+      mirror_from: https://www.omgwiki.org/OMGSysML/lib/exe/fetch.php?media=sysml-qudv:qudv-owl:sysml-qudv.owl
     - id: mvc
       description: described using W3C RDF Schema and the Web Ontology Language to satisfy the requirements of the STREAM project
       homepage: https://github.com/stream-project/ontology
