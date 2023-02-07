@@ -57,14 +57,14 @@ ontologies:
       tracker: https://github.com/emmo-repo/domain-mechanical-testing/issues
       repository: https://github.com/emmo-repo/domain-mechanical-testing
       preferredPrefix: emmo_mechanical_testing
-      mirror_from: https://raw.githubusercontent.com/emmo-repo/domain-mechanical-testing/master/emmo-mechanical-testing.owl
+      mirror_from: https://raw.githubusercontent.com/ebrahimnorouzi/mseo.github.io/master/Ontology_files/emmo-mechanical-testing.owl
     - id: EMMO_microstructure
       description: An Ontology for Metallic microstructures
       homepage: https://github.com/jesper-friis/emmo-microstructure
       tracker: https://github.com/jesper-friis/emmo-microstructure/issues
       repository: https://github.com/jesper-friis/emmo-microstructure
       preferredPrefix: emmo_microstructure
-      mirror_from: https://raw.githubusercontent.com/jesper-friis/emmo-microstructure/master/emmo-microstructure.owl
+      mirror_from: https://raw.githubusercontent.com/ebrahimnorouzi/mseo.github.io/master/Ontology_files/emmo-microstructure.owl
     - id: OBO
       description: An Ontology for supporting information retrieval, analysis and integration in scientific and other domains
       homepage: https://github.com/BFO-ontology/BFO-2020 
@@ -115,21 +115,21 @@ ontologies:
       homepage: https://gitlab.cc-asp.fraunhofer.de/EMI_datamanagement/bwmd_ontology
       repository: https://gitlab.cc-asp.fraunhofer.de/EMI_datamanagement/bwmd_ontology
       preferredPrefix: BWMD-MID
-      mirror_from: https://raw.githubusercontent.com/ebrahimnorouzi/mseo.github.io/master/dashboard/BWMD-MID/BWMD_mid.owl
+      mirror_from: https://raw.githubusercontent.com/ebrahimnorouzi/mseo.github.io/master/Ontology_files/BWMD_mid.owl
     - id: BWMD-DOMAIN
       description: An Ontology for the Materials Design Domain 
       homepage: https://gitlab.cc-asp.fraunhofer.de/EMI_datamanagement/bwmd_ontology
       repository: https://gitlab.cc-asp.fraunhofer.de/EMI_datamanagement/bwmd_ontology
       preferredPrefix: BWMD-DOMAIN
-      mirror_from: https://raw.githubusercontent.com/ebrahimnorouzi/mseo.github.io/master/dashboard/BWMD-DOMAIN/BWMD_domain.owl
+      mirror_from: https://raw.githubusercontent.com/ebrahimnorouzi/mseo.github.io/master/Ontology_files/BWMD_domain.owl
     - id: MOL_TENSILE
       description: An ontology for describing the tensile test process, made in the Materials Open Lab Project.
       preferredPrefix: MOL_TENSILE
-      mirror_from: http://rest.matportal.org/ontologies/MOL_TENSILE/submissions/2/download?apikey=66c82e77-ce0d-4385-8056-a95898e47ebb
+      mirror_from: https://raw.githubusercontent.com/ebrahimnorouzi/mseo.github.io/master/Ontology_files/mol_tensile_test.owl
     - id: LPBFO
       description: An Ontology for the additive manufacturing of a component via Laser Powder Bed Fusion (LPBF) / Selective Laser Melting (SLM)
       preferredPrefix: LPBFO
-      mirror_from: https://raw.githubusercontent.com/ebrahimnorouzi/mseo.github.io/master/dashboard/LPBFO/LPBFO.owl
+      mirror_from: https://raw.githubusercontent.com/ebrahimnorouzi/mseo.github.io/master/Ontology_files/LPBFO.owl
     - id: PROVO
       description: represent and interchange provenance information
       homepage: https://www.w3.org/TR/prov-o/ 
@@ -155,7 +155,7 @@ ontologies:
       tracker: https://github.com/Battery-Value-Chain-Ontology/ontology /issues
       repository: https://github.com/Battery-Value-Chain-Ontology/ontology 
       preferredPrefix: emmo_bvc
-      mirror_from: https://raw.githubusercontent.com/Battery-Value-Chain-Ontology/ontology/master/BVCO.ttl
+      mirror_from: https://raw.githubusercontent.com/ebrahimnorouzi/mseo.github.io/master/Ontology_files/BVCO.ttl
     - id: EMMO_crystallography
       description: Crystallography
       homepage: https://github.com/materialdigital/core-ontology
@@ -169,14 +169,14 @@ ontologies:
       tracker: https://github.com/emmo-repo/CIF-ontology/issues
       repository: https://github.com/emmo-repo/CIF-ontology
       preferredPrefix: cif-core
-      mirror_from: https://raw.githubusercontent.com/ebrahimnorouzi/mseo.github.io/master/dashboard/CIF/cif-core.ttl
+      mirror_from: https://raw.githubusercontent.com/ebrahimnorouzi/mseo.github.io/master/Ontology_files/cif-core.ttl
     - id: EMMO_Datamodel
       description: Ontology-Based Data Modelling
       homepage: https://github.com/emmo-repo/datamodel
       tracker: https://github.com/emmo-repo/datamodel/issues
       repository: https://github.com/emmo-repo/datamodel
       preferredPrefix: emmo_datamodel
-      mirror_from: https://raw.githubusercontent.com/emmo-repo/datamodel/master/datamodel.ttl
+      mirror_from: https://raw.githubusercontent.com/ebrahimnorouzi/mseo.github.io/master/Ontology_files/datamodel.ttl
     - id: EMMO_mappings
       description: Mapping to domains and ontological concepts
       homepage: https://github.com/emmo-repo/domain-mappings 
@@ -258,7 +258,7 @@ ontologies:
       tracker: https://github.com/tetherless-world/nanomine-ontology/issues
       repository: https://github.com/tetherless-world/nanomine-ontology
       preferredPrefix: nanomine
-      mirror_from: https://raw.githubusercontent.com/tetherless-world/nanomine-ontology/master/nanomine.ttl
+      mirror_from: https://raw.githubusercontent.com/ebrahimnorouzi/mseo.github.io/master/Ontology_files/nanomine.ttl
     - id: DEB
       description: The Devices, Experimental scaffolds and Biomaterials Ontology
       homepage: https://github.com/ProjectDebbie/Ontology_DEB
@@ -294,7 +294,7 @@ ontologies:
       description: Linked data and Ontologies for Semantic Interoperability, BIM4EEB
       homepage: https://matportal.org/ontologies/BUILDMAT
       preferredPrefix: bmo
-      mirror_from: http://rest.matportal.org/ontologies/BUILDMAT/submissions/1/download?apikey=66c82e77-ce0d-4385-8056-a95898e47ebb
+      mirror_from: https://raw.githubusercontent.com/ebrahimnorouzi/mseo.github.io/master/Ontology_files/BuildingMaterials.ttl
     - id: SAREF
       description: An Ontology for the Materials Design Domain 
       homepage: https://labs.etsi.org/rep/saref/saref-core/-/tree/develop-v3.1.1
