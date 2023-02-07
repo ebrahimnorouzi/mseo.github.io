@@ -3,7 +3,7 @@ base_prefixes:
 - cif-core
 - CIFALT
 changed: true
-date: 2023-02-07 10:43:31.391924
+date: 2023-02-07 12:02:51.621565
 metrics:
   'Axioms: Breakdown of axiom types':
     AnnotationAssertion: 282
@@ -60,7 +60,7 @@ metrics:
     rdfs: 52
     xsd: 20
   'Info: Which ontologies use it?': []
-mirror_from: https://raw.githubusercontent.com/ebrahimnorouzi/mseo.github.io/master/dashboard/CIF/cif-core.ttl
+mirror_from: https://raw.githubusercontent.com/ebrahimnorouzi/mseo.github.io/master/Ontology_files/cif-core.ttl
 namespace: CIF
 results:
   FP01 Open:

@@ -3,11 +3,7 @@ base_prefixes:
 - wild
 - WILDALT
 changed: true
-<<<<<<< HEAD
-date: 2023-02-07 10:44:25.892420
-=======
-date: 2023-02-07 10:21:06.691813
->>>>>>> master
+date: 2023-02-07 12:03:49.367015
 metrics:
   'Axioms: Breakdown of axiom types':
     AnnotationAssertion: 2

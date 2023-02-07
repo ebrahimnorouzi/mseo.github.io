@@ -3,11 +3,7 @@ base_prefixes:
 - sp
 - SPALT
 changed: true
-<<<<<<< HEAD
-date: 2023-02-07 10:40:44.900095
-=======
-date: 2023-02-07 10:17:32.596560
->>>>>>> master
+date: 2023-02-07 12:00:03.623562
 metrics:
   'Axioms: Breakdown of axiom types':
     AnnotationAssertion: 1781
