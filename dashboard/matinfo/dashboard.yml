@@ -1,2 +1,6 @@
-failure: missing_url
+base_generated: true
+changed: true
+failure: failed_robot_base
+mirror_from: https://raw.githubusercontent.com/ebrahimnorouzi/mseo.github.io/master/Ontology_files/matinfo/OML-MaterialInformation.owl
 namespace: matinfo
+sha256_hash: 3cd05e5edfcaae86c8418c4c0514e6fa489b3ba5584e7885b9713dc2f42378f3

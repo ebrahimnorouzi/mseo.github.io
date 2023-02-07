@@ -3,4 +3,4 @@ changed: true
 failure: failed_robot_base
 mirror_from: https://raw.githubusercontent.com/ebrahimnorouzi/mseo.github.io/master/Ontology_files/datamodel.ttl
 namespace: EMMO_Datamodel
-sha256_hash: 888adfaa2070da5c23ffc8187f7751507430208a237436c611e9416a37efb135
+sha256_hash: de9a04655e270171d30e4fedf5d3a5aa34c89fc8b882ddb8643b49aaa5ef80fc
