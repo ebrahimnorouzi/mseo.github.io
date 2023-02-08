@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
+    <group id="Folder Repository, directory=, recursive=true, Auto-Update=true, version=2" prefer="public" xml:base="">
+        <uri id="Automatically generated entry, Timestamp=1675844660412" name="http://emmo.info/emmo/domain/mechanical-testing" uri="emmo-mechanical-testing.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1675844660412" name="http://www.example.org/SysML-QUDV.owl" uri="sysml-qudv.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1675844660412" name="http://www.owl-ontologies.com/Ontology1195612079.owl" uri="matinfo/OM-structure.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1675844660412" name="http://www.semanticweb.org/jesperf/ontologies/2019/11/untitled-ontology-9" uri="emmo-microstructure.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1675844660412" name="https://raw.githubusercontent.com/ebrahimnorouzi/mseo.github.io/master/Ontology_files/matinfo/OML-Environment.owl" uri="matinfo/OML-Environment.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1675844660412" name="https://raw.githubusercontent.com/ebrahimnorouzi/mseo.github.io/master/Ontology_files/matinfo/OML-Geometry.owl" uri="matinfo/OML-Geometry.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1675844660412" name="https://raw.githubusercontent.com/ebrahimnorouzi/mseo.github.io/master/Ontology_files/matinfo/OML-MaterialInformation.owl" uri="matinfo/OML-MaterialInformation.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1675844660412" name="https://raw.githubusercontent.com/ebrahimnorouzi/mseo.github.io/master/Ontology_files/matinfo/OML-Process.owl" uri="matinfo/OML-Process.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1675844660412" name="https://raw.githubusercontent.com/ebrahimnorouzi/mseo.github.io/master/Ontology_files/matinfo/OML-Property.owl" uri="matinfo/OML-Property.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1675844660412" name="https://raw.githubusercontent.com/ebrahimnorouzi/mseo.github.io/master/Ontology_files/matinfo/OML-Substance.owl" uri="matinfo/OML-Substance.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1675844660412" name="https://raw.githubusercontent.com/ebrahimnorouzi/mseo.github.io/master/Ontology_files/matinfo/OML-UnitDimension.owl" uri="matinfo/OML-UnitDimension.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1675844660412" name="https://raw.githubusercontent.com/ebrahimnorouzi/mseo.github.io/master/Ontology_files/matinfo/PhysicalConstant.owl" uri="matinfo/PhysicalConstant.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1675844660412" name="https://www.emi.fraunhofer.de/ontologies/LPBFO" uri="LPBFO.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1675844660412" name="https://www.materials.fraunhofer.de/ontologies/BWMD_ontology/domain" uri="BWMD_domain.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1675844660412" name="https://www.materials.fraunhofer.de/ontologies/BWMD_ontology/mid" uri="BWMD_mid.owl"/>
+    </group>
+</catalog>
