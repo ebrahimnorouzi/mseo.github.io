@@ -410,7 +410,7 @@ ontologies:
 prefer_base: True
 profile:
   baseprofile: "https://raw.githubusercontent.com/ontodev/robot/master/robot-core/src/main/resources/report_profile.txt"
-report_truncation_limit: 600
+#report_truncation_limit: 600
 redownload_after_hours: 0
 environment:
   ROBOT_JAR: /tools/robot.jar
