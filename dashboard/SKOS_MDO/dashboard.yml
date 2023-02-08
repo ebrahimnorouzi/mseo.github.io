@@ -3,7 +3,7 @@ base_prefixes:
 - skos_mdo
 - SKOS_MDOALT
 changed: true
-date: 2023-02-08 08:13:07.980882
+date: 2023-02-08 10:56:01.137292
 metrics:
   'Axioms: Breakdown of axiom types':
     AnnotationAssertion: 3491

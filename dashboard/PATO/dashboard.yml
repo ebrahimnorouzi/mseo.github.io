@@ -3,7 +3,7 @@ base_prefixes:
 - PATO
 - PATOALT
 changed: true
-date: 2023-02-08 08:14:01.122323
+date: 2023-02-08 10:57:01.269265
 metrics:
   'Axioms: Breakdown of axiom types':
     AnnotationAssertion: 96738
@@ -79,10 +79,10 @@ metrics:
     oboInOwl: 98869
     owl: 1006
     prefix_unknown: 11
-    rdf: 315
+    rdf: 322
     rdfs: 11989
     skos: 3
-    xsd: 1128
+    xsd: 1122
   'Info: Which ontologies use it?':
   - A
   - IAO
