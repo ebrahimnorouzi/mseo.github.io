@@ -1,3 +1,10 @@
 
 .DS_Store
 ontologies/
+all_files/
+.xlsx
+output.csv
+output2.csv
+output.xlsx
+robot.py
+expressivity.py
