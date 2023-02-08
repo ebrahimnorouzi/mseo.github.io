@@ -3,7 +3,7 @@ base_prefixes:
 - uo
 - UOALT
 changed: true
-date: 2023-02-08 10:56:42.872447
+date: 2023-02-08 12:40:40.266518
 metrics:
   'Axioms: Breakdown of axiom types':
     AnnotationAssertion: 1369
