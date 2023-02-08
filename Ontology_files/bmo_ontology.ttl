@@ -164,7 +164,7 @@
 :contentRepresentedIn rdf:type owl:ObjectProperty ;
                       owl:inverseOf :representsContentOf ;
                       rdfs:domain :InformationContentEntity ;
-                      rdfs:range <https://w3id.org/digitalconstruction/Contexts#Context> ;
+                      rdfs:range <https://digitalconstruction.github.io/Contexts/latest/ontology.ttl#Context> ;
                       rdfs:comment "The context in which the content of the information content entity is represented" ;
                       rdfs:label "contentRepresentedIn" .
 
@@ -649,14 +649,14 @@
 
 ###  https://w3id.org/digitalconstruction/Entities#representsContentOf
 :representsContentOf rdf:type owl:ObjectProperty ;
-                     rdfs:domain <https://w3id.org/digitalconstruction/Contexts#Context> ;
+                     rdfs:domain <https://digitalconstruction.github.io/Contexts/latest/ontology.ttl#Context> ;
                      rdfs:range :InformationContentEntity ;
                      rdfs:comment "The information content entity that is the source of the data represented in this context" ;
                      rdfs:label "representsContentOf" .
 
 
-###  https://w3id.org/digitalconstruction/Variables#isVariableOf
-<https://w3id.org/digitalconstruction/Variables#isVariableOf> rdfs:subPropertyOf :isAbout .
+###  https://digitalconstruction.github.io/Variables/latest/ontology.ttl#isVariableOf
+<https://digitalconstruction.github.io/Variables/latest/ontology.ttl#isVariableOf> rdfs:subPropertyOf :isAbout .
 
 
 #################################################################
@@ -928,7 +928,7 @@
 
 ###  https://w3id.org/digitalconstruction/Entities#ActivityContext
 :ActivityContext rdf:type owl:Class ;
-                 rdfs:subClassOf <https://w3id.org/digitalconstruction/Contexts#Context> ;
+                 rdfs:subClassOf <https://digitalconstruction.github.io/Contexts/latest/ontology.ttl#Context> ;
                  rdfs:comment "A Context relative to an Activity, representing the situation, for example, at the start, at execution time, or at the end of an activity" ;
                  rdfs:label "ActivityContext" .
 
@@ -1207,24 +1207,24 @@
            rdfs:label "Workspace" .
 
 
-###  https://w3id.org/digitalconstruction/Variables#Comparison
-<https://w3id.org/digitalconstruction/Variables#Comparison> rdfs:subClassOf :InformationContentEntity .
+###  https://digitalconstruction.github.io/Variables/latest/ontology.ttl#Comparison
+<https://digitalconstruction.github.io/Variables/latest/ontology.ttl#Comparison> rdfs:subClassOf :InformationContentEntity .
 
 
-###  https://w3id.org/digitalconstruction/Variables#Constraint
-<https://w3id.org/digitalconstruction/Variables#Constraint> rdfs:subClassOf :InformationContentEntity .
+###  https://digitalconstruction.github.io/Variables/latest/ontology.ttl#Constraint
+<https://digitalconstruction.github.io/Variables/latest/ontology.ttl#Constraint> rdfs:subClassOf :InformationContentEntity .
 
 
-###  https://w3id.org/digitalconstruction/Variables#Operator
-<https://w3id.org/digitalconstruction/Variables#Operator> rdfs:subClassOf :InformationContentEntity .
+###  https://digitalconstruction.github.io/Variables/latest/ontology.ttl#Operator
+<https://digitalconstruction.github.io/Variables/latest/ontology.ttl#Operator> rdfs:subClassOf :InformationContentEntity .
 
 
-###  https://w3id.org/digitalconstruction/Variables#Variable
-<https://w3id.org/digitalconstruction/Variables#Variable> rdfs:subClassOf :InformationContentEntity .
+###  https://digitalconstruction.github.io/Variables/latest/ontology.ttl#Variable
+<https://digitalconstruction.github.io/Variables/latest/ontology.ttl#Variable> rdfs:subClassOf :InformationContentEntity .
 
 
-###  https://w3id.org/digitalconstruction/Variables#VariableDomain
-<https://w3id.org/digitalconstruction/Variables#VariableDomain> rdfs:subClassOf :InformationContentEntity .
+###  https://digitalconstruction.github.io/Variables/latest/ontology.ttl#VariableDomain
+<https://digitalconstruction.github.io/Variables/latest/ontology.ttl#VariableDomain> rdfs:subClassOf :InformationContentEntity .
 
 
 ###  https://www.w3.org/2006/time#Duration
