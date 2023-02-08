@@ -3,7 +3,7 @@ base_prefixes:
 - enanomapper
 - ENANOMAPPERALT
 changed: true
-date: 2023-02-07 14:17:55.482045
+date: 2023-02-08 08:12:48.204767
 metrics:
   'Axioms: Breakdown of axiom types':
     AnnotationAssertion: 124680
