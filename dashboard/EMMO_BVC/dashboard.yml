@@ -3,7 +3,7 @@ base_prefixes:
 - emmo_bvc
 - EMMO_BVCALT
 changed: true
-date: 2023-02-08 17:12:30.082881
+date: 2023-02-10 14:52:00.996314
 metrics:
   'Axioms: Breakdown of axiom types':
     AnnotationAssertion: 5724
