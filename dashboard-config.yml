@@ -430,6 +430,11 @@ ontologies:
       homepage: https://www.niso.org/standards-committees/ssos
       preferredPrefix: ssos
       mirror_from: https://groups.niso.org/higherlogic/ws/public/download/26422/SSOS01.owl
+    - id: mat
+      description: An Ontology for description of building components and materials
+      homepage: https://bimerr.iot.linkeddata.es/def/material-properties/
+      preferredPrefix: mat
+      mirror_from: https://bimerr.iot.linkeddata.es/def/material-properties/ontology.ttl
 
 prefer_base: True
 profile:
