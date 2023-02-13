@@ -3,7 +3,7 @@ base_prefixes:
 - matonto
 - MATONTOALT
 changed: true
-date: 2023-02-10 14:52:22.569941
+date: 2023-02-13 11:31:13.030439
 metrics:
   'Axioms: Breakdown of axiom types':
     AnnotationAssertion: 1841

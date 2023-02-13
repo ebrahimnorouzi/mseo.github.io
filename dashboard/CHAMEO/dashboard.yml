@@ -3,18 +3,18 @@ base_prefixes:
 - CHAMEO
 - CHAMEOALT
 changed: true
-date: 2023-02-10 14:54:02.568424
+date: 2023-02-13 11:33:30.118916
 metrics:
   'Axioms: Breakdown of axiom types':
-    AnnotationAssertion: 1816
+    AnnotationAssertion: 1818
     AnnotationPropertyRangeOf: 12
-    AsymmetricObjectProperty: 13
+    AsymmetricObjectProperty: 17
     ClassAssertion: 1
     DataPropertyDomain: 4
     DataPropertyRange: 3
-    Declaration: 659
+    Declaration: 660
     DisjointClasses: 3
-    DisjointObjectProperties: 8
+    DisjointObjectProperties: 10
     DisjointUnion: 22
     EquivalentClasses: 66
     FunctionalDataProperty: 3
@@ -23,19 +23,19 @@ metrics:
     IrrefexiveObjectProperty: 22
     ObjectPropertyDomain: 76
     ObjectPropertyRange: 83
-    Rule: 8
+    Rule: 9
     SubAnnotationPropertyOf: 20
     SubClassOf: 533
     SubDataPropertyOf: 1
-    SubObjectPropertyOf: 156
-    SymmetricObjectProperty: 11
-  'Axioms: Number of axioms': 3525
+    SubObjectPropertyOf: 157
+    SymmetricObjectProperty: 12
+  'Axioms: Number of axioms': 3537
   'Entities: % of entities reused': 100.0
   'Entities: Number of annotation properties': 44
   'Entities: Number of classes': 480
   'Entities: Number of data properties': 5
   'Entities: Number of individuals': 1
-  'Entities: Number of object properties': 139
+  'Entities: Number of object properties': 140
   'Entities: Number of unsatisfiable classes': 0
   'Info: Breakdown of OWL class expressions used':
     Class: 2038
@@ -67,10 +67,10 @@ metrics:
     dc: 12
     foaf: 1
     owl: 22
-    prefix_unknown: 3796
+    prefix_unknown: 3810
     rdf: 19
-    rdfs: 315
-    skos: 710
+    rdfs: 314
+    skos: 712
     xsd: 12
   'Info: Which ontologies use it?': []
 mirror_from: https://raw.githubusercontent.com/emmo-repo/domain-characterisation-methodology/main/chameo.ttl
