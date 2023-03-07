@@ -3,42 +3,43 @@ base_prefixes:
 - CHAMEO
 - CHAMEOALT
 changed: true
-date: 2023-02-13 13:37:48.648808
+date: 2023-03-07 10:37:19.381809
 metrics:
   'Axioms: Breakdown of axiom types':
-    AnnotationAssertion: 1818
+    AnnotationAssertion: 2001
     AnnotationPropertyRangeOf: 12
-    AsymmetricObjectProperty: 17
+    AsymmetricObjectProperty: 18
     ClassAssertion: 1
     DataPropertyDomain: 4
     DataPropertyRange: 3
-    Declaration: 660
+    Declaration: 783
     DisjointClasses: 3
     DisjointObjectProperties: 10
     DisjointUnion: 22
-    EquivalentClasses: 66
+    EquivalentClasses: 67
     FunctionalDataProperty: 3
     FunctionalObjectProperty: 2
     InverseFunctionalObjectProperty: 3
-    IrrefexiveObjectProperty: 22
+    InverseObjectProperties: 1
+    IrrefexiveObjectProperty: 24
     ObjectPropertyDomain: 76
     ObjectPropertyRange: 83
     Rule: 9
     SubAnnotationPropertyOf: 20
-    SubClassOf: 533
+    SubClassOf: 660
     SubDataPropertyOf: 1
-    SubObjectPropertyOf: 157
+    SubObjectPropertyOf: 159
     SymmetricObjectProperty: 12
-  'Axioms: Number of axioms': 3537
+  'Axioms: Number of axioms': 3977
   'Entities: % of entities reused': 100.0
   'Entities: Number of annotation properties': 44
-  'Entities: Number of classes': 480
+  'Entities: Number of classes': 601
   'Entities: Number of data properties': 5
   'Entities: Number of individuals': 1
-  'Entities: Number of object properties': 140
+  'Entities: Number of object properties': 142
   'Entities: Number of unsatisfiable classes': 0
   'Info: Breakdown of OWL class expressions used':
-    Class: 2038
+    Class: 2416
     DataAllValuesFrom: 3
     DataExactCardinality: 3
     DataHasValue: 8
@@ -49,8 +50,8 @@ metrics:
     ObjectHasValue: 1
     ObjectIntersectionOf: 12
     ObjectMinCardinality: 1
-    ObjectSomeValuesFrom: 83
-    ObjectUnionOf: 55
+    ObjectSomeValuesFrom: 84
+    ObjectUnionOf: 56
   'Info: Does the ontology fall under OWL 2 DL?': false
   'Info: Experimental OBO score':
     _dashboard: 0.549
@@ -67,10 +68,10 @@ metrics:
     dc: 12
     foaf: 1
     owl: 22
-    prefix_unknown: 3810
+    prefix_unknown: 4225
     rdf: 19
-    rdfs: 314
-    skos: 712
+    rdfs: 345
+    skos: 852
     xsd: 12
   'Info: Which ontologies use it?': []
 mirror_from: https://raw.githubusercontent.com/emmo-repo/domain-characterisation-methodology/main/chameo.ttl
