@@ -3,7 +3,7 @@ base_prefixes:
 - AMONTOLOGY
 - AMONTOLOGYALT
 changed: true
-date: 2023-02-13 13:37:44.914917
+date: 2023-03-07 10:37:15.249086
 metrics:
   'Axioms: Breakdown of axiom types':
     AnnotationAssertion: 9187

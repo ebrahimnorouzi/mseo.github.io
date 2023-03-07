@@ -3,17 +3,17 @@ base_prefixes:
 - qudt
 - QUDTALT
 changed: true
-date: 2023-02-13 13:37:18.259161
+date: 2023-03-07 10:36:47.118398
 metrics:
   'Axioms: Breakdown of axiom types':
-    AnnotationAssertion: 1321
+    AnnotationAssertion: 1319
     AnnotationPropertyRangeOf: 19
     ClassAssertion: 53
     DataPropertyAssertion: 111
     DataPropertyDomain: 2
-    DataPropertyRange: 79
+    DataPropertyRange: 77
     DatatypeDefinition: 1
-    Declaration: 360
+    Declaration: 359
     DisjointClasses: 6
     EquivalentClasses: 12
     FunctionalDataProperty: 7
@@ -25,17 +25,17 @@ metrics:
     ObjectPropertyRange: 53
     SubAnnotationPropertyOf: 10
     SubClassOf: 342
-    SubDataPropertyOf: 18
+    SubDataPropertyOf: 10
     SubObjectPropertyOf: 50
     SymmetricObjectProperty: 5
-    TransitiveObjectProperty: 5
-  'Axioms: Number of axioms': 2500
+    TransitiveObjectProperty: 4
+  'Axioms: Number of axioms': 2486
   'Entities: % of entities reused': 100.0
   'Entities: Number of annotation properties': 58
   'Entities: Number of classes': 143
   'Entities: Number of data properties': 102
   'Entities: Number of individuals': 80
-  'Entities: Number of object properties': 148
+  'Entities: Number of object properties': 147
   'Entities: Number of unsatisfiable classes': 0
   'Info: Breakdown of OWL class expressions used':
     Class: 829
@@ -65,12 +65,12 @@ metrics:
     dc: 182
     dc11: 7
     owl: 86
-    prefix_unknown: 1829
+    prefix_unknown: 1808
     prov: 1
     rdf: 29
-    rdfs: 1117
+    rdfs: 1115
     skos: 172
-    xsd: 192
+    xsd: 191
   'Info: Which ontologies use it?': []
 mirror_from: http://qudt.org/2.1/schema/qudt
 namespace: QUDT
@@ -112,7 +112,7 @@ results:
     status: PASS
   ROBOT Report:
     status: PASS
-sha256_hash: ab63705c5d0ff851df1a8352db57c520f81934cd3455b664fba08e2575af6c8e
+sha256_hash: 0b715689a7c374858deec0df03038fb9832dda2adffc27824a20e91b67a5fd38
 summary:
   comment: 5 errors
   status: ERROR

@@ -3,7 +3,7 @@ base_prefixes:
 - nanomine
 - NANOMINEALT
 changed: true
-date: 2023-02-13 13:36:40.815063
+date: 2023-03-07 10:36:03.853220
 metrics:
   'Axioms: Breakdown of axiom types':
     AnnotationAssertion: 6566

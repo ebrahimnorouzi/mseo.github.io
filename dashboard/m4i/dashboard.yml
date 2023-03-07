@@ -3,14 +3,14 @@ base_prefixes:
 - m4i
 - M4IALT
 changed: true
-date: 2023-02-13 13:37:58.708698
+date: 2023-03-07 10:37:29.763596
 metrics:
   'Axioms: Breakdown of axiom types':
     AnnotationAssertion: 668
     ClassAssertion: 21
     DataPropertyDomain: 29
     DataPropertyRange: 31
-    Declaration: 173
+    Declaration: 148
     DisjointClasses: 1
     EquivalentClasses: 1
     InverseFunctionalObjectProperty: 1
@@ -22,23 +22,23 @@ metrics:
     SubObjectPropertyOf: 19
     SubPropertyChainOf: 1
     TransitiveObjectProperty: 5
-  'Axioms: Number of axioms': 1086
+  'Axioms: Number of axioms': 1061
   'Entities: % of entities reused': 100.0
   'Entities: Number of annotation properties': 35
-  'Entities: Number of classes': 32
+  'Entities: Number of classes': 31
   'Entities: Number of data properties': 32
   'Entities: Number of individuals': 21
   'Entities: Number of object properties': 56
   'Entities: Number of unsatisfiable classes': 0
   'Info: Breakdown of OWL class expressions used':
-    Class: 228
+    Class: 203
     DataExactCardinality: 8
     DataMaxCardinality: 2
     ObjectExactCardinality: 1
     ObjectMinCardinality: 3
     ObjectSomeValuesFrom: 4
     ObjectUnionOf: 3
-  'Info: Does the ontology fall under OWL 2 DL?': true
+  'Info: Does the ontology fall under OWL 2 DL?': false
   'Info: Experimental OBO score':
     _dashboard: 0.482
     _formula: (1*impact+1*dashboard)/2
@@ -51,13 +51,13 @@ metrics:
   'Info: Logical consistency': true
   'Info: Syntax': Turtle
   'Info: Usage of namespaces in axioms':
-    BFO: 36
+    BFO: 34
     RO: 37
     dc: 15
-    foaf: 42
+    foaf: 38
     owl: 7
-    prefix_unknown: 458
-    prov: 42
+    prefix_unknown: 442
+    prov: 39
     rdf: 1
     rdfs: 87
     skos: 602
@@ -105,7 +105,7 @@ results:
     status: ERROR
   ROBOT Report:
     status: PASS
-sha256_hash: 6bbe157f3989858b6c0c569254f498cd62191eab2ba408061dee3e7c9823f041
+sha256_hash: 7229e94eac7450ca1d55bf17953d74ab6a4b7c140b408d1780b52795fb712e2b
 summary:
   comment: 6 errors
   status: ERROR
