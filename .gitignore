@@ -2,10 +2,9 @@
 .DS_Store
 ontologies/
 all_files/
-.xlsx
-output.csv
-output2.csv
-output.xlsx
-robot.py
+*.xlsx
+*.csv
+*.py
+dashboard_analysis-2.ipynb
 expressivity.py
 dashboard-config-2.yml

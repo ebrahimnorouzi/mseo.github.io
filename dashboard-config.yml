@@ -420,6 +420,19 @@ ontologies:
       repository: https://git.rwth-aachen.de/nfdi4ing/metadata4ing/metadata4ing
       preferredPrefix: m4i
       mirror_from: https://git.rwth-aachen.de/nfdi4ing/metadata4ing/metadata4ing/-/raw/develop/metadata4ing.ttl
+    - id: nfdicore
+      description: NFDI Core Ontology
+      homepage: https://github.com/ISE-FIZKarlsruhe/nfdicore
+      tracker: https://github.com/ISE-FIZKarlsruhe/nfdicore/issues
+      repository: https://github.com/ISE-FIZKarlsruhe/nfdicore
+      preferredPrefix: nfdicore
+      mirror_from: https://raw.githubusercontent.com/ISE-FIZKarlsruhe/nfdicore/main/nfdicore.ttl
+    - id: mwo
+      description: MatWerk Ontology
+      homepage: https://git.rwth-aachen.de/nfdi-matwerk/ta-oms/mwo
+      repository: https://git.rwth-aachen.de/nfdi-matwerk/ta-oms/mwo
+      preferredPrefix: mwo
+      mirror_from: https://git.rwth-aachen.de/nfdi-matwerk/ta-oms/mwo/-/raw/main/ontology/mwo.owl
     - id: opmw
       description: workflow modeling
       homepage: https://www.opmw.org/model/OPMW/
