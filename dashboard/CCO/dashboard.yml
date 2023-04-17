@@ -3,44 +3,44 @@ base_prefixes:
 - cco
 - CCOALT
 changed: true
-date: 2023-03-07 10:34:51.602084
+date: 2023-04-17 13:32:18.593648
 metrics:
   'Axioms: Breakdown of axiom types':
-    AnnotationAssertion: 7918
+    AnnotationAssertion: 7995
     AsymmetricObjectProperty: 6
     ClassAssertion: 360
     DataPropertyDomain: 8
     DataPropertyRange: 9
-    Declaration: 2095
+    Declaration: 2097
     DisjointClasses: 35
     DisjointObjectProperties: 5
-    EquivalentClasses: 56
-    FunctionalObjectProperty: 11
-    InverseFunctionalObjectProperty: 11
-    InverseObjectProperties: 126
+    EquivalentClasses: 49
+    FunctionalObjectProperty: 9
+    InverseFunctionalObjectProperty: 9
+    InverseObjectProperties: 128
     IrrefexiveObjectProperty: 9
-    ObjectPropertyDomain: 129
-    ObjectPropertyRange: 131
+    ObjectPropertyDomain: 133
+    ObjectPropertyRange: 135
     SubAnnotationPropertyOf: 14
-    SubClassOf: 1503
+    SubClassOf: 1498
     SubObjectPropertyOf: 192
     SubPropertyChainOf: 10
     SymmetricObjectProperty: 14
     TransitiveObjectProperty: 13
-  'Axioms: Number of axioms': 12655
+  'Axioms: Number of axioms': 12728
   'Entities: % of entities reused': 100.0
-  'Entities: Number of annotation properties': 59
-  'Entities: Number of classes': 1423
+  'Entities: Number of annotation properties': 64
+  'Entities: Number of classes': 1416
   'Entities: Number of data properties': 12
   'Entities: Number of individuals': 348
-  'Entities: Number of object properties': 258
+  'Entities: Number of object properties': 262
   'Entities: Number of unsatisfiable classes': 0
   'Info: Breakdown of OWL class expressions used':
-    Class: 5271
+    Class: 5283
     ObjectAllValuesFrom: 3
-    ObjectIntersectionOf: 21
-    ObjectSomeValuesFrom: 142
-    ObjectUnionOf: 9
+    ObjectIntersectionOf: 57
+    ObjectSomeValuesFrom: 137
+    ObjectUnionOf: 8
   'Info: Does the ontology fall under OWL 2 DL?': true
   'Info: Experimental OBO score':
     _dashboard: 0.504
@@ -54,23 +54,24 @@ metrics:
   'Info: Logical consistency': true
   'Info: Syntax': Turtle
   'Info: Usage of namespaces in axioms':
-    BFO: 623
-    IAO: 591
-    RO: 191
-    dc: 1
+    BFO: 644
+    IAO: 592
+    RO: 197
+    dc: 43
     dc11: 5
     foaf: 2
     oboInOwl: 18
     owl: 2
-    prefix_unknown: 11763
-    rdfs: 2329
+    prefix_unknown: 11767
+    rdfs: 2331
+    skos: 25
     xsd: 9
   'Info: Which ontologies use it?': []
 mirror_from: https://raw.githubusercontent.com/CommonCoreOntology/CommonCoreOntologies/master/AllCoreOntology.ttl
 namespace: CCO
 results:
   FP01 Open:
-    comment: Missing ontology license. Missing registry license.
+    comment: Missing registry license.
     status: ERROR
   FP02 Common Format:
     comment: OWL syntax (Turtle), but should be RDF/XML
@@ -106,7 +107,7 @@ results:
     status: PASS
   ROBOT Report:
     status: PASS
-sha256_hash: 12c266114f50f7f944f93f53769a8ac0011184ee8ce8884d1efd4a70e2fdbb70
+sha256_hash: 4cb4dc9b5b10495ec18c9ef5033572501921240cc3136f90fed501e3189b3e36
 summary:
   comment: 6 errors
   status: ERROR
@@ -114,4 +115,4 @@ summary:
     ERROR: 6
     INFO: 1
     WARN: 1
-version: http://www.ontologyrepository.com/CommonCoreOntologies/Mid/2021-03-01/AllCoreOntology
+version: http://www.ontologyrepository.com/CommonCoreOntologies/Mid/2023-04-07/AllCoreOntology

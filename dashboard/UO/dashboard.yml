@@ -3,27 +3,27 @@ base_prefixes:
 - uo
 - UOALT
 changed: true
-date: 2023-03-07 10:36:53.173818
+date: 2023-04-17 13:35:10.763224
 metrics:
   'Axioms: Breakdown of axiom types':
-    AnnotationAssertion: 1369
-    Declaration: 885
-    EquivalentClasses: 350
-    SubClassOf: 793
-  'Axioms: Number of axioms': 3397
+    AnnotationAssertion: 1380
+    Declaration: 891
+    EquivalentClasses: 356
+    SubClassOf: 796
+  'Axioms: Number of axioms': 3423
   'Entities: % of entities reused': 100.0
   'Entities: Number of annotation properties': 4
-  'Entities: Number of classes': 609
+  'Entities: Number of classes': 612
   'Entities: Number of data properties': 0
-  'Entities: Number of individuals': 272
+  'Entities: Number of individuals': 275
   'Entities: Number of object properties': 2
   'Entities: Number of unsatisfiable classes': 0
   'Info: Breakdown of OWL class expressions used':
-    Class: 2705
+    Class: 2726
     ObjectAllValuesFrom: 44
-    ObjectIntersectionOf: 78
-    ObjectOneOf: 272
-    ObjectSomeValuesFrom: 78
+    ObjectIntersectionOf: 81
+    ObjectOneOf: 275
+    ObjectSomeValuesFrom: 81
     ObjectUnionOf: 44
   'Info: Does the ontology fall under OWL 2 DL?': false
   'Info: Experimental OBO score':
@@ -39,10 +39,10 @@ metrics:
   'Info: Syntax': RDF/XML Syntax
   'Info: Usage of namespaces in axioms':
     PATO: 96
-    UO: 3153
-    obo: 124
-    prefix_unknown: 415
-    rdfs: 956
+    UO: 3180
+    obo: 127
+    oboInOwl: 420
+    rdfs: 962
   'Info: Which ontologies use it?': []
 mirror_from: http://purl.obolibrary.org/obo/uo.owl
 namespace: UO
@@ -83,7 +83,7 @@ results:
     status: PASS
   ROBOT Report:
     status: PASS
-sha256_hash: bf88b575b24f76072c2adf2348da7a9bc594432e4aca0637c24c152dcf24dfd1
+sha256_hash: 1d1b24535c3796a1a41985272d4fd5e49e34eda521aff83a756ce8b9188d9f6e
 summary:
   comment: 7 errors
   status: ERROR

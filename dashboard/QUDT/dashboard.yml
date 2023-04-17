@@ -3,24 +3,24 @@ base_prefixes:
 - qudt
 - QUDTALT
 changed: true
-date: 2023-03-07 10:36:47.118398
+date: 2023-04-17 13:35:04.768013
 metrics:
   'Axioms: Breakdown of axiom types':
-    AnnotationAssertion: 1319
+    AnnotationAssertion: 1314
     AnnotationPropertyRangeOf: 19
-    ClassAssertion: 53
-    DataPropertyAssertion: 111
+    ClassAssertion: 55
+    DataPropertyAssertion: 117
     DataPropertyDomain: 2
-    DataPropertyRange: 77
+    DataPropertyRange: 78
     DatatypeDefinition: 1
-    Declaration: 359
+    Declaration: 360
     DisjointClasses: 6
     EquivalentClasses: 12
     FunctionalDataProperty: 7
     FunctionalObjectProperty: 7
     InverseFunctionalObjectProperty: 1
     InverseObjectProperties: 20
-    ObjectPropertyAssertion: 9
+    ObjectPropertyAssertion: 10
     ObjectPropertyDomain: 9
     ObjectPropertyRange: 53
     SubAnnotationPropertyOf: 10
@@ -29,21 +29,21 @@ metrics:
     SubObjectPropertyOf: 50
     SymmetricObjectProperty: 5
     TransitiveObjectProperty: 4
-  'Axioms: Number of axioms': 2486
+  'Axioms: Number of axioms': 2492
   'Entities: % of entities reused': 100.0
-  'Entities: Number of annotation properties': 58
-  'Entities: Number of classes': 143
-  'Entities: Number of data properties': 102
-  'Entities: Number of individuals': 80
+  'Entities: Number of annotation properties': 57
+  'Entities: Number of classes': 144
+  'Entities: Number of data properties': 103
+  'Entities: Number of individuals': 89
   'Entities: Number of object properties': 147
   'Entities: Number of unsatisfiable classes': 0
   'Info: Breakdown of OWL class expressions used':
-    Class: 829
+    Class: 830
     DataAllValuesFrom: 4
     DataExactCardinality: 13
-    DataMaxCardinality: 61
+    DataMaxCardinality: 62
     DataMinCardinality: 14
-    ObjectAllValuesFrom: 68
+    ObjectAllValuesFrom: 67
     ObjectExactCardinality: 4
     ObjectMaxCardinality: 31
     ObjectMinCardinality: 11
@@ -62,15 +62,15 @@ metrics:
   'Info: Logical consistency': true
   'Info: Syntax': Turtle
   'Info: Usage of namespaces in axioms':
-    dc: 182
+    dc: 184
     dc11: 7
-    owl: 86
-    prefix_unknown: 1808
+    owl: 79
+    prefix_unknown: 1826
     prov: 1
     rdf: 29
-    rdfs: 1115
+    rdfs: 1118
     skos: 172
-    xsd: 191
+    xsd: 198
   'Info: Which ontologies use it?': []
 mirror_from: http://qudt.org/2.1/schema/qudt
 namespace: QUDT
@@ -112,7 +112,7 @@ results:
     status: PASS
   ROBOT Report:
     status: PASS
-sha256_hash: 0b715689a7c374858deec0df03038fb9832dda2adffc27824a20e91b67a5fd38
+sha256_hash: 2a1a819fc3a69698899efe677e33b3bbb3ab6387839cd38e07b139b3c2c495ab
 summary:
   comment: 5 errors
   status: ERROR

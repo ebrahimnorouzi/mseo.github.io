@@ -3,4 +3,4 @@ changed: true
 failure: failed_robot_base
 mirror_from: https://raw.githubusercontent.com/BIG-MAP/BattINFO/master/battinfo.ttl
 namespace: EMMO_BattINFO
-sha256_hash: 4d2c58975fd593fc4d3bdd9c16fb61e47da0cf3680e0c137f9c74547568a5f6c
+sha256_hash: 9b385d8942d1406432c2f823f1590e8af383d5210cee42c579050ce5b6844b65

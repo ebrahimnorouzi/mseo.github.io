@@ -3,53 +3,53 @@ base_prefixes:
 - AMONTOLOGY
 - AMONTOLOGYALT
 changed: true
-date: 2023-03-07 10:37:15.249086
+date: 2023-04-17 13:35:32.268402
 metrics:
   'Axioms: Breakdown of axiom types':
-    AnnotationAssertion: 9187
+    AnnotationAssertion: 9238
     AnnotationPropertyDomain: 1
     AnnotationPropertyRangeOf: 1
     AsymmetricObjectProperty: 1
-    ClassAssertion: 237
+    ClassAssertion: 248
     DataPropertyDomain: 1
-    Declaration: 1856
-    DifferentIndividuals: 6
+    Declaration: 1869
+    DifferentIndividuals: 7
     DisjointClasses: 47
     DisjointObjectProperties: 1
-    EquivalentClasses: 137
+    EquivalentClasses: 138
     InverseObjectProperties: 17
     IrrefexiveObjectProperty: 1
     NegativeObjectPropertyAssertion: 1
-    ObjectPropertyAssertion: 333
-    ObjectPropertyDomain: 72
-    ObjectPropertyRange: 71
+    ObjectPropertyAssertion: 320
+    ObjectPropertyDomain: 73
+    ObjectPropertyRange: 72
     SameIndividual: 7
     SubAnnotationPropertyOf: 20
-    SubClassOf: 2365
+    SubClassOf: 2395
     SubObjectPropertyOf: 99
     SymmetricObjectProperty: 1
     TransitiveObjectProperty: 2
-  'Axioms: Number of axioms': 14464
+  'Axioms: Number of axioms': 14560
   'Entities: % of entities reused': 100.0
-  'Entities: Number of annotation properties': 99
-  'Entities: Number of classes': 1416
+  'Entities: Number of annotation properties': 100
+  'Entities: Number of classes': 1430
   'Entities: Number of data properties': 1
-  'Entities: Number of individuals': 220
+  'Entities: Number of individuals': 218
   'Entities: Number of object properties': 118
   'Entities: Number of unsatisfiable classes': 0
   'Info: Breakdown of OWL class expressions used':
-    Class: 7085
+    Class: 7180
     DataHasValue: 4
     ObjectAllValuesFrom: 16
     ObjectComplementOf: 18
     ObjectExactCardinality: 2
-    ObjectHasValue: 78
-    ObjectIntersectionOf: 182
-    ObjectMinCardinality: 3
+    ObjectHasValue: 79
+    ObjectIntersectionOf: 187
+    ObjectMinCardinality: 2
     ObjectOneOf: 3
-    ObjectSomeValuesFrom: 1082
-    ObjectUnionOf: 61
-  'Info: Does the ontology fall under OWL 2 DL?': false
+    ObjectSomeValuesFrom: 1116
+    ObjectUnionOf: 64
+  'Info: Does the ontology fall under OWL 2 DL?': true
   'Info: Experimental OBO score':
     _dashboard: 0.571
     _formula: (1*impact+1*dashboard)/2
@@ -62,10 +62,10 @@ metrics:
   'Info: Logical consistency': true
   'Info: Syntax': RDF/XML Syntax
   'Info: Usage of namespaces in axioms':
-    BFO: 786
-    IAO: 4798
+    BFO: 794
+    IAO: 4832
     OMO: 6
-    RO: 528
+    RO: 530
     UO: 1224
     dc: 5
     dc11: 22
@@ -73,9 +73,10 @@ metrics:
     obo: 26
     oboInOwl: 2366
     owl: 25
-    prefix_unknown: 8588
+    prefix_unknown: 8683
+    prov: 278
     rdf: 125
-    rdfs: 1989
+    rdfs: 2006
     xsd: 6
   'Info: Which ontologies use it?': []
 mirror_from: http://openenergy-platform.org/ontology/oeo/releases/oeo.owl
@@ -91,7 +92,7 @@ results:
     file: fp3
     status: ERROR
   FP04 Versioning:
-    comment: Version IRI 'http://openenergy-platform.org/ontology/oeo/releases/1.13.0/oeo.omn'
+    comment: Version IRI 'http://openenergy-platform.org/ontology/oeo/releases/1.14.0/oeo.omn'
       is not in recommended format
     status: WARN
   FP05 Scope:
@@ -118,7 +119,7 @@ results:
     status: PASS
   ROBOT Report:
     status: PASS
-sha256_hash: de328a62048b6e722d6b33d37b008c61ae3c79f201d8f7c3e711f87a7be0ae9a
+sha256_hash: 1f8ca5c0a964b5e7ed2fa64c22d0023c09d15a88adbfcd7a04cc7e564a24b0ba
 summary:
   comment: 5 errors
   status: ERROR
@@ -126,4 +127,4 @@ summary:
     ERROR: 5
     INFO: 1
     WARN: 1
-version: http://openenergy-platform.org/ontology/oeo/releases/1.13.0/oeo.omn
+version: http://openenergy-platform.org/ontology/oeo/releases/1.14.0/oeo.omn
