@@ -29,7 +29,7 @@ ontologies:
   - AMONTOLOGY
   - AMONTOLOGYALT
   changed: true
-  date: 2023-04-17 13:35:32.268402
+  date: 2023-04-21 14:51:13.384910
   metrics:
     'Axioms: Breakdown of axiom types':
       AnnotationAssertion: 9238
@@ -159,7 +159,7 @@ ontologies:
   - BWMD-DOMAIN
   - BWMD-DOMAINALT
   changed: true
-  date: 2023-04-17 13:32:27.999932
+  date: 2023-04-21 14:48:54.127975
   metrics:
     'Axioms: Breakdown of axiom types':
       AnnotationAssertion: 2151
@@ -262,7 +262,7 @@ ontologies:
   - BWMD-MID
   - BWMD-MIDALT
   changed: true
-  date: 2023-04-17 13:32:23.261596
+  date: 2023-04-21 14:48:49.721416
   metrics:
     'Axioms: Breakdown of axiom types':
       AnnotationAssertion: 1234
@@ -365,7 +365,7 @@ ontologies:
   - cco
   - CCOALT
   changed: true
-  date: 2023-04-17 13:32:18.593648
+  date: 2023-04-21 14:48:45.537093
   metrics:
     'Axioms: Breakdown of axiom types':
       AnnotationAssertion: 7995
@@ -412,7 +412,7 @@ ontologies:
       _reuse: 1.0
       oboscore: 0.252
     'Info: How many externally documented uses?': 0
-    'Info: How many ontologies use it?': 2
+    'Info: How many ontologies use it?': 0
     'Info: Logical consistency': true
     'Info: Syntax': Turtle
     'Info: Usage of namespaces in axioms':
@@ -483,7 +483,7 @@ ontologies:
   - CHAMEO
   - CHAMEOALT
   changed: true
-  date: 2023-04-17 13:35:36.412030
+  date: 2023-04-21 14:51:17.338314
   metrics:
     'Axioms: Breakdown of axiom types':
       AnnotationAssertion: 2128
@@ -609,7 +609,7 @@ ontologies:
   - cif-core
   - CIFALT
   changed: true
-  date: 2023-04-17 13:32:47.676274
+  date: 2023-04-21 14:49:18.677312
   metrics:
     'Axioms: Breakdown of axiom types':
       AnnotationAssertion: 282
@@ -720,7 +720,7 @@ ontologies:
   - deb
   - DEBALT
   changed: true
-  date: 2023-04-17 13:33:30.584881
+  date: 2023-04-21 14:50:06.351273
   metrics:
     'Axioms: Breakdown of axiom types':
       AnnotationAssertion: 296
@@ -817,7 +817,7 @@ ontologies:
   - diso
   - DISOALT
   changed: true
-  date: 2023-04-17 13:33:21.744885
+  date: 2023-04-21 14:49:53.530822
   metrics:
     'Axioms: Breakdown of axiom types':
       AnnotationAssertion: 147
@@ -921,7 +921,7 @@ ontologies:
   - emmo
   - EMMOALT
   changed: true
-  date: 2023-04-17 13:29:39.220569
+  date: 2023-04-21 14:46:04.334821
   metrics:
     'Axioms: Breakdown of axiom types':
       AnnotationAssertion: 1743
@@ -974,7 +974,7 @@ ontologies:
       _reuse: 1.0
       oboscore: 0.275
     'Info: How many externally documented uses?': 0
-    'Info: How many ontologies use it?': 9
+    'Info: How many ontologies use it?': 0
     'Info: Logical consistency': true
     'Info: Syntax': Turtle
     'Info: Usage of namespaces in axioms':
@@ -1037,11 +1037,130 @@ ontologies:
       WARN: 2
   version: http://emmo.info/emmo/1.0.0-beta
 - base_generated: true
+  base_prefixes:
+  - emmo_bvc
+  - EMMO_BVCALT
   changed: true
-  failure: failed_robot_base
+  date: 2023-04-21 14:49:11.376846
+  metrics:
+    'Axioms: Breakdown of axiom types':
+      AnnotationAssertion: 4124
+      AnnotationPropertyRangeOf: 19
+      AsymmetricObjectProperty: 16
+      ClassAssertion: 2
+      DataPropertyDomain: 2
+      DataPropertyRange: 1
+      Declaration: 1473
+      DisjointClasses: 6
+      DisjointUnion: 34
+      EquivalentClasses: 115
+      EquivalentObjectProperties: 7
+      FunctionalDataProperty: 2
+      FunctionalObjectProperty: 9
+      InverseFunctionalObjectProperty: 5
+      InverseObjectProperties: 13
+      IrrefexiveObjectProperty: 24
+      ObjectPropertyDomain: 60
+      ObjectPropertyRange: 68
+      ReflexiveObjectProperty: 1
+      SubAnnotationPropertyOf: 23
+      SubClassOf: 2152
+      SubDataPropertyOf: 2
+      SubObjectPropertyOf: 139
+      SymmetricObjectProperty: 11
+      TransitiveObjectProperty: 9
+    'Axioms: Number of axioms': 8317
+    'Entities: % of entities reused': 100.0
+    'Entities: Number of annotation properties': 36
+    'Entities: Number of classes': 1342
+    'Entities: Number of data properties': 3
+    'Entities: Number of individuals': 1
+    'Entities: Number of object properties': 106
+    'Entities: Number of unsatisfiable classes': 0
+    'Info: Breakdown of OWL class expressions used':
+      Class: 6164
+      DataAllValuesFrom: 3
+      DataExactCardinality: 3
+      DataHasValue: 130
+      DataSomeValuesFrom: 4
+      ObjectAllValuesFrom: 66
+      ObjectComplementOf: 5
+      ObjectExactCardinality: 8
+      ObjectHasValue: 2
+      ObjectIntersectionOf: 10
+      ObjectMinCardinality: 1
+      ObjectSomeValuesFrom: 484
+      ObjectUnionOf: 60
+    'Info: Does the ontology fall under OWL 2 DL?': false
+    'Info: Experimental OBO score':
+      _dashboard: 0.444
+      _formula: (1*impact+1*dashboard)/2
+      _impact: 0.0
+      _impact_external: 0
+      _reuse: 1.0
+      oboscore: 0.222
+    'Info: How many externally documented uses?': 0
+    'Info: How many ontologies use it?': 0
+    'Info: Logical consistency': true
+    'Info: Syntax': Turtle
+    'Info: Usage of namespaces in axioms':
+      dc: 6
+      owl: 35
+      prefix_unknown: 9395
+      rdf: 110
+      rdfs: 707
+      skos: 1616
+      xsd: 31
+    'Info: Which ontologies use it?': []
   mirror_from: https://raw.githubusercontent.com/ebrahimnorouzi/mseo.github.io/master/Ontology_files/BVCO.ttl
   namespace: EMMO_BVC
-  sha256_hash: 3b6d3cc14daa8b5a7c87fc822ab5c4315e570a88fdb20c25732715e746ca062b
+  results:
+    FP01 Open:
+      comment: Missing registry license.
+      status: ERROR
+    FP02 Common Format:
+      comment: OWL syntax (Turtle), but should be RDF/XML
+      status: WARN
+    FP03 URIs:
+      comment: 0 invalid IRIs. The Ontology IRI is not valid.
+      file: fp3
+      status: ERROR
+    FP04 Versioning:
+      comment: Missing version IRI
+      status: ERROR
+    FP05 Scope:
+      comment: Missing domain (scope)
+      status: ERROR
+    FP06 Textual Definitions:
+      status: PASS
+    FP07 Relations:
+      status: PASS
+    FP08 Documented:
+      status: PASS
+    FP09 Plurality of Users:
+      comment: Missing usages
+      status: ERROR
+    FP11 Locus of Authority:
+      comment: Missing contact information
+      status: ERROR
+    FP12 Naming Conventions:
+      status: PASS
+    FP16 Maintenance:
+      comment: Missing version IRI to check date
+      status: ERROR
+    FP20 Responsiveness:
+      status: PASS
+    ROBOT Report:
+      status: PASS
+  sha256_hash: 083958d2622aa5d30761f488faeaba5990c644ab70b4006d547c06765f5cf618
+  summary:
+    comment: 7 errors
+    status: ERROR
+    summary_count:
+      ERROR: 7
+      INFO: 0
+      WARN: 1
+  version: null
 - base_generated: true
   changed: true
   failure: failed_robot_base
@@ -1053,7 +1172,7 @@ ontologies:
   - emmo_datamodel
   - EMMO_DATAMODELALT
   changed: true
-  date: 2023-04-17 13:32:51.524672
+  date: 2023-04-21 14:49:22.651669
   metrics:
     'Axioms: Breakdown of axiom types':
       AnnotationAssertion: 94
@@ -1163,7 +1282,7 @@ ontologies:
   - emmo_atomistic
   - EMMO_ATOMISTICALT
   changed: true
-  date: 2023-04-17 13:32:59.151986
+  date: 2023-04-21 14:49:30.085867
   metrics:
     'Axioms: Breakdown of axiom types':
       AnnotationAssertion: 1921
@@ -1287,7 +1406,7 @@ ontologies:
   - emmo_crystallography
   - EMMO_CRYSTALLOGRAPHYALT
   changed: true
-  date: 2023-04-17 13:32:44.688801
+  date: 2023-04-21 14:49:15.322958
   metrics:
     'Axioms: Breakdown of axiom types':
       AnnotationAssertion: 9482
@@ -1414,7 +1533,7 @@ ontologies:
   - emmo_mappings
   - EMMO_MAPPINGSALT
   changed: true
-  date: 2023-04-17 13:32:55.302216
+  date: 2023-04-21 14:49:26.422913
   metrics:
     'Axioms: Breakdown of axiom types':
       AnnotationAssertion: 1915
@@ -1540,7 +1659,7 @@ ontologies:
   - emmo_mechanical_testing
   - EMMO_MECHANICAL_TESTINGALT
   changed: true
-  date: 2023-04-17 13:29:43.579473
+  date: 2023-04-21 14:46:08.225541
   metrics:
     'Axioms: Breakdown of axiom types':
       AnnotationAssertion: 2538
@@ -1661,7 +1780,7 @@ ontologies:
   - emmo_microstructure
   - EMMO_MICROSTRUCTUREALT
   changed: true
-  date: 2023-04-17 13:29:47.191615
+  date: 2023-04-21 14:46:11.316684
   metrics:
     'Axioms: Breakdown of axiom types':
       AnnotationAssertion: 622
@@ -1778,7 +1897,7 @@ ontologies:
   - foaf
   - FOAFALT
   changed: true
-  date: 2023-04-17 13:32:11.998064
+  date: 2023-04-21 14:48:36.496306
   metrics:
     'Axioms: Breakdown of axiom types':
       AnnotationAssertion: 245
@@ -1805,12 +1924,12 @@ ontologies:
     'Info: Experimental OBO score':
       _dashboard: 0.333
       _formula: (1*impact+1*dashboard)/2
-      _impact: 0.333
+      _impact: 0.35
       _impact_external: 0
       _reuse: 0.146
-      oboscore: 0.333
+      oboscore: 0.342
     'Info: How many externally documented uses?': 0
-    'Info: How many ontologies use it?': 20
+    'Info: How many ontologies use it?': 21
     'Info: Logical consistency': true
     'Info: Syntax': RDF/XML Syntax
     'Info: Usage of namespaces in axioms':
@@ -1828,6 +1947,7 @@ ontologies:
     - IAO
     - LPBFO
     - MOL_TENSILE
+    - NanoMine
     - OA
     - OEO
     - OM
@@ -1895,7 +2015,7 @@ ontologies:
   - gpo
   - GPOALT
   changed: true
-  date: 2023-04-17 13:32:40.844831
+  date: 2023-04-21 14:49:08.008160
   metrics:
     'Axioms: Breakdown of axiom types':
       AnnotationAssertion: 2532
@@ -2015,7 +2135,7 @@ ontologies:
   - iao
   - IAOALT
   changed: true
-  date: 2023-04-17 13:33:39.472671
+  date: 2023-04-21 14:50:15.587604
   metrics:
     'Axioms: Breakdown of axiom types':
       AnnotationAssertion: 2777
@@ -2143,7 +2263,7 @@ ontologies:
   - LPBFO
   - LPBFOALT
   changed: true
-  date: 2023-04-17 13:32:34.578640
+  date: 2023-04-21 14:49:01.209679
   metrics:
     'Axioms: Breakdown of axiom types':
       AnnotationAssertion: 1579
@@ -2248,7 +2368,7 @@ ontologies:
   - mambo
   - MAMBOALT
   changed: true
-  date: 2023-04-17 13:33:18.650823
+  date: 2023-04-21 14:49:50.154771
   metrics:
     'Axioms: Breakdown of axiom types':
       ClassAssertion: 21
@@ -2351,7 +2471,7 @@ ontologies:
   - mdo
   - MDOALT
   changed: true
-  date: 2023-04-17 13:33:27.635925
+  date: 2023-04-21 14:49:59.729717
   metrics:
     'Axioms: Breakdown of axiom types':
       AnnotationAssertion: 177
@@ -2454,7 +2574,7 @@ ontologies:
   - MOL_TENSILE
   - MOL_TENSILEALT
   changed: true
-  date: 2023-04-17 13:32:31.276435
+  date: 2023-04-21 14:48:57.497152
   metrics:
     'Axioms: Breakdown of axiom types':
       AnnotationAssertion: 1354
@@ -2562,7 +2682,7 @@ ontologies:
   - mseo
   - MSEOALT
   changed: true
-  date: 2023-04-17 13:32:15.270979
+  date: 2023-04-21 14:48:40.007514
   metrics:
     'Axioms: Breakdown of axiom types':
       AnnotationAssertion: 1708
@@ -2674,7 +2794,7 @@ ontologies:
   - matonto
   - MATONTOALT
   changed: true
-  date: 2023-04-17 13:33:02.418556
+  date: 2023-04-21 14:49:33.644019
   metrics:
     'Axioms: Breakdown of axiom types':
       AnnotationAssertion: 1841
@@ -2790,7 +2910,7 @@ ontologies:
   - materialsmine
   - MATERIALSMINEALT
   changed: true
-  date: 2023-04-17 13:33:12.292063
+  date: 2023-04-21 14:49:43.528531
   metrics:
     'Axioms: Breakdown of axiom types':
       AnnotationAssertion: 2226
@@ -2905,7 +3025,7 @@ ontologies:
   - npo
   - NPOALT
   changed: true
-  date: 2023-04-17 13:33:08.736873
+  date: 2023-04-21 14:49:40.197332
   metrics:
     'Axioms: Breakdown of axiom types':
       AnnotationAssertion: 11343
@@ -2946,7 +3066,7 @@ ontologies:
       _reuse: 1.0
       oboscore: 0.234
     'Info: How many externally documented uses?': 0
-    'Info: How many ontologies use it?': 1
+    'Info: How many ontologies use it?': 0
     'Info: Logical consistency': true
     'Info: Syntax': RDF/XML Syntax
     'Info: Usage of namespaces in axioms':
@@ -3005,17 +3125,139 @@ ontologies:
       WARN: 0
   version: null
 - base_generated: true
+  base_prefixes:
+  - nanomine
+  - NANOMINEALT
   changed: true
-  failure: failed_robot_base
+  date: 2023-04-21 14:50:03.026135
+  metrics:
+    'Axioms: Breakdown of axiom types':
+      AnnotationAssertion: 9424
+      AsymmetricObjectProperty: 2
+      ClassAssertion: 48
+      DataPropertyAssertion: 2
+      DataPropertyDomain: 36
+      DataPropertyRange: 36
+      Declaration: 2165
+      DisjointClasses: 82
+      EquivalentClasses: 53
+      EquivalentDataProperties: 10
+      FunctionalDataProperty: 1
+      FunctionalObjectProperty: 16
+      InverseFunctionalObjectProperty: 8
+      InverseObjectProperties: 86
+      IrrefexiveObjectProperty: 3
+      ObjectPropertyDomain: 63
+      ObjectPropertyRange: 62
+      ReflexiveObjectProperty: 3
+      SubClassOf: 2266
+      SubDataPropertyOf: 26
+      SubObjectPropertyOf: 237
+      SubPropertyChainOf: 1
+      SymmetricObjectProperty: 35
+      TransitiveObjectProperty: 28
+    'Axioms: Number of axioms': 14693
+    'Entities: % of entities reused': 100.0
+    'Entities: Number of annotation properties': 42
+    'Entities: Number of classes': 1815
+    'Entities: Number of data properties': 56
+    'Entities: Number of individuals': 34
+    'Entities: Number of object properties': 268
+    'Entities: Number of unsatisfiable classes': 0
+    'Info: Breakdown of OWL class expressions used':
+      Class: 6941
+      DataAllValuesFrom: 2
+      DataHasValue: 3
+      DataSomeValuesFrom: 17
+      ObjectAllValuesFrom: 41
+      ObjectComplementOf: 7
+      ObjectExactCardinality: 27
+      ObjectHasValue: 54
+      ObjectIntersectionOf: 92
+      ObjectMaxCardinality: 2
+      ObjectMinCardinality: 28
+      ObjectSomeValuesFrom: 419
+      ObjectUnionOf: 67
+    'Info: Does the ontology fall under OWL 2 DL?': false
+    'Info: Experimental OBO score':
+      _dashboard: 0.444
+      _formula: (1*impact+1*dashboard)/2
+      _impact: 0.0
+      _impact_external: 0
+      _reuse: 1.0
+      oboscore: 0.222
+    'Info: How many externally documented uses?': 0
+    'Info: How many ontologies use it?': 0
+    'Info: Logical consistency': true
+    'Info: Syntax': Turtle
+    'Info: Usage of namespaces in axioms':
+      dc: 1788
+      dc11: 2882
+      foaf: 36
+      owl: 27
+      prefix_unknown: 9179
+      prov: 23
+      rdf: 12
+      rdfs: 4144
+      schema: 8
+      skos: 359
+      xsd: 16
+    'Info: Which ontologies use it?': []
   mirror_from: https://raw.githubusercontent.com/ebrahimnorouzi/mseo.github.io/master/Ontology_files/nanomine.ttl
   namespace: NanoMine
-  sha256_hash: 04100d0779c9c8bf00a831ceb64133f99242287c3fa68cd876d3f7adb5060b0f
+  results:
+    FP01 Open:
+      comment: Missing ontology license. Missing registry license.
+      status: ERROR
+    FP02 Common Format:
+      comment: OWL syntax (Turtle), but should be RDF/XML
+      status: WARN
+    FP03 URIs:
+      comment: 0 invalid IRIs. The Ontology IRI is not valid.
+      file: fp3
+      status: ERROR
+    FP04 Versioning:
+      comment: Missing version IRI
+      status: ERROR
+    FP05 Scope:
+      comment: Missing domain (scope)
+      status: ERROR
+    FP06 Textual Definitions:
+      status: PASS
+    FP07 Relations:
+      status: PASS
+    FP08 Documented:
+      status: PASS
+    FP09 Plurality of Users:
+      comment: Missing usages
+      status: ERROR
+    FP11 Locus of Authority:
+      comment: Missing contact information
+      status: ERROR
+    FP12 Naming Conventions:
+      status: PASS
+    FP16 Maintenance:
+      comment: Missing version IRI to check date
+      status: ERROR
+    FP20 Responsiveness:
+      status: PASS
+    ROBOT Report:
+      status: PASS
+  sha256_hash: 5dffba2a1bd841d6af2bba1809e9b1a06f3c55155754624be2d363c77bacecbb
+  summary:
+    comment: 7 errors
+    status: ERROR
+    summary_count:
+      ERROR: 7
+      INFO: 0
+      WARN: 1
+  version: null
 - base_generated: true
   base_prefixes:
   - oa
   - OAALT
   changed: true
-  date: 2023-04-17 13:35:01.476803
+  date: 2023-04-21 14:50:40.713080
   metrics:
     'Axioms: Breakdown of axiom types':
       AnnotationAssertion: 204
@@ -3110,7 +3352,7 @@ ontologies:
   - obo
   - OBOALT
   changed: true
-  date: 2023-04-17 13:29:50.471876
+  date: 2023-04-21 14:46:14.938998
   metrics:
     'Axioms: Breakdown of axiom types':
       AnnotationAssertion: 478
@@ -3218,7 +3460,7 @@ ontologies:
   - oeo
   - OEOALT
   changed: true
-  date: 2023-04-17 13:35:14.024471
+  date: 2023-04-21 14:50:54.162461
   metrics:
     'Axioms: Breakdown of axiom types':
       AnnotationAssertion: 9238
@@ -3348,7 +3590,7 @@ ontologies:
   - om
   - OMALT
   changed: true
-  date: 2023-04-17 13:35:07.754029
+  date: 2023-04-21 14:50:47.655229
   metrics:
     'Axioms: Breakdown of axiom types':
       AnnotationAssertion: 8438
@@ -3459,7 +3701,7 @@ ontologies:
   - osmo
   - OSMOALT
   changed: true
-  date: 2023-04-17 13:29:35.268718
+  date: 2023-04-21 14:46:00.493014
   metrics:
     'Axioms: Breakdown of axiom types':
       AnnotationAssertion: 360
@@ -3579,7 +3821,7 @@ ontologies:
   - P-Plan
   - P-PLANALT
   changed: true
-  date: 2023-04-17 13:34:58.287802
+  date: 2023-04-21 14:50:37.558311
   metrics:
     'Axioms: Breakdown of axiom types':
       AnnotationAssertion: 45
@@ -3674,7 +3916,7 @@ ontologies:
   - PATO
   - PATOALT
   changed: true
-  date: 2023-04-17 13:35:28.811977
+  date: 2023-04-21 14:51:09.857579
   metrics:
     'Axioms: Breakdown of axiom types':
       AnnotationAssertion: 96983
@@ -3821,7 +4063,7 @@ ontologies:
   - pmdco
   - PMDALT
   changed: true
-  date: 2023-04-17 13:29:30.876100
+  date: 2023-04-21 14:45:55.671543
   metrics:
     'Axioms: Breakdown of axiom types':
       AnnotationAssertion: 2226
@@ -3936,7 +4178,7 @@ ontologies:
   - prov
   - PROVOALT
   changed: true
-  date: 2023-04-17 13:32:37.790124
+  date: 2023-04-21 14:49:04.532473
   metrics:
     'Axioms: Breakdown of axiom types':
       AnnotationAssertion: 678
@@ -3969,12 +4211,12 @@ ontologies:
     'Info: Experimental OBO score':
       _dashboard: 0.504
       _formula: (1*impact+1*dashboard)/2
-      _impact: 0.167
+      _impact: 0.183
       _impact_external: 0
       _reuse: 0.109
-      oboscore: 0.336
+      oboscore: 0.344
     'Info: How many externally documented uses?': 0
-    'Info: How many ontologies use it?': 10
+    'Info: How many ontologies use it?': 11
     'Info: Logical consistency': true
     'Info: Syntax': RDF/XML Syntax
     'Info: Usage of namespaces in axioms':
@@ -3988,6 +4230,7 @@ ontologies:
     - AMONTOLOGY
     - MDO
     - MaterialsMine
+    - NanoMine
     - OEO
     - P-Plan
     - PMD
@@ -4050,7 +4293,7 @@ ontologies:
   - qudt
   - QUDTALT
   changed: true
-  date: 2023-04-17 13:35:04.768013
+  date: 2023-04-21 14:50:44.399450
   metrics:
     'Axioms: Breakdown of axiom types':
       AnnotationAssertion: 1314
@@ -4174,7 +4417,7 @@ ontologies:
   - qudv
   - QUDVALT
   changed: true
-  date: 2023-04-17 13:35:39.203518
+  date: 2023-04-21 14:51:20.271375
   metrics:
     'Axioms: Breakdown of axiom types':
       AnnotationAssertion: 52
@@ -4282,7 +4525,7 @@ ontologies:
   - saref
   - SAREFALT
   changed: true
-  date: 2023-04-17 13:34:50.316592
+  date: 2023-04-21 14:50:29.007396
   metrics:
     'Axioms: Breakdown of axiom types':
       AnnotationAssertion: 264
@@ -4313,12 +4556,12 @@ ontologies:
       ObjectUnionOf: 2
     'Info: Does the ontology fall under OWL 2 DL?': true
     'Info: Experimental OBO score':
-      _dashboard: 0.416
+      _dashboard: 0.482
       _formula: (1*impact+1*dashboard)/2
       _impact: 0.0
       _impact_external: 0
       _reuse: 1.0
-      oboscore: 0.208
+      oboscore: 0.241
     'Info: How many externally documented uses?': 0
     'Info: How many ontologies use it?': 0
     'Info: Logical consistency': true
@@ -4355,9 +4598,7 @@ ontologies:
     FP07 Relations:
       status: PASS
     FP08 Documented:
-      comment: Homepage URL (https://labs.etsi.org/rep/saref/saref-core/-/tree/develop-v3.1.1)
-        does not resolve
-      status: ERROR
+      status: PASS
     FP09 Plurality of Users:
       comment: Missing tracker and usages
       status: ERROR
@@ -4376,10 +4617,10 @@ ontologies:
       status: PASS
   sha256_hash: 4ec9aba7c21b084f627016bc609149cedf231899202f03377539cac2e4b676a3
   summary:
-    comment: 7 errors
+    comment: 6 errors
     status: ERROR
     summary_count:
-      ERROR: 7
+      ERROR: 6
       INFO: 1
       WARN: 2
   version: https://saref.etsi.org/core/v3.1.1/
@@ -4388,7 +4629,7 @@ ontologies:
   - semmd
   - SEMMDALT
   changed: true
-  date: 2023-04-17 13:33:05.668582
+  date: 2023-04-21 14:49:37.065084
   metrics:
     'Axioms: Breakdown of axiom types':
       AnnotationAssertion: 5238
@@ -4528,7 +4769,7 @@ ontologies:
   - skos_mdo
   - SKOS_MDOALT
   changed: true
-  date: 2023-04-17 13:33:33.214021
+  date: 2023-04-21 14:50:09.270506
   metrics:
     'Axioms: Breakdown of axiom types':
       AnnotationAssertion: 3491
@@ -4615,7 +4856,7 @@ ontologies:
   - service
   - SOALT
   changed: true
-  date: 2023-04-17 13:29:58.881212
+  date: 2023-04-21 14:46:23.794578
   metrics:
     'Axioms: Breakdown of axiom types':
       AnnotationAssertion: 41
@@ -4707,7 +4948,7 @@ ontologies:
   - sp
   - SPALT
   changed: true
-  date: 2023-04-17 13:29:56.414870
+  date: 2023-04-21 14:46:21.041571
   metrics:
     'Axioms: Breakdown of axiom types':
       AnnotationAssertion: 1781
@@ -4819,7 +5060,7 @@ ontologies:
   - ssn
   - SSNALT
   changed: true
-  date: 2023-04-17 13:29:53.096110
+  date: 2023-04-21 14:46:17.804023
   metrics:
     'Axioms: Breakdown of axiom types':
       AnnotationAssertion: 248
@@ -4913,7 +5154,7 @@ ontologies:
   - uo
   - UOALT
   changed: true
-  date: 2023-04-17 13:35:10.763224
+  date: 2023-04-21 14:50:50.714321
   metrics:
     'Axioms: Breakdown of axiom types':
       AnnotationAssertion: 1380
@@ -5007,7 +5248,7 @@ ontologies:
   - wild
   - WILDALT
   changed: true
-  date: 2023-04-17 13:34:55.657861
+  date: 2023-04-21 14:50:34.426609
   metrics:
     'Axioms: Breakdown of axiom types':
       AnnotationAssertion: 2
@@ -5104,7 +5345,7 @@ ontologies:
   - bmo
   - BMOALT
   changed: true
-  date: 2023-04-17 13:33:42.782401
+  date: 2023-04-21 14:50:19.045264
   metrics:
     'Axioms: Breakdown of axiom types':
       AnnotationAssertion: 612
@@ -5215,7 +5456,7 @@ ontologies:
   - enanomapper
   - ENANOMAPPERALT
   changed: true
-  date: 2023-04-17 13:33:15.684880
+  date: 2023-04-21 14:49:46.917895
   metrics:
     'Axioms: Breakdown of axiom types':
       AnnotationAssertion: 124680
@@ -5351,7 +5592,7 @@ ontologies:
   - m4i
   - M4IALT
   changed: true
-  date: 2023-04-17 13:35:47.069370
+  date: 2023-04-21 14:51:28.407915
   metrics:
     'Axioms: Breakdown of axiom types':
       AnnotationAssertion: 668
@@ -5467,7 +5708,7 @@ ontologies:
   - mat
   - MATALT
   changed: true
-  date: 2023-04-17 13:36:01.831226
+  date: 2023-04-21 14:51:44.492967
   metrics:
     'Axioms: Breakdown of axiom types':
       AnnotationAssertion: 202
@@ -5562,7 +5803,7 @@ ontologies:
   - matinfo
   - MATINFOALT
   changed: true
-  date: 2023-04-17 13:33:24.360761
+  date: 2023-04-21 14:49:56.411370
   metrics:
     'Axioms: Breakdown of axiom types':
       AnnotationAssertion: 104
@@ -5660,7 +5901,7 @@ ontologies:
   - mvc
   - MVCALT
   changed: true
-  date: 2023-04-17 13:35:42.196059
+  date: 2023-04-21 14:51:23.572661
   metrics:
     'Axioms: Breakdown of axiom types':
       AnnotationAssertion: 75
@@ -5755,7 +5996,7 @@ ontologies:
   - mwo
   - MWOALT
   changed: true
-  date: 2023-04-17 13:35:53.498618
+  date: 2023-04-21 14:51:35.115227
   metrics:
     'Axioms: Breakdown of axiom types':
       AnnotationAssertion: 557
@@ -5870,7 +6111,7 @@ ontologies:
   - nfdicore
   - NFDICOREALT
   changed: true
-  date: 2023-04-17 13:35:50.039747
+  date: 2023-04-21 14:51:31.535312
   metrics:
     'Axioms: Breakdown of axiom types':
       AnnotationAssertion: 187
@@ -5972,7 +6213,7 @@ ontologies:
   - ontorule
   - ONTORULEALT
   changed: true
-  date: 2023-04-17 13:33:45.237112
+  date: 2023-04-21 14:50:21.746527
   metrics:
     'Axioms: Breakdown of axiom types':
       AnnotationAssertion: 108
@@ -6076,7 +6317,7 @@ ontologies:
   - m4i
   - OPMWALT
   changed: true
-  date: 2023-04-17 13:35:56.149437
+  date: 2023-04-21 14:51:38.294583
   metrics:
     'Axioms: Breakdown of axiom types':
       AnnotationAssertion: 944
@@ -6195,7 +6436,7 @@ ontologies:
   - periodictable
   - PERIODICTABLEALT
   changed: true
-  date: 2023-04-17 13:33:35.853538
+  date: 2023-04-21 14:50:12.075922
   metrics:
     'Axioms: Breakdown of axiom types':
       AnnotationAssertion: 2
@@ -6292,7 +6533,7 @@ ontologies:
   - ssos
   - SSOSALT
   changed: true
-  date: 2023-04-17 13:35:58.826375
+  date: 2023-04-21 14:51:41.239736
   metrics:
     'Axioms: Breakdown of axiom types':
       AnnotationAssertion: 79
