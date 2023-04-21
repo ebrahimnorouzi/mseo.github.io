@@ -3,7 +3,7 @@ base_prefixes:
 - om
 - OMALT
 changed: true
-date: 2023-03-07 10:36:50.146235
+date: 2023-04-17 13:35:07.754029
 metrics:
   'Axioms: Breakdown of axiom types':
     AnnotationAssertion: 8438
@@ -11,7 +11,7 @@ metrics:
     DataPropertyAssertion: 872
     DataPropertyDomain: 11
     DataPropertyRange: 10
-    Declaration: 853
+    Declaration: 883
     EquivalentClasses: 231
     FunctionalDataProperty: 2
     FunctionalObjectProperty: 3
@@ -20,7 +20,7 @@ metrics:
     ObjectPropertyRange: 20
     SubAnnotationPropertyOf: 2
     SubClassOf: 1108
-  'Axioms: Number of axioms': 23751
+  'Axioms: Number of axioms': 23781
   'Entities: % of entities reused': 100.0
   'Entities: Number of annotation properties': 39
   'Entities: Number of classes': 815
@@ -29,7 +29,7 @@ metrics:
   'Entities: Number of object properties': 23
   'Entities: Number of unsatisfiable classes': 0
   'Info: Breakdown of OWL class expressions used':
-    Class: 5322
+    Class: 5332
     DataExactCardinality: 3
     DataHasValue: 3
     ObjectAllValuesFrom: 400
@@ -51,10 +51,11 @@ metrics:
   'Info: Logical consistency': true
   'Info: Syntax': RDF/XML Syntax
   'Info: Usage of namespaces in axioms':
-    dc11: 51
-    foaf: 34
+    dc: 1
+    dc11: 55
+    foaf: 38
     owl: 65
-    prefix_unknown: 44148
+    prefix_unknown: 44169
     rdf: 37
     rdfs: 5296
     skos: 3
@@ -99,7 +100,7 @@ results:
     status: PASS
   ROBOT Report:
     status: PASS
-sha256_hash: 01cb3550938ab3e698c9b352244e073fd7a33c6b3105e63ffe7f611c006d00f2
+sha256_hash: 55c7a5c1999f0f43996810147da46002ec6e0ba54e27c858adbe6633579d060e
 summary:
   comment: 7 errors
   status: ERROR

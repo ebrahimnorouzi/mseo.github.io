@@ -3,53 +3,41 @@ base_prefixes:
 - mseo
 - MSEOALT
 changed: true
-date: 2023-03-07 10:34:47.772207
+date: 2023-04-17 13:32:15.270979
 metrics:
   'Axioms: Breakdown of axiom types':
-    AnnotationAssertion: 8311
-    AsymmetricObjectProperty: 6
-    ClassAssertion: 516
-    DataPropertyAssertion: 731
-    DataPropertyDomain: 12
-    DataPropertyRange: 16
-    Declaration: 2313
-    DisjointClasses: 35
-    DisjointObjectProperties: 5
-    EquivalentClasses: 61
-    EquivalentDataProperties: 4
-    EquivalentObjectProperties: 4
-    FunctionalObjectProperty: 11
-    InverseFunctionalObjectProperty: 11
-    InverseObjectProperties: 126
-    IrrefexiveObjectProperty: 9
-    ObjectPropertyAssertion: 823
-    ObjectPropertyDomain: 133
-    ObjectPropertyRange: 144
-    SubAnnotationPropertyOf: 14
-    SubClassOf: 1688
-    SubDataPropertyOf: 10
-    SubObjectPropertyOf: 214
-    SubPropertyChainOf: 10
-    SymmetricObjectProperty: 14
+    AnnotationAssertion: 1708
+    ClassAssertion: 2
+    DataPropertyDomain: 1
+    Declaration: 370
+    DisjointClasses: 10
+    EquivalentClasses: 29
+    FunctionalObjectProperty: 9
+    InverseFunctionalObjectProperty: 2
+    InverseObjectProperties: 43
+    ObjectPropertyDomain: 113
+    ObjectPropertyRange: 114
+    SubAnnotationPropertyOf: 30
+    SubClassOf: 299
+    SubDataPropertyOf: 1
+    SubObjectPropertyOf: 81
+    SubPropertyChainOf: 1
     TransitiveObjectProperty: 13
-  'Axioms: Number of axioms': 15234
+  'Axioms: Number of axioms': 2826
   'Entities: % of entities reused': 100.0
-  'Entities: Number of annotation properties': 63
-  'Entities: Number of classes': 1595
-  'Entities: Number of data properties': 30
-  'Entities: Number of individuals': 504
-  'Entities: Number of object properties': 287
+  'Entities: Number of annotation properties': 56
+  'Entities: Number of classes': 204
+  'Entities: Number of data properties': 2
+  'Entities: Number of individuals': 2
+  'Entities: Number of object properties': 116
   'Entities: Number of unsatisfiable classes': 0
   'Info: Breakdown of OWL class expressions used':
-    Class: 5985
-    DataAllValuesFrom: 8
-    DataExactCardinality: 4
-    ObjectAllValuesFrom: 10
-    ObjectExactCardinality: 3
-    ObjectIntersectionOf: 21
-    ObjectOneOf: 3
-    ObjectSomeValuesFrom: 142
-    ObjectUnionOf: 9
+    Class: 1286
+    ObjectAllValuesFrom: 44
+    ObjectComplementOf: 34
+    ObjectIntersectionOf: 116
+    ObjectSomeValuesFrom: 145
+    ObjectUnionOf: 59
   'Info: Does the ontology fall under OWL 2 DL?': false
   'Info: Experimental OBO score':
     _dashboard: 0.444
@@ -63,17 +51,15 @@ metrics:
   'Info: Logical consistency': true
   'Info: Syntax': Turtle
   'Info: Usage of namespaces in axioms':
-    BFO: 650
-    IAO: 612
-    RO: 193
-    dc: 1
-    dc11: 5
-    foaf: 2
-    oboInOwl: 18
-    owl: 40
-    prefix_unknown: 16803
-    rdfs: 2586
-    xsd: 755
+    BFO: 959
+    CHEBI: 2
+    IAO: 16
+    dc: 23
+    dc11: 100
+    owl: 10
+    prefix_unknown: 1866
+    rdfs: 424
+    skos: 509
   'Info: Which ontologies use it?': []
 mirror_from: https://raw.githubusercontent.com/Mat-O-Lab/MSEO/main/MSEO_mid.ttl
 namespace: MSEO
@@ -115,7 +101,7 @@ results:
     status: PASS
   ROBOT Report:
     status: PASS
-sha256_hash: 2c1d973ae623e014ecf33ed3d8b7fab28be05b14f85be9ad6b4546e6ddc2b848
+sha256_hash: f143875df123c11c9957f2d20a8eb7cd79a5a42609bf74dcd29c6e2dbe97993e
 summary:
   comment: 7 errors
   status: ERROR

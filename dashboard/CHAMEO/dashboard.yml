@@ -3,20 +3,20 @@ base_prefixes:
 - CHAMEO
 - CHAMEOALT
 changed: true
-date: 2023-03-07 10:37:19.381809
+date: 2023-04-17 13:35:36.412030
 metrics:
   'Axioms: Breakdown of axiom types':
-    AnnotationAssertion: 2001
+    AnnotationAssertion: 2128
     AnnotationPropertyRangeOf: 12
     AsymmetricObjectProperty: 18
-    ClassAssertion: 1
+    ClassAssertion: 2
     DataPropertyDomain: 4
     DataPropertyRange: 3
-    Declaration: 783
+    Declaration: 887
     DisjointClasses: 3
     DisjointObjectProperties: 10
-    DisjointUnion: 22
-    EquivalentClasses: 67
+    DisjointUnion: 73
+    EquivalentClasses: 69
     FunctionalDataProperty: 3
     FunctionalObjectProperty: 2
     InverseFunctionalObjectProperty: 3
@@ -26,32 +26,32 @@ metrics:
     ObjectPropertyRange: 83
     Rule: 9
     SubAnnotationPropertyOf: 20
-    SubClassOf: 660
+    SubClassOf: 629
     SubDataPropertyOf: 1
     SubObjectPropertyOf: 159
     SymmetricObjectProperty: 12
-  'Axioms: Number of axioms': 3977
+  'Axioms: Number of axioms': 4231
   'Entities: % of entities reused': 100.0
   'Entities: Number of annotation properties': 44
-  'Entities: Number of classes': 601
+  'Entities: Number of classes': 704
   'Entities: Number of data properties': 5
-  'Entities: Number of individuals': 1
+  'Entities: Number of individuals': 2
   'Entities: Number of object properties': 142
   'Entities: Number of unsatisfiable classes': 0
   'Info: Breakdown of OWL class expressions used':
-    Class: 2416
+    Class: 2656
     DataAllValuesFrom: 3
     DataExactCardinality: 3
     DataHasValue: 8
     DataSomeValuesFrom: 3
     ObjectAllValuesFrom: 14
-    ObjectComplementOf: 5
-    ObjectExactCardinality: 5
+    ObjectComplementOf: 4
+    ObjectExactCardinality: 9
     ObjectHasValue: 1
-    ObjectIntersectionOf: 12
+    ObjectIntersectionOf: 16
     ObjectMinCardinality: 1
-    ObjectSomeValuesFrom: 84
-    ObjectUnionOf: 56
+    ObjectSomeValuesFrom: 81
+    ObjectUnionOf: 53
   'Info: Does the ontology fall under OWL 2 DL?': false
   'Info: Experimental OBO score':
     _dashboard: 0.549
@@ -68,10 +68,10 @@ metrics:
     dc: 12
     foaf: 1
     owl: 22
-    prefix_unknown: 4225
-    rdf: 19
-    rdfs: 345
-    skos: 852
+    prefix_unknown: 4508
+    rdf: 18
+    rdfs: 327
+    skos: 963
     xsd: 12
   'Info: Which ontologies use it?': []
 mirror_from: https://raw.githubusercontent.com/emmo-repo/domain-characterisation-methodology/main/chameo.ttl
