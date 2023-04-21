@@ -3,7 +3,7 @@ base_prefixes:
 - osmo
 - OSMOALT
 changed: true
-date: 2023-04-21 14:46:00.493014
+date: 2023-04-21 15:28:49.423018
 metrics:
   'Axioms: Breakdown of axiom types':
     AnnotationAssertion: 360

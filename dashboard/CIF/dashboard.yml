@@ -3,7 +3,7 @@ base_prefixes:
 - cif-core
 - CIFALT
 changed: true
-date: 2023-04-21 14:49:18.677312
+date: 2023-04-21 15:32:03.801878
 metrics:
   'Axioms: Breakdown of axiom types':
     AnnotationAssertion: 282
