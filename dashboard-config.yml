@@ -306,7 +306,7 @@ ontologies:
       tracker: https://github.com/BIG-MAP/BattINFO/issues
       repository: https://github.com/BIG-MAP/BattINFO
       preferredPrefix: emmo_battinfo
-      mirror_from: https://raw.githubusercontent.com/BIG-MAP/BattINFO/master/battinfo.ttl
+      mirror_from: https://raw.githubusercontent.com/ebrahimnorouzi/mseo.github.io/master/Ontology_files/battinfo.ttl
     - id: IAO
       description: An Ontology for the Materials Design Domain 
       homepage: https://github.com/information-artifact-ontology/IAO
