@@ -411,7 +411,7 @@ ontologies:
       _reuse: 1.0
       oboscore: 0.252
     'Info: How many externally documented uses?': 0
-    'Info: How many ontologies use it?': 0
+    'Info: How many ontologies use it?': 2
     'Info: Logical consistency': true
     'Info: Syntax': Turtle
     'Info: Usage of namespaces in axioms':
@@ -972,7 +972,7 @@ ontologies:
       _reuse: 1.0
       oboscore: 0.275
     'Info: How many externally documented uses?': 0
-    'Info: How many ontologies use it?': 0
+    'Info: How many ontologies use it?': 9
     'Info: Logical consistency': true
     'Info: Syntax': Turtle
     'Info: Usage of namespaces in axioms':
@@ -2942,7 +2942,7 @@ ontologies:
       _reuse: 1.0
       oboscore: 0.234
     'Info: How many externally documented uses?': 0
-    'Info: How many ontologies use it?': 0
+    'Info: How many ontologies use it?': 1
     'Info: Logical consistency': true
     'Info: Syntax': RDF/XML Syntax
     'Info: Usage of namespaces in axioms':
