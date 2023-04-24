@@ -333,7 +333,7 @@ ontologies:
       description: open platform for providing and accessing services related to materials modelling
       homepage: https://matportal.org/ontologies/BUILDMAT
       preferredPrefix: bmo
-      mirror_from: https://raw.githubusercontent.com/ebrahimnorouzi/mseo.github.io/master/Ontology_files/BuildingMaterials.ttl
+      mirror_from: https://raw.githubusercontent.com/ebrahimnorouzi/mseo.github.io/master/Ontology_files/bmo.ttl
     - id: ontorule
       description: Quality control system for galvanizing process of the coilcoils, defects, phenomena
       preferredPrefix: ontorule
