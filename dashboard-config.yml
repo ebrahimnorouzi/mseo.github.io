@@ -32,7 +32,7 @@ ontologies:
   #registry: "https://raw.githubusercontent.com/OBOFoundry/OBOFoundry.github.io/master/registry/ontologies.yml"
   #todo, deal with: bto chebi dron gaz ncbitaxon ncit pr uberon
   custom:
-    - id: PMD
+    - id: PMDCO
       dependencies:
         - id: PROVO
       description: An Ontology for the Materials Design Domain 
@@ -137,7 +137,7 @@ ontologies:
     - id: MOL_TENSILE
       description: An ontology for describing the tensile test process, made in the Materials Open Lab Project.
       preferredPrefix: MOL_TENSILE
-      mirror_from: https://raw.githubusercontent.com/ebrahimnorouzi/mseo.github.io/master/Ontology_files/mol_tensile_test.owl
+      mirror_from: https://raw.githubusercontent.com/ebrahimnorouzi/mseo.github.io/master/Ontology_files/MOL_TENSILE.owl
     - id: LPBFO
       description: An Ontology for the additive manufacturing of a component via Laser Powder Bed Fusion (LPBF) / Selective Laser Melting (SLM)
       preferredPrefix: LPBFO
@@ -174,7 +174,7 @@ ontologies:
       repository: https://github.com/materialdigital/core-ontology
       preferredPrefix: emmo_crystallography
       mirror_from: https://raw.githubusercontent.com/emmo-repo/domain-crystallography/master/crystallography.ttl
-    - id: CIF
+    - id: CIF-core
       dependencies:
         - id: EMMO
       description: Crystallography
@@ -314,8 +314,23 @@ ontologies:
       repository: https://github.com/information-artifact-ontology/IAO
       preferredPrefix: iao
       mirror_from: http://purl.obolibrary.org/obo/iao.owl
-    - id: bmo
+    - id: metal-alloy
+      description: An Ontology for Materials representation
+      homepage: https://emmc.info/taxonda/metal-alloy/ 
+      preferredPrefix: metal-alloy
+      mirror_from: https://raw.githubusercontent.com/ebrahimnorouzi/mseo.github.io/master/Ontology_files/metal-alloy.owl
+    - id: vimmp
       description: Linked data and Ontologies for Semantic Interoperability, BIM4EEB
+      homepage: https://matportal.org/ontologies/VIMMP_ONTOLOGIES
+      preferredPrefix: vimmp
+      mirror_from: https://raw.githubusercontent.com/ebrahimnorouzi/mseo.github.io/master/Ontology_files/combined-vimmp-ontologies.owl
+    - id: MOL_BRINELL
+      description: Mechanical testing
+      homepage: https://matportal.org/ontologies/MOL_BRINELL
+      preferredPrefix: MOL_BRINELL
+      mirror_from: https://raw.githubusercontent.com/ebrahimnorouzi/mseo.github.io/master/Ontology_files/MOL_BRINELL.ttl
+    - id: bmo
+      description: open platform for providing and accessing services related to materials modelling
       homepage: https://matportal.org/ontologies/BUILDMAT
       preferredPrefix: bmo
       mirror_from: https://raw.githubusercontent.com/ebrahimnorouzi/mseo.github.io/master/Ontology_files/BuildingMaterials.ttl
