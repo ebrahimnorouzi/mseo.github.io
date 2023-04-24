@@ -1,9 +1,9 @@
 base_generated: true
 base_prefixes:
 - pmdco
-- PMDALT
+- PMDCOALT
 changed: true
-date: 2023-04-21 15:28:41.578796
+date: 2023-04-24 11:02:01.223318
 metrics:
   'Axioms: Breakdown of axiom types':
     AnnotationAssertion: 2226
@@ -65,7 +65,7 @@ metrics:
     xsd: 7
   'Info: Which ontologies use it?': []
 mirror_from: https://raw.githubusercontent.com/materialdigital/core-ontology/main/pmdco_core.ttl
-namespace: PMD
+namespace: PMDCO
 results:
   FP01 Open:
     comment: Missing registry license.

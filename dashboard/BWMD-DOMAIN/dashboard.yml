@@ -3,7 +3,7 @@ base_prefixes:
 - BWMD-DOMAIN
 - BWMD-DOMAINALT
 changed: true
-date: 2023-04-21 15:31:40.550901
+date: 2023-04-24 11:04:55.353915
 metrics:
   'Axioms: Breakdown of axiom types':
     AnnotationAssertion: 2151

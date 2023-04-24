@@ -1,15 +1,15 @@
 <head>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
-    <title>PMD Dashboard Report</title>
+    <title>CIF-core Dashboard Report</title>
 </head>
 <body>
     <div class="container">
         <div class="row" style="padding-top:30px;">
             <div class="col-md-2"></div>
             <div class="col-md-8">
-                <h1>Dashboard Report - <a href="http://obofoundry.org/ontology/PMD.html">PMD</a></h1>
-                <p class="lead"><b>Version</b>: https://w3id.org/pmd/co</p>
-                <p class="lead" style="margin-top:-15px;"><b>Date run</b>: 2023-04-21 15:28:41.578796</p>
+                <h1>Dashboard Report - <a href="http://obofoundry.org/ontology/CIF-core.html">CIF-core</a></h1>
+                <p class="lead"><b>Version</b>: None</p>
+                <p class="lead" style="margin-top:-15px;"><b>Date run</b>: 2023-04-24 11:05:18.295269</p>
                 <p class="lead" style="margin-top:-15px;"><a href="dashboard.yml">View dashboard results as YAML</a></p>
                 <p class="lead" style="margin-top:-15px;"><a href="../index.html">Go back to Overview</a></p>
                 <h3>Error Breakdown</h3>
@@ -19,7 +19,7 @@
                         
                     
                     <div class="alert alert-danger">
-                        <center><h3>ERROR - 5 errors</h3></center>
+                        <center><h3>ERROR - 7 errors</h3></center>
                     </div>
                 
                 <table class="table">
@@ -44,7 +44,7 @@
                                 <img src="../assets/x.svg" height="15px">
                             </td>
                             
-                                <td>Missing registry license.</td>
+                                <td>Missing ontology license. Missing registry license.</td>
                             
                             
                                 <td></td>
@@ -100,11 +100,11 @@
                                 
                                 
                             
-                            <td class="table-warning" style="text-align:center;">
-                                <img src="../assets/warning.svg" height="15px">
+                            <td class="table-danger" style="text-align:center;">
+                                <img src="../assets/x.svg" height="15px">
                             </td>
                             
-                                <td>Version IRI 'https://w3id.org/pmd/co' is not in recommended format</td>
+                                <td>Missing version IRI</td>
                             
                             
                                 <td></td>
@@ -260,11 +260,11 @@
                                 
                                 
                             
-                            <td class="table-info" style="text-align:center;">
-                                <img src="../assets/info.svg" height="15px">
+                            <td class="table-danger" style="text-align:center;">
+                                <img src="../assets/x.svg" height="15px">
                             </td>
                             
-                                <td>Version IRI does not have date information</td>
+                                <td>Missing version IRI to check date</td>
                             
                             
                                 <td></td>
@@ -330,43 +330,41 @@
                                     <td>
                                         <ul>
                                             
-                                                <li>AnnotationAssertion: 2226</li>
+                                                <li>AnnotationAssertion: 282</li>
                                             
-                                                <li>AnnotationPropertyRangeOf: 2</li>
+                                                <li>AnnotationPropertyRangeOf: 3</li>
                                             
-                                                <li>ClassAssertion: 2</li>
+                                                <li>AsymmetricObjectProperty: 1</li>
                                             
-                                                <li>DataPropertyDomain: 7</li>
+                                                <li>ClassAssertion: 14</li>
                                             
-                                                <li>DataPropertyRange: 6</li>
+                                                <li>DataPropertyAssertion: 12</li>
                                             
-                                                <li>Declaration: 413</li>
+                                                <li>Declaration: 177</li>
                                             
-                                                <li>DisjointClasses: 13</li>
+                                                <li>DisjointUnion: 5</li>
                                             
-                                                <li>EquivalentClasses: 42</li>
+                                                <li>EquivalentClasses: 3</li>
                                             
-                                                <li>FunctionalObjectProperty: 1</li>
+                                                <li>FunctionalDataProperty: 1</li>
                                             
-                                                <li>InverseObjectProperties: 49</li>
+                                                <li>InverseFunctionalObjectProperty: 1</li>
                                             
-                                                <li>ObjectPropertyAssertion: 3</li>
+                                                <li>IrrefexiveObjectProperty: 1</li>
                                             
-                                                <li>ObjectPropertyDomain: 61</li>
+                                                <li>ObjectPropertyAssertion: 16</li>
                                             
-                                                <li>ObjectPropertyRange: 53</li>
+                                                <li>ReflexiveObjectProperty: 1</li>
                                             
-                                                <li>Rule: 2</li>
+                                                <li>SubAnnotationPropertyOf: 83</li>
                                             
-                                                <li>SubAnnotationPropertyOf: 10</li>
+                                                <li>SubClassOf: 71</li>
                                             
-                                                <li>SubClassOf: 288</li>
+                                                <li>SubDataPropertyOf: 1</li>
                                             
-                                                <li>SubDataPropertyOf: 5</li>
+                                                <li>SubObjectPropertyOf: 4</li>
                                             
-                                                <li>SubObjectPropertyOf: 51</li>
-                                            
-                                                <li>SubPropertyChainOf: 13</li>
+                                                <li>TransitiveObjectProperty: 2</li>
                                             
                                         </ul>
                                     </td>
@@ -377,7 +375,7 @@
                                 <td>Axioms: Number of axioms</td>
                                 
                                 
-                                    <td>3247</td>
+                                    <td>678</td>
                                 
                             </tr>
                         
@@ -393,7 +391,7 @@
                                 <td>Entities: Number of annotation properties</td>
                                 
                                 
-                                    <td>37</td>
+                                    <td>88</td>
                                 
                             </tr>
                         
@@ -401,7 +399,7 @@
                                 <td>Entities: Number of classes</td>
                                 
                                 
-                                    <td>290</td>
+                                    <td>68</td>
                                 
                             </tr>
                         
@@ -409,7 +407,7 @@
                                 <td>Entities: Number of data properties</td>
                                 
                                 
-                                    <td>12</td>
+                                    <td>2</td>
                                 
                             </tr>
                         
@@ -417,7 +415,7 @@
                                 <td>Entities: Number of individuals</td>
                                 
                                 
-                                    <td>9</td>
+                                    <td>18</td>
                                 
                             </tr>
                         
@@ -425,7 +423,7 @@
                                 <td>Entities: Number of object properties</td>
                                 
                                 
-                                    <td>109</td>
+                                    <td>5</td>
                                 
                             </tr>
                         
@@ -444,17 +442,21 @@
                                     <td>
                                         <ul>
                                             
-                                                <li>Class: 1142</li>
+                                                <li>Class: 273</li>
                                             
-                                                <li>DataSomeValuesFrom: 2</li>
+                                                <li>DataAllValuesFrom: 1</li>
                                             
-                                                <li>ObjectIntersectionOf: 15</li>
+                                                <li>DataSomeValuesFrom: 14</li>
                                             
-                                                <li>ObjectMaxCardinality: 1</li>
+                                                <li>ObjectAllValuesFrom: 5</li>
                                             
-                                                <li>ObjectSomeValuesFrom: 47</li>
+                                                <li>ObjectExactCardinality: 1</li>
                                             
-                                                <li>ObjectUnionOf: 12</li>
+                                                <li>ObjectIntersectionOf: 1</li>
+                                            
+                                                <li>ObjectSomeValuesFrom: 4</li>
+                                            
+                                                <li>ObjectUnionOf: 4</li>
                                             
                                         </ul>
                                     </td>
@@ -465,7 +467,7 @@
                                 <td>Info: Does the ontology fall under OWL 2 DL?</td>
                                 
                                 
-                                    <td>False</td>
+                                    <td>True</td>
                                 
                             </tr>
                         
@@ -476,7 +478,7 @@
                                     <td>
                                         <ul>
                                             
-                                                <li>_dashboard: 0.549</li>
+                                                <li>_dashboard: 0.444</li>
                                             
                                                 <li>_formula: (1*impact+1*dashboard)/2</li>
                                             
@@ -486,7 +488,7 @@
                                             
                                                 <li>_reuse: 1.0</li>
                                             
-                                                <li>oboscore: 0.275</li>
+                                                <li>oboscore: 0.222</li>
                                             
                                         </ul>
                                     </td>
@@ -532,25 +534,15 @@
                                     <td>
                                         <ul>
                                             
-                                                <li>CHEBI: 3</li>
+                                                <li>owl: 5</li>
                                             
-                                                <li>dc: 7</li>
+                                                <li>prefix_unknown: 907</li>
                                             
-                                                <li>dc11: 3</li>
+                                                <li>rdf: 5</li>
                                             
-                                                <li>owl: 12</li>
+                                                <li>rdfs: 52</li>
                                             
-                                                <li>prefix_unknown: 1233</li>
-                                            
-                                                <li>prov: 1004</li>
-                                            
-                                                <li>rdf: 10</li>
-                                            
-                                                <li>rdfs: 1228</li>
-                                            
-                                                <li>skos: 482</li>
-                                            
-                                                <li>xsd: 7</li>
+                                                <li>xsd: 20</li>
                                             
                                         </ul>
                                     </td>

@@ -1,15 +1,15 @@
 <head>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
-    <title>CIF Dashboard Report</title>
+    <title>MOL_BRINELL Dashboard Report</title>
 </head>
 <body>
     <div class="container">
         <div class="row" style="padding-top:30px;">
             <div class="col-md-2"></div>
             <div class="col-md-8">
-                <h1>Dashboard Report - <a href="http://obofoundry.org/ontology/CIF.html">CIF</a></h1>
+                <h1>Dashboard Report - <a href="http://obofoundry.org/ontology/MOL_BRINELL.html">MOL_BRINELL</a></h1>
                 <p class="lead"><b>Version</b>: None</p>
-                <p class="lead" style="margin-top:-15px;"><b>Date run</b>: 2023-04-21 15:32:03.801878</p>
+                <p class="lead" style="margin-top:-15px;"><b>Date run</b>: 2023-04-24 11:06:19.142936</p>
                 <p class="lead" style="margin-top:-15px;"><a href="dashboard.yml">View dashboard results as YAML</a></p>
                 <p class="lead" style="margin-top:-15px;"><a href="../index.html">Go back to Overview</a></p>
                 <h3>Error Breakdown</h3>
@@ -19,7 +19,7 @@
                         
                     
                     <div class="alert alert-danger">
-                        <center><h3>ERROR - 7 errors</h3></center>
+                        <center><h3>ERROR - 8 errors</h3></center>
                     </div>
                 
                 <table class="table">
@@ -204,7 +204,7 @@
                                 <img src="../assets/x.svg" height="15px">
                             </td>
                             
-                                <td>Missing usages</td>
+                                <td>Missing tracker and usages</td>
                             
                             
                                 <td></td>
@@ -280,11 +280,11 @@
                                 
                                 
                             
-                            <td class="table-success" style="text-align:center;">
-                                <img src="../assets/check.svg" height="15px">
+                            <td class="table-danger" style="text-align:center;">
+                                <img src="../assets/x.svg" height="15px">
                             </td>
                             
-                                <td></td>
+                                <td>Missing tracker and usages</td>
                             
                             
                                 <td></td>
@@ -330,41 +330,17 @@
                                     <td>
                                         <ul>
                                             
-                                                <li>AnnotationAssertion: 282</li>
+                                                <li>AnnotationAssertion: 191</li>
                                             
-                                                <li>AnnotationPropertyRangeOf: 3</li>
+                                                <li>ClassAssertion: 3053</li>
                                             
-                                                <li>AsymmetricObjectProperty: 1</li>
+                                                <li>DataPropertyAssertion: 1618</li>
                                             
-                                                <li>ClassAssertion: 14</li>
+                                                <li>Declaration: 3340</li>
                                             
-                                                <li>DataPropertyAssertion: 12</li>
+                                                <li>ObjectPropertyAssertion: 8133</li>
                                             
-                                                <li>Declaration: 177</li>
-                                            
-                                                <li>DisjointUnion: 5</li>
-                                            
-                                                <li>EquivalentClasses: 3</li>
-                                            
-                                                <li>FunctionalDataProperty: 1</li>
-                                            
-                                                <li>InverseFunctionalObjectProperty: 1</li>
-                                            
-                                                <li>IrrefexiveObjectProperty: 1</li>
-                                            
-                                                <li>ObjectPropertyAssertion: 16</li>
-                                            
-                                                <li>ReflexiveObjectProperty: 1</li>
-                                            
-                                                <li>SubAnnotationPropertyOf: 83</li>
-                                            
-                                                <li>SubClassOf: 71</li>
-                                            
-                                                <li>SubDataPropertyOf: 1</li>
-                                            
-                                                <li>SubObjectPropertyOf: 4</li>
-                                            
-                                                <li>TransitiveObjectProperty: 2</li>
+                                                <li>SubClassOf: 14</li>
                                             
                                         </ul>
                                     </td>
@@ -375,7 +351,7 @@
                                 <td>Axioms: Number of axioms</td>
                                 
                                 
-                                    <td>678</td>
+                                    <td>16349</td>
                                 
                             </tr>
                         
@@ -391,7 +367,7 @@
                                 <td>Entities: Number of annotation properties</td>
                                 
                                 
-                                    <td>88</td>
+                                    <td>4</td>
                                 
                             </tr>
                         
@@ -399,7 +375,7 @@
                                 <td>Entities: Number of classes</td>
                                 
                                 
-                                    <td>68</td>
+                                    <td>37</td>
                                 
                             </tr>
                         
@@ -407,7 +383,7 @@
                                 <td>Entities: Number of data properties</td>
                                 
                                 
-                                    <td>2</td>
+                                    <td>4</td>
                                 
                             </tr>
                         
@@ -415,7 +391,7 @@
                                 <td>Entities: Number of individuals</td>
                                 
                                 
-                                    <td>18</td>
+                                    <td>3277</td>
                                 
                             </tr>
                         
@@ -423,7 +399,7 @@
                                 <td>Entities: Number of object properties</td>
                                 
                                 
-                                    <td>5</td>
+                                    <td>17</td>
                                 
                             </tr>
                         
@@ -442,21 +418,7 @@
                                     <td>
                                         <ul>
                                             
-                                                <li>Class: 273</li>
-                                            
-                                                <li>DataAllValuesFrom: 1</li>
-                                            
-                                                <li>DataSomeValuesFrom: 14</li>
-                                            
-                                                <li>ObjectAllValuesFrom: 5</li>
-                                            
-                                                <li>ObjectExactCardinality: 1</li>
-                                            
-                                                <li>ObjectIntersectionOf: 1</li>
-                                            
-                                                <li>ObjectSomeValuesFrom: 4</li>
-                                            
-                                                <li>ObjectUnionOf: 4</li>
+                                                <li>Class: 3118</li>
                                             
                                         </ul>
                                     </td>
@@ -467,7 +429,7 @@
                                 <td>Info: Does the ontology fall under OWL 2 DL?</td>
                                 
                                 
-                                    <td>True</td>
+                                    <td>False</td>
                                 
                             </tr>
                         
@@ -478,7 +440,7 @@
                                     <td>
                                         <ul>
                                             
-                                                <li>_dashboard: 0.444</li>
+                                                <li>_dashboard: 0.378</li>
                                             
                                                 <li>_formula: (1*impact+1*dashboard)/2</li>
                                             
@@ -488,7 +450,7 @@
                                             
                                                 <li>_reuse: 1.0</li>
                                             
-                                                <li>oboscore: 0.222</li>
+                                                <li>oboscore: 0.189</li>
                                             
                                         </ul>
                                     </td>
@@ -534,15 +496,13 @@
                                     <td>
                                         <ul>
                                             
-                                                <li>owl: 5</li>
+                                                <li>RO: 287</li>
                                             
-                                                <li>prefix_unknown: 907</li>
+                                                <li>prefix_unknown: 36821</li>
                                             
-                                                <li>rdf: 5</li>
+                                                <li>rdfs: 192</li>
                                             
-                                                <li>rdfs: 52</li>
-                                            
-                                                <li>xsd: 20</li>
+                                                <li>xsd: 1618</li>
                                             
                                         </ul>
                                     </td>

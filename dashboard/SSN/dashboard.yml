@@ -3,7 +3,7 @@ base_prefixes:
 - ssn
 - SSNALT
 changed: true
-date: 2023-04-21 15:29:06.735958
+date: 2023-04-24 11:02:21.901206
 metrics:
   'Axioms: Breakdown of axiom types':
     AnnotationAssertion: 248
