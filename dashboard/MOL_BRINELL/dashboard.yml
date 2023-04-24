@@ -1,67 +1,47 @@
 base_generated: true
 base_prefixes:
-- cif-core
-- CIFALT
+- MOL_BRINELL
+- MOL_BRINELLALT
 changed: true
-date: 2023-04-21 15:32:03.801878
+date: 2023-04-24 11:06:19.142936
 metrics:
   'Axioms: Breakdown of axiom types':
-    AnnotationAssertion: 282
-    AnnotationPropertyRangeOf: 3
-    AsymmetricObjectProperty: 1
-    ClassAssertion: 14
-    DataPropertyAssertion: 12
-    Declaration: 177
-    DisjointUnion: 5
-    EquivalentClasses: 3
-    FunctionalDataProperty: 1
-    InverseFunctionalObjectProperty: 1
-    IrrefexiveObjectProperty: 1
-    ObjectPropertyAssertion: 16
-    ReflexiveObjectProperty: 1
-    SubAnnotationPropertyOf: 83
-    SubClassOf: 71
-    SubDataPropertyOf: 1
-    SubObjectPropertyOf: 4
-    TransitiveObjectProperty: 2
-  'Axioms: Number of axioms': 678
+    AnnotationAssertion: 191
+    ClassAssertion: 3053
+    DataPropertyAssertion: 1618
+    Declaration: 3340
+    ObjectPropertyAssertion: 8133
+    SubClassOf: 14
+  'Axioms: Number of axioms': 16349
   'Entities: % of entities reused': 100.0
-  'Entities: Number of annotation properties': 88
-  'Entities: Number of classes': 68
-  'Entities: Number of data properties': 2
-  'Entities: Number of individuals': 18
-  'Entities: Number of object properties': 5
+  'Entities: Number of annotation properties': 4
+  'Entities: Number of classes': 37
+  'Entities: Number of data properties': 4
+  'Entities: Number of individuals': 3277
+  'Entities: Number of object properties': 17
   'Entities: Number of unsatisfiable classes': 0
   'Info: Breakdown of OWL class expressions used':
-    Class: 273
-    DataAllValuesFrom: 1
-    DataSomeValuesFrom: 14
-    ObjectAllValuesFrom: 5
-    ObjectExactCardinality: 1
-    ObjectIntersectionOf: 1
-    ObjectSomeValuesFrom: 4
-    ObjectUnionOf: 4
-  'Info: Does the ontology fall under OWL 2 DL?': true
+    Class: 3118
+  'Info: Does the ontology fall under OWL 2 DL?': false
   'Info: Experimental OBO score':
-    _dashboard: 0.444
+    _dashboard: 0.378
     _formula: (1*impact+1*dashboard)/2
     _impact: 0.0
     _impact_external: 0
     _reuse: 1.0
-    oboscore: 0.222
+    oboscore: 0.189
   'Info: How many externally documented uses?': 0
   'Info: How many ontologies use it?': 0
   'Info: Logical consistency': true
   'Info: Syntax': Turtle
   'Info: Usage of namespaces in axioms':
-    owl: 5
-    prefix_unknown: 907
-    rdf: 5
-    rdfs: 52
-    xsd: 20
+    RO: 287
+    prefix_unknown: 36821
+    rdfs: 192
+    xsd: 1618
   'Info: Which ontologies use it?': []
-mirror_from: https://raw.githubusercontent.com/ebrahimnorouzi/mseo.github.io/master/Ontology_files/cif-core.ttl
-namespace: CIF
+mirror_from: https://raw.githubusercontent.com/ebrahimnorouzi/mseo.github.io/master/Ontology_files/MOL_BRINELL.ttl
+namespace: MOL_BRINELL
 results:
   FP01 Open:
     comment: Missing ontology license. Missing registry license.
@@ -86,7 +66,7 @@ results:
   FP08 Documented:
     status: PASS
   FP09 Plurality of Users:
-    comment: Missing usages
+    comment: Missing tracker and usages
     status: ERROR
   FP11 Locus of Authority:
     comment: Missing contact information
@@ -97,15 +77,16 @@ results:
     comment: Missing version IRI to check date
     status: ERROR
   FP20 Responsiveness:
-    status: PASS
+    comment: Missing tracker and usages
+    status: ERROR
   ROBOT Report:
     status: PASS
-sha256_hash: 9f6d2fced7b235e7629d4b23a9de1f36c84e1840558d87a83aa7bc056c9b6088
+sha256_hash: 0538943a21c284c133ecf7452b7a547d9b351e3464dd00ed3140650f77b7336b
 summary:
-  comment: 7 errors
+  comment: 8 errors
   status: ERROR
   summary_count:
-    ERROR: 7
+    ERROR: 8
     INFO: 0
     WARN: 1
 version: null

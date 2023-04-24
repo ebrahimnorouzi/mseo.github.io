@@ -3,7 +3,7 @@ base_prefixes:
 - MOL_TENSILE
 - MOL_TENSILEALT
 changed: true
-date: 2023-04-21 15:31:43.854264
+date: 2023-04-24 11:04:58.622985
 metrics:
   'Axioms: Breakdown of axiom types':
     AnnotationAssertion: 1354
@@ -54,7 +54,7 @@ metrics:
     rdfs: 987
     xsd: 27
   'Info: Which ontologies use it?': []
-mirror_from: https://raw.githubusercontent.com/ebrahimnorouzi/mseo.github.io/master/Ontology_files/mol_tensile_test.owl
+mirror_from: https://raw.githubusercontent.com/ebrahimnorouzi/mseo.github.io/master/Ontology_files/MOL_TENSILE.owl
 namespace: MOL_TENSILE
 results:
   FP01 Open:

@@ -1,0 +1,6 @@
+base_generated: true
+changed: true
+failure: failed_robot_base
+mirror_from: https://raw.githubusercontent.com/ebrahimnorouzi/mseo.github.io/master/Ontology_files/metal-alloy.owl
+namespace: metal-alloy
+sha256_hash: 2c27e955ca0472979d234edfd65537c15333b47dcec2cb6c53f896f20c691624

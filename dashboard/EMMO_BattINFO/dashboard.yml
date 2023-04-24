@@ -3,7 +3,7 @@ base_prefixes:
 - emmo_battinfo
 - EMMO_BATTINFOALT
 changed: true
-date: 2023-04-21 15:32:58.157016
+date: 2023-04-24 11:06:12.490048
 metrics:
   'Axioms: Breakdown of axiom types':
     AnnotationAssertion: 3181

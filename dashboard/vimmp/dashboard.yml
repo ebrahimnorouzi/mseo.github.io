@@ -1,0 +1,75 @@
+base_generated: true
+base_prefixes:
+- vimmp
+- VIMMPALT
+changed: true
+failure: inconsistent_ontology
+metrics:
+  'Axioms: Breakdown of axiom types':
+    AnnotationAssertion: 1848
+    ClassAssertion: 1052
+    DataPropertyAssertion: 661
+    DataPropertyDomain: 166
+    DataPropertyRange: 170
+    Declaration: 2763
+    DifferentIndividuals: 25
+    DisjointClasses: 49
+    DisjointObjectProperties: 3
+    DisjointUnion: 74
+    EquivalentClasses: 192
+    EquivalentObjectProperties: 2
+    FunctionalDataProperty: 26
+    FunctionalObjectProperty: 18
+    InverseObjectProperties: 94
+    ObjectPropertyAssertion: 652
+    ObjectPropertyDomain: 517
+    ObjectPropertyRange: 520
+    ReflexiveObjectProperty: 2
+    SameIndividual: 118
+    SubClassOf: 1828
+    SubDataPropertyOf: 242
+    SubObjectPropertyOf: 709
+    SubPropertyChainOf: 62
+    SymmetricObjectProperty: 32
+    TransitiveObjectProperty: 38
+  'Axioms: Number of axioms': 11863
+  'Entities: % of entities reused': 100.0
+  'Entities: Number of annotation properties': 19
+  'Entities: Number of classes': 1082
+  'Entities: Number of data properties': 191
+  'Entities: Number of individuals': 897
+  'Entities: Number of object properties': 580
+  'Entities: Number of unsatisfiable classes': -1
+  'Info: Breakdown of OWL class expressions used':
+    Class: 7602
+    DataAllValuesFrom: 2
+    DataExactCardinality: 12
+    DataHasValue: 103
+    DataMinCardinality: 1
+    DataSomeValuesFrom: 33
+    ObjectAllValuesFrom: 6
+    ObjectComplementOf: 2
+    ObjectExactCardinality: 66
+    ObjectHasValue: 211
+    ObjectIntersectionOf: 93
+    ObjectMaxCardinality: 2
+    ObjectMinCardinality: 17
+    ObjectOneOf: 6
+    ObjectSomeValuesFrom: 139
+    ObjectUnionOf: 52
+  'Info: Does the ontology fall under OWL 2 DL?': false
+  'Info: How many externally documented uses?': 0
+  'Info: Logical consistency': false
+  'Info: Syntax': RDF/XML Syntax
+  'Info: Usage of namespaces in axioms':
+    dc: 7
+    obo: 44
+    owl: 29
+    prefix_unknown: 17812
+    rdf: 10
+    rdfs: 1292
+    skos: 1204
+    xsd: 942
+mirror_from: https://raw.githubusercontent.com/ebrahimnorouzi/mseo.github.io/master/Ontology_files/combined-vimmp-ontologies.owl
+namespace: vimmp
+sha256_hash: d22a014085312695ca78f0d46351650aeecb52cc724ed71f53eabd58752ff260
