@@ -3,7 +3,7 @@ base_prefixes:
 - emmo_microstructure
 - EMMO_MICROSTRUCTUREALT
 changed: true
-date: 2023-04-24 11:02:15.935346
+date: 2023-04-24 13:26:50.270315
 metrics:
   'Axioms: Breakdown of axiom types':
     AnnotationAssertion: 622
