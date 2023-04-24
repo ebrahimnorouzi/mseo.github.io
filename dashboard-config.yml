@@ -323,7 +323,7 @@ ontologies:
       description: Linked data and Ontologies for Semantic Interoperability, BIM4EEB
       homepage: https://matportal.org/ontologies/VIMMP_ONTOLOGIES
       preferredPrefix: vimmp
-      mirror_from: https://raw.githubusercontent.com/ebrahimnorouzi/mseo.github.io/master/Ontology_files/combined-vimmp-ontologies.owl
+      mirror_from: https://raw.githubusercontent.com/ebrahimnorouzi/mseo.github.io/master/Ontology_files/vimmp.owl
     - id: MOL_BRINELL
       description: Mechanical testing
       homepage: https://matportal.org/ontologies/MOL_BRINELL
