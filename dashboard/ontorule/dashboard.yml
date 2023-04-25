@@ -3,7 +3,7 @@ base_prefixes:
 - ontorule
 - ONTORULEALT
 changed: true
-date: 2023-04-24 11:06:24.780802
+date: 2023-04-24 13:30:56.985106
 metrics:
   'Axioms: Breakdown of axiom types':
     AnnotationAssertion: 108

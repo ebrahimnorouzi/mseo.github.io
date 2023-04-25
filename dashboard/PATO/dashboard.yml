@@ -3,7 +3,7 @@ base_prefixes:
 - PATO
 - PATOALT
 changed: true
-date: 2023-04-24 11:07:08.460407
+date: 2023-04-24 13:31:39.188154
 metrics:
   'Axioms: Breakdown of axiom types':
     AnnotationAssertion: 96983
