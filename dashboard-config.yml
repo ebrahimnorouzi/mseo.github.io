@@ -216,7 +216,7 @@ ontologies:
       tracker: https://github.com/inovexcorp/MatOnto-Ontologies/issues
       repository: https://github.com/inovexcorp/MatOnto-Ontologies
       preferredPrefix: matonto
-      mirror_from: https://raw.githubusercontent.com/inovexcorp/MatOnto-Ontologies/master/matonto-release.ttl
+      mirror_from: https://raw.githubusercontent.com/inovexcorp/MatOnto-Ontologies/master/matonto.ttl
     - id: SEMMD
       description: Materials, Manufacturing
       homepage: https://github.com/cpauloh/semmd
