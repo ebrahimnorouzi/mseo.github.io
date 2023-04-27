@@ -3,69 +3,55 @@ base_prefixes:
 - matonto
 - MATONTOALT
 changed: true
-date: 2023-04-24 13:30:06.029736
+date: 2023-04-27 11:59:41.016764
 metrics:
   'Axioms: Breakdown of axiom types':
-    AnnotationAssertion: 1841
-    ClassAssertion: 125
-    DataPropertyAssertion: 53
-    DataPropertyRange: 10
-    Declaration: 1074
-    DisjointClasses: 163
-    DisjointUnion: 1
-    EquivalentClasses: 282
-    FunctionalDataProperty: 3
-    FunctionalObjectProperty: 2
-    InverseObjectProperties: 30
-    ObjectPropertyAssertion: 195
-    ObjectPropertyDomain: 68
-    ObjectPropertyRange: 73
-    SameIndividual: 17
-    SubClassOf: 1190
+    AnnotationAssertion: 172
+    ClassAssertion: 13
+    DataPropertyAssertion: 15
+    DataPropertyRange: 5
+    Declaration: 89
+    DisjointClasses: 1
+    FunctionalObjectProperty: 1
+    ObjectPropertyAssertion: 1
+    ObjectPropertyDomain: 6
+    ObjectPropertyRange: 6
+    SubClassOf: 78
     SubDataPropertyOf: 3
-    SubObjectPropertyOf: 74
-    SymmetricObjectProperty: 16
-    TransitiveObjectProperty: 15
-  'Axioms: Number of axioms': 5235
+    SubObjectPropertyOf: 1
+  'Axioms: Number of axioms': 391
   'Entities: % of entities reused': 100.0
-  'Entities: Number of annotation properties': 17
-  'Entities: Number of classes': 848
-  'Entities: Number of data properties': 13
-  'Entities: Number of individuals': 131
-  'Entities: Number of object properties': 83
+  'Entities: Number of annotation properties': 7
+  'Entities: Number of classes': 78
+  'Entities: Number of data properties': 5
+  'Entities: Number of individuals': 24
+  'Entities: Number of object properties': 10
   'Entities: Number of unsatisfiable classes': 0
   'Info: Breakdown of OWL class expressions used':
-    Class: 5142
-    DataHasValue: 144
-    DataSomeValuesFrom: 4
-    ObjectAllValuesFrom: 96
-    ObjectExactCardinality: 20
-    ObjectIntersectionOf: 394
-    ObjectMinCardinality: 10
-    ObjectSomeValuesFrom: 489
-    ObjectUnionOf: 66
+    Class: 243
+    ObjectAllValuesFrom: 12
+    ObjectSomeValuesFrom: 13
   'Info: Does the ontology fall under OWL 2 DL?': false
   'Info: Experimental OBO score':
-    _dashboard: 0.444
+    _dashboard: 0.504
     _formula: (1*impact+1*dashboard)/2
     _impact: 0.0
     _impact_external: 0
     _reuse: 1.0
-    oboscore: 0.222
+    oboscore: 0.252
   'Info: How many externally documented uses?': 0
   'Info: How many ontologies use it?': 0
   'Info: Logical consistency': true
   'Info: Syntax': Turtle
   'Info: Usage of namespaces in axioms':
-    dc11: 7
-    owl: 5
-    prefix_unknown: 7332
-    rdf: 19
-    rdfs: 1771
-    skos: 23
-    xsd: 193
+    owl: 1
+    prefix_unknown: 392
+    rdf: 15
+    rdfs: 131
+    skos: 17
+    xsd: 5
   'Info: Which ontologies use it?': []
-mirror_from: https://raw.githubusercontent.com/inovexcorp/MatOnto-Ontologies/master/matonto-release.ttl
+mirror_from: https://raw.githubusercontent.com/inovexcorp/MatOnto-Ontologies/master/matonto.ttl
 namespace: MatOnto
 results:
   FP01 Open:
@@ -79,7 +65,7 @@ results:
     file: fp3
     status: ERROR
   FP04 Versioning:
-    comment: Missing version IRI
+    comment: Version IRI does not resolve
     status: ERROR
   FP05 Scope:
     comment: Missing domain (scope)
@@ -99,18 +85,18 @@ results:
   FP12 Naming Conventions:
     status: PASS
   FP16 Maintenance:
-    comment: Missing version IRI to check date
-    status: ERROR
+    comment: Version IRI does not have date information
+    status: INFO
   FP20 Responsiveness:
     status: PASS
   ROBOT Report:
     status: PASS
-sha256_hash: d91cb6aa57c37be0f552e6b327b26e8a638ab9a87d147eeadff5cdb4293f5fe5
+sha256_hash: cff694fbfb51bfd9bfec01f203873d5e39cee0f1151ac1d7cd4b0a992288bcb5
 summary:
-  comment: 7 errors
+  comment: 6 errors
   status: ERROR
   summary_count:
-    ERROR: 7
-    INFO: 0
+    ERROR: 6
+    INFO: 1
     WARN: 1
-version: null
+version: http://matonto.org/ontology/matonto/2.1
