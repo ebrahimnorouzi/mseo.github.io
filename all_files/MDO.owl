@@ -1,87 +1,2295 @@
 <?xml version="1.0"?>
-<rdf:RDF xmlns="https://w3id.org/mdo/full/"
-     xml:base="https://w3id.org/mdo/full/"
-     xmlns:owl="http://www.w3.org/2002/07/owl#"
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="https://w3id.org/mdo/calculation/"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-     xmlns:vann="http://purl.org/vocab/vann/"
-     xmlns:terms="http://purl.org/dc/terms/"
-     xmlns:structure="https://w3id.org/mdo/structure/"
-     xmlns:provenance="https://w3id.org/mdo/provenance/"
-     xmlns:calculation="https://w3id.org/mdo/calculation/">
-    <owl:Ontology rdf:about="https://w3id.org/mdo/full/">
-        <owl:versionIRI rdf:resource="https://w3id.org/mdo/full/1.1/"/>
-        <owl:imports rdf:resource="https://w3id.org/mdo/calculation/1.1/"/>
-        <owl:imports rdf:resource="https://w3id.org/mdo/provenance/1.1/"/>
-        <owl:imports rdf:resource="https://w3id.org/mdo/structure/1.1/"/>
-        <terms:contributor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Patrick Lambrix</terms:contributor>
-        <terms:contributor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Rickard Armiento</terms:contributor>
-        <terms:created>2019-11-07</terms:created>
-        <terms:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Huanyu Li</terms:creator>
-        <terms:license>https://github.com/LiUSemWeb/Materials-Design-Ontology/blob/master/LICENSE</terms:license>
-        <terms:title xml:lang="en">Materials Design Ontology - Full</terms:title>
-        <vann:preferredNamespacePrefix>mdo</vann:preferredNamespacePrefix>
-        <vann:preferredNamespaceUri>https://w3id.org/mdo/full/1.1/</vann:preferredNamespaceUri>
-        <rdfs:comment xml:lang="en">This is the Materials Design Ontology.</rdfs:comment>
-        <rdfs:seeAlso>https://github.com/LiUSemWeb/Materials-Design-Ontology</rdfs:seeAlso>
-        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1.1</owl:versionInfo>
-    </owl:Ontology>
-    
-
-
-    <!-- 
-    ///////////////////////////////////////////////////////////////////////////////////////
-    //
-    // Annotation properties
-    //
-    ///////////////////////////////////////////////////////////////////////////////////////
-     -->
-
-    
-
-
-    <!-- http://purl.org/dc/terms/contributor -->
-
-    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/contributor"/>
-    
-
-
-    <!-- http://purl.org/dc/terms/created -->
-
-    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/created"/>
-    
-
-
-    <!-- http://purl.org/dc/terms/creator -->
-
-    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/creator"/>
-    
-
-
-    <!-- http://purl.org/dc/terms/license -->
-
-    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/license"/>
-    
-
-
-    <!-- http://purl.org/dc/terms/title -->
-
-    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/title"/>
-    
-
-
-    <!-- http://purl.org/vocab/vann/preferredNamespacePrefix -->
-
-    <owl:AnnotationProperty rdf:about="http://purl.org/vocab/vann/preferredNamespacePrefix"/>
-    
-
-
-    <!-- http://purl.org/vocab/vann/preferredNamespaceUri -->
-
-    <owl:AnnotationProperty rdf:about="http://purl.org/vocab/vann/preferredNamespaceUri"/>
-</rdf:RDF>
+     ontologyIRI="https://w3id.org/mdo/calculation/"
+     versionIRI="https://w3id.org/mdo/calculation/1.0/">
+    <Prefix name="" IRI="https://w3id.org/mdo/full/"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="prov" IRI="http://www.w3.org/ns/prov#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Prefix name="vann" IRI="http://purl.org/vocab/vann/"/>
+    <Prefix name="dcterms" IRI="http://purl.org/dc/terms/"/>
+    <Prefix name="structure" IRI="https://w3id.org/mdo/structure/"/>
+    <Prefix name="provenance" IRI="https://w3id.org/mdo/provenance/"/>
+    <Prefix name="calculation" IRI="https://w3id.org/mdo/calculation/"/>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="dcterms:contributor"/>
+        <Literal>Patrick Lambrix</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="dcterms:contributor"/>
+        <Literal>Rickard Armiento</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="dcterms:created"/>
+        <Literal>2019-11-07</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="dcterms:created"/>
+        <Literal>2020-04-02</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="dcterms:creator"/>
+        <Literal>Huanyu Li</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="dcterms:license"/>
+        <Literal>https://github.com/LiUSemWeb/Materials-Design-Ontology/blob/master/LICENSE</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="dcterms:license"/>
+        <Literal>https://github.com/huanyu-li/Materials-Design-Ontology/blob/master/LICENSE</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="dcterms:title"/>
+        <Literal xml:lang="en">Materials Design Ontology - Calculation Module</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="dcterms:title"/>
+        <Literal xml:lang="en">Materials Design Ontology - Core Module</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="dcterms:title"/>
+        <Literal xml:lang="en">Materials Design Ontology - Full</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="dcterms:title"/>
+        <Literal xml:lang="en">Materials Design Ontology - Provenance Module</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="dcterms:title"/>
+        <Literal xml:lang="en">Materials Design Ontology - Structure Module</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="vann:preferredNamespacePrefix"/>
+        <Literal>calculation</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="vann:preferredNamespacePrefix"/>
+        <Literal>core</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="vann:preferredNamespacePrefix"/>
+        <Literal>mdo</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="vann:preferredNamespacePrefix"/>
+        <Literal>provenance</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="vann:preferredNamespacePrefix"/>
+        <Literal>structure</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="vann:preferredNamespaceUri"/>
+        <Literal>https://w3id.org/mdo/calculation/1.0/</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="vann:preferredNamespaceUri"/>
+        <Literal>https://w3id.org/mdo/core/1.0/</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="vann:preferredNamespaceUri"/>
+        <Literal>https://w3id.org/mdo/full/1.0/</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="vann:preferredNamespaceUri"/>
+        <Literal>https://w3id.org/mdo/provenance/1.0/</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="vann:preferredNamespaceUri"/>
+        <Literal>https://w3id.org/mdo/structure/1.0/</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <Literal xml:lang="en">This is the Materials Design Ontology.</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <Literal xml:lang="en">This is the calculation module of Materials Design Ontology.</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <Literal xml:lang="en">This is the core module in Materials Design Ontology.</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <Literal xml:lang="en">This is the provenance module of Materials Design Ontology.</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <Literal xml:lang="en">This is the structure module in Materials Design Ontology.</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <Literal>https://github.com/LiUSemWeb/Materials-Design-Ontology</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <Literal>https://github.com/huanyu-li/Materials-Design-Ontology</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="owl:versionInfo"/>
+        <Literal>1.0</Literal>
+    </Annotation>
+    <Declaration>
+        <Class IRI="http://emmo.info/domains/emmo-material.owl#EMMO_4207e895_8b83_4318_996a_72cfb32acd94"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://purl.obolibrary.org/obo/CHEBI_33250"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://qudt.org/schema/qudt/Quantity"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://qudt.org/schema/qudt/QuantityKind"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://qudt.org/schema/qudt/QuantityValue"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://qudt.org/schema/qudt/Unit"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="prov:Agent"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="prov:SoftwareAgent"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="ComputationalMethod"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="ComputationalMethodParameter"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="DensityFunctionalTheoryMethod"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="ExchangeCorrelationEnergyFunctional"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="GeneralizedGradientApproximation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="HartreeFockMethod"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="HybridFunctional"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="HybridGeneralizedGradientApproximation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="HybridmetaGeneralizedGradientApproximation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="LocalDensityApproximation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="metaGeneralizedGradientApproximation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://w3id.org/mdo/core/CalculatedProperty"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://w3id.org/mdo/core/Calculation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://w3id.org/mdo/core/PhysicalProperty"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://w3id.org/mdo/core/Property"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://w3id.org/mdo/core/Structure"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="provenance:ReferenceAgent"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="structure:AngleTriple"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="structure:AxisVectors"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="structure:Basis"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="structure:Composition"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="structure:CoordinateVector"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="structure:Lattice"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="structure:LengthTriple"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="structure:Occupancy"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="structure:PointGroup"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="structure:Site"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="structure:SpaceGroup"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="structure:Species"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://qudt.org/schema/qudt/hasQuantityKind"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://qudt.org/schema/qudt/quantityValue"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://qudt.org/schema/qudt/unit"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="prov:wasAssociatedWith"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="prov:wasAttributedTo"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="hasComputationalMethod"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="hasParameter"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="hasXCFunctional"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="https://w3id.org/mdo/core/hasInputProperty"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="https://w3id.org/mdo/core/hasInputStructure"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="https://w3id.org/mdo/core/hasOutputCalculatedProperty"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="https://w3id.org/mdo/core/hasOutputStructure"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="https://w3id.org/mdo/core/hasQuantityValue"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="https://w3id.org/mdo/core/relatesToMaterial"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="https://w3id.org/mdo/core/relatesToStructure"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="structure:hasAngleVector"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="structure:hasAxisVectors"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="structure:hasBasis"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="structure:hasCartesianCoordinates"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="structure:hasComposition"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="structure:hasElement"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="structure:hasFractionalCoordinates"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="structure:hasLattice"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="structure:hasLengthVector"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="structure:hasOccupancy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="structure:hasPointGroup"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="structure:hasSite"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="structure:hasSpaceGroup"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="structure:hasSpecies"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="structure:has_a_axisVector"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="structure:has_b_axisVector"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="structure:has_c_axisVector"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://purl.obolibrary.org/obo/chebi/formula"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://qudt.org/schema/qudt/numericalValue"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="ParameterName"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="ParameterValue"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="https://w3id.org/mdo/core/ID"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="https://w3id.org/mdo/core/PropertyName"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty abbreviatedIRI="provenance:AuthorName"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty abbreviatedIRI="provenance:DOI"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty abbreviatedIRI="provenance:DatabaseName"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty abbreviatedIRI="provenance:PublicationDateTime"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty abbreviatedIRI="provenance:PublicationTitle"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty abbreviatedIRI="provenance:SoftwareName"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty abbreviatedIRI="provenance:URL"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty abbreviatedIRI="structure:Angle_alpha"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty abbreviatedIRI="structure:Angle_beta"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty abbreviatedIRI="structure:Angle_gamma"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty abbreviatedIRI="structure:AnonymousFormula"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty abbreviatedIRI="structure:DescriptiveFormula"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty abbreviatedIRI="structure:ElementRatio"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty abbreviatedIRI="structure:HillFormula"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty abbreviatedIRI="structure:LatticeType"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty abbreviatedIRI="structure:LatticeVolume"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty abbreviatedIRI="structure:Length_a"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty abbreviatedIRI="structure:Length_b"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty abbreviatedIRI="structure:Length_c"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty abbreviatedIRI="structure:PointGroupHMName"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty abbreviatedIRI="structure:ReducedFormula"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty abbreviatedIRI="structure:SpaceGroupID"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty abbreviatedIRI="structure:SpaceGroupSymbol"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty abbreviatedIRI="structure:X_axisCoordinate"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty abbreviatedIRI="structure:Y_axisCoordinate"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty abbreviatedIRI="structure:Z_axisCoordinate"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://qudt.org/vocab/unit/EV"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://qudt.org/vocab/unit/GM-PER-CentiM3"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="dcterms:contributor"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="dcterms:created"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="dcterms:creator"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="dcterms:license"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="dcterms:title"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="vann:preferredNamespacePrefix"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="vann:preferredNamespaceUri"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="xsd:date"/>
+    </Declaration>
+    <Declaration>
+        <Datatype abbreviatedIRI="rdf:List"/>
+    </Declaration>
+    <Declaration>
+        <Datatype abbreviatedIRI="xsd:date"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="http://purl.obolibrary.org/obo/CHEBI_33250"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="http://purl.obolibrary.org/obo/chebi/formula"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="prov:SoftwareAgent"/>
+        <Class abbreviatedIRI="prov:Agent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="prov:SoftwareAgent"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty abbreviatedIRI="provenance:SoftwareName"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="ComputationalMethod"/>
+        <ObjectIntersectionOf>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="hasParameter"/>
+                <Class IRI="ComputationalMethodParameter"/>
+            </ObjectSomeValuesFrom>
+            <ObjectAllValuesFrom>
+                <ObjectProperty IRI="hasParameter"/>
+                <Class IRI="ComputationalMethodParameter"/>
+            </ObjectAllValuesFrom>
+        </ObjectIntersectionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="DensityFunctionalTheoryMethod"/>
+        <Class IRI="ComputationalMethod"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="DensityFunctionalTheoryMethod"/>
+        <ObjectIntersectionOf>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="hasXCFunctional"/>
+                <Class IRI="ExchangeCorrelationEnergyFunctional"/>
+            </ObjectSomeValuesFrom>
+            <ObjectAllValuesFrom>
+                <ObjectProperty IRI="hasXCFunctional"/>
+                <Class IRI="ExchangeCorrelationEnergyFunctional"/>
+            </ObjectAllValuesFrom>
+        </ObjectIntersectionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="GeneralizedGradientApproximation"/>
+        <Class IRI="ExchangeCorrelationEnergyFunctional"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="HartreeFockMethod"/>
+        <Class IRI="ComputationalMethod"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="HybridFunctional"/>
+        <Class IRI="ExchangeCorrelationEnergyFunctional"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="HybridGeneralizedGradientApproximation"/>
+        <Class IRI="HybridFunctional"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="HybridmetaGeneralizedGradientApproximation"/>
+        <Class IRI="HybridFunctional"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="LocalDensityApproximation"/>
+        <Class IRI="ExchangeCorrelationEnergyFunctional"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="metaGeneralizedGradientApproximation"/>
+        <Class IRI="ExchangeCorrelationEnergyFunctional"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="https://w3id.org/mdo/core/CalculatedProperty"/>
+        <Class IRI="https://w3id.org/mdo/core/Property"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="https://w3id.org/mdo/core/Calculation"/>
+        <ObjectIntersectionOf>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="https://w3id.org/mdo/core/hasInputProperty"/>
+                <Class IRI="https://w3id.org/mdo/core/Property"/>
+            </ObjectSomeValuesFrom>
+            <ObjectAllValuesFrom>
+                <ObjectProperty IRI="https://w3id.org/mdo/core/hasInputProperty"/>
+                <Class IRI="https://w3id.org/mdo/core/Property"/>
+            </ObjectAllValuesFrom>
+            <ObjectAllValuesFrom>
+                <ObjectProperty IRI="https://w3id.org/mdo/core/hasOutputCalculatedProperty"/>
+                <Class IRI="https://w3id.org/mdo/core/CalculatedProperty"/>
+            </ObjectAllValuesFrom>
+        </ObjectIntersectionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="https://w3id.org/mdo/core/Calculation"/>
+        <ObjectIntersectionOf>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="https://w3id.org/mdo/core/hasInputStructure"/>
+                <Class IRI="https://w3id.org/mdo/core/Structure"/>
+            </ObjectSomeValuesFrom>
+            <ObjectAllValuesFrom>
+                <ObjectProperty IRI="https://w3id.org/mdo/core/hasInputStructure"/>
+                <Class IRI="https://w3id.org/mdo/core/Structure"/>
+            </ObjectAllValuesFrom>
+            <ObjectAllValuesFrom>
+                <ObjectProperty IRI="https://w3id.org/mdo/core/hasOutputStructure"/>
+                <Class IRI="https://w3id.org/mdo/core/Structure"/>
+            </ObjectAllValuesFrom>
+        </ObjectIntersectionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="https://w3id.org/mdo/core/Calculation"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="prov:wasAssociatedWith"/>
+            <Class abbreviatedIRI="prov:SoftwareAgent"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="https://w3id.org/mdo/core/Calculation"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="hasComputationalMethod"/>
+            <Class IRI="ComputationalMethod"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="https://w3id.org/mdo/core/PhysicalProperty"/>
+        <Class IRI="https://w3id.org/mdo/core/Property"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="https://w3id.org/mdo/core/Property"/>
+        <Class IRI="http://qudt.org/schema/qudt/Quantity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="https://w3id.org/mdo/core/Property"/>
+        <ObjectIntersectionOf>
+            <ObjectAllValuesFrom>
+                <ObjectProperty abbreviatedIRI="prov:wasAttributedTo"/>
+                <Class abbreviatedIRI="provenance:ReferenceAgent"/>
+            </ObjectAllValuesFrom>
+            <ObjectExactCardinality cardinality="1">
+                <ObjectProperty abbreviatedIRI="prov:wasAttributedTo"/>
+                <Class abbreviatedIRI="provenance:ReferenceAgent"/>
+            </ObjectExactCardinality>
+        </ObjectIntersectionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="https://w3id.org/mdo/core/Structure"/>
+        <ObjectIntersectionOf>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="https://w3id.org/mdo/core/relatesToMaterial"/>
+                <Class IRI="http://emmo.info/domains/emmo-material.owl#EMMO_4207e895_8b83_4318_996a_72cfb32acd94"/>
+            </ObjectSomeValuesFrom>
+            <ObjectAllValuesFrom>
+                <ObjectProperty IRI="https://w3id.org/mdo/core/relatesToMaterial"/>
+                <Class IRI="http://emmo.info/domains/emmo-material.owl#EMMO_4207e895_8b83_4318_996a_72cfb32acd94"/>
+            </ObjectAllValuesFrom>
+        </ObjectIntersectionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="https://w3id.org/mdo/core/Structure"/>
+        <ObjectIntersectionOf>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty abbreviatedIRI="structure:hasBasis"/>
+                <Class abbreviatedIRI="structure:Basis"/>
+            </ObjectSomeValuesFrom>
+            <ObjectAllValuesFrom>
+                <ObjectProperty abbreviatedIRI="structure:hasBasis"/>
+                <Class abbreviatedIRI="structure:Basis"/>
+            </ObjectAllValuesFrom>
+            <ObjectAllValuesFrom>
+                <ObjectProperty abbreviatedIRI="structure:hasLattice"/>
+                <Class abbreviatedIRI="structure:Lattice"/>
+            </ObjectAllValuesFrom>
+        </ObjectIntersectionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="https://w3id.org/mdo/core/Structure"/>
+        <ObjectIntersectionOf>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty abbreviatedIRI="structure:hasOccupancy"/>
+                <Class abbreviatedIRI="structure:Occupancy"/>
+            </ObjectSomeValuesFrom>
+            <ObjectAllValuesFrom>
+                <ObjectProperty abbreviatedIRI="structure:hasOccupancy"/>
+                <Class abbreviatedIRI="structure:Occupancy"/>
+            </ObjectAllValuesFrom>
+        </ObjectIntersectionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="https://w3id.org/mdo/core/Structure"/>
+        <ObjectIntersectionOf>
+            <ObjectAllValuesFrom>
+                <ObjectProperty abbreviatedIRI="prov:wasAttributedTo"/>
+                <Class abbreviatedIRI="provenance:ReferenceAgent"/>
+            </ObjectAllValuesFrom>
+            <ObjectExactCardinality cardinality="1">
+                <ObjectProperty abbreviatedIRI="prov:wasAttributedTo"/>
+                <Class abbreviatedIRI="provenance:ReferenceAgent"/>
+            </ObjectExactCardinality>
+        </ObjectIntersectionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="https://w3id.org/mdo/core/Structure"/>
+        <ObjectIntersectionOf>
+            <ObjectAllValuesFrom>
+                <ObjectProperty abbreviatedIRI="structure:hasComposition"/>
+                <Class abbreviatedIRI="structure:Composition"/>
+            </ObjectAllValuesFrom>
+            <ObjectExactCardinality cardinality="1">
+                <ObjectProperty abbreviatedIRI="structure:hasComposition"/>
+                <Class abbreviatedIRI="structure:Composition"/>
+            </ObjectExactCardinality>
+        </ObjectIntersectionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="https://w3id.org/mdo/core/Structure"/>
+        <ObjectIntersectionOf>
+            <ObjectAllValuesFrom>
+                <ObjectProperty abbreviatedIRI="structure:hasSpaceGroup"/>
+                <Class abbreviatedIRI="structure:SpaceGroup"/>
+            </ObjectAllValuesFrom>
+            <ObjectExactCardinality cardinality="1">
+                <ObjectProperty abbreviatedIRI="structure:hasSpaceGroup"/>
+                <Class abbreviatedIRI="structure:SpaceGroup"/>
+            </ObjectExactCardinality>
+        </ObjectIntersectionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="provenance:ReferenceAgent"/>
+        <Class abbreviatedIRI="prov:Agent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="structure:AngleTriple"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty abbreviatedIRI="structure:Angle_alpha"/>
+            <Datatype abbreviatedIRI="xsd:double"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="structure:AngleTriple"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty abbreviatedIRI="structure:Angle_beta"/>
+            <Datatype abbreviatedIRI="xsd:double"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="structure:AngleTriple"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty abbreviatedIRI="structure:Angle_gamma"/>
+            <Datatype abbreviatedIRI="xsd:double"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="structure:AxisVectors"/>
+        <ObjectIntersectionOf>
+            <ObjectExactCardinality cardinality="1">
+                <ObjectProperty abbreviatedIRI="structure:has_a_axisVector"/>
+                <Class abbreviatedIRI="structure:CoordinateVector"/>
+            </ObjectExactCardinality>
+            <ObjectExactCardinality cardinality="1">
+                <ObjectProperty abbreviatedIRI="structure:has_b_axisVector"/>
+                <Class abbreviatedIRI="structure:CoordinateVector"/>
+            </ObjectExactCardinality>
+            <ObjectExactCardinality cardinality="1">
+                <ObjectProperty abbreviatedIRI="structure:has_c_axisVector"/>
+                <Class abbreviatedIRI="structure:CoordinateVector"/>
+            </ObjectExactCardinality>
+        </ObjectIntersectionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="structure:Basis"/>
+        <ObjectUnionOf>
+            <ObjectIntersectionOf>
+                <ObjectExactCardinality cardinality="1">
+                    <ObjectProperty abbreviatedIRI="structure:hasAngleVector"/>
+                    <Class abbreviatedIRI="structure:AngleTriple"/>
+                </ObjectExactCardinality>
+                <ObjectExactCardinality cardinality="1">
+                    <ObjectProperty abbreviatedIRI="structure:hasLengthVector"/>
+                    <Class abbreviatedIRI="structure:LengthTriple"/>
+                </ObjectExactCardinality>
+            </ObjectIntersectionOf>
+            <ObjectExactCardinality cardinality="1">
+                <ObjectProperty abbreviatedIRI="structure:hasAxisVectors"/>
+                <Class abbreviatedIRI="structure:AxisVectors"/>
+            </ObjectExactCardinality>
+        </ObjectUnionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="structure:CoordinateVector"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty abbreviatedIRI="structure:X_axisCoordinate"/>
+            <Datatype abbreviatedIRI="xsd:double"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="structure:CoordinateVector"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty abbreviatedIRI="structure:Y_axisCoordinate"/>
+            <Datatype abbreviatedIRI="xsd:double"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="structure:CoordinateVector"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty abbreviatedIRI="structure:Z_axisCoordinate"/>
+            <Datatype abbreviatedIRI="xsd:double"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="structure:Lattice"/>
+        <ObjectUnionOf>
+            <ObjectIntersectionOf>
+                <ObjectExactCardinality cardinality="1">
+                    <ObjectProperty abbreviatedIRI="structure:hasAngleVector"/>
+                    <Class abbreviatedIRI="structure:AngleTriple"/>
+                </ObjectExactCardinality>
+                <ObjectExactCardinality cardinality="1">
+                    <ObjectProperty abbreviatedIRI="structure:hasLengthVector"/>
+                    <Class abbreviatedIRI="structure:LengthTriple"/>
+                </ObjectExactCardinality>
+            </ObjectIntersectionOf>
+            <ObjectExactCardinality cardinality="1">
+                <ObjectProperty abbreviatedIRI="structure:hasAxisVectors"/>
+                <Class abbreviatedIRI="structure:AxisVectors"/>
+            </ObjectExactCardinality>
+        </ObjectUnionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="structure:LengthTriple"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty abbreviatedIRI="structure:Length_a"/>
+            <Datatype abbreviatedIRI="xsd:double"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="structure:LengthTriple"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty abbreviatedIRI="structure:Length_b"/>
+            <Datatype abbreviatedIRI="xsd:double"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="structure:LengthTriple"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty abbreviatedIRI="structure:Length_c"/>
+            <Datatype abbreviatedIRI="xsd:double"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="structure:Occupancy"/>
+        <ObjectIntersectionOf>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty abbreviatedIRI="structure:hasSite"/>
+                <Class abbreviatedIRI="structure:Site"/>
+            </ObjectSomeValuesFrom>
+            <ObjectAllValuesFrom>
+                <ObjectProperty abbreviatedIRI="structure:hasSite"/>
+                <Class abbreviatedIRI="structure:Site"/>
+            </ObjectAllValuesFrom>
+        </ObjectIntersectionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="structure:Occupancy"/>
+        <ObjectIntersectionOf>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty abbreviatedIRI="structure:hasSpecies"/>
+                <Class abbreviatedIRI="structure:Species"/>
+            </ObjectSomeValuesFrom>
+            <ObjectAllValuesFrom>
+                <ObjectProperty abbreviatedIRI="structure:hasSpecies"/>
+                <Class abbreviatedIRI="structure:Species"/>
+            </ObjectAllValuesFrom>
+        </ObjectIntersectionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="structure:PointGroup"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty abbreviatedIRI="structure:PointGroupHMName"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="structure:Site"/>
+        <ObjectIntersectionOf>
+            <ObjectAllValuesFrom>
+                <ObjectProperty abbreviatedIRI="structure:hasCartesianCoordinates"/>
+                <Class abbreviatedIRI="structure:CoordinateVector"/>
+            </ObjectAllValuesFrom>
+            <ObjectMaxCardinality cardinality="1">
+                <ObjectProperty abbreviatedIRI="structure:hasCartesianCoordinates"/>
+                <Class abbreviatedIRI="structure:CoordinateVector"/>
+            </ObjectMaxCardinality>
+        </ObjectIntersectionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="structure:Site"/>
+        <ObjectIntersectionOf>
+            <ObjectAllValuesFrom>
+                <ObjectProperty abbreviatedIRI="structure:hasFractionalCoordinates"/>
+                <Class abbreviatedIRI="structure:CoordinateVector"/>
+            </ObjectAllValuesFrom>
+            <ObjectMaxCardinality cardinality="1">
+                <ObjectProperty abbreviatedIRI="structure:hasFractionalCoordinates"/>
+                <Class abbreviatedIRI="structure:CoordinateVector"/>
+            </ObjectMaxCardinality>
+        </ObjectIntersectionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="structure:SpaceGroup"/>
+        <ObjectIntersectionOf>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty abbreviatedIRI="structure:hasPointGroup"/>
+                <Class abbreviatedIRI="structure:PointGroup"/>
+            </ObjectSomeValuesFrom>
+            <ObjectAllValuesFrom>
+                <ObjectProperty abbreviatedIRI="structure:hasPointGroup"/>
+                <Class abbreviatedIRI="structure:PointGroup"/>
+            </ObjectAllValuesFrom>
+        </ObjectIntersectionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="structure:SpaceGroup"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty abbreviatedIRI="structure:SpaceGroupID"/>
+            <Datatype abbreviatedIRI="xsd:integer"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="structure:SpaceGroup"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty abbreviatedIRI="structure:SpaceGroupSymbol"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="structure:Species"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty abbreviatedIRI="structure:hasElement"/>
+            <Class IRI="http://purl.obolibrary.org/obo/CHEBI_33250"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <DisjointClasses>
+        <Class IRI="https://w3id.org/mdo/core/CalculatedProperty"/>
+        <Class IRI="https://w3id.org/mdo/core/PhysicalProperty"/>
+    </DisjointClasses>
+    <ClassAssertion>
+        <Class IRI="http://qudt.org/schema/qudt/Unit"/>
+        <NamedIndividual IRI="http://qudt.org/vocab/unit/EV"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://qudt.org/schema/qudt/Unit"/>
+        <NamedIndividual IRI="http://qudt.org/vocab/unit/GM-PER-CentiM3"/>
+    </ClassAssertion>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="hasComputationalMethod"/>
+        <Class IRI="https://w3id.org/mdo/core/Calculation"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="hasParameter"/>
+        <Class IRI="ComputationalMethod"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="hasXCFunctional"/>
+        <Class IRI="DensityFunctionalTheoryMethod"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="https://w3id.org/mdo/core/hasInputProperty"/>
+        <Class IRI="https://w3id.org/mdo/core/Calculation"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="https://w3id.org/mdo/core/hasInputStructure"/>
+        <Class IRI="https://w3id.org/mdo/core/Calculation"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="https://w3id.org/mdo/core/hasOutputCalculatedProperty"/>
+        <Class IRI="https://w3id.org/mdo/core/Calculation"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="https://w3id.org/mdo/core/hasOutputStructure"/>
+        <Class IRI="https://w3id.org/mdo/core/Calculation"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="https://w3id.org/mdo/core/relatesToMaterial"/>
+        <Class IRI="https://w3id.org/mdo/core/Structure"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="https://w3id.org/mdo/core/relatesToStructure"/>
+        <Class IRI="https://w3id.org/mdo/core/Property"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="structure:hasAngleVector"/>
+        <ObjectUnionOf>
+            <Class abbreviatedIRI="structure:Basis"/>
+            <Class abbreviatedIRI="structure:Lattice"/>
+        </ObjectUnionOf>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="structure:hasAxisVectors"/>
+        <ObjectUnionOf>
+            <Class abbreviatedIRI="structure:Basis"/>
+            <Class abbreviatedIRI="structure:Lattice"/>
+        </ObjectUnionOf>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="structure:hasBasis"/>
+        <Class IRI="https://w3id.org/mdo/core/Structure"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="structure:hasCartesianCoordinates"/>
+        <Class abbreviatedIRI="structure:Site"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="structure:hasComposition"/>
+        <Class IRI="https://w3id.org/mdo/core/Structure"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="structure:hasElement"/>
+        <Class abbreviatedIRI="structure:Species"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="structure:hasFractionalCoordinates"/>
+        <Class abbreviatedIRI="structure:Site"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="structure:hasLattice"/>
+        <Class IRI="https://w3id.org/mdo/core/Structure"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="structure:hasLengthVector"/>
+        <ObjectUnionOf>
+            <Class abbreviatedIRI="structure:Basis"/>
+            <Class abbreviatedIRI="structure:Lattice"/>
+        </ObjectUnionOf>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="structure:hasOccupancy"/>
+        <Class IRI="https://w3id.org/mdo/core/Structure"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="structure:hasPointGroup"/>
+        <Class abbreviatedIRI="structure:SpaceGroup"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="structure:hasSite"/>
+        <Class abbreviatedIRI="structure:Occupancy"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="structure:hasSpaceGroup"/>
+        <Class IRI="https://w3id.org/mdo/core/Structure"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="structure:hasSpecies"/>
+        <Class abbreviatedIRI="structure:Occupancy"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="structure:has_a_axisVector"/>
+        <Class abbreviatedIRI="structure:AxisVectors"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="structure:has_b_axisVector"/>
+        <Class abbreviatedIRI="structure:AxisVectors"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="structure:has_c_axisVector"/>
+        <Class abbreviatedIRI="structure:AxisVectors"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://qudt.org/schema/qudt/hasQuantityKind"/>
+        <Class IRI="http://qudt.org/schema/qudt/QuantityKind"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://qudt.org/schema/qudt/quantityValue"/>
+        <Class IRI="http://qudt.org/schema/qudt/QuantityValue"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://qudt.org/schema/qudt/unit"/>
+        <Class IRI="http://qudt.org/schema/qudt/Unit"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="hasComputationalMethod"/>
+        <Class IRI="ComputationalMethod"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="hasParameter"/>
+        <Class IRI="ComputationalMethodParameter"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="hasXCFunctional"/>
+        <Class IRI="ExchangeCorrelationEnergyFunctional"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="https://w3id.org/mdo/core/hasInputProperty"/>
+        <Class IRI="https://w3id.org/mdo/core/Property"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="https://w3id.org/mdo/core/hasInputStructure"/>
+        <Class IRI="https://w3id.org/mdo/core/Structure"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="https://w3id.org/mdo/core/hasOutputCalculatedProperty"/>
+        <Class IRI="https://w3id.org/mdo/core/CalculatedProperty"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="https://w3id.org/mdo/core/hasOutputStructure"/>
+        <Class IRI="https://w3id.org/mdo/core/Structure"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="https://w3id.org/mdo/core/relatesToMaterial"/>
+        <Class IRI="http://emmo.info/domains/emmo-material.owl#EMMO_4207e895_8b83_4318_996a_72cfb32acd94"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="https://w3id.org/mdo/core/relatesToStructure"/>
+        <Class IRI="https://w3id.org/mdo/core/Structure"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI="structure:hasAngleVector"/>
+        <Class abbreviatedIRI="structure:AngleTriple"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI="structure:hasAxisVectors"/>
+        <Class abbreviatedIRI="structure:AxisVectors"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI="structure:hasBasis"/>
+        <Class abbreviatedIRI="structure:Basis"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI="structure:hasCartesianCoordinates"/>
+        <Class abbreviatedIRI="structure:CoordinateVector"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI="structure:hasComposition"/>
+        <Class abbreviatedIRI="structure:Composition"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI="structure:hasElement"/>
+        <Class IRI="http://purl.obolibrary.org/obo/CHEBI_33250"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI="structure:hasFractionalCoordinates"/>
+        <Class abbreviatedIRI="structure:CoordinateVector"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI="structure:hasLattice"/>
+        <Class abbreviatedIRI="structure:Lattice"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI="structure:hasLengthVector"/>
+        <Class abbreviatedIRI="structure:LengthTriple"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI="structure:hasOccupancy"/>
+        <Class abbreviatedIRI="structure:Occupancy"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI="structure:hasPointGroup"/>
+        <Class abbreviatedIRI="structure:PointGroup"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI="structure:hasSite"/>
+        <Class abbreviatedIRI="structure:Site"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI="structure:hasSpaceGroup"/>
+        <Class abbreviatedIRI="structure:SpaceGroup"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI="structure:hasSpecies"/>
+        <Class abbreviatedIRI="structure:Species"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI="structure:has_a_axisVector"/>
+        <Class abbreviatedIRI="structure:CoordinateVector"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI="structure:has_b_axisVector"/>
+        <Class abbreviatedIRI="structure:CoordinateVector"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI="structure:has_c_axisVector"/>
+        <Class abbreviatedIRI="structure:CoordinateVector"/>
+    </ObjectPropertyRange>
+    <DataPropertyDomain>
+        <DataProperty IRI="ParameterName"/>
+        <Class IRI="ComputationalMethodParameter"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="ParameterValue"/>
+        <Class IRI="ComputationalMethodParameter"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="https://w3id.org/mdo/core/ID"/>
+        <Class IRI="https://w3id.org/mdo/core/Calculation"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="https://w3id.org/mdo/core/PropertyName"/>
+        <Class IRI="https://w3id.org/mdo/core/Property"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty abbreviatedIRI="provenance:AuthorName"/>
+        <Class abbreviatedIRI="provenance:ReferenceAgent"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty abbreviatedIRI="provenance:DOI"/>
+        <Class abbreviatedIRI="provenance:ReferenceAgent"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty abbreviatedIRI="provenance:DatabaseName"/>
+        <Class abbreviatedIRI="provenance:ReferenceAgent"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty abbreviatedIRI="provenance:PublicationDateTime"/>
+        <Class abbreviatedIRI="provenance:ReferenceAgent"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty abbreviatedIRI="provenance:PublicationTitle"/>
+        <Class abbreviatedIRI="provenance:ReferenceAgent"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty abbreviatedIRI="provenance:SoftwareName"/>
+        <Class abbreviatedIRI="prov:SoftwareAgent"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty abbreviatedIRI="provenance:URL"/>
+        <Class abbreviatedIRI="provenance:ReferenceAgent"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty abbreviatedIRI="structure:Angle_alpha"/>
+        <Class abbreviatedIRI="structure:AngleTriple"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty abbreviatedIRI="structure:Angle_beta"/>
+        <Class abbreviatedIRI="structure:AngleTriple"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty abbreviatedIRI="structure:Angle_gamma"/>
+        <Class abbreviatedIRI="structure:AngleTriple"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty abbreviatedIRI="structure:AnonymousFormula"/>
+        <Class abbreviatedIRI="structure:Composition"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty abbreviatedIRI="structure:DescriptiveFormula"/>
+        <Class abbreviatedIRI="structure:Composition"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty abbreviatedIRI="structure:ElementRatio"/>
+        <Class abbreviatedIRI="structure:Species"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty abbreviatedIRI="structure:HillFormula"/>
+        <Class abbreviatedIRI="structure:Composition"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty abbreviatedIRI="structure:LatticeType"/>
+        <Class abbreviatedIRI="structure:Lattice"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty abbreviatedIRI="structure:LatticeVolume"/>
+        <Class abbreviatedIRI="structure:Lattice"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty abbreviatedIRI="structure:Length_a"/>
+        <Class abbreviatedIRI="structure:LengthTriple"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty abbreviatedIRI="structure:Length_b"/>
+        <Class abbreviatedIRI="structure:LengthTriple"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty abbreviatedIRI="structure:Length_c"/>
+        <Class abbreviatedIRI="structure:LengthTriple"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty abbreviatedIRI="structure:PointGroupHMName"/>
+        <Class abbreviatedIRI="structure:PointGroup"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty abbreviatedIRI="structure:ReducedFormula"/>
+        <Class abbreviatedIRI="structure:Composition"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty abbreviatedIRI="structure:SpaceGroupID"/>
+        <Class abbreviatedIRI="structure:SpaceGroup"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty abbreviatedIRI="structure:SpaceGroupSymbol"/>
+        <Class abbreviatedIRI="structure:SpaceGroup"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty abbreviatedIRI="structure:X_axisCoordinate"/>
+        <Class abbreviatedIRI="structure:CoordinateVector"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty abbreviatedIRI="structure:Y_axisCoordinate"/>
+        <Class abbreviatedIRI="structure:CoordinateVector"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty abbreviatedIRI="structure:Z_axisCoordinate"/>
+        <Class abbreviatedIRI="structure:CoordinateVector"/>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty IRI="http://qudt.org/schema/qudt/numericalValue"/>
+        <Datatype abbreviatedIRI="xsd:double"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="ParameterName"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="ParameterValue"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="https://w3id.org/mdo/core/ID"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="https://w3id.org/mdo/core/PropertyName"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty abbreviatedIRI="provenance:AuthorName"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty abbreviatedIRI="provenance:DOI"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty abbreviatedIRI="provenance:DatabaseName"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty abbreviatedIRI="provenance:PublicationDateTime"/>
+        <Datatype abbreviatedIRI="xsd:dateTime"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty abbreviatedIRI="provenance:PublicationTitle"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty abbreviatedIRI="provenance:SoftwareName"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty abbreviatedIRI="provenance:URL"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty abbreviatedIRI="structure:Angle_alpha"/>
+        <Datatype abbreviatedIRI="xsd:double"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty abbreviatedIRI="structure:Angle_beta"/>
+        <Datatype abbreviatedIRI="xsd:double"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty abbreviatedIRI="structure:Angle_gamma"/>
+        <Datatype abbreviatedIRI="xsd:double"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty abbreviatedIRI="structure:AnonymousFormula"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty abbreviatedIRI="structure:DescriptiveFormula"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty abbreviatedIRI="structure:ElementRatio"/>
+        <Datatype abbreviatedIRI="xsd:double"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty abbreviatedIRI="structure:HillFormula"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty abbreviatedIRI="structure:LatticeType"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty abbreviatedIRI="structure:LatticeVolume"/>
+        <Datatype abbreviatedIRI="xsd:double"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty abbreviatedIRI="structure:Length_a"/>
+        <Datatype abbreviatedIRI="xsd:double"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty abbreviatedIRI="structure:Length_b"/>
+        <Datatype abbreviatedIRI="xsd:double"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty abbreviatedIRI="structure:Length_c"/>
+        <Datatype abbreviatedIRI="xsd:double"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty abbreviatedIRI="structure:PointGroupHMName"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty abbreviatedIRI="structure:ReducedFormula"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty abbreviatedIRI="structure:SpaceGroupID"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty abbreviatedIRI="structure:SpaceGroupSymbol"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty abbreviatedIRI="structure:X_axisCoordinate"/>
+        <Datatype abbreviatedIRI="xsd:double"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty abbreviatedIRI="structure:Y_axisCoordinate"/>
+        <Datatype abbreviatedIRI="xsd:double"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty abbreviatedIRI="structure:Z_axisCoordinate"/>
+        <Datatype abbreviatedIRI="xsd:double"/>
+    </DataPropertyRange>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://emmo.info/domains/emmo-material.owl#EMMO_4207e895_8b83_4318_996a_72cfb32acd94</IRI>
+        <Literal>Material</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://purl.obolibrary.org/obo/CHEBI_33250</IRI>
+        <Literal>Atom</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>ComputationalMethod</IRI>
+        <Literal xml:lang="en">A computational method is a way to process structures and/or properties into output structures and/or calculated properties.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>ComputationalMethod</IRI>
+        <Literal xml:lang="en">Computational Method</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>ComputationalMethodParameter</IRI>
+        <Literal xml:lang="en">A computational method parameter is a parameter used in a computational method.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>ComputationalMethodParameter</IRI>
+        <Literal xml:lang="en">Computational Method Parameter</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>DensityFunctionalTheoryMethod</IRI>
+        <Literal xml:lang="en">A DFT method is a computational quantum mechanical modelling method used to investigate the electronic structure based on optimization of the energy over electronic densities.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>DensityFunctionalTheoryMethod</IRI>
+        <Literal xml:lang="en">Density Functional Theory Method</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>ExchangeCorrelationEnergyFunctional</IRI>
+        <Literal xml:lang="en">An ExchangeCorrelationEnergyFunctional is a functional to compute the exchange correlation energy.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>ExchangeCorrelationEnergyFunctional</IRI>
+        <Literal xml:lang="en">Exchange Correlation Energy Functional</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>GeneralizedGradientApproximation</IRI>
+        <Literal xml:lang="en">A GeneralizedGradientApproximation is a classification of exchange correlation energy functionals that only use the local value of the electronic density and its gradient.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>GeneralizedGradientApproximation</IRI>
+        <Literal xml:lang="en">Generalized Gradient Approximation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>HartreeFockMethod</IRI>
+        <Literal xml:lang="en">A Hartree Fock method is a computational quantum mechanical modelling method used to investigate the electronic structure based on variational search over wave functions.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>HartreeFockMethod</IRI>
+        <Literal xml:lang="en">Hartree Fock Method</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>HybridFunctional</IRI>
+        <Literal xml:lang="en">A hybrid functional is a classification of exchange correlation energy functionals that combine exact exchange from HartreeFock theory with another exchange correlation energy approximation.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>HybridFunctional</IRI>
+        <Literal xml:lang="en">Hybrid Functional</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>HybridGeneralizedGradientApproximation</IRI>
+        <Literal xml:lang="en">A hybrid generalized gradient approximation is a classification of exchange correlation energy functionals that combine exact exchange from Hartree–Fock theory with generalized gradient approximation.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>HybridGeneralizedGradientApproximation</IRI>
+        <Literal xml:lang="en">Hybrid Generalized Gradient Approximation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>HybridmetaGeneralizedGradientApproximation</IRI>
+        <Literal xml:lang="en">A hybrid meta generalized gradient approximation is a classification of exchange correlation energy functionals that combine exact exchange from Hartree–Fock theory with meta generalized gradient approximation.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>HybridmetaGeneralizedGradientApproximation</IRI>
+        <Literal xml:lang="en">Hybrid Meta Generalized Gradient Approximation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>LocalDensityApproximation</IRI>
+        <Literal xml:lang="en">A LDA is a classification of exchange correlation energy functionals that only use the local value of the electronic density.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>LocalDensityApproximation</IRI>
+        <Literal xml:lang="en">Local Density Approximation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>ParameterName</IRI>
+        <Literal xml:lang="en">ParameterName represents that a computational method parameter has the name in a string.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>ParameterName</IRI>
+        <Literal xml:lang="en">parameter name</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>ParameterValue</IRI>
+        <Literal xml:lang="en">ParameterValue represents that a computational method parameter has the value in a string.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>ParameterValue</IRI>
+        <Literal xml:lang="en">parameter value</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>hasComputationalMethod</IRI>
+        <Literal xml:lang="en">hasComputationalMethod represents the relationship between a calculation and a computational method it uses.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>hasComputationalMethod</IRI>
+        <Literal xml:lang="en">has computational method</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>hasParameter</IRI>
+        <Literal xml:lang="en">hasParameter represents the relationship between a calculation and the parameters it has.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>hasParameter</IRI>
+        <Literal xml:lang="en">has parameter</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>hasXCFunctional</IRI>
+        <Literal xml:lang="en">hasXCFunctional represents the relationship between a density functional theory method and the exchange-correlation energy functionals it takes.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>hasXCFunctional</IRI>
+        <Literal xml:lang="en">has XC functional</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>metaGeneralizedGradientApproximation</IRI>
+        <Literal xml:lang="en">A MetaGeneralizedGradientApproximation is a classification of exchange correlation energy functionals that only use the local value of the electronic density and its gradient and the Kohn–Sham orbital kinetic energy density.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>metaGeneralizedGradientApproximation</IRI>
+        <Literal xml:lang="en">Meta Generalized Gradient Approximation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>https://w3id.org/mdo/core/CalculatedProperty</IRI>
+        <Literal xml:lang="en">A calculated property is a proprty that is a result from a calculation.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>https://w3id.org/mdo/core/CalculatedProperty</IRI>
+        <Literal xml:lang="en">Calculated Property</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>https://w3id.org/mdo/core/Calculation</IRI>
+        <Literal xml:lang="en">A calculation is the use of a specific computational method to process structures and/or properties into output structures and/or calculated properties.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>https://w3id.org/mdo/core/Calculation</IRI>
+        <Literal xml:lang="en">Calculation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>https://w3id.org/mdo/core/ID</IRI>
+        <Literal xml:lang="en">ID represents that a calculation has the unique ID in a string.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>https://w3id.org/mdo/core/ID</IRI>
+        <Literal xml:lang="en">ID</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>https://w3id.org/mdo/core/PhysicalProperty</IRI>
+        <Literal xml:lang="en">A physical property is an objective property over a physical system. (ie, a property pertains to the physical reality)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>https://w3id.org/mdo/core/PhysicalProperty</IRI>
+        <Literal xml:lang="en">Physical Property</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>https://w3id.org/mdo/core/Property</IRI>
+        <Literal xml:lang="en">A property in materials design is data pertaining to at least one material or materials system.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>https://w3id.org/mdo/core/Property</IRI>
+        <Literal xml:lang="en">Property</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>https://w3id.org/mdo/core/PropertyName</IRI>
+        <Literal xml:lang="en">PropertyName represents that a property has the name in a string.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>https://w3id.org/mdo/core/PropertyName</IRI>
+        <Literal xml:lang="en">property name</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>https://w3id.org/mdo/core/Structure</IRI>
+        <Literal xml:lang="en">A structure is the information of the sites and their occupancies in a material or materials system.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>https://w3id.org/mdo/core/Structure</IRI>
+        <Literal xml:lang="en">Structure</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>https://w3id.org/mdo/core/hasInputProperty</IRI>
+        <Literal xml:lang="en">hasInputProperty represents the relationship between a calculation and the properties it takes as input.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>https://w3id.org/mdo/core/hasInputProperty</IRI>
+        <Literal xml:lang="en">has input property</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>https://w3id.org/mdo/core/hasInputStructure</IRI>
+        <Literal xml:lang="en">hasInputStructure represents the relationship between a calculation and the structures it takes as input.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>https://w3id.org/mdo/core/hasInputStructure</IRI>
+        <Literal xml:lang="en">has input structure</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>https://w3id.org/mdo/core/hasOutputCalculatedProperty</IRI>
+        <Literal xml:lang="en">hasOutputCalculatedProperty represents the relationship between a calculation and the calculated properties it outputs.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>https://w3id.org/mdo/core/hasOutputCalculatedProperty</IRI>
+        <Literal xml:lang="en">has output calculated property</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>https://w3id.org/mdo/core/hasOutputStructure</IRI>
+        <Literal xml:lang="en">hasOutputStructure represents the relationship between a calculation and the structures it outputs.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>https://w3id.org/mdo/core/hasOutputStructure</IRI>
+        <Literal xml:lang="en">has output structure</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>https://w3id.org/mdo/core/hasQuantityValue</IRI>
+        <Literal xml:lang="en">hasQuantityValue represents the relationship between a property and quantity value it takes.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>https://w3id.org/mdo/core/hasQuantityValue</IRI>
+        <Literal xml:lang="en">has quantity value</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>https://w3id.org/mdo/core/relatesToMaterial</IRI>
+        <Literal xml:lang="en">relatesToMaterial represents the relationship between a structure and the materials it comes from.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>https://w3id.org/mdo/core/relatesToMaterial</IRI>
+        <Literal xml:lang="en">relates to material</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>https://w3id.org/mdo/core/relatesToStructure</IRI>
+        <Literal xml:lang="en">relatesToStructure represents the relationship between a property and the structures it comes from.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>https://w3id.org/mdo/core/relatesToStructure</IRI>
+        <Literal xml:lang="en">relates to structure</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>provenance:AuthorName</AbbreviatedIRI>
+        <Literal xml:lang="en">AuthorName represents that a reference agent has the author&apos;s name in a string.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>provenance:AuthorName</AbbreviatedIRI>
+        <Literal xml:lang="en">author name</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>provenance:DOI</AbbreviatedIRI>
+        <Literal xml:lang="en">DOI represents that a reference agent has the DOI in a string.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>provenance:DOI</AbbreviatedIRI>
+        <Literal xml:lang="en">DOI</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>provenance:DatabaseName</AbbreviatedIRI>
+        <Literal xml:lang="en">DatabaseName represents that a reference agent has the database&apos;s name in a string.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>provenance:DatabaseName</AbbreviatedIRI>
+        <Literal xml:lang="en">database name</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>provenance:PublicationDateTime</AbbreviatedIRI>
+        <Literal xml:lang="en">PublicationDateTime represents that a reference agent has the date time in a dateTime.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>provenance:PublicationDateTime</AbbreviatedIRI>
+        <Literal xml:lang="en">publication dateTime</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>provenance:PublicationTitle</AbbreviatedIRI>
+        <Literal xml:lang="en">PublicationTitle represents that a reference agent has the publication&apos;s title in a string.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>provenance:PublicationTitle</AbbreviatedIRI>
+        <Literal xml:lang="en">publication title</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>provenance:ReferenceAgent</AbbreviatedIRI>
+        <Literal xml:lang="en">A reference agent is the representation of the reference that the structure or property refer to.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>provenance:ReferenceAgent</AbbreviatedIRI>
+        <Literal xml:lang="en">Reference Agent</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>provenance:SoftwareName</AbbreviatedIRI>
+        <Literal xml:lang="en">SoftwareName represents that a software agent has the name in a string.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>provenance:SoftwareName</AbbreviatedIRI>
+        <Literal xml:lang="en">software name</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>provenance:URL</AbbreviatedIRI>
+        <Literal xml:lang="en">URL represents that a reference agent has the URL in a string.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>provenance:URL</AbbreviatedIRI>
+        <Literal xml:lang="en">URL</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>structure:AngleTriple</AbbreviatedIRI>
+        <Literal xml:lang="en">A angle triple is a vector of three angles which represent the angles among three bases in a cell.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>structure:AngleTriple</AbbreviatedIRI>
+        <Literal xml:lang="en">Angle Triple</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>structure:Angle_alpha</AbbreviatedIRI>
+        <Literal xml:lang="en">Angle_alpha represents that an angle triple has the alpha angle&apos;s value in a double.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>structure:Angle_alpha</AbbreviatedIRI>
+        <Literal xml:lang="en">Angle_alpha</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>structure:Angle_beta</AbbreviatedIRI>
+        <Literal xml:lang="en">Angle_beta represents that an angle triple has the beta angle&apos;s value in a double.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>structure:Angle_beta</AbbreviatedIRI>
+        <Literal xml:lang="en">Angle_beta</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>structure:Angle_gamma</AbbreviatedIRI>
+        <Literal xml:lang="en">Angle_gamma represents that an angle triple has the gamma angle&apos;s value in a double.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>structure:Angle_gamma</AbbreviatedIRI>
+        <Literal xml:lang="en">Angle_gamma</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>structure:AnonymousFormula</AbbreviatedIRI>
+        <Literal xml:lang="en">AnonymousFormula represents that a composition has the anonymous formula in a string.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>structure:AnonymousFormula</AbbreviatedIRI>
+        <Literal xml:lang="en">anonymous formula</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>structure:AxisVectors</AbbreviatedIRI>
+        <Literal xml:lang="en">An axis-vectors is the three vectors which represent the bases of cell.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>structure:AxisVectors</AbbreviatedIRI>
+        <Literal xml:lang="en">Axis Vectors</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>structure:Basis</AbbreviatedIRI>
+        <Literal xml:lang="en">A basis defines a spatial unit used to express fractional coordinates.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>structure:Basis</AbbreviatedIRI>
+        <Literal xml:lang="en">Basis</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>structure:Composition</AbbreviatedIRI>
+        <Literal xml:lang="en">A composition is used to represent what chemical elements composing a structure and the ratio of the chemical elements.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>structure:Composition</AbbreviatedIRI>
+        <Literal xml:lang="en">Composition</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>structure:CoordinateVector</AbbreviatedIRI>
+        <Literal xml:lang="en">A coordinate vector is the coordinates of a point in space.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>structure:CoordinateVector</AbbreviatedIRI>
+        <Literal xml:lang="en">Coordinate Vector</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>structure:DescriptiveFormula</AbbreviatedIRI>
+        <Literal xml:lang="en">DescriptiveFormula represents that a composition has the descriptive formula in a string.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>structure:DescriptiveFormula</AbbreviatedIRI>
+        <Literal xml:lang="en">descriptive formula</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>structure:ElementRatio</AbbreviatedIRI>
+        <Literal xml:lang="en">ElementRatio represents that a species has the ratio in a double.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>structure:ElementRatio</AbbreviatedIRI>
+        <Literal xml:lang="en">element ratio</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>structure:HillFormula</AbbreviatedIRI>
+        <Literal xml:lang="en">HillFormula represents that a composition has the hill formula in a string.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>structure:HillFormula</AbbreviatedIRI>
+        <Literal xml:lang="en">hill formula</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>structure:Lattice</AbbreviatedIRI>
+        <Literal xml:lang="en">A lattice defines a peroidic arrangement of one or more atoms.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>structure:Lattice</AbbreviatedIRI>
+        <Literal xml:lang="en">Lattice</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>structure:LatticeType</AbbreviatedIRI>
+        <Literal xml:lang="en">LatticeType represents that a lattice has the type in a string.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>structure:LatticeType</AbbreviatedIRI>
+        <Literal xml:lang="en">lattice type</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>structure:LatticeVolume</AbbreviatedIRI>
+        <Literal xml:lang="en">LatticeVolume represents that a lattice has the volume in a double.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>structure:LatticeVolume</AbbreviatedIRI>
+        <Literal xml:lang="en">lattice volume</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>structure:LengthTriple</AbbreviatedIRI>
+        <Literal xml:lang="en">A length triple defines the three parameters (a, b, c) that represent the lengths in three axes respectively.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>structure:LengthTriple</AbbreviatedIRI>
+        <Literal xml:lang="en">Length Triple</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>structure:Length_a</AbbreviatedIRI>
+        <Literal xml:lang="en">Length_a represents that a length triple has the &apos;a&apos; value in a double.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>structure:Length_a</AbbreviatedIRI>
+        <Literal xml:lang="en">Length_a</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>structure:Length_b</AbbreviatedIRI>
+        <Literal xml:lang="en">Length_b represents that a length triple has the &apos;b&apos; value in a double.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>structure:Length_b</AbbreviatedIRI>
+        <Literal xml:lang="en">Length_b</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>structure:Length_c</AbbreviatedIRI>
+        <Literal xml:lang="en">Length_c represents that a length triple has the &apos;c&apos; value in a double.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>structure:Length_c</AbbreviatedIRI>
+        <Literal xml:lang="en">Length_c</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>structure:Occupancy</AbbreviatedIRI>
+        <Literal xml:lang="en">An occupancy ties a specific species to a site.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>structure:Occupancy</AbbreviatedIRI>
+        <Literal xml:lang="en">Occupancy</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>structure:PointGroup</AbbreviatedIRI>
+        <Literal xml:lang="en">A group of linear mappings of vector space, which is corresonpond to the group of motions in point space determining the symmetry of the macroscopic crystal, is called the point group of the crystal, furthermore of the crystal structure, and is also called the point group of its space group.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>structure:PointGroup</AbbreviatedIRI>
+        <Literal xml:lang="en">Point Group</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <AbbreviatedIRI>structure:PointGroup</AbbreviatedIRI>
+        <Literal xml:lang="en">International Tables for Crystallography, Volume A, Fourth, revised edition, Section 8.1.5.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>structure:PointGroupHMName</AbbreviatedIRI>
+        <Literal xml:lang="en">PointGroupHMName represents that a point group has the Hermann-Mauguin in a string.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>structure:PointGroupHMName</AbbreviatedIRI>
+        <Literal xml:lang="en">point group Hermann-Mauguin name</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>structure:ReducedFormula</AbbreviatedIRI>
+        <Literal xml:lang="en">ReducedFormula represents that a composition has the reduced formula in a string.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>structure:ReducedFormula</AbbreviatedIRI>
+        <Literal xml:lang="en">reduced formula</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>structure:Site</AbbreviatedIRI>
+        <Literal xml:lang="en">A site is a point in a lattice.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>structure:Site</AbbreviatedIRI>
+        <Literal xml:lang="en">Site</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>structure:SpaceGroup</AbbreviatedIRI>
+        <Literal xml:lang="en">A space group is the symmetry group of a three-dimensional crystal pattern is called its space group.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>structure:SpaceGroup</AbbreviatedIRI>
+        <Literal xml:lang="en">Space Group</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <AbbreviatedIRI>structure:SpaceGroup</AbbreviatedIRI>
+        <Literal xml:lang="en">International Tables for Crystallography, Volume !, Fourth, revised edition, Section 8.1.5.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>structure:SpaceGroupID</AbbreviatedIRI>
+        <Literal xml:lang="en">SpaceGroupID represents that a space group has the unique ID in an integer.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>structure:SpaceGroupID</AbbreviatedIRI>
+        <Literal xml:lang="en">space group ID</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>structure:SpaceGroupSymbol</AbbreviatedIRI>
+        <Literal xml:lang="en">SpaceGroupSymbol represents that a space group has the symbol in a string.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>structure:SpaceGroupSymbol</AbbreviatedIRI>
+        <Literal xml:lang="en">space group symbol</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>structure:Species</AbbreviatedIRI>
+        <Literal xml:lang="en">A species is the combination of atoms on each site.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>structure:Species</AbbreviatedIRI>
+        <Literal xml:lang="en">Species</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>structure:X_axisCoordinate</AbbreviatedIRI>
+        <Literal xml:lang="en">X_axisCoordinate represents that a coordinate vector has the value of a coordinate in a double in X axis.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>structure:X_axisCoordinate</AbbreviatedIRI>
+        <Literal xml:lang="en">X_axis coordinate</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>structure:Y_axisCoordinate</AbbreviatedIRI>
+        <Literal xml:lang="en">Y_axisCoordinate represents that a coordinate vector has the value of a coordinate in a double in Y axis.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>structure:Y_axisCoordinate</AbbreviatedIRI>
+        <Literal xml:lang="en">Y_axis coordinate</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>structure:Z_axisCoordinate</AbbreviatedIRI>
+        <Literal xml:lang="en">Z_axisCoordinate represents that a coordinate vector has the value of a coordinate in a double in Z axis.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>structure:Z_axisCoordinate</AbbreviatedIRI>
+        <Literal xml:lang="en">Z_axis coordinate</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>structure:hasAngleVector</AbbreviatedIRI>
+        <Literal xml:lang="en">hasAngleVector represents the relationship between a basis or a lattice and an angle triple it has.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>structure:hasAngleVector</AbbreviatedIRI>
+        <Literal xml:lang="en">has angle vector</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>structure:hasAxisVectors</AbbreviatedIRI>
+        <Literal xml:lang="en">hasAxisVectors represents the relationship between a basis or a lattice and a axis-vectors it has.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>structure:hasAxisVectors</AbbreviatedIRI>
+        <Literal xml:lang="en">has axis vectors</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>structure:hasBasis</AbbreviatedIRI>
+        <Literal xml:lang="en">hasBasis represents the relationship between a structure and the bases it has.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>structure:hasBasis</AbbreviatedIRI>
+        <Literal xml:lang="en">has basis</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>structure:hasCartesianCoordinates</AbbreviatedIRI>
+        <Literal xml:lang="en">hasCartesianCoordinates represents the relationship between a site and coordinates in cartesian format it has.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>structure:hasCartesianCoordinates</AbbreviatedIRI>
+        <Literal xml:lang="en">has cartesian coordinates</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>structure:hasComposition</AbbreviatedIRI>
+        <Literal xml:lang="en">hasComposition represents the relationship between a structure and a a composition it has.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>structure:hasComposition</AbbreviatedIRI>
+        <Literal xml:lang="en">has composition</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>structure:hasElement</AbbreviatedIRI>
+        <Literal xml:lang="en">hasElement represents the relationship between a species and atoms it has.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>structure:hasElement</AbbreviatedIRI>
+        <Literal xml:lang="en">has element</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>structure:hasFractionalCoordinates</AbbreviatedIRI>
+        <Literal xml:lang="en">hasFractionalCoordinates represents the relationship between a site and coordinates in fractional format it has.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>structure:hasFractionalCoordinates</AbbreviatedIRI>
+        <Literal xml:lang="en">has fractional coordinates</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>structure:hasLattice</AbbreviatedIRI>
+        <Literal xml:lang="en">hasLattice represents the relationship between a structure and lattices in it has.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>structure:hasLattice</AbbreviatedIRI>
+        <Literal xml:lang="en">has lattice</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>structure:hasLengthVector</AbbreviatedIRI>
+        <Literal xml:lang="en">hasLengthVector represents the relationship between a basis or a lattice and a length triple it has.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>structure:hasLengthVector</AbbreviatedIRI>
+        <Literal xml:lang="en">has length vector</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>structure:hasOccupancy</AbbreviatedIRI>
+        <Literal xml:lang="en">hasOccupancy represents the relationship between a structure and occupancies it has.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>structure:hasOccupancy</AbbreviatedIRI>
+        <Literal xml:lang="en">has occupancy</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>structure:hasPointGroup</AbbreviatedIRI>
+        <Literal xml:lang="en">hasPointGroup represents the relationship between a space group and point groups it corresponds to.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>structure:hasPointGroup</AbbreviatedIRI>
+        <Literal xml:lang="en">has point group</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>structure:hasSite</AbbreviatedIRI>
+        <Literal xml:lang="en">hasSite represents the relationship between an occupancy and sites it ties.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>structure:hasSite</AbbreviatedIRI>
+        <Literal xml:lang="en">has site</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>structure:hasSpaceGroup</AbbreviatedIRI>
+        <Literal xml:lang="en">hasSpaceGroup represents the relationship between a structure and a space group it corresponds to.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>structure:hasSpaceGroup</AbbreviatedIRI>
+        <Literal xml:lang="en">has space group</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>structure:hasSpecies</AbbreviatedIRI>
+        <Literal xml:lang="en">hasSpecies represents the relationship between an occupancy and species it ties.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>structure:hasSpecies</AbbreviatedIRI>
+        <Literal xml:lang="en">has species</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>structure:has_a_axisVector</AbbreviatedIRI>
+        <Literal xml:lang="en">has_a_axisVector represents the relationship between an axis-vectors and a coordinate vector to define the coordiantes of the translation vector (a).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>structure:has_a_axisVector</AbbreviatedIRI>
+        <Literal xml:lang="en">has a_axis vector</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>structure:has_b_axisVector</AbbreviatedIRI>
+        <Literal xml:lang="en">has_b_axisVector represents the relationship between an axis-vectors and a coordinate vector to define the coordiantes of the translation vector (b).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>structure:has_b_axisVector</AbbreviatedIRI>
+        <Literal xml:lang="en">has b_axis vector</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>structure:has_c_axisVector</AbbreviatedIRI>
+        <Literal xml:lang="en">has_c_axisVector represents the relationship between an axis-vectors and a coordinate vector to define the coordiantes of the translation vector (c).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>structure:has_c_axisVector</AbbreviatedIRI>
+        <Literal xml:lang="en">has c_axis vector</Literal>
+    </AnnotationAssertion>
+</Ontology>
 
 
 

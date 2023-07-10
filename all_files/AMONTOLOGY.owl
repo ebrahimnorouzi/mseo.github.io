@@ -16,8 +16,7 @@
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
     <owl:Ontology rdf:about="http://www.semanticweb.org/ina3/ontologies/2016/2/untitled-ontology-122">
-        <owl:imports rdf:resource="http://siam.nist.gov/AM-Ontology-v2#"/>
-        <owl:imports rdf:resource="http://www.semanticweb.org/administrator/ontologies/2015/6/untitled-ontology-28"/>
+        <owl:imports rdf:resource="https://raw.githubusercontent.com/iassouroko/AMontology/master/AMOntology_v2.ttl"/>
     </owl:Ontology>
     
 

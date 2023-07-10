@@ -30,13 +30,28 @@ def add_metrics(df_metrics: pd.DataFrame, df_new_metrics: pd.DataFrame) -> pd.Da
     df_new_table = df_metrics.merge(df_new_metrics[selected_columns],how='left', on= "metric_code")
     return df_new_table
 
-df_tao_solo = load_metrics("all_files/BWMD-DOMAIN.xml","BWMD-DOMAIN")
+df_all = pd.read_csv("output2_mse.csv")
 df_metrics_table = pd.read_excel("metrics_labels.xlsx")
 df_metrics_table = df_metrics_table[["metric_name","metric_code","description","evaluation_criteria"]]
-df_metrics_table = add_metrics(df_metrics_table,df_tao_solo)
+evaluated_ontologies = []
+
+for index, row in df_all.iterrows():
+    url = df_all['mirror_from'][index]
+    filename = 'all_files/' + df_all['namespace'][index] + '.' + df_all['mirror_from'][index][-3:]
+    print(filename)
+    try:
+        df_ = load_metrics('all_files/' + df_all['namespace'][index] + '.xml', df_all['namespace'][index])
+
+        df_metrics_table = add_metrics(df_metrics_table, df_)
+        evaluated_ontologies.append(df_all['namespace'][index]) 
+    except:# KeyError as e:
+        #print(e)
+        continue
+
 df_metrics_table.drop(["metric_code"], axis=1, inplace=True)
 
 df_metrics_table.to_excel("validation_metrics_table.xls", index=False)
+
 
 from functools import partial
 def use_f_2(x, num_decimals):
@@ -52,17 +67,18 @@ def use_f_2(x, num_decimals):
 
 # the number of columns can be passed to this function
 use_f = lambda x: partial(use_f_2, num_decimals=x)
-df_base_metrics = df_metrics_table[0:7][['metric_name','BWMD-DOMAIN']]
+df_base_metrics = df_metrics_table[0:7][['metric_name'] + evaluated_ontologies]
 df_base_metrics.rename(columns={'metric_name':'metric name'}, inplace=True)
 caption = "Base metrics."
 label="tab:base-metrics"
 with pd.option_context("max_colwidth", 1000, "display.precision", 3):
     df_base_metrics.to_latex("base_metrics.tex",  multicolumn=True, header=True, index_names=False,
-              index=False, column_format='p{3.5cm}|p{1.2cm}p{1.2cm}p{1.2cm}', caption=caption, label=label)
+              index=False, column_format='p{3.5cm}|'+'l'*len(evaluated_ontologies), caption=caption, label=label)
 
 
-df_schema_and_graph_metrics = df_metrics_table[7:][['metric_name','evaluation_criteria','BWMD-DOMAIN']]
+df_schema_and_graph_metrics = df_metrics_table[7:][['metric_name','evaluation_criteria'] + evaluated_ontologies]
 df_schema_and_graph_metrics.rename(columns={'metric_name':'metric name', 'evaluation_criteria': 'evaluation criteria'}, inplace=True)
+
 
 #### Add number of external class metric
 ### Number of external classes is evalutated using Protegé 
@@ -95,13 +111,13 @@ new_row_s = pd.DataFrame(new_row, index=[0])
 pd.concat([df_schema_and_graph_metrics.loc[7:12],new_row_s,df_schema_and_graph_metrics.loc[13:17]]).reset_index(drop=True)
 
 '''
-df_schema_and_graph_metrics_no_description = df_schema_and_graph_metrics[["metric name","BWMD-DOMAIN"]]
+df_schema_and_graph_metrics_no_description = df_schema_and_graph_metrics[["metric name"] + evaluated_ontologies]
 caption = "Topology metrics."
 label="tab:topology-metrics"
 with pd.option_context("max_colwidth", 1000):
     df_schema_and_graph_metrics_no_description.to_latex("schema_and_graph_metrics.tex",  
         multicolumn=True, header=True, index_names=False,
-        index=False, column_format='p{2.5cm}|p{1cm}p{1cm}p{1cm}', 
+        index=False, column_format='p{2.5cm}|'+'l'*len(evaluated_ontologies), 
         caption=caption, label=label, 
         #formatters=[None, use_f(3)]#, use_f(3), use_f(3)]
         )
