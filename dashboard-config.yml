@@ -402,7 +402,7 @@ ontologies:
       tracker: https://github.com/iassouroko/AMontology/issues
       repository: https://github.com/iassouroko/AMontology
       preferredPrefix: AMONTOLOGY
-      mirror_from: http://openenergy-platform.org/ontology/oeo/releases/oeo.owl
+      mirror_from: https://raw.githubusercontent.com/iassouroko/AMontology/master/AMOntology_v3.owl
     - id: CHAMEO
       description: model the common aspects across the different characterisation methodologies
       homepage: https://github.com/emmo-repo/domain-characterisation-methodology
