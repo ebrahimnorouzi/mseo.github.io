@@ -23,8 +23,7 @@
         <https://tw.rpi.edu/instances/JamesMcCusker>,
         <https://tw.rpi.edu/instances/VipulaRawte> ;
     rdfs:comment "A nanomaterials ontology to support data publication using Nanomine." ;
-    owl:imports <http://purl.org/ontology/bibo/>,
-        <https://raw.githubusercontent.com/MaastrichtU-IDS/semanticscience/a691e98d8423457e69353ec6d5c120df20eded7a/ontology/sio/release/sio-subset-dash_labels.owl>,
+    owl:imports <https://raw.githubusercontent.com/MaastrichtU-IDS/semanticscience/a691e98d8423457e69353ec6d5c120df20eded7a/ontology/sio/release/sio-subset-dash_labels.owl>,
         <https://raw.githubusercontent.com/ebrahimnorouzi/mseo.github.io/master/Ontology_files/nschema.ttl> .
 
 nanomine:AC_DielectricConstant a owl:Class ;
