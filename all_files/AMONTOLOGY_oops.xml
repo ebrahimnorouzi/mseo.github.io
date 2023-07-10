@@ -1,0 +1,9 @@
+<rdf:RDF
+xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+xmlns:oops="http://www.oeg-upm.net/oops#" > 
+<rdf:Description rdf:about="http://www.oeg-upm.net/oops/unexpected_error">
+    <oops:hasTitle rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OOPS! something went wrong.</oops:hasTitle>
+    <oops:hasMessage rdf:datatype="http://www.w3.org/2001/XMLSchema#string">There was an unexpected error.</oops:hasMessage>
+    <rdf:type rdf:resource="http://www.oeg-upm.net/oops#response"/>
+</rdf:Description>
+</rdf:RDF>

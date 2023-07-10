@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<oops:OOPSResponse xmlns:oops="http://www.oeg-upm.net/oops">
+<oops:Pitfall>
+<oops:Code>P08</oops:Code><oops:Name>Missing annotations</oops:Name>
+<oops:Description>This pitfall consists in creating an ontology element and failing to provide human readable annotations attached to it. Consequently, ontology elements lack annotation properties that label them (e.g. rdfs:label, lemon:LexicalEntry, skos:prefLabel or skos:altLabel) or that define them (e.g. rdfs:comment or dc:description). This pitfall is related to the guidelines provided in [5].	</oops:Description>
+<oops:Importance>Minor</oops:Importance>
+<oops:NumberAffectedElements>19</oops:NumberAffectedElements>
+<oops:Affects>
+<oops:AffectedElement>http://www.daml.org/2003/01/periodictable/PeriodicTable#Element</oops:AffectedElement>
+<oops:AffectedElement>http://www.daml.org/2003/01/periodictable/PeriodicTable#Period</oops:AffectedElement>
+<oops:AffectedElement>http://www.daml.org/2003/01/periodictable/PeriodicTable#Group</oops:AffectedElement>
+<oops:AffectedElement>http://www.daml.org/2003/01/periodictable/PeriodicTable#Block</oops:AffectedElement>
+<oops:AffectedElement>http://www.daml.org/2003/01/periodictable/PeriodicTable#StandardState</oops:AffectedElement>
+<oops:AffectedElement>http://www.daml.org/2003/01/periodictable/PeriodicTable#Classification</oops:AffectedElement>
+<oops:AffectedElement>http://www.daml.org/2003/01/periodictable/PeriodicTable#standardState</oops:AffectedElement>
+<oops:AffectedElement>http://www.daml.org/2003/01/periodictable/PeriodicTable#period</oops:AffectedElement>
+<oops:AffectedElement>http://www.daml.org/2003/01/periodictable/PeriodicTable#group</oops:AffectedElement>
+<oops:AffectedElement>http://www.daml.org/2003/01/periodictable/PeriodicTable#element</oops:AffectedElement>
+<oops:AffectedElement>http://www.daml.org/2003/01/periodictable/PeriodicTable#classification</oops:AffectedElement>
+<oops:AffectedElement>http://www.daml.org/2003/01/periodictable/PeriodicTable#block</oops:AffectedElement>
+<oops:AffectedElement>http://www.daml.org/2003/01/periodictable/PeriodicTable#symbol</oops:AffectedElement>
+<oops:AffectedElement>http://www.daml.org/2003/01/periodictable/PeriodicTable#number</oops:AffectedElement>
+<oops:AffectedElement>http://www.daml.org/2003/01/periodictable/PeriodicTable#name</oops:AffectedElement>
+<oops:AffectedElement>http://www.daml.org/2003/01/periodictable/PeriodicTable#color</oops:AffectedElement>
+<oops:AffectedElement>http://www.daml.org/2003/01/periodictable/PeriodicTable#casRegistryID</oops:AffectedElement>
+<oops:AffectedElement>http://www.daml.org/2003/01/periodictable/PeriodicTable#atomicWeight</oops:AffectedElement>
+<oops:AffectedElement>http://www.daml.org/2003/01/periodictable/PeriodicTable#atomicNumber</oops:AffectedElement>
+</oops:Affects>
+</oops:Pitfall>
+<oops:Pitfall>
+<oops:Code>P10</oops:Code><oops:Name>Missing disjointness</oops:Name>
+<oops:Description>The ontology lacks disjoint axioms between classes or between properties that should be defined as disjoint. This pitfall is related with the guidelines provided in [6], [2] and [7].	</oops:Description>
+<oops:Importance>Important</oops:Importance>
+</oops:Pitfall>
+<oops:NumberAffectedElements>1</oops:NumberAffectedElements>
+<oops:Pitfall>
+<oops:Code>P11</oops:Code><oops:Name>Missing domain or range in properties</oops:Name>
+<oops:Description>Object and/or datatype properties without domain or range (or none of them) are included in the ontology. 	</oops:Description>
+<oops:Importance>Important</oops:Importance>
+<oops:NumberAffectedElements>13</oops:NumberAffectedElements>
+<oops:Affects>
+<oops:AffectedElement>http://www.daml.org/2003/01/periodictable/PeriodicTable#block</oops:AffectedElement>
+<oops:AffectedElement>http://www.daml.org/2003/01/periodictable/PeriodicTable#classification</oops:AffectedElement>
+<oops:AffectedElement>http://www.daml.org/2003/01/periodictable/PeriodicTable#element</oops:AffectedElement>
+<oops:AffectedElement>http://www.daml.org/2003/01/periodictable/PeriodicTable#group</oops:AffectedElement>
+<oops:AffectedElement>http://www.daml.org/2003/01/periodictable/PeriodicTable#period</oops:AffectedElement>
+<oops:AffectedElement>http://www.daml.org/2003/01/periodictable/PeriodicTable#standardState</oops:AffectedElement>
+<oops:AffectedElement>http://www.daml.org/2003/01/periodictable/PeriodicTable#atomicNumber</oops:AffectedElement>
+<oops:AffectedElement>http://www.daml.org/2003/01/periodictable/PeriodicTable#atomicWeight</oops:AffectedElement>
+<oops:AffectedElement>http://www.daml.org/2003/01/periodictable/PeriodicTable#casRegistryID</oops:AffectedElement>
+<oops:AffectedElement>http://www.daml.org/2003/01/periodictable/PeriodicTable#color</oops:AffectedElement>
+<oops:AffectedElement>http://www.daml.org/2003/01/periodictable/PeriodicTable#name</oops:AffectedElement>
+<oops:AffectedElement>http://www.daml.org/2003/01/periodictable/PeriodicTable#number</oops:AffectedElement>
+<oops:AffectedElement>http://www.daml.org/2003/01/periodictable/PeriodicTable#symbol</oops:AffectedElement>
+</oops:Affects>
+</oops:Pitfall>
+<oops:Pitfall>
+<oops:Code>P13</oops:Code><oops:Name>Inverse relationships not explicitly declared</oops:Name>
+<oops:Description>This pitfall appears when any relationship (except for those that are defined as symmetric properties using owl:SymmetricProperty) does not have an inverse relationship (owl:inverseOf) defined within the ontology.	</oops:Description>
+<oops:Importance>Minor</oops:Importance>
+<oops:NumberAffectedElements>6</oops:NumberAffectedElements>
+<oops:Affects>
+<oops:NoInverseSuggestion>
+<oops:AffectedElement>http://www.daml.org/2003/01/periodictable/PeriodicTable#standardState</oops:AffectedElement>
+<oops:AffectedElement>http://www.daml.org/2003/01/periodictable/PeriodicTable#period</oops:AffectedElement>
+<oops:AffectedElement>http://www.daml.org/2003/01/periodictable/PeriodicTable#group</oops:AffectedElement>
+<oops:AffectedElement>http://www.daml.org/2003/01/periodictable/PeriodicTable#element</oops:AffectedElement>
+<oops:AffectedElement>http://www.daml.org/2003/01/periodictable/PeriodicTable#classification</oops:AffectedElement>
+<oops:AffectedElement>http://www.daml.org/2003/01/periodictable/PeriodicTable#block</oops:AffectedElement>
+</oops:NoInverseSuggestion>
+</oops:Affects>
+</oops:Pitfall>
+</oops:OOPSResponse>
