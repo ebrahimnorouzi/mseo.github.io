@@ -1,5 +1,10 @@
 import xml.etree.ElementTree as ET
 import pandas as pd
+import pickle
+
+# Load the dictionary from the file
+with open("dic_external.pkl", "rb") as f:
+    dic_external = pickle.load(f)
 
 def extract_metric(tree_element):
     metric_family = tree_element.tag
@@ -32,7 +37,7 @@ def add_metrics(df_metrics: pd.DataFrame, df_new_metrics: pd.DataFrame) -> pd.Da
 
 df_all = pd.read_csv("output2_mse.csv")
 df_metrics_table = pd.read_excel("metrics_labels.xlsx")
-df_metrics_table = df_metrics_table[["metric_name","metric_code","description","evaluation_criteria"]]
+df_metrics_table = df_metrics_table[["metric_name","metric_code","ontometrics_name","evaluation_criteria"]]
 evaluated_ontologies = []
 
 for index, row in df_all.iterrows():
@@ -82,35 +87,45 @@ df_schema_and_graph_metrics.rename(columns={'metric_name':'metric name', 'evalua
 
 #### Add number of external class metric
 ### Number of external classes is evalutated using Protegé 
-#description = """The interpretation of NoC values depends on the number of classes in the ontology. For
-#example, if NoC is near the total number of internal classes a large fraction of the ontology depends on concepts defined in other places.
-#Thus the change in the external ontologies can influence the intended semantics to a great extent.
-#We report (i) the absolute NoC values and (ii) the ratios between NoC and the # of classes among parenthesis"""
-#new_row = {'metric name':'NoC', 'evaluation criteria':description,'tao':'19','hontology':'0','acco':'2'}
-#new_row_s = pd.DataFrame(new_row, index=[0])
+description = """The interpretation of NoC values depends on the number of classes in the ontology. For
+example, if NoC is near the total number of internal classes a large fraction of the ontology depends on concepts defined in other places.
+Thus the change in the external ontologies can influence the intended semantics to a great extent.
+We report (i) the absolute NoC values and (ii) the ratios between NoC and the # of classes among parenthesis"""
+dic_external['metric name'] = 'NoC'
+dic_external['evaluation criteria'] = description
+new_row_s = pd.DataFrame(dic_external, index=[0])
 
-#df_schema_and_graph_metrics = pd.concat([df_schema_and_graph_metrics.loc[7:12],new_row_s,df_schema_and_graph_metrics.loc[13:17]]).reset_index(drop=True)
-'''
+df_schema_and_graph_metrics = pd.concat([df_schema_and_graph_metrics.loc[7:12],new_row_s,df_schema_and_graph_metrics.loc[13:17]]).reset_index(drop=True)
+
+
 ### update NoR and NoL metrics with relative values inside parenthesis
-num_classes = [ int(v) for v in df_base_metrics.iloc[2:3, 1:4].values.flatten().tolist()]
-nor = [ int(v) for v in df_schema_and_graph_metrics.iloc[4:5,2:5].values.flatten().tolist()]
-nol = [ int(v) for v in df_schema_and_graph_metrics.iloc[5:6,2:5].values.flatten().tolist()]
-noc = [ int(v) for v in df_schema_and_graph_metrics.iloc[6:7,2:5].values.flatten().tolist()]
+num_classes = [ int(v) for v in df_base_metrics.iloc[2:3, 1:].values.flatten().tolist()]
+nor = [ int(v) for v in df_schema_and_graph_metrics.iloc[4:5,2:].values.flatten().tolist()]
+nol = [ int(v) for v in df_schema_and_graph_metrics.iloc[5:6,2:].values.flatten().tolist()]
+noc = [ int(v) for v in df_schema_and_graph_metrics.iloc[6:7,2:].values.flatten().tolist()]
+#print(df_base_metrics.iloc[2:3, 1:].values.flatten().tolist())
 for i,v in enumerate(num_classes):
-    new_nor = "%s (%1.2f)" % (nor[i],int(nor[i])/int(num_classes[i]))
-    df_schema_and_graph_metrics.iloc[4:5,2+i:3+i] = new_nor
-    new_nol = "%s (%1.2f)" % (nol[i],int(nol[i])/int(num_classes[i]))
-    df_schema_and_graph_metrics.iloc[5:6,2+i:3+i] = new_nol
-    new_noc = "%s (%1.2f)" % (noc[i],int(noc[i])/int(num_classes[i]))
-    df_schema_and_graph_metrics.iloc[6:7,2+i:3+i] = new_noc
+    if int(num_classes[i]) != 0:
+        new_nor = "%s (%1.2f)" % (nor[i],int(nor[i])/int(num_classes[i]))
+        df_schema_and_graph_metrics.iloc[4:5,2+i:3+i] = new_nor
+        new_nol = "%s (%1.2f)" % (nol[i],int(nol[i])/int(num_classes[i]))
+        df_schema_and_graph_metrics.iloc[5:6,2+i:3+i] = new_nol
+        new_noc = "%s (%1.2f)" % (noc[i],int(noc[i])/int(num_classes[i]))
+        df_schema_and_graph_metrics.iloc[6:7,2+i:3+i] = new_noc
+    else:
+        new_nor = "%s (-)" % (nor[i],)
+        df_schema_and_graph_metrics.iloc[4:5,2+i:3+i] = new_nor
+        new_nol = "%s (-)" % (nol[i],)
+        df_schema_and_graph_metrics.iloc[5:6,2+i:3+i] = new_nol
+        new_noc = "%s (-)" % (noc[i],)
+        df_schema_and_graph_metrics.iloc[6:7,2+i:3+i] = new_noc
 
 df_schema_and_graph_metrics
 
-new_row = {'metric name':'NoC', 'evaluation criteria':'Description','tao':'19','hontology':'0','acco':'2'}
-new_row_s = pd.DataFrame(new_row, index=[0])
+new_row_s = pd.DataFrame(dic_external, index=[0])
 pd.concat([df_schema_and_graph_metrics.loc[7:12],new_row_s,df_schema_and_graph_metrics.loc[13:17]]).reset_index(drop=True)
 
-'''
+
 df_schema_and_graph_metrics_no_description = df_schema_and_graph_metrics[["metric name"] + evaluated_ontologies]
 caption = "Topology metrics."
 label="tab:topology-metrics"
