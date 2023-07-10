@@ -1,0 +1,1080 @@
+<?xml version="1.0"?>
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:unitd="https://raw.githubusercontent.com/ebrahimnorouzi/mseo.github.io/master/Ontology_files/matinfo/OML-UnitDimension.owl#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns="https://raw.githubusercontent.com/ebrahimnorouzi/mseo.github.io/master/Ontology_files/matinfo/OML-Property.owl#"
+  xml:base="https://raw.githubusercontent.com/ebrahimnorouzi/mseo.github.io/master/Ontology_files/matinfo/OML-Property.owl">
+  <owl:Ontology rdf:about="">
+    <owl:imports rdf:resource="https://raw.githubusercontent.com/ebrahimnorouzi/mseo.github.io/master/Ontology_files/matinfo/OML-UnitDimension.owl"/>
+    <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    ></owl:versionInfo>
+  </owl:Ontology>
+  <owl:Class rdf:ID="VickersHardnessNumber">
+    <rdfs:subClassOf>
+      <owl:Class rdf:ID="Mechanical"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="OpticalConductivitySopt">
+    <rdfs:subClassOf>
+      <owl:Class rdf:ID="Optical"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="Permittivity">
+    <rdfs:subClassOf>
+      <owl:Class rdf:ID="StaticPermittivity"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="SoundVelocity">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#Mechanical"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="Structural">
+    <rdfs:subClassOf>
+      <owl:Class rdf:ID="Property"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="#Mechanical">
+    <rdfs:subClassOf rdf:resource="#Property"/>
+  </owl:Class>
+  <owl:Class rdf:ID="MolarMagneticSusceptibility">
+    <rdfs:subClassOf>
+      <owl:Class rdf:ID="Magnetic"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="C66">
+    <rdfs:subClassOf>
+      <owl:Class rdf:ID="ElasticStiffnessCoefficient"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="HeatCapacityDiscontinuity">
+    <rdfs:subClassOf>
+      <owl:Class rdf:ID="Thermal"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="MolarEntropy">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#Thermal"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="PressureDependenceOfPiezoresistivity">
+    <rdfs:subClassOf>
+      <owl:Class rdf:ID="ElectronicAndElectrical"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="PhysicalQuantity">
+    <rdfs:subClassOf rdf:resource="#Property"/>
+  </owl:Class>
+  <owl:Class rdf:ID="MolarEnthalpyChangeAtMeltingPoint">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#Thermal"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="ElectricStrengthOfDielectric">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#ElectronicAndElectrical"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="MeanValence">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#ElectronicAndElectrical"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="CoherenceLengthAt0K">
+    <rdfs:subClassOf>
+      <owl:Class rdf:ID="CoherenceLength"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="#Optical">
+    <rdfs:subClassOf rdf:resource="#Property"/>
+  </owl:Class>
+  <owl:Class rdf:ID="MolarElectronicHeatCapacityCoefficient">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#Thermal"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="SpontaneousMagneticMoment">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#Magnetic"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="HallCoefficient">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#ElectronicAndElectrical"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="ParamagneticCurieTemperature">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#Magnetic"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="PressuresForPhaseTransition">
+    <rdfs:subClassOf>
+      <owl:Class rdf:ID="PhaseTransition"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="DebyeTemperature">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#Thermal"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="Thickness">
+    <rdfs:subClassOf rdf:resource="#PhysicalQuantity"/>
+  </owl:Class>
+  <owl:Class rdf:about="#PhaseTransition">
+    <rdfs:subClassOf>
+      <owl:Class rdf:ID="Physical"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="ThermalConductance">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#Thermal"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="#ElectronicAndElectrical">
+    <rdfs:subClassOf rdf:resource="#Property"/>
+  </owl:Class>
+  <owl:Class rdf:about="#Physical">
+    <rdfs:subClassOf rdf:resource="#Property"/>
+  </owl:Class>
+  <owl:Class rdf:ID="MolarHeatCapacityAtConstantPressure">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#Thermal"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="Symbol">
+    <rdfs:subClassOf>
+      <owl:Class rdf:ID="Equation"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="Nuclear">
+    <rdfs:subClassOf rdf:resource="#Property"/>
+  </owl:Class>
+  <owl:Class rdf:ID="LongitudinalElasticCoefficient">
+    <rdfs:subClassOf rdf:resource="#Mechanical"/>
+  </owl:Class>
+  <owl:Class rdf:ID="MolarEnthalpy">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#Thermal"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="LinearThermalExpansionCoefficient_D">
+    <rdfs:subClassOf>
+      <owl:Class rdf:ID="ThermalExpansionCoefficient_D"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="MolarGibbsEnergyOfFormation">
+    <rdfs:subClassOf>
+      <owl:Class rdf:ID="MolarGibbsEnergy"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="MolarEntropyChangeAtPhaseTransition">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#Thermal"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="PoissonRatio">
+    <rdfs:subClassOf rdf:resource="#Mechanical"/>
+  </owl:Class>
+  <owl:Class rdf:ID="C55">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#ElasticStiffnessCoefficient"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="AdiabaticBulkModulusDiscontinuityAtNeelTemperature">
+    <rdfs:subClassOf>
+      <owl:Class rdf:ID="BulkModulus"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="Chemical">
+    <rdfs:subClassOf rdf:resource="#Property"/>
+  </owl:Class>
+  <owl:Class rdf:ID="Time">
+    <rdfs:subClassOf rdf:resource="#PhysicalQuantity"/>
+  </owl:Class>
+  <owl:Class rdf:ID="C33">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#ElasticStiffnessCoefficient"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="PhaseTransitionAtLowTemperature">
+    <rdfs:subClassOf>
+      <owl:Class rdf:ID="TemperaturesForPhaseTransition"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="PhaseTransitionAtHighTemperature">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#TemperaturesForPhaseTransition"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="EffectiveMassOfElectronsInConductionBand">
+    <rdfs:subClassOf rdf:resource="#ElectronicAndElectrical"/>
+  </owl:Class>
+  <owl:Class rdf:ID="C13">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#ElasticStiffnessCoefficient"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="KnoopHardnessNumber">
+    <rdfs:subClassOf rdf:resource="#Mechanical"/>
+  </owl:Class>
+  <owl:Class rdf:ID="EffectiveMassOfHolesInValenceBand">
+    <rdfs:subClassOf rdf:resource="#ElectronicAndElectrical"/>
+  </owl:Class>
+  <owl:Class rdf:ID="C11-C12">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#ElasticStiffnessCoefficient"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="SuperconductingTransitionTemperature">
+    <rdfs:subClassOf>
+      <owl:Class rdf:ID="Superconducting"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="UpperCriticalMagneticFieldStrength">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#Superconducting"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="EffectiveBohrMagnetonNumber">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#Magnetic"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="EnergyGap">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#Superconducting"/>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf rdf:resource="#ElectronicAndElectrical"/>
+  </owl:Class>
+  <owl:Class rdf:about="#Thermal">
+    <rdfs:subClassOf rdf:resource="#Property"/>
+  </owl:Class>
+  <owl:Class rdf:ID="TemperatureDerivativeOfAdiabaticBulkModulus">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#BulkModulus"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="Reflectivity">
+    <rdfs:subClassOf rdf:resource="#Optical"/>
+  </owl:Class>
+  <owl:Class rdf:ID="Temperature-IndependentPartOfMagneticSusceptibility">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#Magnetic"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="ElectronDensityOfStatesAtFermiLevelPerSpin">
+    <rdfs:subClassOf rdf:resource="#ElectronicAndElectrical"/>
+  </owl:Class>
+  <owl:Class rdf:about="#StaticPermittivity">
+    <rdfs:subClassOf rdf:resource="#Optical"/>
+  </owl:Class>
+  <owl:Class rdf:ID="CriticalTemperatureForMagneticTransition">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#Magnetic"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="MagneticFluxDensity">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#Magnetic"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="ThermoelectricPower">
+    <rdfs:subClassOf rdf:resource="#Thermal"/>
+  </owl:Class>
+  <owl:Class rdf:ID="TemperatureDerivativeOfEnergyGap">
+    <rdfs:subClassOf rdf:resource="#ElectronicAndElectrical"/>
+  </owl:Class>
+  <owl:Class rdf:ID="ThermalEnergyGap">
+    <rdfs:subClassOf rdf:resource="#ElectronicAndElectrical"/>
+  </owl:Class>
+  <owl:Class rdf:ID="ThermalExpansionCoefficient">
+    <rdfs:subClassOf rdf:resource="#Thermal"/>
+  </owl:Class>
+  <owl:Class rdf:ID="HallMobility">
+    <rdfs:subClassOf rdf:resource="#ElectronicAndElectrical"/>
+  </owl:Class>
+  <owl:Class rdf:ID="ImaginaryPartOfPermittivity">
+    <rdfs:subClassOf rdf:resource="#Optical"/>
+  </owl:Class>
+  <owl:Class rdf:ID="ActivationEnergy">
+    <rdfs:subClassOf rdf:resource="#ElectronicAndElectrical"/>
+  </owl:Class>
+  <owl:Class rdf:ID="HeatCapacityDiscontinuityAtPhaseTransition">
+    <rdfs:subClassOf rdf:resource="#HeatCapacityDiscontinuity"/>
+  </owl:Class>
+  <owl:Class rdf:about="#ElasticStiffnessCoefficient">
+    <rdfs:subClassOf rdf:resource="#Mechanical"/>
+  </owl:Class>
+  <owl:Class rdf:ID="MassMagneticSusceptibility">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#Magnetic"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="C14">
+    <rdfs:subClassOf rdf:resource="#ElasticStiffnessCoefficient"/>
+  </owl:Class>
+  <owl:Class rdf:ID="VolumeThermalExpansionCoefficient_D">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#ThermalExpansionCoefficient_D"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="LinearThermalExpansionCoefficient">
+    <rdfs:subClassOf rdf:resource="#ThermalExpansionCoefficient"/>
+  </owl:Class>
+  <owl:Class rdf:ID="CriticalMagneticFieldStrength">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#Superconducting"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="ElectronMobility">
+    <rdfs:subClassOf rdf:resource="#ElectronicAndElectrical"/>
+  </owl:Class>
+  <owl:Class rdf:ID="StressDependenceOfTransitionTemperature">
+    <rdfs:subClassOf rdf:resource="#PhaseTransition"/>
+  </owl:Class>
+  <owl:Class rdf:about="#Magnetic">
+    <rdfs:subClassOf rdf:resource="#Property"/>
+  </owl:Class>
+  <owl:Class rdf:ID="ThermalConductivity">
+    <rdfs:subClassOf rdf:resource="#Thermal"/>
+  </owl:Class>
+  <owl:Class rdf:ID="HoleConcentration">
+    <rdfs:subClassOf rdf:resource="#ElectronicAndElectrical"/>
+  </owl:Class>
+  <owl:Class rdf:ID="SpontaneousMagnetization">
+    <rdfs:subClassOf rdf:resource="#SpontaneousMagneticMoment"/>
+  </owl:Class>
+  <owl:Class rdf:ID="Density">
+    <rdfs:subClassOf rdf:resource="#Structural"/>
+  </owl:Class>
+  <owl:Class rdf:ID="LongitudinalSoundVelocity">
+    <rdfs:subClassOf rdf:resource="#SoundVelocity"/>
+  </owl:Class>
+  <owl:Class rdf:ID="PhaseTransitionAtLowPressure">
+    <rdfs:subClassOf rdf:resource="#PressuresForPhaseTransition"/>
+  </owl:Class>
+  <owl:Class rdf:ID="TransverseSoundVelocity">
+    <rdfs:subClassOf rdf:resource="#SoundVelocity"/>
+  </owl:Class>
+  <owl:Class rdf:ID="InitialSlopeOfBc2AtTc">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#Superconducting"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="RefractiveIndex">
+    <rdfs:subClassOf rdf:resource="#Optical"/>
+  </owl:Class>
+  <owl:Class rdf:ID="ShearModulus">
+    <rdfs:subClassOf rdf:resource="#Mechanical"/>
+  </owl:Class>
+  <owl:Class rdf:ID="Microhardness">
+    <rdfs:subClassOf rdf:resource="#Mechanical"/>
+  </owl:Class>
+  <owl:Class rdf:ID="C11">
+    <rdfs:subClassOf rdf:resource="#ElasticStiffnessCoefficient"/>
+  </owl:Class>
+  <owl:Class rdf:ID="ElectricalResistivity">
+    <rdfs:subClassOf rdf:resource="#ElectronicAndElectrical"/>
+  </owl:Class>
+  <owl:Class rdf:ID="VolumeMagnetization">
+    <rdfs:subClassOf rdf:resource="#Magnetic"/>
+  </owl:Class>
+  <owl:Class rdf:ID="CriticalMagneticFieldStrengthAt0K">
+    <rdfs:subClassOf rdf:resource="#CriticalMagneticFieldStrength"/>
+  </owl:Class>
+  <owl:Class rdf:ID="EnergyGapForDirectTransition">
+    <rdfs:subClassOf rdf:resource="#EnergyGap"/>
+  </owl:Class>
+  <owl:Class rdf:ID="ElectricalConductivity">
+    <rdfs:subClassOf rdf:resource="#ElectronicAndElectrical"/>
+  </owl:Class>
+  <owl:Class rdf:ID="AdiabaticBulkModulus">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#BulkModulus"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="LinearCompressibility">
+    <rdfs:subClassOf rdf:resource="#Mechanical"/>
+  </owl:Class>
+  <owl:Class rdf:ID="VolumeCompressibility">
+    <rdfs:subClassOf rdf:resource="#Mechanical"/>
+  </owl:Class>
+  <owl:Class rdf:ID="MolarEntropyOfFormation">
+    <rdfs:subClassOf rdf:resource="#Thermal"/>
+  </owl:Class>
+  <owl:Class rdf:ID="LowerCriticalMagneticFieldStrength">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#Superconducting"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="High-FrequencyPermittivity">
+    <rdfs:subClassOf rdf:resource="#StaticPermittivity"/>
+  </owl:Class>
+  <owl:Class rdf:ID="EffectiveCharge">
+    <rdfs:subClassOf rdf:resource="#ElectronicAndElectrical"/>
+  </owl:Class>
+  <owl:Class rdf:ID="PhaseTransitionAtHighPressure">
+    <rdfs:subClassOf rdf:resource="#PressuresForPhaseTransition"/>
+  </owl:Class>
+  <owl:Class rdf:ID="MagneticMoment">
+    <rdfs:subClassOf rdf:resource="#Magnetic"/>
+  </owl:Class>
+  <owl:Class rdf:ID="MolarEnthalpyChangeAtPhaseTransition">
+    <rdfs:subClassOf rdf:resource="#Thermal"/>
+  </owl:Class>
+  <owl:Class rdf:ID="TemperatureDerivativeOfEnergyGapForDirectTransition">
+    <rdfs:subClassOf rdf:resource="#TemperatureDerivativeOfEnergyGap"/>
+  </owl:Class>
+  <owl:Class rdf:about="#TemperaturesForPhaseTransition">
+    <rdfs:subClassOf rdf:resource="#PhaseTransition"/>
+  </owl:Class>
+  <owl:Class rdf:ID="C12">
+    <rdfs:subClassOf rdf:resource="#ElasticStiffnessCoefficient"/>
+  </owl:Class>
+  <owl:Class rdf:ID="ElectronDensityOfStatesAtFermiLevel">
+    <rdfs:subClassOf rdf:resource="#ElectronicAndElectrical"/>
+  </owl:Class>
+  <owl:Class rdf:ID="C22">
+    <rdfs:subClassOf rdf:resource="#ElasticStiffnessCoefficient"/>
+  </owl:Class>
+  <owl:Class rdf:ID="YoungsModulus">
+    <rdfs:subClassOf rdf:resource="#Mechanical"/>
+  </owl:Class>
+  <owl:Class rdf:ID="VolumeThermalExpansionCoefficient">
+    <rdfs:subClassOf rdf:resource="#ThermalExpansionCoefficient"/>
+  </owl:Class>
+  <owl:Class rdf:ID="ElectronConcentration">
+    <rdfs:subClassOf rdf:resource="#ElectronicAndElectrical"/>
+  </owl:Class>
+  <owl:Class rdf:ID="SpecificHeatCapacityAtConstantPressure">
+    <rdfs:subClassOf rdf:resource="#Thermal"/>
+  </owl:Class>
+  <owl:Class rdf:ID="NeelTemperature">
+    <rdfs:subClassOf rdf:resource="#Magnetic"/>
+  </owl:Class>
+  <owl:Class rdf:ID="LondonPenetrationDepth">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#Superconducting"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="Electron-PhononInteractionParameter">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#Superconducting"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="#ThermalExpansionCoefficient_D">
+    <rdfs:subClassOf rdf:resource="#Thermal"/>
+  </owl:Class>
+  <owl:Class rdf:ID="LowestTemperatureForNormalConductivity">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#Superconducting"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="CurieTemperature">
+    <rdfs:subClassOf rdf:resource="#Magnetic"/>
+  </owl:Class>
+  <owl:Class rdf:ID="C23">
+    <rdfs:subClassOf rdf:resource="#ElasticStiffnessCoefficient"/>
+  </owl:Class>
+  <owl:Class rdf:ID="Pressure">
+    <rdfs:subClassOf rdf:resource="#PhysicalQuantity"/>
+  </owl:Class>
+  <owl:Class rdf:about="#Superconducting">
+    <rdfs:subClassOf rdf:resource="#Property"/>
+  </owl:Class>
+  <owl:Class rdf:ID="MeltingTemperature">
+    <rdfs:subClassOf rdf:resource="#PhaseTransition"/>
+  </owl:Class>
+  <owl:Class rdf:ID="MolarEnthalpyOfFormation">
+    <rdfs:subClassOf rdf:resource="#MolarEnthalpy"/>
+  </owl:Class>
+  <owl:Class rdf:ID="C44">
+    <rdfs:subClassOf rdf:resource="#ElasticStiffnessCoefficient"/>
+  </owl:Class>
+  <owl:Class rdf:ID="CriticalFieldForMagneticTransition">
+    <rdfs:subClassOf rdf:resource="#Magnetic"/>
+  </owl:Class>
+  <owl:Class rdf:ID="HoleMobility">
+    <rdfs:subClassOf rdf:resource="#ElectronicAndElectrical"/>
+  </owl:Class>
+  <owl:Class rdf:ID="MagneticAnisotropyField">
+    <rdfs:subClassOf rdf:resource="#Magnetic"/>
+  </owl:Class>
+  <owl:Class rdf:ID="Temperature">
+    <rdfs:subClassOf rdf:resource="#PhysicalQuantity"/>
+  </owl:Class>
+  <owl:Class rdf:about="#MolarGibbsEnergy">
+    <rdfs:subClassOf rdf:resource="#Thermal"/>
+  </owl:Class>
+  <owl:Class rdf:ID="PeritecticTemperature">
+    <rdfs:subClassOf rdf:resource="#PhaseTransition"/>
+  </owl:Class>
+  <owl:Class rdf:ID="PressureForPhaseTransition">
+    <rdfs:subClassOf rdf:resource="#PressuresForPhaseTransition"/>
+  </owl:Class>
+  <owl:Class rdf:ID="Creep">
+    <rdfs:subClassOf rdf:resource="#Mechanical"/>
+  </owl:Class>
+  <owl:Class rdf:ID="UpperCriticalMagneticFieldStrengthAt0K">
+    <rdfs:subClassOf rdf:resource="#UpperCriticalMagneticFieldStrength"/>
+  </owl:Class>
+  <owl:Class rdf:about="#CoherenceLength">
+    <rdfs:subClassOf rdf:resource="#Superconducting"/>
+  </owl:Class>
+  <owl:Class rdf:ID="IsothermalVolumeCompressibility">
+    <rdfs:subClassOf rdf:resource="#VolumeCompressibility"/>
+  </owl:Class>
+  <owl:Class rdf:ID="SlopeOfTcAt0GPa">
+    <rdfs:subClassOf rdf:resource="#Superconducting"/>
+  </owl:Class>
+  <owl:Class rdf:about="#BulkModulus">
+    <rdfs:subClassOf rdf:resource="#Mechanical"/>
+  </owl:Class>
+  <owl:Class rdf:ID="OpticalAbsorptionCoefficient">
+    <rdfs:subClassOf rdf:resource="#Optical"/>
+  </owl:Class>
+  <owl:Class rdf:ID="MolarEntropyChangeAtMeltingPoint">
+    <rdfs:subClassOf rdf:resource="#Thermal"/>
+  </owl:Class>
+  <owl:Class rdf:ID="EnergyGapForIndirectTransition">
+    <rdfs:subClassOf rdf:resource="#EnergyGap"/>
+  </owl:Class>
+  <owl:Class rdf:ID="SaturationMagneticMoment">
+    <rdfs:subClassOf rdf:resource="#Magnetic"/>
+  </owl:Class>
+  <owl:Class rdf:ID="SaturationVolumeMagnetization">
+    <rdfs:subClassOf rdf:resource="#Magnetic"/>
+  </owl:Class>
+  <owl:ObjectProperty rdf:ID="PropertyName">
+    <rdfs:range rdf:resource="#Property"/>
+    <rdfs:domain rdf:resource="#Symbol"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:ID="TimeToReachTotalStrain0.5">
+    <rdfs:domain rdf:resource="#Creep"/>
+    <rdfs:range rdf:resource="#Time"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:ID="UnitSystem">
+    <rdfs:domain rdf:resource="#Property"/>
+    <rdfs:range rdf:resource="https://raw.githubusercontent.com/ebrahimnorouzi/mseo.github.io/master/Ontology_files/matinfo/OML-UnitDimension.owl#UnitSystem"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:ID="TestTemperature">
+    <rdfs:range rdf:resource="#Temperature"/>
+    <rdfs:domain rdf:resource="#Creep"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:ID="UnitDimension">
+    <rdfs:range rdf:resource="https://raw.githubusercontent.com/ebrahimnorouzi/mseo.github.io/master/Ontology_files/matinfo/OML-UnitDimension.owl#UnitDimension"/>
+    <rdfs:domain rdf:resource="#Property"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:ID="TimeToReachTotalStrain5.0">
+    <rdfs:range rdf:resource="#Time"/>
+    <rdfs:domain rdf:resource="#Creep"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:ID="TimeToSecondaryCreep">
+    <rdfs:domain rdf:resource="#Creep"/>
+    <rdfs:range rdf:resource="#Time"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:ID="TimeToReachTotalStrain2.0">
+    <rdfs:domain rdf:resource="#Creep"/>
+    <rdfs:range rdf:resource="#Time"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:ID="TimeToReachTotalStrain1.0">
+    <rdfs:domain rdf:resource="#Creep"/>
+    <rdfs:range rdf:resource="#Time"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:ID="TimeToTertiaryCreep">
+    <rdfs:domain rdf:resource="#Creep"/>
+    <rdfs:range rdf:resource="#Time"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:ID="CreepTime">
+    <rdfs:range rdf:resource="#Time"/>
+    <rdfs:domain rdf:resource="#Creep"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:ID="TimeToRupture">
+    <rdfs:range rdf:resource="#Time"/>
+    <rdfs:domain rdf:resource="#Creep"/>
+  </owl:ObjectProperty>
+  <owl:DatatypeProperty rdf:ID="StrainAtOnsetOfTertiaryCteep">
+    <rdfs:domain rdf:resource="#Creep"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:ID="Strain">
+    <rdfs:domain rdf:resource="#Creep"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:ID="ReductionOfArea">
+    <rdfs:domain rdf:resource="#Creep"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:ID="Eq">
+    <rdfs:domain rdf:resource="#Equation"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:ID="Value">
+    <rdfs:domain rdf:resource="#Property"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:ID="CreepCurve">
+    <rdfs:domain rdf:resource="#Creep"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:ID="StrainRate">
+    <rdfs:domain rdf:resource="#Creep"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:ID="MaximalValue">
+    <rdfs:domain rdf:resource="#Property"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:ID="CreepTestResuls">
+    <rdfs:domain rdf:resource="#Creep"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:ID="MinimumValue">
+    <rdfs:domain rdf:resource="#Property"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:ID="MinimumCreepRate">
+    <rdfs:domain rdf:resource="#Creep"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:ID="Elongation">
+    <rdfs:domain rdf:resource="#Creep"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:ID="InstantaneousStrain">
+    <rdfs:domain rdf:resource="#Creep"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:ID="Notation">
+    <rdfs:domain rdf:resource="#Symbol"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:ID="AppliedStress">
+    <rdfs:domain rdf:resource="#Creep"/>
+  </owl:DatatypeProperty>
+  <SpontaneousMagnetization rdf:ID="spontaneous_magnetization">
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >A / m</rdfs:comment>
+    <UnitSystem rdf:resource="https://raw.githubusercontent.com/ebrahimnorouzi/mseo.github.io/master/Ontology_files/matinfo/NEDO-UnitDimensions.owl#magnetic_field_strength"/>
+  </SpontaneousMagnetization>
+  <HallCoefficient rdf:ID="hall_coefficient">
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >m3 / C</rdfs:comment>
+  </HallCoefficient>
+  <C22 rdf:ID="c22">
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Pa</rdfs:comment>
+  </C22>
+  <MassMagneticSusceptibility rdf:ID="mass_magnetic_susceptibility">
+    <UnitSystem rdf:resource="https://raw.githubusercontent.com/ebrahimnorouzi/mseo.github.io/master/Ontology_files/matinfo/NEDO-UnitDimensions.owl#specific_volume"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >m3 / kg</rdfs:comment>
+  </MassMagneticSusceptibility>
+  <ThermalEnergyGap rdf:ID="thermal_energy_gap"/>
+  <DebyeTemperature rdf:ID="debye_temperature">
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >K</rdfs:comment>
+  </DebyeTemperature>
+  <PhaseTransitionAtLowPressure rdf:ID="phase_transition_at_low_pressure">
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Pa</rdfs:comment>
+  </PhaseTransitionAtLowPressure>
+  <MolarGibbsEnergyOfFormation rdf:ID="molar_gibbs_energy_of_formation">
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >J / mol</rdfs:comment>
+  </MolarGibbsEnergyOfFormation>
+  <C11-C12 rdf:ID="c11-c12">
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Pa</rdfs:comment>
+  </C11-C12>
+  <MeltingTemperature rdf:ID="melting_temperature">
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >K</rdfs:comment>
+    <UnitSystem rdf:resource="https://raw.githubusercontent.com/ebrahimnorouzi/mseo.github.io/master/Ontology_files/matinfo/NEDO-UnitDimensions.owl#thermodynamic_temperature"/>
+  </MeltingTemperature>
+  <C23 rdf:ID="c23">
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Pa</rdfs:comment>
+  </C23>
+  <LinearThermalExpansionCoefficient rdf:ID="linear_thermal_expansion_coefficient">
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >1 / K</rdfs:comment>
+  </LinearThermalExpansionCoefficient>
+  <IsothermalVolumeCompressibility rdf:ID="isothermal_volume_compressibility">
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >1 / Pa</rdfs:comment>
+  </IsothermalVolumeCompressibility>
+  <PressureDependenceOfPiezoresistivity rdf:ID="pressure_dependence_of_piezoresistivity">
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >1 / GPa</rdfs:comment>
+  </PressureDependenceOfPiezoresistivity>
+  <HeatCapacityDiscontinuity rdf:ID="heat_capacity_discontinuity">
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >J / K mol</rdfs:comment>
+  </HeatCapacityDiscontinuity>
+  <MolarEnthalpyChangeAtPhaseTransition rdf:ID="molar_enthalpy_change_at_phase_transition">
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >J / mol</rdfs:comment>
+  </MolarEnthalpyChangeAtPhaseTransition>
+  <MolarElectronicHeatCapacityCoefficient rdf:ID="molar_electronic_heat_capacity_coefficient">
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >J / K2 mol</rdfs:comment>
+  </MolarElectronicHeatCapacityCoefficient>
+  <TemperatureDerivativeOfEnergyGap rdf:ID="temperature_derivative_of_energy_gap"/>
+  <C44 rdf:ID="c44">
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Pa</rdfs:comment>
+  </C44>
+  <MeanValence rdf:ID="mean_valence"/>
+  <ElectricStrengthOfDielectric rdf:ID="electric_strength_of_dielectric">
+    <UnitSystem rdf:resource="https://raw.githubusercontent.com/ebrahimnorouzi/mseo.github.io/master/Ontology_files/matinfo/NEDO-UnitDimensions.owl#electric_field_strength"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >V / m</rdfs:comment>
+  </ElectricStrengthOfDielectric>
+  <RefractiveIndex rdf:ID="refractive_index"/>
+  <MolarEnthalpyChangeAtMeltingPoint rdf:ID="molar_enthalpy_change_at_melting_point">
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >J / mol</rdfs:comment>
+  </MolarEnthalpyChangeAtMeltingPoint>
+  <TemperaturesForPhaseTransition rdf:ID="temperatures_for_phase_transition">
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >K</rdfs:comment>
+    <UnitSystem rdf:resource="https://raw.githubusercontent.com/ebrahimnorouzi/mseo.github.io/master/Ontology_files/matinfo/NEDO-UnitDimensions.owl#thermodynamic_temperature"/>
+  </TemperaturesForPhaseTransition>
+  <SuperconductingTransitionTemperature rdf:ID="superconducting_transition_temperature">
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >K</rdfs:comment>
+  </SuperconductingTransitionTemperature>
+  <AdiabaticBulkModulus rdf:ID="adiabatic_bulkModulus">
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Pa</rdfs:comment>
+  </AdiabaticBulkModulus>
+  <C14 rdf:ID="c14">
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Pa</rdfs:comment>
+  </C14>
+  <LongitudinalSoundVelocity rdf:ID="longitudinal_sound_velocity">
+    <UnitSystem rdf:resource="https://raw.githubusercontent.com/ebrahimnorouzi/mseo.github.io/master/Ontology_files/matinfo/NEDO-UnitDimensions.owl#speed"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >m / s</rdfs:comment>
+  </LongitudinalSoundVelocity>
+  <MolarGibbsEnergy rdf:ID="molar_gibbs_energy">
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >J / mol</rdfs:comment>
+  </MolarGibbsEnergy>
+  <EffectiveMassOfElectronsInConductionBand rdf:ID="effective_mass_of_electronsIn_conduction_band"/>
+  <MolarEnthalpyOfFormation rdf:ID="molar_enthalpy_of_formation">
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >J / mol</rdfs:comment>
+  </MolarEnthalpyOfFormation>
+  <LondonPenetrationDepth rdf:ID="london_penetration_depth">
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >m</rdfs:comment>
+  </LondonPenetrationDepth>
+  <C55 rdf:ID="c55">
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Pa</rdfs:comment>
+  </C55>
+  <LowestTemperatureForNormalConductivity rdf:ID="lowest_temperature_for_normal_conductivity">
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >K</rdfs:comment>
+  </LowestTemperatureForNormalConductivity>
+  <UpperCriticalMagneticFieldStrength rdf:ID="upper_critical_magnetic_field_strength">
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >T</rdfs:comment>
+  </UpperCriticalMagneticFieldStrength>
+  <PhaseTransitionAtLowTemperature rdf:ID="phase_transition_at_low_temperature">
+    <UnitSystem rdf:resource="https://raw.githubusercontent.com/ebrahimnorouzi/mseo.github.io/master/Ontology_files/matinfo/NEDO-UnitDimensions.owl#thermodynamic_temperature"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >K</rdfs:comment>
+  </PhaseTransitionAtLowTemperature>
+  <VolumeThermalExpansionCoefficient rdf:ID="volume_thermal_expansion_coefficient">
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >1 / K</rdfs:comment>
+  </VolumeThermalExpansionCoefficient>
+  <LowerCriticalMagneticFieldStrength rdf:ID="lower_critical_magnetic_field_strength">
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >T</rdfs:comment>
+  </LowerCriticalMagneticFieldStrength>
+  <ThermalExpansionCoefficient_D rdf:ID="thermal_expansion_coefficient_D">
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >1 / K</rdfs:comment>
+  </ThermalExpansionCoefficient_D>
+  <ThermalConductivity rdf:ID="thermal_conductivity">
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >W / m K</rdfs:comment>
+  </ThermalConductivity>
+  <EnergyGap rdf:ID="energy_gap"/>
+  <HoleMobility rdf:ID="hole_mobility">
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >m2 / V s</rdfs:comment>
+  </HoleMobility>
+  <MolarEnthalpy rdf:ID="molar_enthalpy">
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >J / mol</rdfs:comment>
+  </MolarEnthalpy>
+  <StressDependenceOfTransitionTemperature rdf:ID="stress_dependence_of_transition_temperature">
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >K / Pa</rdfs:comment>
+  </StressDependenceOfTransitionTemperature>
+  <MolarEntropyOfFormation rdf:ID="molar_entropy_of_formation">
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >J / K mol</rdfs:comment>
+  </MolarEntropyOfFormation>
+  <HoleConcentration rdf:ID="hole_concentration">
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >1 / m3</rdfs:comment>
+  </HoleConcentration>
+  <High-FrequencyPermittivity rdf:ID="high-frequency_permittivity"/>
+  <C33 rdf:ID="c33"/>
+  <MolarMagneticSusceptibility rdf:ID="molar_magnetic_susceptibility">
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >m3 / mol</rdfs:comment>
+  </MolarMagneticSusceptibility>
+  <OpticalAbsorptionCoefficient rdf:ID="optical_absorption_coefficient">
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >1 / m</rdfs:comment>
+    <UnitSystem rdf:resource="https://raw.githubusercontent.com/ebrahimnorouzi/mseo.github.io/master/Ontology_files/matinfo/NEDO-UnitDimensions.owl#wave_number"/>
+  </OpticalAbsorptionCoefficient>
+  <PhaseTransitionAtHighTemperature rdf:ID="phase_transition_at_high_temperature">
+    <UnitSystem rdf:resource="https://raw.githubusercontent.com/ebrahimnorouzi/mseo.github.io/master/Ontology_files/matinfo/NEDO-UnitDimensions.owl#thermodynamic_temperature"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >K</rdfs:comment>
+  </PhaseTransitionAtHighTemperature>
+  <MagneticAnisotropyField rdf:ID="magnetic_anisotropy_field">
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >T</rdfs:comment>
+    <UnitSystem rdf:resource="https://raw.githubusercontent.com/ebrahimnorouzi/mseo.github.io/master/Ontology_files/matinfo/NEDO-UnitDimensions.owl#magnetic_flux_density"/>
+  </MagneticAnisotropyField>
+  <CoherenceLength rdf:ID="coherence_length">
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >m</rdfs:comment>
+  </CoherenceLength>
+  <ElasticStiffnessCoefficient rdf:ID="elastic_stiffness_coefficient">
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Pa</rdfs:comment>
+  </ElasticStiffnessCoefficient>
+  <YoungsModulus rdf:ID="youngs_modulus">
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Pa</rdfs:comment>
+  </YoungsModulus>
+  <PressureForPhaseTransition rdf:ID="pressure_for_phase_transition">
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Pa</rdfs:comment>
+  </PressureForPhaseTransition>
+  <VolumeThermalExpansionCoefficient_D rdf:ID="volume_thermal_expansion_coefficient_D">
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >1 / K</rdfs:comment>
+  </VolumeThermalExpansionCoefficient_D>
+  <SoundVelocity rdf:ID="sound_velocity">
+    <UnitSystem rdf:resource="https://raw.githubusercontent.com/ebrahimnorouzi/mseo.github.io/master/Ontology_files/matinfo/NEDO-UnitDimensions.owl#speed"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >m / s</rdfs:comment>
+  </SoundVelocity>
+  <CriticalTemperatureForMagneticTransition rdf:ID="critical_temperature_for_magnetic_transition">
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >K</rdfs:comment>
+    <UnitSystem rdf:resource="https://raw.githubusercontent.com/ebrahimnorouzi/mseo.github.io/master/Ontology_files/matinfo/NEDO-UnitDimensions.owl#thermodynamic_temperature"/>
+  </CriticalTemperatureForMagneticTransition>
+  <ThermoelectricPower rdf:ID="thermoelectric_power">
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >V / K</rdfs:comment>
+  </ThermoelectricPower>
+  <PeritecticTemperature rdf:ID="peritectic_temperature">
+    <UnitSystem rdf:resource="https://raw.githubusercontent.com/ebrahimnorouzi/mseo.github.io/master/Ontology_files/matinfo/NEDO-UnitDimensions.owl#thermodynamic_temperature"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >K</rdfs:comment>
+  </PeritecticTemperature>
+  <VolumeCompressibility rdf:ID="volume_compressibility">
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >1 / Pa</rdfs:comment>
+  </VolumeCompressibility>
+  <SaturationMagneticMoment rdf:ID="saturation_magnetic_moment"/>
+  <TransverseSoundVelocity rdf:ID="transverse_sound_velocity">
+    <UnitSystem rdf:resource="https://raw.githubusercontent.com/ebrahimnorouzi/mseo.github.io/master/Ontology_files/matinfo/NEDO-UnitDimensions.owl#speed"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >m / s</rdfs:comment>
+  </TransverseSoundVelocity>
+  <LinearThermalExpansionCoefficient_D rdf:ID="linear_thermal_expansion_coefficient_D">
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >1 / K</rdfs:comment>
+  </LinearThermalExpansionCoefficient_D>
+  <SpontaneousMagneticMoment rdf:ID="spontaneous_magnetic_moment"/>
+  <ThermalExpansionCoefficient rdf:ID="thermal_expansion_coefficient">
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >1 / K</rdfs:comment>
+  </ThermalExpansionCoefficient>
+  <SlopeOfTcAt0GPa rdf:ID="slope_of_Tc_at0_GPa">
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >K  / Pa</rdfs:comment>
+  </SlopeOfTcAt0GPa>
+  <UpperCriticalMagneticFieldStrengthAt0K rdf:ID="upper_critical_magnetic_field_strength_at_0K">
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >T</rdfs:comment>
+  </UpperCriticalMagneticFieldStrengthAt0K>
+  <VolumeMagnetization rdf:ID="volume_magnetization">
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >A / m</rdfs:comment>
+    <UnitSystem rdf:resource="https://raw.githubusercontent.com/ebrahimnorouzi/mseo.github.io/master/Ontology_files/matinfo/NEDO-UnitDimensions.owl#magnetic_field_strength"/>
+  </VolumeMagnetization>
+  <ImaginaryPartOfPermittivity rdf:ID="imaginary_part_of_permittivity"/>
+  <ShearModulus rdf:ID="shear_modulus">
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Pa</rdfs:comment>
+  </ShearModulus>
+  <Reflectivity rdf:ID="reflectivity"/>
+  <MolarHeatCapacityAtConstantPressure rdf:ID="molar_heat_capacity_at_constant_pressure">
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >J / K mol</rdfs:comment>
+  </MolarHeatCapacityAtConstantPressure>
+  <CriticalMagneticFieldStrengthAt0K rdf:ID="critical_magnetic_field_strength_at_0K">
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >T</rdfs:comment>
+  </CriticalMagneticFieldStrengthAt0K>
+  <ElectricalConductivity rdf:ID="electrical_conductivity">
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >1 / W m</rdfs:comment>
+  </ElectricalConductivity>
+  <Electron-PhononInteractionParameter rdf:ID="electron-phononInteraction_parameter"/>
+  <EffectiveBohrMagnetonNumber rdf:ID="effective_bohr_magneton_number">
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    ></rdfs:comment>
+  </EffectiveBohrMagnetonNumber>
+  <ElectricalResistivity rdf:ID="electrical_resistivity">
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >W m</rdfs:comment>
+  </ElectricalResistivity>
+  <NeelTemperature rdf:ID="neel_temperature">
+    <UnitSystem rdf:resource="https://raw.githubusercontent.com/ebrahimnorouzi/mseo.github.io/master/Ontology_files/matinfo/NEDO-UnitDimensions.owl#thermodynamic_temperature"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >K</rdfs:comment>
+  </NeelTemperature>
+  <BulkModulus rdf:ID="bulk_modulus">
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Pa</rdfs:comment>
+  </BulkModulus>
+  <LongitudinalElasticCoefficient rdf:ID="longitudinal_elastic_coefficient">
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Pa</rdfs:comment>
+  </LongitudinalElasticCoefficient>
+  <TemperatureDerivativeOfEnergyGapForDirectTransition rdf:ID="temperature_derivative_of_energy_gap_for_direct_transition"/>
+  <OpticalConductivitySopt rdf:ID="optical_conductivity_sopt">
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >1 / W m</rdfs:comment>
+  </OpticalConductivitySopt>
+  <ActivationEnergy rdf:ID="activation_energy"/>
+  <MagneticMoment rdf:ID="magnetic_moment">
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    ></rdfs:comment>
+  </MagneticMoment>
+  <CriticalFieldForMagneticTransition rdf:ID="critical_field_for_magnetic_transition">
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >A / m</rdfs:comment>
+    <UnitSystem rdf:resource="https://raw.githubusercontent.com/ebrahimnorouzi/mseo.github.io/master/Ontology_files/matinfo/NEDO-UnitDimensions.owl#magnetic_field_strength"/>
+  </CriticalFieldForMagneticTransition>
+  <HallMobility rdf:ID="hall_mobility"/>
+  <PhaseTransitionAtHighPressure rdf:ID="phase_transition_at_high_pressure">
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Pa</rdfs:comment>
+  </PhaseTransitionAtHighPressure>
+  <StaticPermittivity rdf:ID="static_permittivity"/>
+  <ElectronDensityOfStatesAtFermiLevel rdf:ID="electron_density_of_states_at_fermi_level">
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    ></rdfs:comment>
+  </ElectronDensityOfStatesAtFermiLevel>
+  <CoherenceLengthAt0K rdf:ID="coherence_length_at_0K">
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >m</rdfs:comment>
+  </CoherenceLengthAt0K>
+  <EnergyGapForDirectTransition rdf:ID="energy_gap_for_direct_transition"/>
+  <EnergyGapForIndirectTransition rdf:ID="energy_gap_for_indirect_transition"/>
+  <MolarEntropyChangeAtPhaseTransition rdf:ID="molar_entropy_change_at_phase_transition">
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >J / K mol</rdfs:comment>
+  </MolarEntropyChangeAtPhaseTransition>
+  <Temperature-IndependentPartOfMagneticSusceptibility rdf:ID="temperature-independent_part_of_magnetic_susceptibility">
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >m3 / mol</rdfs:comment>
+  </Temperature-IndependentPartOfMagneticSusceptibility>
+  <C13 rdf:ID="c13">
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Pa</rdfs:comment>
+  </C13>
+  <CriticalMagneticFieldStrength rdf:ID="critical_magnetic_field_strength">
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >T</rdfs:comment>
+  </CriticalMagneticFieldStrength>
+  <LinearCompressibility rdf:ID="linear_compressibility">
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >1 / Pa</rdfs:comment>
+  </LinearCompressibility>
+  <HeatCapacityDiscontinuityAtPhaseTransition rdf:ID="heat_capacity_discontinuity_at_phase_transition">
+    <UnitSystem rdf:resource="https://raw.githubusercontent.com/ebrahimnorouzi/mseo.github.io/master/Ontology_files/matinfo/NEDO-UnitDimensions.owl#heat_capacity"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >J / K mol</rdfs:comment>
+  </HeatCapacityDiscontinuityAtPhaseTransition>
+  <InitialSlopeOfBc2AtTc rdf:ID="initial_slope_of_Bc2_at_Tc">
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >T / K</rdfs:comment>
+  </InitialSlopeOfBc2AtTc>
+  <EffectiveCharge rdf:ID="effective_charge"/>
+  <ElectronMobility rdf:ID="electron_mobility">
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >m2 / V s</rdfs:comment>
+  </ElectronMobility>
+  <C12 rdf:ID="c12">
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Pa</rdfs:comment>
+  </C12>
+  <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#Thing">
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    ></rdfs:comment>
+  </rdf:Description>
+  <CurieTemperature rdf:ID="curie_temperature">
+    <UnitSystem rdf:resource="https://raw.githubusercontent.com/ebrahimnorouzi/mseo.github.io/master/Ontology_files/matinfo/NEDO-UnitDimensions.owl#thermodynamic_temperature"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >K</rdfs:comment>
+  </CurieTemperature>
+  <ElectronConcentration rdf:ID="electron_concentration">
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >1 / m3</rdfs:comment>
+  </ElectronConcentration>
+  <EffectiveMassOfHolesInValenceBand rdf:ID="effective_mass_of_holes_in_valence_band"/>
+  <PressuresForPhaseTransition rdf:ID="pressures_for_phase_transition">
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Pa</rdfs:comment>
+  </PressuresForPhaseTransition>
+  <C11 rdf:ID="c11">
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Pa</rdfs:comment>
+  </C11>
+  <Permittivity rdf:ID="permittivity"/>
+  <C66 rdf:ID="c66">
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Pa</rdfs:comment>
+  </C66>
+  <AdiabaticBulkModulusDiscontinuityAtNeelTemperature rdf:ID="adiabatic_bulk_modulus_discontinuity_at_neel_temperature">
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Pa</rdfs:comment>
+  </AdiabaticBulkModulusDiscontinuityAtNeelTemperature>
+  <SaturationVolumeMagnetization rdf:ID="saturation_volume_magnetization">
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >A / m</rdfs:comment>
+    <UnitSystem rdf:resource="https://raw.githubusercontent.com/ebrahimnorouzi/mseo.github.io/master/Ontology_files/matinfo/NEDO-UnitDimensions.owl#magnetic_field_strength"/>
+  </SaturationVolumeMagnetization>
+  <ElectronDensityOfStatesAtFermiLevelPerSpin rdf:ID="electron_density_of_states_at_fermi_level_per_spin"/>
+  <ParamagneticCurieTemperature rdf:ID="paramagnetic_curie_temperature">
+    <UnitSystem rdf:resource="https://raw.githubusercontent.com/ebrahimnorouzi/mseo.github.io/master/Ontology_files/matinfo/NEDO-UnitDimensions.owl#thermodynamic_temperature"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >K</rdfs:comment>
+  </ParamagneticCurieTemperature>
+  <MolarEntropyChangeAtMeltingPoint rdf:ID="molar_entropy_change_at_melting_point">
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >J / K mol</rdfs:comment>
+  </MolarEntropyChangeAtMeltingPoint>
+  <TemperatureDerivativeOfAdiabaticBulkModulus rdf:ID="temperature_derivative_of_adiabatic_bulk_modulus">
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Pa</rdfs:comment>
+  </TemperatureDerivativeOfAdiabaticBulkModulus>
+  <MolarEntropy rdf:ID="molar_entropy">
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >J / K mol</rdfs:comment>
+  </MolarEntropy>
+  <Density rdf:ID="density">
+    <UnitSystem rdf:resource="https://raw.githubusercontent.com/ebrahimnorouzi/mseo.github.io/master/Ontology_files/matinfo/NEDO-UnitDimensions.owl#linear_mass_density"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >kg / m3</rdfs:comment>
+  </Density>
+</rdf:RDF>
+
+<!-- Created with Protege (with OWL Plugin 3.2.1, Build 365)  http://protege.stanford.edu -->

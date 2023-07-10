@@ -1,0 +1,167 @@
+metric,metric_value,metric_type
+abox_axiom_count,1710,single_value
+abox_axiom_count_incl,1710,single_value
+abox_nominals,false,single_value
+abox_nominals_incl,false,single_value
+annotation_property_count,3,single_value
+annotation_property_count_incl,3,single_value
+assert_n_subclass_avg,0.0,single_value
+assert_n_subclass_avg_incl,0.0,single_value
+assert_n_superclass_avg,1.0,single_value
+assert_n_superclass_avg_incl,1.0,single_value
+ax_complexrhs_count,25,single_value
+ax_complexrhs_count_incl,25,single_value
+axiom_count,1756,single_value
+axiom_count_incl,1756,single_value
+axiom_length_max,5,single_value
+axiom_length_max_incl,5,single_value
+axiom_type_count,AnnotationAssertion 2,map_value
+axiom_type_count,ClassAssertion 156,map_value
+axiom_type_count,DataPropertyAssertion 731,map_value
+axiom_type_count,Declaration 19,map_value
+axiom_type_count,EquivalentClasses 3,map_value
+axiom_type_count,ObjectPropertyAssertion 823,map_value
+axiom_type_count,SubClassOf 22,map_value
+axiom_type_count_incl,AnnotationAssertion 2,map_value
+axiom_type_count_incl,ClassAssertion 156,map_value
+axiom_type_count_incl,DataPropertyAssertion 731,map_value
+axiom_type_count_incl,Declaration 19,map_value
+axiom_type_count_incl,EquivalentClasses 3,map_value
+axiom_type_count_incl,ObjectPropertyAssertion 823,map_value
+axiom_type_count_incl,SubClassOf 22,map_value
+axiom_types,AnnotationAssertion,list_value
+axiom_types,ClassAssertion,list_value
+axiom_types,DataPropertyAssertion,list_value
+axiom_types,Declaration,list_value
+axiom_types,EquivalentClasses,list_value
+axiom_types,ObjectPropertyAssertion,list_value
+axiom_types,SubClassOf,list_value
+axiom_types_incl,AnnotationAssertion,list_value
+axiom_types_incl,ClassAssertion,list_value
+axiom_types_incl,DataPropertyAssertion,list_value
+axiom_types_incl,Declaration,list_value
+axiom_types_incl,EquivalentClasses,list_value
+axiom_types_incl,ObjectPropertyAssertion,list_value
+axiom_types_incl,SubClassOf,list_value
+certain_cycle,true,single_value
+certain_cycle_incl,true,single_value
+class_count,7,single_value
+class_count_incl,7,single_value
+class_expression_count,Class 197,map_value
+class_expression_count,DataAllValuesFrom 8,map_value
+class_expression_count,DataExactCardinality 4,map_value
+class_expression_count,ObjectAllValuesFrom 7,map_value
+class_expression_count,ObjectExactCardinality 3,map_value
+class_expression_count,ObjectOneOf 3,map_value
+class_expression_count_incl,Class 197,map_value
+class_expression_count_incl,DataAllValuesFrom 8,map_value
+class_expression_count_incl,DataExactCardinality 4,map_value
+class_expression_count_incl,ObjectAllValuesFrom 7,map_value
+class_expression_count_incl,ObjectExactCardinality 3,map_value
+class_expression_count_incl,ObjectOneOf 3,map_value
+class_sgl_subcl_count,0,single_value
+class_sgl_subcl_count_incl,0,single_value
+constructs,AL,list_value
+constructs,D,list_value
+constructs,N,list_value
+constructs,O,list_value
+constructs,U,list_value
+constructs_incl,AL,list_value
+constructs_incl,D,list_value
+constructs_incl,N,list_value
+constructs_incl,O,list_value
+constructs_incl,U,list_value
+curie_map,owl http://www.w3.org/2002/07/owl#,map_value
+curie_map,rdf http://www.w3.org/1999/02/22-rdf-syntax-ns#,map_value
+curie_map,rdfs http://www.w3.org/2000/01/rdf-schema#,map_value
+curie_map,xsd http://www.w3.org/2001/XMLSchema#,map_value
+dataproperty_count,7,single_value
+dataproperty_count_incl,7,single_value
+datatypes_axiom_count,RDFS_LITERAL 4,map_value
+datatypes_axiom_count,XSD_FLOAT 114,map_value
+datatypes_axiom_count,XSD_INTEGER 146,map_value
+datatypes_axiom_count,XSD_STRING 479,map_value
+datatypes_axiom_count_incl,RDFS_LITERAL 4,map_value
+datatypes_axiom_count_incl,XSD_FLOAT 114,map_value
+datatypes_axiom_count_incl,XSD_INTEGER 146,map_value
+datatypes_axiom_count_incl,XSD_STRING 479,map_value
+datatypes_builtin,RDFS_LITERAL,list_value
+datatypes_builtin,RDF_PLAIN_LITERAL,list_value
+datatypes_builtin,XSD_FLOAT,list_value
+datatypes_builtin,XSD_INTEGER,list_value
+datatypes_builtin,XSD_STRING,list_value
+datatypes_builtin_incl,RDFS_LITERAL,list_value
+datatypes_builtin_incl,RDF_PLAIN_LITERAL,list_value
+datatypes_builtin_incl,XSD_FLOAT,list_value
+datatypes_builtin_incl,XSD_INTEGER,list_value
+datatypes_builtin_incl,XSD_STRING,list_value
+datatypes_count,5,single_value
+datatypes_count_incl,5,single_value
+dt_builtin_count,5,single_value
+dt_builtin_count_incl,5,single_value
+dt_notbuiltin_count,0,single_value
+dt_notbuiltin_count_incl,0,single_value
+expressivity,ALUON(D),single_value
+expressivity_incl,ALUON(D),single_value
+gci_count,0,single_value
+gci_count_incl,0,single_value
+gci_hidden_count,0,single_value
+gci_hidden_count_incl,0,single_value
+individual_count,156,single_value
+individual_count_incl,156,single_value
+instance_per_class_avg,22.285714285714285,single_value
+instance_per_class_avg_incl,22.285714285714285,single_value
+logical_axiom_count,1735,single_value
+logical_axiom_count_incl,1735,single_value
+most_freq_concept,http://www.daml.org/2003/01/periodictable/PeriodicTable#Classification,single_value
+most_freq_concept_incl,http://www.daml.org/2003/01/periodictable/PeriodicTable#Classification,single_value
+multiple_inheritance_count,0,single_value
+multiple_inheritance_count_incl,0,single_value
+named_supercl_count_max,1,single_value
+named_supercl_count_max_incl,1,single_value
+namespace_axiom_count,owl 3,map_value
+namespace_axiom_count,prefix_unknown 4327,map_value
+namespace_axiom_count,rdfs 6,map_value
+namespace_axiom_count,xsd 739,map_value
+namespace_axiom_count_incl,owl 3,map_value
+namespace_axiom_count_incl,prefix_unknown 4327,map_value
+namespace_axiom_count_incl,rdfs 6,map_value
+namespace_axiom_count_incl,xsd 739,map_value
+namespace_entity_count,owl 2,map_value
+namespace_entity_count,prefix_unknown 175,map_value
+namespace_entity_count,rdf 1,map_value
+namespace_entity_count,rdfs 3,map_value
+namespace_entity_count,xsd 3,map_value
+namespace_entity_count_incl,owl 2,map_value
+namespace_entity_count_incl,prefix_unknown 175,map_value
+namespace_entity_count_incl,rdf 1,map_value
+namespace_entity_count_incl,rdfs 3,map_value
+namespace_entity_count_incl,xsd 3,map_value
+obj_property_count,6,single_value
+obj_property_count_incl,6,single_value
+ontology_anno_count,2,single_value
+ontology_iri,http://www.daml.org/2003/01/periodictable/PeriodicTable,single_value
+ontology_version_iri,no.iri,single_value
+owl2,true,single_value
+owl2_dl,true,single_value
+owl2_el,false,single_value
+owl2_ql,false,single_value
+owl2_rl,false,single_value
+rbox_axiom_count,0,single_value
+rbox_axiom_count_incl,0,single_value
+rdfs,false,single_value
+rule_count,0,single_value
+rule_count_incl,0,single_value
+signature_entity_count,184,single_value
+signature_entity_count_incl,184,single_value
+syntax,RDF/XML Syntax,single_value
+tautology_count,0,single_value
+tautology_count_incl,0,single_value
+tbox_axiom_count,25,single_value
+tbox_axiom_count_incl,25,single_value
+tbox_nominals,true,single_value
+tbox_nominals_incl,true,single_value
+tboxrbox_axiom_count,25,single_value
+tboxrbox_axiom_count_incl,25,single_value
+undecl_entity_count,165,single_value
+undecl_entity_count_incl,165,single_value

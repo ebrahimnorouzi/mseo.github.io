@@ -1,0 +1,313 @@
+<?xml version="1.0"?>
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns="https://raw.githubusercontent.com/ebrahimnorouzi/mseo.github.io/master/Ontology_files/matinfo/OML-Process.owl#"
+    xmlns:protege="http://protege.stanford.edu/plugins/owl/protege#"
+    xmlns:substance="https://raw.githubusercontent.com/ebrahimnorouzi/mseo.github.io/master/Ontology_files/matinfo/OML-Substance.owl#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+    xmlns:environment="https://raw.githubusercontent.com/ebrahimnorouzi/mseo.github.io/master/Ontology_files/matinfo/OML-Environment.owl#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:property="https://raw.githubusercontent.com/ebrahimnorouzi/mseo.github.io/master/Ontology_files/matinfo/OML-Property.owl#"
+  xml:base="https://raw.githubusercontent.com/ebrahimnorouzi/mseo.github.io/master/Ontology_files/matinfo/OML-Process.owl">
+  <owl:Ontology rdf:about="">
+    <owl:imports rdf:resource="https://raw.githubusercontent.com/ebrahimnorouzi/mseo.github.io/master/Ontology_files/matinfo/OML-Substance.owl"/>
+    <owl:imports rdf:resource="https://raw.githubusercontent.com/ebrahimnorouzi/mseo.github.io/master/Ontology_files/matinfo/OML-Environment.owl"/>
+    <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    ></owl:versionInfo>
+  </owl:Ontology>
+  <owl:Class rdf:ID="HeatTreatment"/>
+  <owl:Class rdf:ID="Welding">
+    <rdfs:subClassOf>
+      <owl:Class rdf:ID="ManufacturingProcess"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="IngotFormProcess">
+    <rdfs:subClassOf rdf:resource="#ManufacturingProcess"/>
+  </owl:Class>
+  <owl:Class rdf:ID="MeasurementMethod"/>
+  <owl:Class rdf:ID="CarburizingAndNitrizing">
+    <rdfs:subClassOf rdf:resource="#ManufacturingProcess"/>
+  </owl:Class>
+  <owl:ObjectProperty rdf:ID="EndingTemperature">
+    <rdfs:range rdf:resource="https://raw.githubusercontent.com/ebrahimnorouzi/mseo.github.io/master/Ontology_files/matinfo/OML-Property.owl#Temperature"/>
+    <rdfs:domain rdf:resource="#HeatTreatment"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:ID="RawMaterial">
+    <rdfs:domain rdf:resource="#ManufacturingProcess"/>
+    <rdfs:range rdf:resource="https://raw.githubusercontent.com/ebrahimnorouzi/mseo.github.io/master/Ontology_files/matinfo/OML-Substance.owl#Atom"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:ID="Environment">
+    <rdfs:domain>
+      <owl:Class>
+        <owl:unionOf rdf:parseType="Collection">
+          <owl:Class rdf:about="#MeasurementMethod"/>
+          <owl:Class rdf:about="#ManufacturingProcess"/>
+        </owl:unionOf>
+      </owl:Class>
+    </rdfs:domain>
+    <rdfs:range rdf:resource="https://raw.githubusercontent.com/ebrahimnorouzi/mseo.github.io/master/Ontology_files/matinfo/OML-Environment.owl#Environment"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:ID="Pre-HeatingTemperature">
+    <rdfs:range rdf:resource="https://raw.githubusercontent.com/ebrahimnorouzi/mseo.github.io/master/Ontology_files/matinfo/OML-Property.owl#Temperature"/>
+    <rdfs:domain rdf:resource="#Welding"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:ID="HoldingTime">
+    <rdfs:domain rdf:resource="#HeatTreatment"/>
+    <rdfs:range rdf:resource="https://raw.githubusercontent.com/ebrahimnorouzi/mseo.github.io/master/Ontology_files/matinfo/OML-Property.owl#Time"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:ID="ProcessingTemperature">
+    <rdfs:range rdf:resource="https://raw.githubusercontent.com/ebrahimnorouzi/mseo.github.io/master/Ontology_files/matinfo/OML-Property.owl#Temperature"/>
+    <rdfs:domain rdf:resource="#HeatTreatment"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:ID="HeatTreatmentProcess">
+    <rdfs:range rdf:resource="#HeatTreatment"/>
+    <rdfs:domain rdf:resource="#CarburizingAndNitrizing"/>
+  </owl:ObjectProperty>
+  <owl:DatatypeProperty rdf:ID="GrooveGeometry">
+    <rdfs:domain rdf:resource="#Welding"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:ID="TypeOfCastingAndSize">
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >mm</rdfs:comment>
+    <rdfs:domain rdf:resource="#IngotFormProcess"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:ID="Normination">
+    <rdfs:domain rdf:resource="#CarburizingAndNitrizing"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:ID="Dimension_Depth">
+    <rdfs:domain rdf:resource="#Welding"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:ID="Dimension_Width">
+    <rdfs:domain rdf:resource="#Welding"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:ID="RefiningProcess">
+    <rdfs:domain rdf:resource="#IngotFormProcess"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:ID="JointShape">
+    <rdfs:domain rdf:resource="#Welding"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:ID="TypeOfHeatTreatment">
+    <rdfs:domain rdf:resource="#HeatTreatment"/>
+    <rdfs:range>
+      <owl:DataRange>
+        <owl:oneOf rdf:parseType="Resource">
+          <rdf:rest rdf:parseType="Resource">
+            <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+            >Temper</rdf:first>
+            <rdf:rest rdf:parseType="Resource">
+              <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+              >Quench</rdf:first>
+              <rdf:rest rdf:parseType="Resource">
+                <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+                >Solution</rdf:first>
+                <rdf:rest rdf:parseType="Resource">
+                  <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+                  >StressRelease</rdf:first>
+                  <rdf:rest rdf:parseType="Resource">
+                    <rdf:rest rdf:parseType="Resource">
+                      <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+                      >GrainBoundaryPrecipitation</rdf:first>
+                      <rdf:rest rdf:parseType="Resource">
+                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                        <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+                        >others</rdf:first>
+                      </rdf:rest>
+                    </rdf:rest>
+                    <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+                    >Anneal</rdf:first>
+                  </rdf:rest>
+                </rdf:rest>
+              </rdf:rest>
+            </rdf:rest>
+          </rdf:rest>
+          <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+          >Normalize</rdf:first>
+        </owl:oneOf>
+      </owl:DataRange>
+    </rdfs:range>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:ID="CoolingRate">
+    <rdfs:domain rdf:resource="#HeatTreatment"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:ID="Atmosphere">
+    <rdfs:domain>
+      <owl:Class>
+        <owl:unionOf rdf:parseType="Collection">
+          <owl:Class rdf:about="#HeatTreatment"/>
+          <owl:Class rdf:about="#Welding"/>
+        </owl:unionOf>
+      </owl:Class>
+    </rdfs:domain>
+    <rdfs:range>
+      <owl:DataRange>
+        <owl:oneOf rdf:parseType="Resource">
+          <rdf:rest rdf:parseType="Resource">
+            <rdf:rest rdf:parseType="Resource">
+              <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+              >Argon</rdf:first>
+              <rdf:rest rdf:parseType="Resource">
+                <rdf:rest rdf:parseType="Resource">
+                  <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+                  >Hydrogen</rdf:first>
+                  <rdf:rest rdf:parseType="Resource">
+                    <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+                    >Others</rdf:first>
+                    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                  </rdf:rest>
+                </rdf:rest>
+                <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+                >Nitrogen</rdf:first>
+              </rdf:rest>
+            </rdf:rest>
+            <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+            >Vacuum</rdf:first>
+          </rdf:rest>
+          <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+          >Air</rdf:first>
+        </owl:oneOf>
+      </owl:DataRange>
+    </rdfs:range>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:ID="CoolingMethod">
+    <rdfs:domain>
+      <owl:Class>
+        <owl:unionOf rdf:parseType="Collection">
+          <owl:Class rdf:about="#HeatTreatment"/>
+          <owl:Class rdf:about="#Welding"/>
+        </owl:unionOf>
+      </owl:Class>
+    </rdfs:domain>
+    <rdfs:range>
+      <owl:DataRange>
+        <owl:oneOf rdf:parseType="Resource">
+          <rdf:rest rdf:parseType="Resource">
+            <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+            >AirCooling</rdf:first>
+            <rdf:rest rdf:parseType="Resource">
+              <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+              >OilQuench</rdf:first>
+              <rdf:rest rdf:parseType="Resource">
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+                >WaterQuench</rdf:first>
+              </rdf:rest>
+            </rdf:rest>
+          </rdf:rest>
+          <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+          >FurnaceCooling</rdf:first>
+        </owl:oneOf>
+      </owl:DataRange>
+    </rdfs:range>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:ID="FurnaceCapacity">
+    <rdfs:domain rdf:resource="#IngotFormProcess"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >t</rdfs:comment>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:ID="ProcessingAndThermalHistory">
+    <rdfs:domain rdf:resource="#IngotFormProcess"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:ID="ProcessImage">
+    <rdfs:domain rdf:resource="#HeatTreatment"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:ID="WeldingRod">
+    <rdfs:domain rdf:resource="#Welding"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:ID="Thickness">
+    <rdfs:domain rdf:resource="#IngotFormProcess"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >mm</rdfs:comment>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:ID="WeldingMethod">
+    <rdfs:domain rdf:resource="#Welding"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:ID="NumberOfPath">
+    <rdfs:domain rdf:resource="#HeatTreatment"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:ID="WorkingRate">
+    <rdfs:domain rdf:resource="#HeatTreatment"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:ID="DeoxidationProcess">
+    <rdfs:domain rdf:resource="#IngotFormProcess"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:ID="ReductionRatio">
+    <rdfs:domain rdf:resource="#IngotFormProcess"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:ID="MeltedWeight">
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >kg</rdfs:comment>
+    <rdfs:domain rdf:resource="#IngotFormProcess"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:ID="MethodOfManufacture">
+    <rdfs:domain rdf:resource="#IngotFormProcess"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:ID="IngotSize">
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >kg</rdfs:comment>
+    <rdfs:domain rdf:resource="#IngotFormProcess"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:ID="LayerMethod">
+    <rdfs:range>
+      <owl:DataRange>
+        <owl:oneOf rdf:parseType="Resource">
+          <rdf:rest rdf:parseType="Resource">
+            <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+            >T-joint</rdf:first>
+            <rdf:rest rdf:parseType="Resource">
+              <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+              >C-joint</rdf:first>
+              <rdf:rest rdf:parseType="Resource">
+                <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+                >L-joint</rdf:first>
+                <rdf:rest rdf:parseType="Resource">
+                  <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                  <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+                  >Others</rdf:first>
+                </rdf:rest>
+              </rdf:rest>
+            </rdf:rest>
+          </rdf:rest>
+          <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+          >ButtJoint</rdf:first>
+        </owl:oneOf>
+      </owl:DataRange>
+    </rdfs:range>
+    <rdfs:domain rdf:resource="#Welding"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:ID="ProducedCondition">
+    <rdfs:domain rdf:resource="#ManufacturingProcess"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:ID="ProductFormAndSize">
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >mm</rdfs:comment>
+    <rdfs:domain rdf:resource="#IngotFormProcess"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:ID="TypeOfMeasurement">
+    <rdfs:domain rdf:resource="#MeasurementMethod"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:ID="TypeOfManufacturing">
+    <rdfs:domain rdf:resource="#ManufacturingProcess"/>
+  </owl:DatatypeProperty>
+  <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#Thing">
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    ></rdfs:comment>
+  </rdf:Description>
+  <owl:DataRange>
+    <owl:oneOf rdf:parseType="Resource">
+      <rdf:rest rdf:parseType="Resource">
+        <rdf:rest rdf:parseType="Resource">
+          <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+          <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+          >composition%</rdf:first>
+        </rdf:rest>
+        <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >wt%</rdf:first>
+      </rdf:rest>
+      <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+      >at%</rdf:first>
+    </owl:oneOf>
+  </owl:DataRange>
+</rdf:RDF>
+
+<!-- Created with Protege (with OWL Plugin 3.2.1, Build 365)  http://protege.stanford.edu -->

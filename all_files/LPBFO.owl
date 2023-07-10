@@ -1,0 +1,1741 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="https://www.emi.fraunhofer.de/ontologies/LPBFO#"
+     xml:base="https://www.emi.fraunhofer.de/ontologies/LPBFO"
+     xmlns:graph_designer="https://www.materials.fraunhofer.de/ontologies/graph_designer#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:terms="http://purl.org/dc/terms/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:mid="https://www.materials.fraunhofer.de/ontologies/BWMD_ontology/mid#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:obo="http://purl.obolibrary.org/obo/"
+     xmlns:foaf="http://xmlns.com/foaf/0.1/"
+     xmlns:dc="http://purl.org/dc/elements/1.1/">
+    <owl:Ontology rdf:about="https://www.emi.fraunhofer.de/ontologies/LPBFO">
+        <owl:versionIRI rdf:resource="https://gitlab.cc-asp.fraunhofer.de/EMI_datamanagement/LPBFO/-/raw/master/LPBFO.owl"/>
+        <owl:imports rdf:resource="https://raw.githubusercontent.com/ebrahimnorouzi/mseo.github.io/master/Ontology_files/BWMD_mid.owl"/>
+        <mid:BWMD_00834 xml:lang="en">Martin Jäcklein (Fraunhofer EMI)</mid:BWMD_00834>
+        <obo:IAO_0000232 xml:lang="en">v1.1.9 (2022-09-20): Added &quot;hasEnvironmentalImpact&quot; for carbon footprint labelling. Deleted &quot;hasQuality&quot; in LPBFO since appearance in BWMD_mid.
+v1.1.8 (2022-09-06): Added &quot;CO2Emission&quot; for carbon footprint labelling.
+v1.1.7 (2021-11-30): Added classes regarding the operation of the LPBF process. 
+v1.1.6 (2021-11-16): Added the classes of LCA by Yu-Sheng Tang
+v1.1.5 (2021-11-16): Added SliceLinesPerLayerFile, RecoaterDirection and SealingOfBuildSpace for ADAM project by Martin Huschka. 
+v1.1.4 (2021-11-12): Added several Classes to better specify the LPBF process within the ADAM project (am-data-space.org)
+v1.1.3 (2021-09-09): Refactored to LPBF Ontology. 
+v1.0.3 (2021-09-09): Renamed to LPBF Ontology without refactoring. Entities added.
+v1.0.2 (2021-08-03): Several Classes for the LPBF process at fem were added.
+v1.0.1 (2020-12-14): D10, D50, D90 were added.</obo:IAO_0000232>
+        <mid:BWMD_00834 xml:lang="en">Martin Huschka (Fraunhofer EMI)</mid:BWMD_00834>
+        <rdfs:comment xml:lang="en">The LPBF Ontology can be used to describe the additive manufacturing of a component via Laser Powder Bed Fusion (LPBF) / Selective Laser Melting (SLM). The ontology builds on BFO2.0 and BWMD_mid and has been developed to be used in conjunction with the digital workflows provided by Fraunhofer IWM. If possible, the terminology within this ontology was used as provided by ISO/ASTM 52900:2015. Historically, it was created as LPBFO ontology; an ontology that described the SLM process at Fraunhofer EMI. However, it is now being used for other applications as well, some leftovers named EMISLM might still be apparent until being updated.</rdfs:comment>
+        <owl:versionInfo xml:lang="en">v1.1.9</owl:versionInfo>
+        <rdfs:comment xml:lang="en">Contact:
+Martin Jäcklein
+Fraunhofer Institute for High-Speed Dynamics , Ernst-Mach-Institut, EMI
+Ernst-Zermelo-Strasse 4, 79104 Freiburg , Germany
+Martin.Huschka@EMI.Fraunhofer.de</rdfs:comment>
+        <rdfs:comment xml:lang="en">Contact:
+Martin Huschka 
+Fraunhofer Institute for High-Speed Dynamics , Ernst-Mach-Institut, EMI
+Ernst-Zermelo-Strasse 4, 79104 Freiburg , Germany
+Martin.Huschka@EMI.Fraunhofer.de</rdfs:comment>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://www.emi.fraunhofer.de/ontologies/LPBFO#LPBFO_00758 -->
+
+    <owl:ObjectProperty rdf:about="https://www.emi.fraunhofer.de/ontologies/LPBFO#LPBFO_00758">
+        <rdfs:subPropertyOf rdf:resource="https://www.materials.fraunhofer.de/ontologies/BWMD_ontology/mid#BWMD_00326"/>
+        <rdfs:range rdf:resource="https://www.emi.fraunhofer.de/ontologies/LPBFO#LPBFO_00757"/>
+        <rdfs:label xml:lang="en">hasEnvironmentalImpact</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000015 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000015"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000019 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000019"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000023 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000023"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000027 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000027"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000030 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000030"/>
+    
+
+
+    <!-- https://www.emi.fraunhofer.de/ontologies/LPBFO#LPBFO_00001 -->
+
+    <owl:Class rdf:about="https://www.emi.fraunhofer.de/ontologies/LPBFO#LPBFO_00001">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000027"/>
+        <rdfs:comment xml:lang="en">Metal powder that is supplied to an AM machine as a starting material or that leaves the construction cycle as unused powder.</rdfs:comment>
+        <rdfs:label xml:lang="en">MetalPowder</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://www.emi.fraunhofer.de/ontologies/LPBFO#LPBFO_00002 -->
+
+    <owl:Class rdf:about="https://www.emi.fraunhofer.de/ontologies/LPBFO#LPBFO_00002">
+        <rdfs:subClassOf rdf:resource="https://www.materials.fraunhofer.de/ontologies/BWMD_ontology/mid#BWMD_00170"/>
+        <rdfs:comment xml:lang="en">Section of the additive manufacturing system, including hardware and machine control software, required commissioning software and peripheral accessories that are necessary to complete a construction cycle  for producing parts.</rdfs:comment>
+        <rdfs:isDefinedBy xml:lang="en"> ISO/ASTM 52900</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">AMMachine</rdfs:label>
+        <rdfs:label xml:lang="en">AdditiveManufacturingMachine</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://www.emi.fraunhofer.de/ontologies/LPBFO#LPBFO_00003 -->
+
+    <owl:Class rdf:about="https://www.emi.fraunhofer.de/ontologies/LPBFO#LPBFO_00003">
+        <rdfs:subClassOf rdf:resource="https://www.materials.fraunhofer.de/ontologies/BWMD_ontology/mid#BWMD_00009"/>
+        <rdfs:comment xml:lang="en">Set of operating parameters and system settings used during a construction cycle in additive manufacturing.</rdfs:comment>
+        <rdfs:isDefinedBy xml:lang="en"> ISO/ASTM 52900</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">ProcessParameters</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://www.emi.fraunhofer.de/ontologies/LPBFO#LPBFO_00004 -->
+
+    <owl:Class rdf:about="https://www.emi.fraunhofer.de/ontologies/LPBFO#LPBFO_00004">
+        <rdfs:subClassOf rdf:resource="https://www.materials.fraunhofer.de/ontologies/BWMD_ontology/mid#BWMD_00011"/>
+        <rdfs:comment xml:lang="en">The particle-size distribution (PSD) of a powder, or granular material, or particles dispersed in fluid, is a list of values or a mathematical function that defines the relative amount, typically by mass, of particles present according to size.</rdfs:comment>
+        <rdfs:isDefinedBy xml:lang="en">Jillavenkatesa A, Dapkunas S J, Lin-Sien Lum, Particle Size Characterization, NIST Special Publication 960-1, 2001</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">ParticleSizeDistribution</rdfs:label>
+        <rdfs:seeAlso xml:lang="en">https://en.wikipedia.org/wiki/Particle-size_distribution</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
+    <!-- https://www.emi.fraunhofer.de/ontologies/LPBFO#LPBFO_00005 -->
+
+    <owl:Class rdf:about="https://www.emi.fraunhofer.de/ontologies/LPBFO#LPBFO_00005">
+        <rdfs:subClassOf rdf:resource="https://www.materials.fraunhofer.de/ontologies/BWMD_ontology/mid#BWMD_00117"/>
+        <rdfs:comment xml:lang="en">According to ISO/ASTM 52900, the SelectiveLaserMelting process is now commonly called &quot;LaserPowderBedFusion (L-PBF)&quot;.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Additive manufacturing process, in which thermal energy provided by a laser specifically melts areas of a powder bed.</rdfs:comment>
+        <rdfs:isDefinedBy xml:lang="en"> ISO/ASTM 52900</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">LaserPowderBedFusion</rdfs:label>
+        <rdfs:label xml:lang="en">SelectiveLaserMelting</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://www.emi.fraunhofer.de/ontologies/LPBFO#LPBFO_00006 -->
+
+    <owl:Class rdf:about="https://www.emi.fraunhofer.de/ontologies/LPBFO#LPBFO_00006">
+        <rdfs:subClassOf rdf:resource="https://www.materials.fraunhofer.de/ontologies/BWMD_ontology/mid#BWMD_00010"/>
+        <rdfs:label xml:lang="en">AverageParticleSize</rdfs:label>
+        <rdfs:seeAlso xml:lang="en">Arithmetic mean of particle diameter of a powder used for additive manufacturing to describe the particle size distribution.</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
+    <!-- https://www.emi.fraunhofer.de/ontologies/LPBFO#LPBFO_00007 -->
+
+    <owl:Class rdf:about="https://www.emi.fraunhofer.de/ontologies/LPBFO#LPBFO_00007">
+        <rdfs:subClassOf rdf:resource="https://www.materials.fraunhofer.de/ontologies/BWMD_ontology/mid#BWMD_00010"/>
+        <rdfs:label xml:lang="en">StandardDeviationOfAverageParticleSize</rdfs:label>
+        <rdfs:seeAlso xml:lang="en">Standard deviation of the arithmetic mean of the particle diameter of a powder used for additive manufacturing to describe the particle size distribution.</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
+    <!-- https://www.emi.fraunhofer.de/ontologies/LPBFO#LPBFO_00009 -->
+
+    <owl:Class rdf:about="https://www.emi.fraunhofer.de/ontologies/LPBFO#LPBFO_00009">
+        <rdfs:subClassOf rdf:resource="https://www.materials.fraunhofer.de/ontologies/BWMD_ontology/mid#BWMD_00010"/>
+        <rdfs:label xml:lang="en">AdditiveManufacturingLayerThickness</rdfs:label>
+        <rdfs:seeAlso xml:lang="en">Layer thickness in 3D printing is a measure of the layer height of each successive addition of material in the additive manufacturing or 3D printing process in which layers are stacked.</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
+    <!-- https://www.emi.fraunhofer.de/ontologies/LPBFO#LPBFO_00011 -->
+
+    <owl:Class rdf:about="https://www.emi.fraunhofer.de/ontologies/LPBFO#LPBFO_00011">
+        <rdfs:subClassOf rdf:resource="https://www.materials.fraunhofer.de/ontologies/BWMD_ontology/mid#BWMD_00117"/>
+        <rdfs:comment xml:lang="en">Manufacture by breaking the cohesion of bodies whereby the cohesion is partially or completely reduced as defined by DIN 8580 and DIN 8588.</rdfs:comment>
+        <rdfs:isDefinedBy xml:lang="en">DIN 8580</rdfs:isDefinedBy>
+        <rdfs:isDefinedBy xml:lang="de">Trennen</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">Separating</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://www.emi.fraunhofer.de/ontologies/LPBFO#LPBFO_00012 -->
+
+    <owl:Class rdf:about="https://www.emi.fraunhofer.de/ontologies/LPBFO#LPBFO_00012">
+        <rdfs:subClassOf rdf:resource="https://www.materials.fraunhofer.de/ontologies/BWMD_ontology/mid#BWMD_00036"/>
+        <rdfs:comment xml:lang="en">Additive manufactured set of parts where a part is a connected material that forms a functional element that can represent an entire product or a section of an intended product.</rdfs:comment>
+        <rdfs:label xml:lang="en">PartSet</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://www.emi.fraunhofer.de/ontologies/LPBFO#LPBFO_00013 -->
+
+    <owl:Class rdf:about="https://www.emi.fraunhofer.de/ontologies/LPBFO#LPBFO_00013">
+        <rdfs:subClassOf rdf:resource="https://www.materials.fraunhofer.de/ontologies/BWMD_ontology/mid#BWMD_00235"/>
+        <rdfs:comment xml:lang="en">Defining the location of the part within the building volume before additive manufacturing.</rdfs:comment>
+        <rdfs:label xml:lang="en">DefiningPartLocation</rdfs:label>
+        <rdfs:seeAlso xml:lang="en"> ISO/ASTM 52900</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
+    <!-- https://www.emi.fraunhofer.de/ontologies/LPBFO#LPBFO_00014 -->
+
+    <owl:Class rdf:about="https://www.emi.fraunhofer.de/ontologies/LPBFO#LPBFO_00014">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000030"/>
+        <rdfs:comment xml:lang="en">Basis that provides a surface on which the construction of the part(s) is started and supported during the additive manufacturing process.</rdfs:comment>
+        <rdfs:isDefinedBy xml:lang="en"> ISO/ASTM 52900</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">BuildPlatform</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://www.emi.fraunhofer.de/ontologies/LPBFO#LPBFO_00015 -->
+
+    <owl:Class rdf:about="https://www.emi.fraunhofer.de/ontologies/LPBFO#LPBFO_00015">
+        <rdfs:subClassOf rdf:resource="https://www.materials.fraunhofer.de/ontologies/BWMD_ontology/mid#BWMD_00072"/>
+        <rdfs:comment xml:lang="en">Machine and ancillary equipment used for additive manufacturing.</rdfs:comment>
+        <rdfs:isDefinedBy xml:lang="en"> ISO/ASTM 52900</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">AdditiveManufacturingEquipment</rdfs:label>
+        <rdfs:label xml:lang="en">AdditiveManufacturingSystem</rdfs:label>
+        <rdfs:label xml:lang="en">AdditiveSystem</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://www.emi.fraunhofer.de/ontologies/LPBFO#LPBFO_00016 -->
+
+    <owl:Class rdf:about="https://www.emi.fraunhofer.de/ontologies/LPBFO#LPBFO_00016">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000023"/>
+        <rdfs:comment xml:lang="en">Suppliers of materials / base materials that are to be processed in the additive manufacturing system.</rdfs:comment>
+        <rdfs:isDefinedBy xml:lang="en">ISO/ASTM 52900</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">MaterialSupplier</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://www.emi.fraunhofer.de/ontologies/LPBFO#LPBFO_00017 -->
+
+    <owl:Class rdf:about="https://www.emi.fraunhofer.de/ontologies/LPBFO#LPBFO_00017">
+        <rdfs:subClassOf rdf:resource="https://www.materials.fraunhofer.de/ontologies/BWMD_ontology/mid#BWMD_00001"/>
+        <rdfs:comment xml:lang="en">The unique URI to the location of the file on a hard drive or server.</rdfs:comment>
+        <rdfs:label xml:lang="en">FileURI</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://www.emi.fraunhofer.de/ontologies/LPBFO#LPBFO_00018 -->
+
+    <owl:Class rdf:about="https://www.emi.fraunhofer.de/ontologies/LPBFO#LPBFO_00018">
+        <rdfs:subClassOf rdf:resource="https://www.materials.fraunhofer.de/ontologies/BWMD_ontology/mid#BWMD_00011"/>
+        <rdfs:comment xml:lang="en">For a monochromatic wave, \&quot;wavelength\&quot; is the distance between two successive points in a direction perpendicular to the wavefront where at a given instant the phase differs by \\(2\\pi\\). The wavelength of a sinusoidal wave is the spatial period of the waveâ€”the distance over which the wave&apos;s shape repeats. The SI unit of wavelength is the meter.&quot;</rdfs:comment>
+        <rdfs:isDefinedBy xml:lang="en">http://qudt.org/vocab/quantitykind/Wavelength</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">WaveLength</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://www.emi.fraunhofer.de/ontologies/LPBFO#LPBFO_00019 -->
+
+    <owl:Class rdf:about="https://www.emi.fraunhofer.de/ontologies/LPBFO#LPBFO_00019">
+        <rdfs:subClassOf rdf:resource="https://www.emi.fraunhofer.de/ontologies/LPBFO#LPBFO_00035"/>
+        <rdfs:comment xml:lang="de">Bediener oder Gruppe, welche ein ganzes additives Fertigungssystem oder eine Komponente eines additiven Systems verwendet.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Operator or group that uses an entire additive manufacturing system or a component of an additive system</rdfs:comment>
+        <rdfs:isDefinedBy xml:lang="en"> ISO/ASTM 52900</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">AMSystemUser</rdfs:label>
+        <rdfs:label xml:lang="en">AdditiveManufacturingSystemUser</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://www.emi.fraunhofer.de/ontologies/LPBFO#LPBFO_00020 -->
+
+    <owl:Class rdf:about="https://www.emi.fraunhofer.de/ontologies/LPBFO#LPBFO_00020">
+        <rdfs:subClassOf rdf:resource="https://www.materials.fraunhofer.de/ontologies/BWMD_ontology/mid#BWMD_00132"/>
+        <rdfs:comment xml:lang="en">Inert gases such as argon and nitrogen create an environment which is inert, i.e. chemically inactive, which allows parts to be additively manufactured which meet the exacting standards required for metal parts used in the aerospace and automotive industries.</rdfs:comment>
+        <rdfs:label xml:lang="en">InertGas</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://www.emi.fraunhofer.de/ontologies/LPBFO#LPBFO_00021 -->
+
+    <owl:Class rdf:about="https://www.emi.fraunhofer.de/ontologies/LPBFO#LPBFO_00021">
+        <rdfs:subClassOf rdf:resource="https://www.materials.fraunhofer.de/ontologies/BWMD_ontology/mid#BWMD_00170"/>
+        <rdfs:isDefinedBy xml:lang="en">The engineering object as part of the AMSystem that produces the energy to melt the powder in the AM process.</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">LaserUnit</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://www.emi.fraunhofer.de/ontologies/LPBFO#LPBFO_00022 -->
+
+    <owl:Class rdf:about="https://www.emi.fraunhofer.de/ontologies/LPBFO#LPBFO_00022">
+        <rdfs:subClassOf rdf:resource="https://www.materials.fraunhofer.de/ontologies/BWMD_ontology/mid#BWMD_00170"/>
+        <rdfs:comment xml:lang="en">A horizontal bar that spreads and smooths liquid polymer in vat photopolymerization or powder for powder bed fusion and binder jet processes to create a uniform and flat layer before the build material is solidified, sintered, melted, or bonded.</rdfs:comment>
+        <rdfs:comment xml:lang="de">Mit Beschichter ist umgangsprachlich die &quot;Klinge&quot; gemeint, aus der oder denen sich das Beschichtersystem aufbaut.</rdfs:comment>
+        <rdfs:label xml:lang="de">Beschichter</rdfs:label>
+        <rdfs:label xml:lang="en">Recoater</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://www.emi.fraunhofer.de/ontologies/LPBFO#LPBFO_00023 -->
+
+    <owl:Class rdf:about="https://www.emi.fraunhofer.de/ontologies/LPBFO#LPBFO_00023">
+        <rdfs:subClassOf rdf:resource="https://www.materials.fraunhofer.de/ontologies/BWMD_ontology/mid#BWMD_00170"/>
+        <rdfs:comment xml:lang="en">A set of horizontal bars that spreads and smooths liquid polymer in vat photopolymerization or powder for powder bed fusion and binder jet processes to create a uniform and flat layer before the build material is solidified, sintered, melted, or bonded. A recoater system can be composed of several coaters (&quot;blades&quot;), e.g. in a two-blade system.</rdfs:comment>
+        <rdfs:comment xml:lang="de">Ein Beschichtersystem kann sich aus mehreren Beschichtern (&quot;Klingen&quot;) zusammensetzen, z.B. in einem Zweiklingensystem.</rdfs:comment>
+        <rdfs:label xml:lang="de">Beschichtersystem</rdfs:label>
+        <rdfs:label xml:lang="en">RecoaterSystem</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://www.emi.fraunhofer.de/ontologies/LPBFO#LPBFO_00024 -->
+
+    <owl:Class rdf:about="https://www.emi.fraunhofer.de/ontologies/LPBFO#LPBFO_00024">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019"/>
+        <rdfs:comment xml:lang="en">Laser mode used for AM wehere the distribution of the phase position of the waves perpendicular to the direction of propagation is called transverse modes. E.g. With a cylindrical cross-section of the laser, the beam intensity ideally has a Gaussian profile; this mode is known as TEM00 mode.</rdfs:comment>
+        <rdfs:label xml:lang="en">LaserMode</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://www.emi.fraunhofer.de/ontologies/LPBFO#LPBFO_00025 -->
+
+    <owl:Class rdf:about="https://www.emi.fraunhofer.de/ontologies/LPBFO#LPBFO_00025">
+        <rdfs:subClassOf rdf:resource="https://www.materials.fraunhofer.de/ontologies/BWMD_ontology/mid#BWMD_00010"/>
+        <rdfs:label xml:lang="en">BuildOrientationAngleRelativeToBuildPlatform</rdfs:label>
+        <rdfs:seeAlso xml:lang="en">Angle realtive to build platform (in z-Orientation) that describes the orientation of the part when it is first inserted into the building volume.</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
+    <!-- https://www.emi.fraunhofer.de/ontologies/LPBFO#LPBFO_00026 -->
+
+    <owl:Class rdf:about="https://www.emi.fraunhofer.de/ontologies/LPBFO#LPBFO_00026">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000023"/>
+        <rdfs:comment xml:lang="en">The role of a person or company that makes goods for sale. E.g. Used to describe laser unit manufacturer, AMMachine manufacturer etc.</rdfs:comment>
+        <rdfs:label xml:lang="en">Manufacturer</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://www.emi.fraunhofer.de/ontologies/LPBFO#LPBFO_00027 -->
+
+    <owl:Class rdf:about="https://www.emi.fraunhofer.de/ontologies/LPBFO#LPBFO_00027">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019"/>
+        <rdfs:comment xml:lang="en">Type of the laser unit used for AM, e.g. CW- or pulse Laser.</rdfs:comment>
+        <rdfs:label xml:lang="en">LaserType</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://www.emi.fraunhofer.de/ontologies/LPBFO#LPBFO_00028 -->
+
+    <owl:Class rdf:about="https://www.emi.fraunhofer.de/ontologies/LPBFO#LPBFO_00028">
+        <rdfs:subClassOf rdf:resource="https://www.emi.fraunhofer.de/ontologies/LPBFO#LPBFO_00011"/>
+        <rdfs:isDefinedBy xml:lang="en">DIN 8589-6.</rdfs:isDefinedBy>
+        <rdfs:isDefinedBy xml:lang="en">Manufacture by breaking the cohesion of bodies whereby the cohesion is partially or completely reduced as defined by DIN 8580 and DIN 8589-6.</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">Sawing</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://www.emi.fraunhofer.de/ontologies/LPBFO#LPBFO_00030 -->
+
+    <owl:Class rdf:about="https://www.emi.fraunhofer.de/ontologies/LPBFO#LPBFO_00030">
+        <rdfs:subClassOf rdf:resource="https://www.materials.fraunhofer.de/ontologies/BWMD_ontology/mid#BWMD_00098"/>
+        <rdfs:comment xml:lang="de">Komponentenorientierung in Bauraum</rdfs:comment>
+        <rdfs:comment xml:lang="en">Orientation of the part when it is first inserted into the building volume.</rdfs:comment>
+        <rdfs:isDefinedBy xml:lang="en"> ISO/ASTM 52900</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="de">Bauausrichtung</rdfs:label>
+        <rdfs:label xml:lang="en">BuildOrientation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://www.emi.fraunhofer.de/ontologies/LPBFO#LPBFO_00031 -->
+
+    <owl:Class rdf:about="https://www.emi.fraunhofer.de/ontologies/LPBFO#LPBFO_00031">
+        <rdfs:subClassOf rdf:resource="https://www.materials.fraunhofer.de/ontologies/BWMD_ontology/mid#BWMD_00024"/>
+        <rdfs:comment xml:lang="en">Order of exposure by the laser in an additive manufacturing process.</rdfs:comment>
+        <rdfs:label xml:lang="en">ExposureOrder</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://www.emi.fraunhofer.de/ontologies/LPBFO#LPBFO_00032 -->
+
+    <owl:Class rdf:about="https://www.emi.fraunhofer.de/ontologies/LPBFO#LPBFO_00032">
+        <rdfs:subClassOf rdf:resource="https://www.materials.fraunhofer.de/ontologies/BWMD_ontology/mid#BWMD_00032"/>
+        <owl:disjointWith rdf:resource="https://www.emi.fraunhofer.de/ontologies/LPBFO#LPBFO_00746"/>
+        <rdfs:comment xml:lang="en">A file of suffix .sli / -cli that contains geometric information about slice layers, i.e. scan vectors, for the additive manufacturing process.</rdfs:comment>
+        <rdfs:label xml:lang="en">SliceLayerInterfaceFile</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://www.emi.fraunhofer.de/ontologies/LPBFO#LPBFO_00033 -->
+
+    <owl:Class rdf:about="https://www.emi.fraunhofer.de/ontologies/LPBFO#LPBFO_00033">
+        <rdfs:subClassOf rdf:resource="https://www.materials.fraunhofer.de/ontologies/BWMD_ontology/mid#BWMD_00032"/>
+        <rdfs:comment xml:lang="en">A file that includes all the necessary information and parameters to complete the additive manufacturing process. Depending on the used AdditiveManufacturingMachine, the suffix can vary (e.g. of suffix .eosjob).</rdfs:comment>
+        <rdfs:label xml:lang="en">BuildJobFile</rdfs:label>
+        <rdfs:label xml:lang="en">CNCControlDataFile</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://www.emi.fraunhofer.de/ontologies/LPBFO#LPBFO_00034 -->
+
+    <owl:Class rdf:about="https://www.emi.fraunhofer.de/ontologies/LPBFO#LPBFO_00034">
+        <rdfs:subClassOf rdf:resource="https://www.materials.fraunhofer.de/ontologies/BWMD_ontology/mid#BWMD_00114"/>
+        <rdfs:comment xml:lang="en">Basis that provides a surface on which the additive manufactured set of parts is already/still located on.</rdfs:comment>
+        <rdfs:label xml:lang="en">BuildPlatformWithPartSet</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://www.emi.fraunhofer.de/ontologies/LPBFO#LPBFO_00035 -->
+
+    <owl:Class rdf:about="https://www.emi.fraunhofer.de/ontologies/LPBFO#LPBFO_00035">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000023"/>
+        <rdfs:comment xml:lang="en">The role of an operator or of a group that uses a machine, system or a component of a system.</rdfs:comment>
+        <rdfs:label xml:lang="en">Operator</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://www.emi.fraunhofer.de/ontologies/LPBFO#LPBFO_00043 -->
+
+    <owl:Class rdf:about="https://www.emi.fraunhofer.de/ontologies/LPBFO#LPBFO_00043">
+        <rdfs:subClassOf rdf:resource="https://www.materials.fraunhofer.de/ontologies/BWMD_ontology/mid#BWMD_00001"/>
+        <rdfs:comment xml:lang="en">Identifier that describes the PartSet unequivocally.</rdfs:comment>
+        <rdfs:label xml:lang="en">PartSetID</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://www.emi.fraunhofer.de/ontologies/LPBFO#LPBFO_00046 -->
+
+    <owl:Class rdf:about="https://www.emi.fraunhofer.de/ontologies/LPBFO#LPBFO_00046">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
+        <rdfs:isDefinedBy xml:lang="en">ISO/ASTM 52900</rdfs:isDefinedBy>
+        <rdfs:isDefinedBy xml:lang="en">One or more process steps that are undertaken after completion of an additive manufacturing construction cycle in order to achieve the desired properties in the end product.</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">PartPostProcessing</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://www.emi.fraunhofer.de/ontologies/LPBFO#LPBFO_00047 -->
+
+    <owl:Class rdf:about="https://www.emi.fraunhofer.de/ontologies/LPBFO#LPBFO_00047">
+        <rdfs:subClassOf rdf:resource="https://www.emi.fraunhofer.de/ontologies/LPBFO#LPBFO_00046"/>
+        <rdfs:comment xml:lang="en">Turning is a form of machining, a material removal process, which is used to create rotational parts by cutting away unwanted material.</rdfs:comment>
+        <rdfs:isDefinedBy xml:lang="en">DIN 8589-0</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">Turning</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://www.emi.fraunhofer.de/ontologies/LPBFO#LPBFO_00048 -->
+
+    <owl:Class rdf:about="https://www.emi.fraunhofer.de/ontologies/LPBFO#LPBFO_00048">
+        <rdfs:subClassOf rdf:resource="https://www.emi.fraunhofer.de/ontologies/LPBFO#LPBFO_00046"/>
+        <rdfs:comment xml:lang="en">Any kind of heat treatmend process as defined by DIN 8580 that changes the property of a material. Where changing a property of a material is definded by: Manufacture by changing the properties of the material from which a workpiece is made; this happens by changes in the submicroscopic or atomic range, e.g. B. by diffusion of atoms, generation and movement of dislocations in the atomic lattice, chemical reactions. Unavoidable changes in shape are not part of the nature of these processes.</rdfs:comment>
+        <rdfs:isDefinedBy xml:lang="en">DIN 8580</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">HeatTreatment</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://www.emi.fraunhofer.de/ontologies/LPBFO#LPBFO_00056 -->
+
+    <owl:Class rdf:about="https://www.emi.fraunhofer.de/ontologies/LPBFO#LPBFO_00056">
+        <rdfs:subClassOf rdf:resource="https://www.materials.fraunhofer.de/ontologies/BWMD_ontology/mid#BWMD_00029"/>
+        <rdfs:comment>Name of a file including its suffix, however not the whole FileURI.</rdfs:comment>
+        <rdfs:label xml:lang="en">FileName</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://www.emi.fraunhofer.de/ontologies/LPBFO#LPBFO_00057 -->
+
+    <owl:Class rdf:about="https://www.emi.fraunhofer.de/ontologies/LPBFO#LPBFO_00057">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000029"/>
+        <rdfs:comment xml:lang="en">Location of the part within the building volume in additive manufacturing.</rdfs:comment>
+        <rdfs:isDefinedBy xml:lang="en">ISO/ASTM 52900</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">PartLocation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://www.emi.fraunhofer.de/ontologies/LPBFO#LPBFO_00058 -->
+
+    <owl:Class rdf:about="https://www.emi.fraunhofer.de/ontologies/LPBFO#LPBFO_00058">
+        <rdfs:subClassOf rdf:resource="https://www.emi.fraunhofer.de/ontologies/LPBFO#LPBFO_00011"/>
+        <rdfs:comment xml:lang="en">To divide something into several pieces.</rdfs:comment>
+        <rdfs:isDefinedBy xml:lang="en">DIN 8588</rdfs:isDefinedBy>
+        <rdfs:isDefinedBy xml:lang="de">Zerteilen</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">Dividing</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://www.emi.fraunhofer.de/ontologies/LPBFO#LPBFO_00059 -->
+
+    <owl:Class rdf:about="https://www.emi.fraunhofer.de/ontologies/LPBFO#LPBFO_00059">
+        <rdfs:subClassOf rdf:resource="https://www.materials.fraunhofer.de/ontologies/BWMD_ontology/mid#BWMD_00109"/>
+        <rdfs:comment xml:lang="en">Temperature of the BuildPlatform in additive manufacturing &apos;as supposed&apos;.</rdfs:comment>
+        <rdfs:label xml:lang="en">BuildPlatformTemperature</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://www.emi.fraunhofer.de/ontologies/LPBFO#LPBFO_00060 -->
+
+    <owl:Class rdf:about="https://www.emi.fraunhofer.de/ontologies/LPBFO#LPBFO_00060">
+        <rdfs:subClassOf rdf:resource="https://www.materials.fraunhofer.de/ontologies/BWMD_ontology/mid#BWMD_00169"/>
+        <rdfs:comment xml:lang="en">Connection for electricity / power as infrastructure equipment for the additive manufacturing system.</rdfs:comment>
+        <rdfs:label xml:lang="en">PowerConnection</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://www.emi.fraunhofer.de/ontologies/LPBFO#LPBFO_00061 -->
+
+    <owl:Class rdf:about="https://www.emi.fraunhofer.de/ontologies/LPBFO#LPBFO_00061">
+        <rdfs:subClassOf rdf:resource="https://www.materials.fraunhofer.de/ontologies/BWMD_ontology/mid#BWMD_00169"/>
+        <rdfs:comment xml:lang="en">Connection for cooling water as infrastructure equipment for the additive manufacturing system.</rdfs:comment>
+        <rdfs:label xml:lang="en">CoolingWaterConnection</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://www.emi.fraunhofer.de/ontologies/LPBFO#LPBFO_00065 -->
+
+    <owl:Class rdf:about="https://www.emi.fraunhofer.de/ontologies/LPBFO#LPBFO_00065">
+        <rdfs:subClassOf rdf:resource="https://www.materials.fraunhofer.de/ontologies/BWMD_ontology/mid#BWMD_00010"/>
+        <rdfs:comment xml:lang="en">The portion of particles with diameters smaller than this value is 10%</rdfs:comment>
+        <rdfs:label xml:lang="en">D10</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://www.emi.fraunhofer.de/ontologies/LPBFO#LPBFO_00066 -->
+
+    <owl:Class rdf:about="https://www.emi.fraunhofer.de/ontologies/LPBFO#LPBFO_00066">
+        <rdfs:subClassOf rdf:resource="https://www.materials.fraunhofer.de/ontologies/BWMD_ontology/mid#BWMD_00010"/>
+        <rdfs:comment xml:lang="en">The portions of particles with diameters smaller and larger than this value are 50%. Also known as the median diameter.</rdfs:comment>
+        <rdfs:label xml:lang="en">D50</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://www.emi.fraunhofer.de/ontologies/LPBFO#LPBFO_00067 -->
+
+    <owl:Class rdf:about="https://www.emi.fraunhofer.de/ontologies/LPBFO#LPBFO_00067">
+        <rdfs:subClassOf rdf:resource="https://www.materials.fraunhofer.de/ontologies/BWMD_ontology/mid#BWMD_00010"/>
+        <rdfs:comment xml:lang="en">The portion of particles with diameters below this value is 90%.</rdfs:comment>
+        <rdfs:label xml:lang="en">D90</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://www.emi.fraunhofer.de/ontologies/LPBFO#LPBFO_00070 -->
+
+    <owl:Class rdf:about="https://www.emi.fraunhofer.de/ontologies/LPBFO#LPBFO_00070">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019"/>
+        <rdfs:comment xml:lang="en">A boolean information to indicate whether or not a specimen is intended for Heat Treatment according to DIN8580.</rdfs:comment>
+        <rdfs:label xml:lang="en">IntendedForHeatTreatment</rdfs:label>
+        <rdfs:seeAlso xml:lang="en">https://www.emi.fraunhofer.de/ontologies/LPBFO_ontology#LPBFO_00048</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
+    <!-- https://www.emi.fraunhofer.de/ontologies/LPBFO#LPBFO_00071 -->
+
+    <owl:Class rdf:about="https://www.emi.fraunhofer.de/ontologies/LPBFO#LPBFO_00071">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019"/>
+        <rdfs:comment xml:lang="en">A boolean information to indicate whether or not a specimen is intended for Turning according to DIN8580.</rdfs:comment>
+        <rdfs:label xml:lang="en">IntendedForTurning</rdfs:label>
+        <rdfs:seeAlso xml:lang="en">https://www.emi.fraunhofer.de/ontologies/LPBFO_ontology#LPBFO_00047</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
+    <!-- https://www.emi.fraunhofer.de/ontologies/LPBFO#LPBFO_00072 -->
+
+    <owl:Class rdf:about="https://www.emi.fraunhofer.de/ontologies/LPBFO#LPBFO_00072">
+        <rdfs:subClassOf rdf:resource="https://www.materials.fraunhofer.de/ontologies/BWMD_ontology/mid#BWMD_00001"/>
+        <rdfs:comment xml:lang="en">Identifier that describes the Part unequivocally.</rdfs:comment>
+        <rdfs:label xml:lang="en">PartID</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://www.emi.fraunhofer.de/ontologies/LPBFO#LPBFO_0015 -->
+
+    <owl:Class rdf:about="https://www.emi.fraunhofer.de/ontologies/LPBFO#LPBFO_0015">
+        <rdfs:subClassOf rdf:resource="https://www.emi.fraunhofer.de/ontologies/LPBFO#LPBFO_712"/>
+        <rdfs:comment xml:lang="en">Criteria to be taken into account when optimising the part orientation with regard to building time, expected delay, required support structure an utilisation of the building platform. A decision is finally made by weighting the various criteria.</rdfs:comment>
+        <rdfs:label xml:lang="en">PartOrientationOptimizationCriteria</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://www.emi.fraunhofer.de/ontologies/LPBFO#LPBFO_00500 -->
+
+    <owl:Class rdf:about="https://www.emi.fraunhofer.de/ontologies/LPBFO#LPBFO_00500">
+        <rdfs:subClassOf rdf:resource="https://www.materials.fraunhofer.de/ontologies/BWMD_ontology/mid#BWMD_00036"/>
+        <rdfs:comment xml:lang="en">Additive manufactured part where a part is a connected material that forms a functional element that can represent an entire product or a section of an intended product.</rdfs:comment>
+        <rdfs:label xml:lang="en">Part</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://www.emi.fraunhofer.de/ontologies/LPBFO#LPBFO_00501 -->
+
+    <owl:Class rdf:about="https://www.emi.fraunhofer.de/ontologies/LPBFO#LPBFO_00501">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019"/>
+        <rdfs:comment xml:lang="en">Type of part produced in additive manufacturing that describes the geometry of the part (e.g. &quot;Testteil&quot;, &quot;Stäbe&quot;, &quot;Bauteil&quot; etc.)</rdfs:comment>
+        <rdfs:label xml:lang="en">PartType</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://www.emi.fraunhofer.de/ontologies/LPBFO#LPBFO_00502 -->
+
+    <owl:Class rdf:about="https://www.emi.fraunhofer.de/ontologies/LPBFO#LPBFO_00502">
+        <rdfs:subClassOf rdf:resource="https://www.emi.fraunhofer.de/ontologies/LPBFO#LPBFO_00003"/>
+        <rdfs:comment xml:lang="en">Chosen power of the laser used for the additive manufacturing process.</rdfs:comment>
+        <rdfs:label xml:lang="en">LaserPower</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://www.emi.fraunhofer.de/ontologies/LPBFO#LPBFO_00503 -->
+
+    <owl:Class rdf:about="https://www.emi.fraunhofer.de/ontologies/LPBFO#LPBFO_00503">
+        <rdfs:subClassOf rdf:resource="https://www.emi.fraunhofer.de/ontologies/LPBFO#LPBFO_00003"/>
+        <rdfs:comment xml:lang="en">Chosen laser velocity used for the additive manufacturing process.</rdfs:comment>
+        <rdfs:label xml:lang="en">LaserSpeed</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://www.emi.fraunhofer.de/ontologies/LPBFO#LPBFO_00504 -->
+
+    <owl:Class rdf:about="https://www.emi.fraunhofer.de/ontologies/LPBFO#LPBFO_00504">
+        <rdfs:subClassOf rdf:resource="https://www.emi.fraunhofer.de/ontologies/LPBFO#LPBFO_00003"/>
+        <rdfs:comment xml:lang="en">Distance between the scan vectors during the additive manufacturing process.</rdfs:comment>
+        <rdfs:label xml:lang="en">HatchDistance</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://www.emi.fraunhofer.de/ontologies/LPBFO#LPBFO_00505 -->
+
+    <owl:Class rdf:about="https://www.emi.fraunhofer.de/ontologies/LPBFO#LPBFO_00505">
+        <rdfs:subClassOf rdf:resource="https://www.materials.fraunhofer.de/ontologies/BWMD_ontology/mid#BWMD_00169"/>
+        <rdfs:comment xml:lang="en">Connection for inert gas as infrastructure equipment for the additive manufacturing system.</rdfs:comment>
+        <rdfs:label xml:lang="en">GasConnection</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://www.emi.fraunhofer.de/ontologies/LPBFO#LPBFO_00506 -->
+
+    <owl:Class rdf:about="https://www.emi.fraunhofer.de/ontologies/LPBFO#LPBFO_00506">
+        <rdfs:subClassOf rdf:resource="https://www.emi.fraunhofer.de/ontologies/LPBFO#LPBFO_00003"/>
+        <rdfs:comment xml:lang="en">Diameter of the laser beam used for additive manufacturing.</rdfs:comment>
+        <rdfs:label xml:lang="en">LaserSpot</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://www.emi.fraunhofer.de/ontologies/LPBFO#LPBFO_00507 -->
+
+    <owl:Class rdf:about="https://www.emi.fraunhofer.de/ontologies/LPBFO#LPBFO_00507">
+        <rdfs:subClassOf rdf:resource="https://www.materials.fraunhofer.de/ontologies/BWMD_ontology/mid#BWMD_00029"/>
+        <rdfs:comment xml:lang="en">Name / ID of the Build Job.</rdfs:comment>
+        <rdfs:label xml:lang="en">BuildJobName</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://www.emi.fraunhofer.de/ontologies/LPBFO#LPBFO_00508 -->
+
+    <owl:Class rdf:about="https://www.emi.fraunhofer.de/ontologies/LPBFO#LPBFO_00508">
+        <rdfs:subClassOf rdf:resource="https://www.materials.fraunhofer.de/ontologies/BWMD_ontology/mid#BWMD_00136"/>
+        <rdfs:comment xml:lang="en">Content of oxygen in AM material or part as weight fraction in percent.</rdfs:comment>
+        <rdfs:label xml:lang="en">OxygenContent</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://www.emi.fraunhofer.de/ontologies/LPBFO#LPBFO_00509 -->
+
+    <owl:Class rdf:about="https://www.emi.fraunhofer.de/ontologies/LPBFO#LPBFO_00509">
+        <rdfs:subClassOf rdf:resource="https://www.materials.fraunhofer.de/ontologies/BWMD_ontology/mid#BWMD_00136"/>
+        <rdfs:comment xml:lang="en">Content of hydrogen in AM material or part as weight fraction in percent.</rdfs:comment>
+        <rdfs:label xml:lang="en">HydrogenContent</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://www.emi.fraunhofer.de/ontologies/LPBFO#LPBFO_00510 -->
+
+    <owl:Class rdf:about="https://www.emi.fraunhofer.de/ontologies/LPBFO#LPBFO_00510">
+        <rdfs:subClassOf rdf:resource="https://www.materials.fraunhofer.de/ontologies/BWMD_ontology/mid#BWMD_00170"/>
+        <rdfs:comment xml:lang="en">Any kind of equipment to monitor the additive manufacturing process.</rdfs:comment>
+        <rdfs:label xml:lang="en">ProcessMonitoringEquipment</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://www.emi.fraunhofer.de/ontologies/LPBFO#LPBFO_00511 -->
+
+    <owl:Class rdf:about="https://www.emi.fraunhofer.de/ontologies/LPBFO#LPBFO_00511">
+        <rdfs:subClassOf rdf:resource="https://www.emi.fraunhofer.de/ontologies/LPBFO#LPBFO_00510"/>
+        <rdfs:comment xml:lang="en">A device that from a distance determines the temperature of a surface from the amount of the thermal radiation it emits, measured with high image acquisition rate.</rdfs:comment>
+        <rdfs:label xml:lang="en">HighspeedPyrometer</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://www.emi.fraunhofer.de/ontologies/LPBFO#LPBFO_00512 -->
+
+    <owl:Class rdf:about="https://www.emi.fraunhofer.de/ontologies/LPBFO#LPBFO_00512">
+        <rdfs:subClassOf rdf:resource="https://www.materials.fraunhofer.de/ontologies/BWMD_ontology/mid#BWMD_00010"/>
+        <rdfs:comment xml:lang="en">Frequency of the image acquisition e.g. of a camera or pyrometer.</rdfs:comment>
+        <rdfs:label xml:lang="en">ImageAcquisitionRate</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://www.emi.fraunhofer.de/ontologies/LPBFO#LPBFO_00513 -->
+
+    <owl:Class rdf:about="https://www.emi.fraunhofer.de/ontologies/LPBFO#LPBFO_00513">
+        <rdfs:subClassOf rdf:resource="https://www.materials.fraunhofer.de/ontologies/BWMD_ontology/mid#BWMD_00001"/>
+        <rdfs:comment xml:lang="en"></rdfs:comment>
+        <rdfs:comment xml:lang="en">Identification for the type of heat treatment. [T5, T6, none]</rdfs:comment>
+        <rdfs:label xml:lang="en">HeatTreatmentID</rdfs:label>
+        <rdfs:seeAlso xml:lang="en">https://www.materials.fraunhofer.de/ontologies/BWMD_ontology/domain#BWMD_00060</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
+    <!-- https://www.emi.fraunhofer.de/ontologies/LPBFO#LPBFO_00514 -->
+
+    <owl:Class rdf:about="https://www.emi.fraunhofer.de/ontologies/LPBFO#LPBFO_00514">
+        <rdfs:subClassOf rdf:resource="https://www.materials.fraunhofer.de/ontologies/BWMD_ontology/mid#BWMD_00001"/>
+        <rdfs:comment xml:lang="en">Identification or name for material batch or state ID. E.g. &quot;Pulver 1&quot; or &quot;Pulver 2&quot;.</rdfs:comment>
+        <rdfs:label xml:lang="en">MaterialStateID</rdfs:label>
+        <rdfs:seeAlso xml:lang="en">https://www.materials.fraunhofer.de/ontologies/BWMD_ontology/domain#BWMD_00356</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
+    <!-- https://www.emi.fraunhofer.de/ontologies/LPBFO#LPBFO_00702 -->
+
+    <owl:Class rdf:about="https://www.emi.fraunhofer.de/ontologies/LPBFO#LPBFO_00702">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
+        <rdfs:comment xml:lang="en">Task for an LPBF build job with a defined start and end point in time in which the components, the material, the scanning pattern, the exposure-sequence and -strategy with date for receipt and completion participate. The task definition is stored and written inf form in a file.</rdfs:comment>
+        <rdfs:label xml:lang="en">AdditiveManufacturingTask</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://www.emi.fraunhofer.de/ontologies/LPBFO#LPBFO_00703 -->
+
+    <owl:Class rdf:about="https://www.emi.fraunhofer.de/ontologies/LPBFO#LPBFO_00703">
+        <rdfs:subClassOf rdf:resource="https://www.materials.fraunhofer.de/ontologies/BWMD_ontology/mid#BWMD_00001"/>
+        <rdfs:comment xml:lang="en">Identifier that describes the AdditiveManufacturingTask unequivocally.</rdfs:comment>
+        <rdfs:label xml:lang="en">AdditiveManufacturingTaskID</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://www.emi.fraunhofer.de/ontologies/LPBFO#LPBFO_00704 -->
+
+    <owl:Class rdf:about="https://www.emi.fraunhofer.de/ontologies/LPBFO#LPBFO_00704">
+        <rdfs:subClassOf rdf:resource="https://www.materials.fraunhofer.de/ontologies/BWMD_ontology/mid#BWMD_00235"/>
+        <rdfs:comment xml:lang="en">The preparation process before the actual additive manufacturing process, in which the machine commands for the scanner movement and for the laser are supplemented by the machine commands for the lowering of the platform and for the recoater.</rdfs:comment>
+        <rdfs:label xml:lang="en">FinalizingBuildJobFile</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://www.emi.fraunhofer.de/ontologies/LPBFO#LPBFO_00705 -->
+
+    <owl:Class rdf:about="https://www.emi.fraunhofer.de/ontologies/LPBFO#LPBFO_00705">
+        <rdfs:subClassOf rdf:resource="https://www.emi.fraunhofer.de/ontologies/LPBFO#LPBFO_00003"/>
+        <obo:IAO_0000112 xml:lang="en">main flow direction and flow rate of the shielding gas</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">velocity of the recoater</obo:IAO_0000112>
+        <rdfs:comment xml:lang="en">Design parameters of the additive machine that influence the manufacturing process and are set by default and cannot be changed by the operator. Examples are as the direction and velocity of the recoater, the main flow direction and the flow rate of the shielding gas, or the type of preheating system etc.</rdfs:comment>
+        <rdfs:label xml:lang="en">MachineDesignParameter</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://www.emi.fraunhofer.de/ontologies/LPBFO#LPBFO_00706 -->
+
+    <owl:Class rdf:about="https://www.emi.fraunhofer.de/ontologies/LPBFO#LPBFO_00706">
+        <rdfs:subClassOf rdf:resource="https://www.materials.fraunhofer.de/ontologies/BWMD_ontology/mid#BWMD_00235"/>
+        <rdfs:comment xml:lang="en">This process describes the application of the stored exposure strategy, which also contains rules for up- and down-skin areas and contours, to the scan vectors. For each scan vector, the affiliation to the different areas is determined beforehand so that the rules can be applied. Output of this process is the CNCExposureOrderFile.</rdfs:comment>
+        <rdfs:label xml:lang="en">ApplyingExposureOrderOnScanVectors</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://www.emi.fraunhofer.de/ontologies/LPBFO#LPBFO_00707 -->
+
+    <owl:Class rdf:about="https://www.emi.fraunhofer.de/ontologies/LPBFO#LPBFO_00707">
+        <rdfs:subClassOf rdf:resource="https://www.materials.fraunhofer.de/ontologies/BWMD_ontology/mid#BWMD_00032"/>
+        <rdfs:comment xml:lang="en">The machine commands for the scanner movement and the laser in the machine individual syntax. This file is output of the preparation process &quot;ApplyingExposureOrderOnScanVectors&quot;.</rdfs:comment>
+        <rdfs:label xml:lang="en">CNCExposureOrderFile</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://www.emi.fraunhofer.de/ontologies/LPBFO#LPBFO_00708 -->
+
+    <owl:Class rdf:about="https://www.emi.fraunhofer.de/ontologies/LPBFO#LPBFO_00708">
+        <rdfs:subClassOf rdf:resource="https://www.materials.fraunhofer.de/ontologies/BWMD_ontology/mid#BWMD_00032"/>
+        <rdfs:comment xml:lang="en">A file that contains the knowledge about the additive manufacturing process to be performed. It includes process information and parameters, such as admissible grain fraction, ranges for the beam diameter, laser power, layer thickness and scanning speed depending on the material and the different areas (contour, up-, down-skin, reduced quenching volume). This information might be stored as a process diagram.</rdfs:comment>
+        <rdfs:label xml:lang="en">ExposureOrderFile</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://www.emi.fraunhofer.de/ontologies/LPBFO#LPBFO_00709 -->
+
+    <owl:Class rdf:about="https://www.emi.fraunhofer.de/ontologies/LPBFO#LPBFO_00709">
+        <rdfs:subClassOf rdf:resource="https://www.materials.fraunhofer.de/ontologies/BWMD_ontology/mid#BWMD_00235"/>
+        <rdfs:comment xml:lang="en">This process describes the procedure in which the areas enclosed by the intersection lines are filled with hatch and contour vectors with directional constraints according to the present scan strategy.</rdfs:comment>
+        <rdfs:label xml:lang="en">TransformingSliceLinesWithStrategyToScanVectors</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://www.emi.fraunhofer.de/ontologies/LPBFO#LPBFO_00710 -->
+
+    <owl:Class rdf:about="https://www.emi.fraunhofer.de/ontologies/LPBFO#LPBFO_00710">
+        <rdfs:subClassOf rdf:resource="https://www.materials.fraunhofer.de/ontologies/BWMD_ontology/mid#BWMD_00024"/>
+        <rdfs:comment xml:lang="en">All scan vectors (hatch, contour) per layer and their Order.</rdfs:comment>
+        <rdfs:label xml:lang="en">ScanVectorsPerLayer</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://www.emi.fraunhofer.de/ontologies/LPBFO#LPBFO_00711 -->
+
+    <owl:Class rdf:about="https://www.emi.fraunhofer.de/ontologies/LPBFO#LPBFO_00711">
+        <rdfs:subClassOf rdf:resource="https://www.emi.fraunhofer.de/ontologies/LPBFO#LPBFO_712"/>
+        <rdfs:comment xml:lang="en">The scan strategy is a set of rules according to which the areas bounded by the cut lines per layer are filled with hatch and contour vectors. The set of rules also concerns the order an direction of the vectors, in particular an antiparallel alignment to the protective gas flow. The rules also specify the overlap between the exposure areas and a possible offset of the contour paths to the cut lines.</rdfs:comment>
+        <rdfs:label xml:lang="en">ScanStrategy</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://www.emi.fraunhofer.de/ontologies/LPBFO#LPBFO_00713 -->
+
+    <owl:Class rdf:about="https://www.emi.fraunhofer.de/ontologies/LPBFO#LPBFO_00713">
+        <rdfs:subClassOf rdf:resource="https://www.materials.fraunhofer.de/ontologies/BWMD_ontology/mid#BWMD_00235"/>
+        <rdfs:comment xml:lang="en">The calculation of the intersection lines of the component with  z=const. planes. The orientation of the plane cutting liens is implemented in such a way that the inner part lies to the left of the line. This information is relevant for the direction in which a possible contour offset is calculated.</rdfs:comment>
+        <rdfs:label xml:lang="en">CalculatingSliceLines</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://www.emi.fraunhofer.de/ontologies/LPBFO#LPBFO_00714 -->
+
+    <owl:Class rdf:about="https://www.emi.fraunhofer.de/ontologies/LPBFO#LPBFO_00714">
+        <rdfs:subClassOf rdf:resource="https://www.materials.fraunhofer.de/ontologies/BWMD_ontology/mid#BWMD_00235"/>
+        <rdfs:comment xml:lang="en">This process concerns an optimal alignment of the part for the LPBF process and is determiend after specifying a weighting depending on the number of layers, the building time, the supports, the expected distortion and how many components can be placed on the platform.</rdfs:comment>
+        <rdfs:label xml:lang="en">OptimizingPartOrientation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://www.emi.fraunhofer.de/ontologies/LPBFO#LPBFO_00716 -->
+
+    <owl:Class rdf:about="https://www.emi.fraunhofer.de/ontologies/LPBFO#LPBFO_00716">
+        <rdfs:subClassOf rdf:resource="https://www.materials.fraunhofer.de/ontologies/BWMD_ontology/mid#BWMD_00011"/>
+        <rdfs:comment xml:lang="en">Characterization of the geometric shape of the particles in a representative way. Their geometric shape can vary from irregular to almost fully spherical with or without satellites. The particle morphology is relevant for the flowability. The particle morphology is relevant for the floability and thus for the homogeneity of the powder layer.</rdfs:comment>
+        <rdfs:label xml:lang="en">ParticleMorphology</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://www.emi.fraunhofer.de/ontologies/LPBFO#LPBFO_00717 -->
+
+    <owl:Class rdf:about="https://www.emi.fraunhofer.de/ontologies/LPBFO#LPBFO_00717">
+        <rdfs:subClassOf rdf:resource="https://www.materials.fraunhofer.de/ontologies/BWMD_ontology/mid#BWMD_00011"/>
+        <rdfs:comment xml:lang="en">The surface of stored powder grains are always covered by adsorbed moisture. In general moisture is detrimental to the flowability of the powder. The value and unit for humidity depends on the measuring method.</rdfs:comment>
+        <rdfs:label xml:lang="en">MoistureContent</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://www.emi.fraunhofer.de/ontologies/LPBFO#LPBFO_00718 -->
+
+    <owl:Class rdf:about="https://www.emi.fraunhofer.de/ontologies/LPBFO#LPBFO_00718">
+        <rdfs:subClassOf rdf:resource="https://www.materials.fraunhofer.de/ontologies/BWMD_ontology/mid#BWMD_00011"/>
+        <rdfs:comment xml:lang="en">Flowability is an umbrella term describing the complex behaviour of powder when it is mobilized. Flowability is not one comprehensive property of bulk powder.  The term &quot;flowability&quot; always must relate to equipment and the way in which it was tested. One example of such a test is the so-called avalanche test which allows a statistical analysis and extraction of distribution characteristics of quite a number of different parameters like avalanche angle, surface fractal, volume expansion rate and many more.</rdfs:comment>
+        <rdfs:label xml:lang="en">Flowability</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://www.emi.fraunhofer.de/ontologies/LPBFO#LPBFO_00721 -->
+
+    <owl:Class rdf:about="https://www.emi.fraunhofer.de/ontologies/LPBFO#LPBFO_00721">
+        <rdfs:subClassOf rdf:resource="https://www.materials.fraunhofer.de/ontologies/BWMD_ontology/mid#BWMD_00017"/>
+        <rdfs:comment xml:lang="en">Sub-process regarding the lowering the building platform by a predetermined layer height in preparation for the recoating process.</rdfs:comment>
+        <rdfs:label xml:lang="en">PlatformLowering</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://www.emi.fraunhofer.de/ontologies/LPBFO#LPBFO_00723 -->
+
+    <owl:Class rdf:about="https://www.emi.fraunhofer.de/ontologies/LPBFO#LPBFO_00723">
+        <rdfs:subClassOf rdf:resource="https://www.materials.fraunhofer.de/ontologies/BWMD_ontology/mid#BWMD_00011"/>
+        <rdfs:comment xml:lang="en">Time-resolved profile of the laser power output for a pulsed laser system.</rdfs:comment>
+        <rdfs:label xml:lang="en">LaserPulseTemporalProfile</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://www.emi.fraunhofer.de/ontologies/LPBFO#LPBFO_00724 -->
+
+    <owl:Class rdf:about="https://www.emi.fraunhofer.de/ontologies/LPBFO#LPBFO_00724">
+        <rdfs:subClassOf rdf:resource="https://www.materials.fraunhofer.de/ontologies/BWMD_ontology/mid#BWMD_00206"/>
+        <rdfs:comment xml:lang="en">Minimum permissible switching time for the laser unit, relevant for on-the-fly strategy.</rdfs:comment>
+        <rdfs:label xml:lang="en">MinimumSwitchingTimeOfLaser</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://www.emi.fraunhofer.de/ontologies/LPBFO#LPBFO_00725 -->
+
+    <owl:Class rdf:about="https://www.emi.fraunhofer.de/ontologies/LPBFO#LPBFO_00725">
+        <rdfs:subClassOf rdf:resource="https://www.materials.fraunhofer.de/ontologies/BWMD_ontology/mid#BWMD_00010"/>
+        <rdfs:comment xml:lang="en">The Euler angles, named after the Swiss mathematican Leonhard Euler. The set of three angles can be used to describe the orientation (rotational position) of a solid in three dimensional space.</rdfs:comment>
+        <rdfs:label xml:lang="en">BuildOrientationEulerAngleRelativeToBuildPlatform</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://www.emi.fraunhofer.de/ontologies/LPBFO#LPBFO_00726 -->
+
+    <owl:Class rdf:about="https://www.emi.fraunhofer.de/ontologies/LPBFO#LPBFO_00726">
+        <rdfs:subClassOf rdf:resource="https://www.materials.fraunhofer.de/ontologies/BWMD_ontology/mid#BWMD_00273"/>
+        <rdfs:comment xml:lang="en">The Cartesian x,y-coordinates on the platform for the x,y-zero point of the rotated part.</rdfs:comment>
+        <rdfs:label xml:lang="en">PartCoordinateOnBuildPlatform</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://www.emi.fraunhofer.de/ontologies/LPBFO#LPBFO_00727 -->
+
+    <owl:Class rdf:about="https://www.emi.fraunhofer.de/ontologies/LPBFO#LPBFO_00727">
+        <rdfs:subClassOf rdf:resource="https://www.materials.fraunhofer.de/ontologies/BWMD_ontology/mid#BWMD_00142"/>
+        <rdfs:comment xml:lang="en">Count variable for the current layer of the sliced part.</rdfs:comment>
+        <rdfs:label xml:lang="en">IncrementLayerNumber</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://www.emi.fraunhofer.de/ontologies/LPBFO#LPBFO_00728 -->
+
+    <owl:Class rdf:about="https://www.emi.fraunhofer.de/ontologies/LPBFO#LPBFO_00728">
+        <rdfs:subClassOf rdf:resource="https://www.materials.fraunhofer.de/ontologies/BWMD_ontology/mid#BWMD_00017"/>
+        <rdfs:comment xml:lang="en">Machine settings for shielding gas guidance  relating pressure and flow rate an choice of shielding gas.</rdfs:comment>
+        <rdfs:label xml:lang="en">OperationOfGasGuidance</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://www.emi.fraunhofer.de/ontologies/LPBFO#LPBFO_00729 -->
+
+    <owl:Class rdf:about="https://www.emi.fraunhofer.de/ontologies/LPBFO#LPBFO_00729">
+        <rdfs:subClassOf rdf:resource="https://www.materials.fraunhofer.de/ontologies/BWMD_ontology/mid#BWMD_00170"/>
+        <rdfs:comment xml:lang="en">The gas guidance system ist part of the LPBF system and has adjustment options regarding a flow rate of the inert gas at a given pressure. The extracted gas must be filtered because of the splashes it carries. The filter must be therefore be maitained.</rdfs:comment>
+        <rdfs:label xml:lang="en">GasGuidanceSystem</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://www.emi.fraunhofer.de/ontologies/LPBFO#LPBFO_00730 -->
+
+    <owl:Class rdf:about="https://www.emi.fraunhofer.de/ontologies/LPBFO#LPBFO_00730">
+        <rdfs:subClassOf rdf:resource="https://www.emi.fraunhofer.de/ontologies/LPBFO#LPBFO_00705"/>
+        <rdfs:comment xml:lang="en">Adjustable flow rate of inert gas in L/min.</rdfs:comment>
+        <rdfs:label xml:lang="en">FlowRateOfShieldingGas</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://www.emi.fraunhofer.de/ontologies/LPBFO#LPBFO_00731 -->
+
+    <owl:Class rdf:about="https://www.emi.fraunhofer.de/ontologies/LPBFO#LPBFO_00731">
+        <rdfs:subClassOf rdf:resource="https://www.emi.fraunhofer.de/ontologies/LPBFO#LPBFO_00705"/>
+        <rdfs:comment xml:lang="en">Main flow direction of the shielding gas in relation to the platform coodinate system.</rdfs:comment>
+        <rdfs:label xml:lang="en">FlowDirectionOfShieldingGas</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://www.emi.fraunhofer.de/ontologies/LPBFO#LPBFO_00732 -->
+
+    <owl:Class rdf:about="https://www.emi.fraunhofer.de/ontologies/LPBFO#LPBFO_00732">
+        <rdfs:subClassOf rdf:resource="https://www.materials.fraunhofer.de/ontologies/BWMD_ontology/mid#BWMD_00006"/>
+        <rdfs:comment xml:lang="en">A condition of use of the technical equipment, which is checked at regular intervals with regard to the machine rounds.</rdfs:comment>
+        <rdfs:label xml:lang="en">EquipmentCondition</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://www.emi.fraunhofer.de/ontologies/LPBFO#LPBFO_00733 -->
+
+    <owl:Class rdf:about="https://www.emi.fraunhofer.de/ontologies/LPBFO#LPBFO_00733">
+        <rdfs:subClassOf rdf:resource="https://www.emi.fraunhofer.de/ontologies/LPBFO#LPBFO_00732"/>
+        <rdfs:comment xml:lang="en">Condition of gas sealing of the building chamber, which has a decisive influence on whether gas is drawn from the atmosphere during operation.</rdfs:comment>
+        <rdfs:label xml:lang="en">SealingOfBuildSpaceCondition</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://www.emi.fraunhofer.de/ontologies/LPBFO#LPBFO_00734 -->
+
+    <owl:Class rdf:about="https://www.emi.fraunhofer.de/ontologies/LPBFO#LPBFO_00734">
+        <rdfs:subClassOf rdf:resource="https://www.materials.fraunhofer.de/ontologies/BWMD_ontology/mid#BWMD_00017"/>
+        <rdfs:comment xml:lang="en">Optical system to shape the raw laser beam into a specific processing irradiance distribution.</rdfs:comment>
+        <rdfs:label xml:lang="en">ShapingOfLaserBeam</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://www.emi.fraunhofer.de/ontologies/LPBFO#LPBFO_00735 -->
+
+    <owl:Class rdf:about="https://www.emi.fraunhofer.de/ontologies/LPBFO#LPBFO_00735">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000011"/>
+        <rdfs:comment xml:lang="en">LaserBeam represents the spatially resolved normalised power density distribution of laser radiation along the beam direction. The normalisation implies that the integral over the power density distribution in any plane perpendicular to the beam axis yields to 1W. The power density distribution effective in the process zone then results as the product of the normalised power density distribution with th set laser power.</rdfs:comment>
+        <rdfs:label xml:lang="en">LaserBeam</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://www.emi.fraunhofer.de/ontologies/LPBFO#LPBFO_00736 -->
+
+    <owl:Class rdf:about="https://www.emi.fraunhofer.de/ontologies/LPBFO#LPBFO_00736">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000011"/>
+        <rdfs:comment xml:lang="en">This refers to the laser beam as it comes out of the F-Theta optic.</rdfs:comment>
+        <rdfs:label xml:lang="en">LaserBeamAfterShaping</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://www.emi.fraunhofer.de/ontologies/LPBFO#LPBFO_00737 -->
+
+    <owl:Class rdf:about="https://www.emi.fraunhofer.de/ontologies/LPBFO#LPBFO_00737">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000011"/>
+        <rdfs:comment xml:lang="en">This refers to the laser beam as it looks, for example, behind the decoupling fibre, i.e. feore it is fed to the F-Theta optic.</rdfs:comment>
+        <rdfs:label xml:lang="en">LaserBeamRaw</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://www.emi.fraunhofer.de/ontologies/LPBFO#LPBFO_00738 -->
+
+    <owl:Class rdf:about="https://www.emi.fraunhofer.de/ontologies/LPBFO#LPBFO_00738">
+        <rdfs:subClassOf rdf:resource="https://www.materials.fraunhofer.de/ontologies/BWMD_ontology/mid#BWMD_00011"/>
+        <rdfs:comment xml:lang="en">The tiome resolved on/off profile of an cw-laser which is relevant for the on the fly strategy which means that the laser ist switched off at turning point of hatch vectors.</rdfs:comment>
+        <rdfs:label xml:lang="en">OnOffProfile</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://www.emi.fraunhofer.de/ontologies/LPBFO#LPBFO_00739 -->
+
+    <owl:Class rdf:about="https://www.emi.fraunhofer.de/ontologies/LPBFO#LPBFO_00739">
+        <rdfs:subClassOf rdf:resource="https://www.materials.fraunhofer.de/ontologies/BWMD_ontology/mid#BWMD_00017"/>
+        <rdfs:comment xml:lang="en">The Laser beam must propagate through the protective glass, which protects the scanner unit from splashes and smoke. Depending on the degree of soiling and heating of the protective glass, the laser beam power is reduced an the power density distribution in the process zone.. e.g. the beam diameter, is generally increased.</rdfs:comment>
+        <rdfs:label xml:lang="en">LaserPropagationThroughProtectiveGlass</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://www.emi.fraunhofer.de/ontologies/LPBFO#LPBFO_00740 -->
+
+    <owl:Class rdf:about="https://www.emi.fraunhofer.de/ontologies/LPBFO#LPBFO_00740">
+        <rdfs:subClassOf rdf:resource="https://www.materials.fraunhofer.de/ontologies/BWMD_ontology/mid#BWMD_00170"/>
+        <rdfs:comment xml:lang="en">The protective glass protects the f_Theta optic from splashes and smoke. Depending on the degree of contamination, the laser power behind the glass is reduced and the beaam is widened.</rdfs:comment>
+        <rdfs:label xml:lang="en">ProtectiveGlass</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://www.emi.fraunhofer.de/ontologies/LPBFO#LPBFO_00741 -->
+
+    <owl:Class rdf:about="https://www.emi.fraunhofer.de/ontologies/LPBFO#LPBFO_00741">
+        <rdfs:subClassOf rdf:resource="https://www.materials.fraunhofer.de/ontologies/BWMD_ontology/mid#BWMD_00011"/>
+        <rdfs:comment xml:lang="en">Spatially resolved laser beam characterization in plane.</rdfs:comment>
+        <rdfs:label xml:lang="en">LaserIntensity</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://www.emi.fraunhofer.de/ontologies/LPBFO#LPBFO_00742 -->
+
+    <owl:Class rdf:about="https://www.emi.fraunhofer.de/ontologies/LPBFO#LPBFO_00742">
+        <rdfs:subClassOf rdf:resource="https://www.materials.fraunhofer.de/ontologies/BWMD_ontology/mid#BWMD_00010"/>
+        <rdfs:comment xml:lang="en">That is the offset of the beam focus relative to the process plane. Depending on the material and process regime, it is preferable to position the focus above or below the process plane.</rdfs:comment>
+        <rdfs:label xml:lang="en">LaserFocusShift</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://www.emi.fraunhofer.de/ontologies/LPBFO#LPBFO_00743 -->
+
+    <owl:Class rdf:about="https://www.emi.fraunhofer.de/ontologies/LPBFO#LPBFO_00743">
+        <rdfs:subClassOf rdf:resource="https://www.materials.fraunhofer.de/ontologies/BWMD_ontology/mid#BWMD_00011"/>
+        <rdfs:comment xml:lang="en">Spatially resolved beam distribution in the process plane.</rdfs:comment>
+        <rdfs:label xml:lang="en">LaserIntensityDistributionInTheProcessZone</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://www.emi.fraunhofer.de/ontologies/LPBFO#LPBFO_00744 -->
+
+    <owl:Class rdf:about="https://www.emi.fraunhofer.de/ontologies/LPBFO#LPBFO_00744">
+        <rdfs:subClassOf rdf:resource="https://www.materials.fraunhofer.de/ontologies/BWMD_ontology/mid#BWMD_00017"/>
+        <rdfs:comment xml:lang="en">This refers to the machine sub-process with which the focus position of the laser beam is adjusted.</rdfs:comment>
+        <rdfs:label xml:lang="en">ShiftingOfLaserFocus</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://www.emi.fraunhofer.de/ontologies/LPBFO#LPBFO_00745 -->
+
+    <owl:Class rdf:about="https://www.emi.fraunhofer.de/ontologies/LPBFO#LPBFO_00745">
+        <rdfs:subClassOf rdf:resource="https://www.materials.fraunhofer.de/ontologies/BWMD_ontology/mid#BWMD_00010"/>
+        <rdfs:comment xml:lang="en">Equiaxial offset of the contour lines in both positive and negative terms, with which the cutting lines are offset. For example, cutting lines are offset slightly outwards in the area of functional surfaces in order to generate an oversize for a milling finishing operation.</rdfs:comment>
+        <rdfs:label xml:lang="en">ContourOffset</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://www.emi.fraunhofer.de/ontologies/LPBFO#LPBFO_00746 -->
+
+    <owl:Class rdf:about="https://www.emi.fraunhofer.de/ontologies/LPBFO#LPBFO_00746">
+        <rdfs:subClassOf rdf:resource="https://www.materials.fraunhofer.de/ontologies/BWMD_ontology/mid#BWMD_00032"/>
+        <rdfs:comment xml:lang="en">File that contains slice lines per layer.</rdfs:comment>
+        <rdfs:label xml:lang="en">SliceLinesPerLayerFile</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://www.emi.fraunhofer.de/ontologies/LPBFO#LPBFO_00747 -->
+
+    <owl:Class rdf:about="https://www.emi.fraunhofer.de/ontologies/LPBFO#LPBFO_00747">
+        <rdfs:subClassOf rdf:resource="https://www.emi.fraunhofer.de/ontologies/LPBFO#LPBFO_00705"/>
+        <rdfs:comment xml:lang="en">The direction, in which the recoater moves over the platform given in the coordinate system of the build platform.</rdfs:comment>
+        <rdfs:label xml:lang="en">RecoaterDirection</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://www.emi.fraunhofer.de/ontologies/LPBFO#LPBFO_00748 -->
+
+    <owl:Class rdf:about="https://www.emi.fraunhofer.de/ontologies/LPBFO#LPBFO_00748">
+        <rdfs:subClassOf rdf:resource="https://www.materials.fraunhofer.de/ontologies/BWMD_ontology/mid#BWMD_00170"/>
+        <rdfs:comment xml:lang="en">The sealing of build space often consists of rubber seals to hermetically delimit the build space and enclose the inert gas. It protects the build space from entering atmospheric gas.</rdfs:comment>
+        <rdfs:label xml:lang="en">SealingOfBuildSpace</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://www.emi.fraunhofer.de/ontologies/LPBFO#LPBFO_00750 -->
+
+    <owl:Class rdf:about="https://www.emi.fraunhofer.de/ontologies/LPBFO#LPBFO_00750">
+        <rdfs:subClassOf rdf:resource="https://www.emi.fraunhofer.de/ontologies/LPBFO#LPBFO_00001"/>
+        <rdfs:comment xml:lang="en">A mixed powder is a powder that is composed of primary powder and secondary powder.</rdfs:comment>
+        <rdfs:label xml:lang="en">MixedPowder</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://www.emi.fraunhofer.de/ontologies/LPBFO#LPBFO_00751 -->
+
+    <owl:Class rdf:about="https://www.emi.fraunhofer.de/ontologies/LPBFO#LPBFO_00751">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
+        <rdfs:comment xml:lang="en">This refers to the operation of the LPBF system. This includes, for example, the preheating, the gas supply, the commissioning of the pyrometer and the layer-by-layer assembly of the component, which itself includes three sub-processes per layer, lowering of the plate, preparation of the powder layer and layer fusion.</rdfs:comment>
+        <rdfs:label xml:lang="en">OperationOfLPBFProcess</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://www.emi.fraunhofer.de/ontologies/LPBFO#LPBFO_00752 -->
+
+    <owl:Class rdf:about="https://www.emi.fraunhofer.de/ontologies/LPBFO#LPBFO_00752">
+        <rdfs:subClassOf rdf:resource="https://www.materials.fraunhofer.de/ontologies/BWMD_ontology/mid#BWMD_00024"/>
+        <rdfs:comment xml:lang="en">This refers to all data that comes with the AM task and is already set before starting the preparation of the LPBF process.</rdfs:comment>
+        <rdfs:label xml:lang="en">AMTaskDataSet</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://www.emi.fraunhofer.de/ontologies/LPBFO#LPBFO_00753 -->
+
+    <owl:Class rdf:about="https://www.emi.fraunhofer.de/ontologies/LPBFO#LPBFO_00753">
+        <rdfs:subClassOf rdf:resource="https://www.materials.fraunhofer.de/ontologies/BWMD_ontology/mid#BWMD_00024"/>
+        <rdfs:comment xml:lang="en">The Layer Fusion Process Data Set refers to the data extracted from the building process. This includes, for example, the data recorded with the pyrometers and high-resolution images of the powder layer.
+PartBuildingInLayers</rdfs:comment>
+        <rdfs:label xml:lang="en">LayerFusionProcessDataSet</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://www.emi.fraunhofer.de/ontologies/LPBFO#LPBFO_00754 -->
+
+    <owl:Class rdf:about="https://www.emi.fraunhofer.de/ontologies/LPBFO#LPBFO_00754">
+        <rdfs:subClassOf rdf:resource="https://www.emi.fraunhofer.de/ontologies/LPBFO#LPBFO_712"/>
+        <rdfs:comment xml:lang="en">Contains the instruction in which order, with which power and at which speed the scan vectors are to be processed.</rdfs:comment>
+        <rdfs:label xml:lang="en">ExposureStrategy</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://www.emi.fraunhofer.de/ontologies/LPBFO#LPBFO_00755 -->
+
+    <owl:Class rdf:about="https://www.emi.fraunhofer.de/ontologies/LPBFO#LPBFO_00755">
+        <rdfs:subClassOf rdf:resource="https://www.materials.fraunhofer.de/ontologies/BWMD_ontology/mid#BWMD_00117"/>
+        <rdfs:comment xml:lang="en">This means the process which itself includes three sub-processes per layer, lowering of the plate, preparation of the powder layer and layer fusion.</rdfs:comment>
+        <rdfs:label xml:lang="en">PartBuildingInLayers</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://www.emi.fraunhofer.de/ontologies/LPBFO#LPBFO_00756 -->
+
+    <owl:Class rdf:about="https://www.emi.fraunhofer.de/ontologies/LPBFO#LPBFO_00756">
+        <rdfs:subClassOf rdf:resource="https://www.materials.fraunhofer.de/ontologies/BWMD_ontology/mid#BWMD_00024"/>
+        <rdfs:comment xml:lang="en">These data refers to the process OperationOfLPBFProcess and contains all data that is accumulated during the operation of the LPBF process.</rdfs:comment>
+        <rdfs:label xml:lang="en">OperationOfLPBFProcessDataSet</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://www.emi.fraunhofer.de/ontologies/LPBFO#LPBFO_00757 -->
+
+    <owl:Class rdf:about="https://www.emi.fraunhofer.de/ontologies/LPBFO#LPBFO_00757">
+        <rdfs:subClassOf rdf:resource="https://www.materials.fraunhofer.de/ontologies/BWMD_ontology/mid#BWMD_00010"/>
+        <rdfs:comment xml:lang="en">Carbon dioxide (CO2) is a colourless, odourless and non-poisonous gas formed by combustion of carbon and in the respiration of living organisms and is considered a greenhouse gas. Emissions means the release of greenhouse gases and/or their precursors into the atmosphere over a specified area and period of time.
+
+Carbon dioxide emissions or CO2 emissions are emissions stemming from the burning of fossil fuels and the manufacture of cement; they include carbon dioxide produced during consumption of solid, liquid, and gas fuels as well as gas flaring.
+
+The emissions associated to a proces or object that not directly produce CO2 emissions are estimated via Life Cycle Analysis (LCA) and describe the CO2-carbon footprint of that entity.</rdfs:comment>
+        <rdfs:isDefinedBy xml:lang="en">https://ec.europa.eu/eurostat/statistics-explained/index.php?title=Glossary:Carbon_dioxide_emissions</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">CO2Emission</rdfs:label>
+        <rdfs:seeAlso xml:lang="en">https://dbpedia.org/ontology/co2Emission</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
+    <!-- https://www.emi.fraunhofer.de/ontologies/LPBFO#LPBFO_00800 -->
+
+    <owl:Class rdf:about="https://www.emi.fraunhofer.de/ontologies/LPBFO#LPBFO_00800">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000030"/>
+        <rdfs:label xml:lang="en">Waste</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://www.emi.fraunhofer.de/ontologies/LPBFO#LPBFO_00802 -->
+
+    <owl:Class rdf:about="https://www.emi.fraunhofer.de/ontologies/LPBFO#LPBFO_00802">
+        <rdfs:subClassOf rdf:resource="https://www.materials.fraunhofer.de/ontologies/BWMD_ontology/mid#BWMD_00024"/>
+        <rdfs:comment xml:lang="en">All the data set regarding the LCA (Life Cycle Analysis).</rdfs:comment>
+        <rdfs:label xml:lang="en">LCADataSet</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://www.emi.fraunhofer.de/ontologies/LPBFO#LPBFO_00803 -->
+
+    <owl:Class rdf:about="https://www.emi.fraunhofer.de/ontologies/LPBFO#LPBFO_00803">
+        <rdfs:subClassOf rdf:resource="https://www.materials.fraunhofer.de/ontologies/BWMD_ontology/mid#BWMD_00132"/>
+        <rdfs:comment xml:lang="en">A substance used to reduce or regulate the temperature of a system.</rdfs:comment>
+        <rdfs:isDefinedBy xml:lang="en">https://www.wikidata.org/wiki/Q1056832</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">Coolant</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://www.emi.fraunhofer.de/ontologies/LPBFO#LPBFO_00804 -->
+
+    <owl:Class rdf:about="https://www.emi.fraunhofer.de/ontologies/LPBFO#LPBFO_00804">
+        <rdfs:subClassOf rdf:resource="https://www.materials.fraunhofer.de/ontologies/BWMD_ontology/mid#BWMD_00086"/>
+        <rdfs:comment xml:lang="en">A set of eletrical energy, which came form various sources of electrical energy.</rdfs:comment>
+        <rdfs:label xml:lang="en">ElectricalEnergySet</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://www.emi.fraunhofer.de/ontologies/LPBFO#LPBFO_00805 -->
+
+    <owl:Class rdf:about="https://www.emi.fraunhofer.de/ontologies/LPBFO#LPBFO_00805">
+        <rdfs:subClassOf rdf:resource="https://www.materials.fraunhofer.de/ontologies/BWMD_ontology/mid#BWMD_00086"/>
+        <rdfs:comment xml:lang="en">An energy newly derived from electric potential energy.</rdfs:comment>
+        <rdfs:isDefinedBy xml:lang="en">https://www.wikidata.org/wiki/Q206799</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">ElectricalEnergy</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://www.emi.fraunhofer.de/ontologies/LPBFO#LPBFO_00806 -->
+
+    <owl:Class rdf:about="https://www.emi.fraunhofer.de/ontologies/LPBFO#LPBFO_00806">
+        <rdfs:subClassOf rdf:resource="https://www.materials.fraunhofer.de/ontologies/BWMD_ontology/mid#BWMD_00132"/>
+        <rdfs:comment xml:lang="en">An air kept under a pressure that is greater than atmospheric pressure.</rdfs:comment>
+        <rdfs:isDefinedBy xml:lang="en">https://www.wikidata.org/wiki/Q143746</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">CompressedAir</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://www.emi.fraunhofer.de/ontologies/LPBFO#LPBFO_00807 -->
+
+    <owl:Class rdf:about="https://www.emi.fraunhofer.de/ontologies/LPBFO#LPBFO_00807">
+        <rdfs:subClassOf rdf:resource="https://www.materials.fraunhofer.de/ontologies/BWMD_ontology/mid#BWMD_00036"/>
+        <rdfs:comment xml:lang="en">A set of goods with short durability.</rdfs:comment>
+        <rdfs:isDefinedBy xml:lang="en">https://www.wikidata.org/wiki/Q1681365</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">ConsumableSet</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://www.emi.fraunhofer.de/ontologies/LPBFO#LPBFO_00808 -->
+
+    <owl:Class rdf:about="https://www.emi.fraunhofer.de/ontologies/LPBFO#LPBFO_00808">
+        <rdfs:subClassOf rdf:resource="https://www.emi.fraunhofer.de/ontologies/LPBFO#LPBFO_00001"/>
+        <owl:disjointWith rdf:resource="https://www.emi.fraunhofer.de/ontologies/LPBFO#LPBFO_00809"/>
+        <rdfs:comment xml:lang="en">The primary powder is a new metal powder used for a metal metallurgy process such as the LPBF process.</rdfs:comment>
+        <rdfs:label xml:lang="en">PrimaryPowder</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://www.emi.fraunhofer.de/ontologies/LPBFO#LPBFO_00809 -->
+
+    <owl:Class rdf:about="https://www.emi.fraunhofer.de/ontologies/LPBFO#LPBFO_00809">
+        <rdfs:subClassOf rdf:resource="https://www.emi.fraunhofer.de/ontologies/LPBFO#LPBFO_00001"/>
+        <rdfs:comment xml:lang="en">The secondary powder is a kind of recycled metal powder used for metal metallurgy process such as LPBF process.</rdfs:comment>
+        <rdfs:label xml:lang="en">SecondaryPowder</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://www.emi.fraunhofer.de/ontologies/LPBFO#LPBFO_00810 -->
+
+    <owl:Class rdf:about="https://www.emi.fraunhofer.de/ontologies/LPBFO#LPBFO_00810">
+        <rdfs:subClassOf rdf:resource="https://www.emi.fraunhofer.de/ontologies/LPBFO#LPBFO_00800"/>
+        <rdfs:comment xml:lang="en">A waste coolant is a coolant from an output of a process, which can not be used anymore. It is assumed that the quantity of the waste coolant has the same amount as the coolant input in the same process.</rdfs:comment>
+        <rdfs:label xml:lang="en">WasteCoolant</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://www.emi.fraunhofer.de/ontologies/LPBFO#LPBFO_00811 -->
+
+    <owl:Class rdf:about="https://www.emi.fraunhofer.de/ontologies/LPBFO#LPBFO_00811">
+        <rdfs:subClassOf rdf:resource="https://www.emi.fraunhofer.de/ontologies/LPBFO#LPBFO_00800"/>
+        <rdfs:comment xml:lang="en">The waste consumable set is the output produced in a process, which can not use again. The quantity of waste consumables is assumed the same as the input of the same process (consumables).</rdfs:comment>
+        <rdfs:label xml:lang="en">WasteConsumableSet</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://www.emi.fraunhofer.de/ontologies/LPBFO#LPBFO_00812 -->
+
+    <owl:Class rdf:about="https://www.emi.fraunhofer.de/ontologies/LPBFO#LPBFO_00812">
+        <rdfs:subClassOf rdf:resource="https://www.emi.fraunhofer.de/ontologies/LPBFO#LPBFO_00800"/>
+        <rdfs:comment xml:lang="en">The waste infrastructure set is an output produced in a process, which can not use again. The quantity of waste infrastructure is assumed the same as the input of the same process (infrastructure).</rdfs:comment>
+        <rdfs:label xml:lang="en">WasteInfrastructureSet</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://www.emi.fraunhofer.de/ontologies/LPBFO#LPBFO_00813 -->
+
+    <owl:Class rdf:about="https://www.emi.fraunhofer.de/ontologies/LPBFO#LPBFO_00813">
+        <rdfs:subClassOf rdf:resource="https://www.emi.fraunhofer.de/ontologies/LPBFO#LPBFO_00800"/>
+        <rdfs:comment xml:lang="en">Thermal enegy is defined as a energy which is produced by a machine, or other process that uses energy, as a byproduct of doing work. All such processes give off some waste heat as a fundamental result of the laws of thermodynamics.</rdfs:comment>
+        <rdfs:label xml:lang="en">WasteThermalEnergy</rdfs:label>
+        <rdfs:seeAlso xml:lang="en">https://en.wikipedia.org/wiki/Waste_heat</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
+    <!-- https://www.emi.fraunhofer.de/ontologies/LPBFO#LPBFO_00814 -->
+
+    <owl:Class rdf:about="https://www.emi.fraunhofer.de/ontologies/LPBFO#LPBFO_00814">
+        <rdfs:subClassOf rdf:resource="https://www.emi.fraunhofer.de/ontologies/LPBFO#LPBFO_00800"/>
+        <rdfs:comment xml:lang="en">The exhaust (air) is an output produced in a process, which can not use again. The quantity of exhaust (air) is assumed the same as compressed air at the input of the same process.</rdfs:comment>
+        <rdfs:label xml:lang="en">ExhaustAir</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://www.emi.fraunhofer.de/ontologies/LPBFO#LPBFO_00815 -->
+
+    <owl:Class rdf:about="https://www.emi.fraunhofer.de/ontologies/LPBFO#LPBFO_00815">
+        <rdfs:subClassOf rdf:resource="https://www.emi.fraunhofer.de/ontologies/LPBFO#LPBFO_00800"/>
+        <rdfs:comment xml:lang="en">The exhaust (inert gas) is an output produced in a process, which can not use again. The quantity of exhaust (inert gas) is assumed the same as inert gas at the input of the same process.</rdfs:comment>
+        <rdfs:label xml:lang="en">ExhaustInertGas</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://www.emi.fraunhofer.de/ontologies/LPBFO#LPBFO_00816 -->
+
+    <owl:Class rdf:about="https://www.emi.fraunhofer.de/ontologies/LPBFO#LPBFO_00816">
+        <rdfs:subClassOf rdf:resource="https://www.emi.fraunhofer.de/ontologies/LPBFO#LPBFO_00800"/>
+        <rdfs:comment xml:lang="en">The powder loss is the quantity of powder lost (such as when collecting the powder) or exciting somewhere else (such as a filter, a vacuum cleaner).</rdfs:comment>
+        <rdfs:label xml:lang="en">PowderLoss</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://www.emi.fraunhofer.de/ontologies/LPBFO#LPBFO_00817 -->
+
+    <owl:Class rdf:about="https://www.emi.fraunhofer.de/ontologies/LPBFO#LPBFO_00817">
+        <rdfs:subClassOf rdf:resource="https://www.emi.fraunhofer.de/ontologies/LPBFO#LPBFO_00046"/>
+        <rdfs:comment xml:lang="en">A process of removing the specimen from the powder bed in LPBF process.</rdfs:comment>
+        <rdfs:label xml:lang="en">Unpacking</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://www.emi.fraunhofer.de/ontologies/LPBFO#LPBFO_00818 -->
+
+    <owl:Class rdf:about="https://www.emi.fraunhofer.de/ontologies/LPBFO#LPBFO_00818">
+        <rdfs:subClassOf rdf:resource="https://www.emi.fraunhofer.de/ontologies/LPBFO#LPBFO_00001"/>
+        <rdfs:comment xml:lang="en">The metal powder collected in a process can potentially be recycled again.</rdfs:comment>
+        <rdfs:label xml:lang="en">CollectedPowder</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://www.emi.fraunhofer.de/ontologies/LPBFO#LPBFO_00819 -->
+
+    <owl:Class rdf:about="https://www.emi.fraunhofer.de/ontologies/LPBFO#LPBFO_00819">
+        <rdfs:subClassOf rdf:resource="https://www.emi.fraunhofer.de/ontologies/LPBFO#LPBFO_00046"/>
+        <rdfs:comment xml:lang="en">An activity that purifies people, animals and objects of dirt and other particles.</rdfs:comment>
+        <rdfs:isDefinedBy xml:lang="en">https://www.wikidata.org/wiki/Q17200001</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">Cleaning</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://www.emi.fraunhofer.de/ontologies/LPBFO#LPBFO_00820 -->
+
+    <owl:Class rdf:about="https://www.emi.fraunhofer.de/ontologies/LPBFO#LPBFO_00820">
+        <rdfs:subClassOf rdf:resource="https://www.emi.fraunhofer.de/ontologies/LPBFO#LPBFO_00046"/>
+        <rdfs:comment xml:lang="en">A process of making the semi-finished product to reduce the temperature until it can use to next process.</rdfs:comment>
+        <rdfs:label xml:lang="en">Cooldown</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://www.emi.fraunhofer.de/ontologies/LPBFO#LPBFO_00821 -->
+
+    <owl:Class rdf:about="https://www.emi.fraunhofer.de/ontologies/LPBFO#LPBFO_00821">
+        <rdfs:subClassOf rdf:resource="https://www.emi.fraunhofer.de/ontologies/LPBFO#LPBFO_00800"/>
+        <rdfs:comment xml:lang="en">Waste support structures is the waste material which is generated by removing the support structures from the main specimen, and it can not use again.</rdfs:comment>
+        <rdfs:label xml:lang="en">WasteSupportStructure</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://www.emi.fraunhofer.de/ontologies/LPBFO#LPBFO_00822 -->
+
+    <owl:Class rdf:about="https://www.emi.fraunhofer.de/ontologies/LPBFO#LPBFO_00822">
+        <rdfs:subClassOf rdf:resource="https://www.materials.fraunhofer.de/ontologies/BWMD_ontology/mid#BWMD_00114"/>
+        <rdfs:comment xml:lang="en">A collection of support structures when removing it from the semi-finished product.</rdfs:comment>
+        <rdfs:label xml:lang="en">CollectedSupportStructure</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://www.emi.fraunhofer.de/ontologies/LPBFO#LPBFO_00823 -->
+
+    <owl:Class rdf:about="https://www.emi.fraunhofer.de/ontologies/LPBFO#LPBFO_00823">
+        <rdfs:subClassOf rdf:resource="https://www.emi.fraunhofer.de/ontologies/LPBFO#LPBFO_00046"/>
+        <rdfs:comment xml:lang="en">Machining is a process in which a material (often metal) is cut to a desired final shape and size by a controlled material-removal process.</rdfs:comment>
+        <rdfs:label xml:lang="en">Machining</rdfs:label>
+        <rdfs:seeAlso xml:lang="en">https://en.wikipedia.org/wiki/Machining</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
+    <!-- https://www.emi.fraunhofer.de/ontologies/LPBFO#LPBFO_00824 -->
+
+    <owl:Class rdf:about="https://www.emi.fraunhofer.de/ontologies/LPBFO#LPBFO_00824">
+        <rdfs:subClassOf rdf:resource="https://www.emi.fraunhofer.de/ontologies/LPBFO#LPBFO_00800"/>
+        <rdfs:comment xml:lang="en">Metal swarf are pieces of metal that are the debris or waste resulting from machining (e.g. turning, milling and drilling) or similar subtractive (material-removing) manufacturing processes.</rdfs:comment>
+        <rdfs:label xml:lang="en">WasteMetalSwarf</rdfs:label>
+        <rdfs:seeAlso xml:lang="en">https://en.wikipedia.org/wiki/Metal_swarf</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
+    <!-- https://www.emi.fraunhofer.de/ontologies/LPBFO#LPBFO_00825 -->
+
+    <owl:Class rdf:about="https://www.emi.fraunhofer.de/ontologies/LPBFO#LPBFO_00825">
+        <rdfs:subClassOf rdf:resource="https://www.emi.fraunhofer.de/ontologies/LPBFO#LPBFO_00046"/>
+        <rdfs:comment xml:lang="en">Range of processes that alter the surface of an item to achieve a certain property.</rdfs:comment>
+        <rdfs:isDefinedBy xml:lang="en">https://www.wikidata.org/wiki/Q2009662</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">SurfaceTreatment</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://www.emi.fraunhofer.de/ontologies/LPBFO#LPBFO_00826 -->
+
+    <owl:Class rdf:about="https://www.emi.fraunhofer.de/ontologies/LPBFO#LPBFO_00826">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000027"/>
+        <rdfs:comment xml:lang="en">An abrasive material is a material for abrasive blasting of the surface treatment. For example, the most common material in the abrasive blasting process is sand.</rdfs:comment>
+        <rdfs:label xml:lang="en">AbrasiveMaterial</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://www.emi.fraunhofer.de/ontologies/LPBFO#LPBFO_00827 -->
+
+    <owl:Class rdf:about="https://www.emi.fraunhofer.de/ontologies/LPBFO#LPBFO_00827">
+        <rdfs:subClassOf rdf:resource="https://www.emi.fraunhofer.de/ontologies/LPBFO#LPBFO_00800"/>
+        <rdfs:comment xml:lang="en">The waste abrasive material is a material that can not be recycled or may have residual left elsewhere in the abrasive blasting process.</rdfs:comment>
+        <rdfs:label xml:lang="en">WasteAbrasiveMaterial</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://www.emi.fraunhofer.de/ontologies/LPBFO#LPBFO_0719 -->
+
+    <owl:Class rdf:about="https://www.emi.fraunhofer.de/ontologies/LPBFO#LPBFO_0719">
+        <rdfs:subClassOf rdf:resource="https://www.materials.fraunhofer.de/ontologies/BWMD_ontology/mid#BWMD_00017"/>
+        <rdfs:comment xml:lang="en">The sub-process per layer in which a new owder layer is applied with a slider.</rdfs:comment>
+        <rdfs:label xml:lang="en">Recoating</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://www.emi.fraunhofer.de/ontologies/LPBFO#LPBFO_0722 -->
+
+    <owl:Class rdf:about="https://www.emi.fraunhofer.de/ontologies/LPBFO#LPBFO_0722">
+        <rdfs:subClassOf rdf:resource="https://www.materials.fraunhofer.de/ontologies/BWMD_ontology/mid#BWMD_00170"/>
+        <rdfs:comment xml:lang="en">OptoGalvoSystem is a synonym for a beam shaping system an a movement unit for the laser beam. This usually involves F-Theta optic an a galvano scanner system for positioning the beam focus in the platform plane.</rdfs:comment>
+        <rdfs:label xml:lang="en">OptoGalvoSystem</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://www.emi.fraunhofer.de/ontologies/LPBFO#LPBFO_59d6d442_c309_4576_8499_bb1dfa9c0271 -->
+
+    <owl:Class rdf:about="https://www.emi.fraunhofer.de/ontologies/LPBFO#LPBFO_59d6d442_c309_4576_8499_bb1dfa9c0271">
+        <rdfs:subClassOf rdf:resource="https://www.materials.fraunhofer.de/ontologies/BWMD_ontology/mid#BWMD_00235"/>
+        <rdfs:comment xml:lang="en">Geometry data generated in the CAX sub-process of building job preparation.</rdfs:comment>
+        <rdfs:label xml:lang="en">GeometricData</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://www.emi.fraunhofer.de/ontologies/LPBFO#LPBFO_712 -->
+
+    <owl:Class rdf:about="https://www.emi.fraunhofer.de/ontologies/LPBFO#LPBFO_712">
+        <rdfs:subClassOf rdf:resource="https://www.materials.fraunhofer.de/ontologies/BWMD_ontology/mid#BWMD_00008"/>
+        <rdfs:comment xml:lang="en">General rules used in data preparation and processing for the LPBF building job.</rdfs:comment>
+        <rdfs:label xml:lang="en">LPBFPreparationRules</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://www.emi.fraunhofer.de/ontologies/LPBFO#LPBFO_720 -->
+
+    <owl:Class rdf:about="https://www.emi.fraunhofer.de/ontologies/LPBFO#LPBFO_720">
+        <rdfs:subClassOf rdf:resource="https://www.materials.fraunhofer.de/ontologies/BWMD_ontology/mid#BWMD_00017"/>
+        <rdfs:comment xml:lang="en">The sub-process of moving the laser focus along the hatch and contour vectors for that layer according to the specified scanning speed, laser power and focus position.</rdfs:comment>
+        <rdfs:label xml:lang="en">LayerFusion</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://www.materials.fraunhofer.de/ontologies/BWMD_ontology/mid#BWMD_00001 -->
+
+    <owl:Class rdf:about="https://www.materials.fraunhofer.de/ontologies/BWMD_ontology/mid#BWMD_00001"/>
+    
+
+
+    <!-- https://www.materials.fraunhofer.de/ontologies/BWMD_ontology/mid#BWMD_00009 -->
+
+    <owl:Class rdf:about="https://www.materials.fraunhofer.de/ontologies/BWMD_ontology/mid#BWMD_00009"/>
+    
+
+
+    <!-- https://www.materials.fraunhofer.de/ontologies/BWMD_ontology/mid#BWMD_00010 -->
+
+    <owl:Class rdf:about="https://www.materials.fraunhofer.de/ontologies/BWMD_ontology/mid#BWMD_00010"/>
+    
+
+
+    <!-- https://www.materials.fraunhofer.de/ontologies/BWMD_ontology/mid#BWMD_00011 -->
+
+    <owl:Class rdf:about="https://www.materials.fraunhofer.de/ontologies/BWMD_ontology/mid#BWMD_00011"/>
+    
+
+
+    <!-- https://www.materials.fraunhofer.de/ontologies/BWMD_ontology/mid#BWMD_00024 -->
+
+    <owl:Class rdf:about="https://www.materials.fraunhofer.de/ontologies/BWMD_ontology/mid#BWMD_00024"/>
+    
+
+
+    <!-- https://www.materials.fraunhofer.de/ontologies/BWMD_ontology/mid#BWMD_00032 -->
+
+    <owl:Class rdf:about="https://www.materials.fraunhofer.de/ontologies/BWMD_ontology/mid#BWMD_00032"/>
+    
+
+
+    <!-- https://www.materials.fraunhofer.de/ontologies/BWMD_ontology/mid#BWMD_00036 -->
+
+    <owl:Class rdf:about="https://www.materials.fraunhofer.de/ontologies/BWMD_ontology/mid#BWMD_00036"/>
+    
+
+
+    <!-- https://www.materials.fraunhofer.de/ontologies/BWMD_ontology/mid#BWMD_00072 -->
+
+    <owl:Class rdf:about="https://www.materials.fraunhofer.de/ontologies/BWMD_ontology/mid#BWMD_00072"/>
+    
+
+
+    <!-- https://www.materials.fraunhofer.de/ontologies/BWMD_ontology/mid#BWMD_00098 -->
+
+    <owl:Class rdf:about="https://www.materials.fraunhofer.de/ontologies/BWMD_ontology/mid#BWMD_00098"/>
+    
+
+
+    <!-- https://www.materials.fraunhofer.de/ontologies/BWMD_ontology/mid#BWMD_00114 -->
+
+    <owl:Class rdf:about="https://www.materials.fraunhofer.de/ontologies/BWMD_ontology/mid#BWMD_00114"/>
+    
+
+
+    <!-- https://www.materials.fraunhofer.de/ontologies/BWMD_ontology/mid#BWMD_00117 -->
+
+    <owl:Class rdf:about="https://www.materials.fraunhofer.de/ontologies/BWMD_ontology/mid#BWMD_00117"/>
+    
+
+
+    <!-- https://www.materials.fraunhofer.de/ontologies/BWMD_ontology/mid#BWMD_00132 -->
+
+    <owl:Class rdf:about="https://www.materials.fraunhofer.de/ontologies/BWMD_ontology/mid#BWMD_00132"/>
+    
+
+
+    <!-- https://www.materials.fraunhofer.de/ontologies/BWMD_ontology/mid#BWMD_00136 -->
+
+    <rdf:Description rdf:about="https://www.materials.fraunhofer.de/ontologies/BWMD_ontology/mid#BWMD_00136">
+        <owl:equivalentClass rdf:resource="https://www.materials.fraunhofer.de/ontologies/BWMD_ontology/mid#BWMD_00226"/>
+    </rdf:Description>
+    
+
+
+    <!-- https://www.materials.fraunhofer.de/ontologies/BWMD_ontology/mid#BWMD_00170 -->
+
+    <owl:Class rdf:about="https://www.materials.fraunhofer.de/ontologies/BWMD_ontology/mid#BWMD_00170"/>
+    
+
+
+    <!-- https://www.materials.fraunhofer.de/ontologies/BWMD_ontology/mid#BWMD_00226 -->
+
+    <rdf:Description rdf:about="https://www.materials.fraunhofer.de/ontologies/BWMD_ontology/mid#BWMD_00226"/>
+    
+
+
+    <!-- https://www.materials.fraunhofer.de/ontologies/BWMD_ontology/mid#BWMD_00235 -->
+
+    <owl:Class rdf:about="https://www.materials.fraunhofer.de/ontologies/BWMD_ontology/mid#BWMD_00235"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotations
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description rdf:about="https://www.materials.fraunhofer.de/ontologies/BWMD_ontology/mid#BWMD_00835">
+        <rdfs:label xml:lang="en">curator</rdfs:label>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.2.8.20170104-2310) https://github.com/owlcs/owlapi -->
+

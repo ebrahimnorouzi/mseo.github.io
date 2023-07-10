@@ -1,0 +1,1893 @@
+Prefix(:=<http://purls.helmholtz-metadaten.de/mwo/>)
+Prefix(mwo:=<http://purls.helmholtz-metadaten.de/mwo/>)
+Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
+Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
+Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
+Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
+Prefix(foaf:=<http://xmlns.com/foaf/0.1/>)
+Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
+Prefix(modsci:=<https://w3id.org/skgo/modsci#>)
+Prefix(dcterms:=<http://purl.org/dc/terms/>)
+Prefix(nfdicore:=<http://nfdi.fiz-karlsruhe.de/ontology/>)
+
+
+Ontology(<http://purls.helmholtz-metadaten.de/mwo/>
+Annotation(<http://purl.org/dc/elements/1.1/contributor> <https://orcid.org/0000-0001-7069-9804>)
+Annotation(<http://purl.org/dc/elements/1.1/contributor> <https://orcid.org/0000-0001-9106-8825>)
+Annotation(<http://purl.org/dc/elements/1.1/contributor> <https://orcid.org/0000-0001-9560-4728>)
+Annotation(<http://purl.org/dc/elements/1.1/contributor> <https://orcid.org/0000-0002-2691-6995>)
+Annotation(<http://purl.org/dc/elements/1.1/contributor> <https://orcid.org/0000-0002-5149-603X>)
+Annotation(<http://purl.org/dc/elements/1.1/contributor> <https://orcid.org/0000-0003-4926-0068>)
+Annotation(dcterms:creator <https://orcid.org/0000-0001-7564-7990>)
+Annotation(dcterms:creator <https://orcid.org/0000-0002-1008-4530>)
+Annotation(dcterms:creator <https://orcid.org/0000-0002-2818-5890>)
+Annotation(dcterms:description "The MatWerk ontology represents research data and related activities of the MSE community. A first version of the ontology will be simplified, focusing on (i) community structure: researchers, research projects, universities, and institutions; (ii) infrastructure: software, workflows, ontologies, schemas, APIs, instruments, facilities, educational resources; and (iii) data: repositories, databases, scientific publications, published datasets and reference data.")
+Annotation(dcterms:license <https://creativecommons.org/licenses/unspecified>)
+Annotation(dcterms:license <https://creativecommons.org/licenses/by/4.0/>)
+Annotation(dcterms:title "The MatWerk ontology")
+Annotation(rdfs:comment "The purpose of the MatWerk Ontology is to represent the scientific and infrastructural status of the Materials Science and Engineering (MSE) community. It will be used as a backbone for the MSE Knowledge Graph."@en)
+
+Declaration(Class(<http://emmo.info/emmo#EMMO_4207e895_8b83_4318_996a_72cfb32acd94>))
+Declaration(Class(nfdicore:AcademicDiscipline))
+Declaration(Class(nfdicore:City))
+Declaration(Class(nfdicore:Collection))
+Declaration(Class(nfdicore:Consortium))
+Declaration(Class(nfdicore:Country))
+Declaration(Class(nfdicore:DataPortal))
+Declaration(Class(nfdicore:Dataset))
+Declaration(Class(nfdicore:FederalState))
+Declaration(Class(nfdicore:ObjectType))
+Declaration(Class(nfdicore:Organization))
+Declaration(Class(nfdicore:Person))
+Declaration(Class(nfdicore:Place))
+Declaration(Class(nfdicore:ProgrammingLanguage))
+Declaration(Class(nfdicore:Project))
+Declaration(Class(nfdicore:ProvidedResource))
+Declaration(Class(nfdicore:Publication))
+Declaration(Class(nfdicore:Resource))
+Declaration(Class(nfdicore:SemanticExpressivity))
+Declaration(Class(nfdicore:ServiceType))
+Declaration(Class(nfdicore:Software))
+Declaration(Class(nfdicore:Specification))
+Declaration(Class(nfdicore:Standard))
+Declaration(Class(nfdicore:TechnologicalMeans))
+Declaration(Class(nfdicore:Website))
+Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000023>))
+Declaration(Class(dcterms:FileFormat))
+Declaration(Class(dcterms:MediaType))
+Declaration(Class(mwo:ChemistryDatabase))
+Declaration(Class(mwo:ComputationalWorkflow))
+Declaration(Class(mwo:ContactPerson))
+Declaration(Class(mwo:ContactPoint))
+Declaration(Class(mwo:CrystallographyDatabase))
+Declaration(Class(mwo:DataCollector))
+Declaration(Class(mwo:Database))
+Declaration(Class(mwo:Documentation))
+Declaration(Class(mwo:EducationalEvent))
+Declaration(Class(mwo:EducationalResource))
+Declaration(Class(mwo:ElectronicLabNotebook))
+Declaration(Class(mwo:ExperimentalWorkflow))
+Declaration(Class(mwo:GitRepository))
+Declaration(Class(mwo:GroupLeader))
+Declaration(Class(mwo:LargeScaleFacility))
+Declaration(Class(mwo:Lecture))
+Declaration(Class(mwo:MaterialsDatabase))
+Declaration(Class(mwo:MetadataSchema))
+Declaration(Class(mwo:Method))
+Declaration(Class(mwo:OntologyRepository))
+Declaration(Class(mwo:Patent))
+Declaration(Class(mwo:PotentialsRepository))
+Declaration(Class(mwo:ProcessingSoftware))
+Declaration(Class(mwo:ProjectLeader))
+Declaration(Class(mwo:ProjectManager))
+Declaration(Class(mwo:ProjectMember))
+Declaration(Class(mwo:Repository))
+Declaration(Class(mwo:ResearchGroup))
+Declaration(Class(mwo:ResearchSoftware))
+Declaration(Class(mwo:ResearchTopic))
+Declaration(Class(mwo:SemanticResource))
+Declaration(Class(mwo:Seminar))
+Declaration(Class(mwo:SoftwareRepository))
+Declaration(Class(mwo:SparqlEndpoint))
+Declaration(Class(mwo:SummerSchool))
+Declaration(Class(mwo:Supervisor))
+Declaration(Class(mwo:TrainingCourse))
+Declaration(Class(mwo:VisualizationSoftware))
+Declaration(Class(mwo:WebService))
+Declaration(Class(mwo:Workflow))
+Declaration(Class(mwo:WorkflowEnvironment))
+Declaration(Class(<http://schema.org/ComputerLanguage>))
+Declaration(Class(<http://schema.org/CreativeWork>))
+Declaration(Class(<http://schema.org/Intangible>))
+Declaration(Class(<http://schema.org/Organization>))
+Declaration(Class(<http://schema.org/Person>))
+Declaration(Class(<http://schema.org/Product>))
+Declaration(Class(<http://schema.org/Project>))
+Declaration(Class(<http://schema.org/Service>))
+Declaration(Class(<http://www.ebi.ac.uk/swo/SWO_0000001>))
+Declaration(Class(<http://www.ebi.ac.uk/swo/SWO_0000002>))
+Declaration(Class(<http://www.ebi.ac.uk/swo/SWO_0000020>))
+Declaration(Class(<http://www.ebi.ac.uk/swo/SWO_0000021>))
+Declaration(Class(<http://www.ebi.ac.uk/swo/SWO_0000022>))
+Declaration(Class(<http://www.ebi.ac.uk/swo/SWO_0000149>))
+Declaration(Class(<http://www.ebi.ac.uk/swo/SWO_9000050>))
+Declaration(Class(<http://www.ebi.ac.uk/swo/SWO_9000072>))
+Declaration(Class(<http://www.ebi.ac.uk/swo/interface/SWO_9000051>))
+Declaration(Class(<http://www.ebi.ac.uk/swo/interface/SWO_9000054>))
+Declaration(Class(<http://www.ebi.ac.uk/swo/license/SWO_1000001>))
+Declaration(Class(<http://www.ebi.ac.uk/swo/license/SWO_1000002>))
+Declaration(Class(<http://www.ebi.ac.uk/swo/license/SWO_1000008>))
+Declaration(Class(<http://www.ebi.ac.uk/swo/license/SWO_1000009>))
+Declaration(Class(<http://www.ebi.ac.uk/swo/license/SWO_1000043>))
+Declaration(Class(<http://www.ebi.ac.uk/swo/license/SWO_1000056>))
+Declaration(Class(<http://www.ebi.ac.uk/swo/license/SWO_1000061>))
+Declaration(Class(<http://www.ebi.ac.uk/swo/license/SWO_1000069>))
+Declaration(Class(<http://www.ebi.ac.uk/swo/license/SWO_1000095>))
+Declaration(Class(<http://www.ebi.ac.uk/swo/license/SWO_1000103>))
+Declaration(Class(<http://www.ebi.ac.uk/swo/license/SWO_1000137>))
+Declaration(Class(<http://www.ebi.ac.uk/swo/license/SWO_1000140>))
+Declaration(Class(<https://w3id.org/scholarlydata/ontology/conference-ontology.owl#AcademicEvent>))
+Declaration(Class(<https://w3id.org/scholarlydata/ontology/conference-ontology.owl#Conference>))
+Declaration(Class(<https://w3id.org/scholarlydata/ontology/conference-ontology.owl#OrganisedEvent>))
+Declaration(Class(<https://w3id.org/scholarlydata/ontology/conference-ontology.owl#Talk>))
+Declaration(Class(<https://w3id.org/scholarlydata/ontology/conference-ontology.owl#Tutorial>))
+Declaration(Class(<https://w3id.org/scholarlydata/ontology/conference-ontology.owl#Workshop>))
+Declaration(Class(<https://w3id.org/seo#InvitedSpeakers>))
+Declaration(Class(<https://w3id.org/seo#KeynoteSpeaker>))
+Declaration(Class(modsci:Instrument))
+Declaration(Class(modsci:LaboratoryInstrument))
+Declaration(Class(modsci:ModernScience))
+Declaration(Class(modsci:ProgrammingLanguage))
+Declaration(Class(modsci:ScientificInstrument))
+Declaration(Class(modsci:ScientificInstrumentManufacturer))
+Declaration(Class(modsci:Technology))
+Declaration(ObjectProperty(nfdicore:bestPractice))
+Declaration(ObjectProperty(nfdicore:bestPracticeOf))
+Declaration(ObjectProperty(nfdicore:country))
+Declaration(ObjectProperty(nfdicore:countryOf))
+Declaration(ObjectProperty(nfdicore:federalState))
+Declaration(ObjectProperty(nfdicore:federalStateOf))
+Declaration(ObjectProperty(nfdicore:funder))
+Declaration(ObjectProperty(nfdicore:funderOf))
+Declaration(ObjectProperty(nfdicore:fundingOrganisation))
+Declaration(ObjectProperty(nfdicore:fundingOrganisationOf))
+Declaration(ObjectProperty(nfdicore:fundingProject))
+Declaration(ObjectProperty(nfdicore:fundingProjectOf))
+Declaration(ObjectProperty(nfdicore:location))
+Declaration(ObjectProperty(nfdicore:locationOf))
+Declaration(ObjectProperty(nfdicore:objectType))
+Declaration(ObjectProperty(nfdicore:objectTypeOf))
+Declaration(ObjectProperty(nfdicore:parentOrganisation))
+Declaration(ObjectProperty(nfdicore:partnerOrganization))
+Declaration(ObjectProperty(nfdicore:programmingLanguage))
+Declaration(ObjectProperty(nfdicore:programmingLanguageOf))
+Declaration(ObjectProperty(nfdicore:publisher))
+Declaration(ObjectProperty(nfdicore:publisherOf))
+Declaration(ObjectProperty(nfdicore:relatedProject))
+Declaration(ObjectProperty(nfdicore:semanticExpressivity))
+Declaration(ObjectProperty(nfdicore:semanticExpressivityOf))
+Declaration(ObjectProperty(nfdicore:standard))
+Declaration(ObjectProperty(nfdicore:standardOf))
+Declaration(ObjectProperty(nfdicore:subsidiaryOrganization))
+Declaration(ObjectProperty(mwo:aboutMaterial))
+Declaration(ObjectProperty(mwo:belongsTo))
+Declaration(ObjectProperty(mwo:conformsToSpecification))
+Declaration(ObjectProperty(mwo:hasAffiliation))
+Declaration(ObjectProperty(mwo:hasAuthor))
+Declaration(ObjectProperty(mwo:hasContactPoint))
+Declaration(ObjectProperty(mwo:hasContributor))
+Declaration(ObjectProperty(mwo:hasCreator))
+Declaration(ObjectProperty(mwo:hasDiscipline))
+Declaration(ObjectProperty(mwo:hasDocumentation))
+Declaration(ObjectProperty(mwo:hasExpertiseIn))
+Declaration(ObjectProperty(mwo:hasFormat))
+Declaration(ObjectProperty(mwo:hasLeader))
+Declaration(ObjectProperty(mwo:hasLecturer))
+Declaration(ObjectProperty(mwo:hasManual))
+Declaration(ObjectProperty(mwo:hasMember))
+Declaration(ObjectProperty(mwo:hasOwner))
+Declaration(ObjectProperty(mwo:hasRelatedResource))
+Declaration(ObjectProperty(mwo:hasRepository))
+Declaration(ObjectProperty(mwo:hasRole))
+Declaration(ObjectProperty(mwo:hasSparqlEndpoint))
+Declaration(ObjectProperty(mwo:hasTopic))
+Declaration(ObjectProperty(mwo:hasWebsite))
+Declaration(ObjectProperty(mwo:isContributorOf))
+Declaration(ObjectProperty(mwo:isLeaderOf))
+Declaration(ObjectProperty(mwo:memberOf))
+Declaration(ObjectProperty(mwo:requiredTool))
+Declaration(ObjectProperty(mwo:softwareCitation))
+Declaration(ObjectProperty(mwo:usesMethod))
+Declaration(ObjectProperty(mwo:usesTechnology))
+Declaration(ObjectProperty(mwo:workingOnTopic))
+Declaration(ObjectProperty(<http://www.ebi.ac.uk/swo/SWO_0000082>))
+Declaration(ObjectProperty(<http://www.ebi.ac.uk/swo/SWO_0000157>))
+Declaration(ObjectProperty(<http://www.ebi.ac.uk/swo/SWO_0004001>))
+Declaration(ObjectProperty(<http://www.ebi.ac.uk/swo/has_license>))
+Declaration(ObjectProperty(<http://www.ebi.ac.uk/swo/is_license_for>))
+Declaration(ObjectProperty(<http://www.ebi.ac.uk/swo/license/SWO_1000048>))
+Declaration(ObjectProperty(<https://schema.org/citation>))
+Declaration(ObjectProperty(<https://schema.org/operatingSystem>))
+Declaration(ObjectProperty(<https://schema.org/sponsor>))
+Declaration(ObjectProperty(<https://w3id.org/scholarlydata/ontology/conference-ontology.owl#hasPart>))
+Declaration(ObjectProperty(<https://w3id.org/scholarlydata/ontology/conference-ontology.owl#hasSubEvent>))
+Declaration(ObjectProperty(<https://w3id.org/scholarlydata/ontology/conference-ontology.owl#isPartOf>))
+Declaration(ObjectProperty(<https://w3id.org/scholarlydata/ontology/conference-ontology.owl#isSubEventOf>))
+Declaration(ObjectProperty(modsci:hasManufacturer))
+Declaration(ObjectProperty(modsci:isManufacturerOf))
+Declaration(DataProperty(nfdicore:url))
+Declaration(DataProperty(dcterms:title))
+Declaration(DataProperty(mwo:description))
+Declaration(DataProperty(mwo:emailAddress))
+Declaration(DataProperty(mwo:hasAcronym))
+Declaration(DataProperty(mwo:hasDOI))
+Declaration(DataProperty(mwo:hasEndpointURL))
+Declaration(DataProperty(mwo:hasORCID))
+Declaration(DataProperty(mwo:hasPersonalInformation))
+Declaration(DataProperty(mwo:hasPostalAddress))
+Declaration(DataProperty(mwo:hasPostalCode))
+Declaration(DataProperty(mwo:hasProjectIdentifier))
+Declaration(DataProperty(mwo:hasRORID))
+Declaration(DataProperty(mwo:hasSerialNumber))
+Declaration(DataProperty(mwo:hasVersion))
+Declaration(DataProperty(mwo:instrumentModel))
+Declaration(DataProperty(mwo:isOnline))
+Declaration(DataProperty(mwo:keyword))
+Declaration(DataProperty(foaf:firstName))
+Declaration(DataProperty(foaf:gender))
+Declaration(DataProperty(foaf:surname))
+Declaration(DataProperty(foaf:title))
+Declaration(DataProperty(<https://schema.org/dateCreated>))
+Declaration(DataProperty(<https://schema.org/datePublished>))
+Declaration(DataProperty(<https://schema.org/free>))
+Declaration(DataProperty(<https://w3id.org/scholarlydata/ontology/conference-ontology.owl#duration>))
+Declaration(DataProperty(<https://w3id.org/scholarlydata/ontology/conference-ontology.owl#endDate>))
+Declaration(DataProperty(<https://w3id.org/scholarlydata/ontology/conference-ontology.owl#startDate>))
+Declaration(NamedIndividual(nfdicore:ControlledVocabulary))
+Declaration(NamedIndividual(nfdicore:Glossary))
+Declaration(NamedIndividual(nfdicore:Taxonomy))
+Declaration(NamedIndividual(nfdicore:Thesaurus))
+Declaration(NamedIndividual(mwo:Ontology))
+Declaration(AnnotationProperty(<http://emmo.info/emmo#EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9>))
+Declaration(AnnotationProperty(nfdicore:example))
+Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/BFO_0000179>))
+Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/BFO_0000180>))
+Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0000111>))
+Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0000112>))
+Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0000114>))
+Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0000115>))
+Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0000116>))
+Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0000117>))
+Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0000118>))
+Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0000119>))
+Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0000600>))
+Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0000602>))
+Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0010000>))
+Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/NCIT_C42610>))
+Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/NCIT_C93495>))
+Declaration(AnnotationProperty(<http://purl.org/dc/elements/1.1/contributor>))
+Declaration(AnnotationProperty(<http://purl.org/dc/elements/1.1/creator>))
+Declaration(AnnotationProperty(<http://purl.org/dc/elements/1.1/date>))
+Declaration(AnnotationProperty(<http://purl.org/dc/elements/1.1/description>))
+Declaration(AnnotationProperty(<http://purl.org/dc/elements/1.1/format>))
+Declaration(AnnotationProperty(<http://purl.org/dc/elements/1.1/identifier>))
+Declaration(AnnotationProperty(dcterms:bibliographicCitation))
+Declaration(AnnotationProperty(dcterms:creator))
+Declaration(AnnotationProperty(dcterms:description))
+Declaration(AnnotationProperty(dcterms:format))
+Declaration(AnnotationProperty(dcterms:identifier))
+Declaration(AnnotationProperty(dcterms:license))
+Declaration(AnnotationProperty(dcterms:title))
+Declaration(AnnotationProperty(<http://www.geneontology.org/formats/oboInOwl#hasBroadSynonym>))
+Declaration(AnnotationProperty(<http://www.geneontology.org/formats/oboInOwl#hasDbXref>))
+Declaration(AnnotationProperty(<http://www.geneontology.org/formats/oboInOwl#hasDefinition>))
+Declaration(AnnotationProperty(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym>))
+Declaration(AnnotationProperty(<http://www.geneontology.org/formats/oboInOwl#hasNarrowSynonym>))
+Declaration(AnnotationProperty(<http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym>))
+Declaration(AnnotationProperty(<http://www.geneontology.org/formats/oboInOwl#hasSynonym>))
+Declaration(AnnotationProperty(owl:versionInfo))
+Declaration(AnnotationProperty(<http://www.w3.org/2004/02/skos/core#altLabel>))
+Declaration(AnnotationProperty(<http://www.w3.org/2004/02/skos/core#definition>))
+Declaration(AnnotationProperty(<http://www.w3.org/2004/02/skos/core#prefLabel>))
+############################
+#   Annotation Properties
+############################
+
+# Annotation Property: <http://purl.obolibrary.org/obo/IAO_0000115> (textual definition)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000111> <http://purl.obolibrary.org/obo/IAO_0000115> "definition")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000111> <http://purl.obolibrary.org/obo/IAO_0000115> "definition"@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000111> <http://purl.obolibrary.org/obo/IAO_0000115> "textual definition")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000114> <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/IAO_0000122>)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/IAO_0000115> "The official OBI definition, explaining the meaning of a class or property. Shall be Aristotelian, formalized and normalized. Can be augmented with colloquial definitions."@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/IAO_0000115> "The official definition, explaining the meaning of a class or property. Shall be Aristotelian, formalized and normalized. Can be augmented with colloquial definitions."@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000116> <http://purl.obolibrary.org/obo/IAO_0000115> "2012-04-05: 
+Barry Smith
+
+The official OBI definition, explains the meaning of a class or property: 'Shall be Aristotelian, formalized and normalized. Can be augmented with colloquial definitions'  is terrible.
+
+Can you fix to something like:
+
+A statement of necessary and sufficient conditions explaining the meaning of an expression referring to a class or property.
+
+Alan Ruttenberg
+
+Your proposed definition is a reasonable candidate, except that it is very common that necessary and sufficient conditions are not given. Mostly they are necessary, occasionally they are necessary and sufficient or just sufficient. Often they use terms that are not themselves defined and so they effectively can't be evaluated by those criteria. 
+
+On the specifics of the proposed definition:
+
+We don't have definitions of 'meaning' or 'expression' or 'property'. For 'reference' in the intended sense I think we use the term 'denotation'. For 'expression', I think we you mean symbol, or identifier. For 'meaning' it differs for class and property. For class we want documentation that let's the intended reader determine whether an entity is instance of the class, or not. For property we want documentation that let's the intended reader determine, given a pair of potential relata, whether the assertion that the relation holds is true. The 'intended reader' part suggests that we also specify who, we expect, would be able to understand the definition, and also generalizes over human and computer reader to include textual and logical definition. 
+
+Personally, I am more comfortable weakening definition to documentation, with instructions as to what is desirable. 
+
+We also have the outstanding issue of how to aim different definitions to different audiences. A clinical audience reading chebi wants a different sort of definition documentation/definition from a chemistry trained audience, and similarly there is a need for a definition that is adequate for an ontologist to work with.  "@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/IAO_0000115> "PERSON:Daniel Schober"@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.obolibrary.org/obo/IAO_0000115> "GROUP:OBI:<http://purl.obolibrary.org/obo/obi>"@en)
+AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/iao.owl>)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/IAO_0000115> "definition")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/IAO_0000115> "definition"@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/IAO_0000115> "textual definition")
+
+# Annotation Property: <http://purl.obolibrary.org/obo/NCIT_C42610> (abbreviation)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/NCIT_C42610> "A shortened form of a word or phrase. [Definition Source: NCI]")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/NCIT_C42610> "abbreviation"@en)
+SubAnnotationPropertyOf(<http://purl.obolibrary.org/obo/NCIT_C42610> <http://www.w3.org/2004/02/skos/core#altLabel>)
+
+# Annotation Property: <http://purl.obolibrary.org/obo/NCIT_C93495> (acronym)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/NCIT_C93495> "The non-unique initials or abbreviated name used for identification. [Definition Source: NCI]")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/NCIT_C93495> "acronym"@en)
+SubAnnotationPropertyOf(<http://purl.obolibrary.org/obo/NCIT_C93495> <http://www.w3.org/2004/02/skos/core#altLabel>)
+
+# Annotation Property: <http://purl.org/dc/elements/1.1/contributor> (Media Type or Extent)
+
+AnnotationAssertion(rdfs:isDefinedBy <http://purl.org/dc/elements/1.1/contributor> <http://www.udcc.org/>)
+AnnotationAssertion(rdfs:label <http://purl.org/dc/elements/1.1/contributor> "Media Type or Extent"@en-us)
+AnnotationAssertion(rdfs:label <http://purl.org/dc/elements/1.1/contributor> "UDC"@en-us)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <http://purl.org/dc/elements/1.1/contributor> "A media type or extent."@en-us)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <http://purl.org/dc/elements/1.1/contributor> "The set of conceptual resources specified by the Universal Decimal Classification."@en-us)
+
+# Annotation Property: dcterms:description (description)
+
+AnnotationAssertion(rdfs:label dcterms:description "description")
+
+# Annotation Property: dcterms:format (has format)
+
+AnnotationAssertion(dcterms:bibliographicCitation dcterms:format "[MIME] http://www.iana.org/assignments/media-types/")
+AnnotationAssertion(rdfs:comment dcterms:format "Examples of dimensions include size and duration. Recommended best practice is to use a controlled vocabulary such as the list of Internet Media Types [MIME]."@en-us)
+AnnotationAssertion(rdfs:comment dcterms:format "The file format, physical medium, or dimensions of the resource.
+
+Examples of dimensions include size and duration. Recommended best practice is to use a controlled vocabulary such as the list of Internet Media Types."@en)
+AnnotationAssertion(rdfs:label dcterms:format "Format"@en-us)
+AnnotationAssertion(rdfs:label dcterms:format "has format"@en)
+AnnotationAssertion(rdfs:seeAlso dcterms:format <http://www.iana.org/assignments/media-types/>)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> dcterms:format "The file format, physical medium, or dimensions of the resource."@en-us)
+SubAnnotationPropertyOf(dcterms:format <http://purl.org/dc/elements/1.1/format>)
+AnnotationPropertyRange(dcterms:format <http://purl.org/dc/elements/1.1/contributor>)
+
+# Annotation Property: dcterms:identifier (Identifier)
+
+AnnotationAssertion(rdfs:comment dcterms:identifier "Recommended best practice is to identify the resource by means of a string conforming to a formal identification system."@en-us)
+AnnotationAssertion(rdfs:label dcterms:identifier "Identifier"@en-us)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> dcterms:identifier "An unambiguous reference to the resource within a given context."@en-us)
+SubAnnotationPropertyOf(dcterms:identifier <http://purl.org/dc/elements/1.1/identifier>)
+AnnotationPropertyRange(dcterms:identifier rdfs:Literal)
+
+# Annotation Property: dcterms:title (has title)
+
+AnnotationAssertion(rdfs:comment dcterms:title "A name given to a resource.  Typically, the title will be the name by which the resource is formally known."@en)
+AnnotationAssertion(rdfs:label dcterms:title "has title"@en)
+
+# Annotation Property: <http://www.geneontology.org/formats/oboInOwl#hasBroadSynonym> (has_broad_synonym)
+
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://www.geneontology.org/formats/oboInOwl#hasBroadSynonym> _:genid2147483648)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDefinition> <http://www.geneontology.org/formats/oboInOwl#hasBroadSynonym> _:genid2147483649)
+AnnotationAssertion(rdfs:label <http://www.geneontology.org/formats/oboInOwl#hasBroadSynonym> "has_broad_synonym"@en)
+SubAnnotationPropertyOf(<http://www.geneontology.org/formats/oboInOwl#hasBroadSynonym> <http://www.geneontology.org/formats/oboInOwl#hasSynonym>)
+
+# Annotation Property: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> (database_cross_reference)
+
+AnnotationAssertion(rdfs:label <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "database_cross_reference")
+
+# Annotation Property: <http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> (has_exact_synonym)
+
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> _:genid2147483650)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDefinition> <http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> _:genid2147483651)
+AnnotationAssertion(rdfs:label <http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> "has_exact_synonym"@en)
+SubAnnotationPropertyOf(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://www.geneontology.org/formats/oboInOwl#hasSynonym>)
+
+# Annotation Property: <http://www.geneontology.org/formats/oboInOwl#hasNarrowSynonym> (has_narrow_synonym)
+
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://www.geneontology.org/formats/oboInOwl#hasNarrowSynonym> _:genid2147483652)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDefinition> <http://www.geneontology.org/formats/oboInOwl#hasNarrowSynonym> _:genid2147483653)
+AnnotationAssertion(rdfs:label <http://www.geneontology.org/formats/oboInOwl#hasNarrowSynonym> "has_narrow_synonym"@en)
+SubAnnotationPropertyOf(<http://www.geneontology.org/formats/oboInOwl#hasNarrowSynonym> <http://www.geneontology.org/formats/oboInOwl#hasSynonym>)
+
+# Annotation Property: <http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym> (has_related_synonym)
+
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym> _:genid2147483654)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDefinition> <http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym> _:genid2147483655)
+AnnotationAssertion(rdfs:label <http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym> "has_related_synonym"@en)
+SubAnnotationPropertyOf(<http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym> <http://www.geneontology.org/formats/oboInOwl#hasSynonym>)
+
+# Annotation Property: <http://www.geneontology.org/formats/oboInOwl#hasSynonym> (has_synonym)
+
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://www.geneontology.org/formats/oboInOwl#hasSynonym> _:genid2147483656)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDefinition> <http://www.geneontology.org/formats/oboInOwl#hasSynonym> _:genid2147483657)
+AnnotationAssertion(rdfs:comment <http://www.geneontology.org/formats/oboInOwl#hasSynonym> "Note that this should be a super-property of hasRelatedSynonym, hasExactSynonym etc; however, we cannot state this and remain in OWL-DL"^^xsd:string)
+AnnotationAssertion(rdfs:label <http://www.geneontology.org/formats/oboInOwl#hasSynonym> "has_synonym"@en)
+
+
+############################
+#   Object Properties
+############################
+
+# Object Property: nfdicore:bestPractice (best practice)
+
+AnnotationAssertion(rdfs:comment nfdicore:bestPractice "The property is a relationship between a resource and the best practice."@en)
+AnnotationAssertion(rdfs:label nfdicore:bestPractice "best practice"@en)
+InverseObjectProperties(nfdicore:bestPractice nfdicore:bestPracticeOf)
+ObjectPropertyDomain(nfdicore:bestPractice nfdicore:Resource)
+ObjectPropertyRange(nfdicore:bestPractice nfdicore:Specification)
+
+# Object Property: nfdicore:bestPracticeOf (best practice of)
+
+AnnotationAssertion(rdfs:label nfdicore:bestPracticeOf "best practice of"@en)
+
+# Object Property: nfdicore:country (country)
+
+AnnotationAssertion(rdfs:comment nfdicore:country "The property relates a city or a state to a country where it is located."@en)
+AnnotationAssertion(rdfs:label nfdicore:country "country"@en)
+InverseObjectProperties(nfdicore:country nfdicore:countryOf)
+ObjectPropertyDomain(nfdicore:country ObjectUnionOf(nfdicore:City nfdicore:FederalState))
+ObjectPropertyRange(nfdicore:country nfdicore:Country)
+
+# Object Property: nfdicore:countryOf (country of)
+
+AnnotationAssertion(rdfs:label nfdicore:countryOf "country of"@en)
+
+# Object Property: nfdicore:federalState (federal state)
+
+AnnotationAssertion(rdfs:comment nfdicore:federalState "The property relates a city to a federal state where it is located."@en)
+AnnotationAssertion(rdfs:label nfdicore:federalState "federal state"@en)
+InverseObjectProperties(nfdicore:federalState nfdicore:federalStateOf)
+ObjectPropertyDomain(nfdicore:federalState nfdicore:City)
+ObjectPropertyRange(nfdicore:federalState nfdicore:FederalState)
+
+# Object Property: nfdicore:federalStateOf (federal state of)
+
+AnnotationAssertion(rdfs:label nfdicore:federalStateOf "federal state of"@en)
+
+# Object Property: nfdicore:funder (funder)
+
+AnnotationAssertion(rdfs:comment nfdicore:funder "The property relates a thing to an organisation or a project that provided funding for it. The sub-properties are used to specify more specific funding relationships. "@en)
+AnnotationAssertion(rdfs:label nfdicore:funder "funder"@en)
+InverseObjectProperties(nfdicore:funder nfdicore:funderOf)
+ObjectPropertyDomain(nfdicore:funder owl:Thing)
+ObjectPropertyRange(nfdicore:funder ObjectUnionOf(nfdicore:Organization nfdicore:Project))
+
+# Object Property: nfdicore:funderOf (funder of)
+
+AnnotationAssertion(rdfs:label nfdicore:funderOf "funder of"@en)
+
+# Object Property: nfdicore:fundingOrganisation (funding organisation)
+
+AnnotationAssertion(rdfs:comment nfdicore:fundingOrganisation "The property relates a resource or a project to the organisation that provided funding for it."@en)
+AnnotationAssertion(rdfs:label nfdicore:fundingOrganisation "funding organisation"@en)
+SubObjectPropertyOf(nfdicore:fundingOrganisation nfdicore:funder)
+InverseObjectProperties(nfdicore:fundingOrganisation nfdicore:fundingOrganisationOf)
+ObjectPropertyDomain(nfdicore:fundingOrganisation ObjectUnionOf(nfdicore:Project nfdicore:Resource))
+ObjectPropertyRange(nfdicore:fundingOrganisation nfdicore:Organization)
+
+# Object Property: nfdicore:fundingOrganisationOf (funding organisation of)
+
+AnnotationAssertion(rdfs:label nfdicore:fundingOrganisationOf "funding organisation of"@en)
+SubObjectPropertyOf(nfdicore:fundingOrganisationOf nfdicore:funderOf)
+ObjectPropertyDomain(nfdicore:fundingOrganisationOf ObjectUnionOf(nfdicore:Project nfdicore:Resource))
+
+# Object Property: nfdicore:fundingProject (funding project)
+
+AnnotationAssertion(rdfs:comment nfdicore:fundingProject "The property relateds a resource to the project that provided funding for it."@en)
+AnnotationAssertion(rdfs:label nfdicore:fundingProject "funding project"@en)
+SubObjectPropertyOf(nfdicore:fundingProject nfdicore:funder)
+InverseObjectProperties(nfdicore:fundingProject nfdicore:fundingProjectOf)
+ObjectPropertyDomain(nfdicore:fundingProject nfdicore:Resource)
+ObjectPropertyRange(nfdicore:fundingProject nfdicore:Project)
+
+# Object Property: nfdicore:fundingProjectOf (funding project of)
+
+AnnotationAssertion(rdfs:label nfdicore:fundingProjectOf "funding project of"@en)
+SubObjectPropertyOf(nfdicore:fundingProjectOf nfdicore:funderOf)
+
+# Object Property: nfdicore:location (location)
+
+AnnotationAssertion(rdfs:comment nfdicore:location "The property is a relationship between a thing and a place its located at. "@en)
+AnnotationAssertion(rdfs:label nfdicore:location "location"@en)
+InverseObjectProperties(nfdicore:location nfdicore:locationOf)
+ObjectPropertyDomain(nfdicore:location owl:Thing)
+ObjectPropertyRange(nfdicore:location nfdicore:Place)
+
+# Object Property: nfdicore:locationOf (location of)
+
+AnnotationAssertion(rdfs:label nfdicore:locationOf "location of"@en)
+
+# Object Property: nfdicore:objectType (object type)
+
+AnnotationAssertion(rdfs:comment nfdicore:objectType "The property relates a data collection to the type of object it contains. "@en)
+AnnotationAssertion(rdfs:label nfdicore:objectType "object type"@en)
+InverseObjectProperties(nfdicore:objectType nfdicore:objectTypeOf)
+ObjectPropertyDomain(nfdicore:objectType nfdicore:Collection)
+ObjectPropertyRange(nfdicore:objectType nfdicore:ObjectType)
+
+# Object Property: nfdicore:objectTypeOf (object type of)
+
+AnnotationAssertion(rdfs:label nfdicore:objectTypeOf "object type of"@en)
+
+# Object Property: nfdicore:parentOrganisation (parent organisation)
+
+AnnotationAssertion(rdfs:comment nfdicore:parentOrganisation "The property is a parental relationship between organisations."@en)
+AnnotationAssertion(rdfs:label nfdicore:parentOrganisation "parent organisation"@en)
+InverseObjectProperties(nfdicore:parentOrganisation nfdicore:subsidiaryOrganization)
+ObjectPropertyDomain(nfdicore:parentOrganisation nfdicore:Organization)
+ObjectPropertyRange(nfdicore:parentOrganisation nfdicore:Organization)
+
+# Object Property: nfdicore:partnerOrganization (nfdicore:partnerOrganization)
+
+SymmetricObjectProperty(nfdicore:partnerOrganization)
+ObjectPropertyDomain(nfdicore:partnerOrganization nfdicore:Organization)
+ObjectPropertyRange(nfdicore:partnerOrganization nfdicore:Organization)
+
+# Object Property: nfdicore:programmingLanguage (programming language)
+
+AnnotationAssertion(rdfs:comment nfdicore:programmingLanguage "The property links software to a programming language it is written in.")
+AnnotationAssertion(rdfs:label nfdicore:programmingLanguage "programming language"@en)
+InverseObjectProperties(nfdicore:programmingLanguage nfdicore:programmingLanguageOf)
+ObjectPropertyDomain(nfdicore:programmingLanguage nfdicore:Software)
+ObjectPropertyRange(nfdicore:programmingLanguage nfdicore:ProgrammingLanguage)
+
+# Object Property: nfdicore:programmingLanguageOf (programming language of)
+
+AnnotationAssertion(rdfs:label nfdicore:programmingLanguageOf "programming language of"@en)
+
+# Object Property: nfdicore:publisher (publisher)
+
+AnnotationAssertion(rdfs:comment nfdicore:publisher "The property is a relationship between a resource and an organisation or a person responsible for publishing it."@en)
+AnnotationAssertion(rdfs:label nfdicore:publisher "publisher"@en)
+InverseObjectProperties(nfdicore:publisher nfdicore:publisherOf)
+ObjectPropertyDomain(nfdicore:publisher nfdicore:Resource)
+ObjectPropertyRange(nfdicore:publisher ObjectUnionOf(nfdicore:Organization nfdicore:Person))
+
+# Object Property: nfdicore:publisherOf (publisher of)
+
+AnnotationAssertion(rdfs:label nfdicore:publisherOf "publisher of"@en)
+
+# Object Property: nfdicore:relatedProject (related project)
+
+AnnotationAssertion(rdfs:comment nfdicore:relatedProject "The property is a relationship between related projects. The property is symmetric."@en)
+AnnotationAssertion(rdfs:label nfdicore:relatedProject "related project"@en)
+SymmetricObjectProperty(nfdicore:relatedProject)
+ObjectPropertyDomain(nfdicore:relatedProject nfdicore:Project)
+ObjectPropertyRange(nfdicore:relatedProject nfdicore:Project)
+
+# Object Property: nfdicore:semanticExpressivity (semantic expressivity)
+
+AnnotationAssertion(rdfs:comment nfdicore:semanticExpressivity "The property relates a resource to its semantic expressivity spectrum."@en)
+AnnotationAssertion(rdfs:label nfdicore:semanticExpressivity "semantic expressivity"@en)
+InverseObjectProperties(nfdicore:semanticExpressivity nfdicore:semanticExpressivityOf)
+ObjectPropertyDomain(nfdicore:semanticExpressivity mwo:SemanticResource)
+ObjectPropertyRange(nfdicore:semanticExpressivity nfdicore:SemanticExpressivity)
+
+# Object Property: nfdicore:semanticExpressivityOf (semantic expressivity of)
+
+AnnotationAssertion(rdfs:label nfdicore:semanticExpressivityOf "semantic expressivity of"@en)
+
+# Object Property: nfdicore:standard (standard)
+
+AnnotationAssertion(rdfs:comment nfdicore:standard "The property relates a resource to the standard it relies on."@en)
+AnnotationAssertion(rdfs:label nfdicore:standard "standard"@en)
+InverseObjectProperties(nfdicore:standard nfdicore:standardOf)
+ObjectPropertyDomain(nfdicore:standard nfdicore:Resource)
+ObjectPropertyRange(nfdicore:standard nfdicore:Standard)
+
+# Object Property: nfdicore:standardOf (standard of)
+
+AnnotationAssertion(rdfs:label nfdicore:standardOf "standard of"@en)
+
+# Object Property: nfdicore:subsidiaryOrganization (subsidiary organization)
+
+AnnotationAssertion(rdfs:label nfdicore:subsidiaryOrganization "subsidiary organization"@en)
+
+# Object Property: mwo:aboutMaterial (about material)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> mwo:aboutMaterial "A relation between a dataset and the material it contains data on."@en)
+AnnotationAssertion(rdfs:label mwo:aboutMaterial "about material"@en)
+ObjectPropertyDomain(mwo:aboutMaterial nfdicore:Dataset)
+ObjectPropertyRange(mwo:aboutMaterial <http://emmo.info/emmo#EMMO_4207e895_8b83_4318_996a_72cfb32acd94>)
+
+# Object Property: mwo:belongsTo (belongs to)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> mwo:belongsTo "A relation between a research group or large-scale facility and the organization it belongs to."@en)
+AnnotationAssertion(rdfs:label mwo:belongsTo "belongs to"@en)
+ObjectPropertyDomain(mwo:belongsTo ObjectUnionOf(mwo:LargeScaleFacility mwo:ResearchGroup))
+ObjectPropertyRange(mwo:belongsTo nfdicore:Organization)
+
+# Object Property: mwo:conformsToSpecification (conforms to specification)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> mwo:conformsToSpecification "A relation between a resource and the specification it conforms to."@en)
+AnnotationAssertion(rdfs:label mwo:conformsToSpecification "conforms to specification"@en)
+ObjectPropertyDomain(mwo:conformsToSpecification nfdicore:Resource)
+ObjectPropertyRange(mwo:conformsToSpecification nfdicore:Specification)
+
+# Object Property: mwo:hasAffiliation (has affiliation)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> mwo:hasAffiliation "a relation between a person and an organization to which the person is affiliated."@en)
+AnnotationAssertion(rdfs:label mwo:hasAffiliation "has affiliation"@en)
+ObjectPropertyDomain(mwo:hasAffiliation nfdicore:Person)
+ObjectPropertyRange(mwo:hasAffiliation nfdicore:Organization)
+
+# Object Property: mwo:hasAuthor (has author)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> mwo:hasAuthor "A relation between a resource and a person, who is the author."@en)
+AnnotationAssertion(rdfs:label mwo:hasAuthor "has author"@en)
+ObjectPropertyDomain(mwo:hasAuthor nfdicore:Resource)
+ObjectPropertyRange(mwo:hasAuthor nfdicore:Person)
+
+# Object Property: mwo:hasContactPoint (has contact point)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> mwo:hasContactPoint "A relation between a thing and its contact point, which can be a person or website."@en)
+AnnotationAssertion(rdfs:label mwo:hasContactPoint "has contact point"@en)
+ObjectPropertyDomain(mwo:hasContactPoint owl:Thing)
+ObjectPropertyRange(mwo:hasContactPoint mwo:ContactPoint)
+
+# Object Property: mwo:hasContributor (has contributor)
+
+AnnotationAssertion(rdfs:label mwo:hasContributor "has contributor"@en)
+InverseObjectProperties(mwo:hasContributor mwo:isContributorOf)
+
+# Object Property: mwo:hasCreator (has creator)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> mwo:hasCreator "A relation between a dataset and a person or organization, who has created the data."@en)
+AnnotationAssertion(rdfs:label mwo:hasCreator "has creator")
+SubObjectPropertyOf(mwo:hasCreator mwo:hasAuthor)
+ObjectPropertyDomain(mwo:hasCreator nfdicore:Dataset)
+ObjectPropertyRange(mwo:hasCreator ObjectUnionOf(nfdicore:Organization nfdicore:Person))
+
+# Object Property: mwo:hasDiscipline (has discipline)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> mwo:hasDiscipline "A relation between a resource or large-scale facility and the academic discipline of the produced work."@en)
+AnnotationAssertion(rdfs:label mwo:hasDiscipline "has discipline"@en)
+ObjectPropertyDomain(mwo:hasDiscipline nfdicore:Resource)
+ObjectPropertyRange(mwo:hasDiscipline nfdicore:AcademicDiscipline)
+
+# Object Property: mwo:hasDocumentation (has documentation)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> mwo:hasDocumentation "A relation between a resource and its documentation."@en)
+AnnotationAssertion(rdfs:label mwo:hasDocumentation "has documentation"@en)
+ObjectPropertyDomain(mwo:hasDocumentation nfdicore:Resource)
+ObjectPropertyRange(mwo:hasDocumentation mwo:Documentation)
+
+# Object Property: mwo:hasExpertiseIn (has expertise in)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> mwo:hasExpertiseIn "A relation between a person and an academic discipline or research topic, in which this person is an expert."@en)
+AnnotationAssertion(rdfs:label mwo:hasExpertiseIn "has expertise in"@en)
+ObjectPropertyDomain(mwo:hasExpertiseIn nfdicore:Person)
+ObjectPropertyRange(mwo:hasExpertiseIn nfdicore:AcademicDiscipline)
+
+# Object Property: mwo:hasFormat (has format)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> mwo:hasFormat "The file format of the resource"@en)
+AnnotationAssertion(rdfs:label mwo:hasFormat "has format"@en)
+ObjectPropertyDomain(mwo:hasFormat nfdicore:Resource)
+ObjectPropertyRange(mwo:hasFormat dcterms:FileFormat)
+
+# Object Property: mwo:hasLeader (has leader)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> mwo:hasLeader "A relation between a research group and its leader."@en)
+AnnotationAssertion(rdfs:label mwo:hasLeader "has leader"@en)
+InverseObjectProperties(mwo:hasLeader mwo:isLeaderOf)
+ObjectPropertyDomain(mwo:hasLeader mwo:ResearchGroup)
+ObjectPropertyRange(mwo:hasLeader mwo:GroupLeader)
+
+# Object Property: mwo:hasLecturer (has lecturer)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> mwo:hasLecturer "A relation between an academic event and a person, who participates in teaching capacity in the event."@en)
+AnnotationAssertion(rdfs:label mwo:hasLecturer "has lecturer"@en)
+ObjectPropertyDomain(mwo:hasLecturer ObjectUnionOf(mwo:EducationalEvent mwo:EducationalResource))
+ObjectPropertyRange(mwo:hasLecturer nfdicore:Person)
+
+# Object Property: mwo:hasManual (has manual)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> mwo:hasManual "A relation between an instrument and its documentation."@en)
+AnnotationAssertion(rdfs:label mwo:hasManual "has manual"@en)
+ObjectPropertyDomain(mwo:hasManual modsci:Instrument)
+ObjectPropertyRange(mwo:hasManual mwo:Documentation)
+
+# Object Property: mwo:hasMember (has member)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> mwo:hasMember "A relation between a research project and its members."@en)
+AnnotationAssertion(rdfs:label mwo:hasMember "has member"@en)
+InverseObjectProperties(mwo:hasMember mwo:memberOf)
+ObjectPropertyDomain(mwo:hasMember nfdicore:Project)
+ObjectPropertyRange(mwo:hasMember mwo:ProjectMember)
+
+# Object Property: mwo:hasOwner (has owner)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> mwo:hasOwner "A relation between an instrument and the organization that acts as its owner."@en)
+AnnotationAssertion(rdfs:label mwo:hasOwner "has owner"@en)
+ObjectPropertyDomain(mwo:hasOwner modsci:Instrument)
+ObjectPropertyRange(mwo:hasOwner nfdicore:Organization)
+
+# Object Property: mwo:hasRelatedResource (has related resource)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> mwo:hasRelatedResource "A relation between two different resources, which indicates both are associated."@en)
+AnnotationAssertion(rdfs:label mwo:hasRelatedResource "has related resource"@en)
+SymmetricObjectProperty(mwo:hasRelatedResource)
+ObjectPropertyDomain(mwo:hasRelatedResource nfdicore:Resource)
+ObjectPropertyRange(mwo:hasRelatedResource nfdicore:Resource)
+
+# Object Property: mwo:hasRepository (has repository)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> mwo:hasRepository "A relation between a software and the website of the repository where it is stored."@en)
+AnnotationAssertion(rdfs:label mwo:hasRepository "has repository"@en)
+ObjectPropertyDomain(mwo:hasRepository nfdicore:Resource)
+ObjectPropertyRange(mwo:hasRepository mwo:Repository)
+
+# Object Property: mwo:hasRole (has role)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> mwo:hasRole "A relation between a person (the bearer) and a role, in which the role specifically depends on the bearer for its existence."@en)
+AnnotationAssertion(rdfs:label mwo:hasRole "has role"@en)
+ObjectPropertyDomain(mwo:hasRole nfdicore:Person)
+ObjectPropertyRange(mwo:hasRole <http://purl.obolibrary.org/obo/BFO_0000023>)
+
+# Object Property: mwo:hasSparqlEndpoint (has SPARQL endpoint)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> mwo:hasSparqlEndpoint "A relation between a semantic resource and its SPARQL Endpoint."@en)
+AnnotationAssertion(rdfs:label mwo:hasSparqlEndpoint "has SPARQL endpoint"@en)
+ObjectPropertyDomain(mwo:hasSparqlEndpoint mwo:SemanticResource)
+ObjectPropertyRange(mwo:hasSparqlEndpoint mwo:SparqlEndpoint)
+
+# Object Property: mwo:hasTopic (has topic)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> mwo:hasTopic "A relation between a research project and the topic of the research question it investigates."@en)
+AnnotationAssertion(rdfs:label mwo:hasTopic "has topic"@en)
+ObjectPropertyDomain(mwo:hasTopic nfdicore:Project)
+ObjectPropertyRange(mwo:hasTopic mwo:ResearchTopic)
+
+# Object Property: mwo:hasWebsite (has website)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> mwo:hasWebsite "a relation between a thing and its website."@en)
+AnnotationAssertion(rdfs:label mwo:hasWebsite "has website"@en)
+ObjectPropertyDomain(mwo:hasWebsite owl:Thing)
+ObjectPropertyRange(mwo:hasWebsite nfdicore:Website)
+
+# Object Property: mwo:isContributorOf (is contributor of)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> mwo:isContributorOf "A relation between an organization or person and the resource of which it is a contributor."@en)
+AnnotationAssertion(rdfs:label mwo:isContributorOf "is contributor of"@en)
+ObjectPropertyDomain(mwo:isContributorOf ObjectUnionOf(nfdicore:Organization nfdicore:Person))
+ObjectPropertyRange(mwo:isContributorOf nfdicore:Resource)
+
+# Object Property: mwo:isLeaderOf (is leader of)
+
+AnnotationAssertion(rdfs:label mwo:isLeaderOf "is leader of"@en)
+
+# Object Property: mwo:memberOf (member of)
+
+AnnotationAssertion(rdfs:label mwo:memberOf "member of"@en)
+
+# Object Property: mwo:requiredTool (required tool)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> mwo:requiredTool "A relation between an educational resource or academic event and the tools required to participate."@en)
+AnnotationAssertion(rdfs:label mwo:requiredTool "required tool"@en)
+ObjectPropertyDomain(mwo:requiredTool ObjectUnionOf(mwo:EducationalEvent mwo:EducationalResource))
+ObjectPropertyRange(mwo:requiredTool <http://www.ebi.ac.uk/swo/SWO_0000001>)
+
+# Object Property: mwo:softwareCitation (software citation)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> mwo:softwareCitation "A relation between a work and a cited software."@en)
+AnnotationAssertion(rdfs:label mwo:softwareCitation "software citation"@en)
+SubObjectPropertyOf(mwo:softwareCitation <https://schema.org/citation>)
+ObjectPropertyDomain(mwo:softwareCitation nfdicore:Resource)
+ObjectPropertyRange(mwo:softwareCitation nfdicore:Software)
+
+# Object Property: mwo:usesMethod (uses method)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> mwo:usesMethod "A relation between a resource and method it implements, uses or describes."@en)
+AnnotationAssertion(rdfs:label mwo:usesMethod "uses method"@en)
+ObjectPropertyDomain(mwo:usesMethod nfdicore:Resource)
+ObjectPropertyRange(mwo:usesMethod mwo:Method)
+
+# Object Property: mwo:usesTechnology (uses technology)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> mwo:usesTechnology "A relation between an instrument and the technology it implements."@en)
+AnnotationAssertion(rdfs:label mwo:usesTechnology "uses technology"@en)
+ObjectPropertyDomain(mwo:usesTechnology modsci:Instrument)
+ObjectPropertyRange(mwo:usesTechnology modsci:Technology)
+
+# Object Property: mwo:workingOnTopic (working on topic)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> mwo:workingOnTopic "A relation between a research group and the topic in which it conducts research."@en)
+AnnotationAssertion(rdfs:label mwo:workingOnTopic "working on topic"@en)
+ObjectPropertyDomain(mwo:workingOnTopic mwo:ResearchGroup)
+ObjectPropertyRange(mwo:workingOnTopic mwo:ResearchTopic)
+
+# Object Property: <http://www.ebi.ac.uk/swo/SWO_0000082> (uses software)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000112> <http://www.ebi.ac.uk/swo/SWO_0000082> "Cytoscape plugins would be linked to the Cytoscape application via uses software, while Microsoft Excel is linked to Microsoft Office via has_part.")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://www.ebi.ac.uk/swo/SWO_0000082> "This property allows the linkage of two different pieces of software such that one directly executes or uses the other. The has_part relationship should instead be used to describe related but independent members of a larger software package, and 'uses platform' relationship should be used to describe which operating system(s) a particular piece of software can use.")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://www.ebi.ac.uk/swo/SWO_0000082> "Allyson Lister")
+AnnotationAssertion(rdfs:label <http://www.ebi.ac.uk/swo/SWO_0000082> "uses software"@en)
+InverseObjectProperties(<http://www.ebi.ac.uk/swo/SWO_0000082> <http://www.ebi.ac.uk/swo/SWO_0000157>)
+ObjectPropertyDomain(<http://www.ebi.ac.uk/swo/SWO_0000082> <http://www.ebi.ac.uk/swo/SWO_0000001>)
+ObjectPropertyRange(<http://www.ebi.ac.uk/swo/SWO_0000082> <http://www.ebi.ac.uk/swo/SWO_0000001>)
+
+# Object Property: <http://www.ebi.ac.uk/swo/SWO_0000157> (is software for)
+
+AnnotationAssertion(rdfs:label <http://www.ebi.ac.uk/swo/SWO_0000157> "is software for"@en)
+ObjectPropertyDomain(<http://www.ebi.ac.uk/swo/SWO_0000157> <http://www.ebi.ac.uk/swo/SWO_0000001>)
+ObjectPropertyRange(<http://www.ebi.ac.uk/swo/SWO_0000157> <http://www.ebi.ac.uk/swo/SWO_0000001>)
+
+# Object Property: <http://www.ebi.ac.uk/swo/SWO_0004001> (has interface)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://www.ebi.ac.uk/swo/SWO_0004001> "Provides a method of asserting what type of interactions are possible for the class in question. The interface must be from the 'software interface' hierarchy.")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://www.ebi.ac.uk/swo/SWO_0004001> "Allyson Lister")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://www.ebi.ac.uk/swo/SWO_0004001> "Andy Brown")
+AnnotationAssertion(dcterms:creator <http://www.ebi.ac.uk/swo/SWO_0004001> "Andy Brown")
+AnnotationAssertion(rdfs:label <http://www.ebi.ac.uk/swo/SWO_0004001> "has interface")
+ObjectPropertyRange(<http://www.ebi.ac.uk/swo/SWO_0004001> <http://www.ebi.ac.uk/swo/SWO_9000050>)
+
+# Object Property: <http://www.ebi.ac.uk/swo/has_license> (has license)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://www.ebi.ac.uk/swo/has_license> "The relationship between an entity and the set of legal restrictions, i.e. license, which are applied in using or otherwise interacting with that entity. Eg. relationship between software and a software license.")
+AnnotationAssertion(rdfs:label <http://www.ebi.ac.uk/swo/has_license> "has license")
+InverseObjectProperties(<http://www.ebi.ac.uk/swo/has_license> <http://www.ebi.ac.uk/swo/is_license_for>)
+ObjectPropertyDomain(<http://www.ebi.ac.uk/swo/has_license> nfdicore:Resource)
+ObjectPropertyRange(<http://www.ebi.ac.uk/swo/has_license> <http://www.ebi.ac.uk/swo/SWO_0000002>)
+
+# Object Property: <http://www.ebi.ac.uk/swo/is_license_for> (is license for)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://www.ebi.ac.uk/swo/is_license_for> "The relationship between an entity and the set of legal restrictions, i.e. license, which are applied in using or otherwise interacting with that entity. Eg. relationship between a software license and the software which implements it.")
+AnnotationAssertion(rdfs:label <http://www.ebi.ac.uk/swo/is_license_for> "is license for"@en)
+
+# Object Property: <http://www.ebi.ac.uk/swo/license/SWO_1000048> (is compatible license of)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://www.ebi.ac.uk/swo/license/SWO_1000048> "'is compatible license of' provides a method of marking two software licenses as compatible and without conflicts, e.g. that the Apache License version 2 is compatible with GNU GPL version 3. If two licenses are connected with this property, it means code released under one license can be released with code from the other license in a larger program.")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://www.ebi.ac.uk/swo/license/SWO_1000048> "http://www.gnu.org/licenses/gpl-faq.html#WhatDoesCompatMean, accessed 12 June 2013.")
+AnnotationAssertion(dcterms:creator <http://www.ebi.ac.uk/swo/license/SWO_1000048> "Allyson Lister")
+AnnotationAssertion(rdfs:label <http://www.ebi.ac.uk/swo/license/SWO_1000048> "is compatible license of"@en)
+SymmetricObjectProperty(<http://www.ebi.ac.uk/swo/license/SWO_1000048>)
+ObjectPropertyDomain(<http://www.ebi.ac.uk/swo/license/SWO_1000048> <http://www.ebi.ac.uk/swo/SWO_0000002>)
+ObjectPropertyRange(<http://www.ebi.ac.uk/swo/license/SWO_1000048> <http://www.ebi.ac.uk/swo/SWO_0000002>)
+
+# Object Property: <https://schema.org/citation> (citation)
+
+AnnotationAssertion(rdfs:comment <https://schema.org/citation> "A citation or reference to another creative work, such as another publication, web page, scholarly article, etc."@en)
+AnnotationAssertion(rdfs:isDefinedBy <https://schema.org/citation> <https://schema.org/citation>)
+AnnotationAssertion(rdfs:label <https://schema.org/citation> "citation"@en)
+ObjectPropertyDomain(<https://schema.org/citation> nfdicore:Resource)
+ObjectPropertyRange(<https://schema.org/citation> nfdicore:Resource)
+
+# Object Property: <https://schema.org/operatingSystem> (operatingSystem)
+
+AnnotationAssertion(rdfs:comment <https://schema.org/operatingSystem> "Operating systems supported (Windows 7, OS X 10.6, Android 1.6)."@en)
+AnnotationAssertion(rdfs:isDefinedBy <https://schema.org/operatingSystem> <https://schema.org/operatingSystem>)
+AnnotationAssertion(rdfs:label <https://schema.org/operatingSystem> "operatingSystem"@en)
+ObjectPropertyDomain(<https://schema.org/operatingSystem> nfdicore:Software)
+ObjectPropertyRange(<https://schema.org/operatingSystem> <http://www.ebi.ac.uk/swo/SWO_0000021>)
+
+# Object Property: <https://schema.org/sponsor> (sponsor)
+
+AnnotationAssertion(rdfs:comment <https://schema.org/sponsor> "A person or organization that supports a thing through a pledge, promise, or financial contribution. E.g. a sponsor of a Medical Study or a corporate sponsor of an event."@en)
+AnnotationAssertion(rdfs:isDefinedBy <https://schema.org/sponsor> <https://schema.org/sponsor>)
+AnnotationAssertion(rdfs:label <https://schema.org/sponsor> "sponsor"@en)
+ObjectPropertyDomain(<https://schema.org/sponsor> <https://w3id.org/scholarlydata/ontology/conference-ontology.owl#OrganisedEvent>)
+ObjectPropertyRange(<https://schema.org/sponsor> ObjectUnionOf(nfdicore:Organization nfdicore:Person))
+
+# Object Property: <https://w3id.org/scholarlydata/ontology/conference-ontology.owl#hasPart> (has part)
+
+AnnotationAssertion(rdfs:comment <https://w3id.org/scholarlydata/ontology/conference-ontology.owl#hasPart> "has part"@en)
+AnnotationAssertion(rdfs:label <https://w3id.org/scholarlydata/ontology/conference-ontology.owl#hasPart> "has part"@en)
+InverseObjectProperties(<https://w3id.org/scholarlydata/ontology/conference-ontology.owl#hasPart> <https://w3id.org/scholarlydata/ontology/conference-ontology.owl#isPartOf>)
+ObjectPropertyDomain(<https://w3id.org/scholarlydata/ontology/conference-ontology.owl#hasPart> owl:Thing)
+ObjectPropertyRange(<https://w3id.org/scholarlydata/ontology/conference-ontology.owl#hasPart> owl:Thing)
+
+# Object Property: <https://w3id.org/scholarlydata/ontology/conference-ontology.owl#hasSubEvent> (has sub event)
+
+AnnotationAssertion(rdfs:comment <https://w3id.org/scholarlydata/ontology/conference-ontology.owl#hasSubEvent> "has sub event"@en)
+AnnotationAssertion(rdfs:label <https://w3id.org/scholarlydata/ontology/conference-ontology.owl#hasSubEvent> "has sub event"@en)
+SubObjectPropertyOf(<https://w3id.org/scholarlydata/ontology/conference-ontology.owl#hasSubEvent> <https://w3id.org/scholarlydata/ontology/conference-ontology.owl#hasPart>)
+InverseObjectProperties(<https://w3id.org/scholarlydata/ontology/conference-ontology.owl#hasSubEvent> <https://w3id.org/scholarlydata/ontology/conference-ontology.owl#isSubEventOf>)
+ObjectPropertyDomain(<https://w3id.org/scholarlydata/ontology/conference-ontology.owl#hasSubEvent> <https://w3id.org/scholarlydata/ontology/conference-ontology.owl#OrganisedEvent>)
+ObjectPropertyRange(<https://w3id.org/scholarlydata/ontology/conference-ontology.owl#hasSubEvent> <https://w3id.org/scholarlydata/ontology/conference-ontology.owl#OrganisedEvent>)
+
+# Object Property: <https://w3id.org/scholarlydata/ontology/conference-ontology.owl#isPartOf> (is part of)
+
+AnnotationAssertion(rdfs:comment <https://w3id.org/scholarlydata/ontology/conference-ontology.owl#isPartOf> "is part of"@en)
+AnnotationAssertion(rdfs:label <https://w3id.org/scholarlydata/ontology/conference-ontology.owl#isPartOf> "is part of"@en)
+
+# Object Property: <https://w3id.org/scholarlydata/ontology/conference-ontology.owl#isSubEventOf> (is sub event of)
+
+AnnotationAssertion(rdfs:comment <https://w3id.org/scholarlydata/ontology/conference-ontology.owl#isSubEventOf> "is sub event of"@en)
+AnnotationAssertion(rdfs:label <https://w3id.org/scholarlydata/ontology/conference-ontology.owl#isSubEventOf> "is sub event of"@en)
+SubObjectPropertyOf(<https://w3id.org/scholarlydata/ontology/conference-ontology.owl#isSubEventOf> <https://w3id.org/scholarlydata/ontology/conference-ontology.owl#isPartOf>)
+
+# Object Property: modsci:hasManufacturer (has manufacturer)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> modsci:hasManufacturer "A relation between company that makes goods for sale."@en)
+AnnotationAssertion(rdfs:label modsci:hasManufacturer "has manufacturer"@en)
+InverseObjectProperties(modsci:hasManufacturer modsci:isManufacturerOf)
+ObjectPropertyDomain(modsci:hasManufacturer modsci:ScientificInstrument)
+ObjectPropertyRange(modsci:hasManufacturer modsci:ScientificInstrumentManufacturer)
+
+# Object Property: modsci:isManufacturerOf (is manufacturer of)
+
+AnnotationAssertion(rdfs:label modsci:isManufacturerOf "is manufacturer of"@en)
+
+
+############################
+#   Data Properties
+############################
+
+# Data Property: nfdicore:url (url)
+
+AnnotationAssertion(rdfs:comment nfdicore:url "URL of a thing."@en)
+AnnotationAssertion(rdfs:label nfdicore:url "url"@en)
+DataPropertyDomain(nfdicore:url owl:Thing)
+DataPropertyRange(nfdicore:url xsd:anyURI)
+
+# Data Property: dcterms:title (has title)
+
+DataPropertyDomain(dcterms:title nfdicore:Resource)
+
+# Data Property: mwo:description (description)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> mwo:description "A data property linking an entity to its description."@en)
+AnnotationAssertion(rdfs:label mwo:description "description"@en)
+
+# Data Property: mwo:emailAddress (email address)
+
+AnnotationAssertion(rdfs:label mwo:emailAddress "email address"@en)
+DataPropertyDomain(mwo:emailAddress ObjectUnionOf(nfdicore:Organization nfdicore:Person))
+
+# Data Property: mwo:hasAcronym (has acronym)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> mwo:hasAcronym "A data property indicating the acronym of an entity, often represented as an abbreviation of the initials of the name or title of the entity."@en)
+AnnotationAssertion(rdfs:label mwo:hasAcronym "has acronym"@en)
+
+# Data Property: mwo:hasDOI (has DOI)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> mwo:hasDOI "A data property relating a work to its Digital Object Identifier (DOI)."@en)
+AnnotationAssertion(rdfs:label mwo:hasDOI "has DOI")
+SubDataPropertyOf(mwo:hasDOI dcterms:identifier)
+DataPropertyDomain(mwo:hasDOI nfdicore:Resource)
+
+# Data Property: mwo:hasEndpointURL (has endpoint URL)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> mwo:hasEndpointURL "A data property relating a SPARQL EndPoint with its URL."@en)
+AnnotationAssertion(rdfs:label mwo:hasEndpointURL "has endpoint URL"@en)
+SubDataPropertyOf(mwo:hasEndpointURL nfdicore:url)
+DataPropertyDomain(mwo:hasEndpointURL mwo:SparqlEndpoint)
+DataPropertyRange(mwo:hasEndpointURL xsd:anyURI)
+
+# Data Property: mwo:hasORCID (has ORCID)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> mwo:hasORCID "A data property relating a person to their Open Researcher and Contributor ID (ORCID).")
+AnnotationAssertion(rdfs:label mwo:hasORCID "has ORCID")
+SubDataPropertyOf(mwo:hasORCID dcterms:identifier)
+DataPropertyDomain(mwo:hasORCID nfdicore:Person)
+
+# Data Property: mwo:hasPersonalInformation (has personal information)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> mwo:hasPersonalInformation "A data property linking a person with information about that person."@en)
+AnnotationAssertion(rdfs:label mwo:hasPersonalInformation "has personal information"@en)
+DataPropertyDomain(mwo:hasPersonalInformation nfdicore:Person)
+
+# Data Property: mwo:hasPostalAddress (has postal address)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> mwo:hasPostalAddress "A data property indicating the postal address of an entity."@en)
+AnnotationAssertion(rdfs:label mwo:hasPostalAddress "has postal address"@en)
+DataPropertyDomain(mwo:hasPostalAddress ObjectUnionOf(nfdicore:Organization nfdicore:Person))
+
+# Data Property: mwo:hasPostalCode (has postal code)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> mwo:hasPostalCode "A data property indicating the postal code of an entity.")
+AnnotationAssertion(rdfs:label mwo:hasPostalCode "has postal code")
+SubDataPropertyOf(mwo:hasPostalCode mwo:hasPostalAddress)
+DataPropertyDomain(mwo:hasPostalCode ObjectUnionOf(nfdicore:Organization nfdicore:Person))
+
+# Data Property: mwo:hasProjectIdentifier (has project identifier)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> mwo:hasProjectIdentifier "A data property relating a research project with a unique identifier, defined in a given context."@en)
+AnnotationAssertion(rdfs:label mwo:hasProjectIdentifier "has project identifier"@en)
+SubDataPropertyOf(mwo:hasProjectIdentifier dcterms:identifier)
+DataPropertyDomain(mwo:hasProjectIdentifier nfdicore:Project)
+
+# Data Property: mwo:hasRORID (has ROR ID)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> mwo:hasRORID "A data property relating an organization to its identifier within the Research Organization Registry (ROR)."@en)
+AnnotationAssertion(rdfs:label mwo:hasRORID "has ROR ID")
+SubDataPropertyOf(mwo:hasRORID dcterms:identifier)
+DataPropertyDomain(mwo:hasRORID nfdicore:Organization)
+
+# Data Property: mwo:hasSerialNumber (has serial number)
+
+AnnotationAssertion(rdfs:comment mwo:hasSerialNumber "A data property linking something, for example a piece of equipment, to its serial number."@en)
+AnnotationAssertion(rdfs:label mwo:hasSerialNumber "has serial number"@en)
+SubDataPropertyOf(mwo:hasSerialNumber dcterms:identifier)
+DataPropertyDomain(mwo:hasSerialNumber ObjectUnionOf(<http://schema.org/Product> modsci:Instrument))
+
+# Data Property: mwo:hasVersion (has version)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> mwo:hasVersion "A number or string that identifies different variants or releases of a resource."@en)
+AnnotationAssertion(rdfs:label mwo:hasVersion "has version"@en)
+DataPropertyDomain(mwo:hasVersion nfdicore:Resource)
+
+# Data Property: mwo:instrumentModel (instrument model)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> mwo:instrumentModel "A data property relating an instrument with the model information."@en)
+AnnotationAssertion(rdfs:label mwo:instrumentModel "instrument model"@en)
+DataPropertyDomain(mwo:instrumentModel modsci:Instrument)
+
+# Data Property: mwo:isOnline (is online)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> mwo:isOnline "A flag to indicate an organized event or educational resource can be accessed online."@en)
+AnnotationAssertion(rdfs:label mwo:isOnline "is online"@en)
+DataPropertyDomain(mwo:isOnline ObjectUnionOf(mwo:EducationalResource <https://w3id.org/scholarlydata/ontology/conference-ontology.owl#OrganisedEvent>))
+DataPropertyRange(mwo:isOnline xsd:boolean)
+
+# Data Property: mwo:keyword (keywords)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> mwo:keyword "A data property used for defining something with keywords."@en)
+AnnotationAssertion(rdfs:label mwo:keyword "keywords"@en)
+
+# Data Property: foaf:firstName (foaf:firstName)
+
+SubDataPropertyOf(foaf:firstName mwo:hasPersonalInformation)
+DataPropertyDomain(foaf:firstName nfdicore:Person)
+
+# Data Property: foaf:gender (gender)
+
+AnnotationAssertion(rdfs:comment foaf:gender "The gender of this Agent (typically but not necessarily 'male' or 'female').")
+AnnotationAssertion(rdfs:isDefinedBy foaf:gender <http://xmlns.com/foaf/0.1/>)
+AnnotationAssertion(rdfs:label foaf:gender "gender")
+SubDataPropertyOf(foaf:gender mwo:hasPersonalInformation)
+FunctionalDataProperty(foaf:gender)
+DataPropertyDomain(foaf:gender nfdicore:Person)
+
+# Data Property: foaf:surname (foaf:surname)
+
+SubDataPropertyOf(foaf:surname mwo:hasPersonalInformation)
+DataPropertyDomain(foaf:surname nfdicore:Person)
+
+# Data Property: foaf:title (title)
+
+AnnotationAssertion(rdfs:comment foaf:title "Title (Mr, Mrs, Ms, Dr. etc)")
+AnnotationAssertion(rdfs:isDefinedBy foaf:title <http://xmlns.com/foaf/0.1/>)
+AnnotationAssertion(rdfs:label foaf:title "title")
+SubDataPropertyOf(foaf:title mwo:hasPersonalInformation)
+DataPropertyDomain(foaf:title nfdicore:Person)
+
+# Data Property: <https://schema.org/dateCreated> (dateCreated)
+
+AnnotationAssertion(rdfs:comment <https://schema.org/dateCreated> "The date on which the CreativeWork was created or the item was added to a DataFeed."@en)
+AnnotationAssertion(rdfs:isDefinedBy <https://schema.org/dateCreated> <https://schema.org/dateCreated>)
+AnnotationAssertion(rdfs:label <https://schema.org/dateCreated> "dateCreated"@en)
+DataPropertyDomain(<https://schema.org/dateCreated> nfdicore:Resource)
+
+# Data Property: <https://schema.org/datePublished> (datePublished)
+
+AnnotationAssertion(rdfs:comment <https://schema.org/datePublished> "Date of first broadcast/publication."@en)
+AnnotationAssertion(rdfs:isDefinedBy <https://schema.org/datePublished> <https://schema.org/datePublished>)
+AnnotationAssertion(rdfs:label <https://schema.org/datePublished> "datePublished"@en)
+DataPropertyDomain(<https://schema.org/datePublished> nfdicore:Resource)
+
+# Data Property: <https://schema.org/free> (free)
+
+AnnotationAssertion(rdfs:comment <https://schema.org/free> "A flag to signal that the item, event, or place is accessible for free."@en)
+AnnotationAssertion(rdfs:isDefinedBy <https://schema.org/free> <https://schema.org/free>)
+AnnotationAssertion(rdfs:label <https://schema.org/free> "free"@en)
+DataPropertyDomain(<https://schema.org/free> ObjectUnionOf(nfdicore:Resource <https://w3id.org/scholarlydata/ontology/conference-ontology.owl#OrganisedEvent>))
+
+# Data Property: <https://w3id.org/scholarlydata/ontology/conference-ontology.owl#duration> (duration)
+
+AnnotationAssertion(rdfs:comment <https://w3id.org/scholarlydata/ontology/conference-ontology.owl#duration> "duration"@en)
+AnnotationAssertion(rdfs:label <https://w3id.org/scholarlydata/ontology/conference-ontology.owl#duration> "duration"@en)
+DataPropertyDomain(<https://w3id.org/scholarlydata/ontology/conference-ontology.owl#duration> <https://w3id.org/scholarlydata/ontology/conference-ontology.owl#OrganisedEvent>)
+
+# Data Property: <https://w3id.org/scholarlydata/ontology/conference-ontology.owl#endDate> (end date)
+
+AnnotationAssertion(rdfs:comment <https://w3id.org/scholarlydata/ontology/conference-ontology.owl#endDate> "end date"@en)
+AnnotationAssertion(rdfs:label <https://w3id.org/scholarlydata/ontology/conference-ontology.owl#endDate> "end date"@en)
+DataPropertyDomain(<https://w3id.org/scholarlydata/ontology/conference-ontology.owl#endDate> <https://w3id.org/scholarlydata/ontology/conference-ontology.owl#OrganisedEvent>)
+
+# Data Property: <https://w3id.org/scholarlydata/ontology/conference-ontology.owl#startDate> (start date)
+
+AnnotationAssertion(rdfs:comment <https://w3id.org/scholarlydata/ontology/conference-ontology.owl#startDate> "start date"@en)
+AnnotationAssertion(rdfs:label <https://w3id.org/scholarlydata/ontology/conference-ontology.owl#startDate> "start date"@en)
+DataPropertyDomain(<https://w3id.org/scholarlydata/ontology/conference-ontology.owl#startDate> <https://w3id.org/scholarlydata/ontology/conference-ontology.owl#OrganisedEvent>)
+
+
+
+############################
+#   Classes
+############################
+
+# Class: <http://emmo.info/emmo#EMMO_4207e895_8b83_4318_996a_72cfb32acd94> (Material)
+
+AnnotationAssertion(<http://emmo.info/emmo#EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9> <http://emmo.info/emmo#EMMO_4207e895_8b83_4318_996a_72cfb32acd94> "A matter individual that stands for a real world object representing an amount of a physical substance (or mixture of substances) in different states of matter or phases."@en)
+AnnotationAssertion(rdfs:comment <http://emmo.info/emmo#EMMO_4207e895_8b83_4318_996a_72cfb32acd94> "An instance of a material (e.g. nitrogen) can represent different states of matter. The fact that the individual also belongs to other classes (e.g. Gas) would reveal the actual form in which the material is found."@en)
+AnnotationAssertion(rdfs:comment <http://emmo.info/emmo#EMMO_4207e895_8b83_4318_996a_72cfb32acd94> "Material usually means some definite kind, quality, or quantity of matter, especially as intended for use."@en)
+AnnotationAssertion(rdfs:label <http://emmo.info/emmo#EMMO_4207e895_8b83_4318_996a_72cfb32acd94> "Material")
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://emmo.info/emmo#EMMO_4207e895_8b83_4318_996a_72cfb32acd94> "Material"@en)
+
+# Class: nfdicore:AcademicDiscipline (academic discipline)
+
+AnnotationAssertion(nfdicore:example nfdicore:AcademicDiscipline <https://www.wikidata.org/entity/Q12271>)
+AnnotationAssertion(nfdicore:example nfdicore:AcademicDiscipline "Architecture, Art History, Musicology, Media Studies, Performing Arts"@en)
+AnnotationAssertion(rdfs:comment nfdicore:AcademicDiscipline "An academic discipline, a research field or domain of a resource, e.g. a data portal or a field of study of a person."@en)
+AnnotationAssertion(rdfs:label nfdicore:AcademicDiscipline "academic discipline"@en)
+SubClassOf(nfdicore:AcademicDiscipline modsci:ModernScience)
+
+# Class: nfdicore:City (city)
+
+AnnotationAssertion(nfdicore:example nfdicore:City "Berlin, Hannover, Kyiv"@en)
+AnnotationAssertion(rdfs:comment nfdicore:City "A city or a town where the thing is located."@en)
+AnnotationAssertion(rdfs:label nfdicore:City "city"@en)
+SubClassOf(nfdicore:City nfdicore:Place)
+
+# Class: nfdicore:Collection (collection)
+
+AnnotationAssertion(nfdicore:example nfdicore:Collection "RISM catalogue of musical sources"@en)
+AnnotationAssertion(rdfs:comment nfdicore:Collection "A tangible collection of valuables published or curated by an organisation or a person."@en)
+AnnotationAssertion(rdfs:label nfdicore:Collection "collection"@en)
+SubClassOf(nfdicore:Collection <http://schema.org/Product>)
+
+# Class: nfdicore:Consortium (consortium)
+
+AnnotationAssertion(nfdicore:example nfdicore:Consortium "NFDI4Culture, NFDI-MatWerk, DataPLANT.")
+AnnotationAssertion(rdfs:comment nfdicore:Consortium "NFDI consortia grouped by a discipline based in a science-led process managed by the German Research Foundation (DFG)."@en)
+AnnotationAssertion(rdfs:label nfdicore:Consortium "consortium"@en)
+SubClassOf(nfdicore:Consortium nfdicore:Organization)
+
+# Class: nfdicore:Country (country)
+
+AnnotationAssertion(rdfs:comment nfdicore:Country "A country where the thing is located."@en)
+AnnotationAssertion(rdfs:label nfdicore:Country "country"@en)
+SubClassOf(nfdicore:Country nfdicore:Place)
+
+# Class: nfdicore:DataPortal (data portal)
+
+AnnotationAssertion(nfdicore:example nfdicore:DataPortal "Bach digital, KultSam, MusiXplora"@en)
+AnnotationAssertion(rdfs:comment nfdicore:DataPortal "An online platform that provides access to data collections and datasets."@en)
+AnnotationAssertion(rdfs:label nfdicore:DataPortal "data portal"@en)
+SubClassOf(nfdicore:DataPortal <http://schema.org/Service>)
+
+# Class: nfdicore:Dataset (dataset)
+
+AnnotationAssertion(rdfs:comment nfdicore:Dataset "A dataset is associated with a structured information about a resource."@en)
+AnnotationAssertion(rdfs:label nfdicore:Dataset "dataset"@en)
+SubClassOf(nfdicore:Dataset <http://schema.org/CreativeWork>)
+
+# Class: nfdicore:FederalState (federal state)
+
+AnnotationAssertion(nfdicore:example nfdicore:FederalState "Sachsen, Berlin"@de)
+AnnotationAssertion(rdfs:comment nfdicore:FederalState "A federal state where the thing is located."@en)
+AnnotationAssertion(rdfs:label nfdicore:FederalState "federal state"@en)
+SubClassOf(nfdicore:FederalState nfdicore:Place)
+
+# Class: nfdicore:ObjectType (object type)
+
+AnnotationAssertion(nfdicore:example nfdicore:ObjectType "book, photograph, music sheet"@en)
+AnnotationAssertion(rdfs:comment nfdicore:ObjectType "A resource that identifies the type of object in a data collection."@en)
+AnnotationAssertion(rdfs:label nfdicore:ObjectType "object type"@en)
+
+# Class: nfdicore:Organization (organization)
+
+AnnotationAssertion(nfdicore:example nfdicore:Organization "Universit\\u00e4tsbibliothek Leipzig, S\\u00e4chsisches Wirtschaftsarchiv, Museen der Stadt K\\u00f6ln")
+AnnotationAssertion(rdfs:comment nfdicore:Organization "An organisation of some kind, e.g. research organisation or business organisation"@en)
+AnnotationAssertion(rdfs:label nfdicore:Organization "organization"@en)
+EquivalentClasses(nfdicore:Organization <http://schema.org/Organization>)
+
+# Class: nfdicore:Person (person)
+
+AnnotationAssertion(nfdicore:example nfdicore:Person "Harald Sack, Tabea Tietz, Sasha Bruns, Etienne Posthumus")
+AnnotationAssertion(rdfs:comment nfdicore:Person "A resource that represents a single person."@en)
+AnnotationAssertion(rdfs:label nfdicore:Person "person"@en)
+EquivalentClasses(nfdicore:Person <http://schema.org/Person>)
+
+# Class: nfdicore:Place (place)
+
+AnnotationAssertion(nfdicore:example nfdicore:Place "Hessen, Berlin, Schweiz")
+AnnotationAssertion(rdfs:comment nfdicore:Place "A spatial region, e.g. country, city or district."@en)
+AnnotationAssertion(rdfs:label nfdicore:Place "place"@en)
+
+# Class: nfdicore:ProgrammingLanguage (programming language)
+
+AnnotationAssertion(nfdicore:example nfdicore:ProgrammingLanguage "Java, Ruby, C++, Perl, PHP")
+AnnotationAssertion(rdfs:comment nfdicore:ProgrammingLanguage "A formal language used for implementing a software."@en)
+AnnotationAssertion(rdfs:label nfdicore:ProgrammingLanguage "programming language"@en)
+EquivalentClasses(nfdicore:ProgrammingLanguage modsci:ProgrammingLanguage)
+SubClassOf(nfdicore:ProgrammingLanguage nfdicore:TechnologicalMeans)
+
+# Class: nfdicore:Project (project)
+
+AnnotationAssertion(nfdicore:example nfdicore:Project "Freisch\\u00fctz digital, Corpus Vitrearum Medii Aevi")
+AnnotationAssertion(rdfs:comment nfdicore:Project "A scientific or business endeavour that aims to conclude an investigation or to answer a research question."@en)
+AnnotationAssertion(rdfs:label nfdicore:Project "project"@en)
+EquivalentClasses(nfdicore:Project <http://schema.org/Project>)
+
+# Class: nfdicore:ProvidedResource (provided resource)
+
+AnnotationAssertion(rdfs:comment nfdicore:ProvidedResource "A ressource that identifies a resource provided to the nfdi."@en)
+AnnotationAssertion(rdfs:label nfdicore:ProvidedResource "provided resource"@en)
+SubClassOf(nfdicore:ProvidedResource nfdicore:Resource)
+
+# Class: nfdicore:Publication (publication)
+
+AnnotationAssertion(nfdicore:example nfdicore:Publication "MusiXplora: Visual analysis of a musicological encyclopedia, Textkategorien in kompositorischen Werkstattdokumenten")
+AnnotationAssertion(rdfs:comment nfdicore:Publication "A published scholarly work that reports on ongoing activity about or within a resource, e.g. a dataset."@en)
+AnnotationAssertion(rdfs:label nfdicore:Publication "publication"@en)
+SubClassOf(nfdicore:Publication <http://schema.org/CreativeWork>)
+
+# Class: nfdicore:Resource (resource)
+
+AnnotationAssertion(rdfs:comment nfdicore:Resource "The most generic kind of a resource and may be associated with any kind of creative work, e.g. datasets, books, movies, photographs; offered products and services, e.g. data portals, data curation, data digitization; and intangible things, e.g. subjects of creative works, topics of events, offers, a list of enumerations."@en)
+AnnotationAssertion(rdfs:label nfdicore:Resource "resource"@en)
+SubClassOf(nfdicore:Resource ObjectUnionOf(<http://schema.org/CreativeWork> <http://schema.org/Intangible> <http://schema.org/Product>))
+
+# Class: nfdicore:SemanticExpressivity (semantic expressivity)
+
+AnnotationAssertion(nfdicore:example nfdicore:SemanticExpressivity "controlled vocabulary, ontology, taxonomy"@en)
+AnnotationAssertion(rdfs:comment nfdicore:SemanticExpressivity "An entity that identifies the level of the semantic expressivity of a resource. Five instances are now included in nfdicore."@en)
+AnnotationAssertion(rdfs:label nfdicore:SemanticExpressivity "semantic expressivity"@en)
+
+# Class: nfdicore:ServiceType (service type)
+
+AnnotationAssertion(nfdicore:example nfdicore:ServiceType "Expertise, advertisement, curation"@en)
+AnnotationAssertion(rdfs:comment nfdicore:ServiceType "A resource that identifies the type of a service."@en)
+AnnotationAssertion(rdfs:label nfdicore:ServiceType "service type"@en)
+
+# Class: nfdicore:Software (software)
+
+AnnotationAssertion(nfdicore:example nfdicore:Software "Edirom, Muscat")
+AnnotationAssertion(rdfs:comment nfdicore:Software "A computer software provided by an organisation or a person."@en)
+AnnotationAssertion(rdfs:label nfdicore:Software "software"@en)
+EquivalentClasses(nfdicore:Software <http://www.ebi.ac.uk/swo/SWO_0000001>)
+SubClassOf(nfdicore:Software <http://schema.org/Product>)
+
+# Class: nfdicore:Specification (specification)
+
+AnnotationAssertion(nfdicore:example nfdicore:Specification "RDF, SPARQL, Federation")
+AnnotationAssertion(rdfs:comment nfdicore:Specification "A set of requirements, guidelines, standards contributed by an organisation or a person."@en)
+AnnotationAssertion(rdfs:label nfdicore:Specification "specification"@en)
+SubClassOf(nfdicore:Specification <http://schema.org/Product>)
+
+# Class: nfdicore:Standard (standard)
+
+AnnotationAssertion(nfdicore:example nfdicore:Standard "ISO 15511, DINI-Zertifikat")
+AnnotationAssertion(rdfs:comment nfdicore:Standard "An international standard and norm that can be used to evaluate or create services."@en)
+AnnotationAssertion(rdfs:label nfdicore:Standard "standard"@en)
+SubClassOf(nfdicore:Standard nfdicore:Specification)
+
+# Class: nfdicore:TechnologicalMeans (technological means)
+
+AnnotationAssertion(nfdicore:example nfdicore:TechnologicalMeans "Groovy on Grails, Angular"@en)
+AnnotationAssertion(rdfs:comment nfdicore:TechnologicalMeans "A technology, e.g. a web application or a programming framework used in a resource."@en)
+AnnotationAssertion(rdfs:label nfdicore:TechnologicalMeans "technological means"@en)
+
+# Class: nfdicore:Website (website)
+
+AnnotationAssertion(nfdicore:example nfdicore:Website "https:\\/\\/opac.rism.info")
+AnnotationAssertion(rdfs:comment nfdicore:Website "A collection of webpages contributed by an organisation or a person."@en)
+AnnotationAssertion(rdfs:label nfdicore:Website "website"@en)
+SubClassOf(nfdicore:Website <http://schema.org/Product>)
+
+# Class: <http://purl.obolibrary.org/obo/BFO_0000023> (role)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/BFO_0000179> <http://purl.obolibrary.org/obo/BFO_0000023> "role")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/BFO_0000180> <http://purl.obolibrary.org/obo/BFO_0000023> "Role")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000112> <http://purl.obolibrary.org/obo/BFO_0000023> "John’s role of husband to Mary is dependent on Mary’s role of wife to John, and both are dependent on the object aggregate comprising John and Mary as member parts joined together through the relational quality of being married."@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000112> <http://purl.obolibrary.org/obo/BFO_0000023> "the priest role"@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000112> <http://purl.obolibrary.org/obo/BFO_0000023> "the role of a boundary to demarcate two neighboring administrative territories"@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000112> <http://purl.obolibrary.org/obo/BFO_0000023> "the role of a building in serving as a military target"@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000112> <http://purl.obolibrary.org/obo/BFO_0000023> "the role of a stone in marking a property boundary"@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000112> <http://purl.obolibrary.org/obo/BFO_0000023> "the role of subject in a clinical trial"@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000112> <http://purl.obolibrary.org/obo/BFO_0000023> "the student role"@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000116> <http://purl.obolibrary.org/obo/BFO_0000023> "BFO 2 Reference: One major family of examples of non-rigid universals involves roles, and ontologies developed for corresponding administrative purposes may consist entirely of representatives of entities of this sort. Thus ‘professor’, defined as follows,b instance_of professor at t =Def. there is some c, c instance_of professor role & c inheres_in b at t.denotes a non-rigid universal and so also do ‘nurse’, ‘student’, ‘colonel’, ‘taxpayer’, and so forth. (These terms are all, in the jargon of philosophy, phase sortals.) By using role terms in definitions, we can create a BFO conformant treatment of such entities drawing on the fact that, while an instance of professor may be simultaneously an instance of trade union member, no instance of the type professor role is also (at any time) an instance of the type trade union member role (any more than any instance of the type color is at any time an instance of the type length). If an ontology of employment positions should be defined in terms of roles following the above pattern, this enables the ontology to do justice to the fact that individuals instantiate the corresponding universals –  professor, sergeant, nurse – only during certain phases in their lives."@en)
+AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/IAO_0010000> <http://purl.obolibrary.org/obo/bfo/axiom/061-001>) <http://purl.obolibrary.org/obo/IAO_0000600> <http://purl.obolibrary.org/obo/BFO_0000023> "b is a role means: b is a realizable entity & b exists because there is some single bearer that is in some special physical, social, or institutional set of circumstances in which this bearer does not have to be& b is not such that, if it ceases to exist, then the physical make-up of the bearer is thereby changed. (axiom label in BFO2 Reference: [061-001])"@en)
+AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/IAO_0010000> <http://purl.obolibrary.org/obo/bfo/axiom/061-001>) <http://purl.obolibrary.org/obo/IAO_0000602> <http://purl.obolibrary.org/obo/BFO_0000023> "(forall (x) (if (Role x) (RealizableEntity x))) // axiom label in BFO2 CLIF: [061-001] ")
+AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/BFO_0000023> <http://purl.obolibrary.org/obo/bfo.owl>)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/BFO_0000023> "role"@en)
+
+# Class: dcterms:FileFormat (File Format)
+
+AnnotationAssertion(rdfs:comment dcterms:FileFormat "Examples include the formats defined by the list of Internet Media Types."@en-us)
+AnnotationAssertion(rdfs:label dcterms:FileFormat "File Format"@en-us)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> dcterms:FileFormat "A digital resource format."@en-us)
+SubClassOf(dcterms:FileFormat dcterms:MediaType)
+
+# Class: dcterms:MediaType (Media Type)
+
+AnnotationAssertion(rdfs:label dcterms:MediaType "Media Type"@en-us)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> dcterms:MediaType "A file format or physical medium."@en-us)
+
+# Class: mwo:ChemistryDatabase (chemistry database)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> mwo:ChemistryDatabase "A database containing chemistry data."@en)
+AnnotationAssertion(rdfs:label mwo:ChemistryDatabase "chemistry database"@en)
+SubClassOf(mwo:ChemistryDatabase mwo:Database)
+
+# Class: mwo:ComputationalWorkflow (computational workflow)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> mwo:ComputationalWorkflow "A computational workflow is a workflow which describes the complex multi-step methods that are used for data collection, data preparation, analytics, predictive modelling, and simulation that lead to new data products."@en)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> mwo:ComputationalWorkflow <https://doi.org/10.1162/dint_a_00033>)
+AnnotationAssertion(rdfs:label mwo:ComputationalWorkflow "computational workflow"@en)
+SubClassOf(mwo:ComputationalWorkflow mwo:Workflow)
+SubClassOf(mwo:ComputationalWorkflow <http://www.ebi.ac.uk/swo/SWO_0000001>)
+
+# Class: mwo:ContactPerson (contact person)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> mwo:ContactPerson "A role which inheres in a bearer and is realised when this person acts as the contact point regarding a contribution."@en)
+AnnotationAssertion(rdfs:label mwo:ContactPerson "contact person"@en)
+SubClassOf(mwo:ContactPerson <http://purl.obolibrary.org/obo/BFO_0000023>)
+SubClassOf(mwo:ContactPerson mwo:ContactPoint)
+
+# Class: mwo:ContactPoint (contact point)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> mwo:ContactPoint "A contact point is a person, website or e-mail which provides information concerning a resource."@en)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> mwo:ContactPoint "Point of contact"@en)
+AnnotationAssertion(rdfs:label mwo:ContactPoint "contact point"@en)
+
+# Class: mwo:CrystallographyDatabase (crystallography database)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> mwo:CrystallographyDatabase "A database containing crystal structures and data on structural and mathematical crystallography, solid state physics and structural chemistry."@en)
+AnnotationAssertion(rdfs:label mwo:CrystallographyDatabase "crystallography database"@en)
+SubClassOf(mwo:CrystallographyDatabase mwo:Database)
+
+# Class: mwo:DataCollector (data collector)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> mwo:DataCollector "A role which inheres in a bearer and is realised when this bearer has participated in the gathering of data."@en)
+AnnotationAssertion(rdfs:comment mwo:DataCollector "The bearer in this definition might be a person or a software agent. Data may consist of subject data, object data or both."@en)
+AnnotationAssertion(rdfs:label mwo:DataCollector "data collector"@en)
+SubClassOf(mwo:DataCollector <http://purl.obolibrary.org/obo/BFO_0000023>)
+
+# Class: mwo:Database (database)
+
+AnnotationAssertion(rdfs:comment mwo:Database "A structured collection of logically related data usually stored and retrieved using computer-based means."@en)
+AnnotationAssertion(rdfs:label mwo:Database "database"@en)
+SubClassOf(mwo:Database <http://schema.org/Product>)
+
+# Class: mwo:Documentation (documentation)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> mwo:Documentation "Documentation is any communicable material that is used to describe, explain or instruct regarding some attributes of an object, system or procedure, such as its parts, assembly, installation, maintenance and use"@en)
+AnnotationAssertion(rdfs:label mwo:Documentation "documentation"@en)
+SubClassOf(mwo:Documentation <http://schema.org/Product>)
+
+# Class: mwo:EducationalEvent (educational event)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> mwo:EducationalEvent "An organized event with the purpose of teaching knowledge to others by displaying educational materials."@en)
+AnnotationAssertion(rdfs:label mwo:EducationalEvent "educational event")
+SubClassOf(mwo:EducationalEvent <https://w3id.org/scholarlydata/ontology/conference-ontology.owl#OrganisedEvent>)
+
+# Class: mwo:EducationalResource (educational resource)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> mwo:EducationalResource "A resource or material that can be used for teaching and learning puposes."@en)
+AnnotationAssertion(rdfs:label mwo:EducationalResource "educational resource"@en)
+SubClassOf(mwo:EducationalResource nfdicore:Resource)
+
+# Class: mwo:ElectronicLabNotebook (electronic lab notebook)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> mwo:ElectronicLabNotebook "An Electronic Lab Notebook is a software tool that digitally replicates paper lab notebooks traditionally used in the sciences to record experimental results. It allows scientists to access, search, and share results from an experiment."@en)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> mwo:ElectronicLabNotebook "Electronic Laboratory Notebook"@en)
+AnnotationAssertion(rdfs:label mwo:ElectronicLabNotebook "electronic lab notebook"@en)
+SubClassOf(mwo:ElectronicLabNotebook <http://www.ebi.ac.uk/swo/SWO_0000001>)
+
+# Class: mwo:ExperimentalWorkflow (experimental workflow)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> mwo:ExperimentalWorkflow "Experimental workflow is a workflow that describes an experimental process, including the design, preparation, measurement, and analysis of the data."@en)
+AnnotationAssertion(rdfs:label mwo:ExperimentalWorkflow "experimental workflow"@en)
+SubClassOf(mwo:ExperimentalWorkflow mwo:Workflow)
+
+# Class: mwo:GitRepository (git repository)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> mwo:GitRepository "A repository that is created and managed using a Git version control system."@en)
+AnnotationAssertion(rdfs:label mwo:GitRepository "git repository")
+SubClassOf(mwo:GitRepository mwo:Repository)
+
+# Class: mwo:GroupLeader (group leader)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> mwo:GroupLeader "A role which inheres in a bearer and is realized when this person holds the responsibility for the operations of a group of agents."@en)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym> mwo:GroupLeader mwo:Supervisor)
+AnnotationAssertion(rdfs:comment mwo:GroupLeader "The responsibilities of a group leader might include, among others, guiding, motivating, supporting and coordinating the group in different scopes (i.e. scientific, administrative, financial). In scientific projects (i.e. within the NFDI context) the group in this definition will be a research group, institute or department. In most cases the group leader is also the supervisor to the group"@en)
+AnnotationAssertion(rdfs:label mwo:GroupLeader "group leader"@en)
+SubClassOf(mwo:GroupLeader <http://purl.obolibrary.org/obo/BFO_0000023>)
+
+# Class: mwo:LargeScaleFacility (large-scale facility)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> mwo:LargeScaleFacility "A facility that provides access to large-scale scientific equipment and allows scientists to carry out state-of-the-art research."@en)
+AnnotationAssertion(rdfs:label mwo:LargeScaleFacility "large-scale facility"@en)
+
+# Class: mwo:Lecture (lecture)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> mwo:Lecture "An academic event which is intented to deliver instruction on a specific topic, most commonly to an audience of university students."@en)
+AnnotationAssertion(rdfs:label mwo:Lecture "lecture")
+SubClassOf(mwo:Lecture mwo:EducationalEvent)
+
+# Class: mwo:MaterialsDatabase (materials database)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> mwo:MaterialsDatabase "A database containing data of experimental and computational properties of materials"@en)
+AnnotationAssertion(rdfs:label mwo:MaterialsDatabase "materials database"@en)
+SubClassOf(mwo:MaterialsDatabase mwo:Database)
+
+# Class: mwo:MetadataSchema (metadata schema)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> mwo:MetadataSchema "A metadata schema is a specification which establishes the elements needed to describe a data resource in a formalized and concise manner."@en)
+AnnotationAssertion(rdfs:label mwo:MetadataSchema "metadata schema"@en)
+SubClassOf(mwo:MetadataSchema nfdicore:Specification)
+
+# Class: mwo:Method (method)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> mwo:Method "A method is a systematic procedure, technique, or mode of inquiry employed by or proper to a particular discipline or art."@en)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> mwo:Method <https://www.merriam-webster.com/dictionary/method#:~:text=a(1),the%20lecture%20method>)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> mwo:Method "Approach"@en)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> mwo:Method "Procedure"@en)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> mwo:Method "Technique"@en)
+AnnotationAssertion(rdfs:label mwo:Method "method"@en)
+
+# Class: mwo:OntologyRepository (ontology repository)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> mwo:OntologyRepository "A repository which contains ontologies."@en)
+AnnotationAssertion(rdfs:label mwo:OntologyRepository "ontology repository"@en)
+SubClassOf(mwo:OntologyRepository mwo:Repository)
+
+# Class: mwo:Patent (patent)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> mwo:Patent "A patent is an exclusive right granted for an invention, which is a product or a process that provides, in general, a new way of doing something, or offers a new technical solution to a problem. To get a patent, technical information about the invention must be disclosed to the public in a patent application."@en)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> mwo:Patent <https://www.wipo.int/patents/en/>)
+AnnotationAssertion(rdfs:label mwo:Patent "patent"@en)
+SubClassOf(mwo:Patent nfdicore:Specification)
+
+# Class: mwo:PotentialsRepository (potentials repository)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> mwo:PotentialsRepository "A data repository which contains interatomic potentials or pseudopotentials for atomistic models."@en)
+AnnotationAssertion(rdfs:label mwo:PotentialsRepository "potentials repository"@en)
+SubClassOf(mwo:PotentialsRepository mwo:Repository)
+
+# Class: mwo:ProcessingSoftware (processing software)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> mwo:ProcessingSoftware "Software which carries out a (planned) process on digital data,"@en)
+AnnotationAssertion(rdfs:comment mwo:ProcessingSoftware "Depending on the temporal relation of the carried out process to an analysis process, the process might either be termed \"pre-processing\" (e.g. converting file formats) or \"post-processing\" (e.g. spatial filtering of images)."@en)
+AnnotationAssertion(rdfs:label mwo:ProcessingSoftware "processing software"@en)
+SubClassOf(mwo:ProcessingSoftware <http://www.ebi.ac.uk/swo/SWO_0000001>)
+
+# Class: mwo:ProjectLeader (project leader)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> mwo:ProjectLeader "A role which inheres in a bearer and is realized when a person is responsible for 1) the coordination of project resources and 2) the operations carried out within it."@en)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> mwo:ProjectLeader <https://www.indeed.com/career-advice/finding-a-job/project-leader-vs-project-manager>)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym> mwo:ProjectLeader mwo:ProjectManager)
+AnnotationAssertion(rdfs:comment mwo:ProjectLeader "In a project, a project leader might engage, motivate and support the team by establishing and maintaining productive operations"@en)
+AnnotationAssertion(rdfs:label mwo:ProjectLeader "project leader"@en)
+SubClassOf(mwo:ProjectLeader <http://purl.obolibrary.org/obo/BFO_0000023>)
+
+# Class: mwo:ProjectManager (project manager)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> mwo:ProjectManager "A role which inheres in a bearer and is realized when that person is responsible for 1) helping to define the project scope, goals and deliverables, 2) taking care of the budget, documentation and staffing, 3) reporting and documenting the progress, and 4) managing a project and meeting deadlines."@en)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> mwo:ProjectManager <https://www.indeed.com/career-advice/finding-a-job/project-leader-vs-project-manager>)
+AnnotationAssertion(rdfs:label mwo:ProjectManager "project manager"@en)
+SubClassOf(mwo:ProjectManager <http://purl.obolibrary.org/obo/BFO_0000023>)
+
+# Class: mwo:ProjectMember (project member)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> mwo:ProjectMember "A role which inheres in a bearer and is realized when this bearer participates in the planning, operation or dissemination of a project."@en)
+AnnotationAssertion(rdfs:label mwo:ProjectMember "project member"@en)
+SubClassOf(mwo:ProjectMember <http://purl.obolibrary.org/obo/BFO_0000023>)
+
+# Class: mwo:Repository (repository)
+
+AnnotationAssertion(rdfs:comment mwo:Repository "A central location in which data is stored and managed."@en)
+AnnotationAssertion(rdfs:label mwo:Repository "repository"@en)
+SubClassOf(mwo:Repository <http://schema.org/Product>)
+
+# Class: mwo:ResearchGroup (research group)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> mwo:ResearchGroup "A group of people who work in a university or research institute and carry research on one or more topics."@en)
+AnnotationAssertion(rdfs:label mwo:ResearchGroup "research group"@en)
+
+# Class: mwo:ResearchSoftware (research software)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> mwo:ResearchSoftware "Software which was created for a research purpose."@en)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> mwo:ResearchSoftware <https://doi.org/10.5281/zenodo.5504016>)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> mwo:ResearchSoftware "Scientific software"@en)
+AnnotationAssertion(rdfs:comment mwo:ResearchSoftware "Software components (e.g., operating systems, libraries, dependencies, packages, scripts, etc.) that are used for research but were not created during or with a clear research intent should be considered software in research and not Research Software. This differentiation may vary between disciplines.
+Research software might be source code files, algorithms, scripts, computational workflows and executables"@en)
+AnnotationAssertion(rdfs:label mwo:ResearchSoftware "research software"@en)
+SubClassOf(mwo:ResearchSoftware <http://www.ebi.ac.uk/swo/SWO_0000001>)
+
+# Class: mwo:ResearchTopic (research topic)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> mwo:ResearchTopic "A research topic is a specific field of study within a broader academic discipline."@en)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasBroadSynonym> mwo:ResearchTopic "Research area"@en)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> mwo:ResearchTopic "Research field"@en)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> mwo:ResearchTopic "Research subject"@en)
+AnnotationAssertion(rdfs:label mwo:ResearchTopic "research topic"@en)
+SubClassOf(mwo:ResearchTopic nfdicore:AcademicDiscipline)
+
+# Class: mwo:SemanticResource (semantic resource)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> mwo:SemanticResource "A machine-actionable controlled vocabularies to describe the meaning of the content and express relations among them."@en)
+AnnotationAssertion(rdfs:label mwo:SemanticResource "semantic resource")
+SubClassOf(mwo:SemanticResource nfdicore:Resource)
+
+# Class: mwo:Seminar (Seminar)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> mwo:Seminar "An academic event where recuring meetings are held on a particular research topic, usually attended by academic and research staff."@en)
+AnnotationAssertion(rdfs:label mwo:Seminar "Seminar"@en)
+SubClassOf(mwo:Seminar <https://w3id.org/scholarlydata/ontology/conference-ontology.owl#AcademicEvent>)
+
+# Class: mwo:SoftwareRepository (software repository)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> mwo:SoftwareRepository "A repository which contains software and its components, including libraries, scripts, etc."@en)
+AnnotationAssertion(rdfs:label mwo:SoftwareRepository "software repository"@en)
+SubClassOf(mwo:SoftwareRepository mwo:Repository)
+
+# Class: mwo:SparqlEndpoint (SPARQL endpoint)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> mwo:SparqlEndpoint "A SPARQL endpoint is a web service that provides an access point for receiving and processing SPARQL protocol requests"@en)
+AnnotationAssertion(rdfs:label mwo:SparqlEndpoint "SPARQL endpoint"@en)
+SubClassOf(mwo:SparqlEndpoint mwo:WebService)
+
+# Class: mwo:SummerSchool (Summer School)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> mwo:SummerSchool "An academic event where a school session is conducted in summer enabling students to accelerate progress toward a diploma or degree, to make up credits lost through absence or failure, or to round out professional education."@en)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> mwo:SummerSchool <https://www.merriam-webster.com/dictionary/summer%20school#:~:text=noun,to%20round%20out%20professional%20education>)
+AnnotationAssertion(rdfs:label mwo:SummerSchool "Summer School"@en)
+SubClassOf(mwo:SummerSchool mwo:EducationalEvent)
+
+# Class: mwo:Supervisor (supervisor)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> mwo:Supervisor "A role which inheres in a bearer and is realized when a person is responsible for 1) the coordination  and 2) the operations of another person, group or department."@en)
+AnnotationAssertion(rdfs:comment mwo:Supervisor "In a project with more than one member, the project leader might engage, motivate and support the team by establishing and maintaining productive operations. Note that a project leader is not necessarily the group leader."@en)
+AnnotationAssertion(rdfs:label mwo:Supervisor "supervisor"@en)
+SubClassOf(mwo:Supervisor <http://purl.obolibrary.org/obo/BFO_0000023>)
+
+# Class: mwo:TrainingCourse (Training Course)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> mwo:TrainingCourse "An academic event where the objective is to teach skills needed for a particular task or job."@en)
+AnnotationAssertion(rdfs:label mwo:TrainingCourse "Training Course"@en)
+SubClassOf(mwo:TrainingCourse mwo:EducationalEvent)
+
+# Class: mwo:VisualizationSoftware (visualization software)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> mwo:VisualizationSoftware "Software which creates graphical representations of data, features of data or data sets."@en)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasBroadSynonym> mwo:VisualizationSoftware "Graphics software"@en)
+AnnotationAssertion(rdfs:label mwo:VisualizationSoftware "visualization software"@en)
+SubClassOf(mwo:VisualizationSoftware <http://www.ebi.ac.uk/swo/SWO_0000001>)
+
+# Class: mwo:WebService (web service)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> mwo:WebService "A service that supports interoperable machine-to-machine interaction over a network."@en)
+AnnotationAssertion(rdfs:label mwo:WebService "web service"@en)
+EquivalentClasses(mwo:WebService <http://www.ebi.ac.uk/swo/interface/SWO_9000051>)
+SubClassOf(mwo:WebService <http://schema.org/Service>)
+
+# Class: mwo:Workflow (workflow)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> mwo:Workflow "A workflow is a specification which describes a repeatable sequence of steps needed to create or produce a work."@en)
+AnnotationAssertion(rdfs:label mwo:Workflow "workflow"@en)
+SubClassOf(mwo:Workflow nfdicore:Specification)
+
+# Class: mwo:WorkflowEnvironment (workflow environment)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> mwo:WorkflowEnvironment "A workflow environment is a software that manages and allows the user to create and interact with computational workflows."@en)
+AnnotationAssertion(rdfs:label mwo:WorkflowEnvironment "workflow environment"@en)
+SubClassOf(mwo:WorkflowEnvironment <http://www.ebi.ac.uk/swo/SWO_0000001>)
+
+# Class: <http://schema.org/ComputerLanguage> (ComputerLanguage)
+
+AnnotationAssertion(rdfs:comment <http://schema.org/ComputerLanguage> "This type covers computer programming languages such as Scheme and Lisp, as well as other language-like computer representations. Natural languages are best represented with the <a class=\"localLink\" href=\"https://schema.org/Language\">Language</a> type."@en)
+AnnotationAssertion(rdfs:isDefinedBy <http://schema.org/ComputerLanguage> <http://schema.org/ComputerLanguage>)
+AnnotationAssertion(rdfs:label <http://schema.org/ComputerLanguage> "ComputerLanguage"@en)
+SubClassOf(<http://schema.org/ComputerLanguage> <http://schema.org/Intangible>)
+
+# Class: <http://schema.org/Organization> (Organization)
+
+AnnotationAssertion(rdfs:comment <http://schema.org/Organization> "An organization such as a school, NGO, corporation, club, etc."@en)
+AnnotationAssertion(rdfs:label <http://schema.org/Organization> "Organization"@en)
+
+# Class: <http://schema.org/Project> (Project)
+
+AnnotationAssertion(rdfs:comment <http://schema.org/Project> "An enterprise (potentially individual but typically collaborative), planned to achieve a particular aim. Use properties from Organization, subOrganization/parentOrganization to indicate project sub-structures."@en)
+AnnotationAssertion(rdfs:label <http://schema.org/Project> "Project"@en)
+
+# Class: <http://schema.org/Service> (Service)
+
+AnnotationAssertion(rdfs:comment <http://schema.org/Service> "A service provided by an organization, e.g. delivery service, print services, etc."@en)
+AnnotationAssertion(rdfs:isDefinedBy <http://schema.org/Service> <http://schema.org/Service>)
+AnnotationAssertion(rdfs:label <http://schema.org/Service> "Service"@en)
+SubClassOf(<http://schema.org/Service> <http://schema.org/Intangible>)
+
+# Class: <http://www.ebi.ac.uk/swo/SWO_0000001> (software)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://www.ebi.ac.uk/swo/SWO_0000001> "Computer software, or generally just software, is any set of machine-readable instructions (most often in the form of a computer program) that conform to a given syntax (sometimes referred to as a language) that is interpretable by a given processor and that directs a computer's processor to perform specific operations.")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://www.ebi.ac.uk/swo/SWO_0000001> "James Malone")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://www.ebi.ac.uk/swo/SWO_0000001> "Modified in parts from https://en.wikipedia.org/wiki/Software")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://www.ebi.ac.uk/swo/SWO_0000001> "Robert Stevens")
+AnnotationAssertion(rdfs:comment <http://www.ebi.ac.uk/swo/SWO_0000001> "AL 7.9.22: There are some reasoning oddities associated with marking IAO and SWO software as equivalent; once these are sorted out, the equivalence statement will take the place of this current parent-child relationship.")
+AnnotationAssertion(rdfs:label <http://www.ebi.ac.uk/swo/SWO_0000001> "software")
+
+# Class: <http://www.ebi.ac.uk/swo/SWO_0000002> (software license)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://www.ebi.ac.uk/swo/SWO_0000002> "A licence is a legal instrument (usually by way of contract law, with or without printed material) governing the use or redistribution of the resource containing the licence.")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://www.ebi.ac.uk/swo/SWO_0000002> "Modified from http://en.wikipedia.org/wiki/Software_license")
+AnnotationAssertion(dcterms:creator <http://www.ebi.ac.uk/swo/SWO_0000002> "James Malone")
+AnnotationAssertion(rdfs:label <http://www.ebi.ac.uk/swo/SWO_0000002> "licence"@en)
+AnnotationAssertion(rdfs:label <http://www.ebi.ac.uk/swo/SWO_0000002> "software license")
+SubClassOf(<http://www.ebi.ac.uk/swo/SWO_0000002> ObjectSomeValuesFrom(ObjectInverseOf(<http://www.ebi.ac.uk/swo/has_license>) <http://www.ebi.ac.uk/swo/SWO_0000001>))
+
+# Class: <http://www.ebi.ac.uk/swo/SWO_0000020> (Unix)
+
+AnnotationAssertion(rdfs:label <http://www.ebi.ac.uk/swo/SWO_0000020> "Unix")
+SubClassOf(<http://www.ebi.ac.uk/swo/SWO_0000020> <http://www.ebi.ac.uk/swo/SWO_0000021>)
+
+# Class: <http://www.ebi.ac.uk/swo/SWO_0000021> (operating system)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://www.ebi.ac.uk/swo/SWO_0000021> "An operating system is a piece of software which is responsible for managing software that runs on a computer and the interactions of that software with the hardware and system resources.")
+AnnotationAssertion(rdfs:label <http://www.ebi.ac.uk/swo/SWO_0000021> "operating system")
+SubClassOf(<http://www.ebi.ac.uk/swo/SWO_0000021> <http://www.ebi.ac.uk/swo/SWO_0000001>)
+
+# Class: <http://www.ebi.ac.uk/swo/SWO_0000022> (Linux)
+
+AnnotationAssertion(rdfs:label <http://www.ebi.ac.uk/swo/SWO_0000022> "Linux")
+SubClassOf(<http://www.ebi.ac.uk/swo/SWO_0000022> <http://www.ebi.ac.uk/swo/SWO_0000021>)
+
+# Class: <http://www.ebi.ac.uk/swo/SWO_0000149> (Mac OS)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://www.ebi.ac.uk/swo/SWO_0000149> "Mac OS is software which is used as the operating system for the Macintosh personal computer created by Apple Inc.")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://www.ebi.ac.uk/swo/SWO_0000149> "http://en.wikipedia.org/wiki/History_of_Mac_OS, accessed 25 March 2015.")
+AnnotationAssertion(dcterms:creator <http://www.ebi.ac.uk/swo/SWO_0000149> "Allyson Lister")
+AnnotationAssertion(rdfs:label <http://www.ebi.ac.uk/swo/SWO_0000149> "Mac OS"@en)
+SubClassOf(<http://www.ebi.ac.uk/swo/SWO_0000149> <http://www.ebi.ac.uk/swo/SWO_0000021>)
+
+# Class: <http://www.ebi.ac.uk/swo/SWO_9000050> (software interface)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://www.ebi.ac.uk/swo/SWO_9000050> "The mode of interaction with a piece of software.")
+AnnotationAssertion(rdfs:label <http://www.ebi.ac.uk/swo/SWO_9000050> "software interface")
+
+# Class: <http://www.ebi.ac.uk/swo/SWO_9000072> (Microsoft Windows)
+
+AnnotationAssertion(rdfs:comment <http://www.ebi.ac.uk/swo/SWO_9000072> "The Windows Operating System")
+AnnotationAssertion(rdfs:label <http://www.ebi.ac.uk/swo/SWO_9000072> "Microsoft Windows")
+SubClassOf(<http://www.ebi.ac.uk/swo/SWO_9000072> <http://www.ebi.ac.uk/swo/SWO_0000021>)
+
+# Class: <http://www.ebi.ac.uk/swo/interface/SWO_9000051> (web service)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://www.ebi.ac.uk/swo/interface/SWO_9000051> "A web service is a software interface which works as a method of communication between two electronic devices over the World Wide Web and which is provided at a particular network address. There are two major classes of Web services: REST-compliant Web services, and arbitrary (or application-specific) Web services.")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000118> <http://www.ebi.ac.uk/swo/interface/SWO_9000051> "Web Service")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://www.ebi.ac.uk/swo/interface/SWO_9000051> "Modified from http://www.w3.org/TR/ws-arch/, accessed 6 June 2013; Modified from http://en.wikipedia.org/wiki/Web_service, accessed 6 June 2013.")
+AnnotationAssertion(dcterms:creator <http://www.ebi.ac.uk/swo/interface/SWO_9000051> "Allyson Lister")
+AnnotationAssertion(rdfs:label <http://www.ebi.ac.uk/swo/interface/SWO_9000051> "web service")
+SubClassOf(<http://www.ebi.ac.uk/swo/interface/SWO_9000051> <http://www.ebi.ac.uk/swo/SWO_9000050>)
+
+# Class: <http://www.ebi.ac.uk/swo/interface/SWO_9000054> (application programming interface)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://www.ebi.ac.uk/swo/interface/SWO_9000054> "An application programming interface is a set of routines, protocols, and tools for building software applications. An API expresses a software component in terms of its operations, inputs, outputs, and underlying types. An API defines functionalities that are independent of their respective implementations, which allows definitions and implementations to vary without compromising each other. The API specifies how software components should interact.")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000118> <http://www.ebi.ac.uk/swo/interface/SWO_9000054> "API")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://www.ebi.ac.uk/swo/interface/SWO_9000054> "http://en.wikipedia.org/wiki/Application_programming_interface, accessed 25 November 2014.")
+AnnotationAssertion(rdfs:label <http://www.ebi.ac.uk/swo/interface/SWO_9000054> "application programming interface")
+SubClassOf(<http://www.ebi.ac.uk/swo/interface/SWO_9000054> <http://www.ebi.ac.uk/swo/SWO_9000050>)
+
+# Class: <http://www.ebi.ac.uk/swo/license/SWO_1000001> (Creative Commons)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000118> <http://www.ebi.ac.uk/swo/license/SWO_1000001> "CC")
+AnnotationAssertion(rdfs:label <http://www.ebi.ac.uk/swo/license/SWO_1000001> "Creative Commons")
+SubClassOf(<http://www.ebi.ac.uk/swo/license/SWO_1000001> <http://www.ebi.ac.uk/swo/SWO_0000002>)
+
+# Class: <http://www.ebi.ac.uk/swo/license/SWO_1000002> (Proprietary commercial software license)
+
+AnnotationAssertion(rdfs:label <http://www.ebi.ac.uk/swo/license/SWO_1000002> "Proprietary commercial software license")
+SubClassOf(<http://www.ebi.ac.uk/swo/license/SWO_1000002> <http://www.ebi.ac.uk/swo/SWO_0000002>)
+
+# Class: <http://www.ebi.ac.uk/swo/license/SWO_1000008> (Open source software license)
+
+AnnotationAssertion(rdfs:label <http://www.ebi.ac.uk/swo/license/SWO_1000008> "Open source software license")
+SubClassOf(<http://www.ebi.ac.uk/swo/license/SWO_1000008> <http://www.ebi.ac.uk/swo/SWO_0000002>)
+
+# Class: <http://www.ebi.ac.uk/swo/license/SWO_1000009> (License without restrictions on derivatives)
+
+AnnotationAssertion(rdfs:label <http://www.ebi.ac.uk/swo/license/SWO_1000009> "License without restrictions on derivatives")
+SubClassOf(<http://www.ebi.ac.uk/swo/license/SWO_1000009> <http://www.ebi.ac.uk/swo/SWO_0000002>)
+
+# Class: <http://www.ebi.ac.uk/swo/license/SWO_1000043> (GNU Project Free License Type)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://www.ebi.ac.uk/swo/license/SWO_1000043> "A licensed is a free license according to GNU if the users have the four essential freedoms:
+
+    The freedom to run the program, for any purpose (freedom 0).
+    The freedom to study how the program works, and change it so it does your computing as you wish (freedom 1). Access to the source code is a precondition for this.
+    The freedom to redistribute copies so you can help your neighbor (freedom 2).
+    The freedom to distribute copies of your modified versions to others (freedom 3). By doing this you can give the whole community a chance to benefit from your changes. Access to the source code is a precondition for this.
+
+A program is free software if users have all of these freedoms. Thus, you should be free to redistribute copies, either with or without modifications, either gratis or charging a fee for distribution, to anyone anywhere. Being free to do these things means (among other things) that you do not have to ask or pay for permission to do so.
+
+“Free software” does not mean “noncommercial”. A free program must be available for commercial use, commercial development, and commercial distribution. Commercial development of free software is no longer unusual; such free commercial software is very important. You may have paid money to get copies of free software, or you may have obtained copies at no charge. But regardless of how you got your copies, you always have the freedom to copy and change the software, even to sell copies. ")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://www.ebi.ac.uk/swo/license/SWO_1000043> "http://www.gnu.org/philosophy/free-sw.html, accessed 12 June 2013.")
+AnnotationAssertion(dcterms:creator <http://www.ebi.ac.uk/swo/license/SWO_1000043> "Allyson Lister")
+AnnotationAssertion(rdfs:comment <http://www.ebi.ac.uk/swo/license/SWO_1000043> "Allyson Lister: This class defines those licenses which are free licenses, but which may or may not be compatible with any version of the GNU GPL.")
+AnnotationAssertion(rdfs:label <http://www.ebi.ac.uk/swo/license/SWO_1000043> "GNU Project Free License Type")
+SubClassOf(<http://www.ebi.ac.uk/swo/license/SWO_1000043> <http://www.ebi.ac.uk/swo/license/SWO_1000008>)
+
+# Class: <http://www.ebi.ac.uk/swo/license/SWO_1000056> (Artistic License)
+
+AnnotationAssertion(dcterms:creator <http://www.ebi.ac.uk/swo/license/SWO_1000056> "Allyson Lister")
+AnnotationAssertion(rdfs:label <http://www.ebi.ac.uk/swo/license/SWO_1000056> "Artistic License")
+SubClassOf(<http://www.ebi.ac.uk/swo/license/SWO_1000056> <http://www.ebi.ac.uk/swo/SWO_0000002>)
+
+# Class: <http://www.ebi.ac.uk/swo/license/SWO_1000061> (free to use license)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://www.ebi.ac.uk/swo/license/SWO_1000061> "A license which allows any form of usage of the artifact.")
+AnnotationAssertion(rdfs:label <http://www.ebi.ac.uk/swo/license/SWO_1000061> "free to use license"@en)
+SubClassOf(<http://www.ebi.ac.uk/swo/license/SWO_1000061> <http://www.ebi.ac.uk/swo/SWO_0000002>)
+
+# Class: <http://www.ebi.ac.uk/swo/license/SWO_1000069> (GNU AGPL)
+
+AnnotationAssertion(rdfs:label <http://www.ebi.ac.uk/swo/license/SWO_1000069> "GNU AGPL"@en)
+SubClassOf(<http://www.ebi.ac.uk/swo/license/SWO_1000069> <http://www.ebi.ac.uk/swo/SWO_0000002>)
+
+# Class: <http://www.ebi.ac.uk/swo/license/SWO_1000095> (Open Data Commons)
+
+AnnotationAssertion(rdfs:label <http://www.ebi.ac.uk/swo/license/SWO_1000095> "Open Data Commons"@en)
+SubClassOf(<http://www.ebi.ac.uk/swo/license/SWO_1000095> <http://www.ebi.ac.uk/swo/SWO_0000002>)
+
+# Class: <http://www.ebi.ac.uk/swo/license/SWO_1000103> (Vendor-specific License)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://www.ebi.ac.uk/swo/license/SWO_1000103> "A vendor-specific license is a license which was, at least originally, created by a specific organization to be used just on the resources created within that organization. This is a hierarchy of convenience rather than of shared philosophy. Many of the licenses have since been taken up by other groups whose licensing requirements matched those of the originating organization.")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://www.ebi.ac.uk/swo/license/SWO_1000103> "Allyson Lister")
+AnnotationAssertion(dcterms:creator <http://www.ebi.ac.uk/swo/license/SWO_1000103> "Allyson Lister")
+AnnotationAssertion(rdfs:label <http://www.ebi.ac.uk/swo/license/SWO_1000103> "Vendor-specific License"@en)
+SubClassOf(<http://www.ebi.ac.uk/swo/license/SWO_1000103> <http://www.ebi.ac.uk/swo/SWO_0000002>)
+
+# Class: <http://www.ebi.ac.uk/swo/license/SWO_1000137> (Fee-Based Commercial License)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://www.ebi.ac.uk/swo/license/SWO_1000137> "Fee-Based Commercial License is a license which, among its license clauses, states that commercial entities may use the resource for a fee.")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://www.ebi.ac.uk/swo/license/SWO_1000137> "Allyson Lister")
+AnnotationAssertion(dcterms:creator <http://www.ebi.ac.uk/swo/license/SWO_1000137> "Allyson Lister")
+AnnotationAssertion(rdfs:comment <http://www.ebi.ac.uk/swo/license/SWO_1000137> "Allyson Lister: This is a convenience class which combines multiple license clauses to create a defined class, such that any license type which meets the requirements will be inferred to fall into this category.")
+AnnotationAssertion(rdfs:label <http://www.ebi.ac.uk/swo/license/SWO_1000137> "Fee-Based Commercial License"@en)
+SubClassOf(<http://www.ebi.ac.uk/swo/license/SWO_1000137> <http://www.ebi.ac.uk/swo/SWO_0000002>)
+
+# Class: <http://www.ebi.ac.uk/swo/license/SWO_1000140> (Non-Commercial No-Fee License)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://www.ebi.ac.uk/swo/license/SWO_1000140> "Non-Commercial No-Fee License is a license which, among its license clauses, states that non-commercial entities may use the resource without a purchase or usage cost.")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://www.ebi.ac.uk/swo/license/SWO_1000140> "Allyson Lister")
+AnnotationAssertion(dcterms:creator <http://www.ebi.ac.uk/swo/license/SWO_1000140> "Allyson Lister")
+AnnotationAssertion(rdfs:comment <http://www.ebi.ac.uk/swo/license/SWO_1000140> "Allyson Lister: This is a convenience class which combines multiple license clauses to create a defined class, such that any license type which meets the requirements will be inferred to fall into this category.")
+AnnotationAssertion(rdfs:label <http://www.ebi.ac.uk/swo/license/SWO_1000140> "Non-Commercial No-Fee License"@en)
+SubClassOf(<http://www.ebi.ac.uk/swo/license/SWO_1000140> <http://www.ebi.ac.uk/swo/SWO_0000002>)
+
+# Class: <https://w3id.org/scholarlydata/ontology/conference-ontology.owl#AcademicEvent> (Academic event)
+
+AnnotationAssertion(rdfs:comment <https://w3id.org/scholarlydata/ontology/conference-ontology.owl#AcademicEvent> "Academic events are e.g. conferences and conference-like events, and all the sub-events of those which are about the topic or theme of the conference, such as talks or panels."@en)
+AnnotationAssertion(rdfs:label <https://w3id.org/scholarlydata/ontology/conference-ontology.owl#AcademicEvent> "Academic event"@en)
+SubClassOf(<https://w3id.org/scholarlydata/ontology/conference-ontology.owl#AcademicEvent> <https://w3id.org/scholarlydata/ontology/conference-ontology.owl#OrganisedEvent>)
+
+# Class: <https://w3id.org/scholarlydata/ontology/conference-ontology.owl#Conference> (Conference)
+
+AnnotationAssertion(rdfs:comment <https://w3id.org/scholarlydata/ontology/conference-ontology.owl#Conference> "A conference event."@en)
+AnnotationAssertion(rdfs:label <https://w3id.org/scholarlydata/ontology/conference-ontology.owl#Conference> "Conference"@en)
+SubClassOf(<https://w3id.org/scholarlydata/ontology/conference-ontology.owl#Conference> <https://w3id.org/scholarlydata/ontology/conference-ontology.owl#AcademicEvent>)
+
+# Class: <https://w3id.org/scholarlydata/ontology/conference-ontology.owl#OrganisedEvent> (Organised event)
+
+AnnotationAssertion(rdfs:comment <https://w3id.org/scholarlydata/ontology/conference-ontology.owl#OrganisedEvent> "Any kind of organised event having a start and an end date."@en)
+AnnotationAssertion(rdfs:label <https://w3id.org/scholarlydata/ontology/conference-ontology.owl#OrganisedEvent> "Organised event"@en)
+SubClassOf(<https://w3id.org/scholarlydata/ontology/conference-ontology.owl#OrganisedEvent> ObjectAllValuesFrom(<https://w3id.org/scholarlydata/ontology/conference-ontology.owl#hasSubEvent> <https://w3id.org/scholarlydata/ontology/conference-ontology.owl#OrganisedEvent>))
+SubClassOf(<https://w3id.org/scholarlydata/ontology/conference-ontology.owl#OrganisedEvent> DataSomeValuesFrom(<https://w3id.org/scholarlydata/ontology/conference-ontology.owl#endDate> xsd:dateTime))
+SubClassOf(<https://w3id.org/scholarlydata/ontology/conference-ontology.owl#OrganisedEvent> DataSomeValuesFrom(<https://w3id.org/scholarlydata/ontology/conference-ontology.owl#startDate> xsd:dateTime))
+
+# Class: <https://w3id.org/scholarlydata/ontology/conference-ontology.owl#Talk> (Talk)
+
+AnnotationAssertion(rdfs:comment <https://w3id.org/scholarlydata/ontology/conference-ontology.owl#Talk> "A talk event."@en)
+AnnotationAssertion(rdfs:label <https://w3id.org/scholarlydata/ontology/conference-ontology.owl#Talk> "Talk"@en)
+SubClassOf(<https://w3id.org/scholarlydata/ontology/conference-ontology.owl#Talk> <https://w3id.org/scholarlydata/ontology/conference-ontology.owl#AcademicEvent>)
+
+# Class: <https://w3id.org/scholarlydata/ontology/conference-ontology.owl#Tutorial> (Tutorial)
+
+AnnotationAssertion(rdfs:comment <https://w3id.org/scholarlydata/ontology/conference-ontology.owl#Tutorial> "An event which a teaching session is given to to an individual or very small group."@en)
+AnnotationAssertion(rdfs:label <https://w3id.org/scholarlydata/ontology/conference-ontology.owl#Tutorial> "Tutorial"@en)
+SubClassOf(<https://w3id.org/scholarlydata/ontology/conference-ontology.owl#Tutorial> mwo:EducationalEvent)
+
+# Class: <https://w3id.org/scholarlydata/ontology/conference-ontology.owl#Workshop> (Workshop)
+
+AnnotationAssertion(rdfs:comment <https://w3id.org/scholarlydata/ontology/conference-ontology.owl#Workshop> "An event which is a long interactive meeting or educational session designed to create a specialized result. Workshops are smaller than conferences, and are usually only a day or two long and are dedicated to discussing a specific topic."@en)
+AnnotationAssertion(rdfs:label <https://w3id.org/scholarlydata/ontology/conference-ontology.owl#Workshop> "Workshop"@en)
+SubClassOf(<https://w3id.org/scholarlydata/ontology/conference-ontology.owl#Workshop> <https://w3id.org/scholarlydata/ontology/conference-ontology.owl#AcademicEvent>)
+
+# Class: <https://w3id.org/seo#InvitedSpeakers> (Invited speakers)
+
+AnnotationAssertion(rdfs:comment <https://w3id.org/seo#InvitedSpeakers> "Invited person to give a speech in an event."@en)
+AnnotationAssertion(rdfs:label <https://w3id.org/seo#InvitedSpeakers> "Invited speakers"@en)
+SubClassOf(<https://w3id.org/seo#InvitedSpeakers> nfdicore:Person)
+
+# Class: <https://w3id.org/seo#KeynoteSpeaker> (Keynote speaker)
+
+AnnotationAssertion(rdfs:comment <https://w3id.org/seo#KeynoteSpeaker> "Someone who gives the main address at a formal gathering such as a conference ."@en)
+AnnotationAssertion(rdfs:label <https://w3id.org/seo#KeynoteSpeaker> "Keynote speaker"@en)
+SubClassOf(<https://w3id.org/seo#KeynoteSpeaker> <https://w3id.org/seo#InvitedSpeakers>)
+
+# Class: modsci:Instrument (Instrument)
+
+AnnotationAssertion(rdfs:comment modsci:Instrument "A tool or implement, especially one for precision work."@en)
+AnnotationAssertion(rdfs:label modsci:Instrument "Instrument"@en)
+SubClassOf(modsci:Instrument <http://schema.org/Product>)
+
+# Class: modsci:LaboratoryInstrument (Laboratory Instrument)
+
+AnnotationAssertion(rdfs:comment modsci:LaboratoryInstrument "An instrument needed for operations in various laboratories, synthesis and analysis."@en)
+AnnotationAssertion(rdfs:label modsci:LaboratoryInstrument "Laboratory Instrument"@en)
+EquivalentClasses(modsci:LaboratoryInstrument modsci:ScientificInstrument)
+SubClassOf(modsci:LaboratoryInstrument modsci:Instrument)
+
+# Class: modsci:ModernScience (Science)
+
+AnnotationAssertion(rdfs:comment modsci:ModernScience "Science is a systematic enterprise that builds and organizes knowledge in the form of testable explanations and predictions about the universe.")
+AnnotationAssertion(rdfs:label modsci:ModernScience "Science")
+
+# Class: modsci:ProgrammingLanguage (Programming Language)
+
+AnnotationAssertion(rdfs:comment modsci:ProgrammingLanguage "A programming language is a formal language, which comprises a set of instructions that produce various kinds of output. Programming languages are used in computer programming to implement algorithms.")
+AnnotationAssertion(rdfs:label modsci:ProgrammingLanguage "Programming Language")
+SubClassOf(modsci:ProgrammingLanguage <http://schema.org/ComputerLanguage>)
+
+# Class: modsci:ScientificInstrument (Scientific Instrument)
+
+AnnotationAssertion(rdfs:comment modsci:ScientificInstrument "A scientific instrument is, broadly speaking, a device or tool used for scientific purposes, including the study of both natural phenomena and theoretical research."@en)
+AnnotationAssertion(rdfs:label modsci:ScientificInstrument "Scientific Instrument")
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> modsci:ScientificInstrument "Instrument"@en)
+SubClassOf(modsci:ScientificInstrument modsci:Instrument)
+
+# Class: modsci:ScientificInstrumentManufacturer (Scientific Instrument Manufacturer)
+
+AnnotationAssertion(rdfs:comment modsci:ScientificInstrumentManufacturer "Companies manufacturing equipment for scientific sstudies.")
+AnnotationAssertion(rdfs:label modsci:ScientificInstrumentManufacturer "Scientific Instrument Manufacturer")
+
+# Class: modsci:Technology (Technology)
+
+AnnotationAssertion(rdfs:comment modsci:Technology "Technology is the collection of techniques, skills, methods, and processes used in the production of goods or services or in the accomplishment of objectives, such as scientific investigation.")
+AnnotationAssertion(rdfs:label modsci:Technology "Technology")
+
+
+############################
+#   Named Individuals
+############################
+
+# Individual: nfdicore:ControlledVocabulary (controlled vocabulary)
+
+AnnotationAssertion(rdfs:comment nfdicore:ControlledVocabulary "A list of terms, natural language definitions and naming conventions. In comparisson to a glossary, there is a dedicated curation mechanism for new terms in a controlled vocabulary."@en)
+AnnotationAssertion(rdfs:label nfdicore:ControlledVocabulary "controlled vocabulary"@en)
+ClassAssertion(nfdicore:SemanticExpressivity nfdicore:ControlledVocabulary)
+
+# Individual: nfdicore:Glossary (glossary)
+
+AnnotationAssertion(rdfs:comment nfdicore:Glossary "A list of terms and their with natural language definitions."@en)
+AnnotationAssertion(rdfs:label nfdicore:Glossary "glossary"@en)
+ClassAssertion(nfdicore:SemanticExpressivity nfdicore:Glossary)
+
+# Individual: nfdicore:Taxonomy (taxonomy)
+
+AnnotationAssertion(rdfs:comment nfdicore:Taxonomy "A data model in a class hierarchy, where all concepts inherit their behaviour from the super-class concept. Taxonomies can be strict or non strict and can contain instances."@en)
+AnnotationAssertion(rdfs:label nfdicore:Taxonomy "taxonomy"@en)
+ClassAssertion(nfdicore:SemanticExpressivity nfdicore:Taxonomy)
+
+# Individual: nfdicore:Thesaurus (thesaurus)
+
+AnnotationAssertion(rdfs:comment nfdicore:Thesaurus "A structured list of terms and relations between the terms, as e.g. broader/narrower."@en)
+AnnotationAssertion(rdfs:label nfdicore:Thesaurus "thesaurus"@en)
+ClassAssertion(nfdicore:SemanticExpressivity nfdicore:Thesaurus)
+
+# Individual: mwo:Ontology (ontology)
+
+AnnotationAssertion(rdfs:comment mwo:Ontology "A set of concepts belong to a specific domain and their properties and the relations between them."@en)
+AnnotationAssertion(rdfs:label mwo:Ontology "ontology"@en)
+
+
+)

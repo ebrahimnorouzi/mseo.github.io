@@ -1,0 +1,170 @@
+metric,metric_value,metric_type
+abox_axiom_count,0,single_value
+abox_axiom_count_incl,3,single_value
+abox_nominals,false,single_value
+abox_nominals_incl,false,single_value
+annotation_property_count,7,single_value
+annotation_property_count_incl,48,single_value
+assert_n_subclass_avg,NaN,single_value
+assert_n_subclass_avg_incl,0.0,single_value
+assert_n_superclass_avg,NaN,single_value
+assert_n_superclass_avg_incl,1.2352,single_value
+ax_complexrhs_count,0,single_value
+ax_complexrhs_count_incl,655,single_value
+axiom_count,2,single_value
+axiom_count_incl,10656,single_value
+axiom_length_max,0,single_value
+axiom_length_max_incl,4,single_value
+axiom_type_count,Declaration 2,map_value
+axiom_type_count_incl,AnnotationAssertion 5377,map_value
+axiom_type_count_incl,ClassAssertion 3,map_value
+axiom_type_count_incl,DataPropertyDomain 1,map_value
+axiom_type_count_incl,DataPropertyRange 1,map_value
+axiom_type_count_incl,Declaration 2030,map_value
+axiom_type_count_incl,DisjointClasses 7,map_value
+axiom_type_count_incl,EquivalentClasses 50,map_value
+axiom_type_count_incl,FunctionalDataProperty 4,map_value
+axiom_type_count_incl,InverseObjectProperties 11,map_value
+axiom_type_count_incl,ObjectPropertyDomain 17,map_value
+axiom_type_count_incl,ObjectPropertyRange 18,map_value
+axiom_type_count_incl,ReflexiveObjectProperty 1,map_value
+axiom_type_count_incl,SubAnnotationPropertyOf 28,map_value
+axiom_type_count_incl,SubClassOf 2946,map_value
+axiom_type_count_incl,SubObjectPropertyOf 148,map_value
+axiom_type_count_incl,SymmetricObjectProperty 8,map_value
+axiom_type_count_incl,TransitiveObjectProperty 6,map_value
+axiom_types,Declaration,list_value
+axiom_types_incl,AnnotationAssertion,list_value
+axiom_types_incl,ClassAssertion,list_value
+axiom_types_incl,DataPropertyDomain,list_value
+axiom_types_incl,DataPropertyRange,list_value
+axiom_types_incl,Declaration,list_value
+axiom_types_incl,DisjointClasses,list_value
+axiom_types_incl,EquivalentClasses,list_value
+axiom_types_incl,FunctionalDataProperty,list_value
+axiom_types_incl,InverseObjectProperties,list_value
+axiom_types_incl,ObjectPropertyDomain,list_value
+axiom_types_incl,ObjectPropertyRange,list_value
+axiom_types_incl,ReflexiveObjectProperty,list_value
+axiom_types_incl,SubAnnotationPropertyOf,list_value
+axiom_types_incl,SubClassOf,list_value
+axiom_types_incl,SubObjectPropertyOf,list_value
+axiom_types_incl,SymmetricObjectProperty,list_value
+axiom_types_incl,TransitiveObjectProperty,list_value
+certain_cycle,false,single_value
+certain_cycle_incl,true,single_value
+class_count,0,single_value
+class_count_incl,1875,single_value
+class_expression_count_incl,Class 7866,map_value
+class_expression_count_incl,DataHasValue 60,map_value
+class_expression_count_incl,ObjectAllValuesFrom 5,map_value
+class_expression_count_incl,ObjectExactCardinality 114,map_value
+class_expression_count_incl,ObjectIntersectionOf 1,map_value
+class_expression_count_incl,ObjectMinCardinality 1,map_value
+class_expression_count_incl,ObjectSomeValuesFrom 470,map_value
+class_expression_count_incl,ObjectUnionOf 5,map_value
+class_sgl_subcl_count,0,single_value
+class_sgl_subcl_count_incl,0,single_value
+constructs,AL,list_value
+constructs_incl,D,list_value
+constructs_incl,I,list_value
+constructs_incl,Q,list_value
+constructs_incl,R,list_value
+constructs_incl,S,list_value
+curie_map,dc http://purl.org/dc/terms/,map_value
+curie_map,owl http://www.w3.org/2002/07/owl#,map_value
+curie_map,rdf http://www.w3.org/1999/02/22-rdf-syntax-ns#,map_value
+curie_map,rdfs http://www.w3.org/2000/01/rdf-schema#,map_value
+curie_map,skos http://www.w3.org/2004/02/skos/core#,map_value
+curie_map,xsd http://www.w3.org/2001/XMLSchema#,map_value
+dataproperty_count,0,single_value
+dataproperty_count_incl,5,single_value
+datatypes_axiom_count_incl,RDF_PLAIN_LITERAL 45,map_value
+datatypes_axiom_count_incl,XSD_INTEGER 16,map_value
+datatypes_builtin_incl,RDF_PLAIN_LITERAL,list_value
+datatypes_builtin_incl,XSD_ANY_URI,list_value
+datatypes_builtin_incl,XSD_INTEGER,list_value
+datatypes_builtin_incl,XSD_NON_NEGATIVE_INTEGER,list_value
+datatypes_builtin_incl,XSD_STRING,list_value
+datatypes_count,0,single_value
+datatypes_count_incl,5,single_value
+dt_builtin_count,0,single_value
+dt_builtin_count_incl,5,single_value
+dt_notbuiltin_count,0,single_value
+dt_notbuiltin_count_incl,0,single_value
+expressivity,AL,single_value
+expressivity_incl,SRIQ(D),single_value
+gci_count,0,single_value
+gci_count_incl,0,single_value
+gci_hidden_count,0,single_value
+gci_hidden_count_incl,49,single_value
+individual_count,0,single_value
+individual_count_incl,1,single_value
+instance_per_class_avg,NaN,single_value
+instance_per_class_avg_incl,0.0,single_value
+logical_axiom_count,0,single_value
+logical_axiom_count_incl,3221,single_value
+most_freq_concept,,single_value
+most_freq_concept_incl,http://emmo.info/emmo#EMMO_b6c60208_6552_4412_ae09_9c583d059084,single_value
+multiple_inheritance_count,0,single_value
+multiple_inheritance_count_incl,1,single_value
+named_supercl_count_max,0,single_value
+named_supercl_count_max_incl,1,single_value
+namespace_axiom_count,dc 2,map_value
+namespace_axiom_count_incl,dc 419,map_value
+namespace_axiom_count_incl,owl 25,map_value
+namespace_axiom_count_incl,prefix_unknown 11525,map_value
+namespace_axiom_count_incl,rdf 45,map_value
+namespace_axiom_count_incl,rdfs 601,map_value
+namespace_axiom_count_incl,skos 2388,map_value
+namespace_axiom_count_incl,xsd 16,map_value
+namespace_entity_count,dc 8,map_value
+namespace_entity_count,owl 4,map_value
+namespace_entity_count,prefix_unknown 2017,map_value
+namespace_entity_count,rdf 1,map_value
+namespace_entity_count,rdfs 4,map_value
+namespace_entity_count,skos 2,map_value
+namespace_entity_count,xsd 4,map_value
+namespace_entity_count_incl,dc 8,map_value
+namespace_entity_count_incl,owl 4,map_value
+namespace_entity_count_incl,prefix_unknown 2017,map_value
+namespace_entity_count_incl,rdf 1,map_value
+namespace_entity_count_incl,rdfs 4,map_value
+namespace_entity_count_incl,skos 2,map_value
+namespace_entity_count_incl,xsd 4,map_value
+obj_property_count,0,single_value
+obj_property_count_incl,106,single_value
+ontology_anno_count,24,single_value
+ontology_iri,https://big-map.github.io/BattINFO/ontology/BattINFO,single_value
+ontology_version_iri,https://big-map.github.io/BattINFO/ontology/BattINFO/0.3.0/battinfo.ttl,single_value
+owl2,true,single_value
+owl2_dl,false,single_value
+owl2_el,false,single_value
+owl2_ql,false,single_value
+owl2_rl,false,single_value
+owl2dl_profile_violation,UseOfReservedVocabularyForAnnotationPropertyIRI 17,map_value
+rbox_axiom_count,0,single_value
+rbox_axiom_count_incl,174,single_value
+rdfs,false,single_value
+rule_count,0,single_value
+rule_count_incl,0,single_value
+signature_entity_count,2040,single_value
+signature_entity_count_incl,2040,single_value
+syntax,Turtle,single_value
+tautology_count,0,single_value
+tautology_count_incl,4,single_value
+tbox_axiom_count,0,single_value
+tbox_axiom_count_incl,3044,single_value
+tbox_nominals,false,single_value
+tbox_nominals_incl,false,single_value
+tboxrbox_axiom_count,0,single_value
+tboxrbox_axiom_count_incl,3218,single_value
+undecl_entity_count,2038,single_value
+undecl_entity_count_incl,2038,single_value
+valid_imports,https://big-map.github.io/BattINFO/ontology/BattINFO/0.3.0/battery/battery.ttl,list_value
+valid_imports,https://big-map.github.io/BattINFO/ontology/BattINFO/0.3.0/batteryquantities/batteryquantities.ttl,list_value
+valid_imports,https://big-map.github.io/BattINFO/ontology/electrochemistry/0.3.0/electrochemicalquantities/electrochemicalquantities.ttl,list_value
+valid_imports,https://big-map.github.io/BattINFO/ontology/electrochemistry/0.3.0/electrochemistry/electrochemistry.ttl,list_value
+valid_imports,https://big-map.github.io/BattINFO/ontology/emmo/1.0.0-beta3/generic-concepts/generic-concepts.ttl,list_value
+valid_imports,https://raw.githubusercontent.com/emmo-repo/emmo-repo.github.io/master/versions/1.0.0-beta3/emmo-reference-inferred.ttl,list_value
+valid_imports_incl,https://big-map.github.io/BattINFO/ontology/BattINFO/0.3.0/battery/battery.ttl,list_value

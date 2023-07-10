@@ -1,0 +1,186 @@
+metric,metric_value,metric_type
+abox_axiom_count,42,single_value
+abox_axiom_count_incl,42,single_value
+abox_nominals,false,single_value
+abox_nominals_incl,false,single_value
+annotation_property_count,30,single_value
+annotation_property_count_incl,88,single_value
+assert_n_subclass_avg,1.4516129032258065,single_value
+assert_n_subclass_avg_incl,0.6617647058823529,single_value
+assert_n_superclass_avg,1.903225806451613,single_value
+assert_n_superclass_avg_incl,1.411764705882353,single_value
+ax_complexrhs_count,0,single_value
+ax_complexrhs_count_incl,28,single_value
+axiom_count,321,single_value
+axiom_count_incl,678,single_value
+axiom_length_max,3,single_value
+axiom_length_max_incl,17,single_value
+axiom_type_count,AnnotationAssertion 176,map_value
+axiom_type_count,ClassAssertion 14,map_value
+axiom_type_count,DataPropertyAssertion 12,map_value
+axiom_type_count,Declaration 58,map_value
+axiom_type_count,ObjectPropertyAssertion 16,map_value
+axiom_type_count,SubClassOf 45,map_value
+axiom_type_count_incl,AnnotationAssertion 282,map_value
+axiom_type_count_incl,AnnotationPropertyRangeOf 3,map_value
+axiom_type_count_incl,AsymmetricObjectProperty 1,map_value
+axiom_type_count_incl,ClassAssertion 14,map_value
+axiom_type_count_incl,DataPropertyAssertion 12,map_value
+axiom_type_count_incl,Declaration 177,map_value
+axiom_type_count_incl,DisjointUnion 5,map_value
+axiom_type_count_incl,EquivalentClasses 3,map_value
+axiom_type_count_incl,FunctionalDataProperty 1,map_value
+axiom_type_count_incl,InverseFunctionalObjectProperty 1,map_value
+axiom_type_count_incl,IrrefexiveObjectProperty 1,map_value
+axiom_type_count_incl,ObjectPropertyAssertion 16,map_value
+axiom_type_count_incl,ReflexiveObjectProperty 1,map_value
+axiom_type_count_incl,SubAnnotationPropertyOf 83,map_value
+axiom_type_count_incl,SubClassOf 71,map_value
+axiom_type_count_incl,SubDataPropertyOf 1,map_value
+axiom_type_count_incl,SubObjectPropertyOf 4,map_value
+axiom_type_count_incl,TransitiveObjectProperty 2,map_value
+axiom_types,AnnotationAssertion,list_value
+axiom_types,ClassAssertion,list_value
+axiom_types,DataPropertyAssertion,list_value
+axiom_types,Declaration,list_value
+axiom_types,ObjectPropertyAssertion,list_value
+axiom_types,SubClassOf,list_value
+axiom_types_incl,AnnotationAssertion,list_value
+axiom_types_incl,AnnotationPropertyRangeOf,list_value
+axiom_types_incl,AsymmetricObjectProperty,list_value
+axiom_types_incl,ClassAssertion,list_value
+axiom_types_incl,DataPropertyAssertion,list_value
+axiom_types_incl,Declaration,list_value
+axiom_types_incl,DisjointUnion,list_value
+axiom_types_incl,EquivalentClasses,list_value
+axiom_types_incl,FunctionalDataProperty,list_value
+axiom_types_incl,InverseFunctionalObjectProperty,list_value
+axiom_types_incl,IrrefexiveObjectProperty,list_value
+axiom_types_incl,ObjectPropertyAssertion,list_value
+axiom_types_incl,ReflexiveObjectProperty,list_value
+axiom_types_incl,SubAnnotationPropertyOf,list_value
+axiom_types_incl,SubClassOf,list_value
+axiom_types_incl,SubDataPropertyOf,list_value
+axiom_types_incl,SubObjectPropertyOf,list_value
+axiom_types_incl,TransitiveObjectProperty,list_value
+certain_cycle,false,single_value
+certain_cycle_incl,false,single_value
+class_count,31,single_value
+class_count_incl,68,single_value
+class_expression_count,Class 121,map_value
+class_expression_count_incl,Class 273,map_value
+class_expression_count_incl,DataAllValuesFrom 1,map_value
+class_expression_count_incl,DataSomeValuesFrom 14,map_value
+class_expression_count_incl,ObjectAllValuesFrom 5,map_value
+class_expression_count_incl,ObjectExactCardinality 1,map_value
+class_expression_count_incl,ObjectIntersectionOf 1,map_value
+class_expression_count_incl,ObjectSomeValuesFrom 4,map_value
+class_expression_count_incl,ObjectUnionOf 4,map_value
+class_sgl_subcl_count,9,single_value
+class_sgl_subcl_count_incl,9,single_value
+constructs,AL,list_value
+constructs,D,list_value
+constructs_incl,D,list_value
+constructs_incl,I,list_value
+constructs_incl,Q,list_value
+constructs_incl,R,list_value
+constructs_incl,S,list_value
+curie_map,owl http://www.w3.org/2002/07/owl#,map_value
+curie_map,rdf http://www.w3.org/1999/02/22-rdf-syntax-ns#,map_value
+curie_map,rdfs http://www.w3.org/2000/01/rdf-schema#,map_value
+curie_map,xsd http://www.w3.org/2001/XMLSchema#,map_value
+dataproperty_count,1,single_value
+dataproperty_count_incl,2,single_value
+datatypes_axiom_count,RDF_PLAIN_LITERAL 5,map_value
+datatypes_axiom_count,XSD_DECIMAL 3,map_value
+datatypes_axiom_count,XSD_INTEGER 4,map_value
+datatypes_axiom_count_incl,OWL_REAL 2,map_value
+datatypes_axiom_count_incl,RDF_PLAIN_LITERAL 5,map_value
+datatypes_axiom_count_incl,XSD_ANY_URI 1,map_value
+datatypes_axiom_count_incl,XSD_DATE_TIME 1,map_value
+datatypes_axiom_count_incl,XSD_DECIMAL 3,map_value
+datatypes_axiom_count_incl,XSD_INTEGER 5,map_value
+datatypes_axiom_count_incl,XSD_STRING 10,map_value
+datatypes_builtin,RDF_PLAIN_LITERAL,list_value
+datatypes_builtin,XSD_DECIMAL,list_value
+datatypes_builtin,XSD_INTEGER,list_value
+datatypes_builtin_incl,OWL_REAL,list_value
+datatypes_builtin_incl,RDF_PLAIN_LITERAL,list_value
+datatypes_builtin_incl,XSD_ANY_URI,list_value
+datatypes_builtin_incl,XSD_DATE_TIME,list_value
+datatypes_builtin_incl,XSD_DECIMAL,list_value
+datatypes_builtin_incl,XSD_INTEGER,list_value
+datatypes_builtin_incl,XSD_STRING,list_value
+datatypes_count,3,single_value
+datatypes_count_incl,7,single_value
+dt_builtin_count,3,single_value
+dt_builtin_count_incl,7,single_value
+dt_notbuiltin_count,0,single_value
+dt_notbuiltin_count_incl,0,single_value
+expressivity,AL(D),single_value
+expressivity_incl,SRIQ(D),single_value
+gci_count,0,single_value
+gci_count_incl,0,single_value
+gci_hidden_count,0,single_value
+gci_hidden_count_incl,0,single_value
+individual_count,18,single_value
+individual_count_incl,18,single_value
+instance_per_class_avg,0.45161290322580644,single_value
+instance_per_class_avg_incl,0.20588235294117646,single_value
+logical_axiom_count,87,single_value
+logical_axiom_count_incl,133,single_value
+most_freq_concept,http://emmo.info/emmo/cif-core#SPACE_GROUP_SYMOP,single_value
+most_freq_concept_incl,http://emmo.info/emmo/cif-ddl#Real,single_value
+multiple_inheritance_count,0,single_value
+multiple_inheritance_count_incl,0,single_value
+named_supercl_count_max,0,single_value
+named_supercl_count_max_incl,1,single_value
+namespace_axiom_count,prefix_unknown 422,map_value
+namespace_axiom_count,rdf 5,map_value
+namespace_axiom_count,rdfs 2,map_value
+namespace_axiom_count,xsd 7,map_value
+namespace_axiom_count_incl,owl 5,map_value
+namespace_axiom_count_incl,prefix_unknown 907,map_value
+namespace_axiom_count_incl,rdf 5,map_value
+namespace_axiom_count_incl,rdfs 52,map_value
+namespace_axiom_count_incl,xsd 20,map_value
+namespace_entity_count,owl 4,map_value
+namespace_entity_count,prefix_unknown 177,map_value
+namespace_entity_count,rdf 1,map_value
+namespace_entity_count,rdfs 1,map_value
+namespace_entity_count,xsd 5,map_value
+namespace_entity_count_incl,owl 4,map_value
+namespace_entity_count_incl,prefix_unknown 177,map_value
+namespace_entity_count_incl,rdf 1,map_value
+namespace_entity_count_incl,rdfs 1,map_value
+namespace_entity_count_incl,xsd 5,map_value
+obj_property_count,1,single_value
+obj_property_count_incl,5,single_value
+ontology_anno_count,1,single_value
+ontology_iri,http://emmo.info/emmo/cif-core,single_value
+ontology_version_iri,no.iri,single_value
+owl2,true,single_value
+owl2_dl,true,single_value
+owl2_el,false,single_value
+owl2_ql,false,single_value
+owl2_rl,false,single_value
+rbox_axiom_count,0,single_value
+rbox_axiom_count_incl,10,single_value
+rdfs,false,single_value
+rule_count,0,single_value
+rule_count_incl,0,single_value
+signature_entity_count,188,single_value
+signature_entity_count_incl,188,single_value
+syntax,Turtle,single_value
+tautology_count,0,single_value
+tautology_count_incl,2,single_value
+tbox_axiom_count,45,single_value
+tbox_axiom_count_incl,81,single_value
+tbox_nominals,false,single_value
+tbox_nominals_incl,false,single_value
+tboxrbox_axiom_count,45,single_value
+tboxrbox_axiom_count_incl,91,single_value
+undecl_entity_count,130,single_value
+undecl_entity_count_incl,130,single_value
+valid_imports,https://raw.githubusercontent.com/emmo-repo/CIF-ontology/381ecc19b79e2b00fd3d136a5d68218728fa790f/ontology/cif-ddl.ttl,list_value
+valid_imports_incl,https://raw.githubusercontent.com/emmo-repo/CIF-ontology/381ecc19b79e2b00fd3d136a5d68218728fa790f/ontology/cif-ddl.ttl,list_value

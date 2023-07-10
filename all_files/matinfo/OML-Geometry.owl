@@ -1,0 +1,108 @@
+<?xml version="1.0"?>
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns="https://raw.githubusercontent.com/ebrahimnorouzi/mseo.github.io/master/Ontology_files/matinfo/OML-Geometry.owl#"
+  xml:base="https://raw.githubusercontent.com/ebrahimnorouzi/mseo.github.io/master/Ontology_files/matinfo/OML-Geometry.owl">
+  <owl:Ontology rdf:about="">
+    <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    ></owl:versionInfo>
+  </owl:Ontology>
+  <owl:Class rdf:ID="Ellipsoid">
+    <rdfs:subClassOf>
+      <owl:Class rdf:ID="Geometry"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="Sphere">
+    <rdfs:subClassOf rdf:resource="#Geometry"/>
+  </owl:Class>
+  <owl:Class rdf:ID="Squares">
+    <rdfs:subClassOf rdf:resource="#Geometry"/>
+  </owl:Class>
+  <owl:Class rdf:ID="Cube">
+    <rdfs:subClassOf rdf:resource="#Geometry"/>
+  </owl:Class>
+  <owl:Class rdf:ID="Cylinder">
+    <rdfs:subClassOf rdf:resource="#Geometry"/>
+  </owl:Class>
+  <owl:Class rdf:ID="Torus">
+    <rdfs:subClassOf rdf:resource="#Geometry"/>
+  </owl:Class>
+  <owl:Class rdf:ID="FrustumOfCone">
+    <rdfs:subClassOf rdf:resource="#Geometry"/>
+  </owl:Class>
+  <owl:Class rdf:ID="Flats">
+    <rdfs:subClassOf rdf:resource="#Geometry"/>
+  </owl:Class>
+  <owl:Class rdf:ID="Octagons">
+    <rdfs:subClassOf rdf:resource="#Geometry"/>
+  </owl:Class>
+  <owl:Class rdf:ID="Tubing">
+    <rdfs:subClassOf rdf:resource="#Geometry"/>
+  </owl:Class>
+  <owl:Class rdf:ID="Rings">
+    <rdfs:subClassOf rdf:resource="#Geometry"/>
+  </owl:Class>
+  <owl:Class rdf:ID="ParaboloidalSegment">
+    <rdfs:subClassOf rdf:resource="#Geometry"/>
+  </owl:Class>
+  <owl:Class rdf:ID="Rounds">
+    <rdfs:subClassOf rdf:resource="#Geometry"/>
+  </owl:Class>
+  <owl:Class rdf:ID="FrustumOfPyramid">
+    <rdfs:subClassOf rdf:resource="#Geometry"/>
+  </owl:Class>
+  <owl:Class rdf:ID="Cone">
+    <rdfs:subClassOf rdf:resource="#Geometry"/>
+  </owl:Class>
+  <owl:Class rdf:ID="RectangularParallelopiped">
+    <rdfs:subClassOf rdf:resource="#Geometry"/>
+  </owl:Class>
+  <owl:Class rdf:ID="Prismatoid">
+    <rdfs:subClassOf rdf:resource="#Geometry"/>
+  </owl:Class>
+  <owl:Class rdf:ID="Pyramid">
+    <rdfs:subClassOf rdf:resource="#Geometry"/>
+  </owl:Class>
+  <owl:Class rdf:ID="Hexagons">
+    <rdfs:subClassOf rdf:resource="#Geometry"/>
+  </owl:Class>
+  <owl:Class rdf:ID="Prism">
+    <rdfs:subClassOf rdf:resource="#Geometry"/>
+  </owl:Class>
+  <owl:Class rdf:ID="Circles">
+    <rdfs:subClassOf rdf:resource="#Geometry"/>
+  </owl:Class>
+  <owl:DatatypeProperty rdf:ID="Size">
+    <rdfs:domain rdf:resource="#Geometry"/>
+  </owl:DatatypeProperty>
+  <Squares rdf:ID="squares"/>
+  <ParaboloidalSegment rdf:ID="paraboloidal_segment"/>
+  <FrustumOfPyramid rdf:ID="frustum_of_pyramid"/>
+  <Prismatoid rdf:ID="prismatoid"/>
+  <Prism rdf:ID="prism"/>
+  <Ellipsoid rdf:ID="ellipsoid"/>
+  <Sphere rdf:ID="sphere"/>
+  <Cube rdf:ID="cube"/>
+  <Rings rdf:ID="rings"/>
+  <Flats rdf:ID="flats"/>
+  <Hexagons rdf:ID="hexagons"/>
+  <Octagons rdf:ID="octagons"/>
+  <FrustumOfCone rdf:ID="frustum_of_cone"/>
+  <Rounds rdf:ID="rounds"/>
+  <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#Thing">
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    ></rdfs:comment>
+  </rdf:Description>
+  <Cone rdf:ID="cone"/>
+  <Circles rdf:ID="circles"/>
+  <Cylinder rdf:ID="cylinder"/>
+  <Tubing rdf:ID="tubing"/>
+  <Pyramid rdf:ID="pyramid"/>
+  <RectangularParallelopiped rdf:ID="rectangular_parallelopiped"/>
+  <Torus rdf:ID="torus"/>
+</rdf:RDF>
+
+<!-- Created with Protege (with OWL Plugin 3.2.1, Build 365)  http://protege.stanford.edu -->

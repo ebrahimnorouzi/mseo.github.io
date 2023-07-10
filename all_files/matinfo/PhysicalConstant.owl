@@ -1,0 +1,288 @@
+<?xml version="1.0"?>
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:unitd="https://raw.githubusercontent.com/ebrahimnorouzi/mseo.github.io/master/Ontology_files/matinfo/OML-UnitDimension.owl#"
+    xmlns:protege="http://protege.stanford.edu/plugins/owl/protege#"
+    xmlns="https://raw.githubusercontent.com/ebrahimnorouzi/mseo.github.io/master/Ontology_files/matinfo/PhysicalConstant.owl#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+  xml:base="https://raw.githubusercontent.com/ebrahimnorouzi/mseo.github.io/master/Ontology_files/matinfo/PhysicalConstant.owl">
+  <owl:Ontology rdf:about="">
+    <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    ></owl:versionInfo>
+    <owl:imports rdf:resource="https://raw.githubusercontent.com/ebrahimnorouzi/mseo.github.io/master/Ontology_files/matinfo/OML-UnitDimension.owl"/>
+  </owl:Ontology>
+  <owl:Class rdf:ID="SpeedOfLight_in_vacuum">
+    <rdfs:subClassOf>
+      <owl:Class rdf:ID="UniversalConstant"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="#UniversalConstant">
+    <rdfs:subClassOf>
+      <owl:Class rdf:ID="PhysicalConstant"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="NewtonianConstantOfGravitation">
+    <rdfs:subClassOf rdf:resource="#UniversalConstant"/>
+  </owl:Class>
+  <owl:Class rdf:ID="BohrMagneton">
+    <rdfs:subClassOf>
+      <owl:Class rdf:ID="ElectromagneticConstant"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="PlanckConstant">
+    <rdfs:subClassOf rdf:resource="#UniversalConstant"/>
+  </owl:Class>
+  <owl:Class rdf:ID="PlanckTemperature">
+    <rdfs:subClassOf rdf:resource="#UniversalConstant"/>
+  </owl:Class>
+  <owl:Class rdf:ID="CharacteristicImpedanceOfVacuum">
+    <rdfs:subClassOf rdf:resource="#UniversalConstant"/>
+  </owl:Class>
+  <owl:Class rdf:ID="AtomicAndNuclearConstant">
+    <rdfs:subClassOf rdf:resource="#PhysicalConstant"/>
+  </owl:Class>
+  <owl:Class rdf:about="#ElectromagneticConstant">
+    <rdfs:subClassOf rdf:resource="#PhysicalConstant"/>
+  </owl:Class>
+  <owl:Class rdf:ID="PlanckTime">
+    <rdfs:subClassOf rdf:resource="#UniversalConstant"/>
+  </owl:Class>
+  <owl:Class rdf:ID="PlanckMass">
+    <rdfs:subClassOf rdf:resource="#UniversalConstant"/>
+  </owl:Class>
+  <owl:Class rdf:ID="NewtonianConstantOfGravitation_over_h-bar_c">
+    <rdfs:subClassOf rdf:resource="#UniversalConstant"/>
+  </owl:Class>
+  <owl:Class rdf:ID="MagneticConstant">
+    <rdfs:subClassOf rdf:resource="#UniversalConstant"/>
+  </owl:Class>
+  <owl:Class rdf:ID="Physico-chemicalConstant">
+    <rdfs:subClassOf rdf:resource="#PhysicalConstant"/>
+  </owl:Class>
+  <owl:Class rdf:ID="ElectricConstant">
+    <rdfs:subClassOf rdf:resource="#UniversalConstant"/>
+  </owl:Class>
+  <owl:Class rdf:ID="PlanckLength">
+    <rdfs:subClassOf rdf:resource="#UniversalConstant"/>
+  </owl:Class>
+  <owl:ObjectProperty rdf:ID="UnitSystem">
+    <rdfs:domain rdf:resource="#PhysicalConstant"/>
+    <rdfs:range rdf:resource="https://raw.githubusercontent.com/ebrahimnorouzi/mseo.github.io/master/Ontology_files/matinfo/OML-UnitDimension.owl#UnitSystem"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:ID="UnitDimension">
+    <rdfs:domain rdf:resource="#PhysicalConstant"/>
+    <rdfs:range rdf:resource="https://raw.githubusercontent.com/ebrahimnorouzi/mseo.github.io/master/Ontology_files/matinfo/OML-UnitDimension.owl#UnitDimension"/>
+  </owl:ObjectProperty>
+  <owl:DatatypeProperty rdf:ID="ConciseForm">
+    <rdfs:domain rdf:resource="#PhysicalConstant"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:ID="Reference">
+    <rdfs:domain rdf:resource="#PhysicalConstant"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:ID="Value">
+    <rdfs:domain rdf:resource="#PhysicalConstant"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:ID="StandardUncertainty">
+    <rdfs:domain rdf:resource="#PhysicalConstant"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:ID="RelativeStandardUncertainty">
+    <rdfs:domain rdf:resource="#PhysicalConstant"/>
+  </owl:DatatypeProperty>
+  <PhysicalConstant rdf:ID="PhysicalConstant_NIST">
+    <Reference rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI"
+    >http://physics.nist.gov/cuu/Constants/index.html</Reference>
+  </PhysicalConstant>
+  <CharacteristicImpedanceOfVacuum rdf:ID="electric_resistance">
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >ohm</rdfs:comment>
+    <ConciseForm rdf:datatype="http://www.w3.org/2001/XMLSchema#double"
+    >376.730313461</ConciseForm>
+    <UnitDimension>
+      <unitd:ElectricResistance rdf:ID="ElectricResistance"/>
+    </UnitDimension>
+    <UnitSystem>
+      <unitd:SI_units rdf:ID="SI_units"/>
+    </UnitSystem>
+    <StandardUncertainty rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >exact</StandardUncertainty>
+    <RelativeStandardUncertainty rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >exact</RelativeStandardUncertainty>
+  </CharacteristicImpedanceOfVacuum>
+  <BohrMagneton rdf:ID="bohr_magneton">
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >J / T</rdfs:comment>
+    <UnitSystem rdf:resource="#SI_units"/>
+    <StandardUncertainty rdf:datatype="http://www.w3.org/2001/XMLSchema#double"
+    >0.000023e-26</StandardUncertainty>
+    <RelativeStandardUncertainty rdf:datatype="http://www.w3.org/2001/XMLSchema#double"
+    >2.5e-8</RelativeStandardUncertainty>
+    <Value rdf:datatype="http://www.w3.org/2001/XMLSchema#double"
+    >927.400915e-26</Value>
+    <ConciseForm rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >927.400915(23)e-26</ConciseForm>
+  </BohrMagneton>
+  <unitd:Mass rdf:ID="mass"/>
+  <MagneticConstant rdf:ID="magnetic_constant">
+    <StandardUncertainty rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >exact</StandardUncertainty>
+    <Value rdf:datatype="http://www.w3.org/2001/XMLSchema#double"
+    >12.566370614e-7</Value>
+    <RelativeStandardUncertainty rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >exact</RelativeStandardUncertainty>
+    <ConciseForm rdf:datatype="http://www.w3.org/2001/XMLSchema#double"
+    >12.566370614e-7</ConciseForm>
+    <UnitSystem rdf:resource="#SI_units"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >N / A2</rdfs:comment>
+  </MagneticConstant>
+  <PlanckTime rdf:ID="planck_time">
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >s</rdfs:comment>
+    <RelativeStandardUncertainty rdf:datatype="http://www.w3.org/2001/XMLSchema#double"
+    >5.0e-5</RelativeStandardUncertainty>
+    <Value rdf:datatype="http://www.w3.org/2001/XMLSchema#double"
+    >5.39124e-44</Value>
+    <StandardUncertainty rdf:datatype="http://www.w3.org/2001/XMLSchema#double"
+    >0.00027e-44</StandardUncertainty>
+    <UnitDimension>
+      <unitd:Time rdf:ID="Time"/>
+    </UnitDimension>
+    <ConciseForm rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >5.39124(27)e-44</ConciseForm>
+    <UnitSystem rdf:resource="#SI_units"/>
+  </PlanckTime>
+  <ElectricConstant rdf:ID="electric_constant">
+    <UnitSystem rdf:resource="#SI_units"/>
+    <Value rdf:datatype="http://www.w3.org/2001/XMLSchema#double"
+    >8.854187817e-12</Value>
+    <StandardUncertainty rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >exact</StandardUncertainty>
+    <UnitDimension>
+      <unitd:Permittivity rdf:ID="Permittivity"/>
+    </UnitDimension>
+    <ConciseForm rdf:datatype="http://www.w3.org/2001/XMLSchema#double"
+    >8.854187817e-12</ConciseForm>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >F / m</rdfs:comment>
+    <RelativeStandardUncertainty rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >exact</RelativeStandardUncertainty>
+  </ElectricConstant>
+  <unitd:Length rdf:ID="Length"/>
+  <PlanckTemperature rdf:ID="planck_temperature">
+    <ConciseForm rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >1.416 785(71)e-32</ConciseForm>
+    <Value rdf:datatype="http://www.w3.org/2001/XMLSchema#double"
+    >1.416785e-32</Value>
+    <RelativeStandardUncertainty rdf:datatype="http://www.w3.org/2001/XMLSchema#double"
+    >5.0e-5</RelativeStandardUncertainty>
+    <StandardUncertainty rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >0.000071e-32</StandardUncertainty>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >K</rdfs:comment>
+    <UnitDimension>
+      <unitd:ThermodynamicTemperature rdf:ID="ThermodynamicTemperature"/>
+    </UnitDimension>
+    <UnitSystem rdf:resource="#SI_units"/>
+  </PlanckTemperature>
+  <PlanckMass rdf:ID="planck_mass">
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >kg</rdfs:comment>
+    <RelativeStandardUncertainty rdf:datatype="http://www.w3.org/2001/XMLSchema#double"
+    >5.0e-5</RelativeStandardUncertainty>
+    <StandardUncertainty rdf:datatype="http://www.w3.org/2001/XMLSchema#double"
+    >0.00011e-8</StandardUncertainty>
+    <Value rdf:datatype="http://www.w3.org/2001/XMLSchema#double"
+    >2.17644e-8</Value>
+    <ConciseForm rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >2.17644(11)e-8</ConciseForm>
+    <UnitDimension rdf:resource="#mass"/>
+    <UnitSystem rdf:resource="#SI_units"/>
+  </PlanckMass>
+  <SpeedOfLight_in_vacuum rdf:ID="speed_of_light_in_vacuum">
+    <UnitDimension>
+      <unitd:Speed rdf:ID="Speed"/>
+    </UnitDimension>
+    <UnitSystem rdf:resource="#SI_units"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >m / s</rdfs:comment>
+    <ConciseForm rdf:datatype="http://www.w3.org/2001/XMLSchema#double"
+    >299792458</ConciseForm>
+    <RelativeStandardUncertainty rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >exact</RelativeStandardUncertainty>
+    <Value rdf:datatype="http://www.w3.org/2001/XMLSchema#double"
+    >299792458</Value>
+    <StandardUncertainty rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >exact</StandardUncertainty>
+  </SpeedOfLight_in_vacuum>
+  <PlanckConstant rdf:ID="planck_constant">
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >J s</rdfs:comment>
+    <ConciseForm rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >6.62606896(33)e-34</ConciseForm>
+    <Value rdf:datatype="http://www.w3.org/2001/XMLSchema#double"
+    >6.62606896e-34</Value>
+    <UnitSystem rdf:resource="#SI_units"/>
+    <StandardUncertainty rdf:datatype="http://www.w3.org/2001/XMLSchema#double"
+    >0.00000033e-34</StandardUncertainty>
+    <RelativeStandardUncertainty rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >5.0e-8</RelativeStandardUncertainty>
+  </PlanckConstant>
+  <rdf:Description rdf:about="https://raw.githubusercontent.com/ebrahimnorouzi/mseo.github.io/master/Ontology_files/matinfo/NEDO-MatData.owl#electric_constant">
+    <ConciseForm rdf:datatype="http://www.w3.org/2001/XMLSchema#double"
+    >8.854187817e-12</ConciseForm>
+    <Value rdf:datatype="http://www.w3.org/2001/XMLSchema#double"
+    >8.854187817e-12</Value>
+    <StandardUncertainty rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >exact</StandardUncertainty>
+    <RelativeStandardUncertainty rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >exact</RelativeStandardUncertainty>
+  </rdf:Description>
+  <NewtonianConstantOfGravitation_over_h-bar_c rdf:ID="newtonian_constant_of_gravitation_over_h-bar_c">
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >(GeV / c2)-2</rdfs:comment>
+    <UnitSystem rdf:resource="#SI_units"/>
+    <ConciseForm rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >6.708 81(67)e-39</ConciseForm>
+    <Value rdf:datatype="http://www.w3.org/2001/XMLSchema#double"
+    >6.708 81e-39</Value>
+    <StandardUncertainty rdf:datatype="http://www.w3.org/2001/XMLSchema#double"
+    >0.00067e-39</StandardUncertainty>
+    <RelativeStandardUncertainty rdf:datatype="http://www.w3.org/2001/XMLSchema#double"
+    >1.0e-4</RelativeStandardUncertainty>
+  </NewtonianConstantOfGravitation_over_h-bar_c>
+  <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#Thing">
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    ></rdfs:comment>
+  </rdf:Description>
+  <NewtonianConstantOfGravitation rdf:ID="newtonian_constant_of_gravitation">
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >m3 / kg s2</rdfs:comment>
+    <UnitSystem rdf:resource="#SI_units"/>
+    <RelativeStandardUncertainty rdf:datatype="http://www.w3.org/2001/XMLSchema#double"
+    >1.0e-4</RelativeStandardUncertainty>
+    <Value rdf:datatype="http://www.w3.org/2001/XMLSchema#double"
+    >6.67428e-11</Value>
+    <StandardUncertainty rdf:datatype="http://www.w3.org/2001/XMLSchema#double"
+    >0.00067e-11</StandardUncertainty>
+    <ConciseForm rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >6.67428(67)e-11</ConciseForm>
+  </NewtonianConstantOfGravitation>
+  <PlanckLength rdf:ID="planck_length">
+    <ConciseForm rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >1.616252(81)e-35</ConciseForm>
+    <UnitDimension rdf:resource="#Length"/>
+    <UnitSystem rdf:resource="#SI_units"/>
+    <RelativeStandardUncertainty rdf:datatype="http://www.w3.org/2001/XMLSchema#double"
+    >5.0e-5</RelativeStandardUncertainty>
+    <StandardUncertainty rdf:datatype="http://www.w3.org/2001/XMLSchema#double"
+    >0.000081e-35</StandardUncertainty>
+    <Value rdf:datatype="http://www.w3.org/2001/XMLSchema#double"
+    >1.616252e-35</Value>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >m</rdfs:comment>
+  </PlanckLength>
+</rdf:RDF>
+
+<!-- Created with Protege (with OWL Plugin 3.2.1, Build 365)  http://protege.stanford.edu -->

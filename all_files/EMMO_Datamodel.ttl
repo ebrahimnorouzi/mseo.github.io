@@ -1,0 +1,355 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://emmo.info/datamodel#"
+     xml:base="http://emmo.info/datamodel"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:emmo="http://emmo.info/emmo#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+     xmlns:dcterms="http://purl.org/dc/terms/">
+    <owl:Ontology rdf:about="http://emmo.info/datamodel/metamodel">
+        <owl:versionIRI rdf:resource="http://emmo.info/datamodel/0.0.2/metamodel"/>
+        <owl:imports rdf:resource="https://raw.githubusercontent.com/ebrahimnorouzi/mseo.github.io/master/Ontology_files/emmo_datamodel_entity.ttl"/>
+        <dcterms:abstract xml:lang="en">A metamodel extension of the simple SOFT7 datamodel for entities.</dcterms:abstract>
+        <dcterms:creator xml:lang="en">Jesper Friis, SINTEF</dcterms:creator>
+        <dcterms:creator xml:lang="en">Thomas Hagelien, SINTEF</dcterms:creator>
+        <dcterms:license>https://creativecommons.org/licenses/by/4.0/legalcode</dcterms:license>
+        <dcterms:title xml:lang="en">Metamodel module of the datamodel ontology</dcterms:title>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://emmo.info/datamodel#instanceOf -->
+
+    <owl:AnnotationProperty rdf:about="http://emmo.info/datamodel#instanceOf">
+        <rdfs:comment xml:lang="en">Relates an instance to the class that describes it.</rdfs:comment>
+        <rdfs:comment xml:lang="en">The semantic meaning of &apos;instanceOf&apos; is the same as &apos;rdf:type&apos;.
+
+But since first order logic, of which OWL descriptive logic is based on, we introduce &apos;instanceOf&apos; as an annotation property.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="rdf:type"/>
+        <skos:prefLabel xml:lang="en">instanceOf</skos:prefLabel>
+        <rdfs:range rdf:resource="http://emmo.info/datamodel#Metadata"/>
+        <rdfs:domain rdf:resource="http://emmo.info/datamodel#Instance"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.org/dc/terms/abstract -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/abstract"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/contributor -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/contributor"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/creator -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/creator"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/license -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/license"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/publisher -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/publisher"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/title -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/title"/>
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#maxQualifiedCardinality -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2002/07/owl#maxQualifiedCardinality"/>
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#qualifiedCardinality -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2002/07/owl#qualifiedCardinality"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#altLabel -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#altLabel">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#label"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#prefLabel -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#prefLabel">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#label"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://emmo.info/datamodel#hasDimensionValue -->
+
+    <owl:ObjectProperty rdf:about="http://emmo.info/datamodel#hasDimensionValue">
+        <rdfs:subPropertyOf rdf:resource="http://emmo.info/datamodel#composition"/>
+        <rdfs:domain rdf:resource="http://emmo.info/datamodel#Instance"/>
+        <rdfs:range rdf:resource="http://emmo.info/datamodel#DimensionValue"/>
+        <skos:prefLabel xml:lang="en">hasDimensionValue</skos:prefLabel>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://emmo.info/datamodel#hasPropertyValue -->
+
+    <owl:ObjectProperty rdf:about="http://emmo.info/datamodel#hasPropertyValue">
+        <rdfs:subPropertyOf rdf:resource="http://emmo.info/datamodel#composition"/>
+        <rdfs:domain rdf:resource="http://emmo.info/datamodel#Instance"/>
+        <rdfs:range rdf:resource="http://emmo.info/datamodel#PropertyValue"/>
+        <skos:prefLabel xml:lang="en">hasPropertyValue</skos:prefLabel>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://emmo.info/datamodel#hasDimensionSize -->
+
+    <owl:DatatypeProperty rdf:about="http://emmo.info/datamodel#hasDimensionSize">
+        <rdfs:domain rdf:resource="http://emmo.info/datamodel#DimensionValue"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+        <rdfs:comment xml:lang="en">The size of a dimension value.</rdfs:comment>
+        <skos:prefLabel xml:lang="en">hasDimensionSize</skos:prefLabel>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://emmo.info/datamodel#hasMeta -->
+
+    <owl:DatatypeProperty rdf:about="http://emmo.info/datamodel#hasMeta">
+        <rdfs:subPropertyOf rdf:resource="http://emmo.info/datamodel#dataComposition"/>
+        <rdfs:domain rdf:resource="http://emmo.info/datamodel#Instance"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#anyURI"/>
+        <rdfs:comment xml:lang="en">Relates an instance to the URI that uniquely identifies the metadata that describes the instance.</rdfs:comment>
+        <skos:prefLabel xml:lang="en">hasMeta</skos:prefLabel>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://emmo.info/datamodel#hasUUID -->
+
+    <owl:DatatypeProperty rdf:about="http://emmo.info/datamodel#hasUUID">
+        <rdfs:domain rdf:resource="http://emmo.info/datamodel#Instance"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="en">Refers to a unique UUID identifying an instance.</rdfs:comment>
+        <skos:prefLabel xml:lang="en">hasUUID</skos:prefLabel>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://emmo.info/datamodel#BasicMetadataSchema -->
+
+    <owl:Class rdf:about="http://emmo.info/datamodel#BasicMetadataSchema">
+        <rdfs:subClassOf rdf:resource="http://emmo.info/datamodel#Metadata"/>
+        <instanceOf rdf:resource="http://emmo.info/datamodel#BasicMetadataSchema"/>
+        <rdfs:comment xml:lang="en">A basic metadata schema that can describe itself.</rdfs:comment>
+        <skos:prefLabel xml:lang="en">BasicMetadataSchema</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://emmo.info/datamodel#DataInstance -->
+
+    <owl:Class rdf:about="http://emmo.info/datamodel#DataInstance">
+        <instanceOf rdf:resource="http://emmo.info/datamodel#Entity"/>
+        <rdfs:comment xml:lang="en">An instance representing actual data.
+
+It is hence disjoint from Metadata.</rdfs:comment>
+        <skos:prefLabel xml:lang="en">DataInstance</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://emmo.info/datamodel#DimensionValue -->
+
+    <owl:Class rdf:about="http://emmo.info/datamodel#DimensionValue">
+        <rdfs:subClassOf rdf:resource="http://emmo.info/datamodel#DataModel"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://emmo.info/datamodel#hasDimensionSize"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">Value of a dimension of a an instance.</rdfs:comment>
+        <skos:prefLabel xml:lang="en">DimensionValue</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://emmo.info/datamodel#Entity -->
+
+    <rdf:Description rdf:about="http://emmo.info/datamodel#Entity">
+        <rdfs:subClassOf rdf:resource="http://emmo.info/datamodel#Metadata"/>
+        <instanceOf rdf:resource="http://emmo.info/datamodel#EntitySchema"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://emmo.info/datamodel#EntitySchema -->
+
+    <owl:Class rdf:about="http://emmo.info/datamodel#EntitySchema">
+        <rdfs:subClassOf rdf:resource="http://emmo.info/datamodel#Metadata"/>
+        <instanceOf rdf:resource="http://emmo.info/datamodel#BasicMetadataSchema"/>
+        <rdfs:comment xml:lang="en">A meta-metadata that describes an entity.</rdfs:comment>
+        <skos:prefLabel xml:lang="en">EntitySchema</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://emmo.info/datamodel#Instance -->
+
+    <owl:Class rdf:about="http://emmo.info/datamodel#Instance">
+        <rdfs:subClassOf rdf:resource="http://emmo.info/datamodel#DataModel"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://emmo.info/datamodel#hasDimensionValue"/>
+                <owl:someValuesFrom rdf:resource="http://emmo.info/datamodel#DimensionValue"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://emmo.info/datamodel#hasPropertyValue"/>
+                <owl:someValuesFrom rdf:resource="http://emmo.info/datamodel#PropertyValue"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://emmo.info/datamodel#hasMeta"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#anyURI"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://emmo.info/datamodel#hasUUID"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <owl:disjointUnionOf rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://emmo.info/datamodel#DataInstance"/>
+            <rdf:Description rdf:about="http://emmo.info/datamodel#Metadata"/>
+        </owl:disjointUnionOf>
+        <instanceOf rdf:resource="http://emmo.info/datamodel#Metadata"/>
+        <rdfs:comment xml:lang="en">An instance of a metadata.
+
+Instances are uniquely identified by their UUID, but may also have an more human readable identity.
+
+Instances holds the values of the dimensions and the properties described by their metadata.</rdfs:comment>
+        <skos:altLabel xml:lang="en">DataObject</skos:altLabel>
+        <skos:prefLabel xml:lang="en">Instance</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://emmo.info/datamodel#Metadata -->
+
+    <owl:Class rdf:about="http://emmo.info/datamodel#Metadata">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://emmo.info/datamodel#hasDimension"/>
+                <owl:someValuesFrom rdf:resource="http://emmo.info/datamodel#Dimension"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://emmo.info/datamodel#hasProperty"/>
+                <owl:someValuesFrom rdf:resource="http://emmo.info/datamodel#Property"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://emmo.info/datamodel#hasDescription"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">Metadata describing its instances.</rdfs:comment>
+        <skos:prefLabel xml:lang="en">Metadata</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://emmo.info/datamodel#PropertyValue -->
+
+    <owl:Class rdf:about="http://emmo.info/datamodel#PropertyValue">
+        <rdfs:subClassOf rdf:resource="http://emmo.info/datamodel#DataModel"/>
+        <rdfs:comment xml:lang="en">The value of a property of a data object. Since the type system is kept open-ended there are no restriction on the actual value in this ontology. In an actual implementation there will be a restriction.</rdfs:comment>
+        <skos:prefLabel xml:lang="en">PropertyValue</skos:prefLabel>
+    </owl:Class>
+    <rdf:Description>
+        <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+    </rdf:Description>
+    <rdf:Description>
+        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+

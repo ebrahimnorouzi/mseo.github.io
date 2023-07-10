@@ -1,0 +1,239 @@
+metric,metric_value,metric_type
+abox_axiom_count,107,single_value
+abox_axiom_count_incl,107,single_value
+abox_nominals,false,single_value
+abox_nominals_incl,false,single_value
+annotation_property_count,18,single_value
+annotation_property_count_incl,18,single_value
+assert_n_subclass_avg,0.9974937343358395,single_value
+assert_n_subclass_avg_incl,0.9974937343358395,single_value
+assert_n_superclass_avg,1.0,single_value
+assert_n_superclass_avg_incl,1.0,single_value
+ax_complexrhs_count,78,single_value
+ax_complexrhs_count_incl,78,single_value
+axiom_count,2999,single_value
+axiom_count_incl,2999,single_value
+axiom_length_max,6,single_value
+axiom_length_max_incl,6,single_value
+axiom_type_count,AnnotationAssertion 1781,map_value
+axiom_type_count,ClassAssertion 45,map_value
+axiom_type_count,Declaration 494,map_value
+axiom_type_count,DisjointClasses 74,map_value
+axiom_type_count,EquivalentClasses 1,map_value
+axiom_type_count,InverseObjectProperties 2,map_value
+axiom_type_count,ObjectPropertyAssertion 62,map_value
+axiom_type_count,ObjectPropertyDomain 33,map_value
+axiom_type_count,ObjectPropertyRange 25,map_value
+axiom_type_count,SubClassOf 475,map_value
+axiom_type_count,SubObjectPropertyOf 4,map_value
+axiom_type_count,TransitiveObjectProperty 3,map_value
+axiom_type_count_incl,AnnotationAssertion 1781,map_value
+axiom_type_count_incl,ClassAssertion 45,map_value
+axiom_type_count_incl,Declaration 494,map_value
+axiom_type_count_incl,DisjointClasses 74,map_value
+axiom_type_count_incl,EquivalentClasses 1,map_value
+axiom_type_count_incl,InverseObjectProperties 2,map_value
+axiom_type_count_incl,ObjectPropertyAssertion 62,map_value
+axiom_type_count_incl,ObjectPropertyDomain 33,map_value
+axiom_type_count_incl,ObjectPropertyRange 25,map_value
+axiom_type_count_incl,SubClassOf 475,map_value
+axiom_type_count_incl,SubObjectPropertyOf 4,map_value
+axiom_type_count_incl,TransitiveObjectProperty 3,map_value
+axiom_types,AnnotationAssertion,list_value
+axiom_types,ClassAssertion,list_value
+axiom_types,Declaration,list_value
+axiom_types,DisjointClasses,list_value
+axiom_types,EquivalentClasses,list_value
+axiom_types,InverseObjectProperties,list_value
+axiom_types,ObjectPropertyAssertion,list_value
+axiom_types,ObjectPropertyDomain,list_value
+axiom_types,ObjectPropertyRange,list_value
+axiom_types,SubClassOf,list_value
+axiom_types,SubObjectPropertyOf,list_value
+axiom_types,TransitiveObjectProperty,list_value
+axiom_types_incl,AnnotationAssertion,list_value
+axiom_types_incl,ClassAssertion,list_value
+axiom_types_incl,Declaration,list_value
+axiom_types_incl,DisjointClasses,list_value
+axiom_types_incl,EquivalentClasses,list_value
+axiom_types_incl,InverseObjectProperties,list_value
+axiom_types_incl,ObjectPropertyAssertion,list_value
+axiom_types_incl,ObjectPropertyDomain,list_value
+axiom_types_incl,ObjectPropertyRange,list_value
+axiom_types_incl,SubClassOf,list_value
+axiom_types_incl,SubObjectPropertyOf,list_value
+axiom_types_incl,TransitiveObjectProperty,list_value
+certain_cycle,true,single_value
+certain_cycle_incl,true,single_value
+class_count,399,single_value
+class_count_incl,399,single_value
+class_expression_count,Class 1607,map_value
+class_expression_count,ObjectAllValuesFrom 5,map_value
+class_expression_count,ObjectSomeValuesFrom 72,map_value
+class_expression_count,ObjectUnionOf 1,map_value
+class_expression_count_incl,Class 1607,map_value
+class_expression_count_incl,ObjectAllValuesFrom 5,map_value
+class_expression_count_incl,ObjectSomeValuesFrom 72,map_value
+class_expression_count_incl,ObjectUnionOf 1,map_value
+class_sgl_subcl_count,77,single_value
+class_sgl_subcl_count_incl,77,single_value
+constructs,H,list_value
+constructs,I,list_value
+constructs,S,list_value
+constructs_incl,H,list_value
+constructs_incl,I,list_value
+constructs_incl,S,list_value
+curie_map,BCGO http://purl.obolibrary.org/obo/BCGO_,map_value
+curie_map,BFO http://purl.obolibrary.org/obo/BFO_,map_value
+curie_map,BTO http://purl.obolibrary.org/obo/BTO_,map_value
+curie_map,CHEBI http://purl.obolibrary.org/obo/CHEBI_,map_value
+curie_map,CL http://purl.obolibrary.org/obo/CL_,map_value
+curie_map,CLO http://purl.obolibrary.org/obo/CLO_,map_value
+curie_map,ERO http://purl.obolibrary.org/obo/ERO_,map_value
+curie_map,IAO http://purl.obolibrary.org/obo/IAO_,map_value
+curie_map,NCBITaxon http://purl.obolibrary.org/obo/NCBITaxon_,map_value
+curie_map,OBI http://purl.obolibrary.org/obo/OBI_,map_value
+curie_map,PO http://purl.obolibrary.org/obo/PO_,map_value
+curie_map,RO http://purl.obolibrary.org/obo/RO_,map_value
+curie_map,UBERON http://purl.obolibrary.org/obo/UBERON_,map_value
+curie_map,dc http://purl.org/dc/terms/,map_value
+curie_map,obo http://purl.obolibrary.org/obo/,map_value
+curie_map,owl http://www.w3.org/2002/07/owl#,map_value
+curie_map,rdf http://www.w3.org/1999/02/22-rdf-syntax-ns#,map_value
+curie_map,rdfs http://www.w3.org/2000/01/rdf-schema#,map_value
+curie_map,xsd http://www.w3.org/2001/XMLSchema#,map_value
+dataproperty_count,0,single_value
+dataproperty_count_incl,0,single_value
+datatypes_builtin,RDFS_LITERAL,list_value
+datatypes_builtin,RDF_PLAIN_LITERAL,list_value
+datatypes_builtin,XSD_STRING,list_value
+datatypes_builtin_incl,RDFS_LITERAL,list_value
+datatypes_builtin_incl,RDF_PLAIN_LITERAL,list_value
+datatypes_builtin_incl,XSD_STRING,list_value
+datatypes_count,3,single_value
+datatypes_count_incl,3,single_value
+dt_builtin_count,3,single_value
+dt_builtin_count_incl,3,single_value
+dt_notbuiltin_count,0,single_value
+dt_notbuiltin_count_incl,0,single_value
+expressivity,SHI,single_value
+expressivity_incl,SHI,single_value
+gci_count,0,single_value
+gci_count_incl,0,single_value
+gci_hidden_count,1,single_value
+gci_hidden_count_incl,1,single_value
+individual_count,45,single_value
+individual_count_incl,45,single_value
+instance_per_class_avg,0.11278195488721804,single_value
+instance_per_class_avg_incl,0.11278195488721804,single_value
+logical_axiom_count,724,single_value
+logical_axiom_count_incl,724,single_value
+most_freq_concept,http://purl.org/net/SMARTprotocol#MethodsSection,single_value
+most_freq_concept_incl,http://purl.org/net/SMARTprotocol#MethodsSection,single_value
+multiple_inheritance_count,0,single_value
+multiple_inheritance_count_incl,0,single_value
+named_supercl_count_max,1,single_value
+named_supercl_count_max_incl,1,single_value
+namespace_axiom_count,BCGO 9,map_value
+namespace_axiom_count,BFO 4,map_value
+namespace_axiom_count,BTO 13,map_value
+namespace_axiom_count,CHEBI 241,map_value
+namespace_axiom_count,CL 27,map_value
+namespace_axiom_count,CLO 83,map_value
+namespace_axiom_count,ERO 14,map_value
+namespace_axiom_count,IAO 1068,map_value
+namespace_axiom_count,NCBITaxon 10,map_value
+namespace_axiom_count,OBI 60,map_value
+namespace_axiom_count,PO 34,map_value
+namespace_axiom_count,RO 2,map_value
+namespace_axiom_count,UBERON 12,map_value
+namespace_axiom_count,dc 8,map_value
+namespace_axiom_count,obo 22,map_value
+namespace_axiom_count,prefix_unknown 1477,map_value
+namespace_axiom_count,rdfs 780,map_value
+namespace_axiom_count_incl,BCGO 9,map_value
+namespace_axiom_count_incl,BFO 4,map_value
+namespace_axiom_count_incl,BTO 13,map_value
+namespace_axiom_count_incl,CHEBI 241,map_value
+namespace_axiom_count_incl,CL 27,map_value
+namespace_axiom_count_incl,CLO 83,map_value
+namespace_axiom_count_incl,ERO 14,map_value
+namespace_axiom_count_incl,IAO 1068,map_value
+namespace_axiom_count_incl,NCBITaxon 10,map_value
+namespace_axiom_count_incl,OBI 60,map_value
+namespace_axiom_count_incl,PO 34,map_value
+namespace_axiom_count_incl,RO 2,map_value
+namespace_axiom_count_incl,UBERON 12,map_value
+namespace_axiom_count_incl,dc 8,map_value
+namespace_axiom_count_incl,obo 22,map_value
+namespace_axiom_count_incl,prefix_unknown 1477,map_value
+namespace_axiom_count_incl,rdfs 780,map_value
+namespace_entity_count,BCGO 1,map_value
+namespace_entity_count,BFO 1,map_value
+namespace_entity_count,BTO 5,map_value
+namespace_entity_count,CHEBI 70,map_value
+namespace_entity_count,CL 7,map_value
+namespace_entity_count,CLO 28,map_value
+namespace_entity_count,ERO 4,map_value
+namespace_entity_count,IAO 13,map_value
+namespace_entity_count,NCBITaxon 3,map_value
+namespace_entity_count,OBI 16,map_value
+namespace_entity_count,PO 12,map_value
+namespace_entity_count,RO 1,map_value
+namespace_entity_count,UBERON 6,map_value
+namespace_entity_count,dc 7,map_value
+namespace_entity_count,obo 4,map_value
+namespace_entity_count,owl 1,map_value
+namespace_entity_count,prefix_unknown 323,map_value
+namespace_entity_count,rdf 1,map_value
+namespace_entity_count,rdfs 4,map_value
+namespace_entity_count,xsd 1,map_value
+namespace_entity_count_incl,BCGO 1,map_value
+namespace_entity_count_incl,BFO 1,map_value
+namespace_entity_count_incl,BTO 5,map_value
+namespace_entity_count_incl,CHEBI 70,map_value
+namespace_entity_count_incl,CL 7,map_value
+namespace_entity_count_incl,CLO 28,map_value
+namespace_entity_count_incl,ERO 4,map_value
+namespace_entity_count_incl,IAO 13,map_value
+namespace_entity_count_incl,NCBITaxon 3,map_value
+namespace_entity_count_incl,OBI 16,map_value
+namespace_entity_count_incl,PO 12,map_value
+namespace_entity_count_incl,RO 1,map_value
+namespace_entity_count_incl,UBERON 6,map_value
+namespace_entity_count_incl,dc 7,map_value
+namespace_entity_count_incl,obo 4,map_value
+namespace_entity_count_incl,owl 1,map_value
+namespace_entity_count_incl,prefix_unknown 323,map_value
+namespace_entity_count_incl,rdf 1,map_value
+namespace_entity_count_incl,rdfs 4,map_value
+namespace_entity_count_incl,xsd 1,map_value
+obj_property_count,43,single_value
+obj_property_count_incl,43,single_value
+ontology_anno_count,12,single_value
+ontology_iri,http://purl.org/net/SMARTprotocol#,single_value
+ontology_version_iri,no.iri,single_value
+owl2,true,single_value
+owl2_dl,false,single_value
+owl2_el,false,single_value
+owl2_ql,false,single_value
+owl2_rl,false,single_value
+owl2dl_profile_violation,UseOfUndeclaredAnnotationProperty 8,map_value
+rbox_axiom_count,9,single_value
+rbox_axiom_count_incl,9,single_value
+rdfs,false,single_value
+rule_count,0,single_value
+rule_count_incl,0,single_value
+signature_entity_count,508,single_value
+signature_entity_count_incl,508,single_value
+syntax,RDF/XML Syntax,single_value
+tautology_count,0,single_value
+tautology_count_incl,0,single_value
+tbox_axiom_count,608,single_value
+tbox_axiom_count_incl,608,single_value
+tbox_nominals,false,single_value
+tbox_nominals_incl,false,single_value
+tboxrbox_axiom_count,617,single_value
+tboxrbox_axiom_count_incl,617,single_value
+undecl_entity_count,14,single_value
+undecl_entity_count_incl,14,single_value

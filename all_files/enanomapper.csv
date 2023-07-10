@@ -1,0 +1,383 @@
+metric,metric_value,metric_type
+abox_axiom_count,0,single_value
+abox_axiom_count_incl,11,single_value
+abox_nominals,false,single_value
+abox_nominals_incl,false,single_value
+annotation_property_count,6,single_value
+annotation_property_count_incl,737,single_value
+assert_n_subclass_avg,NaN,single_value
+assert_n_subclass_avg_incl,0.0,single_value
+assert_n_superclass_avg,NaN,single_value
+assert_n_superclass_avg_incl,1.1525256789081189,single_value
+ax_complexrhs_count,0,single_value
+ax_complexrhs_count_incl,319,single_value
+axiom_count,0,single_value
+axiom_count_incl,172860,single_value
+axiom_length_max,0,single_value
+axiom_length_max_incl,20,single_value
+axiom_type_count_incl,AnnotationAssertion 124680,map_value
+axiom_type_count_incl,AnnotationPropertyRangeOf 134,map_value
+axiom_type_count_incl,ClassAssertion 9,map_value
+axiom_type_count_incl,DatatypeDefinition 19,map_value
+axiom_type_count_incl,Declaration 22818,map_value
+axiom_type_count_incl,DifferentIndividuals 2,map_value
+axiom_type_count_incl,DisjointClasses 21,map_value
+axiom_type_count_incl,EquivalentClasses 292,map_value
+axiom_type_count_incl,FunctionalDataProperty 1,map_value
+axiom_type_count_incl,FunctionalObjectProperty 1,map_value
+axiom_type_count_incl,SubAnnotationPropertyOf 228,map_value
+axiom_type_count_incl,SubClassOf 24611,map_value
+axiom_type_count_incl,SubObjectPropertyOf 43,map_value
+axiom_type_count_incl,TransitiveObjectProperty 1,map_value
+axiom_types_incl,AnnotationAssertion,list_value
+axiom_types_incl,AnnotationPropertyRangeOf,list_value
+axiom_types_incl,ClassAssertion,list_value
+axiom_types_incl,DatatypeDefinition,list_value
+axiom_types_incl,Declaration,list_value
+axiom_types_incl,DifferentIndividuals,list_value
+axiom_types_incl,DisjointClasses,list_value
+axiom_types_incl,EquivalentClasses,list_value
+axiom_types_incl,FunctionalDataProperty,list_value
+axiom_types_incl,FunctionalObjectProperty,list_value
+axiom_types_incl,SubAnnotationPropertyOf,list_value
+axiom_types_incl,SubClassOf,list_value
+axiom_types_incl,SubObjectPropertyOf,list_value
+axiom_types_incl,TransitiveObjectProperty,list_value
+certain_cycle,false,single_value
+certain_cycle_incl,true,single_value
+class_count,0,single_value
+class_count_incl,21321,single_value
+class_expression_count_incl,Class 70987,map_value
+class_expression_count_incl,ObjectAllValuesFrom 1,map_value
+class_expression_count_incl,ObjectIntersectionOf 20,map_value
+class_expression_count_incl,ObjectOneOf 271,map_value
+class_expression_count_incl,ObjectSomeValuesFrom 46,map_value
+class_expression_count_incl,ObjectUnionOf 6,map_value
+class_sgl_subcl_count,0,single_value
+class_sgl_subcl_count_incl,0,single_value
+constructs,AL,list_value
+constructs_incl,D,list_value
+constructs_incl,F,list_value
+constructs_incl,H,list_value
+constructs_incl,O,list_value
+constructs_incl,S,list_value
+curie_map,BFO http://purl.obolibrary.org/obo/BFO_,map_value
+curie_map,BTO http://purl.obolibrary.org/obo/BTO_,map_value
+curie_map,CHEBI http://purl.obolibrary.org/obo/CHEBI_,map_value
+curie_map,CHMO http://purl.obolibrary.org/obo/CHMO_,map_value
+curie_map,CL http://purl.obolibrary.org/obo/CL_,map_value
+curie_map,CLO http://purl.obolibrary.org/obo/CLO_,map_value
+curie_map,ENVO http://purl.obolibrary.org/obo/ENVO_,map_value
+curie_map,GAZ http://purl.obolibrary.org/obo/GAZ_,map_value
+curie_map,GENEPIO http://purl.obolibrary.org/obo/GENEPIO_,map_value
+curie_map,GO http://purl.obolibrary.org/obo/GO_,map_value
+curie_map,HP http://purl.obolibrary.org/obo/HP_,map_value
+curie_map,IAO http://purl.obolibrary.org/obo/IAO_,map_value
+curie_map,NCIT http://purl.obolibrary.org/obo/NCIT_,map_value
+curie_map,OAE http://purl.obolibrary.org/obo/OAE_,map_value
+curie_map,OBA http://purl.obolibrary.org/obo/OBA_,map_value
+curie_map,OBCS http://purl.obolibrary.org/obo/OBCS_,map_value
+curie_map,OBI http://purl.obolibrary.org/obo/OBI_,map_value
+curie_map,OMO http://purl.obolibrary.org/obo/OMO_,map_value
+curie_map,PATO http://purl.obolibrary.org/obo/PATO_,map_value
+curie_map,RO http://purl.obolibrary.org/obo/RO_,map_value
+curie_map,STATO http://purl.obolibrary.org/obo/STATO_,map_value
+curie_map,UBERON http://purl.obolibrary.org/obo/UBERON_,map_value
+curie_map,UO http://purl.obolibrary.org/obo/UO_,map_value
+curie_map,dc http://purl.org/dc/terms/,map_value
+curie_map,dc11 http://purl.org/dc/elements/1.1/,map_value
+curie_map,foaf http://xmlns.com/foaf/0.1/,map_value
+curie_map,obo http://purl.obolibrary.org/obo/,map_value
+curie_map,oboInOwl http://www.geneontology.org/formats/oboInOwl#,map_value
+curie_map,owl http://www.w3.org/2002/07/owl#,map_value
+curie_map,rdf http://www.w3.org/1999/02/22-rdf-syntax-ns#,map_value
+curie_map,rdfs http://www.w3.org/2000/01/rdf-schema#,map_value
+curie_map,schema http://schema.org/,map_value
+curie_map,skos http://www.w3.org/2004/02/skos/core#,map_value
+curie_map,xsd http://www.w3.org/2001/XMLSchema#,map_value
+dataproperty_count,0,single_value
+dataproperty_count_incl,1,single_value
+datatypes_axiom_count_incl,<http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#Concept_Status-enum> 2,map_value
+datatypes_axiom_count_incl,<http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#Contributing_Source-enum> 2,map_value
+datatypes_axiom_count_incl,<http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#Def_Curator-enum> 2,map_value
+datatypes_axiom_count_incl,<http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#Extensible_List-enum> 2,map_value
+datatypes_axiom_count_incl,<http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#FDA_Table-enum> 2,map_value
+datatypes_axiom_count_incl,<http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#Neoplastic_Status-enum> 2,map_value
+datatypes_axiom_count_incl,<http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#Project_Name-enum> 2,map_value
+datatypes_axiom_count_incl,<http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#Publish_Value_Set-enum> 2,map_value
+datatypes_axiom_count_incl,<http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#Relationshipt_to_Target-enum> 2,map_value
+datatypes_axiom_count_incl,<http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#Semantic_Type-enum> 2,map_value
+datatypes_axiom_count_incl,<http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#TVS_Location-enum> 2,map_value
+datatypes_axiom_count_incl,<http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#Target_Term_Type-enum> 2,map_value
+datatypes_axiom_count_incl,<http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#Target_Terminology-enum> 2,map_value
+datatypes_axiom_count_incl,<http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#Value_Set_Pair-enum> 2,map_value
+datatypes_axiom_count_incl,<http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#date-time-system> 1,map_value
+datatypes_axiom_count_incl,<http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#def-source-enum> 2,map_value
+datatypes_axiom_count_incl,<http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#go-source-enum> 2,map_value
+datatypes_axiom_count_incl,<http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#term-group-enum> 2,map_value
+datatypes_axiom_count_incl,<http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#term-source-enum> 2,map_value
+datatypes_axiom_count_incl,<http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#textArea> 1,map_value
+datatypes_axiom_count_incl,<http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#user-system> 1,map_value
+datatypes_axiom_count_incl,<http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#xref-source-enum> 2,map_value
+datatypes_axiom_count_incl,RDFS_LITERAL 1,map_value
+datatypes_axiom_count_incl,RDF_PLAIN_LITERAL 23,map_value
+datatypes_axiom_count_incl,RDF_XML_LITERAL 1,map_value
+datatypes_axiom_count_incl,XSD_FLOAT 1,map_value
+datatypes_axiom_count_incl,XSD_INT 1,map_value
+datatypes_axiom_count_incl,XSD_INTEGER 1,map_value
+datatypes_axiom_count_incl,XSD_NON_NEGATIVE_INTEGER 1,map_value
+datatypes_axiom_count_incl,XSD_STRING 1,map_value
+datatypes_axiom_count_incl,xsd:anyType 1,map_value
+datatypes_axiom_count_incl,xsd:date 1,map_value
+datatypes_axiom_count_incl,xsd:gYear 1,map_value
+datatypes_axiom_count_incl,xsd:gYearMonth 1,map_value
+datatypes_builtin_incl,RDFS_LITERAL,list_value
+datatypes_builtin_incl,RDF_PLAIN_LITERAL,list_value
+datatypes_builtin_incl,RDF_XML_LITERAL,list_value
+datatypes_builtin_incl,XSD_ANY_URI,list_value
+datatypes_builtin_incl,XSD_BOOLEAN,list_value
+datatypes_builtin_incl,XSD_DATE_TIME,list_value
+datatypes_builtin_incl,XSD_FLOAT,list_value
+datatypes_builtin_incl,XSD_INT,list_value
+datatypes_builtin_incl,XSD_INTEGER,list_value
+datatypes_builtin_incl,XSD_NON_NEGATIVE_INTEGER,list_value
+datatypes_builtin_incl,XSD_STRING,list_value
+datatypes_count,0,single_value
+datatypes_count_incl,37,single_value
+datatypes_not_built_in_incl,<http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#Concept_Status-enum>,list_value
+datatypes_not_built_in_incl,<http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#Contributing_Source-enum>,list_value
+datatypes_not_built_in_incl,<http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#Def_Curator-enum>,list_value
+datatypes_not_built_in_incl,<http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#Extensible_List-enum>,list_value
+datatypes_not_built_in_incl,<http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#FDA_Table-enum>,list_value
+datatypes_not_built_in_incl,<http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#Neoplastic_Status-enum>,list_value
+datatypes_not_built_in_incl,<http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#Project_Name-enum>,list_value
+datatypes_not_built_in_incl,<http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#Publish_Value_Set-enum>,list_value
+datatypes_not_built_in_incl,<http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#Relationshipt_to_Target-enum>,list_value
+datatypes_not_built_in_incl,<http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#Semantic_Type-enum>,list_value
+datatypes_not_built_in_incl,<http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#TVS_Location-enum>,list_value
+datatypes_not_built_in_incl,<http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#Target_Term_Type-enum>,list_value
+datatypes_not_built_in_incl,<http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#Target_Terminology-enum>,list_value
+datatypes_not_built_in_incl,<http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#Value_Set_Pair-enum>,list_value
+datatypes_not_built_in_incl,<http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#date-time-system>,list_value
+datatypes_not_built_in_incl,<http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#def-source-enum>,list_value
+datatypes_not_built_in_incl,<http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#go-source-enum>,list_value
+datatypes_not_built_in_incl,<http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#term-group-enum>,list_value
+datatypes_not_built_in_incl,<http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#term-source-enum>,list_value
+datatypes_not_built_in_incl,<http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#textArea>,list_value
+datatypes_not_built_in_incl,<http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#user-system>,list_value
+datatypes_not_built_in_incl,<http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#xref-source-enum>,list_value
+datatypes_not_built_in_incl,xsd:anyType,list_value
+datatypes_not_built_in_incl,xsd:date,list_value
+datatypes_not_built_in_incl,xsd:gYear,list_value
+datatypes_not_built_in_incl,xsd:gYearMonth,list_value
+dt_builtin_count,0,single_value
+dt_builtin_count_incl,11,single_value
+dt_notbuiltin_count,0,single_value
+dt_notbuiltin_count_incl,26,single_value
+expressivity,AL,single_value
+expressivity_incl,SHOF(D),single_value
+gci_count,0,single_value
+gci_count_incl,0,single_value
+gci_hidden_count,0,single_value
+gci_hidden_count_incl,292,single_value
+individual_count,0,single_value
+individual_count_incl,680,single_value
+instance_per_class_avg,NaN,single_value
+instance_per_class_avg_incl,0.0,single_value
+logical_axiom_count,0,single_value
+logical_axiom_count_incl,25000,single_value
+most_freq_concept,,single_value
+most_freq_concept_incl,http://www.bioassayontology.org/bao#BAO_0000098,single_value
+multiple_inheritance_count,0,single_value
+multiple_inheritance_count_incl,17,single_value
+named_supercl_count_max,0,single_value
+named_supercl_count_max_incl,1,single_value
+namespace_axiom_count_incl,BFO 98,map_value
+namespace_axiom_count_incl,BTO 272,map_value
+namespace_axiom_count_incl,CHEBI 1951,map_value
+namespace_axiom_count_incl,CHMO 258,map_value
+namespace_axiom_count_incl,CL 61,map_value
+namespace_axiom_count_incl,CLO 1286,map_value
+namespace_axiom_count_incl,ENVO 2405,map_value
+namespace_axiom_count_incl,GAZ 1,map_value
+namespace_axiom_count_incl,GENEPIO 1,map_value
+namespace_axiom_count_incl,GO 6,map_value
+namespace_axiom_count_incl,HP 40,map_value
+namespace_axiom_count_incl,IAO 55675,map_value
+namespace_axiom_count_incl,NCIT 274,map_value
+namespace_axiom_count_incl,OAE 40176,map_value
+namespace_axiom_count_incl,OBA 57,map_value
+namespace_axiom_count_incl,OBCS 72,map_value
+namespace_axiom_count_incl,OBI 6584,map_value
+namespace_axiom_count_incl,OMO 7,map_value
+namespace_axiom_count_incl,PATO 469,map_value
+namespace_axiom_count_incl,RO 87,map_value
+namespace_axiom_count_incl,STATO 21,map_value
+namespace_axiom_count_incl,UBERON 19,map_value
+namespace_axiom_count_incl,UO 2810,map_value
+namespace_axiom_count_incl,dc 62,map_value
+namespace_axiom_count_incl,dc11 912,map_value
+namespace_axiom_count_incl,foaf 8,map_value
+namespace_axiom_count_incl,obo 722,map_value
+namespace_axiom_count_incl,oboInOwl 20100,map_value
+namespace_axiom_count_incl,owl 29,map_value
+namespace_axiom_count_incl,prefix_unknown 41390,map_value
+namespace_axiom_count_incl,rdf 30,map_value
+namespace_axiom_count_incl,rdfs 28069,map_value
+namespace_axiom_count_incl,schema 4,map_value
+namespace_axiom_count_incl,skos 6,map_value
+namespace_axiom_count_incl,xsd 9,map_value
+namespace_entity_count,BFO 8,map_value
+namespace_entity_count,BTO 44,map_value
+namespace_entity_count,CHEBI 568,map_value
+namespace_entity_count,CHMO 91,map_value
+namespace_entity_count,CL 6,map_value
+namespace_entity_count,CLO 430,map_value
+namespace_entity_count,ENVO 784,map_value
+namespace_entity_count,GAZ 1,map_value
+namespace_entity_count,GENEPIO 1,map_value
+namespace_entity_count,GO 3,map_value
+namespace_entity_count,HP 7,map_value
+namespace_entity_count,IAO 66,map_value
+namespace_entity_count,NCIT 31,map_value
+namespace_entity_count,OAE 9085,map_value
+namespace_entity_count,OBA 27,map_value
+namespace_entity_count,OBCS 23,map_value
+namespace_entity_count,OBI 1821,map_value
+namespace_entity_count,OMO 3,map_value
+namespace_entity_count,PATO 126,map_value
+namespace_entity_count,RO 26,map_value
+namespace_entity_count,STATO 10,map_value
+namespace_entity_count,UBERON 6,map_value
+namespace_entity_count,UO 812,map_value
+namespace_entity_count,dc 14,map_value
+namespace_entity_count,dc11 17,map_value
+namespace_entity_count,foaf 4,map_value
+namespace_entity_count,obo 292,map_value
+namespace_entity_count,oboInOwl 99,map_value
+namespace_entity_count,owl 7,map_value
+namespace_entity_count,prefix_unknown 8390,map_value
+namespace_entity_count,rdf 3,map_value
+namespace_entity_count,rdfs 5,map_value
+namespace_entity_count,schema 3,map_value
+namespace_entity_count,skos 5,map_value
+namespace_entity_count,xsd 12,map_value
+namespace_entity_count_incl,BFO 8,map_value
+namespace_entity_count_incl,BTO 44,map_value
+namespace_entity_count_incl,CHEBI 568,map_value
+namespace_entity_count_incl,CHMO 91,map_value
+namespace_entity_count_incl,CL 6,map_value
+namespace_entity_count_incl,CLO 430,map_value
+namespace_entity_count_incl,ENVO 784,map_value
+namespace_entity_count_incl,GAZ 1,map_value
+namespace_entity_count_incl,GENEPIO 1,map_value
+namespace_entity_count_incl,GO 3,map_value
+namespace_entity_count_incl,HP 7,map_value
+namespace_entity_count_incl,IAO 66,map_value
+namespace_entity_count_incl,NCIT 31,map_value
+namespace_entity_count_incl,OAE 9085,map_value
+namespace_entity_count_incl,OBA 27,map_value
+namespace_entity_count_incl,OBCS 23,map_value
+namespace_entity_count_incl,OBI 1821,map_value
+namespace_entity_count_incl,OMO 3,map_value
+namespace_entity_count_incl,PATO 126,map_value
+namespace_entity_count_incl,RO 26,map_value
+namespace_entity_count_incl,STATO 10,map_value
+namespace_entity_count_incl,UBERON 6,map_value
+namespace_entity_count_incl,UO 812,map_value
+namespace_entity_count_incl,dc 14,map_value
+namespace_entity_count_incl,dc11 17,map_value
+namespace_entity_count_incl,foaf 4,map_value
+namespace_entity_count_incl,obo 292,map_value
+namespace_entity_count_incl,oboInOwl 99,map_value
+namespace_entity_count_incl,owl 7,map_value
+namespace_entity_count_incl,prefix_unknown 8390,map_value
+namespace_entity_count_incl,rdf 3,map_value
+namespace_entity_count_incl,rdfs 5,map_value
+namespace_entity_count_incl,schema 3,map_value
+namespace_entity_count_incl,skos 5,map_value
+namespace_entity_count_incl,xsd 12,map_value
+obj_property_count,0,single_value
+obj_property_count_incl,54,single_value
+ontology_anno_count,24,single_value
+ontology_iri,http://enanomapper.github.io/ontologies/enanomapper.owl,single_value
+ontology_version_iri,http://enanomapper.github.io/ontologies/releases/9.0/enanomapper.owl,single_value
+owl2,true,single_value
+owl2_dl,false,single_value
+owl2_el,false,single_value
+owl2_ql,false,single_value
+owl2_rl,false,single_value
+owl2dl_profile_violation,UseOfUndeclaredAnnotationProperty 183,map_value
+owl2dl_profile_violation,UseOfUndeclaredClass 240,map_value
+owl2dl_profile_violation,UseOfUndeclaredObjectProperty 11,map_value
+rbox_axiom_count,0,single_value
+rbox_axiom_count_incl,44,single_value
+rdfs,false,single_value
+rule_count,0,single_value
+rule_count_incl,0,single_value
+signature_entity_count,22830,single_value
+signature_entity_count_incl,22830,single_value
+syntax,RDF/XML Syntax,single_value
+tautology_count,0,single_value
+tautology_count_incl,0,single_value
+tbox_axiom_count,0,single_value
+tbox_axiom_count_incl,24945,single_value
+tbox_nominals,false,single_value
+tbox_nominals_incl,true,single_value
+tboxrbox_axiom_count,0,single_value
+tboxrbox_axiom_count_incl,24989,single_value
+undecl_entity_count,22830,single_value
+undecl_entity_count_incl,22830,single_value
+valid_imports,http://enanomapper.github.io/ontologies//enanomapper-auto.owl,list_value
+valid_imports,http://enanomapper.github.io/ontologies/external/aopo-slim.owl,list_value
+valid_imports,http://enanomapper.github.io/ontologies/external/bao-slim-prop.owl,list_value
+valid_imports,http://enanomapper.github.io/ontologies/external/bao-slim.owl,list_value
+valid_imports,http://enanomapper.github.io/ontologies/external/bfo-slim.owl,list_value
+valid_imports,http://enanomapper.github.io/ontologies/external/bto-slim.owl,list_value
+valid_imports,http://enanomapper.github.io/ontologies/external/ccont-slim.owl,list_value
+valid_imports,http://enanomapper.github.io/ontologies/external/chebi-slim.owl,list_value
+valid_imports,http://enanomapper.github.io/ontologies/external/cheminf-slim-prop.owl,list_value
+valid_imports,http://enanomapper.github.io/ontologies/external/cheminf-slim.owl,list_value
+valid_imports,http://enanomapper.github.io/ontologies/external/chmo-slim.owl,list_value
+valid_imports,http://enanomapper.github.io/ontologies/external/cito-slim-prop.owl,list_value
+valid_imports,http://enanomapper.github.io/ontologies/external/clo-slim.owl,list_value
+valid_imports,http://enanomapper.github.io/ontologies/external/efo-slim.owl,list_value
+valid_imports,http://enanomapper.github.io/ontologies/external/envo-slim.owl,list_value
+valid_imports,http://enanomapper.github.io/ontologies/external/fabio-slim.owl,list_value
+valid_imports,http://enanomapper.github.io/ontologies/external/go-slim.owl,list_value
+valid_imports,http://enanomapper.github.io/ontologies/external/iao-slim.owl,list_value
+valid_imports,http://enanomapper.github.io/ontologies/external/ncit-slim.owl,list_value
+valid_imports,http://enanomapper.github.io/ontologies/external/npo-slim-prop.owl,list_value
+valid_imports,http://enanomapper.github.io/ontologies/external/npo-slim.owl,list_value
+valid_imports,http://enanomapper.github.io/ontologies/external/oae-slim.owl,list_value
+valid_imports,http://enanomapper.github.io/ontologies/external/obcs-slim.owl,list_value
+valid_imports,http://enanomapper.github.io/ontologies/external/obi-slim.owl,list_value
+valid_imports,http://enanomapper.github.io/ontologies/external/ontology-metadata-slim.owl,list_value
+valid_imports,http://enanomapper.github.io/ontologies/external/pato-slim.owl,list_value
+valid_imports,http://enanomapper.github.io/ontologies/external/ro-slim-prop.owl,list_value
+valid_imports,http://enanomapper.github.io/ontologies/external/sio-slim-prop.owl,list_value
+valid_imports,http://enanomapper.github.io/ontologies/external/sio-slim.owl,list_value
+valid_imports,http://enanomapper.github.io/ontologies/external/uberon-slim.owl,list_value
+valid_imports,http://enanomapper.github.io/ontologies/external/uo-slim.owl,list_value
+valid_imports,http://enanomapper.github.io/ontologies/internal/bao-ext.owl,list_value
+valid_imports,http://enanomapper.github.io/ontologies/internal/bfo-ext.owl,list_value
+valid_imports,http://enanomapper.github.io/ontologies/internal/chebi-ext.owl,list_value
+valid_imports,http://enanomapper.github.io/ontologies/internal/chmo-ext.owl,list_value
+valid_imports,http://enanomapper.github.io/ontologies/internal/endpoints.owl,list_value
+valid_imports,http://enanomapper.github.io/ontologies/internal/iao-ext.owl,list_value
+valid_imports,http://enanomapper.github.io/ontologies/internal/npo-ext.owl,list_value
+valid_imports,http://enanomapper.github.io/ontologies/internal/obi-ext.owl,list_value
+valid_imports,http://enanomapper.github.io/ontologies/internal/pato-ext.owl,list_value
+valid_imports,http://enanomapper.github.io/ontologies/internal/wikidata.owl,list_value
+valid_imports,http://protege.stanford.edu/plugins/owl/dc/protege-dc.owl,list_value
+valid_imports_incl,http://enanomapper.github.io/ontologies//enanomapper-auto.owl,list_value
+valid_imports_incl,http://enanomapper.github.io/ontologies/internal/bao-ext.owl,list_value
+valid_imports_incl,http://enanomapper.github.io/ontologies/internal/bfo-ext.owl,list_value
+valid_imports_incl,http://enanomapper.github.io/ontologies/internal/chebi-ext.owl,list_value
+valid_imports_incl,http://enanomapper.github.io/ontologies/internal/chmo-ext.owl,list_value
+valid_imports_incl,http://enanomapper.github.io/ontologies/internal/endpoints.owl,list_value
+valid_imports_incl,http://enanomapper.github.io/ontologies/internal/iao-ext.owl,list_value
+valid_imports_incl,http://enanomapper.github.io/ontologies/internal/npo-ext.owl,list_value
+valid_imports_incl,http://enanomapper.github.io/ontologies/internal/obi-ext.owl,list_value
+valid_imports_incl,http://enanomapper.github.io/ontologies/internal/pato-ext.owl,list_value
+valid_imports_incl,http://enanomapper.github.io/ontologies/internal/wikidata.owl,list_value
