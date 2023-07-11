@@ -78,7 +78,7 @@ caption = "Base metrics."
 label="tab:base-metrics"
 with pd.option_context("max_colwidth", 1000, "display.precision", 3):
     df_base_metrics.transpose().to_latex("base_metrics.tex",  multicolumn=True, header=True,# index_names=False, index=False, 
-                                         column_format='m{3.5cm}|'+'m{1cm}'*7, caption=caption, label=label)
+                                         column_format='m{3.5cm}'+'m{1cm}'*7, caption=caption, label=label)
 
 
 df_schema_and_graph_metrics = df_metrics_table[7:][['metric_name','evaluation_criteria'] + evaluated_ontologies]
@@ -97,26 +97,26 @@ new_row_s = pd.DataFrame(dic_external, index=[0])
 
 df_schema_and_graph_metrics = pd.concat([df_schema_and_graph_metrics.loc[7:12],new_row_s,df_schema_and_graph_metrics.loc[13:17]]).reset_index(drop=True)
 
-'''
+
 ### update NoR and NoL metrics with relative values inside parenthesis
 num_classes = [ int(v) for v in df_base_metrics.iloc[2:3, 1:].values.flatten().tolist()]
-nor = [ int(v) for v in df_schema_and_graph_metrics.iloc[4:5,2:].values.flatten().tolist()]
-nol = [ int(v) for v in df_schema_and_graph_metrics.iloc[5:6,2:].values.flatten().tolist()]
+nor = [ int(v) for v in df_schema_and_graph_metrics.iloc[7:8,2:].values.flatten().tolist()]
+nol = [ int(v) for v in df_schema_and_graph_metrics.iloc[8:9,2:].values.flatten().tolist()]
 noc = [ int(v) for v in df_schema_and_graph_metrics.iloc[6:7,2:].values.flatten().tolist()]
 #print(df_base_metrics.iloc[2:3, 1:].values.flatten().tolist())
 for i,v in enumerate(num_classes):
     if int(num_classes[i]) != 0:
         new_nor = "%s (%1.2f)" % (nor[i],int(nor[i])/int(num_classes[i]))
-        df_schema_and_graph_metrics.iloc[4:5,2+i:3+i] = new_nor
+        df_schema_and_graph_metrics.iloc[7:8,2+i:3+i] = new_nor
         new_nol = "%s (%1.2f)" % (nol[i],int(nol[i])/int(num_classes[i]))
-        df_schema_and_graph_metrics.iloc[5:6,2+i:3+i] = new_nol
+        df_schema_and_graph_metrics.iloc[8:9,2+i:3+i] = new_nol
         new_noc = "%s (%1.2f)" % (noc[i],int(noc[i])/int(num_classes[i]))
         df_schema_and_graph_metrics.iloc[6:7,2+i:3+i] = new_noc
     else:
         new_nor = "%s (-)" % (nor[i],)
-        df_schema_and_graph_metrics.iloc[4:5,2+i:3+i] = new_nor
+        df_schema_and_graph_metrics.iloc[7:8,2+i:3+i] = new_nor
         new_nol = "%s (-)" % (nol[i],)
-        df_schema_and_graph_metrics.iloc[5:6,2+i:3+i] = new_nol
+        df_schema_and_graph_metrics.iloc[8:9,2+i:3+i] = new_nol
         new_noc = "%s (-)" % (noc[i],)
         df_schema_and_graph_metrics.iloc[6:7,2+i:3+i] = new_noc
 
@@ -125,15 +125,14 @@ df_schema_and_graph_metrics
 new_row_s = pd.DataFrame(dic_external, index=[0])
 pd.concat([df_schema_and_graph_metrics.loc[7:12],new_row_s,df_schema_and_graph_metrics.loc[13:17]]).reset_index(drop=True)
 
-'''
 df_schema_and_graph_metrics_no_description = df_schema_and_graph_metrics[["metric name"] + evaluated_ontologies]
 caption = "Topology metrics."
 label="tab:topology-metrics"
 with pd.option_context("max_colwidth", 1000):
-    df_schema_and_graph_metrics_no_description.to_latex("schema_and_graph_metrics.tex",  
-        multicolumn=True, header=True, index_names=False,
-        index=False, column_format='p{2.5cm}|'+'l'*len(evaluated_ontologies), 
-        caption=caption, label=label, 
+    df_schema_and_graph_metrics_no_description.transpose().applymap(lambda x: "%1.2f" % (float(x)) if isinstance(x, (str)) and '.' in x and not ' ' in x else x).to_latex("schema_and_graph_metrics.tex",  
+        multicolumn=True, header=True,# index_names=False, index=False,
+        column_format='m{3.5cm}'+'m{2cm}'*12, 
+        caption=caption, label=label,
         #formatters=[None, use_f(3)]#, use_f(3), use_f(3)]
         )
 
