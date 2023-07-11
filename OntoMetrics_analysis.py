@@ -55,7 +55,7 @@ for index, row in df_all.iterrows():
 
 df_metrics_table.drop(["metric_code"], axis=1, inplace=True)
 
-df_metrics_table.to_excel("validation_metrics_table.xls", index=False)
+df_metrics_table.transpose().to_excel("validation_metrics_table.xls")#, index=False)
 
 
 from functools import partial
@@ -77,8 +77,8 @@ df_base_metrics.rename(columns={'metric_name':'metric name'}, inplace=True)
 caption = "Base metrics."
 label="tab:base-metrics"
 with pd.option_context("max_colwidth", 1000, "display.precision", 3):
-    df_base_metrics.to_latex("base_metrics.tex",  multicolumn=True, header=True, index_names=False,
-              index=False, column_format='p{3.5cm}|'+'l'*len(evaluated_ontologies), caption=caption, label=label)
+    df_base_metrics.transpose().to_latex("base_metrics.tex",  multicolumn=True, header=True,# index_names=False, index=False, 
+                                         column_format='m{3.5cm}|'+'m{1cm}'*7, caption=caption, label=label)
 
 
 df_schema_and_graph_metrics = df_metrics_table[7:][['metric_name','evaluation_criteria'] + evaluated_ontologies]
@@ -137,6 +137,7 @@ with pd.option_context("max_colwidth", 1000):
         #formatters=[None, use_f(3)]#, use_f(3), use_f(3)]
         )
 
-
-df_metrics_table.to_latex("validation_metrics_table.tex", index=False)
+df_metrics_table.drop(["metric_name"], axis=1, inplace=True)
+df_metrics_table.drop(["evaluation_criteria"], axis=1, inplace=True)
+df_metrics_table.transpose().to_latex("validation_metrics_table.tex")#, index=False)
 

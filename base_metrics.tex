@@ -2,17 +2,52 @@
 \centering
 \caption{Base metrics.}
 \label{tab:base-metrics}
-\begin{tabular}{p{3.5cm}|lllllllllllllllllllllllllllllllllllllllll}
+\begin{tabular}{m{3.5cm}|m{1cm}m{1cm}m{1cm}m{1cm}m{1cm}m{1cm}m{1cm}}
 \toprule
-            metric name & AMONTOLOGY & BWMD-DOMAIN & BWMD-MID &  CHAMEO & CIF-core &    DEB &      DISO &       EMMO & EMMO\_BVC & EMMO\_BattINFO & EMMO\_Datamodel & EMMO\_atomistic & EMMO\_crystallography & EMMO\_mappings & EMMO\_mechanical\_testing & EMMO\_microstructure &      GPO & LPBFO &   MAMBO &     MDO & MOL\_BRINELL & MOL\_TENSILE & MSEO &  MatOnto &     NPO & NanoMine &      OEO &     PMDCO &    SAREF &    SEMMD &   SP &    SSN &      bmo & enanomapper &    mat & matinfo &    mvc &       mwo & periodictable &   ssos &    vimmp \\
+{} &         0 &                 1 &          2 &                    3 &                      4 &                        5 &                6 \\
 \midrule
-               \# axioms &        130 &        1800 &     1546 &     491 &      321 &   2135 &       373 &       8224 &      568 &           442 &             89 &             64 &                  357 &            73 &                    1740 &                 183 &     6249 &   663 &     632 &     457 &       16349 &         354 &  890 &     5235 &   28924 &      815 &    14788 &      2154 &      631 &    14827 & 2999 &    313 &      362 &        2809 &    549 &      58 &    154 &      1122 &          1756 &    244 &    11863 \\
-       \# logical axioms &        125 &         424 &      399 &     156 &       87 &   1110 &       135 &       2319 &      276 &           143 &             28 &             19 &                  106 &            27 &                     725 &                  80 &     2640 &   151 &     400 &     168 &       12818 &         127 &  126 &     2320 &   15560 &      229 &     3474 &       384 &      226 &     8723 &  724 &     12 &      210 &         727 &    180 &      30 &     50 &       287 &          1735 &     89 &     7252 \\
-              \# classes &         85 &         459 &      336 &      74 &       31 &    601 &        38 &       1191 &      182 &           137 &             11 &             18 &                   61 &             9 &                     393 &                  61 &      963 &   179 &      57 &      37 &          37 &          35 &  150 &      848 &    1906 &      172 &     1445 &       264 &       81 &      689 &  399 &     16 &       26 &         772 &    140 &      10 &     28 &       116 &             7 &     27 &     1082 \\
-    \# object properties &          5 &           0 &       27 &      44 &        1 &     12 &        33 &        107 &       11 &            10 &              5 &              3 &                    5 &             5 &                      13 &                   2 &       86 &     2 &      35 &      32 &          17 &          61 &    2 &       83 &      65 &        1 &      122 &        36 &       35 &      108 &   43 &     21 &       56 &           2 &     13 &       8 &     12 &        74 &             6 &     19 &      580 \\
-  \# datatype properties &          0 &           0 &       12 &       2 &        1 &    109 &        12 &         10 &        0 &             0 &              5 &              1 &                    1 &             3 &                       6 &                   0 &        5 &     0 &      63 &      32 &           4 &           7 &    0 &       13 &      22 &        0 &        1 &         9 &        5 &       42 &    0 &      2 &        7 &           0 &      8 &      13 &      3 &        30 &             7 &     21 &      191 \\
-\# annotation assertions &          3 &         917 &      771 &     234 &      176 &    296 &       147 &       4541 &      131 &           203 &             34 &             34 &                  175 &            28 &                     657 &                  60 &     2532 &   346 &      57 &     176 &         191 &         120 &  618 &     1841 &   11343 &      429 &     9388 &      1454 &      264 &     5238 & 1781 &    248 &       44 &        1341 &    202 &       1 &     75 &       561 &             2 &     79 &     1848 \\
-        DL expressivity &        ALE &          AL & ALCHI(D) & ALCH(D) &    AL(D) & ALH(D) & ALCHIQ(D) & ALCROIQ(D) &     ALCH &          ALEI &       ALCHQ(D) &        ALEH(D) &             ALCIQ(D) &      ALEHQ(D) &               ALCHIQ(D) &                 ALE & SROIQ(D) &  ALCH & SHIQ(D) & ALCQ(D) &       AL(D) &    ALCHF(D) &  ALH & SHOIQ(D) & SHIN(D) &     ALEO & SROIQ(D) & ALCHIF(D) & ALCIQ(D) & SROIN(D) &  SHI & ALI(D) & ALCRI(D) &         ALE & ALQ(D) &   AL(D) & ALI(D) & ALCHIF(D) &      ALUON(D) & SHI(D) & SROIQ(D) \\
+metric name             &  \# axioms &  \# logical axioms &  \# classes &  \# object properties &  \# datatype properties &  \# annotation assertions &  DL expressivity \\
+AMONTOLOGY              &       130 &               125 &         85 &                    5 &                      0 &                        3 &              ALE \\
+BWMD-DOMAIN             &      1800 &               424 &        459 &                    0 &                      0 &                      917 &               AL \\
+BWMD-MID                &      1546 &               399 &        336 &                   27 &                     12 &                      771 &         ALCHI(D) \\
+CHAMEO                  &       491 &               156 &         74 &                   44 &                      2 &                      234 &          ALCH(D) \\
+CIF-core                &       321 &                87 &         31 &                    1 &                      1 &                      176 &            AL(D) \\
+DEB                     &      2135 &              1110 &        601 &                   12 &                    109 &                      296 &           ALH(D) \\
+DISO                    &       373 &               135 &         38 &                   33 &                     12 &                      147 &        ALCHIQ(D) \\
+EMMO                    &      8224 &              2319 &       1191 &                  107 &                     10 &                     4541 &       ALCROIQ(D) \\
+EMMO\_BVC                &       568 &               276 &        182 &                   11 &                      0 &                      131 &             ALCH \\
+EMMO\_BattINFO           &       442 &               143 &        137 &                   10 &                      0 &                      203 &             ALEI \\
+EMMO\_Datamodel          &        89 &                28 &         11 &                    5 &                      5 &                       34 &         ALCHQ(D) \\
+EMMO\_atomistic          &        64 &                19 &         18 &                    3 &                      1 &                       34 &          ALEH(D) \\
+EMMO\_crystallography    &       357 &               106 &         61 &                    5 &                      1 &                      175 &         ALCIQ(D) \\
+EMMO\_mappings           &        73 &                27 &          9 &                    5 &                      3 &                       28 &         ALEHQ(D) \\
+EMMO\_mechanical\_testing &      1740 &               725 &        393 &                   13 &                      6 &                      657 &        ALCHIQ(D) \\
+EMMO\_microstructure     &       183 &                80 &         61 &                    2 &                      0 &                       60 &              ALE \\
+GPO                     &      6249 &              2640 &        963 &                   86 &                      5 &                     2532 &         SROIQ(D) \\
+LPBFO                   &       663 &               151 &        179 &                    2 &                      0 &                      346 &             ALCH \\
+MAMBO                   &       632 &               400 &         57 &                   35 &                     63 &                       57 &          SHIQ(D) \\
+MDO                     &       457 &               168 &         37 &                   32 &                     32 &                      176 &          ALCQ(D) \\
+MOL\_BRINELL             &     16349 &             12818 &         37 &                   17 &                      4 &                      191 &            AL(D) \\
+MOL\_TENSILE             &       354 &               127 &         35 &                   61 &                      7 &                      120 &         ALCHF(D) \\
+MSEO                    &       890 &               126 &        150 &                    2 &                      0 &                      618 &              ALH \\
+MatOnto                 &      5235 &              2320 &        848 &                   83 &                     13 &                     1841 &         SHOIQ(D) \\
+NPO                     &     28924 &             15560 &       1906 &                   65 &                     22 &                    11343 &          SHIN(D) \\
+NanoMine                &       815 &               229 &        172 &                    1 &                      0 &                      429 &             ALEO \\
+OEO                     &     14788 &              3474 &       1445 &                  122 &                      1 &                     9388 &         SROIQ(D) \\
+PMDCO                   &      2154 &               384 &        264 &                   36 &                      9 &                     1454 &        ALCHIF(D) \\
+SAREF                   &       631 &               226 &         81 &                   35 &                      5 &                      264 &         ALCIQ(D) \\
+SEMMD                   &     14827 &              8723 &        689 &                  108 &                     42 &                     5238 &         SROIN(D) \\
+SP                      &      2999 &               724 &        399 &                   43 &                      0 &                     1781 &              SHI \\
+SSN                     &       313 &                12 &         16 &                   21 &                      2 &                      248 &           ALI(D) \\
+bmo                     &       362 &               210 &         26 &                   56 &                      7 &                       44 &         ALCRI(D) \\
+enanomapper             &      2809 &               727 &        772 &                    2 &                      0 &                     1341 &              ALE \\
+mat                     &       549 &               180 &        140 &                   13 &                      8 &                      202 &           ALQ(D) \\
+matinfo                 &        58 &                30 &         10 &                    8 &                     13 &                        1 &            AL(D) \\
+mvc                     &       154 &                50 &         28 &                   12 &                      3 &                       75 &           ALI(D) \\
+mwo                     &      1122 &               287 &        116 &                   74 &                     30 &                      561 &        ALCHIF(D) \\
+periodictable           &      1756 &              1735 &          7 &                    6 &                      7 &                        2 &         ALUON(D) \\
+ssos                    &       244 &                89 &         27 &                   19 &                     21 &                       79 &           SHI(D) \\
+vimmp                   &     11863 &              7252 &       1082 &                  580 &                    191 &                     1848 &         SROIQ(D) \\
 \bottomrule
 \end{tabular}
 \end{table}
