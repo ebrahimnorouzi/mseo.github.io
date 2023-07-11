@@ -97,7 +97,7 @@ new_row_s = pd.DataFrame(dic_external, index=[0])
 
 df_schema_and_graph_metrics = pd.concat([df_schema_and_graph_metrics.loc[7:12],new_row_s,df_schema_and_graph_metrics.loc[13:17]]).reset_index(drop=True)
 
-
+'''
 ### update NoR and NoL metrics with relative values inside parenthesis
 num_classes = [ int(v) for v in df_base_metrics.iloc[2:3, 1:].values.flatten().tolist()]
 nor = [ int(v) for v in df_schema_and_graph_metrics.iloc[4:5,2:].values.flatten().tolist()]
@@ -125,7 +125,7 @@ df_schema_and_graph_metrics
 new_row_s = pd.DataFrame(dic_external, index=[0])
 pd.concat([df_schema_and_graph_metrics.loc[7:12],new_row_s,df_schema_and_graph_metrics.loc[13:17]]).reset_index(drop=True)
 
-
+'''
 df_schema_and_graph_metrics_no_description = df_schema_and_graph_metrics[["metric name"] + evaluated_ontologies]
 caption = "Topology metrics."
 label="tab:topology-metrics"
