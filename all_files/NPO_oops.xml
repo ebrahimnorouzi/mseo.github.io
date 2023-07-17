@@ -269,7 +269,7 @@
 <oops:Importance>Minor</oops:Importance>
 <oops:NumberAffectedElements>1</oops:NumberAffectedElements>
 <oops:Affects>
-<oops:AffectedElement>http://purl.bioontology.org/ontology/npo#NPO_195</oops:AffectedElement>
+<oops:AffectedElement>http://purl.org/obo/owl/CHEBI#CHEBI_33273</oops:AffectedElement>
 <oops:AffectedElement>http://www.ifomis.org/bfo/1.1/span#ProcessAggregate</oops:AffectedElement>
 </oops:Affects>
 </oops:Pitfall>

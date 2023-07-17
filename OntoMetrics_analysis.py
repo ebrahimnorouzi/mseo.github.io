@@ -85,6 +85,7 @@ df_schema_and_graph_metrics = df_metrics_table[7:][['metric_name','evaluation_cr
 df_schema_and_graph_metrics.rename(columns={'metric_name':'metric name', 'evaluation_criteria': 'evaluation criteria'}, inplace=True)
 
 
+
 #### Add number of external class metric
 ### Number of external classes is evalutated using Protegé 
 description = """The interpretation of NoC values depends on the number of classes in the ontology. For
@@ -100,23 +101,24 @@ df_schema_and_graph_metrics = pd.concat([df_schema_and_graph_metrics.loc[7:12],n
 
 ### update NoR and NoL metrics with relative values inside parenthesis
 num_classes = [ int(v) for v in df_base_metrics.iloc[2:3, 1:].values.flatten().tolist()]
-nor = [ int(v) for v in df_schema_and_graph_metrics.iloc[7:8,2:].values.flatten().tolist()]
-nol = [ int(v) for v in df_schema_and_graph_metrics.iloc[8:9,2:].values.flatten().tolist()]
+nor = [ int(v) for v in df_schema_and_graph_metrics.iloc[5:6,2:].values.flatten().tolist()]
+nol = [ int(v) for v in df_schema_and_graph_metrics.iloc[7:8,2:].values.flatten().tolist()]
 noc = [ int(v) for v in df_schema_and_graph_metrics.iloc[6:7,2:].values.flatten().tolist()]
+print(new_row_s)
 #print(df_base_metrics.iloc[2:3, 1:].values.flatten().tolist())
 for i,v in enumerate(num_classes):
     if int(num_classes[i]) != 0:
         new_nor = "%s (%1.2f)" % (nor[i],int(nor[i])/int(num_classes[i]))
-        df_schema_and_graph_metrics.iloc[7:8,2+i:3+i] = new_nor
+        df_schema_and_graph_metrics.iloc[5:6,2+i:3+i] = new_nor
         new_nol = "%s (%1.2f)" % (nol[i],int(nol[i])/int(num_classes[i]))
-        df_schema_and_graph_metrics.iloc[8:9,2+i:3+i] = new_nol
+        df_schema_and_graph_metrics.iloc[7:8,2+i:3+i] = new_nol
         new_noc = "%s (%1.2f)" % (noc[i],int(noc[i])/int(num_classes[i]))
         df_schema_and_graph_metrics.iloc[6:7,2+i:3+i] = new_noc
     else:
         new_nor = "%s (-)" % (nor[i],)
-        df_schema_and_graph_metrics.iloc[7:8,2+i:3+i] = new_nor
+        df_schema_and_graph_metrics.iloc[5:6,2+i:3+i] = new_nor
         new_nol = "%s (-)" % (nol[i],)
-        df_schema_and_graph_metrics.iloc[8:9,2+i:3+i] = new_nol
+        df_schema_and_graph_metrics.iloc[7:8,2+i:3+i] = new_nol
         new_noc = "%s (-)" % (noc[i],)
         df_schema_and_graph_metrics.iloc[6:7,2+i:3+i] = new_noc
 
@@ -125,9 +127,11 @@ df_schema_and_graph_metrics
 new_row_s = pd.DataFrame(dic_external, index=[0])
 pd.concat([df_schema_and_graph_metrics.loc[7:12],new_row_s,df_schema_and_graph_metrics.loc[13:17]]).reset_index(drop=True)
 
+
 df_schema_and_graph_metrics_no_description = df_schema_and_graph_metrics[["metric name"] + evaluated_ontologies]
 caption = "Topology metrics."
 label="tab:topology-metrics"
+#df_schema_and_graph_metrics_no_description = df_schema_and_graph_metrics_no_description[df_schema_and_graph_metrics_no_description['metric name'].isin(["NoR","NoC","NoL","ADIT-LN"])]
 with pd.option_context("max_colwidth", 1000):
     df_schema_and_graph_metrics_no_description.transpose().applymap(lambda x: "%1.2f" % (float(x)) if isinstance(x, (str)) and '.' in x and not ' ' in x else x).to_latex("schema_and_graph_metrics.tex",  
         multicolumn=True, header=True,# index_names=False, index=False,

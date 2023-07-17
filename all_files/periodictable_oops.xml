@@ -31,8 +31,8 @@
 <oops:Code>P10</oops:Code><oops:Name>Missing disjointness</oops:Name>
 <oops:Description>The ontology lacks disjoint axioms between classes or between properties that should be defined as disjoint. This pitfall is related with the guidelines provided in [6], [2] and [7].	</oops:Description>
 <oops:Importance>Important</oops:Importance>
-</oops:Pitfall>
 <oops:NumberAffectedElements>1</oops:NumberAffectedElements>
+</oops:Pitfall>
 <oops:Pitfall>
 <oops:Code>P11</oops:Code><oops:Name>Missing domain or range in properties</oops:Name>
 <oops:Description>Object and/or datatype properties without domain or range (or none of them) are included in the ontology. 	</oops:Description>
