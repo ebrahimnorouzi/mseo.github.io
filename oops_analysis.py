@@ -23,7 +23,7 @@ def get_affected_soma_iris(xml_elem):
     #print(xml_elem.findall('{http://www.oeg-upm.net/oops}NumberAffectedElements'))
     #iris = list(map(lambda x: x.text,
     #    affects.findall('{http://www.oeg-upm.net/oops}AffectedElement')))
-    return int(affects[0].text) #list(iris) #list(filter(lambda x: "all_files/periodictable.owl" in x, iris))
+    return 0 if not affects else int(affects[0].text) #list(iris) #list(filter(lambda x: "all_files/periodictable.owl" in x, iris))
 
 def get_resource_names(iris):
     return list(map(lambda x: x.split('#')[1],iris))
@@ -111,6 +111,7 @@ if __name__ == "__main__":
         url = df_all['mirror_from'][index]
         filename = 'all_files/' + df_all['namespace'][index] + '_oops.xml'
         try:
+            #print(filename)
             dic_pitfalls[df_all['namespace'][index]] = run(filename)
         
         except:# KeyError as e:
@@ -118,6 +119,6 @@ if __name__ == "__main__":
             #print(e)
             continue
     
-    print(dic_pitfalls)
+    #print(dic_pitfalls)
     with open("dic_pitfalls.pkl", "wb") as f:
         pickle.dump(dic_pitfalls, f)

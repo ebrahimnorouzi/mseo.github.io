@@ -176,7 +176,7 @@ for ontology in df_metrics_table.transpose().index:
                                         'Critical': 'no' if not critical else ', '.join([f"{item[0]}: {item[1]}" for item in critical]),
                                         'Important': 'no' if not important else ', '.join([f"{item[0]}: {item[1]}" for item in important]),
                                         'Minor': 'no' if not minor else ', '.join([f"{item[0]}: {item[1]}" for item in minor])}, ignore_index=True)
-        except:
+        except KeyError as e:
             empty_df = empty_df.append({'Ontology name': ontology,
                                         'Critical': '-' ,
                                         'Important': '-',
@@ -184,5 +184,5 @@ for ontology in df_metrics_table.transpose().index:
 
 with pd.option_context("max_colwidth", 1000):
     empty_df.to_latex("pitfalls.tex",
-                  column_format='m{5cm}m{3cm}m{3cm}m{3cm}',
+                  column_format='m{4cm}m{3cm}m{3cm}m{5cm}',
                   index=False, escape=False)
