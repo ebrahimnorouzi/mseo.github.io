@@ -29,7 +29,7 @@
 <oops:Code>P08</oops:Code><oops:Name>Missing annotations</oops:Name>
 <oops:Description>This pitfall consists in creating an ontology element and failing to provide human readable annotations attached to it. Consequently, ontology elements lack annotation properties that label them (e.g. rdfs:label, lemon:LexicalEntry, skos:prefLabel or skos:altLabel) or that define them (e.g. rdfs:comment or dc:description). This pitfall is related to the guidelines provided in [5].	</oops:Description>
 <oops:Importance>Minor</oops:Importance>
-<oops:NumberAffectedElements>699</oops:NumberAffectedElements>
+<oops:NumberAffectedElements>711</oops:NumberAffectedElements>
 <oops:Affects>
 <oops:AffectedElement>http://www.semanticweb.org/osnathakimi/ontologies/deb#Conduit</oops:AffectedElement>
 <oops:AffectedElement>http://www.semanticweb.org/osnathakimi/ontologies/deb#Opaque</oops:AffectedElement>
@@ -40,11 +40,9 @@
 <oops:AffectedElement>http://www.semanticweb.org/osnathakimi/ontologies/deb#PolyGlycerolSebacate</oops:AffectedElement>
 <oops:AffectedElement>http://www.semanticweb.org/osnathakimi/ontologies/deb#Osteoinduction</oops:AffectedElement>
 <oops:AffectedElement>http://www.semanticweb.org/osnathakimi/ontologies/deb#DrugDelivery</oops:AffectedElement>
-<oops:AffectedElement>http://www.semanticweb.org/osnathakimi/ontologies/deb#Crystallinity</oops:AffectedElement>
 <oops:AffectedElement>http://www.semanticweb.org/osnathakimi/ontologies/deb#Printing</oops:AffectedElement>
 <oops:AffectedElement>http://www.semanticweb.org/osnathakimi/ontologies/deb#Conductivity</oops:AffectedElement>
 <oops:AffectedElement>http://www.semanticweb.org/osnathakimi/ontologies/deb#Hydrophilicity</oops:AffectedElement>
-<oops:AffectedElement>http://www.semanticweb.org/osnathakimi/ontologies/deb#Decellularization</oops:AffectedElement>
 <oops:AffectedElement>http://www.semanticweb.org/osnathakimi/ontologies/deb#PolyvinylideneFluoride</oops:AffectedElement>
 <oops:AffectedElement>http://www.semanticweb.org/osnathakimi/ontologies/deb#EndothelialDifferentiation</oops:AffectedElement>
 <oops:AffectedElement>http://www.semanticweb.org/osnathakimi/ontologies/deb#Ductility</oops:AffectedElement>
@@ -55,7 +53,6 @@
 <oops:AffectedElement>http://www.semanticweb.org/osnathakimi/ontologies/deb#Cement</oops:AffectedElement>
 <oops:AffectedElement>http://www.semanticweb.org/osnathakimi/ontologies/deb#Film</oops:AffectedElement>
 <oops:AffectedElement>http://www.semanticweb.org/osnathakimi/ontologies/deb#MicrocomputedTomography</oops:AffectedElement>
-<oops:AffectedElement>http://www.semanticweb.org/osnathakimi/ontologies/deb#Mesoporosity</oops:AffectedElement>
 <oops:AffectedElement>http://www.semanticweb.org/osnathakimi/ontologies/deb#Mesh</oops:AffectedElement>
 <oops:AffectedElement>http://www.semanticweb.org/osnathakimi/ontologies/deb#Osteointegration</oops:AffectedElement>
 <oops:AffectedElement>http://www.semanticweb.org/osnathakimi/ontologies/deb#InVivo</oops:AffectedElement>
@@ -69,14 +66,12 @@
 <oops:AffectedElement>http://www.semanticweb.org/osnathakimi/ontologies/deb#Impermeability</oops:AffectedElement>
 <oops:AffectedElement>http://www.semanticweb.org/osnathakimi/ontologies/deb#NanoIndentation</oops:AffectedElement>
 <oops:AffectedElement>http://www.semanticweb.org/osnathakimi/ontologies/deb#CollagenDeposition</oops:AffectedElement>
-<oops:AffectedElement>http://www.semanticweb.org/osnathakimi/ontologies/deb#Ceramic</oops:AffectedElement>
 <oops:AffectedElement>http://www.semanticweb.org/osnathakimi/ontologies/deb#Theophylline</oops:AffectedElement>
 <oops:AffectedElement>http://www.semanticweb.org/osnathakimi/ontologies/deb#Angiogenesis</oops:AffectedElement>
 <oops:AffectedElement>http://www.semanticweb.org/osnathakimi/ontologies/deb#Nanoroughness</oops:AffectedElement>
 <oops:AffectedElement>http://www.semanticweb.org/osnathakimi/ontologies/deb#Sputtering</oops:AffectedElement>
 <oops:AffectedElement>http://www.semanticweb.org/osnathakimi/ontologies/deb#SiRNA</oops:AffectedElement>
 <oops:AffectedElement>http://www.semanticweb.org/osnathakimi/ontologies/deb#PolyglycolicAcid</oops:AffectedElement>
-<oops:AffectedElement>http://www.semanticweb.org/osnathakimi/ontologies/deb#Microporosity</oops:AffectedElement>
 <oops:AffectedElement>http://www.semanticweb.org/osnathakimi/ontologies/deb#Nanofiber</oops:AffectedElement>
 <oops:AffectedElement>http://www.semanticweb.org/osnathakimi/ontologies/deb#StentInsertion</oops:AffectedElement>
 <oops:AffectedElement>http://www.semanticweb.org/osnathakimi/ontologies/deb#HematopoieticCellDifferentiation</oops:AffectedElement>
@@ -98,7 +93,6 @@
 <oops:AffectedElement>http://www.semanticweb.org/osnathakimi/ontologies/deb#ForeignBodyReaction</oops:AffectedElement>
 <oops:AffectedElement>http://www.semanticweb.org/osnathakimi/ontologies/deb#SkinClosure</oops:AffectedElement>
 <oops:AffectedElement>http://www.semanticweb.org/osnathakimi/ontologies/deb#Hydrophobicity</oops:AffectedElement>
-<oops:AffectedElement>http://www.semanticweb.org/osnathakimi/ontologies/deb#Blend</oops:AffectedElement>
 <oops:AffectedElement>http://www.semanticweb.org/osnathakimi/ontologies/deb#WaterContactAngle</oops:AffectedElement>
 <oops:AffectedElement>http://www.semanticweb.org/osnathakimi/ontologies/deb#RetrospectiveAnalysis</oops:AffectedElement>
 <oops:AffectedElement>http://www.semanticweb.org/osnathakimi/ontologies/deb#Microcarrier</oops:AffectedElement>
@@ -157,15 +151,12 @@
 <oops:AffectedElement>http://www.semanticweb.org/osnathakimi/ontologies/deb#Milling</oops:AffectedElement>
 <oops:AffectedElement>http://www.semanticweb.org/osnathakimi/ontologies/deb#NonWoven</oops:AffectedElement>
 <oops:AffectedElement>http://www.semanticweb.org/osnathakimi/ontologies/deb#Silk</oops:AffectedElement>
-<oops:AffectedElement>http://www.semanticweb.org/osnathakimi/ontologies/deb#Hydrogel</oops:AffectedElement>
-<oops:AffectedElement>http://www.semanticweb.org/osnathakimi/ontologies/deb#Alloy</oops:AffectedElement>
 <oops:AffectedElement>http://www.semanticweb.org/osnathakimi/ontologies/deb#TitaniumAluminiumNitride</oops:AffectedElement>
 <oops:AffectedElement>http://www.semanticweb.org/osnathakimi/ontologies/deb#CellSignaling</oops:AffectedElement>
 <oops:AffectedElement>http://www.semanticweb.org/osnathakimi/ontologies/deb#SurgicalProcedure</oops:AffectedElement>
 <oops:AffectedElement>http://www.semanticweb.org/osnathakimi/ontologies/deb#AdhesionFormation</oops:AffectedElement>
 <oops:AffectedElement>http://www.semanticweb.org/osnathakimi/ontologies/deb#Hydration</oops:AffectedElement>
 <oops:AffectedElement>http://www.semanticweb.org/osnathakimi/ontologies/deb#FourierTransformInfraredSpectroscopy</oops:AffectedElement>
-<oops:AffectedElement>http://www.semanticweb.org/osnathakimi/ontologies/deb#DemineralizedBoneMatrix</oops:AffectedElement>
 <oops:AffectedElement>http://www.semanticweb.org/osnathakimi/ontologies/deb#nanostructure</oops:AffectedElement>
 <oops:AffectedElement>http://www.semanticweb.org/osnathakimi/ontologies/deb#ClinicalStudy</oops:AffectedElement>
 <oops:AffectedElement>http://www.semanticweb.org/osnathakimi/ontologies/deb#Thickness</oops:AffectedElement>
@@ -180,7 +171,6 @@
 <oops:AffectedElement>http://www.semanticweb.org/osnathakimi/ontologies/deb#TiO2</oops:AffectedElement>
 <oops:AffectedElement>http://www.semanticweb.org/osnathakimi/ontologies/deb#Microneedles</oops:AffectedElement>
 <oops:AffectedElement>http://www.semanticweb.org/osnathakimi/ontologies/deb#Polyethylenimine</oops:AffectedElement>
-<oops:AffectedElement>http://www.semanticweb.org/osnathakimi/ontologies/deb#Composite</oops:AffectedElement>
 <oops:AffectedElement>http://www.semanticweb.org/osnathakimi/ontologies/deb#Nylon</oops:AffectedElement>
 <oops:AffectedElement>http://www.semanticweb.org/osnathakimi/ontologies/deb#Microfiber</oops:AffectedElement>
 <oops:AffectedElement>http://www.semanticweb.org/osnathakimi/ontologies/deb#WoundDressing</oops:AffectedElement>
@@ -224,9 +214,7 @@
 <oops:AffectedElement>http://www.semanticweb.org/osnathakimi/ontologies/deb#Metal</oops:AffectedElement>
 <oops:AffectedElement>http://www.semanticweb.org/osnathakimi/ontologies/deb#GlialGrowth</oops:AffectedElement>
 <oops:AffectedElement>http://www.semanticweb.org/osnathakimi/ontologies/deb#Coating</oops:AffectedElement>
-<oops:AffectedElement>http://www.semanticweb.org/osnathakimi/ontologies/deb#MolecularStructure</oops:AffectedElement>
 <oops:AffectedElement>http://www.semanticweb.org/osnathakimi/ontologies/deb#Two-layeredClosure</oops:AffectedElement>
-<oops:AffectedElement>http://www.semanticweb.org/osnathakimi/ontologies/deb#Braiding</oops:AffectedElement>
 <oops:AffectedElement>http://www.semanticweb.org/osnathakimi/ontologies/deb#CellMotility</oops:AffectedElement>
 <oops:AffectedElement>http://www.semanticweb.org/osnathakimi/ontologies/deb#Device</oops:AffectedElement>
 <oops:AffectedElement>http://www.semanticweb.org/osnathakimi/ontologies/deb#OtherFeatures</oops:AffectedElement>
@@ -274,10 +262,8 @@
 <oops:AffectedElement>http://www.semanticweb.org/osnathakimi/ontologies/deb#IntraperitonealOnlayMesh</oops:AffectedElement>
 <oops:AffectedElement>http://www.semanticweb.org/osnathakimi/ontologies/deb#PEG</oops:AffectedElement>
 <oops:AffectedElement>http://www.semanticweb.org/osnathakimi/ontologies/deb#Comparative</oops:AffectedElement>
-<oops:AffectedElement>http://www.semanticweb.org/osnathakimi/ontologies/deb#Electrospinning</oops:AffectedElement>
 <oops:AffectedElement>http://www.semanticweb.org/osnathakimi/ontologies/deb#MedicalTextile</oops:AffectedElement>
 <oops:AffectedElement>http://www.semanticweb.org/osnathakimi/ontologies/deb#Granule</oops:AffectedElement>
-<oops:AffectedElement>http://www.semanticweb.org/osnathakimi/ontologies/deb#Annealing</oops:AffectedElement>
 <oops:AffectedElement>http://www.semanticweb.org/osnathakimi/ontologies/deb#Biomineralization</oops:AffectedElement>
 <oops:AffectedElement>http://www.semanticweb.org/osnathakimi/ontologies/deb#Coat</oops:AffectedElement>
 <oops:AffectedElement>http://www.semanticweb.org/osnathakimi/ontologies/deb#CellPolarization</oops:AffectedElement>
@@ -286,7 +272,6 @@
 <oops:AffectedElement>http://www.semanticweb.org/osnathakimi/ontologies/deb#Matrice</oops:AffectedElement>
 <oops:AffectedElement>http://www.semanticweb.org/osnathakimi/ontologies/deb#Regeneration</oops:AffectedElement>
 <oops:AffectedElement>http://www.semanticweb.org/osnathakimi/ontologies/deb#WoundRepair</oops:AffectedElement>
-<oops:AffectedElement>http://www.semanticweb.org/osnathakimi/ontologies/deb#Crosslinking</oops:AffectedElement>
 <oops:AffectedElement>http://www.semanticweb.org/osnathakimi/ontologies/deb#Sheet</oops:AffectedElement>
 <oops:AffectedElement>http://www.semanticweb.org/osnathakimi/ontologies/deb#VocalFoldAugmentation</oops:AffectedElement>
 <oops:AffectedElement>http://www.semanticweb.org/osnathakimi/ontologies/deb#Foaming</oops:AffectedElement>
@@ -313,7 +298,6 @@
 <oops:AffectedElement>http://www.semanticweb.org/osnathakimi/ontologies/deb#QuartzCrystalMicrobalanceTechnique</oops:AffectedElement>
 <oops:AffectedElement>http://www.semanticweb.org/osnathakimi/ontologies/deb#Chitosan</oops:AffectedElement>
 <oops:AffectedElement>http://www.semanticweb.org/osnathakimi/ontologies/deb#Septoplasty</oops:AffectedElement>
-<oops:AffectedElement>http://www.semanticweb.org/osnathakimi/ontologies/deb#AdverseEffects</oops:AffectedElement>
 <oops:AffectedElement>http://www.semanticweb.org/osnathakimi/ontologies/deb#Wire</oops:AffectedElement>
 <oops:AffectedElement>http://www.semanticweb.org/osnathakimi/ontologies/deb#Complications</oops:AffectedElement>
 <oops:AffectedElement>http://www.semanticweb.org/osnathakimi/ontologies/deb#Amphiphilic</oops:AffectedElement>
@@ -338,8 +322,6 @@
 <oops:AffectedElement>http://www.semanticweb.org/osnathakimi/ontologies/deb#Deposition</oops:AffectedElement>
 <oops:AffectedElement>http://www.semanticweb.org/osnathakimi/ontologies/deb#Electrospraying</oops:AffectedElement>
 <oops:AffectedElement>http://www.semanticweb.org/osnathakimi/ontologies/deb#Elasticty</oops:AffectedElement>
-<oops:AffectedElement>http://www.semanticweb.org/osnathakimi/ontologies/deb#StudyType</oops:AffectedElement>
-<oops:AffectedElement>http://www.semanticweb.org/osnathakimi/ontologies/deb#Sol-gel</oops:AffectedElement>
 <oops:AffectedElement>http://www.semanticweb.org/osnathakimi/ontologies/deb#TumorFormation</oops:AffectedElement>
 <oops:AffectedElement>http://www.semanticweb.org/osnathakimi/ontologies/deb#NuclearMagneticResonance</oops:AffectedElement>
 <oops:AffectedElement>http://www.semanticweb.org/osnathakimi/ontologies/deb#TissueIntegration</oops:AffectedElement>
@@ -350,7 +332,6 @@
 <oops:AffectedElement>http://www.semanticweb.org/osnathakimi/ontologies/deb#Macropore</oops:AffectedElement>
 <oops:AffectedElement>http://www.semanticweb.org/osnathakimi/ontologies/deb#PlasmaActivatedChemicalVaporDeposition</oops:AffectedElement>
 <oops:AffectedElement>http://www.semanticweb.org/osnathakimi/ontologies/deb#Ti-6Al-4V</oops:AffectedElement>
-<oops:AffectedElement>http://www.semanticweb.org/osnathakimi/ontologies/deb#Nanobiocomposite</oops:AffectedElement>
 <oops:AffectedElement>http://www.semanticweb.org/osnathakimi/ontologies/deb#SurfaceHydrophilicity</oops:AffectedElement>
 <oops:AffectedElement>http://www.semanticweb.org/osnathakimi/ontologies/deb#Foil</oops:AffectedElement>
 <oops:AffectedElement>http://www.semanticweb.org/osnathakimi/ontologies/deb#Shell-core</oops:AffectedElement>
@@ -364,7 +345,6 @@
 <oops:AffectedElement>http://www.semanticweb.org/osnathakimi/ontologies/deb#GeneExpression</oops:AffectedElement>
 <oops:AffectedElement>http://www.semanticweb.org/osnathakimi/ontologies/deb#Coil</oops:AffectedElement>
 <oops:AffectedElement>http://www.semanticweb.org/osnathakimi/ontologies/deb#Nanoencapsulation</oops:AffectedElement>
-<oops:AffectedElement>http://www.semanticweb.org/osnathakimi/ontologies/deb#SelfExpanding</oops:AffectedElement>
 <oops:AffectedElement>http://www.semanticweb.org/osnathakimi/ontologies/deb#BoneHealing</oops:AffectedElement>
 <oops:AffectedElement>http://www.semanticweb.org/osnathakimi/ontologies/deb#PlasmaTreatment</oops:AffectedElement>
 <oops:AffectedElement>http://www.semanticweb.org/osnathakimi/ontologies/deb#EpoxyCoating</oops:AffectedElement>
@@ -387,7 +367,6 @@
 <oops:AffectedElement>http://www.semanticweb.org/osnathakimi/ontologies/deb#EPTFE</oops:AffectedElement>
 <oops:AffectedElement>http://www.semanticweb.org/osnathakimi/ontologies/deb#TissueReconstruction</oops:AffectedElement>
 <oops:AffectedElement>http://www.semanticweb.org/osnathakimi/ontologies/deb#Bioactivity</oops:AffectedElement>
-<oops:AffectedElement>http://www.semanticweb.org/osnathakimi/ontologies/deb#Biofabrication</oops:AffectedElement>
 <oops:AffectedElement>http://www.semanticweb.org/osnathakimi/ontologies/deb#Flexibility</oops:AffectedElement>
 <oops:AffectedElement>http://www.semanticweb.org/osnathakimi/ontologies/deb#Polyfilament</oops:AffectedElement>
 <oops:AffectedElement>http://www.semanticweb.org/osnathakimi/ontologies/deb#Polylacticacid</oops:AffectedElement>
@@ -395,7 +374,6 @@
 <oops:AffectedElement>http://www.semanticweb.org/osnathakimi/ontologies/deb#AbdominalFasciaClosure</oops:AffectedElement>
 <oops:AffectedElement>http://www.semanticweb.org/osnathakimi/ontologies/deb#ChronicInflammation</oops:AffectedElement>
 <oops:AffectedElement>http://www.semanticweb.org/osnathakimi/ontologies/deb#Hierarchical</oops:AffectedElement>
-<oops:AffectedElement>http://www.semanticweb.org/osnathakimi/ontologies/deb#PCL</oops:AffectedElement>
 <oops:AffectedElement>http://www.semanticweb.org/osnathakimi/ontologies/deb#CellularDifferentiation</oops:AffectedElement>
 <oops:AffectedElement>http://www.semanticweb.org/osnathakimi/ontologies/deb#CoaxialElectrospinning</oops:AffectedElement>
 <oops:AffectedElement>http://www.semanticweb.org/osnathakimi/ontologies/deb#Cryogelation</oops:AffectedElement>
@@ -435,7 +413,6 @@
 <oops:AffectedElement>http://www.semanticweb.org/osnathakimi/ontologies/deb#Precoating</oops:AffectedElement>
 <oops:AffectedElement>http://www.semanticweb.org/osnathakimi/ontologies/deb#Polylysine</oops:AffectedElement>
 <oops:AffectedElement>http://www.semanticweb.org/osnathakimi/ontologies/deb#PolyLPhenylalanine</oops:AffectedElement>
-<oops:AffectedElement>http://www.semanticweb.org/osnathakimi/ontologies/deb#Casting</oops:AffectedElement>
 <oops:AffectedElement>http://www.semanticweb.org/osnathakimi/ontologies/deb#LoadToFailure</oops:AffectedElement>
 <oops:AffectedElement>http://www.semanticweb.org/osnathakimi/ontologies/deb#AxonalRegrowth</oops:AffectedElement>
 <oops:AffectedElement>http://www.semanticweb.org/osnathakimi/ontologies/deb#Glass</oops:AffectedElement>
@@ -489,7 +466,6 @@
 <oops:AffectedElement>http://www.semanticweb.org/osnathakimi/ontologies/deb#Hemocompatibility</oops:AffectedElement>
 <oops:AffectedElement>http://www.semanticweb.org/osnathakimi/ontologies/deb#HepatobiliarySurgery</oops:AffectedElement>
 <oops:AffectedElement>http://www.semanticweb.org/osnathakimi/ontologies/deb#OsteogenicDifferentiation</oops:AffectedElement>
-<oops:AffectedElement>http://www.semanticweb.org/osnathakimi/ontologies/deb#Macroporosity</oops:AffectedElement>
 <oops:AffectedElement>http://www.semanticweb.org/osnathakimi/ontologies/deb#TenogenicDifferentiation</oops:AffectedElement>
 <oops:AffectedElement>http://www.semanticweb.org/osnathakimi/ontologies/deb#Thermosensitive</oops:AffectedElement>
 <oops:AffectedElement>http://www.semanticweb.org/osnathakimi/ontologies/deb#PlateletDerivedGrowthFactor</oops:AffectedElement>
@@ -516,7 +492,6 @@
 <oops:AffectedElement>http://www.semanticweb.org/osnathakimi/ontologies/deb#Alginate</oops:AffectedElement>
 <oops:AffectedElement>http://www.semanticweb.org/osnathakimi/ontologies/deb#InflammatoryReaction</oops:AffectedElement>
 <oops:AffectedElement>http://www.semanticweb.org/osnathakimi/ontologies/deb#Antibiotics</oops:AffectedElement>
-<oops:AffectedElement>http://www.semanticweb.org/osnathakimi/ontologies/deb#Bioceramic</oops:AffectedElement>
 <oops:AffectedElement>http://www.semanticweb.org/osnathakimi/ontologies/deb#Poly(N-(2-Hydroxypropyl)methacrylamide)</oops:AffectedElement>
 <oops:AffectedElement>http://www.semanticweb.org/osnathakimi/ontologies/deb#SaltLeaching</oops:AffectedElement>
 <oops:AffectedElement>http://www.semanticweb.org/osnathakimi/ontologies/deb#Size</oops:AffectedElement>
@@ -555,7 +530,6 @@
 <oops:AffectedElement>http://www.semanticweb.org/osnathakimi/ontologies/deb#LuminalObstruction</oops:AffectedElement>
 <oops:AffectedElement>http://www.semanticweb.org/osnathakimi/ontologies/deb#Thermogel</oops:AffectedElement>
 <oops:AffectedElement>http://www.semanticweb.org/osnathakimi/ontologies/deb#Multi-layered</oops:AffectedElement>
-<oops:AffectedElement>http://www.semanticweb.org/osnathakimi/ontologies/deb#Polydopamine</oops:AffectedElement>
 <oops:AffectedElement>http://www.semanticweb.org/osnathakimi/ontologies/deb#CartilageAutograftImplantationSystem</oops:AffectedElement>
 <oops:AffectedElement>http://www.semanticweb.org/osnathakimi/ontologies/deb#CapCoating</oops:AffectedElement>
 <oops:AffectedElement>http://www.semanticweb.org/osnathakimi/ontologies/deb#FiberDiameter</oops:AffectedElement>
@@ -574,7 +548,6 @@
 <oops:AffectedElement>http://www.semanticweb.org/osnathakimi/ontologies/deb#TissueEngineering</oops:AffectedElement>
 <oops:AffectedElement>http://www.semanticweb.org/osnathakimi/ontologies/deb#SecondaryInfection</oops:AffectedElement>
 <oops:AffectedElement>http://www.semanticweb.org/osnathakimi/ontologies/deb#Edema</oops:AffectedElement>
-<oops:AffectedElement>http://www.semanticweb.org/osnathakimi/ontologies/deb#ResearchTechnique</oops:AffectedElement>
 <oops:AffectedElement>http://www.semanticweb.org/osnathakimi/ontologies/deb#OsseousAlterations</oops:AffectedElement>
 <oops:AffectedElement>http://www.semanticweb.org/osnathakimi/ontologies/deb#NosocomialInfection</oops:AffectedElement>
 <oops:AffectedElement>http://www.semanticweb.org/osnathakimi/ontologies/deb#Filament</oops:AffectedElement>
@@ -600,7 +573,6 @@
 <oops:AffectedElement>http://www.semanticweb.org/osnathakimi/ontologies/deb#PolyCitricAcid</oops:AffectedElement>
 <oops:AffectedElement>http://www.semanticweb.org/osnathakimi/ontologies/deb#SurgicalImplant</oops:AffectedElement>
 <oops:AffectedElement>http://www.semanticweb.org/osnathakimi/ontologies/deb#RecombinantHumanPlateletDerivedGrowthFactor</oops:AffectedElement>
-<oops:AffectedElement>http://www.semanticweb.org/osnathakimi/ontologies/deb#Anisotropy</oops:AffectedElement>
 <oops:AffectedElement>http://www.semanticweb.org/osnathakimi/ontologies/deb#GrowthSubstrate</oops:AffectedElement>
 <oops:AffectedElement>http://www.semanticweb.org/osnathakimi/ontologies/deb#PolyalphaHydroxyAcid</oops:AffectedElement>
 <oops:AffectedElement>http://www.semanticweb.org/osnathakimi/ontologies/deb#Shell</oops:AffectedElement>
@@ -730,6 +702,46 @@
 <oops:AffectedElement>http://www.semanticweb.org/osnathakimi/ontologies/deb#reinforced</oops:AffectedElement>
 <oops:AffectedElement>http://www.semanticweb.org/osnathakimi/ontologies/deb#seeded</oops:AffectedElement>
 <oops:AffectedElement>http://www.semanticweb.org/osnathakimi/ontologies/deb#decellularized</oops:AffectedElement>
+<oops:AffectedElement>http://www.semanticweb.org/osnathakimi/ontologies/deb#Crystallinity</oops:AffectedElement>
+<oops:AffectedElement>http://www.semanticweb.org/osnathakimi/ontologies/deb#Decellularization</oops:AffectedElement>
+<oops:AffectedElement>http://www.semanticweb.org/osnathakimi/ontologies/deb#Mesoporosity</oops:AffectedElement>
+<oops:AffectedElement>http://www.semanticweb.org/osnathakimi/ontologies/deb#Ceramic</oops:AffectedElement>
+<oops:AffectedElement>http://www.semanticweb.org/osnathakimi/ontologies/deb#Microporosity</oops:AffectedElement>
+<oops:AffectedElement>http://www.semanticweb.org/osnathakimi/ontologies/deb#Blend</oops:AffectedElement>
+<oops:AffectedElement>http://www.semanticweb.org/osnathakimi/ontologies/deb#Hydrogel</oops:AffectedElement>
+<oops:AffectedElement>http://www.semanticweb.org/osnathakimi/ontologies/deb#Alloy</oops:AffectedElement>
+<oops:AffectedElement>http://www.semanticweb.org/osnathakimi/ontologies/deb#DemineralizedBoneMatrix</oops:AffectedElement>
+<oops:AffectedElement>http://www.semanticweb.org/osnathakimi/ontologies/deb#Composite</oops:AffectedElement>
+<oops:AffectedElement>http://www.semanticweb.org/osnathakimi/ontologies/deb#MolecularStructure</oops:AffectedElement>
+<oops:AffectedElement>http://www.semanticweb.org/osnathakimi/ontologies/deb#Braiding</oops:AffectedElement>
+<oops:AffectedElement>http://www.semanticweb.org/osnathakimi/ontologies/deb#Electrospinning</oops:AffectedElement>
+<oops:AffectedElement>http://www.semanticweb.org/osnathakimi/ontologies/deb#Annealing</oops:AffectedElement>
+<oops:AffectedElement>http://www.semanticweb.org/osnathakimi/ontologies/deb#Crosslinking</oops:AffectedElement>
+<oops:AffectedElement>http://www.semanticweb.org/osnathakimi/ontologies/deb#AdverseEffects</oops:AffectedElement>
+<oops:AffectedElement>http://www.semanticweb.org/osnathakimi/ontologies/deb#StudyType</oops:AffectedElement>
+<oops:AffectedElement>http://www.semanticweb.org/osnathakimi/ontologies/deb#Sol-gel</oops:AffectedElement>
+<oops:AffectedElement>http://www.semanticweb.org/osnathakimi/ontologies/deb#Nanobiocomposite</oops:AffectedElement>
+<oops:AffectedElement>http://www.semanticweb.org/osnathakimi/ontologies/deb#SelfExpanding</oops:AffectedElement>
+<oops:AffectedElement>http://www.semanticweb.org/osnathakimi/ontologies/deb#Biofabrication</oops:AffectedElement>
+<oops:AffectedElement>http://www.semanticweb.org/osnathakimi/ontologies/deb#PCL</oops:AffectedElement>
+<oops:AffectedElement>http://www.semanticweb.org/osnathakimi/ontologies/deb#Casting</oops:AffectedElement>
+<oops:AffectedElement>http://www.semanticweb.org/osnathakimi/ontologies/deb#Macroporosity</oops:AffectedElement>
+<oops:AffectedElement>http://www.semanticweb.org/osnathakimi/ontologies/deb#Bioceramic</oops:AffectedElement>
+<oops:AffectedElement>http://www.semanticweb.org/osnathakimi/ontologies/deb#Polydopamine</oops:AffectedElement>
+<oops:AffectedElement>http://www.semanticweb.org/osnathakimi/ontologies/deb#ResearchTechnique</oops:AffectedElement>
+<oops:AffectedElement>http://www.semanticweb.org/osnathakimi/ontologies/deb#Anisotropy</oops:AffectedElement>
+<oops:AffectedElement>http://www.semanticweb.org/osnathakimi/ontologies/deb#Biomaterial</oops:AffectedElement>
+<oops:AffectedElement>http://www.semanticweb.org/osnathakimi/ontologies/deb#PhysicalProperty</oops:AffectedElement>
+<oops:AffectedElement>http://www.semanticweb.org/osnathakimi/ontologies/deb#Osteoconductivity</oops:AffectedElement>
+<oops:AffectedElement>http://www.semanticweb.org/osnathakimi/ontologies/deb#ImplantRejection</oops:AffectedElement>
+<oops:AffectedElement>http://www.semanticweb.org/osnathakimi/ontologies/deb#Vascularization</oops:AffectedElement>
+<oops:AffectedElement>http://www.semanticweb.org/osnathakimi/ontologies/deb#Porosity</oops:AffectedElement>
+<oops:AffectedElement>http://www.semanticweb.org/osnathakimi/ontologies/deb#BiologicallyActiveSubstance</oops:AffectedElement>
+<oops:AffectedElement>http://www.semanticweb.org/osnathakimi/ontologies/deb#Impregnating</oops:AffectedElement>
+<oops:AffectedElement>http://www.semanticweb.org/osnathakimi/ontologies/deb#DegradationFeatures</oops:AffectedElement>
+<oops:AffectedElement>http://www.semanticweb.org/osnathakimi/ontologies/deb#not_treated</oops:AffectedElement>
+<oops:AffectedElement>http://www.semanticweb.org/osnathakimi/ontologies/deb#nanoscale</oops:AffectedElement>
+<oops:AffectedElement>http://www.semanticweb.org/osnathakimi/ontologies/deb#funcionalized</oops:AffectedElement>
 </oops:Affects>
 </oops:Pitfall>
 <oops:Pitfall>
@@ -902,6 +914,66 @@
 <oops:NumberAffectedElements>1</oops:NumberAffectedElements>
 <oops:Affects>
 <oops:AffectedElement>http://www.semanticweb.org/osnathakimi/ontologies/deb#bioresorbable http://www.semanticweb.org/osnathakimi/ontologies/deb#biodegradable</oops:AffectedElement>
+</oops:Affects>
+</oops:Pitfall>
+<oops:Pitfall>
+<oops:Code>P30</oops:Code><oops:Name>Equivalent classes not explicitly declared</oops:Name>
+<oops:Description>This pitfall consists in missing the definition of equivalent classes (owl:equivalentClass) in case of duplicated concepts. When an ontology reuses terms from other ontologies, classes that have the same meaning should be defined as equivalent in order to benefit the interoperability between both ontologies.	</oops:Description>
+<oops:Importance>Important</oops:Importance>
+<oops:NumberAffectedElements>8</oops:NumberAffectedElements>
+<oops:Affects>
+<oops:MightBeEquivalentClass>
+<oops:AffectedElement>http://www.semanticweb.org/osnathakimi/ontologies/deb#Pin</oops:AffectedElement>
+<oops:AffectedElement>http://www.semanticweb.org/osnathakimi/ontologies/deb#PEG</oops:AffectedElement>
+</oops:MightBeEquivalentClass>
+<oops:MightBeEquivalentClass>
+<oops:AffectedElement>http://www.semanticweb.org/osnathakimi/ontologies/deb#Blending</oops:AffectedElement>
+<oops:AffectedElement>http://www.semanticweb.org/osnathakimi/ontologies/deb#Blend</oops:AffectedElement>
+</oops:MightBeEquivalentClass>
+<oops:MightBeEquivalentClass>
+<oops:AffectedElement>http://www.semanticweb.org/osnathakimi/ontologies/deb#Gelatin</oops:AffectedElement>
+<oops:AffectedElement>http://www.semanticweb.org/osnathakimi/ontologies/deb#Gel</oops:AffectedElement>
+</oops:MightBeEquivalentClass>
+<oops:MightBeEquivalentClass>
+<oops:AffectedElement>http://www.semanticweb.org/osnathakimi/ontologies/deb#Mesh</oops:AffectedElement>
+<oops:AffectedElement>http://www.semanticweb.org/osnathakimi/ontologies/deb#Network</oops:AffectedElement>
+</oops:MightBeEquivalentClass>
+<oops:MightBeEquivalentClass>
+<oops:AffectedElement>http://www.semanticweb.org/osnathakimi/ontologies/deb#Coating</oops:AffectedElement>
+<oops:AffectedElement>http://www.semanticweb.org/osnathakimi/ontologies/deb#Coat</oops:AffectedElement>
+</oops:MightBeEquivalentClass>
+<oops:MightBeEquivalentClass>
+<oops:AffectedElement>http://www.semanticweb.org/osnathakimi/ontologies/deb#Coil</oops:AffectedElement>
+<oops:AffectedElement>http://www.semanticweb.org/osnathakimi/ontologies/deb#Spiral</oops:AffectedElement>
+</oops:MightBeEquivalentClass>
+<oops:MightBeEquivalentClass>
+<oops:AffectedElement>http://www.semanticweb.org/osnathakimi/ontologies/deb#Metal</oops:AffectedElement>
+<oops:AffectedElement>http://www.semanticweb.org/osnathakimi/ontologies/deb#Alloy</oops:AffectedElement>
+</oops:MightBeEquivalentClass>
+<oops:MightBeEquivalentClass>
+<oops:AffectedElement>http://www.semanticweb.org/osnathakimi/ontologies/deb#Yarn</oops:AffectedElement>
+<oops:AffectedElement>http://www.semanticweb.org/osnathakimi/ontologies/deb#Thread</oops:AffectedElement>
+</oops:MightBeEquivalentClass>
+</oops:Affects>
+</oops:Pitfall>
+<oops:Pitfall>
+<oops:Code>P31</oops:Code><oops:Name>Defining wrong equivalent classes</oops:Name>
+<oops:Description>Two classes are defined as equivalent, using owl:equivalentClass, when they are not necessarily equivalent.	</oops:Description>
+<oops:Importance>Critical</oops:Importance>
+<oops:NumberAffectedElements>3</oops:NumberAffectedElements>
+<oops:Affects>
+<oops:MightNotBeEquivalentClass>
+<oops:AffectedElement>http://www.semanticweb.org/osnathakimi/ontologies/deb#UltimateStrength</oops:AffectedElement>
+<oops:AffectedElement>http://www.semanticweb.org/osnathakimi/ontologies/deb#UltimateTensileStrength</oops:AffectedElement>
+</oops:MightNotBeEquivalentClass>
+<oops:MightNotBeEquivalentClass>
+<oops:AffectedElement>http://www.semanticweb.org/osnathakimi/ontologies/deb#MaximumLoad</oops:AffectedElement>
+<oops:AffectedElement>http://www.semanticweb.org/osnathakimi/ontologies/deb#UltimateStrength</oops:AffectedElement>
+</oops:MightNotBeEquivalentClass>
+<oops:MightNotBeEquivalentClass>
+<oops:AffectedElement>http://www.semanticweb.org/osnathakimi/ontologies/deb#UltimateStrength</oops:AffectedElement>
+<oops:AffectedElement>http://www.semanticweb.org/osnathakimi/ontologies/deb#TensileStrength</oops:AffectedElement>
+</oops:MightNotBeEquivalentClass>
 </oops:Affects>
 </oops:Pitfall>
 </oops:OOPSResponse>

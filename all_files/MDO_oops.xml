@@ -14,7 +14,7 @@
 <oops:Code>P08</oops:Code><oops:Name>Missing annotations</oops:Name>
 <oops:Description>This pitfall consists in creating an ontology element and failing to provide human readable annotations attached to it. Consequently, ontology elements lack annotation properties that label them (e.g. rdfs:label, lemon:LexicalEntry, skos:prefLabel or skos:altLabel) or that define them (e.g. rdfs:comment or dc:description). This pitfall is related to the guidelines provided in [5].	</oops:Description>
 <oops:Importance>Minor</oops:Importance>
-<oops:NumberAffectedElements>13</oops:NumberAffectedElements>
+<oops:NumberAffectedElements>15</oops:NumberAffectedElements>
 <oops:Affects>
 <oops:AffectedElement>http://qudt.org/vocab/unit/Unit</oops:AffectedElement>
 <oops:AffectedElement>http://www.w3.org/ns/prov#Agent</oops:AffectedElement>
@@ -29,6 +29,8 @@
 <oops:AffectedElement>http://www.w3.org/ns/prov#wasAssociatedWith</oops:AffectedElement>
 <oops:AffectedElement>http://purl.obolibrary.org/obo/chebi/formula</oops:AffectedElement>
 <oops:AffectedElement>http://qudt.org/schema/qudt/numericalValue</oops:AffectedElement>
+<oops:AffectedElement>http://emmo.info/domains/emmo-material.owl#EMMO_4207e895_8b83_4318_996a_72cfb32acd94</oops:AffectedElement>
+<oops:AffectedElement>http://purl.obolibrary.org/obo/CHEBI_33250</oops:AffectedElement>
 </oops:Affects>
 </oops:Pitfall>
 <oops:Pitfall>
@@ -98,5 +100,11 @@
 <oops:AffectedElement>https://w3id.org/mdo/calculation/metaGeneralizedGradientApproximation</oops:AffectedElement>
 <oops:AffectedElement>http://qudt.org/vocab/unit/Unit</oops:AffectedElement>
 </oops:Affects>
+</oops:Pitfall>
+<oops:Pitfall>
+<oops:Code>P38</oops:Code><oops:Name>No OWL ontology declaration</oops:Name>
+<oops:Description>This pitfall consists in not declaring the owl:Ontology tag, which provides the ontology metadata. The owl:Ontology tag aims at gathering metadata about a given ontology such as version information, license, provenance, creation date, and so on. It is also used to declare the inclusion of other ontologies.	</oops:Description>
+<oops:Importance>Important</oops:Importance>
+<oops:NumberAffectedElements>1</oops:NumberAffectedElements>
 </oops:Pitfall>
 </oops:OOPSResponse>

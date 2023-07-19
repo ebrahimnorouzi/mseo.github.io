@@ -1,10 +1,185 @@
-<rdf:RDF
-xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-xmlns:oops="http://www.oeg-upm.net/oops#" > 
-<rdf:Description rdf:about="http://www.oeg-upm.net/oops/unexpected_error">
-    <oops:hasTitle rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OOPS! something went wrong.</oops:hasTitle>
-    <oops:hasMessage rdf:datatype="http://www.w3.org/2001/XMLSchema#string">If you have entered a URI make sure that it is available on-line using, for example, Vapour or Hyperthing.</oops:hasMessage>
-    <oops:hasMessage rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Make sure that your ontology RDF or OWL code is correct using an RDF validator as http://www.w3.org/RDF/Validator/ or an OWL validator as http://www.mygrid.org.uk/OWL/Validator.</oops:hasMessage>
-    <rdf:type rdf:resource="http://www.oeg-upm.net/oops#response"/>
-</rdf:Description>
-</rdf:RDF>
+<?xml version="1.0" encoding="UTF-8"?>
+<oops:OOPSResponse xmlns:oops="http://www.oeg-upm.net/oops">
+<oops:Pitfall>
+<oops:Code>P04</oops:Code><oops:Name>Creating unconnected ontology elements</oops:Name>
+<oops:Description>Ontology elements (classes, object properties and datatype properties) are created isolated, with no relation to the rest of the ontology.	</oops:Description>
+<oops:Importance>Minor</oops:Importance>
+<oops:NumberAffectedElements>4</oops:NumberAffectedElements>
+<oops:Affects>
+<oops:AffectedElement>https://www.niso.org/standards-committees/ssos/ssos01.owl#Standard</oops:AffectedElement>
+<oops:AffectedElement>https://www.niso.org/standards-committees/ssos/ssos01.owl#Standards_organization</oops:AffectedElement>
+<oops:AffectedElement>https://www.niso.org/standards-committees/ssos/ssos01.owl#Life_cycle_states</oops:AffectedElement>
+<oops:AffectedElement>https://www.niso.org/standards-committees/ssos/ssos01.owl#Reference</oops:AffectedElement>
+</oops:Affects>
+</oops:Pitfall>
+<oops:Pitfall>
+<oops:Code>P07</oops:Code><oops:Name>Merging different concepts in the same class</oops:Name>
+<oops:Description>A class whose name refers to two or more different concepts is created.	</oops:Description>
+<oops:Importance>Minor</oops:Importance>
+<oops:NumberAffectedElements>2</oops:NumberAffectedElements>
+<oops:Affects>
+<oops:AffectedElement>https://www.niso.org/standards-committees/ssos/ssos01.owl#External_comment_and_review</oops:AffectedElement>
+<oops:AffectedElement>https://www.niso.org/standards-committees/ssos/ssos01.owl#Production_and_publication</oops:AffectedElement>
+</oops:Affects>
+</oops:Pitfall>
+<oops:Pitfall>
+<oops:Code>P08</oops:Code><oops:Name>Missing annotations</oops:Name>
+<oops:Description>This pitfall consists in creating an ontology element and failing to provide human readable annotations attached to it. Consequently, ontology elements lack annotation properties that label them (e.g. rdfs:label, lemon:LexicalEntry, skos:prefLabel or skos:altLabel) or that define them (e.g. rdfs:comment or dc:description). This pitfall is related to the guidelines provided in [5].	</oops:Description>
+<oops:Importance>Minor</oops:Importance>
+<oops:NumberAffectedElements>65</oops:NumberAffectedElements>
+<oops:Affects>
+<oops:AffectedElement>https://www.niso.org/standards-committees/ssos/ssos01.owl#Deprecated_standard</oops:AffectedElement>
+<oops:AffectedElement>https://www.niso.org/standards-committees/ssos/ssos01.owl#Active_standard</oops:AffectedElement>
+<oops:AffectedElement>https://www.niso.org/standards-committees/ssos/ssos01.owl#Life_cycle_states</oops:AffectedElement>
+<oops:AffectedElement>https://www.niso.org/standards-committees/ssos/ssos01.owl#Inactive_standard</oops:AffectedElement>
+<oops:AffectedElement>https://www.niso.org/standards-committees/ssos/ssos01.owl#Drafting</oops:AffectedElement>
+<oops:AffectedElement>https://www.niso.org/standards-committees/ssos/ssos01.owl#Final_approval</oops:AffectedElement>
+<oops:AffectedElement>https://www.niso.org/standards-committees/ssos/ssos01.owl#Dated_reference</oops:AffectedElement>
+<oops:AffectedElement>https://www.niso.org/standards-committees/ssos/ssos01.owl#Pre-drafting</oops:AffectedElement>
+<oops:AffectedElement>https://www.niso.org/standards-committees/ssos/ssos01.owl#Production_and_publication</oops:AffectedElement>
+<oops:AffectedElement>https://www.niso.org/standards-committees/ssos/ssos01.owl#Standards_organization</oops:AffectedElement>
+<oops:AffectedElement>https://www.niso.org/standards-committees/ssos/ssos01.owl#Standard</oops:AffectedElement>
+<oops:AffectedElement>https://www.niso.org/standards-committees/ssos/ssos01.owl#Proposal</oops:AffectedElement>
+<oops:AffectedElement>https://www.niso.org/standards-committees/ssos/ssos01.owl#Undated_reference</oops:AffectedElement>
+<oops:AffectedElement>https://www.niso.org/standards-committees/ssos/ssos01.owl#Standard_reference</oops:AffectedElement>
+<oops:AffectedElement>https://www.niso.org/standards-committees/ssos/ssos01.owl#Superseded_standard</oops:AffectedElement>
+<oops:AffectedElement>https://www.niso.org/standards-committees/ssos/ssos01.owl#Pre-proposal</oops:AffectedElement>
+<oops:AffectedElement>https://www.niso.org/standards-committees/ssos/ssos01.owl#Informative_reference</oops:AffectedElement>
+<oops:AffectedElement>https://www.niso.org/standards-committees/ssos/ssos01.owl#Reference</oops:AffectedElement>
+<oops:AffectedElement>https://www.niso.org/standards-committees/ssos/ssos01.owl#Retired_standard</oops:AffectedElement>
+<oops:AffectedElement>https://www.niso.org/standards-committees/ssos/ssos01.owl#Superseding_standard</oops:AffectedElement>
+<oops:AffectedElement>https://www.niso.org/standards-committees/ssos/ssos01.owl#Normative_reference</oops:AffectedElement>
+<oops:AffectedElement>https://www.niso.org/standards-committees/ssos/ssos01.owl#External_comment_and_review</oops:AffectedElement>
+<oops:AffectedElement>https://www.niso.org/standards-committees/ssos/ssos01.owl#Canceled_project</oops:AffectedElement>
+<oops:AffectedElement>https://www.niso.org/standards-committees/ssos/ssos01.owl#Withdrawn_standard</oops:AffectedElement>
+<oops:AffectedElement>https://www.niso.org/standards-committees/ssos/ssos01.owl#In-development</oops:AffectedElement>
+<oops:AffectedElement>https://www.niso.org/standards-committees/ssos/ssos01.owl#Maintenance</oops:AffectedElement>
+<oops:AffectedElement>https://www.niso.org/standards-committees/ssos/ssos01.owl#Manifestation</oops:AffectedElement>
+<oops:AffectedElement>https://www.niso.org/standards-committees/ssos/ssos01.owl#hasLifeCycleState</oops:AffectedElement>
+<oops:AffectedElement>https://www.niso.org/standards-committees/ssos/ssos01.owl#consolidates/combines</oops:AffectedElement>
+<oops:AffectedElement>https://www.niso.org/standards-committees/ssos/ssos01.owl#stabilizedMaintenance</oops:AffectedElement>
+<oops:AffectedElement>https://www.niso.org/standards-committees/ssos/ssos01.owl#isTranslatedFrom</oops:AffectedElement>
+<oops:AffectedElement>https://www.niso.org/standards-committees/ssos/ssos01.owl#isModifiedAdoptionOf</oops:AffectedElement>
+<oops:AffectedElement>https://www.niso.org/standards-committees/ssos/ssos01.owl#supersedes</oops:AffectedElement>
+<oops:AffectedElement>https://www.niso.org/standards-committees/ssos/ssos01.owl#isIdenticalAdoptionOf</oops:AffectedElement>
+<oops:AffectedElement>https://www.niso.org/standards-committees/ssos/ssos01.owl#periodicMaintenance</oops:AffectedElement>
+<oops:AffectedElement>https://www.niso.org/standards-committees/ssos/ssos01.owl#isRevisedTo</oops:AffectedElement>
+<oops:AffectedElement>https://www.niso.org/standards-committees/ssos/ssos01.owl#isCorrectedBy</oops:AffectedElement>
+<oops:AffectedElement>https://www.niso.org/standards-committees/ssos/ssos01.owl#isExtendedBy</oops:AffectedElement>
+<oops:AffectedElement>https://www.niso.org/standards-committees/ssos/ssos01.owl#availableSince</oops:AffectedElement>
+<oops:AffectedElement>https://www.niso.org/standards-committees/ssos/ssos01.owl#isReaffirmedAs</oops:AffectedElement>
+<oops:AffectedElement>https://www.niso.org/standards-committees/ssos/ssos01.owl#hasMaintenanceType</oops:AffectedElement>
+<oops:AffectedElement>https://www.niso.org/standards-committees/ssos/ssos01.owl#isAdoptionOf</oops:AffectedElement>
+<oops:AffectedElement>https://www.niso.org/standards-committees/ssos/ssos01.owl#createNew</oops:AffectedElement>
+<oops:AffectedElement>https://www.niso.org/standards-committees/ssos/ssos01.owl#Partitioned/SeparatedFrom</oops:AffectedElement>
+<oops:AffectedElement>https://www.niso.org/standards-committees/ssos/ssos01.owl#continuousMaintenance</oops:AffectedElement>
+<oops:AffectedElement>https://www.niso.org/standards-committees/ssos/ssos01.owl#Keywords</oops:AffectedElement>
+<oops:AffectedElement>https://www.niso.org/standards-committees/ssos/ssos01.owl#Reaffirmed_Date</oops:AffectedElement>
+<oops:AffectedElement>https://www.niso.org/standards-committees/ssos/ssos01.owl#Subject</oops:AffectedElement>
+<oops:AffectedElement>https://www.niso.org/standards-committees/ssos/ssos01.owl#Source_language</oops:AffectedElement>
+<oops:AffectedElement>https://www.niso.org/standards-committees/ssos/ssos01.owl#ISBN</oops:AffectedElement>
+<oops:AffectedElement>https://www.niso.org/standards-committees/ssos/ssos01.owl#Full_Title</oops:AffectedElement>
+<oops:AffectedElement>https://www.niso.org/standards-committees/ssos/ssos01.owl#Release_Date</oops:AffectedElement>
+<oops:AffectedElement>https://www.niso.org/standards-committees/ssos/ssos01.owl#Classifications</oops:AffectedElement>
+<oops:AffectedElement>https://www.niso.org/standards-committees/ssos/ssos01.owl#Undated_designation</oops:AffectedElement>
+<oops:AffectedElement>https://www.niso.org/standards-committees/ssos/ssos01.owl#Product_code</oops:AffectedElement>
+<oops:AffectedElement>https://www.niso.org/standards-committees/ssos/ssos01.owl#Dated_designation</oops:AffectedElement>
+<oops:AffectedElement>https://www.niso.org/standards-committees/ssos/ssos01.owl#Language</oops:AffectedElement>
+<oops:AffectedElement>https://www.niso.org/standards-committees/ssos/ssos01.owl#Format</oops:AffectedElement>
+<oops:AffectedElement>https://www.niso.org/standards-committees/ssos/ssos01.owl#Projected_Release_Date</oops:AffectedElement>
+<oops:AffectedElement>https://www.niso.org/standards-committees/ssos/ssos01.owl#ID</oops:AffectedElement>
+<oops:AffectedElement>https://www.niso.org/standards-committees/ssos/ssos01.owl#Internal_ID</oops:AffectedElement>
+<oops:AffectedElement>https://www.niso.org/standards-committees/ssos/ssos01.owl#Approval_Year</oops:AffectedElement>
+<oops:AffectedElement>https://www.niso.org/standards-committees/ssos/ssos01.owl#DOI</oops:AffectedElement>
+<oops:AffectedElement>https://www.niso.org/standards-committees/ssos/ssos01.owl#Project_ID</oops:AffectedElement>
+<oops:AffectedElement>https://www.niso.org/standards-committees/ssos/ssos01.owl#ICS_Codes</oops:AffectedElement>
+</oops:Affects>
+</oops:Pitfall>
+<oops:Pitfall>
+<oops:Code>P11</oops:Code><oops:Name>Missing domain or range in properties</oops:Name>
+<oops:Description>Object and/or datatype properties without domain or range (or none of them) are included in the ontology. 	</oops:Description>
+<oops:Importance>Important</oops:Importance>
+<oops:NumberAffectedElements>34</oops:NumberAffectedElements>
+<oops:Affects>
+<oops:AffectedElement>https://www.niso.org/standards-committees/ssos/ssos01.owl#continuousMaintenance</oops:AffectedElement>
+<oops:AffectedElement>https://www.niso.org/standards-committees/ssos/ssos01.owl#Partitioned/SeparatedFrom</oops:AffectedElement>
+<oops:AffectedElement>https://www.niso.org/standards-committees/ssos/ssos01.owl#createNew</oops:AffectedElement>
+<oops:AffectedElement>https://www.niso.org/standards-committees/ssos/ssos01.owl#isAdoptionOf</oops:AffectedElement>
+<oops:AffectedElement>https://www.niso.org/standards-committees/ssos/ssos01.owl#hasMaintenanceType</oops:AffectedElement>
+<oops:AffectedElement>https://www.niso.org/standards-committees/ssos/ssos01.owl#isReaffirmedAs</oops:AffectedElement>
+<oops:AffectedElement>https://www.niso.org/standards-committees/ssos/ssos01.owl#availableSince</oops:AffectedElement>
+<oops:AffectedElement>https://www.niso.org/standards-committees/ssos/ssos01.owl#isExtendedBy</oops:AffectedElement>
+<oops:AffectedElement>https://www.niso.org/standards-committees/ssos/ssos01.owl#isCorrectedBy</oops:AffectedElement>
+<oops:AffectedElement>https://www.niso.org/standards-committees/ssos/ssos01.owl#isRevisedTo</oops:AffectedElement>
+<oops:AffectedElement>https://www.niso.org/standards-committees/ssos/ssos01.owl#periodicMaintenance</oops:AffectedElement>
+<oops:AffectedElement>https://www.niso.org/standards-committees/ssos/ssos01.owl#isIdenticalAdoptionOf</oops:AffectedElement>
+<oops:AffectedElement>https://www.niso.org/standards-committees/ssos/ssos01.owl#supersedes</oops:AffectedElement>
+<oops:AffectedElement>https://www.niso.org/standards-committees/ssos/ssos01.owl#isModifiedAdoptionOf</oops:AffectedElement>
+<oops:AffectedElement>https://www.niso.org/standards-committees/ssos/ssos01.owl#stabilizedMaintenance</oops:AffectedElement>
+<oops:AffectedElement>https://www.niso.org/standards-committees/ssos/ssos01.owl#consolidates/combines</oops:AffectedElement>
+<oops:AffectedElement>https://www.niso.org/standards-committees/ssos/ssos01.owl#hasLifeCycleState</oops:AffectedElement>
+<oops:AffectedElement>https://www.niso.org/standards-committees/ssos/ssos01.owl#ICS_Codes</oops:AffectedElement>
+<oops:AffectedElement>https://www.niso.org/standards-committees/ssos/ssos01.owl#Project_ID</oops:AffectedElement>
+<oops:AffectedElement>https://www.niso.org/standards-committees/ssos/ssos01.owl#DOI</oops:AffectedElement>
+<oops:AffectedElement>https://www.niso.org/standards-committees/ssos/ssos01.owl#Approval_Year</oops:AffectedElement>
+<oops:AffectedElement>https://www.niso.org/standards-committees/ssos/ssos01.owl#Internal_ID</oops:AffectedElement>
+<oops:AffectedElement>https://www.niso.org/standards-committees/ssos/ssos01.owl#ID</oops:AffectedElement>
+<oops:AffectedElement>https://www.niso.org/standards-committees/ssos/ssos01.owl#Projected_Release_Date</oops:AffectedElement>
+<oops:AffectedElement>https://www.niso.org/standards-committees/ssos/ssos01.owl#Format</oops:AffectedElement>
+<oops:AffectedElement>https://www.niso.org/standards-committees/ssos/ssos01.owl#Dated_designation</oops:AffectedElement>
+<oops:AffectedElement>https://www.niso.org/standards-committees/ssos/ssos01.owl#Product_code</oops:AffectedElement>
+<oops:AffectedElement>https://www.niso.org/standards-committees/ssos/ssos01.owl#Undated_designation</oops:AffectedElement>
+<oops:AffectedElement>https://www.niso.org/standards-committees/ssos/ssos01.owl#Classifications</oops:AffectedElement>
+<oops:AffectedElement>https://www.niso.org/standards-committees/ssos/ssos01.owl#Release_Date</oops:AffectedElement>
+<oops:AffectedElement>https://www.niso.org/standards-committees/ssos/ssos01.owl#Full_Title</oops:AffectedElement>
+<oops:AffectedElement>https://www.niso.org/standards-committees/ssos/ssos01.owl#Source_language</oops:AffectedElement>
+<oops:AffectedElement>https://www.niso.org/standards-committees/ssos/ssos01.owl#Subject</oops:AffectedElement>
+<oops:AffectedElement>https://www.niso.org/standards-committees/ssos/ssos01.owl#Keywords</oops:AffectedElement>
+</oops:Affects>
+</oops:Pitfall>
+<oops:Pitfall>
+<oops:Code>P13</oops:Code><oops:Name>Inverse relationships not explicitly declared</oops:Name>
+<oops:Description>This pitfall appears when any relationship (except for those that are defined as symmetric properties using owl:SymmetricProperty) does not have an inverse relationship (owl:inverseOf) defined within the ontology.	</oops:Description>
+<oops:Importance>Minor</oops:Importance>
+<oops:NumberAffectedElements>16</oops:NumberAffectedElements>
+<oops:Affects>
+<oops:NoInverseSuggestion>
+<oops:AffectedElement>https://www.niso.org/standards-committees/ssos/ssos01.owl#hasLifeCycleState</oops:AffectedElement>
+<oops:AffectedElement>https://www.niso.org/standards-committees/ssos/ssos01.owl#stabilizedMaintenance</oops:AffectedElement>
+<oops:AffectedElement>https://www.niso.org/standards-committees/ssos/ssos01.owl#isTranslatedFrom</oops:AffectedElement>
+<oops:AffectedElement>https://www.niso.org/standards-committees/ssos/ssos01.owl#isModifiedAdoptionOf</oops:AffectedElement>
+<oops:AffectedElement>https://www.niso.org/standards-committees/ssos/ssos01.owl#supersedes</oops:AffectedElement>
+<oops:AffectedElement>https://www.niso.org/standards-committees/ssos/ssos01.owl#isIdenticalAdoptionOf</oops:AffectedElement>
+<oops:AffectedElement>https://www.niso.org/standards-committees/ssos/ssos01.owl#periodicMaintenance</oops:AffectedElement>
+<oops:AffectedElement>https://www.niso.org/standards-committees/ssos/ssos01.owl#isRevisedTo</oops:AffectedElement>
+<oops:AffectedElement>https://www.niso.org/standards-committees/ssos/ssos01.owl#isCorrectedBy</oops:AffectedElement>
+<oops:AffectedElement>https://www.niso.org/standards-committees/ssos/ssos01.owl#isExtendedBy</oops:AffectedElement>
+<oops:AffectedElement>https://www.niso.org/standards-committees/ssos/ssos01.owl#availableSince</oops:AffectedElement>
+<oops:AffectedElement>https://www.niso.org/standards-committees/ssos/ssos01.owl#isReaffirmedAs</oops:AffectedElement>
+<oops:AffectedElement>https://www.niso.org/standards-committees/ssos/ssos01.owl#hasMaintenanceType</oops:AffectedElement>
+<oops:AffectedElement>https://www.niso.org/standards-committees/ssos/ssos01.owl#isAdoptionOf</oops:AffectedElement>
+<oops:AffectedElement>https://www.niso.org/standards-committees/ssos/ssos01.owl#createNew</oops:AffectedElement>
+<oops:AffectedElement>https://www.niso.org/standards-committees/ssos/ssos01.owl#continuousMaintenance</oops:AffectedElement>
+</oops:NoInverseSuggestion>
+</oops:Affects>
+</oops:Pitfall>
+<oops:Pitfall>
+<oops:Code>P19</oops:Code><oops:Name>Defining multiple domains or ranges in properties</oops:Name>
+<oops:Description>The domain or range (or both) of a property (relationships and attributes) is defined by stating more than one rdfs:domain or rdfs:range statements. In OWL multiple rdfs:domain or rdfs:range axioms are allowed, but they are interpreted as conjunction, being, therefore, equivalent to the construct owl:intersectionOf. This pitfall is related to the common error that appears when defining domains and ranges described in [7].	</oops:Description>
+<oops:Importance>Critical</oops:Importance>
+<oops:NumberAffectedElements>1</oops:NumberAffectedElements>
+<oops:Affects>
+<oops:AffectedElement>https://www.niso.org/standards-committees/ssos/ssos01.owl#hasLifeCycleState</oops:AffectedElement>
+</oops:Affects>
+</oops:Pitfall>
+<oops:Pitfall>
+<oops:Code>P22</oops:Code><oops:Name>Using different naming conventions in the ontology</oops:Name>
+<oops:Description>The ontology elements are not named following the same convention (for example CamelCase or use of delimiters as &quot;-&quot; or &quot;_&quot;) . Some notions about naming conventions are provided in [2].	</oops:Description>
+<oops:Importance>Minor</oops:Importance>
+<oops:NumberAffectedElements>1</oops:NumberAffectedElements>
+<oops:Affects>
+<oops:AffectedElement>https://www.niso.org/standards-committees/ssos/ssos01.owl#In-development</oops:AffectedElement>
+<oops:AffectedElement>https://www.niso.org/standards-committees/ssos/ssos01.owl#hasLifeCycleState</oops:AffectedElement>
+</oops:Affects>
+</oops:Pitfall>
+</oops:OOPSResponse>

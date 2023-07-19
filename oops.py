@@ -24,7 +24,7 @@ def oops(owl_file):
       <OntologyContent><![CDATA[
 %s      
 ]]></OntologyContent>
-          <Pitfalls>2,3,4,5,6,7,8,10,11,12,13,19,20,21,22,25,25,26,27,28,29</Pitfalls>
+          <Pitfalls></Pitfalls>
           <OutputFormat>XML</OutputFormat>
     </OOPSRequest>
 	""" % content).encode("UTF-8")
@@ -41,6 +41,7 @@ if __name__ == "__main__":
           filename = 'all_files/' + df_all['namespace'][index] + '.' + df_all['mirror_from'][index][-3:]
     
           out_dir = 'all_files/' + df_all['namespace'][index] + '_oops.xml'
+          print(filename)
           xml_data = oops(filename)
           # write file
           #print(xml_data)
