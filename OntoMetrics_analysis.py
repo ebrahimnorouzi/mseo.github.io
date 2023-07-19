@@ -144,3 +144,45 @@ df_metrics_table.drop(["metric_name"], axis=1, inplace=True)
 df_metrics_table.drop(["evaluation_criteria"], axis=1, inplace=True)
 df_metrics_table.transpose().to_latex("validation_metrics_table.tex")#, index=False)
 
+df_general_table = pd.read_csv("general_table.csv")
+
+empty_df = pd.DataFrame()
+
+# Define the list of dataframes to add
+for ontology in df_metrics_table.transpose().index:
+    if ontology in list(df_general_table["Short name"]):
+        
+        empty_df = empty_df.append(df_general_table[df_general_table["Short name"]==ontology], ignore_index=True)
+    else:
+        print(ontology)
+
+with pd.option_context("max_colwidth", 1000):
+    empty_df.to_latex("general.tex",
+                  column_format='m{5cm}m{2cm}m{5cm}m{2cm}m{2cm}m{2cm}m{2cm}m{2cm}m{2cm}',
+                  index=False, escape=False)
+
+# Load the dictionary from the file
+with open("dic_pitfalls.pkl", "rb") as f:
+    dic_pitfalls = pickle.load(f)
+
+empty_df = pd.DataFrame(columns=["Ontology name", "Critical", "Important", "Minor" ])
+for ontology in df_metrics_table.transpose().index:
+    if ontology in list(df_general_table["Short name"]):
+        try:
+            critical = dic_pitfalls[ontology]['Critical']
+            important = dic_pitfalls[ontology]['Important']
+            minor = dic_pitfalls[ontology]['Minor']
+            empty_df = empty_df.append({'Ontology name': ontology,
+                                        'Critical': 'no' if not critical else ', '.join([f"{item[0]}: {item[1]}" for item in critical]),
+                                        'Important': 'no' if not important else ', '.join([f"{item[0]}: {item[1]}" for item in important]),
+                                        'Minor': 'no' if not minor else ', '.join([f"{item[0]}: {item[1]}" for item in minor])}, ignore_index=True)
+        except:
+            empty_df = empty_df.append({'Ontology name': ontology,
+                                        'Critical': '-' ,
+                                        'Important': '-',
+                                        'Minor': '-' }, ignore_index=True)
+
+with pd.option_context("max_colwidth", 1000):
+    empty_df.to_latex("pitfalls.tex",
+                  column_format='m{5cm}m{3cm}m{3cm}m{3cm}',
+                  index=False, escape=False)
