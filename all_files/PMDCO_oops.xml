@@ -1,10 +1,298 @@
-<rdf:RDF
-xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-xmlns:oops="http://www.oeg-upm.net/oops#" > 
-<rdf:Description rdf:about="http://www.oeg-upm.net/oops/unexpected_error">
-    <oops:hasTitle rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OOPS! something went wrong.</oops:hasTitle>
-    <oops:hasMessage rdf:datatype="http://www.w3.org/2001/XMLSchema#string">If you have entered a URI make sure that it is available on-line using, for example, Vapour or Hyperthing.</oops:hasMessage>
-    <oops:hasMessage rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Make sure that your ontology RDF or OWL code is correct using an RDF validator as http://www.w3.org/RDF/Validator/ or an OWL validator as http://www.mygrid.org.uk/OWL/Validator.</oops:hasMessage>
-    <rdf:type rdf:resource="http://www.oeg-upm.net/oops#response"/>
-</rdf:Description>
-</rdf:RDF>
+<?xml version="1.0" encoding="UTF-8"?>
+<oops:OOPSResponse xmlns:oops="http://www.oeg-upm.net/oops">
+<oops:Pitfall>
+<oops:Code>P04</oops:Code><oops:Name>Creating unconnected ontology elements</oops:Name>
+<oops:Description>Ontology elements (classes, object properties and datatype properties) are created isolated, with no relation to the rest of the ontology.	</oops:Description>
+<oops:Importance>Minor</oops:Importance>
+<oops:NumberAffectedElements>1</oops:NumberAffectedElements>
+<oops:Affects>
+<oops:AffectedElement>http://qudt.org/schema/qudt/Unit</oops:AffectedElement>
+</oops:Affects>
+</oops:Pitfall>
+<oops:Pitfall>
+<oops:Code>P08</oops:Code><oops:Name>Missing annotations</oops:Name>
+<oops:Description>This pitfall consists in creating an ontology element and failing to provide human readable annotations attached to it. Consequently, ontology elements lack annotation properties that label them (e.g. rdfs:label, lemon:LexicalEntry, skos:prefLabel or skos:altLabel) or that define them (e.g. rdfs:comment or dc:description). This pitfall is related to the guidelines provided in [5].	</oops:Description>
+<oops:Importance>Minor</oops:Importance>
+<oops:NumberAffectedElements>44</oops:NumberAffectedElements>
+<oops:Affects>
+<oops:AffectedElement>https://w3id.org/pmd/co/Fraction</oops:AffectedElement>
+<oops:AffectedElement>http://qudt.org/schema/qudt/Unit</oops:AffectedElement>
+<oops:AffectedElement>http://www.w3.org/ns/oa#hasSource</oops:AffectedElement>
+<oops:AffectedElement>http://purl.org/dc/terms/isPartOf</oops:AffectedElement>
+<oops:AffectedElement>http://purl.org/spar/datacite/hasIdentifier</oops:AffectedElement>
+<oops:AffectedElement>http://www.w3.org/ns/oa#hasSelector</oops:AffectedElement>
+<oops:AffectedElement>https://w3id.org/pmd/co/belongsToProject</oops:AffectedElement>
+<oops:AffectedElement>https://w3id.org/pmd/co/ISO6892-1TensileTest</oops:AffectedElement>
+<oops:AffectedElement>http://www.w3.org/ns/oa#FragmentSelector</oops:AffectedElement>
+<oops:AffectedElement>https://w3id.org/pmd/co/LoadCellCapacity</oops:AffectedElement>
+<oops:AffectedElement>http://purl.org/spar/datacite/Identifier</oops:AffectedElement>
+<oops:AffectedElement>http://purl.obolibrary.org/obo/CHEBI_24431</oops:AffectedElement>
+<oops:AffectedElement>http://www.w3.org/ns/prov#Agent</oops:AffectedElement>
+<oops:AffectedElement>http://www.w3.org/ns/prov#Role</oops:AffectedElement>
+<oops:AffectedElement>http://www.w3.org/ns/prov#Collection</oops:AffectedElement>
+<oops:AffectedElement>http://www.w3.org/ns/prov#SoftwareAgent</oops:AffectedElement>
+<oops:AffectedElement>http://www.w3.org/ns/prov#Organization</oops:AffectedElement>
+<oops:AffectedElement>http://www.w3.org/ns/prov#EmptyCollection</oops:AffectedElement>
+<oops:AffectedElement>http://www.w3.org/ns/prov#Entity</oops:AffectedElement>
+<oops:AffectedElement>http://www.w3.org/ns/prov#Activity</oops:AffectedElement>
+<oops:AffectedElement>http://www.w3.org/ns/prov#Location</oops:AffectedElement>
+<oops:AffectedElement>http://www.w3.org/ns/prov#Person</oops:AffectedElement>
+<oops:AffectedElement>https://w3id.org/pmd/co/relatesToExtension</oops:AffectedElement>
+<oops:AffectedElement>https://w3id.org/pmd/co/characteristicOf</oops:AffectedElement>
+<oops:AffectedElement>https://w3id.org/pmd/co/relatesToElement</oops:AffectedElement>
+<oops:AffectedElement>https://w3id.org/pmd/co/characteristic</oops:AffectedElement>
+<oops:AffectedElement>https://w3id.org/pmd/co/state</oops:AffectedElement>
+<oops:AffectedElement>https://w3id.org/pmd/co/participantOf</oops:AffectedElement>
+<oops:AffectedElement>https://w3id.org/pmd/co/resource</oops:AffectedElement>
+<oops:AffectedElement>https://w3id.org/pmd/co/inputOf</oops:AffectedElement>
+<oops:AffectedElement>https://w3id.org/pmd/co/outputOf</oops:AffectedElement>
+<oops:AffectedElement>http://www.w3.org/ns/prov#generated</oops:AffectedElement>
+<oops:AffectedElement>http://www.w3.org/ns/prov#invalidated</oops:AffectedElement>
+<oops:AffectedElement>http://www.w3.org/ns/prov#influenced</oops:AffectedElement>
+<oops:AffectedElement>http://www.w3.org/ns/prov#wasInvalidatedBy</oops:AffectedElement>
+<oops:AffectedElement>http://www.w3.org/ns/prov#specializationOf</oops:AffectedElement>
+<oops:AffectedElement>http://www.w3.org/ns/prov#entity</oops:AffectedElement>
+<oops:AffectedElement>http://www.w3.org/ns/prov#alternateOf</oops:AffectedElement>
+<oops:AffectedElement>http://www.w3.org/ns/prov#activity</oops:AffectedElement>
+<oops:AffectedElement>http://www.w3.org/ns/prov#wasGeneratedBy</oops:AffectedElement>
+<oops:AffectedElement>http://www.w3.org/ns/prov#hadPrimarySource</oops:AffectedElement>
+<oops:AffectedElement>http://www.w3.org/ns/prov#hadMember</oops:AffectedElement>
+<oops:AffectedElement>http://www.w3.org/ns/prov#agent</oops:AffectedElement>
+<oops:AffectedElement>http://www.w3.org/ns/prov#value</oops:AffectedElement>
+</oops:Affects>
+</oops:Pitfall>
+<oops:Pitfall>
+<oops:Code>P11</oops:Code><oops:Name>Missing domain or range in properties</oops:Name>
+<oops:Description>Object and/or datatype properties without domain or range (or none of them) are included in the ontology. 	</oops:Description>
+<oops:Importance>Important</oops:Importance>
+<oops:NumberAffectedElements>25</oops:NumberAffectedElements>
+<oops:Affects>
+<oops:AffectedElement>http://www.w3.org/ns/prov#influenced</oops:AffectedElement>
+<oops:AffectedElement>https://w3id.org/pmd/co/outputOf</oops:AffectedElement>
+<oops:AffectedElement>https://w3id.org/pmd/co/unit</oops:AffectedElement>
+<oops:AffectedElement>https://w3id.org/pmd/co/output</oops:AffectedElement>
+<oops:AffectedElement>http://www.w3.org/ns/oa#hasSelector</oops:AffectedElement>
+<oops:AffectedElement>http://purl.org/spar/datacite/hasIdentifier</oops:AffectedElement>
+<oops:AffectedElement>https://w3id.org/pmd/co/inputOf</oops:AffectedElement>
+<oops:AffectedElement>https://w3id.org/pmd/co/resource</oops:AffectedElement>
+<oops:AffectedElement>https://w3id.org/pmd/co/superordinateProcess</oops:AffectedElement>
+<oops:AffectedElement>https://w3id.org/pmd/co/participantOf</oops:AffectedElement>
+<oops:AffectedElement>https://w3id.org/pmd/co/state</oops:AffectedElement>
+<oops:AffectedElement>http://purl.org/dc/terms/isPartOf</oops:AffectedElement>
+<oops:AffectedElement>https://w3id.org/pmd/co/relatesTo</oops:AffectedElement>
+<oops:AffectedElement>https://w3id.org/pmd/co/composedOf</oops:AffectedElement>
+<oops:AffectedElement>http://www.w3.org/ns/oa#hasSource</oops:AffectedElement>
+<oops:AffectedElement>https://w3id.org/pmd/co/input</oops:AffectedElement>
+<oops:AffectedElement>https://w3id.org/pmd/co/characteristicOf</oops:AffectedElement>
+<oops:AffectedElement>http://www.w3.org/ns/prov#value</oops:AffectedElement>
+<oops:AffectedElement>https://w3id.org/pmd/co/fromValue</oops:AffectedElement>
+<oops:AffectedElement>https://w3id.org/pmd/co/toValue</oops:AffectedElement>
+<oops:AffectedElement>https://w3id.org/pmd/co/fragmentPath</oops:AffectedElement>
+<oops:AffectedElement>https://w3id.org/pmd/co/jsonPath</oops:AffectedElement>
+<oops:AffectedElement>https://w3id.org/pmd/co/maxValue</oops:AffectedElement>
+<oops:AffectedElement>https://w3id.org/pmd/co/minValue</oops:AffectedElement>
+<oops:AffectedElement>https://w3id.org/pmd/co/xPath</oops:AffectedElement>
+</oops:Affects>
+</oops:Pitfall>
+<oops:Pitfall>
+<oops:Code>P12</oops:Code><oops:Name>Equivalent properties not explicitly declared</oops:Name>
+<oops:Description>The ontology lacks information about equivalent properties (owl:equivalentProperty) in the cases of duplicated relationships and/or attributes.	</oops:Description>
+<oops:Importance>Important</oops:Importance>
+<oops:NumberAffectedElements>1</oops:NumberAffectedElements>
+<oops:Affects>
+<oops:MightBeEquivalentAttribute>
+<oops:AffectedElement>http://www.w3.org/ns/prov#value</oops:AffectedElement>
+<oops:AffectedElement>https://w3id.org/pmd/co/value</oops:AffectedElement>
+</oops:MightBeEquivalentAttribute>
+</oops:Affects>
+</oops:Pitfall>
+<oops:Pitfall>
+<oops:Code>P13</oops:Code><oops:Name>Inverse relationships not explicitly declared</oops:Name>
+<oops:Description>This pitfall appears when any relationship (except for those that are defined as symmetric properties using owl:SymmetricProperty) does not have an inverse relationship (owl:inverseOf) defined within the ontology.	</oops:Description>
+<oops:Importance>Minor</oops:Importance>
+<oops:NumberAffectedElements>9</oops:NumberAffectedElements>
+<oops:Affects>
+<oops:NoInverseSuggestion>
+<oops:AffectedElement>https://w3id.org/pmd/co/relatesToExtension</oops:AffectedElement>
+<oops:AffectedElement>https://w3id.org/pmd/co/relatesToElement</oops:AffectedElement>
+<oops:AffectedElement>http://www.w3.org/ns/oa#hasSource</oops:AffectedElement>
+<oops:AffectedElement>https://w3id.org/pmd/co/relatesTo</oops:AffectedElement>
+<oops:AffectedElement>https://w3id.org/pmd/co/state</oops:AffectedElement>
+<oops:AffectedElement>https://w3id.org/pmd/co/resource</oops:AffectedElement>
+<oops:AffectedElement>https://w3id.org/pmd/co/component</oops:AffectedElement>
+<oops:AffectedElement>http://www.w3.org/ns/oa#hasSelector</oops:AffectedElement>
+<oops:AffectedElement>https://w3id.org/pmd/co/unit</oops:AffectedElement>
+</oops:NoInverseSuggestion>
+</oops:Affects>
+</oops:Pitfall>
+<oops:Pitfall>
+<oops:Code>P19</oops:Code><oops:Name>Defining multiple domains or ranges in properties</oops:Name>
+<oops:Description>The domain or range (or both) of a property (relationships and attributes) is defined by stating more than one rdfs:domain or rdfs:range statements. In OWL multiple rdfs:domain or rdfs:range axioms are allowed, but they are interpreted as conjunction, being, therefore, equivalent to the construct owl:intersectionOf. This pitfall is related to the common error that appears when defining domains and ranges described in [7].	</oops:Description>
+<oops:Importance>Critical</oops:Importance>
+<oops:NumberAffectedElements>2</oops:NumberAffectedElements>
+<oops:Affects>
+<oops:AffectedElement>http://www.w3.org/ns/prov#hadActivity</oops:AffectedElement>
+<oops:AffectedElement>http://www.w3.org/ns/prov#hadRole</oops:AffectedElement>
+</oops:Affects>
+</oops:Pitfall>
+<oops:Pitfall>
+<oops:Code>P22</oops:Code><oops:Name>Using different naming conventions in the ontology</oops:Name>
+<oops:Description>The ontology elements are not named following the same convention (for example CamelCase or use of delimiters as &quot;-&quot; or &quot;_&quot;) . Some notions about naming conventions are provided in [2].	</oops:Description>
+<oops:Importance>Minor</oops:Importance>
+<oops:NumberAffectedElements>1</oops:NumberAffectedElements>
+<oops:Affects>
+<oops:AffectedElement>https://w3id.org/pmd/co/ISO6892-1TensileTest</oops:AffectedElement>
+<oops:AffectedElement>https://w3id.org/pmd/co/GeometryShape</oops:AffectedElement>
+</oops:Affects>
+</oops:Pitfall>
+<oops:Pitfall>
+<oops:Code>P24</oops:Code><oops:Name>Using recursive definitions</oops:Name>
+<oops:Description>An ontology element (a class, an object property or a datatype property) is used in its own definition. Some examples of this would be: (a) the definition of a class as the enumeration of several classes including itself;  (b) the appearance of a class within its owl:equivalentClass or rdfs:subClassOf axioms; (c) the appearance of an object property in its rdfs:domain or range rdfs:range definitions; or (d) the appearance of a datatype property in its rdfs:domain definition.	</oops:Description>
+<oops:Importance>Important</oops:Importance>
+<oops:NumberAffectedElements>1</oops:NumberAffectedElements>
+<oops:Affects>
+<oops:AffectedElement>http://www.w3.org/ns/prov#alternateOf</oops:AffectedElement>
+</oops:Affects>
+</oops:Pitfall>
+<oops:Pitfall>
+<oops:Code>P25</oops:Code><oops:Name>Defining a relationship as inverse to itself</oops:Name>
+<oops:Description>A relationship is defined as inverse of itself. In this case, this relationship could have been defined as owl:SymmetricProperty instead.	</oops:Description>
+<oops:Importance>Important</oops:Importance>
+<oops:NumberAffectedElements>1</oops:NumberAffectedElements>
+<oops:Affects>
+<oops:AffectedElement>http://www.w3.org/ns/prov#alternateOf</oops:AffectedElement>
+</oops:Affects>
+</oops:Pitfall>
+<oops:Pitfall>
+<oops:Code>P30</oops:Code><oops:Name>Equivalent classes not explicitly declared</oops:Name>
+<oops:Description>This pitfall consists in missing the definition of equivalent classes (owl:equivalentClass) in case of duplicated concepts. When an ontology reuses terms from other ontologies, classes that have the same meaning should be defined as equivalent in order to benefit the interoperability between both ontologies.	</oops:Description>
+<oops:Importance>Important</oops:Importance>
+<oops:NumberAffectedElements>2</oops:NumberAffectedElements>
+<oops:Affects>
+<oops:MightBeEquivalentClass>
+<oops:AffectedElement>https://w3id.org/pmd/co/Distance</oops:AffectedElement>
+<oops:AffectedElement>https://w3id.org/pmd/co/Length</oops:AffectedElement>
+<oops:AffectedElement>https://w3id.org/pmd/co/Duration</oops:AffectedElement>
+</oops:MightBeEquivalentClass>
+<oops:MightBeEquivalentClass>
+<oops:AffectedElement>https://w3id.org/pmd/co/Extension</oops:AffectedElement>
+<oops:AffectedElement>https://w3id.org/pmd/co/Elongation</oops:AffectedElement>
+</oops:MightBeEquivalentClass>
+</oops:Affects>
+</oops:Pitfall>
+<oops:Pitfall>
+<oops:Code>P32</oops:Code><oops:Name>Several classes with the same label</oops:Name>
+<oops:Description>Two or more classes have the same content for natural language annotations for naming, for example the rdfs:label annotation. This pitfall might involve lack of accuracy when defining terms.	</oops:Description>
+<oops:Importance>Minor</oops:Importance>
+<oops:NumberAffectedElements>2</oops:NumberAffectedElements>
+<oops:Affects>
+<oops:HaveSameLabel>
+<oops:AffectedElement>https://w3id.org/pmd/co/Rp02</oops:AffectedElement>
+<oops:AffectedElement>https://w3id.org/pmd/co/Rp01</oops:AffectedElement>
+</oops:HaveSameLabel>
+<oops:HaveSameLabel>
+<oops:AffectedElement>http://w3id.org/DMI/DigitalMaterialIdentifier</oops:AffectedElement>
+<oops:AffectedElement>https://w3id.org/pmd/co/DigitalMaterialIdentifier</oops:AffectedElement>
+</oops:HaveSameLabel>
+</oops:Affects>
+</oops:Pitfall>
+<oops:Pitfall>
+<oops:Code>P34</oops:Code><oops:Name>Untyped class</oops:Name>
+<oops:Description>An ontology element is used as a class without having been explicitly declared as such using the primitives owl:Class or rdfs:Class. This pitfall is related with the common problems listed in [8].	</oops:Description>
+<oops:Importance>Important</oops:Importance>
+<oops:NumberAffectedElements>9</oops:NumberAffectedElements>
+<oops:Affects>
+<oops:AffectedElement>http://www.w3.org/2003/11/swrl#ClassAtom</oops:AffectedElement>
+<oops:AffectedElement>http://www.w3.org/2003/11/swrl#Variable</oops:AffectedElement>
+<oops:AffectedElement>http://www.w3.org/2003/11/swrl#Imp</oops:AffectedElement>
+<oops:AffectedElement>http://www.w3.org/2003/11/swrl#IndividualPropertyAtom</oops:AffectedElement>
+<oops:AffectedElement>http://www.w3.org/2003/11/swrl#BuiltinAtom</oops:AffectedElement>
+<oops:AffectedElement>http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom</oops:AffectedElement>
+<oops:AffectedElement>http://www.w3.org/2003/11/swrl#Builtin</oops:AffectedElement>
+<oops:AffectedElement>fbcf0153c5fed8bd4b4567da810eb81f</oops:AffectedElement>
+<oops:AffectedElement>3146216c94ef3045bcac964eef4302cf</oops:AffectedElement>
+<oops:AffectedElement>http://www.w3.org/2003/11/swrl#ClassAtom</oops:AffectedElement>
+<oops:AffectedElement>http://www.w3.org/2003/11/swrl#Variable</oops:AffectedElement>
+<oops:AffectedElement>http://www.w3.org/2003/11/swrl#Imp</oops:AffectedElement>
+<oops:AffectedElement>http://www.w3.org/2003/11/swrl#IndividualPropertyAtom</oops:AffectedElement>
+<oops:AffectedElement>http://www.w3.org/2003/11/swrl#BuiltinAtom</oops:AffectedElement>
+<oops:AffectedElement>http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom</oops:AffectedElement>
+<oops:AffectedElement>http://www.w3.org/2003/11/swrl#Builtin</oops:AffectedElement>
+</oops:Affects>
+</oops:Pitfall>
+<oops:Pitfall>
+<oops:Code>P35</oops:Code><oops:Name>Untyped property</oops:Name>
+<oops:Description>An ontology element is used as a property without having been explicitly declared as such using the primitives rdf:Property, owl:ObjectProperty or owl:DatatypeProperty. This pitfall is related with the common problems listed in [8].	</oops:Description>
+<oops:Importance>Important</oops:Importance>
+<oops:NumberAffectedElements>37</oops:NumberAffectedElements>
+<oops:Affects>
+<oops:AffectedElement>http://www.w3.org/ns/prov#wasUsedBy</oops:AffectedElement>
+<oops:AffectedElement>http://www.w3.org/ns/prov#hadDerivation</oops:AffectedElement>
+<oops:AffectedElement>http://www.w3.org/ns/prov#qualifiedInfluenceOf</oops:AffectedElement>
+<oops:AffectedElement>http://www.w3.org/ns/prov#hadRevision</oops:AffectedElement>
+<oops:AffectedElement>http://www.w3.org/ns/prov#wasRoleIn</oops:AffectedElement>
+<oops:AffectedElement>http://www.w3.org/ns/prov#qualifiedDerivationOf</oops:AffectedElement>
+<oops:AffectedElement>http://www.w3.org/ns/prov#started</oops:AffectedElement>
+<oops:AffectedElement>http://www.w3.org/ns/prov#wasPrimarySourceOf</oops:AffectedElement>
+<oops:AffectedElement>http://www.w3.org/ns/prov#revisedEntity</oops:AffectedElement>
+<oops:AffectedElement>http://www.w3.org/ns/prov#wasPlanOf</oops:AffectedElement>
+<oops:AffectedElement>http://www.w3.org/ns/prov#qualifiedAttributionOf</oops:AffectedElement>
+<oops:AffectedElement>http://www.w3.org/ns/prov#informed</oops:AffectedElement>
+<oops:AffectedElement>http://www.w3.org/ns/prov#contributed</oops:AffectedElement>
+<oops:AffectedElement>http://www.w3.org/ns/prov#qualifiedSourceOf</oops:AffectedElement>
+<oops:AffectedElement>http://www.w3.org/ns/prov#entityOfInfluence</oops:AffectedElement>
+<oops:AffectedElement>http://www.w3.org/ns/prov#wasUsedInDerivation</oops:AffectedElement>
+<oops:AffectedElement>http://www.w3.org/ns/prov#activityOfInfluence</oops:AffectedElement>
+<oops:AffectedElement>http://www.w3.org/ns/prov#wasAssociateFor</oops:AffectedElement>
+<oops:AffectedElement>http://www.w3.org/ns/prov#locationOf</oops:AffectedElement>
+<oops:AffectedElement>http://www.w3.org/ns/prov#qualifiedQuotationOf</oops:AffectedElement>
+<oops:AffectedElement>http://www.w3.org/ns/prov#qualifiedInvalidationOf</oops:AffectedElement>
+<oops:AffectedElement>http://www.w3.org/ns/prov#hadDelegate</oops:AffectedElement>
+<oops:AffectedElement>http://www.w3.org/ns/prov#qualifiedGenerationOf</oops:AffectedElement>
+<oops:AffectedElement>http://www.w3.org/ns/prov#ended</oops:AffectedElement>
+<oops:AffectedElement>http://www.w3.org/ns/prov#agentOfInfluence</oops:AffectedElement>
+<oops:AffectedElement>http://www.w3.org/ns/prov#qualifiedAssociationOf</oops:AffectedElement>
+<oops:AffectedElement>http://www.w3.org/ns/prov#generalizationOf</oops:AffectedElement>
+<oops:AffectedElement>http://www.w3.org/ns/prov#qualifiedDelegationOf</oops:AffectedElement>
+<oops:AffectedElement>http://www.w3.org/ns/prov#wasActivityOfInfluence</oops:AffectedElement>
+<oops:AffectedElement>http://www.w3.org/ns/prov#qualifiedUsingActivity</oops:AffectedElement>
+<oops:AffectedElement>http://www.w3.org/ns/prov#qualifiedEndOf</oops:AffectedElement>
+<oops:AffectedElement>http://www.w3.org/ns/prov#generatedAsDerivation</oops:AffectedElement>
+<oops:AffectedElement>http://www.w3.org/ns/prov#wasMemberOf</oops:AffectedElement>
+<oops:AffectedElement>http://www.w3.org/ns/prov#qualifiedCommunicationOf</oops:AffectedElement>
+<oops:AffectedElement>http://www.w3.org/ns/prov#hadInfluence</oops:AffectedElement>
+<oops:AffectedElement>http://www.w3.org/ns/prov#qualifiedStartOf</oops:AffectedElement>
+<oops:AffectedElement>http://www.w3.org/ns/prov#quotedAs</oops:AffectedElement>
+</oops:Affects>
+</oops:Pitfall>
+<oops:Pitfall>
+<oops:Code>P36</oops:Code><oops:Name>URI contains file extension</oops:Name>
+<oops:Description>This pitfall occurs if file extensions such as &quot;.owl&quot;, &quot;.rdf&quot;, &quot;.ttl&quot;, &quot;.n3&quot; and &quot;.rdfxml&quot; are included in an ontology URI. This pitfall is related with the recommendations provided in [9].	</oops:Description>
+<oops:Importance>Minor</oops:Importance>
+<oops:NumberAffectedElements>1</oops:NumberAffectedElements>
+<oops:Affects>
+<oops:AffectedElement>https://raw.githubusercontent.com/materialdigital/core-ontology/main/pmd_tto.ttl</oops:AffectedElement>
+</oops:Affects>
+</oops:Pitfall>
+<oops:Suggestion>
+<oops:Name>SUGGESTION: symmetric or transitive object properties.</oops:Name>
+<oops:Description>The domain and range axioms are equal for each of the following object properties. Could they be symmetric or transitive?</oops:Description>
+<oops:NumberAffectedElements>14</oops:NumberAffectedElements>
+<oops:Affects>
+<oops:AffectedElement>https://w3id.org/pmd/co/subordinateProcess</oops:AffectedElement>
+<oops:AffectedElement>https://w3id.org/pmd/co/previousProcess</oops:AffectedElement>
+<oops:AffectedElement>https://w3id.org/pmd/co/nextProcess</oops:AffectedElement>
+<oops:AffectedElement>https://w3id.org/pmd/co/composes</oops:AffectedElement>
+<oops:AffectedElement>https://w3id.org/pmd/co/component</oops:AffectedElement>
+<oops:AffectedElement>http://www.w3.org/ns/prov#specializationOf</oops:AffectedElement>
+<oops:AffectedElement>http://www.w3.org/ns/prov#alternateOf</oops:AffectedElement>
+<oops:AffectedElement>http://www.w3.org/ns/prov#wasQuotedFrom</oops:AffectedElement>
+<oops:AffectedElement>http://www.w3.org/ns/prov#wasInformedBy</oops:AffectedElement>
+<oops:AffectedElement>http://www.w3.org/ns/prov#hadPrimarySource</oops:AffectedElement>
+<oops:AffectedElement>http://www.w3.org/ns/prov#wasDerivedFrom</oops:AffectedElement>
+<oops:AffectedElement>http://www.w3.org/ns/prov#actedOnBehalfOf</oops:AffectedElement>
+<oops:AffectedElement>http://www.w3.org/ns/prov#wasInfluencedBy</oops:AffectedElement>
+<oops:AffectedElement>http://www.w3.org/ns/prov#wasRevisionOf</oops:AffectedElement>
+</oops:Affects>
+</oops:Suggestion>
+</oops:OOPSResponse>

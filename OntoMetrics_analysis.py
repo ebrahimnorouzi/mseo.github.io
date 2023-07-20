@@ -173,10 +173,10 @@ for ontology in df_metrics_table.transpose().index:
             important = dic_pitfalls[ontology]['Important']
             minor = dic_pitfalls[ontology]['Minor']
             empty_df = empty_df.append({'Ontology name': ontology,
-                                        'Critical': 'no' if not critical else ', '.join([f"{item[0]}: {item[1]}" for item in critical]),
-                                        'Important': 'no' if not important else ', '.join([f"{item[0]}: {item[1]}" for item in important]),
-                                        'Minor': 'no' if not minor else ', '.join([f"{item[0]}: {item[1]}" for item in minor])}, ignore_index=True)
-        except KeyError as e:
+                                        'Critical': '-' if not critical else ', '.join([f"{item[0]}: {item[1]}" for item in critical]),
+                                        'Important': '-' if not important else ', '.join([f"{item[0]}: {item[1]}" for item in important]),
+                                        'Minor': '-' if not minor else ', '.join([f"{item[0]}: {item[1]}" for item in minor])}, ignore_index=True)
+        except:
             empty_df = empty_df.append({'Ontology name': ontology,
                                         'Critical': '-' ,
                                         'Important': '-',
