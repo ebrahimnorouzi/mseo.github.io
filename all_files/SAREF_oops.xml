@@ -1,10 +1,90 @@
-<rdf:RDF
-xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-xmlns:oops="http://www.oeg-upm.net/oops#" > 
-<rdf:Description rdf:about="http://www.oeg-upm.net/oops/unexpected_error">
-    <oops:hasTitle rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OOPS! something went wrong.</oops:hasTitle>
-    <oops:hasMessage rdf:datatype="http://www.w3.org/2001/XMLSchema#string">If you have entered a URI make sure that it is available on-line using, for example, Vapour or Hyperthing.</oops:hasMessage>
-    <oops:hasMessage rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Make sure that your ontology RDF or OWL code is correct using an RDF validator as http://www.w3.org/RDF/Validator/ or an OWL validator as http://www.mygrid.org.uk/OWL/Validator.</oops:hasMessage>
-    <rdf:type rdf:resource="http://www.oeg-upm.net/oops#response"/>
-</rdf:Description>
-</rdf:RDF>
+<?xml version="1.0" encoding="UTF-8"?>
+<oops:OOPSResponse xmlns:oops="http://www.oeg-upm.net/oops">
+<oops:Pitfall>
+<oops:Code>P11</oops:Code><oops:Name>Missing domain or range in properties</oops:Name>
+<oops:Description>Object and/or datatype properties without domain or range (or none of them) are included in the ontology. 	</oops:Description>
+<oops:Importance>Important</oops:Importance>
+<oops:NumberAffectedElements>12</oops:NumberAffectedElements>
+<oops:Affects>
+<oops:AffectedElement>https://saref.etsi.org/core/isUsedFor</oops:AffectedElement>
+<oops:AffectedElement>https://saref.etsi.org/core/isAbout</oops:AffectedElement>
+<oops:AffectedElement>https://saref.etsi.org/core/hasTypicalConsumption</oops:AffectedElement>
+<oops:AffectedElement>https://saref.etsi.org/core/isAccomplishedBy</oops:AffectedElement>
+<oops:AffectedElement>https://saref.etsi.org/core/consistsOf</oops:AffectedElement>
+<oops:AffectedElement>https://saref.etsi.org/core/hasPrice</oops:AffectedElement>
+<oops:AffectedElement>https://saref.etsi.org/core/accomplishes</oops:AffectedElement>
+<oops:AffectedElement>https://saref.etsi.org/core/hasTime</oops:AffectedElement>
+<oops:AffectedElement>https://saref.etsi.org/core/hasValue</oops:AffectedElement>
+<oops:AffectedElement>https://saref.etsi.org/core/hasManufacturer</oops:AffectedElement>
+<oops:AffectedElement>https://saref.etsi.org/core/hasModel</oops:AffectedElement>
+<oops:AffectedElement>https://saref.etsi.org/core/hasTimestamp</oops:AffectedElement>
+</oops:Affects>
+</oops:Pitfall>
+<oops:Pitfall>
+<oops:Code>P13</oops:Code><oops:Name>Inverse relationships not explicitly declared</oops:Name>
+<oops:Description>This pitfall appears when any relationship (except for those that are defined as symmetric properties using owl:SymmetricProperty) does not have an inverse relationship (owl:inverseOf) defined within the ontology.	</oops:Description>
+<oops:Importance>Minor</oops:Importance>
+<oops:NumberAffectedElements>22</oops:NumberAffectedElements>
+<oops:Affects>
+<oops:MightBeInverse>
+<oops:AffectedElement>https://saref.etsi.org/core/isControlledByDevice</oops:AffectedElement>
+<oops:AffectedElement>https://saref.etsi.org/core/measuresProperty</oops:AffectedElement>
+</oops:MightBeInverse>
+<oops:MightBeInverse>
+<oops:AffectedElement>https://saref.etsi.org/core/isMeasuredByDevice</oops:AffectedElement>
+<oops:AffectedElement>https://saref.etsi.org/core/measuresProperty</oops:AffectedElement>
+</oops:MightBeInverse>
+<oops:NoInverseSuggestion>
+<oops:AffectedElement>https://saref.etsi.org/core/actsUpon</oops:AffectedElement>
+<oops:AffectedElement>https://saref.etsi.org/core/hasTime</oops:AffectedElement>
+<oops:AffectedElement>https://saref.etsi.org/core/isMeasuredIn</oops:AffectedElement>
+<oops:AffectedElement>https://saref.etsi.org/core/hasProfile</oops:AffectedElement>
+<oops:AffectedElement>https://saref.etsi.org/core/hasPrice</oops:AffectedElement>
+<oops:AffectedElement>https://saref.etsi.org/core/consistsOf</oops:AffectedElement>
+<oops:AffectedElement>https://saref.etsi.org/core/hasMeterReading</oops:AffectedElement>
+<oops:AffectedElement>https://saref.etsi.org/core/hasMeterReadingType</oops:AffectedElement>
+<oops:AffectedElement>https://saref.etsi.org/core/hasState</oops:AffectedElement>
+<oops:AffectedElement>https://saref.etsi.org/core/represents</oops:AffectedElement>
+<oops:AffectedElement>https://saref.etsi.org/core/hasTypicalConsumption</oops:AffectedElement>
+<oops:AffectedElement>https://saref.etsi.org/core/hasFunction</oops:AffectedElement>
+<oops:AffectedElement>https://saref.etsi.org/core/isAbout</oops:AffectedElement>
+<oops:AffectedElement>https://saref.etsi.org/core/hasSensorType</oops:AffectedElement>
+<oops:AffectedElement>https://saref.etsi.org/core/hasSensingRange</oops:AffectedElement>
+<oops:AffectedElement>https://saref.etsi.org/core/isUsedFor</oops:AffectedElement>
+<oops:AffectedElement>https://saref.etsi.org/core/hasThresholdMeasurement</oops:AffectedElement>
+<oops:AffectedElement>https://saref.etsi.org/core/controlsProperty</oops:AffectedElement>
+</oops:NoInverseSuggestion>
+</oops:Affects>
+</oops:Pitfall>
+<oops:Pitfall>
+<oops:Code>P24</oops:Code><oops:Name>Using recursive definitions</oops:Name>
+<oops:Description>An ontology element (a class, an object property or a datatype property) is used in its own definition. Some examples of this would be: (a) the definition of a class as the enumeration of several classes including itself;  (b) the appearance of a class within its owl:equivalentClass or rdfs:subClassOf axioms; (c) the appearance of an object property in its rdfs:domain or range rdfs:range definitions; or (d) the appearance of a datatype property in its rdfs:domain definition.	</oops:Description>
+<oops:Importance>Important</oops:Importance>
+<oops:NumberAffectedElements>2</oops:NumberAffectedElements>
+<oops:Affects>
+<oops:AffectedElement>https://saref.etsi.org/core/Profile</oops:AffectedElement>
+<oops:AffectedElement>https://saref.etsi.org/core/Device</oops:AffectedElement>
+</oops:Affects>
+</oops:Pitfall>
+<oops:Pitfall>
+<oops:Code>P30</oops:Code><oops:Name>Equivalent classes not explicitly declared</oops:Name>
+<oops:Description>This pitfall consists in missing the definition of equivalent classes (owl:equivalentClass) in case of duplicated concepts. When an ontology reuses terms from other ontologies, classes that have the same meaning should be defined as equivalent in order to benefit the interoperability between both ontologies.	</oops:Description>
+<oops:Importance>Important</oops:Importance>
+<oops:NumberAffectedElements>1</oops:NumberAffectedElements>
+<oops:Affects>
+<oops:MightBeEquivalentClass>
+<oops:AffectedElement>https://saref.etsi.org/core/Time</oops:AffectedElement>
+<oops:AffectedElement>https://saref.etsi.org/core/Meter</oops:AffectedElement>
+</oops:MightBeEquivalentClass>
+</oops:Affects>
+</oops:Pitfall>
+<oops:Pitfall>
+<oops:Code>P36</oops:Code><oops:Name>URI contains file extension</oops:Name>
+<oops:Description>This pitfall occurs if file extensions such as &quot;.owl&quot;, &quot;.rdf&quot;, &quot;.ttl&quot;, &quot;.n3&quot; and &quot;.rdfxml&quot; are included in an ontology URI. This pitfall is related with the recommendations provided in [9].	</oops:Description>
+<oops:Importance>Minor</oops:Importance>
+<oops:NumberAffectedElements>1</oops:NumberAffectedElements>
+<oops:Affects>
+<oops:AffectedElement>https://labs.etsi.org/rep/saref/saref-core/-/raw/develop-v3.1.1/ontology/saref.ttl</oops:AffectedElement>
+</oops:Affects>
+</oops:Pitfall>
+</oops:OOPSResponse>

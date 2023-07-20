@@ -1,9 +1,11 @@
-<rdf:RDF
-xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-xmlns:oops="http://www.oeg-upm.net/oops#" > 
-<rdf:Description rdf:about="http://www.oeg-upm.net/oops/unexpected_error">
-    <oops:hasTitle rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OOPS! something went wrong.</oops:hasTitle>
-    <oops:hasMessage rdf:datatype="http://www.w3.org/2001/XMLSchema#string">There was an unexpected error.</oops:hasMessage>
-    <rdf:type rdf:resource="http://www.oeg-upm.net/oops#response"/>
-</rdf:Description>
-</rdf:RDF>
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
+<html><head>
+<title>502 Proxy Error</title>
+</head><body>
+<h1>Proxy Error</h1>
+<p>The proxy server received an invalid
+response from an upstream server.<br />
+The proxy server could not handle the request<p>Reason: <strong>Error reading from remote server</strong></p></p>
+<hr>
+<address>Apache Server at oops.linkeddata.es Port 443</address>
+</body></html>

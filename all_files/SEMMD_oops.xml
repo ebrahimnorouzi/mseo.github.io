@@ -1,10 +1,142 @@
-<rdf:RDF
-xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-xmlns:oops="http://www.oeg-upm.net/oops#" > 
-<rdf:Description rdf:about="http://www.oeg-upm.net/oops/unexpected_error">
-    <oops:hasTitle rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OOPS! something went wrong.</oops:hasTitle>
-    <oops:hasMessage rdf:datatype="http://www.w3.org/2001/XMLSchema#string">If you have entered a URI make sure that it is available on-line using, for example, Vapour or Hyperthing.</oops:hasMessage>
-    <oops:hasMessage rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Make sure that your ontology RDF or OWL code is correct using an RDF validator as http://www.w3.org/RDF/Validator/ or an OWL validator as http://www.mygrid.org.uk/OWL/Validator.</oops:hasMessage>
-    <rdf:type rdf:resource="http://www.oeg-upm.net/oops#response"/>
-</rdf:Description>
-</rdf:RDF>
+<?xml version="1.0" encoding="UTF-8"?>
+<oops:OOPSResponse xmlns:oops="http://www.oeg-upm.net/oops">
+<oops:Pitfall>
+<oops:Code>P04</oops:Code><oops:Name>Creating unconnected ontology elements</oops:Name>
+<oops:Description>Ontology elements (classes, object properties and datatype properties) are created isolated, with no relation to the rest of the ontology.	</oops:Description>
+<oops:Importance>Minor</oops:Importance>
+<oops:NumberAffectedElements>1</oops:NumberAffectedElements>
+<oops:Affects>
+<oops:AffectedElement>https://purls.helmholtz-metadaten.de/cdo#CrystallographicDefect</oops:AffectedElement>
+</oops:Affects>
+</oops:Pitfall>
+<oops:Pitfall>
+<oops:Code>P08</oops:Code><oops:Name>Missing annotations</oops:Name>
+<oops:Description>This pitfall consists in creating an ontology element and failing to provide human readable annotations attached to it. Consequently, ontology elements lack annotation properties that label them (e.g. rdfs:label, lemon:LexicalEntry, skos:prefLabel or skos:altLabel) or that define them (e.g. rdfs:comment or dc:description). This pitfall is related to the guidelines provided in [5].	</oops:Description>
+<oops:Importance>Minor</oops:Importance>
+<oops:NumberAffectedElements>20</oops:NumberAffectedElements>
+<oops:Affects>
+<oops:AffectedElement>https://purls.helmholtz-metadaten.de/cso#hasFirstAxisVector</oops:AffectedElement>
+<oops:AffectedElement>http://qudt.org/schema/qudt/unit</oops:AffectedElement>
+<oops:AffectedElement>http://qudt.org/schema/qudt/hasQuantityKind</oops:AffectedElement>
+<oops:AffectedElement>http://qudt.org/schema/qudt/quantityValue</oops:AffectedElement>
+<oops:AffectedElement>https://purls.helmholtz-metadaten.de/cso#hasSecondAxisVector</oops:AffectedElement>
+<oops:AffectedElement>https://purls.helmholtz-metadaten.de/cso#hasBasis</oops:AffectedElement>
+<oops:AffectedElement>https://purls.helmholtz-metadaten.de/cso#hasThirdAxisVector</oops:AffectedElement>
+<oops:AffectedElement>https://purls.helmholtz-metadaten.de/cso#hasVectorComponent</oops:AffectedElement>
+<oops:AffectedElement>https://w3id.org/mdo/structure/Z_axisCoordinate</oops:AffectedElement>
+<oops:AffectedElement>https://w3id.org/mdo/structure/Y_axisCoordinate</oops:AffectedElement>
+<oops:AffectedElement>https://purls.helmholtz-metadaten.de/cso#vectorMagnitude</oops:AffectedElement>
+<oops:AffectedElement>https://purls.helmholtz-metadaten.de/cso#secondAxisComponent</oops:AffectedElement>
+<oops:AffectedElement>https://purls.helmholtz-metadaten.de/cso#thirdAxisComponent</oops:AffectedElement>
+<oops:AffectedElement>https://w3id.org/mdo/structure/X_axisCoordinate</oops:AffectedElement>
+<oops:AffectedElement>https://purls.helmholtz-metadaten.de/cso#firstAxisComponent</oops:AffectedElement>
+<oops:AffectedElement>http://qudt.org/schema/qudt/QuantityValue</oops:AffectedElement>
+<oops:AffectedElement>http://qudt.org/schema/qudt/Unit</oops:AffectedElement>
+<oops:AffectedElement>http://qudt.org/schema/qudt/Quantity</oops:AffectedElement>
+<oops:AffectedElement>http://qudt.org/schema/qudt/QuantityKind</oops:AffectedElement>
+<oops:AffectedElement>https://w3id.org/mdo/structure/CoordinateVector</oops:AffectedElement>
+</oops:Affects>
+</oops:Pitfall>
+<oops:Pitfall>
+<oops:Code>P11</oops:Code><oops:Name>Missing domain or range in properties</oops:Name>
+<oops:Description>Object and/or datatype properties without domain or range (or none of them) are included in the ontology. 	</oops:Description>
+<oops:Importance>Important</oops:Importance>
+<oops:NumberAffectedElements>15</oops:NumberAffectedElements>
+<oops:Affects>
+<oops:AffectedElement>https://purls.helmholtz-metadaten.de/cso#hasVectorComponent</oops:AffectedElement>
+<oops:AffectedElement>https://purls.helmholtz-metadaten.de/cso#hasThirdAxisVector</oops:AffectedElement>
+<oops:AffectedElement>https://purls.helmholtz-metadaten.de/cso#hasBasis</oops:AffectedElement>
+<oops:AffectedElement>https://purls.helmholtz-metadaten.de/cso#hasSecondAxisVector</oops:AffectedElement>
+<oops:AffectedElement>http://qudt.org/schema/qudt/quantityValue</oops:AffectedElement>
+<oops:AffectedElement>http://qudt.org/schema/qudt/hasQuantityKind</oops:AffectedElement>
+<oops:AffectedElement>http://qudt.org/schema/qudt/unit</oops:AffectedElement>
+<oops:AffectedElement>https://purls.helmholtz-metadaten.de/cso#hasFirstAxisVector</oops:AffectedElement>
+<oops:AffectedElement>https://purls.helmholtz-metadaten.de/cso#firstAxisComponent</oops:AffectedElement>
+<oops:AffectedElement>https://w3id.org/mdo/structure/X_axisCoordinate</oops:AffectedElement>
+<oops:AffectedElement>https://purls.helmholtz-metadaten.de/cso#thirdAxisComponent</oops:AffectedElement>
+<oops:AffectedElement>https://purls.helmholtz-metadaten.de/cso#secondAxisComponent</oops:AffectedElement>
+<oops:AffectedElement>https://purls.helmholtz-metadaten.de/cso#vectorMagnitude</oops:AffectedElement>
+<oops:AffectedElement>https://w3id.org/mdo/structure/Y_axisCoordinate</oops:AffectedElement>
+<oops:AffectedElement>https://w3id.org/mdo/structure/Z_axisCoordinate</oops:AffectedElement>
+</oops:Affects>
+</oops:Pitfall>
+<oops:Pitfall>
+<oops:Code>P13</oops:Code><oops:Name>Inverse relationships not explicitly declared</oops:Name>
+<oops:Description>This pitfall appears when any relationship (except for those that are defined as symmetric properties using owl:SymmetricProperty) does not have an inverse relationship (owl:inverseOf) defined within the ontology.	</oops:Description>
+<oops:Importance>Minor</oops:Importance>
+<oops:NumberAffectedElements>31</oops:NumberAffectedElements>
+<oops:Affects>
+<oops:NoInverseSuggestion>
+<oops:AffectedElement>https://purls.helmholtz-metadaten.de/diso#movesOn</oops:AffectedElement>
+<oops:AffectedElement>https://purls.helmholtz-metadaten.de/diso#hasBurgersVector</oops:AffectedElement>
+<oops:AffectedElement>https://purls.helmholtz-metadaten.de/cso#hasFirstAxisVector</oops:AffectedElement>
+<oops:AffectedElement>http://qudt.org/schema/qudt/unit</oops:AffectedElement>
+<oops:AffectedElement>https://purls.helmholtz-metadaten.de/diso#hasSlipPlaneNormal</oops:AffectedElement>
+<oops:AffectedElement>https://purls.helmholtz-metadaten.de/diso#resultsIn</oops:AffectedElement>
+<oops:AffectedElement>https://purls.helmholtz-metadaten.de/cso#hasPositionVector</oops:AffectedElement>
+<oops:AffectedElement>https://purls.helmholtz-metadaten.de/diso#hasLatticeDirection</oops:AffectedElement>
+<oops:AffectedElement>https://purls.helmholtz-metadaten.de/diso#hasFamilyCrystalPlane</oops:AffectedElement>
+<oops:AffectedElement>https://purls.helmholtz-metadaten.de/diso#hasNumericalRepresentation</oops:AffectedElement>
+<oops:AffectedElement>http://qudt.org/schema/qudt/hasQuantityKind</oops:AffectedElement>
+<oops:AffectedElement>https://purls.helmholtz-metadaten.de/diso#hasNode</oops:AffectedElement>
+<oops:AffectedElement>https://purls.helmholtz-metadaten.de/diso#hasStartNode</oops:AffectedElement>
+<oops:AffectedElement>http://qudt.org/schema/qudt/quantityValue</oops:AffectedElement>
+<oops:AffectedElement>https://purls.helmholtz-metadaten.de/diso#hasVectorOrigin</oops:AffectedElement>
+<oops:AffectedElement>https://purls.helmholtz-metadaten.de/diso#hasSlipSystem</oops:AffectedElement>
+<oops:AffectedElement>https://purls.helmholtz-metadaten.de/cso#hasSecondAxisVector</oops:AffectedElement>
+<oops:AffectedElement>https://purls.helmholtz-metadaten.de/diso#observedBy</oops:AffectedElement>
+<oops:AffectedElement>https://purls.helmholtz-metadaten.de/diso#hasLineSense</oops:AffectedElement>
+<oops:AffectedElement>https://purls.helmholtz-metadaten.de/diso#hasEndNode</oops:AffectedElement>
+<oops:AffectedElement>https://purls.helmholtz-metadaten.de/diso#hasLatticePoint</oops:AffectedElement>
+<oops:AffectedElement>https://purls.helmholtz-metadaten.de/cso#hasBasis</oops:AffectedElement>
+<oops:AffectedElement>https://purls.helmholtz-metadaten.de/cso#hasThirdAxisVector</oops:AffectedElement>
+<oops:AffectedElement>https://purls.helmholtz-metadaten.de/diso#hasMathematicalRepresentation</oops:AffectedElement>
+<oops:AffectedElement>https://purls.helmholtz-metadaten.de/diso#hasSlipPlane</oops:AffectedElement>
+<oops:AffectedElement>https://purls.helmholtz-metadaten.de/diso#hasSlipDirection</oops:AffectedElement>
+<oops:AffectedElement>https://purls.helmholtz-metadaten.de/diso#hasLatticePlane</oops:AffectedElement>
+<oops:AffectedElement>https://purls.helmholtz-metadaten.de/cso#hasVectorComponent</oops:AffectedElement>
+<oops:AffectedElement>https://purls.helmholtz-metadaten.de/diso#hasRepresentation</oops:AffectedElement>
+<oops:AffectedElement>https://purls.helmholtz-metadaten.de/diso#hasShapeFunction</oops:AffectedElement>
+<oops:AffectedElement>https://purls.helmholtz-metadaten.de/diso#hasFamilyCrystalDirection</oops:AffectedElement>
+</oops:NoInverseSuggestion>
+</oops:Affects>
+</oops:Pitfall>
+<oops:Pitfall>
+<oops:Code>P22</oops:Code><oops:Name>Using different naming conventions in the ontology</oops:Name>
+<oops:Description>The ontology elements are not named following the same convention (for example CamelCase or use of delimiters as &quot;-&quot; or &quot;_&quot;) . Some notions about naming conventions are provided in [2].	</oops:Description>
+<oops:Importance>Minor</oops:Importance>
+<oops:NumberAffectedElements>1</oops:NumberAffectedElements>
+<oops:Affects>
+<oops:AffectedElement>https://w3id.org/mdo/structure/Z_axisCoordinate</oops:AffectedElement>
+<oops:AffectedElement>https://purls.helmholtz-metadaten.de/diso#familyPlaneMillerIndice</oops:AffectedElement>
+<oops:AffectedElement>https://purls.helmholtz-metadaten.de/diso#familyPlaneMillerIndice</oops:AffectedElement>
+<oops:AffectedElement>https://w3id.org/mdo/structure/Z_axisCoordinate</oops:AffectedElement>
+</oops:Affects>
+</oops:Pitfall>
+<oops:Pitfall>
+<oops:Code>P36</oops:Code><oops:Name>URI contains file extension</oops:Name>
+<oops:Description>This pitfall occurs if file extensions such as &quot;.owl&quot;, &quot;.rdf&quot;, &quot;.ttl&quot;, &quot;.n3&quot; and &quot;.rdfxml&quot; are included in an ontology URI. This pitfall is related with the recommendations provided in [9].	</oops:Description>
+<oops:Importance>Minor</oops:Importance>
+<oops:NumberAffectedElements>1</oops:NumberAffectedElements>
+<oops:Affects>
+<oops:AffectedElement>https://raw.githubusercontent.com/Materials-Data-Science-and-Informatics/dislocation-ontology/master/dislocation-ontology.ttl</oops:AffectedElement>
+</oops:Affects>
+</oops:Pitfall>
+<oops:Pitfall>
+<oops:Code>P40</oops:Code><oops:Name>Namespace hijacking</oops:Name>
+<oops:Description>It refers to reusing or referring to terms from another namespace that are not defined in such namespace. This is an undesirable situation as no information can be retrieved when looking up those undefined terms. This pitfall is related to the Linked Data publishing guidelines provided in [11]: &quot;Only define new terms in a namespace that you control&quot; and to the guidelines provided in [5].	</oops:Description>
+<oops:Importance>Critical</oops:Importance>
+<oops:NumberAffectedElements>9</oops:NumberAffectedElements>
+<oops:Affects>
+<oops:AffectedElement>http://www.linkedmodel.org/schema/vaem#dateCreated</oops:AffectedElement>
+<oops:AffectedElement>http://www.linkedmodel.org/schema/vaem#hasAspectScope</oops:AffectedElement>
+<oops:AffectedElement>http://www.linkedmodel.org/schema/vaem#hasCatalogEntry</oops:AffectedElement>
+<oops:AffectedElement>http://www.linkedmodel.org/schema/vaem#hasDisciplineScope</oops:AffectedElement>
+<oops:AffectedElement>http://www.linkedmodel.org/schema/vaem#hasDomainScope</oops:AffectedElement>
+<oops:AffectedElement>http://www.linkedmodel.org/schema/vaem#lastUpdated</oops:AffectedElement>
+<oops:AffectedElement>http://www.linkedmodel.org/schema/vaem#revisionNumber</oops:AffectedElement>
+<oops:AffectedElement>http://www.linkedmodel.org/schema/vaem#ownedBy</oops:AffectedElement>
+<oops:AffectedElement>http://www.linkedmodel.org/schema/vaem#definition</oops:AffectedElement>
+</oops:Affects>
+</oops:Pitfall>
+</oops:OOPSResponse>

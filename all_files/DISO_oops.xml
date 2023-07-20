@@ -68,8 +68,8 @@
 <oops:Affects>
 <oops:NoInverseSuggestion>
 <oops:AffectedElement>https://purls.helmholtz-metadaten.de/diso#movesOn</oops:AffectedElement>
-<oops:AffectedElement>https://purls.helmholtz-metadaten.de/cso#hasFirstAxisVector</oops:AffectedElement>
 <oops:AffectedElement>https://purls.helmholtz-metadaten.de/diso#hasBurgersVector</oops:AffectedElement>
+<oops:AffectedElement>https://purls.helmholtz-metadaten.de/cso#hasFirstAxisVector</oops:AffectedElement>
 <oops:AffectedElement>http://qudt.org/schema/qudt/unit</oops:AffectedElement>
 <oops:AffectedElement>https://purls.helmholtz-metadaten.de/diso#hasSlipPlaneNormal</oops:AffectedElement>
 <oops:AffectedElement>https://purls.helmholtz-metadaten.de/diso#resultsIn</oops:AffectedElement>
@@ -111,6 +111,25 @@
 <oops:AffectedElement>https://purls.helmholtz-metadaten.de/diso#familyPlaneMillerIndice</oops:AffectedElement>
 <oops:AffectedElement>https://purls.helmholtz-metadaten.de/diso#familyPlaneMillerIndice</oops:AffectedElement>
 <oops:AffectedElement>https://w3id.org/mdo/structure/Z_axisCoordinate</oops:AffectedElement>
+</oops:Affects>
+</oops:Pitfall>
+<oops:Pitfall>
+<oops:Code>P36</oops:Code><oops:Name>URI contains file extension</oops:Name>
+<oops:Description>This pitfall occurs if file extensions such as &quot;.owl&quot;, &quot;.rdf&quot;, &quot;.ttl&quot;, &quot;.n3&quot; and &quot;.rdfxml&quot; are included in an ontology URI. This pitfall is related with the recommendations provided in [9].	</oops:Description>
+<oops:Importance>Minor</oops:Importance>
+<oops:NumberAffectedElements>1</oops:NumberAffectedElements>
+<oops:Affects>
+<oops:AffectedElement>https://raw.githubusercontent.com/Materials-Data-Science-and-Informatics/dislocation-ontology/master/dislocation-ontology.ttl</oops:AffectedElement>
+</oops:Affects>
+</oops:Pitfall>
+<oops:Pitfall>
+<oops:Code>P40</oops:Code><oops:Name>Namespace hijacking</oops:Name>
+<oops:Description>It refers to reusing or referring to terms from another namespace that are not defined in such namespace. This is an undesirable situation as no information can be retrieved when looking up those undefined terms. This pitfall is related to the Linked Data publishing guidelines provided in [11]: &quot;Only define new terms in a namespace that you control&quot; and to the guidelines provided in [5].	</oops:Description>
+<oops:Importance>Critical</oops:Importance>
+<oops:NumberAffectedElements>2</oops:NumberAffectedElements>
+<oops:Affects>
+<oops:AffectedElement>http://qudt.org/schema/qudt/description</oops:AffectedElement>
+<oops:AffectedElement>http://www.w3.org/2004/02/skos/core#defintion</oops:AffectedElement>
 </oops:Affects>
 </oops:Pitfall>
 </oops:OOPSResponse>

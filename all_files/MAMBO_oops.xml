@@ -138,8 +138,8 @@
 <oops:AffectedElement>file:/home/fabio/Projects/MAMBO/mambo.owl#TOF</oops:AffectedElement>
 <oops:AffectedElement>file:/home/fabio/Projects/MAMBO/mambo.owl#Experiment</oops:AffectedElement>
 <oops:AffectedElement>file:/home/fabio/Projects/MAMBO/mambo.owl#ChemicalProperty</oops:AffectedElement>
-<oops:AffectedElement>file:/home/fabio/Projects/MAMBO/mambo.owl#HarteeFock</oops:AffectedElement>
 <oops:AffectedElement>file:/home/fabio/Projects/MAMBO/mambo.owl#StructuralUnit</oops:AffectedElement>
+<oops:AffectedElement>file:/home/fabio/Projects/MAMBO/mambo.owl#HarteeFock</oops:AffectedElement>
 <oops:AffectedElement>file:/home/fabio/Projects/MAMBO/mambo.owl#ThreeBody</oops:AffectedElement>
 <oops:AffectedElement>file:/home/fabio/Projects/MAMBO/mambo.owl#TwoBody</oops:AffectedElement>
 <oops:AffectedElement>file:/home/fabio/Projects/MAMBO/mambo.owl#ExperimentalMethod</oops:AffectedElement>
@@ -266,6 +266,30 @@
 <oops:AffectedElement>file:/home/fabio/Projects/MAMBO/mambo.owl#Particle</oops:AffectedElement>
 <oops:AffectedElement>file:/home/fabio/Projects/MAMBO/mambo.owl#Atom</oops:AffectedElement>
 </oops:MightBeEquivalentClass>
+</oops:Affects>
+</oops:Pitfall>
+<oops:Pitfall>
+<oops:Code>P36</oops:Code><oops:Name>URI contains file extension</oops:Name>
+<oops:Description>This pitfall occurs if file extensions such as &quot;.owl&quot;, &quot;.rdf&quot;, &quot;.ttl&quot;, &quot;.n3&quot; and &quot;.rdfxml&quot; are included in an ontology URI. This pitfall is related with the recommendations provided in [9].	</oops:Description>
+<oops:Importance>Minor</oops:Importance>
+<oops:NumberAffectedElements>1</oops:NumberAffectedElements>
+<oops:Affects>
+<oops:AffectedElement>https://raw.githubusercontent.com/daimoners/MAMBO/master/mambo.owl</oops:AffectedElement>
+</oops:Affects>
+</oops:Pitfall>
+<oops:Pitfall>
+<oops:Code>P38</oops:Code><oops:Name>No OWL ontology declaration</oops:Name>
+<oops:Description>This pitfall consists in not declaring the owl:Ontology tag, which provides the ontology metadata. The owl:Ontology tag aims at gathering metadata about a given ontology such as version information, license, provenance, creation date, and so on. It is also used to declare the inclusion of other ontologies.	</oops:Description>
+<oops:Importance>Important</oops:Importance>
+<oops:NumberAffectedElements>1</oops:NumberAffectedElements>
+</oops:Pitfall>
+<oops:Pitfall>
+<oops:Code>P40</oops:Code><oops:Name>Namespace hijacking</oops:Name>
+<oops:Description>It refers to reusing or referring to terms from another namespace that are not defined in such namespace. This is an undesirable situation as no information can be retrieved when looking up those undefined terms. This pitfall is related to the Linked Data publishing guidelines provided in [11]: &quot;Only define new terms in a namespace that you control&quot; and to the guidelines provided in [5].	</oops:Description>
+<oops:Importance>Critical</oops:Importance>
+<oops:NumberAffectedElements>1</oops:NumberAffectedElements>
+<oops:Affects>
+<oops:AffectedElement>http://www.geneontology.org/formats/oboInOwl#id</oops:AffectedElement>
 </oops:Affects>
 </oops:Pitfall>
 </oops:OOPSResponse>
