@@ -122,7 +122,6 @@ for i,v in enumerate(num_classes):
         new_noc = "%s (-)" % (noc[i],)
         df_schema_and_graph_metrics.iloc[6:7,2+i:3+i] = new_noc
 
-df_schema_and_graph_metrics
 
 new_row_s = pd.DataFrame(dic_external, index=[0])
 pd.concat([df_schema_and_graph_metrics.loc[7:12],new_row_s,df_schema_and_graph_metrics.loc[13:17]]).reset_index(drop=True)
@@ -142,7 +141,8 @@ with pd.option_context("max_colwidth", 1000):
 
 df_metrics_table.drop(["metric_name"], axis=1, inplace=True)
 df_metrics_table.drop(["evaluation_criteria"], axis=1, inplace=True)
-df_metrics_table.transpose().to_latex("validation_metrics_table.tex")#, index=False)
+df_metrics_table = df_metrics_table[df_metrics_table['ontometrics_name'].isin(["Absolute root cardinality", "Absolute leaf cardinality", "Absolute depth", "Average depth", "Maximal depth", "Absolute breadth", "Average breadth", "Maximal breadth", "Tangledness"])]
+df_metrics_table.transpose().applymap(lambda x: "%1.4f" % (float(x)) if isinstance(x, (str)) and '.' in x and not ' ' in x else x).to_latex("validation_metrics_table.tex")#, index=False)
 
 df_general_table = pd.read_csv("general_table.csv")
 
