@@ -12,22 +12,16 @@ import pandas as pd
 OOPS_URL="https://oops.linkeddata.es/rest"
 
 def oops(owl_file):
-	#
-	f = open(owl_file, 'r')
-	content = f.read()
-	f.close()
-	#
+	
 	xml_content = ("""
     <?xml version="1.0" encoding="UTF-8"?>
     <OOPSRequest>
-      <OntologyUrl></OntologyUrl>
-      <OntologyContent><![CDATA[
-%s      
-]]></OntologyContent>
+      <OntologyUrl>%s</OntologyUrl>
+      <OntologyContent></OntologyContent>
           <Pitfalls></Pitfalls>
           <OutputFormat>XML</OutputFormat>
     </OOPSRequest>
-	""" % content).encode("UTF-8")
+	""" % owl_file).encode("UTF-8")
 	headers = {'Content-Type': 'application/xml',
 	           'Connection': 'Keep-Alive'
 	}
@@ -42,7 +36,7 @@ if __name__ == "__main__":
     
           out_dir = 'all_files/' + df_all['namespace'][index] + '_oops.xml'
           print(filename)
-          xml_data = oops(filename)
+          xml_data = oops(url)
           # write file
           #print(xml_data)
           out_file = os.path.join(out_dir)#,'oops.xml')
