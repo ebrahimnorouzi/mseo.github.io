@@ -1,0 +1,150 @@
+metrics:
+  abox_axiom_count: 10
+  abox_axiom_count_incl: 10
+  annotation_property_count: 15
+  annotation_property_count_incl: 15
+  axiom_count: 631
+  axiom_count_incl: 631
+  class_count: 81
+  class_count_incl: 81
+  consistent: true
+  dataproperty_count: 5
+  dataproperty_count_incl: 5
+  datatypes_count: 4
+  datatypes_count_incl: 4
+  dt_builtin_count: 4
+  dt_builtin_count_incl: 4
+  dt_notbuiltin_count: 0
+  dt_notbuiltin_count_incl: 0
+  expressivity: "ALCIQ(D)"
+  expressivity_incl: "ALCIQ(D)"
+  individual_count: 10
+  individual_count_incl: 10
+  logical_axiom_count: 226
+  logical_axiom_count_incl: 226
+  obj_property_count: 35
+  obj_property_count_incl: 35
+  ontology_anno_count: 17
+  ontology_iri: "https://saref.etsi.org/core/"
+  ontology_version_iri: "https://saref.etsi.org/core/v3.1.1/"
+  owl2: true
+  owl2_dl: true
+  owl2_el: false
+  owl2_ql: false
+  owl2_rl: false
+  rbox_axiom_count: 7
+  rbox_axiom_count_incl: 7
+  rdfs: false
+  rule_count: 0
+  rule_count_incl: 0
+  signature_entity_count: 150
+  signature_entity_count_incl: 150
+  syntax: "Turtle"
+  tbox_axiom_count: 209
+  tbox_axiom_count_incl: 209
+  tboxrbox_axiom_count: 216
+  tboxrbox_axiom_count_incl: 216
+  unsatisfiable_class_count: 0
+  axiom_types:
+  - "AnnotationAssertion"
+  - "ObjectPropertyDomain"
+  - "DisjointClasses"
+  - "Declaration"
+  - "ObjectPropertyRange"
+  - "SubClassOf"
+  - "ClassAssertion"
+  - "InverseObjectProperties"
+  axiom_types_incl:
+  - "AnnotationAssertion"
+  - "ObjectPropertyDomain"
+  - "DisjointClasses"
+  - "Declaration"
+  - "ObjectPropertyRange"
+  - "SubClassOf"
+  - "ClassAssertion"
+  - "InverseObjectProperties"
+  constructs:
+  - "Q"
+  - "C"
+  - "D"
+  - "I"
+  - "AL"
+  constructs_incl:
+  - "Q"
+  - "C"
+  - "D"
+  - "I"
+  - "AL"
+  valid_imports: []
+  valid_imports_incl: []
+  axiom_type_count:
+    AnnotationAssertion: 264
+    ObjectPropertyDomain: 28
+    DisjointClasses: 4
+    Declaration: 141
+    ObjectPropertyRange: 30
+    SubClassOf: 147
+    ClassAssertion: 10
+    InverseObjectProperties: 7
+  axiom_type_count_incl:
+    AnnotationAssertion: 264
+    ObjectPropertyDomain: 28
+    DisjointClasses: 4
+    Declaration: 141
+    ObjectPropertyRange: 30
+    SubClassOf: 147
+    ClassAssertion: 10
+    InverseObjectProperties: 7
+  class_expression_count:
+    DataMaxCardinality: 2
+    ObjectAllValuesFrom: 40
+    ObjectMinCardinality: 7
+    DataExactCardinality: 1
+    ObjectExactCardinality: 2
+    Class: 447
+    ObjectUnionOf: 2
+    ObjectSomeValuesFrom: 26
+    DataAllValuesFrom: 1
+  class_expression_count_incl:
+    DataMaxCardinality: 2
+    ObjectAllValuesFrom: 40
+    ObjectMinCardinality: 7
+    DataExactCardinality: 1
+    ObjectExactCardinality: 2
+    Class: 447
+    ObjectUnionOf: 2
+    ObjectSomeValuesFrom: 26
+    DataAllValuesFrom: 1
+  curie_map:
+    owl: "http://www.w3.org/2002/07/owl#"
+    rdf: "http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xsd: "http://www.w3.org/2001/XMLSchema#"
+    rdfs: "http://www.w3.org/2000/01/rdf-schema#"
+    dc: "http://purl.org/dc/terms/"
+  namespace_axiom_count:
+    prefix_unknown: 660
+    owl: 1
+    xsd: 1
+    rdfs: 266
+    dc: 8
+  namespace_axiom_count_incl:
+    prefix_unknown: 660
+    owl: 1
+    xsd: 1
+    rdfs: 266
+    dc: 8
+  namespace_entity_count:
+    prefix_unknown: 133
+    owl: 2
+    rdf: 1
+    xsd: 2
+    rdfs: 4
+    dc: 8
+  namespace_entity_count_incl:
+    prefix_unknown: 133
+    owl: 2
+    rdf: 1
+    xsd: 2
+    rdfs: 4
+    dc: 8
+  owl2dl_profile_violation: {}

@@ -1,0 +1,120 @@
+metrics:
+  abox_axiom_count: 12804
+  abox_axiom_count_incl: 12804
+  annotation_property_count: 4
+  annotation_property_count_incl: 4
+  axiom_count: 16349
+  axiom_count_incl: 16349
+  class_count: 37
+  class_count_incl: 37
+  consistent: true
+  dataproperty_count: 4
+  dataproperty_count_incl: 4
+  datatypes_count: 5
+  datatypes_count_incl: 5
+  dt_builtin_count: 4
+  dt_builtin_count_incl: 4
+  dt_notbuiltin_count: 1
+  dt_notbuiltin_count_incl: 1
+  expressivity: "AL(D)"
+  expressivity_incl: "AL(D)"
+  individual_count: 3277
+  individual_count_incl: 3277
+  logical_axiom_count: 12818
+  logical_axiom_count_incl: 12818
+  obj_property_count: 17
+  obj_property_count_incl: 17
+  ontology_anno_count: 7
+  ontology_iri: "https://purl.matolab.org/mseo/methods/example/"
+  ontology_version_iri: "no.iri"
+  owl2: false
+  owl2_dl: false
+  owl2_el: false
+  owl2_ql: false
+  owl2_rl: false
+  rbox_axiom_count: 0
+  rbox_axiom_count_incl: 0
+  rdfs: true
+  rule_count: 0
+  rule_count_incl: 0
+  signature_entity_count: 3344
+  signature_entity_count_incl: 3344
+  syntax: "Turtle"
+  tbox_axiom_count: 14
+  tbox_axiom_count_incl: 14
+  tboxrbox_axiom_count: 14
+  tboxrbox_axiom_count_incl: 14
+  unsatisfiable_class_count: 0
+  axiom_types:
+  - "DataPropertyAssertion"
+  - "AnnotationAssertion"
+  - "Declaration"
+  - "ClassAssertion"
+  - "SubClassOf"
+  - "ObjectPropertyAssertion"
+  axiom_types_incl:
+  - "DataPropertyAssertion"
+  - "AnnotationAssertion"
+  - "Declaration"
+  - "ClassAssertion"
+  - "SubClassOf"
+  - "ObjectPropertyAssertion"
+  constructs:
+  - "D"
+  - "AL"
+  constructs_incl:
+  - "D"
+  - "AL"
+  valid_imports: []
+  valid_imports_incl: []
+  axiom_type_count:
+    DataPropertyAssertion: 1618
+    AnnotationAssertion: 191
+    Declaration: 3340
+    ClassAssertion: 3053
+    SubClassOf: 14
+    ObjectPropertyAssertion: 8133
+  axiom_type_count_incl:
+    DataPropertyAssertion: 1618
+    AnnotationAssertion: 191
+    Declaration: 3340
+    ClassAssertion: 3053
+    SubClassOf: 14
+    ObjectPropertyAssertion: 8133
+  class_expression_count:
+    Class: 3118
+  class_expression_count_incl:
+    Class: 3118
+  curie_map:
+    dc11: "http://purl.org/dc/elements/1.1/"
+    rdf: "http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xsd: "http://www.w3.org/2001/XMLSchema#"
+    rdfs: "http://www.w3.org/2000/01/rdf-schema#"
+    RO: "http://purl.obolibrary.org/obo/RO_"
+  namespace_axiom_count:
+    prefix_unknown: 36821
+    xsd: 1618
+    rdfs: 192
+    RO: 287
+  namespace_axiom_count_incl:
+    prefix_unknown: 36821
+    xsd: 1618
+    rdfs: 192
+    RO: 287
+  namespace_entity_count:
+    dc11: 3
+    prefix_unknown: 3332
+    rdf: 1
+    xsd: 3
+    rdfs: 1
+    RO: 4
+  namespace_entity_count_incl:
+    dc11: 3
+    prefix_unknown: 3332
+    rdf: 1
+    xsd: 3
+    rdfs: 1
+    RO: 4
+  owl2dl_profile_violation:
+    LexicalNotInLexicalSpace: 33
+    UseOfUndeclaredAnnotationProperty: 7

@@ -1,0 +1,65 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="https://saref.etsi.org/core/"
+     xml:base="https://saref.etsi.org/core/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:vann="http://purl.org/vocab/vann/"
+     xmlns:terms="http://purl.org/dc/terms/">
+    <owl:Ontology rdf:about="https://saref.etsi.org/core/">
+        <owl:versionIRI rdf:resource="https://saref.etsi.org/core/v3.1.1/"/>
+        <terms:creator rdf:resource="http://maxime-lefrancois.info/me#"/>
+        <terms:creator rdf:resource="http://www.garcia-castro.com/foaf.rdf#me"/>
+        <terms:creator rdf:resource="https://w3id.org/people/mpoveda/"/>
+        <terms:creator rdf:resource="https://www.linkedin.com/in/lauradaniele"/>
+        <terms:description xml:lang="en">The Smart Applications REFerence ontology (SAREF) is intended to enable interoperability between solutions from different providers and among various activity sectors in the Internet of Things (IoT), thus contributing to the development of the global digital market.</terms:description>
+        <terms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-02-11</terms:issued>
+        <terms:license rdf:resource="https://forge.etsi.org/etsi-software-license"/>
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-05-29</terms:modified>
+        <terms:publisher rdf:resource="https://www.etsi.org/"/>
+        <terms:source rdf:resource="https://saref.etsi.org/sources/saref-core/"/>
+        <terms:title xml:lang="en">SAREF: the Smart Applications REFerence ontology</terms:title>
+        <vann:preferredNamespacePrefix>saref</vann:preferredNamespacePrefix>
+        <vann:preferredNamespaceUri>https://saref.etsi.org/core/</vann:preferredNamespaceUri>
+        <rdfs:comment>Information about changes compared to version 1.1.1:
+ - The classes and properties related to how to represent devices in building spaces (such as the saref:BuildingSpace class,  saref:BuildingObject class and saref:isLocatedIn property) have been removed from SAREF and incorporated  into the SAREF4BLDG extension related to buildings, including the reuse of the W3C? WGS84 geo positioning vocabulary.
+ - The saref:DeviceCategory and saref:FunctionCategory classes have been removed. Instead, the hierarchy of device categories has been implemented directly as subclasses of the saref:Device class.
+ - The information specific for energy efficiency has been moved to the SAREF4ENER extension. For example, the saref:Profile class has been redefined to accommodate only the properties that are general enough for any type of profile, not only for energy and power. Details on how to specifically model a power profile can be found in the SAREF4ENER extension. 
+ - The subclasses of the saref:Energy class  have been removed (i.e., Average Energy, Maximum Energy, Minimum Energy, Total Energy, HVAC Energy, Hot Water Energy and Lighting Energy).
+ - The saref:Property class has been split into two classes (saref:Property and saref:Measurement), as it is done in the SAREF4ENVI extension, in order to properly accommodate the distinction between the concept of property (an observable quality of something) and the concept of measurement (a concrete value observed for a property).
+ - Too restrictive cardinality restrictions have been revised, sometimes making them optional rather than mandatory (better to make properties mandatory in the extensions that specialize SAREF for a specific purpose, rather than restricting SAREF, whose purpose is more general). For example, definitions of units of measurement using an enumeration (owl:oneOf) were too restrictive because they did not allow using other units than those enumerated. Therefore, the individuals of each class are still there, but the owl:oneOf enumeration has been removed.
+ - The saref:UnitOfMeasure subclasses use individuals from the OM ontology for unit of measures, but this is not the only solution. It has been clarified in the comments that the OM ontology is an example, but other ontologies can be used.
+ - The global restrictions (rdfs:domain and rdfs:range) in object properties have been completely removed not to hinder interoperability. Object properties are now only restricted locally in the classes. 
+ - The subclasses of saref:Task have been transormed in individuals.
+ - The saref:hasTask property has been removed from the saref:Profile class to resolve an ambiguity with the saref:Task class.</rdfs:comment>
+        <rdfs:comment>Information about changes compared to version 2.1.1: 
+ - Added the saref:FeatureOfInterest class and the properties used to relate it to saref:Measurement (saref:hasMeasurement and saref:isMeasurementOf) and to saref:Property (saref:hasProperty and saref:isPropertyOf).
+ - Added the saref:measurementMadeBy property as inverse of saref:makesMeasurement.
+ - The saref:relatesToProperty and saref:relatesToMeasurement properties are now inverse of each other.
+ - The range of saref:hasValue, which was defined as xsd:float, has been removed to support other datatypes for measurements.
+ - The range of datatype properties, which was defined as xsd:string, has been removed in order to support strings with language tags (rdf:langString). This affects saref:hasDescription, saref:hasManufacturer, saref:hasModel and saref:hasName, which now have implicitly a range of rdfs:Literal.
+ - The saref:hasName property has been removed and the use of rdfs:label is recommended. 
+ - The saref:hasDescription property has been deprecated and the use of rdfs:comment is recommended. 
+ - Too restrictive restrictions have been removed and in some cases the ontology documentation has been updated to reflect this: a saref:Command having at most one saref:hasDescription; a saref:Task being accomplished by at least one saref:Device; a saref:Device having a typical consumption of only energy or power; a saref:Commodity being measured in units of measure; restrictions on the values of saref:accomplishes that only covered specific use cases; universal restrictions on the saref:actsUpon property have been changed to existential ones; restrictions on the commands that a saref:Function may have, since there could be others not included in the defined enumerations; restrictive documentation of saref:EventFunction and saref:SmokeSensor.
+ - Bugs have been fixed: some devices (saref:DoorSwitch, saref:EnergyMeter, saref:LigthSwitch, saref:SmokeSensor, and saref:TemperatureSensor) were defined as subclass of a device and at the same time as consisting of such device; a saref:LightSwitch controls light and does not measure light, since it is an actuator; incorrect documentation of saref:OnState and saref:OffState.
+ - The saref:BuildingRelated, saref:EnergyRelated and saref:FunctionRelated classes have been removed, since the different extensions already classify the device types.
+ - The instances of the subclasses of saref:Command have been removed, since they represent examples.
+ - The instances of saref:UnitOfMeasure have been moved to examples.
+ - The classes related to the SAREF4ENER extension have been removed: saref:Generator, saref:Storage, saref:Load and saref:EnergyMeter.
+ - Some instances of saref:Device have been moved to examples: saref:WashingMachine, saref:LightingDevice, saref:MicroRenewable, saref:Multimedia, and saref:Network.
+ - Added domain and range axioms wherever the definition of a property unambiguously identifies the domain or the range of the property.
+ - The OWL Time ontology is not imported anymore.
+ - The documentation of some ontology terms has been updated for clarification.
+ - Language tags have been added to all labels and comments.
+</rdfs:comment>
+        <rdfs:seeAlso rdf:resource="https://www.etsi.org/deliver/etsi_ts/103200_103299/103264/03.01.01_60/ts_103264v030101p.pdf"/>
+        <owl:versionInfo>v3.1.1</owl:versionInfo>
+    </owl:Ontology>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.6) https://github.com/owlcs/owlapi -->
+

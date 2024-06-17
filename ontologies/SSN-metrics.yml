@@ -1,0 +1,128 @@
+metrics:
+  abox_axiom_count: 2
+  abox_axiom_count_incl: 2
+  annotation_property_count: 17
+  annotation_property_count_incl: 17
+  axiom_count: 313
+  axiom_count_incl: 313
+  class_count: 16
+  class_count_incl: 16
+  consistent: true
+  dataproperty_count: 2
+  dataproperty_count_incl: 2
+  datatypes_count: 2
+  datatypes_count_incl: 2
+  dt_builtin_count: 2
+  dt_builtin_count_incl: 2
+  dt_notbuiltin_count: 0
+  dt_notbuiltin_count_incl: 0
+  expressivity: "ALI(D)"
+  expressivity_incl: "ALI(D)"
+  individual_count: 1
+  individual_count_incl: 1
+  logical_axiom_count: 12
+  logical_axiom_count_incl: 12
+  obj_property_count: 21
+  obj_property_count_incl: 21
+  ontology_anno_count: 9
+  ontology_iri: "http://www.w3.org/ns/sosa/"
+  ontology_version_iri: "no.iri"
+  owl2: true
+  owl2_dl: true
+  owl2_el: false
+  owl2_ql: false
+  owl2_rl: true
+  rbox_axiom_count: 9
+  rbox_axiom_count_incl: 9
+  rdfs: false
+  rule_count: 0
+  rule_count_incl: 0
+  signature_entity_count: 59
+  signature_entity_count_incl: 59
+  syntax: "Turtle"
+  tbox_axiom_count: 1
+  tbox_axiom_count_incl: 1
+  tboxrbox_axiom_count: 10
+  tboxrbox_axiom_count_incl: 10
+  unsatisfiable_class_count: 0
+  axiom_types:
+  - "AnnotationAssertion"
+  - "DataPropertyRange"
+  - "Declaration"
+  - "InverseObjectProperties"
+  - "ClassAssertion"
+  axiom_types_incl:
+  - "AnnotationAssertion"
+  - "DataPropertyRange"
+  - "Declaration"
+  - "InverseObjectProperties"
+  - "ClassAssertion"
+  constructs:
+  - "D"
+  - "I"
+  - "AL"
+  constructs_incl:
+  - "D"
+  - "I"
+  - "AL"
+  valid_imports: []
+  valid_imports_incl: []
+  axiom_type_count:
+    AnnotationAssertion: 248
+    DataPropertyRange: 1
+    Declaration: 53
+    InverseObjectProperties: 9
+    ClassAssertion: 2
+  axiom_type_count_incl:
+    AnnotationAssertion: 248
+    DataPropertyRange: 1
+    Declaration: 53
+    InverseObjectProperties: 9
+    ClassAssertion: 2
+  class_expression_count:
+    Class: 18
+  class_expression_count_incl:
+    Class: 18
+  curie_map:
+    schema: "http://schema.org/"
+    rdf: "http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xsd: "http://www.w3.org/2001/XMLSchema#"
+    skos: "http://www.w3.org/2004/02/skos/core#"
+    rdfs: "http://www.w3.org/2000/01/rdf-schema#"
+    foaf: "http://xmlns.com/foaf/0.1/"
+    dc: "http://purl.org/dc/terms/"
+  namespace_axiom_count:
+    schema: 72
+    prefix_unknown: 61
+    xsd: 1
+    skos: 69
+    rdfs: 111
+    foaf: 4
+    dc: 6
+  namespace_axiom_count_incl:
+    schema: 72
+    prefix_unknown: 61
+    xsd: 1
+    skos: 69
+    rdfs: 111
+    foaf: 4
+    dc: 6
+  namespace_entity_count:
+    schema: 2
+    prefix_unknown: 41
+    rdf: 1
+    xsd: 1
+    skos: 3
+    rdfs: 3
+    foaf: 2
+    dc: 6
+  namespace_entity_count_incl:
+    schema: 2
+    prefix_unknown: 41
+    rdf: 1
+    xsd: 1
+    skos: 3
+    rdfs: 3
+    foaf: 2
+    dc: 6
+  owl2dl_profile_violation: {}

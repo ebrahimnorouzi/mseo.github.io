@@ -1,0 +1,66 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="https://purl.vimmp.eu/semantics/combined/combined-vimmp-ontologies.ttl#"
+     xml:base="https://purl.vimmp.eu/semantics/combined/combined-vimmp-ontologies.ttl"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:terms="http://purl.org/dc/terms/">
+    <owl:Ontology rdf:about="https://purl.vimmp.eu/semantics/combined/combined-vimmp-ontologies.ttl">
+        <terms:bibliographicCitation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">doi:10.1007/s13218-020-00648-9</terms:bibliographicCitation>
+        <terms:bibliographicCitation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">doi:10.1021/acs.jced.9b00739</terms:bibliographicCitation>
+        <terms:bibliographicCitation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">doi:10.5281/zenodo.3936795</terms:bibliographicCitation>
+        <terms:contributor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Adham Hashibon</terms:contributor>
+        <terms:contributor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Andrea Scotto di Minico</terms:contributor>
+        <terms:contributor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Andreas Fiseni</terms:contributor>
+        <terms:contributor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Barbara Andreon</terms:contributor>
+        <terms:contributor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Barbora Planková (ORCID 0000-0002-3309-6809)</terms:contributor>
+        <terms:contributor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Björn Schembera (ORCID 0000-0003-2860-6621)</terms:contributor>
+        <terms:contributor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Christoph Niethammer</terms:contributor>
+        <terms:contributor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Daniele Toti (ORCID 0000-0002-9668-6961)</terms:contributor>
+        <terms:contributor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Emanuele Ghedini (ORCID 0000-0003-3805-8761)</terms:contributor>
+        <terms:contributor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Esteban Bayro Kaiser (ORCID 0000-0002-5281-0836)</terms:contributor>
+        <terms:contributor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Georg J. Schmitz (0000-0003-4065-9742)</terms:contributor>
+        <terms:contributor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Gerhard Goldbeck (ORCID 0000-0002-4181-2852)</terms:contributor>
+        <terms:contributor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Gianluca Boccardo (ORCID 0000-0003-1264-8237)</terms:contributor>
+        <terms:contributor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hauke Brüning</terms:contributor>
+        <terms:contributor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Helge Krieg</terms:contributor>
+        <terms:contributor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ignacio Pagonabarraga Mora (ORCID 0000-0002-6187-5025)</terms:contributor>
+        <terms:contributor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Jadran Vrabec (ORCID 0000-0002-7947-4051)</terms:contributor>
+        <terms:contributor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Javier Díaz Brañas</terms:contributor>
+        <terms:contributor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Jean-Pierre Minier</terms:contributor>
+        <terms:contributor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Joshua D. Elliott (ORCID 0000-0002-0729-246X)</terms:contributor>
+        <terms:contributor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Karel Šindelka (ORCID 0000-0003-3925-924X)</terms:contributor>
+        <terms:contributor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mara Chiricotto (ORCID 0000-0003-1609-5254)</terms:contributor>
+        <terms:contributor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Martin Lísal (ORCID 0000-0001-8005-7143)</terms:contributor>
+        <terms:contributor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Natalia A. Konchakova</terms:contributor>
+        <terms:contributor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Paola Carbone (ORCID 0000-0001-9927-8376)</terms:contributor>
+        <terms:contributor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Pascale Noyret</terms:contributor>
+        <terms:contributor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Peter Klein</terms:contributor>
+        <terms:contributor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Peter Schiffels</terms:contributor>
+        <terms:contributor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Philipp Neumann</terms:contributor>
+        <terms:contributor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Vincent Stobiac</terms:contributor>
+        <terms:contributor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Vladimir Lobaskin (ORCID 0000-0002-5231-0639)</terms:contributor>
+        <terms:contributor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Welchy Leite Cavalcanti</terms:contributor>
+        <terms:contributor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Youness Bami</terms:contributor>
+        <terms:contributor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Yvan Fournier</terms:contributor>
+        <terms:contributor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Éric Fayolle</terms:contributor>
+        <terms:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ilian T. Todorov (ORCID 0000-0001-7275-1784)</terms:creator>
+        <terms:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Martin Thomas Horsch (ORCID 0000-0002-9464-6739)</terms:creator>
+        <terms:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Michael A. Seaton (ORCID 0000-0002-4708-573X)</terms:creator>
+        <terms:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Silvia Chiacchiera (ORCID 0000-0003-0422-7870)</terms:creator>
+        <terms:license rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GNU Lesser General Public License (LGPL) version 3</terms:license>
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-01-02</terms:modified>
+        <terms:publisher rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Virtual Materials Marketplace (VIMMP) project consortium</terms:publisher>
+        <terms:title rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Combined ontologies developed or co-developed by the VIMMP project</terms:title>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The authors acknowledge funding from the European Union&apos;s Horizon 2020 research and 
+innovation programme under grant agreement no. 760907, Virtual Materials Marketplace (VIMMP).</rdfs:comment>
+        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Combined ontology release dated 2nd January 2021</owl:versionInfo>
+    </owl:Ontology>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.6) https://github.com/owlcs/owlapi -->
+

@@ -1,0 +1,148 @@
+metrics:
+  abox_axiom_count: 10
+  abox_axiom_count_incl: 10
+  annotation_property_count: 8
+  annotation_property_count_incl: 8
+  axiom_count: 73
+  axiom_count_incl: 73
+  class_count: 19
+  class_count_incl: 19
+  consistent: true
+  dataproperty_count: 1
+  dataproperty_count_incl: 1
+  datatypes_count: 2
+  datatypes_count_incl: 2
+  dt_builtin_count: 2
+  dt_builtin_count_incl: 2
+  dt_notbuiltin_count: 0
+  dt_notbuiltin_count_incl: 0
+  expressivity: "SH(D)"
+  expressivity_incl: "SH(D)"
+  individual_count: 10
+  individual_count_incl: 10
+  logical_axiom_count: 52
+  logical_axiom_count_incl: 52
+  obj_property_count: 13
+  obj_property_count_incl: 13
+  ontology_anno_count: 4
+  ontology_iri: "http://purl.org/wild/vocab"
+  ontology_version_iri: "no.iri"
+  owl2: true
+  owl2_dl: false
+  owl2_el: false
+  owl2_ql: false
+  owl2_rl: false
+  rbox_axiom_count: 2
+  rbox_axiom_count_incl: 2
+  rdfs: false
+  rule_count: 0
+  rule_count_incl: 0
+  signature_entity_count: 53
+  signature_entity_count_incl: 53
+  syntax: "RDF/XML Syntax"
+  tbox_axiom_count: 40
+  tbox_axiom_count_incl: 40
+  tboxrbox_axiom_count: 42
+  tboxrbox_axiom_count_incl: 42
+  unsatisfiable_class_count: 0
+  axiom_types:
+  - "AnnotationAssertion"
+  - "TransitiveObjectProperty"
+  - "SubAnnotationPropertyOf"
+  - "ObjectPropertyDomain"
+  - "SubObjectPropertyOf"
+  - "DisjointClasses"
+  - "DataPropertyRange"
+  - "Declaration"
+  - "ClassAssertion"
+  - "ObjectPropertyRange"
+  - "SubClassOf"
+  axiom_types_incl:
+  - "AnnotationAssertion"
+  - "TransitiveObjectProperty"
+  - "SubAnnotationPropertyOf"
+  - "ObjectPropertyDomain"
+  - "SubObjectPropertyOf"
+  - "DisjointClasses"
+  - "DataPropertyRange"
+  - "Declaration"
+  - "ClassAssertion"
+  - "ObjectPropertyRange"
+  - "SubClassOf"
+  constructs:
+  - "S"
+  - "D"
+  - "H"
+  constructs_incl:
+  - "S"
+  - "D"
+  - "H"
+  valid_imports: []
+  valid_imports_incl: []
+  axiom_type_count:
+    AnnotationAssertion: 2
+    TransitiveObjectProperty: 1
+    SubAnnotationPropertyOf: 2
+    ObjectPropertyDomain: 13
+    SubObjectPropertyOf: 1
+    DisjointClasses: 4
+    DataPropertyRange: 1
+    Declaration: 17
+    ClassAssertion: 10
+    ObjectPropertyRange: 13
+    SubClassOf: 9
+  axiom_type_count_incl:
+    AnnotationAssertion: 2
+    TransitiveObjectProperty: 1
+    SubAnnotationPropertyOf: 2
+    ObjectPropertyDomain: 13
+    SubObjectPropertyOf: 1
+    DisjointClasses: 4
+    DataPropertyRange: 1
+    Declaration: 17
+    ClassAssertion: 10
+    ObjectPropertyRange: 13
+    SubClassOf: 9
+  class_expression_count:
+    Class: 78
+  class_expression_count_incl:
+    Class: 78
+  curie_map:
+    schema: "http://schema.org/"
+    rdf: "http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xsd: "http://www.w3.org/2001/XMLSchema#"
+    rdfs: "http://www.w3.org/2000/01/rdf-schema#"
+    foaf: "http://xmlns.com/foaf/0.1/"
+  namespace_axiom_count:
+    schema: 2
+    prefix_unknown: 119
+    rdf: 2
+    xsd: 1
+    rdfs: 2
+  namespace_axiom_count_incl:
+    schema: 2
+    prefix_unknown: 119
+    rdf: 2
+    xsd: 1
+    rdfs: 2
+  namespace_entity_count:
+    schema: 2
+    prefix_unknown: 43
+    rdf: 2
+    xsd: 1
+    rdfs: 4
+    foaf: 1
+  namespace_entity_count_incl:
+    schema: 2
+    prefix_unknown: 43
+    rdf: 2
+    xsd: 1
+    rdfs: 4
+    foaf: 1
+  owl2dl_profile_violation:
+    UseOfUndeclaredClass: 6
+    IllegalPunning: 6
+    UseOfReservedVocabularyForClassIRI: 2
+    UseOfUndeclaredDataProperty: 1
+    UseOfUndeclaredAnnotationProperty: 6
+    UseOfUndeclaredObjectProperty: 25

@@ -1,0 +1,137 @@
+metrics:
+  abox_axiom_count: 1
+  abox_axiom_count_incl: 1
+  annotation_property_count: 13
+  annotation_property_count_incl: 13
+  axiom_count: 101
+  axiom_count_incl: 101
+  class_count: 11
+  class_count_incl: 11
+  consistent: true
+  dataproperty_count: 0
+  dataproperty_count_incl: 0
+  datatypes_count: 1
+  datatypes_count_incl: 1
+  dt_builtin_count: 1
+  dt_builtin_count_incl: 1
+  dt_notbuiltin_count: 0
+  dt_notbuiltin_count_incl: 0
+  expressivity: "ALIF+"
+  expressivity_incl: "ALIF+"
+  individual_count: 1
+  individual_count_incl: 1
+  logical_axiom_count: 29
+  logical_axiom_count_incl: 29
+  obj_property_count: 9
+  obj_property_count_incl: 9
+  ontology_anno_count: 11
+  ontology_iri: "http://purl.org/net/p-plan#"
+  ontology_version_iri: "no.iri"
+  owl2: true
+  owl2_dl: false
+  owl2_el: false
+  owl2_ql: false
+  owl2_rl: false
+  rbox_axiom_count: 3
+  rbox_axiom_count_incl: 3
+  rdfs: false
+  rule_count: 0
+  rule_count_incl: 0
+  signature_entity_count: 35
+  signature_entity_count_incl: 35
+  syntax: "RDF/XML Syntax"
+  tbox_axiom_count: 25
+  tbox_axiom_count_incl: 25
+  tboxrbox_axiom_count: 28
+  tboxrbox_axiom_count_incl: 28
+  unsatisfiable_class_count: 0
+  axiom_types:
+  - "AnnotationAssertion"
+  - "TransitiveObjectProperty"
+  - "FunctionalObjectProperty"
+  - "ObjectPropertyDomain"
+  - "Declaration"
+  - "SubClassOf"
+  - "ObjectPropertyRange"
+  - "InverseObjectProperties"
+  - "ClassAssertion"
+  axiom_types_incl:
+  - "AnnotationAssertion"
+  - "TransitiveObjectProperty"
+  - "FunctionalObjectProperty"
+  - "ObjectPropertyDomain"
+  - "Declaration"
+  - "SubClassOf"
+  - "ObjectPropertyRange"
+  - "InverseObjectProperties"
+  - "ClassAssertion"
+  constructs:
+  - "F"
+  - "I"
+  - "AL"
+  - "TRAN"
+  constructs_incl:
+  - "F"
+  - "I"
+  - "AL"
+  - "TRAN"
+  valid_imports: []
+  valid_imports_incl: []
+  axiom_type_count:
+    AnnotationAssertion: 45
+    TransitiveObjectProperty: 1
+    FunctionalObjectProperty: 3
+    ObjectPropertyDomain: 9
+    Declaration: 27
+    SubClassOf: 4
+    ObjectPropertyRange: 9
+    InverseObjectProperties: 2
+    ClassAssertion: 1
+  axiom_type_count_incl:
+    AnnotationAssertion: 45
+    TransitiveObjectProperty: 1
+    FunctionalObjectProperty: 3
+    ObjectPropertyDomain: 9
+    Declaration: 27
+    SubClassOf: 4
+    ObjectPropertyRange: 9
+    InverseObjectProperties: 2
+    ClassAssertion: 1
+  class_expression_count:
+    Class: 37
+  class_expression_count_incl:
+    Class: 37
+  curie_map:
+    owl: "http://www.w3.org/2002/07/owl#"
+    rdf: "http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    rdfs: "http://www.w3.org/2000/01/rdf-schema#"
+    prov: "http://www.w3.org/ns/prov#"
+    dc: "http://purl.org/dc/terms/"
+  namespace_axiom_count:
+    prefix_unknown: 67
+    owl: 1
+    rdfs: 32
+    prov: 22
+    dc: 4
+  namespace_axiom_count_incl:
+    prefix_unknown: 67
+    owl: 1
+    rdfs: 32
+    prov: 22
+    dc: 4
+  namespace_entity_count:
+    prefix_unknown: 18
+    owl: 2
+    rdf: 1
+    rdfs: 3
+    prov: 5
+    dc: 6
+  namespace_entity_count_incl:
+    prefix_unknown: 18
+    owl: 2
+    rdf: 1
+    rdfs: 3
+    prov: 5
+    dc: 6
+  owl2dl_profile_violation:
+    UseOfUndeclaredAnnotationProperty: 3

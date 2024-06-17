@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:http="http://www.w3.org/2011/http#" xmlns:list="http://purl.org/list/vocab#" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:sp="http://spinrdf.org/sp#" xmlns:xsd="http://www.w3.org/2001/XMLSchema#" xmlns="http://purl.org/wild/vocab#">
+  <rdf:Description rdf:about="http://purl.org/wild/vocab">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/wild/vocab">
+    <rdfs:label>WiLD ontology</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/wild/vocab">
+    <rdfs:comment>Ontology to describe Workflows in Linked Data</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/wild/vocab">
+    <foaf:maker rdf:resource="http://www.aifb.kit.edu/id/Tobias_K-C3-A4fer"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/wild/vocab">
+    <rdfs:seeAlso rdf:resource="http://purl.org/wild/semantics"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.aifb.kit.edu/id/Tobias_K-C3-A4fer">
+    <rdfs:label>Tobias Käfer</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/wild/vocab#hasHttpRequest">
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/wild/vocab#hasHttpRequest">
+    <rdfs:domain rdf:resource="http://purl.org/wild/vocab#AtomicActivity"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/wild/vocab#hasHttpRequest">
+    <rdfs:range rdf:resource="http://www.w3.org/2011/http#Request"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/wild/vocab#hasChildActivities">
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/wild/vocab#hasChildActivities">
+    <rdfs:domain rdf:resource="http://purl.org/wild/vocab#CompositeActivity"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/wild/vocab#hasChildActivities">
+    <rdfs:range rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/wild/vocab#hasChildActivity">
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/wild/vocab#hasChildActivity">
+    <rdf:type rdf:resource="http://purl.org/list/vocab#ListMembershipProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/wild/vocab#hasChildActivity">
+    <list:accompanying rdf:resource="http://purl.org/wild/vocab#hasChildActivities"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/wild/vocab#hasChildActivity">
+    <rdfs:subPropertyOf rdf:resource="http://purl.org/wild/vocab#hasDescendantActivity"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/wild/vocab#hasChildActivity">
+    <rdfs:domain rdf:resource="http://purl.org/wild/vocab#CompositeActivity"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/wild/vocab#hasChildActivity">
+    <rdfs:range rdf:resource="http://purl.org/wild/vocab#Activity"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/wild/vocab#hasAtomicActivity">
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/wild/vocab#hasAtomicActivity">
+    <rdfs:domain rdf:resource="http://purl.org/wild/vocab#CompositeActivity"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/wild/vocab#hasAtomicActivity">
+    <rdfs:range rdf:resource="http://purl.org/wild/vocab#AtomicActivity"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/wild/vocab#hasBehaviour">
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/wild/vocab#hasBehaviour">
+    <rdfs:domain rdf:resource="http://purl.org/wild/vocab#WorkflowModel"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/wild/vocab#hasBehaviour">
+    <rdfs:range rdf:resource="http://purl.org/wild/vocab#Activity"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/wild/vocab#hasPostcondition">
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/wild/vocab#hasPostcondition">
+    <rdfs:domain rdf:resource="http://purl.org/wild/vocab#Activity"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/wild/vocab#hasPostcondition">
+    <rdfs:range rdf:resource="http://spinrdf.org/sp#Ask"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/wild/vocab#hasPrecondition">
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/wild/vocab#hasPrecondition">
+    <rdfs:domain rdf:resource="http://purl.org/wild/vocab#Activity"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/wild/vocab#hasPrecondition">
+    <rdfs:range rdf:resource="http://spinrdf.org/sp#Ask"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/wild/vocab#hasState">
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/wild/vocab#hasState">
+    <rdfs:domain rdf:resource="http://purl.org/wild/vocab#Instance"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/wild/vocab#hasState">
+    <rdfs:range rdf:resource="http://purl.org/wild/vocab#State"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/wild/vocab#inWorkflowInstance">
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/wild/vocab#inWorkflowInstance">
+    <rdfs:domain rdf:resource="http://purl.org/wild/vocab#ActivityInstance"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/wild/vocab#inWorkflowInstance">
+    <rdfs:range rdf:resource="http://purl.org/wild/vocab#WorkflowInstance"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/wild/vocab#activityInstanceOf">
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/wild/vocab#activityInstanceOf">
+    <rdfs:domain rdf:resource="http://purl.org/wild/vocab#ActivityInstance"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/wild/vocab#activityInstanceOf">
+    <rdfs:range rdf:resource="http://purl.org/wild/vocab#Activity"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/wild/vocab#workflowInstanceOf">
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/wild/vocab#workflowInstanceOf">
+    <rdfs:domain rdf:resource="http://purl.org/wild/vocab#WorkflowInstance"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/wild/vocab#workflowInstanceOf">
+    <rdfs:range rdf:resource="http://purl.org/wild/vocab#WorkflowModel"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/wild/vocab#instanceOf">
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/wild/vocab#workflowInstanceOf">
+    <rdfs:subPropertyOf rdf:resource="http://purl.org/wild/vocab#instanceOf"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/wild/vocab#activityInstanceOf">
+    <rdfs:subPropertyOf rdf:resource="http://purl.org/wild/vocab#instanceOf"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/wild/vocab#hasDescendantActivity">
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/wild/vocab#hasDescendantActivity">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/wild/vocab#hasDescendantActivity">
+    <rdfs:domain rdf:resource="http://purl.org/wild/vocab#CompositeActivity"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/wild/vocab#hasDescendantActivity">
+    <rdfs:range rdf:resource="http://purl.org/wild/vocab#Activity"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/wild/vocab#containsActivity">
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/wild/vocab#containsActivity">
+    <rdfs:domain rdf:resource="http://purl.org/wild/vocab#WorkflowModel"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/wild/vocab#containsActivity">
+    <rdfs:range rdf:resource="http://purl.org/wild/vocab#Activity"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://schema.org/endDate">
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://schema.org/endDate">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://spinrdf.org/sp#Ask">
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#List">
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/wild/vocab#ActiveOrInitialisedInstanceState">
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/wild/vocab#ActiveOrInitialisedInstanceState">
+    <rdfs:subClassOf rdf:resource="http://purl.org/wild/vocab#State"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/wild/vocab#Activity">
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/wild/vocab#ActivityInstance">
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/wild/vocab#ActivityInstance">
+    <rdfs:subClassOf rdf:resource="http://purl.org/wild/vocab#Instance"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/wild/vocab#AtomicActivity">
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/wild/vocab#AtomicActivity">
+    <rdfs:subClassOf rdf:resource="http://purl.org/wild/vocab#Activity"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/wild/vocab#AtomicActivity">
+    <owl:disjointWith rdf:resource="http://purl.org/wild/vocab#CompositeActivity"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/wild/vocab#CompositeActivity">
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/wild/vocab#CompositeActivity">
+    <rdfs:subClassOf rdf:resource="http://purl.org/wild/vocab#Activity"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/wild/vocab#ConditionalActivity">
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/wild/vocab#ConditionalActivity">
+    <rdfs:subClassOf rdf:resource="http://purl.org/wild/vocab#CompositeActivity"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/wild/vocab#Instance">
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/wild/vocab#ParallelActivity">
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/wild/vocab#ParallelActivity">
+    <rdfs:subClassOf rdf:resource="http://purl.org/wild/vocab#CompositeActivity"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/wild/vocab#SequentialActivity">
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/wild/vocab#SequentialActivity">
+    <rdfs:subClassOf rdf:resource="http://purl.org/wild/vocab#CompositeActivity"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/wild/vocab#State">
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/wild/vocab#VirtualInstanceState">
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/wild/vocab#VirtualInstanceState">
+    <rdfs:subClassOf rdf:resource="http://purl.org/wild/vocab#State"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/wild/vocab#WorkflowInstance">
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/wild/vocab#WorkflowInstance">
+    <rdfs:subClassOf rdf:resource="http://purl.org/wild/vocab#Instance"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/wild/vocab#WorkflowModel">
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.w3.org/2011/http#Request">
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/wild/vocab#ConditionalActivity">
+    <owl:disjointWith rdf:resource="http://purl.org/wild/vocab#ParallelActivity"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/wild/vocab#ConditionalActivity">
+    <owl:disjointWith rdf:resource="http://purl.org/wild/vocab#SequentialActivity"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/wild/vocab#ParallelActivity">
+    <owl:disjointWith rdf:resource="http://purl.org/wild/vocab#SequentialActivity"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/wild/vocab#active">
+    <rdf:type rdf:resource="http://purl.org/wild/vocab#ActiveOrInitialisedInstanceState"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/wild/vocab#done">
+    <rdf:type rdf:resource="http://purl.org/wild/vocab#InstanceState"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/wild/vocab#initialised">
+    <rdf:type rdf:resource="http://purl.org/wild/vocab#ActiveOrInitialisedInstanceState"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/wild/vocab#doneFromListItemOne">
+    <rdf:type rdf:resource="http://purl.org/wild/vocab#VirtualInstanceState"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/wild/vocab#initialisedFromListItemOne">
+    <rdf:type rdf:resource="http://purl.org/wild/vocab#VirtualInstanceState"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/wild/vocab#paused">
+    <rdf:type rdf:resource="http://purl.org/wild/vocab#InstanceState"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/wild/vocab#skipped">
+    <rdf:type rdf:resource="http://purl.org/wild/vocab#InstanceState"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/wild/vocab#uninitialised">
+    <rdf:type rdf:resource="http://purl.org/wild/vocab#InstanceState"/>
+  </rdf:Description>
+</rdf:RDF>

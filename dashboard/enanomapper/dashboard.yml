@@ -3,38 +3,38 @@ base_prefixes:
 - enanomapper
 - ENANOMAPPERALT
 changed: true
-date: 2023-04-27 11:59:55.948745
+date: 2024-06-17 13:32:12.646463
 metrics:
   'Axioms: Breakdown of axiom types':
-    AnnotationAssertion: 124680
+    AnnotationAssertion: 147264
     AnnotationPropertyRangeOf: 134
     ClassAssertion: 9
     DatatypeDefinition: 19
-    Declaration: 22818
+    Declaration: 27269
     DifferentIndividuals: 2
     DisjointClasses: 21
-    EquivalentClasses: 292
+    EquivalentClasses: 342
     FunctionalDataProperty: 1
     FunctionalObjectProperty: 1
-    SubAnnotationPropertyOf: 228
-    SubClassOf: 24611
+    SubAnnotationPropertyOf: 179
+    SubClassOf: 29117
     SubObjectPropertyOf: 43
     TransitiveObjectProperty: 1
-  'Axioms: Number of axioms': 172860
+  'Axioms: Number of axioms': 204402
   'Entities: % of entities reused': 100.0
-  'Entities: Number of annotation properties': 737
-  'Entities: Number of classes': 21321
+  'Entities: Number of annotation properties': 696
+  'Entities: Number of classes': 25795
   'Entities: Number of data properties': 1
-  'Entities: Number of individuals': 680
+  'Entities: Number of individuals': 697
   'Entities: Number of object properties': 54
   'Entities: Number of unsatisfiable classes': 0
   'Info: Breakdown of OWL class expressions used':
-    Class: 70987
+    Class: 84618
     ObjectAllValuesFrom: 1
-    ObjectIntersectionOf: 20
-    ObjectOneOf: 271
+    ObjectIntersectionOf: 64
+    ObjectOneOf: 274
     ObjectSomeValuesFrom: 46
-    ObjectUnionOf: 6
+    ObjectUnionOf: 9
   'Info: Does the ontology fall under OWL 2 DL?': false
   'Info: Experimental OBO score':
     _dashboard: 0.571
@@ -49,39 +49,39 @@ metrics:
   'Info: Syntax': RDF/XML Syntax
   'Info: Usage of namespaces in axioms':
     BFO: 98
-    BTO: 272
-    CHEBI: 1951
-    CHMO: 258
+    BTO: 276
+    CHEBI: 1949
+    CHMO: 260
     CL: 61
     CLO: 1286
-    ENVO: 2405
+    ENVO: 2509
+    FOODON: 1635
     GAZ: 1
-    GENEPIO: 1
     GO: 6
-    HP: 40
-    IAO: 55675
+    HP: 44
+    IAO: 64435
     NCIT: 274
     OAE: 40176
-    OBA: 57
+    OBA: 92
     OBCS: 72
-    OBI: 6584
+    OBI: 6749
     OMO: 7
     PATO: 469
-    RO: 87
+    RO: 96
     STATO: 21
-    UBERON: 19
-    UO: 2810
-    dc: 62
-    dc11: 912
+    UBERON: 20
+    UO: 2494
+    dc: 65
+    dc11: 1176
     foaf: 8
-    obo: 722
-    oboInOwl: 20100
+    obo: 632
+    oboInOwl: 24902
     owl: 29
-    prefix_unknown: 41390
+    prefix_unknown: 57881
     rdf: 30
-    rdfs: 28069
-    schema: 4
-    skos: 6
+    rdfs: 32627
+    schema: 7
+    skos: 11
     xsd: 9
   'Info: Which ontologies use it?': []
 mirror_from: https://raw.githubusercontent.com/enanomapper/ontologies/master/enanomapper.owl
@@ -98,7 +98,7 @@ results:
     file: fp3
     status: ERROR
   FP04 Versioning:
-    comment: Version IRI 'http://enanomapper.github.io/ontologies/releases/9.0/enanomapper.owl'
+    comment: Version IRI 'http://enanomapper.github.io/ontologies/releases/10.0/enanomapper.owl'
       is not in recommended format
     status: WARN
   FP05 Scope:
@@ -125,7 +125,7 @@ results:
     status: PASS
   ROBOT Report:
     status: PASS
-sha256_hash: 59731276af711562634de8a2abdaf082013ee449f12fd8b19b159af7703d5bc8
+sha256_hash: 7c03a32940bdd9cb0b2ffe2aefa37d61956841faeb80f2353dbe7f395480554e
 summary:
   comment: 5 errors
   status: ERROR
@@ -133,4 +133,4 @@ summary:
     ERROR: 5
     INFO: 1
     WARN: 1
-version: http://enanomapper.github.io/ontologies/releases/9.0/enanomapper.owl
+version: http://enanomapper.github.io/ontologies/releases/10.0/enanomapper.owl
