@@ -1,0 +1,145 @@
+metrics:
+  abox_axiom_count: 0
+  abox_axiom_count_incl: 0
+  annotation_property_count: 11
+  annotation_property_count_incl: 11
+  axiom_count: 2135
+  axiom_count_incl: 2135
+  class_count: 601
+  class_count_incl: 601
+  consistent: true
+  dataproperty_count: 109
+  dataproperty_count_incl: 109
+  datatypes_count: 3
+  datatypes_count_incl: 3
+  dt_builtin_count: 3
+  dt_builtin_count_incl: 3
+  dt_notbuiltin_count: 0
+  dt_notbuiltin_count_incl: 0
+  expressivity: "ALH(D)"
+  expressivity_incl: "ALH(D)"
+  individual_count: 0
+  individual_count_incl: 0
+  logical_axiom_count: 1110
+  logical_axiom_count_incl: 1110
+  obj_property_count: 12
+  obj_property_count_incl: 12
+  ontology_anno_count: 3
+  ontology_iri: "http://www.semanticweb.org/osnathakimi/ontologies/deb"
+  ontology_version_iri: "no.iri"
+  owl2: true
+  owl2_dl: true
+  owl2_el: false
+  owl2_ql: false
+  owl2_rl: true
+  rbox_axiom_count: 68
+  rbox_axiom_count_incl: 68
+  rdfs: false
+  rule_count: 0
+  rule_count_incl: 0
+  signature_entity_count: 736
+  signature_entity_count_incl: 736
+  syntax: "RDF/XML Syntax"
+  tbox_axiom_count: 1042
+  tbox_axiom_count_incl: 1042
+  tboxrbox_axiom_count: 1110
+  tboxrbox_axiom_count_incl: 1110
+  unsatisfiable_class_count: 0
+  axiom_types:
+  - "AnnotationAssertion"
+  - "EquivalentClasses"
+  - "ObjectPropertyDomain"
+  - "EquivalentDataProperties"
+  - "SubDataPropertyOf"
+  - "DataPropertyDomain"
+  - "DataPropertyRange"
+  - "Declaration"
+  - "SubClassOf"
+  - "ObjectPropertyRange"
+  axiom_types_incl:
+  - "AnnotationAssertion"
+  - "EquivalentClasses"
+  - "ObjectPropertyDomain"
+  - "EquivalentDataProperties"
+  - "SubDataPropertyOf"
+  - "DataPropertyDomain"
+  - "DataPropertyRange"
+  - "Declaration"
+  - "SubClassOf"
+  - "ObjectPropertyRange"
+  constructs:
+  - "D"
+  - "H"
+  - "AL"
+  constructs_incl:
+  - "D"
+  - "H"
+  - "AL"
+  valid_imports: []
+  valid_imports_incl: []
+  axiom_type_count:
+    AnnotationAssertion: 296
+    EquivalentClasses: 8
+    ObjectPropertyDomain: 22
+    EquivalentDataProperties: 5
+    SubDataPropertyOf: 63
+    DataPropertyDomain: 235
+    DataPropertyRange: 97
+    Declaration: 729
+    SubClassOf: 666
+    ObjectPropertyRange: 14
+  axiom_type_count_incl:
+    AnnotationAssertion: 296
+    EquivalentClasses: 8
+    ObjectPropertyDomain: 22
+    EquivalentDataProperties: 5
+    SubDataPropertyOf: 63
+    DataPropertyDomain: 235
+    DataPropertyRange: 97
+    Declaration: 729
+    SubClassOf: 666
+    ObjectPropertyRange: 14
+  class_expression_count:
+    DataHasValue: 73
+    Class: 2147
+  class_expression_count_incl:
+    DataHasValue: 73
+    Class: 2147
+  curie_map:
+    owl: "http://www.w3.org/2002/07/owl#"
+    rdf: "http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xsd: "http://www.w3.org/2001/XMLSchema#"
+    skos: "http://www.w3.org/2004/02/skos/core#"
+    rdfs: "http://www.w3.org/2000/01/rdf-schema#"
+    dc: "http://purl.org/dc/terms/"
+  namespace_axiom_count:
+    prefix_unknown: 2891
+    owl: 4
+    xsd: 170
+    skos: 158
+    rdfs: 31
+    dc: 64
+  namespace_axiom_count_incl:
+    prefix_unknown: 2891
+    owl: 4
+    xsd: 170
+    skos: 158
+    rdfs: 31
+    dc: 64
+  namespace_entity_count:
+    prefix_unknown: 724
+    owl: 1
+    rdf: 1
+    xsd: 2
+    skos: 1
+    rdfs: 3
+    dc: 4
+  namespace_entity_count_incl:
+    prefix_unknown: 724
+    owl: 1
+    rdf: 1
+    xsd: 2
+    skos: 1
+    rdfs: 3
+    dc: 4
+  owl2dl_profile_violation: {}

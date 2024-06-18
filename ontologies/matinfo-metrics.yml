@@ -1,0 +1,135 @@
+metrics:
+  abox_axiom_count: 517
+  abox_axiom_count_incl: 517
+  annotation_property_count: 3
+  annotation_property_count_incl: 3
+  axiom_count: 2056
+  axiom_count_incl: 2056
+  class_count: 606
+  class_count_incl: 606
+  consistent: true
+  dataproperty_count: 66
+  dataproperty_count_incl: 66
+  datatypes_count: 1
+  datatypes_count_incl: 1
+  dt_builtin_count: 1
+  dt_builtin_count_incl: 1
+  dt_notbuiltin_count: 0
+  dt_notbuiltin_count_incl: 0
+  expressivity: "ALU(D)"
+  expressivity_incl: "ALU(D)"
+  individual_count: 488
+  individual_count_incl: 488
+  logical_axiom_count: 1247
+  logical_axiom_count_incl: 1247
+  obj_property_count: 31
+  obj_property_count_incl: 31
+  ontology_anno_count: 1
+  ontology_iri: "https://raw.githubusercontent.com/ebrahimnorouzi/mseo.github.io/master/Ontology_files/matinfo/OML-MaterialInformation.owl"
+  ontology_version_iri: "no.iri"
+  owl2: true
+  owl2_dl: false
+  owl2_el: false
+  owl2_ql: false
+  owl2_rl: false
+  rbox_axiom_count: 0
+  rbox_axiom_count_incl: 0
+  rdfs: true
+  rule_count: 0
+  rule_count_incl: 0
+  signature_entity_count: 1195
+  signature_entity_count_incl: 1195
+  syntax: "RDF/XML Syntax"
+  tbox_axiom_count: 730
+  tbox_axiom_count_incl: 730
+  tboxrbox_axiom_count: 730
+  tboxrbox_axiom_count_incl: 730
+  unsatisfiable_class_count: 0
+  axiom_types:
+  - "AnnotationAssertion"
+  - "DataPropertyAssertion"
+  - "ObjectPropertyDomain"
+  - "DataPropertyDomain"
+  - "DataPropertyRange"
+  - "AnnotationPropertyDomain"
+  - "Declaration"
+  - "SubClassOf"
+  - "ClassAssertion"
+  - "ObjectPropertyRange"
+  - "ObjectPropertyAssertion"
+  axiom_types_incl:
+  - "AnnotationAssertion"
+  - "DataPropertyAssertion"
+  - "ObjectPropertyDomain"
+  - "DataPropertyDomain"
+  - "DataPropertyRange"
+  - "AnnotationPropertyDomain"
+  - "Declaration"
+  - "SubClassOf"
+  - "ClassAssertion"
+  - "ObjectPropertyRange"
+  - "ObjectPropertyAssertion"
+  constructs:
+  - "D"
+  - "U"
+  - "AL"
+  constructs_incl:
+  - "D"
+  - "U"
+  - "AL"
+  valid_imports: []
+  valid_imports_incl: []
+  axiom_type_count:
+    AnnotationAssertion: 104
+    DataPropertyAssertion: 16
+    ObjectPropertyDomain: 31
+    DataPropertyDomain: 62
+    DataPropertyRange: 10
+    AnnotationPropertyDomain: 1
+    Declaration: 704
+    SubClassOf: 597
+    ClassAssertion: 479
+    ObjectPropertyRange: 30
+    ObjectPropertyAssertion: 22
+  axiom_type_count_incl:
+    AnnotationAssertion: 104
+    DataPropertyAssertion: 16
+    ObjectPropertyDomain: 31
+    DataPropertyDomain: 62
+    DataPropertyRange: 10
+    AnnotationPropertyDomain: 1
+    Declaration: 704
+    SubClassOf: 597
+    ClassAssertion: 479
+    ObjectPropertyRange: 30
+    ObjectPropertyAssertion: 22
+  class_expression_count:
+    Class: 2405
+    ObjectUnionOf: 3
+  class_expression_count_incl:
+    Class: 2405
+    ObjectUnionOf: 3
+  curie_map:
+    owl: "http://www.w3.org/2002/07/owl#"
+    xsd: "http://www.w3.org/2001/XMLSchema#"
+    rdfs: "http://www.w3.org/2000/01/rdf-schema#"
+  namespace_axiom_count:
+    prefix_unknown: 3214
+    xsd: 26
+    rdfs: 104
+  namespace_axiom_count_incl:
+    prefix_unknown: 3214
+    xsd: 26
+    rdfs: 104
+  namespace_entity_count:
+    prefix_unknown: 1192
+    owl: 1
+    xsd: 1
+    rdfs: 1
+  namespace_entity_count_incl:
+    prefix_unknown: 1192
+    owl: 1
+    xsd: 1
+    rdfs: 1
+  owl2dl_profile_violation:
+    IllegalPunning: 1

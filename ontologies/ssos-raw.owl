@@ -1,0 +1,1069 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="https://www.niso.org/standards-committees/ssos/ssos01.owl"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="https://www.niso.org/standards-committees/ssos/ssos01.owl">
+    <Prefix name="" IRI="https://www.niso.org/standards-committees/ssos/ssos01.owl"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Prefix name="skos" IRI="http://www.w3.org/2004/02/skos/core#"/>
+    <Declaration>
+        <Class IRI="#Active_standard"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Canceled_project"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Dated_reference"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Deprecated_standard"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Drafting"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#External_comment_and_review"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Final_approval"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#In-development"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Inactive_standard"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Informative_reference"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Life_cycle_states"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Maintenance"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Manifestation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Normative_reference"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Pre-drafting"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Pre-proposal"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Production_and_publication"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Proposal"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Reference"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Retired_standard"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Standard"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Standard_reference"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Standards_organization"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Superseded_standard"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Superseding_standard"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Undated_reference"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Withdrawn_standard"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#availableSince"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#continuousMaintenance"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#createNew"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasLifeCycleState"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasMaintenanceType"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isAdoptionOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isCorrectedBy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isExtendedBy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isIdenticalAdoptionOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isModifiedAdoptionOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isReaffirmedAs"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isRevisedTo"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isTranslatedFrom"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#periodicMaintenance"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#stabilizedMaintenance"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#supersedes"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#Partitioned/SeparatedFrom"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#consolidates/combines"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Approval_Year"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Classifications"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#DOI"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Dated_designation"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Format"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Full_Title"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#ICS_Codes"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#ID"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#ISBN"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Internal_ID"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Keywords"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Language"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Product_code"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Project_ID"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Projected_Release_Date"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Reaffirmed_Date"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Release_Date"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Source_language"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Subject"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Undated_designation"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="owl:retired"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="skos:altLabel"/>
+    </Declaration>
+    <Declaration>
+        <Datatype abbreviatedIRI="rdf:PlainLiteral"/>
+    </Declaration>
+    <Declaration>
+        <Datatype abbreviatedIRI="xsd:date"/>
+    </Declaration>
+    <Declaration>
+        <Datatype abbreviatedIRI="xsd:int"/>
+    </Declaration>
+    <Declaration>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </Declaration>
+    <Declaration>
+        <Datatype abbreviatedIRI="xsd:language"/>
+    </Declaration>
+    <Declaration>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="#Active_standard"/>
+        <Class IRI="#Life_cycle_states"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Canceled_project"/>
+        <Class IRI="#In-development"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Dated_reference"/>
+        <Class IRI="#Standard_reference"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Deprecated_standard"/>
+        <Class IRI="#Inactive_standard"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Drafting"/>
+        <Class IRI="#In-development"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#External_comment_and_review"/>
+        <Class IRI="#In-development"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Final_approval"/>
+        <Class IRI="#In-development"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#In-development"/>
+        <Class IRI="#Life_cycle_states"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Inactive_standard"/>
+        <Class IRI="#Life_cycle_states"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Informative_reference"/>
+        <Class IRI="#Standard_reference"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Maintenance"/>
+        <Class IRI="#Active_standard"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Manifestation"/>
+        <Class IRI="#Standard"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Normative_reference"/>
+        <Class IRI="#Standard_reference"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Pre-drafting"/>
+        <Class IRI="#In-development"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Pre-proposal"/>
+        <Class IRI="#In-development"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Production_and_publication"/>
+        <Class IRI="#In-development"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Proposal"/>
+        <Class IRI="#In-development"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Retired_standard"/>
+        <Class IRI="#Inactive_standard"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Standard_reference"/>
+        <Class IRI="#Reference"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Superseded_standard"/>
+        <Class IRI="#Inactive_standard"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Superseding_standard"/>
+        <Class IRI="#Active_standard"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Undated_reference"/>
+        <Class IRI="#Standard_reference"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Withdrawn_standard"/>
+        <Class IRI="#Inactive_standard"/>
+    </SubClassOf>
+    <DisjointClasses>
+        <Class IRI="#Active_standard"/>
+        <Class IRI="#In-development"/>
+        <Class IRI="#Inactive_standard"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Active_standard"/>
+        <Class IRI="#Manifestation"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Active_standard"/>
+        <Class IRI="#Withdrawn_standard"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Deprecated_standard"/>
+        <Class IRI="#Retired_standard"/>
+        <Class IRI="#Superseded_standard"/>
+        <Class IRI="#Withdrawn_standard"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Drafting"/>
+        <Class IRI="#External_comment_and_review"/>
+        <Class IRI="#Final_approval"/>
+        <Class IRI="#Pre-drafting"/>
+        <Class IRI="#Pre-proposal"/>
+        <Class IRI="#Production_and_publication"/>
+        <Class IRI="#Proposal"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Inactive_standard"/>
+        <Class IRI="#Manifestation"/>
+    </DisjointClasses>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#availableSince"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#continuousMaintenance"/>
+        <ObjectProperty IRI="#hasMaintenanceType"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#createNew"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasLifeCycleState"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasMaintenanceType"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#isIdenticalAdoptionOf"/>
+        <ObjectProperty IRI="#isAdoptionOf"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#isModifiedAdoptionOf"/>
+        <ObjectProperty IRI="#isAdoptionOf"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#isReaffirmedAs"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#isRevisedTo"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#isTranslatedFrom"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#periodicMaintenance"/>
+        <ObjectProperty IRI="#hasMaintenanceType"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#stabilizedMaintenance"/>
+        <ObjectProperty IRI="#hasMaintenanceType"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#consolidates/combines"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#Partitioned/SeparatedFrom"/>
+        <ObjectProperty IRI="#consolidates/combines"/>
+    </InverseObjectProperties>
+    <TransitiveObjectProperty>
+        <ObjectProperty IRI="#hasLifeCycleState"/>
+    </TransitiveObjectProperty>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isTranslatedFrom"/>
+        <Class IRI="#Dated_reference"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasLifeCycleState"/>
+        <Class IRI="#Active_standard"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasLifeCycleState"/>
+        <Class IRI="#In-development"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasLifeCycleState"/>
+        <Class IRI="#Inactive_standard"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isTranslatedFrom"/>
+        <DataAllValuesFrom>
+            <DataProperty IRI="#Language"/>
+            <Datatype abbreviatedIRI="xsd:language"/>
+        </DataAllValuesFrom>
+    </ObjectPropertyRange>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#Classifications"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#DOI"/>
+        <DataProperty IRI="#ID"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#Dated_designation"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#Format"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#Full_Title"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#ICS_Codes"/>
+        <DataProperty IRI="#Classifications"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#ID"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#ISBN"/>
+        <DataProperty IRI="#ID"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#Internal_ID"/>
+        <DataProperty IRI="#ID"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#Keywords"/>
+        <DataProperty IRI="#Classifications"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#Language"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#Product_code"/>
+        <DataProperty IRI="#ID"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#Project_ID"/>
+        <DataProperty IRI="#ID"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#Reaffirmed_Date"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#Release_Date"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#Subject"/>
+        <DataProperty IRI="#Classifications"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#Undated_designation"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <DataPropertyDomain>
+        <DataProperty IRI="#ISBN"/>
+        <Class IRI="#Dated_reference"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Language"/>
+        <Class IRI="#Manifestation"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Reaffirmed_Date"/>
+        <Class IRI="#Dated_reference"/>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty IRI="#Approval_Year"/>
+        <Datatype abbreviatedIRI="xsd:int"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#Classifications"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#DOI"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#Dated_designation"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#Format"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#Full_Title"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#ICS_Codes"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#ID"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#ISBN"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#Internal_ID"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#Keywords"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#Language"/>
+        <Datatype abbreviatedIRI="xsd:language"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#Product_code"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#Project_ID"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#Projected_Release_Date"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#Reaffirmed_Date"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#Release_Date"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#Source_language"/>
+        <Datatype abbreviatedIRI="xsd:language"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#Subject"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#Undated_designation"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Active_standard</IRI>
+        <Literal>status assigned by a standardizing body to a standard at the time of publication which remains in effect until inactive (for example, superseded, withdrawn, deprecated, or retired). 
+Note 1: The status “active” does not indicate the validity or non-validity of a standard.
+(adapted from DIN 820-4:2014)
+Note 2: Synonym: current standard</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:altLabel"/>
+        <IRI>#Active_standard</IRI>
+        <Literal>Current standard</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Approval_Year</IRI>
+        <Literal>The year the standard instance was approved for use. 
+Note: Not always the year of Release_Date, which can be after.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Canceled_project</IRI>
+        <Literal>status assigned by a standardizing body to a project that was aborted before reaching the “active” status</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Classifications</IRI>
+        <Literal>Subject area and/or key terms/codes associated with a standard instance or manifestation.
+Note 1: Users are encouraged to provide additional explicit classifications.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#DOI</IRI>
+        <Literal>A digital object identifier (DOI) is a persistent identifier or handle used to identify objects uniquely, standardized by the International Organization for Standardization (ISO).
+(From Wikipedia.)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:altLabel"/>
+        <IRI>#DOI</IRI>
+        <Literal>Digital object identifier</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Dated_designation</IRI>
+        <Literal>Reference to a specific standard instance.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Dated_reference</IRI>
+        <Literal>reference to a specific standard instance</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:altLabel"/>
+        <IRI>#Dated_reference</IRI>
+        <Literal>Dated designation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:altLabel"/>
+        <IRI>#Dated_reference</IRI>
+        <Literal>Dated designator</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:altLabel"/>
+        <IRI>#Dated_reference</IRI>
+        <Literal>Dated standard reference</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:altLabel"/>
+        <IRI>#Deprecated_standard</IRI>
+        <Literal>Canceled standard</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:altLabel"/>
+        <IRI>#Deprecated_standard</IRI>
+        <Literal>Standard that is declared as being no longer active by means of a formal withdrawal procedure that entails that this particular inactive standard is no longer fit for purpose.
+Note 1: Formal withdrawal is a procedure used by some standards-setting institutions e.g., if there are grave safety concerns regarding the content.
+Note 2: Synonym: canceled standard</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Drafting</IRI>
+        <Literal>status assigned by a standardizing body to a standard project for the period of time between the initial framework for a standard and the agreement of a consensus on the technical content of a draft within a standardization committee 
+Note 1: The consensus draft is sometimes referred to as committee draft.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#External_comment_and_review</IRI>
+        <Literal>status assigned by a standardizing body to a standard project for the period of time between making a consensus draft available for comments outside the standardization committee and the end of the review and the resolution of comments received during that period
+Note 1: A draft made available for public comment is sometimes referred to as draft standard.
+Note 2: In some standardizing bodies, commenting outside the standardization committee can be limited to a peer review.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Final_approval</IRI>
+        <Literal>status assigned by a standardizing body to a standard project for the period of time following the final resolution of comments and approval of the final content by the standardizing body
+Note 1: The final decision of approval of a standards body to publish a standard sometimes takes the form of a vote on a final draft</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:altLabel"/>
+        <IRI>#Final_approval</IRI>
+        <Literal>Formal approval</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Format</IRI>
+        <Literal>The format of the standard instance or manifestation (e.g., https://docs.w3cub.com/http/basics_of_http/mime_types/complete_list_of_mime_types).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Full_Title</IRI>
+        <Literal>Contains the full title of the standard. Normally, this contains all the introductory, main, and complementary titles and subtitles in a combined form, possibly with punctuation and spacing added between title components. The full title is a good interchange option, to communicate the title of a standard.
+(From ANSI/NISO Z39.102-2017, NISO STS, version 1.0.)
+Note 1: Titles in different languages are to be identified by ISO 639-2 language tags.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#ICS_Codes</IRI>
+        <Literal>The ICS (International Classification for Standards) is intended to serve as a structure for catalogues of international, regional, and national standards and other normative documents, and as a basis for standing-order systems for international, regional and national standards. It may also be used for classifying standards and normative documents in databases, libraries, etc.
+The ICS is a hierarchical classification which consists of three levels.
+(From ISO ICS, 7th Edition, 2015.)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#ID</IRI>
+        <Literal>An ID (or set of IDs) associated with a standard instance or manifestation.
+Note 1: Users are encouraged to provide additional or specific IDs.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#ISBN</IRI>
+        <Literal>The International Standard Book Number is a numeric commercial book identifier which is intended to be unique.
+(From Wikipedia.)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#In-development</IRI>
+        <Literal>status assigned by a standardizing body to a standard project for the period of time between first expression of an idea and publication of the standard.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Inactive_standard</IRI>
+        <Literal>status that is assigned by a standardizing body to a standard no longer active.
+Note 1: The status “inactive” does not refer to the validity or non-validity of a standard. The terms “valid” and “invalid” are only used and established by contractual parties, depending on the application.
+(adapted from DIN 820-3:2014)
+Synonym: historical standard</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:altLabel"/>
+        <IRI>#Inactive_standard</IRI>
+        <Literal>historical standard</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Informative_reference</IRI>
+        <Literal>a reference that may be useful for the implementation of the referencing standard.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Internal_ID</IRI>
+        <Literal>An organization-specific internal identifier of a standards instance.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Keywords</IRI>
+        <Literal>A keyword records one specific term, key phrase, abbreviation, taxonomic structure, or other expression that is found within the text of a standards instance, or implied (broader, narrower, etc.) from terms found within the instance.
+(Derived from ANSI/NISO Z39.102-2017, NISO STS, version 1.0.)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Language</IRI>
+        <Literal>Language in which a particular standard instance or manifestation is written.
+Note 1: Reference ISO 639-2 language codes.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Life_cycle_states</IRI>
+        <Literal>Status assigned by a standardizing body to a standards project for a sequence of events within the standards life cycle.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Maintenance</IRI>
+        <Literal>status assigned during review(s) of an active standard 
+Note 1: This review can have three mutually exclusive results
+•  If a decision is taken to reconfirm (or reaffirm) a standard, the Active State continues (without interruption)
+•  If a decision is taken to revise a standard, the Active State ends when the superseding standard is approved or published
+•  If a decision is taken to withdraw a standard, the Active State ends when the withdrawal formally occurs
+Note 2: If a decision is taken to revise or reaffirm a standard, the new work would be in the top-level In Development state.
+Note 3: Review can take the forms of continuous maintenance, periodic maintenance, or stabilized maintenance:
+•  Continuous maintenance is the consideration of recommended changes to any part of a standard according to a documented schedule for consideration and action by a consensus body. [Based on the definition in ANSI 2021, Essential Requirements, Section 4: Maintenance.]
+•  Periodic maintenance is the review of the entire standard and action to revise or reaffirm it on a set schedule, generally not to exceed five years from the date of its approval. [Based on the definition in ANSI 2021, Essential Requirements, Section 4: Maintenance.]
+•  Stabilized maintenance acknowledges a standard that has ongoing effectiveness and has reached technological maturity, and is thus exempt from a continuous or periodic review schedule. In some standards organizations, a standard is put in stabilized maintenance if it supports the continued viability of existing products or the servicing of equipment that is expected to have a long working life. [Based on ISO/IEC JTC 1 Directives 2020.]</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Manifestation</IRI>
+        <Literal>an expression of an instance that can be uniquely distinguished by one or more characteristics
+Note 1: Examples of distinguishing characteristics can be, among others, different file formats or content languages for the same standard instance.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Normative_reference</IRI>
+        <Literal>reference deemed indispensable for the implementation of the referencing standard.
+Note 1: a normative reference is used in place of quoting detailed provisions from the referenced standard or other material.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Pre-drafting</IRI>
+        <Literal>status assigned by a standardizing body to a standard project for the period of time between the acceptance of a proposal for a standard project until the development of an initial framework for a standard
+Note 1: The initial framework for a standard could be a scope or a working draft.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Pre-proposal</IRI>
+        <Literal>status assigned by a standardizing body to a standard project for the period of time between first expression of an idea and formal standardization proposal</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Product_code</IRI>
+        <Literal>A publisher- (or originator-) specific product identifier of a standards instance.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Production_and_publication</IRI>
+        <Literal>status assigned by a standardizing body to a standard project for the period of time between final approval of a standard until publication of the standard. This period includes the production process of a standard within the standardizing body and may include a translation period.
+Note 1: The act of final approval or publication changes the top-level status of a standard from “in development” to “active.
+Note 2: The specific date at which an active (standard) instance is made available for use is sometimes referred to as publication date or date of issuance.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Project_ID</IRI>
+        <Literal>An organization-specific project identifier of a standards instance used prior to being an active standard instance.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Projected_Release_Date</IRI>
+        <Literal>Date a particular standard instance will likely be made available for use.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Proposal</IRI>
+        <Literal>status assigned by a standardizing body to a standard project for the period of time between distribution of a formal proposal for a standard project and the final decision on the formal proposal
+Note 1: Common activities here are review and evaluation of the formal proposal. The result is either acceptance or rejection of the formal proposal.
+Note 2: The formal proposal is sometimes referred to as “New Work Item Proposal” or “New standardization proposal”.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Reaffirmed_Date</IRI>
+        <Literal>Date the standard instance was “reaffirmed” or “reconfirmed.”
+Note 1: If a decision is taken to reconfirm (or reaffirm) a standard, the Active State continues (without interruption).
+Note 2: The dated designation of a reaffirmed standard generally includes an indication of reaffirmation, for example, in the form of and additional date, such as “R2021.”</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Reference</IRI>
+        <Literal>citation to another standard, part of a standard, or other material.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Release_Date</IRI>
+        <Literal>Date a particular standard instance was made available for use.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Retired_standard</IRI>
+        <Literal>Deprecated standard that is not available to the public.
+Note 1: Synonyms: archived standard, deleted standard, and rescinded standard</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:altLabel"/>
+        <IRI>#Retired_standard</IRI>
+        <Literal>Archived standard</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:altLabel"/>
+        <IRI>#Retired_standard</IRI>
+        <Literal>Deleted standard</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:altLabel"/>
+        <IRI>#Retired_standard</IRI>
+        <Literal>Rescinded standard</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Source_language</IRI>
+        <Literal>The language of the standard instance from which a translation has been made.
+Note 1: Reference ISO 639-2 language codes.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Standard</IRI>
+        <Literal>A documented instance of rules, guidelines, or characteristics for activities and/or their results, established by consensus and approved by a recognized body, aimed at the achievement of the optimum degree of order in a given context.
+Note 1: All instances identified by the same standard’s designation are often referred to as a standards’ family.
+Source: NISO SSOS WG adapting definitions of pre-existing standards</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Standard_reference</IRI>
+        <Literal>citation to another standard, part of a standard, or other material.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Standards_organization</IRI>
+        <Literal>An organization that produces documented instances of rules, guidelines, or characteristics for activities and/or their results, established by consensus and approved by a recognized body, aimed at the achievement of the optimum degree of order in a given context.
+Note 1: Reference acronyms in https://en.wikipedia.org/wiki/List_of_technical_standard_organizations.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Subject</IRI>
+        <Literal>Name of one overarching category, broad classification, topic, or theme used to describe a standards document, as a higher-level descriptor of its content.
+(From ANSI/NISO Z39.102-2017, NISO STS, version 1.0.)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Superseded_standard</IRI>
+        <Literal>standard that was replaced by a newer instance of the standard which covers at least the same scope
+(adapted from DIN 820-3:2014)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Superseding_standard</IRI>
+        <Literal>standard that by itself or together with other standards, replaces another standard and covers at least the same scope
+(adapted from DIN 820-3:2014)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Undated_designation</IRI>
+        <Literal>Reference to a standard without indicating the instance.
+Note 1: In many cases, an undated reference indicates the active instance of a standard.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Undated_reference</IRI>
+        <Literal>reference to a standard without indicating the instance
+Note 1: In many cases, an undated reference indicates the active instance of a standard</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:altLabel"/>
+        <IRI>#Undated_reference</IRI>
+        <Literal>Undated designation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:altLabel"/>
+        <IRI>#Undated_reference</IRI>
+        <Literal>Undated designator</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:altLabel"/>
+        <IRI>#Undated_reference</IRI>
+        <Literal>Undated standard reference</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Withdrawn_standard</IRI>
+        <Literal>standard that is declared as being no longer active and its status is set to “inactive”
+Note 1: Withdrawal is either with replacement/supersession, with partial replacement/supersession or without replacement/supersession.
+Note 2: A document which has been withdrawn may continue to be used e.g., if this has been contractually agreed and/or its continued use is permitted by law.
+Note 3: Cf. “deprecated standard.”</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#availableSince</IRI>
+        <Literal>Date a particular standard instance was made available for use.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#continuousMaintenance</IRI>
+        <Literal>The consideration of recommended changes to any part of a standard according to a documented schedule for consideration and action by a consensus body. 
+[Based on the definition in ANSI 2021, Essential Requirements, Section 4: Maintenance.]</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#createNew</IRI>
+        <Literal>A project that creates a new standard instance (that is, no previously active standard instance exists).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasLifeCycleState</IRI>
+        <Literal>Life cycle state of a standard instance. (See terms, standard, instance, and life cycle, above.)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasMaintenanceType</IRI>
+        <Literal>Status assigned during review(s) of an active standard.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#isAdoptionOf</IRI>
+        <Literal>When a standards instance is adopted by a Standards Organization (A) from the body of standards of another Standards Organization (B).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#isCorrectedBy</IRI>
+        <Literal>When a standard instance has one or more corrections, errata, corrigenda, etc.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#isExtendedBy</IRI>
+        <Literal>When a standard instance has one or more additions, such as supplements or addenda.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#isIdenticalAdoptionOf</IRI>
+        <Literal>When a standard instance is adopted by a Standards Organization without modification.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#isModifiedAdoptionOf</IRI>
+        <Literal>When a standard instance is adopted by a Standards Organization with modification.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#isReaffirmedAs</IRI>
+        <Literal>When an active standard instance is reaffirmed.
+Note 1: If a decision is taken to reconfirm (or reaffirm) a standard, the Active State continues (without interruption).
+Note 2: The dated designation of a reaffirmed standard generally includes an indication of reaffirmation, for example, in the form of and additional date, such as “R2021.”</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#isRevisedTo</IRI>
+        <Literal>When a standard instance is revised by a new standard instance.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#isTranslatedFrom</IRI>
+        <Literal>The standard instance or manifestation from which a translation has been made.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#periodicMaintenance</IRI>
+        <Literal>the review of the entire standard and action to revise or reaffirm it on a set schedule, generally not to exceed five years from the date of its approval. 
+[Based on the definition in ANSI 2021, Essential Requirements, Section 4: Maintenance.]</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#stabilizedMaintenance</IRI>
+        <Literal>Acknowledges a standard that has ongoing effectiveness and has reached technological maturity and is thus exempt from a continuous or periodic review schedule. In some standards organizations, a standard is put in stabilized maintenance if it supports the continued viability of existing products or the servicing of equipment that is expected to have a long working life. 
+[Based on ISO/IEC JTC 1 Directives 2020.]</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#supersedes</IRI>
+        <Literal>A standard instance that has been replaced by a newer instance that covers at least the same scope.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Partitioned/SeparatedFrom</IRI>
+        <Literal>When a new instance of a standard was a part of a previously available standard instance that covered a portion of the new instance’s scope.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#consolidates/combines</IRI>
+        <Literal>When a new instance of a standard combines two or more previously available standard instances.</Literal>
+    </AnnotationAssertion>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+

@@ -1,0 +1,149 @@
+metrics:
+  abox_axiom_count: 20
+  abox_axiom_count_incl: 20
+  annotation_property_count: 16
+  annotation_property_count_incl: 16
+  axiom_count: 295
+  axiom_count_incl: 295
+  class_count: 25
+  class_count_incl: 25
+  consistent: true
+  dataproperty_count: 11
+  dataproperty_count_incl: 11
+  datatypes_count: 4
+  datatypes_count_incl: 4
+  dt_builtin_count: 4
+  dt_builtin_count_incl: 4
+  dt_notbuiltin_count: 0
+  dt_notbuiltin_count_incl: 0
+  expressivity: "AL(D)"
+  expressivity_incl: "AL(D)"
+  individual_count: 17
+  individual_count_incl: 17
+  logical_axiom_count: 64
+  logical_axiom_count_incl: 64
+  obj_property_count: 8
+  obj_property_count_incl: 8
+  ontology_anno_count: 9
+  ontology_iri: "http://www.w3.org/ns/oa#"
+  ontology_version_iri: "no.iri"
+  owl2: true
+  owl2_dl: false
+  owl2_el: false
+  owl2_ql: false
+  owl2_rl: false
+  rbox_axiom_count: 0
+  rbox_axiom_count_incl: 0
+  rdfs: true
+  rule_count: 0
+  rule_count_incl: 0
+  signature_entity_count: 81
+  signature_entity_count_incl: 81
+  syntax: "Turtle"
+  tbox_axiom_count: 44
+  tbox_axiom_count_incl: 44
+  tboxrbox_axiom_count: 44
+  tboxrbox_axiom_count_incl: 44
+  unsatisfiable_class_count: 0
+  axiom_types:
+  - "AnnotationAssertion"
+  - "ObjectPropertyDomain"
+  - "DataPropertyRange"
+  - "DataPropertyDomain"
+  - "AnnotationPropertyDomain"
+  - "Declaration"
+  - "ClassAssertion"
+  - "SubClassOf"
+  - "ObjectPropertyRange"
+  axiom_types_incl:
+  - "AnnotationAssertion"
+  - "ObjectPropertyDomain"
+  - "DataPropertyRange"
+  - "DataPropertyDomain"
+  - "AnnotationPropertyDomain"
+  - "Declaration"
+  - "ClassAssertion"
+  - "SubClassOf"
+  - "ObjectPropertyRange"
+  constructs:
+  - "D"
+  - "AL"
+  constructs_incl:
+  - "D"
+  - "AL"
+  valid_imports: []
+  valid_imports_incl: []
+  axiom_type_count:
+    AnnotationAssertion: 204
+    ObjectPropertyDomain: 6
+    DataPropertyRange: 11
+    DataPropertyDomain: 5
+    AnnotationPropertyDomain: 6
+    Declaration: 21
+    ClassAssertion: 20
+    SubClassOf: 14
+    ObjectPropertyRange: 8
+  axiom_type_count_incl:
+    AnnotationAssertion: 204
+    ObjectPropertyDomain: 6
+    DataPropertyRange: 11
+    DataPropertyDomain: 5
+    AnnotationPropertyDomain: 6
+    Declaration: 21
+    ClassAssertion: 20
+    SubClassOf: 14
+    ObjectPropertyRange: 8
+  class_expression_count:
+    Class: 88
+  class_expression_count_incl:
+    Class: 88
+  curie_map:
+    dc11: "http://purl.org/dc/elements/1.1/"
+    owl: "http://www.w3.org/2002/07/owl#"
+    rdf: "http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xsd: "http://www.w3.org/2001/XMLSchema#"
+    skos: "http://www.w3.org/2004/02/skos/core#"
+    rdfs: "http://www.w3.org/2000/01/rdf-schema#"
+    prov: "http://www.w3.org/ns/prov#"
+    foaf: "http://xmlns.com/foaf/0.1/"
+    dc: "http://purl.org/dc/terms/"
+  namespace_axiom_count:
+    prefix_unknown: 135
+    xsd: 11
+    skos: 1
+    rdfs: 203
+    foaf: 6
+  namespace_axiom_count_incl:
+    prefix_unknown: 135
+    xsd: 11
+    skos: 1
+    rdfs: 203
+    foaf: 6
+  namespace_entity_count:
+    dc11: 1
+    prefix_unknown: 64
+    owl: 1
+    rdf: 1
+    xsd: 3
+    skos: 1
+    rdfs: 5
+    prov: 1
+    foaf: 2
+    dc: 2
+  namespace_entity_count_incl:
+    dc11: 1
+    prefix_unknown: 64
+    owl: 1
+    rdf: 1
+    xsd: 3
+    skos: 1
+    rdfs: 5
+    prov: 1
+    foaf: 2
+    dc: 2
+  owl2dl_profile_violation:
+    UseOfUndeclaredClass: 7
+    UseOfReservedVocabularyForClassIRI: 2
+    UseOfUndeclaredDataProperty: 16
+    UseOfUndeclaredAnnotationProperty: 15
+    UseOfUndeclaredObjectProperty: 14

@@ -3,59 +3,93 @@ base_prefixes:
 - nfdicore
 - NFDICOREALT
 changed: true
-date: 2023-04-27 12:01:54.651672
+date: 2024-06-17 13:33:32.906590
 metrics:
   'Axioms: Breakdown of axiom types':
-    AnnotationAssertion: 187
-    ClassAssertion: 5
-    DataPropertyDomain: 4
-    DataPropertyRange: 3
-    Declaration: 105
-    InverseObjectProperties: 24
-    ObjectPropertyDomain: 29
-    ObjectPropertyRange: 28
-    SubClassOf: 20
-    SubObjectPropertyOf: 4
-    SymmetricObjectProperty: 2
-  'Axioms: Number of axioms': 411
+    AnnotationAssertion: 3222
+    AnnotationPropertyRangeOf: 1
+    ClassAssertion: 20
+    DataPropertyDomain: 12
+    DataPropertyRange: 10
+    Declaration: 541
+    DifferentIndividuals: 2
+    DisjointClasses: 21
+    EquivalentClasses: 21
+    EquivalentObjectProperties: 4
+    FunctionalDataProperty: 4
+    FunctionalObjectProperty: 4
+    InverseFunctionalObjectProperty: 1
+    InverseObjectProperties: 44
+    IrrefexiveObjectProperty: 1
+    ObjectPropertyDomain: 50
+    ObjectPropertyRange: 50
+    Rule: 9
+    SubAnnotationPropertyOf: 8
+    SubClassOf: 392
+    SubObjectPropertyOf: 66
+    SubPropertyChainOf: 2
+    SymmetricObjectProperty: 1
+    TransitiveObjectProperty: 4
+  'Axioms: Number of axioms': 4490
   'Entities: % of entities reused': 100.0
-  'Entities: Number of annotation properties': 12
-  'Entities: Number of classes': 34
-  'Entities: Number of data properties': 4
-  'Entities: Number of individuals': 5
-  'Entities: Number of object properties': 54
+  'Entities: Number of annotation properties': 89
+  'Entities: Number of classes': 316
+  'Entities: Number of data properties': 12
+  'Entities: Number of individuals': 20
+  'Entities: Number of object properties': 108
   'Entities: Number of unsatisfiable classes': 0
   'Info: Breakdown of OWL class expressions used':
-    Class: 150
-    ObjectUnionOf: 11
+    Class: 1361
+    DataExactCardinality: 6
+    DataMinCardinality: 1
+    ObjectAllValuesFrom: 7
+    ObjectComplementOf: 3
+    ObjectExactCardinality: 1
+    ObjectIntersectionOf: 26
+    ObjectMinCardinality: 1
+    ObjectOneOf: 3
+    ObjectSomeValuesFrom: 91
+    ObjectUnionOf: 7
   'Info: Does the ontology fall under OWL 2 DL?': true
   'Info: Experimental OBO score':
-    _dashboard: 0.444
+    _dashboard: 0.549
     _formula: (1*impact+1*dashboard)/2
     _impact: 0.0
     _impact_external: 0
     _reuse: 1.0
-    oboscore: 0.222
+    oboscore: 0.275
   'Info: How many externally documented uses?': 0
   'Info: How many ontologies use it?': 0
   'Info: Logical consistency': true
   'Info: Syntax': Turtle
   'Info: Usage of namespaces in axioms':
-    dc: 2
-    dc11: 3
-    owl: 3
-    prefix_unknown: 355
-    rdfs: 159
-    schema: 14
-    skos: 1
+    APOLLO_SV: 22
+    BFO: 367
+    GAZ: 2
+    IAO: 3410
+    OBI: 77
+    OMO: 6
+    PATO: 16
+    RO: 140
+    UO: 10
+    dc: 8
+    dc11: 29
+    foaf: 4
+    oboInOwl: 33
+    owl: 34
+    prefix_unknown: 466
+    rdf: 7
+    rdfs: 861
+    schema: 4
+    skos: 46
     void: 1
-    xsd: 1
+    xsd: 9
   'Info: Which ontologies use it?': []
 mirror_from: https://raw.githubusercontent.com/ISE-FIZKarlsruhe/nfdicore/main/nfdicore.ttl
 namespace: nfdicore
 results:
   FP01 Open:
-    comment: Missing ontology license. Missing registry license.
+    comment: Missing registry license.
     status: ERROR
   FP02 Common Format:
     comment: OWL syntax (Turtle), but should be RDF/XML
@@ -65,8 +99,9 @@ results:
     file: fp3
     status: ERROR
   FP04 Versioning:
-    comment: Missing version IRI
-    status: ERROR
+    comment: Version IRI 'https://nfdi.fiz-karlsruhe.de/ontology/2.0.0' is not in
+      recommended format
+    status: WARN
   FP05 Scope:
     comment: Missing domain (scope)
     status: ERROR
@@ -85,18 +120,18 @@ results:
   FP12 Naming Conventions:
     status: PASS
   FP16 Maintenance:
-    comment: Missing version IRI to check date
-    status: ERROR
+    comment: Version IRI does not have date information
+    status: INFO
   FP20 Responsiveness:
     status: PASS
   ROBOT Report:
     status: PASS
-sha256_hash: ba3e840e4e4a90141c1be8493187f7da3711fdd942dbb43c1cc803fb0dea4664
+sha256_hash: bf035963552abc83d56145219fe042949f9dd5b3b78a7e9beb838efb2a6293f6
 summary:
-  comment: 7 errors
+  comment: 5 errors
   status: ERROR
   summary_count:
-    ERROR: 7
-    INFO: 0
-    WARN: 1
-version: null
+    ERROR: 5
+    INFO: 1
+    WARN: 2
+version: https://nfdi.fiz-karlsruhe.de/ontology/2.0.0

@@ -1,0 +1,645 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/jesperf/ontologies/2019/11/untitled-ontology-9#"
+     xml:base="http://www.semanticweb.org/jesperf/ontologies/2019/11/untitled-ontology-9"
+     xmlns:emmo-units="http://emmo.info/domains/emmo-units.owl#"
+     xmlns:emmo-si-units="http://emmo.info/domains/emmo-si-units.owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:emmo-physical-constants="http://emmo.info/domains/emmo-physical-constants.owl#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:emmo-annotations="http://emmo.info/base/emmo-annotations.owl#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/jesperf/ontologies/2019/11/untitled-ontology-9">
+        <owl:imports rdf:resource="https://raw.githubusercontent.com/emmo-repo/EMMO/4e32917bfddee2afb29bc4bc53dafb6ea1c3df79/middle/metrology.ttl"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/jesperf/ontologies/2019/11/untitled-ontology-9#EMMO_1317bc47_54dd_456d_afea_c437e38e788f -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jesperf/ontologies/2019/11/untitled-ontology-9#EMMO_1317bc47_54dd_456d_afea_c437e38e788f">
+        <rdfs:subClassOf rdf:resource="http://emmo.info/domains/emmo-si-units.owl#EMMO_f1a51559_aa3d_43a0_9327_918039f0dfed"/>
+        <rdfs:subClassOf rdf:resource="http://emmo.info/domains/emmo-units.owl#EMMO_cd2cd0de_e0cc_4ef1_b27e_2e88db027bac"/>
+        <rdfs:label xml:lang="en">SubgrainSize</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jesperf/ontologies/2019/11/untitled-ontology-9#EMMO_1a93b88c_b195_41b7_a848_e5ee9aef1203 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jesperf/ontologies/2019/11/untitled-ontology-9#EMMO_1a93b88c_b195_41b7_a848_e5ee9aef1203">
+        <rdfs:subClassOf rdf:resource="http://emmo.info/domains/emmo-units.owl#EMMO_71f6ab56_342c_484b_bbe0_de86b7367cb3"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://emmo.info/domains/emmo-units.owl#EMMO_7bc80051_e62a_4789_9e6a_b50eadab8527"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">2</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://emmo.info/domains/emmo-units.owl#EMMO_cd2cd0de_e0cc_4ef1_b27e_2e88db027bac"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">DislocationDensity</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jesperf/ontologies/2019/11/untitled-ontology-9#EMMO_1fb11dd6_ebf0_4a5d_a093_b25e9e91ff7e -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jesperf/ontologies/2019/11/untitled-ontology-9#EMMO_1fb11dd6_ebf0_4a5d_a093_b25e9e91ff7e">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jesperf/ontologies/2019/11/untitled-ontology-9#EMMO_5f8a1431_27e1_4879_92b1_13c7698641d9"/>
+        <rdfs:label xml:lang="en">GrainBoundaryDislocation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jesperf/ontologies/2019/11/untitled-ontology-9#EMMO_2870ec8e_8c4f_4d64_a3db_9365d554a3e5 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jesperf/ontologies/2019/11/untitled-ontology-9#EMMO_2870ec8e_8c4f_4d64_a3db_9365d554a3e5">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jesperf/ontologies/2019/11/untitled-ontology-9#EMMO_834d570d_dc0a_4347_b805_51250699d04d"/>
+        <rdfs:label xml:lang="en">Precipitate</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jesperf/ontologies/2019/11/untitled-ontology-9#EMMO_30c7589f_a6da_4240_9157_caf0b69eaf82 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jesperf/ontologies/2019/11/untitled-ontology-9#EMMO_30c7589f_a6da_4240_9157_caf0b69eaf82">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jesperf/ontologies/2019/11/untitled-ontology-9#EMMO_b62f1bdb_a937_410e_aa59_608ca27e56a1"/>
+        <rdfs:label xml:lang="en">PrimaryParticle</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jesperf/ontologies/2019/11/untitled-ontology-9#EMMO_355180c1_d32c_49d3_ae23_e387d8012d99 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jesperf/ontologies/2019/11/untitled-ontology-9#EMMO_355180c1_d32c_49d3_ae23_e387d8012d99">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jesperf/ontologies/2019/11/untitled-ontology-9#EMMO_c59635ca_2e6d_4314_b770_d32f0c5713db"/>
+        <rdfs:label xml:lang="en">MeanGrainSize</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jesperf/ontologies/2019/11/untitled-ontology-9#EMMO_3eb52322_c923_4970_a99b_8dc168d249f8 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jesperf/ontologies/2019/11/untitled-ontology-9#EMMO_3eb52322_c923_4970_a99b_8dc168d249f8">
+        <rdfs:subClassOf rdf:resource="http://emmo.info/domains/emmo-material.owl#EMMO_a2b006f2_bbfd_4dba_bcaa_3fca20cd6be1"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://emmo.info/domains/emmo-properties.owl#EMMO_e1097637_70d2_4895_973f_2396f04fa204"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/jesperf/ontologies/2019/11/untitled-ontology-9#EMMO_1317bc47_54dd_456d_afea_c437e38e788f"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://emmo.info/domains/emmo-properties.owl#EMMO_e1097637_70d2_4895_973f_2396f04fa204"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/jesperf/ontologies/2019/11/untitled-ontology-9#EMMO_70c969c5_71da_4331_b897_999c95a87d30"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://emmo.info/domains/emmo-properties.owl#EMMO_e1097637_70d2_4895_973f_2396f04fa204"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/jesperf/ontologies/2019/11/untitled-ontology-9#EMMO_ca41034e_060f_49c8_8c4b_21e7d6a9d81f"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://emmo.info/perspectives/emmo-existent.owl#EMMO_b2282816_b7a3_44c6_b2cb_3feff1ceb7fe"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/jesperf/ontologies/2019/11/untitled-ontology-9#EMMO_f2501cdf_6add_4913_9340_521ce1297eec"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://emmo.info/perspectives/emmo-existent.owl#EMMO_b2282816_b7a3_44c6_b2cb_3feff1ceb7fe"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/jesperf/ontologies/2019/11/untitled-ontology-9#EMMO_e66958e9_24d8_4599_8f51_3165682d0b87"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Subgrain</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jesperf/ontologies/2019/11/untitled-ontology-9#EMMO_3ed199da_d1a1_4f37_92a8_7ce7ff75c210 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jesperf/ontologies/2019/11/untitled-ontology-9#EMMO_3ed199da_d1a1_4f37_92a8_7ce7ff75c210">
+        <rdfs:subClassOf rdf:resource="http://emmo.info/domains/emmo-si-units.owl#EMMO_a1c771c6_f1af_4c72_81a1_9d9a002039f9"/>
+        <rdfs:label xml:lang="en">NominalComposition</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jesperf/ontologies/2019/11/untitled-ontology-9#EMMO_54b076c0_c35c_4bdc_8262_91e6ab7372a9 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jesperf/ontologies/2019/11/untitled-ontology-9#EMMO_54b076c0_c35c_4bdc_8262_91e6ab7372a9">
+        <rdfs:subClassOf rdf:resource="http://emmo.info/domains/emmo-models.owl#EMMO_53935db0_af45_4426_b9e9_244a0d77db00"/>
+        <rdfs:label xml:lang="en">ClusterDynamics</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jesperf/ontologies/2019/11/untitled-ontology-9#EMMO_569f75d0_5d21_4a64_b3e5_6f3bfea094f7 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jesperf/ontologies/2019/11/untitled-ontology-9#EMMO_569f75d0_5d21_4a64_b3e5_6f3bfea094f7">
+        <rdfs:subClassOf rdf:resource="http://emmo.info/domains/emmo-units.owl#EMMO_fdadf52c_5c39_40bc_95d9_5b7807f06e19"/>
+        <rdfs:comment>The misorientation distribution function (MDF) describes the misorientation between grains (and subgrains) in a microstructure.</rdfs:comment>
+        <rdfs:label xml:lang="en">MisorientationDistributionFunction</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jesperf/ontologies/2019/11/untitled-ontology-9#EMMO_5f8a1431_27e1_4879_92b1_13c7698641d9 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jesperf/ontologies/2019/11/untitled-ontology-9#EMMO_5f8a1431_27e1_4879_92b1_13c7698641d9">
+        <rdfs:subClassOf rdf:resource="http://emmo.info/domains/emmo-material.owl#EMMO_174cf221_9d16_427c_abea_e217a948969b"/>
+        <rdfs:label xml:lang="en">Dislocation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jesperf/ontologies/2019/11/untitled-ontology-9#EMMO_6223edea_63c9_4e6a_84e0_4bf691d6f5ca -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jesperf/ontologies/2019/11/untitled-ontology-9#EMMO_6223edea_63c9_4e6a_84e0_4bf691d6f5ca">
+        <rdfs:subClassOf rdf:resource="http://emmo.info/domains/emmo-material.owl#EMMO_a2b006f2_bbfd_4dba_bcaa_3fca20cd6be1"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://emmo.info/domains/emmo-properties.owl#EMMO_e1097637_70d2_4895_973f_2396f04fa204"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/jesperf/ontologies/2019/11/untitled-ontology-9#EMMO_1a93b88c_b195_41b7_a848_e5ee9aef1203"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://emmo.info/domains/emmo-properties.owl#EMMO_e1097637_70d2_4895_973f_2396f04fa204"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/jesperf/ontologies/2019/11/untitled-ontology-9#EMMO_355180c1_d32c_49d3_ae23_e387d8012d99"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://emmo.info/domains/emmo-properties.owl#EMMO_e1097637_70d2_4895_973f_2396f04fa204"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/jesperf/ontologies/2019/11/untitled-ontology-9#EMMO_3ed199da_d1a1_4f37_92a8_7ce7ff75c210"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://emmo.info/domains/emmo-properties.owl#EMMO_e1097637_70d2_4895_973f_2396f04fa204"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/jesperf/ontologies/2019/11/untitled-ontology-9#EMMO_569f75d0_5d21_4a64_b3e5_6f3bfea094f7"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://emmo.info/domains/emmo-properties.owl#EMMO_e1097637_70d2_4895_973f_2396f04fa204"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/jesperf/ontologies/2019/11/untitled-ontology-9#EMMO_6b1ad698_70fd_43c8_9c09_33b872e524e5"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://emmo.info/domains/emmo-properties.owl#EMMO_e1097637_70d2_4895_973f_2396f04fa204"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/jesperf/ontologies/2019/11/untitled-ontology-9#EMMO_70c969c5_71da_4331_b897_999c95a87d30"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://emmo.info/domains/emmo-properties.owl#EMMO_e1097637_70d2_4895_973f_2396f04fa204"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/jesperf/ontologies/2019/11/untitled-ontology-9#EMMO_8091bbcf_b1eb_4550_8733_109f459ed5c1"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://emmo.info/domains/emmo-properties.owl#EMMO_e1097637_70d2_4895_973f_2396f04fa204"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/jesperf/ontologies/2019/11/untitled-ontology-9#EMMO_87ac251f_e8cb_4071_9e25_7508282a3f9a"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://emmo.info/domains/emmo-properties.owl#EMMO_e1097637_70d2_4895_973f_2396f04fa204"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/jesperf/ontologies/2019/11/untitled-ontology-9#EMMO_b2ffd395_20f0_47e9_916c_f1aa2fb098a1"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://emmo.info/domains/emmo-properties.owl#EMMO_e1097637_70d2_4895_973f_2396f04fa204"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/jesperf/ontologies/2019/11/untitled-ontology-9#EMMO_c790454f_fe29_4f79_98c5_a368cb890817"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://emmo.info/domains/emmo-properties.owl#EMMO_e1097637_70d2_4895_973f_2396f04fa204"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/jesperf/ontologies/2019/11/untitled-ontology-9#EMMO_ca41034e_060f_49c8_8c4b_21e7d6a9d81f"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://emmo.info/perspectives/emmo-existent.owl#EMMO_b2282816_b7a3_44c6_b2cb_3feff1ceb7fe"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/jesperf/ontologies/2019/11/untitled-ontology-9#EMMO_71b28aa6_83aa_4ca2_a65b_094c148f21a0"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://emmo.info/perspectives/emmo-existent.owl#EMMO_b2282816_b7a3_44c6_b2cb_3feff1ceb7fe"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/jesperf/ontologies/2019/11/untitled-ontology-9#EMMO_a5a64cc8_4e71_4bd0_baf2_c4d17224c570"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Alloy</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jesperf/ontologies/2019/11/untitled-ontology-9#EMMO_65faf4d9_d0b6_47b3_b3c2_c969310dd782 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jesperf/ontologies/2019/11/untitled-ontology-9#EMMO_65faf4d9_d0b6_47b3_b3c2_c969310dd782">
+        <rdfs:subClassOf rdf:resource="http://emmo.info/domains/emmo-models.owl#EMMO_4456a5d2_16a6_4ee1_9a8e_5c75956b28ea"/>
+        <rdfs:label xml:lang="en">ElectricConductivityModel</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jesperf/ontologies/2019/11/untitled-ontology-9#EMMO_6b1ad698_70fd_43c8_9c09_33b872e524e5 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jesperf/ontologies/2019/11/untitled-ontology-9#EMMO_6b1ad698_70fd_43c8_9c09_33b872e524e5">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/friisj/ontologies/2019/11/untitled-ontology-48#EMMO_d1917609_db5e_4b8a_9b76_ef1d6f860a81"/>
+        <rdfs:label xml:lang="en">YieldStress</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jesperf/ontologies/2019/11/untitled-ontology-9#EMMO_70c969c5_71da_4331_b897_999c95a87d30 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jesperf/ontologies/2019/11/untitled-ontology-9#EMMO_70c969c5_71da_4331_b897_999c95a87d30">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jesperf/ontologies/2019/11/untitled-ontology-9#EMMO_cdbd9b35_e5ad_4a38_8120_913106854b06"/>
+        <emmo-annotations:EMMO_70fe84ff_99b6_4206_a9fc_9a8931836d84>Average volume of a given type of particles.</emmo-annotations:EMMO_70fe84ff_99b6_4206_a9fc_9a8931836d84>
+        <rdfs:label xml:lang="en">MeanParticleSize</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jesperf/ontologies/2019/11/untitled-ontology-9#EMMO_71b28aa6_83aa_4ca2_a65b_094c148f21a0 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jesperf/ontologies/2019/11/untitled-ontology-9#EMMO_71b28aa6_83aa_4ca2_a65b_094c148f21a0">
+        <rdfs:subClassOf rdf:resource="http://emmo.info/domains/emmo-material.owl#EMMO_174cf221_9d16_427c_abea_e217a948969b"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://emmo.info/domains/emmo-properties.owl#EMMO_e1097637_70d2_4895_973f_2396f04fa204"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/jesperf/ontologies/2019/11/untitled-ontology-9#EMMO_f87319a6_fecb_4884_bda8_7a5967479f0a"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://emmo.info/perspectives/emmo-existent.owl#EMMO_b2282816_b7a3_44c6_b2cb_3feff1ceb7fe"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/jesperf/ontologies/2019/11/untitled-ontology-9#EMMO_1fb11dd6_ebf0_4a5d_a093_b25e9e91ff7e"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://emmo.info/base/emmo-mereotopology.owl#EMMO_4d6504f1_c470_4ce9_b941_bbbebc9ab05d"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">2</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/jesperf/ontologies/2019/11/untitled-ontology-9#EMMO_a5a64cc8_4e71_4bd0_baf2_c4d17224c570"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">GrainBoundary</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jesperf/ontologies/2019/11/untitled-ontology-9#EMMO_7511edeb_fd34_41c8_a63c_9c7c8317fe4a -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jesperf/ontologies/2019/11/untitled-ontology-9#EMMO_7511edeb_fd34_41c8_a63c_9c7c8317fe4a">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jesperf/ontologies/2019/11/untitled-ontology-9#EMMO_5f8a1431_27e1_4879_92b1_13c7698641d9"/>
+        <rdfs:label xml:lang="en">GeometricalNeccesaryDislocation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jesperf/ontologies/2019/11/untitled-ontology-9#EMMO_8091bbcf_b1eb_4550_8733_109f459ed5c1 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jesperf/ontologies/2019/11/untitled-ontology-9#EMMO_8091bbcf_b1eb_4550_8733_109f459ed5c1">
+        <rdfs:subClassOf rdf:resource="http://emmo.info/domains/emmo-units.owl#EMMO_fdadf52c_5c39_40bc_95d9_5b7807f06e19"/>
+        <rdfs:comment>The orientation distribution function (ODF) describes the angular distribution of grains (and subgrains) or an microstructure.</rdfs:comment>
+        <rdfs:label xml:lang="en">OrientationDistributionFunction</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jesperf/ontologies/2019/11/untitled-ontology-9#EMMO_834d570d_dc0a_4347_b805_51250699d04d -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jesperf/ontologies/2019/11/untitled-ontology-9#EMMO_834d570d_dc0a_4347_b805_51250699d04d">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jesperf/ontologies/2019/11/untitled-ontology-9#EMMO_f2501cdf_6add_4913_9340_521ce1297eec"/>
+        <rdfs:label xml:lang="en">MetastableParticle</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jesperf/ontologies/2019/11/untitled-ontology-9#EMMO_87ac251f_e8cb_4071_9e25_7508282a3f9a -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jesperf/ontologies/2019/11/untitled-ontology-9#EMMO_87ac251f_e8cb_4071_9e25_7508282a3f9a">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jesperf/ontologies/2019/11/untitled-ontology-9#EMMO_1317bc47_54dd_456d_afea_c437e38e788f"/>
+        <rdfs:label xml:lang="en">SubgrainSizeDistribution</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jesperf/ontologies/2019/11/untitled-ontology-9#EMMO_953fbdef_b014_4dde_8758_3f0e7e9f5c3b -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jesperf/ontologies/2019/11/untitled-ontology-9#EMMO_953fbdef_b014_4dde_8758_3f0e7e9f5c3b">
+        <rdfs:subClassOf rdf:resource="http://emmo.info/domains/emmo-models.owl#EMMO_27c5d8c6_8af7_4d63_beb1_ec37cd8b3fa3"/>
+        <rdfs:comment>A partial differential equation that express conservation of a physical quantity Q in a continuum system.
+
+It describes how the change in time of the density of Q is related to the change in space of the flow density of Q.</rdfs:comment>
+        <rdfs:label xml:lang="en">ContinuityEquation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jesperf/ontologies/2019/11/untitled-ontology-9#EMMO_a5a64cc8_4e71_4bd0_baf2_c4d17224c570 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jesperf/ontologies/2019/11/untitled-ontology-9#EMMO_a5a64cc8_4e71_4bd0_baf2_c4d17224c570">
+        <rdfs:subClassOf rdf:resource="http://emmo.info/domains/emmo-material.owl#EMMO_a2b006f2_bbfd_4dba_bcaa_3fca20cd6be1"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://emmo.info/domains/emmo-properties.owl#EMMO_e1097637_70d2_4895_973f_2396f04fa204"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/jesperf/ontologies/2019/11/untitled-ontology-9#EMMO_87ac251f_e8cb_4071_9e25_7508282a3f9a"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://emmo.info/domains/emmo-properties.owl#EMMO_e1097637_70d2_4895_973f_2396f04fa204"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/jesperf/ontologies/2019/11/untitled-ontology-9#EMMO_b2ffd395_20f0_47e9_916c_f1aa2fb098a1"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://emmo.info/domains/emmo-properties.owl#EMMO_e1097637_70d2_4895_973f_2396f04fa204"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/jesperf/ontologies/2019/11/untitled-ontology-9#EMMO_c59635ca_2e6d_4314_b770_d32f0c5713db"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://emmo.info/perspectives/emmo-existent.owl#EMMO_b2282816_b7a3_44c6_b2cb_3feff1ceb7fe"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/jesperf/ontologies/2019/11/untitled-ontology-9#EMMO_3eb52322_c923_4970_a99b_8dc168d249f8"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://emmo.info/perspectives/emmo-existent.owl#EMMO_b2282816_b7a3_44c6_b2cb_3feff1ceb7fe"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/jesperf/ontologies/2019/11/untitled-ontology-9#EMMO_f1eec7df_e31b_454c_ba25_1269ccebe2a3"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>Grains contacts each other at surfaces called grain boundaries.</rdfs:comment>
+        <rdfs:isDefinedBy>Crystallite composing a solid metal.</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">Grain</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jesperf/ontologies/2019/11/untitled-ontology-9#EMMO_a85d4c4a_f24c_4731_8d7e_5b8a80e20175 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jesperf/ontologies/2019/11/untitled-ontology-9#EMMO_a85d4c4a_f24c_4731_8d7e_5b8a80e20175">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jesperf/ontologies/2019/11/untitled-ontology-9#EMMO_71b28aa6_83aa_4ca2_a65b_094c148f21a0"/>
+        <rdfs:label xml:lang="en">LowAngleGrainBoundry</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jesperf/ontologies/2019/11/untitled-ontology-9#EMMO_aeb6061e_0b4e_414a_bbf6_687adbf0110d -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jesperf/ontologies/2019/11/untitled-ontology-9#EMMO_aeb6061e_0b4e_414a_bbf6_687adbf0110d">
+        <rdfs:subClassOf rdf:resource="http://emmo.info/domains/emmo-material.owl#EMMO_174cf221_9d16_427c_abea_e217a948969b"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://emmo.info/base/emmo-mereotopology.owl#EMMO_4d6504f1_c470_4ce9_b941_bbbebc9ab05d"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">3</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/jesperf/ontologies/2019/11/untitled-ontology-9#EMMO_a5a64cc8_4e71_4bd0_baf2_c4d17224c570"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>The contact region (line) between three grains.</rdfs:comment>
+        <rdfs:label xml:lang="en">TripleLine</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jesperf/ontologies/2019/11/untitled-ontology-9#EMMO_b2ffd395_20f0_47e9_916c_f1aa2fb098a1 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jesperf/ontologies/2019/11/untitled-ontology-9#EMMO_b2ffd395_20f0_47e9_916c_f1aa2fb098a1">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jesperf/ontologies/2019/11/untitled-ontology-9#EMMO_1317bc47_54dd_456d_afea_c437e38e788f"/>
+        <rdfs:label xml:lang="en">MeanSubgrainSize</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jesperf/ontologies/2019/11/untitled-ontology-9#EMMO_b62f1bdb_a937_410e_aa59_608ca27e56a1 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jesperf/ontologies/2019/11/untitled-ontology-9#EMMO_b62f1bdb_a937_410e_aa59_608ca27e56a1">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jesperf/ontologies/2019/11/untitled-ontology-9#EMMO_f2501cdf_6add_4913_9340_521ce1297eec"/>
+        <rdfs:label xml:lang="en">StableParticle</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jesperf/ontologies/2019/11/untitled-ontology-9#EMMO_c59635ca_2e6d_4314_b770_d32f0c5713db -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jesperf/ontologies/2019/11/untitled-ontology-9#EMMO_c59635ca_2e6d_4314_b770_d32f0c5713db">
+        <rdfs:subClassOf rdf:resource="http://emmo.info/domains/emmo-si-units.owl#EMMO_f1a51559_aa3d_43a0_9327_918039f0dfed"/>
+        <rdfs:subClassOf rdf:resource="http://emmo.info/domains/emmo-units.owl#EMMO_cd2cd0de_e0cc_4ef1_b27e_2e88db027bac"/>
+        <rdfs:label xml:lang="en">GrainSize</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jesperf/ontologies/2019/11/untitled-ontology-9#EMMO_c790454f_fe29_4f79_98c5_a368cb890817 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jesperf/ontologies/2019/11/untitled-ontology-9#EMMO_c790454f_fe29_4f79_98c5_a368cb890817">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jesperf/ontologies/2019/11/untitled-ontology-9#EMMO_c59635ca_2e6d_4314_b770_d32f0c5713db"/>
+        <rdfs:label xml:lang="en">GrainSizeDistribution</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jesperf/ontologies/2019/11/untitled-ontology-9#EMMO_ca41034e_060f_49c8_8c4b_21e7d6a9d81f -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jesperf/ontologies/2019/11/untitled-ontology-9#EMMO_ca41034e_060f_49c8_8c4b_21e7d6a9d81f">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jesperf/ontologies/2019/11/untitled-ontology-9#EMMO_cdbd9b35_e5ad_4a38_8120_913106854b06"/>
+        <emmo-annotations:EMMO_70fe84ff_99b6_4206_a9fc_9a8931836d84>The size distribution of a given type (or types) of particles.</emmo-annotations:EMMO_70fe84ff_99b6_4206_a9fc_9a8931836d84>
+        <rdfs:label xml:lang="en">ParticleSizeDistribution</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jesperf/ontologies/2019/11/untitled-ontology-9#EMMO_cdbd9b35_e5ad_4a38_8120_913106854b06 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jesperf/ontologies/2019/11/untitled-ontology-9#EMMO_cdbd9b35_e5ad_4a38_8120_913106854b06">
+        <rdfs:subClassOf rdf:resource="http://emmo.info/domains/emmo-si-units.owl#EMMO_f1a51559_aa3d_43a0_9327_918039f0dfed"/>
+        <rdfs:subClassOf rdf:resource="http://emmo.info/domains/emmo-units.owl#EMMO_cd2cd0de_e0cc_4ef1_b27e_2e88db027bac"/>
+        <rdfs:comment>Particle size is typically a quite fuzzily defined. Often people refer to the radius or a sphere with the same volume of the particle. To simplify, we here refer to the particle volume directly.</rdfs:comment>
+        <rdfs:label xml:lang="en">ParticleSize</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jesperf/ontologies/2019/11/untitled-ontology-9#EMMO_d0392d0d_177f_42ad_9778_50235857641a -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jesperf/ontologies/2019/11/untitled-ontology-9#EMMO_d0392d0d_177f_42ad_9778_50235857641a">
+        <rdfs:subClassOf rdf:resource="http://emmo.info/domains/emmo-models.owl#EMMO_4456a5d2_16a6_4ee1_9a8e_5c75956b28ea"/>
+        <rdfs:label xml:lang="en">WorkHardeningModel</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jesperf/ontologies/2019/11/untitled-ontology-9#EMMO_df90ff24_675a_41c7_801e_03df55c7aaf1 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jesperf/ontologies/2019/11/untitled-ontology-9#EMMO_df90ff24_675a_41c7_801e_03df55c7aaf1">
+        <rdfs:subClassOf rdf:resource="http://emmo.info/domains/emmo-material.owl#EMMO_a2b006f2_bbfd_4dba_bcaa_3fca20cd6be1"/>
+        <rdfs:label xml:lang="en">Crystal</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jesperf/ontologies/2019/11/untitled-ontology-9#EMMO_e1488fce_2c05_4f91_a5cc_94571961bbb1 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jesperf/ontologies/2019/11/untitled-ontology-9#EMMO_e1488fce_2c05_4f91_a5cc_94571961bbb1">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jesperf/ontologies/2019/11/untitled-ontology-9#EMMO_5f8a1431_27e1_4879_92b1_13c7698641d9"/>
+        <rdfs:label xml:lang="en">PartialDislocation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jesperf/ontologies/2019/11/untitled-ontology-9#EMMO_e513a9fa_ac30_47eb_ba67_bb0487663dd5 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jesperf/ontologies/2019/11/untitled-ontology-9#EMMO_e513a9fa_ac30_47eb_ba67_bb0487663dd5">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jesperf/ontologies/2019/11/untitled-ontology-9#EMMO_71b28aa6_83aa_4ca2_a65b_094c148f21a0"/>
+        <rdfs:label xml:lang="en">HighAngleGrainBoundary</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jesperf/ontologies/2019/11/untitled-ontology-9#EMMO_e66958e9_24d8_4599_8f51_3165682d0b87 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jesperf/ontologies/2019/11/untitled-ontology-9#EMMO_e66958e9_24d8_4599_8f51_3165682d0b87">
+        <rdfs:subClassOf rdf:resource="http://emmo.info/domains/emmo-material.owl#EMMO_a2b006f2_bbfd_4dba_bcaa_3fca20cd6be1"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://emmo.info/domains/emmo-properties.owl#EMMO_e1097637_70d2_4895_973f_2396f04fa204"/>
+                <owl:someValuesFrom rdf:resource="http://emmo.info/domains/emmo-si-units.owl#EMMO_a1c771c6_f1af_4c72_81a1_9d9a002039f9"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://emmo.info/domains/emmo-properties.owl#EMMO_e1097637_70d2_4895_973f_2396f04fa204"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/jesperf/ontologies/2019/11/untitled-ontology-9#EMMO_1a93b88c_b195_41b7_a848_e5ee9aef1203"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://emmo.info/perspectives/emmo-existent.owl#EMMO_b2282816_b7a3_44c6_b2cb_3feff1ceb7fe"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/jesperf/ontologies/2019/11/untitled-ontology-9#EMMO_5f8a1431_27e1_4879_92b1_13c7698641d9"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>Also known as solid solution in metallic alloys.</rdfs:comment>
+        <rdfs:label xml:lang="en">Matrix</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jesperf/ontologies/2019/11/untitled-ontology-9#EMMO_eb00020c_6b44_4253_bed7_24198a25ada3 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jesperf/ontologies/2019/11/untitled-ontology-9#EMMO_eb00020c_6b44_4253_bed7_24198a25ada3">
+        <rdfs:subClassOf rdf:resource="http://emmo.info/domains/emmo-models.owl#EMMO_84cadc45_6758_46f2_ba2a_5ead65c70213"/>
+        <rdfs:label xml:lang="en">KineticMonteCarlo</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jesperf/ontologies/2019/11/untitled-ontology-9#EMMO_ebeafdfc_1e38_4235_b8ae_c4a846333804 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jesperf/ontologies/2019/11/untitled-ontology-9#EMMO_ebeafdfc_1e38_4235_b8ae_c4a846333804">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jesperf/ontologies/2019/11/untitled-ontology-9#EMMO_834d570d_dc0a_4347_b805_51250699d04d"/>
+        <rdfs:label xml:lang="en">Cluster</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jesperf/ontologies/2019/11/untitled-ontology-9#EMMO_eed91a97_afb2_4be8_b401_7ff29573c720 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jesperf/ontologies/2019/11/untitled-ontology-9#EMMO_eed91a97_afb2_4be8_b401_7ff29573c720">
+        <rdfs:subClassOf rdf:resource="http://emmo.info/domains/emmo-models.owl#EMMO_4456a5d2_16a6_4ee1_9a8e_5c75956b28ea"/>
+        <rdfs:label xml:lang="en">KampmannWagnerNumericalModel</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jesperf/ontologies/2019/11/untitled-ontology-9#EMMO_ef15c05d_d541_4995_a67d_2d0936d85c08 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jesperf/ontologies/2019/11/untitled-ontology-9#EMMO_ef15c05d_d541_4995_a67d_2d0936d85c08">
+        <rdfs:subClassOf rdf:resource="http://emmo.info/domains/emmo-material.owl#EMMO_174cf221_9d16_427c_abea_e217a948969b"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://emmo.info/base/emmo-mereotopology.owl#EMMO_4d6504f1_c470_4ce9_b941_bbbebc9ab05d"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">4</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/jesperf/ontologies/2019/11/untitled-ontology-9#EMMO_a5a64cc8_4e71_4bd0_baf2_c4d17224c570"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>A region (point) of a microstructure that is in contact with 4 grains.</rdfs:comment>
+        <rdfs:label xml:lang="en">QuadriplePoint</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jesperf/ontologies/2019/11/untitled-ontology-9#EMMO_f039fbff_05ab_4a5f_a390_2d2188dad1fd -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jesperf/ontologies/2019/11/untitled-ontology-9#EMMO_f039fbff_05ab_4a5f_a390_2d2188dad1fd">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jesperf/ontologies/2019/11/untitled-ontology-9#EMMO_5f8a1431_27e1_4879_92b1_13c7698641d9"/>
+        <rdfs:label xml:lang="en">IntrinsicDislocation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jesperf/ontologies/2019/11/untitled-ontology-9#EMMO_f1eec7df_e31b_454c_ba25_1269ccebe2a3 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jesperf/ontologies/2019/11/untitled-ontology-9#EMMO_f1eec7df_e31b_454c_ba25_1269ccebe2a3">
+        <rdfs:subClassOf rdf:resource="http://emmo.info/domains/emmo-material.owl#EMMO_174cf221_9d16_427c_abea_e217a948969b"/>
+        <rdfs:label xml:lang="en">SubgrainBoundary</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jesperf/ontologies/2019/11/untitled-ontology-9#EMMO_f2501cdf_6add_4913_9340_521ce1297eec -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jesperf/ontologies/2019/11/untitled-ontology-9#EMMO_f2501cdf_6add_4913_9340_521ce1297eec">
+        <rdfs:subClassOf rdf:resource="http://emmo.info/domains/emmo-material.owl#EMMO_a2b006f2_bbfd_4dba_bcaa_3fca20cd6be1"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://emmo.info/domains/emmo-properties.owl#EMMO_e1097637_70d2_4895_973f_2396f04fa204"/>
+                <owl:someValuesFrom rdf:resource="http://emmo.info/domains/emmo-si-units.owl#EMMO_a1c771c6_f1af_4c72_81a1_9d9a002039f9"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://emmo.info/domains/emmo-properties.owl#EMMO_e1097637_70d2_4895_973f_2396f04fa204"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/jesperf/ontologies/2019/11/untitled-ontology-9#EMMO_cdbd9b35_e5ad_4a38_8120_913106854b06"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Particle</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jesperf/ontologies/2019/11/untitled-ontology-9#EMMO_f87319a6_fecb_4884_bda8_7a5967479f0a -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jesperf/ontologies/2019/11/untitled-ontology-9#EMMO_f87319a6_fecb_4884_bda8_7a5967479f0a">
+        <rdfs:subClassOf rdf:resource="http://emmo.info/domains/emmo-units.owl#EMMO_f1e87395_b79d_4f3a_8815_e35914d0aacf"/>
+        <rdfs:comment>The angle between two grains (or subgrains)</rdfs:comment>
+        <rdfs:label xml:lang="en">MisorientationAngle</rdfs:label>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.2.8.20170104-2310) https://github.com/owlcs/owlapi -->
+

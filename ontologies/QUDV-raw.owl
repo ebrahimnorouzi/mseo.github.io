@@ -1,0 +1,899 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY dc "http://purl.org/dc/elements/1.1/" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY owl2xml "http://www.w3.org/2006/12/owl2-xml#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY SysML-QUDV "http://www.example.org/SysML-QUDV.owl#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+
+<rdf:RDF xmlns="http://www.example.org/SysML-QUDV.owl#"
+     xml:base="http://www.example.org/SysML-QUDV.owl"
+     xmlns:owl2xml="http://www.w3.org/2006/12/owl2-xml#"
+     xmlns:SysML-QUDV="http://www.example.org/SysML-QUDV.owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#">
+    <owl:Ontology rdf:about=""/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <owl:AnnotationProperty rdf:about="&dc;description"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.example.org/SysML-QUDV.owl#baseDimension -->
+
+    <owl:ObjectProperty rdf:about="#baseDimension">
+        <rdfs:label>baseDimension</rdfs:label>
+        <rdfs:range rdf:resource="#QuantityKind"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.example.org/SysML-QUDV.owl#baseQuantityKind -->
+
+    <owl:ObjectProperty rdf:about="#baseQuantityKind">
+        <rdf:type rdf:resource="&owl;AsymmetricProperty"/>
+        <rdfs:label
+            >baseQuantityKind</rdfs:label>
+        <rdfs:range rdf:resource="#QuantityKind"/>
+        <rdfs:subPropertyOf rdf:resource="#quantityKind"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.example.org/SysML-QUDV.owl#baseUnit -->
+
+    <owl:ObjectProperty rdf:about="#baseUnit">
+        <rdf:type rdf:resource="&owl;AsymmetricProperty"/>
+        <rdfs:label>baseUnit</rdfs:label>
+        <rdfs:range rdf:resource="#Unit"/>
+        <rdfs:subPropertyOf rdf:resource="#unit"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.example.org/SysML-QUDV.owl#dimension -->
+
+    <owl:ObjectProperty rdf:about="#dimension">
+        <rdfs:label>dimension</rdfs:label>
+        <rdfs:range rdf:resource="#Dimension"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.example.org/SysML-QUDV.owl#factor -->
+
+    <owl:ObjectProperty rdf:about="#factor">
+        <rdf:type rdf:resource="&owl;AsymmetricProperty"/>
+        <rdfs:label>factor</rdfs:label>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="#DimensionFactor"/>
+                    <rdf:Description rdf:about="#QuantityKindFactor"/>
+                    <rdf:Description rdf:about="#UnitFactor"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.example.org/SysML-QUDV.owl#generalQuantityKind -->
+
+    <owl:ObjectProperty rdf:about="#generalQuantityKind">
+        <rdf:type rdf:resource="&owl;IrreflexiveProperty"/>
+        <rdfs:label
+            >generalQuantityKind</rdfs:label>
+        <rdfs:range rdf:resource="#QuantityKind"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.example.org/SysML-QUDV.owl#prefix -->
+
+    <owl:ObjectProperty rdf:about="#prefix">
+        <rdf:type rdf:resource="&owl;AsymmetricProperty"/>
+        <rdf:type rdf:resource="&owl;IrreflexiveProperty"/>
+        <rdfs:label>prefix</rdfs:label>
+        <rdfs:range rdf:resource="#Prefix"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.example.org/SysML-QUDV.owl#quantityKind -->
+
+    <owl:ObjectProperty rdf:about="#quantityKind">
+        <rdf:type rdf:resource="&owl;AsymmetricProperty"/>
+        <rdfs:label>quantityKind</rdfs:label>
+        <rdfs:range rdf:resource="#QuantityKind"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.example.org/SysML-QUDV.owl#referenceUnit -->
+
+    <owl:ObjectProperty rdf:about="#referenceUnit">
+        <rdf:type rdf:resource="&owl;AsymmetricProperty"/>
+        <rdfs:label>referenceUnit</rdfs:label>
+        <rdfs:range rdf:resource="#Unit"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.example.org/SysML-QUDV.owl#scale -->
+
+    <owl:ObjectProperty rdf:about="#scale">
+        <rdf:type rdf:resource="&owl;AsymmetricProperty"/>
+        <rdf:type rdf:resource="&owl;IrreflexiveProperty"/>
+        <rdfs:label>scale</rdfs:label>
+        <rdfs:range rdf:resource="#Scale"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.example.org/SysML-QUDV.owl#scaleValueDefinition -->
+
+    <owl:ObjectProperty rdf:about="#scaleValueDefinition">
+        <rdf:type rdf:resource="&owl;AsymmetricProperty"/>
+        <rdf:type rdf:resource="&owl;IrreflexiveProperty"/>
+        <rdfs:label
+            >scaleValueDefinition</rdfs:label>
+        <rdfs:range rdf:resource="#ScaleValueDefinition"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.example.org/SysML-QUDV.owl#specificQuantityKind -->
+
+    <owl:ObjectProperty rdf:about="#specificQuantityKind">
+        <rdf:type rdf:resource="&owl;IrreflexiveProperty"/>
+        <rdfs:label
+            >specificQuantityKind</rdfs:label>
+        <rdfs:range rdf:resource="#SpecializedQuantityKind"/>
+        <owl:inverseOf rdf:resource="#generalQuantityKind"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.example.org/SysML-QUDV.owl#systemOfQuantities -->
+
+    <owl:ObjectProperty rdf:about="#systemOfQuantities">
+        <rdfs:label
+            >systemOfQuantities</rdfs:label>
+        <rdfs:range rdf:resource="#SystemOfQuantities"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.example.org/SysML-QUDV.owl#unit -->
+
+    <owl:ObjectProperty rdf:about="#unit">
+        <rdf:type rdf:resource="&owl;AsymmetricProperty"/>
+        <rdfs:label>unit</rdfs:label>
+        <rdfs:range rdf:resource="#Unit"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.example.org/SysML-QUDV.owl#conversionFactor -->
+
+    <owl:DatatypeProperty rdf:about="#conversionFactor">
+        <rdfs:label
+            >conversionFactor</rdfs:label>
+        <rdfs:range rdf:resource="&xsd;double"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.example.org/SysML-QUDV.owl#conversionOffset -->
+
+    <owl:DatatypeProperty rdf:about="#conversionOffset">
+        <rdfs:label
+            >conversionOffset</rdfs:label>
+        <rdfs:range rdf:resource="&xsd;double"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.example.org/SysML-QUDV.owl#definitionURI -->
+
+    <owl:DatatypeProperty rdf:about="#definitionURI">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdfs:label>definitionURI</rdfs:label>
+        <dc:description rdf:datatype="&xsd;string"
+            >URI that contains an authoritative definition of the referent thing</dc:description>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.example.org/SysML-QUDV.owl#description -->
+
+    <owl:DatatypeProperty rdf:about="#description">
+        <rdfs:label>description</rdfs:label>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.example.org/SysML-QUDV.owl#exponent -->
+
+    <owl:DatatypeProperty rdf:about="#exponent">
+        <rdfs:label>exponent</rdfs:label>
+        <rdfs:range rdf:resource="&xsd;double"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.example.org/SysML-QUDV.owl#expression -->
+
+    <owl:DatatypeProperty rdf:about="#expression">
+        <rdfs:label
+            >conversionExpression</rdfs:label>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.example.org/SysML-QUDV.owl#name -->
+
+    <owl:DatatypeProperty rdf:about="#name">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdfs:label>name</rdfs:label>
+        <dc:description rdf:datatype="&xsd;string"
+            >human-readable word or sequence of words by which a thing is known</dc:description>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.example.org/SysML-QUDV.owl#numericalValue -->
+
+    <owl:DatatypeProperty rdf:about="#numericalValue">
+        <rdfs:label>numericalValue</rdfs:label>
+        <rdfs:range rdf:resource="&xsd;double"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.example.org/SysML-QUDV.owl#symbol -->
+
+    <owl:DatatypeProperty rdf:about="#symbol">
+        <rdfs:label>symbol</rdfs:label>
+        <dc:description rdf:datatype="&xsd;string"
+            >short symbolic name</dc:description>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.example.org/SysML-QUDV.owl#symbolicExpression -->
+
+    <owl:DatatypeProperty rdf:about="#symbolicExpression">
+        <rdfs:label
+            >symbolicExpression</rdfs:label>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.example.org/SysML-QUDV.owl#unitMultipleFactor -->
+
+    <owl:DatatypeProperty rdf:about="#unitMultipleFactor">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdfs:label
+            >unitMultipleFactor</rdfs:label>
+        <rdfs:range rdf:resource="&xsd;double"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.example.org/SysML-QUDV.owl#ConversionBasedUnit -->
+
+    <owl:Class rdf:about="#ConversionBasedUnit">
+        <rdfs:label
+            >ConversionBasedUnit</rdfs:label>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="#referenceUnit"/>
+                <owl:onClass rdf:resource="#Unit"/>
+                <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="#Unit"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.example.org/SysML-QUDV.owl#DerivedQuantityKind -->
+
+    <owl:Class rdf:about="#DerivedQuantityKind">
+        <rdfs:label
+            >DerivedQuantityKind</rdfs:label>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="#factor"/>
+                <owl:someValuesFrom rdf:resource="#QuantityKindFactor"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="#QuantityKind"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.example.org/SysML-QUDV.owl#DerivedUnit -->
+
+    <owl:Class rdf:about="#DerivedUnit">
+        <rdfs:label>DerivedUnit</rdfs:label>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="#factor"/>
+                <owl:someValuesFrom rdf:resource="#UnitFactor"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="#Unit"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.example.org/SysML-QUDV.owl#Dimension -->
+
+    <owl:Class rdf:about="#Dimension">
+        <rdfs:label>Dimension</rdfs:label>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="#factor"/>
+                        <owl:allValuesFrom rdf:resource="#DimensionFactor"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="#symbolicExpression"/>
+                        <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
+                        <owl:onDataRange rdf:resource="&xsd;string"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="&owl;Thing"/>
+        <rdfs:comment
+            >A Dimension represents the [VIM] concept of &#39;quantity dimension&#39; that is defined as &#39;expression of the dependence of a quantity on the base quantities of a system of quantities as a product of powers of factors corresponding to the base quantities, omitting any numerical factor.&#39;
+
+For example in the ISQ the quantity dimension of &#39;force&#39; is denoted by dim F = L&#239;&#191;&#189;M&#239;&#191;&#189;T^2, where &#39;F&#39; is the symbol for &#39;force&#39;, and &#39;L&#39;, &#39;M&#39;, &#39;T&#39; are the symbols for the ISQ base quantities &#39;length&#39;, &#39;mass&#39; and &#39;time&#39; respectively.
+
+The Dimension of any QuantityKind can be derived through the algorithm that is defined in C.5.3.20 with SystemOfQuantities. The actual Dimension for a given QuantityKind depends on the choice of baseQuantityKind specified in a SystemOfQuantities.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.example.org/SysML-QUDV.owl#DimensionFactor -->
+
+    <owl:Class rdf:about="#DimensionFactor">
+        <rdfs:label>DimensionFactor</rdfs:label>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="#baseDimension"/>
+                <owl:onClass rdf:resource="#QuantityKind"/>
+                <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="&owl;Thing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.example.org/SysML-QUDV.owl#GeneralConversionUnit -->
+
+    <owl:Class rdf:about="#GeneralConversionUnit">
+        <rdfs:label
+            >GeneralConversionUnit</rdfs:label>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="#expression"/>
+                <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="&xsd;string"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="#ConversionBasedUnit"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.example.org/SysML-QUDV.owl#LinearConversionUnit -->
+
+    <owl:Class rdf:about="#LinearConversionUnit">
+        <rdfs:label
+            >LinearConversionUnit</rdfs:label>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="#conversionFactor"/>
+                <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="&xsd;double"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="#ConversionBasedUnit"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.example.org/SysML-QUDV.owl#Prefix -->
+
+    <owl:Class rdf:about="#Prefix">
+        <rdfs:label>Prefix</rdfs:label>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="#name"/>
+                        <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
+                        <owl:onDataRange rdf:resource="&xsd;string"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="#symbol"/>
+                        <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
+                        <owl:onDataRange rdf:resource="&xsd;string"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="#unitMultipleFactor"/>
+                        <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
+                        <owl:onDataRange rdf:resource="&xsd;double"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="&owl;Thing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.example.org/SysML-QUDV.owl#PrefixedUnit -->
+
+    <owl:Class rdf:about="#PrefixedUnit">
+        <rdfs:label>PrefixedUnit</rdfs:label>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="#prefix"/>
+                <owl:onClass rdf:resource="#Prefix"/>
+                <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="#ConversionBasedUnit"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.example.org/SysML-QUDV.owl#Quantity -->
+
+    <owl:Class rdf:about="#Quantity">
+        <rdfs:label>Quantity</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&owl;Thing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.example.org/SysML-QUDV.owl#QuantityKind -->
+
+    <owl:Class rdf:about="#QuantityKind">
+        <rdfs:label>QuantityKind</rdfs:label>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="#scale"/>
+                        <owl:onClass rdf:resource="#Scale"/>
+                        <owl:maxQualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="#name"/>
+                        <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
+                        <owl:onDataRange rdf:resource="&xsd;string"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="#symbol"/>
+                        <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
+                        <owl:onDataRange rdf:resource="&xsd;string"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="#definitionURI"/>
+                        <owl:maxQualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                        <owl:onDataRange rdf:resource="&xsd;string"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="#description"/>
+                        <owl:maxQualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                        <owl:onDataRange rdf:resource="&xsd;string"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="&owl;Thing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.example.org/SysML-QUDV.owl#QuantityKindFactor -->
+
+    <owl:Class rdf:about="#QuantityKindFactor">
+        <rdfs:label
+            >QuantityKindFactor</rdfs:label>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="#quantityKind"/>
+                        <owl:onClass rdf:resource="#QuantityKind"/>
+                        <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="#exponent"/>
+                        <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
+                        <owl:onDataRange rdf:resource="&xsd;double"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="&owl;Thing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.example.org/SysML-QUDV.owl#Scale -->
+
+    <owl:Class rdf:about="#Scale">
+        <rdfs:label>Scale</rdfs:label>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="#scaleValueDefinition"/>
+                        <owl:someValuesFrom rdf:resource="#ScaleValueDefinition"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="#unit"/>
+                        <owl:onClass rdf:resource="#Unit"/>
+                        <owl:maxQualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="&owl;Thing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.example.org/SysML-QUDV.owl#ScaleValueDefinition -->
+
+    <owl:Class rdf:about="#ScaleValueDefinition">
+        <rdfs:label
+            >ScaleValueDefinition</rdfs:label>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="#description"/>
+                        <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
+                        <owl:onDataRange rdf:resource="&xsd;string"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="#numericalValue"/>
+                        <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
+                        <owl:onDataRange rdf:resource="&xsd;double"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="&owl;Thing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.example.org/SysML-QUDV.owl#SimpleQuantityKind -->
+
+    <owl:Class rdf:about="#SimpleQuantityKind">
+        <rdfs:label
+            >SimpleQuantityKind</rdfs:label>
+        <rdfs:subClassOf rdf:resource="#QuantityKind"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.example.org/SysML-QUDV.owl#SimpleUnit -->
+
+    <owl:Class rdf:about="#SimpleUnit">
+        <rdfs:label>SimpleUnit</rdfs:label>
+        <rdfs:subClassOf rdf:resource="#Unit"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.example.org/SysML-QUDV.owl#SpecializedQuantityKind -->
+
+    <owl:Class rdf:about="#SpecializedQuantityKind">
+        <rdfs:label
+            >SpecializedQuantityKind</rdfs:label>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="#generalQuantityKind"/>
+                <owl:onClass rdf:resource="#QuantityKind"/>
+                <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="#QuantityKind"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.example.org/SysML-QUDV.owl#SystemOfQuantities -->
+
+    <owl:Class rdf:about="#SystemOfQuantities">
+        <rdfs:label
+            >SystemOfQuantities</rdfs:label>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="#dimension"/>
+                        <owl:someValuesFrom rdf:resource="#Dimension"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="#quantityKind"/>
+                        <owl:someValuesFrom rdf:resource="#QuantityKind"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="#baseQuantityKind"/>
+                        <owl:allValuesFrom rdf:resource="#QuantityKind"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="#name"/>
+                        <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
+                        <owl:onDataRange rdf:resource="&xsd;string"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="#symbol"/>
+                        <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
+                        <owl:onDataRange rdf:resource="&xsd;string"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="#definitionURI"/>
+                        <owl:maxQualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                        <owl:onDataRange rdf:resource="&xsd;string"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="#description"/>
+                        <owl:maxQualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                        <owl:onDataRange rdf:resource="&xsd;string"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="&owl;Thing"/>
+        <rdfs:comment
+            >A SystemOfQuantities represents the [VIM] concept of &#39;system of quantities&#39; that is defined as a &#39;set of quantities together with a set of non-contradictory equations relating those quantities&#39;. It collects a list of QuantityKind that specifies the kinds of quantity that are known in the system.
+
+The International System of Quantities (ISQ) is an example of a SystemOfQuantities, defined in ISO 31 and ISO/IEC 80000.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.example.org/SysML-QUDV.owl#SystemOfUnits -->
+
+    <owl:Class rdf:about="#SystemOfUnits">
+        <rdfs:label>SystemOfUnits</rdfs:label>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="#unit"/>
+                        <owl:someValuesFrom rdf:resource="#Unit"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="#baseUnit"/>
+                        <owl:allValuesFrom rdf:resource="#Unit"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="#prefix"/>
+                        <owl:allValuesFrom rdf:resource="#Prefix"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="#systemOfQuantities"/>
+                        <owl:allValuesFrom rdf:resource="#SystemOfQuantities"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="#name"/>
+                        <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
+                        <owl:onDataRange rdf:resource="&xsd;string"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="#symbol"/>
+                        <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
+                        <owl:onDataRange rdf:resource="&xsd;string"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="#definitionURI"/>
+                        <owl:maxQualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                        <owl:onDataRange rdf:resource="&xsd;string"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="#description"/>
+                        <owl:maxQualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                        <owl:onDataRange rdf:resource="&xsd;string"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="&owl;Thing"/>
+        <rdfs:comment
+            >A SystemOfUnits represents the [VIM] concept of &#39;system of units&#39; that is defined as &#39;set of base units and derived units, together with their multiples and submultiples, defined in accordance with given rules, for a given system of quantities&#39;. It collects a list of Unit that are known in the system. A SysML SystemOfUnits only optionally defines multiples and submultiples.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.example.org/SysML-QUDV.owl#Unit -->
+
+    <owl:Class rdf:about="#Unit">
+        <rdfs:label>Unit</rdfs:label>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="#quantityKind"/>
+                        <owl:onClass rdf:resource="#QuantityKind"/>
+                        <owl:maxQualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="#name"/>
+                        <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
+                        <owl:onDataRange rdf:resource="&xsd;string"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="#symbol"/>
+                        <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
+                        <owl:onDataRange rdf:resource="&xsd;string"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="#definitionURI"/>
+                        <owl:maxQualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                        <owl:onDataRange rdf:resource="&xsd;string"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="#description"/>
+                        <owl:maxQualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                        <owl:onDataRange rdf:resource="&xsd;string"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="&owl;Thing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.example.org/SysML-QUDV.owl#UnitFactor -->
+
+    <owl:Class rdf:about="#UnitFactor">
+        <rdfs:label>UnitFactor</rdfs:label>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="#unit"/>
+                        <owl:onClass rdf:resource="#Unit"/>
+                        <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="#exponent"/>
+                        <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
+                        <owl:onDataRange rdf:resource="&xsd;double"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="&owl;Thing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#Thing -->
+
+    <owl:Class rdf:about="&owl;Thing"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="#ConversionBasedUnit"/>
+            <rdf:Description rdf:about="#DerivedUnit"/>
+            <rdf:Description rdf:about="#SimpleUnit"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="#Dimension"/>
+            <rdf:Description rdf:about="#DimensionFactor"/>
+            <rdf:Description rdf:about="#Prefix"/>
+            <rdf:Description rdf:about="#Quantity"/>
+            <rdf:Description rdf:about="#QuantityKind"/>
+            <rdf:Description rdf:about="#QuantityKindFactor"/>
+            <rdf:Description rdf:about="#Scale"/>
+            <rdf:Description rdf:about="#ScaleValueDefinition"/>
+            <rdf:Description rdf:about="#SystemOfQuantities"/>
+            <rdf:Description rdf:about="#SystemOfUnits"/>
+            <rdf:Description rdf:about="#Unit"/>
+            <rdf:Description rdf:about="#UnitFactor"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="#DerivedQuantityKind"/>
+            <rdf:Description rdf:about="#SimpleQuantityKind"/>
+            <rdf:Description rdf:about="#SpecializedQuantityKind"/>
+        </owl:members>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 2.2.1.1138) http://owlapi.sourceforge.net -->
+

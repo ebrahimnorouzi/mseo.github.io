@@ -1,0 +1,167 @@
+metrics:
+  abox_axiom_count: 35
+  abox_axiom_count_incl: 35
+  annotation_property_count: 8
+  annotation_property_count_incl: 8
+  axiom_count: 361
+  axiom_count_incl: 361
+  class_count: 24
+  class_count_incl: 24
+  consistent: true
+  dataproperty_count: 26
+  dataproperty_count_incl: 26
+  datatypes_count: 4
+  datatypes_count_incl: 4
+  dt_builtin_count: 4
+  dt_builtin_count_incl: 4
+  dt_notbuiltin_count: 0
+  dt_notbuiltin_count_incl: 0
+  expressivity: "ALCHIF(D)"
+  expressivity_incl: "ALCHIF(D)"
+  individual_count: 13
+  individual_count_incl: 13
+  logical_axiom_count: 175
+  logical_axiom_count_incl: 175
+  obj_property_count: 11
+  obj_property_count_incl: 11
+  ontology_anno_count: 10
+  ontology_iri: "http://ontorule-project.eu/resources/steel"
+  ontology_version_iri: "no.iri"
+  owl2: true
+  owl2_dl: false
+  owl2_el: false
+  owl2_ql: false
+  owl2_rl: false
+  rbox_axiom_count: 38
+  rbox_axiom_count_incl: 38
+  rdfs: false
+  rule_count: 0
+  rule_count_incl: 0
+  signature_entity_count: 86
+  signature_entity_count_incl: 86
+  syntax: "Turtle"
+  tbox_axiom_count: 102
+  tbox_axiom_count_incl: 102
+  tboxrbox_axiom_count: 140
+  tboxrbox_axiom_count_incl: 140
+  unsatisfiable_class_count: 0
+  axiom_types:
+  - "FunctionalObjectProperty"
+  - "SubObjectPropertyOf"
+  - "SubDataPropertyOf"
+  - "DataPropertyRange"
+  - "ClassAssertion"
+  - "ObjectPropertyRange"
+  - "SubClassOf"
+  - "AnnotationAssertion"
+  - "DataPropertyAssertion"
+  - "ObjectPropertyDomain"
+  - "DisjointClasses"
+  - "DataPropertyDomain"
+  - "FunctionalDataProperty"
+  - "Declaration"
+  - "InverseObjectProperties"
+  axiom_types_incl:
+  - "FunctionalObjectProperty"
+  - "SubObjectPropertyOf"
+  - "SubDataPropertyOf"
+  - "DataPropertyRange"
+  - "ClassAssertion"
+  - "ObjectPropertyRange"
+  - "SubClassOf"
+  - "AnnotationAssertion"
+  - "DataPropertyAssertion"
+  - "ObjectPropertyDomain"
+  - "DisjointClasses"
+  - "DataPropertyDomain"
+  - "FunctionalDataProperty"
+  - "Declaration"
+  - "InverseObjectProperties"
+  constructs:
+  - "C"
+  - "D"
+  - "F"
+  - "H"
+  - "I"
+  - "AL"
+  constructs_incl:
+  - "C"
+  - "D"
+  - "F"
+  - "H"
+  - "I"
+  - "AL"
+  valid_imports: []
+  valid_imports_incl: []
+  axiom_type_count:
+    FunctionalObjectProperty: 6
+    SubObjectPropertyOf: 10
+    SubDataPropertyOf: 25
+    DataPropertyRange: 22
+    ClassAssertion: 26
+    ObjectPropertyRange: 10
+    SubClassOf: 16
+    AnnotationAssertion: 108
+    DataPropertyAssertion: 9
+    ObjectPropertyDomain: 10
+    DisjointClasses: 2
+    DataPropertyDomain: 14
+    FunctionalDataProperty: 22
+    Declaration: 78
+    InverseObjectProperties: 3
+  axiom_type_count_incl:
+    FunctionalObjectProperty: 6
+    SubObjectPropertyOf: 10
+    SubDataPropertyOf: 25
+    DataPropertyRange: 22
+    ClassAssertion: 26
+    ObjectPropertyRange: 10
+    SubClassOf: 16
+    AnnotationAssertion: 108
+    DataPropertyAssertion: 9
+    ObjectPropertyDomain: 10
+    DisjointClasses: 2
+    DataPropertyDomain: 14
+    FunctionalDataProperty: 22
+    Declaration: 78
+    InverseObjectProperties: 3
+  class_expression_count:
+    Class: 120
+  class_expression_count_incl:
+    Class: 120
+  curie_map:
+    owl: "http://www.w3.org/2002/07/owl#"
+    rdf: "http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xsd: "http://www.w3.org/2001/XMLSchema#"
+    rdfs: "http://www.w3.org/2000/01/rdf-schema#"
+    dc: "http://purl.org/dc/terms/"
+  namespace_axiom_count:
+    prefix_unknown: 344
+    owl: 30
+    rdf: 9
+    xsd: 22
+    rdfs: 110
+    dc: 2
+  namespace_axiom_count_incl:
+    prefix_unknown: 344
+    owl: 30
+    rdf: 9
+    xsd: 22
+    rdfs: 110
+    dc: 2
+  namespace_entity_count:
+    prefix_unknown: 72
+    owl: 4
+    rdf: 1
+    xsd: 3
+    rdfs: 2
+    dc: 4
+  namespace_entity_count_incl:
+    prefix_unknown: 72
+    owl: 4
+    rdf: 1
+    xsd: 3
+    rdfs: 2
+    dc: 4
+  owl2dl_profile_violation:
+    UseOfUndeclaredAnnotationProperty: 5

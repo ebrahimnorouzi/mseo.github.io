@@ -1,0 +1,167 @@
+metrics:
+  abox_axiom_count: 2
+  abox_axiom_count_incl: 2
+  annotation_property_count: 22
+  annotation_property_count_incl: 22
+  axiom_count: 973
+  axiom_count_incl: 973
+  class_count: 31
+  class_count_incl: 31
+  consistent: true
+  dataproperty_count: 6
+  dataproperty_count_incl: 6
+  datatypes_count: 3
+  datatypes_count_incl: 3
+  dt_builtin_count: 3
+  dt_builtin_count_incl: 3
+  dt_notbuiltin_count: 0
+  dt_notbuiltin_count_incl: 0
+  expressivity: "ALCRIN(D)"
+  expressivity_incl: "ALCRIN(D)"
+  individual_count: 4
+  individual_count_incl: 4
+  logical_axiom_count: 181
+  logical_axiom_count_incl: 181
+  obj_property_count: 44
+  obj_property_count_incl: 44
+  ontology_anno_count: 5
+  ontology_iri: "http://www.w3.org/ns/prov-o#"
+  ontology_version_iri: "http://www.w3.org/ns/prov-o-20130430"
+  owl2: true
+  owl2_dl: false
+  owl2_el: false
+  owl2_ql: false
+  owl2_rl: false
+  rbox_axiom_count: 49
+  rbox_axiom_count_incl: 49
+  rdfs: false
+  rule_count: 0
+  rule_count_incl: 0
+  signature_entity_count: 110
+  signature_entity_count_incl: 110
+  syntax: "RDF/XML Syntax"
+  tbox_axiom_count: 130
+  tbox_axiom_count_incl: 130
+  tboxrbox_axiom_count: 179
+  tboxrbox_axiom_count_incl: 179
+  unsatisfiable_class_count: 0
+  axiom_types:
+  - "SubObjectPropertyOf"
+  - "SubPropertyChainOf"
+  - "DataPropertyRange"
+  - "AnnotationPropertyRangeOf"
+  - "ObjectPropertyRange"
+  - "SubClassOf"
+  - "AnnotationAssertion"
+  - "SubAnnotationPropertyOf"
+  - "ObjectPropertyDomain"
+  - "DisjointClasses"
+  - "DataPropertyDomain"
+  - "Declaration"
+  - "InverseObjectProperties"
+  - "ObjectPropertyAssertion"
+  axiom_types_incl:
+  - "SubObjectPropertyOf"
+  - "SubPropertyChainOf"
+  - "DataPropertyRange"
+  - "AnnotationPropertyRangeOf"
+  - "ObjectPropertyRange"
+  - "SubClassOf"
+  - "AnnotationAssertion"
+  - "SubAnnotationPropertyOf"
+  - "ObjectPropertyDomain"
+  - "DisjointClasses"
+  - "DataPropertyDomain"
+  - "Declaration"
+  - "InverseObjectProperties"
+  - "ObjectPropertyAssertion"
+  constructs:
+  - "R"
+  - "C"
+  - "D"
+  - "I"
+  - "AL"
+  - "N"
+  constructs_incl:
+  - "R"
+  - "C"
+  - "D"
+  - "I"
+  - "AL"
+  - "N"
+  valid_imports: []
+  valid_imports_incl: []
+  axiom_type_count:
+    SubObjectPropertyOf: 33
+    SubPropertyChainOf: 13
+    DataPropertyRange: 5
+    AnnotationPropertyRangeOf: 2
+    ObjectPropertyRange: 41
+    SubClassOf: 29
+    AnnotationAssertion: 678
+    SubAnnotationPropertyOf: 8
+    ObjectPropertyDomain: 45
+    DisjointClasses: 4
+    DataPropertyDomain: 6
+    Declaration: 104
+    InverseObjectProperties: 3
+    ObjectPropertyAssertion: 2
+  axiom_type_count_incl:
+    SubObjectPropertyOf: 33
+    SubPropertyChainOf: 13
+    DataPropertyRange: 5
+    AnnotationPropertyRangeOf: 2
+    ObjectPropertyRange: 41
+    SubClassOf: 29
+    AnnotationAssertion: 678
+    SubAnnotationPropertyOf: 8
+    ObjectPropertyDomain: 45
+    DisjointClasses: 4
+    DataPropertyDomain: 6
+    Declaration: 104
+    InverseObjectProperties: 3
+    ObjectPropertyAssertion: 2
+  class_expression_count:
+    Class: 202
+    ObjectUnionOf: 6
+    ObjectMaxCardinality: 1
+  class_expression_count_incl:
+    Class: 202
+    ObjectUnionOf: 6
+    ObjectMaxCardinality: 1
+  curie_map:
+    rdf: "http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    owl: "http://www.w3.org/2002/07/owl#"
+    xsd: "http://www.w3.org/2001/XMLSchema#"
+    rdfs: "http://www.w3.org/2000/01/rdf-schema#"
+    prov: "http://www.w3.org/ns/prov#"
+  namespace_axiom_count:
+    prefix_unknown: 4
+    rdf: 8
+    owl: 4
+    xsd: 5
+    rdfs: 282
+    prov: 908
+  namespace_axiom_count_incl:
+    prefix_unknown: 4
+    rdf: 8
+    owl: 4
+    xsd: 5
+    rdfs: 282
+    prov: 908
+  namespace_entity_count:
+    prefix_unknown: 3
+    owl: 2
+    rdf: 1
+    xsd: 2
+    rdfs: 4
+    prov: 98
+  namespace_entity_count_incl:
+    prefix_unknown: 3
+    owl: 2
+    rdf: 1
+    xsd: 2
+    rdfs: 4
+    prov: 98
+  owl2dl_profile_violation:
+    IllegalPunning: 9

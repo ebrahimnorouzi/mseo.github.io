@@ -3,52 +3,52 @@ base_prefixes:
 - qudt
 - QUDTALT
 changed: true
-date: 2023-04-27 12:01:00.036811
+date: 2024-06-17 13:32:52.242391
 metrics:
   'Axioms: Breakdown of axiom types':
     AnnotationAssertion: 1314
-    AnnotationPropertyRangeOf: 19
-    ClassAssertion: 55
-    DataPropertyAssertion: 117
+    AnnotationPropertyRangeOf: 20
+    ClassAssertion: 54
+    DataPropertyAssertion: 104
     DataPropertyDomain: 2
-    DataPropertyRange: 78
-    DatatypeDefinition: 1
-    Declaration: 360
+    DataPropertyRange: 81
+    DatatypeDefinition: 3
+    Declaration: 377
     DisjointClasses: 6
-    EquivalentClasses: 12
-    FunctionalDataProperty: 7
+    EquivalentClasses: 11
+    FunctionalDataProperty: 9
     FunctionalObjectProperty: 7
     InverseFunctionalObjectProperty: 1
-    InverseObjectProperties: 20
-    ObjectPropertyAssertion: 10
+    InverseObjectProperties: 16
+    ObjectPropertyAssertion: 14
     ObjectPropertyDomain: 9
-    ObjectPropertyRange: 53
+    ObjectPropertyRange: 50
     SubAnnotationPropertyOf: 10
-    SubClassOf: 342
+    SubClassOf: 364
     SubDataPropertyOf: 10
-    SubObjectPropertyOf: 50
+    SubObjectPropertyOf: 47
     SymmetricObjectProperty: 5
     TransitiveObjectProperty: 4
-  'Axioms: Number of axioms': 2492
+  'Axioms: Number of axioms': 2518
   'Entities: % of entities reused': 100.0
-  'Entities: Number of annotation properties': 57
-  'Entities: Number of classes': 144
-  'Entities: Number of data properties': 103
-  'Entities: Number of individuals': 89
-  'Entities: Number of object properties': 147
+  'Entities: Number of annotation properties': 45
+  'Entities: Number of classes': 122
+  'Entities: Number of data properties': 113
+  'Entities: Number of individuals': 84
+  'Entities: Number of object properties': 146
   'Entities: Number of unsatisfiable classes': 0
   'Info: Breakdown of OWL class expressions used':
-    Class: 830
-    DataAllValuesFrom: 4
-    DataExactCardinality: 13
-    DataMaxCardinality: 62
-    DataMinCardinality: 14
-    ObjectAllValuesFrom: 67
-    ObjectExactCardinality: 4
-    ObjectMaxCardinality: 31
-    ObjectMinCardinality: 11
+    Class: 847
+    DataAllValuesFrom: 7
+    DataExactCardinality: 15
+    DataMaxCardinality: 74
+    DataMinCardinality: 20
+    ObjectAllValuesFrom: 82
+    ObjectExactCardinality: 3
+    ObjectMaxCardinality: 36
+    ObjectMinCardinality: 13
     ObjectOneOf: 9
-    ObjectUnionOf: 3
+    ObjectUnionOf: 4
   'Info: Does the ontology fall under OWL 2 DL?': false
   'Info: Experimental OBO score':
     _dashboard: 0.549
@@ -62,15 +62,15 @@ metrics:
   'Info: Logical consistency': true
   'Info: Syntax': Turtle
   'Info: Usage of namespaces in axioms':
-    dc: 184
-    dc11: 7
-    owl: 79
-    prefix_unknown: 1826
+    dc: 220
+    dc11: 2
+    owl: 61
+    prefix_unknown: 1872
     prov: 1
-    rdf: 29
-    rdfs: 1118
-    skos: 172
-    xsd: 198
+    rdf: 37
+    rdfs: 1132
+    skos: 173
+    xsd: 186
   'Info: Which ontologies use it?': []
 mirror_from: http://qudt.org/2.1/schema/qudt
 namespace: QUDT
@@ -112,7 +112,7 @@ results:
     status: PASS
   ROBOT Report:
     status: PASS
-sha256_hash: 2a1a819fc3a69698899efe677e33b3bbb3ab6387839cd38e07b139b3c2c495ab
+sha256_hash: 63fa8ffe3dcac9ebf720f5925f1065166557104aa960f9fdeb7213d3d85861d7
 summary:
   comment: 5 errors
   status: ERROR

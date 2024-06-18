@@ -3,55 +3,55 @@ base_prefixes:
 - CHAMEO
 - CHAMEOALT
 changed: true
-date: 2023-04-27 12:01:37.291252
+date: 2024-06-17 13:33:20.201861
 metrics:
   'Axioms: Breakdown of axiom types':
-    AnnotationAssertion: 2128
-    AnnotationPropertyRangeOf: 12
-    AsymmetricObjectProperty: 18
-    ClassAssertion: 2
-    DataPropertyDomain: 4
-    DataPropertyRange: 3
-    Declaration: 887
-    DisjointClasses: 3
-    DisjointObjectProperties: 10
-    DisjointUnion: 73
-    EquivalentClasses: 69
+    AnnotationAssertion: 6399
+    AnnotationPropertyDomain: 2
+    AnnotationPropertyRangeOf: 7
+    AsymmetricObjectProperty: 19
+    ClassAssertion: 4
+    DataPropertyDomain: 5
+    DataPropertyRange: 5
+    Declaration: 1815
+    DisjointClasses: 30
+    DisjointObjectProperties: 12
+    DisjointUnion: 76
+    EquivalentClasses: 263
     FunctionalDataProperty: 3
-    FunctionalObjectProperty: 2
-    InverseFunctionalObjectProperty: 3
-    InverseObjectProperties: 1
+    InverseFunctionalObjectProperty: 2
+    InverseObjectProperties: 5
     IrrefexiveObjectProperty: 24
-    ObjectPropertyDomain: 76
-    ObjectPropertyRange: 83
-    Rule: 9
-    SubAnnotationPropertyOf: 20
-    SubClassOf: 629
-    SubDataPropertyOf: 1
-    SubObjectPropertyOf: 159
-    SymmetricObjectProperty: 12
-  'Axioms: Number of axioms': 4231
+    ObjectPropertyDomain: 79
+    ObjectPropertyRange: 102
+    Rule: 12
+    SubAnnotationPropertyOf: 28
+    SubClassOf: 2135
+    SubDataPropertyOf: 8
+    SubObjectPropertyOf: 185
+    SymmetricObjectProperty: 8
+  'Axioms: Number of axioms': 11228
   'Entities: % of entities reused': 100.0
-  'Entities: Number of annotation properties': 44
-  'Entities: Number of classes': 704
-  'Entities: Number of data properties': 5
-  'Entities: Number of individuals': 2
-  'Entities: Number of object properties': 142
+  'Entities: Number of annotation properties': 59
+  'Entities: Number of classes': 1601
+  'Entities: Number of data properties': 10
+  'Entities: Number of individuals': 4
+  'Entities: Number of object properties': 158
   'Entities: Number of unsatisfiable classes': 0
   'Info: Breakdown of OWL class expressions used':
-    Class: 2656
+    Class: 6857
     DataAllValuesFrom: 3
-    DataExactCardinality: 3
-    DataHasValue: 8
+    DataExactCardinality: 2
+    DataHasValue: 203
     DataSomeValuesFrom: 3
-    ObjectAllValuesFrom: 14
-    ObjectComplementOf: 4
-    ObjectExactCardinality: 9
+    ObjectAllValuesFrom: 16
+    ObjectComplementOf: 3
+    ObjectExactCardinality: 11
     ObjectHasValue: 1
-    ObjectIntersectionOf: 16
+    ObjectIntersectionOf: 17
     ObjectMinCardinality: 1
-    ObjectSomeValuesFrom: 81
-    ObjectUnionOf: 53
+    ObjectSomeValuesFrom: 283
+    ObjectUnionOf: 51
   'Info: Does the ontology fall under OWL 2 DL?': false
   'Info: Experimental OBO score':
     _dashboard: 0.549
@@ -65,14 +65,14 @@ metrics:
   'Info: Logical consistency': true
   'Info: Syntax': Turtle
   'Info: Usage of namespaces in axioms':
-    dc: 12
-    foaf: 1
-    owl: 22
-    prefix_unknown: 4508
-    rdf: 18
-    rdfs: 327
-    skos: 963
-    xsd: 12
+    dc: 27
+    foaf: 9
+    owl: 23
+    prefix_unknown: 11797
+    rdf: 213
+    rdfs: 908
+    skos: 2164
+    xsd: 13
   'Info: Which ontologies use it?': []
 mirror_from: https://raw.githubusercontent.com/emmo-repo/domain-characterisation-methodology/main/chameo.ttl
 namespace: CHAMEO
@@ -88,8 +88,8 @@ results:
     file: fp3
     status: ERROR
   FP04 Versioning:
-    comment: Version IRI 'http://emmo.info/emmo/domain/chameo/chameo' is not in recommended
-      format
+    comment: Version IRI 'http://w3id.org/emmo-chameo/1.0.0-beta5/chameo' is not in
+      recommended format
     status: WARN
   FP05 Scope:
     comment: Missing domain (scope)
@@ -115,7 +115,7 @@ results:
     status: PASS
   ROBOT Report:
     status: PASS
-sha256_hash: 24e76fa7da656e3641c37acfd4445b8c90fd9720633c9b9daf21165eb0318a23
+sha256_hash: 83c8dcfa57621dbe19adfe2cae83dae468505279fd056aafdf3a1a1e92c0fb13
 summary:
   comment: 5 errors
   status: ERROR
@@ -123,4 +123,4 @@ summary:
     ERROR: 5
     INFO: 1
     WARN: 2
-version: http://emmo.info/emmo/domain/chameo/chameo
+version: http://w3id.org/emmo-chameo/1.0.0-beta5/chameo
