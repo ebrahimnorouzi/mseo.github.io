@@ -18,3 +18,5 @@ A very basic analysis of the results can be found [here](https://ebrahimnorouzi.
 [Schema and Graph Metrics results based on the OntoMetrics](schema_and_graph_metrics.html)
 
 [Error analysis results based on the OntOlogy Pitfall Scanner](pitfalls.html)
+
+[You can add your ontology in this google sheet for the evaluation. Also the list of ontologies are available in this link.](https://docs.google.com/spreadsheets/d/1I4Ye2lrAn68mrd9edq1m6CYx2DdWgDFx/edit?gid=2034850253#gid=2034850253)
