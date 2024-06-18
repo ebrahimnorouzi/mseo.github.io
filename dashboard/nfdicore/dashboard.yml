@@ -3,7 +3,7 @@ base_prefixes:
 - nfdicore
 - NFDICOREALT
 changed: true
-date: 2024-06-17 13:33:32.906590
+date: 2024-06-18 15:14:14.437501
 metrics:
   'Axioms: Breakdown of axiom types':
     AnnotationAssertion: 3222
