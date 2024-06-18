@@ -3,3 +3,4 @@
 
 
 [Dashboard](dashboard/index.html)
+[Base Metrics](base_metrics.html)
