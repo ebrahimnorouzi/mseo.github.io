@@ -3,7 +3,7 @@ base_prefixes:
 - BWMD-MID
 - BWMD-MIDALT
 changed: true
-date: 2024-06-17 13:29:14.952998
+date: 2024-06-18 15:24:58.248880
 metrics:
   'Axioms: Breakdown of axiom types':
     AnnotationAssertion: 1234

@@ -3,7 +3,7 @@ base_prefixes:
 - CHAMEO
 - CHAMEOALT
 changed: true
-date: 2024-06-17 13:33:20.201861
+date: 2024-06-18 15:29:11.964386
 metrics:
   'Axioms: Breakdown of axiom types':
     AnnotationAssertion: 6399

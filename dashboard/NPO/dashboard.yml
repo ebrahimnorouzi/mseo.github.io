@@ -3,7 +3,7 @@ base_prefixes:
 - npo
 - NPOALT
 changed: true
-date: 2024-06-17 13:32:09.830355
+date: 2024-06-18 15:27:56.237876
 metrics:
   'Axioms: Breakdown of axiom types':
     AnnotationAssertion: 11343

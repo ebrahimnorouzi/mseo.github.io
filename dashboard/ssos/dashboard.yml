@@ -3,7 +3,7 @@ base_prefixes:
 - ssos
 - SSOSALT
 changed: true
-date: 2024-06-17 13:33:37.835688
+date: 2024-06-18 15:29:32.014586
 metrics:
   'Axioms: Breakdown of axiom types':
     AnnotationAssertion: 79
