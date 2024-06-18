@@ -164,7 +164,7 @@ ontologies:
       tracker: https://github.com/Battery-Value-Chain-Ontology/ontology /issues
       repository: https://github.com/Battery-Value-Chain-Ontology/ontology 
       preferredPrefix: emmo_bvc
-      mirror_from: https://raw.githubusercontent.com/ebrahimnorouzi/mseo.github.io/master/Ontology_files/BVCO.ttl
+      mirror_from: https://raw.githubusercontent.com/Battery-Value-Chain-Ontology/ontology/master/BVCO.ttl
     - id: EMMO_crystallography
       dependencies:
         - id: EMMO
