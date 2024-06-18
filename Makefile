@@ -12,3 +12,6 @@ run_dashboard: | dependencies dashboard/ ontologies/
 
 dashboard/analysis.html:
 	jupyter nbconvert dashboard_analysis.ipynb  --no-input --execute --to html --output $@
+
+dashboard/base_metrics.html:
+	jupyter nbconvert base_metrics.ipynb  --no-input --execute --to html --output $@
