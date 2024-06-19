@@ -463,8 +463,8 @@ ontologies:
       mirror_from: https://raw.githubusercontent.com/ebrahimnorouzi/mseo.github.io/master/Ontology_files/cmso.owl
     - id: tribAIn
       description:  formalize knowledge gained from tribological experiments for reuse, comparison and documentation
-	    homepage: https://github.com/snow0815/tribAIn
-	    preferredPrefix: CMSO
+      homepage: https://github.com/snow0815/tribAIn
+      preferredPrefix: CMSO
       mirror_from: https://raw.githubusercontent.com/ebrahimnorouzi/mseo.github.io/master/Ontology_files/tribAin.ttl
     - id: EXPO
       description:  formalise generic knowledge about scientific experimental design, methodology, and results representation
@@ -561,7 +561,7 @@ ontologies:
       homepage: https://github.com/MehrdadJalali-KIT/MSLE-Ontology
       preferredPrefix: MSLE
       mirror_from: https://raw.githubusercontent.com/ebrahimnorouzi/mseo.github.io/master/Ontology_files/MSLE.owl
-	        
+          
 prefer_base: True
 profile:
   baseprofile: "https://raw.githubusercontent.com/ontodev/robot/master/robot-core/src/main/resources/report_profile.txt"
