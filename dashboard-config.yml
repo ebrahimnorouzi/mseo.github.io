@@ -456,7 +456,112 @@ ontologies:
       homepage: https://bimerr.iot.linkeddata.es/def/material-properties/
       preferredPrefix: mat
       mirror_from: https://bimerr.iot.linkeddata.es/def/material-properties/ontology.ttl
-
+    - id: CMSO
+      description: computational materials science samples (or structures), including crystalline defects
+      homepage: https://github.com/Materials-Data-Science-and-Informatics/cmso-ontology/tree/main
+      preferredPrefix: CMSO
+      mirror_from: https://raw.githubusercontent.com/ebrahimnorouzi/mseo.github.io/master/Ontology_files/cmso.owl
+    - id: tribAIn
+      description:  formalize knowledge gained from tribological experiments for reuse, comparison and documentation
+	    homepage: https://github.com/snow0815/tribAIn
+	    preferredPrefix: CMSO
+      mirror_from: https://raw.githubusercontent.com/ebrahimnorouzi/mseo.github.io/master/Ontology_files/tribAin.ttl
+    - id: EXPO
+      description:  formalise generic knowledge about scientific experimental design, methodology, and results representation
+      homepage: https://expo.sourceforge.net/
+      preferredPrefix: EXPO
+      mirror_from: https://raw.githubusercontent.com/ebrahimnorouzi/mseo.github.io/master/Ontology_files/EXPO.owl
+    - id: CHMO
+      description:  describes methods used to collect data in chemical experiments, such as mass spectrometry and electron microscopy prepare and separate material for further analysis, such as sample ionisation, chromatography, and electrophoresis synthesise materials, such as epitaxy and continuous vapour deposition It also describes the instruments used in these experiments, such as mass spectrometers and chromatography columns.
+      homepage: https://github.com/rsc-ontologies/rsc-cmo
+      preferredPrefix: CHMO
+      mirror_from: https://raw.githubusercontent.com/ebrahimnorouzi/mseo.github.io/master/Ontology_files/chmo.owl
+    - id: CHEMINF
+      description:  terms for the descriptors commonly used in cheminformatics software applications and the algorithms which generate them
+      homepage: https://github.com/egonw/semanticchemistry
+      preferredPrefix: CHEMINF
+      mirror_from: https://raw.githubusercontent.com/ebrahimnorouzi/mseo.github.io/master/Ontology_files/cheminf.owl
+    - id: OIEmodels
+      description:  models
+      homepage: https://github.com/emmo-repo/OIE-Ontologies/
+      preferredPrefix: OIEmodels
+      mirror_from: https://raw.githubusercontent.com/ebrahimnorouzi/mseo.github.io/master/Ontology_files/OIEmodels.ttl
+    - id: OIEsoftware
+      description:  software
+      homepage: https://github.com/emmo-repo/OIE-Ontologies/
+      preferredPrefix: OIEsoftware
+      mirror_from: https://raw.githubusercontent.com/ebrahimnorouzi/mseo.github.io/master/Ontology_files/OIEsoftware.ttl
+    - id: OIEmanufacturing
+      description:  manufacturing
+      homepage: https://github.com/emmo-repo/OIE-Ontologies/
+      preferredPrefix: OIEmanufacturing
+      mirror_from: https://raw.githubusercontent.com/ebrahimnorouzi/mseo.github.io/master/Ontology_files/OIEmanufacturing.ttl
+    - id: OIEmaterials
+      description:  materials
+      homepage: https://github.com/emmo-repo/OIE-Ontologies/
+      preferredPrefix: OIEmaterials
+      mirror_from: https://raw.githubusercontent.com/ebrahimnorouzi/mseo.github.io/master/Ontology_files/OIEmaterials.ttl
+    - id: OIEcharacterisation-methods
+      description:  characterisation-methods
+      homepage: https://github.com/emmo-repo/OIE-Ontologies/
+      preferredPrefix: OIEcharacterisation-methods
+      mirror_from: https://raw.githubusercontent.com/ebrahimnorouzi/mseo.github.io/master/Ontology_files/OIEcharacterisation-methods.ttl
+    - id: Photovoltaics
+      description:  Perovskite solar cells
+      homepage: https://github.com/emmo-repo/domain-photovoltaics
+      preferredPrefix: Photovoltaics
+      mirror_from: https://raw.githubusercontent.com/ebrahimnorouzi/mseo.github.io/master/Ontology_files/photovoltaics.ttl
+    - id: MDS
+      description:  Materials Data Science(MDS) is an ontology encompassing multiple domains relevant to materials science, chemical synthesis and characterizations, photovoltaics and geospatial datasets. The terms used for classes, subclasses and instances are mapped to PMDCo and BFO Ontologies.
+      homepage: https://matportal.org/ontologies/MDS
+      preferredPrefix: MDS
+      mirror_from: https://raw.githubusercontent.com/ebrahimnorouzi/mseo.github.io/master/Ontology_files/MDS.owl
+    - id: DSIM
+      description:  model various concepts and relationships in the discrete dislocation dynamics domain and microscopy techniques used in the dislocation domain
+      homepage: https://github.com/OCDO/DSIM
+      preferredPrefix: DSIM
+      mirror_from: https://raw.githubusercontent.com/ebrahimnorouzi/mseo.github.io/master/Ontology_files/DSIM.owl
+    - id: CSO
+      description:  represent crystallographic information needed to describe the dislocation
+      homepage: https://github.com/Materials-Data-Science-and-Informatics/Dislocation-Ontology-Suite/tree/main/CSO.owl
+      preferredPrefix: CSO
+      mirror_from: https://raw.githubusercontent.com/ebrahimnorouzi/mseo.github.io/master/Ontology_files/CSO.owl
+    - id: ASMO
+      description:  describe commonly used atomic scale simulation methods
+      homepage: https://github.com/OCDO/asmo
+      preferredPrefix: ASMO
+      mirror_from: https://raw.githubusercontent.com/ebrahimnorouzi/mseo.github.io/master/Ontology_files/asmo.owl
+    - id: PODO
+      description: description of point defects in crystalline materials 
+      homepage: https://github.com/OCDO/podo
+      preferredPrefix: PODO
+      mirror_from: https://raw.githubusercontent.com/ebrahimnorouzi/mseo.github.io/master/Ontology_files/podo.owl
+    - id: CDCO
+      description:  description of defects in crystalline materials
+      homepage: https://github.com/OCDO/cdco
+      preferredPrefix: CDCO
+      mirror_from: https://raw.githubusercontent.com/ebrahimnorouzi/mseo.github.io/master/Ontology_files/cdco.owl
+    - id: LDO
+      description: description of linear defects in crystalline materials 
+      homepage: https://github.com/OCDO/ldo
+      preferredPrefix: LDO
+      mirror_from: https://raw.githubusercontent.com/ebrahimnorouzi/mseo.github.io/master/Ontology_files/ldo.owl
+    - id: PLDO
+      description: description of planar defects in crystalline materials 
+      homepage: https://github.com/OCDO/pldo
+      preferredPrefix: PLDO
+      mirror_from: https://raw.githubusercontent.com/ebrahimnorouzi/mseo.github.io/master/Ontology_files/pldo.owl
+    - id: PRIMA
+      description: captures the provenance information in the materials science domain 
+      homepage: https://github.com/Materials-Data-Science-and-Informatics/MDMC-NEP-top-level-ontology
+      preferredPrefix: PRIMA
+      mirror_from: https://raw.githubusercontent.com/ebrahimnorouzi/mseo.github.io/master/Ontology_files/prima-core.ttl
+    - id: MSLE
+      description: describing Materials Science Laboratory Equipment 
+      homepage: https://github.com/MehrdadJalali-KIT/MSLE-Ontology
+      preferredPrefix: MSLE
+      mirror_from: https://raw.githubusercontent.com/ebrahimnorouzi/mseo.github.io/master/Ontology_files/MSLE.owl
+	        
 prefer_base: True
 profile:
   baseprofile: "https://raw.githubusercontent.com/ontodev/robot/master/robot-core/src/main/resources/report_profile.txt"
