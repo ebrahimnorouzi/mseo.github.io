@@ -40,19 +40,19 @@ ontologies:
       tracker: https://github.com/materialdigital/core-ontology/issues
       repository: https://github.com/materialdigital/core-ontology
       preferredPrefix: pmdco
-      mirror_from: https://raw.githubusercontent.com/materialdigital/core-ontology/main/pmdco_core.ttl
+      mirror_from: https://raw.githubusercontent.com/ebrahimnorouzi/mseo.github.io/master/Ontology_files/PMDCO.ttl
     - id: OSMO
       description: An Ontology for Materials modeling and simulation
       homepage: https://zenodo.org/record/5084394#.Y-DOjK3MJPY
       preferredPrefix: osmo
-      mirror_from: http://www.molmod.info/semantics/osmo.ttl
+      mirror_from: https://raw.githubusercontent.com/ebrahimnorouzi/mseo.github.io/master/Ontology_files/OSMO.ttl
     - id: EMMO
       description: Elementary Multiperspective Material Ontology (EMMO) 
       homepage: https://github.com/emmo-repo/EMMO
       tracker: https://github.com/emmo-repo/EMMO/issues
       repository: https://github.com/emmo-repo/EMMO
       preferredPrefix: emmo
-      mirror_from: https://raw.githubusercontent.com/emmo-repo/EMMO/master/emmo.ttl
+      mirror_from: https://raw.githubusercontent.com/ebrahimnorouzi/mseo.github.io/master/Ontology_files/EMMO.ttl
     - id: EMMO_mechanical_testing
       dependencies:
         - id: EMMO
@@ -61,7 +61,7 @@ ontologies:
       tracker: https://github.com/emmo-repo/domain-mechanical-testing/issues
       repository: https://github.com/emmo-repo/domain-mechanical-testing
       preferredPrefix: emmo_mechanical_testing
-      mirror_from: https://raw.githubusercontent.com/ebrahimnorouzi/mseo.github.io/master/Ontology_files/emmo-mechanical-testing.owl
+      mirror_from: https://raw.githubusercontent.com/ebrahimnorouzi/mseo.github.io/master/Ontology_files/EMMO_mechanical_testing.owl
     - id: EMMO_microstructure
       dependencies:
         - id: EMMO
@@ -70,38 +70,38 @@ ontologies:
       tracker: https://github.com/jesper-friis/emmo-microstructure/issues
       repository: https://github.com/jesper-friis/emmo-microstructure
       preferredPrefix: emmo_microstructure
-      mirror_from: https://raw.githubusercontent.com/ebrahimnorouzi/mseo.github.io/master/Ontology_files/emmo-microstructure.owl
+      mirror_from: https://raw.githubusercontent.com/ebrahimnorouzi/mseo.github.io/master/Ontology_files/EMMO_microstructure.owl
     - id: OBO
       description: An Ontology for supporting information retrieval, analysis and integration in scientific and other domains
       homepage: https://github.com/BFO-ontology/BFO-2020 
       tracker: https://github.com/BFO-ontology/BFO-2020 /issues
       repository: https://github.com/BFO-ontology/BFO-2020 
       preferredPrefix: obo
-      mirror_from: https://raw.githubusercontent.com/BFO-ontology/BFO-2020/master/21838-2/owl/bfo-2020.owl
+      mirror_from: https://raw.githubusercontent.com/ebrahimnorouzi/mseo.github.io/master/Ontology_files/OBO.ttl
     - id: SSN
       description: Describing sensors and their observations
       homepage: https://w3c.github.io/sdw/ssn/
       preferredPrefix: ssn
-      mirror_from: https://raw.githubusercontent.com/w3c/sdw/gh-pages/ssn/integrated/sosa.ttl 
+      mirror_from: https://raw.githubusercontent.com/ebrahimnorouzi/mseo.github.io/master/Ontology_files/SSN.ttl
     - id: SP
       description: Experimental protocols
       homepage: https://github.com/oeg-upm/SMART-Protocols
       tracker: https://github.com/oeg-upm/SMART-Protocols/issues
       repository: https://github.com/oeg-upm/SMART-Protocols
       preferredPrefix: sp
-      mirror_from: http://vocab.linkeddata.es/SMARTProtocols/myDocumentation_SPdoc_18Abril2017/SmartProtocols_doc_V4.0.owl
+      mirror_from: https://raw.githubusercontent.com/ebrahimnorouzi/mseo.github.io/master/Ontology_files/SP.owl
     - id: SO
       description: Deneral concept definition of a service
       homepage: http://dini-ag-kim.github.io/service-ontology/service.html
       tracker: https://github.com/dini-ag-kim/service-ontology/issues
       repository: https://github.com/dini-ag-kim/service-ontology
       preferredPrefix: service
-      mirror_from: http://dini-ag-kim.github.io/service-ontology/service.owl
+      mirror_from: https://raw.githubusercontent.com/ebrahimnorouzi/mseo.github.io/master/Ontology_files/SO.owl
     - id: FOAF
       description: Describe people and social relationship on the Web
       homepage: http://www.foaf-project.org/
       preferredPrefix: foaf
-      mirror_from: https://raw.githubusercontent.com/ESIPFed/toolmatch-ontology/master/v3/foaf.owl
+      mirror_from: https://raw.githubusercontent.com/ebrahimnorouzi/mseo.github.io/master/Ontology_files/FOAF.owl
     - id: MSEO
       dependencies:
         - id: CCO
@@ -110,14 +110,14 @@ ontologies:
       tracker: https://github.com/Mat-O-Lab/MSEO/issues
       repository: https://github.com/Mat-O-Lab/MSEO
       preferredPrefix: mseo
-      mirror_from: https://raw.githubusercontent.com/Mat-O-Lab/MSEO/main/MSEO_mid.ttl
+      mirror_from: https://raw.githubusercontent.com/ebrahimnorouzi/mseo.github.io/master/Ontology_files/MSEO.ttl
     - id: CCO
       description: Comprise twelve ontologies that contain classes and relations that are used in many domains of interest.
       homepage: https://github.com/CommonCoreOntology/CommonCoreOntologies
       tracker: https://github.com/CommonCoreOntology/CommonCoreOntologies/issues
       repository: https://github.com/CommonCoreOntology/CommonCoreOntologies
       preferredPrefix: cco
-      mirror_from: https://raw.githubusercontent.com/CommonCoreOntology/CommonCoreOntologies/master/AllCoreOntology.ttl
+      mirror_from: https://raw.githubusercontent.com/ebrahimnorouzi/mseo.github.io/master/Ontology_files/CCO.ttl
     - id: BWMD-MID
       dependencies:
         - id: OBO
@@ -125,7 +125,7 @@ ontologies:
       homepage: https://gitlab.cc-asp.fraunhofer.de/EMI_datamanagement/bwmd_ontology
       repository: https://gitlab.cc-asp.fraunhofer.de/EMI_datamanagement/bwmd_ontology
       preferredPrefix: BWMD-MID
-      mirror_from: https://raw.githubusercontent.com/ebrahimnorouzi/mseo.github.io/master/Ontology_files/BWMD_mid.owl
+      mirror_from: https://raw.githubusercontent.com/ebrahimnorouzi/mseo.github.io/master/Ontology_files/BWMD-MID.owl
     - id: BWMD-DOMAIN
       dependencies:
         - id: OBO
@@ -133,7 +133,7 @@ ontologies:
       homepage: https://gitlab.cc-asp.fraunhofer.de/EMI_datamanagement/bwmd_ontology
       repository: https://gitlab.cc-asp.fraunhofer.de/EMI_datamanagement/bwmd_ontology
       preferredPrefix: BWMD-DOMAIN
-      mirror_from: https://raw.githubusercontent.com/ebrahimnorouzi/mseo.github.io/master/Ontology_files/BWMD_domain.owl
+      mirror_from: https://raw.githubusercontent.com/ebrahimnorouzi/mseo.github.io/master/Ontology_files/BWMD-DOMAIN.owl
     - id: MOL_TENSILE
       description: An ontology for describing the tensile test process, made in the Materials Open Lab Project.
       preferredPrefix: MOL_TENSILE
@@ -155,7 +155,7 @@ ontologies:
       tracker: https://github.com/General-Process-Ontology/ontology /issues
       repository: https://github.com/General-Process-Ontology/ontology 
       preferredPrefix: gpo
-      mirror_from: https://raw.githubusercontent.com/General-Process-Ontology/ontology/master/GPO_inferred.ttl
+      mirror_from: https://raw.githubusercontent.com/ebrahimnorouzi/mseo.github.io/master/Ontology_files/GPO.ttl
     - id: EMMO_BVC
       dependencies:
         - id: EMMO
@@ -164,7 +164,7 @@ ontologies:
       tracker: https://github.com/Battery-Value-Chain-Ontology/ontology /issues
       repository: https://github.com/Battery-Value-Chain-Ontology/ontology 
       preferredPrefix: emmo_bvc
-      mirror_from: https://raw.githubusercontent.com/Battery-Value-Chain-Ontology/ontology/master/BVCO.ttl
+      mirror_from: https://raw.githubusercontent.com/ebrahimnorouzi/mseo.github.io/master/Ontology_files/EMMO_BVC.ttl
     - id: EMMO_crystallography
       dependencies:
         - id: EMMO
@@ -173,7 +173,7 @@ ontologies:
       tracker: https://github.com/materialdigital/core-ontology/issues
       repository: https://github.com/materialdigital/core-ontology
       preferredPrefix: emmo_crystallography
-      mirror_from: https://raw.githubusercontent.com/emmo-repo/domain-crystallography/master/crystallography.ttl
+      mirror_from: https://raw.githubusercontent.com/ebrahimnorouzi/mseo.github.io/master/Ontology_files/EMMO_crystallography.ttl
     - id: CIF-core
       dependencies:
         - id: EMMO
@@ -182,7 +182,7 @@ ontologies:
       tracker: https://github.com/emmo-repo/CIF-ontology/issues
       repository: https://github.com/emmo-repo/CIF-ontology
       preferredPrefix: cif-core
-      mirror_from: https://raw.githubusercontent.com/ebrahimnorouzi/mseo.github.io/master/Ontology_files/cif-core.ttl
+      mirror_from: https://raw.githubusercontent.com/ebrahimnorouzi/mseo.github.io/master/Ontology_files/CIF-core.ttl
     - id: EMMO_Datamodel
       dependencies:
         - id: EMMO
@@ -191,7 +191,7 @@ ontologies:
       tracker: https://github.com/emmo-repo/datamodel/issues
       repository: https://github.com/emmo-repo/datamodel
       preferredPrefix: emmo_datamodel
-      mirror_from: https://raw.githubusercontent.com/ebrahimnorouzi/mseo.github.io/master/Ontology_files/datamodel.ttl
+      mirror_from: https://raw.githubusercontent.com/ebrahimnorouzi/mseo.github.io/master/Ontology_files/EMMO_Datamodel.ttl
     - id: EMMO_mappings
       dependencies:
         - id: EMMO
@@ -200,7 +200,7 @@ ontologies:
       tracker: https://github.com/emmo-repo/domain-mappings /issues
       repository: https://github.com/emmo-repo/domain-mappings 
       preferredPrefix: emmo_mappings
-      mirror_from: https://raw.githubusercontent.com/emmo-repo/domain-mappings/master/mappings.ttl
+      mirror_from: https://raw.githubusercontent.com/ebrahimnorouzi/mseo.github.io/master/Ontology_files/EMMO_mappings.ttl
     - id: EMMO_atomistic
       dependencies:
         - id: EMMO
@@ -209,61 +209,61 @@ ontologies:
       tracker: https://github.com/emmo-repo/domain-atomistic/issues
       repository: https://github.com/emmo-repo/domain-atomistic
       preferredPrefix: emmo_atomistic
-      mirror_from: https://raw.githubusercontent.com/emmo-repo/domain-atomistic/master/atomistic.ttl
+      mirror_from: https://raw.githubusercontent.com/ebrahimnorouzi/mseo.github.io/master/Ontology_files/EMMO_atomistic.ttl
     - id: MatOnto
       description: An Ontology Materials discovery
       homepage: https://github.com/inovexcorp/MatOnto-Ontologies
       tracker: https://github.com/inovexcorp/MatOnto-Ontologies/issues
       repository: https://github.com/inovexcorp/MatOnto-Ontologies
       preferredPrefix: matonto
-      mirror_from: https://raw.githubusercontent.com/inovexcorp/MatOnto-Ontologies/master/matonto.ttl
+      mirror_from: https://raw.githubusercontent.com/ebrahimnorouzi/mseo.github.io/master/Ontology_files/MatOnto.ttl
     - id: SEMMD
       description: Materials, Manufacturing
       homepage: https://github.com/cpauloh/semmd
       tracker: https://github.com/cpauloh/semmd/issues
       repository: https://github.com/cpauloh/semmd
       preferredPrefix: semmd
-      mirror_from: https://raw.githubusercontent.com/cpauloh/semmd/master/onto/v07_matl_prop_merged.ttl
+      mirror_from: https://raw.githubusercontent.com/ebrahimnorouzi/mseo.github.io/master/Ontology_files/SEMMD.ttl
     - id: NPO
       description: Nanomaterial safety assessment
       homepage: https://github.com/sobolevnrm/npo
       tracker: https://github.com/sobolevnrm/npo/issues
       repository: https://github.com/sobolevnrm/npo
       preferredPrefix: npo
-      mirror_from: https://raw.githubusercontent.com/sobolevnrm/npo/master/npo-asserted.owl
+      mirror_from: https://raw.githubusercontent.com/ebrahimnorouzi/mseo.github.io/master/Ontology_files/NPO.owl
     - id: MaterialsMine
       description: A materials ontology to support data publication involving nanomaterials and metamaterials
       homepage: https://github.com/tetherless-world/materialsmine
       tracker: https://github.com/tetherless-world/materialsmine/issues
       repository: https://github.com/tetherless-world/materialsmine
       preferredPrefix: materialsmine
-      mirror_from: https://raw.githubusercontent.com/materialdigital/core-ontology/main/pmdco_core.ttl
+      mirror_from: https://raw.githubusercontent.com/ebrahimnorouzi/mseo.github.io/master/Ontology_files/MaterialsMine.ttl
     - id: enanomapper
       description: Nanomaterial safety assessment
       homepage: https://github.com/enanomapper/ontologies
       tracker: https://github.com/enanomapper/ontologies/issues
       repository: https://github.com/enanomapper/ontologies
       preferredPrefix: enanomapper
-      mirror_from: https://raw.githubusercontent.com/enanomapper/ontologies/master/enanomapper.owl
+      mirror_from: https://raw.githubusercontent.com/ebrahimnorouzi/mseo.github.io/master/Ontology_files/enanomapper.owl
     - id: MAMBO
       description: Molecular materials
       homepage: https://github.com/daimoners/MAMBO
       tracker: https://github.com/daimoners/MAMBO/issues
       repository: https://github.com/daimoners/MAMBO
       preferredPrefix: mambo
-      mirror_from: https://raw.githubusercontent.com/daimoners/MAMBO/master/mambo_core.owl
+      mirror_from: https://raw.githubusercontent.com/ebrahimnorouzi/mseo.github.io/master/Ontology_files/MAMBO.owl
     - id: DISO
       description: Defects in crystalline materials
       homepage: https://github.com/Materials-Data-Science-and-Informatics/dislocation-ontology
       tracker: hhttps://github.com/Materials-Data-Science-and-Informatics/dislocation-ontology/issues
       repository: https://github.com/Materials-Data-Science-and-Informatics/dislocation-ontology
       preferredPrefix: diso
-      mirror_from: https://raw.githubusercontent.com/Materials-Data-Science-and-Informatics/dislocation-ontology/master/dislocation-ontology.ttl
+      mirror_from: https://raw.githubusercontent.com/ebrahimnorouzi/mseo.github.io/master/Ontology_files/DISO.ttl
     - id: matinfo
       description: Exchanging Materials Information and Knowledge
       homepage: https://www.researchgate.net/publication/262004148_MaterialOntology
       preferredPrefix: matinfo
-      mirror_from: https://raw.githubusercontent.com/ebrahimnorouzi/mseo.github.io/master/Ontology_files/matinfo/OML-MaterialInformation.owl
+      mirror_from: https://raw.githubusercontent.com/ebrahimnorouzi/mseo.github.io/master/Ontology_files/matinfo.owl
     - id: MDO
       dependencies:
         - id: EMMO
@@ -273,31 +273,31 @@ ontologies:
       tracker: https://github.com/LiUSemWeb/Materials-Design-Ontology /issues
       repository: https://github.com/LiUSemWeb/Materials-Design-Ontology 
       preferredPrefix: mdo
-      mirror_from: https://raw.githubusercontent.com/LiUSemWeb/Materials-Design-Ontology/master/mdo-full.owl
+      mirror_from: https://raw.githubusercontent.com/ebrahimnorouzi/mseo.github.io/master/Ontology_files/MDO.owl
     - id: NanoMine
       description: Polymer nanocomposites
       homepage: https://github.com/tetherless-world/nanomine-ontology
       tracker: https://github.com/tetherless-world/nanomine-ontology/issues
       repository: https://github.com/tetherless-world/nanomine-ontology
       preferredPrefix: nanomine
-      mirror_from: https://raw.githubusercontent.com/ebrahimnorouzi/mseo.github.io/master/Ontology_files/nanomine.ttl
+      mirror_from: https://raw.githubusercontent.com/ebrahimnorouzi/mseo.github.io/master/Ontology_files/NanoMine.ttl
     - id: DEB
       description: The Devices, Experimental scaffolds and Biomaterials Ontology
       homepage: https://github.com/ProjectDebbie/Ontology_DEB
       tracker: https://github.com/ProjectDebbie/Ontology_DEB/issues
       repository: https://github.com/ProjectDebbie/Ontology_DEB
       preferredPrefix: deb
-      mirror_from: https://raw.githubusercontent.com/ProjectDebbie/Ontology_DEB/master/DEB_ont.owl
+      mirror_from: https://raw.githubusercontent.com/ebrahimnorouzi/mseo.github.io/master/Ontology_files/DEB.owl
     - id: SKOS_MDO
       description: Material science of records in the NIST Materials Resource Registry
       homepage: https://data.nist.gov/od/id/67C783D4BA814C8EE05324570681708A1899
       preferredPrefix: skos_mdo
-      mirror_from: https://data.nist.gov/od/ds/67C783D4BA814C8EE05324570681708A1899/NMRRVocab20210726.rdf 
+      mirror_from: https://raw.githubusercontent.com/ebrahimnorouzi/mseo.github.io/master/Ontology_files/SKOS_MDO.ttl
     - id: periodictable
       description: Representation of the Periodic Table of the Elements
       homepage: http://www.daml.org/2003/01/periodictable/ 
       preferredPrefix: periodictable
-      mirror_from: http://www.daml.org/2003/01/periodictable/PeriodicTable.owl
+      mirror_from: https://raw.githubusercontent.com/ebrahimnorouzi/mseo.github.io/master/Ontology_files/periodictable.owl
     - id: EMMO_BattINFO
       dependencies:
         - id: EMMO
@@ -306,14 +306,14 @@ ontologies:
       tracker: https://github.com/BIG-MAP/BattINFO/issues
       repository: https://github.com/BIG-MAP/BattINFO
       preferredPrefix: emmo_battinfo
-      mirror_from: https://raw.githubusercontent.com/ebrahimnorouzi/mseo.github.io/master/Ontology_files/battinfo.ttl
+      mirror_from: https://raw.githubusercontent.com/ebrahimnorouzi/mseo.github.io/master/Ontology_files/EMMO_BattINFO.ttl
     - id: IAO
       description: An Ontology for the Materials Design Domain 
       homepage: https://github.com/information-artifact-ontology/IAO
       tracker: https://github.com/information-artifact-ontology/IAO/issues
       repository: https://github.com/information-artifact-ontology/IAO
       preferredPrefix: iao
-      mirror_from: http://purl.obolibrary.org/obo/iao.owl
+      mirror_from: https://raw.githubusercontent.com/ebrahimnorouzi/mseo.github.io/master/Ontology_files/IAO.owl
     - id: metal-alloy
       description: An Ontology for Materials representation
       homepage: https://emmc.info/taxonda/metal-alloy/ 
@@ -343,92 +343,85 @@ ontologies:
       homepage: https://labs.etsi.org/rep/saref/saref-core/-/tree/develop-v3.1.1
       repository: https://labs.etsi.org/rep/saref/saref-core/-/tree/develop-v3.1.1
       preferredPrefix: saref
-      mirror_from: https://labs.etsi.org/rep/saref/saref-core/-/raw/develop-v3.1.1/ontology/saref.ttl
+      mirror_from: https://raw.githubusercontent.com/ebrahimnorouzi/mseo.github.io/master/Ontology_files/SAREF.ttl
     - id: WILD
       description: An Ontology for the Materials Design Domain 
       homepage: https://databus.dbpedia.org/ontologies/purl.org/wild--vocab/2022.03.04-103146
       preferredPrefix: wild
-      mirror_from: https://databus.dbpedia.org/ontologies/purl.org/wild--vocab/2022.03.04-103146/wild--vocab_type=parsed.owl
+      mirror_from: https://raw.githubusercontent.com/ebrahimnorouzi/mseo.github.io/master/Ontology_files/WILD.owl
     - id: P-Plan
       description: describes how the plans are composed and their correspondence to provenance records
       homepage: http://vocab.linkeddata.es/p-plan/index.html
       preferredPrefix: P-Plan
-      mirror_from: http://www.opmw.org/p-plan.owl
+      mirror_from: https://raw.githubusercontent.com/ebrahimnorouzi/mseo.github.io/master/Ontology_files/P-Plan.owl
     - id: OA
       description:  a common approach to express annotations
       homepage: https://github.com/w3c/web-annotation
       tracker: https://github.com/w3c/web-annotation/issues
       repository: https://github.com/w3c/web-annotation
       preferredPrefix: oa
-      mirror_from: http://www.w3.org/ns/oa.ttl
+      mirror_from: https://raw.githubusercontent.com/ebrahimnorouzi/mseo.github.io/master/Ontology_files/OA.ttl
     - id: QUDT
       description: An Ontology for the Materials Design Domain 
       homepage: https://github.com/qudt/qudt-public-repo
       tracker: https://github.com/qudt/qudt-public-repo/issues
       repository: https://github.com/qudt/qudt-public-repo
       preferredPrefix: qudt
-      mirror_from: http://qudt.org/2.1/schema/qudt
+      mirror_from: https://raw.githubusercontent.com/ebrahimnorouzi/mseo.github.io/master/Ontology_files/QUDT.ttl
     - id: OM
       description: units, quantities, measurements, and dimensions
       homepage: https://github.com/HajoRijgersberg/OM
       tracker: https://github.com/HajoRijgersberg/OM/issues
       repository: https://github.com/HajoRijgersberg/OM
       preferredPrefix: om
-      mirror_from: https://raw.githubusercontent.com/HajoRijgersberg/OM/master/om-2.0.rdf
+      mirror_from: https://raw.githubusercontent.com/ebrahimnorouzi/mseo.github.io/master/Ontology_files/OM.ttl
     - id: UO
       description: An Ontology for the Materials Design Domain 
       homepage: https://github.com/bio-ontology-research-group/unit-ontology
       tracker: https://github.com/bio-ontology-research-group/unit-ontology/issues
       repository: https://github.com/bio-ontology-research-group/unit-ontology
       preferredPrefix: uo
-      mirror_from: http://purl.obolibrary.org/obo/uo.owl
+      mirror_from: https://raw.githubusercontent.com/ebrahimnorouzi/mseo.github.io/master/Ontology_files/UO.owl
     - id: OEO
       description: An Ontology for energy modelling domain
       homepage: https://github.com/OpenEnergyPlatform/ontology
       tracker: https://github.com/OpenEnergyPlatform/ontology/issues
       repository: https://github.com/OpenEnergyPlatform/ontology
       preferredPrefix: oeo
-      mirror_from: http://openenergy-platform.org/ontology/oeo/releases/oeo.owl
+      mirror_from: https://raw.githubusercontent.com/ebrahimnorouzi/mseo.github.io/master/Ontology_files/oeo.owl
     - id: PATO
       description: An ontology of phenotypic qualities (properties, attributes or characteristics).
       homepage: https://github.com/pato-ontology/pato
       tracker: https://github.com/pato-ontology/pato/issues
       repository: https://github.com/pato-ontology/pato
       preferredPrefix: PATO
-      mirror_from: http://purl.obolibrary.org/obo/pato.owl
+      mirror_from: https://raw.githubusercontent.com/ebrahimnorouzi/mseo.github.io/master/Ontology_files/PATO.owl
     - id: AMONTOLOGY
       description: An Ontology for knowledge about additive manufacturing processes
       homepage: https://github.com/iassouroko/AMontology
       tracker: https://github.com/iassouroko/AMontology/issues
       repository: https://github.com/iassouroko/AMontology
       preferredPrefix: AMONTOLOGY
-      mirror_from: https://raw.githubusercontent.com/iassouroko/AMontology/master/AMOntology-vFinal1.owl
+      mirror_from: https://raw.githubusercontent.com/ebrahimnorouzi/mseo.github.io/master/Ontology_files/AMONTOLOGY.owl
     - id: CHAMEO
       description: model the common aspects across the different characterisation methodologies
       homepage: https://github.com/emmo-repo/domain-characterisation-methodology
       tracker: https://github.com/emmo-repo/domain-characterisation-methodology/issues
       repository: https://github.com/emmo-repo/domain-characterisation-methodology
       preferredPrefix: CHAMEO
-      mirror_from: https://raw.githubusercontent.com/emmo-repo/domain-characterisation-methodology/main/chameo.ttl
-    - id: OM
-      description: models concepts and relations important to scientific research
-      homepage: https://github.com/HajoRijgersberg/OM
-      tracker: https://github.com/HajoRijgersberg/OM/issues
-      repository: https://github.com/HajoRijgersberg/OM
-      preferredPrefix: om
-      mirror_from: https://raw.githubusercontent.com/HajoRijgersberg/OM/master/om-2.0.rdf
+      mirror_from: https://raw.githubusercontent.com/ebrahimnorouzi/mseo.github.io/master/Ontology_files/CHAMEO.ttl
     - id: QUDV
       description: units, quantities, measurements, and dimensions
       homepage: https://www.omgwiki.org/OMGSysML/doku.php?id=sysml-qudv:quantities_units_dimensions_values_qudv
       preferredPrefix: qudv
-      mirror_from: https://raw.githubusercontent.com/ebrahimnorouzi/mseo.github.io/master/Ontology_files/sysml-qudv.owl
+      mirror_from: https://raw.githubusercontent.com/ebrahimnorouzi/mseo.github.io/master/Ontology_files/QUDV.owl
     - id: mvc
       description: described using W3C RDF Schema and the Web Ontology Language to satisfy the requirements of the STREAM project
       homepage: https://github.com/stream-project/ontology
       tracker: https://github.com/stream-project/ontology/issues
       repository: https://github.com/stream-project/ontology
       preferredPrefix: mvc
-      mirror_from: https://raw.githubusercontent.com/stream-project/ontology/master/MatVoc-Core.ttl
+      mirror_from: https://raw.githubusercontent.com/ebrahimnorouzi/mseo.github.io/master/Ontology_files/mvc.ttl
     - id: m4i
       description: workflow modeling
       homepage: https://git.rwth-aachen.de/nfdi4ing/metadata4ing/metadata4ing
@@ -447,7 +440,7 @@ ontologies:
       homepage: https://git.rwth-aachen.de/nfdi-matwerk/ta-oms/mwo
       repository: https://git.rwth-aachen.de/nfdi-matwerk/ta-oms/mwo
       preferredPrefix: mwo
-      mirror_from: https://git.rwth-aachen.de/nfdi-matwerk/ta-oms/mwo/-/raw/main/ontology/mwo.owl
+      mirror_from: https://raw.githubusercontent.com/ebrahimnorouzi/mseo.github.io/master/Ontology_files/mwo.owl
     - id: opmw
       description: workflow modeling
       homepage: https://www.opmw.org/model/OPMW/
