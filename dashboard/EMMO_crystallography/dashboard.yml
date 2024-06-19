@@ -3,7 +3,7 @@ base_prefixes:
 - emmo_crystallography
 - EMMO_CRYSTALLOGRAPHYALT
 changed: true
-date: 2024-06-18 16:24:04.190206
+date: 2024-06-19 10:07:48.960355
 metrics:
   'Axioms: Breakdown of axiom types':
     AnnotationAssertion: 9482
@@ -75,7 +75,7 @@ metrics:
     skos: 4123
     xsd: 42
   'Info: Which ontologies use it?': []
-mirror_from: https://raw.githubusercontent.com/emmo-repo/domain-crystallography/master/crystallography.ttl
+mirror_from: https://raw.githubusercontent.com/ebrahimnorouzi/mseo.github.io/master/Ontology_files/EMMO_crystallography.ttl
 namespace: EMMO_crystallography
 results:
   FP01 Open:

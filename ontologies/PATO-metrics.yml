@@ -3,47 +3,47 @@ metrics:
   abox_axiom_count_incl: 0
   annotation_property_count: 213
   annotation_property_count_incl: 213
-  axiom_count: 111605
-  axiom_count_incl: 111605
-  class_count: 8721
-  class_count_incl: 8721
+  axiom_count: 139020
+  axiom_count_incl: 139020
+  class_count: 10624
+  class_count_incl: 10624
   consistent: true
   dataproperty_count: 0
   dataproperty_count_incl: 0
-  datatypes_count: 5
-  datatypes_count_incl: 5
-  dt_builtin_count: 5
-  dt_builtin_count_incl: 5
+  datatypes_count: 6
+  datatypes_count_incl: 6
+  dt_builtin_count: 6
+  dt_builtin_count_incl: 6
   dt_notbuiltin_count: 0
   dt_notbuiltin_count_incl: 0
   expressivity: "SRIQ"
   expressivity_incl: "SRIQ"
   individual_count: 0
   individual_count_incl: 0
-  logical_axiom_count: 24221
-  logical_axiom_count_incl: 24221
-  obj_property_count: 302
-  obj_property_count_incl: 302
+  logical_axiom_count: 31037
+  logical_axiom_count_incl: 31037
+  obj_property_count: 306
+  obj_property_count_incl: 306
   ontology_anno_count: 7
   ontology_iri: "http://purl.obolibrary.org/obo/pato.owl"
-  ontology_version_iri: "http://purl.obolibrary.org/obo/pato/releases/2024-03-28/pato.owl"
+  ontology_version_iri: "http://purl.obolibrary.org/obo/pato/releases/2022-12-15/pato.owl"
   owl2: true
-  owl2_dl: true
+  owl2_dl: false
   owl2_el: false
   owl2_ql: false
   owl2_rl: false
-  rbox_axiom_count: 465
-  rbox_axiom_count_incl: 465
+  rbox_axiom_count: 489
+  rbox_axiom_count_incl: 489
   rdfs: false
   rule_count: 0
   rule_count_incl: 0
-  signature_entity_count: 9241
-  signature_entity_count_incl: 9241
+  signature_entity_count: 11149
+  signature_entity_count_incl: 11149
   syntax: "RDF/XML Syntax"
-  tbox_axiom_count: 23756
-  tbox_axiom_count_incl: 23756
-  tboxrbox_axiom_count: 24221
-  tboxrbox_axiom_count_incl: 24221
+  tbox_axiom_count: 30548
+  tbox_axiom_count_incl: 30548
+  tboxrbox_axiom_count: 31037
+  tboxrbox_axiom_count_incl: 31037
   unsatisfiable_class_count: 0
   axiom_types:
   - "EquivalentClasses"
@@ -96,65 +96,66 @@ metrics:
   valid_imports: []
   valid_imports_incl: []
   axiom_type_count:
-    EquivalentClasses: 4640
-    TransitiveObjectProperty: 24
+    EquivalentClasses: 6147
+    TransitiveObjectProperty: 32
     FunctionalObjectProperty: 2
     SubObjectPropertyOf: 284
-    SubPropertyChainOf: 103
+    SubPropertyChainOf: 120
     SymmetricObjectProperty: 6
-    SubClassOf: 18618
-    ObjectPropertyRange: 70
+    SubClassOf: 23882
+    ObjectPropertyRange: 58
     AsymmetricObjectProperty: 1
-    AnnotationAssertion: 78042
-    SubAnnotationPropertyOf: 84
-    ObjectPropertyDomain: 75
-    DisjointClasses: 350
-    Declaration: 9233
+    AnnotationAssertion: 96738
+    SubAnnotationPropertyOf: 85
+    ObjectPropertyDomain: 66
+    DisjointClasses: 392
+    Declaration: 11135
     Rule: 25
-    InverseObjectProperties: 45
+    InverseObjectProperties: 44
     InverseFunctionalObjectProperty: 1
     IrrefexiveObjectProperty: 2
   axiom_type_count_incl:
-    EquivalentClasses: 4640
-    TransitiveObjectProperty: 24
+    EquivalentClasses: 6147
+    TransitiveObjectProperty: 32
     FunctionalObjectProperty: 2
     SubObjectPropertyOf: 284
-    SubPropertyChainOf: 103
+    SubPropertyChainOf: 120
     SymmetricObjectProperty: 6
-    SubClassOf: 18618
-    ObjectPropertyRange: 70
+    SubClassOf: 23882
+    ObjectPropertyRange: 58
     AsymmetricObjectProperty: 1
-    AnnotationAssertion: 78042
-    SubAnnotationPropertyOf: 84
-    ObjectPropertyDomain: 75
-    DisjointClasses: 350
-    Declaration: 9233
+    AnnotationAssertion: 96738
+    SubAnnotationPropertyOf: 85
+    ObjectPropertyDomain: 66
+    DisjointClasses: 392
+    Declaration: 11135
     Rule: 25
-    InverseObjectProperties: 45
+    InverseObjectProperties: 44
     InverseFunctionalObjectProperty: 1
     IrrefexiveObjectProperty: 2
   class_expression_count:
-    ObjectAllValuesFrom: 83
-    ObjectMinCardinality: 8
-    ObjectComplementOf: 157
+    ObjectAllValuesFrom: 96
+    ObjectMinCardinality: 7
+    ObjectComplementOf: 179
     ObjectExactCardinality: 8
-    Class: 61277
-    ObjectUnionOf: 10
+    Class: 78469
+    ObjectUnionOf: 9
     ObjectHasSelf: 1
-    ObjectSomeValuesFrom: 12660
-    ObjectIntersectionOf: 4707
+    ObjectSomeValuesFrom: 16614
+    ObjectIntersectionOf: 6217
   class_expression_count_incl:
-    ObjectAllValuesFrom: 83
-    ObjectMinCardinality: 8
-    ObjectComplementOf: 157
+    ObjectAllValuesFrom: 96
+    ObjectMinCardinality: 7
+    ObjectComplementOf: 179
     ObjectExactCardinality: 8
-    Class: 61277
-    ObjectUnionOf: 10
+    Class: 78469
+    ObjectUnionOf: 9
     ObjectHasSelf: 1
-    ObjectSomeValuesFrom: 12660
-    ObjectIntersectionOf: 4707
+    ObjectSomeValuesFrom: 16614
+    ObjectIntersectionOf: 6217
   curie_map:
     PR: "http://purl.obolibrary.org/obo/PR_"
+    ENVO: "http://purl.obolibrary.org/obo/ENVO_"
     CARO: "http://purl.obolibrary.org/obo/CARO_"
     owl: "http://www.w3.org/2002/07/owl#"
     xsd: "http://www.w3.org/2001/XMLSchema#"
@@ -173,7 +174,6 @@ metrics:
     GO: "http://purl.obolibrary.org/obo/GO_"
     CL: "http://purl.obolibrary.org/obo/CL_"
     NCBITaxon: "http://purl.obolibrary.org/obo/NCBITaxon_"
-    OMO: "http://purl.obolibrary.org/obo/OMO_"
     dc11: "http://purl.org/dc/elements/1.1/"
     rdf: "http://www.w3.org/1999/02/22-rdf-syntax-ns#"
     IAO: "http://purl.obolibrary.org/obo/IAO_"
@@ -182,119 +182,120 @@ metrics:
     PCO: "http://purl.obolibrary.org/obo/PCO_"
     dc: "http://purl.org/dc/terms/"
   namespace_axiom_count:
-    prefix_unknown: 243
-    PR: 549
+    PR: 1327
+    prefix_unknown: 11
+    ENVO: 6
     CARO: 2
     owl: 1006
-    xsd: 9
-    PATO: 8635
+    xsd: 1122
+    PATO: 8646
     skos: 3
-    rdfs: 9715
-    BFO: 4123
-    BSPO: 115
-    CHEBI: 2208
-    UBERON: 16456
-    OBI: 3
+    rdfs: 11989
+    BFO: 5463
+    BSPO: 137
+    CHEBI: 3093
+    UBERON: 21172
+    OBI: 2
     NBO: 2
     SO: 2
     foaf: 374
-    oboInOwl: 77635
-    GO: 28721
-    CL: 3693
-    NCBITaxon: 894
-    OMO: 10
-    dc11: 48
-    rdf: 997
-    IAO: 8786
-    RO: 10735
-    obo: 2195
+    oboInOwl: 98869
+    GO: 37414
+    CL: 5475
+    NCBITaxon: 1062
+    dc11: 49
+    rdf: 322
+    IAO: 10660
+    RO: 13101
+    obo: 2963
     PCO: 32
-    dc: 973
+    dc: 1098
   namespace_axiom_count_incl:
-    prefix_unknown: 243
-    PR: 549
+    PR: 1327
+    prefix_unknown: 11
+    ENVO: 6
     CARO: 2
     owl: 1006
-    xsd: 9
-    PATO: 8635
+    xsd: 1122
+    PATO: 8646
     skos: 3
-    rdfs: 9715
-    BFO: 4123
-    BSPO: 115
-    CHEBI: 2208
-    UBERON: 16456
-    OBI: 3
+    rdfs: 11989
+    BFO: 5463
+    BSPO: 137
+    CHEBI: 3093
+    UBERON: 21172
+    OBI: 2
     NBO: 2
     SO: 2
     foaf: 374
-    oboInOwl: 77635
-    GO: 28721
-    CL: 3693
-    NCBITaxon: 894
-    OMO: 10
-    dc11: 48
-    rdf: 997
-    IAO: 8786
-    RO: 10735
-    obo: 2195
+    oboInOwl: 98869
+    GO: 37414
+    CL: 5475
+    NCBITaxon: 1062
+    dc11: 49
+    rdf: 322
+    IAO: 10660
+    RO: 13101
+    obo: 2963
     PCO: 32
-    dc: 973
+    dc: 1098
   namespace_entity_count:
-    PR: 52
-    prefix_unknown: 6
+    ENVO: 3
+    PR: 145
+    prefix_unknown: 2
     CARO: 1
     owl: 3
-    xsd: 4
+    xsd: 5
     PATO: 2860
     skos: 1
     BFO: 20
     rdfs: 4
-    BSPO: 15
-    CHEBI: 366
+    BSPO: 16
+    CHEBI: 451
     OBI: 1
-    UBERON: 1631
+    UBERON: 2122
     NBO: 1
     SO: 1
-    foaf: 2
-    oboInOwl: 46
-    GO: 3274
-    CL: 413
-    NCBITaxon: 99
-    OMO: 5
+    foaf: 1
+    oboInOwl: 53
+    GO: 4286
+    CL: 621
+    NCBITaxon: 108
     dc11: 5
     rdf: 1
-    IAO: 17
+    IAO: 16
     PCO: 8
     RO: 249
-    obo: 149
-    dc: 7
+    obo: 160
+    dc: 5
   namespace_entity_count_incl:
-    PR: 52
-    prefix_unknown: 6
+    ENVO: 3
+    PR: 145
+    prefix_unknown: 2
     CARO: 1
     owl: 3
-    xsd: 4
+    xsd: 5
     PATO: 2860
     skos: 1
     BFO: 20
     rdfs: 4
-    BSPO: 15
-    CHEBI: 366
+    BSPO: 16
+    CHEBI: 451
     OBI: 1
-    UBERON: 1631
+    UBERON: 2122
     NBO: 1
     SO: 1
-    foaf: 2
-    oboInOwl: 46
-    GO: 3274
-    CL: 413
-    NCBITaxon: 99
-    OMO: 5
+    foaf: 1
+    oboInOwl: 53
+    GO: 4286
+    CL: 621
+    NCBITaxon: 108
     dc11: 5
     rdf: 1
-    IAO: 17
+    IAO: 16
     PCO: 8
     RO: 249
-    obo: 149
-    dc: 7
-  owl2dl_profile_violation: {}
+    obo: 160
+    dc: 5
+  owl2dl_profile_violation:
+    UseOfUndeclaredAnnotationProperty: 4

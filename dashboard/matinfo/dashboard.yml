@@ -3,7 +3,7 @@ base_prefixes:
 - matinfo
 - MATINFOALT
 changed: true
-date: 2024-06-18 16:26:46.594682
+date: 2024-06-19 10:08:17.701261
 metrics:
   'Axioms: Breakdown of axiom types':
     AnnotationAssertion: 104
@@ -45,7 +45,7 @@ metrics:
     rdfs: 104
     xsd: 26
   'Info: Which ontologies use it?': []
-mirror_from: https://raw.githubusercontent.com/ebrahimnorouzi/mseo.github.io/master/Ontology_files/matinfo/OML-MaterialInformation.owl
+mirror_from: https://raw.githubusercontent.com/ebrahimnorouzi/mseo.github.io/master/Ontology_files/matinfo.owl
 namespace: matinfo
 results:
   FP01 Open:

@@ -11,7 +11,7 @@
         <owl:versionIRI rdf:resource="http://qudt.org/2.1/schema/qudt"/>
         <hasGraphMetadata rdf:resource="http://www.linkedmodel.org/schema/vaem#GMD_QUDT-SCHEMA"/>
         <rdfs:isDefinedBy rdf:resource="http://qudt.org/2.1/schema/qudt"/>
-        <rdfs:label>QUDT Schema - Version 2.1.39</rdfs:label>
+        <rdfs:label>QUDT Schema - Version 2.1.24</rdfs:label>
     </owl:Ontology>
 </rdf:RDF>
 

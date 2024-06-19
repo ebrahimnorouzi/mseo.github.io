@@ -3,7 +3,7 @@ base_prefixes:
 - semmd
 - SEMMDALT
 changed: true
-date: 2024-06-18 16:26:36.065451
+date: 2024-06-19 10:08:04.606290
 metrics:
   'Axioms: Breakdown of axiom types':
     AnnotationAssertion: 5238
@@ -89,7 +89,7 @@ metrics:
     skos: 546
     xsd: 1256
   'Info: Which ontologies use it?': []
-mirror_from: https://raw.githubusercontent.com/cpauloh/semmd/master/onto/v07_matl_prop_merged.ttl
+mirror_from: https://raw.githubusercontent.com/ebrahimnorouzi/mseo.github.io/master/Ontology_files/SEMMD.ttl
 namespace: SEMMD
 results:
   FP01 Open:
@@ -129,7 +129,7 @@ results:
     status: PASS
   ROBOT Report:
     status: PASS
-sha256_hash: 2b97559ada331a34c2d94c3654502a25ece8550754b5bbc7c71e3a83b9d71a7c
+sha256_hash: c805907a6c25fda70340c2dbdaf8f9f7ac82055585caaa05b26cf6b1c8d444d7
 summary:
   comment: 6 errors
   status: ERROR

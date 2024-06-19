@@ -1,6 +1,6 @@
 base_generated: true
 changed: true
 failure: failed_robot_base
-mirror_from: https://raw.githubusercontent.com/ebrahimnorouzi/mseo.github.io/master/Ontology_files/battinfo.ttl
+mirror_from: https://raw.githubusercontent.com/ebrahimnorouzi/mseo.github.io/master/Ontology_files/EMMO_BattINFO.ttl
 namespace: EMMO_BattINFO
-sha256_hash: 7f84302007fd044c2711f0802b9d09c83d5dc125d99a58ccbf4930d0d80eabb3
+sha256_hash: 980a2d6aa99b7a7acc9c9ea3a6070226032cdd53298f8a146546e58df18b36c7

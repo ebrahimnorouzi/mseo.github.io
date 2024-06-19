@@ -1,8 +1,8 @@
 metrics:
   abox_axiom_count: 0
   abox_axiom_count_incl: 0
-  annotation_property_count: 27
-  annotation_property_count_incl: 27
+  annotation_property_count: 20
+  annotation_property_count_incl: 20
   axiom_count: 0
   axiom_count_incl: 0
   class_count: 0
@@ -24,9 +24,9 @@ metrics:
   logical_axiom_count_incl: 0
   obj_property_count: 0
   obj_property_count_incl: 0
-  ontology_anno_count: 31
-  ontology_iri: "https://w3id.org/emmo/domain/characterisation-methodology/chameo"
-  ontology_version_iri: "http://w3id.org/emmo-chameo/1.0.0-beta5/chameo"
+  ontology_anno_count: 22
+  ontology_iri: "http://emmo.info/emmo/domain/chameo/chameo"
+  ontology_version_iri: "http://emmo.info/emmo/domain/chameo/chameo"
   owl2: true
   owl2_dl: false
   owl2_el: false
@@ -37,8 +37,8 @@ metrics:
   rdfs: true
   rule_count: 0
   rule_count_incl: 0
-  signature_entity_count: 27
-  signature_entity_count_incl: 27
+  signature_entity_count: 20
+  signature_entity_count_incl: 20
   syntax: "Turtle"
   tbox_axiom_count: 0
   tbox_axiom_count_incl: 0
@@ -59,25 +59,22 @@ metrics:
   class_expression_count_incl: {}
   curie_map:
     owl: "http://www.w3.org/2002/07/owl#"
-    skos: "http://www.w3.org/2004/02/skos/core#"
     rdfs: "http://www.w3.org/2000/01/rdf-schema#"
     foaf: "http://xmlns.com/foaf/0.1/"
     dc: "http://purl.org/dc/terms/"
   namespace_axiom_count: {}
   namespace_axiom_count_incl: {}
   namespace_entity_count:
-    prefix_unknown: 4
+    prefix_unknown: 3
     owl: 3
-    skos: 1
     rdfs: 1
-    foaf: 3
-    dc: 15
+    foaf: 1
+    dc: 12
   namespace_entity_count_incl:
-    prefix_unknown: 4
+    prefix_unknown: 3
     owl: 3
-    skos: 1
     rdfs: 1
-    foaf: 3
-    dc: 15
+    foaf: 1
+    dc: 12
   owl2dl_profile_violation:
-    UseOfUndeclaredAnnotationProperty: 27
+    UseOfUndeclaredAnnotationProperty: 18

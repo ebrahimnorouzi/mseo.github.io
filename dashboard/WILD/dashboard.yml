@@ -3,7 +3,7 @@ base_prefixes:
 - wild
 - WILDALT
 changed: true
-date: 2024-06-18 16:27:13.010321
+date: 2024-06-19 10:08:46.520156
 metrics:
   'Axioms: Breakdown of axiom types':
     AnnotationAssertion: 2
@@ -46,7 +46,7 @@ metrics:
     schema: 2
     xsd: 1
   'Info: Which ontologies use it?': []
-mirror_from: https://databus.dbpedia.org/ontologies/purl.org/wild--vocab/2022.03.04-103146/wild--vocab_type=parsed.owl
+mirror_from: https://raw.githubusercontent.com/ebrahimnorouzi/mseo.github.io/master/Ontology_files/WILD.owl
 namespace: WILD
 results:
   FP01 Open:

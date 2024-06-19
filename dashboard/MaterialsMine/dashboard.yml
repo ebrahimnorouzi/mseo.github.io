@@ -1,2 +1,97 @@
-failure: failed_download
+base_generated: true
+base_prefixes:
+- materialsmine
+- MATERIALSMINEALT
+changed: true
+date: 2024-06-19 10:08:09.962338
+metrics:
+  'Axioms: Breakdown of axiom types':
+    AnnotationAssertion: 159
+    DataPropertyDomain: 35
+    DataPropertyRange: 35
+    Declaration: 90
+    InverseObjectProperties: 1
+    ObjectPropertyDomain: 26
+    ObjectPropertyRange: 26
+    SubClassOf: 13
+    SubDataPropertyOf: 30
+    SubObjectPropertyOf: 12
+  'Axioms: Number of axioms': 427
+  'Entities: % of entities reused': 100.0
+  'Entities: Number of annotation properties': 4
+  'Entities: Number of classes': 26
+  'Entities: Number of data properties': 39
+  'Entities: Number of individuals': 0
+  'Entities: Number of object properties': 27
+  'Entities: Number of unsatisfiable classes': 0
+  'Info: Breakdown of OWL class expressions used':
+    Class: 164
+    ObjectUnionOf: 23
+  'Info: Does the ontology fall under OWL 2 DL?': false
+  'Info: Experimental OBO score':
+    _dashboard: 0.444
+    _formula: (1*impact+1*dashboard)/2
+    _impact: 0.0
+    _impact_external: 0
+    _reuse: 1.0
+    oboscore: 0.222
+  'Info: How many externally documented uses?': 0
+  'Info: How many ontologies use it?': 0
+  'Info: Logical consistency': true
+  'Info: Syntax': Turtle
+  'Info: Usage of namespaces in axioms':
+    owl: 2
+    prefix_unknown: 434
+    rdf: 1
+    rdfs: 174
+    xsd: 19
+  'Info: Which ontologies use it?': []
+mirror_from: https://raw.githubusercontent.com/ebrahimnorouzi/mseo.github.io/master/Ontology_files/MaterialsMine.ttl
 namespace: MaterialsMine
+results:
+  FP01 Open:
+    comment: Missing ontology license. Missing registry license.
+    status: ERROR
+  FP02 Common Format:
+    comment: OWL syntax (Turtle), but should be RDF/XML
+    status: WARN
+  FP03 URIs:
+    comment: 0 invalid IRIs. The Ontology IRI is not valid.
+    file: fp3
+    status: ERROR
+  FP04 Versioning:
+    comment: Missing version IRI
+    status: ERROR
+  FP05 Scope:
+    comment: Missing domain (scope)
+    status: ERROR
+  FP06 Textual Definitions:
+    status: PASS
+  FP07 Relations:
+    status: PASS
+  FP08 Documented:
+    status: PASS
+  FP09 Plurality of Users:
+    comment: Missing usages
+    status: ERROR
+  FP11 Locus of Authority:
+    comment: Missing contact information
+    status: ERROR
+  FP12 Naming Conventions:
+    status: PASS
+  FP16 Maintenance:
+    comment: Missing version IRI to check date
+    status: ERROR
+  FP20 Responsiveness:
+    status: PASS
+  ROBOT Report:
+    status: PASS
+sha256_hash: 599abc0d28c2b375e794d1ba44795805502fb2c3e02cc125eb94777ac5499f97
+summary:
+  comment: 7 errors
+  status: ERROR
+  summary_count:
+    ERROR: 7
+    INFO: 0
+    WARN: 1
+version: null

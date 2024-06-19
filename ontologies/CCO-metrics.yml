@@ -1,12 +1,12 @@
 metrics:
   abox_axiom_count: 360
   abox_axiom_count_incl: 360
-  annotation_property_count: 47
-  annotation_property_count_incl: 47
-  axiom_count: 12334
-  axiom_count_incl: 12334
-  class_count: 1417
-  class_count_incl: 1417
+  annotation_property_count: 59
+  annotation_property_count_incl: 59
+  axiom_count: 12682
+  axiom_count_incl: 12682
+  class_count: 1430
+  class_count_incl: 1430
   consistent: true
   dataproperty_count: 12
   dataproperty_count_incl: 12
@@ -20,42 +20,43 @@ metrics:
   expressivity_incl: "SRIF(D)"
   individual_count: 348
   individual_count_incl: 348
-  logical_axiom_count: 2627
-  logical_axiom_count_incl: 2627
-  obj_property_count: 263
-  obj_property_count_incl: 263
-  ontology_anno_count: 4
-  ontology_iri: "http://www.ontologyrepository.com/CommonCoreOntologies/Mid/AllCoreOntology"
-  ontology_version_iri: "http://www.ontologyrepository.com/CommonCoreOntologies/Mid/2024-02-14/AllCoreOntology"
+  logical_axiom_count: 2637
+  logical_axiom_count_incl: 2637
+  obj_property_count: 258
+  obj_property_count_incl: 258
+  ontology_anno_count: 6
+  ontology_iri: "http://www.ontologyrepository.com/CommonCoreOntologies/Mid/MergedAllCoreOntology"
+  ontology_version_iri: "http://www.ontologyrepository.com/CommonCoreOntologies/Mid/2020-09-23/MergedAllCoreOntology"
   owl2: true
   owl2_dl: true
   owl2_el: false
   owl2_ql: false
   owl2_rl: false
-  rbox_axiom_count: 336
-  rbox_axiom_count_incl: 336
+  rbox_axiom_count: 375
+  rbox_axiom_count_incl: 375
   rdfs: false
   rule_count: 0
   rule_count_incl: 0
-  signature_entity_count: 2095
-  signature_entity_count_incl: 2095
+  signature_entity_count: 2115
+  signature_entity_count_incl: 2115
   syntax: "Turtle"
-  tbox_axiom_count: 1931
-  tbox_axiom_count_incl: 1931
-  tboxrbox_axiom_count: 2267
-  tboxrbox_axiom_count_incl: 2267
+  tbox_axiom_count: 1902
+  tbox_axiom_count_incl: 1902
+  tboxrbox_axiom_count: 2277
+  tboxrbox_axiom_count_incl: 2277
   unsatisfiable_class_count: 0
   axiom_types:
   - "EquivalentClasses"
   - "TransitiveObjectProperty"
   - "FunctionalObjectProperty"
   - "SubObjectPropertyOf"
-  - "SymmetricObjectProperty"
   - "SubPropertyChainOf"
+  - "SymmetricObjectProperty"
   - "DataPropertyRange"
   - "SubClassOf"
   - "ClassAssertion"
   - "ObjectPropertyRange"
+  - "AsymmetricObjectProperty"
   - "AnnotationAssertion"
   - "DisjointObjectProperties"
   - "SubAnnotationPropertyOf"
@@ -71,12 +72,13 @@ metrics:
   - "TransitiveObjectProperty"
   - "FunctionalObjectProperty"
   - "SubObjectPropertyOf"
-  - "SymmetricObjectProperty"
   - "SubPropertyChainOf"
+  - "SymmetricObjectProperty"
   - "DataPropertyRange"
   - "SubClassOf"
   - "ClassAssertion"
   - "ObjectPropertyRange"
+  - "AsymmetricObjectProperty"
   - "AnnotationAssertion"
   - "DisjointObjectProperties"
   - "SubAnnotationPropertyOf"
@@ -102,111 +104,121 @@ metrics:
   valid_imports: []
   valid_imports_incl: []
   axiom_type_count:
-    EquivalentClasses: 49
-    TransitiveObjectProperty: 8
-    FunctionalObjectProperty: 6
-    SubObjectPropertyOf: 187
-    SymmetricObjectProperty: 6
-    SubPropertyChainOf: 2
+    EquivalentClasses: 56
+    TransitiveObjectProperty: 13
+    FunctionalObjectProperty: 11
+    SubObjectPropertyOf: 192
+    SubPropertyChainOf: 10
+    SymmetricObjectProperty: 14
     DataPropertyRange: 9
-    SubClassOf: 1527
+    SubClassOf: 1512
     ClassAssertion: 360
-    ObjectPropertyRange: 153
-    AnnotationAssertion: 7612
+    ObjectPropertyRange: 131
+    AsymmetricObjectProperty: 6
+    AnnotationAssertion: 7929
     DisjointObjectProperties: 5
-    SubAnnotationPropertyOf: 12
-    ObjectPropertyDomain: 152
-    DisjointClasses: 26
+    SubAnnotationPropertyOf: 14
+    ObjectPropertyDomain: 129
+    DisjointClasses: 35
     DataPropertyDomain: 8
-    Declaration: 2083
+    Declaration: 2102
     InverseObjectProperties: 126
-    InverseFunctionalObjectProperty: 1
-    IrrefexiveObjectProperty: 2
+    InverseFunctionalObjectProperty: 11
+    IrrefexiveObjectProperty: 9
   axiom_type_count_incl:
-    EquivalentClasses: 49
-    TransitiveObjectProperty: 8
-    FunctionalObjectProperty: 6
-    SubObjectPropertyOf: 187
-    SymmetricObjectProperty: 6
-    SubPropertyChainOf: 2
+    EquivalentClasses: 56
+    TransitiveObjectProperty: 13
+    FunctionalObjectProperty: 11
+    SubObjectPropertyOf: 192
+    SubPropertyChainOf: 10
+    SymmetricObjectProperty: 14
     DataPropertyRange: 9
-    SubClassOf: 1527
+    SubClassOf: 1512
     ClassAssertion: 360
-    ObjectPropertyRange: 153
-    AnnotationAssertion: 7612
+    ObjectPropertyRange: 131
+    AsymmetricObjectProperty: 6
+    AnnotationAssertion: 7929
     DisjointObjectProperties: 5
-    SubAnnotationPropertyOf: 12
-    ObjectPropertyDomain: 152
-    DisjointClasses: 26
+    SubAnnotationPropertyOf: 14
+    ObjectPropertyDomain: 129
+    DisjointClasses: 35
     DataPropertyDomain: 8
-    Declaration: 2083
+    Declaration: 2102
     InverseObjectProperties: 126
-    InverseFunctionalObjectProperty: 1
-    IrrefexiveObjectProperty: 2
+    InverseFunctionalObjectProperty: 11
+    IrrefexiveObjectProperty: 9
   class_expression_count:
-    ObjectAllValuesFrom: 34
-    ObjectComplementOf: 13
-    Class: 5379
-    ObjectUnionOf: 29
-    ObjectSomeValuesFrom: 134
-    ObjectIntersectionOf: 70
+    ObjectAllValuesFrom: 3
+    Class: 5296
+    ObjectUnionOf: 9
+    ObjectSomeValuesFrom: 144
+    ObjectIntersectionOf: 21
   class_expression_count_incl:
-    ObjectAllValuesFrom: 34
-    ObjectComplementOf: 13
-    Class: 5379
-    ObjectUnionOf: 29
-    ObjectSomeValuesFrom: 134
-    ObjectIntersectionOf: 70
+    ObjectAllValuesFrom: 3
+    Class: 5296
+    ObjectUnionOf: 9
+    ObjectSomeValuesFrom: 144
+    ObjectIntersectionOf: 21
   curie_map:
     dc11: "http://purl.org/dc/elements/1.1/"
+    oboInOwl: "http://www.geneontology.org/formats/oboInOwl#"
     owl: "http://www.w3.org/2002/07/owl#"
     rdf: "http://www.w3.org/1999/02/22-rdf-syntax-ns#"
     IAO: "http://purl.obolibrary.org/obo/IAO_"
     xsd: "http://www.w3.org/2001/XMLSchema#"
-    skos: "http://www.w3.org/2004/02/skos/core#"
     rdfs: "http://www.w3.org/2000/01/rdf-schema#"
     BFO: "http://purl.obolibrary.org/obo/BFO_"
+    RO: "http://purl.obolibrary.org/obo/RO_"
+    foaf: "http://xmlns.com/foaf/0.1/"
     dc: "http://purl.org/dc/terms/"
   namespace_axiom_count:
-    dc11: 79
-    prefix_unknown: 11677
-    owl: 1
-    IAO: 2
+    dc11: 5
+    prefix_unknown: 11801
+    oboInOwl: 8
+    owl: 2
+    IAO: 591
     xsd: 9
-    skos: 223
-    rdfs: 2244
-    BFO: 916
-    dc: 45
+    rdfs: 2336
+    BFO: 626
+    RO: 191
+    foaf: 2
+    dc: 1
   namespace_axiom_count_incl:
-    dc11: 79
-    prefix_unknown: 11677
-    owl: 1
-    IAO: 2
+    dc11: 5
+    prefix_unknown: 11801
+    oboInOwl: 8
+    owl: 2
+    IAO: 591
     xsd: 9
-    skos: 223
-    rdfs: 2244
-    BFO: 916
-    dc: 45
+    rdfs: 2336
+    BFO: 626
+    RO: 191
+    foaf: 2
+    dc: 1
   namespace_entity_count:
     dc11: 3
-    prefix_unknown: 1990
-    owl: 2
+    prefix_unknown: 2007
+    owl: 3
+    oboInOwl: 2
     rdf: 1
-    IAO: 1
+    IAO: 14
     xsd: 7
-    skos: 6
-    BFO: 77
-    rdfs: 2
-    dc: 6
+    BFO: 43
+    rdfs: 4
+    RO: 28
+    foaf: 2
+    dc: 1
   namespace_entity_count_incl:
     dc11: 3
-    prefix_unknown: 1990
-    owl: 2
+    prefix_unknown: 2007
+    owl: 3
+    oboInOwl: 2
     rdf: 1
-    IAO: 1
+    IAO: 14
     xsd: 7
-    skos: 6
-    BFO: 77
-    rdfs: 2
-    dc: 6
+    BFO: 43
+    rdfs: 4
+    RO: 28
+    foaf: 2
+    dc: 1
   owl2dl_profile_violation: {}

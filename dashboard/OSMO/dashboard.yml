@@ -3,7 +3,7 @@ base_prefixes:
 - osmo
 - OSMOALT
 changed: true
-date: 2024-06-18 16:21:05.796486
+date: 2024-06-19 10:04:42.022943
 metrics:
   'Axioms: Breakdown of axiom types':
     AnnotationAssertion: 360
@@ -68,7 +68,7 @@ metrics:
     skos: 100
     xsd: 120
   'Info: Which ontologies use it?': []
-mirror_from: http://www.molmod.info/semantics/osmo.ttl
+mirror_from: https://raw.githubusercontent.com/ebrahimnorouzi/mseo.github.io/master/Ontology_files/OSMO.ttl
 namespace: OSMO
 results:
   FP01 Open:
@@ -109,7 +109,7 @@ results:
     status: ERROR
   ROBOT Report:
     status: PASS
-sha256_hash: e123875a85536438e94f7fd3c9ead62b326575e2961e3f7fb4f5bee97ce92617
+sha256_hash: f5607ac23be84f0b24bd494db56a732b0b2b61cf54ec5089e15eff16534b4042
 summary:
   comment: 8 errors
   status: ERROR

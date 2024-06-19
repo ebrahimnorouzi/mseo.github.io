@@ -39,7 +39,7 @@ metrics:
   rule_count_incl: 0
   signature_entity_count: 4
   signature_entity_count_incl: 4
-  syntax: "RDF/XML Syntax"
+  syntax: "Turtle"
   tbox_axiom_count: 0
   tbox_axiom_count_incl: 0
   tboxrbox_axiom_count: 0

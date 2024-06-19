@@ -3,7 +3,7 @@ base_prefixes:
 - ontorule
 - ONTORULEALT
 changed: true
-date: 2024-06-18 16:27:06.033417
+date: 2024-06-19 10:08:39.470808
 metrics:
   'Axioms: Breakdown of axiom types':
     AnnotationAssertion: 108
@@ -93,7 +93,7 @@ results:
     status: ERROR
   ROBOT Report:
     status: PASS
-sha256_hash: 47164811346e1ec79eb7ff6debd366f900861be4894f54cc18dc8e00788cdd55
+sha256_hash: bc62e3837749010989538f936d7ab8be4b3a00ec5c1f5bd76a2b5c19d374a74a
 summary:
   comment: 9 errors
   status: ERROR

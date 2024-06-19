@@ -16,8 +16,7 @@
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
     <owl:Ontology rdf:about="http://www.semanticweb.org/ina3/ontologies/2016/2/untitled-ontology-122">
-        <owl:imports rdf:resource="http://siam.nist.gov/AM-Ontology-v2#"/>
-        <owl:imports rdf:resource="http://www.semanticweb.org/administrator/ontologies/2015/6/untitled-ontology-28"/>
+        <owl:imports rdf:resource="https://raw.githubusercontent.com/iassouroko/AMontology/master/AMOntology_v2.ttl"/>
     </owl:Ontology>
     
 
@@ -1062,7 +1061,7 @@
     <rdf:Description rdf:about="http://www.semanticweb.org/administrator/ontologies/2015/6/untitled-ontology-28#Keyhole-mode_laser_melting">
         <rdfs:comment>Laser powder-bed fusion additive manufacturing of metals employs high-power focused laser beams. 
 
-Typically, the depth of the molten pool is controlled by conduction of heat in the underlying solid material. But, under certain conditions, the mechanism of melting can change from conduction to so-called “keyhole-mode” laser melting. 
+Typically, the depth of the molten pool is controlled by conduction of heat in the underlying solid material. But, under certain conditions, the mechanism of melting can change from conduction to so-called "keyhole-mode" laser melting.
 
 In this mode, the depth of the molten pool is controlled by evaporation of the metal. Keyhole-mode laser melting results in melt pool depths that can be much deeper than observed in conduction mode. In addition, the collapse of the vapor cavity that is formed by the evaporation of the metal can result in a trail of voids in the wake of the laser beam. 
 

@@ -3,7 +3,7 @@ base_prefixes:
 - iao
 - IAOALT
 changed: true
-date: 2024-06-18 16:26:58.080365
+date: 2024-06-19 10:08:30.938157
 metrics:
   'Axioms: Breakdown of axiom types':
     AnnotationAssertion: 2777
@@ -80,7 +80,7 @@ metrics:
     rdfs: 508
     xsd: 4
   'Info: Which ontologies use it?': []
-mirror_from: http://purl.obolibrary.org/obo/iao.owl
+mirror_from: https://raw.githubusercontent.com/ebrahimnorouzi/mseo.github.io/master/Ontology_files/IAO.owl
 namespace: IAO
 results:
   FP01 Open:

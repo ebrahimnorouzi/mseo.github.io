@@ -17,8 +17,7 @@
 @base <https://purl.matolab.org/mseo/mid> .
 
 <https://purl.matolab.org/mseo/mid>     rdf:type owl:Ontology ;
-                                        owl:imports <https://github.com/iofoundry/ontology/raw/master/core/Core.rdf> ,
-                                                        <https://github.com/iofoundry/ontology/raw/master/core/meta/AnnotationVocabulary.rdf> ;
+                                        owl:imports <https://github.com/iofoundry/ontology/raw/master/core/Core.rdf> ;
                                         dcterms:contributor "Christoph Schweizer, Fraunhofer IWM"@de ,
                                                         "Martin Huschka,Fraunhofer EMI"@en ,
                                                         "Philipp von Hartrott, Fraunhofer IWM"@en ,

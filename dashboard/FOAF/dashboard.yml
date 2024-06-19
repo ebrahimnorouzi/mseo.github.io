@@ -3,7 +3,7 @@ base_prefixes:
 - foaf
 - FOAFALT
 changed: true
-date: 2024-06-18 16:23:38.658288
+date: 2024-06-19 10:07:19.344885
 metrics:
   'Axioms: Breakdown of axiom types':
     AnnotationAssertion: 245
@@ -47,24 +47,24 @@ metrics:
   'Info: Which ontologies use it?':
   - BWMD-DOMAIN
   - BWMD-MID
+  - CCO
   - CHAMEO
+  - EMMO
   - IAO
   - LPBFO
   - MOL_TENSILE
-  - NanoMine
   - OA
   - OEO
-  - OM
   - PATO
   - SEMMD
   - SSN
   - bmo
-  - enanomapper
   - m4i
   - mvc
+  - mwo
   - nfdicore
   - opmw
-mirror_from: https://raw.githubusercontent.com/ESIPFed/toolmatch-ontology/master/v3/foaf.owl
+mirror_from: https://raw.githubusercontent.com/ebrahimnorouzi/mseo.github.io/master/Ontology_files/FOAF.owl
 namespace: FOAF
 results:
   FP01 Open:

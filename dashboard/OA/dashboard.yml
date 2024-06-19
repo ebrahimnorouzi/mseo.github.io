@@ -3,7 +3,7 @@ base_prefixes:
 - oa
 - OAALT
 changed: true
-date: 2024-06-18 16:27:18.088060
+date: 2024-06-19 10:08:51.883602
 metrics:
   'Axioms: Breakdown of axiom types':
     AnnotationAssertion: 204
@@ -44,7 +44,7 @@ metrics:
     skos: 1
     xsd: 11
   'Info: Which ontologies use it?': []
-mirror_from: http://www.w3.org/ns/oa.ttl
+mirror_from: https://raw.githubusercontent.com/ebrahimnorouzi/mseo.github.io/master/Ontology_files/OA.ttl
 namespace: OA
 results:
   FP01 Open:
