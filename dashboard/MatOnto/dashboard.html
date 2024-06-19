@@ -8,8 +8,8 @@
             <div class="col-md-2"></div>
             <div class="col-md-8">
                 <h1>Dashboard Report - <a href="http://obofoundry.org/ontology/MatOnto.html">MatOnto</a></h1>
-                <p class="lead"><b>Version</b>: http://matonto.org/ontology/matonto/2.1</p>
-                <p class="lead" style="margin-top:-15px;"><b>Date run</b>: 2024-06-18 16:26:33.114063</p>
+                <p class="lead"><b>Version</b>: None</p>
+                <p class="lead" style="margin-top:-15px;"><b>Date run</b>: 2024-06-19 10:08:01.812821</p>
                 <p class="lead" style="margin-top:-15px;"><a href="dashboard.yml">View dashboard results as YAML</a></p>
                 <p class="lead" style="margin-top:-15px;"><a href="../index.html">Go back to Overview</a></p>
                 <h3>Error Breakdown</h3>
@@ -19,7 +19,7 @@
                         
                     
                     <div class="alert alert-danger">
-                        <center><h3>ERROR - 6 errors</h3></center>
+                        <center><h3>ERROR - 7 errors</h3></center>
                     </div>
                 
                 <table class="table">
@@ -104,7 +104,7 @@
                                 <img src="../assets/x.svg" height="15px">
                             </td>
                             
-                                <td>Version IRI does not resolve</td>
+                                <td>Missing version IRI</td>
                             
                             
                                 <td></td>
@@ -260,11 +260,11 @@
                                 
                                 
                             
-                            <td class="table-info" style="text-align:center;">
-                                <img src="../assets/info.svg" height="15px">
+                            <td class="table-danger" style="text-align:center;">
+                                <img src="../assets/x.svg" height="15px">
                             </td>
                             
-                                <td>Version IRI does not have date information</td>
+                                <td>Missing version IRI to check date</td>
                             
                             
                                 <td></td>
@@ -330,31 +330,45 @@
                                     <td>
                                         <ul>
                                             
-                                                <li>AnnotationAssertion: 172</li>
+                                                <li>AnnotationAssertion: 1841</li>
                                             
-                                                <li>ClassAssertion: 13</li>
+                                                <li>ClassAssertion: 125</li>
                                             
-                                                <li>DataPropertyAssertion: 15</li>
+                                                <li>DataPropertyAssertion: 53</li>
                                             
-                                                <li>DataPropertyRange: 5</li>
+                                                <li>DataPropertyRange: 10</li>
                                             
-                                                <li>Declaration: 89</li>
+                                                <li>Declaration: 1074</li>
                                             
-                                                <li>DisjointClasses: 1</li>
+                                                <li>DisjointClasses: 163</li>
                                             
-                                                <li>FunctionalObjectProperty: 1</li>
+                                                <li>DisjointUnion: 1</li>
                                             
-                                                <li>ObjectPropertyAssertion: 1</li>
+                                                <li>EquivalentClasses: 282</li>
                                             
-                                                <li>ObjectPropertyDomain: 6</li>
+                                                <li>FunctionalDataProperty: 3</li>
                                             
-                                                <li>ObjectPropertyRange: 6</li>
+                                                <li>FunctionalObjectProperty: 2</li>
                                             
-                                                <li>SubClassOf: 78</li>
+                                                <li>InverseObjectProperties: 30</li>
+                                            
+                                                <li>ObjectPropertyAssertion: 195</li>
+                                            
+                                                <li>ObjectPropertyDomain: 68</li>
+                                            
+                                                <li>ObjectPropertyRange: 73</li>
+                                            
+                                                <li>SameIndividual: 17</li>
+                                            
+                                                <li>SubClassOf: 1190</li>
                                             
                                                 <li>SubDataPropertyOf: 3</li>
                                             
-                                                <li>SubObjectPropertyOf: 1</li>
+                                                <li>SubObjectPropertyOf: 74</li>
+                                            
+                                                <li>SymmetricObjectProperty: 16</li>
+                                            
+                                                <li>TransitiveObjectProperty: 15</li>
                                             
                                         </ul>
                                     </td>
@@ -365,7 +379,7 @@
                                 <td>Axioms: Number of axioms</td>
                                 
                                 
-                                    <td>391</td>
+                                    <td>5235</td>
                                 
                             </tr>
                         
@@ -381,7 +395,7 @@
                                 <td>Entities: Number of annotation properties</td>
                                 
                                 
-                                    <td>7</td>
+                                    <td>17</td>
                                 
                             </tr>
                         
@@ -389,7 +403,7 @@
                                 <td>Entities: Number of classes</td>
                                 
                                 
-                                    <td>78</td>
+                                    <td>848</td>
                                 
                             </tr>
                         
@@ -397,7 +411,7 @@
                                 <td>Entities: Number of data properties</td>
                                 
                                 
-                                    <td>5</td>
+                                    <td>13</td>
                                 
                             </tr>
                         
@@ -405,7 +419,7 @@
                                 <td>Entities: Number of individuals</td>
                                 
                                 
-                                    <td>24</td>
+                                    <td>131</td>
                                 
                             </tr>
                         
@@ -413,7 +427,7 @@
                                 <td>Entities: Number of object properties</td>
                                 
                                 
-                                    <td>10</td>
+                                    <td>83</td>
                                 
                             </tr>
                         
@@ -432,11 +446,23 @@
                                     <td>
                                         <ul>
                                             
-                                                <li>Class: 243</li>
+                                                <li>Class: 5142</li>
                                             
-                                                <li>ObjectAllValuesFrom: 12</li>
+                                                <li>DataHasValue: 144</li>
                                             
-                                                <li>ObjectSomeValuesFrom: 13</li>
+                                                <li>DataSomeValuesFrom: 4</li>
+                                            
+                                                <li>ObjectAllValuesFrom: 96</li>
+                                            
+                                                <li>ObjectExactCardinality: 20</li>
+                                            
+                                                <li>ObjectIntersectionOf: 394</li>
+                                            
+                                                <li>ObjectMinCardinality: 10</li>
+                                            
+                                                <li>ObjectSomeValuesFrom: 489</li>
+                                            
+                                                <li>ObjectUnionOf: 66</li>
                                             
                                         </ul>
                                     </td>
@@ -458,7 +484,7 @@
                                     <td>
                                         <ul>
                                             
-                                                <li>_dashboard: 0.504</li>
+                                                <li>_dashboard: 0.444</li>
                                             
                                                 <li>_formula: (1*impact+1*dashboard)/2</li>
                                             
@@ -468,7 +494,7 @@
                                             
                                                 <li>_reuse: 1.0</li>
                                             
-                                                <li>oboscore: 0.252</li>
+                                                <li>oboscore: 0.222</li>
                                             
                                         </ul>
                                     </td>
@@ -514,17 +540,19 @@
                                     <td>
                                         <ul>
                                             
-                                                <li>owl: 1</li>
+                                                <li>dc11: 7</li>
                                             
-                                                <li>prefix_unknown: 392</li>
+                                                <li>owl: 5</li>
                                             
-                                                <li>rdf: 15</li>
+                                                <li>prefix_unknown: 7332</li>
                                             
-                                                <li>rdfs: 131</li>
+                                                <li>rdf: 19</li>
                                             
-                                                <li>skos: 17</li>
+                                                <li>rdfs: 1771</li>
                                             
-                                                <li>xsd: 5</li>
+                                                <li>skos: 23</li>
+                                            
+                                                <li>xsd: 193</li>
                                             
                                         </ul>
                                     </td>

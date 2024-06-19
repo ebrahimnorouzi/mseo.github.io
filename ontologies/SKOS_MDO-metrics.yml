@@ -1,0 +1,101 @@
+metrics:
+  abox_axiom_count: 994
+  abox_axiom_count_incl: 994
+  annotation_property_count: 19
+  annotation_property_count_incl: 19
+  axiom_count: 5500
+  axiom_count_incl: 5500
+  class_count: 2
+  class_count_incl: 2
+  consistent: true
+  dataproperty_count: 0
+  dataproperty_count_incl: 0
+  datatypes_count: 1
+  datatypes_count_incl: 1
+  dt_builtin_count: 1
+  dt_builtin_count_incl: 1
+  dt_notbuiltin_count: 0
+  dt_notbuiltin_count_incl: 0
+  expressivity: "AL"
+  expressivity_incl: "AL"
+  individual_count: 994
+  individual_count_incl: 994
+  logical_axiom_count: 994
+  logical_axiom_count_incl: 994
+  obj_property_count: 0
+  obj_property_count_incl: 0
+  ontology_anno_count: 0
+  ontology_iri: "anonymousId"
+  ontology_version_iri: "anonymousId"
+  owl2: true
+  owl2_dl: true
+  owl2_el: true
+  owl2_ql: true
+  owl2_rl: true
+  rbox_axiom_count: 0
+  rbox_axiom_count_incl: 0
+  rdfs: true
+  rule_count: 0
+  rule_count_incl: 0
+  signature_entity_count: 1016
+  signature_entity_count_incl: 1016
+  syntax: "Turtle"
+  tbox_axiom_count: 0
+  tbox_axiom_count_incl: 0
+  tboxrbox_axiom_count: 0
+  tboxrbox_axiom_count_incl: 0
+  unsatisfiable_class_count: 0
+  axiom_types:
+  - "AnnotationAssertion"
+  - "Declaration"
+  - "ClassAssertion"
+  axiom_types_incl:
+  - "AnnotationAssertion"
+  - "Declaration"
+  - "ClassAssertion"
+  constructs:
+  - "AL"
+  constructs_incl:
+  - "AL"
+  valid_imports: []
+  valid_imports_incl: []
+  axiom_type_count:
+    AnnotationAssertion: 3491
+    Declaration: 1015
+    ClassAssertion: 994
+  axiom_type_count_incl:
+    AnnotationAssertion: 3491
+    Declaration: 1015
+    ClassAssertion: 994
+  class_expression_count:
+    Class: 996
+  class_expression_count_incl:
+    Class: 996
+  curie_map:
+    dc11: "http://purl.org/dc/elements/1.1/"
+    rdf: "http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    skos: "http://www.w3.org/2004/02/skos/core#"
+    dc: "http://purl.org/dc/terms/"
+  namespace_axiom_count:
+    dc11: 18
+    prefix_unknown: 1988
+    skos: 3962
+    dc: 526
+  namespace_axiom_count_incl:
+    dc11: 18
+    prefix_unknown: 1988
+    skos: 3962
+    dc: 526
+  namespace_entity_count:
+    dc11: 9
+    prefix_unknown: 994
+    rdf: 1
+    skos: 10
+    dc: 2
+  namespace_entity_count_incl:
+    dc11: 9
+    prefix_unknown: 994
+    rdf: 1
+    skos: 10
+    dc: 2
+  owl2dl_profile_violation: {}

@@ -3,7 +3,7 @@ base_prefixes:
 - sp
 - SPALT
 changed: true
-date: 2024-06-18 16:21:20.206862
+date: 2024-06-19 10:04:59.663237
 metrics:
   'Axioms: Breakdown of axiom types':
     AnnotationAssertion: 1781
@@ -62,7 +62,7 @@ metrics:
     prefix_unknown: 1477
     rdfs: 780
   'Info: Which ontologies use it?': []
-mirror_from: http://vocab.linkeddata.es/SMARTProtocols/myDocumentation_SPdoc_18Abril2017/SmartProtocols_doc_V4.0.owl
+mirror_from: https://raw.githubusercontent.com/ebrahimnorouzi/mseo.github.io/master/Ontology_files/SP.owl
 namespace: SP
 results:
   FP01 Open:

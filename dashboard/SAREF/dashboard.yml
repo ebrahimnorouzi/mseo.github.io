@@ -3,7 +3,7 @@ base_prefixes:
 - saref
 - SAREFALT
 changed: true
-date: 2024-06-18 16:27:09.519163
+date: 2024-06-19 10:08:43.197639
 metrics:
   'Axioms: Breakdown of axiom types':
     AnnotationAssertion: 264
@@ -51,7 +51,7 @@ metrics:
     rdfs: 266
     xsd: 1
   'Info: Which ontologies use it?': []
-mirror_from: https://labs.etsi.org/rep/saref/saref-core/-/raw/develop-v3.1.1/ontology/saref.ttl
+mirror_from: https://raw.githubusercontent.com/ebrahimnorouzi/mseo.github.io/master/Ontology_files/SAREF.ttl
 namespace: SAREF
 results:
   FP01 Open:
@@ -93,7 +93,7 @@ results:
     status: ERROR
   ROBOT Report:
     status: PASS
-sha256_hash: e16efbb0f4fa9a940c7238646c0d872de4fcd6dcbdeeb61351f7ea107ebea7de
+sha256_hash: 4ec9aba7c21b084f627016bc609149cedf231899202f03377539cac2e4b676a3
 summary:
   comment: 6 errors
   status: ERROR

@@ -3,50 +3,54 @@ base_prefixes:
 - emmo
 - EMMOALT
 changed: true
-date: 2024-06-18 16:21:09.480108
+date: 2024-06-19 10:04:45.542958
 metrics:
   'Axioms: Breakdown of axiom types':
-    AnnotationAssertion: 1743
-    AnnotationPropertyRangeOf: 18
+    AnnotationAssertion: 4541
+    AnnotationPropertyRangeOf: 5
     AsymmetricObjectProperty: 16
-    DataPropertyDomain: 2
-    DataPropertyRange: 1
-    Declaration: 539
-    DisjointClasses: 1
-    DisjointUnion: 24
-    EquivalentClasses: 62
-    FunctionalObjectProperty: 4
-    InverseFunctionalObjectProperty: 5
-    IrrefexiveObjectProperty: 16
-    ObjectPropertyDomain: 22
-    ObjectPropertyRange: 30
+    ClassAssertion: 2
+    DataPropertyDomain: 6
+    DataPropertyRange: 5
+    Declaration: 1338
+    DisjointClasses: 4
+    DisjointObjectProperties: 7
+    DisjointUnion: 86
+    EquivalentClasses: 117
+    FunctionalDataProperty: 3
+    InverseFunctionalObjectProperty: 2
+    InverseObjectProperties: 5
+    IrrefexiveObjectProperty: 22
+    ObjectPropertyDomain: 48
+    ObjectPropertyRange: 58
+    Rule: 12
     SubAnnotationPropertyOf: 22
-    SubClassOf: 623
-    SubDataPropertyOf: 1
-    SubObjectPropertyOf: 47
+    SubClassOf: 1799
+    SubDataPropertyOf: 7
+    SubObjectPropertyOf: 113
     SymmetricObjectProperty: 7
-    TransitiveObjectProperty: 8
-  'Axioms: Number of axioms': 3191
+  'Axioms: Number of axioms': 8225
   'Entities: % of entities reused': 100.0
   'Entities: Number of annotation properties': 35
-  'Entities: Number of classes': 463
-  'Entities: Number of data properties': 3
-  'Entities: Number of individuals': 1
-  'Entities: Number of object properties': 46
+  'Entities: Number of classes': 1191
+  'Entities: Number of data properties': 10
+  'Entities: Number of individuals': 2
+  'Entities: Number of object properties': 107
   'Entities: Number of unsatisfiable classes': 0
   'Info: Breakdown of OWL class expressions used':
-    Class: 1919
+    Class: 5145
     DataAllValuesFrom: 3
-    DataExactCardinality: 3
-    DataHasValue: 125
-    DataSomeValuesFrom: 3
-    ObjectAllValuesFrom: 47
-    ObjectComplementOf: 5
-    ObjectExactCardinality: 5
+    DataExactCardinality: 2
+    DataHasValue: 494
+    DataSomeValuesFrom: 4
+    ObjectAllValuesFrom: 46
+    ObjectComplementOf: 4
+    ObjectExactCardinality: 9
     ObjectHasValue: 1
-    ObjectIntersectionOf: 6
-    ObjectSomeValuesFrom: 106
-    ObjectUnionOf: 12
+    ObjectIntersectionOf: 18
+    ObjectMinCardinality: 1
+    ObjectSomeValuesFrom: 317
+    ObjectUnionOf: 52
   'Info: Does the ontology fall under OWL 2 DL?': false
   'Info: Experimental OBO score':
     _dashboard: 0.549
@@ -61,14 +65,15 @@ metrics:
   'Info: Syntax': Turtle
   'Info: Usage of namespaces in axioms':
     dc: 6
-    owl: 27
-    prefix_unknown: 3399
-    rdf: 105
-    rdfs: 298
-    skos: 572
-    xsd: 30
+    foaf: 1
+    owl: 22
+    prefix_unknown: 8167
+    rdf: 130
+    rdfs: 1648
+    skos: 1481
+    xsd: 388
   'Info: Which ontologies use it?': []
-mirror_from: https://raw.githubusercontent.com/emmo-repo/EMMO/master/emmo.ttl
+mirror_from: https://raw.githubusercontent.com/ebrahimnorouzi/mseo.github.io/master/Ontology_files/EMMO.ttl
 namespace: EMMO
 results:
   FP01 Open:
@@ -82,7 +87,7 @@ results:
     file: fp3
     status: ERROR
   FP04 Versioning:
-    comment: Version IRI 'http://emmo.info/emmo/1.0.0-beta' is not in recommended
+    comment: Version IRI 'http://emmo.info/emmo/1.0.0-beta4' is not in recommended
       format
     status: WARN
   FP05 Scope:
@@ -109,7 +114,7 @@ results:
     status: PASS
   ROBOT Report:
     status: PASS
-sha256_hash: d4ee0c65ba7cc9bf556a731df3ff81612f0a4bdf95df2a492bded5b375d07519
+sha256_hash: 0e493a97bfb5cefd5dbf804c3d5bfdbab3850b9eb1719372300b7b5ad59e937c
 summary:
   comment: 5 errors
   status: ERROR
@@ -117,4 +122,4 @@ summary:
     ERROR: 5
     INFO: 1
     WARN: 2
-version: http://emmo.info/emmo/1.0.0-beta
+version: http://emmo.info/emmo/1.0.0-beta4

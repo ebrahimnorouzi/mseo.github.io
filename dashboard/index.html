@@ -1,5 +1,5 @@
 <head>
-  <title>OBO Dashboard: New Ontology Requests (2024-06-18)</title>
+  <title>OBO Dashboard: New Ontology Requests (2024-06-19)</title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
   <style>
 body {
@@ -38,9 +38,9 @@ $(function () {
 </script>
 </head>
 <body>
-  <h1>OBO Dashboard: New Ontology Requests (2024-06-18)</h1>
+  <h1>OBO Dashboard: New Ontology Requests (2024-06-19)</h1>
   <h4>Dashboard for checking new ontology requests to the OBO Foundry. Under construction. <a href="about.html">Learn More!</a></h4>
-  <p>Created with <a href="http://robot.obolibrary.org/">ROBOT version 1.9.0</a> and <a href="https://github.com/OBOFoundry/OBO-Dashboard/commit/b88e6f1fe9e7c6683b97bbe32c384719ad834e12">OBO Metadata Schema</a>.</p>
+  <p>Created with <a href="http://robot.obolibrary.org/">ROBOT version 1.9.0</a> and <a href="https://github.com/OBOFoundry/OBO-Dashboard/commit/3393af08a2589f2aadb2a6c197756103319ff223">OBO Metadata Schema</a>.</p>
   <p>A very basic analysis of the results can be found <a href="analysis.html">here</a>.</p>
   <table class="table table-borderless">
     <thead>
@@ -98,12 +98,144 @@ $(function () {
         <tr>
             <td><b><a href="AMONTOLOGY/dashboard.html">AMONTOLOGY</a></b></td>
             
-                <td class="table-notchecked" colspan="13">Failed to process ontology: failed_robot_base</td>
             
             
                 
                 
-                <td class="check table-danger"><img src="assets/x.svg" height="15px"></td>
+                    
+                        
+                        
+                    
+                    <td class="check table-danger"><img src="assets/x.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="Missing ontology license. Missing registry license."></td>
+                
+            
+                
+                
+                    
+                        
+                        
+                    
+                    <td class="check table-success"><img src="assets/check.svg" height="15px"></td>
+                
+            
+                
+                
+                    
+                        
+                        
+                    
+                    <td class="check table-danger"><img src="assets/x.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="0 invalid IRIs. The Ontology IRI is not valid."></td>
+                
+            
+                
+                
+                    
+                        
+                        
+                    
+                    <td class="check table-danger"><img src="assets/x.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="Missing version IRI"></td>
+                
+            
+                
+                
+                    
+                        
+                        
+                    
+                    <td class="check table-danger"><img src="assets/x.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="Missing domain (scope)"></td>
+                
+            
+                
+                
+                    
+                        
+                        
+                    
+                    <td class="check table-success"><img src="assets/check.svg" height="15px"></td>
+                
+            
+                
+                
+                    
+                        
+                        
+                    
+                    <td class="check table-success"><img src="assets/check.svg" height="15px"></td>
+                
+            
+                
+                
+                    
+                        
+                        
+                    
+                    <td class="check table-success"><img src="assets/check.svg" height="15px"></td>
+                
+            
+                
+                
+                    
+                        
+                        
+                    
+                    <td class="check table-danger"><img src="assets/x.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="Missing usages"></td>
+                
+            
+                
+                
+                    
+                        
+                        
+                    
+                    <td class="check table-danger"><img src="assets/x.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="Missing contact information"></td>
+                
+            
+                
+                
+                    
+                        
+                        
+                    
+                    <td class="check table-success"><img src="assets/check.svg" height="15px"></td>
+                
+            
+                
+                
+                    
+                        
+                        
+                    
+                    <td class="check table-danger"><img src="assets/x.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="Missing version IRI to check date"></td>
+                
+            
+                
+                
+                    
+                        
+                        
+                    
+                    <td class="check table-success"><img src="assets/check.svg" height="15px"></td>
+                
+            
+                
+                
+                    
+                        
+                        
+                    
+                    <td class="check table-success"><img src="assets/check.svg" height="15px"></td>
+                
+            
+            
+            
+                
+                
+                    
+                        
+                        
+                    
+                    <td class="check table-danger"><img src="assets/x.svg" height="15px"></td>
+                
             
         </tr>
     
@@ -406,7 +538,7 @@ $(function () {
                         
                         
                     
-                    <td class="check table-danger"><img src="assets/x.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="Missing registry license."></td>
+                    <td class="check table-danger"><img src="assets/x.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="Missing ontology license. Missing registry license."></td>
                 
             
                 
@@ -577,7 +709,7 @@ $(function () {
                         
                         
                     
-                    <td class="check table-warning"><img src="assets/warning.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="Version IRI 'http://w3id.org/emmo-chameo/1.0.0-beta5/chameo' is not in recommended format"></td>
+                    <td class="check table-warning"><img src="assets/warning.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="Version IRI 'http://emmo.info/emmo/domain/chameo/chameo' is not in recommended format"></td>
                 
             
                 
@@ -686,144 +818,12 @@ $(function () {
         <tr>
             <td><b><a href="CIF-core/dashboard.html">CIF-core</a></b></td>
             
+                <td class="table-notchecked" colspan="13">Failed to process ontology: failed_download</td>
             
             
                 
                 
-                    
-                        
-                        
-                    
-                    <td class="check table-danger"><img src="assets/x.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="Missing ontology license. Missing registry license."></td>
-                
-            
-                
-                
-                    
-                        
-                        
-                    
-                    <td class="check table-warning"><img src="assets/warning.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="OWL syntax (Turtle), but should be RDF/XML"></td>
-                
-            
-                
-                
-                    
-                        
-                        
-                    
-                    <td class="check table-danger"><img src="assets/x.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="0 invalid IRIs. The Ontology IRI is not valid."></td>
-                
-            
-                
-                
-                    
-                        
-                        
-                    
-                    <td class="check table-danger"><img src="assets/x.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="Missing version IRI"></td>
-                
-            
-                
-                
-                    
-                        
-                        
-                    
-                    <td class="check table-danger"><img src="assets/x.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="Missing domain (scope)"></td>
-                
-            
-                
-                
-                    
-                        
-                        
-                    
-                    <td class="check table-success"><img src="assets/check.svg" height="15px"></td>
-                
-            
-                
-                
-                    
-                        
-                        
-                    
-                    <td class="check table-success"><img src="assets/check.svg" height="15px"></td>
-                
-            
-                
-                
-                    
-                        
-                        
-                    
-                    <td class="check table-success"><img src="assets/check.svg" height="15px"></td>
-                
-            
-                
-                
-                    
-                        
-                        
-                    
-                    <td class="check table-danger"><img src="assets/x.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="Missing usages"></td>
-                
-            
-                
-                
-                    
-                        
-                        
-                    
-                    <td class="check table-danger"><img src="assets/x.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="Missing contact information"></td>
-                
-            
-                
-                
-                    
-                        
-                        
-                    
-                    <td class="check table-success"><img src="assets/check.svg" height="15px"></td>
-                
-            
-                
-                
-                    
-                        
-                        
-                    
-                    <td class="check table-danger"><img src="assets/x.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="Missing version IRI to check date"></td>
-                
-            
-                
-                
-                    
-                        
-                        
-                    
-                    <td class="check table-success"><img src="assets/check.svg" height="15px"></td>
-                
-            
-                
-                
-                    
-                        
-                        
-                    
-                    <td class="check table-success"><img src="assets/check.svg" height="15px"></td>
-                
-            
-            
-            
-                
-                
-                    
-                        
-                        
-                    
-                    <td class="check table-danger"><img src="assets/x.svg" height="15px"></td>
-                
+                <td class="check table-danger"><img src="assets/x.svg" height="15px"></td>
             
         </tr>
     
@@ -1153,7 +1153,7 @@ $(function () {
                         
                         
                     
-                    <td class="check table-warning"><img src="assets/warning.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="Version IRI 'http://emmo.info/emmo/1.0.0-beta' is not in recommended format"></td>
+                    <td class="check table-warning"><img src="assets/warning.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="Version IRI 'http://emmo.info/emmo/1.0.0-beta4' is not in recommended format"></td>
                 
             
                 
@@ -1303,7 +1303,7 @@ $(function () {
                         
                         
                     
-                    <td class="check table-success"><img src="assets/check.svg" height="15px"></td>
+                    <td class="check table-warning"><img src="assets/warning.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="OWL syntax (Turtle), but should be RDF/XML"></td>
                 
             
                 
@@ -2726,18 +2726,6 @@ $(function () {
         <tr>
             <td><b><a href="MAMBO/dashboard.html">MAMBO</a></b></td>
             
-                <td class="table-notchecked" colspan="13">Failed to process ontology: failed_download</td>
-            
-            
-                
-                
-                <td class="check table-danger"><img src="assets/x.svg" height="15px"></td>
-            
-        </tr>
-    
-        <tr>
-            <td><b><a href="MDO/dashboard.html">MDO</a></b></td>
-            
             
             
                 
@@ -2746,7 +2734,7 @@ $(function () {
                         
                         
                     
-                    <td class="check table-danger"><img src="assets/x.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="Missing registry license."></td>
+                    <td class="check table-danger"><img src="assets/x.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="Missing ontology license. Missing registry license."></td>
                 
             
                 
@@ -2773,7 +2761,7 @@ $(function () {
                         
                         
                     
-                    <td class="check table-warning"><img src="assets/warning.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="Version IRI 'https://w3id.org/mdo/full/1.1/' is not in recommended format"></td>
+                    <td class="check table-danger"><img src="assets/x.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="Missing version IRI"></td>
                 
             
                 
@@ -2845,7 +2833,151 @@ $(function () {
                         
                         
                     
-                    <td class="check table-info"><img src="assets/info.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="Version IRI does not have date information"></td>
+                    <td class="check table-danger"><img src="assets/x.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="Missing version IRI to check date"></td>
+                
+            
+                
+                
+                    
+                        
+                        
+                    
+                    <td class="check table-success"><img src="assets/check.svg" height="15px"></td>
+                
+            
+                
+                
+                    
+                        
+                        
+                    
+                    <td class="check table-success"><img src="assets/check.svg" height="15px"></td>
+                
+            
+            
+            
+                
+                
+                    
+                        
+                        
+                    
+                    <td class="check table-danger"><img src="assets/x.svg" height="15px"></td>
+                
+            
+        </tr>
+    
+        <tr>
+            <td><b><a href="MDO/dashboard.html">MDO</a></b></td>
+            
+            
+            
+                
+                
+                    
+                        
+                        
+                    
+                    <td class="check table-danger"><img src="assets/x.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="Missing registry license."></td>
+                
+            
+                
+                
+                    
+                        
+                        
+                    
+                    <td class="check table-success"><img src="assets/check.svg" height="15px"></td>
+                
+            
+                
+                
+                    
+                        
+                        
+                    
+                    <td class="check table-danger"><img src="assets/x.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="0 invalid IRIs. The Ontology IRI is not valid."></td>
+                
+            
+                
+                
+                    
+                        
+                        
+                    
+                    <td class="check table-danger"><img src="assets/x.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="Missing version IRI"></td>
+                
+            
+                
+                
+                    
+                        
+                        
+                    
+                    <td class="check table-danger"><img src="assets/x.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="Missing domain (scope)"></td>
+                
+            
+                
+                
+                    
+                        
+                        
+                    
+                    <td class="check table-success"><img src="assets/check.svg" height="15px"></td>
+                
+            
+                
+                
+                    
+                        
+                        
+                    
+                    <td class="check table-success"><img src="assets/check.svg" height="15px"></td>
+                
+            
+                
+                
+                    
+                        
+                        
+                    
+                    <td class="check table-success"><img src="assets/check.svg" height="15px"></td>
+                
+            
+                
+                
+                    
+                        
+                        
+                    
+                    <td class="check table-danger"><img src="assets/x.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="Missing usages"></td>
+                
+            
+                
+                
+                    
+                        
+                        
+                    
+                    <td class="check table-danger"><img src="assets/x.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="Missing contact information"></td>
+                
+            
+                
+                
+                    
+                        
+                        
+                    
+                    <td class="check table-success"><img src="assets/check.svg" height="15px"></td>
+                
+            
+                
+                
+                    
+                        
+                        
+                    
+                    <td class="check table-danger"><img src="assets/x.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="Missing version IRI to check date"></td>
                 
             
                 
@@ -3043,7 +3175,7 @@ $(function () {
                         
                         
                     
-                    <td class="check table-warning"><img src="assets/warning.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="OWL syntax (Turtle), but should be RDF/XML"></td>
+                    <td class="check table-success"><img src="assets/check.svg" height="15px"></td>
                 
             
                 
@@ -3170,18 +3302,6 @@ $(function () {
         <tr>
             <td><b><a href="MSEO/dashboard.html">MSEO</a></b></td>
             
-                <td class="table-notchecked" colspan="13">Failed to process ontology: failed_robot_base</td>
-            
-            
-                
-                
-                <td class="check table-danger"><img src="assets/x.svg" height="15px"></td>
-            
-        </tr>
-    
-        <tr>
-            <td><b><a href="MatOnto/dashboard.html">MatOnto</a></b></td>
-            
             
             
                 
@@ -3190,7 +3310,7 @@ $(function () {
                         
                         
                     
-                    <td class="check table-danger"><img src="assets/x.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="Missing ontology license. Missing registry license."></td>
+                    <td class="check table-danger"><img src="assets/x.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="Missing registry license."></td>
                 
             
                 
@@ -3217,7 +3337,7 @@ $(function () {
                         
                         
                     
-                    <td class="check table-danger"><img src="assets/x.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="Version IRI does not resolve"></td>
+                    <td class="check table-danger"><img src="assets/x.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="Missing version IRI"></td>
                 
             
                 
@@ -3289,7 +3409,151 @@ $(function () {
                         
                         
                     
-                    <td class="check table-info"><img src="assets/info.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="Version IRI does not have date information"></td>
+                    <td class="check table-danger"><img src="assets/x.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="Missing version IRI to check date"></td>
+                
+            
+                
+                
+                    
+                        
+                        
+                    
+                    <td class="check table-success"><img src="assets/check.svg" height="15px"></td>
+                
+            
+                
+                
+                    
+                        
+                        
+                    
+                    <td class="check table-success"><img src="assets/check.svg" height="15px"></td>
+                
+            
+            
+            
+                
+                
+                    
+                        
+                        
+                    
+                    <td class="check table-danger"><img src="assets/x.svg" height="15px"></td>
+                
+            
+        </tr>
+    
+        <tr>
+            <td><b><a href="MatOnto/dashboard.html">MatOnto</a></b></td>
+            
+            
+            
+                
+                
+                    
+                        
+                        
+                    
+                    <td class="check table-danger"><img src="assets/x.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="Missing ontology license. Missing registry license."></td>
+                
+            
+                
+                
+                    
+                        
+                        
+                    
+                    <td class="check table-warning"><img src="assets/warning.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="OWL syntax (Turtle), but should be RDF/XML"></td>
+                
+            
+                
+                
+                    
+                        
+                        
+                    
+                    <td class="check table-danger"><img src="assets/x.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="0 invalid IRIs. The Ontology IRI is not valid."></td>
+                
+            
+                
+                
+                    
+                        
+                        
+                    
+                    <td class="check table-danger"><img src="assets/x.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="Missing version IRI"></td>
+                
+            
+                
+                
+                    
+                        
+                        
+                    
+                    <td class="check table-danger"><img src="assets/x.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="Missing domain (scope)"></td>
+                
+            
+                
+                
+                    
+                        
+                        
+                    
+                    <td class="check table-success"><img src="assets/check.svg" height="15px"></td>
+                
+            
+                
+                
+                    
+                        
+                        
+                    
+                    <td class="check table-success"><img src="assets/check.svg" height="15px"></td>
+                
+            
+                
+                
+                    
+                        
+                        
+                    
+                    <td class="check table-success"><img src="assets/check.svg" height="15px"></td>
+                
+            
+                
+                
+                    
+                        
+                        
+                    
+                    <td class="check table-danger"><img src="assets/x.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="Missing usages"></td>
+                
+            
+                
+                
+                    
+                        
+                        
+                    
+                    <td class="check table-danger"><img src="assets/x.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="Missing contact information"></td>
+                
+            
+                
+                
+                    
+                        
+                        
+                    
+                    <td class="check table-success"><img src="assets/check.svg" height="15px"></td>
+                
+            
+                
+                
+                    
+                        
+                        
+                    
+                    <td class="check table-danger"><img src="assets/x.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="Missing version IRI to check date"></td>
                 
             
                 
@@ -3326,12 +3590,144 @@ $(function () {
         <tr>
             <td><b><a href="MaterialsMine/dashboard.html">MaterialsMine</a></b></td>
             
-                <td class="table-notchecked" colspan="13">Failed to process ontology: failed_download</td>
             
             
                 
                 
-                <td class="check table-danger"><img src="assets/x.svg" height="15px"></td>
+                    
+                        
+                        
+                    
+                    <td class="check table-danger"><img src="assets/x.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="Missing ontology license. Missing registry license."></td>
+                
+            
+                
+                
+                    
+                        
+                        
+                    
+                    <td class="check table-warning"><img src="assets/warning.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="OWL syntax (Turtle), but should be RDF/XML"></td>
+                
+            
+                
+                
+                    
+                        
+                        
+                    
+                    <td class="check table-danger"><img src="assets/x.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="0 invalid IRIs. The Ontology IRI is not valid."></td>
+                
+            
+                
+                
+                    
+                        
+                        
+                    
+                    <td class="check table-danger"><img src="assets/x.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="Missing version IRI"></td>
+                
+            
+                
+                
+                    
+                        
+                        
+                    
+                    <td class="check table-danger"><img src="assets/x.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="Missing domain (scope)"></td>
+                
+            
+                
+                
+                    
+                        
+                        
+                    
+                    <td class="check table-success"><img src="assets/check.svg" height="15px"></td>
+                
+            
+                
+                
+                    
+                        
+                        
+                    
+                    <td class="check table-success"><img src="assets/check.svg" height="15px"></td>
+                
+            
+                
+                
+                    
+                        
+                        
+                    
+                    <td class="check table-success"><img src="assets/check.svg" height="15px"></td>
+                
+            
+                
+                
+                    
+                        
+                        
+                    
+                    <td class="check table-danger"><img src="assets/x.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="Missing usages"></td>
+                
+            
+                
+                
+                    
+                        
+                        
+                    
+                    <td class="check table-danger"><img src="assets/x.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="Missing contact information"></td>
+                
+            
+                
+                
+                    
+                        
+                        
+                    
+                    <td class="check table-success"><img src="assets/check.svg" height="15px"></td>
+                
+            
+                
+                
+                    
+                        
+                        
+                    
+                    <td class="check table-danger"><img src="assets/x.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="Missing version IRI to check date"></td>
+                
+            
+                
+                
+                    
+                        
+                        
+                    
+                    <td class="check table-success"><img src="assets/check.svg" height="15px"></td>
+                
+            
+                
+                
+                    
+                        
+                        
+                    
+                    <td class="check table-success"><img src="assets/check.svg" height="15px"></td>
+                
+            
+            
+            
+                
+                
+                    
+                        
+                        
+                    
+                    <td class="check table-danger"><img src="assets/x.svg" height="15px"></td>
+                
             
         </tr>
     
@@ -3482,144 +3878,12 @@ $(function () {
         <tr>
             <td><b><a href="NanoMine/dashboard.html">NanoMine</a></b></td>
             
+                <td class="table-notchecked" colspan="13">Failed to process ontology: failed_download</td>
             
             
                 
                 
-                    
-                        
-                        
-                    
-                    <td class="check table-danger"><img src="assets/x.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="Missing ontology license. Missing registry license."></td>
-                
-            
-                
-                
-                    
-                        
-                        
-                    
-                    <td class="check table-warning"><img src="assets/warning.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="OWL syntax (Turtle), but should be RDF/XML"></td>
-                
-            
-                
-                
-                    
-                        
-                        
-                    
-                    <td class="check table-danger"><img src="assets/x.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="0 invalid IRIs. The Ontology IRI is not valid."></td>
-                
-            
-                
-                
-                    
-                        
-                        
-                    
-                    <td class="check table-danger"><img src="assets/x.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="Missing version IRI"></td>
-                
-            
-                
-                
-                    
-                        
-                        
-                    
-                    <td class="check table-danger"><img src="assets/x.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="Missing domain (scope)"></td>
-                
-            
-                
-                
-                    
-                        
-                        
-                    
-                    <td class="check table-success"><img src="assets/check.svg" height="15px"></td>
-                
-            
-                
-                
-                    
-                        
-                        
-                    
-                    <td class="check table-success"><img src="assets/check.svg" height="15px"></td>
-                
-            
-                
-                
-                    
-                        
-                        
-                    
-                    <td class="check table-success"><img src="assets/check.svg" height="15px"></td>
-                
-            
-                
-                
-                    
-                        
-                        
-                    
-                    <td class="check table-danger"><img src="assets/x.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="Missing usages"></td>
-                
-            
-                
-                
-                    
-                        
-                        
-                    
-                    <td class="check table-danger"><img src="assets/x.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="Missing contact information"></td>
-                
-            
-                
-                
-                    
-                        
-                        
-                    
-                    <td class="check table-success"><img src="assets/check.svg" height="15px"></td>
-                
-            
-                
-                
-                    
-                        
-                        
-                    
-                    <td class="check table-danger"><img src="assets/x.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="Missing version IRI to check date"></td>
-                
-            
-                
-                
-                    
-                        
-                        
-                    
-                    <td class="check table-success"><img src="assets/check.svg" height="15px"></td>
-                
-            
-                
-                
-                    
-                        
-                        
-                    
-                    <td class="check table-success"><img src="assets/check.svg" height="15px"></td>
-                
-            
-            
-            
-                
-                
-                    
-                        
-                        
-                    
-                    <td class="check table-danger"><img src="assets/x.svg" height="15px"></td>
-                
+                <td class="check table-danger"><img src="assets/x.svg" height="15px"></td>
             
         </tr>
     
@@ -3770,12 +4034,144 @@ $(function () {
         <tr>
             <td><b><a href="OBO/dashboard.html">OBO</a></b></td>
             
-                <td class="table-notchecked" colspan="13">Failed to process ontology: failed_download</td>
             
             
                 
                 
-                <td class="check table-danger"><img src="assets/x.svg" height="15px"></td>
+                    
+                        
+                        
+                    
+                    <td class="check table-danger"><img src="assets/x.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="Missing registry license."></td>
+                
+            
+                
+                
+                    
+                        
+                        
+                    
+                    <td class="check table-warning"><img src="assets/warning.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="OWL syntax (Turtle), but should be RDF/XML"></td>
+                
+            
+                
+                
+                    
+                        
+                        
+                    
+                    <td class="check table-danger"><img src="assets/x.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="0 invalid IRIs. The Ontology IRI is not valid."></td>
+                
+            
+                
+                
+                    
+                        
+                        
+                    
+                    <td class="check table-warning"><img src="assets/warning.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="Version IRI 'http://purl.obolibrary.org/obo/bfo/2020/bfo-core.ttl' is not in recommended format"></td>
+                
+            
+                
+                
+                    
+                        
+                        
+                    
+                    <td class="check table-danger"><img src="assets/x.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="Missing domain (scope)"></td>
+                
+            
+                
+                
+                    
+                        
+                        
+                    
+                    <td class="check table-success"><img src="assets/check.svg" height="15px"></td>
+                
+            
+                
+                
+                    
+                        
+                        
+                    
+                    <td class="check table-success"><img src="assets/check.svg" height="15px"></td>
+                
+            
+                
+                
+                    
+                        
+                        
+                    
+                    <td class="check table-success"><img src="assets/check.svg" height="15px"></td>
+                
+            
+                
+                
+                    
+                        
+                        
+                    
+                    <td class="check table-danger"><img src="assets/x.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="Missing usages"></td>
+                
+            
+                
+                
+                    
+                        
+                        
+                    
+                    <td class="check table-danger"><img src="assets/x.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="Missing contact information"></td>
+                
+            
+                
+                
+                    
+                        
+                        
+                    
+                    <td class="check table-success"><img src="assets/check.svg" height="15px"></td>
+                
+            
+                
+                
+                    
+                        
+                        
+                    
+                    <td class="check table-info"><img src="assets/info.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="Version IRI does not have date information"></td>
+                
+            
+                
+                
+                    
+                        
+                        
+                    
+                    <td class="check table-success"><img src="assets/check.svg" height="15px"></td>
+                
+            
+                
+                
+                    
+                        
+                        
+                    
+                    <td class="check table-success"><img src="assets/check.svg" height="15px"></td>
+                
+            
+            
+            
+                
+                
+                    
+                        
+                        
+                    
+                    <td class="check table-danger"><img src="assets/x.svg" height="15px"></td>
+                
             
         </tr>
     
@@ -3926,144 +4322,12 @@ $(function () {
         <tr>
             <td><b><a href="OM/dashboard.html">OM</a></b></td>
             
+                <td class="table-notchecked" colspan="13">Failed to process ontology: failed_robot_base</td>
             
             
                 
                 
-                    
-                        
-                        
-                    
-                    <td class="check table-danger"><img src="assets/x.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="Missing registry license."></td>
-                
-            
-                
-                
-                    
-                        
-                        
-                    
-                    <td class="check table-success"><img src="assets/check.svg" height="15px"></td>
-                
-            
-                
-                
-                    
-                        
-                        
-                    
-                    <td class="check table-danger"><img src="assets/x.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="0 invalid IRIs. The Ontology IRI is not valid."></td>
-                
-            
-                
-                
-                    
-                        
-                        
-                    
-                    <td class="check table-danger"><img src="assets/x.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="Missing version IRI"></td>
-                
-            
-                
-                
-                    
-                        
-                        
-                    
-                    <td class="check table-danger"><img src="assets/x.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="Missing domain (scope)"></td>
-                
-            
-                
-                
-                    
-                        
-                        
-                    
-                    <td class="check table-success"><img src="assets/check.svg" height="15px"></td>
-                
-            
-                
-                
-                    
-                        
-                        
-                    
-                    <td class="check table-success"><img src="assets/check.svg" height="15px"></td>
-                
-            
-                
-                
-                    
-                        
-                        
-                    
-                    <td class="check table-success"><img src="assets/check.svg" height="15px"></td>
-                
-            
-                
-                
-                    
-                        
-                        
-                    
-                    <td class="check table-danger"><img src="assets/x.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="Missing usages"></td>
-                
-            
-                
-                
-                    
-                        
-                        
-                    
-                    <td class="check table-danger"><img src="assets/x.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="Missing contact information"></td>
-                
-            
-                
-                
-                    
-                        
-                        
-                    
-                    <td class="check table-success"><img src="assets/check.svg" height="15px"></td>
-                
-            
-                
-                
-                    
-                        
-                        
-                    
-                    <td class="check table-danger"><img src="assets/x.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="Missing version IRI to check date"></td>
-                
-            
-                
-                
-                    
-                        
-                        
-                    
-                    <td class="check table-success"><img src="assets/check.svg" height="15px"></td>
-                
-            
-                
-                
-                    
-                        
-                        
-                    
-                    <td class="check table-success"><img src="assets/check.svg" height="15px"></td>
-                
-            
-            
-            
-                
-                
-                    
-                        
-                        
-                    
-                    <td class="check table-danger"><img src="assets/x.svg" height="15px"></td>
-                
+                <td class="check table-danger"><img src="assets/x.svg" height="15px"></td>
             
         </tr>
     
@@ -4370,12 +4634,144 @@ $(function () {
         <tr>
             <td><b><a href="PMDCO/dashboard.html">PMDCO</a></b></td>
             
-                <td class="table-notchecked" colspan="13">Failed to process ontology: failed_download</td>
             
             
                 
                 
-                <td class="check table-danger"><img src="assets/x.svg" height="15px"></td>
+                    
+                        
+                        
+                    
+                    <td class="check table-danger"><img src="assets/x.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="Missing registry license."></td>
+                
+            
+                
+                
+                    
+                        
+                        
+                    
+                    <td class="check table-warning"><img src="assets/warning.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="OWL syntax (Turtle), but should be RDF/XML"></td>
+                
+            
+                
+                
+                    
+                        
+                        
+                    
+                    <td class="check table-danger"><img src="assets/x.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="0 invalid IRIs. The Ontology IRI is not valid."></td>
+                
+            
+                
+                
+                    
+                        
+                        
+                    
+                    <td class="check table-warning"><img src="assets/warning.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="Version IRI 'https://w3id.org/pmd/co' is not in recommended format"></td>
+                
+            
+                
+                
+                    
+                        
+                        
+                    
+                    <td class="check table-danger"><img src="assets/x.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="Missing domain (scope)"></td>
+                
+            
+                
+                
+                    
+                        
+                        
+                    
+                    <td class="check table-success"><img src="assets/check.svg" height="15px"></td>
+                
+            
+                
+                
+                    
+                        
+                        
+                    
+                    <td class="check table-success"><img src="assets/check.svg" height="15px"></td>
+                
+            
+                
+                
+                    
+                        
+                        
+                    
+                    <td class="check table-success"><img src="assets/check.svg" height="15px"></td>
+                
+            
+                
+                
+                    
+                        
+                        
+                    
+                    <td class="check table-danger"><img src="assets/x.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="Missing usages"></td>
+                
+            
+                
+                
+                    
+                        
+                        
+                    
+                    <td class="check table-danger"><img src="assets/x.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="Missing contact information"></td>
+                
+            
+                
+                
+                    
+                        
+                        
+                    
+                    <td class="check table-success"><img src="assets/check.svg" height="15px"></td>
+                
+            
+                
+                
+                    
+                        
+                        
+                    
+                    <td class="check table-info"><img src="assets/info.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="Version IRI does not have date information"></td>
+                
+            
+                
+                
+                    
+                        
+                        
+                    
+                    <td class="check table-success"><img src="assets/check.svg" height="15px"></td>
+                
+            
+                
+                
+                    
+                        
+                        
+                    
+                    <td class="check table-success"><img src="assets/check.svg" height="15px"></td>
+                
+            
+            
+            
+                
+                
+                    
+                        
+                        
+                    
+                    <td class="check table-danger"><img src="assets/x.svg" height="15px"></td>
+                
             
         </tr>
     
@@ -5102,12 +5498,144 @@ $(function () {
         <tr>
             <td><b><a href="SKOS_MDO/dashboard.html">SKOS_MDO</a></b></td>
             
-                <td class="table-notchecked" colspan="13">Failed to process ontology: failed_download</td>
             
             
                 
                 
-                <td class="check table-danger"><img src="assets/x.svg" height="15px"></td>
+                    
+                        
+                        
+                    
+                    <td class="check table-danger"><img src="assets/x.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="Missing ontology license. Missing registry license."></td>
+                
+            
+                
+                
+                    
+                        
+                        
+                    
+                    <td class="check table-warning"><img src="assets/warning.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="OWL syntax (Turtle), but should be RDF/XML"></td>
+                
+            
+                
+                
+                    
+                        
+                        
+                    
+                    <td class="check table-danger"><img src="assets/x.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="0 invalid IRIs. The Ontology IRI is not valid."></td>
+                
+            
+                
+                
+                    
+                        
+                        
+                    
+                    <td class="check table-danger"><img src="assets/x.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="Missing version IRI"></td>
+                
+            
+                
+                
+                    
+                        
+                        
+                    
+                    <td class="check table-danger"><img src="assets/x.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="Missing domain (scope)"></td>
+                
+            
+                
+                
+                    
+                        
+                        
+                    
+                    <td class="check table-success"><img src="assets/check.svg" height="15px"></td>
+                
+            
+                
+                
+                    
+                        
+                        
+                    
+                    <td class="check table-success"><img src="assets/check.svg" height="15px"></td>
+                
+            
+                
+                
+                    
+                        
+                        
+                    
+                    <td class="check table-success"><img src="assets/check.svg" height="15px"></td>
+                
+            
+                
+                
+                    
+                        
+                        
+                    
+                    <td class="check table-danger"><img src="assets/x.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="Missing tracker and usages"></td>
+                
+            
+                
+                
+                    
+                        
+                        
+                    
+                    <td class="check table-danger"><img src="assets/x.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="Missing contact information"></td>
+                
+            
+                
+                
+                    
+                        
+                        
+                    
+                    <td class="check table-success"><img src="assets/check.svg" height="15px"></td>
+                
+            
+                
+                
+                    
+                        
+                        
+                    
+                    <td class="check table-danger"><img src="assets/x.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="Missing version IRI to check date"></td>
+                
+            
+                
+                
+                    
+                        
+                        
+                    
+                    <td class="check table-danger"><img src="assets/x.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="Missing tracker and usages"></td>
+                
+            
+                
+                
+                    
+                        
+                        
+                    
+                    <td class="check table-success"><img src="assets/check.svg" height="15px"></td>
+                
+            
+            
+            
+                
+                
+                    
+                        
+                        
+                    
+                    <td class="check table-danger"><img src="assets/x.svg" height="15px"></td>
+                
             
         </tr>
     
@@ -5581,7 +6109,7 @@ $(function () {
                         
                         
                     
-                    <td class="check table-danger"><img src="assets/x.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="Version IRI does not resolve"></td>
+                    <td class="check table-danger"><img src="assets/x.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="Missing version IRI"></td>
                 
             
                 
@@ -5653,7 +6181,7 @@ $(function () {
                         
                         
                     
-                    <td class="check table-info"><img src="assets/info.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="last version (2023-05-25) is over one year(s) old"></td>
+                    <td class="check table-danger"><img src="assets/x.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="Missing version IRI to check date"></td>
                 
             
                 
@@ -5978,144 +6506,12 @@ $(function () {
         <tr>
             <td><b><a href="enanomapper/dashboard.html">enanomapper</a></b></td>
             
+                <td class="table-notchecked" colspan="13">Failed to process ontology: failed_robot_base</td>
             
             
                 
                 
-                    
-                        
-                        
-                    
-                    <td class="check table-danger"><img src="assets/x.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="License should use property 'http://purl.org/dc/terms/license'. Missing registry license."></td>
-                
-            
-                
-                
-                    
-                        
-                        
-                    
-                    <td class="check table-success"><img src="assets/check.svg" height="15px"></td>
-                
-            
-                
-                
-                    
-                        
-                        
-                    
-                    <td class="check table-danger"><img src="assets/x.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="0 invalid IRIs. The Ontology IRI is not valid."></td>
-                
-            
-                
-                
-                    
-                        
-                        
-                    
-                    <td class="check table-warning"><img src="assets/warning.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="Version IRI 'http://enanomapper.github.io/ontologies/releases/10.0/enanomapper.owl' is not in recommended format"></td>
-                
-            
-                
-                
-                    
-                        
-                        
-                    
-                    <td class="check table-danger"><img src="assets/x.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="Missing domain (scope)"></td>
-                
-            
-                
-                
-                    
-                        
-                        
-                    
-                    <td class="check table-success"><img src="assets/check.svg" height="15px"></td>
-                
-            
-                
-                
-                    
-                        
-                        
-                    
-                    <td class="check table-success"><img src="assets/check.svg" height="15px"></td>
-                
-            
-                
-                
-                    
-                        
-                        
-                    
-                    <td class="check table-success"><img src="assets/check.svg" height="15px"></td>
-                
-            
-                
-                
-                    
-                        
-                        
-                    
-                    <td class="check table-danger"><img src="assets/x.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="Missing usages"></td>
-                
-            
-                
-                
-                    
-                        
-                        
-                    
-                    <td class="check table-danger"><img src="assets/x.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="Missing contact information"></td>
-                
-            
-                
-                
-                    
-                        
-                        
-                    
-                    <td class="check table-success"><img src="assets/check.svg" height="15px"></td>
-                
-            
-                
-                
-                    
-                        
-                        
-                    
-                    <td class="check table-info"><img src="assets/info.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="Version IRI does not have date information"></td>
-                
-            
-                
-                
-                    
-                        
-                        
-                    
-                    <td class="check table-success"><img src="assets/check.svg" height="15px"></td>
-                
-            
-                
-                
-                    
-                        
-                        
-                    
-                    <td class="check table-success"><img src="assets/check.svg" height="15px"></td>
-                
-            
-            
-            
-                
-                
-                    
-                        
-                        
-                    
-                    <td class="check table-danger"><img src="assets/x.svg" height="15px"></td>
-                
+                <td class="check table-danger"><img src="assets/x.svg" height="15px"></td>
             
         </tr>
     
@@ -6710,12 +7106,144 @@ $(function () {
         <tr>
             <td><b><a href="mwo/dashboard.html">mwo</a></b></td>
             
-                <td class="table-notchecked" colspan="13">Failed to process ontology: failed_download</td>
             
             
                 
                 
-                <td class="check table-danger"><img src="assets/x.svg" height="15px"></td>
+                    
+                        
+                        
+                    
+                    <td class="check table-danger"><img src="assets/x.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="Missing registry license."></td>
+                
+            
+                
+                
+                    
+                        
+                        
+                    
+                    <td class="check table-success"><img src="assets/check.svg" height="15px"></td>
+                
+            
+                
+                
+                    
+                        
+                        
+                    
+                    <td class="check table-danger"><img src="assets/x.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="0 invalid IRIs. The Ontology IRI is not valid."></td>
+                
+            
+                
+                
+                    
+                        
+                        
+                    
+                    <td class="check table-danger"><img src="assets/x.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="Missing version IRI"></td>
+                
+            
+                
+                
+                    
+                        
+                        
+                    
+                    <td class="check table-danger"><img src="assets/x.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="Missing domain (scope)"></td>
+                
+            
+                
+                
+                    
+                        
+                        
+                    
+                    <td class="check table-success"><img src="assets/check.svg" height="15px"></td>
+                
+            
+                
+                
+                    
+                        
+                        
+                    
+                    <td class="check table-success"><img src="assets/check.svg" height="15px"></td>
+                
+            
+                
+                
+                    
+                        
+                        
+                    
+                    <td class="check table-success"><img src="assets/check.svg" height="15px"></td>
+                
+            
+                
+                
+                    
+                        
+                        
+                    
+                    <td class="check table-danger"><img src="assets/x.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="Missing tracker and usages"></td>
+                
+            
+                
+                
+                    
+                        
+                        
+                    
+                    <td class="check table-danger"><img src="assets/x.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="Missing contact information"></td>
+                
+            
+                
+                
+                    
+                        
+                        
+                    
+                    <td class="check table-success"><img src="assets/check.svg" height="15px"></td>
+                
+            
+                
+                
+                    
+                        
+                        
+                    
+                    <td class="check table-danger"><img src="assets/x.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="Missing version IRI to check date"></td>
+                
+            
+                
+                
+                    
+                        
+                        
+                    
+                    <td class="check table-danger"><img src="assets/x.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="Missing tracker and usages"></td>
+                
+            
+                
+                
+                    
+                        
+                        
+                    
+                    <td class="check table-success"><img src="assets/check.svg" height="15px"></td>
+                
+            
+            
+            
+                
+                
+                    
+                        
+                        
+                    
+                    <td class="check table-danger"><img src="assets/x.svg" height="15px"></td>
+                
             
         </tr>
     
@@ -7154,12 +7682,144 @@ $(function () {
         <tr>
             <td><b><a href="periodictable/dashboard.html">periodictable</a></b></td>
             
-                <td class="table-notchecked" colspan="13">Failed to process ontology: failed_download</td>
             
             
                 
                 
-                <td class="check table-danger"><img src="assets/x.svg" height="15px"></td>
+                    
+                        
+                        
+                    
+                    <td class="check table-danger"><img src="assets/x.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="Missing ontology license. Missing registry license."></td>
+                
+            
+                
+                
+                    
+                        
+                        
+                    
+                    <td class="check table-success"><img src="assets/check.svg" height="15px"></td>
+                
+            
+                
+                
+                    
+                        
+                        
+                    
+                    <td class="check table-danger"><img src="assets/x.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="0 invalid IRIs. The Ontology IRI is not valid."></td>
+                
+            
+                
+                
+                    
+                        
+                        
+                    
+                    <td class="check table-danger"><img src="assets/x.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="Missing version IRI"></td>
+                
+            
+                
+                
+                    
+                        
+                        
+                    
+                    <td class="check table-danger"><img src="assets/x.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="Missing domain (scope)"></td>
+                
+            
+                
+                
+                    
+                        
+                        
+                    
+                    <td class="check table-success"><img src="assets/check.svg" height="15px"></td>
+                
+            
+                
+                
+                    
+                        
+                        
+                    
+                    <td class="check table-success"><img src="assets/check.svg" height="15px"></td>
+                
+            
+                
+                
+                    
+                        
+                        
+                    
+                    <td class="check table-success"><img src="assets/check.svg" height="15px"></td>
+                
+            
+                
+                
+                    
+                        
+                        
+                    
+                    <td class="check table-danger"><img src="assets/x.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="Missing tracker and usages"></td>
+                
+            
+                
+                
+                    
+                        
+                        
+                    
+                    <td class="check table-danger"><img src="assets/x.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="Missing contact information"></td>
+                
+            
+                
+                
+                    
+                        
+                        
+                    
+                    <td class="check table-success"><img src="assets/check.svg" height="15px"></td>
+                
+            
+                
+                
+                    
+                        
+                        
+                    
+                    <td class="check table-danger"><img src="assets/x.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="Missing version IRI to check date"></td>
+                
+            
+                
+                
+                    
+                        
+                        
+                    
+                    <td class="check table-danger"><img src="assets/x.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="Missing tracker and usages"></td>
+                
+            
+                
+                
+                    
+                        
+                        
+                    
+                    <td class="check table-success"><img src="assets/check.svg" height="15px"></td>
+                
+            
+            
+            
+                
+                
+                    
+                        
+                        
+                    
+                    <td class="check table-danger"><img src="assets/x.svg" height="15px"></td>
+                
             
         </tr>
     

@@ -1,8 +1,8 @@
 metrics:
   abox_axiom_count: 0
   abox_axiom_count_incl: 0
-  annotation_property_count: 4
-  annotation_property_count_incl: 4
+  annotation_property_count: 6
+  annotation_property_count_incl: 6
   axiom_count: 0
   axiom_count_incl: 0
   class_count: 0
@@ -24,9 +24,9 @@ metrics:
   logical_axiom_count_incl: 0
   obj_property_count: 0
   obj_property_count_incl: 0
-  ontology_anno_count: 4
-  ontology_iri: "http://www.ontologyrepository.com/CommonCoreOntologies/Mid/AllCoreOntology"
-  ontology_version_iri: "http://www.ontologyrepository.com/CommonCoreOntologies/Mid/2024-02-14/AllCoreOntology"
+  ontology_anno_count: 6
+  ontology_iri: "http://www.ontologyrepository.com/CommonCoreOntologies/Mid/MergedAllCoreOntology"
+  ontology_version_iri: "http://www.ontologyrepository.com/CommonCoreOntologies/Mid/2020-09-23/MergedAllCoreOntology"
   owl2: true
   owl2_dl: false
   owl2_el: false
@@ -37,8 +37,8 @@ metrics:
   rdfs: true
   rule_count: 0
   rule_count_incl: 0
-  signature_entity_count: 4
-  signature_entity_count_incl: 4
+  signature_entity_count: 6
+  signature_entity_count_incl: 6
   syntax: "Turtle"
   tbox_axiom_count: 0
   tbox_axiom_count_incl: 0
@@ -60,16 +60,15 @@ metrics:
   curie_map:
     owl: "http://www.w3.org/2002/07/owl#"
     rdfs: "http://www.w3.org/2000/01/rdf-schema#"
-    dc: "http://purl.org/dc/terms/"
   namespace_axiom_count: {}
   namespace_axiom_count_incl: {}
   namespace_entity_count:
+    prefix_unknown: 3
     owl: 1
     rdfs: 2
-    dc: 1
   namespace_entity_count_incl:
+    prefix_unknown: 3
     owl: 1
     rdfs: 2
-    dc: 1
   owl2dl_profile_violation:
-    UseOfUndeclaredAnnotationProperty: 1
+    UseOfUndeclaredAnnotationProperty: 3

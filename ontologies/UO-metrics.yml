@@ -1,35 +1,35 @@
 metrics:
   abox_axiom_count: 0
   abox_axiom_count_incl: 0
-  annotation_property_count: 5
-  annotation_property_count_incl: 5
-  axiom_count: 3286
-  axiom_count_incl: 3286
-  class_count: 572
-  class_count_incl: 572
+  annotation_property_count: 4
+  annotation_property_count_incl: 4
+  axiom_count: 3397
+  axiom_count_incl: 3397
+  class_count: 609
+  class_count_incl: 609
   consistent: true
   dataproperty_count: 0
   dataproperty_count_incl: 0
-  datatypes_count: 2
-  datatypes_count_incl: 2
-  dt_builtin_count: 2
-  dt_builtin_count_incl: 2
+  datatypes_count: 1
+  datatypes_count_incl: 1
+  dt_builtin_count: 1
+  dt_builtin_count_incl: 1
   dt_notbuiltin_count: 0
   dt_notbuiltin_count_incl: 0
   expressivity: "ALCO"
   expressivity_incl: "ALCO"
-  individual_count: 275
-  individual_count_incl: 275
-  logical_axiom_count: 1028
-  logical_axiom_count_incl: 1028
+  individual_count: 272
+  individual_count_incl: 272
+  logical_axiom_count: 1143
+  logical_axiom_count_incl: 1143
   obj_property_count: 2
   obj_property_count_incl: 2
-  ontology_anno_count: 1
+  ontology_anno_count: 0
   ontology_iri: "http://purl.obolibrary.org/obo/uo.owl"
-  ontology_version_iri: "http://purl.obolibrary.org/obo/uo/releases/2023-05-25/uo.owl"
+  ontology_version_iri: "no.iri"
   owl2: true
-  owl2_dl: true
-  owl2_el: true
+  owl2_dl: false
+  owl2_el: false
   owl2_ql: false
   owl2_rl: false
   rbox_axiom_count: 0
@@ -37,13 +37,13 @@ metrics:
   rdfs: false
   rule_count: 0
   rule_count_incl: 0
-  signature_entity_count: 856
-  signature_entity_count_incl: 856
+  signature_entity_count: 888
+  signature_entity_count_incl: 888
   syntax: "RDF/XML Syntax"
-  tbox_axiom_count: 1028
-  tbox_axiom_count_incl: 1028
-  tboxrbox_axiom_count: 1028
-  tboxrbox_axiom_count_incl: 1028
+  tbox_axiom_count: 1143
+  tbox_axiom_count_incl: 1143
+  tboxrbox_axiom_count: 1143
+  tboxrbox_axiom_count_incl: 1143
   unsatisfiable_class_count: 0
   axiom_types:
   - "AnnotationAssertion"
@@ -66,57 +66,60 @@ metrics:
   valid_imports: []
   valid_imports_incl: []
   axiom_type_count:
-    AnnotationAssertion: 1407
-    EquivalentClasses: 356
-    Declaration: 851
-    SubClassOf: 672
+    AnnotationAssertion: 1369
+    EquivalentClasses: 350
+    Declaration: 885
+    SubClassOf: 793
   axiom_type_count_incl:
-    AnnotationAssertion: 1407
-    EquivalentClasses: 356
-    Declaration: 851
-    SubClassOf: 672
+    AnnotationAssertion: 1369
+    EquivalentClasses: 350
+    Declaration: 885
+    SubClassOf: 793
   class_expression_count:
-    Class: 2434
-    ObjectOneOf: 275
-    ObjectSomeValuesFrom: 162
-    ObjectIntersectionOf: 81
+    ObjectAllValuesFrom: 44
+    Class: 2705
+    ObjectOneOf: 272
+    ObjectUnionOf: 44
+    ObjectSomeValuesFrom: 78
+    ObjectIntersectionOf: 78
   class_expression_count_incl:
-    Class: 2434
-    ObjectOneOf: 275
-    ObjectSomeValuesFrom: 162
-    ObjectIntersectionOf: 81
+    ObjectAllValuesFrom: 44
+    Class: 2705
+    ObjectOneOf: 272
+    ObjectUnionOf: 44
+    ObjectSomeValuesFrom: 78
+    ObjectIntersectionOf: 78
   curie_map:
-    oboInOwl: "http://www.geneontology.org/formats/oboInOwl#"
-    owl: "http://www.w3.org/2002/07/owl#"
-    rdf: "http://www.w3.org/1999/02/22-rdf-syntax-ns#"
     xsd: "http://www.w3.org/2001/XMLSchema#"
+    PATO: "http://purl.obolibrary.org/obo/PATO_"
     UO: "http://purl.obolibrary.org/obo/UO_"
     rdfs: "http://www.w3.org/2000/01/rdf-schema#"
     obo: "http://purl.obolibrary.org/obo/"
   namespace_axiom_count:
-    oboInOwl: 431
-    UO: 2984
-    rdfs: 978
-    obo: 164
+    prefix_unknown: 415
+    PATO: 96
+    UO: 3153
+    rdfs: 956
+    obo: 124
   namespace_axiom_count_incl:
-    oboInOwl: 431
-    UO: 2984
-    rdfs: 978
-    obo: 164
+    prefix_unknown: 415
+    PATO: 96
+    UO: 3153
+    rdfs: 956
+    obo: 124
   namespace_entity_count:
-    oboInOwl: 2
-    owl: 1
-    rdf: 1
+    prefix_unknown: 2
     xsd: 1
-    UO: 847
+    PATO: 48
+    UO: 833
     rdfs: 2
     obo: 2
   namespace_entity_count_incl:
-    oboInOwl: 2
-    owl: 1
-    rdf: 1
+    prefix_unknown: 2
     xsd: 1
-    UO: 847
+    PATO: 48
+    UO: 833
     rdfs: 2
     obo: 2
-  owl2dl_profile_violation: {}
+  owl2dl_profile_violation:
+    InsufficientOperands: 40
