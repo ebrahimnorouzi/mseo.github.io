@@ -176,24 +176,24 @@ metrics:
     DataAllValuesFrom: 3
     ObjectIntersectionOf: 16
   curie_map:
-    rdf: "http://www.w3.org/1999/02/22-rdf-syntax-ns#"
     owl: "http://www.w3.org/2002/07/owl#"
+    rdf: "http://www.w3.org/1999/02/22-rdf-syntax-ns#"
     xsd: "http://www.w3.org/2001/XMLSchema#"
     skos: "http://www.w3.org/2004/02/skos/core#"
     rdfs: "http://www.w3.org/2000/01/rdf-schema#"
     dc: "http://purl.org/dc/terms/"
   namespace_axiom_count:
     prefix_unknown: 7964
-    rdf: 120
     owl: 29
+    rdf: 120
     xsd: 387
     skos: 1158
     rdfs: 305
     dc: 6
   namespace_axiom_count_incl:
     prefix_unknown: 7964
-    rdf: 120
     owl: 29
+    rdf: 120
     xsd: 387
     skos: 1158
     rdfs: 305

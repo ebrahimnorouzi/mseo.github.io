@@ -35,7 +35,7 @@ ontologies:
   - BWMD-DOMAIN
   - BWMD-DOMAINALT
   changed: true
-  date: 2024-06-18 15:10:02.448257
+  date: 2024-06-18 16:23:49.258857
   metrics:
     'Axioms: Breakdown of axiom types':
       AnnotationAssertion: 2151
@@ -138,7 +138,7 @@ ontologies:
   - BWMD-MID
   - BWMD-MIDALT
   changed: true
-  date: 2024-06-18 15:09:58.325694
+  date: 2024-06-18 16:23:45.476607
   metrics:
     'Axioms: Breakdown of axiom types':
       AnnotationAssertion: 1234
@@ -241,7 +241,7 @@ ontologies:
   - cco
   - CCOALT
   changed: true
-  date: 2024-06-18 15:09:54.898900
+  date: 2024-06-18 16:23:42.403139
   metrics:
     'Axioms: Breakdown of axiom types':
       AnnotationAssertion: 7612
@@ -356,7 +356,7 @@ ontologies:
   - CHAMEO
   - CHAMEOALT
   changed: true
-  date: 2024-06-18 15:14:01.793478
+  date: 2024-06-18 16:27:49.156874
   metrics:
     'Axioms: Breakdown of axiom types':
       AnnotationAssertion: 6399
@@ -482,7 +482,7 @@ ontologies:
   - cif-core
   - CIF-COREALT
   changed: true
-  date: 2024-06-18 15:10:20.044781
+  date: 2024-06-18 16:24:06.723134
   metrics:
     'Axioms: Breakdown of axiom types':
       AnnotationAssertion: 282
@@ -593,7 +593,7 @@ ontologies:
   - deb
   - DEBALT
   changed: true
-  date: 2024-06-18 15:13:06.818612
+  date: 2024-06-18 16:26:54.950387
   metrics:
     'Axioms: Breakdown of axiom types':
       AnnotationAssertion: 296
@@ -690,7 +690,7 @@ ontologies:
   - diso
   - DISOALT
   changed: true
-  date: 2024-06-18 15:12:56.752011
+  date: 2024-06-18 16:26:44.248585
   metrics:
     'Axioms: Breakdown of axiom types':
       AnnotationAssertion: 147
@@ -794,7 +794,7 @@ ontologies:
   - emmo
   - EMMOALT
   changed: true
-  date: 2024-06-18 15:07:22.166516
+  date: 2024-06-18 16:21:09.480108
   metrics:
     'Axioms: Breakdown of axiom types':
       AnnotationAssertion: 1743
@@ -912,9 +912,9 @@ ontologies:
 - base_generated: true
   changed: true
   failure: failed_robot_base
-  mirror_from: https://raw.githubusercontent.com/ebrahimnorouzi/mseo.github.io/master/Ontology_files/BVCO.ttl
+  mirror_from: https://raw.githubusercontent.com/Battery-Value-Chain-Ontology/ontology/master/BVCO.ttl
   namespace: EMMO_BVC
-  sha256_hash: 083958d2622aa5d30761f488faeaba5990c644ab70b4006d547c06765f5cf618
+  sha256_hash: fdb9e0b092b01e1b8a2d5f1ba68fcb83550bbfd3b4015ef28a317059119ff67e
 - base_generated: true
   changed: true
   failure: failed_robot_base
@@ -926,7 +926,7 @@ ontologies:
   - emmo_datamodel
   - EMMO_DATAMODELALT
   changed: true
-  date: 2024-06-18 15:10:23.335732
+  date: 2024-06-18 16:24:09.854984
   metrics:
     'Axioms: Breakdown of axiom types':
       AnnotationAssertion: 94
@@ -1036,7 +1036,7 @@ ontologies:
   - emmo_atomistic
   - EMMO_ATOMISTICALT
   changed: true
-  date: 2024-06-18 15:10:29.668660
+  date: 2024-06-18 16:24:16.465787
   metrics:
     'Axioms: Breakdown of axiom types':
       AnnotationAssertion: 1921
@@ -1160,7 +1160,7 @@ ontologies:
   - emmo_crystallography
   - EMMO_CRYSTALLOGRAPHYALT
   changed: true
-  date: 2024-06-18 15:10:17.373343
+  date: 2024-06-18 16:24:04.190206
   metrics:
     'Axioms: Breakdown of axiom types':
       AnnotationAssertion: 9482
@@ -1287,7 +1287,7 @@ ontologies:
   - emmo_mappings
   - EMMO_MAPPINGSALT
   changed: true
-  date: 2024-06-18 15:10:26.526558
+  date: 2024-06-18 16:24:13.255841
   metrics:
     'Axioms: Breakdown of axiom types':
       AnnotationAssertion: 1915
@@ -1413,7 +1413,7 @@ ontologies:
   - emmo_mechanical_testing
   - EMMO_MECHANICAL_TESTINGALT
   changed: true
-  date: 2024-06-18 15:07:25.572382
+  date: 2024-06-18 16:21:12.716007
   metrics:
     'Axioms: Breakdown of axiom types':
       AnnotationAssertion: 2538
@@ -1534,7 +1534,7 @@ ontologies:
   - emmo_microstructure
   - EMMO_MICROSTRUCTUREALT
   changed: true
-  date: 2024-06-18 15:07:28.330820
+  date: 2024-06-18 16:21:15.363509
   metrics:
     'Axioms: Breakdown of axiom types':
       AnnotationAssertion: 622
@@ -1651,7 +1651,7 @@ ontologies:
   - foaf
   - FOAFALT
   changed: true
-  date: 2024-06-18 15:09:51.258074
+  date: 2024-06-18 16:23:38.658288
   metrics:
     'Axioms: Breakdown of axiom types':
       AnnotationAssertion: 245
@@ -1767,7 +1767,7 @@ ontologies:
   - gpo
   - GPOALT
   changed: true
-  date: 2024-06-18 15:10:14.199494
+  date: 2024-06-18 16:24:00.916567
   metrics:
     'Axioms: Breakdown of axiom types':
       AnnotationAssertion: 2532
@@ -1887,7 +1887,7 @@ ontologies:
   - iao
   - IAOALT
   changed: true
-  date: 2024-06-18 15:13:09.765329
+  date: 2024-06-18 16:26:58.080365
   metrics:
     'Axioms: Breakdown of axiom types':
       AnnotationAssertion: 2777
@@ -2016,7 +2016,7 @@ ontologies:
   - LPBFO
   - LPBFOALT
   changed: true
-  date: 2024-06-18 15:10:09.091528
+  date: 2024-06-18 16:23:55.842134
   metrics:
     'Axioms: Breakdown of axiom types':
       AnnotationAssertion: 1579
@@ -2123,7 +2123,7 @@ ontologies:
   - mdo
   - MDOALT
   changed: true
-  date: 2024-06-18 15:13:01.586810
+  date: 2024-06-18 16:26:49.507745
   metrics:
     'Axioms: Breakdown of axiom types':
       AnnotationAssertion: 177
@@ -2226,7 +2226,7 @@ ontologies:
   - MOL_BRINELL
   - MOL_BRINELLALT
   changed: true
-  date: 2024-06-18 15:13:12.963128
+  date: 2024-06-18 16:27:01.015104
   metrics:
     'Axioms: Breakdown of axiom types':
       AnnotationAssertion: 191
@@ -2318,7 +2318,7 @@ ontologies:
   - MOL_TENSILE
   - MOL_TENSILEALT
   changed: true
-  date: 2024-06-18 15:10:05.654622
+  date: 2024-06-18 16:23:52.683349
   metrics:
     'Axioms: Breakdown of axiom types':
       AnnotationAssertion: 1354
@@ -2432,7 +2432,7 @@ ontologies:
   - matonto
   - MATONTOALT
   changed: true
-  date: 2024-06-18 15:12:45.767572
+  date: 2024-06-18 16:26:33.114063
   metrics:
     'Axioms: Breakdown of axiom types':
       AnnotationAssertion: 172
@@ -2536,7 +2536,7 @@ ontologies:
   - npo
   - NPOALT
   changed: true
-  date: 2024-06-18 15:12:51.329525
+  date: 2024-06-18 16:26:38.708882
   metrics:
     'Axioms: Breakdown of axiom types':
       AnnotationAssertion: 11343
@@ -2640,7 +2640,7 @@ ontologies:
   - nanomine
   - NANOMINEALT
   changed: true
-  date: 2024-06-18 15:13:04.250791
+  date: 2024-06-18 16:26:52.236692
   metrics:
     'Axioms: Breakdown of axiom types':
       AnnotationAssertion: 9424
@@ -2768,7 +2768,7 @@ ontologies:
   - oa
   - OAALT
   changed: true
-  date: 2024-06-18 15:13:29.745834
+  date: 2024-06-18 16:27:18.088060
   metrics:
     'Axioms: Breakdown of axiom types':
       AnnotationAssertion: 204
@@ -2865,7 +2865,7 @@ ontologies:
   - oeo
   - OEOALT
   changed: true
-  date: 2024-06-18 15:13:42.398201
+  date: 2024-06-18 16:27:29.926229
   metrics:
     'Axioms: Breakdown of axiom types':
       AnnotationAssertion: 6785
@@ -2991,7 +2991,7 @@ ontologies:
   - om
   - OMALT
   changed: true
-  date: 2024-06-18 15:13:35.486314
+  date: 2024-06-18 16:27:24.012754
   metrics:
     'Axioms: Breakdown of axiom types':
       AnnotationAssertion: 8471
@@ -3102,7 +3102,7 @@ ontologies:
   - osmo
   - OSMOALT
   changed: true
-  date: 2024-06-18 15:07:18.485676
+  date: 2024-06-18 16:21:05.796486
   metrics:
     'Axioms: Breakdown of axiom types':
       AnnotationAssertion: 360
@@ -3222,7 +3222,7 @@ ontologies:
   - P-Plan
   - P-PLANALT
   changed: true
-  date: 2024-06-18 15:13:27.257036
+  date: 2024-06-18 16:27:15.524422
   metrics:
     'Axioms: Breakdown of axiom types':
       AnnotationAssertion: 45
@@ -3414,7 +3414,7 @@ ontologies:
   - prov
   - PROVOALT
   changed: true
-  date: 2024-06-18 15:10:11.457358
+  date: 2024-06-18 16:23:58.229876
   metrics:
     'Axioms: Breakdown of axiom types':
       AnnotationAssertion: 678
@@ -3526,7 +3526,7 @@ ontologies:
   - qudt
   - QUDTALT
   changed: true
-  date: 2024-06-18 15:13:33.011002
+  date: 2024-06-18 16:27:21.487343
   metrics:
     'Axioms: Breakdown of axiom types':
       AnnotationAssertion: 1314
@@ -3650,7 +3650,7 @@ ontologies:
   - qudv
   - QUDVALT
   changed: true
-  date: 2024-06-18 15:14:04.098516
+  date: 2024-06-18 16:27:51.481411
   metrics:
     'Axioms: Breakdown of axiom types':
       AnnotationAssertion: 52
@@ -3758,7 +3758,7 @@ ontologies:
   - saref
   - SAREFALT
   changed: true
-  date: 2024-06-18 15:13:21.824399
+  date: 2024-06-18 16:27:09.519163
   metrics:
     'Axioms: Breakdown of axiom types':
       AnnotationAssertion: 264
@@ -3862,7 +3862,7 @@ ontologies:
   - semmd
   - SEMMDALT
   changed: true
-  date: 2024-06-18 15:12:48.657671
+  date: 2024-06-18 16:26:36.065451
   metrics:
     'Axioms: Breakdown of axiom types':
       AnnotationAssertion: 5238
@@ -4004,7 +4004,7 @@ ontologies:
   - service
   - SOALT
   changed: true
-  date: 2024-06-18 15:07:35.463856
+  date: 2024-06-18 16:21:22.371880
   metrics:
     'Axioms: Breakdown of axiom types':
       AnnotationAssertion: 41
@@ -4096,7 +4096,7 @@ ontologies:
   - sp
   - SPALT
   changed: true
-  date: 2024-06-18 15:07:33.274770
+  date: 2024-06-18 16:21:20.206862
   metrics:
     'Axioms: Breakdown of axiom types':
       AnnotationAssertion: 1781
@@ -4208,7 +4208,7 @@ ontologies:
   - ssn
   - SSNALT
   changed: true
-  date: 2024-06-18 15:07:30.599715
+  date: 2024-06-18 16:21:17.624897
   metrics:
     'Axioms: Breakdown of axiom types':
       AnnotationAssertion: 248
@@ -4302,7 +4302,7 @@ ontologies:
   - uo
   - UOALT
   changed: true
-  date: 2024-06-18 15:13:38.155356
+  date: 2024-06-18 16:27:26.666848
   metrics:
     'Axioms: Breakdown of axiom types':
       AnnotationAssertion: 1407
@@ -4393,7 +4393,7 @@ ontologies:
   - wild
   - WILDALT
   changed: true
-  date: 2024-06-18 15:13:24.822507
+  date: 2024-06-18 16:27:13.010321
   metrics:
     'Axioms: Breakdown of axiom types':
       AnnotationAssertion: 2
@@ -4490,7 +4490,7 @@ ontologies:
   - bmo
   - BMOALT
   changed: true
-  date: 2024-06-18 15:13:15.813917
+  date: 2024-06-18 16:27:03.804355
   metrics:
     'Axioms: Breakdown of axiom types':
       AnnotationAssertion: 612
@@ -4601,7 +4601,7 @@ ontologies:
   - enanomapper
   - ENANOMAPPERALT
   changed: true
-  date: 2024-06-18 15:12:54.045862
+  date: 2024-06-18 16:26:41.577542
   metrics:
     'Axioms: Breakdown of axiom types':
       AnnotationAssertion: 147264
@@ -4737,7 +4737,7 @@ ontologies:
   - m4i
   - M4IALT
   changed: true
-  date: 2024-06-18 15:14:10.874800
+  date: 2024-06-18 16:27:58.027621
   metrics:
     'Axioms: Breakdown of axiom types':
       AnnotationAssertion: 751
@@ -4852,7 +4852,7 @@ ontologies:
   - mat
   - MATALT
   changed: true
-  date: 2024-06-18 15:14:22.376942
+  date: 2024-06-18 16:28:09.067413
   metrics:
     'Axioms: Breakdown of axiom types':
       AnnotationAssertion: 202
@@ -4947,7 +4947,7 @@ ontologies:
   - matinfo
   - MATINFOALT
   changed: true
-  date: 2024-06-18 15:12:58.951479
+  date: 2024-06-18 16:26:46.594682
   metrics:
     'Axioms: Breakdown of axiom types':
       AnnotationAssertion: 104
@@ -5051,7 +5051,7 @@ ontologies:
   - mvc
   - MVCALT
   changed: true
-  date: 2024-06-18 15:14:06.790768
+  date: 2024-06-18 16:27:54.085473
   metrics:
     'Axioms: Breakdown of axiom types':
       AnnotationAssertion: 75
@@ -5148,7 +5148,7 @@ ontologies:
   - nfdicore
   - NFDICOREALT
   changed: true
-  date: 2024-06-18 15:14:14.437501
+  date: 2024-06-18 16:28:01.446072
   metrics:
     'Axioms: Breakdown of axiom types':
       AnnotationAssertion: 3222
@@ -5285,7 +5285,7 @@ ontologies:
   - ontorule
   - ONTORULEALT
   changed: true
-  date: 2024-06-18 15:13:17.984488
+  date: 2024-06-18 16:27:06.033417
   metrics:
     'Axioms: Breakdown of axiom types':
       AnnotationAssertion: 108
@@ -5389,7 +5389,7 @@ ontologies:
   - m4i
   - OPMWALT
   changed: true
-  date: 2024-06-18 15:14:17.057183
+  date: 2024-06-18 16:28:03.853295
   metrics:
     'Axioms: Breakdown of axiom types':
       AnnotationAssertion: 944
@@ -5510,7 +5510,7 @@ ontologies:
   - ssos
   - SSOSALT
   changed: true
-  date: 2024-06-18 15:14:19.640207
+  date: 2024-06-18 16:28:06.209141
   metrics:
     'Axioms: Breakdown of axiom types':
       AnnotationAssertion: 79
