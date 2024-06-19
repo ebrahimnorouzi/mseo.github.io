@@ -3,7 +3,7 @@ base_prefixes:
 - P-Plan
 - P-PLANALT
 changed: true
-date: 2024-06-19 11:33:24.011006
+date: 2024-06-19 14:11:23.439610
 metrics:
   'Axioms: Breakdown of axiom types':
     AnnotationAssertion: 45

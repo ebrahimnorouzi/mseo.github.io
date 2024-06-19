@@ -3,7 +3,7 @@ base_prefixes:
 - periodictable
 - PERIODICTABLEALT
 changed: true
-date: 2024-06-19 11:33:04.148569
+date: 2024-06-19 14:11:03.093798
 metrics:
   'Axioms: Breakdown of axiom types':
     AnnotationAssertion: 2

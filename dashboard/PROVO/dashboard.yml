@@ -3,7 +3,7 @@ base_prefixes:
 - prov
 - PROVOALT
 changed: true
-date: 2024-06-19 11:32:14.452140
+date: 2024-06-19 14:10:12.606109
 metrics:
   'Axioms: Breakdown of axiom types':
     AnnotationAssertion: 678

@@ -3,7 +3,7 @@ base_prefixes:
 - bmo
 - BMOALT
 changed: true
-date: 2024-06-19 11:33:12.354280
+date: 2024-06-19 14:11:11.863719
 metrics:
   'Axioms: Breakdown of axiom types':
     AnnotationAssertion: 612
