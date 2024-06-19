@@ -1,0 +1,94 @@
+base_generated: true
+base_prefixes:
+- EXPO
+- EXPOALT
+changed: true
+date: 2024-06-19 11:10:27.971173
+metrics:
+  'Axioms: Breakdown of axiom types':
+    AnnotationAssertion: 646
+    Declaration: 402
+    DisjointClasses: 363
+    ObjectPropertyDomain: 75
+    ObjectPropertyRange: 73
+    SubClassOf: 432
+    SubObjectPropertyOf: 76
+  'Axioms: Number of axioms': 2067
+  'Entities: % of entities reused': 100.0
+  'Entities: Number of annotation properties': 2
+  'Entities: Number of classes': 325
+  'Entities: Number of data properties': 0
+  'Entities: Number of individuals': 0
+  'Entities: Number of object properties': 78
+  'Entities: Number of unsatisfiable classes': 0
+  'Info: Breakdown of OWL class expressions used':
+    Class: 2098
+    ObjectAllValuesFrom: 88
+    ObjectExactCardinality: 21
+    ObjectUnionOf: 23
+  'Info: Does the ontology fall under OWL 2 DL?': true
+  'Info: Experimental OBO score':
+    _dashboard: 0.4
+    _formula: (1*impact+1*dashboard)/2
+    _impact: 0.0
+    _impact_external: 0
+    _reuse: 1.0
+    oboscore: 0.2
+  'Info: How many externally documented uses?': 0
+  'Info: How many ontologies use it?': 0
+  'Info: Logical consistency': true
+  'Info: Syntax': RDF/XML Syntax
+  'Info: Usage of namespaces in axioms':
+    owl: 21
+    prefix_unknown: 2564
+    rdfs: 646
+  'Info: Which ontologies use it?': []
+mirror_from: https://raw.githubusercontent.com/ebrahimnorouzi/mseo.github.io/master/Ontology_files/EXPO.owl
+namespace: EXPO
+results:
+  FP01 Open:
+    comment: Missing ontology license. Missing registry license.
+    status: ERROR
+  FP02 Common Format:
+    status: PASS
+  FP03 URIs:
+    comment: 0 invalid IRIs. The Ontology IRI is not valid.
+    file: fp3
+    status: ERROR
+  FP04 Versioning:
+    comment: Missing version IRI
+    status: ERROR
+  FP05 Scope:
+    comment: Missing domain (scope)
+    status: ERROR
+  FP06 Textual Definitions:
+    status: PASS
+  FP07 Relations:
+    status: PASS
+  FP08 Documented:
+    status: PASS
+  FP09 Plurality of Users:
+    comment: Missing tracker and usages
+    status: ERROR
+  FP11 Locus of Authority:
+    comment: Missing contact information
+    status: ERROR
+  FP12 Naming Conventions:
+    status: PASS
+  FP16 Maintenance:
+    comment: Missing version IRI to check date
+    status: ERROR
+  FP20 Responsiveness:
+    comment: Missing tracker and usages
+    status: ERROR
+  ROBOT Report:
+    status: PASS
+sha256_hash: 57ede339e73af44ab1c07290402338748e782241f7dc19c4ae7029f555c99847
+summary:
+  comment: 8 errors
+  status: ERROR
+  summary_count:
+    ERROR: 8
+    INFO: 0
+    WARN: 0
+version: null

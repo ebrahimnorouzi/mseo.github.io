@@ -1,0 +1,1786 @@
+@prefix emmo: <http://emmo.info/emmo#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix materials: <http://emmo.info/emmo/domain/oie/materials#> .
+@prefix manufacturing: <http://emmo.info/emmo/domain/oie/manufacturing#> .
+@base <http://emmo.info/emmo/domain/oie/manufacturing> .
+
+<http://emmo.info/emmo/domain/oie/manufacturing> rdf:type owl:Ontology ;
+                                              owl:versionIRI <http://emmo.info/emmo/domain/oie/manufacturing> ;
+                                              owl:imports <http://emmo.info/emmo/1.0.0-beta3/top> ,
+                                                          <http://emmo.info/emmo/1.0.0-beta3/middle/holistic> ,
+                                                          <http://emmo.info/emmo/1.0.0-beta3/middle/persistence> ,
+														  <http://emmo.info/emmo/1.0.0-beta3/middle/persholistic> ,
+														  <http://emmo.info/emmo/domain/oie/materials> ;
+                                              dcterms:abstract "Describes manufacturing processes with engineered participants. The module also provides a root for engineered materials."@en ;
+                                              dcterms:contributor "Access, DE" ,
+                                                                  "Fraunhofer IWM, DE" ,
+                                                                  "Goldbeck Consulting Ltd (UK)" ,
+                                                                  "SINTEF, NO" ,
+                                                                  "University of Bologna, IT" ;
+                                              dcterms:creator "Adham Hashibon" ,
+											                  "Daniele Toti", 
+                                                              "Emanuele Ghedini" ,
+                                                              "Georg Schmitz" ,
+                                                              "Gerhard Goldbeck" ,
+                                                              "Jesper Friis" ,
+															  "Pierluigi Del Nostro" ;
+                                              dcterms:license "https://creativecommons.org/licenses/by/4.0/legalcode" ;
+                                              dcterms:publisher "EMMC ASBL" ;
+                                              dcterms:title "Manufacturing"@en ;
+                                              rdfs:comment """Contacts:
+Gerhard Goldbeck
+Goldbeck Consulting Ltd (UK)
+email: gerhard@goldbeck-consulting.com
+
+Emanuele Ghedini
+University of Bologna (IT)
+email: emanuele.ghedini@unibo.it"""@en ,
+                                                           "The EMMO requires FacT++ reasoner plugin in order to visualize all inferences and class hierarchy (ctrl+R hotkey in Protege)."@en ;
+                                              owl:versionInfo "1.0.0-beta3" .
+
+####### EMMO mapping:
+
+### TemporallyFundamental -> middle-holistic            emmo:EMMO_aaad78a9_abaf_4f97_9c1a_d763a94c4ba3
+### hasParticipant        -> middle-persholistic        emmo:EMMO_ae2d1a96_bfa1_409a_a7d2_03d69e8a125a
+### hasProcessOutput      -> middle-persholistic        emmo:EMMO_c4bace1d_4db0_4cd3_87e9_18122bae2840
+### Arrangement           -> middle-persholistic        emmo:EMMO_b9522e56_1fac_4766_97e6_428605fabd3e
+### HolisticSystem        -> middle-persholistic        emmo:EMMO_65a007dc_2550_46b0_b394_3346c67fbb69
+### IntentionalProcess    -> middle-persholistic        emmo:EMMO_bafc17b5_9be4_4823_8bbe_ab4e90b6738c
+### Network               -> middle-persholistic        emmo:EMMO_f93fe78b_9646_4a15_b88b_1c93686a764d
+### Participant           -> middle-persholistic        emmo:EMMO_13191289_6c2b_4741_93e1_82d53bd0e703
+### Object                -> middle-persistence         emmo:EMMO_90ae56e4_d197_49b6_be1a_0049e4756606
+### etymology             -> top                        emmo:EMMO_705f27ae_954c_4f13_98aa_18473fc52b25
+### elucidation           -> top                        emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9
+### example               -> top                        emmo:EMMO_b432d2d5_25f4_4165_99c5_5935a7763c1a
+### wikipediaReference    -> top                        emmo:EMMO_c84c6752_6d64_48cc_9500_e54a3c34898d
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://emmo.info/emmo#hasManufacturedOutput
+manufacturing:hasManufacturedOutput rdf:type owl:ObjectProperty ;
+                                           rdfs:subPropertyOf manufacturing:hasProductOutput ;
+                                           rdfs:domain emmo:EMMO_bafc17b5_9be4_4823_8bbe_ab4e90b6738c ;
+                                           rdfs:range manufacturing:Manufactured ;
+                                           skos:prefLabel "hasManufacturedOutput"@en .
+
+
+###  http://emmo.info/emmo#hasProductOutput
+manufacturing:hasProductOutput rdf:type owl:ObjectProperty ;
+                                           rdfs:subPropertyOf emmo:EMMO_c4bace1d_4db0_4cd3_87e9_18122bae2840 ;
+                                           rdfs:range manufacturing:Product ;
+                                           skos:prefLabel "hasProductOutput"@en .
+
+
+###  http://emmo.info/emmo#hasServiceOutput
+manufacturing:hasServiceOutput rdf:type owl:ObjectProperty ;
+                                           rdfs:subPropertyOf manufacturing:hasProductOutput ;
+                                           rdfs:range manufacturing:Service ;
+                                           skos:prefLabel "hasServiceOutput"@en .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://emmo.info/emmo#CommercialProduct
+manufacturing:CommercialProduct rdf:type owl:Class ;
+                                           rdfs:subClassOf manufacturing:Product ;
+                                           emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "A product that is manufactured or refined and ready for commercialization."@en ;
+                                           skos:altLabel "Product"@en ;
+                                           skos:prefLabel "CommercialProduct"@en .
+
+
+###  http://emmo.info/emmo#Factory
+manufacturing:Factory rdf:type owl:Class ;
+                                           rdfs:subClassOf emmo:EMMO_65a007dc_2550_46b0_b394_3346c67fbb69 ;
+                                           emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "A building or group of buildings where goods are manufactured or assembled."@en ;
+                                           skos:altLabel "IndustrialPlant"@en ;
+                                           skos:prefLabel "Factory"@en .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource manufacturing:Factory ;
+   owl:annotatedProperty skos:prefLabel ;
+   owl:annotatedTarget "Factory"@en ;
+   emmo:EMMO_705f27ae_954c_4f13_98aa_18473fc52b25 "From Latin factor, from fact- ‘done’, from the verb facere (to do)."@en
+ ] .
+
+
+###  http://emmo.info/emmo#SupplyChain
+manufacturing:SupplyChain rdf:type owl:Class ;
+                                           rdfs:subClassOf emmo:EMMO_f93fe78b_9646_4a15_b88b_1c93686a764d ;
+                                           emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "A supply chain is a system of organizations, people, activities, information, and resources involved in supplying a product or service to a consumer."@en ;
+                                           skos:prefLabel "SupplyChain"@en .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource manufacturing:SupplyChain ;
+   owl:annotatedProperty emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 ;
+   owl:annotatedTarget "A supply chain is a system of organizations, people, activities, information, and resources involved in supplying a product or service to a consumer."@en ;
+   emmo:EMMO_c84c6752_6d64_48cc_9500_e54a3c34898d "https://en.wikipedia.org/wiki/Supply_chain"@en
+ ] .
+
+
+###  http://emmo.info/emmo#Service
+manufacturing:Service rdf:type owl:Class ;
+                                           rdfs:subClassOf manufacturing:Product ,
+                                                           emmo:EMMO_bafc17b5_9be4_4823_8bbe_ab4e90b6738c ;
+                                           #:EMMO_3aa37f92_8dc5_4ee4_8438_e41e6ae20c62 "https://www.iso.org/obp/ui/#iso:std:iso:9000:ed-4:v1:en:term:3.7.7"@en ;
+                                           skos:altLabel "IntangibleProduct"@en ;
+                                           skos:prefLabel "Service"@en .
+
+
+###  http://emmo.info/emmo#ManufacturingSystem
+manufacturing:ManufacturingSystem rdf:type owl:Class ;
+                                           rdfs:subClassOf emmo:EMMO_b9522e56_1fac_4766_97e6_428605fabd3e ;
+                                           emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "A system arranged to setup a specific manufacturing process."@en ;
+                                           skos:prefLabel "ManufacturingSystem"@en .
+
+
+###  http://emmo.info/emmo#HandlingDevice
+manufacturing:HandlingDevice rdf:type owl:Class ;
+                                           rdfs:subClassOf manufacturing:Device ;
+                                           skos:prefLabel "HandlingDevice"@en .
+
+
+###  http://emmo.info/emmo#ProductionSystem
+manufacturing:ProductionSystem rdf:type owl:Class ;
+                                           rdfs:subClassOf emmo:EMMO_f93fe78b_9646_4a15_b88b_1c93686a764d ;
+                                           emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "A network of objects that implements a production process through a series of interconnected elements."@en ;
+                                           skos:prefLabel "ProductionSystem"@en .
+
+
+###  http://emmo.info/emmo#InspectionDevice
+manufacturing:InspectionDevice rdf:type owl:Class ;
+                                           rdfs:subClassOf manufacturing:Device ;
+                                           skos:prefLabel "InspectionDevice"@en .
+
+
+###  http://emmo.info/emmo#Device
+manufacturing:Device rdf:type owl:Class ;
+                                           rdfs:subClassOf manufacturing:Manufactured ;
+                                           emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "An object which is instrumental for reaching a particular purpose through its characteristic functioning process, with particular reference to mechanical or electronic equipment."@en ;
+                                           skos:altLabel "Equipment"@en ,
+                                                         "Machine"@en ;
+                                           skos:prefLabel "Device"@en .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource manufacturing:Device ;
+   owl:annotatedProperty skos:altLabel ;
+   owl:annotatedTarget "Equipment"@en ;
+   emmo:EMMO_705f27ae_954c_4f13_98aa_18473fc52b25 "From French équipement, from équiper ‘equip’."@en
+ ] .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource manufacturing:Device ;
+   owl:annotatedProperty skos:altLabel ;
+   owl:annotatedTarget "Machine"@en ;
+   emmo:EMMO_705f27ae_954c_4f13_98aa_18473fc52b25 "From Latin māchina (“a machine, engine, contrivance, device, stratagem, trick”), from Doric Greek μᾱχᾰνᾱ́ (mākhanā́), cognate with Attic Greek μηχᾰνή (mēkhanḗ, “a machine, engine, contrivance, device”), from which comes mechanical."@en
+ ] .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource manufacturing:Device ;
+   owl:annotatedProperty skos:prefLabel ;
+   owl:annotatedTarget "Device"@en ;
+   emmo:EMMO_705f27ae_954c_4f13_98aa_18473fc52b25 "From Old French \"deviser\", meaning: arrange, plan, contrive. Literally \"dispose in portions,\" from Vulgar Latin \"divisare\", frequentative of Latin dividere, meaning \"to divide\"."@en
+ ] .
+
+
+###  http://emmo.info/emmo#MachineCell
+manufacturing:MachineCell rdf:type owl:Class ;
+                                           rdfs:subClassOf manufacturing:ManufacturingSystem ;
+                                           emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "A group of machineries used to process a group of similar parts."@en ;
+                                           rdfs:comment "Is not simply a collection of machineries, since the connection between them is due to the parallel flow of processed parts that comes from a unique source and ends into a common repository."@en ;
+                                           skos:prefLabel "MachineCell"@en .
+
+
+###  http://emmo.info/emmo#Assembled
+manufacturing:Assembled rdf:type owl:Class ;
+                                           rdfs:subClassOf emmo:EMMO_b9522e56_1fac_4766_97e6_428605fabd3e ;
+                                           emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "A system of independent elements that are assembled together to perform a function."@en ;
+                                           skos:prefLabel "Assembled"@en .
+
+
+###  http://emmo.info/emmo#Tool
+manufacturing:Tool rdf:type owl:Class ;
+                                           rdfs:subClassOf emmo:EMMO_13191289_6c2b_4741_93e1_82d53bd0e703 ,
+                                                           emmo:EMMO_90ae56e4_d197_49b6_be1a_0049e4756606 ;
+                                           emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "An object that enables or facilitate an agent in the execution of a process that modifies the surrounding environment."@en ;
+                                           skos:prefLabel "Tool"@en .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource manufacturing:Tool ;
+   owl:annotatedProperty skos:prefLabel ;
+   owl:annotatedTarget "Tool"@en ;
+   emmo:EMMO_705f27ae_954c_4f13_98aa_18473fc52b25 "Old English tōl, from a Germanic base meaning ‘prepare’."@en
+ ] .
+
+
+###  http://emmo.info/emmo#ContinuumManufacturing
+manufacturing:ContinuumManufacturing rdf:type owl:Class ;
+                                           rdfs:subClassOf manufacturing:Manufacturing ;
+                                           emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "A manufacturing process whose product is the result of the combination of more substances."@en ;
+                                           emmo:EMMO_b432d2d5_25f4_4165_99c5_5935a7763c1a "Synthesis of materials, the preparation of a cake."@en ;
+                                           skos:prefLabel "ContinuumManufacturing"@en .
+
+
+###  http://emmo.info/emmo#Product
+manufacturing:Product rdf:type owl:Class ;
+                                           rdfs:subClassOf emmo:EMMO_aaad78a9_abaf_4f97_9c1a_d763a94c4ba3 ;
+                                           #:EMMO_3aa37f92_8dc5_4ee4_8438_e41e6ae20c62 "https://www.iso.org/obp/ui/#iso:std:iso:14040:ed-2:v1:en:term:3.9"@en ,
+                                           #                                           "https://www.iso.org/obp/ui/#iso:std:iso:9000:ed-3:v1:en:term:3.4.2"@en ;
+                                           emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "The overall lifetime of an holistic that has been the output of an intentional process."@en ;
+                                           rdfs:comment """This concepts encompass the overall lifetime of a product.
+
+Is temporaly fundamental, meaning that it can have other products as holistic spatial parts, but its holistic temporal parts are not products. In other words, the individual must encompass the whole lifetime from creation to disposal.
+
+A product can be a tangible object (e.g. a manufactured object), a process (e.g. service). It can be the outcome of a natural or an artificially driven process.
+
+It must have and initial stage of its life that is also an outcome of a intentional process."""@en ;
+                                           skos:altLabel "Output"@en ;
+                                           skos:prefLabel "Product"@en .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource manufacturing:Product ;
+   owl:annotatedProperty skos:prefLabel ;
+   owl:annotatedTarget "Product"@en ;
+   emmo:EMMO_705f27ae_954c_4f13_98aa_18473fc52b25 "From Latin productum ‘something produced’, derived from Latin producere, from pro- ‘forward’ + ducere ‘to lead’."@en
+ ] .
+
+
+###  http://emmo.info/emmo#ManufacturingDevice
+manufacturing:ManufacturingDevice rdf:type owl:Class ;
+                                           rdfs:subClassOf manufacturing:Device ;
+                                           emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "A device that is designed to participate to a manufacturing process."@en ;
+                                           skos:prefLabel "ManufacturingDevice"@en .
+
+
+###  http://emmo.info/emmo#Manufactured
+manufacturing:Manufactured rdf:type owl:Class ;
+                                           rdfs:subClassOf manufacturing:Product ,
+                                                           emmo:EMMO_90ae56e4_d197_49b6_be1a_0049e4756606 ;
+                                           emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "An object that has been designed and manufactured for a particular purpose."@en ;
+                                           emmo:EMMO_b432d2d5_25f4_4165_99c5_5935a7763c1a "Car, tire, composite material."@en ;
+                                           skos:altLabel "Artifact"@en ,
+                                                         "Engineered"@en ,
+                                                         "TangibleProduct"@en ;
+                                           skos:prefLabel "Manufactured"@en .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource manufacturing:Manufactured ;
+   owl:annotatedProperty skos:altLabel ;
+   owl:annotatedTarget "TangibleProduct"@en ;
+   emmo:EMMO_705f27ae_954c_4f13_98aa_18473fc52b25 "From late Latin tangibilis, from tangere ‘to touch’."@en
+ ] .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource manufacturing:Manufactured ;
+   owl:annotatedProperty skos:prefLabel ;
+   owl:annotatedTarget "Manufactured"@en ;
+   emmo:EMMO_705f27ae_954c_4f13_98aa_18473fc52b25 "From Latin manufacture: \"made by hand\"."@en
+ ] .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource manufacturing:Manufactured ;
+   owl:annotatedProperty skos:altLabel ;
+   owl:annotatedTarget "Artifact"@en ;
+   emmo:EMMO_705f27ae_954c_4f13_98aa_18473fc52b25 "From Latin arte ‘by or using art’ + factum ‘something made’."@en
+ ] .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource manufacturing:Manufactured ;
+   owl:annotatedProperty skos:altLabel ;
+   owl:annotatedTarget "Engineered"@en ;
+   emmo:EMMO_705f27ae_954c_4f13_98aa_18473fc52b25 "From Latin ingenium \"innate qualities, ability; inborn character,\" in Late Latin \"a war engine, battering ram\"; literally \"that which is inborn,\" from in- (\"in\") + gignere (\"give birth, beget\")."@en
+ ] .
+
+
+###  http://emmo.info/emmo#DiscreteManufacturing
+manufacturing:DiscreteManufacturing rdf:type owl:Class ;
+                                           rdfs:subClassOf manufacturing:Manufacturing ;
+                                           emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "A manufacturing process aimed to the production of a device made of specific components."@en ;
+                                           emmo:EMMO_b432d2d5_25f4_4165_99c5_5935a7763c1a "Assemblying a bicycle, building a car."@en ;
+                                           skos:prefLabel "DiscreteManufacturing"@en .
+
+
+###  http://emmo.info/emmo#Assemblying
+manufacturing:Assemblying rdf:type owl:Class ;
+                                           rdfs:subClassOf emmo:EMMO_bafc17b5_9be4_4823_8bbe_ab4e90b6738c ;
+                                           emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "The act of connecting together the parts of something"@en ;
+                                           skos:prefLabel "Assemblying"@en .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource manufacturing:Assemblying ;
+   owl:annotatedProperty skos:prefLabel ;
+   owl:annotatedTarget "Assemblying"@en ;
+   emmo:EMMO_705f27ae_954c_4f13_98aa_18473fc52b25 "From Old French asembler, based on Latin ad- ‘to’ + simul ‘together’."@en
+ ] .
+
+
+###  http://emmo.info/emmo#TransportationDevice
+manufacturing:TransportationDevice rdf:type owl:Class ;
+                                           rdfs:subClassOf manufacturing:Device ;
+                                           skos:prefLabel "TransportationDevice"@en .
+
+
+###  http://emmo.info/emmo/domain/oie/manufacturing#Manufacturing
+manufacturing:Manufacturing rdf:type owl:Class ;
+                                           rdfs:subClassOf emmo:EMMO_bafc17b5_9be4_4823_8bbe_ab4e90b6738c ,
+                                                           [ rdf:type owl:Restriction ;
+                                                             owl:onProperty emmo:EMMO_ae2d1a96_bfa1_409a_a7d2_03d69e8a125a ;
+                                                             owl:someValuesFrom manufacturing:Manufactured
+                                                           ] ,
+                                                           [ rdf:type owl:Restriction ;
+                                                             owl:onProperty emmo:EMMO_ae2d1a96_bfa1_409a_a7d2_03d69e8a125a ;
+                                                             owl:someValuesFrom manufacturing:Manufacturer
+                                                           ] ,
+                                                           [ rdf:type owl:Restriction ;
+                                                             owl:onProperty emmo:EMMO_c4bace1d_4db0_4cd3_87e9_18122bae2840 ;
+                                                             owl:someValuesFrom manufacturing:Product
+                                                           ] ;
+                                           emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "The process of transforming an precursor object (e.g. raw materials) into a product by the use of manual labor, machinery or chemical/biological processes."@en ;
+                                           skos:prefLabel "Manufacturing"@en .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource manufacturing:Manufacturing ;
+   owl:annotatedProperty skos:prefLabel ;
+   owl:annotatedTarget "Manufacturing"@en ;
+   emmo:EMMO_705f27ae_954c_4f13_98aa_18473fc52b25 "From Latin manufacture: \"made by hand\"."@en
+ ] .
+
+
+###  http://emmo.info/emmo#EMMO_bafc17b5_9be4_4823_8bbe_ab4e90b6738c
+emmo:EMMO_bafc17b5_9be4_4823_8bbe_ab4e90b6738c skos:altLabel "Project"@en .
+
+
+###  http://emmo.info/emmo#Manufacturer
+manufacturing:Manufacturer rdf:type owl:Class ;
+                                           rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                                             owl:onProperty [ owl:inverseOf emmo:EMMO_ae2d1a96_bfa1_409a_a7d2_03d69e8a125a
+                                                                            ] ;
+                                                             owl:someValuesFrom manufacturing:Manufacturing
+                                                           ] ;
+                                           emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "The agent that participates and drives a manufacturing process."@en ;
+                                           skos:prefLabel "Manufacturer"@en .
+
+
+###  http://emmo.info/emmo#AssemblyLine
+manufacturing:AssemblyLine rdf:type owl:Class ;
+                                           rdfs:subClassOf manufacturing:ManufacturingSystem ;
+                                           emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "A manufacturing process in which interchangeable parts are added to a product in a sequential manner to create an end product."@en ;
+                                           rdfs:comment "It is not collection, since the connection between the elements of an assembly line occurs through the flow of objects that are processed."@en ;
+                                           skos:prefLabel "AssemblyLine"@en .
+
+
+###  http://emmo.info/emmo#ManufacturedMaterial
+manufacturing:ManufacturedMaterial rdf:type owl:Class ;
+                                           owl:equivalentClass [ owl:intersectionOf ( materials:Material
+                                                                                      manufacturing:Manufactured
+                                                                                    ) ;
+                                                                 rdf:type owl:Class
+                                                               ] ;
+                                           emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "A material that is obtained through a manufacturing process."@en ;
+                                           skos:altLabel "EngineeredMaterial"@en ,
+                                                         "ProcessedMaterial"@en ;
+                                           skos:prefLabel "ManufacturedMaterial"@en .
+
+
+###############################################################################################################################################################
+### From OIE access-manufacturingProcess.owl ******************************************************************************************************************
+###############################################################################################################################################################
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://emmo.info/emmo/domain/oie/manufacturing#AdditiveManufacturing
+manufacturing:AdditiveManufacturing rdf:type owl:Class ;
+skos:prefLabel "AdditiveManufacturing"@en ;
+                       rdfs:subClassOf manufacturing:PrimaryShaping ;
+                       rdfs:comment "Ongoing discussion on how to categorize additive Manufacturing in DIN 8580 currently often considered as a primary shaping process." .
+
+
+###  http://emmo.info/emmo/domain/oie/manufacturing#Annealing
+manufacturing:Annealing rdf:type owl:Class ;
+skos:prefLabel "Annealing"@en ;
+           rdfs:subClassOf manufacturing:HeatTreatment ;
+		   rdfs:comment "Annealing is a heat treatment that alters the physical and sometimes chemical properties of a material to increase ist ductility and reduce ist hardness, making it more workable. It involves heating a material above ist recrystallization temperature, maintaining a suitable temperature for an appropriate amount of time and then cooling." .
+
+
+###  http://emmo.info/emmo/domain/oie/manufacturing#Assembly
+manufacturing:Assembly rdf:type owl:Class ;
+skos:prefLabel "Assembly"@en ;
+          rdfs:subClassOf manufacturing:JoiningProcess .
+
+
+###  http://emmo.info/emmo/domain/oie/manufacturing#Bending
+manufacturing:Bending rdf:type owl:Class ;
+skos:prefLabel "Bending"@en ;
+         rdfs:subClassOf manufacturing:FormingProcess .
+
+
+###  http://emmo.info/emmo/domain/oie/manufacturing#BendingJoining
+manufacturing:BendingJoining rdf:type owl:Class ;
+skos:prefLabel "BendingJoining"@en ;
+                rdfs:subClassOf manufacturing:JoiningByForming .
+
+
+###  http://emmo.info/emmo/domain/oie/manufacturing#BladeCoating
+manufacturing:BladeCoating rdf:type owl:Class ;
+skos:prefLabel "BladeCoating"@en ;
+              rdfs:subClassOf manufacturing:LiquidPhaseCoating .
+
+
+###  http://emmo.info/emmo/domain/oie/manufacturing#BlowMolding
+manufacturing:BlowMolding rdf:type owl:Class ;
+skos:prefLabel "BlowMolding"@en ;
+             rdfs:subClassOf manufacturing:FromPlasticState .
+
+
+###  http://emmo.info/emmo/domain/oie/manufacturing#Brazing
+manufacturing:Brazing rdf:type owl:Class ;
+skos:prefLabel "Brazing"@en ;
+         rdfs:subClassOf manufacturing:Soldering .
+
+
+###  http://emmo.info/emmo/domain/oie/manufacturing#BridgmanProcess
+manufacturing:BridgmanProcess rdf:type owl:Class ;
+skos:prefLabel "BridgmanProcess"@en ;
+                 rdfs:subClassOf manufacturing:CrystalGrowth .
+
+
+###  http://emmo.info/emmo/domain/oie/manufacturing#Bulging
+manufacturing:Bulging rdf:type owl:Class ;
+skos:prefLabel "Bulging"@en ;
+         rdfs:subClassOf manufacturing:TensilePressureForming .
+
+
+###  http://emmo.info/emmo/domain/oie/manufacturing#Buoyancy
+manufacturing:Buoyancy rdf:type owl:Class ;
+skos:prefLabel "Buoyancy"@en ;
+          rdfs:subClassOf manufacturing:SeparationProcessFluids .
+
+
+###  http://emmo.info/emmo/domain/oie/manufacturing#Calendering
+manufacturing:Calendering rdf:type owl:Class ;
+skos:prefLabel "Calendering"@en ;
+             rdfs:subClassOf manufacturing:FromPlasticState .
+
+
+###  http://emmo.info/emmo/domain/oie/manufacturing#Carburizing
+manufacturing:Carburizing rdf:type owl:Class ;
+skos:prefLabel "Carburizing"@en ;
+             rdfs:subClassOf manufacturing:ThermochemicalTreatment .
+
+
+###  http://emmo.info/emmo/domain/oie/manufacturing#CentrifugalCasting
+manufacturing:CentrifugalCasting rdf:type owl:Class ;
+skos:prefLabel "CentrifugalCasting"@en ;
+                    rdfs:subClassOf manufacturing:FromLiquidState .
+
+
+###  http://emmo.info/emmo/domain/oie/manufacturing#Centrifugation
+manufacturing:Centrifugation rdf:type owl:Class ;
+skos:prefLabel "Centrifugation"@en ;
+                rdfs:subClassOf manufacturing:SeparationProcessFluids .
+
+
+###  http://emmo.info/emmo/domain/oie/manufacturing#ChemicalNickel
+manufacturing:ChemicalNickel rdf:type owl:Class ;
+skos:prefLabel "ChemicalNickel"@en ;
+                rdfs:subClassOf manufacturing:SolutionPhaseCoating .
+
+
+###  http://emmo.info/emmo/domain/oie/manufacturing#ChemicalVapourDeposition
+manufacturing:ChemicalVapourDeposition rdf:type owl:Class ;
+skos:prefLabel "ChemicalVapourDeposition"@en ;
+                          rdfs:subClassOf manufacturing:GasPhaseCoating .
+
+
+###  http://emmo.info/emmo/domain/oie/manufacturing#ChipBoardManufacture
+manufacturing:ChipBoardManufacture rdf:type owl:Class ;
+skos:prefLabel "ChipBoardManufacture"@en ;
+                      rdfs:subClassOf manufacturing:FromFibrousState .
+
+
+###  http://emmo.info/emmo/domain/oie/manufacturing#Chromating
+manufacturing:Chromating rdf:type owl:Class ;
+skos:prefLabel "Chromating"@en ;
+            rdfs:subClassOf manufacturing:SolutionPhaseCoating .
+
+
+###  http://emmo.info/emmo/domain/oie/manufacturing#Cladding
+manufacturing:Cladding rdf:type owl:Class ;
+skos:prefLabel "Cladding"@en ;
+          rdfs:subClassOf manufacturing:SolidPhaseCoating .
+
+
+###  http://emmo.info/emmo/domain/oie/manufacturing#Cleaning
+manufacturing:Cleaning rdf:type owl:Class ;
+skos:prefLabel "Cleaning"@en ;
+          rdfs:subClassOf manufacturing:SeparationProcessSolids .
+
+
+###  http://emmo.info/emmo/domain/oie/manufacturing#CoatingProcess
+manufacturing:CoatingProcess rdf:type owl:Class ;
+skos:prefLabel "CoatingProcess"@en ;
+                rdfs:subClassOf <http://emmo.info/emmo/domain/oie/manufacturing#Manufacturing> ;
+                rdfs:comment "Group 5 in DIN 8580" ,
+                             """coating process in DIN 8580 are categorized according to the type of material being deposited:
+
+from gas phase
+from liquid phase
+from solution
+from solid phase""" .
+
+
+###  http://emmo.info/emmo/domain/oie/manufacturing#ColdForming
+manufacturing:ColdForming rdf:type owl:Class ;
+skos:prefLabel "ColdForming"@en ;
+             rdfs:subClassOf manufacturing:ThermoForming .
+
+
+###  http://emmo.info/emmo/domain/oie/manufacturing#CollarPulling
+manufacturing:CollarPulling rdf:type owl:Class ;
+skos:prefLabel "CollarPulling"@en ;
+               rdfs:subClassOf manufacturing:TensilePressureForming .
+
+
+###  http://emmo.info/emmo/domain/oie/manufacturing#Compaction
+manufacturing:Compaction rdf:type owl:Class ;
+skos:prefLabel "Compaction"@en ;
+            rdfs:subClassOf manufacturing:FromPowderState ;
+            rdfs:comment "the term pressing often is used alternatively, but conflicts with the name of a forming process" .
+
+
+###  http://emmo.info/emmo/domain/oie/manufacturing#Contacting
+manufacturing:Contacting rdf:type owl:Class ;
+skos:prefLabel "Contacting"@en ;
+            rdfs:subClassOf manufacturing:Assembly ;
+            rdfs:comment "placing two parts in such a way that theay are in contact with each other" .
+
+
+###  http://emmo.info/emmo/domain/oie/manufacturing#ContinuousCasting
+manufacturing:ContinuousCasting rdf:type owl:Class ;
+skos:prefLabel "ContinuousCasting"@en ;
+                   rdfs:subClassOf manufacturing:FromLiquidState .
+
+
+###  http://emmo.info/emmo/domain/oie/manufacturing#CrystalGrowth
+manufacturing:CrystalGrowth rdf:type owl:Class ;
+skos:prefLabel "CrystalGrowth"@en ;
+               rdfs:subClassOf manufacturing:FromLiquidState .
+
+
+###  http://emmo.info/emmo/domain/oie/manufacturing#Curing
+manufacturing:Curing rdf:type owl:Class ;
+skos:prefLabel "Curing"@en ;
+        rdfs:subClassOf manufacturing:FromPlasticState .
+
+
+###  http://emmo.info/emmo/domain/oie/manufacturing#CurtainCasting
+manufacturing:CurtainCasting rdf:type owl:Class ;
+skos:prefLabel "CurtainCasting"@en ;
+                rdfs:subClassOf manufacturing:LiquidPhaseCoating .
+
+
+###  http://emmo.info/emmo/domain/oie/manufacturing#Cutting
+manufacturing:Cutting rdf:type owl:Class ;
+skos:prefLabel "Cutting"@en ;
+         rdfs:subClassOf manufacturing:Machining ;
+		 rdfs:comment "Cutting is manufacturing by removal of material (DIN 8580; CIRP Dictionary 2004). Particles of material, the chips, are mechanically removed from the raw material or from an unfinished part by cutting edges of a tool. The tool has one or several cutting edges, which can be geometrically defined by number, shape, and position (cutting by geometrically defined cutting edges), whereas in abrasive processes the separation of chips takes place by numerous cutting edges which have to be statistically described and which are randomly distributed inside the tool (cutting by geometrically undefined cutting edges)." ;
+         rdfs:isDefinedBy "https://www.beuth.de/de/norm/din-8580/65031153" .
+										   
+
+
+###  http://emmo.info/emmo/domain/oie/manufacturing#CzochralskiProcess
+manufacturing:CzochralskiProcess rdf:type owl:Class ;
+skos:prefLabel "CzochralskiProcess"@en ;
+                    rdfs:subClassOf manufacturing:CrystalGrowth .
+
+
+###  http://emmo.info/emmo/domain/oie/manufacturing#DeepDrawing
+manufacturing:DeepDrawing rdf:type owl:Class ;
+skos:prefLabel "DeepDrawing"@en ;
+             rdfs:subClassOf manufacturing:TensilePressureForming .
+
+
+###  http://emmo.info/emmo/domain/oie/manufacturing#Deepening
+manufacturing:Deepening rdf:type owl:Class ;
+skos:prefLabel "Deepening"@en ;
+           rdfs:subClassOf manufacturing:TensileForming .
+
+
+###  http://emmo.info/emmo/domain/oie/manufacturing#DefinedCuttingEdge
+manufacturing:DefinedCuttingEdge rdf:type owl:Class ;
+skos:prefLabel "DefinedCuttingEdge"@en ;
+                    rdfs:subClassOf manufacturing:Machining .
+
+
+###  http://emmo.info/emmo/domain/oie/manufacturing#DepositionSoldering
+manufacturing:DepositionSoldering rdf:type owl:Class ;
+skos:prefLabel "DepositionSoldering"@en ;
+                     rdfs:subClassOf manufacturing:SolidPhaseCoating .
+
+
+###  http://emmo.info/emmo/domain/oie/manufacturing#DepositionWelding
+manufacturing:DepositionWelding rdf:type owl:Class ;
+skos:prefLabel "DepositionWelding"@en ;
+                   rdfs:subClassOf manufacturing:SolidPhaseCoating .
+
+
+###  http://emmo.info/emmo/domain/oie/manufacturing#DieCasting
+manufacturing:DieCasting rdf:type owl:Class ;
+skos:prefLabel "DieCasting"@en ;
+            rdfs:subClassOf manufacturing:FromLiquidState .
+
+
+###  http://emmo.info/emmo/domain/oie/manufacturing#DieForging
+manufacturing:DieForging rdf:type owl:Class ;
+skos:prefLabel "DieForging"@en ;
+            rdfs:subClassOf manufacturing:PressureForming .
+
+
+###  http://emmo.info/emmo/domain/oie/manufacturing#DipCoating
+manufacturing:DipCoating rdf:type owl:Class ;
+skos:prefLabel "DipCoating"@en ;
+            rdfs:subClassOf manufacturing:LiquidPhaseCoating .
+
+
+###  http://emmo.info/emmo/domain/oie/manufacturing#DipPainting
+manufacturing:DipPainting rdf:type owl:Class ;
+skos:prefLabel "DipPainting"@en ;
+             rdfs:subClassOf manufacturing:LiquidPhaseCoating .
+
+
+###  http://emmo.info/emmo/domain/oie/manufacturing#DirectionalSolidification
+manufacturing:DirectionalSolidification rdf:type owl:Class ;
+skos:prefLabel "DirectionalSolidification"@en ;
+                           rdfs:subClassOf manufacturing:FromLiquidState .
+
+
+###  http://emmo.info/emmo/domain/oie/manufacturing#Disassembly
+manufacturing:Disassembly rdf:type owl:Class ;
+skos:prefLabel "Disassembly"@en ;
+             rdfs:subClassOf manufacturing:SeparationProcessSolids .
+
+
+###  http://emmo.info/emmo/domain/oie/manufacturing#Drilling
+manufacturing:Drilling rdf:type owl:Class ;
+skos:prefLabel "Drilling"@en ;
+          rdfs:subClassOf manufacturing:DefinedCuttingEdge .
+
+
+###  http://emmo.info/emmo/domain/oie/manufacturing#ElectroPlating
+manufacturing:ElectroPlating rdf:type owl:Class ;
+skos:prefLabel "ElectroPlating"@en ;
+                rdfs:subClassOf manufacturing:SolutionPhaseCoating .
+
+
+###  http://emmo.info/emmo/domain/oie/manufacturing#Electrolysis
+manufacturing:Electrolysis rdf:type owl:Class ;
+skos:prefLabel "Electrolysis"@en ;
+              rdfs:subClassOf manufacturing:SeparationProcessFluids .
+
+
+###  http://emmo.info/emmo/domain/oie/manufacturing#ElectronBeamCutting
+manufacturing:ElectronBeamCutting rdf:type owl:Class ;
+skos:prefLabel "ElectronBeamCutting"@en ;
+                     rdfs:subClassOf manufacturing:Cutting .
+
+
+###  http://emmo.info/emmo/domain/oie/manufacturing#Embossing
+manufacturing:Embossing rdf:type owl:Class ;
+skos:prefLabel "Embossing"@en ;
+           rdfs:subClassOf manufacturing:Deepening .
+
+
+###  http://emmo.info/emmo/domain/oie/manufacturing#EnamelCoating
+manufacturing:EnamelCoating rdf:type owl:Class ;
+skos:prefLabel "EnamelCoating"@en ;
+               rdfs:subClassOf manufacturing:LiquidPhaseCoating .
+
+
+###  http://emmo.info/emmo/domain/oie/manufacturing#Etching
+manufacturing:Etching rdf:type owl:Class ;
+skos:prefLabel "Etching"@en ;
+         rdfs:subClassOf manufacturing:SeparationProcessSolids .
+
+
+###  http://emmo.info/emmo/domain/oie/manufacturing#ExplosionForming
+manufacturing:ExplosionForming rdf:type owl:Class ;
+skos:prefLabel "ExplosionForming"@en ;
+                  rdfs:subClassOf manufacturing:InternalPressureForming .
+
+
+###  http://emmo.info/emmo/domain/oie/manufacturing#Extrusion
+manufacturing:Extrusion rdf:type owl:Class ;
+skos:prefLabel "Extrusion"@en ;
+           rdfs:subClassOf manufacturing:ThroughPushing ;
+           rdfs:comment "Extrusion of plastics see PlasticExtrusion as a primary shaping process" .
+
+
+###  http://emmo.info/emmo/domain/oie/manufacturing#FiberBoardManufacture
+manufacturing:FiberBoardManufacture rdf:type owl:Class ;
+skos:prefLabel "FiberBoardManufacture"@en ;
+                       rdfs:subClassOf manufacturing:FromFibrousState .
+
+
+###  http://emmo.info/emmo/domain/oie/manufacturing#Filling
+manufacturing:Filling rdf:type owl:Class ;
+skos:prefLabel "Filling"@en ;
+         rdfs:subClassOf manufacturing:JoiningProcess .
+
+
+###  http://emmo.info/emmo/domain/oie/manufacturing#Filtering
+manufacturing:Filtering rdf:type owl:Class ;
+skos:prefLabel "Filtering"@en ;
+           rdfs:subClassOf manufacturing:SeparationProcessFluids .
+
+
+###  http://emmo.info/emmo/domain/oie/manufacturing#Flanging
+manufacturing:Flanging rdf:type owl:Class ;
+skos:prefLabel "Flanging"@en ;
+          rdfs:subClassOf manufacturing:JoiningByForming .
+
+
+###  http://emmo.info/emmo/domain/oie/manufacturing#FluidizedBedCoating
+manufacturing:FluidizedBedCoating rdf:type owl:Class ;
+skos:prefLabel "FluidizedBedCoating"@en ;
+                     rdfs:subClassOf manufacturing:SolidPhaseCoating .
+
+
+###  http://emmo.info/emmo/domain/oie/manufacturing#Foaming
+manufacturing:Foaming rdf:type owl:Class ;
+skos:prefLabel "Foaming"@en ;
+         rdfs:subClassOf manufacturing:FromLiquidState .
+
+
+###  http://emmo.info/emmo/domain/oie/manufacturing#Folding
+manufacturing:Folding rdf:type owl:Class ;
+skos:prefLabel "Folding"@en ;
+         rdfs:subClassOf manufacturing:JoiningByForming .
+
+
+###  http://emmo.info/emmo/domain/oie/manufacturing#FormingProcess
+manufacturing:FormingProcess rdf:type owl:Class ;
+skos:prefLabel "FormingProcess"@en ;
+                rdfs:subClassOf <http://emmo.info/emmo/domain/oie/manufacturing#Manufacturing> ;
+                rdfs:comment """Forming processes  are categorized in
+
+Pressure Forming (DIN 8583)
+
+TensilePressureForming(DIN 8584)
+
+TensileForming (DIN 8585)
+
+Bending (DIN 8586)
+
+ShearForming (DIN8587)""" ,
+                             "Group 2 in DIN 8580" .
+
+
+###  http://emmo.info/emmo/domain/oie/manufacturing#FreeBending
+manufacturing:FreeBending rdf:type owl:Class ;
+skos:prefLabel "FreeBending"@en ;
+             rdfs:subClassOf manufacturing:Bending ;
+             rdfs:comment "linear motion of bending tool" .
+
+
+###  http://emmo.info/emmo/domain/oie/manufacturing#FreeForming
+manufacturing:FreeForming rdf:type owl:Class ;
+skos:prefLabel "FreeForming"@en ;
+             rdfs:subClassOf manufacturing:PressureForming .
+
+
+###  http://emmo.info/emmo/domain/oie/manufacturing#Freezing
+manufacturing:Freezing rdf:type owl:Class ;
+skos:prefLabel "Freezing"@en ;
+          rdfs:subClassOf manufacturing:HeatTreatment .
+
+
+###  http://emmo.info/emmo/domain/oie/manufacturing#FrictionWelding
+manufacturing:FrictionWelding rdf:type owl:Class ;
+skos:prefLabel "FrictionWelding"@en ;
+                 rdfs:subClassOf manufacturing:InOnPressing .
+
+
+###  http://emmo.info/emmo/domain/oie/manufacturing#FromFibrousState
+manufacturing:FromFibrousState rdf:type owl:Class ;
+skos:prefLabel "FromFibrousState"@en ;
+                  rdfs:subClassOf manufacturing:PrimaryShaping .
+
+
+###  http://emmo.info/emmo/domain/oie/manufacturing#FromGasPhase
+manufacturing:FromGasPhase rdf:type owl:Class ;
+skos:prefLabel "FromGasPhase"@en ;
+              rdfs:subClassOf manufacturing:PrimaryShaping .
+
+
+###  http://emmo.info/emmo/domain/oie/manufacturing#FromIonizedState
+manufacturing:FromIonizedState rdf:type owl:Class ;
+skos:prefLabel "FromIonizedState"@en ;
+                  rdfs:subClassOf manufacturing:PrimaryShaping .
+
+
+###  http://emmo.info/emmo/domain/oie/manufacturing#FromLiquidState
+manufacturing:FromLiquidState rdf:type owl:Class ;
+skos:prefLabel "FromLiquidState"@en ;
+                 rdfs:subClassOf manufacturing:PrimaryShaping .
+
+
+###  http://emmo.info/emmo/domain/oie/manufacturing#FromPlasticState
+manufacturing:FromPlasticState rdf:type owl:Class ;
+skos:prefLabel "FromPlasticState"@en ;
+                  rdfs:subClassOf manufacturing:PrimaryShaping .
+
+
+###  http://emmo.info/emmo/domain/oie/manufacturing#FromPowderState
+manufacturing:FromPowderState rdf:type owl:Class ;
+skos:prefLabel "FromPowderState"@en ;
+                 rdfs:subClassOf manufacturing:PrimaryShaping .
+
+
+###  http://emmo.info/emmo/domain/oie/manufacturing#FromSlurry
+manufacturing:FromSlurry rdf:type owl:Class ;
+skos:prefLabel "FromSlurry"@en ;
+            rdfs:subClassOf manufacturing:PrimaryShaping .
+
+
+###  http://emmo.info/emmo/domain/oie/manufacturing#Galvanizing
+manufacturing:Galvanizing rdf:type owl:Class ;
+skos:prefLabel "Galvanizing"@en ;
+             rdfs:subClassOf manufacturing:SolutionPhaseCoating .
+
+
+###  http://emmo.info/emmo/domain/oie/manufacturing#GasPhaseCoating
+manufacturing:GasPhaseCoating rdf:type owl:Class ;
+skos:prefLabel "GasPhaseCoating"@en ;
+                 rdfs:subClassOf manufacturing:CoatingProcess .
+
+
+###  http://emmo.info/emmo/domain/oie/manufacturing#Gluing
+manufacturing:Gluing rdf:type owl:Class ;
+skos:prefLabel "Gluing"@en ;
+        rdfs:subClassOf manufacturing:JoiningProcess .
+
+
+###  http://emmo.info/emmo/domain/oie/manufacturing#GraftingProcess
+manufacturing:GraftingProcess rdf:type owl:Class ;
+skos:prefLabel "GraftingProcess"@en ;
+                 rdfs:subClassOf <http://emmo.info/emmo/domain/oie/manufacturing#Manufacturing> .
+
+
+###  http://emmo.info/emmo/domain/oie/manufacturing#GravityCasting
+manufacturing:GravityCasting rdf:type owl:Class ;
+skos:prefLabel "GravityCasting"@en ;
+                rdfs:subClassOf manufacturing:FromLiquidState .
+
+
+###  http://emmo.info/emmo/domain/oie/manufacturing#Grinding
+manufacturing:Grinding rdf:type owl:Class ;
+skos:prefLabel "Grinding"@en ;
+          rdfs:subClassOf manufacturing:UndefinedCuttingEdge ;
+		  rdfs:comment "Grinding is a type of abrasive machining process which uses grinding wheel as cutting tool. Grinding is a subset of cutting, as grinding is a true metal-cutting process." .
+
+
+###  http://emmo.info/emmo/domain/oie/manufacturing#Hanging
+manufacturing:Hanging rdf:type owl:Class ;
+skos:prefLabel "Hanging"@en ;
+         rdfs:subClassOf manufacturing:Assembly .
+
+
+###  http://emmo.info/emmo/domain/oie/manufacturing#HeatTreatment
+manufacturing:HeatTreatment rdf:type owl:Class ;
+skos:prefLabel "HeatTreatment"@en ;
+               rdfs:subClassOf manufacturing:PropertyChangeProcess ;
+			   rdfs:comment "Heat treatment is the process of heating metal without letting it reach its molten, or melting, stage, and then cooling the metal in a controlled way to select desired mechanical properties." .
+
+
+###  http://emmo.info/emmo/domain/oie/manufacturing#HighPressureDieCasting
+manufacturing:HighPressureDieCasting rdf:type owl:Class ;
+skos:prefLabel "HighPressureDieCasting"@en ;
+                        rdfs:subClassOf manufacturing:DieCasting .
+
+
+###  http://emmo.info/emmo/domain/oie/manufacturing#HotDipping
+manufacturing:HotDipping rdf:type owl:Class ;
+skos:prefLabel "HotDipping"@en ;
+            rdfs:subClassOf manufacturing:LiquidPhaseCoating .
+
+
+###  http://emmo.info/emmo/domain/oie/manufacturing#HotForging
+manufacturing:HotForging rdf:type owl:Class ;
+skos:prefLabel "HotForging"@en ;
+            rdfs:subClassOf manufacturing:PressureForming .
+
+
+###  http://emmo.info/emmo/domain/oie/manufacturing#ColdForging
+manufacturing:ColdForging rdf:type owl:Class ;
+skos:prefLabel "ColdForging"@en ;
+            rdfs:subClassOf manufacturing:PressureForming .
+
+
+###  http://emmo.info/emmo/domain/oie/manufacturing#SheetForming
+manufacturing:SheetForming rdf:type owl:Class ;
+skos:prefLabel "SheetForming"@en ;
+            rdfs:subClassOf manufacturing:PressureForming .
+
+###  http://emmo.info/emmo/domain/oie/manufacturing#Impregnation
+manufacturing:Impregnation rdf:type owl:Class ;
+skos:prefLabel "Impregnation"@en ;
+              rdfs:subClassOf manufacturing:Filling .
+
+
+###  http://emmo.info/emmo/domain/oie/manufacturing#InOnPressing
+manufacturing:InOnPressing rdf:type owl:Class ;
+skos:prefLabel "InOnPressing"@en ;
+              rdfs:subClassOf manufacturing:JoiningProcess .
+
+
+###  http://emmo.info/emmo/domain/oie/manufacturing#InPressing
+manufacturing:InPressing rdf:type owl:Class ;
+skos:prefLabel "InPressing"@en ;
+            rdfs:subClassOf manufacturing:PressureForming .
+
+
+###  http://emmo.info/emmo/domain/oie/manufacturing#IncrementalForming
+manufacturing:IncrementalForming rdf:type owl:Class ;
+skos:prefLabel "IncrementalForming"@en ;
+                    rdfs:subClassOf manufacturing:PressureForming .
+
+
+###  http://emmo.info/emmo/domain/oie/manufacturing#Infiltration
+manufacturing:Infiltration rdf:type owl:Class ;
+skos:prefLabel "Infiltration"@en ;
+              rdfs:subClassOf manufacturing:Filling ,
+                              manufacturing:FromLiquidState .
+
+
+###  http://emmo.info/emmo/domain/oie/manufacturing#InjectionMolding
+manufacturing:InjectionMolding rdf:type owl:Class ;
+skos:prefLabel "InjectionMolding"@en ;
+                  rdfs:subClassOf manufacturing:FromPlasticState .
+
+
+###  http://emmo.info/emmo/domain/oie/manufacturing#Inserting
+manufacturing:Inserting rdf:type owl:Class ;
+skos:prefLabel "Inserting"@en ;
+           rdfs:subClassOf manufacturing:Assembly .
+
+
+###  http://emmo.info/emmo/domain/oie/manufacturing#InternalPressureForming
+manufacturing:InternalPressureForming rdf:type owl:Class ;
+skos:prefLabel "InternalPressureForming"@en ;
+                         rdfs:subClassOf manufacturing:TensilePressureForming .
+
+
+###  http://emmo.info/emmo/domain/oie/manufacturing#InvestmentCasting
+manufacturing:InvestmentCasting rdf:type owl:Class ;
+skos:prefLabel "InvestmentCasting"@en ;
+                   rdfs:subClassOf manufacturing:FromLiquidState .
+
+
+###  http://emmo.info/emmo/domain/oie/manufacturing#JoiningByForming
+manufacturing:JoiningByForming rdf:type owl:Class ;
+skos:prefLabel "JoiningByForming"@en ;
+                  rdfs:subClassOf manufacturing:JoiningProcess .
+
+
+###  http://emmo.info/emmo/domain/oie/manufacturing#JoiningProcess
+manufacturing:JoiningProcess rdf:type owl:Class ;
+skos:prefLabel "JoiningProcess"@en ;
+                rdfs:subClassOf <http://emmo.info/emmo/domain/oie/manufacturing#Manufacturing> ;
+                rdfs:comment "Group 4 in DIN 8580" .
+
+
+###  http://emmo.info/emmo/domain/oie/manufacturing#Knitting
+manufacturing:Knitting rdf:type owl:Class ;
+skos:prefLabel "Knitting"@en ;
+          rdfs:subClassOf manufacturing:TextileJoining .
+
+
+###  http://emmo.info/emmo/domain/oie/manufacturing#LaserCutting
+manufacturing:LaserCutting rdf:type owl:Class ;
+skos:prefLabel "LaserCutting"@en ;
+              rdfs:subClassOf manufacturing:Cutting .
+
+
+###  http://emmo.info/emmo/domain/oie/manufacturing#LiquidPhaseCoating
+manufacturing:LiquidPhaseCoating rdf:type owl:Class ;
+skos:prefLabel "LiquidPhaseCoating"@en ;
+                    rdfs:subClassOf manufacturing:CoatingProcess ;
+                    rdfs:comment """Painting or coloring
+    paint
+    spin coating
+    spray painting
+    thermal spraying
+    plasticizing
+    Dip painting (anodic or cathodic)
+    hot dipping
+    Enamel
+    Slot die coating
+    blade coating
+    dip coating
+    spray
+    roll coating
+    Multiple coating by cascade or curtain casting
+    Water Transfer Printing""" .
+
+
+###  http://emmo.info/emmo/domain/oie/manufacturing#LiquidPhaseJoining
+manufacturing:LiquidPhaseJoining rdf:type owl:Class ;
+skos:prefLabel "LiquidPhaseJoining"@en ;
+                    rdfs:subClassOf manufacturing:JoiningProcess .
+
+
+###  http://emmo.info/emmo/domain/oie/manufacturing#LiquidThermalSpraying
+manufacturing:LiquidThermalSpraying rdf:type owl:Class ;
+skos:prefLabel "LiquidThermalSpraying"@en ;
+                       rdfs:subClassOf manufacturing:LiquidPhaseCoating .
+
+
+###  http://emmo.info/emmo/domain/oie/manufacturing#LostWaxProcess
+manufacturing:LostWaxProcess rdf:type owl:Class ;
+skos:prefLabel "LostWaxProcess"@en ;
+                rdfs:subClassOf manufacturing:FromSlurry .
+
+
+###  http://emmo.info/emmo/domain/oie/manufacturing#LowPressureCasting
+manufacturing:LowPressureCasting rdf:type owl:Class ;
+skos:prefLabel "LowPressureCasting"@en ;
+                    rdfs:subClassOf manufacturing:FromLiquidState .
+
+
+###  http://emmo.info/emmo/domain/oie/manufacturing#LusterSud
+manufacturing:LusterSud rdf:type owl:Class ;
+skos:prefLabel "LusterSud"@en ;
+           rdfs:subClassOf manufacturing:SolutionPhaseCoating .
+
+
+###  http://emmo.info/emmo/domain/oie/manufacturing#Machining
+manufacturing:Machining rdf:type owl:Class ;
+skos:prefLabel "Machining"@en ;
+           rdfs:subClassOf manufacturing:SeparationProcessSolids ;
+           rdfs:comment """The following two groups are combined in practice and specialist literature for machining. They are based on the mechanical removal of parts from a workpiece in the form of shapeless material (chips). It is the main group of \"separation\".
+
+    3.2 Machining with a geometrically defined cutting edge (DIN 8589-0): turning, milling, drilling and others.
+    3.3 Machining with a geometrically undefined cutting edge (DIN 8589-0): especially grinding""" ;
+	      rdfs:comment "Machining is a process in which a material (often metal) is cut to a desired final shape and size by a controlled material-removal process. The processes that have this common theme are collectively called subtractive manufacturing." .
+
+
+###  http://emmo.info/emmo/domain/oie/manufacturing#MagneticFieldForming
+manufacturing:MagneticFieldForming rdf:type owl:Class ;
+skos:prefLabel "MagneticFieldForming"@en ;
+                      rdfs:subClassOf manufacturing:FormingProcess .
+
+
+###  http://emmo.info/emmo/domain/oie/manufacturing#Magnetising
+manufacturing:Magnetising rdf:type owl:Class ;
+skos:prefLabel "Magnetising"@en ;
+             rdfs:subClassOf manufacturing:PropertyChangeProcess .
+
+
+###  http://emmo.info/emmo/domain/oie/manufacturing#MechanicalGalvanizing
+manufacturing:MechanicalGalvanizing rdf:type owl:Class ;
+skos:prefLabel "MechanicalGalvanizing"@en ;
+                       rdfs:subClassOf manufacturing:SolutionPhaseCoating .
+
+
+###  http://emmo.info/emmo/domain/oie/manufacturing#MeltAtomisation
+manufacturing:MeltAtomisation rdf:type owl:Class ;
+skos:prefLabel "MeltAtomisation"@en ;
+                 rdfs:subClassOf manufacturing:FromLiquidState .
+
+
+###  http://emmo.info/emmo/domain/oie/manufacturing#MeltSpinning
+manufacturing:MeltSpinning rdf:type owl:Class ;
+skos:prefLabel "MeltSpinning"@en ;
+              rdfs:subClassOf manufacturing:FromLiquidState .
+
+
+###  http://emmo.info/emmo/domain/oie/manufacturing#Milling
+manufacturing:Milling rdf:type owl:Class ;
+skos:prefLabel "Milling"@en ;
+         rdfs:subClassOf manufacturing:DefinedCuttingEdge ;
+		 rdfs:comment "Milling is the process of machining using rotary cutters to remove material by advancing a cutter into a workpiece. This may be done varying direction on one or several axes, cutter head speed, and pressure." .
+
+
+###  http://emmo.info/emmo/domain/oie/manufacturing#MoldElectrolyticDeposition
+manufacturing:MoldElectrolyticDeposition rdf:type owl:Class ;
+skos:prefLabel "MoldElectrolyticDeposition"@en ;
+                            rdfs:subClassOf manufacturing:FromIonizedState .
+
+
+###  http://emmo.info/emmo/domain/oie/manufacturing#MoldVapourPhaseDeposition
+manufacturing:MoldVapourPhaseDeposition rdf:type owl:Class ;
+skos:prefLabel "MoldVapourPhaseDeposition"@en ;
+                           rdfs:subClassOf manufacturing:FromGasPhase .
+
+
+###  http://emmo.info/emmo/domain/oie/manufacturing#Molds
+manufacturing:Molds rdf:type owl:Class ;
+skos:prefLabel "Molds"@en ;
+       rdfs:subClassOf manufacturing:FromPlasticState .
+
+
+###  http://emmo.info/emmo/domain/oie/manufacturing#Nailing
+manufacturing:Nailing rdf:type owl:Class ;
+skos:prefLabel "Nailing"@en ;
+         rdfs:subClassOf manufacturing:InOnPressing .
+
+
+###  http://emmo.info/emmo/domain/oie/manufacturing#Nitriding
+manufacturing:Nitriding rdf:type owl:Class ;
+skos:prefLabel "Nitriding"@en ;
+           rdfs:subClassOf manufacturing:ThermochemicalTreatment .
+
+
+###  http://emmo.info/emmo/domain/oie/manufacturing#Painting
+manufacturing:Painting rdf:type owl:Class ;
+skos:prefLabel "Painting"@en ;
+          rdfs:subClassOf manufacturing:LiquidPhaseCoating .
+
+
+###  http://emmo.info/emmo/domain/oie/manufacturing#PaperManufacture
+manufacturing:PaperManufacture rdf:type owl:Class ;
+skos:prefLabel "PaperManufacture"@en ;
+                  rdfs:subClassOf manufacturing:FromFibrousState .
+
+
+###  http://emmo.info/emmo/domain/oie/manufacturing#Phosphating
+manufacturing:Phosphating rdf:type owl:Class ;
+skos:prefLabel "Phosphating"@en ;
+             rdfs:subClassOf manufacturing:SolutionPhaseCoating .
+
+
+###  http://emmo.info/emmo/domain/oie/manufacturing#PhotoChemicalExposure
+manufacturing:PhotoChemicalExposure rdf:type owl:Class ;
+skos:prefLabel "PhotoChemicalExposure"@en ;
+                       rdfs:subClassOf manufacturing:PropertyChangeProcess ;
+                       rdfs:comment """properties change processes includes the following groups and subgroups: [1]
+
+Hardening by forming: hardening blasting DIN 8200, hardening by rolling, hardening by pulling, hardening by forging
+    
+Heat treatment (DIN EN 10052): annealing, hardening, isothermal conversion, tempering and aging, tempering, freezing, thermochemical treatment (e.g. nitriding), precipitation hardening
+    
+Thermomechanical treatment: austenite form hardening, hot isostatic post-compression
+    Sintering and burning
+    Magnetize
+    Radiation Exposure
+    Photochemical processes: exposure""" .
+
+
+###  http://emmo.info/emmo/domain/oie/manufacturing#PhysicalVapourDeposition
+manufacturing:PhysicalVapourDeposition rdf:type owl:Class ;
+skos:prefLabel "PhysicalVapourDeposition"@en ;
+                          rdfs:subClassOf manufacturing:GasPhaseCoating .
+
+
+###  http://emmo.info/emmo/domain/oie/manufacturing#PlasticsExtrusion
+manufacturing:PlasticsExtrusion rdf:type owl:Class ;
+skos:prefLabel "PlasticsExtrusion"@en ;
+                   rdfs:subClassOf manufacturing:FromPlasticState .
+
+
+###  http://emmo.info/emmo/domain/oie/manufacturing#Polymerization
+manufacturing:Polymerization rdf:type owl:Class ;
+skos:prefLabel "Polymerization"@en ;
+                rdfs:subClassOf manufacturing:Curing .
+
+
+###  http://emmo.info/emmo/domain/oie/manufacturing#Pouring
+manufacturing:Pouring rdf:type owl:Class ;
+skos:prefLabel "Pouring"@en ;
+         rdfs:subClassOf manufacturing:FromSlurry .
+
+
+###  http://emmo.info/emmo/domain/oie/manufacturing#PowderCoating
+manufacturing:PowderCoating rdf:type owl:Class ;
+skos:prefLabel "PowderCoating"@en ;
+               rdfs:subClassOf manufacturing:SolidPhaseCoating .
+
+
+###  http://emmo.info/emmo/domain/oie/manufacturing#PrecipitationHardening
+manufacturing:PrecipitationHardening rdf:type owl:Class ;
+skos:prefLabel "PrecipitationHardening"@en ;
+                        rdfs:subClassOf manufacturing:BulkHardening .
+
+
+###  http://emmo.info/emmo/domain/oie/manufacturing#Pressing
+manufacturing:Pressing rdf:type owl:Class ;
+skos:prefLabel "Pressing"@en ;
+          rdfs:subClassOf manufacturing:TensilePressureForming .
+
+
+###  http://emmo.info/emmo/domain/oie/manufacturing#PressureForming
+manufacturing:PressureForming rdf:type owl:Class ;
+skos:prefLabel "PressureForming"@en ;
+                 rdfs:subClassOf manufacturing:FormingProcess ;
+                 rdfs:comment """Pressure forming according to DIN 8583
+
+Forming in the presence of pressure. Almost all subgroups are of great importance. [10]
+
+Rolling 
+between two or more rotating tools, the rolls. It is used to manufacture plates, sheets, foils, screws, steel pipes.
+   
+Freeforming (including freeforming): Forming with tools that do not contain the shape to be produced. It is often used as a preliminary stage for drop forging, is very flexible but rather unproductive and suitable for very large workpieces and small series.
+  
+Die forming (also die forging), forming with tools that contain the shape to be produced at least partially as a negative. Is mainly used in series production, for example for various parts in the drive of vehicles. It is very productive but not very flexible.
+    
+Pressing in, pressing tools close to the surface. Is of little importance.
+   
+ Pushing through, this includes the important processes of intrusion and extrusion that are used for series parts and construction profiles, and the comparatively insignificant rejuvenation.""" .
+
+
+###  http://emmo.info/emmo/domain/oie/manufacturing#PrimaryShaping
+manufacturing:PrimaryShaping rdf:type owl:Class ;
+skos:prefLabel "PrimaryShaping"@en ;
+                rdfs:subClassOf <http://emmo.info/emmo/domain/oie/manufacturing#Manufacturing> ;
+                rdfs:comment "Group 1 in DIN 8580" ,
+                             """Primary Shaping is the first main group of manufacturing processes according to DIN 8580. This main group is divided into the following seven subgroups: [2]
+
+    Group 1.1: primary shaping from the liquid state (e.g. molten metal)
+1.1.1 Gravity casting
+1.1.2 Die casting
+1.1.3 Low pressure casting
+1.1.4 Centrifugal casting
+1.1.5 Continuous casting
+1.1.6 foaming
+1.1.7 Diving forms
+1.1.8 Original forms of fiber-reinforced plastics (low pressure process)
+1.1.9 CrystalGrowth
+    Group 1.2: archetypes from the plastic state (e.g. polymer melt)
+1.2.1 molds
+1.2.2 Injection molding
+1.2.3 Injection molding
+1.2.4 Extrusion (extrusion)
+1.2.5 Drawing forms
+1.2.6 Calendering
+1.2.7 Blow molding
+1.2.8 Modeling
+    Group 1.3: archetypal forms (e.g. ceramic slip)
+1.3.1 Pouring concrete, plaster
+1.3.2 Casting porcelain, ceramics (see slip casting)
+    Group 1.4: Primary forms from the granular or powdery state (sintering which is suitable for metal powder and ceramics and which is assigned to archetypes in specialist literature and practice is assigned to the main group changing material properties in DIN 8580ff.)
+1.4.1 Presses
+1.4.2 Sand molds
+1.4.2 Original forms by thermal spraying
+    Group 1.5: archetypes from the chip or fibrous state
+1.5.1 Manufacture of chipboard
+1.5.2 Manufacture of fiberboard
+1.5.3 Manufacture of paper and cardboard
+    Group 1.6: (not applicable)
+    Group 1.7: (not applicable)
+    Group 1.8: archetypes from the gaseous or vaporous state
+1.8.1 Deposition from the vapor phase in one mold (single process)
+    Group 1.9: archetypes from the ionized state
+1.9.1 Electrolytic deposition in a mold""" .
+
+
+###  http://emmo.info/emmo/domain/oie/manufacturing#PropertyChangeProcess
+manufacturing:PropertyChangeProcess rdf:type owl:Class ;
+skos:prefLabel "PropertyChangeProcess"@en ;
+                       rdfs:subClassOf <http://emmo.info/emmo/domain/oie/manufacturing#Manufacturing> ;
+                       rdfs:comment "group 6 in DIN 8580" .
+
+
+###  http://emmo.info/emmo/domain/oie/manufacturing#Pulling
+manufacturing:Pulling rdf:type owl:Class ;
+skos:prefLabel "Pulling"@en ;
+         rdfs:subClassOf manufacturing:TensilePressureForming .
+
+
+###  http://emmo.info/emmo/domain/oie/manufacturing#Punching
+manufacturing:Punching rdf:type owl:Class ;
+skos:prefLabel "Punching"@en ;
+          rdfs:subClassOf manufacturing:ShearCutting .
+
+
+###  http://emmo.info/emmo/domain/oie/manufacturing#Pyrolysis
+manufacturing:Pyrolysis rdf:type owl:Class ;
+skos:prefLabel "Pyrolysis"@en ;
+           rdfs:subClassOf manufacturing:FromLiquidState .
+
+
+###  http://emmo.info/emmo/domain/oie/manufacturing#RadiationExposure
+manufacturing:RadiationExposure rdf:type owl:Class ;
+skos:prefLabel "RadiationExposure"@en ;
+                   rdfs:subClassOf manufacturing:PropertyChangeProcess .
+
+
+###  http://emmo.info/emmo/domain/oie/manufacturing#Removal
+manufacturing:Removal rdf:type owl:Class ;
+skos:prefLabel "Removal"@en ;
+         rdfs:subClassOf manufacturing:SeparationProcessSolids .
+
+
+###  http://emmo.info/emmo/domain/oie/manufacturing#Riveting
+manufacturing:Riveting rdf:type owl:Class ;
+skos:prefLabel "Riveting"@en ;
+          rdfs:subClassOf manufacturing:JoiningByForming .
+
+
+###  http://emmo.info/emmo/domain/oie/manufacturing#RollCoating
+manufacturing:RollCoating rdf:type owl:Class ;
+skos:prefLabel "RollCoating"@en ;
+             rdfs:subClassOf manufacturing:LiquidPhaseCoating .
+
+
+###  http://emmo.info/emmo/domain/oie/manufacturing#Rolling
+manufacturing:Rolling rdf:type owl:Class ;
+skos:prefLabel "Rolling"@en ;
+         rdfs:subClassOf manufacturing:PressureForming .
+
+
+###  http://emmo.info/emmo/domain/oie/manufacturing#SandCasting
+manufacturing:SandCasting rdf:type owl:Class ;
+skos:prefLabel "SandCasting"@en ;
+             rdfs:subClassOf manufacturing:GravityCasting .
+
+
+###  http://emmo.info/emmo/domain/oie/manufacturing#SandForming
+manufacturing:SandForming rdf:type owl:Class ;
+skos:prefLabel "SandForming"@en ;
+             rdfs:subClassOf manufacturing:FromPowderState .
+
+
+###  http://emmo.info/emmo/domain/oie/manufacturing#ScreenPrinting
+manufacturing:ScreenPrinting rdf:type owl:Class ;
+skos:prefLabel "ScreenPrinting"@en ;
+                rdfs:subClassOf manufacturing:BladeCoating .
+
+
+###  http://emmo.info/emmo/domain/oie/manufacturing#Screwing
+manufacturing:Screwing rdf:type owl:Class ;
+skos:prefLabel "Screwing"@en ;
+          rdfs:subClassOf manufacturing:InOnPressing .
+
+
+###  http://emmo.info/emmo/domain/oie/manufacturing#Sedimentation
+manufacturing:Sedimentation rdf:type owl:Class ;
+skos:prefLabel "Sedimentation"@en ;
+               rdfs:subClassOf manufacturing:SeparationProcessFluids .
+
+
+###  http://emmo.info/emmo/domain/oie/manufacturing#SelfAssembly
+manufacturing:SelfAssembly rdf:type owl:Class ;
+skos:prefLabel "SelfAssembly"@en ;
+              rdfs:subClassOf manufacturing:Assembly .
+
+
+###  http://emmo.info/emmo/domain/oie/manufacturing#SeparationProcess
+manufacturing:SeparationProcess rdf:type owl:Class ;
+skos:prefLabel "SeparationProcess"@en ;
+                   rdfs:subClassOf <http://emmo.info/emmo/domain/oie/manufacturing#Manufacturing> .
+
+
+###  http://emmo.info/emmo/domain/oie/manufacturing#SeparationProcessFluids
+manufacturing:SeparationProcessFluids rdf:type owl:Class ;
+skos:prefLabel "SeparationProcessFluids"@en ;
+                         rdfs:subClassOf manufacturing:SeparationProcess ;
+                         rdfs:comment "Separation of systems containing mre than one phase one of which is a fluid" .
+
+
+###  http://emmo.info/emmo/domain/oie/manufacturing#SeparationProcessSolids
+manufacturing:SeparationProcessSolids rdf:type owl:Class ;
+skos:prefLabel "SeparationProcessSolids"@en ;
+                         rdfs:subClassOf manufacturing:SeparationProcess ;
+                         rdfs:comment "rdfs:comment \"Group 3 in DIN 8580\"" ,
+                                      """rdfs:comment \"In the classification of manufacturing processes according to DIN 8580, \\\"separating\\\" forms the 3rd main group: The DIN order number of the individual separation processes begins with 3. [1]
+
+    3.1 Cutting (DIN 8588): Separating material parts without creating formless material (chips, powder or the like) by mechanical means. The most important group is shear cutting (punching).
+
+The following two groups are combined in practice and specialist literature for machining. They are based on the mechanical removal of parts from a workpiece in the form of shapeless material (chips). It is the main group of separation.
+
+    3.2 Machining with a geometrically defined cutting edge (DIN 8589-0): turning, milling, drilling and others.
+    3.3 Machining with a geometrically undefined cutting edge (DIN 8589-0): especially grinding
+
+    3.4 Removal (DIN 8590): Based on the removal of particles in a non-mechanical way, such as thermally or chemically, with the production of formless material. These include flame cutting, plasma fusion cutting, spark eroding and others.
+    3.5 Disassembly (DIN 8591)
+    3.6 Cleaning (DIN 8592)\"""" .
+
+
+###  http://emmo.info/emmo/domain/oie/manufacturing#ShapingThermalSpraying
+manufacturing:ShapingThermalSpraying rdf:type owl:Class ;
+skos:prefLabel "ShapingThermalSpraying"@en ;
+                        rdfs:subClassOf manufacturing:FromPowderState .
+
+
+###  http://emmo.info/emmo/domain/oie/manufacturing#ShearCutting
+manufacturing:ShearCutting rdf:type owl:Class ;
+skos:prefLabel "ShearCutting"@en ;
+              rdfs:subClassOf manufacturing:Cutting .
+
+
+###  http://emmo.info/emmo/domain/oie/manufacturing#ShearForming
+manufacturing:ShearForming rdf:type owl:Class ;
+skos:prefLabel "ShearForming"@en ;
+              rdfs:subClassOf manufacturing:FormingProcess .
+
+
+###  http://emmo.info/emmo/domain/oie/manufacturing#Shearing
+manufacturing:Shearing rdf:type owl:Class ;
+skos:prefLabel "Shearing"@en ;
+          rdfs:subClassOf manufacturing:ShearForming ;
+          rdfs:comment "With straight tool movement. Used to manufacture the cranks on crankshafts." .
+
+
+###  http://emmo.info/emmo/domain/oie/manufacturing#Sieving
+manufacturing:Sieving rdf:type owl:Class ;
+skos:prefLabel "Sieving"@en ;
+         rdfs:subClassOf manufacturing:SeparationProcessFluids .
+
+
+###  http://emmo.info/emmo/domain/oie/manufacturing#Sintering
+manufacturing:Sintering rdf:type owl:Class ;
+skos:prefLabel "Sintering"@en ;
+           rdfs:subClassOf manufacturing:PropertyChangeProcess .
+
+
+###  http://emmo.info/emmo/domain/oie/manufacturing#SlipCasting
+manufacturing:SlipCasting rdf:type owl:Class ;
+skos:prefLabel "SlipCasting"@en ;
+             rdfs:subClassOf manufacturing:FromSlurry .
+
+
+###  http://emmo.info/emmo/domain/oie/manufacturing#SolGelCoating
+manufacturing:SolGelCoating rdf:type owl:Class ;
+skos:prefLabel "SolGelCoating"@en ;
+               rdfs:subClassOf manufacturing:SolutionPhaseCoating .
+
+
+###  http://emmo.info/emmo/domain/oie/manufacturing#Soldering
+manufacturing:Soldering rdf:type owl:Class ;
+skos:prefLabel "Soldering"@en ;
+           rdfs:subClassOf manufacturing:JoiningProcess .
+
+
+###  http://emmo.info/emmo/domain/oie/manufacturing#SolidPhaseCoating
+manufacturing:SolidPhaseCoating rdf:type owl:Class ;
+skos:prefLabel "SolidPhaseCoating"@en ;
+                   rdfs:subClassOf manufacturing:CoatingProcess ;
+                   rdfs:comment """Thermal spraying
+    powder coating
+    solder coating
+    Plasma arc welding
+    Cladding
+    fluidized bed""" .
+
+
+###  http://emmo.info/emmo/domain/oie/manufacturing#SolutionPhaseCoating
+manufacturing:SolutionPhaseCoating rdf:type owl:Class ;
+skos:prefLabel "SolutionPhaseCoating"@en ;
+                      rdfs:subClassOf manufacturing:CoatingProcess ;
+                      rdfs:comment """Electroplate
+    chromate
+    galvanize
+    phosphating
+    Tin
+    Sol-Gel
+    Chemical nickel
+    Lüstersud
+    mechanical galvanizing""" .
+
+
+###  http://emmo.info/emmo/domain/oie/manufacturing#SprayPainting
+manufacturing:SprayPainting rdf:type owl:Class ;
+skos:prefLabel "SprayPainting"@en ;
+               rdfs:subClassOf manufacturing:LiquidPhaseCoating .
+
+
+###  http://emmo.info/emmo/domain/oie/manufacturing#Spraying
+manufacturing:Spraying rdf:type owl:Class ;
+skos:prefLabel "Spraying"@en ;
+          rdfs:subClassOf manufacturing:LiquidPhaseCoating .
+
+
+###  http://emmo.info/emmo/domain/oie/manufacturing#StretchForming
+manufacturing:StretchForming rdf:type owl:Class ;
+skos:prefLabel "StretchForming"@en ;
+                rdfs:subClassOf manufacturing:TensileForming .
+
+
+###  http://emmo.info/emmo/domain/oie/manufacturing#SwivelBending
+manufacturing:SwivelBending rdf:type owl:Class ;
+skos:prefLabel "SwivelBending"@en ;
+               rdfs:subClassOf manufacturing:Bending ;
+               rdfs:comment "rotational movement of bending tool" .
+
+
+###  http://emmo.info/emmo/domain/oie/manufacturing#Tempering
+manufacturing:Tempering rdf:type owl:Class ;
+skos:prefLabel "Tempering"@en ;
+           rdfs:subClassOf manufacturing:HeatTreatment .
+
+
+###  http://emmo.info/emmo/domain/oie/manufacturing#TemperingAging
+manufacturing:TemperingAging rdf:type owl:Class ;
+skos:prefLabel "TemperingAging"@en ;
+                rdfs:subClassOf manufacturing:HeatTreatment .
+
+
+###  http://emmo.info/emmo/domain/oie/manufacturing#TensileForming
+manufacturing:TensileForming rdf:type owl:Class ;
+skos:prefLabel "TensileForming"@en ;
+                rdfs:subClassOf manufacturing:FormingProcess ;
+                rdfs:comment """Tensile forming according to DIN 8585
+
+Reshaping under the prevailing tensile load; Subgroups: [12]
+
+    Lengths, for example extending rods or sheets.
+    Widening, for example expanding hollow bodies
+    Depths, for example hollow embossing of vehicle signs""" .
+
+
+###  http://emmo.info/emmo/domain/oie/manufacturing#TensilePressureForming
+manufacturing:TensilePressureForming rdf:type owl:Class ;
+skos:prefLabel "TensilePressureForming"@en ;
+                        rdfs:subClassOf manufacturing:FormingProcess ;
+                        rdfs:comment """Tensile pressure forming according to DIN 8584
+
+Forming with simultaneous stress due to tensile and compressive loads of different directions of action; Subgroups: [11]
+
+Pulling
+ Raw parts through hollow tools. The workpieces become narrower and longer. Used for the production of wire, tubes and profiles
+
+Thermoforming 
+By far the most important process in the group. Here flat sheets are drawn in hollow forms. It is used to manufacture various hollow bodies, including beverage cans, body parts or helmets.
+
+Pressing
+
+Here, hollow plates, such as saucepans, are produced from flat sheet metal. The shape of the workpieces is controlled by the tool movement. Therefore, compared to deep drawing, pressing is more flexible but less productive.
+
+Collar pulling 
+is used to widen openings in flat sheets and to flare.
+
+Knuckle belly is used to bulge hollow bodies
+
+Internal high pressure forming
+is the forming of hollow bodies by building up pressure inside. Sometimes also as explosive forming.
+
+    Deep drawing, blank (red)
+
+    Deep drawing, finished part
+
+    Component made by pulling the collar""" .
+
+
+###  http://emmo.info/emmo/domain/oie/manufacturing#TextileJoining
+manufacturing:TextileJoining rdf:type owl:Class ;
+skos:prefLabel "TextileJoining"@en ;
+                rdfs:subClassOf manufacturing:JoiningProcess .
+
+
+###  http://emmo.info/emmo/domain/oie/manufacturing#ThermalSpraying
+manufacturing:ThermalSpraying rdf:type owl:Class ;
+skos:prefLabel "ThermalSpraying"@en ;
+                 rdfs:subClassOf manufacturing:SolidPhaseCoating .
+
+
+###  http://emmo.info/emmo/domain/oie/manufacturing#ThermoForming
+manufacturing:ThermoForming rdf:type owl:Class ;
+skos:prefLabel "ThermoForming"@en ;
+               rdfs:subClassOf manufacturing:FormingProcess .
+
+
+###  http://emmo.info/emmo/domain/oie/manufacturing#ThermochemicalTreatment
+manufacturing:ThermochemicalTreatment rdf:type owl:Class ;
+skos:prefLabel "ThermochemicalTreatment"@en ;
+                         rdfs:subClassOf manufacturing:PropertyChangeProcess .
+
+
+###  http://emmo.info/emmo/domain/oie/manufacturing#ThermomechanicalTreatment
+manufacturing:ThermomechanicalTreatment rdf:type owl:Class ;
+skos:prefLabel "ThermomechanicalTreatment"@en ;
+                           rdfs:subClassOf manufacturing:PropertyChangeProcess .
+
+
+###  http://emmo.info/emmo/domain/oie/manufacturing#ThroughPushing
+manufacturing:ThroughPushing rdf:type owl:Class ;
+skos:prefLabel "ThroughPushing"@en ;
+                rdfs:subClassOf manufacturing:PressureForming .
+
+
+###  http://emmo.info/emmo/domain/oie/manufacturing#Tinning
+manufacturing:Tinning rdf:type owl:Class ;
+skos:prefLabel "Tinning"@en ;
+         rdfs:subClassOf manufacturing:SolutionPhaseCoating .
+
+
+###  http://emmo.info/emmo/domain/oie/manufacturing#Turning
+manufacturing:Turning rdf:type owl:Class ;
+skos:prefLabel "Turning"@en ;
+         rdfs:subClassOf manufacturing:DefinedCuttingEdge ;
+		 rdfs:comment "Turning is a machining process in which a cutting tool, typically a non-rotary tool bit, describes a helix toolpath by moving more or less linearly while the workpiece rotates." .
+
+
+###  http://emmo.info/emmo/domain/oie/manufacturing#Twisting
+manufacturing:Twisting rdf:type owl:Class ;
+skos:prefLabel "Twisting"@en ;
+          rdfs:subClassOf manufacturing:ShearForming ;
+          rdfs:comment "Twisting: With rotating tool movement. Is used to manufacture drills, propellers." .
+
+
+###  http://emmo.info/emmo/domain/oie/manufacturing#UndefinedCuttingEdge
+manufacturing:UndefinedCuttingEdge rdf:type owl:Class ;
+skos:prefLabel "UndefinedCuttingEdge"@en ;
+                      rdfs:subClassOf manufacturing:Machining .
+
+
+###  http://emmo.info/emmo/domain/oie/manufacturing#VerneuilProcess
+manufacturing:VerneuilProcess rdf:type owl:Class ;
+skos:prefLabel "VerneuilProcess"@en ;
+                 rdfs:subClassOf manufacturing:CrystalGrowth .
+
+
+###  http://emmo.info/emmo/domain/oie/manufacturing#VerticalGradientFreeze
+manufacturing:VerticalGradientFreeze rdf:type owl:Class ;
+skos:prefLabel "VerticalGradientFreeze"@en ;
+                        rdfs:subClassOf manufacturing:CrystalGrowth .
+
+
+###  http://emmo.info/emmo/domain/oie/manufacturing#WarmForming
+manufacturing:WarmForming rdf:type owl:Class ;
+skos:prefLabel "WarmForming"@en ;
+             rdfs:subClassOf manufacturing:ThermoForming .
+
+
+###  http://emmo.info/emmo/domain/oie/manufacturing#WaterTransferPrinting
+manufacturing:WaterTransferPrinting rdf:type owl:Class ;
+skos:prefLabel "WaterTransferPrinting"@en ;
+                       rdfs:subClassOf manufacturing:LiquidPhaseCoating .
+
+
+###  http://emmo.info/emmo/domain/oie/manufacturing#Weaving
+manufacturing:Weaving rdf:type owl:Class ;
+skos:prefLabel "Weaving"@en ;
+         rdfs:subClassOf manufacturing:TextileJoining .
+
+
+###  http://emmo.info/emmo/domain/oie/manufacturing#Welding
+manufacturing:Welding rdf:type owl:Class ;
+skos:prefLabel "Welding"@en ;
+         rdfs:subClassOf manufacturing:JoiningProcess .
+
+
+###  http://emmo.info/emmo/domain/oie/manufacturing#Widening
+manufacturing:Widening rdf:type owl:Class ;
+skos:prefLabel "Widening"@en ;
+          rdfs:subClassOf manufacturing:TensileForming .
+
+
+###  http://emmo.info/emmo/domain/oie/manufacturing#WithLostModel
+manufacturing:WithLostModel rdf:type owl:Class ;
+skos:prefLabel "WithLostModel"@en ;
+               rdfs:subClassOf manufacturing:SandCasting .
+
+
+###  http://emmo.info/emmo/domain/oie/manufacturing#WithPermanentModel
+manufacturing:WithPermanentModel rdf:type owl:Class ;
+skos:prefLabel "WithPermanentModel"@en ;
+                    rdfs:subClassOf manufacturing:SandCasting .
+
+					
+###  http://emmo.info/emmo/domain/oie/manufacturing#Hardening
+manufacturing:Hardening rdf:type owl:Class ;
+           rdfs:subClassOf manufacturing:ThermomechanicalTreatment ;
+           rdfs:comment "Hardening is a metalurgical metalworking process used to increase the hardness of a metal. It requires heating the material above a certain temperature and quenchening it afterwards." ;
+           skos:prefLabel "Hardening"@en .
+
+
+###  http://emmo.info/emmo/domain/oie/manufacturing#Austenitising
+manufacturing:Austenitising rdf:type owl:Class ;
+               rdfs:subClassOf manufacturing:Hardening ;
+               rdfs:comment "Austenitising describes the process of heating a steel above the austenitizing temperature (GSE line in the iron carbon diagram). This process changes the lattice structure from a body centered cubic structure (BCC) to a face centered cubic structure (FCC), allowing a martensitic transformation via quenching." ;
+               skos:altLabel "Austenitising" ;
+               skos:prefLabel "Austenitising" .		
+
+
+###  http://emmo.info/emmo/domain/oie/manufacturing#BulkHardening
+manufacturing:BulkHardening rdf:type owl:Class ;
+               rdfs:subClassOf manufacturing:Hardening ;
+               skos:prefLabel "BulkHardening"@en .
+
+
+###  http://emmo.info/emmo/domain/oie/manufacturing#BainiteHardening
+manufacturing:BainiteHardening rdf:type owl:Class ;
+               rdfs:subClassOf manufacturing:BulkHardening ;
+               skos:prefLabel "BainiteHardening"@en .	   
+
+
+###  http://emmo.info/emmo/domain/oie/manufacturing#InductionHardening
+manufacturing:InductionHardening rdf:type owl:Class ;
+                    rdfs:subClassOf manufacturing:BulkHardening ;
+                    rdfs:comment "Induction hardening is a type of surface hardening in which a metal part is induction-heated and then quenched. The quenched metal undergoes a martensitic transformation, increasing the hardness and brittleness of the part. Induction hardening is used to selectively harden areas of a part or assembly without affecting the properties of the part as a whole." ;
+                    skos:prefLabel "InductionHardening"@en .
+										   
+
+###  http://emmo.info/emmo/domain/oie/manufacturing#MartensiteHardening
+manufacturing:MartensiteHardening rdf:type owl:Class ;
+                     rdfs:subClassOf manufacturing:BulkHardening ;
+                     skos:prefLabel "MartensiteHardening"@en .
+						
+						
+###  http://emmo.info/emmo/domain/oie/manufacturing#PearliteHardening
+manufacturing:PearliteHardening rdf:type owl:Class ;
+                   rdfs:subClassOf manufacturing:BulkHardening ;
+                   skos:prefLabel "PearliteHardening"@en .
+						
+						
+###  http://emmo.info/emmo/domain/oie/manufacturing#Quenching
+manufacturing:Quenching rdf:type owl:Class ;
+           rdfs:subClassOf manufacturing:Hardening ;
+           rdfs:comment "Quenching after austenitizing is used to suppress the normal breakdown of austenite into ferrite and cementite, and to cause a partial decomposition at such a low temperature to produce martensite. To obtain this, steel requires a critical cooling velocity, which is greatly reduced by the presence of alloying elements, which therefore cause hardening with mild quenching (e.g. oil and hardening steels)." ;
+           skos:prefLabel "Quenching" .
+		   
+###  http://emmo.info/emmo/domain/oie/manufacturing#QuenchingAndTempering
+manufacturing:QuenchingAndTempering rdf:type owl:Class ;
+                       owl:equivalentClass [ owl:intersectionOf ( 
+					                            manufacturing:Hardening
+                                                manufacturing:Annealing
+                                             ) ;
+                                             rdf:type owl:Class
+                                           ] ;
+                       rdfs:subClassOf manufacturing:Hardening ;
+                       rdfs:comment """Quenching is the rapid cooling of a workpiece in water, oil or air in order to obtain certain material properties. It is most commonly used to harden steel by inducing a martensite transformation. 
+					   
+					   Tempering is a heat treatment technique applied to ferrous alloys, such as steel or cast iron, to achieve greater tougness by decreasing the hardness of the alloy. The reduction in hardness is usually accompanied by an increase in ductility, thereby decreasing the brittleness of the metal. It is usually applied after quenching.""" ;
+                       skos:prefLabel "QuenchingAndTempering"@en .
+
+###  http://emmo.info/emmo/domain/oie/manufacturing#Tempering
+manufacturing:Tempering rdf:type owl:Class ;
+           rdfs:subClassOf manufacturing:Hardening ;
+           rdfs:comment "Tempering is a process of heat treating, which is used to increase the toughness of iron-based alloys. Tempering is usually performed after hardening, to reduce some of the excess hardness, and is done by heating the metal to some temperature below the critical point for a certain period of time, then allowing it to cool in still air." ;
+           skos:prefLabel "Tempering" .
+		   
+		   
+###  http://emmo.info/emmo/domain/oie/manufacturing#SurfaceHardening
+manufacturing:SurfaceHardening rdf:type owl:Class ;
+                  rdfs:subClassOf manufacturing:Hardening ;
+                  skos:prefLabel "SurfaceHardening"@en .		   
+
+###  http://emmo.info/emmo/domain/oie/manufacturing#CaseHardening
+manufacturing:CaseHardening rdf:type owl:Class ;
+               rdfs:subClassOf manufacturing:SurfaceHardening ;
+               rdfs:comment "Surface hardening (or case-hardening) is the process of hardening the surface of a metal object while allowing the metal deeper underneath to remain soft, thus forming a thin layer of harder metal at the surface. This creates a hardness profile across the cross section of the material. In the end, increased hardness at the surface is combined with a ductile core, which prevents the material from becoming brittle." ;
+               skos:prefLabel "CaseHardening"@en .
+			   
+			   
+###  http://emmo.info/emmo/domain/oie/manufacturing#Nitration
+manufacturing:Nitration rdf:type owl:Class ;
+           rdfs:subClassOf manufacturing:SurfaceHardening ;
+           skos:prefLabel "Nitration"@en .
+		   
+		   
+###  http://emmo.info/emmo/domain/oie/manufacturing#Nitrocarburizing
+manufacturing:Nitrocarburizing rdf:type owl:Class ;
+                  rdfs:subClassOf manufacturing:SurfaceHardening ;
+                  skos:prefLabel "Nitrocarburizing"@en .
