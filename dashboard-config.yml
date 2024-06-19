@@ -182,7 +182,7 @@ ontologies:
       tracker: https://github.com/emmo-repo/CIF-ontology/issues
       repository: https://github.com/emmo-repo/CIF-ontology
       preferredPrefix: cif-core
-      mirror_from: https://raw.githubusercontent.com/ebrahimnorouzi/mseo.github.io/master/Ontology_files/CIF-core.ttl
+      mirror_from: https://raw.githubusercontent.com/ebrahimnorouzi/mseo.github.io/master/Ontology_files/cif-core.ttl
     - id: EMMO_Datamodel
       dependencies:
         - id: EMMO
@@ -280,7 +280,7 @@ ontologies:
       tracker: https://github.com/tetherless-world/nanomine-ontology/issues
       repository: https://github.com/tetherless-world/nanomine-ontology
       preferredPrefix: nanomine
-      mirror_from: https://raw.githubusercontent.com/ebrahimnorouzi/mseo.github.io/master/Ontology_files/NanoMine.ttl
+      mirror_from: https://raw.githubusercontent.com/ebrahimnorouzi/mseo.github.io/master/Ontology_files/nanomine.ttl
     - id: DEB
       description: The Devices, Experimental scaffolds and Biomaterials Ontology
       homepage: https://github.com/ProjectDebbie/Ontology_DEB
