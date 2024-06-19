@@ -1,0 +1,1007 @@
+@prefix emmo: <http://emmo.info/emmo#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix software: <http://emmo.info/emmo/domain/oie/software#> .
+@prefix manufacturing: <http://emmo.info/emmo/domain/oie/manufacturing#> .
+@base <http://www.semanticweb.org/yoav/ontologies/2021/0/software-ontology> .
+
+
+<http://emmo.info/emmo/domain/oie/software> rdf:type owl:Ontology ;
+                                       owl:imports <http://emmo.info/emmo/domain/oie/manufacturing> ;
+                                       dcterms:contributor "Access Technology (DE)" ,
+	     "Goldbeck Consulting Ltd (UK)" ;
+                                       dcterms:creator "Daniele Toti" ,
+	 "Georg J. Schmitz" ,
+	 "Gerhard Goldbeck" ,
+	 "Youness Bami" ,
+	 "Pierluigi Del Nostro" ;
+                                       owl:versionInfo 0.1 .
+
+####### EMMO mapping:
+### CommercialProduct    -> domain-manufacturing     emmo:EMMO_00b85655_f20c_4e83_b90e_094e8ea7e48f
+### ApplicationProgram   -> middle-data              emmo:EMMO_3b031fa9_8623_4ea5_8b57_bcafb70c5c8b
+### Program              -> middle-data              emmo:EMMO_65411b3d_c8d3_4111_86a9_a2ce0a64c647
+### SystemProgram        -> middle-data              emmo:EMMO_58b17cac_3125_4486_9b9c_8c45ac254040
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://emmo.info/emmo/domain/oie/software#AMBER
+software:AMBER rdf:type owl:Class ;
+	skos:prefLabel "AMBER"@en ;
+	          rdfs:subClassOf software:AtomisticSoftware .
+
+
+###  http://emmo.info/emmo/domain/oie/software#AtomisticSoftware
+software:AtomisticSoftware rdf:type owl:Class ;
+	skos:prefLabel "Atomistic software"@en ;
+	                       rdfs:subClassOf software:ModellingSoftware .
+
+
+###  http://emmo.info/emmo/domain/oie/software#DLPoly
+software:DLPoly rdf:type owl:Class ;
+	skos:prefLabel "DLPoly"@en ;
+	           rdfs:subClassOf software:AtomisticSoftware .
+
+
+###  http://emmo.info/emmo/domain/oie/software#GULP
+software:GULP rdf:type owl:Class ;
+	skos:prefLabel "GULP"@en ;
+	         rdfs:subClassOf software:AtomisticSoftware .
+
+
+###  http://emmo.info/emmo/domain/oie/software#Gromacs
+software:Gromacs rdf:type owl:Class ;
+	skos:prefLabel "Gromacs"@en ;
+	            rdfs:subClassOf software:AtomisticSoftware .
+
+
+###  http://emmo.info/emmo/domain/oie/software#ITAP-IMD
+software:ITAP-IMD rdf:type owl:Class ;
+	skos:prefLabel "ITAP-IMD"@en ;
+	             rdfs:subClassOf software:AtomisticSoftware .
+
+
+###  http://emmo.info/emmo/domain/oie/software#LAMMPS
+software:LAMMPS rdf:type owl:Class ;
+	skos:prefLabel "LAMMPS"@en ;
+	           rdfs:subClassOf software:AtomisticSoftware .
+
+
+###  http://emmo.info/emmo/domain/oie/software#Moldy
+software:Moldy rdf:type owl:Class ;
+	skos:prefLabel "Moldy"@en ;
+	          rdfs:subClassOf software:AtomisticSoftware .
+
+
+###  http://emmo.info/emmo/domain/oie/software#NAMD
+software:NAMD rdf:type owl:Class ;
+	skos:prefLabel "NAMD"@en ;
+	         rdfs:subClassOf software:AtomisticSoftware .
+
+
+###  http://emmo.info/emmo/domain/oie/software#AnyCasting
+software:AnyCasting rdf:type owl:Class ;
+	skos:prefLabel "AnyCasting"@en ;
+                                            rdfs:subClassOf software:CastingProcessSoftware .
+
+
+###  http://emmo.info/emmo/domain/oie/software#CADmould
+software:CADmould rdf:type owl:Class ;
+	skos:prefLabel "CADmould"@en ;
+                                          rdfs:subClassOf software:CastingProcessSoftware .
+
+
+###  http://emmo.info/emmo/domain/oie/software#CastingProcessSoftware
+software:CastingProcessSoftware rdf:type owl:Class ;
+	skos:prefLabel "Casting Process software"@en ;
+	    rdfs:subClassOf software:ContinuumSoftware .
+
+
+###  http://emmo.info/emmo/domain/oie/software#EKKCapCast
+software:EKKCapCast rdf:type owl:Class ;
+	skos:prefLabel "EKKCapCast"@en ;
+                                            rdfs:subClassOf software:CastingProcessSoftware .
+
+
+###  http://emmo.info/emmo/domain/oie/software#Flow3D
+software:Flow3D rdf:type owl:Class ;
+	skos:prefLabel "Flow3D"@en ;
+                                        rdfs:subClassOf software:CastingProcessSoftware .
+
+
+###  http://emmo.info/emmo/domain/oie/software#Magmasoft
+software:Magmasoft rdf:type owl:Class ;
+	skos:prefLabel "Magmasoft"@en ;
+                                           rdfs:subClassOf software:CastingProcessSoftware .
+
+
+###  http://emmo.info/emmo/domain/oie/software#MavisFlow
+software:MavisFlow rdf:type owl:Class ;
+	skos:prefLabel "MavisFlow"@en ;
+                                           rdfs:subClassOf software:CastingProcessSoftware .
+
+
+###  http://emmo.info/emmo/domain/oie/software#MeltFlow
+software:MeltFlow rdf:type owl:Class ;
+	skos:prefLabel "MeltFlow"@en ;
+                                          rdfs:subClassOf software:CastingProcessSoftware .
+
+
+###  http://emmo.info/emmo/domain/oie/software#ProCast
+software:ProCast rdf:type owl:Class ;
+	skos:prefLabel "ProCast"@en ;
+                                         rdfs:subClassOf software:CastingProcessSoftware .
+
+
+###  http://emmo.info/emmo/domain/oie/software#STAR-Cast
+software:STAR-Cast rdf:type owl:Class ;
+	skos:prefLabel "STAR-Cast"@en ;
+                                           rdfs:subClassOf software:CastingProcessSoftware .
+
+
+###  http://emmo.info/emmo/domain/oie/software#Sigma
+software:Sigma rdf:type owl:Class ;
+	skos:prefLabel "Sigma"@en ;
+                                       rdfs:subClassOf software:CastingProcessSoftware .
+
+
+###  http://emmo.info/emmo/domain/oie/software#SutCast
+software:SutCast rdf:type owl:Class ;
+	skos:prefLabel "SutCast"@en ;
+                                         rdfs:subClassOf software:CastingProcessSoftware .
+
+
+###  http://emmo.info/emmo/domain/oie/software#TherCast
+software:TherCast rdf:type owl:Class ;
+	skos:prefLabel "TherCast"@en ;
+                                          rdfs:subClassOf software:CastingProcessSoftware .
+
+
+###  http://emmo.info/emmo/domain/oie/software#Vulcan
+software:Vulcan rdf:type owl:Class ;
+	skos:prefLabel "Vulcan"@en ;
+                                        rdfs:subClassOf software:CastingProcessSoftware .
+
+
+###  http://emmo.info/emmo/domain/oie/software#WinCast
+software:WinCast rdf:type owl:Class ;
+	skos:prefLabel "WinCast"@en ;
+                                         rdfs:subClassOf software:CastingProcessSoftware .
+
+
+###  http://emmo.info/emmo/domain/oie/software#ADFMolecularModelingSuite
+software:ADFMolecularModelingSuite rdf:type owl:Class ;
+	skos:prefLabel "ADF molecular modeling suite"@en ;
+	                                rdfs:subClassOf software:ElectronicSoftware .
+
+
+###  http://emmo.info/emmo/domain/oie/software#AMPAC
+software:AMPAC rdf:type owl:Class ;
+	skos:prefLabel "AMPAC"@en ;
+	         rdfs:subClassOf software:ElectronicSoftware .
+
+
+###  http://emmo.info/emmo/domain/oie/software#Abinit
+software:Abinit rdf:type owl:Class ;
+	skos:prefLabel "Abinit"@en ;
+	          rdfs:subClassOf software:ElectronicSoftware .
+
+
+###  http://emmo.info/emmo/domain/oie/software#CASTEP
+software:CASTEP rdf:type owl:Class ;
+	skos:prefLabel "CASTEP"@en ;
+	          rdfs:subClassOf software:ElectronicSoftware .
+
+
+###  http://emmo.info/emmo/domain/oie/software#CP2K
+software:CP2K rdf:type owl:Class ;
+	skos:prefLabel "CP2K"@en ;
+	        rdfs:subClassOf software:ElectronicSoftware .
+
+
+###  http://emmo.info/emmo/domain/oie/software#CPMD
+software:CPMD rdf:type owl:Class ;
+	skos:prefLabel "CPMD"@en ;
+	        rdfs:subClassOf software:ElectronicSoftware .
+
+
+###  http://emmo.info/emmo/domain/oie/software#Crystal
+software:Crystal rdf:type owl:Class ;
+	skos:prefLabel "Crystal"@en ;
+	           rdfs:subClassOf software:ElectronicSoftware .
+
+
+###  http://emmo.info/emmo/domain/oie/software#DACAPO
+software:DACAPO rdf:type owl:Class ;
+	skos:prefLabel "DACAPO"@en ;
+	          rdfs:subClassOf software:ElectronicSoftware .
+
+
+###  http://emmo.info/emmo/domain/oie/software#Dalton
+software:Dalton rdf:type owl:Class ;
+	skos:prefLabel "Dalton"@en ;
+	          rdfs:subClassOf software:ElectronicSoftware .
+
+
+###  http://emmo.info/emmo/domain/oie/software#Demon2k
+software:Demon2k rdf:type owl:Class ;
+	skos:prefLabel "Demon2k"@en ;
+	           rdfs:subClassOf software:ElectronicSoftware .
+
+
+###  http://emmo.info/emmo/domain/oie/software#ELK
+software:ELK rdf:type owl:Class ;
+	skos:prefLabel "ELK"@en ;
+	       rdfs:subClassOf software:ElectronicSoftware .
+
+
+###  http://emmo.info/emmo/domain/oie/software#ElectronicSoftware
+software:ElectronicSoftware rdf:type owl:Class ;
+	skos:prefLabel "Electronic software"@en ;
+	                       rdfs:subClassOf software:ModellingSoftware .
+
+
+###  http://emmo.info/emmo/domain/oie/software#FLAPW-Fleur
+software:FLAPW-Fleur rdf:type owl:Class ;
+	skos:prefLabel "FLAPW-Fleur"@en ;
+	               rdfs:subClassOf software:ElectronicSoftware .
+
+
+###  http://emmo.info/emmo/domain/oie/software#Gaussian
+software:Gaussian rdf:type owl:Class ;
+	skos:prefLabel "Gaussian"@en ;
+	            rdfs:subClassOf software:ElectronicSoftware .
+
+
+###  http://emmo.info/emmo/domain/oie/software#MaterialDesignMedea
+software:MaterialDesignMedea rdf:type owl:Class ;
+	skos:prefLabel "Material Design Medea"@en ;
+	                         rdfs:subClassOf software:ElectronicSoftware .
+
+
+###  http://emmo.info/emmo/domain/oie/software#MaterialStudioAccelrys
+software:MaterialStudioAccelrys rdf:type owl:Class ;
+	skos:prefLabel "Material Studio Accelrys"@en ;
+	                            rdfs:subClassOf software:ElectronicSoftware .
+
+
+###  http://emmo.info/emmo/domain/oie/software#QLDFT
+software:QLDFT rdf:type owl:Class ;
+	skos:prefLabel "QLDFT"@en ;
+	         rdfs:subClassOf software:ElectronicSoftware .
+
+
+###  http://emmo.info/emmo/domain/oie/software#QuantumEspresso
+software:QuantumEspresso rdf:type owl:Class ;
+	skos:prefLabel "QuantumEspresso"@en ;
+	                   rdfs:subClassOf software:ElectronicSoftware .
+
+
+###  http://emmo.info/emmo/domain/oie/software#QuantumWise
+software:QuantumWise rdf:type owl:Class ;
+	skos:prefLabel "QuantumWise"@en ;
+	               rdfs:subClassOf software:ElectronicSoftware .
+
+
+###  http://emmo.info/emmo/domain/oie/software#SIESTA
+software:SIESTA rdf:type owl:Class ;
+	skos:prefLabel "SIESTA"@en ;
+	          rdfs:subClassOf software:ElectronicSoftware .
+
+
+###  http://emmo.info/emmo/domain/oie/software#Schrodinger
+software:Schrodinger rdf:type owl:Class ;
+	skos:prefLabel "Schrodinger"@en ;
+	               rdfs:subClassOf software:ElectronicSoftware .
+
+
+###  http://emmo.info/emmo/domain/oie/software#TURBOMOLE
+software:TURBOMOLE rdf:type owl:Class ;
+	skos:prefLabel "TURBOMOLE"@en ;
+	             rdfs:subClassOf software:ElectronicSoftware .
+
+
+###  http://emmo.info/emmo/domain/oie/software#VASP
+software:VASP rdf:type owl:Class ;
+	skos:prefLabel "VASP"@en ;
+	        rdfs:subClassOf software:ElectronicSoftware .
+
+
+###  http://emmo.info/emmo/domain/oie/software#Wien2K
+software:Wien2K rdf:type owl:Class ;
+	skos:prefLabel "Wien2K"@en ;
+	          rdfs:subClassOf software:ElectronicSoftware .
+
+
+###  http://emmo.info/emmo/domain/oie/software#Abaqus
+software:Abaqus rdf:type owl:Class ;
+	skos:prefLabel "Abaqus"@en ;
+                                        rdfs:subClassOf software:FormingProcessSoftware .
+
+
+###  http://emmo.info/emmo/domain/oie/software#Algor
+software:Algor rdf:type owl:Class ;
+	skos:prefLabel "Algor"@en ;
+                                       rdfs:subClassOf software:FormingProcessSoftware .
+
+
+###  http://emmo.info/emmo/domain/oie/software#COPRA
+software:COPRA rdf:type owl:Class ;
+	skos:prefLabel "COPRA"@en ;
+                                       rdfs:subClassOf software:FormingProcessSoftware .
+
+
+###  http://emmo.info/emmo/domain/oie/software#Catia
+software:Catia rdf:type owl:Class ;
+	skos:prefLabel "Catia"@en ;
+                                       rdfs:subClassOf software:FormingProcessSoftware .
+
+
+###  http://emmo.info/emmo/domain/oie/software#Deform
+software:Deform rdf:type owl:Class ;
+	skos:prefLabel "Deform"@en ;
+                                        rdfs:subClassOf software:FormingProcessSoftware .
+
+
+###  http://emmo.info/emmo/domain/oie/software#Forge3D
+software:Forge3D rdf:type owl:Class ;
+	skos:prefLabel "Forge3D"@en ;
+                                         rdfs:subClassOf software:FormingProcessSoftware .
+
+
+###  http://emmo.info/emmo/domain/oie/software#FormingProcessSoftware
+software:FormingProcessSoftware rdf:type owl:Class ;
+	skos:prefLabel "Forming Process software"@en ;
+	    rdfs:subClassOf software:ContinuumSoftware .
+
+
+###  http://emmo.info/emmo/domain/oie/software#Helius
+software:Helius rdf:type owl:Class ;
+	skos:prefLabel "Helius"@en ;
+                                        rdfs:subClassOf software:FormingProcessSoftware .
+
+
+###  http://emmo.info/emmo/domain/oie/software#LSDyna
+software:LSDyna rdf:type owl:Class ;
+	skos:prefLabel "LSDyna"@en ;
+                                        rdfs:subClassOf software:FormingProcessSoftware .
+
+
+###  http://emmo.info/emmo/domain/oie/software#Lagamine
+software:Lagamine rdf:type owl:Class ;
+	skos:prefLabel "Lagamine"@en ;
+                                          rdfs:subClassOf software:FormingProcessSoftware .
+
+
+###  http://emmo.info/emmo/domain/oie/software#Larstran
+software:Larstran rdf:type owl:Class ;
+	skos:prefLabel "Larstran"@en ;
+                                          rdfs:subClassOf software:FormingProcessSoftware .
+
+
+###  http://emmo.info/emmo/domain/oie/software#MADYMO
+software:MADYMO rdf:type owl:Class ;
+	skos:prefLabel "MADYMO"@en ;
+                                        rdfs:subClassOf software:FormingProcessSoftware .
+
+
+###  http://emmo.info/emmo/domain/oie/software#MSCNastran
+software:MSCNastran rdf:type owl:Class ;
+	skos:prefLabel "MSC Nastran"@en ;
+                                             rdfs:subClassOf software:FormingProcessSoftware .
+
+
+###  http://emmo.info/emmo/domain/oie/software#Metafor
+software:Metafor rdf:type owl:Class ;
+	skos:prefLabel "Metafor"@en ;
+                                         rdfs:subClassOf software:FormingProcessSoftware .
+
+
+###  http://emmo.info/emmo/domain/oie/software#Morfeo
+software:Morfeo rdf:type owl:Class ;
+	skos:prefLabel "Morfeo"@en ;
+                                        rdfs:subClassOf software:FormingProcessSoftware .
+
+
+###  http://emmo.info/emmo/domain/oie/software#PAM-Crash
+software:PAM-Crash rdf:type owl:Class ;
+	skos:prefLabel "PAM-Crash"@en ;
+                                           rdfs:subClassOf software:FormingProcessSoftware .
+
+
+###  http://emmo.info/emmo/domain/oie/software#QuickField
+software:QuickField rdf:type owl:Class ;
+	skos:prefLabel "QuickField"@en ;
+                                            rdfs:subClassOf software:FormingProcessSoftware .
+
+
+###  http://emmo.info/emmo/domain/oie/software#SimLAM
+software:SimLAM rdf:type owl:Class ;
+	skos:prefLabel "SimLAM"@en ;
+                                        rdfs:subClassOf software:FormingProcessSoftware .
+
+
+###  http://emmo.info/emmo/domain/oie/software#ZENCRACK
+software:ZENCRACK rdf:type owl:Class ;
+	skos:prefLabel "ZENCRACK"@en ;
+                                          rdfs:subClassOf software:FormingProcessSoftware .
+
+
+###  http://emmo.info/emmo/domain/oie/software#simufact.forming
+software:simufact.forming rdf:type owl:Class ;
+	skos:prefLabel "simufact.forming"@en ;
+	   rdfs:subClassOf software:FormingProcessSoftware .
+
+
+###  http://emmo.info/emmo/domain/oie/software#JoiningProcessSoftware
+software:JoiningProcessSoftware rdf:type owl:Class ;
+	skos:prefLabel "Joining Process software"@en ;
+	    rdfs:subClassOf software:ContinuumSoftware .
+
+
+###  http://emmo.info/emmo/domain/oie/software#LaserWeld3D
+software:LaserWeld3D rdf:type owl:Class ;
+	skos:prefLabel "LaserWeld3D"@en ;
+                                             rdfs:subClassOf software:JoiningProcessSoftware .
+
+
+###  http://emmo.info/emmo/domain/oie/software#Simweld
+software:Simweld rdf:type owl:Class ;
+	skos:prefLabel "Simweld"@en ;
+                                         rdfs:subClassOf software:JoiningProcessSoftware .
+
+
+###  http://emmo.info/emmo/domain/oie/software#Sorpas
+software:Sorpas rdf:type owl:Class ;
+	skos:prefLabel "Sorpas"@en ;
+                                        rdfs:subClassOf software:JoiningProcessSoftware .
+
+
+###  http://emmo.info/emmo/domain/oie/software#Sysweld
+software:Sysweld rdf:type owl:Class ;
+	skos:prefLabel "Sysweld"@en ;
+                                         rdfs:subClassOf software:JoiningProcessSoftware .
+
+
+###  http://emmo.info/emmo/domain/oie/software#VirFacWelding
+software:VirFacWelding rdf:type owl:Class ;
+	skos:prefLabel "VirFac welding"@en ;
+	 rdfs:subClassOf software:JoiningProcessSoftware .
+
+
+###  http://emmo.info/emmo/domain/oie/software#Weldware
+software:Weldware rdf:type owl:Class ;
+	skos:prefLabel "Weldware"@en ;
+                                          rdfs:subClassOf software:JoiningProcessSoftware .
+
+
+###  http://emmo.info/emmo/domain/oie/software#simufact.welding
+software:simufact.welding rdf:type owl:Class ;
+	skos:prefLabel "simufact.welding"@en ;
+	   rdfs:subClassOf software:JoiningProcessSoftware .
+
+
+###  http://emmo.info/emmo/domain/oie/software#ADINA
+software:ADINA rdf:type owl:Class ;
+	skos:prefLabel "ADINA"@en ;
+                               rdfs:subClassOf software:Meshing .
+
+
+###  http://emmo.info/emmo/domain/oie/software#Diffpack
+software:Diffpack rdf:type owl:Class ;
+	skos:prefLabel "Diffpack"@en ;
+                                  rdfs:subClassOf software:Meshing .
+
+
+###  http://emmo.info/emmo/domain/oie/software#FEDEM
+software:FEDEM rdf:type owl:Class ;
+	skos:prefLabel "FEDEM"@en ;
+                               rdfs:subClassOf software:Meshing .
+
+
+###  http://emmo.info/emmo/domain/oie/software#GiD
+software:GiD rdf:type owl:Class ;
+	skos:prefLabel "GiD"@en ;
+                             rdfs:subClassOf software:Meshing .
+
+
+###  http://emmo.info/emmo/domain/oie/software#Hypermesh
+software:Hypermesh rdf:type owl:Class ;
+	skos:prefLabel "Hypermesh"@en ;
+                                   rdfs:subClassOf software:Meshing .
+
+
+###  http://emmo.info/emmo/domain/oie/software#IDEAS
+software:IDEAS rdf:type owl:Class ;
+	skos:prefLabel "IDEAS"@en ;
+                               rdfs:subClassOf software:Meshing .
+
+
+###  http://emmo.info/emmo/domain/oie/software#Meshing
+software:Meshing rdf:type owl:Class ;
+	skos:prefLabel "Meshing"@en ;
+                                 rdfs:subClassOf software:Pre-ProcessingSoftware .
+
+
+###  http://emmo.info/emmo/domain/oie/software#PATRAN
+software:PATRAN rdf:type owl:Class ;
+	skos:prefLabel "PATRAN"@en ;
+                                rdfs:subClassOf software:Meshing .
+
+
+###  http://emmo.info/emmo/domain/oie/software#VGStudio
+software:VGStudio rdf:type owl:Class ;
+	skos:prefLabel "VGStudio"@en ;
+                                  rdfs:subClassOf software:Meshing .
+
+
+###  http://emmo.info/emmo/domain/oie/software#CAFE
+software:CAFE rdf:type owl:Class ;
+	skos:prefLabel "CAFE"@en ;
+	 rdfs:subClassOf software:MicrostructureSoftware .
+
+
+###  http://emmo.info/emmo/domain/oie/software#Clang
+software:Clang rdf:type owl:Class ;
+	skos:prefLabel "Clang"@en ;
+	  rdfs:subClassOf software:MicrostructureSoftware .
+
+
+###  http://emmo.info/emmo/domain/oie/software#DAMASK
+software:DAMASK rdf:type owl:Class ;
+	skos:prefLabel "DAMASK"@en ;
+	   rdfs:subClassOf software:MicrostructureSoftware .
+
+
+###  http://emmo.info/emmo/domain/oie/software#DICTRA
+software:DICTRA rdf:type owl:Class ;
+	skos:prefLabel "DICTRA"@en ;
+	   rdfs:subClassOf software:MicrostructureSoftware .
+
+
+###  http://emmo.info/emmo/domain/oie/software#FiPy
+software:FiPy rdf:type owl:Class ;
+	skos:prefLabel "FiPy"@en ;
+	 rdfs:subClassOf software:MicrostructureSoftware .
+
+
+###  http://emmo.info/emmo/domain/oie/software#GeoDict
+software:GeoDict rdf:type owl:Class ;
+	skos:prefLabel "GeoDict"@en ;
+	rdfs:subClassOf software:MicrostructureSoftware .
+
+
+###  http://emmo.info/emmo/domain/oie/software#MICRESS
+software:MICRESS rdf:type owl:Class ;
+	skos:prefLabel "MICRESS"@en ;
+	rdfs:subClassOf software:MicrostructureSoftware .
+
+
+###  http://emmo.info/emmo/domain/oie/software#MICROphase
+software:MICROphase rdf:type owl:Class ;
+	skos:prefLabel "MICROphase"@en ;
+	rdfs:subClassOf software:MicrostructureSoftware .
+
+
+###  http://emmo.info/emmo/domain/oie/software#MMSP
+software:MMSP rdf:type owl:Class ;
+	skos:prefLabel "MMSP"@en ;
+	 rdfs:subClassOf software:MicrostructureSoftware .
+
+
+###  http://emmo.info/emmo/domain/oie/software#MaterialsStudioAccelrys
+software:MaterialsStudioAccelrys rdf:type owl:Class ;
+	skos:prefLabel "Materials Studio Accelrys"@en ;
+	               rdfs:subClassOf software:MicrostructureSoftware .
+
+
+###  http://emmo.info/emmo/domain/oie/software#Meses
+software:Meses rdf:type owl:Class ;
+	skos:prefLabel "Meses"@en ;
+	  rdfs:subClassOf software:MicrostructureSoftware .
+
+
+###  http://emmo.info/emmo/domain/oie/software#MicrostructureSoftware
+software:MicrostructureSoftware rdf:type owl:Class ;
+	skos:prefLabel "Microstructure software"@en ;
+	             rdfs:subClassOf software:ContinuumSoftware .
+
+
+###  http://emmo.info/emmo/domain/oie/software#OOF
+software:OOF rdf:type owl:Class ;
+	skos:prefLabel "OOF"@en ;
+	rdfs:subClassOf software:MicrostructureSoftware .
+
+
+###  http://emmo.info/emmo/domain/oie/software#OpenPhase
+software:OpenPhase rdf:type owl:Class ;
+	skos:prefLabel "OpenPhase"@en ;
+	  rdfs:subClassOf software:MicrostructureSoftware .
+
+
+###  http://emmo.info/emmo/domain/oie/software#Pace3D
+software:Pace3D rdf:type owl:Class ;
+	skos:prefLabel "Pace3D"@en ;
+	   rdfs:subClassOf software:MicrostructureSoftware .
+
+
+###  http://emmo.info/emmo/domain/oie/software#Sphaeroism
+software:Sphaeroism rdf:type owl:Class ;
+	skos:prefLabel "Sphaeroism"@en ;
+	rdfs:subClassOf software:MicrostructureSoftware .
+
+
+###  http://emmo.info/emmo/domain/oie/software#TC-Prisma
+software:TC-Prisma rdf:type owl:Class ;
+	skos:prefLabel "TC-Prisma"@en ;
+	  rdfs:subClassOf software:MicrostructureSoftware .
+
+
+###  http://emmo.info/emmo/domain/oie/software#WiseTex
+software:WiseTex rdf:type owl:Class ;
+	skos:prefLabel "WiseTex"@en ;
+	rdfs:subClassOf software:MicrostructureSoftware .
+
+
+###  http://emmo.info/emmo/domain/oie/software#Simpleware
+software:Simpleware rdf:type owl:Class ;
+	skos:prefLabel "Simpleware"@en ;
+	rdfs:subClassOf software:MicrostructureSoftware ;
+	rdfs:subClassOf software:Visualisation .
+
+
+###  http://emmo.info/emmo/domain/oie/software#ASE
+software:ASE rdf:type owl:Class ;
+	skos:prefLabel "ASE"@en ;
+	         rdfs:subClassOf software:PrePost-ProcessingAtomistic .
+
+
+###  http://emmo.info/emmo/domain/oie/software#AViz
+software:AViz rdf:type owl:Class ;
+	skos:prefLabel "AViz"@en ;
+	          rdfs:subClassOf software:PrePost-ProcessingAtomistic .
+
+
+###  http://emmo.info/emmo/domain/oie/software#AtomEye
+software:AtomEye rdf:type owl:Class ;
+	skos:prefLabel "AtomEye"@en ;
+	             rdfs:subClassOf software:PrePost-ProcessingAtomistic .
+
+
+###  http://emmo.info/emmo/domain/oie/software#Jmol
+software:Jmol rdf:type owl:Class ;
+	skos:prefLabel "Jmol"@en ;
+	          rdfs:subClassOf software:PrePost-ProcessingAtomistic .
+
+
+###  http://emmo.info/emmo/domain/oie/software#OVITO
+software:OVITO rdf:type owl:Class ;
+	skos:prefLabel "OVITO"@en ;
+	           rdfs:subClassOf software:PrePost-ProcessingAtomistic .
+
+
+###  http://emmo.info/emmo/domain/oie/software#Paraview
+software:Paraview rdf:type owl:Class ;
+	skos:prefLabel "Paraview"@en ;
+	              rdfs:subClassOf software:PrePost-ProcessingAtomistic .
+
+
+###  http://emmo.info/emmo/domain/oie/software#PrePost-ProcessingAtomistic
+software:PrePost-ProcessingAtomistic rdf:type owl:Class ;
+	skos:prefLabel "Pre Post-Processing Atomistic"@en ;
+	                                   rdfs:subClassOf software:AtomisticSoftware .
+
+
+###  http://emmo.info/emmo/domain/oie/software#RasMol
+software:RasMol rdf:type owl:Class ;
+	skos:prefLabel "RasMol"@en ;
+	            rdfs:subClassOf software:PrePost-ProcessingAtomistic .
+
+
+###  http://emmo.info/emmo/domain/oie/software#VMD
+software:VMD rdf:type owl:Class ;
+	skos:prefLabel "VMD"@en ;
+	         rdfs:subClassOf software:PrePost-ProcessingAtomistic .
+
+
+###  http://emmo.info/emmo/domain/oie/software#XcrysDen
+software:XcrysDen rdf:type owl:Class ;
+	skos:prefLabel "XcrysDen"@en ;
+	              rdfs:subClassOf software:PrePost-ProcessingAtomistic .
+
+
+###  http://emmo.info/emmo/domain/oie/software#pizza.py
+software:pizza.py rdf:type owl:Class ;
+	skos:prefLabel "pizza.py"@en ;
+	              rdfs:subClassOf software:PrePost-ProcessingAtomistic .
+
+
+###  http://emmo.info/emmo/domain/oie/software#CoatingThickSoftware
+software:CoatingThickSoftware rdf:type owl:Class ;
+	skos:prefLabel "Coating thick software"@en ;
+	      rdfs:subClassOf software:ContinuumSoftware .
+
+
+###  http://emmo.info/emmo/domain/oie/software#CoatingThin
+software:CoatingThin rdf:type owl:Class ;
+	skos:prefLabel "Coating thin"@en ;
+	   rdfs:subClassOf software:AtomisticSoftware .
+
+
+###  http://emmo.info/emmo/domain/oie/software#ContinuumSoftware
+software:ContinuumSoftware rdf:type owl:Class ;
+	skos:prefLabel "Continuum software"@en ;
+	  rdfs:subClassOf software:ModellingSoftware .
+
+
+###  http://emmo.info/emmo/domain/oie/software#CorrosionSoftware
+software:CorrosionSoftware rdf:type owl:Class ;
+	skos:prefLabel "Corrosion software"@en ;
+	rdfs:subClassOf software:ContinuumSoftware .
+
+
+###  http://emmo.info/emmo/domain/oie/software#DatabaseSoftware
+software:DatabaseSoftware rdf:type owl:Class ;
+	skos:prefLabel "Database software"@en ;
+	rdfs:subClassOf software:Software ;
+	rdfs:subClassOf emmo:EMMO_3b031fa9_8623_4ea5_8b57_bcafb70c5c8b .
+
+
+###  http://emmo.info/emmo/domain/oie/software#Database
+software:Database rdf:type owl:Class ;
+	skos:prefLabel "Database"@en ;
+	rdfs:subClassOf software:DatabaseSoftware .
+
+
+###  http://emmo.info/emmo/domain/oie/software#Linux
+software:Linux rdf:type owl:Class ;
+	skos:prefLabel "Linux"@en ;
+                                           rdfs:subClassOf software:OperatingSystem .
+
+
+###  http://emmo.info/emmo/domain/oie/software#Mac
+software:Mac rdf:type owl:Class ;
+	skos:prefLabel "Mac"@en ;
+                                         rdfs:subClassOf software:OperatingSystem .
+
+
+###  http://emmo.info/emmo/domain/oie/software#MachiningSoftware
+software:MachiningSoftware rdf:type owl:Class ;
+	skos:prefLabel "Machining software"@en ;
+	  rdfs:subClassOf software:ContinuumSoftware .
+
+
+###  http://emmo.info/emmo/domain/oie/software#MesoscopicSoftware
+software:MesoscopicSoftware rdf:type owl:Class ;
+	skos:prefLabel "Mesoscopic software"@en ;
+	   rdfs:subClassOf software:ModellingSoftware .
+
+
+###  http://emmo.info/emmo/domain/oie/software#ModellingSoftware
+software:ModellingSoftware rdf:type owl:Class ;
+	skos:prefLabel "Modelling software"@en ;
+	rdfs:subClassOf software:Software ;
+	rdfs:subClassOf emmo:EMMO_3b031fa9_8623_4ea5_8b57_bcafb70c5c8b .
+
+
+###  http://emmo.info/emmo/domain/oie/software#OperatingSystem
+software:OperatingSystem rdf:type owl:Class ;
+	skos:prefLabel "Operating system"@en ;
+	rdfs:subClassOf software:Software ;
+	owl:equivalentClass emmo:EMMO_58b17cac_3125_4486_9b9c_8c45ac254040 .
+
+
+###  http://emmo.info/emmo/domain/oie/software#PlatformFramework
+software:PlatformFramework rdf:type owl:Class ;
+	skos:prefLabel "PlatformFramework"@en ;
+	rdfs:subClassOf software:SoftwarePlatform .
+
+
+###  http://emmo.info/emmo/domain/oie/software#Post-ProcessingSoftware
+software:Post-ProcessingSoftware rdf:type owl:Class ;
+	skos:prefLabel "Post-processing software"@en ;
+	        rdfs:subClassOf software:Pre-PostProcessingSoftware .
+
+
+###  http://emmo.info/emmo/domain/oie/software#Pre-PostProcessingSoftware
+software:Pre-PostProcessingSoftware rdf:type owl:Class ;
+	skos:prefLabel "Pre-Post processing software"@en ;
+	rdfs:subClassOf software:Software ;
+	rdfs:subClassOf emmo:EMMO_3b031fa9_8623_4ea5_8b57_bcafb70c5c8b .
+
+
+###  http://emmo.info/emmo/domain/oie/software#Pre-ProcessingSoftware
+software:Pre-ProcessingSoftware rdf:type owl:Class ;
+	skos:prefLabel "Pre-processing software"@en ;
+	       rdfs:subClassOf software:Pre-PostProcessingSoftware .
+
+
+###  http://emmo.info/emmo/domain/oie/software#SinteringAMSoftware
+software:SinteringAMSoftware rdf:type owl:Class ;
+	skos:prefLabel "Sintering AM software"@en ;
+	     rdfs:subClassOf software:ContinuumSoftware .
+
+
+###  http://emmo.info/emmo/domain/oie/software#SoftwareEcosystem
+software:SoftwareEcosystem rdf:type owl:Class ;
+	skos:prefLabel "SoftwareEcosystem"@en ;
+	 rdfs:subClassOf software:SoftwarePlatform .
+
+
+###  http://emmo.info/emmo/domain/oie/software#SoftwarePlatform
+software:SoftwarePlatform rdf:type owl:Class ;
+	skos:prefLabel "Software platform"@en ;
+	rdfs:subClassOf software:Software ;
+	rdfs:subClassOf emmo:EMMO_3b031fa9_8623_4ea5_8b57_bcafb70c5c8b .
+
+
+###  http://emmo.info/emmo/domain/oie/software#SoftwareUsingStructuredData
+software:SoftwareUsingStructuredData rdf:type owl:Class ;
+	skos:prefLabel "Software using structured data"@en ;
+	              rdfs:subClassOf software:DatabaseSoftware .
+
+
+###  http://emmo.info/emmo/domain/oie/software#SoftwareUsingUnstructuredData
+software:SoftwareUsingUnstructuredData rdf:type owl:Class ;
+	skos:prefLabel "Software using unstructured data"@en ;
+	                rdfs:subClassOf software:DatabaseSoftware .
+
+
+###  http://emmo.info/emmo/domain/oie/software#Windows
+software:Windows rdf:type owl:Class ;
+	skos:prefLabel "Windows"@en ;
+                                             rdfs:subClassOf software:OperatingSystem .
+
+
+###  http://emmo.info/emmo/domain/oie/software#Software
+software:Software rdf:type owl:Class ;
+	skos:prefLabel "Software"@en ;
+    rdfs:subClassOf manufacturing:EMMO_00b85655_f20c_4e83_b90e_094e8ea7e48f ;
+    owl:equivalentClass emmo:EMMO_65411b3d_c8d3_4111_86a9_a2ce0a64c647 ;
+    rdfs:comment "software, i.e., an entity representing a software product"^^xsd:string .
+
+
+###  http://emmo.info/emmo/domain/oie/software#CatCalc
+software:CatCalc rdf:type owl:Class ;
+	skos:prefLabel "CatCalc"@en ;
+	   rdfs:subClassOf software:ThermodynamicsSoftware .
+
+
+###  http://emmo.info/emmo/domain/oie/software#DICTRA
+software:DICTRA rdf:type owl:Class ;
+	skos:prefLabel "DICTRA"@en ;
+	  rdfs:subClassOf software:ThermodynamicsSoftware .
+
+
+###  http://emmo.info/emmo/domain/oie/software#FactSage
+software:FactSage rdf:type owl:Class ;
+	skos:prefLabel "FactSage"@en ;
+	rdfs:subClassOf software:ThermodynamicsSoftware .
+
+
+###  http://emmo.info/emmo/domain/oie/software#JMatPro
+software:JMatPro rdf:type owl:Class ;
+	skos:prefLabel "JMatPro"@en ;
+	   rdfs:subClassOf software:ThermodynamicsSoftware .
+
+
+###  http://emmo.info/emmo/domain/oie/software#MTDate
+software:MTDate rdf:type owl:Class ;
+	skos:prefLabel "MTDate"@en ;
+	  rdfs:subClassOf software:ThermodynamicsSoftware .
+
+
+###  http://emmo.info/emmo/domain/oie/software#MatCalc
+software:MatCalc rdf:type owl:Class ;
+	skos:prefLabel "MatCalc"@en ;
+	   rdfs:subClassOf software:ThermodynamicsSoftware .
+
+
+###  http://emmo.info/emmo/domain/oie/software#OpenCalphad
+software:OpenCalphad rdf:type owl:Class ;
+	skos:prefLabel "Open Calphad"@en ;
+	 rdfs:subClassOf software:ThermodynamicsSoftware .
+
+
+###  http://emmo.info/emmo/domain/oie/software#Pandat
+software:Pandat rdf:type owl:Class ;
+	skos:prefLabel "Pandat"@en ;
+	  rdfs:subClassOf software:ThermodynamicsSoftware .
+
+
+###  http://emmo.info/emmo/domain/oie/software#PrecipiCalc
+software:PrecipiCalc rdf:type owl:Class ;
+	skos:prefLabel "PrecipiCalc"@en ;
+	rdfs:subClassOf software:ThermodynamicsSoftware .
+
+
+###  http://emmo.info/emmo/domain/oie/software#TC-Prisma
+software:TC-Prisma rdf:type owl:Class ;
+	skos:prefLabel "TC-Prisma"@en ;
+	 rdfs:subClassOf software:ThermodynamicsSoftware .
+
+
+###  http://emmo.info/emmo/domain/oie/software#Thermo-Calc
+software:Thermo-Calc rdf:type owl:Class ;
+	skos:prefLabel "Thermo-Calc"@en ;
+	rdfs:subClassOf software:ThermodynamicsSoftware .
+
+
+###  http://emmo.info/emmo/domain/oie/software#ThermodynamicsSoftware
+software:ThermodynamicsSoftware rdf:type owl:Class ;
+	skos:prefLabel "Thermodynamics software"@en ;
+	            rdfs:subClassOf software:ContinuumSoftware .
+
+
+###  http://emmo.info/emmo/domain/oie/software#Abaqus
+software:Abaqus rdf:type owl:Class ;
+	skos:prefLabel "Abaqus"@en ;
+	 rdfs:subClassOf software:ThermomechanicsSoftware .
+
+
+###  http://emmo.info/emmo/domain/oie/software#Ansys
+software:Ansys rdf:type owl:Class ;
+	skos:prefLabel "Ansys"@en ;
+	rdfs:subClassOf software:ThermomechanicsSoftware .
+
+
+###  http://emmo.info/emmo/domain/oie/software#Diffpack
+software:Diffpack rdf:type owl:Class ;
+	skos:prefLabel "Diffpack"@en ;
+	   rdfs:subClassOf software:ThermomechanicsSoftware .
+
+
+###  http://emmo.info/emmo/domain/oie/software#FEAP
+software:FEAP rdf:type owl:Class ;
+	skos:prefLabel "FEAP"@en ;
+                                              rdfs:subClassOf software:ThermomechanicsSoftware .
+
+
+###  http://emmo.info/emmo/domain/oie/software#FEDEM
+software:FEDEM rdf:type owl:Class ;
+	skos:prefLabel "FEDEM"@en ;
+	rdfs:subClassOf software:ThermomechanicsSoftware .
+
+
+###  http://emmo.info/emmo/domain/oie/software#MSCMarc
+software:MSCMarc rdf:type owl:Class ;
+	skos:prefLabel "MSC Marc"@en ;
+	   rdfs:subClassOf software:ThermomechanicsSoftware .
+
+
+###  http://emmo.info/emmo/domain/oie/software#PAMCrash
+software:PAMCrash rdf:type owl:Class ;
+	skos:prefLabel "PAMCrash"@en ;
+	   rdfs:subClassOf software:ThermomechanicsSoftware .
+
+
+###  http://emmo.info/emmo/domain/oie/software#SAMCef
+software:SAMCef rdf:type owl:Class ;
+	skos:prefLabel "SAMCef"@en ;
+	 rdfs:subClassOf software:ThermomechanicsSoftware .
+
+
+###  http://emmo.info/emmo/domain/oie/software#ThermomechanicsSoftware
+software:ThermomechanicsSoftware rdf:type owl:Class ;
+	skos:prefLabel "Thermomechanics software"@en ;
+	            rdfs:subClassOf software:ContinuumSoftware .
+
+
+###  http://emmo.info/emmo/domain/oie/software#Paraview
+software:Paraview rdf:type owl:Class ;
+	skos:prefLabel "Paraview"@en ;
+                                        rdfs:subClassOf software:Visualisation .
+
+
+###  http://emmo.info/emmo/domain/oie/software#Visualisation
+software:Visualisation rdf:type owl:Class ;
+	skos:prefLabel "Visualisation"@en ;
+                                             rdfs:subClassOf software:Post-ProcessingSoftware .                                          

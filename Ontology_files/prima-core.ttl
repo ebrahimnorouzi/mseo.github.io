@@ -1,0 +1,260 @@
+@prefix : <https://purls.helmholtz-metadaten.de/prima/core#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+
+dcterms:contributor a owl:AnnotationProperty .
+
+dcterms:created a owl:AnnotationProperty .
+
+dcterms:creator a owl:AnnotationProperty .
+
+dcterms:description a owl:AnnotationProperty .
+
+dcterms:license a owl:AnnotationProperty .
+
+dcterms:title a owl:AnnotationProperty .
+
+vann:preferredNamespacePrefix a owl:AnnotationProperty .
+
+prov:endedAtTime a owl:DatatypeProperty .
+
+prov:startedAtTime a owl:DatatypeProperty .
+
+prov:used a owl:ObjectProperty .
+
+<https://purls.helmholtz-metadaten.de/prima/core> a owl:Ontology ;
+    dcterms:contributor "Elda Osmenaj"@en,
+        "Mirco Panighel"@en ;
+    dcterms:created "2024-01-26"@en ;
+    dcterms:creator "Ahmad Zainul Ihsan"@en,
+        "Mehrdad Jalali"@en,
+        "Rossella Aversa"@en ;
+    dcterms:license <http://creativecommons.org/licenses/by/3.0/> ;
+    dcterms:title "PRIMA Ontology - Core Module"@en ;
+    vann:preferredNamespacePrefix "PRIMA"@en ;
+    rdfs:comment "This is the core module of the Provenance Information for Materials Science (PRIMA) Ontology"@en ;
+    rdfs:seeAlso <https://github.com/Materials-Data-Science-and-Informatics/MDMC-NEP-top-level-ontology> ;
+    owl:versionInfo "2.0"@en .
+
+:Instrument a owl:Class ;
+    rdfs:comment "Physical or virtual identifiable piece of Equipment used to perform a Data Acquisition and to generate Raw Data."@en ;
+    rdfs:subClassOf :Equipment ;
+    :MDMCNEPGlossaryDefinition "Physical or virtual identifiable piece of Equipment used to perform a Data Acquisition and to generate Raw Data. The Instrument is located in a Laboratory hosted by an Institution and/or can be virtually or remotely accessed. A virtual Instrument may be any computational resource or HPC infrastructure (cloud infrastructure or supercomputer) needed to perform Calculations or Simulations."@en .
+
+:MDMCNEPGlossaryDefinition a owl:AnnotationProperty ;
+    rdfs:subPropertyOf skos:definition .
+
+:ProjectMemberRole a owl:Class ;
+    rdfs:comment "Project member role is an agent role that has role of project member"@en ;
+    rdfs:subClassOf :AgentRole .
+
+:contributorType a owl:ObjectProperty ;
+    rdfs:isDefinedBy "https://datacite-metadata-schema.readthedocs.io/en/4.5/appendices/appendix-1/contributorType/)" ;
+    rdfs:subPropertyOf :performsAgentRole .
+
+skos:definition a owl:AnnotationProperty .
+
+prov:Activity a owl:Class .
+
+prov:SoftwareAgent a owl:Class ;
+    rdfs:subClassOf prov:Agent .
+
+:Project a owl:Class ;
+    rdfs:comment "Project is an enterprise (potentially individual but typically collaborative) of one or more research users, planned to perform one or more studies." ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :hasStudy ;
+            owl:someValuesFrom :Study ],
+        [ a owl:Restriction ;
+            owl:onProperty prov:wasAttributedTo ;
+            owl:someValuesFrom :ResearchUser ],
+        prov:Entity ;
+    :MDMCNEPGlossaryDefinition "Project is an enterprise (potentially individual but typically collaborative) of one or more research users, planned to perform one or more studies."@en .
+
+:System a owl:Class ;
+    rdfs:comment "Physical or digital entity or set of entities with distinctive properties (structural, chemical, dimensional, functional or others) which is the subject of one or more actions or investigations."@en ;
+    rdfs:subClassOf prov:Entity ;
+    :MDMCNEPGlossaryDefinition "Physical or digital entity or set of entities with distinctive properties (structural, chemical, dimensional, functional or others) which is the subject of one or more actions or investigations. According to this definition, Input, Precursor, Sample, Sample Component, and Model are particular types of System."@en .
+
+:hasDataAcquisition a owl:ObjectProperty ;
+    rdfs:label "has data acquisition"@en ;
+    rdfs:comment "hasDataAcquisition represents the relationship between study to data acquisition"@en ;
+    rdfs:range :DataAcquisition .
+
+:hasDataAnalysisLifeCycle a owl:ObjectProperty ;
+    rdfs:label "has data analysis life cycle"@en ;
+    rdfs:comment "hasDataAnalysisLifecycle represents the relationship between study to data analysis life cycle"@en ;
+    rdfs:range :DataAnalysisLifecycle .
+
+:hasStudy a owl:ObjectProperty ;
+    rdfs:label "has study"@en ;
+    rdfs:comment "hasStudy represents the relationship between project to study."@en ;
+    rdfs:domain :Project ;
+    rdfs:range :Study .
+
+:operates a owl:ObjectProperty ;
+    rdfs:label "operates"@en ;
+    rdfs:comment "operates represents the relationship between equipment to research user"@en ;
+    rdfs:domain :ResearchUser ;
+    rdfs:range :Equipment .
+
+:usesEquipment a owl:ObjectProperty ;
+    rdfs:label "uses equipment"@en ;
+    rdfs:comment "usesEquipment represents the relationship between data acquisition to equipment"@en ;
+    rdfs:range :Equipment .
+
+:usesResearchSoftware a owl:ObjectProperty ;
+    rdfs:label "uses research software"@en ;
+    rdfs:comment "usesResearchSoftware represents the relationship between data analysis lifecycle to research software"@en ;
+    rdfs:domain :DataAnalysisLifecycle ;
+    rdfs:range :ResearchSoftware .
+
+<https://w3id.org/pmd/co/DigitalEntity> a owl:Class ;
+    rdfs:subClassOf prov:Entity .
+
+<http://nfdi.fiz-karlsruhe.de/ontology/Specification> a owl:Class ;
+    rdfs:subClassOf prov:Entity .
+
+prov:wasAssociatedWith a owl:ObjectProperty .
+
+:Study a owl:Class ;
+    rdfs:comment "Study is a set of one or more experiments and corresponding data analysis lifecycle performed by one or more research users who are part of the same project." ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty prov:wasAttributedTo ;
+            owl:someValuesFrom :ResearchUser ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasDataAnalysisLifeCycle ;
+            owl:someValuesFrom :DataAnalysisLifecycle ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasDataAcquisition ;
+            owl:someValuesFrom :DataAcquisition ],
+        prov:Entity ;
+    :MDMCNEPGlossaryDefinition "Set of all the processes and activities performed by one or more research users, who are part of the same project, with the purpose of verifying, falsifying or establishing the validity of a hypothesis and supporting the answer to some scientific research question (i.e., Conclusions). The output of a study is usually reported in one or more scientific publications and may be supplemented by publication data."@en .
+
+:hasSetting a owl:ObjectProperty ;
+    rdfs:label "has setting"@en ;
+    rdfs:comment "hasSetting represents the relationship between equipment or research software to setting"@en ;
+    rdfs:domain [ a owl:Class ;
+            owl:unionOf ( :Equipment :ResearchSoftware ) ] ;
+    rdfs:range :Setting .
+
+:hasTechnique a owl:ObjectProperty ;
+    rdfs:label "has technique"@en ;
+    rdfs:comment "hasTechnique represents the relationship between data acquisition or data analysis lifecycle to technique"@en ;
+    rdfs:domain [ a owl:Class ;
+            owl:unionOf ( :DataAcquisition :DataAnalysisLifecycle ) ] ;
+    rdfs:range :Technique .
+
+:performsAgentRole a owl:ObjectProperty ;
+    rdfs:label "performs agent role"@en ;
+    rdfs:comment "performsAgentRole relates prov:Agent with AgentRole"@en ;
+    rdfs:domain prov:Agent ;
+    rdfs:range :AgentRole .
+
+<https://w3id.org/pmd/co/Process> a owl:Class ;
+    rdfs:subClassOf prov:Activity .
+
+<https://w3id.org/pmd/co/output> a owl:ObjectProperty .
+
+prov:wasAttributedTo a owl:ObjectProperty .
+
+:AgentRole a owl:Class .
+
+:DataAcquisition a owl:Class ;
+    rdfs:comment "Set of actions carried out by one or more research users, performed on a system or a set of them to generate a single self-consistent unit of raw data using a technique, an instrument and other equipment under constant or varying controlled conditions described by setting(s), depending on the particular research context."@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty prov:wasAssociatedWith ;
+            owl:someValuesFrom :ResearchUser ],
+        [ a owl:Restriction ;
+            owl:onProperty <https://w3id.org/pmd/co/input> ;
+            owl:someValuesFrom :System ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasTechnique ;
+            owl:someValuesFrom :Technique ],
+        [ a owl:Restriction ;
+            owl:onProperty :usesEquipment ;
+            owl:someValuesFrom :Equipment ],
+        [ a owl:Restriction ;
+            owl:onProperty <https://w3id.org/pmd/co/input> ;
+            owl:someValuesFrom :ResearchData ],
+        [ a owl:Restriction ;
+            owl:onProperty <https://w3id.org/pmd/co/output> ;
+            owl:someValuesFrom :ResearchData ],
+        <https://w3id.org/pmd/co/Process> ;
+    :MDMCNEPGlossaryDefinition "Set of actions carried out by one or more Research Users, performed on a System or a set of them to generate a single self-consistent unit of Raw Data using a Technique, an Instrument and other Equipment under constant or varying controlled conditions described by Settings, depending on the particular research context. Data Acquisition may be an experimental (Measurement) or a computational (Calculation, Simulation) process. Data Acquisition is specific to Technique: an investigation on the same System conducted using a different Technique implies a different Data Acquisition. The output of Data Acquisition is Raw Data." .
+
+:ResearchSoftware a owl:Class ;
+    rdfs:comment "Research software is software used to generate, process, analyse or access research data during any of the processes included in the data analysis lifecycle (possibly including data rendering, visualization, plotting)."@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :hasSetting ;
+            owl:someValuesFrom :Setting ],
+        prov:SoftwareAgent ;
+    :MDMCNEPGlossaryDefinition "Any software used to process, analyze or visualize Research Data (including data rendering and/or plotting). Depending on the research context, Research Software can be used during Model Preparation, Data Processing, Data Analysis or Data Interpretation. Any software used during Fabrication, Sample Preparation or Data Acquisition is considered part of the Instrument and should be described as such."@en .
+
+:Setting a owl:Class ;
+    rdfs:comment "Set of configuration parameters which may be involved, for example, in a data acquisition (e.g., settings of the instrument), in any of the processes included in the data analysis lifecycle (e.g., settings of the research software), or to describe a model (e.g., by specifying the type of solver used)."@en ;
+    rdfs:subClassOf <http://nfdi.fiz-karlsruhe.de/ontology/Specification> ;
+    :MDMCNEPGlossaryDefinition "Set of configuration parameters which may be involved, for example, in a Data Acquisition (e.g., Settings of the Instrument), in any of the processes included in the Data Analysis Lifecycle (e.g., Settings of the Research Software), or to describe a Model (e.g., by specifying the type of solver used)."@en .
+
+:Technique a owl:Class ;
+    rdfs:comment "Any experimental, theoretical or computational method used during data acquisition or during any of the processes included in the data analysis lifecycle to acquire, process or analyze research data about a system or a set of them with an instrument."@en ;
+    rdfs:subClassOf <http://nfdi.fiz-karlsruhe.de/ontology/Specification> ;
+    :MDMCNEPGlossaryDefinition "Any experimental, theoretical or computational method used during Data Acquisition or during any of the processes included in the Data Analysis Lifecycle to acquire, process or analyze Research Data about a System or a set of them with an Instrument."@en .
+
+<https://w3id.org/pmd/co/input> a owl:ObjectProperty .
+
+prov:Agent a owl:Class .
+
+:DataAnalysisLifecycle a owl:Class ;
+    rdfs:comment "Set of processes carried out by one or more research users, performed on research data using one or more techniques and/or research software in order to produce synthesized knowledge (e.g., to detect patterns, determine relationships, develop explanations, test hypotheses and/or prove theories) and to eventually suggest the conclusions of a study."@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty <https://w3id.org/pmd/co/output> ;
+            owl:someValuesFrom :ResearchData ],
+        [ a owl:Restriction ;
+            owl:onProperty :usesResearchSoftware ;
+            owl:someValuesFrom :ResearchSoftware ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasTechnique ;
+            owl:someValuesFrom :Technique ],
+        [ a owl:Restriction ;
+            owl:onProperty <https://w3id.org/pmd/co/input> ;
+            owl:someValuesFrom :ResearchData ],
+        [ a owl:Restriction ;
+            owl:onProperty prov:wasAssociatedWith ;
+            owl:someValuesFrom :ResearchUser ],
+        <https://w3id.org/pmd/co/Process> ;
+    :MDMCNEPGlossaryDefinition "Set of processes carried out by one or more Research Users, performed on Research Data using one or more Techniques and/or Research Software in order to produce synthesized knowledge (e.g., to detect patterns, determine relationships, develop explanations, test hypotheses and/or prove theories) and to eventually suggest the Conclusions of a Study. Data Analysis Lifecycle includes (but is not limited to): Data Processing, Data Analysis and Data Interpretation. These processes may be iterative and may be combined in chains or workflows."@en .
+
+:ResearchData a owl:Class ;
+    rdfs:comment "Data collected, created or examined by one or more research users to be analyzed or considered as a basis for reasoning, discussion or calculation in a research context, with the purpose of generating, verifying and validating original scientific claims that support the answer to some specific research question (i.e., conclusions)."@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty prov:wasAttributedTo ;
+            owl:someValuesFrom :ResearchUser ],
+        <https://w3id.org/pmd/co/DigitalEntity> ;
+    :MDMCNEPGlossaryDefinition "Data collected, created or examined by one or more Research Users to be analyzed or considered as a basis for reasoning, discussion or calculation in a research context, with the purpose of generating, verifying and validating original scientific claims that support the answer to some specific research question (i.e., Conclusions). Examples of Research Data include files containing the Settings of a Model, as well as any digital resource input or output of Data Acquisition, Data Processing or Data Analysis. According to this definition, Raw Data, Processed Data, Analyzed Data and Reference Data are particular types of Research Data. Research Data is typically in the form of a data file, but it may potentially be a data stream or any other form of data which is relevant in a particular data management context. Research Data may be described by Metadata and may be stored in a Data Collaboration Platform and/or in a Data Repository. Research Data may be part of a Dataset."@en .
+
+prov:Entity a owl:Class .
+
+:Equipment a owl:Class ;
+    rdfs:comment "Any kind of physical or virtual item, device, machine or other tools used to perform one or more Fabrication(s), Sample Preparation(s), Model Preparation(s), Data Acquisition(s) and/or any of the processes included in the Data Analysis Lifecycle."@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :hasSetting ;
+            owl:someValuesFrom :Setting ],
+        prov:Agent ;
+    :MDMCNEPGlossaryDefinition "Any kind of physical or virtual item, device, machine or other tools used to perform one or more Fabrication(s), Sample Preparation(s), Model Preparation(s), Data Acquisition(s) and/or any of the processes included in the Data Analysis Lifecycle. Usually, the Equipment is located in a Laboratory hosted by an Institution and/or can be virtually or remotely accessed. Equipment is usually an investment. According to this definition, an Instrument is a particular type of Equipment."@en .
+
+:ResearchUser a owl:Class ;
+    rdfs:comment "Research user is an agent or person, usually member of a project, who conducts any part of the experiment(s), or performs any of the steps of the data analysis lifecycle during the course of one or more studies."@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :performsAgentRole ;
+            owl:someValuesFrom :AgentRole ],
+        [ a owl:Restriction ;
+            owl:onProperty :operates ;
+            owl:someValuesFrom :Equipment ],
+        prov:Agent ;
+    :MDMCNEPGlossaryDefinition "Person, usually member of a project, who conducts any part of the experiment(s), or performs any of the steps of the data analysis lifecycle during the course of one or more studies, in order to collect and/or analyse research data, or is interested in reusing research data collected by a third party (e.g., reference data) with the final aim to extract insights that support the answer to some specific research question (i.e., conclusions). Research users may be assigned with a role (e.g., principal investigator, Instrument scientist, project member)."@en .
+

@@ -1,0 +1,2997 @@
+@prefix : <http://ktmfk.de/ontology/tribAIn> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix mat: <http://ktmfk.de/ontology/tribAIn/materialMetadata/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix tAI: <http://ktmfk.de/ontology/tribAIn/> .
+@prefix uom: <http://ktmfk.de/ontology/tribAIn/unitOfMeasurementMetadata/> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://ktmfk.de/ontology/tribAIn> .
+
+<http://ktmfk.de/ontology/tribAIn> rdf:type owl:Ontology ;
+                                    owl:versionIRI <http://ktmfk.de/ontology/tribAIn> ;
+                                    dc:creator """Ontology engineer: Patricia Kügler
+Domain expert: Max Marian""" ;
+                                    dc:rights "This work is licensed under a Creative Commons Attribution 4.0 International License. http://creativecommons.org/licenses/by/4.0/" ;
+                                    dc:title "tribAIn - Derived from the ancient Greek word “tribein” (= rubbing) and the acronym “AI” (= Artificial Intelligence)" .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://ktmfk.de/ontology/tribAIn/FROM
+tAI:FROM rdf:type owl:AnnotationProperty ;
+         rdfs:comment """To sign, from where a concept or definition comes from. If used as Annotation to rdfs:comment, it is the source of the comment. If used as Annotation to a concept or property, it signs the source of it.
+If the concept and the definition is from the same source, it is sufficient to sign only the concept.""" .
+
+
+###  http://ktmfk.de/ontology/tribAIn/SampleBodyID
+tAI:SampleBodyID rdf:type owl:AnnotationProperty ;
+                 rdfs:comment "This annotation property is used to document a specific ID, which signs the physical individual, which was used as counterbody in the experimental setup." ;
+                 rdfs:range tAI:Body .
+
+
+###  http://ktmfk.de/ontology/tribAIn/SampleCounterBodyID
+tAI:SampleCounterBodyID rdf:type owl:AnnotationProperty ;
+                        rdfs:comment "This annotation property is used to document a specific ID, which signs the physical individual, which was used as counterbody in the experimental setup." ;
+                        rdfs:domain tAI:CounterBody .
+
+
+###  http://ktmfk.de/ontology/tribAIn/textualDescription
+tAI:textualDescription rdf:type owl:AnnotationProperty .
+
+
+###  http://ktmfk.de/ontology/tribAIn/textualHypothesis
+tAI:textualHypothesis rdf:type owl:AnnotationProperty ;
+                      rdfs:comment "The annotation property for explicit stating the textual description of a experimental hypothesis or research question, which is described, for instance in a publication." ;
+                      rdfs:range xsd:string ;
+                      rdfs:domain tAI:ExperimentalHypothesis .
+
+
+###  http://ktmfk.de/ontology/tribAIn/textualInterpretation
+tAI:textualInterpretation rdf:type owl:AnnotationProperty ;
+                          rdfs:comment "The annotation property for explicit stating the textual description of a results interpretation, which is described, for instance in a publication." ;
+                          rdfs:range xsd:string ;
+                          rdfs:domain tAI:ExperimentalResults .
+
+
+###  http://ktmfk.de/ontology/tribAIn/materialMetadata/composition
+mat:composition rdf:type owl:AnnotationProperty ;
+                rdfs:subPropertyOf mat:matMetadata .
+
+
+###  http://ktmfk.de/ontology/tribAIn/materialMetadata/matMetadata
+mat:matMetadata rdf:type owl:AnnotationProperty ;
+                rdfs:domain tAI:Material .
+
+
+###  http://ktmfk.de/ontology/tribAIn/materialMetadata/materialNumber
+mat:materialNumber rdf:type owl:AnnotationProperty ;
+                   rdfs:subPropertyOf mat:matMetadata .
+
+
+###  http://ktmfk.de/ontology/tribAIn/materialMetadata/norm
+mat:norm rdf:type owl:AnnotationProperty ;
+         rdfs:subPropertyOf mat:matMetadata .
+
+
+###  http://ktmfk.de/ontology/tribAIn/materialMetadata/symbol
+mat:symbol rdf:type owl:AnnotationProperty ;
+           rdfs:subPropertyOf mat:matMetadata .
+
+
+###  http://ktmfk.de/ontology/tribAIn/unitOfMeasurementMetadata/symbol
+uom:symbol rdf:type owl:AnnotationProperty ;
+           rdfs:subPropertyOf uom:uomMetadata .
+
+
+###  http://ktmfk.de/ontology/tribAIn/unitOfMeasurementMetadata/uomMetadata
+uom:uomMetadata rdf:type owl:AnnotationProperty ;
+                rdfs:domain tAI:Unit .
+
+
+###  http://purl.org/dc/elements/1.1/creator
+dc:creator rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/rights
+dc:rights rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/title
+dc:title rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://ktmfk.de/ontology/tribAIn/assessedBy
+tAI:assessedBy rdf:type owl:ObjectProperty ,
+                        owl:TransitiveProperty .
+
+
+###  http://ktmfk.de/ontology/tribAIn/carriesOut
+tAI:carriesOut rdf:type owl:ObjectProperty ;
+               owl:inverseOf tAI:isCarriedOutBy ;
+               rdfs:domain tAI:Device ;
+               rdfs:range tAI:Procedure .
+
+
+###  http://ktmfk.de/ontology/tribAIn/coatedWith
+tAI:coatedWith rdf:type owl:ObjectProperty ;
+               rdfs:subPropertyOf owl:topObjectProperty ;
+               rdfs:domain tAI:Substrate .
+
+
+###  http://ktmfk.de/ontology/tribAIn/comparedWith
+tAI:comparedWith rdf:type owl:ObjectProperty ,
+                          owl:SymmetricProperty .
+
+
+###  http://ktmfk.de/ontology/tribAIn/hasAmbientMedium
+tAI:hasAmbientMedium rdf:type owl:ObjectProperty ;
+                     rdfs:subPropertyOf tAI:hasPart ;
+                     owl:inverseOf tAI:isAmbientMediumOf ;
+                     rdfs:domain tAI:TriboSystem ;
+                     rdfs:range tAI:AmbientMedium .
+
+
+###  http://ktmfk.de/ontology/tribAIn/hasBody
+tAI:hasBody rdf:type owl:ObjectProperty ;
+            rdfs:subPropertyOf tAI:hasPart ;
+            owl:inverseOf tAI:isBodyOf ;
+            rdfs:domain tAI:TriboSystem ;
+            rdfs:range tAI:Body .
+
+
+###  http://ktmfk.de/ontology/tribAIn/hasComponent
+tAI:hasComponent rdf:type owl:ObjectProperty ;
+                 rdfs:subPropertyOf tAI:hasPart ;
+                 owl:inverseOf tAI:isComponentOf ;
+                 rdfs:range tAI:Component .
+
+
+###  http://ktmfk.de/ontology/tribAIn/hasContact
+tAI:hasContact rdf:type owl:ObjectProperty ;
+               rdfs:subPropertyOf tAI:hasContent ;
+               owl:inverseOf tAI:isContactOf ;
+               rdfs:range tAI:Contact .
+
+
+###  http://ktmfk.de/ontology/tribAIn/hasContent
+tAI:hasContent rdf:type owl:ObjectProperty ;
+               owl:inverseOf tAI:isContentOf .
+
+
+###  http://ktmfk.de/ontology/tribAIn/hasCounterBody
+tAI:hasCounterBody rdf:type owl:ObjectProperty ;
+                   rdfs:subPropertyOf tAI:hasPart ;
+                   owl:inverseOf tAI:isCounterBodyOf ;
+                   rdfs:domain tAI:TriboSystem ;
+                   rdfs:range tAI:CounterBody .
+
+
+###  http://ktmfk.de/ontology/tribAIn/hasHypothesis
+tAI:hasHypothesis rdf:type owl:ObjectProperty ;
+                  rdfs:subPropertyOf tAI:hasPart ;
+                  owl:inverseOf tAI:isHypothesisOf ;
+                  rdfs:range tAI:ExperimentalHypothesis .
+
+
+###  http://ktmfk.de/ontology/tribAIn/hasInput
+tAI:hasInput rdf:type owl:ObjectProperty ;
+             rdfs:subPropertyOf tAI:hasContent ;
+             owl:inverseOf tAI:isInputOf ;
+             rdfs:range tAI:Input .
+
+
+###  http://ktmfk.de/ontology/tribAIn/hasInterfacialMedium
+tAI:hasInterfacialMedium rdf:type owl:ObjectProperty ;
+                         rdfs:subPropertyOf tAI:hasPart ;
+                         owl:inverseOf tAI:isInterfacialMediumOf ;
+                         rdfs:domain tAI:TriboSystem ;
+                         rdfs:range tAI:InterfacialMedium .
+
+
+###  http://ktmfk.de/ontology/tribAIn/hasKinematicalParameter
+tAI:hasKinematicalParameter rdf:type owl:ObjectProperty ;
+                            rdfs:subPropertyOf tAI:hasPart ;
+                            owl:inverseOf tAI:isKinematicalParameterOf ;
+                            rdfs:domain tAI:StressCollective ;
+                            rdfs:range tAI:KinematicalParameter .
+
+
+###  http://ktmfk.de/ontology/tribAIn/hasMaterial
+tAI:hasMaterial rdf:type owl:ObjectProperty ;
+                rdfs:subPropertyOf tAI:hasParameter ;
+                owl:inverseOf tAI:isMaterialOf ;
+                rdfs:range tAI:Material ;
+                owl:propertyChainAxiom ( tAI:isContactOf
+                                         tAI:hasTriboSystem
+                                         tAI:hasBody
+                                         tAI:hasMaterial
+                                       ) ,
+                                       ( tAI:isContactOf
+                                         tAI:hasTriboSystem
+                                         tAI:hasCounterBody
+                                         tAI:hasMaterial
+                                       ) .
+
+
+###  http://ktmfk.de/ontology/tribAIn/hasOperationalParameter
+tAI:hasOperationalParameter rdf:type owl:ObjectProperty ;
+                            rdfs:subPropertyOf tAI:hasPart ;
+                            owl:inverseOf tAI:isOperationalParameterOf ;
+                            rdfs:domain tAI:StressCollective ;
+                            rdfs:range tAI:OperationalParameter .
+
+
+###  http://ktmfk.de/ontology/tribAIn/hasOutput
+tAI:hasOutput rdf:type owl:ObjectProperty ;
+              rdfs:subPropertyOf tAI:hasContent ;
+              owl:inverseOf tAI:isOutputOf ;
+              rdfs:range tAI:Output .
+
+
+###  http://ktmfk.de/ontology/tribAIn/hasParameter
+tAI:hasParameter rdf:type owl:ObjectProperty ;
+                 rdfs:subPropertyOf tAI:hasContent ;
+                 owl:inverseOf tAI:isParameterOf ;
+                 rdfs:range tAI:Parameter .
+
+
+###  http://ktmfk.de/ontology/tribAIn/hasPart
+tAI:hasPart rdf:type owl:ObjectProperty ;
+            owl:inverseOf tAI:isPartOf ;
+            rdf:type owl:TransitiveProperty .
+
+
+###  http://ktmfk.de/ontology/tribAIn/hasReferenceGroup
+tAI:hasReferenceGroup rdf:type owl:ObjectProperty ;
+                      rdfs:subPropertyOf tAI:hasPart ;
+                      owl:inverseOf tAI:isReferenceGroupOf ;
+                      rdfs:range tAI:ReferenceGroup ;
+                      owl:propertyDisjointWith tAI:hasSampleGroup .
+
+
+###  http://ktmfk.de/ontology/tribAIn/hasReferenceSample
+tAI:hasReferenceSample rdf:type owl:ObjectProperty ;
+                       rdfs:subPropertyOf tAI:hasPart ;
+                       owl:inverseOf tAI:isReferenceSampleOf ;
+                       rdfs:range tAI:ReferenceSample ;
+                       owl:propertyDisjointWith tAI:hasSample .
+
+
+###  http://ktmfk.de/ontology/tribAIn/hasRepresentation
+tAI:hasRepresentation rdf:type owl:ObjectProperty ;
+                      rdfs:subPropertyOf tAI:hasContent ;
+                      owl:inverseOf tAI:isRepresentationOf ;
+                      rdfs:range tAI:Representation .
+
+
+###  http://ktmfk.de/ontology/tribAIn/hasSample
+tAI:hasSample rdf:type owl:ObjectProperty ;
+              rdfs:subPropertyOf tAI:hasPart ;
+              owl:inverseOf tAI:isSampleOf ;
+              rdfs:range tAI:Sample .
+
+
+###  http://ktmfk.de/ontology/tribAIn/hasSampleGroup
+tAI:hasSampleGroup rdf:type owl:ObjectProperty ;
+                   rdfs:subPropertyOf tAI:hasPart ;
+                   owl:inverseOf tAI:isSampleGroupOf ;
+                   rdfs:range tAI:SampleGroup .
+
+
+###  http://ktmfk.de/ontology/tribAIn/hasStrategy
+tAI:hasStrategy rdf:type owl:ObjectProperty ;
+                rdfs:subPropertyOf tAI:hasPart ;
+                owl:inverseOf tAI:isStrategyOf ;
+                rdfs:range tAI:ExperimentalDesignStrategy .
+
+
+###  http://ktmfk.de/ontology/tribAIn/hasStressCollective
+tAI:hasStressCollective rdf:type owl:ObjectProperty ;
+                        rdfs:subPropertyOf tAI:hasPart ;
+                        owl:inverseOf tAI:isStressCollectiveOf ;
+                        rdfs:range tAI:StressCollective .
+
+
+###  http://ktmfk.de/ontology/tribAIn/hasTargetVariable
+tAI:hasTargetVariable rdf:type owl:ObjectProperty ;
+                      rdfs:subPropertyOf tAI:hasContent ;
+                      owl:inverseOf tAI:isTargetVariableOf ;
+                      rdfs:range tAI:TargetVariable ;
+                      owl:propertyChainAxiom ( [ owl:inverseOf tAI:resultsIn
+                                               ]
+                                               tAI:hasTargetVariable
+                                             ) ;
+                      rdfs:comment "The relation is used to seperate all parameters from the variable which is the target of the scientific study" .
+
+
+###  http://ktmfk.de/ontology/tribAIn/hasTriboSystem
+tAI:hasTriboSystem rdf:type owl:ObjectProperty ;
+                   rdfs:subPropertyOf tAI:hasPart ;
+                   owl:inverseOf tAI:isTriboSystemOf ;
+                   rdfs:range tAI:TriboSystem .
+
+
+###  http://ktmfk.de/ontology/tribAIn/hasUnit
+tAI:hasUnit rdf:type owl:ObjectProperty ;
+            rdfs:subPropertyOf tAI:hasContent ;
+            owl:inverseOf tAI:isUnitOf ;
+            rdfs:range tAI:Unit .
+
+
+###  http://ktmfk.de/ontology/tribAIn/isAmbientMediumOf
+tAI:isAmbientMediumOf rdf:type owl:ObjectProperty ;
+                      rdfs:subPropertyOf tAI:isPartOf .
+
+
+###  http://ktmfk.de/ontology/tribAIn/isBodyOf
+tAI:isBodyOf rdf:type owl:ObjectProperty ;
+             rdfs:subPropertyOf tAI:isPartOf .
+
+
+###  http://ktmfk.de/ontology/tribAIn/isCarriedOutBy
+tAI:isCarriedOutBy rdf:type owl:ObjectProperty .
+
+
+###  http://ktmfk.de/ontology/tribAIn/isComponentOf
+tAI:isComponentOf rdf:type owl:ObjectProperty ;
+                  rdfs:subPropertyOf tAI:isPartOf .
+
+
+###  http://ktmfk.de/ontology/tribAIn/isContactOf
+tAI:isContactOf rdf:type owl:ObjectProperty ;
+                rdfs:subPropertyOf tAI:isContentOf .
+
+
+###  http://ktmfk.de/ontology/tribAIn/isContentOf
+tAI:isContentOf rdf:type owl:ObjectProperty .
+
+
+###  http://ktmfk.de/ontology/tribAIn/isCounterBodyOf
+tAI:isCounterBodyOf rdf:type owl:ObjectProperty ;
+                    rdfs:subPropertyOf tAI:isPartOf .
+
+
+###  http://ktmfk.de/ontology/tribAIn/isHypothesisOf
+tAI:isHypothesisOf rdf:type owl:ObjectProperty ;
+                   rdfs:subPropertyOf tAI:isPartOf .
+
+
+###  http://ktmfk.de/ontology/tribAIn/isInputOf
+tAI:isInputOf rdf:type owl:ObjectProperty ;
+              rdfs:subPropertyOf tAI:isContentOf .
+
+
+###  http://ktmfk.de/ontology/tribAIn/isInterfacialMediumOf
+tAI:isInterfacialMediumOf rdf:type owl:ObjectProperty ;
+                          rdfs:subPropertyOf tAI:isPartOf .
+
+
+###  http://ktmfk.de/ontology/tribAIn/isKinematicalParameterOf
+tAI:isKinematicalParameterOf rdf:type owl:ObjectProperty ;
+                             rdfs:subPropertyOf tAI:isPartOf .
+
+
+###  http://ktmfk.de/ontology/tribAIn/isMaterialOf
+tAI:isMaterialOf rdf:type owl:ObjectProperty ;
+                 rdfs:subPropertyOf tAI:isParameterOf .
+
+
+###  http://ktmfk.de/ontology/tribAIn/isOperationalParameterOf
+tAI:isOperationalParameterOf rdf:type owl:ObjectProperty ;
+                             rdfs:subPropertyOf tAI:isPartOf .
+
+
+###  http://ktmfk.de/ontology/tribAIn/isOutputOf
+tAI:isOutputOf rdf:type owl:ObjectProperty ;
+               rdfs:subPropertyOf tAI:isContentOf .
+
+
+###  http://ktmfk.de/ontology/tribAIn/isParameterOf
+tAI:isParameterOf rdf:type owl:ObjectProperty ;
+                  rdfs:subPropertyOf tAI:isContentOf .
+
+
+###  http://ktmfk.de/ontology/tribAIn/isPartOf
+tAI:isPartOf rdf:type owl:ObjectProperty ,
+                      owl:TransitiveProperty .
+
+
+###  http://ktmfk.de/ontology/tribAIn/isReferenceGroupOf
+tAI:isReferenceGroupOf rdf:type owl:ObjectProperty ;
+                       rdfs:subPropertyOf tAI:isPartOf .
+
+
+###  http://ktmfk.de/ontology/tribAIn/isReferenceSampleOf
+tAI:isReferenceSampleOf rdf:type owl:ObjectProperty ;
+                        rdfs:subPropertyOf tAI:isPartOf .
+
+
+###  http://ktmfk.de/ontology/tribAIn/isRepresentationOf
+tAI:isRepresentationOf rdf:type owl:ObjectProperty ;
+                       rdfs:subPropertyOf tAI:isContentOf .
+
+
+###  http://ktmfk.de/ontology/tribAIn/isSampleGroupOf
+tAI:isSampleGroupOf rdf:type owl:ObjectProperty ;
+                    rdfs:subPropertyOf tAI:isPartOf .
+
+
+###  http://ktmfk.de/ontology/tribAIn/isSampleOf
+tAI:isSampleOf rdf:type owl:ObjectProperty ;
+               rdfs:subPropertyOf tAI:isPartOf .
+
+
+###  http://ktmfk.de/ontology/tribAIn/isStrategyOf
+tAI:isStrategyOf rdf:type owl:ObjectProperty ;
+                 rdfs:subPropertyOf tAI:isPartOf .
+
+
+###  http://ktmfk.de/ontology/tribAIn/isStressCollectiveOf
+tAI:isStressCollectiveOf rdf:type owl:ObjectProperty ;
+                         rdfs:subPropertyOf tAI:isPartOf .
+
+
+###  http://ktmfk.de/ontology/tribAIn/isTargetVariableOf
+tAI:isTargetVariableOf rdf:type owl:ObjectProperty ;
+                       rdfs:subPropertyOf tAI:isContentOf .
+
+
+###  http://ktmfk.de/ontology/tribAIn/isTriboSystemOf
+tAI:isTriboSystemOf rdf:type owl:ObjectProperty ;
+                    rdfs:subPropertyOf tAI:isPartOf .
+
+
+###  http://ktmfk.de/ontology/tribAIn/isUnitOf
+tAI:isUnitOf rdf:type owl:ObjectProperty ;
+             rdfs:subPropertyOf tAI:isContentOf .
+
+
+###  http://ktmfk.de/ontology/tribAIn/processedBy
+tAI:processedBy rdf:type owl:ObjectProperty ;
+                rdfs:range tAI:IndustrialProcess .
+
+
+###  http://ktmfk.de/ontology/tribAIn/resultsIn
+tAI:resultsIn rdf:type owl:ObjectProperty ;
+              rdfs:range tAI:ExperimentalResults .
+
+
+###  http://ktmfk.de/ontology/tribAIn/usedIn
+tAI:usedIn rdf:type owl:ObjectProperty ;
+           owl:propertyChainAxiom ( tAI:usedIn
+                                    tAI:hasPart
+                                  ) ;
+           rdfs:comment "A relation to sign the physical constituants of the samples used in the test series. Physical constituants can be \"Substrate\", \"Assembly\", \"Part\", \"Lubricant\", \"Material\", etc. The physical constituants of the sample carry information about preprocessing, thus if different preprocessing of different sample parts is used in the test series, the physical constituants can be related to the classes \"Sample\", \"SampleGroup\" or \"TestSeries\" via the relation usedIn." .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://ktmfk.de/ontology/tribAIn/MeasurementPoint
+tAI:MeasurementPoint rdf:type owl:DatatypeProperty ;
+                     rdfs:subPropertyOf tAI:MetricEvent .
+
+
+###  http://ktmfk.de/ontology/tribAIn/MetricEvent
+tAI:MetricEvent rdf:type owl:DatatypeProperty ;
+                rdfs:comment "An event of measurement within a measurement series. Every measurement must have one metric event to sign which parameters are measured at which event." .
+
+
+###  http://ktmfk.de/ontology/tribAIn/TimeStamp
+tAI:TimeStamp rdf:type owl:DatatypeProperty ;
+              rdfs:subPropertyOf tAI:MetricEvent ;
+              rdfs:range xsd:dateTimeStamp .
+
+
+###  http://ktmfk.de/ontology/tribAIn/hasValue
+tAI:hasValue rdf:type owl:DatatypeProperty ;
+             rdfs:range xsd:double ;
+             rdfs:comment "To sign the value of a parameter." .
+
+
+###  http://ktmfk.de/ontology/tribAIn/maxValue
+tAI:maxValue rdf:type owl:DatatypeProperty .
+
+
+###  http://ktmfk.de/ontology/tribAIn/minValue
+tAI:minValue rdf:type owl:DatatypeProperty .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://ktmfk.de/ontology/tribAIn/Abstract
+tAI:Abstract rdf:type owl:Class ;
+             tAI:FROM "EXPO (http://expo.sourceforge.net)" ;
+             rdfs:comment "\"Properties or qualities as distinguished from any particular embodiment of the properties/qualities in a physical medium. Instances of Abstract can be said to exist in the same sense as mathematical objects such as sets and relations, but they cannot exist at a particular place and time without some physical encoding or embodiment.\"" .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource tAI:Abstract ;
+   owl:annotatedProperty rdfs:comment ;
+   owl:annotatedTarget "\"Properties or qualities as distinguished from any particular embodiment of the properties/qualities in a physical medium. Instances of Abstract can be said to exist in the same sense as mathematical objects such as sets and relations, but they cannot exist at a particular place and time without some physical encoding or embodiment.\"" ;
+   tAI:FROM "SUMO (http://www.adampease.org/OP)"
+ ] .
+
+
+###  http://ktmfk.de/ontology/tribAIn/Action-relatedRole
+tAI:Action-relatedRole rdf:type owl:Class ;
+                       rdfs:subClassOf tAI:Role ;
+                       tAI:FROM "EXPO (http://expo.sourceforge.net)" .
+
+
+###  http://ktmfk.de/ontology/tribAIn/ActorRole
+tAI:ActorRole rdf:type owl:Class ;
+              rdfs:subClassOf tAI:Action-relatedRole ;
+              tAI:FROM "EXPO (http://expo.sourceforge.net)" .
+
+
+###  http://ktmfk.de/ontology/tribAIn/Additive
+tAI:Additive rdf:type owl:Class ;
+             rdfs:subClassOf tAI:PhysicalObject ;
+             rdfs:comment "Additives are auxiliary substances or additions that are mixed into lubricants in small quantities in order to achieve or improve certain properties." .
+
+
+###  http://ktmfk.de/ontology/tribAIn/AmbientMedium
+tAI:AmbientMedium rdf:type owl:Class ;
+                  rdfs:subClassOf tAI:TriboElement ;
+                  rdfs:comment "Substances (liquid or gas) surrounding the contacting bodies. The ambient medium is defined by its type, composition and material properties." .
+
+
+###  http://ktmfk.de/ontology/tribAIn/Amount
+tAI:Amount rdf:type owl:Class ;
+           rdfs:subClassOf tAI:DimensionlessQuantity .
+
+
+###  http://ktmfk.de/ontology/tribAIn/AntifoamingAgent
+tAI:AntifoamingAgent rdf:type owl:Class ;
+                     rdfs:subClassOf tAI:Additive ;
+                     rdfs:comment "Silicone compounds which increase surface tension in order to discourage foam formation." .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource tAI:AntifoamingAgent ;
+   owl:annotatedProperty rdfs:comment ;
+   owl:annotatedTarget "Silicone compounds which increase surface tension in order to discourage foam formation." ;
+   tAI:FROM "ISBN: 978-1-4987-5290-9"
+ ] .
+
+
+###  http://ktmfk.de/ontology/tribAIn/Antioxidant
+tAI:Antioxidant rdf:type owl:Class ;
+                rdfs:subClassOf tAI:Additive ;
+                rdfs:comment "Suppress the rate of oxidative degradation of the hydrocarbon molecules within the lubricant at low temperatures." .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource tAI:Antioxidant ;
+   owl:annotatedProperty rdfs:comment ;
+   owl:annotatedTarget "Suppress the rate of oxidative degradation of the hydrocarbon molecules within the lubricant at low temperatures." ;
+   tAI:FROM "ISBN: 978-1-4987-5290-9"
+ ] .
+
+
+###  http://ktmfk.de/ontology/tribAIn/AntiwearAdditive
+tAI:AntiwearAdditive rdf:type owl:Class ;
+                     rdfs:subClassOf tAI:Additive ;
+                     rdfs:comment "Form protective 'tribofilms' on metal parts, suppressing wear. They come in two classes depending on the strength with which they bind to the surface. Popular examples include phosphate esters and zinc dithiophosphates." .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource tAI:AntiwearAdditive ;
+   owl:annotatedProperty rdfs:comment ;
+   owl:annotatedTarget "Form protective 'tribofilms' on metal parts, suppressing wear. They come in two classes depending on the strength with which they bind to the surface. Popular examples include phosphate esters and zinc dithiophosphates." ;
+   tAI:FROM "https://doi.org/10.1007/s11249-015-0589-z"
+ ] .
+
+
+###  http://ktmfk.de/ontology/tribAIn/Assembly
+tAI:Assembly rdf:type owl:Class ;
+             rdfs:subClassOf tAI:Component ;
+             owl:disjointWith tAI:Part .
+
+
+###  http://ktmfk.de/ontology/tribAIn/AssemblyDrawing
+tAI:AssemblyDrawing rdf:type owl:Class ;
+                    rdfs:subClassOf tAI:TechnicalDrawing ;
+                    owl:disjointWith tAI:DetailDrawing ;
+                    rdfs:comment "The master drawing, which groups all regarding engineering drawings." .
+
+
+###  http://ktmfk.de/ontology/tribAIn/Bar
+tAI:Bar rdf:type owl:Class ;
+        rdfs:subClassOf tAI:PressureUnit .
+
+
+###  http://ktmfk.de/ontology/tribAIn/BearingSteel
+tAI:BearingSteel rdf:type owl:Class ;
+                 rdfs:subClassOf tAI:Steel ;
+                 mat:norm "ISO 683-17" .
+
+
+###  http://ktmfk.de/ontology/tribAIn/BindingEnergy
+tAI:BindingEnergy rdf:type owl:Class ;
+                  rdfs:subClassOf tAI:Energy ;
+                  rdfs:comment "In physics, binding energy (also called separation energy) is the minimum energy required to disassemble a system of particles into separate parts." .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource tAI:BindingEnergy ;
+   owl:annotatedProperty rdfs:comment ;
+   owl:annotatedTarget "In physics, binding energy (also called separation energy) is the minimum energy required to disassemble a system of particles into separate parts." ;
+   tAI:FROM "https://en.wikipedia.org/wiki/Binding_energy"
+ ] .
+
+
+###  http://ktmfk.de/ontology/tribAIn/BioLubricant
+tAI:BioLubricant rdf:type owl:Class ;
+                 rdfs:subClassOf tAI:Lubricant ;
+                 rdfs:comment "Biolubricants, or bio-based lubricants, are generally perceived asenvironmentally friendly, biodegradable and non-toxic lubricantswhich are derived from renewable resources such as plant oils andanimal fats." .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource tAI:BioLubricant ;
+   owl:annotatedProperty rdfs:comment ;
+   owl:annotatedTarget "Biolubricants, or bio-based lubricants, are generally perceived asenvironmentally friendly, biodegradable and non-toxic lubricantswhich are derived from renewable resources such as plant oils andanimal fats." ;
+   tAI:FROM "https://doi.org/10.1016/j.rser.2018.05.024"
+ ] .
+
+
+###  http://ktmfk.de/ontology/tribAIn/Body
+tAI:Body rdf:type owl:Class ;
+         rdfs:subClassOf tAI:TriboElement ,
+                         [ rdf:type owl:Restriction ;
+                           owl:onProperty tAI:hasMaterial ;
+                           owl:allValuesFrom tAI:Material
+                         ] ;
+         rdfs:comment """Any number of three-dimensional solid bodies in the focus of the tribological investigation which are contacting the counter body/bodies. 
+The body is defined by its shape and material properties.""" .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource tAI:Body ;
+   owl:annotatedProperty rdfs:comment ;
+   owl:annotatedTarget """Any number of three-dimensional solid bodies in the focus of the tribological investigation which are contacting the counter body/bodies. 
+The body is defined by its shape and material properties.""" ;
+   tAI:FROM "https://doi.org/10.1007/978-3-8348-2236-9"
+ ] .
+
+
+###  http://ktmfk.de/ontology/tribAIn/Bumping
+tAI:Bumping rdf:type owl:Class ;
+            rdfs:subClassOf tAI:KinematicalParameter ;
+            rdfs:comment "A bouncing-like collision of two bodies." .
+
+
+###  http://ktmfk.de/ontology/tribAIn/CADAssembly
+tAI:CADAssembly rdf:type owl:Class ;
+                rdfs:subClassOf tAI:CADContent ;
+                owl:disjointWith tAI:CADPart ;
+                rdfs:comment "The representation of an assembly wihtin CAD software, for instance signing a .asm file in a database." .
+
+
+###  http://ktmfk.de/ontology/tribAIn/CADContent
+tAI:CADContent rdf:type owl:Class ;
+               rdfs:subClassOf tAI:Representation .
+
+
+###  http://ktmfk.de/ontology/tribAIn/CADPart
+tAI:CADPart rdf:type owl:Class ;
+            rdfs:subClassOf tAI:CADContent ;
+            rdfs:comment "The representation of a part wihtin CAD software, for instance signing a .prt file in a database." .
+
+
+###  http://ktmfk.de/ontology/tribAIn/Carbide
+tAI:Carbide rdf:type owl:Class ;
+            rdfs:subClassOf tAI:Compound ;
+            rdfs:comment "A binary compound of carbon with an element of lower or comparable electronegativity." .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource tAI:Carbide ;
+   owl:annotatedProperty rdfs:comment ;
+   owl:annotatedTarget "A binary compound of carbon with an element of lower or comparable electronegativity." ;
+   tAI:FROM "https://www.lexico.com/definition/carbide"
+ ] .
+
+
+###  http://ktmfk.de/ontology/tribAIn/CategoryOfTribologicalTesting
+tAI:CategoryOfTribologicalTesting rdf:type owl:Class ;
+                                  rdfs:subClassOf tAI:ExperimentalDesignStrategy .
+
+
+###  http://ktmfk.de/ontology/tribAIn/Celsius
+tAI:Celsius rdf:type owl:Class ;
+            rdfs:subClassOf tAI:TemperatureUnit .
+
+
+###  http://ktmfk.de/ontology/tribAIn/Characterization
+tAI:Characterization rdf:type owl:Class ;
+                     rdfs:subClassOf tAI:PhysicalExperiment ;
+                     rdfs:comment "Refers to the broad and general process by which a material's structure and properties are probed and measured. The scope of the term often differs; some definitions limit the term's use to techniques which study the microscopic structure and properties of materials, while others use the term to refer to any materials analysis process including macroscopic techniques such as mechanical testing, thermal analysis and density calculation." .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource tAI:Characterization ;
+   owl:annotatedProperty rdfs:comment ;
+   owl:annotatedTarget "Refers to the broad and general process by which a material's structure and properties are probed and measured. The scope of the term often differs; some definitions limit the term's use to techniques which study the microscopic structure and properties of materials, while others use the term to refer to any materials analysis process including macroscopic techniques such as mechanical testing, thermal analysis and density calculation." ;
+   tAI:FROM "ISBN: 978-0-470-82299-9"
+ ] .
+
+
+###  http://ktmfk.de/ontology/tribAIn/ChemicalComposition
+tAI:ChemicalComposition rdf:type owl:Class ;
+                        rdfs:subClassOf tAI:ExperimentalConclusion .
+
+
+###  http://ktmfk.de/ontology/tribAIn/CoefficientOfFriction
+tAI:CoefficientOfFriction rdf:type owl:Class ;
+                          rdfs:subClassOf tAI:DimensionlessQuantity ,
+                                          tAI:TribologicalParameter ,
+                                          [ rdf:type owl:Restriction ;
+                                            owl:onProperty tAI:resultsIn ;
+                                            owl:allValuesFrom tAI:FrictionalBehavior
+                                          ] ;
+                          rdfs:comment "The ratio between the force necessary to move one surface horizontally over another and the pressure between the two surfaces." .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource tAI:CoefficientOfFriction ;
+   owl:annotatedProperty rdfs:comment ;
+   owl:annotatedTarget "The ratio between the force necessary to move one surface horizontally over another and the pressure between the two surfaces." ;
+   tAI:FROM "https://www.lexico.com/en/definition/coefficient_of_friction"
+ ] .
+
+
+###  http://ktmfk.de/ontology/tribAIn/Component
+tAI:Component rdf:type owl:Class ;
+              rdfs:subClassOf tAI:PhysicalObject ,
+                              [ rdf:type owl:Restriction ;
+                                owl:onProperty tAI:hasRepresentation ;
+                                owl:someValuesFrom tAI:CADContent
+                              ] .
+
+
+###  http://ktmfk.de/ontology/tribAIn/ComponentTest
+tAI:ComponentTest rdf:type owl:Class ;
+                  rdfs:subClassOf tAI:CategoryOfTribologicalTesting ;
+                  rdfs:comment "Cat.IV: Component investigations (original or simplified) under practical operating conditions." .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource tAI:ComponentTest ;
+   owl:annotatedProperty rdfs:comment ;
+   owl:annotatedTarget "Cat.IV: Component investigations (original or simplified) under practical operating conditions." ;
+   tAI:FROM "https://doi.org/10.1007/978-3-8348-2236-9"
+ ] .
+
+
+###  http://ktmfk.de/ontology/tribAIn/Compound
+tAI:Compound rdf:type owl:Class ;
+             rdfs:subClassOf tAI:Material ;
+             rdfs:comment "A composite material made from two or more constituent materials with significantly different physical or chemical properties that, when combined, produce a material with characteristics different from the individual components." .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource tAI:Compound ;
+   owl:annotatedProperty rdfs:comment ;
+   owl:annotatedTarget "A composite material made from two or more constituent materials with significantly different physical or chemical properties that, when combined, produce a material with characteristics different from the individual components." ;
+   tAI:FROM "ISBN: 978-1-138-07551-1"
+ ] .
+
+
+###  http://ktmfk.de/ontology/tribAIn/ComputationalExperiment
+tAI:ComputationalExperiment rdf:type owl:Class ;
+                            rdfs:subClassOf tAI:ScientificExperiment ;
+                            tAI:FROM "EXPO (http://expo.sourceforge.net)" ;
+                            rdfs:comment "A computational experiment is a scientific experiment which investigates cause-effect relations between known and unknown (target) variables by manipulating the computational (non-physical) domain adequate to the real-world domain." .
+
+
+###  http://ktmfk.de/ontology/tribAIn/Concentration
+tAI:Concentration rdf:type owl:Class ;
+                  rdfs:subClassOf tAI:Parameter ,
+                                  [ rdf:type owl:Restriction ;
+                                    owl:onProperty tAI:hasUnit ;
+                                    owl:someValuesFrom tAI:ConcentrationUnit
+                                  ] ;
+                  rdfs:comment "The relative amount of a particular substance contained within a solution or mixture or in a particular volume of space." .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource tAI:Concentration ;
+   owl:annotatedProperty rdfs:comment ;
+   owl:annotatedTarget "The relative amount of a particular substance contained within a solution or mixture or in a particular volume of space." ;
+   tAI:FROM "https://www.lexico.com/definition/concentration"
+ ] .
+
+
+###  http://ktmfk.de/ontology/tribAIn/ConcentrationUnit
+tAI:ConcentrationUnit rdf:type owl:Class ;
+                      rdfs:subClassOf tAI:Unit .
+
+
+###  http://ktmfk.de/ontology/tribAIn/Contact
+tAI:Contact rdf:type owl:Class ;
+            rdfs:subClassOf tAI:Interaction ;
+            rdfs:comment "A physical interaction between two things (e.g. bodies)." .
+
+
+###  http://ktmfk.de/ontology/tribAIn/ContactPressure
+tAI:ContactPressure rdf:type owl:Class ;
+                    rdfs:subClassOf tAI:Pressure .
+
+
+###  http://ktmfk.de/ontology/tribAIn/ContentBearingObject
+tAI:ContentBearingObject rdf:type owl:Class ;
+                         rdfs:subClassOf tAI:ContentBearingPhysical ;
+                         tAI:FROM "EXPO (http://expo.sourceforge.net)" ;
+                         rdfs:comment "Any SelfConnectedObject that expresses content. This content may be a Proposition, e.g. when the ContentBearingObject is a Sentence or Text, or it may be a representation of an abstract or physical object, as with an Icon, a Word or a Phrase." .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource tAI:ContentBearingObject ;
+   owl:annotatedProperty rdfs:comment ;
+   owl:annotatedTarget "Any SelfConnectedObject that expresses content. This content may be a Proposition, e.g. when the ContentBearingObject is a Sentence or Text, or it may be a representation of an abstract or physical object, as with an Icon, a Word or a Phrase." ;
+   tAI:FROM "SUMO (http://www.adampease.org/OP)"
+ ] .
+
+
+###  http://ktmfk.de/ontology/tribAIn/ContentBearingPhysical
+tAI:ContentBearingPhysical rdf:type owl:Class ;
+                           rdfs:subClassOf tAI:Physical ;
+                           tAI:FROM "EXPO (http://expo.sourceforge.net)" ;
+                           rdfs:comment "Any Object or Process that expresses content. This covers Objects that contain a Proposition, such as a book, as well as ManualSignLanguage, which may similarly contain a Proposition." .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource tAI:ContentBearingPhysical ;
+   owl:annotatedProperty rdfs:comment ;
+   owl:annotatedTarget "Any Object or Process that expresses content. This covers Objects that contain a Proposition, such as a book, as well as ManualSignLanguage, which may similarly contain a Proposition." ;
+   tAI:FROM "SUMO (http://www.adampease.org/OP)"
+ ] .
+
+
+###  http://ktmfk.de/ontology/tribAIn/CorrectionFactor
+tAI:CorrectionFactor rdf:type owl:Class ;
+                     rdfs:subClassOf tAI:Variable ;
+                     rdfs:comment "A factor that is multiplied with the result of an equation to correct for a known amount of systematic error." .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource tAI:CorrectionFactor ;
+   owl:annotatedProperty rdfs:comment ;
+   owl:annotatedTarget "A factor that is multiplied with the result of an equation to correct for a known amount of systematic error." ;
+   tAI:FROM "https://en.wiktionary.org/wiki/correction_factor"
+ ] .
+
+
+###  http://ktmfk.de/ontology/tribAIn/CorrosionInhibitor
+tAI:CorrosionInhibitor rdf:type owl:Class ;
+                       rdfs:subClassOf tAI:Additive ;
+                       rdfs:comment "Alkaline materials, such as alkylsulfonate salts, that absorb acids that would corrode metal parts." .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource tAI:CorrosionInhibitor ;
+   owl:annotatedProperty rdfs:comment ;
+   owl:annotatedTarget "Alkaline materials, such as alkylsulfonate salts, that absorb acids that would corrode metal parts." ;
+   tAI:FROM "ISBN: 978-1-4987-5290-9"
+ ] .
+
+
+###  http://ktmfk.de/ontology/tribAIn/CounterBody
+tAI:CounterBody rdf:type owl:Class ;
+                rdfs:subClassOf tAI:TriboElement ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty tAI:hasMaterial ;
+                                  owl:allValuesFrom tAI:Material
+                                ] ;
+                rdfs:comment """Any number of three-dimensional bodies (solid, liquid or gas) which are contacting the body/bodies in the focus of the tribological investigation. 
+The counter body is defined by its shape and material properties.""" .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource tAI:CounterBody ;
+   owl:annotatedProperty rdfs:comment ;
+   owl:annotatedTarget """Any number of three-dimensional bodies (solid, liquid or gas) which are contacting the body/bodies in the focus of the tribological investigation. 
+The counter body is defined by its shape and material properties.""" ;
+   tAI:FROM "https://doi.org/10.1007/978-3-8348-2236-9"
+ ] .
+
+
+###  http://ktmfk.de/ontology/tribAIn/Cylinder
+tAI:Cylinder rdf:type owl:Class ;
+             rdfs:subClassOf tAI:VolumeElement ;
+             rdfs:comment "A solid geometrical figure with straight parallel sides and a circular or oval cross section." .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource tAI:Cylinder ;
+   owl:annotatedProperty rdfs:comment ;
+   owl:annotatedTarget "A solid geometrical figure with straight parallel sides and a circular or oval cross section." ;
+   tAI:FROM "https://www.lexico.com/definition/cylinder"
+ ] .
+
+
+###  http://ktmfk.de/ontology/tribAIn/DMSValue
+tAI:DMSValue rdf:type owl:Class ;
+             rdfs:subClassOf tAI:Pressure ;
+             rdfs:comment "Value which is measured by DMS (e.g. pressure or force)." .
+
+
+###  http://ktmfk.de/ontology/tribAIn/DetailDrawing
+tAI:DetailDrawing rdf:type owl:Class ;
+                  rdfs:subClassOf tAI:TechnicalDrawing ;
+                  rdfs:comment "An detail drawing contains information about geometry, dimensions, tolerances, material, surface quality etc." .
+
+
+###  http://ktmfk.de/ontology/tribAIn/Detergent
+tAI:Detergent rdf:type owl:Class ;
+              rdfs:subClassOf tAI:Additive ;
+              rdfs:comment "Ensure the cleanliness of engine components by preventing the formation of deposits on contact surfaces at high temperatures." .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource tAI:Detergent ;
+   owl:annotatedProperty rdfs:comment ;
+   owl:annotatedTarget "Ensure the cleanliness of engine components by preventing the formation of deposits on contact surfaces at high temperatures." ;
+   tAI:FROM "ISBN: 978-1-4987-5290-9"
+ ] .
+
+
+###  http://ktmfk.de/ontology/tribAIn/Device
+tAI:Device rdf:type owl:Class ;
+           rdfs:subClassOf tAI:ExperimentalEquipment ,
+                           [ rdf:type owl:Restriction ;
+                             owl:onProperty tAI:carriesOut ;
+                             owl:someValuesFrom tAI:Procedure
+                           ] ;
+           tAI:FROM "EXPO (http://expo.sourceforge.net)" ;
+           rdfs:comment "A Device is an Artifact whose purpose is to serve as an instrument in a specific subclass of Process." ,
+                        "A device is an experimental equipment that processes data according to a set of instructions." .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource tAI:Device ;
+   owl:annotatedProperty rdfs:comment ;
+   owl:annotatedTarget "A Device is an Artifact whose purpose is to serve as an instrument in a specific subclass of Process." ;
+   tAI:FROM "SUMO (http://www.adampease.org/OP)"
+ ] .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource tAI:Device ;
+   owl:annotatedProperty rdfs:comment ;
+   owl:annotatedTarget "A device is an experimental equipment that processes data according to a set of instructions." ;
+   tAI:FROM "Collins Softback English Dictionary, HarperCollins Publishers, Glasgow, 1993"
+ ] .
+
+
+###  http://ktmfk.de/ontology/tribAIn/Diameter
+tAI:Diameter rdf:type owl:Class ;
+             rdfs:subClassOf tAI:Geometry .
+
+
+###  http://ktmfk.de/ontology/tribAIn/DimensionlessQuantity
+tAI:DimensionlessQuantity rdf:type owl:Class ;
+                          rdfs:subClassOf tAI:Parameter ;
+                          rdfs:comment "A quantity which has no unit." .
+
+
+###  http://ktmfk.de/ontology/tribAIn/Distance
+tAI:Distance rdf:type owl:Class ;
+             rdfs:subClassOf tAI:PhysicalQuantity ,
+                             [ rdf:type owl:Restriction ;
+                               owl:onProperty tAI:hasUnit ;
+                               owl:someValuesFrom tAI:DistanceUnit
+                             ] ;
+             rdfs:comment "The length of the space between two points." .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource tAI:Distance ;
+   owl:annotatedProperty rdfs:comment ;
+   owl:annotatedTarget "The length of the space between two points." ;
+   tAI:FROM "https://www.lexico.com/definition/distance"
+ ] .
+
+
+###  http://ktmfk.de/ontology/tribAIn/DistanceUnit
+tAI:DistanceUnit rdf:type owl:Class ;
+                 rdfs:subClassOf tAI:Unit .
+
+
+###  http://ktmfk.de/ontology/tribAIn/DomainModel
+tAI:DomainModel rdf:type owl:Class ;
+                rdfs:subClassOf tAI:Model ;
+                tAI:FROM "EXPO (http://expo.sourceforge.net)" ;
+                rdfs:comment "A domain model is a description of relationships (e.g. logical/ mathematical) between known and unknown variables of the experimental domain." .
+
+
+###  http://ktmfk.de/ontology/tribAIn/DomainOfExperiment
+tAI:DomainOfExperiment rdf:type owl:Class ;
+                       rdfs:subClassOf tAI:FieldOfStudy ;
+                       tAI:FROM "EXPO (http://expo.sourceforge.net)" ;
+                       rdfs:comment """A domain of an experiment is a field of study in which an experiment is designed to discover new knowledge.
+
+Here used to sign which domain is affected by the results of the experiment.""" .
+
+
+###  http://ktmfk.de/ontology/tribAIn/ElectricPotentialDifference
+tAI:ElectricPotentialDifference rdf:type owl:Class ;
+                                rdfs:subClassOf tAI:Parameter ,
+                                                [ rdf:type owl:Restriction ;
+                                                  owl:onProperty tAI:hasUnit ;
+                                                  owl:someValuesFrom tAI:ElectricPotentialUnit
+                                                ] .
+
+
+###  http://ktmfk.de/ontology/tribAIn/ElectricPotentialUnit
+tAI:ElectricPotentialUnit rdf:type owl:Class ;
+                          rdfs:subClassOf tAI:Unit .
+
+
+###  http://ktmfk.de/ontology/tribAIn/Electronvolt
+tAI:Electronvolt rdf:type owl:Class ;
+                 rdfs:subClassOf tAI:EnergyUnit .
+
+
+###  http://ktmfk.de/ontology/tribAIn/Energy
+tAI:Energy rdf:type owl:Class ;
+           rdfs:subClassOf tAI:Parameter ,
+                           [ rdf:type owl:Restriction ;
+                             owl:onProperty tAI:hasUnit ;
+                             owl:someValuesFrom tAI:EnergyUnit
+                           ] ;
+           rdfs:comment "The property of matter and radiation which is manifest as a capacity to perform work (such as causing motion or the interaction of molecules)." .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource tAI:Energy ;
+   owl:annotatedProperty rdfs:comment ;
+   owl:annotatedTarget "The property of matter and radiation which is manifest as a capacity to perform work (such as causing motion or the interaction of molecules)." ;
+   tAI:FROM "https://www.lexico.com/definition/energy"
+ ] .
+
+
+###  http://ktmfk.de/ontology/tribAIn/EnergyUnit
+tAI:EnergyUnit rdf:type owl:Class ;
+               rdfs:subClassOf tAI:Unit .
+
+
+###  http://ktmfk.de/ontology/tribAIn/Error
+tAI:Error rdf:type owl:Class ;
+          rdfs:subClassOf tAI:Process-relatedRole ;
+          tAI:FROM "EXPO (http://expo.sourceforge.net)" ;
+          rdfs:comment "An error is the difference between observations or computations from the true values, or to values that are accepted as being true." .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource tAI:Error ;
+   owl:annotatedProperty rdfs:comment ;
+   owl:annotatedTarget "An error is the difference between observations or computations from the true values, or to values that are accepted as being true." ;
+   tAI:FROM "USGS glossary (biology.usgs.gov/npsveg/glossary.html)"
+ ] .
+
+
+###  http://ktmfk.de/ontology/tribAIn/ExperimentalConclusion
+tAI:ExperimentalConclusion rdf:type owl:Class ;
+                           rdfs:subClassOf tAI:ExperimentalResults ;
+                           tAI:FROM "EXPO (http://expo.sourceforge.net)" ;
+                           rdfs:comment "An experimental conclusion is a conclusion inferred from experimental observations and other experimental data." .
+
+
+###  http://ktmfk.de/ontology/tribAIn/ExperimentalDesignStrategy
+tAI:ExperimentalDesignStrategy rdf:type owl:Class ;
+                               rdfs:subClassOf tAI:Proposition ;
+                               tAI:FROM "EXPO (http://expo.sourceforge.net)" ;
+                               rdfs:comment "An experimental design strategy is a collection of typical techniques applied to an experimental design." .
+
+
+###  http://ktmfk.de/ontology/tribAIn/ExperimentalEquipment
+tAI:ExperimentalEquipment rdf:type owl:Class ;
+                          rdfs:subClassOf tAI:Process-relatedRole ,
+                                          [ rdf:type owl:Restriction ;
+                                            owl:onProperty tAI:hasRepresentation ;
+                                            owl:someValuesFrom tAI:Representation
+                                          ] ;
+                          tAI:FROM "EXPO (http://expo.sourceforge.net)" ;
+                          rdfs:comment "Experimental equipment is the set of tools, devices, materials, computer systems assembled for performing the experiment." .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource tAI:ExperimentalEquipment ;
+   owl:annotatedProperty rdfs:comment ;
+   owl:annotatedTarget "Experimental equipment is the set of tools, devices, materials, computer systems assembled for performing the experiment." ;
+   tAI:FROM "Collins Softback English Dictionary, HarperCollins Publishers, Glasgow, 1993"
+ ] .
+
+
+###  http://ktmfk.de/ontology/tribAIn/ExperimentalFactor
+tAI:ExperimentalFactor rdf:type owl:Class ;
+                       rdfs:subClassOf tAI:Variable ;
+                       tAI:FROM "EXPO (http://expo.sourceforge.net)" ;
+                       rdfs:comment "An experimental factor is a known variable of the model of the domain which the object of the experiment can control/vary in order to determine of a value of target variables." .
+
+
+###  http://ktmfk.de/ontology/tribAIn/ExperimentalHypothesis
+tAI:ExperimentalHypothesis rdf:type owl:Class ;
+                           rdfs:subClassOf tAI:Proposition ;
+                           tAI:FROM "EXPO (http://expo.sourceforge.net)" ;
+                           rdfs:comment """An experimental hypothesis is a statement about cause-effect relations between known and unknown (target) variables of the domain of the experiment \"that shall be in accordance with known facts*\" to be verified at the experiment.
+
+Here also used in a wider sense as \"Research Goal\".""" .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource tAI:ExperimentalHypothesis ;
+   owl:annotatedProperty rdfs:comment ;
+   owl:annotatedTarget """An experimental hypothesis is a statement about cause-effect relations between known and unknown (target) variables of the domain of the experiment \"that shall be in accordance with known facts*\" to be verified at the experiment.
+
+Here also used in a wider sense as \"Research Goal\".""" ;
+   tAI:FROM "The Oxford English Dictionary. Oxford University Press, 2 Ed., 1989"
+ ] .
+
+
+###  http://ktmfk.de/ontology/tribAIn/ExperimentalModel
+tAI:ExperimentalModel rdf:type owl:Class ;
+                      rdfs:subClassOf tAI:Model ;
+                      tAI:FROM "EXPO (http://expo.sourceforge.net)" ;
+                      rdfs:comment "An experimental model is a description of dependencies (e.g. logical/mathematical) between experimental factors, others known variables, and unknown variables.  The experimental model is obtained from the domain model by fixing experimental factors from the list of known controllable variables and the target variables from the list of unknown variables." ,
+                                   "In the case of tribological experiments, there exist not only experimental factors or variables to describe the model of a tribological experiment. Moreover, there are different models which form a reference model or method (e.g. domain models of interactions, tribo-elements or stress collective)." .
+
+
+###  http://ktmfk.de/ontology/tribAIn/ExperimentalResults
+tAI:ExperimentalResults rdf:type owl:Class ;
+                        rdfs:subClassOf tAI:ProductRole ;
+                        tAI:FROM "EXPO (http://expo.sourceforge.net)" ;
+                        rdfs:comment "Experimental results are the set of facts and conclusions, obtained as a result of the interpretation of the experimental observations, which increase/decrease the probability of a research hypothesis of the experiment." .
+
+
+###  http://ktmfk.de/ontology/tribAIn/ExtremepressureAdditive
+tAI:ExtremepressureAdditive rdf:type owl:Class ;
+                            rdfs:subClassOf tAI:Additive ;
+                            rdfs:comment "Form protective films on sliding metal parts. These agents are often sulfur compounds, such as dithiophosphates." .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource tAI:ExtremepressureAdditive ;
+   owl:annotatedProperty rdfs:comment ;
+   owl:annotatedTarget "Form protective films on sliding metal parts. These agents are often sulfur compounds, such as dithiophosphates." ;
+   tAI:FROM "ISBN: 978-1-4987-5290-9"
+ ] .
+
+
+###  http://ktmfk.de/ontology/tribAIn/FactorRole
+tAI:FactorRole rdf:type owl:Class ;
+               rdfs:subClassOf tAI:Process-relatedRole ;
+               rdfs:comment "The role of a factor which can be an input to a process/procedure or an output of it." .
+
+
+###  http://ktmfk.de/ontology/tribAIn/FieldOfStudy
+tAI:FieldOfStudy rdf:type owl:Class ;
+                 rdfs:subClassOf tAI:Proposition ;
+                 tAI:FROM "EXPO (http://expo.sourceforge.net)" ;
+                 rdfs:comment "An academic or applied discipline with recognized experts and with a core of accepted theory or practice. Note that FieldOfStudy is a subclass of Proposition, because a FieldOfStudy is understood to be a body of abstract, informational content, with varying degrees of certainty attached to each element of this content." .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource tAI:FieldOfStudy ;
+   owl:annotatedProperty rdfs:comment ;
+   owl:annotatedTarget "An academic or applied discipline with recognized experts and with a core of accepted theory or practice. Note that FieldOfStudy is a subclass of Proposition, because a FieldOfStudy is understood to be a body of abstract, informational content, with varying degrees of certainty attached to each element of this content." ;
+   tAI:FROM "SUMO (http://www.adampease.org/OP)"
+ ] .
+
+
+###  http://ktmfk.de/ontology/tribAIn/Force
+tAI:Force rdf:type owl:Class ;
+          rdfs:subClassOf tAI:PhysicalQuantity ,
+                          [ rdf:type owl:Restriction ;
+                            owl:onProperty tAI:hasUnit ;
+                            owl:someValuesFrom tAI:ForceUnit
+                          ] ;
+          rdfs:comment """Strength or energy as an attribute of physical action or movement.
+An influence tending to change the motion of a body or produce motion or stress in a stationary body. The magnitude of such an influence is often calculated by multiplying the mass of the body and its acceleration.""" .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource tAI:Force ;
+   owl:annotatedProperty rdfs:comment ;
+   owl:annotatedTarget """Strength or energy as an attribute of physical action or movement.
+An influence tending to change the motion of a body or produce motion or stress in a stationary body. The magnitude of such an influence is often calculated by multiplying the mass of the body and its acceleration.""" ;
+   tAI:FROM "https://www.lexico.com/definition/force"
+ ] .
+
+
+###  http://ktmfk.de/ontology/tribAIn/ForceUnit
+tAI:ForceUnit rdf:type owl:Class ;
+              rdfs:subClassOf tAI:Unit .
+
+
+###  http://ktmfk.de/ontology/tribAIn/FrictionForce
+tAI:FrictionForce rdf:type owl:Class ;
+                  rdfs:subClassOf tAI:Force ;
+                  rdfs:comment "A force caused by friction." .
+
+
+###  http://ktmfk.de/ontology/tribAIn/FrictionIncrease
+tAI:FrictionIncrease rdf:type owl:Class ;
+                     rdfs:subClassOf tAI:FrictionalBehavior .
+
+
+###  http://ktmfk.de/ontology/tribAIn/FrictionModifier
+tAI:FrictionModifier rdf:type owl:Class ;
+                     rdfs:subClassOf tAI:Additive ;
+                     rdfs:comment "Reduce friction and wear, particularly in the boundary lubrication regime where surfaces come into direct contact." .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource tAI:FrictionModifier ;
+   owl:annotatedProperty rdfs:comment ;
+   owl:annotatedTarget "Reduce friction and wear, particularly in the boundary lubrication regime where surfaces come into direct contact." ;
+   tAI:FROM "https://doi.org/10.1002/14356007.a15_423.pub2"
+ ] .
+
+
+###  http://ktmfk.de/ontology/tribAIn/FrictionRadius
+tAI:FrictionRadius rdf:type owl:Class ;
+                   rdfs:subClassOf tAI:Distance ,
+                                   tAI:TribologicalParameter ,
+                                   [ rdf:type owl:Restriction ;
+                                     owl:onProperty tAI:hasUnit ;
+                                     owl:someValuesFrom tAI:DistanceUnit
+                                   ] ;
+                   rdfs:comment "The area in which friction forces apear." .
+
+
+###  http://ktmfk.de/ontology/tribAIn/FrictionReduction
+tAI:FrictionReduction rdf:type owl:Class ;
+                      rdfs:subClassOf tAI:FrictionalBehavior .
+
+
+###  http://ktmfk.de/ontology/tribAIn/FrictionalBehavior
+tAI:FrictionalBehavior rdf:type owl:Class ;
+                       rdfs:subClassOf tAI:ResultingPerformance ;
+                       rdfs:comment "Properties of an tribological system regarding the force that opposes the relative motion or tendency of such motion of two surfaces in contact." .
+
+
+###  http://ktmfk.de/ontology/tribAIn/Geometry
+tAI:Geometry rdf:type owl:Class ;
+             rdfs:subClassOf tAI:Parameter ,
+                             [ rdf:type owl:Restriction ;
+                               owl:onProperty tAI:hasUnit ;
+                               owl:someValuesFrom tAI:DistanceUnit
+                             ] ;
+             rdfs:comment "Parameters, which are concerned with shape, size, relative position and space." .
+
+
+###  http://ktmfk.de/ontology/tribAIn/GeometryElement
+tAI:GeometryElement rdf:type owl:Class ;
+                    rdfs:subClassOf tAI:DomainModel ;
+                    rdfs:comment "Elements, which have a specific, describable form. Often they are the basis for every other geometry." .
+
+
+###  http://ktmfk.de/ontology/tribAIn/Gigapascal
+tAI:Gigapascal rdf:type owl:Class ;
+               rdfs:subClassOf tAI:PressureUnit .
+
+
+###  http://ktmfk.de/ontology/tribAIn/Goal
+tAI:Goal rdf:type owl:Class ;
+         rdfs:subClassOf tAI:TaskRole ;
+         tAI:FROM "EXPO (http://expo.sourceforge.net)" .
+
+
+###  http://ktmfk.de/ontology/tribAIn/Gram
+tAI:Gram rdf:type owl:Class ;
+         rdfs:subClassOf tAI:MassUnit .
+
+
+###  http://ktmfk.de/ontology/tribAIn/Grease
+tAI:Grease rdf:type owl:Class ;
+           rdfs:subClassOf tAI:Lubricant ;
+           rdfs:comment "Grease is a semisolid lubricant consisting of a soap emulsified with mineral or vegetable oil." .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource tAI:Grease ;
+   owl:annotatedProperty rdfs:comment ;
+   owl:annotatedTarget "Grease is a semisolid lubricant consisting of a soap emulsified with mineral or vegetable oil." ;
+   tAI:FROM "https://web.archive.org/web/20090417002357/http://www.barks.com/2002/02-04feat.html"
+ ] .
+
+
+###  http://ktmfk.de/ontology/tribAIn/Grinding
+tAI:Grinding rdf:type owl:Class ;
+             rdfs:subClassOf tAI:IndustrialProcess ;
+             rdfs:comment "Abrasive machining process." .
+
+
+###  http://ktmfk.de/ontology/tribAIn/GroupExperimentalObject
+tAI:GroupExperimentalObject rdf:type owl:Class ;
+                            rdfs:subClassOf tAI:ObjectOfExperiment ,
+                                            [ rdf:type owl:Restriction ;
+                                              owl:onProperty tAI:hasTargetVariable ;
+                                              owl:allValuesFrom tAI:TargetVariable
+                                            ] ;
+                            rdfs:comment "A group of experimental objects is a collection of studying in a scientific investigation objects." .
+
+
+###  http://ktmfk.de/ontology/tribAIn/HeatTreatment
+tAI:HeatTreatment rdf:type owl:Class ;
+                  rdfs:subClassOf tAI:IndustrialProcess ;
+                  rdfs:comment "Heat treating is a group of industrial, thermal and metalworking processes used to alter the physical, and sometimes chemical, properties of a material" .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource tAI:HeatTreatment ;
+   owl:annotatedProperty rdfs:comment ;
+   owl:annotatedTarget "Heat treating is a group of industrial, thermal and metalworking processes used to alter the physical, and sometimes chemical, properties of a material" ;
+   tAI:FROM "https://en.wikipedia.org/wiki/Heat_treating"
+ ] .
+
+
+###  http://ktmfk.de/ontology/tribAIn/Height
+tAI:Height rdf:type owl:Class ;
+           rdfs:subClassOf tAI:Geometry .
+
+
+###  http://ktmfk.de/ontology/tribAIn/HertzianContactStress
+tAI:HertzianContactStress rdf:type owl:Class ;
+                          rdfs:subClassOf tAI:Stress .
+
+
+###  http://ktmfk.de/ontology/tribAIn/Hour
+tAI:Hour rdf:type owl:Class ;
+         rdfs:subClassOf tAI:TimeUnit .
+
+
+###  http://ktmfk.de/ontology/tribAIn/Humidity
+tAI:Humidity rdf:type owl:Class ;
+             rdfs:subClassOf tAI:Concentration ;
+             rdfs:comment "A quantity representing the amount of water vapour in the atmosphere or in a gas." .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource tAI:Humidity ;
+   owl:annotatedProperty rdfs:comment ;
+   owl:annotatedTarget "A quantity representing the amount of water vapour in the atmosphere or in a gas." ;
+   tAI:FROM "https://www.lexico.com/definition/humidity"
+ ] .
+
+
+###  http://ktmfk.de/ontology/tribAIn/HypothesisRepresentation
+tAI:HypothesisRepresentation rdf:type owl:Class ;
+                             rdfs:subClassOf tAI:Representation ;
+                             tAI:FROM "EXPO (http://expo.sourceforge.net)" ;
+                             rdfs:comment "The representation form of the experimental hypothesis." .
+
+
+###  http://ktmfk.de/ontology/tribAIn/IndustrialProcess
+tAI:IndustrialProcess rdf:type owl:Class ;
+                      rdfs:subClassOf tAI:Procedure ,
+                                      [ rdf:type owl:Restriction ;
+                                        owl:onProperty tAI:isCarriedOutBy ;
+                                        owl:someValuesFrom tAI:Device
+                                      ] ;
+                      rdfs:comment "Industrial processes are procedures involving chemical, physical, electrical or mechanical steps to aid in the manufacturing of an item or items, usually carried out on a very large scale. Industrial processes are the key components of heavy industry." .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource tAI:IndustrialProcess ;
+   owl:annotatedProperty rdfs:comment ;
+   owl:annotatedTarget "Industrial processes are procedures involving chemical, physical, electrical or mechanical steps to aid in the manufacturing of an item or items, usually carried out on a very large scale. Industrial processes are the key components of heavy industry." ;
+   tAI:FROM "https://en.wikipedia.org/wiki/Industrial_processes"
+ ] .
+
+
+###  http://ktmfk.de/ontology/tribAIn/Input
+tAI:Input rdf:type owl:Class ;
+          rdfs:subClassOf tAI:FactorRole ;
+          rdfs:comment "For instance, within a production process different materials are an Input in a manufacturing subprocess." ,
+                       "What is put in, taken in, or operated on by any process or system." .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource tAI:Input ;
+   owl:annotatedProperty rdfs:comment ;
+   owl:annotatedTarget "What is put in, taken in, or operated on by any process or system." ;
+   tAI:FROM "https://www.lexico.com/definition/input"
+ ] .
+
+
+###  http://ktmfk.de/ontology/tribAIn/Interaction
+tAI:Interaction rdf:type owl:Class ;
+                rdfs:subClassOf tAI:DomainModel ;
+                rdfs:comment "Used to sign which kind of interaction between at least two things (e.g. parts, surfaces) exist." .
+
+
+###  http://ktmfk.de/ontology/tribAIn/InterfacialMedium
+tAI:InterfacialMedium rdf:type owl:Class ;
+                      rdfs:subClassOf tAI:TriboElement ;
+                      rdfs:comment "Substances (solid, liquid or gas) that can come into contact between body and counterbody from the environment or from the contacting bodies. The interfacial medium is defined by its type, composition and material properties." .
+
+
+###  http://ktmfk.de/ontology/tribAIn/Kelvin
+tAI:Kelvin rdf:type owl:Class ;
+           rdfs:subClassOf tAI:SIbaseUnit ,
+                           tAI:TemperatureUnit .
+
+
+###  http://ktmfk.de/ontology/tribAIn/KiloVolt
+tAI:KiloVolt rdf:type owl:Class ;
+             rdfs:subClassOf tAI:ElectricPotentialUnit .
+
+
+###  http://ktmfk.de/ontology/tribAIn/Kilogram
+tAI:Kilogram rdf:type owl:Class ;
+             rdfs:subClassOf tAI:MassUnit ,
+                             tAI:SIbaseUnit .
+
+
+###  http://ktmfk.de/ontology/tribAIn/KinematicalParameter
+tAI:KinematicalParameter rdf:type owl:Class ;
+                         rdfs:subClassOf tAI:ExperimentalFactor ;
+                         rdfs:comment "tbd." .
+
+
+###  http://ktmfk.de/ontology/tribAIn/Length
+tAI:Length rdf:type owl:Class ;
+           rdfs:subClassOf tAI:Distance ,
+                           tAI:Geometry .
+
+
+###  http://ktmfk.de/ontology/tribAIn/LogicalHypothesisRepresentation
+tAI:LogicalHypothesisRepresentation rdf:type owl:Class ;
+                                    rdfs:subClassOf tAI:HypothesisRepresentation ;
+                                    rdfs:comment "A logical representation of the hypothesis, e.g. a logical programm." .
+
+
+###  http://ktmfk.de/ontology/tribAIn/LogicalModelRepresentation
+tAI:LogicalModelRepresentation rdf:type owl:Class ;
+                               rdfs:subClassOf tAI:ModelRepresentation ;
+                               tAI:FROM "EXPO (http://expo.sourceforge.net)" ;
+                               rdfs:comment "A logical model is a representation of an experimental model where the relationship between the variables is logical." .
+
+
+###  http://ktmfk.de/ontology/tribAIn/Lubricant
+tAI:Lubricant rdf:type owl:Class ;
+              rdfs:subClassOf tAI:PhysicalObject ;
+              rdfs:comment "A lubricant is a substance, usually organic, introduced to reduce friction between surfaces in mutual contact, which ultimately reduces the heat generated when the surfaces move. It may also have the function of transmitting forces, transporting foreign particles, or heating or cooling the surfaces." .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource tAI:Lubricant ;
+   owl:annotatedProperty rdfs:comment ;
+   owl:annotatedTarget "A lubricant is a substance, usually organic, introduced to reduce friction between surfaces in mutual contact, which ultimately reduces the heat generated when the surfaces move. It may also have the function of transmitting forces, transporting foreign particles, or heating or cooling the surfaces." ;
+   tAI:FROM "https://en.wikipedia.org/wiki/Lubricant"
+ ] .
+
+
+###  http://ktmfk.de/ontology/tribAIn/MXene
+tAI:MXene rdf:type owl:Class ;
+          rdfs:subClassOf <http://ktmfk.de/ontology/tribAIn/2dCompound> .
+
+
+###  http://ktmfk.de/ontology/tribAIn/MachineryBenchTest
+tAI:MachineryBenchTest rdf:type owl:Class ;
+                       rdfs:subClassOf tAI:CategoryOfTribologicalTesting ;
+                       rdfs:comment "Cat.II: Examination of original complete tribotechnical systems under practical operating conditions on a test bench." .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource tAI:MachineryBenchTest ;
+   owl:annotatedProperty rdfs:comment ;
+   owl:annotatedTarget "Cat.II: Examination of original complete tribotechnical systems under practical operating conditions on a test bench." ;
+   tAI:FROM "https://doi.org/10.1007/978-3-8348-2236-9"
+ ] .
+
+
+###  http://ktmfk.de/ontology/tribAIn/MachineryFieldTest
+tAI:MachineryFieldTest rdf:type owl:Class ;
+                       rdfs:subClassOf tAI:CategoryOfTribologicalTesting ;
+                       rdfs:comment "Cat.I: Examination of original complete tribotechnical systems under original operating conditions." .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource tAI:MachineryFieldTest ;
+   owl:annotatedProperty rdfs:comment ;
+   owl:annotatedTarget "Cat.I: Examination of original complete tribotechnical systems under original operating conditions." ;
+   tAI:FROM "https://doi.org/10.1007/978-3-8348-2236-9"
+ ] .
+
+
+###  http://ktmfk.de/ontology/tribAIn/MassUnit
+tAI:MassUnit rdf:type owl:Class ;
+             rdfs:subClassOf tAI:Unit .
+
+
+###  http://ktmfk.de/ontology/tribAIn/Material
+tAI:Material rdf:type owl:Class ;
+             rdfs:subClassOf tAI:PhysicalObject ;
+             rdfs:comment "A material is a substance or mixture of substances that constitutes an object. Materials can be pure or impure, living or non-living matter. Materials can be classified based on their physical and chemical properties, or on their geological origin or biological function." .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource tAI:Material ;
+   owl:annotatedProperty rdfs:comment ;
+   owl:annotatedTarget "A material is a substance or mixture of substances that constitutes an object. Materials can be pure or impure, living or non-living matter. Materials can be classified based on their physical and chemical properties, or on their geological origin or biological function." ;
+   tAI:FROM "https://en.wikipedia.org/wiki/Material"
+ ] .
+
+
+###  http://ktmfk.de/ontology/tribAIn/MaterialPairing
+tAI:MaterialPairing rdf:type owl:Class ;
+                    rdfs:subClassOf tAI:Contact ;
+                    rdfs:comment "Signs contact pairs between different material." .
+
+
+###  http://ktmfk.de/ontology/tribAIn/MaterialProperty
+tAI:MaterialProperty rdf:type owl:Class ;
+                     rdfs:subClassOf tAI:Parameter ;
+                     rdfs:comment "Properties a material has independent of the amount of material." .
+
+
+###  http://ktmfk.de/ontology/tribAIn/MathematicalHypothesisRepresentation
+tAI:MathematicalHypothesisRepresentation rdf:type owl:Class ;
+                                         rdfs:subClassOf tAI:HypothesisRepresentation ;
+                                         rdfs:comment "A mathematical representation of the hypothesis e.g. a function." .
+
+
+###  http://ktmfk.de/ontology/tribAIn/MathematicalModelRepresentation
+tAI:MathematicalModelRepresentation rdf:type owl:Class ;
+                                    rdfs:subClassOf tAI:ModelRepresentation ;
+                                    tAI:FROM "EXPO (http://expo.sourceforge.net)" ;
+                                    rdfs:comment "A mathematical model is a representation of an experimental model where the relationship between the variables is mathematical." .
+
+
+###  http://ktmfk.de/ontology/tribAIn/MeasurementError
+tAI:MeasurementError rdf:type owl:Class ;
+                     rdfs:subClassOf tAI:Error ;
+                     tAI:FROM "EXPO (http://expo.sourceforge.net)" ;
+                     rdfs:comment "A measurement error is an error involving the observation of a physical quantity." .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource tAI:MeasurementError ;
+   owl:annotatedProperty rdfs:comment ;
+   owl:annotatedTarget "A measurement error is an error involving the observation of a physical quantity." ;
+   tAI:FROM """Arley, N. & Buch , K.R., Introduction to the theory of probability and statistics. New York : Wiley London. Chapman & Hall, 1950. 236p
+ https://doi.org/10.1002/9780470316849.oth1"""
+ ] .
+
+
+###  http://ktmfk.de/ontology/tribAIn/MeasurementSeries
+tAI:MeasurementSeries rdf:type owl:Class ;
+                      rdfs:subClassOf tAI:Output ,
+                                      [ rdf:type owl:Restriction ;
+                                        owl:onProperty tAI:hasParameter ;
+                                        owl:allValuesFrom tAI:Parameter
+                                      ] ;
+                      rdfs:comment """The measurement series groups single measurement points as single objects for each measured parameter as a series.
+For instance, a series of all measured COFs from one test series is a measurement series for the parameter COF.""" .
+
+
+###  http://ktmfk.de/ontology/tribAIn/Megabar
+tAI:Megabar rdf:type owl:Class ;
+            rdfs:subClassOf tAI:PressureUnit .
+
+
+###  http://ktmfk.de/ontology/tribAIn/Megapascal
+tAI:Megapascal rdf:type owl:Class ;
+               rdfs:subClassOf tAI:PressureUnit .
+
+
+###  http://ktmfk.de/ontology/tribAIn/Metre
+tAI:Metre rdf:type owl:Class ;
+          rdfs:subClassOf tAI:DistanceUnit ,
+                          tAI:SIbaseUnit .
+
+
+###  http://ktmfk.de/ontology/tribAIn/MetrePerSecond
+tAI:MetrePerSecond rdf:type owl:Class ;
+                   rdfs:subClassOf tAI:SpeedUnit .
+
+
+###  http://ktmfk.de/ontology/tribAIn/Micrometre
+tAI:Micrometre rdf:type owl:Class ;
+               rdfs:subClassOf tAI:DistanceUnit .
+
+
+###  http://ktmfk.de/ontology/tribAIn/MicroscopyImage
+tAI:MicroscopyImage rdf:type owl:Class ;
+                    rdfs:subClassOf tAI:RepresentationExperimentalResults ;
+                    rdfs:comment "Images generated by microscopy." .
+
+
+###  http://ktmfk.de/ontology/tribAIn/Milimetre
+tAI:Milimetre rdf:type owl:Class ;
+              rdfs:subClassOf tAI:DistanceUnit .
+
+
+###  http://ktmfk.de/ontology/tribAIn/MineralOil
+tAI:MineralOil rdf:type owl:Class ;
+               rdfs:subClassOf tAI:Lubricant ;
+               rdfs:comment "Lubricating base oils derived from crude oil." .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource tAI:MineralOil ;
+   owl:annotatedProperty rdfs:comment ;
+   owl:annotatedTarget "Lubricating base oils derived from crude oil." ;
+   tAI:FROM "https://en.wikipedia.org/wiki/Lubricant#Mineral_oil"
+ ] .
+
+
+###  http://ktmfk.de/ontology/tribAIn/Minute
+tAI:Minute rdf:type owl:Class ;
+           rdfs:subClassOf tAI:TimeUnit .
+
+
+###  http://ktmfk.de/ontology/tribAIn/Model
+tAI:Model rdf:type owl:Class ;
+          rdfs:subClassOf tAI:Proposition ;
+          tAI:FROM "EXPO (http://expo.sourceforge.net)" ;
+          rdfs:comment "A simplified description, especially a mathematical one, of a system or process, to assist calculations and predictions." .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource tAI:Model ;
+   owl:annotatedProperty rdfs:comment ;
+   owl:annotatedTarget "A simplified description, especially a mathematical one, of a system or process, to assist calculations and predictions." ;
+   tAI:FROM "https://www.lexico.com/definition/model"
+ ] .
+
+
+###  http://ktmfk.de/ontology/tribAIn/ModelRepresentation
+tAI:ModelRepresentation rdf:type owl:Class ;
+                        rdfs:subClassOf tAI:Representation ;
+                        tAI:FROM "EXPO (http://expo.sourceforge.net)" ;
+                        rdfs:comment "A model representation is a formalized description of the experimental model, for instance a text or formulas." .
+
+
+###  http://ktmfk.de/ontology/tribAIn/ModelTest
+tAI:ModelTest rdf:type owl:Class ;
+              rdfs:subClassOf tAI:CategoryOfTribologicalTesting ;
+              rdfs:comment "Cat.VI: Fundamental research on friction and wear behavior with special test samples under arbitrary, but defined conditions." .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource tAI:ModelTest ;
+   owl:annotatedProperty rdfs:comment ;
+   owl:annotatedTarget "Cat.VI: Fundamental research on friction and wear behavior with special test samples under arbitrary, but defined conditions." ;
+   tAI:FROM "https://doi.org/10.1007/978-3-8348-2236-9"
+ ] .
+
+
+###  http://ktmfk.de/ontology/tribAIn/Newton
+tAI:Newton rdf:type owl:Class ;
+           rdfs:subClassOf tAI:ForceUnit .
+
+
+###  http://ktmfk.de/ontology/tribAIn/Newtonmeter
+tAI:Newtonmeter rdf:type owl:Class ;
+                rdfs:subClassOf tAI:TorqueUnit .
+
+
+###  http://ktmfk.de/ontology/tribAIn/NormalForce
+tAI:NormalForce rdf:type owl:Class ;
+                rdfs:subClassOf tAI:Force .
+
+
+###  http://ktmfk.de/ontology/tribAIn/ObjectOfExperiment
+tAI:ObjectOfExperiment rdf:type owl:Class ;
+                       rdfs:subClassOf tAI:ActorRole ;
+                       tAI:FROM "EXPO (http://expo.sourceforge.net)" ;
+                       rdfs:comment "An object of an experiment is \"on whom an experiment is made.\" For instance: a <plant>, a <robot>." .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource tAI:ObjectOfExperiment ;
+   owl:annotatedProperty rdfs:comment ;
+   owl:annotatedTarget "An object of an experiment is \"on whom an experiment is made.\" For instance: a <plant>, a <robot>." ;
+   tAI:FROM "The Oxford English Dictionary. Oxford University Press, 2 Ed., 1989"
+ ] .
+
+
+###  http://ktmfk.de/ontology/tribAIn/OperationalParameter
+tAI:OperationalParameter rdf:type owl:Class ;
+                         rdfs:subClassOf tAI:ExperimentalFactor ;
+                         rdfs:comment "A value or component to quantify the the stress collective on the contacting bodies of the tribosystem." .
+
+
+###  http://ktmfk.de/ontology/tribAIn/Output
+tAI:Output rdf:type owl:Class ;
+           rdfs:subClassOf tAI:FactorRole ;
+           rdfs:comment "Every Process has an output, which is the result of the process. For instance, a production process has a complete product as an output." ,
+                        "The amount of something produced by a person, machine, or industry." .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource tAI:Output ;
+   owl:annotatedProperty rdfs:comment ;
+   owl:annotatedTarget "The amount of something produced by a person, machine, or industry." ;
+   tAI:FROM "https://www.lexico.com/en/definition/output"
+ ] .
+
+
+###  http://ktmfk.de/ontology/tribAIn/Parameter
+tAI:Parameter rdf:type owl:Class ;
+              rdfs:subClassOf tAI:Variable ,
+                              [ rdf:type owl:Restriction ;
+                                owl:onProperty tAI:hasUnit ;
+                                owl:allValuesFrom tAI:Unit
+                              ] ,
+                              [ rdf:type owl:Restriction ;
+                                owl:onProperty tAI:hasValue ;
+                                owl:someValuesFrom xsd:double
+                              ] ;
+              rdfs:comment "A numerical or other measurable factor forming one of a set that defines a system or sets the conditions of its operation." .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource tAI:Parameter ;
+   owl:annotatedProperty rdfs:comment ;
+   owl:annotatedTarget "A numerical or other measurable factor forming one of a set that defines a system or sets the conditions of its operation." ;
+   tAI:FROM "https://www.lexico.com/en/definition/parameter"
+ ] .
+
+
+###  http://ktmfk.de/ontology/tribAIn/Part
+tAI:Part rdf:type owl:Class ;
+         rdfs:subClassOf tAI:Component .
+
+
+###  http://ktmfk.de/ontology/tribAIn/Pascal
+tAI:Pascal rdf:type owl:Class ;
+           rdfs:subClassOf tAI:PressureUnit .
+
+
+###  http://ktmfk.de/ontology/tribAIn/PenningValue
+tAI:PenningValue rdf:type owl:Class ;
+                 rdfs:subClassOf tAI:Pressure ;
+                 rdfs:comment "Pressure which is measured in vaccuum. The range of measurement is less precise as Pirani." .
+
+
+###  http://ktmfk.de/ontology/tribAIn/Percentage
+tAI:Percentage rdf:type owl:Class ;
+               rdfs:subClassOf tAI:ConcentrationUnit .
+
+
+###  http://ktmfk.de/ontology/tribAIn/Physical
+tAI:Physical rdf:type owl:Class ;
+             tAI:FROM "EXPO (http://expo.sourceforge.net)" .
+
+
+###  http://ktmfk.de/ontology/tribAIn/PhysicalExperiment
+tAI:PhysicalExperiment rdf:type owl:Class ;
+                       rdfs:subClassOf tAI:ScientificExperiment ,
+                                       [ rdf:type owl:Restriction ;
+                                         owl:onProperty tAI:isCarriedOutBy ;
+                                         owl:someValuesFrom tAI:Device
+                                       ] ;
+                       tAI:FROM "EXPO (http://expo.sourceforge.net)" ;
+                       rdfs:comment "A physical experiment is a scientific experiment which investigates cause-effect relations between known and unknown variables by manipulating the real-world (physical) domain." .
+
+
+###  http://ktmfk.de/ontology/tribAIn/PhysicalObject
+tAI:PhysicalObject rdf:type owl:Class ;
+                   rdfs:subClassOf tAI:Physical ,
+                                   [ rdf:type owl:Restriction ;
+                                     owl:onProperty tAI:usedIn ;
+                                     owl:someValuesFrom [ rdf:type owl:Class ;
+                                                          owl:unionOf ( tAI:ReferenceGroup
+                                                                        tAI:ReferenceSample
+                                                                        tAI:Sample
+                                                                        tAI:SampleGroup
+                                                                        tAI:TestSeries
+                                                                      )
+                                                        ]
+                                   ] ;
+                   rdfs:comment "Physical objects in the engineering domain, such as materials and lubricants for the tribological domain or even parts and assemblies in general engineering design." .
+
+
+###  http://ktmfk.de/ontology/tribAIn/PhysicalQuantity
+tAI:PhysicalQuantity rdf:type owl:Class ;
+                     rdfs:subClassOf tAI:Parameter ;
+                     rdfs:comment "A value or component that may be expressed in numbers." .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource tAI:PhysicalQuantity ;
+   owl:annotatedProperty rdfs:comment ;
+   owl:annotatedTarget "A value or component that may be expressed in numbers." ;
+   tAI:FROM "https://www.lexico.com/definition/quantity"
+ ] .
+
+
+###  http://ktmfk.de/ontology/tribAIn/PiraniValue
+tAI:PiraniValue rdf:type owl:Class ;
+                rdfs:subClassOf tAI:Pressure ;
+                rdfs:comment "Pressure which is measured in vaccuum. The range of measurement is more precise as penning, thus is used for fine vacuum." .
+
+
+###  http://ktmfk.de/ontology/tribAIn/PoissonsRatio
+tAI:PoissonsRatio rdf:type owl:Class ;
+                  rdfs:subClassOf tAI:DimensionlessQuantity ,
+                                  tAI:MaterialProperty ;
+                  rdfs:comment "Ratio of lateral strain to axial strain." .
+
+
+###  http://ktmfk.de/ontology/tribAIn/Polishing
+tAI:Polishing rdf:type owl:Class ;
+              rdfs:subClassOf tAI:IndustrialProcess ;
+              rdfs:comment "Finishing processes for smoothing a workpiece's surface using an abrasive." .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource tAI:Polishing ;
+   owl:annotatedProperty rdfs:comment ;
+   owl:annotatedTarget "Finishing processes for smoothing a workpiece's surface using an abrasive." ;
+   tAI:FROM "https://en.wikipedia.org/wiki/Polishing_(metalworking)"
+ ] .
+
+
+###  http://ktmfk.de/ontology/tribAIn/PourpointDepressant
+tAI:PourpointDepressant rdf:type owl:Class ;
+                        rdfs:subClassOf tAI:Additive ;
+                        rdfs:comment "Compounds that prevent crystallization of waxes. Long chain alkylbenzenes adhere to small crystallites of wax, preventing crystal growth." .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource tAI:PourpointDepressant ;
+   owl:annotatedProperty rdfs:comment ;
+   owl:annotatedTarget "Compounds that prevent crystallization of waxes. Long chain alkylbenzenes adhere to small crystallites of wax, preventing crystal growth." ;
+   tAI:FROM "ISBN: 978-1-4987-5290-9"
+ ] .
+
+
+###  http://ktmfk.de/ontology/tribAIn/Predicate
+tAI:Predicate rdf:type owl:Class ;
+              rdfs:subClassOf tAI:Relation ;
+              tAI:FROM "EXPO (http://expo.sourceforge.net)" ;
+              rdfs:comment "A Predicate is a sentence-forming Relation. Each tuple in the Relation is a finite, ordered sequence of objects. The fact that a particular tuple is an element of a Predicate is denoted by '(*predicate* arg_1 arg_2 .. arg_n)', where the arg_i are the objects so related. In the case of BinaryPredicates, the fact can be read as `arg_1 is *predicate* arg_2' or `a *predicate* of arg_1 is arg_2." .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource tAI:Predicate ;
+   owl:annotatedProperty rdfs:comment ;
+   owl:annotatedTarget "A Predicate is a sentence-forming Relation. Each tuple in the Relation is a finite, ordered sequence of objects. The fact that a particular tuple is an element of a Predicate is denoted by '(*predicate* arg_1 arg_2 .. arg_n)', where the arg_i are the objects so related. In the case of BinaryPredicates, the fact can be read as `arg_1 is *predicate* arg_2' or `a *predicate* of arg_1 is arg_2." ;
+   tAI:FROM "SUMO (http://www.adampease.org/OP)"
+ ] .
+
+
+###  http://ktmfk.de/ontology/tribAIn/Pressure
+tAI:Pressure rdf:type owl:Class ;
+             rdfs:subClassOf tAI:Parameter ,
+                             [ rdf:type owl:Restriction ;
+                               owl:onProperty tAI:hasUnit ;
+                               owl:someValuesFrom tAI:PressureUnit
+                             ] ;
+             rdfs:comment "The force per unit area exerted by [,for instance,] a fluid against a surface with which it is in contact." .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource tAI:Pressure ;
+   owl:annotatedProperty rdfs:comment ;
+   owl:annotatedTarget "The force per unit area exerted by [,for instance,] a fluid against a surface with which it is in contact." ;
+   tAI:FROM "https://www.lexico.com/definition/pressure"
+ ] .
+
+
+###  http://ktmfk.de/ontology/tribAIn/PressureUnit
+tAI:PressureUnit rdf:type owl:Class ;
+                 rdfs:subClassOf tAI:Unit .
+
+
+###  http://ktmfk.de/ontology/tribAIn/Procedure
+tAI:Procedure rdf:type owl:Class ;
+              rdfs:subClassOf tAI:Proposition ,
+                              [ rdf:type owl:Restriction ;
+                                owl:onProperty tAI:hasParameter ;
+                                owl:allValuesFrom tAI:Parameter
+                              ] ;
+              tAI:FROM "EXPO (http://expo.sourceforge.net)" ;
+              rdfs:comment "A sequence-dependent specification. Some examples are ComputerPrograms, finite-state machines, cooking recipes, musical scores, conference schedules, driving directions, and the scripts of plays and movies." .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource tAI:Procedure ;
+   owl:annotatedProperty rdfs:comment ;
+   owl:annotatedTarget "A sequence-dependent specification. Some examples are ComputerPrograms, finite-state machines, cooking recipes, musical scores, conference schedules, driving directions, and the scripts of plays and movies." ;
+   tAI:FROM "SUMO (http://www.adampease.org/OP)"
+ ] .
+
+
+###  http://ktmfk.de/ontology/tribAIn/Process-relatedRole
+tAI:Process-relatedRole rdf:type owl:Class ;
+                        rdfs:subClassOf tAI:Role ;
+                        tAI:FROM "EXPO (http://expo.sourceforge.net)" ;
+                        rdfs:comment "Product role (Final output); Residue role (How it is processed)." .
+
+
+###  http://ktmfk.de/ontology/tribAIn/ProductRole
+tAI:ProductRole rdf:type owl:Class ;
+                rdfs:subClassOf tAI:Process-relatedRole ;
+                tAI:FROM "EXPO (http://expo.sourceforge.net)" ;
+                rdfs:comment "Final output." .
+
+
+###  http://ktmfk.de/ontology/tribAIn/Proposition
+tAI:Proposition rdf:type owl:Class ;
+                rdfs:subClassOf tAI:Abstract ;
+                tAI:FROM "EXPO (http://expo.sourceforge.net)" ;
+                rdfs:comment "Propositions are Abstract entities that express a complete thought or a set of such thoughts. As an example, the formula ' (instance Yojo Cat)' expresses the Proposition that the entity named Yojo is an element of the Class of Cats. Note that propositions are not restricted to the content expressed by individual sentences of a Language. They may encompass the content expressed by theories, books, and even whole libraries. It is important to distinguish Propositions from the ContentBearingObjects that express them. A Proposition is a piece of information, e.g. that the cat is on the mat, but a ContentBearingObject is an Object that represents this information. A Proposition is an abstraction that may have multiple representations: strings, sounds, icons, etc. For example, the Proposition that the cat is on the mat is represented here as a string of graphical characters displayed on a monitor and/or printed on paper, but it can be represented by a sequence of sounds or by some non-latin alphabet or by some cryptographic form." .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource tAI:Proposition ;
+   owl:annotatedProperty rdfs:comment ;
+   owl:annotatedTarget "Propositions are Abstract entities that express a complete thought or a set of such thoughts. As an example, the formula ' (instance Yojo Cat)' expresses the Proposition that the entity named Yojo is an element of the Class of Cats. Note that propositions are not restricted to the content expressed by individual sentences of a Language. They may encompass the content expressed by theories, books, and even whole libraries. It is important to distinguish Propositions from the ContentBearingObjects that express them. A Proposition is a piece of information, e.g. that the cat is on the mat, but a ContentBearingObject is an Object that represents this information. A Proposition is an abstraction that may have multiple representations: strings, sounds, icons, etc. For example, the Proposition that the cat is on the mat is represented here as a string of graphical characters displayed on a monitor and/or printed on paper, but it can be represented by a sequence of sounds or by some non-latin alphabet or by some cryptographic form." ;
+   tAI:FROM "SUMO (http://www.adampease.org/OP)"
+ ] .
+
+
+###  http://ktmfk.de/ontology/tribAIn/Ra
+tAI:Ra rdf:type owl:Class ;
+       rdfs:subClassOf tAI:SurfaceRoughness ,
+                       [ rdf:type owl:Restriction ;
+                         owl:onProperty tAI:hasUnit ;
+                         owl:allValuesFrom tAI:Micrometre
+                       ] ;
+       rdfs:comment "arithmetic average height" .
+
+
+###  http://ktmfk.de/ontology/tribAIn/RandomError
+tAI:RandomError rdf:type owl:Class ;
+                rdfs:subClassOf tAI:MeasurementError ;
+                rdfs:comment "Experimental uncertanties that can be revealed by repeating the measurements." .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource tAI:RandomError ;
+   owl:annotatedProperty rdfs:comment ;
+   owl:annotatedTarget "Experimental uncertanties that can be revealed by repeating the measurements." ;
+   tAI:FROM "ISBN 978-0-935702-75-0"
+ ] .
+
+
+###  http://ktmfk.de/ontology/tribAIn/ReducedYoungsModulus
+tAI:ReducedYoungsModulus rdf:type owl:Class ;
+                         rdfs:subClassOf tAI:YoungsModulus .
+
+
+###  http://ktmfk.de/ontology/tribAIn/ReferenceGroup
+tAI:ReferenceGroup rdf:type owl:Class ;
+                   rdfs:subClassOf tAI:GroupExperimentalObject ,
+                                   [ rdf:type owl:Restriction ;
+                                     owl:onProperty tAI:hasReferenceSample ;
+                                     owl:someValuesFrom tAI:ReferenceSample
+                                   ] ;
+                   owl:disjointWith tAI:SampleGroup ;
+                   rdfs:comment "The group of specimens, which the samplegroup is compared with." .
+
+
+###  http://ktmfk.de/ontology/tribAIn/ReferenceSample
+tAI:ReferenceSample rdf:type owl:Class ;
+                    rdfs:subClassOf tAI:ObjectOfExperiment ,
+                                    [ rdf:type owl:Restriction ;
+                                      owl:onProperty tAI:assessedBy ;
+                                      owl:someValuesFrom tAI:TribologicalTesting
+                                    ] ;
+                    owl:disjointWith tAI:Sample ;
+                    rdfs:comment "A reference against which the sample is tested." .
+
+
+###  http://ktmfk.de/ontology/tribAIn/RelatedDomain
+tAI:RelatedDomain rdf:type owl:Class ;
+                  rdfs:subClassOf tAI:FieldOfStudy ;
+                  tAI:FROM "EXPO (http://expo.sourceforge.net)" ;
+                  rdfs:comment "A related domain of an experiment is a domain (field of study) to which belong used in the experiment methods, materials, experimental objects, or other entities involved into the experiment, but is not considered as the domain of the experiment." .
+
+
+###  http://ktmfk.de/ontology/tribAIn/Relation
+tAI:Relation rdf:type owl:Class ;
+             rdfs:subClassOf tAI:Abstract ;
+             tAI:FROM "EXPO (http://expo.sourceforge.net)" ;
+             rdfs:comment "The Class of relations. There are three kinds of Relation: Predicate, Function, and List. Predicates and Functions both denote sets of ordered n-tuples. The difference between these two Classes is that Predicates cover formula-forming operators, while Functions cover term-forming operators. A List, on the other hand, is a particular ordered n-tuple." .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource tAI:Relation ;
+   owl:annotatedProperty rdfs:comment ;
+   owl:annotatedTarget "The Class of relations. There are three kinds of Relation: Predicate, Function, and List. Predicates and Functions both denote sets of ordered n-tuples. The difference between these two Classes is that Predicates cover formula-forming operators, while Functions cover term-forming operators. A List, on the other hand, is a particular ordered n-tuple." ;
+   tAI:FROM "SUMO (http://www.adampease.org/OP)"
+ ] .
+
+
+###  http://ktmfk.de/ontology/tribAIn/RelativeHumidity
+tAI:RelativeHumidity rdf:type owl:Class ;
+                     rdfs:subClassOf tAI:Humidity ;
+                     rdfs:comment "Ratio of the partial pressure of water vapor to the equilibrium vapor pressure of water at a given temperature." .
+
+
+###  http://ktmfk.de/ontology/tribAIn/Representation
+tAI:Representation rdf:type owl:Class ;
+                   rdfs:subClassOf tAI:ContentBearingObject ;
+                   tAI:FROM "EXPO (http://expo.sourceforge.net)" .
+
+
+###  http://ktmfk.de/ontology/tribAIn/RepresentationExperimentalResults
+tAI:RepresentationExperimentalResults rdf:type owl:Class ;
+                                      rdfs:subClassOf tAI:Representation .
+
+
+###  http://ktmfk.de/ontology/tribAIn/ResultingPerformance
+tAI:ResultingPerformance rdf:type owl:Class ;
+                         rdfs:subClassOf tAI:ExperimentalConclusion ;
+                         rdfs:comment """A specification of experimental conclusion due to the domain of tribology.
+Within tribological experiments, assertions about friction and wear performance are two of the main task in experimental investigation.""" .
+
+
+###  http://ktmfk.de/ontology/tribAIn/ResultsDiagramm
+tAI:ResultsDiagramm rdf:type owl:Class ;
+                    rdfs:subClassOf tAI:RepresentationExperimentalResults ;
+                    rdfs:comment "Diagrams are a typical outcome for interpreting experimental results in the domain of tribology." .
+
+
+###  http://ktmfk.de/ontology/tribAIn/Rk
+tAI:Rk rdf:type owl:Class ;
+       rdfs:subClassOf tAI:SurfaceRoughness ,
+                       [ rdf:type owl:Restriction ;
+                         owl:onProperty tAI:hasUnit ;
+                         owl:allValuesFrom tAI:Micrometre
+                       ] ;
+       rdfs:comment "core roughness depth" .
+
+
+###  http://ktmfk.de/ontology/tribAIn/Role
+tAI:Role rdf:type owl:Class ;
+         rdfs:subClassOf tAI:Predicate ;
+         tAI:FROM "EXPO (http://expo.sourceforge.net)" ;
+         rdfs:comment "(role ?OBJECT ?ENTITY) means that ?OBJECT - a Role holder, plays a  Role ?ENTITY   in some context. In EXPO we always consider the context: experiment. For example in context of experiment an object <human> can play the role <subject of experiment> if the human is \"one who executes the experiment\" (OED) or the role <object of experiment> if the human is one \"on whom an experiment is made.\" (OED)." .
+
+
+###  http://ktmfk.de/ontology/tribAIn/Rolling
+tAI:Rolling rdf:type owl:Class ;
+            rdfs:subClassOf tAI:KinematicalParameter ;
+            rdfs:comment "Relative movement between bodies in point or line contact (idealised), whose speeds in the contact surface are equal in magnitude and direction and in which at least one body performs a rotational movement about an axis of rotation lying in the instantaneous contact surface." .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource tAI:Rolling ;
+   owl:annotatedProperty rdfs:comment ;
+   owl:annotatedTarget "Relative movement between bodies in point or line contact (idealised), whose speeds in the contact surface are equal in magnitude and direction and in which at least one body performs a rotational movement about an axis of rotation lying in the instantaneous contact surface." ;
+   tAI:FROM "GfT Arbeitsblatt 7"
+ ] .
+
+
+###  http://ktmfk.de/ontology/tribAIn/RotationSpeed
+tAI:RotationSpeed rdf:type owl:Class ;
+                  rdfs:subClassOf tAI:PhysicalQuantity ;
+                  rdfs:comment "For an object rotating about a fixed axis, the speed of rotation is the number of turns (revolutions) of the object per unit time." .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource tAI:RotationSpeed ;
+   owl:annotatedProperty rdfs:comment ;
+   owl:annotatedTarget "For an object rotating about a fixed axis, the speed of rotation is the number of turns (revolutions) of the object per unit time." ;
+   tAI:FROM "Atkins&Escudier (2013). A Dictionary of Mechanical Engineering. Oxford University Press"
+ ] .
+
+
+###  http://ktmfk.de/ontology/tribAIn/Rp
+tAI:Rp rdf:type owl:Class ;
+       rdfs:subClassOf tAI:SurfaceRoughness ,
+                       [ rdf:type owl:Restriction ;
+                         owl:onProperty tAI:hasUnit ;
+                         owl:allValuesFrom tAI:Micrometre
+                       ] ;
+       rdfs:comment "maximum height of peaks" .
+
+
+###  http://ktmfk.de/ontology/tribAIn/Rpk
+tAI:Rpk rdf:type owl:Class ;
+        rdfs:subClassOf tAI:SurfaceRoughness ,
+                        [ rdf:type owl:Restriction ;
+                          owl:onProperty tAI:hasUnit ;
+                          owl:allValuesFrom tAI:Micrometre
+                        ] ;
+        rdfs:comment "reduced peak height" .
+
+
+###  http://ktmfk.de/ontology/tribAIn/Rq
+tAI:Rq rdf:type owl:Class ;
+       rdfs:subClassOf tAI:SurfaceRoughness ,
+                       [ rdf:type owl:Restriction ;
+                         owl:onProperty tAI:hasUnit ;
+                         owl:allValuesFrom tAI:Micrometre
+                       ] ;
+       rdfs:comment "root mean square roughness" .
+
+
+###  http://ktmfk.de/ontology/tribAIn/Rsk
+tAI:Rsk rdf:type owl:Class ;
+        rdfs:subClassOf tAI:SurfaceRoughness ,
+                        [ rdf:type owl:Restriction ;
+                          owl:onProperty tAI:hasUnit ;
+                          owl:allValuesFrom tAI:Micrometre
+                        ] ;
+        rdfs:comment "skewness" .
+
+
+###  http://ktmfk.de/ontology/tribAIn/Runtime
+tAI:Runtime rdf:type owl:Class ;
+            rdfs:subClassOf tAI:Time ;
+            rdfs:comment "The length of time during a process or procedure." .
+
+
+###  http://ktmfk.de/ontology/tribAIn/Rv
+tAI:Rv rdf:type owl:Class ;
+       rdfs:subClassOf tAI:SurfaceRoughness ,
+                       [ rdf:type owl:Restriction ;
+                         owl:onProperty tAI:hasUnit ;
+                         owl:allValuesFrom tAI:Micrometre
+                       ] ;
+       rdfs:comment "maximum depth of valleys" .
+
+
+###  http://ktmfk.de/ontology/tribAIn/Rvk
+tAI:Rvk rdf:type owl:Class ;
+        rdfs:subClassOf tAI:SurfaceRoughness ,
+                        [ rdf:type owl:Restriction ;
+                          owl:onProperty tAI:hasUnit ;
+                          owl:allValuesFrom tAI:Micrometre
+                        ] ;
+        rdfs:comment "reduced valley depth" .
+
+
+###  http://ktmfk.de/ontology/tribAIn/Rz
+tAI:Rz rdf:type owl:Class ;
+       rdfs:subClassOf tAI:SurfaceRoughness ,
+                       [ rdf:type owl:Restriction ;
+                         owl:onProperty tAI:hasUnit ;
+                         owl:allValuesFrom tAI:Micrometre
+                       ] ;
+       rdfs:comment "ten-point height" .
+
+
+###  http://ktmfk.de/ontology/tribAIn/SIUnit
+tAI:SIUnit rdf:type owl:Class ;
+           rdfs:subClassOf tAI:Unit ;
+           rdfs:comment "A physical unit in the international SI system, which is based on the metre, kilogram, second, ampere, kelvin, candela, and mole, together with a set of prefixes to indicate multiplication or division by a power of ten." .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource tAI:SIUnit ;
+   owl:annotatedProperty rdfs:comment ;
+   owl:annotatedTarget "A physical unit in the international SI system, which is based on the metre, kilogram, second, ampere, kelvin, candela, and mole, together with a set of prefixes to indicate multiplication or division by a power of ten." ;
+   tAI:FROM "https://www.lexico.com/definition/si_unit"
+ ] .
+
+
+###  http://ktmfk.de/ontology/tribAIn/SIbaseUnit
+tAI:SIbaseUnit rdf:type owl:Class ;
+               rdfs:subClassOf tAI:SIUnit .
+
+
+###  http://ktmfk.de/ontology/tribAIn/SIderivedUnit
+tAI:SIderivedUnit rdf:type owl:Class ;
+                  rdfs:subClassOf tAI:SIUnit .
+
+
+###  http://ktmfk.de/ontology/tribAIn/Sample
+tAI:Sample rdf:type owl:Class ;
+           rdfs:subClassOf tAI:ObjectOfExperiment ,
+                           [ rdf:type owl:Restriction ;
+                             owl:onProperty tAI:assessedBy ;
+                             owl:someValuesFrom tAI:TribologicalTesting
+                           ] ;
+           tAI:FROM "EXPO (http://expo.sourceforge.net)" ;
+           rdfs:comment "A sample is \"a portion drawn from a population (EXPO: <parent group>), the study of which is intended to lead to statistical estimates of the attributes of the whole population.\"." .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource tAI:Sample ;
+   owl:annotatedProperty rdfs:comment ;
+   owl:annotatedTarget "A sample is \"a portion drawn from a population (EXPO: <parent group>), the study of which is intended to lead to statistical estimates of the attributes of the whole population.\"." ;
+   tAI:FROM "The Oxford English Dictionary. Oxford University Press, 2 Ed., 1989"
+ ] .
+
+
+###  http://ktmfk.de/ontology/tribAIn/SampleGroup
+tAI:SampleGroup rdf:type owl:Class ;
+                rdfs:subClassOf tAI:GroupExperimentalObject ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty tAI:comparedWith ;
+                                  owl:someValuesFrom tAI:ReferenceGroup
+                                ] ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty tAI:hasSample ;
+                                  owl:someValuesFrom tAI:Sample
+                                ] ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty tAI:resultsIn ;
+                                  owl:someValuesFrom tAI:ExperimentalResults
+                                ] ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty tAI:hasTargetVariable ;
+                                  owl:allValuesFrom tAI:TargetVariable
+                                ] ;
+                rdfs:comment "The group of specimens, which are the object of the investigation." .
+
+
+###  http://ktmfk.de/ontology/tribAIn/ScientificExperiment
+tAI:ScientificExperiment rdf:type owl:Class ;
+                         rdfs:subClassOf tAI:Procedure ;
+                         tAI:FROM "EXPO (http://expo.sourceforge.net)" ;
+                         rdfs:comment "A scientific experiment is a research method which permits the investigation of cause-effect relations between known and unknown (target) variables of the field of study (domain). An experimental result cannot be known with certainty in advance." .
+
+
+###  http://ktmfk.de/ontology/tribAIn/Second
+tAI:Second rdf:type owl:Class ;
+           rdfs:subClassOf tAI:TimeUnit .
+
+
+###  http://ktmfk.de/ontology/tribAIn/Sliding
+tAI:Sliding rdf:type owl:Class ;
+            rdfs:subClassOf tAI:KinematicalParameter ;
+            rdfs:comment "Tangential relative movement of a solid body in contact with another." .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource tAI:Sliding ;
+   owl:annotatedProperty rdfs:comment ;
+   owl:annotatedTarget "Tangential relative movement of a solid body in contact with another." ;
+   tAI:FROM "GfT Arbeitsblatt 7"
+ ] .
+
+
+###  http://ktmfk.de/ontology/tribAIn/SlidingCycle
+tAI:SlidingCycle rdf:type owl:Class ;
+                 rdfs:subClassOf tAI:Amount ;
+                 rdfs:comment "The amount of cycles in a experiment." .
+
+
+###  http://ktmfk.de/ontology/tribAIn/SlidingDistance
+tAI:SlidingDistance rdf:type owl:Class ;
+                    rdfs:subClassOf tAI:Distance ;
+                    rdfs:comment "Distance covered by motions in a tribological experiment." .
+
+
+###  http://ktmfk.de/ontology/tribAIn/SolidLubricant
+tAI:SolidLubricant rdf:type owl:Class ;
+                   rdfs:subClassOf tAI:Lubricant ;
+                   rdfs:comment "Solid lubricants are materials that, despite being in the solid phase, are able to reduce friction between two surfaces sliding against each other without the need for a liquid oil medium." .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource tAI:SolidLubricant ;
+   owl:annotatedProperty rdfs:comment ;
+   owl:annotatedTarget "Solid lubricants are materials that, despite being in the solid phase, are able to reduce friction between two surfaces sliding against each other without the need for a liquid oil medium." ;
+   tAI:FROM "https://doi.org/10.1002/14356007.a15_423"
+ ] .
+
+
+###  http://ktmfk.de/ontology/tribAIn/SpecimenTest
+tAI:SpecimenTest rdf:type owl:Class ;
+                 rdfs:subClassOf tAI:CategoryOfTribologicalTesting ;
+                 rdfs:comment "Cat.V: Examination with component-like test samples under simplified stress collectives." .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource tAI:SpecimenTest ;
+   owl:annotatedProperty rdfs:comment ;
+   owl:annotatedTarget "Cat.V: Examination with component-like test samples under simplified stress collectives." ;
+   tAI:FROM "https://doi.org/10.1007/978-3-8348-2236-9"
+ ] .
+
+
+###  http://ktmfk.de/ontology/tribAIn/Speed
+tAI:Speed rdf:type owl:Class ;
+          rdfs:subClassOf tAI:Velocity ;
+          rdfs:comment "The rate at which someone or something moves or operates or is able to move or operate." .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource tAI:Speed ;
+   owl:annotatedProperty rdfs:comment ;
+   owl:annotatedTarget "The rate at which someone or something moves or operates or is able to move or operate." ;
+   tAI:FROM "https://www.lexico.com/definition/speed"
+ ] .
+
+
+###  http://ktmfk.de/ontology/tribAIn/SpeedUnit
+tAI:SpeedUnit rdf:type owl:Class ;
+              rdfs:subClassOf tAI:Unit .
+
+
+###  http://ktmfk.de/ontology/tribAIn/Sphere
+tAI:Sphere rdf:type owl:Class ;
+           rdfs:subClassOf tAI:VolumeElement ;
+           rdfs:comment "A round solid figure, or its surface, with every point on its surface equidistant from its centre." .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource tAI:Sphere ;
+   owl:annotatedProperty rdfs:comment ;
+   owl:annotatedTarget "A round solid figure, or its surface, with every point on its surface equidistant from its centre." ;
+   tAI:FROM "https://www.lexico.com/definition/sphere"
+ ] .
+
+
+###  http://ktmfk.de/ontology/tribAIn/Spinning
+tAI:Spinning rdf:type owl:Class ;
+             rdfs:subClassOf tAI:KinematicalParameter ;
+             rdfs:comment "A rotation is a circular movement of an object around a center (or point) of rotation." .
+
+
+###  http://ktmfk.de/ontology/tribAIn/Steel
+tAI:Steel rdf:type owl:Class ;
+          rdfs:subClassOf tAI:StructuralMaterial ;
+          rdfs:comment "Alloy of iron and carbon and possibly other elements." .
+
+
+###  http://ktmfk.de/ontology/tribAIn/SteelHeatTreatment
+tAI:SteelHeatTreatment rdf:type owl:Class ;
+                       rdfs:subClassOf tAI:HeatTreatment ;
+                       rdfs:comment "ISO 683-[...]: heat-treated steels, alloy steels and free-cutting steels" .
+
+
+###  http://ktmfk.de/ontology/tribAIn/SteelSteel
+tAI:SteelSteel rdf:type owl:Class ;
+               rdfs:subClassOf tAI:MaterialPairing ;
+               rdfs:comment """Both things, which have contact to each other are from steel.
+E.g. Body and Counterbody within tribological testing are both steel parts.""" .
+
+
+###  http://ktmfk.de/ontology/tribAIn/Stress
+tAI:Stress rdf:type owl:Class ;
+           rdfs:subClassOf tAI:PhysicalQuantity ,
+                           [ rdf:type owl:Restriction ;
+                             owl:onProperty tAI:hasUnit ;
+                             owl:someValuesFrom tAI:PressureUnit
+                           ] ;
+           rdfs:comment "Mechanical stress expresses the internal forces of a body, which are caused by a external mechanical load or external forces." .
+
+
+###  http://ktmfk.de/ontology/tribAIn/StressCollective
+tAI:StressCollective rdf:type owl:Class ;
+                     rdfs:subClassOf tAI:DomainModel ,
+                                     [ rdf:type owl:Restriction ;
+                                       owl:onProperty tAI:hasKinematicalParameter ;
+                                       owl:someValuesFrom tAI:KinematicalParameter
+                                     ] ,
+                                     [ rdf:type owl:Restriction ;
+                                       owl:onProperty tAI:hasOperationalParameter ;
+                                       owl:someValuesFrom tAI:OperationalParameter
+                                     ] ;
+                     rdfs:comment "The stress collective is the definition of all kinematic conditions and operational factors, which operate on the system structure." .
+
+
+###  http://ktmfk.de/ontology/tribAIn/StructuralMaterial
+tAI:StructuralMaterial rdf:type owl:Class ;
+                       rdfs:subClassOf tAI:Material ;
+                       rdfs:comment "Structural materials are materials used or studied primarily for their mechanical properties." .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource tAI:StructuralMaterial ;
+   owl:annotatedProperty rdfs:comment ;
+   owl:annotatedTarget "Structural materials are materials used or studied primarily for their mechanical properties." ;
+   tAI:FROM "https://www.nature.com/subjects/structural-materials"
+ ] .
+
+
+###  http://ktmfk.de/ontology/tribAIn/SubjectOfExperiment
+tAI:SubjectOfExperiment rdf:type owl:Class ;
+                        rdfs:subClassOf tAI:SubjectRole ;
+                        tAI:FROM "EXPO (http://expo.sourceforge.net)" ;
+                        rdfs:comment "A subject of an experimental is: \"one who executes the experiment\" For instance: a <human>, a <robot>." .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource tAI:SubjectOfExperiment ;
+   owl:annotatedProperty rdfs:comment ;
+   owl:annotatedTarget "A subject of an experimental is: \"one who executes the experiment\" For instance: a <human>, a <robot>." ;
+   tAI:FROM "The Oxford English Dictionary. Oxford University Press, 2 Ed., 1989"
+ ] .
+
+
+###  http://ktmfk.de/ontology/tribAIn/SubjectRole
+tAI:SubjectRole rdf:type owl:Class ;
+                rdfs:subClassOf tAI:ActorRole ;
+                tAI:FROM "EXPO (http://expo.sourceforge.net)" .
+
+
+###  http://ktmfk.de/ontology/tribAIn/Substrate
+tAI:Substrate rdf:type owl:Class ;
+              rdfs:subClassOf tAI:PhysicalObject ,
+                              [ rdf:type owl:Restriction ;
+                                owl:onProperty tAI:hasParameter ;
+                                owl:someValuesFrom tAI:SurfaceRoughness
+                              ] ;
+              rdfs:comment "Base material, which is processed. For instance, a coating is applied on this material." .
+
+
+###  http://ktmfk.de/ontology/tribAIn/SurfaceRoughness
+tAI:SurfaceRoughness rdf:type owl:Class ;
+                     rdfs:subClassOf tAI:TribologicalParameter ;
+                     rdfs:comment "Roughness is the deviation of the real surface from its ideal form." .
+
+
+###  http://ktmfk.de/ontology/tribAIn/Synthesis
+tAI:Synthesis rdf:type owl:Class ;
+              rdfs:subClassOf tAI:IndustrialProcess ;
+              rdfs:comment "The artificial execution of useful chemical reactions to obtain one or several products." .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource tAI:Synthesis ;
+   owl:annotatedProperty rdfs:comment ;
+   owl:annotatedTarget "The artificial execution of useful chemical reactions to obtain one or several products." ;
+   tAI:FROM "ISBN: 0-582-46236-3"
+ ] .
+
+
+###  http://ktmfk.de/ontology/tribAIn/SyntheticOil
+tAI:SyntheticOil rdf:type owl:Class ;
+                 rdfs:subClassOf tAI:Lubricant ;
+                 rdfs:comment "Petroleum-derived lubricant produced using synthetic hydrocarbons." .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource tAI:SyntheticOil ;
+   owl:annotatedProperty rdfs:comment ;
+   owl:annotatedTarget "Petroleum-derived lubricant produced using synthetic hydrocarbons." ;
+   tAI:FROM "https://en.wikipedia.org/wiki/Lubricant#Mineral_oil"
+ ] .
+
+
+###  http://ktmfk.de/ontology/tribAIn/SystemBenchTest
+tAI:SystemBenchTest rdf:type owl:Class ;
+                    rdfs:subClassOf tAI:CategoryOfTribologicalTesting ;
+                    rdfs:comment "Cat.III: Examination of original individual aggregates under practical conditions." .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource tAI:SystemBenchTest ;
+   owl:annotatedProperty rdfs:comment ;
+   owl:annotatedTarget "Cat.III: Examination of original individual aggregates under practical conditions." ;
+   tAI:FROM "https://doi.org/10.1007/978-3-8348-2236-9"
+ ] .
+
+
+###  http://ktmfk.de/ontology/tribAIn/SystematicError
+tAI:SystematicError rdf:type owl:Class ;
+                    rdfs:subClassOf tAI:MeasurementError ;
+                    rdfs:comment "Experimental uncertainties which cannot be revealed by repeating the measurements. e.g. stopping the time with a stopwatch which runs consistently slow, all times will be underestimated and the repetition will not reveal the error." .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource tAI:SystematicError ;
+   owl:annotatedProperty rdfs:comment ;
+   owl:annotatedTarget "Experimental uncertainties which cannot be revealed by repeating the measurements. e.g. stopping the time with a stopwatch which runs consistently slow, all times will be underestimated and the repetition will not reveal the error." ;
+   tAI:FROM "ISBN 978-0-935702-75-0"
+ ] .
+
+
+###  http://ktmfk.de/ontology/tribAIn/TargetVariable
+tAI:TargetVariable rdf:type owl:Class ;
+                   rdfs:subClassOf tAI:Variable ;
+                   tAI:FROM "EXPO (http://expo.sourceforge.net)" ;
+                   rdfs:comment "A target variable is an unknown variable of the domain model about which the experiment is designed to discover new knowledge." ,
+                                "Within the domain of tribology used for the variable which is varied to investigate the influence of this variable on tribological behavior (friction and wear behavior)." .
+
+
+###  http://ktmfk.de/ontology/tribAIn/TaskRole
+tAI:TaskRole rdf:type owl:Class ;
+             rdfs:subClassOf tAI:Role ;
+             tAI:FROM "EXPO (http://expo.sourceforge.net)" .
+
+
+###  http://ktmfk.de/ontology/tribAIn/TechnicalDescription
+tAI:TechnicalDescription rdf:type owl:Class ;
+                         rdfs:subClassOf tAI:Representation ;
+                         tAI:FROM "EXPO (http://expo.sourceforge.net)" ;
+                         rdfs:comment "A technical description is a representation of technical information about experimental equipment or a subject (robot) in order to provide the user with information about a technology's purpose and functions, components and construction, and operation and maintenance?" .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource tAI:TechnicalDescription ;
+   owl:annotatedProperty rdfs:comment ;
+   owl:annotatedTarget "A technical description is a representation of technical information about experimental equipment or a subject (robot) in order to provide the user with information about a technology's purpose and functions, components and construction, and operation and maintenance?" ;
+   tAI:FROM "http://www.u.arizona.edu/~menchaca/engl308/assignments/descriptions.htm"
+ ] .
+
+
+###  http://ktmfk.de/ontology/tribAIn/TechnicalDrawing
+tAI:TechnicalDrawing rdf:type owl:Class ;
+                     rdfs:subClassOf tAI:CADContent ;
+                     rdfs:comment "The representation of assemblies and parts as technical drawing." .
+
+
+###  http://ktmfk.de/ontology/tribAIn/TechnicalStandard
+tAI:TechnicalStandard rdf:type owl:Class ;
+                      rdfs:subClassOf tAI:Representation ;
+                      rdfs:comment "A techical standard is a documented and accessable norm or specification for repeatable technical tasks (e.g. DIN, ANSI)" .
+
+
+###  http://ktmfk.de/ontology/tribAIn/Temperature
+tAI:Temperature rdf:type owl:Class ;
+                rdfs:subClassOf tAI:PhysicalQuantity ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty tAI:hasUnit ;
+                                  owl:someValuesFrom tAI:TemperatureUnit
+                                ] ;
+                rdfs:comment "The degree or intensity of heat present in a substance or object, especially as expressed according to a comparative scale and shown by a thermometer or perceived by touch." .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource tAI:Temperature ;
+   owl:annotatedProperty rdfs:comment ;
+   owl:annotatedTarget "The degree or intensity of heat present in a substance or object, especially as expressed according to a comparative scale and shown by a thermometer or perceived by touch." ;
+   tAI:FROM "https://www.lexico.com/definition/temperature"
+ ] .
+
+
+###  http://ktmfk.de/ontology/tribAIn/TemperatureUnit
+tAI:TemperatureUnit rdf:type owl:Class ;
+                    rdfs:subClassOf tAI:Unit .
+
+
+###  http://ktmfk.de/ontology/tribAIn/TestSeries
+tAI:TestSeries rdf:type owl:Class ;
+               rdfs:subClassOf tAI:ObjectOfExperiment ,
+                               [ rdf:type owl:Restriction ;
+                                 owl:onProperty tAI:hasHypothesis ;
+                                 owl:someValuesFrom tAI:ExperimentalHypothesis
+                               ] ,
+                               [ rdf:type owl:Restriction ;
+                                 owl:onProperty tAI:hasStrategy ;
+                                 owl:someValuesFrom tAI:ExperimentalDesignStrategy
+                               ] ,
+                               [ rdf:type owl:Restriction ;
+                                 owl:onProperty tAI:resultsIn ;
+                                 owl:someValuesFrom tAI:ExperimentalResults
+                               ] ;
+               rdfs:comment "Consists of different samples which are tested and an overall result is built from the coherent series." .
+
+
+###  http://ktmfk.de/ontology/tribAIn/Ti3C2
+tAI:Ti3C2 rdf:type owl:Class ;
+          rdfs:subClassOf tAI:MXene .
+
+
+###  http://ktmfk.de/ontology/tribAIn/Time
+tAI:Time rdf:type owl:Class ;
+         rdfs:subClassOf tAI:PhysicalQuantity ,
+                         [ rdf:type owl:Restriction ;
+                           owl:onProperty tAI:hasUnit ;
+                           owl:someValuesFrom tAI:TimeUnit
+                         ] ;
+         rdfs:comment "The indefinite continued progress of existence and events in the past, present, and future regarded as a whole. - https://www.lexico.com/definition/time" .
+
+
+###  http://ktmfk.de/ontology/tribAIn/TimeStamp
+tAI:TimeStamp rdf:type owl:Class ;
+              rdfs:subClassOf tAI:Time .
+
+
+###  http://ktmfk.de/ontology/tribAIn/TimeUnit
+tAI:TimeUnit rdf:type owl:Class ;
+             rdfs:subClassOf tAI:Unit .
+
+
+###  http://ktmfk.de/ontology/tribAIn/TitaniumCarbide
+tAI:TitaniumCarbide rdf:type owl:Class ;
+                    rdfs:subClassOf tAI:Carbide ;
+                    mat:symbol "TiC" .
+
+
+###  http://ktmfk.de/ontology/tribAIn/TorqueUnit
+tAI:TorqueUnit rdf:type owl:Class ;
+               rdfs:subClassOf tAI:Unit .
+
+
+###  http://ktmfk.de/ontology/tribAIn/TriboElement
+tAI:TriboElement rdf:type owl:Class ;
+                 rdfs:subClassOf tAI:DomainModel ;
+                 rdfs:comment "An element of a tribological system." .
+
+
+###  http://ktmfk.de/ontology/tribAIn/TriboSystem
+tAI:TriboSystem rdf:type owl:Class ;
+                rdfs:subClassOf tAI:DomainModel ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty tAI:hasAmbientMedium ;
+                                  owl:someValuesFrom tAI:AmbientMedium
+                                ] ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty tAI:hasInterfacialMedium ;
+                                  owl:someValuesFrom tAI:InterfacialMedium
+                                ] ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty tAI:hasBody ;
+                                  owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                  owl:onClass tAI:Body
+                                ] ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty tAI:hasCounterBody ;
+                                  owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                  owl:onClass tAI:CounterBody
+                                ] ;
+                rdfs:comment "Entity with a structure to perform a technical function consisting of at least two interacting bodies in relative motion and any environmental factor that affects their interaction." ,
+                             "The description of tribosystems is based on a detailed assessment of relevant system inputs, outputs and losses, as well as an overall description of the system structure." .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource tAI:TriboSystem ;
+   owl:annotatedProperty rdfs:comment ;
+   owl:annotatedTarget "Entity with a structure to perform a technical function consisting of at least two interacting bodies in relative motion and any environmental factor that affects their interaction." ;
+   tAI:FROM "https://doi.org/10.1007/978-3-642-22647-2_303"
+ ] .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource tAI:TriboSystem ;
+   owl:annotatedProperty rdfs:comment ;
+   owl:annotatedTarget "The description of tribosystems is based on a detailed assessment of relevant system inputs, outputs and losses, as well as an overall description of the system structure." ;
+   tAI:FROM "https://doi.org/10.1007/978-3-8348-2236-9"
+ ] .
+
+
+###  http://ktmfk.de/ontology/tribAIn/TribologicalParameter
+tAI:TribologicalParameter rdf:type owl:Class ;
+                          rdfs:subClassOf tAI:Parameter ;
+                          rdfs:comment "Parameters which are especially used within the domain of tribology" .
+
+
+###  http://ktmfk.de/ontology/tribAIn/TribologicalReferenceMethod
+tAI:TribologicalReferenceMethod rdf:type owl:Class ;
+                                rdfs:subClassOf tAI:ExperimentalModel ,
+                                                [ rdf:type owl:Restriction ;
+                                                  owl:onProperty tAI:hasContact ;
+                                                  owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                  owl:onClass tAI:Contact
+                                                ] ,
+                                                [ rdf:type owl:Restriction ;
+                                                  owl:onProperty tAI:hasStressCollective ;
+                                                  owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                  owl:onClass tAI:StressCollective
+                                                ] ,
+                                                [ rdf:type owl:Restriction ;
+                                                  owl:onProperty tAI:hasTriboSystem ;
+                                                  owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                  owl:onClass tAI:TriboSystem
+                                                ] ;
+                                rdfs:comment "The tribological standard method for experiments containing a tribosystem, a stress collective and some interactions." .
+
+
+###  http://ktmfk.de/ontology/tribAIn/TribologicalTesting
+tAI:TribologicalTesting rdf:type owl:Class ;
+                        rdfs:subClassOf tAI:PhysicalExperiment ,
+                                        [ rdf:type owl:Restriction ;
+                                          owl:onProperty tAI:hasOutput ;
+                                          owl:someValuesFrom tAI:MeasurementSeries
+                                        ] ,
+                                        [ rdf:type owl:Restriction ;
+                                          owl:onProperty tAI:hasInput ;
+                                          owl:allValuesFrom tAI:Input
+                                        ] ;
+                        rdfs:comment "Tribological measurement and testing technology, known as tribometry, ranges from investigations of complete technical systems under real operating conditions to laboratory model tests with simple test specimens." .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource tAI:TribologicalTesting ;
+   owl:annotatedProperty rdfs:comment ;
+   owl:annotatedTarget "Tribological measurement and testing technology, known as tribometry, ranges from investigations of complete technical systems under real operating conditions to laboratory model tests with simple test specimens." ;
+   tAI:FROM "https://doi.org/10.1007/978-3-8348-2236-9"
+ ] .
+
+
+###  http://ktmfk.de/ontology/tribAIn/Ultrasonication
+tAI:Ultrasonication rdf:type owl:Class ;
+                    rdfs:subClassOf tAI:IndustrialProcess ;
+                    rdfs:comment "Ultrasonic cleaning is a process that uses ultrasound to agitate a fluid." .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource tAI:Ultrasonication ;
+   owl:annotatedProperty rdfs:comment ;
+   owl:annotatedTarget "Ultrasonic cleaning is a process that uses ultrasound to agitate a fluid." ;
+   tAI:FROM "https://en.wikipedia.org/wiki/Ultrasonic_cleaning"
+ ] .
+
+
+###  http://ktmfk.de/ontology/tribAIn/Unit
+tAI:Unit rdf:type owl:Class ;
+         rdfs:subClassOf tAI:Proposition ;
+         rdfs:comment "A quantity chosen as a standard in terms of which other quantities may be expressed." .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource tAI:Unit ;
+   owl:annotatedProperty rdfs:comment ;
+   owl:annotatedTarget "A quantity chosen as a standard in terms of which other quantities may be expressed." ;
+   tAI:FROM "https://www.lexico.com/definition/unit"
+ ] .
+
+
+###  http://ktmfk.de/ontology/tribAIn/Variable
+tAI:Variable rdf:type owl:Class ;
+             rdfs:subClassOf tAI:Proposition ;
+             rdfs:comment "A quantity which during a calculation is assumed to vary or be capable of varying in value (mathematics)." .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource tAI:Variable ;
+   owl:annotatedProperty rdfs:comment ;
+   owl:annotatedTarget "A quantity which during a calculation is assumed to vary or be capable of varying in value (mathematics)." ;
+   tAI:FROM "https://www.lexico.com/en/definition/variable"
+ ] .
+
+
+###  http://ktmfk.de/ontology/tribAIn/Velocity
+tAI:Velocity rdf:type owl:Class ;
+             rdfs:subClassOf tAI:Parameter ,
+                             [ rdf:type owl:Restriction ;
+                               owl:onProperty tAI:hasUnit ;
+                               owl:allValuesFrom tAI:SpeedUnit
+                             ] .
+
+
+###  http://ktmfk.de/ontology/tribAIn/ViscosityindexImprover
+tAI:ViscosityindexImprover rdf:type owl:Class ;
+                           rdfs:subClassOf tAI:Additive ;
+                           rdfs:comment "Compounds that allow lubricants to remain viscous at higher temperatures." .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource tAI:ViscosityindexImprover ;
+   owl:annotatedProperty rdfs:comment ;
+   owl:annotatedTarget "Compounds that allow lubricants to remain viscous at higher temperatures." ;
+   tAI:FROM "ISBN: 978-1-4987-5290-9"
+ ] .
+
+
+###  http://ktmfk.de/ontology/tribAIn/Volt
+tAI:Volt rdf:type owl:Class ;
+         rdfs:subClassOf tAI:ElectricPotentialUnit ,
+                         tAI:SIderivedUnit ;
+         uom:symbol "V" .
+
+
+###  http://ktmfk.de/ontology/tribAIn/Voltage
+tAI:Voltage rdf:type owl:Class ;
+            rdfs:subClassOf tAI:ElectricPotentialDifference ;
+            rdfs:comment "An electromotive force or potential difference expressed in volts." .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource tAI:Voltage ;
+   owl:annotatedProperty rdfs:comment ;
+   owl:annotatedTarget "An electromotive force or potential difference expressed in volts." ;
+   tAI:FROM "https://www.lexico.com/definition/voltage"
+ ] .
+
+
+###  http://ktmfk.de/ontology/tribAIn/VolumeElement
+tAI:VolumeElement rdf:type owl:Class ;
+                  rdfs:subClassOf tAI:GeometryElement ;
+                  rdfs:comment "Basic elements which have a volume, thus they have three dimensions (3D)." .
+
+
+###  http://ktmfk.de/ontology/tribAIn/WearBehavior
+tAI:WearBehavior rdf:type owl:Class ;
+                 rdfs:subClassOf tAI:ResultingPerformance ;
+                 rdfs:comment "Properties of an tribological system regarding the damaging, gradual removal or deformation of material at solid surfaces." .
+
+
+###  http://ktmfk.de/ontology/tribAIn/WearIncrease
+tAI:WearIncrease rdf:type owl:Class ;
+                 rdfs:subClassOf tAI:WearBehavior .
+
+
+###  http://ktmfk.de/ontology/tribAIn/WearReduction
+tAI:WearReduction rdf:type owl:Class ;
+                  rdfs:subClassOf tAI:WearBehavior .
+
+
+###  http://ktmfk.de/ontology/tribAIn/WearVolume
+tAI:WearVolume rdf:type owl:Class ;
+               rdfs:subClassOf tAI:TribologicalParameter ,
+                               [ rdf:type owl:Restriction ;
+                                 owl:onProperty tAI:resultsIn ;
+                                 owl:allValuesFrom tAI:WearBehavior
+                               ] ;
+               rdfs:comment "Volume change of the worn body." .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource tAI:WearVolume ;
+   owl:annotatedProperty rdfs:comment ;
+   owl:annotatedTarget "Volume change of the worn body." ;
+   tAI:FROM "GfT Arbeitsblatt 7"
+ ] .
+
+
+###  http://ktmfk.de/ontology/tribAIn/Width
+tAI:Width rdf:type owl:Class ;
+          rdfs:subClassOf tAI:Distance ,
+                          tAI:Geometry .
+
+
+###  http://ktmfk.de/ontology/tribAIn/YoungsModulus
+tAI:YoungsModulus rdf:type owl:Class ;
+                  rdfs:subClassOf tAI:MaterialProperty ,
+                                  [ rdf:type owl:Restriction ;
+                                    owl:onProperty tAI:hasUnit ;
+                                    owl:someValuesFrom tAI:PressureUnit
+                                  ] ;
+                  rdfs:comment "Ratio of linear stress to linear Strain." .
+
+
+###  http://ktmfk.de/ontology/tribAIn/100Cr6
+<http://ktmfk.de/ontology/tribAIn/100Cr6> rdf:type owl:Class ;
+                                          rdfs:subClassOf tAI:BearingSteel ;
+                                          mat:materialNumber "1.3505" .
+
+
+###  http://ktmfk.de/ontology/tribAIn/2dCompound
+<http://ktmfk.de/ontology/tribAIn/2dCompound> rdf:type owl:Class ;
+                                              rdfs:subClassOf tAI:Compound ;
+                                              rdfs:comment "A group of chrystalline material with only one layer of atoms." .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  http://ktmfk.de/ontology/tribAIn/Bar
+tAI:Bar rdf:type owl:NamedIndividual ,
+                 tAI:Bar .
+
+
+###  http://ktmfk.de/ontology/tribAIn/Celsius
+tAI:Celsius rdf:type owl:NamedIndividual ,
+                     tAI:Celsius .
+
+
+###  http://ktmfk.de/ontology/tribAIn/Electronvolt
+tAI:Electronvolt rdf:type owl:NamedIndividual ,
+                          tAI:Electronvolt .
+
+
+###  http://ktmfk.de/ontology/tribAIn/Gigapascal
+tAI:Gigapascal rdf:type owl:NamedIndividual ,
+                        tAI:Gigapascal .
+
+
+###  http://ktmfk.de/ontology/tribAIn/Gram
+tAI:Gram rdf:type owl:NamedIndividual ,
+                  tAI:Gram .
+
+
+###  http://ktmfk.de/ontology/tribAIn/Hour
+tAI:Hour rdf:type owl:NamedIndividual ,
+                  tAI:Hour .
+
+
+###  http://ktmfk.de/ontology/tribAIn/Kelvin
+tAI:Kelvin rdf:type owl:NamedIndividual ,
+                    tAI:Kelvin .
+
+
+###  http://ktmfk.de/ontology/tribAIn/KiloVolt
+tAI:KiloVolt rdf:type owl:NamedIndividual ,
+                      tAI:KiloVolt .
+
+
+###  http://ktmfk.de/ontology/tribAIn/Kilogram
+tAI:Kilogram rdf:type owl:NamedIndividual ,
+                      tAI:Kilogram .
+
+
+###  http://ktmfk.de/ontology/tribAIn/Megabar
+tAI:Megabar rdf:type owl:NamedIndividual ,
+                     tAI:Megabar .
+
+
+###  http://ktmfk.de/ontology/tribAIn/Megapascal
+tAI:Megapascal rdf:type owl:NamedIndividual ,
+                        tAI:Megapascal .
+
+
+###  http://ktmfk.de/ontology/tribAIn/Metre
+tAI:Metre rdf:type owl:NamedIndividual ,
+                   tAI:Metre .
+
+
+###  http://ktmfk.de/ontology/tribAIn/MetrePerSecond
+tAI:MetrePerSecond rdf:type owl:NamedIndividual ,
+                            tAI:MetrePerSecond .
+
+
+###  http://ktmfk.de/ontology/tribAIn/Micrometre
+tAI:Micrometre rdf:type owl:NamedIndividual ,
+                        tAI:Micrometre .
+
+
+###  http://ktmfk.de/ontology/tribAIn/Milimetre
+tAI:Milimetre rdf:type owl:NamedIndividual ,
+                       tAI:Milimetre .
+
+
+###  http://ktmfk.de/ontology/tribAIn/Minute
+tAI:Minute rdf:type owl:NamedIndividual ,
+                    tAI:Minute .
+
+
+###  http://ktmfk.de/ontology/tribAIn/Newton
+tAI:Newton rdf:type owl:NamedIndividual ,
+                    tAI:Newton .
+
+
+###  http://ktmfk.de/ontology/tribAIn/Pascal
+tAI:Pascal rdf:type owl:NamedIndividual ,
+                    tAI:Pascal .
+
+
+###  http://ktmfk.de/ontology/tribAIn/Percentage
+tAI:Percentage rdf:type owl:NamedIndividual ,
+                        tAI:Percentage .
+
+
+###  http://ktmfk.de/ontology/tribAIn/RT
+tAI:RT rdf:type owl:NamedIndividual ,
+                tAI:Temperature ;
+       rdfs:comment "A temperature between 18°C and 25°C" ;
+       rdfs:label "Room Temperature" .
+
+
+###  http://ktmfk.de/ontology/tribAIn/SP1000
+tAI:SP1000 rdf:type owl:NamedIndividual ,
+                    tAI:Speed ;
+           tAI:hasUnit tAI:MetrePerSecond ;
+           tAI:hasValue "0.08"^^xsd:double ;
+           rdfs:label "Speed" .
+
+
+[ tAI:FROM "xfgxdfgdfg"
+] .
+
+[ tAI:FROM "asfdsf"
+ ] .
+
+#################################################################
+#    Annotations
+#################################################################
+
+tAI:Bar uom:symbol "bar" .
+
+
+tAI:Celsius uom:symbol "°C" .
+
+
+tAI:Electronvolt uom:symbol "eV" .
+
+
+tAI:Gigapascal uom:symbol "GPa" .
+
+
+tAI:Gram uom:symbol "g" .
+
+
+tAI:Hour uom:symbol "h" .
+
+
+tAI:Kelvin uom:symbol "K" .
+
+
+tAI:KiloVolt uom:symbol "kV" .
+
+
+tAI:Kilogram uom:symbol "kg" .
+
+
+tAI:Megabar uom:symbol "mbar" .
+
+
+tAI:Megapascal uom:symbol "MPa" .
+
+
+tAI:Metre uom:symbol "m" .
+
+
+tAI:MetrePerSecond uom:symbol "m/s" .
+
+
+tAI:Micrometre uom:symbol "μm" .
+
+
+tAI:Milimetre uom:symbol "mm" .
+
+
+tAI:Minute uom:symbol "min" .
+
+
+tAI:Newton uom:symbol "N" .
+
+
+tAI:Pascal uom:symbol "Pa" .
+
+
+tAI:Percentage uom:symbol "%" .
+
+
+tAI:TimeStamp rdfs:comment "an exact point of time in the format xsd:dateTimeStamp." .
+
+
+#################################################################
+#    General axioms
+#################################################################
+
+[ owl:intersectionOf ( [ rdf:type owl:Restriction ;
+                         owl:onProperty tAI:hasContact ;
+                         owl:someValuesFrom tAI:Contact
+                       ]
+                       [ rdf:type owl:Restriction ;
+                         owl:onProperty tAI:hasStressCollective ;
+                         owl:someValuesFrom tAI:StressCollective
+                       ]
+                       [ rdf:type owl:Restriction ;
+                         owl:onProperty tAI:hasTriboSystem ;
+                         owl:someValuesFrom tAI:TriboSystem
+                       ]
+                     ) ;
+  rdf:type owl:Class ;
+  rdfs:subClassOf tAI:TribologicalReferenceMethod
+] .
+
+
+[ owl:intersectionOf ( [ rdf:type owl:Restriction ;
+                         owl:onProperty tAI:hasReferenceGroup ;
+                         owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                         owl:onClass tAI:ReferenceGroup
+                       ]
+                       [ rdf:type owl:Restriction ;
+                         owl:onProperty tAI:hasSampleGroup ;
+                         owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                         owl:onClass tAI:SampleGroup
+                       ]
+                     ) ;
+  rdf:type owl:Class ;
+  rdfs:subClassOf tAI:TestSeries
+] .
+
+
+###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi

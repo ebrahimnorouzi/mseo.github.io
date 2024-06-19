@@ -1,0 +1,280 @@
+@prefix emmo: <http://emmo.info/emmo#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix characterisation-methods: <http://emmo.info/emmo/domain/oie/characterisation-methods#> .
+@prefix chameo: <http://emmo.info/emmo/domain/chameo/chameo#> .
+@base <http://emmo.info/emmo/domain/oie/characterisation-methods> .
+
+<http://emmo.info/emmo/domain/oie/characterisation-methods> rdf:type owl:Ontology ;
+		                               owl:imports <http://emmo.info/emmo/1.0.0-beta3/middle/semiotics> ,
+									               <http://emmo.info/emmo/domain/chameo/chameo> ;
+									   dcterms:contributor "Goldbeck Consulting Ltd (UK)" ;
+                                       dcterms:creator "Daniele Toti" ,
+                                                       "Gerhard Goldbeck" ,
+                                                       "Pierluigi Del Nostro" .
+
+####### EMMO mapping:
+###	Observation         -> middle-semiotics   emmo:EMMO_3b19eab4_79be_4b02_bdaf_ecf1f0067a68
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://emmo.info/emmo/domain/oie/characterisation-methods#CharacterisationMethod
+characterisation-methods:CharacterisationMethod rdf:type owl:Class ;
+rdfs:subClassOf emmo:EMMO_3b19eab4_79be_4b02_bdaf_ecf1f0067a68 ;
+owl:equivalentClass chameo:CharacterisationMethod ;
+skos:prefLabel "CharacterisationMethod"@en ;
+skos:altLabel "CharacterizationMethod"@en .
+
+
+###  http://emmo.info/emmo/domain/oie/characterisation-methods#AtomicEmissionSpectroscopy
+characterisation-methods:AtomicEmissionSpectroscopy rdf:type owl:Class ;
+skos:prefLabel "AtomicEmissionSpectroscopy"@en ;
+                            rdfs:subClassOf characterisation-methods:SpectroscopyBasedMethod .
+
+
+###  http://emmo.info/emmo/domain/oie/characterisation-methods#DielectricThermalAnalysis
+characterisation-methods:DielectricThermalAnalysis rdf:type owl:Class ;
+skos:prefLabel "DielectricThermalAnalysis"@en ;
+                           rdfs:subClassOf characterisation-methods:ThermalAnalysisMethod .
+
+
+###  http://emmo.info/emmo/domain/oie/characterisation-methods#DifferentialScanningCalorimetry
+characterisation-methods:DifferentialScanningCalorimetry rdf:type owl:Class ;
+skos:prefLabel "DifferentialScanningCalorimetry"@en ;
+                                 rdfs:subClassOf characterisation-methods:ThermalAnalysisMethod .
+
+
+###  http://emmo.info/emmo/domain/oie/characterisation-methods#DifferentialThermalAnalysis
+characterisation-methods:DifferentialThermalAnalysis rdf:type owl:Class ;
+skos:prefLabel "DifferentialThermalAnalysis"@en ;
+                             rdfs:subClassOf characterisation-methods:ThermalAnalysisMethod .
+
+
+###  http://emmo.info/emmo/domain/oie/characterisation-methods#DiffractionBasedMethod
+characterisation-methods:DiffractionBasedMethod rdf:type owl:Class ;
+skos:prefLabel "DiffractionBasedMethod"@en ;
+                         rdfs:subClassOf characterisation-methods:CharacterisationMethod .
+
+
+###  http://emmo.info/emmo/domain/oie/characterisation-methods#DynamicLightScattering
+characterisation-methods:DynamicLightScattering rdf:type owl:Class ;
+skos:prefLabel "DynamicLightScattering"@en ;
+                        rdfs:subClassOf characterisation-methods:LightScatteringMethod .
+
+
+###  http://emmo.info/emmo/domain/oie/characterisation-methods#ElectricalCharacterisationMethod
+characterisation-methods:ElectricalCharacterisationMethod rdf:type owl:Class ;
+skos:prefLabel "ElectricalCharacterisationMethod"@en ;
+                                   rdfs:subClassOf characterisation-methods:CharacterisationMethod .
+
+
+###  http://emmo.info/emmo/domain/oie/characterisation-methods#ElectronDiffraction
+characterisation-methods:ElectronDiffraction rdf:type owl:Class ;
+skos:prefLabel "ElectronDiffraction"@en ;
+                     rdfs:subClassOf characterisation-methods:DiffractionBasedMethod .
+
+
+###  http://emmo.info/emmo/domain/oie/characterisation-methods#ElectronMicroscopy
+characterisation-methods:ElectronMicroscopy rdf:type owl:Class ;
+skos:prefLabel "ElectronMicroscopy"@en ;
+                    rdfs:subClassOf characterisation-methods:MicroscopyBasedMethod .
+
+
+###  http://emmo.info/emmo/domain/oie/characterisation-methods#EnergyDispersiveSpectroscopy
+characterisation-methods:EnergyDispersiveSpectroscopy rdf:type owl:Class ;
+skos:prefLabel "EnergyDispersiveSpectroscopy"@en ;
+                              rdfs:subClassOf characterisation-methods:SpectroscopyBasedMethod .
+
+
+###  http://emmo.info/emmo/domain/oie/characterisation-methods#FocusedIonBeamMicroscopy
+characterisation-methods:FocusedIonBeamMicroscopy rdf:type owl:Class ;
+skos:prefLabel "FocusedIonBeamMicroscopy"@en ;
+                          rdfs:subClassOf characterisation-methods:MicroscopyBasedMethod .
+
+
+###  http://emmo.info/emmo/domain/oie/characterisation-methods#InSituMechanicalTesting
+characterisation-methods:InSituMechanicalTesting rdf:type owl:Class ;
+skos:prefLabel "InSituMechanicalTesting"@en ;
+                         rdfs:subClassOf characterisation-methods:MechanicalTestingMethod .
+
+
+###  http://emmo.info/emmo/domain/oie/characterisation-methods#InSituMicroMechanicalTesting
+characterisation-methods:InSituMicroMechanicalTesting rdf:type owl:Class ;
+skos:prefLabel "InSituMicroMechanicalTesting"@en ;
+                              rdfs:subClassOf characterisation-methods:InSituMechanicalTesting .
+
+
+###  http://emmo.info/emmo/domain/oie/characterisation-methods#InSituNanoMechanicalTesting
+characterisation-methods:InSituNanoMechanicalTesting rdf:type owl:Class ;
+skos:prefLabel "InSituNanoMechanicalTesting"@en ;
+                             rdfs:subClassOf characterisation-methods:InSituMechanicalTesting .
+
+
+###  http://emmo.info/emmo/domain/oie/characterisation-methods#IndentationTesting
+characterisation-methods:IndentationTesting rdf:type owl:Class ;
+skos:prefLabel "IndentationTesting"@en ;
+                    rdfs:subClassOf characterisation-methods:MechanicalTestingMethod .
+
+
+###  http://emmo.info/emmo/domain/oie/characterisation-methods#InfraredAndNearInfraredSpectroscopy
+characterisation-methods:InfraredAndNearInfraredSpectroscopy rdf:type owl:Class ;
+skos:prefLabel "InfraredAndNearInfraredSpectroscopy"@en ;
+                                     rdfs:subClassOf characterisation-methods:SpectroscopyBasedMethod .
+
+
+###  http://emmo.info/emmo/domain/oie/characterisation-methods#LaserDiffraction
+characterisation-methods:LaserDiffraction rdf:type owl:Class ;
+skos:prefLabel "LaserDiffraction"@en ;
+                  rdfs:subClassOf characterisation-methods:LightScatteringMethod .
+
+
+###  http://emmo.info/emmo/domain/oie/characterisation-methods#LightScatteringMethod
+characterisation-methods:LightScatteringMethod rdf:type owl:Class ;
+skos:prefLabel "LightScatteringMethod"@en ;
+                        rdfs:subClassOf characterisation-methods:CharacterisationMethod .
+
+
+###  http://emmo.info/emmo/domain/oie/characterisation-methods#MacroscopicScaleMechanicalTesting
+characterisation-methods:MacroscopicScaleMechanicalTesting rdf:type owl:Class ;
+skos:prefLabel "MacroscopicScaleMechanicalTesting"@en ;
+                                   rdfs:subClassOf characterisation-methods:MechanicalTestingMethod ;
+                                   rdfs:comment "E.g., tensile, compressive, torsional, creep, fatigue, toughness and hardness." .
+
+
+###  http://emmo.info/emmo/domain/oie/characterisation-methods#MagneticCharacterisationMethod
+characterisation-methods:MagneticCharacterisationMethod rdf:type owl:Class ;
+skos:prefLabel "MagneticCharacterisationMethod"@en ;
+                                 rdfs:subClassOf characterisation-methods:CharacterisationMethod .
+
+
+###  http://emmo.info/emmo/domain/oie/characterisation-methods#MassSpectroscopy
+characterisation-methods:MassSpectroscopy rdf:type owl:Class ;
+skos:prefLabel "MassSpectroscopy"@en ;
+                  rdfs:subClassOf characterisation-methods:SpectroscopyBasedMethod .
+
+
+###  http://emmo.info/emmo/domain/oie/characterisation-methods#MechanicalTestingMethod
+characterisation-methods:MechanicalTestingMethod rdf:type owl:Class ;
+skos:prefLabel "MechanicalTestingMethod"@en ;
+                         rdfs:subClassOf characterisation-methods:CharacterisationMethod .
+
+
+###  http://emmo.info/emmo/domain/oie/characterisation-methods#MicroIndentationTesting
+characterisation-methods:MicroIndentationTesting rdf:type owl:Class ;
+skos:prefLabel "MicroIndentationTesting"@en ;
+                         rdfs:subClassOf characterisation-methods:IndentationTesting .
+
+
+###  http://emmo.info/emmo/domain/oie/characterisation-methods#MicroscopyBasedMethod
+characterisation-methods:MicroscopyBasedMethod rdf:type owl:Class ;
+skos:prefLabel "MicroscopyBasedMethod"@en ;
+                       rdfs:subClassOf characterisation-methods:CharacterisationMethod .
+
+
+###  http://emmo.info/emmo/domain/oie/characterisation-methods#NanoIndentationTesting
+characterisation-methods:NanoIndentationTesting rdf:type owl:Class ;
+skos:prefLabel "NanoIndentationTesting"@en ;
+                        rdfs:subClassOf characterisation-methods:IndentationTesting .
+
+
+###  http://emmo.info/emmo/domain/oie/characterisation-methods#NanoparticleTrackingAnalysis
+characterisation-methods:NanoparticleTrackingAnalysis rdf:type owl:Class ;
+skos:prefLabel "NanoparticleTrackingAnalysis"@en ;
+                              rdfs:subClassOf characterisation-methods:LightScatteringMethod .
+
+
+###  http://emmo.info/emmo/domain/oie/characterisation-methods#NeutronDiffraction
+characterisation-methods:NeutronDiffraction rdf:type owl:Class ;
+skos:prefLabel "NeutronDiffraction"@en ;
+                    rdfs:subClassOf characterisation-methods:DiffractionBasedMethod .
+
+
+###  http://emmo.info/emmo/domain/oie/characterisation-methods#NuclearMagneticResonance
+characterisation-methods:NuclearMagneticResonance rdf:type owl:Class ;
+skos:prefLabel "NuclearMagneticResonance"@en ;
+                          rdfs:subClassOf characterisation-methods:SpectroscopyBasedMethod .
+
+
+###  http://emmo.info/emmo/domain/oie/characterisation-methods#OpticalMicroscopy
+characterisation-methods:OpticalMicroscopy rdf:type owl:Class ;
+skos:prefLabel "OpticalMicroscopy"@en ;
+                   rdfs:subClassOf characterisation-methods:MicroscopyBasedMethod .
+
+
+###  http://emmo.info/emmo/domain/oie/characterisation-methods#RamanSpectroscopy
+characterisation-methods:RamanSpectroscopy rdf:type owl:Class ;
+skos:prefLabel "RamanSpectroscopy"@en ;
+                   rdfs:subClassOf characterisation-methods:SpectroscopyBasedMethod .
+
+
+###  http://emmo.info/emmo/domain/oie/characterisation-methods#ScanningProbeMicroscopy
+characterisation-methods:ScanningProbeMicroscopy rdf:type owl:Class ;
+skos:prefLabel "ScanningProbeMicroscopy"@en ;
+                         rdfs:subClassOf characterisation-methods:MicroscopyBasedMethod .
+
+
+###  http://emmo.info/emmo/domain/oie/characterisation-methods#SpectroscopicEllipsometry
+characterisation-methods:SpectroscopicEllipsometry rdf:type owl:Class ;
+skos:prefLabel "SpectroscopicEllipsometry"@en ;
+                           rdfs:subClassOf characterisation-methods:SpectroscopyBasedMethod .
+
+
+###  http://emmo.info/emmo/domain/oie/characterisation-methods#SpectroscopyBasedMethod
+characterisation-methods:SpectroscopyBasedMethod rdf:type owl:Class ;
+skos:prefLabel "SpectroscopyBasedMethod"@en ;
+                          rdfs:subClassOf characterisation-methods:CharacterisationMethod .
+
+
+###  http://emmo.info/emmo/domain/oie/characterisation-methods#StaticLightScattering
+characterisation-methods:StaticLightScattering rdf:type owl:Class ;
+skos:prefLabel "StaticLightScattering"@en ;
+                       rdfs:subClassOf characterisation-methods:LightScatteringMethod .
+
+
+###  http://emmo.info/emmo/domain/oie/characterisation-methods#ThermalAnalysisMethod
+characterisation-methods:ThermalAnalysisMethod rdf:type owl:Class ;
+skos:prefLabel "ThermalAnalysisMethod"@en ;
+                        rdfs:subClassOf characterisation-methods:CharacterisationMethod .
+
+
+###  http://emmo.info/emmo/domain/oie/characterisation-methods#ThermogravimetricAnalysis
+characterisation-methods:ThermogravimetricAnalysis rdf:type owl:Class ;
+skos:prefLabel "ThermogravimetricAnalysis"@en ;
+                           rdfs:subClassOf characterisation-methods:ThermalAnalysisMethod .
+
+
+###  http://emmo.info/emmo/domain/oie/characterisation-methods#TribologicalCharacterisation
+characterisation-methods:TribologicalCharacterisation rdf:type owl:Class ;
+skos:prefLabel "TribologicalCharacterisation"@en ;
+                              rdfs:subClassOf characterisation-methods:CharacterisationMethod .
+
+
+###  http://emmo.info/emmo/domain/oie/characterisation-methods#UltrasoundSpectroscopy
+characterisation-methods:UltrasoundSpectroscopy rdf:type owl:Class ;
+skos:prefLabel "UltrasoundSpectroscopy"@en ;
+                        rdfs:subClassOf characterisation-methods:SpectroscopyBasedMethod .
+
+
+###  http://emmo.info/emmo/domain/oie/characterisation-methods#UvAndVisibleSpectroscopy
+characterisation-methods:UvAndVisibleSpectroscopy rdf:type owl:Class ;
+skos:prefLabel "UvAndVisibleSpectroscopy"@en ;
+                          rdfs:subClassOf characterisation-methods:SpectroscopyBasedMethod .
+
+
+###  http://emmo.info/emmo/domain/oie/characterisation-methods#XRayDiffraction
+characterisation-methods:XRayDiffraction rdf:type owl:Class ;
+skos:prefLabel "XRayDiffraction"@en ;
+                 rdfs:subClassOf characterisation-methods:DiffractionBasedMethod .
+
+
+###  http://emmo.info/emmo/domain/oie/characterisation-methods#XRaySpectroscopy
+characterisation-methods:XRaySpectroscopy rdf:type owl:Class ;
+skos:prefLabel "XRaySpectroscopy"@en ;
+                  rdfs:subClassOf characterisation-methods:SpectroscopyBasedMethod .

@@ -1,0 +1,784 @@
+@prefix emmo: <http://emmo.info/emmo#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix models: <http://emmo.info/emmo/domain/oie/models#> .
+@base <http://emmo.info/emmo/domain/oie/models> .
+
+<http://emmo.info/emmo/domain/oie/models> rdf:type owl:Ontology ;
+                                       owl:versionIRI <http://emmo.info/emmo/domain/oie/models> ;
+                                       owl:imports <http://emmo.info/emmo/1.0.0-beta3/top> ,
+									               <http://emmo.info/emmo/1.0.0-beta3/middle/semiotics> ,
+												   <http://emmo.info/emmo/1.0.0-beta3/middle/persistence> ,
+									               <http://emmo.info/emmo/1.0.0-beta3/middle/persholistic> ,
+												   <http://emmo.info/emmo/1.0.0-beta3/middle/reductionistic> ,
+												   <http://emmo.info/emmo/1.0.0-beta3/domain/math> ,
+            									   <http://emmo.info/emmo/1.0.0-beta3/domain/metrology> ;
+								   
+									   dcterms:abstract "The models module defines models as semiotic signs that stands for an object by resembling or imitating it, in shape or by sharing a similar logical structure."@en ;
+                                       dcterms:contributor    "Access Technology (DE)" ,
+                                                              "Fraunhofer IWM (DE)" ,
+                                                              "Goldbeck Consulting Ltd (UK)" ,
+                                                              "SINTEF (NO)" ,
+                                                              "University of Bologna (IT)" ;
+                                       dcterms:creator "Adham Hashibon" ,
+                                                       "Daniele Toti" ,
+                                                       "Emanuele Ghedini" ,
+                                                       "Georg Schmitz" ,
+                                                       "Gerhard Goldbeck" ,
+                                                       "Jesper Friis" ,
+                                                       "Pierluigi Del Nostro" ;
+                                       dcterms:license "https://creativecommons.org/licenses/by/4.0/legalcode" ;
+                                       dcterms:publisher "EMMC ASBL" ;
+                                       dcterms:title "Models"@en ;
+                                       rdfs:comment """Contacts:
+Gerhard Goldbeck
+Goldbeck Consulting Ltd (UK)
+email: gerhard@goldbeck-consulting.com
+
+Emanuele Ghedini
+University of Bologna (IT)
+email: emanuele.ghedini@unibo.it"""@en ,
+                                                    "The EMMO requires FacT++ reasoner plugin in order to visualize all inferences and class hierarchy (ctrl+R hotkey in Protege)."@en ;
+                                       owl:versionInfo "1.0.0-beta3" .
+
+####### EMMO mapping:
+### PhysicalQuantity              -> middle-metrology      emmo:EMMO_02c0621e_a527_4790_8a0f_2bb51973c819
+### hasParticipant                -> middle-persholistic   emmo:EMMO_ae2d1a96_bfa1_409a_a7d2_03d69e8a125a
+### Process                       -> middle-persistence    emmo:EMMO_43e9a05d_98af_41b4_92f6_00f79a09bfce
+### hasSpatialDirectEssentialPart -> middle-reductionistic emmo:EMMO_b2282816_b7a3_44c6_b2cb_3feff1ceb7fe
+### hasIcon                       -> middle-semiotics      emmo:EMMO_39c3815d_8cae_4c8f_b2ff_eeba24bec455
+### Conventional                  -> middle-semiotics      emmo:EMMO_35d2e130_6e01_41ed_94f7_00b333d46cf9
+### Determination                 -> middle-semiotics      emmo:EMMO_10a5fd39_06aa_4648_9e70_f962a9cb2069
+### Equation                      -> domain-math           emmo:EMMO_e56ee3eb_7609_4ae1_8bed_51974f0960a6
+### Mathematical                  -> domain-math           emmo:EMMO_54ee6b5e_5261_44a8_86eb_5717e7fdb9d0
+### hasSpatialEssentialPart       -> top                   emmo:EMMO_f68030be_94b8_4c61_a161_886468558054
+### CausalObject/Physical         -> top                   emmo:EMMO_c5ddfdba_c074_4aa4_ad6b_1ac4942d300d
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://emmo.info/emmo#hasModel
+models:hasModel rdf:type owl:ObjectProperty ;
+                                           rdfs:subPropertyOf emmo:EMMO_39c3815d_8cae_4c8f_b2ff_eeba24bec455 ;
+                                           skos:prefLabel "hasModel"@en .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://emmo.info/emmo#Experiment
+models:Experiment rdf:type owl:Class ;
+                                           rdfs:subClassOf <http://emmo.info/emmo#EMMO_10a5fd39_06aa_4648_9e70_f962a9cb2069> ,
+                                                           [ rdf:type owl:Restriction ;
+                                                             owl:onProperty emmo:EMMO_ae2d1a96_bfa1_409a_a7d2_03d69e8a125a ;
+                                                             owl:someValuesFrom models:PhysicalPhenomenon
+                                                           ] ;
+                                           rdfs:comment "An experiment is a process that is intended to replicate a physical phenomenon in a controlled environment."@en ;
+                                           skos:prefLabel "Experiment"@en .
+
+
+###  http://emmo.info/emmo#PhysicsEquation
+models:PhysicsEquation rdf:type owl:Class ;
+                                           rdfs:subClassOf <http://emmo.info/emmo#EMMO_e56ee3eb_7609_4ae1_8bed_51974f0960a6> ,
+                                                           [ rdf:type owl:Restriction ;
+                                                             owl:onProperty emmo:EMMO_b2282816_b7a3_44c6_b2cb_3feff1ceb7fe ;
+                                                             owl:someValuesFrom emmo:EMMO_02c0621e_a527_4790_8a0f_2bb51973c819
+                                                           ] ,
+                                                           [ rdf:type owl:Restriction ;
+                                                             owl:onProperty [ owl:inverseOf models:hasModel
+                                                                            ] ;
+                                                             owl:someValuesFrom models:PhysicalPhenomenon
+                                                           ] ;
+                                           rdfs:comment "An 'equation' that stands for a 'physical_law' by mathematically defining the relations between physics_quantities."@en ;
+                                           rdfs:comment """The Newton's equation of motion.
+
+The Schrödinger equation.
+
+The Navier-Stokes equation."""@en ;
+                                           skos:prefLabel "PhysicsEquation"@en .
+
+
+###  http://emmo.info/emmo#PhysicalPhenomenon
+models:PhysicalPhenomenon rdf:type owl:Class ;
+                                           rdfs:subClassOf emmo:EMMO_43e9a05d_98af_41b4_92f6_00f79a09bfce ;
+                                           rdfs:comment "A 'process' that is recognized by physical sciences and is catogrized accordingly."@en ;
+                                           rdfs:comment "While every 'process' in the EMMO involves physical objects, this class is devoted to represent real world objects that express a phenomenon relevant for the ontologist"@en ;
+                                           skos:prefLabel "PhysicalPhenomenon"@en .
+
+
+###  http://emmo.info/emmo#ContinuumModel
+models:ContinuumModel rdf:type owl:Class ;
+                                           rdfs:subClassOf models:PhysicsBasedModel ;
+                                           rdfs:comment "A physics-based model based on a physics equation describing the behaviour of continuum volume."@en ;
+                                           skos:prefLabel "ContinuumModel"@en .
+
+
+###  http://emmo.info/emmo#MesoscopicModel
+models:MesoscopicModel rdf:type owl:Class ;
+                                           rdfs:subClassOf models:PhysicsBasedModel ;
+                                           rdfs:comment "A physics-based model based on a physics equation describing the behaviour of mesoscopic entities, i.e. a set of bounded atoms like a molecule, bead or nanoparticle."@en ;
+                                           skos:prefLabel "MesoscopicModel"@en .
+
+
+###  http://emmo.info/emmo#Theorisation
+models:Theorisation rdf:type owl:Class ;
+                                           rdfs:subClassOf emmo:EMMO_10a5fd39_06aa_4648_9e70_f962a9cb2069 ,
+                                                           [ rdf:type owl:Restriction ;
+                                                             owl:onProperty emmo:EMMO_ae2d1a96_bfa1_409a_a7d2_03d69e8a125a ;
+                                                             owl:someValuesFrom models:Theory
+                                                           ] ;
+                                           rdfs:comment "The 'semiosis' process of interpreting a 'physical' and provide a complec sign, 'theory' that stands for it and explain it to another interpreter."@en ;
+                                           skos:altLabel "Theorization"@en ;
+                                           skos:prefLabel "Theorisation"@en .
+
+
+###  http://emmo.info/emmo#ElectronicModel
+models:ElectronicModel rdf:type owl:Class ;
+                                           rdfs:subClassOf models:PhysicsBasedModel ;
+                                           rdfs:comment "A physics-based model based on a physics equation describing the behaviour of electrons."@en ;
+                                           rdfs:comment """Density functional theory.
+Hartree-Fock."""@en ;
+                                           skos:prefLabel "ElectronicModel"@en .
+
+
+###  http://emmo.info/emmo#AtomisticModel
+models:AtomisticModel rdf:type owl:Class ;
+                                           rdfs:subClassOf models:PhysicsBasedModel ;
+                                           rdfs:comment "A physics-based model based on a physics equation describing the behaviour of atoms."@en ;
+                                           skos:prefLabel "AtomisticModel"@en .
+
+
+###  http://emmo.info/emmo#Theory
+models:Theory rdf:type owl:Class ;
+                                           rdfs:subClassOf emmo:EMMO_35d2e130_6e01_41ed_94f7_00b333d46cf9 ;
+                                           rdfs:comment "A 'conventional' that stand for a 'physical'."@en ;
+                                           rdfs:comment """The 'theory' is e.g. a proposition, a book or a paper whose sub-symbols suggest in the mind of the interpreter an interpretant structure that can represent a 'physical'.
+
+It is not an 'icon' (like a math equation), because it has no common resemblance or logical structure with the 'physical'.
+
+In Peirce semiotics: legisign-symbol-argument"""@en ;
+                                           skos:prefLabel "Theory"@en .
+
+
+###  http://emmo.info/emmo#Model
+models:Model rdf:type owl:Class ;
+                                           owl:equivalentClass [ rdf:type owl:Restriction ;
+                                                                 owl:onProperty [ owl:inverseOf models:hasModel
+                                                                                ] ;
+                                                                 owl:someValuesFrom emmo:EMMO_c5ddfdba_c074_4aa4_ad6b_1ac4942d300d
+                                                               ] ;
+                                           rdfs:comment """A 'sign' that not only stands for a 'physical' or a 'process', but it is also a simplified representation, aimed to assist calculations for its description or for predictions of its behaviour.
+
+A 'model' represents a 'physical' or a 'process' by direct similitude (e.g. small scale replica) or by capturing in a logical framework the relations between its properties (e.g. mathematical model)."""@en ;
+                                           rdfs:comment "A 'model' prediction is always a prediction of the properties of an entity, since an entity is known by an interpreter only through perception."@en ;
+                                           skos:prefLabel "Model"@en .
+
+
+###  http://emmo.info/emmo#PhysicalLaw
+models:PhysicalLaw rdf:type owl:Class ;
+                                           rdfs:subClassOf models:NaturalLaw ;
+                                           skos:prefLabel "PhysicalLaw"@en .
+
+
+###  http://emmo.info/emmo#DataBasedModel
+models:DataBasedModel rdf:type owl:Class ;
+                                           rdfs:subClassOf models:MathematicalModel ;
+                                           rdfs:comment "A computational model that uses existing data to create new insight into the behaviour of a system."@en ;
+                                           skos:prefLabel "DataBasedModel"@en .
+
+
+###  http://emmo.info/emmo#PhysicsBasedModel
+models:PhysicsBasedModel rdf:type owl:Class ;
+                                           rdfs:subClassOf models:MathematicalModel ,
+                                                           [ rdf:type owl:Restriction ;
+                                                             owl:onProperty emmo:EMMO_f68030be_94b8_4c61_a161_886468558054 ;
+                                                             owl:someValuesFrom models:PhysicsEquation
+                                                           ] ,
+                                                           [ rdf:type owl:Restriction ;
+                                                             owl:onProperty emmo:EMMO_f68030be_94b8_4c61_a161_886468558054 ;
+                                                             owl:someValuesFrom models:MaterialRelation
+                                                           ] ;
+                                           rdfs:comment "A solvable set of one Physics Equation and one or more Materials Relations."@en ;
+                                           skos:prefLabel "PhysicsBasedModel"@en .
+
+
+###  http://emmo.info/emmo#NaturalLaw
+models:NaturalLaw rdf:type owl:Class ;
+                                           rdfs:subClassOf models:Theory ;
+                                           skos:prefLabel "NaturalLaw"@en .
+
+
+###  http://emmo.info/emmo#MaterialRelation
+models:MaterialRelation rdf:type owl:Class ;
+                                           rdfs:subClassOf emmo:EMMO_e56ee3eb_7609_4ae1_8bed_51974f0960a6 ,
+                                                           [ rdf:type owl:Restriction ;
+                                                             owl:onProperty emmo:EMMO_b2282816_b7a3_44c6_b2cb_3feff1ceb7fe ;
+                                                             owl:someValuesFrom emmo:EMMO_02c0621e_a527_4790_8a0f_2bb51973c819
+                                                           ] ;
+                                           rdfs:comment "An 'equation' that stands for a physical assumption specific to a material, and provides an expression for a 'physics_quantity' (the dependent variable) as function of other variables, physics_quantity or data (independent variables)."@en ;
+                                           rdfs:comment """The Lennard-Jones potential.
+
+A force field.
+
+An Hamiltonian."""@en ;
+                                           rdfs:comment "A material_relation can e.g. return a predefined number, return a database query, be an equation that depends on other physics_quantities."@en ;
+                                           skos:prefLabel "MaterialRelation"@en .
+
+
+###  http://emmo.info/emmo#MaterialLaw
+models:MaterialLaw rdf:type owl:Class ;
+                                           rdfs:subClassOf models:NaturalLaw ;
+                                           skos:prefLabel "MaterialLaw"@en .
+
+
+###  http://emmo.info/emmo#MathematicalModel
+models:MathematicalModel rdf:type owl:Class ;
+                                           owl:equivalentClass [ owl:intersectionOf ( emmo:EMMO_54ee6b5e_5261_44a8_86eb_5717e7fdb9d0
+                                                                                      models:Model
+                                                                                    ) ;
+                                                                 rdf:type owl:Class
+                                                               ] ;
+                                           rdfs:comment """A mathematical model can be defined as a description of a system using mathematical concepts and language to facilitate proper explanation of a system or to study the effects of different components and to make predictions on patterns of behaviour.
+
+Abramowitz and Stegun, 1968"""@en ;
+                                           skos:prefLabel "MathematicalModel"@en .
+
+#####################################################################################################
+### From OIE access-model.ttl ***********************************************************************
+#####################################################################################################
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://emmo.info/emmo/domain/oie/models#AbInitioMolecularDynamics
+models:AbInitioMolecularDynamics rdf:type owl:Class ;
+skos:prefLabel "AbInitioMolecularDynamics"@en ;
+                           rdfs:subClassOf models:MolecularDynamics .
+
+
+###  http://emmo.info/emmo/domain/oie/models#AbInitioQuantumMechanicalModel
+models:AbInitioQuantumMechanicalModel rdf:type owl:Class ;
+skos:prefLabel "AbInitioQuantumMechanicalModel"@en ;
+                                 rdfs:subClassOf models:SingleParticleSchroedingerModel .
+
+
+###  http://emmo.info/emmo/domain/oie/models#ApplicationOfModelsToSimulateProcessesAndDevices
+models:ApplicationOfModelsToSimulateProcessesAndDevices rdf:type owl:Class ;
+skos:prefLabel "ApplicationOfModelsToSimulateProcessesAndDevices"@en ;
+                                                  rdfs:subClassOf models:ContinuumModel .
+
+
+###  http://emmo.info/emmo/domain/oie/models#AtomisticPhononBasedModels-BoltzmannTransportEquation
+models:AtomisticPhononBasedModels-BoltzmannTransportEquation rdf:type owl:Class ;
+skos:prefLabel "AtomisticPhononBasedModels-BoltzmannTransportEquation"@en ;
+                                                       rdfs:subClassOf models:AtomisticModel .
+
+
+###  http://emmo.info/emmo/domain/oie/models#AtomisticSpinModel
+models:AtomisticSpinModel rdf:type owl:Class ;
+skos:prefLabel "AtomisticSpinModel"@en ;
+                     rdfs:subClassOf models:AtomisticModel .
+
+
+###  http://emmo.info/emmo/domain/oie/models#ChemistryReaction-kinetic-Model
+models:ChemistryReaction-kinetic-Model rdf:type owl:Class ;
+skos:prefLabel "ChemistryReaction-kinetic-Model"@en ;
+                                  rdfs:subClassOf models:ContinuumModel .
+
+
+###  http://emmo.info/emmo/domain/oie/models#ClassicalDensityFunctionalTheoryAndDynamicDensityFunctionalTheory
+models:ClassicalDensityFunctionalTheoryAndDynamicDensityFunctionalTheory rdf:type owl:Class ;
+skos:prefLabel "ClassicalDensityFunctionalTheoryAndDynamicDensityFunctionalTheory"@en ;
+                                                                   rdfs:subClassOf models:AtomisticModel .
+
+
+###  http://emmo.info/emmo/domain/oie/models#ClassicalMolecularDynamics
+models:ClassicalMolecularDynamics rdf:type owl:Class ;
+skos:prefLabel "ClassicalMolecularDynamics"@en ;
+                            rdfs:subClassOf models:MolecularDynamics .
+
+
+###  http://emmo.info/emmo/domain/oie/models#CoarseGrainedMolecularDynamics
+models:CoarseGrainedMolecularDynamics rdf:type owl:Class ;
+skos:prefLabel "CoarseGrainedMolecularDynamics"@en ;
+                                rdfs:subClassOf models:CoarseGrainedMolecularDynamicsAndDissipativeParticleDynamics .
+
+
+###  http://emmo.info/emmo/domain/oie/models#CoarseGrainedMolecularDynamicsAndDissipativeParticleDynamics
+models:CoarseGrainedMolecularDynamicsAndDissipativeParticleDynamics rdf:type owl:Class ;
+skos:prefLabel "CoarseGrainedMolecularDynamicsAndDissipativeParticleDynamics"@en ;
+                                                              rdfs:subClassOf models:MesoscopicModel .
+
+
+###  http://emmo.info/emmo/domain/oie/models#CompressibleVsIncompressibleFlow
+models:CompressibleVsIncompressibleFlow rdf:type owl:Class ;
+skos:prefLabel "CompressibleVsIncompressibleFlow"@en ;
+                                  rdfs:subClassOf models:FluidMechanics .
+
+
+###  http://emmo.info/emmo/domain/oie/models#ContinuumThermodynamicsAndPhaseFieldModel
+models:ContinuumThermodynamicsAndPhaseFieldModel rdf:type owl:Class ;
+skos:prefLabel "ContinuumThermodynamicsAndPhaseFieldModel"@en ;
+                                            rdfs:subClassOf models:ContinuumModel .
+
+
+###  http://emmo.info/emmo/domain/oie/models#DeterministicsSpinModel
+models:DeterministicsSpinModel rdf:type owl:Class ;
+skos:prefLabel "DeterministicsSpinModel"@en ;
+                          rdfs:subClassOf models:AtomisticSpinModel .
+
+
+###  http://emmo.info/emmo/domain/oie/models#DissipativeParticleDynamics
+models:DissipativeParticleDynamics rdf:type owl:Class ;
+skos:prefLabel "DissipativeParticleDynamics"@en ;
+                             rdfs:subClassOf models:CoarseGrainedMolecularDynamicsAndDissipativeParticleDynamics .
+
+
+###  http://emmo.info/emmo/domain/oie/models#Elect-ron-ics
+models:Electronics rdf:type owl:Class ;
+skos:prefLabel "Electronics"@en ;
+               rdfs:subClassOf models:Electromagnetism .
+
+
+###  http://emmo.info/emmo/domain/oie/models#Electromagnetism
+models:Electromagnetism rdf:type owl:Class ;
+skos:prefLabel "Electromagnetism"@en ;
+                  rdfs:subClassOf models:ContinuumModel .
+
+
+###  http://emmo.info/emmo/domain/oie/models#EnvelopeFunctionApproximation
+models:EnvelopeFunctionApproximation rdf:type owl:Class ;
+skos:prefLabel "EnvelopeFunctionApproximation"@en ;
+                               rdfs:subClassOf models:RepresentationsOfContinuousMedia .
+
+
+###  http://emmo.info/emmo/domain/oie/models#FermiGoldenRule-FGR-HoppingModel-ForQuasiParticleTransport
+models:FermiGoldenRule-FGR-HoppingModel-ForQuasiParticleTransport rdf:type owl:Class ;
+skos:prefLabel "FermiGoldenRule-FGR-HoppingModel-ForQuasiParticleTransport"@en ;
+                                                            rdfs:subClassOf models:StatisticalChargeTransportModel .
+
+
+###  http://emmo.info/emmo/domain/oie/models#FluidMechanics
+models:FluidMechanics rdf:type owl:Class ;
+skos:prefLabel "FluidMechanics"@en ;
+                rdfs:subClassOf models:ContinuumModel .
+
+
+###  http://emmo.info/emmo/domain/oie/models#HeatFlowAndThermoMechanicalBehaviour
+models:HeatFlowAndThermoMechanicalBehaviour rdf:type owl:Class ;
+skos:prefLabel "HeatFlowAndThermoMechanicalBehaviour"@en ;
+                                      rdfs:subClassOf models:ContinuumModel .
+
+
+###  http://emmo.info/emmo/domain/oie/models#HigherLevelAbInitioModel
+models:HigherLevelAbInitioModel rdf:type owl:Class ;
+skos:prefLabel "HigherLevelAbInitioModel"@en ;
+                           rdfs:subClassOf models:SingleParticleSchroedingerModel .
+
+
+###  http://emmo.info/emmo/domain/oie/models#KineticMonteCarloModel
+models:KineticMonteCarloModel rdf:type owl:Class ;
+skos:prefLabel "KineticMonteCarloModel"@en ;
+                         rdfs:subClassOf models:StatisticalMechanicsAtomisticModel .
+
+
+###  http://emmo.info/emmo/domain/oie/models#Kohn-ShamEquation-PseudopotentialsProjectorAugmentedWaves
+models:Kohn-ShamEquation-PseudopotentialsProjectorAugmentedWaves rdf:type owl:Class ;
+skos:prefLabel "Kohn-ShamEquation-PseudopotentialsProjectorAugmentedWaves"@en ;
+                                                           rdfs:subClassOf models:KohnShamEquationDensityFunctionalTheory .
+
+
+###  http://emmo.info/emmo/domain/oie/models#KohnShamEquationDensityFunctionalTheory
+models:KohnShamEquationDensityFunctionalTheory rdf:type owl:Class ;
+skos:prefLabel "KohnShamEquationDensityFunctionalTheory"@en ;
+                                         rdfs:subClassOf models:ElectronicModel .
+
+
+###  http://emmo.info/emmo/domain/oie/models#LaminarVsTurbulentFlow
+models:LaminarVsTurbulentFlow rdf:type owl:Class ;
+skos:prefLabel "LaminarVsTurbulentFlow"@en ;
+                        rdfs:subClassOf models:FluidMechanics .
+
+
+###  http://emmo.info/emmo/domain/oie/models#LangevinDynamicMethodForMagneticSpinSystems
+models:LangevinDynamicMethodForMagneticSpinSystems rdf:type owl:Class ;
+skos:prefLabel "LangevinDynamicMethodForMagneticSpinSystems"@en ;
+                                             rdfs:subClassOf models:AtomisticSpinModel .
+
+
+###  http://emmo.info/emmo/domain/oie/models#Magnetics
+models:Magnetics rdf:type owl:Class ;
+skos:prefLabel "Magnetics"@en ;
+           rdfs:subClassOf models:Electromagnetism .
+
+
+###  http://emmo.info/emmo/domain/oie/models#ManyBodySchroedingerModel
+models:ManyBodySchroedingerModel rdf:type owl:Class ;
+skos:prefLabel "ManyBodySchroedingerModel"@en ;
+                            rdfs:subClassOf models:SchroedingerEquationBasedModel .
+
+
+###  http://emmo.info/emmo/domain/oie/models#MaterialsRelationsForFlows
+models:MaterialsRelationsForFlows rdf:type owl:Class ;
+skos:prefLabel "MaterialsRelationsForFlows"@en ;
+                            rdfs:subClassOf models:FluidMechanics .
+
+
+###  http://emmo.info/emmo/domain/oie/models#MaterialsRelationsInSolidMechanics
+models:MaterialsRelationsInSolidMechanics rdf:type owl:Class ;
+skos:prefLabel "MaterialsRelationsInSolidMechanics"@en ;
+                                    rdfs:subClassOf models:SolidMechanics .
+
+
+###  http://emmo.info/emmo/domain/oie/models#MesoscopicClassicalDensityFunctionalTheoryAndDynamicDensityFunctionalTheory
+models:MesoscopicClassicalDensityFunctionalTheoryAndDynamicDensityFunctionalTheory rdf:type owl:Class ;
+skos:prefLabel "MesoscopicClassicalDensityFunctionalTheoryAndDynamicDensityFunctionalTheory"@en ;
+                                                                             rdfs:subClassOf models:MesoscopicModel .
+
+
+###  http://emmo.info/emmo/domain/oie/models#MesoscopicPhononModels-BoltzmannTransportEquation
+models:MesoscopicPhononModels-BoltzmannTransportEquation rdf:type owl:Class ;
+skos:prefLabel "MesoscopicPhononModels-BoltzmannTransportEquation"@en ;
+                                                   rdfs:subClassOf models:MesoscopicModel .
+
+
+###  http://emmo.info/emmo/domain/oie/models#MicromagneticModel
+models:MicromagneticModel rdf:type owl:Class ;
+skos:prefLabel "MicromagneticModel"@en ;
+                     rdfs:subClassOf models:MesoscopicModel .
+
+
+###  http://emmo.info/emmo/domain/oie/models#ModelDevelopmentInSolidMechanics
+models:ModelDevelopmentInSolidMechanics rdf:type owl:Class ;
+skos:prefLabel "ModelDevelopmentInSolidMechanics"@en ;
+                                  rdfs:subClassOf models:SolidMechanics .
+
+
+###  http://emmo.info/emmo/domain/oie/models#MolecularDynamics
+models:MolecularDynamics rdf:type owl:Class ;
+skos:prefLabel "MolecularDynamics"@en ;
+                   rdfs:subClassOf models:NewtonsEquationBasedModel .
+
+
+###  http://emmo.info/emmo/domain/oie/models#MolecularMechanics
+models:MolecularMechanics rdf:type owl:Class ;
+skos:prefLabel "MolecularMechanics"@en ;
+                    rdfs:subClassOf models:NewtonsEquationBasedModel .
+
+
+###  http://emmo.info/emmo/domain/oie/models#MonteCarloMolecularModel
+models:MonteCarloMolecularModel rdf:type owl:Class ;
+skos:prefLabel "MonteCarloMolecularModel"@en ;
+                           rdfs:subClassOf models:StatisticalMechanicsAtomisticModel .
+
+
+###  http://emmo.info/emmo/domain/oie/models#NEGF
+models:NEGF rdf:type owl:Class ;
+skos:prefLabel "NEGF"@en ;
+      rdfs:subClassOf models:ElectronicModel .
+
+
+###  http://emmo.info/emmo/domain/oie/models#NewtonianVsNonNewtonianFluidsAndRheology
+models:NewtonianVsNonNewtonianFluidsAndRheology rdf:type owl:Class ;
+skos:prefLabel "NewtonianVsNonNewtonianFluidsAndRheology"@en ;
+                                          rdfs:subClassOf models:FluidMechanics .
+
+
+###  http://emmo.info/emmo/domain/oie/models#NewtonsEquationBasedModel
+models:NewtonsEquationBasedModel rdf:type owl:Class ;
+skos:prefLabel "NewtonsEquationBasedModel"@en ;
+                            rdfs:subClassOf models:AtomisticModel .
+
+
+###  http://emmo.info/emmo/domain/oie/models#Optics
+models:Optics rdf:type owl:Class ;
+skos:prefLabel "Optics"@en ;
+        rdfs:subClassOf models:Electromagnetism .
+
+
+###  http://emmo.info/emmo/domain/oie/models#OtherTimeDependentSchroedingerModel
+models:OtherTimeDependentSchroedingerModel rdf:type owl:Class ;
+skos:prefLabel "OtherTimeDependentSchroedingerModel"@en ;
+                                      rdfs:subClassOf models:QuantumMechanicalTimeDependantSchroedingerModel .
+
+
+###  http://emmo.info/emmo/domain/oie/models#PercolationModel
+models:PercolationModel rdf:type owl:Class ;
+skos:prefLabel "PercolationModel"@en ;
+                   rdfs:subClassOf models:StatisticalChargeTransportModel .
+
+
+###  http://emmo.info/emmo/domain/oie/models#PhaseFieldModel
+models:PhaseFieldModel rdf:type owl:Class ;
+skos:prefLabel "PhaseFieldModel"@en ;
+                  rdfs:subClassOf models:ContinuumThermodynamicsAndPhaseFieldModel .
+
+
+###  http://emmo.info/emmo/domain/oie/models#PolarisableContinuumApproximation
+models:PolarisableContinuumApproximation rdf:type owl:Class ;
+skos:prefLabel "PolarisableContinuumApproximation"@en ;
+                                   rdfs:subClassOf models:RepresentationsOfContinuousMedia .
+
+
+###  http://emmo.info/emmo/domain/oie/models#QuantumDynamicMeanFieldTheory
+models:QuantumDynamicMeanFieldTheory rdf:type owl:Class ;
+skos:prefLabel "QuantumDynamicMeanFieldTheory"@en ;
+                               rdfs:subClassOf models:ElectronicModel .
+
+
+###  http://emmo.info/emmo/domain/oie/models#QuantumMechanicalTimeDependantSchroedingerModel
+models:QuantumMechanicalTimeDependantSchroedingerModel rdf:type owl:Class ;
+skos:prefLabel "QuantumMechanicalTimeDependantSchroedingerModel"@en ;
+                                                  rdfs:subClassOf models:SchroedingerEquationBasedModel .
+
+
+###  http://emmo.info/emmo/domain/oie/models#QuantumMechanics-MolecularMechanics
+models:QuantumMechanics-MolecularMechanics rdf:type owl:Class ;
+skos:prefLabel "QuantumMechanics-MolecularMechanics"@en ;
+                                     rdfs:subClassOf models:MolecularDynamics .
+
+
+###  http://emmo.info/emmo/domain/oie/models#RepresentationsOfContinuousMedia
+models:RepresentationsOfContinuousMedia rdf:type owl:Class ;
+skos:prefLabel "RepresentationsOfContinuousMedia"@en ;
+                                  rdfs:subClassOf models:ElectronicModel .
+
+
+###  http://emmo.info/emmo/domain/oie/models#Scales-MicroAndMacroFluidics
+models:Scales-MicroAndMacroFluidics rdf:type owl:Class ;
+skos:prefLabel "Scales-MicroAndMacroFluidics"@en ;
+                              rdfs:subClassOf models:FluidMechanics .
+
+
+###  http://emmo.info/emmo/domain/oie/models#SchroedingerEquationBasedModel
+models:SchroedingerEquationBasedModel rdf:type owl:Class ;
+skos:prefLabel "SchroedingerEquationBasedModel"@en ;
+                                 rdfs:subClassOf models:ElectronicModel .
+
+
+###  http://emmo.info/emmo/domain/oie/models#SchroedingerEquationWithHartree-FockHamiltonianModel
+models:SchroedingerEquationWithHartree-FockHamiltonianModel rdf:type owl:Class ;
+skos:prefLabel "SchroedingerEquationWithHartree-FockHamiltonianModel"@en ;
+                                                      rdfs:subClassOf models:SingleParticleSchroedingerModel .
+
+
+###  http://emmo.info/emmo/domain/oie/models#SchroedingerEquationWithHubbardHamiltonianModel
+models:SchroedingerEquationWithHubbardHamiltonianModel rdf:type owl:Class ;
+skos:prefLabel "SchroedingerEquationWithHubbardHamiltonianModel"@en ;
+                                                 rdfs:subClassOf models:ManyBodySchroedingerModel .
+
+
+###  http://emmo.info/emmo/domain/oie/models#SchroedingerEquationWithNearlyFreeElectronHamiltonianModel
+models:SchroedingerEquationWithNearlyFreeElectronHamiltonianModel rdf:type owl:Class ;
+skos:prefLabel "SchroedingerEquationWithNearlyFreeElectronHamiltonianModel"@en ;
+                                                            rdfs:subClassOf models:ManyBodySchroedingerModel .
+
+
+###  http://emmo.info/emmo/domain/oie/models#SchroedingerWithSemiEmpiricalTightBindingHamiltonianModel
+models:SchroedingerWithSemiEmpiricalTightBindingHamiltonianModel rdf:type owl:Class ;
+skos:prefLabel "SchroedingerWithSemiEmpiricalTightBindingHamiltonianModel"@en ;
+                                                           rdfs:subClassOf models:ManyBodySchroedingerModel .
+
+
+###  http://emmo.info/emmo/domain/oie/models#SingleParticleSchroedingerModel
+models:SingleParticleSchroedingerModel rdf:type owl:Class ;
+skos:prefLabel "SingleParticleSchroedingerModel"@en ;
+                                  rdfs:subClassOf models:SchroedingerEquationBasedModel .
+
+
+###  http://emmo.info/emmo/domain/oie/models#SolidMechanics
+models:SolidMechanics rdf:type owl:Class ;
+skos:prefLabel "SolidMechanics"@en ;
+                rdfs:subClassOf models:ContinuumModel .
+
+
+###  http://emmo.info/emmo/domain/oie/models#StatisticalChargeTransportModel
+models:StatisticalChargeTransportModel rdf:type owl:Class ;
+skos:prefLabel "StatisticalChargeTransportModel"@en ;
+                                 rdfs:subClassOf models:ElectronicModel .
+
+
+###  http://emmo.info/emmo/domain/oie/models#StatisticalMechanicsAtomisticModel
+models:StatisticalMechanicsAtomisticModel rdf:type owl:Class ;
+skos:prefLabel "StatisticalMechanicsAtomisticModel"@en ;
+                                     rdfs:subClassOf models:AtomisticModel .
+
+
+###  http://emmo.info/emmo/domain/oie/models#StatisticalMechanicsMesoscopicModel
+models:StatisticalMechanicsMesoscopicModel rdf:type owl:Class ;
+skos:prefLabel "StatisticalMechanicsMesoscopicModel"@en ;
+                                      rdfs:subClassOf models:MesoscopicModel .
+
+
+###  http://emmo.info/emmo/domain/oie/models#StatisticalSemiClassicalTransportModelForDriftDiffusion
+models:StatisticalSemiClassicalTransportModelForDriftDiffusion rdf:type owl:Class ;
+skos:prefLabel "StatisticalSemiClassicalTransportModelForDriftDiffusion"@en ;
+                                                         rdfs:subClassOf models:StatisticalChargeTransportModel .
+
+
+###  http://emmo.info/emmo/domain/oie/models#StatisticalSpinTransportModel
+models:StatisticalSpinTransportModel rdf:type owl:Class ;
+skos:prefLabel "StatisticalSpinTransportModel"@en ;
+                               rdfs:subClassOf models:ElectronicModel .
+
+
+###  http://emmo.info/emmo/domain/oie/models#StatisticalTransportModelAtAtomisticLevel
+models:StatisticalTransportModelAtAtomisticLevel rdf:type owl:Class ;
+skos:prefLabel "StatisticalTransportModelAtAtomisticLevel"@en ;
+                                           rdfs:subClassOf models:AtomisticModel .
+
+
+###  http://emmo.info/emmo/domain/oie/models#TD-DFT-And-TD-Spin-DFT
+models:TD-DFT-And-TD-Spin-DFT rdf:type owl:Class ;
+skos:prefLabel "TD-DFT-And-TD-Spin-DFT"@en ;
+                        rdfs:subClassOf models:KohnShamEquationDensityFunctionalTheory .
+
+
+###  http://emmo.info/emmo/domain/oie/models#Thermodynamics
+models:Thermodynamics rdf:type owl:Class ;
+skos:prefLabel "Thermodynamics"@en ;
+                rdfs:subClassOf models:ContinuumThermodynamicsAndPhaseFieldModel .
+
+
+###  http://emmo.info/emmo/domain/oie/models#ViscousVsInviscidFlow
+models:ViscousVsInviscidFlow rdf:type owl:Class ;
+skos:prefLabel "ViscousVsInviscidFlow"@en ;
+                       rdfs:subClassOf models:FluidMechanics .
+
+
+###  http://emmo.info/emmo/domain/oie/models#SchroedingerEquationWith-k-p-EffectiveHamiltonianModel
+models:SchroedingerEquationWith-k-p-EffectiveHamiltonianModel rdf:type owl:Class ;
+skos:prefLabel "SchroedingerEquationWith-k-p-EffectiveHamiltonianModel"@en ;
+                        rdfs:subClassOf models:ManyBodySchroedingerModel .
+
+
+###  http://emmo.info/emmo/domain/oie/models#TheTimeDependentSchroedingerEquationWith-k-p-EffectiveHamiltonianModel
+models:TheTimeDependentSchroedingerEquationWith-k-p-EffectiveHamiltonianModel rdf:type owl:Class ;
+skos:prefLabel "TheTimeDependentSchroedingerEquationWith-k-p-EffectiveHamiltonianModel"@en ;
+                        rdfs:subClassOf models:QuantumMechanicalTimeDependantSchroedingerModel .
+
+
+########################################################################################################
+### From (and for) OIE model.ttl ***********************************************************************
+########################################################################################################
+
+###  http://emmo.info/emmo/domain/oie/models#ContinuumMaterialRelation
+models:ContinuumMaterialRelation rdf:type owl:Class ;
+    rdfs:subClassOf models:MaterialRelation ;
+    skos:prefLabel "ContinuumMaterialRelation"@en .
+			   
+###  http://emmo.info/emmo/domain/oie/models#KinematicRelation
+models:KinematicRelation rdf:type owl:Class ;
+    rdfs:subClassOf models:ContinuumMaterialRelation ;
+    skos:prefLabel "KinematicRelation"@en .
+
+###  http://emmo.info/emmo/domain/oie/models#AccelerationVector
+models:AccelerationVector rdf:type owl:Class ;
+                                           rdfs:subClassOf models:KinematicRelation ;
+                                           skos:prefLabel "AccelerationVector"@en .
+										   
+###  http://emmo.info/emmo/domain/oie/models#DeformationGradient
+models:DeformationGradient rdf:type owl:Class ;
+    rdfs:subClassOf models:KinematicRelation ;
+    skos:prefLabel "DeformationGradient"@en .
+										   
+###  http://emmo.info/emmo/domain/oie/models#DisplacementGradient
+models:DisplacementGradient rdf:type owl:Class ;
+    rdfs:subClassOf models:KinematicRelation ;
+    skos:prefLabel "DisplacementGradient"@en .
+										   
+###  http://emmo.info/emmo/domain/oie/models#DistortionTensor
+models:DistortionTensor rdf:type owl:Class ;
+    rdfs:subClassOf models:KinematicRelation ;
+    skos:prefLabel "DistortionTensor"@en .
+										  				
+###  http://emmo.info/emmo/domain/oie/models#VelocityGradient
+models:VelocityGradient rdf:type owl:Class ;
+    rdfs:subClassOf models:KinematicRelation ;
+    skos:prefLabel "VelocityGradient"@en .
+
+###  http://emmo.info/emmo/domain/oie/models#VelocityVector
+models:VelocityVector rdf:type owl:Class ;
+    rdfs:subClassOf models:KinematicRelation ;
+    skos:prefLabel "VelocityVector"@en .
+	
+	
+###  http://emmo.info/emmo/domain/oie/models#BalanceRelation
+models:BalanceRelation rdf:type owl:Class ;
+    rdfs:subClassOf models:ContinuumMaterialRelation ;
+    skos:prefLabel "BalanceRelation"@en .
+
+
+###  http://emmo.info/emmo/domain/oie/models#BalanceOfAngularMomentum
+models:BalanceOfAngularMomentum rdf:type owl:Class ;
+    rdfs:subClassOf models:BalanceRelation ;
+    skos:prefLabel "BalanceOfAngularMomentum"@en .
+
+###  http://emmo.info/emmo/domain/oie/models#BalanceOfLinearMomentum
+models:BalanceOfLinearMomentum rdf:type owl:Class ;
+    rdfs:subClassOf models:BalanceRelation ;
+    skos:prefLabel "BalanceOfLinearMomentum"@en .
+
+###  http://emmo.info/emmo/domain/oie/models#BalanceOfMass
+models:BalanceOfMass rdf:type owl:Class ;
+    rdfs:subClassOf models:BalanceRelation ;
+    skos:prefLabel "BalanceOfMass"@en .
+										   
+###  http://emmo.info/emmo/domain/oie/models#BalanceOfEnergy
+models:BalanceOfEnergy rdf:type owl:Class ;
+    rdfs:subClassOf models:BalanceRelation ;
+    skos:prefLabel "BalanceOfEnergy"@en .
+	
+###  http://emmo.info/emmo/domain/oie/models#HeatConductionModel
+models:HeatConductionModel rdf:type owl:Class ;
+                                           rdfs:subClassOf models:ContinuumMaterialRelation ;
+                                           skos:prefLabel "HeatConductionModel"@en .
+										   
+###  http://emmo.info/emmo/domain/oie/models#ViscoelasticityModel
+models:ViscoelasticityModel rdf:type owl:Class ;
+                                           rdfs:subClassOf models:ContinuumMaterialRelation ; 
+                                           skos:prefLabel "ViscoelasticityModel"@en .
+										   
+
+###  http://emmo.info/emmo/domain/oie/models#ViscoplasticityModel
+models:ViscoplasticityModel rdf:type owl:Class ;
+                                           rdfs:subClassOf models:ContinuumMaterialRelation ; 
+                                           skos:prefLabel "ViscoplasticityModel"@en .
+										   
+###  http://emmo.info/emmo/domain/oie/models#PlasticityModel
+models:PlasticityModel rdf:type owl:Class ;
+                                           rdfs:subClassOf models:ContinuumMaterialRelation ; 
+                                           skos:prefLabel "PlasticityModel"@en .
+										   
+###  http://emmo.info/emmo/domain/oie/models#VonMisesPlasticity
+models:VonMisesPlasticity rdf:type owl:Class ;
+                                           rdfs:subClassOf models:PlasticityModel ;
+                                           skos:prefLabel "VonMisesPlasticity"@en .
+										   
+###  http://emmo.info/emmo/domain/oie/models#ElasticityModel
+models:ElasticityModel rdf:type owl:Class ;
+                                           rdfs:subClassOf models:ContinuumMaterialRelation ;
+                                           skos:prefLabel "ElasticityModel"@en .
+										   
+###  http://emmo.info/emmo/domain/oie/models#Hyperelasticity
+models:Hyperelasticity rdf:type owl:Class ;
+                                           rdfs:subClassOf models:ElasticityModel ;
+                                           skos:prefLabel "Hyperelasticity"@en .
+										   
+###  http://emmo.info/emmo/domain/oie/models#Hypoelasticity
+models:Hypoelasticity rdf:type owl:Class ;
+                                           rdfs:subClassOf models:ElasticityModel ;
+                                           skos:prefLabel "Hypoelasticity"@en .
+										   
+###  http://emmo.info/emmo/domain/oie/models#CauchyElasticity
+models:CauchyElasticity rdf:type owl:Class ;
+                                           rdfs:subClassOf models:ElasticityModel ;
+                                           skos:prefLabel "CauchyElasticity"@en .
