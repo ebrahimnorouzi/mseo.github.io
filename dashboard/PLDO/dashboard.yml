@@ -3,7 +3,7 @@ base_prefixes:
 - PLDO
 - PLDOALT
 changed: true
-date: 2024-06-19 11:11:27.587728
+date: 2024-06-19 11:35:27.979616
 metrics:
   'Axioms: Breakdown of axiom types':
     AnnotationAssertion: 126
