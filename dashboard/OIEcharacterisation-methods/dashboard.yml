@@ -3,7 +3,7 @@ base_prefixes:
 - OIEcharacterisation-methods
 - OIECHARACTERISATION-METHODSALT
 changed: true
-date: 2024-06-19 11:11:05.741243
+date: 2024-06-19 11:35:07.167197
 metrics:
   'Axioms: Breakdown of axiom types':
     AnnotationAssertion: 6687

@@ -3,7 +3,7 @@ base_prefixes:
 - semmd
 - SEMMDALT
 changed: true
-date: 2024-06-19 11:08:32.848186
+date: 2024-06-19 11:32:38.361891
 metrics:
   'Axioms: Breakdown of axiom types':
     AnnotationAssertion: 5238
