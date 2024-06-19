@@ -3,7 +3,7 @@ base_prefixes:
 - npo
 - NPOALT
 changed: true
-date: 2024-06-18 16:26:38.708882
+date: 2024-06-19 10:08:07.307339
 metrics:
   'Axioms: Breakdown of axiom types':
     AnnotationAssertion: 11343
@@ -54,7 +54,7 @@ metrics:
     rdfs: 2110
     xsd: 112
   'Info: Which ontologies use it?': []
-mirror_from: https://raw.githubusercontent.com/sobolevnrm/npo/master/npo-asserted.owl
+mirror_from: https://raw.githubusercontent.com/ebrahimnorouzi/mseo.github.io/master/Ontology_files/NPO.owl
 namespace: NPO
 results:
   FP01 Open:

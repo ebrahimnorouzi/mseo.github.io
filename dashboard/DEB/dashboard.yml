@@ -3,7 +3,7 @@ base_prefixes:
 - deb
 - DEBALT
 changed: true
-date: 2024-06-18 16:26:54.950387
+date: 2024-06-19 10:08:23.199497
 metrics:
   'Axioms: Breakdown of axiom types':
     AnnotationAssertion: 296
@@ -47,7 +47,7 @@ metrics:
     skos: 158
     xsd: 170
   'Info: Which ontologies use it?': []
-mirror_from: https://raw.githubusercontent.com/ProjectDebbie/Ontology_DEB/master/DEB_ont.owl
+mirror_from: https://raw.githubusercontent.com/ebrahimnorouzi/mseo.github.io/master/Ontology_files/DEB.owl
 namespace: DEB
 results:
   FP01 Open:

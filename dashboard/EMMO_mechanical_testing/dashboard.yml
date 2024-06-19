@@ -3,7 +3,7 @@ base_prefixes:
 - emmo_mechanical_testing
 - EMMO_MECHANICAL_TESTINGALT
 changed: true
-date: 2024-06-18 16:21:12.716007
+date: 2024-06-19 10:04:48.950288
 metrics:
   'Axioms: Breakdown of axiom types':
     AnnotationAssertion: 2538
@@ -71,7 +71,7 @@ metrics:
     skos: 987
     xsd: 44
   'Info: Which ontologies use it?': []
-mirror_from: https://raw.githubusercontent.com/ebrahimnorouzi/mseo.github.io/master/Ontology_files/emmo-mechanical-testing.owl
+mirror_from: https://raw.githubusercontent.com/ebrahimnorouzi/mseo.github.io/master/Ontology_files/EMMO_mechanical_testing.owl
 namespace: EMMO_mechanical_testing
 results:
   FP01 Open:

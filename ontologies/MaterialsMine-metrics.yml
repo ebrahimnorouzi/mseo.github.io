@@ -1,0 +1,145 @@
+metrics:
+  abox_axiom_count: 0
+  abox_axiom_count_incl: 0
+  annotation_property_count: 4
+  annotation_property_count_incl: 4
+  axiom_count: 427
+  axiom_count_incl: 427
+  class_count: 26
+  class_count_incl: 26
+  consistent: true
+  dataproperty_count: 39
+  dataproperty_count_incl: 39
+  datatypes_count: 8
+  datatypes_count_incl: 8
+  dt_builtin_count: 8
+  dt_builtin_count_incl: 8
+  dt_notbuiltin_count: 0
+  dt_notbuiltin_count_incl: 0
+  expressivity: "ALUHI(D)"
+  expressivity_incl: "ALUHI(D)"
+  individual_count: 0
+  individual_count_incl: 0
+  logical_axiom_count: 178
+  logical_axiom_count_incl: 178
+  obj_property_count: 27
+  obj_property_count_incl: 27
+  ontology_anno_count: 2
+  ontology_iri: "https://material-digital.de/pmdco"
+  ontology_version_iri: "no.iri"
+  owl2: true
+  owl2_dl: false
+  owl2_el: false
+  owl2_ql: false
+  owl2_rl: false
+  rbox_axiom_count: 43
+  rbox_axiom_count_incl: 43
+  rdfs: false
+  rule_count: 0
+  rule_count_incl: 0
+  signature_entity_count: 104
+  signature_entity_count_incl: 104
+  syntax: "Turtle"
+  tbox_axiom_count: 135
+  tbox_axiom_count_incl: 135
+  tboxrbox_axiom_count: 178
+  tboxrbox_axiom_count_incl: 178
+  unsatisfiable_class_count: 0
+  axiom_types:
+  - "AnnotationAssertion"
+  - "SubObjectPropertyOf"
+  - "ObjectPropertyDomain"
+  - "SubDataPropertyOf"
+  - "DataPropertyRange"
+  - "DataPropertyDomain"
+  - "Declaration"
+  - "ObjectPropertyRange"
+  - "SubClassOf"
+  - "InverseObjectProperties"
+  axiom_types_incl:
+  - "AnnotationAssertion"
+  - "SubObjectPropertyOf"
+  - "ObjectPropertyDomain"
+  - "SubDataPropertyOf"
+  - "DataPropertyRange"
+  - "DataPropertyDomain"
+  - "Declaration"
+  - "ObjectPropertyRange"
+  - "SubClassOf"
+  - "InverseObjectProperties"
+  constructs:
+  - "D"
+  - "U"
+  - "H"
+  - "I"
+  - "AL"
+  constructs_incl:
+  - "D"
+  - "U"
+  - "H"
+  - "I"
+  - "AL"
+  valid_imports: []
+  valid_imports_incl: []
+  axiom_type_count:
+    AnnotationAssertion: 159
+    SubObjectPropertyOf: 12
+    ObjectPropertyDomain: 26
+    SubDataPropertyOf: 30
+    DataPropertyRange: 35
+    DataPropertyDomain: 35
+    Declaration: 90
+    ObjectPropertyRange: 26
+    SubClassOf: 13
+    InverseObjectProperties: 1
+  axiom_type_count_incl:
+    AnnotationAssertion: 159
+    SubObjectPropertyOf: 12
+    ObjectPropertyDomain: 26
+    SubDataPropertyOf: 30
+    DataPropertyRange: 35
+    DataPropertyDomain: 35
+    Declaration: 90
+    ObjectPropertyRange: 26
+    SubClassOf: 13
+    InverseObjectProperties: 1
+  class_expression_count:
+    Class: 164
+    ObjectUnionOf: 23
+  class_expression_count_incl:
+    Class: 164
+    ObjectUnionOf: 23
+  curie_map:
+    dc11: "http://purl.org/dc/elements/1.1/"
+    owl: "http://www.w3.org/2002/07/owl#"
+    rdf: "http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xsd: "http://www.w3.org/2001/XMLSchema#"
+    rdfs: "http://www.w3.org/2000/01/rdf-schema#"
+  namespace_axiom_count:
+    prefix_unknown: 434
+    owl: 2
+    rdf: 1
+    xsd: 19
+    rdfs: 174
+  namespace_axiom_count_incl:
+    prefix_unknown: 434
+    owl: 2
+    rdf: 1
+    xsd: 19
+    rdfs: 174
+  namespace_entity_count:
+    dc11: 1
+    prefix_unknown: 90
+    owl: 3
+    rdf: 1
+    xsd: 6
+    rdfs: 3
+  namespace_entity_count_incl:
+    dc11: 1
+    prefix_unknown: 90
+    owl: 3
+    rdf: 1
+    xsd: 6
+    rdfs: 3
+  owl2dl_profile_violation:
+    UseOfUndeclaredAnnotationProperty: 1

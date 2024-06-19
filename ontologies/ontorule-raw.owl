@@ -534,7 +534,7 @@
                                              dc:contributor "Emilio Rubiera" ,
                                                             "Diego Berrueta" ;
                                              
-                                             dc:creator "Diego Díaz" ;
+                                             dc:creator "Diego Daz" ;
                                              
                                              dc:contributor "Pablo Valledor" ;
                                              
@@ -1357,7 +1357,7 @@ These steels are hardened by adding manganese, silicon and phosphorous in solid 
                    
                    rdfs:subClassOf :MechanicalDefect ;
                    
-                   rdfs:comment "It is a defect having to do with temperature issues. At the exit of the furnace it is necessary to check the temperature ranges of the steel strip, depending on the maximum and minimum end of heating temperature set by the order (measured in ºC) and the steel grade."@en .
+                   rdfs:comment "It is a defect having to do with temperature issues. At the exit of the furnace it is necessary to check the temperature ranges of the steel strip, depending on the maximum and minimum end of heating temperature set by the order (measured in ï¿½C) and the steel grade."@en .
 
 
 

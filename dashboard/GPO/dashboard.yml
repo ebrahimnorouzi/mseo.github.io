@@ -3,51 +3,45 @@ base_prefixes:
 - gpo
 - GPOALT
 changed: true
-date: 2024-06-18 16:24:00.916567
+date: 2024-06-19 10:07:45.604752
 metrics:
   'Axioms: Breakdown of axiom types':
-    AnnotationAssertion: 2532
-    AsymmetricObjectProperty: 7
-    ClassAssertion: 3
-    DataPropertyDomain: 4
-    DataPropertyRange: 3
-    Declaration: 1077
-    DisjointClasses: 3
-    DisjointUnion: 36
-    EquivalentClasses: 98
-    FunctionalDataProperty: 4
-    InverseFunctionalObjectProperty: 5
-    InverseObjectProperties: 11
+    AnnotationAssertion: 967
+    AnnotationPropertyRangeOf: 11
+    AsymmetricObjectProperty: 6
+    ClassAssertion: 1
+    DataPropertyDomain: 1
+    DataPropertyRange: 1
+    Declaration: 464
+    DisjointUnion: 8
+    EquivalentClasses: 50
+    FunctionalDataProperty: 1
+    InverseFunctionalObjectProperty: 3
+    InverseObjectProperties: 5
     IrrefexiveObjectProperty: 14
-    ObjectPropertyDomain: 52
-    ObjectPropertyRange: 59
-    ReflexiveObjectProperty: 1
-    SubClassOf: 2207
-    SubDataPropertyOf: 1
-    SubObjectPropertyOf: 115
-    SymmetricObjectProperty: 11
-    TransitiveObjectProperty: 6
-  'Axioms: Number of axioms': 6249
+    ObjectPropertyDomain: 45
+    ObjectPropertyRange: 47
+    SubAnnotationPropertyOf: 11
+    SubClassOf: 424
+    SubObjectPropertyOf: 98
+    SymmetricObjectProperty: 7
+    TransitiveObjectProperty: 5
+  'Axioms: Number of axioms': 2169
   'Entities: % of entities reused': 100.0
-  'Entities: Number of annotation properties': 29
-  'Entities: Number of classes': 963
-  'Entities: Number of data properties': 5
+  'Entities: Number of annotation properties': 20
+  'Entities: Number of classes': 380
+  'Entities: Number of data properties': 1
   'Entities: Number of individuals': 1
-  'Entities: Number of object properties': 86
+  'Entities: Number of object properties': 84
   'Entities: Number of unsatisfiable classes': 0
   'Info: Breakdown of OWL class expressions used':
-    Class: 5450
-    DataAllValuesFrom: 3
-    DataExactCardinality: 3
-    DataHasValue: 494
-    DataSomeValuesFrom: 4
-    ObjectAllValuesFrom: 46
-    ObjectComplementOf: 5
-    ObjectExactCardinality: 5
+    Class: 1525
+    ObjectAllValuesFrom: 8
+    ObjectComplementOf: 1
     ObjectHasValue: 1
-    ObjectIntersectionOf: 16
-    ObjectSomeValuesFrom: 336
-    ObjectUnionOf: 35
+    ObjectIntersectionOf: 2
+    ObjectSomeValuesFrom: 108
+    ObjectUnionOf: 50
   'Info: Does the ontology fall under OWL 2 DL?': false
   'Info: Experimental OBO score':
     _dashboard: 0.444
@@ -62,14 +56,13 @@ metrics:
   'Info: Syntax': Turtle
   'Info: Usage of namespaces in axioms':
     dc: 6
-    owl: 29
-    prefix_unknown: 7964
-    rdf: 120
-    rdfs: 305
-    skos: 1158
-    xsd: 387
+    owl: 3
+    prefix_unknown: 2479
+    rdfs: 218
+    skos: 421
+    xsd: 1
   'Info: Which ontologies use it?': []
-mirror_from: https://raw.githubusercontent.com/General-Process-Ontology/ontology/master/GPO_inferred.ttl
+mirror_from: https://raw.githubusercontent.com/ebrahimnorouzi/mseo.github.io/master/Ontology_files/GPO.ttl
 namespace: GPO
 results:
   FP01 Open:
@@ -109,7 +102,7 @@ results:
     status: PASS
   ROBOT Report:
     status: PASS
-sha256_hash: 566b85a92ea6429fe8edef1ff62dd39e1c85617ef22deaa337a32049901fd66b
+sha256_hash: f4a500bb722d1118ad6e4bc0991f3d97f9f1136515d8c48c1fb01c4826448fc3
 summary:
   comment: 7 errors
   status: ERROR

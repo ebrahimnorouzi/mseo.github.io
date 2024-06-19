@@ -3,7 +3,7 @@ base_prefixes:
 - oeo
 - OEOALT
 changed: true
-date: 2024-06-18 16:27:29.926229
+date: 2024-06-19 10:09:02.223202
 metrics:
   'Axioms: Breakdown of axiom types':
     AnnotationAssertion: 6785
@@ -75,7 +75,7 @@ metrics:
     rdfs: 2119
     xsd: 6
   'Info: Which ontologies use it?': []
-mirror_from: http://openenergy-platform.org/ontology/oeo/releases/oeo.owl
+mirror_from: https://raw.githubusercontent.com/ebrahimnorouzi/mseo.github.io/master/Ontology_files/oeo.owl
 namespace: OEO
 results:
   FP01 Open:

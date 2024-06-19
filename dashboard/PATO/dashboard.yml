@@ -7,80 +7,80 @@ failure: failed_ontology_dashboard
 last_ontology_dashboard_run_failed: true
 metrics:
   'Axioms: Breakdown of axiom types':
-    AnnotationAssertion: 78042
+    AnnotationAssertion: 96738
     AsymmetricObjectProperty: 1
-    Declaration: 9233
-    DisjointClasses: 350
-    EquivalentClasses: 4640
+    Declaration: 11135
+    DisjointClasses: 392
+    EquivalentClasses: 6147
     FunctionalObjectProperty: 2
     InverseFunctionalObjectProperty: 1
-    InverseObjectProperties: 45
+    InverseObjectProperties: 44
     IrrefexiveObjectProperty: 2
-    ObjectPropertyDomain: 75
-    ObjectPropertyRange: 70
+    ObjectPropertyDomain: 66
+    ObjectPropertyRange: 58
     Rule: 25
-    SubAnnotationPropertyOf: 84
-    SubClassOf: 18618
+    SubAnnotationPropertyOf: 85
+    SubClassOf: 23882
     SubObjectPropertyOf: 284
-    SubPropertyChainOf: 103
+    SubPropertyChainOf: 120
     SymmetricObjectProperty: 6
-    TransitiveObjectProperty: 24
-  'Axioms: Number of axioms': 111605
-  'Entities: % of entities reused': 69.05
+    TransitiveObjectProperty: 32
+  'Axioms: Number of axioms': 139020
+  'Entities: % of entities reused': 74.35
   'Entities: Number of annotation properties': 213
-  'Entities: Number of classes': 8721
+  'Entities: Number of classes': 10624
   'Entities: Number of data properties': 0
   'Entities: Number of individuals': 0
-  'Entities: Number of object properties': 302
+  'Entities: Number of object properties': 306
   'Entities: Number of unsatisfiable classes': 0
   'Info: Breakdown of OWL class expressions used':
-    Class: 61277
-    ObjectAllValuesFrom: 83
-    ObjectComplementOf: 157
+    Class: 78469
+    ObjectAllValuesFrom: 96
+    ObjectComplementOf: 179
     ObjectExactCardinality: 8
     ObjectHasSelf: 1
-    ObjectIntersectionOf: 4707
-    ObjectMinCardinality: 8
-    ObjectSomeValuesFrom: 12660
-    ObjectUnionOf: 10
-  'Info: Does the ontology fall under OWL 2 DL?': true
+    ObjectIntersectionOf: 6217
+    ObjectMinCardinality: 7
+    ObjectSomeValuesFrom: 16614
+    ObjectUnionOf: 9
+  'Info: Does the ontology fall under OWL 2 DL?': false
   'Info: Experimental OBO score':
     _impact: 0.127
     _impact_external: 0
-    _reuse: 0.691
+    _reuse: 0.743
   'Info: How many externally documented uses?': 0
   'Info: How many ontologies use it?': 8
   'Info: Logical consistency': true
   'Info: Syntax': RDF/XML Syntax
   'Info: Usage of namespaces in axioms':
-    BFO: 4123
-    BSPO: 115
+    BFO: 5463
+    BSPO: 137
     CARO: 2
-    CHEBI: 2208
-    CL: 3693
-    GO: 28721
-    IAO: 8786
+    CHEBI: 3093
+    CL: 5475
+    ENVO: 6
+    GO: 37414
+    IAO: 10660
     NBO: 2
-    NCBITaxon: 894
-    OBI: 3
-    OMO: 10
-    PATO: 8635
+    NCBITaxon: 1062
+    OBI: 2
+    PATO: 8646
     PCO: 32
-    PR: 549
-    RO: 10735
+    PR: 1327
+    RO: 13101
     SO: 2
-    UBERON: 16456
-    dc: 973
-    dc11: 48
+    UBERON: 21172
+    dc: 1098
+    dc11: 49
     foaf: 374
-    obo: 2195
-    oboInOwl: 77635
+    obo: 2963
+    oboInOwl: 98869
     owl: 1006
-    prefix_unknown: 243
-    rdf: 997
-    rdfs: 9715
+    prefix_unknown: 11
+    rdf: 322
+    rdfs: 11989
     skos: 3
-    xsd: 9
+    xsd: 1122
   'Info: Which ontologies use it?':
   - A
   - IAO
@@ -88,8 +88,8 @@ metrics:
   - P
   - SEMMD
   - T
-  - enanomapper
+  - UO
   - nfdicore
-mirror_from: http://purl.obolibrary.org/obo/pato.owl
+mirror_from: https://raw.githubusercontent.com/ebrahimnorouzi/mseo.github.io/master/Ontology_files/PATO.owl
 namespace: PATO
-sha256_hash: d13e40f8251f88057a7aa28f835751e756db2b4a505a0941bbe2a7e8372fc370
+sha256_hash: 44e9269d861cd6cee4af1d41480bcd4580863d32d2668af299f3c1e0eaaa6bc6

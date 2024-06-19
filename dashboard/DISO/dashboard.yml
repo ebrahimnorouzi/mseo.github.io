@@ -3,7 +3,7 @@ base_prefixes:
 - diso
 - DISOALT
 changed: true
-date: 2024-06-18 16:26:44.248585
+date: 2024-06-19 10:08:15.378102
 metrics:
   'Axioms: Breakdown of axiom types':
     AnnotationAssertion: 147
@@ -53,7 +53,7 @@ metrics:
     skos: 4
     xsd: 16
   'Info: Which ontologies use it?': []
-mirror_from: https://raw.githubusercontent.com/Materials-Data-Science-and-Informatics/dislocation-ontology/master/dislocation-ontology.ttl
+mirror_from: https://raw.githubusercontent.com/ebrahimnorouzi/mseo.github.io/master/Ontology_files/DISO.ttl
 namespace: DISO
 results:
   FP01 Open:

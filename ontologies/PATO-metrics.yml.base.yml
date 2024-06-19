@@ -3,30 +3,30 @@ metrics:
   abox_axiom_count_incl: 0
   annotation_property_count: 30
   annotation_property_count_incl: 30
-  axiom_count: 22676
-  axiom_count_incl: 22676
+  axiom_count: 22672
+  axiom_count_incl: 22672
   class_count: 2868
   class_count_incl: 2868
   consistent: true
   dataproperty_count: 0
   dataproperty_count_incl: 0
-  datatypes_count: 3
-  datatypes_count_incl: 3
-  dt_builtin_count: 3
-  dt_builtin_count_incl: 3
+  datatypes_count: 4
+  datatypes_count_incl: 4
+  dt_builtin_count: 4
+  dt_builtin_count_incl: 4
   dt_notbuiltin_count: 0
   dt_notbuiltin_count_incl: 0
   expressivity: "ALC"
   expressivity_incl: "ALC"
   individual_count: 0
   individual_count_incl: 0
-  logical_axiom_count: 2632
-  logical_axiom_count_incl: 2632
+  logical_axiom_count: 2628
+  logical_axiom_count_incl: 2628
   obj_property_count: 12
   obj_property_count_incl: 12
   ontology_anno_count: 7
   ontology_iri: "http://purl.obolibrary.org/obo/pato.owl"
-  ontology_version_iri: "http://purl.obolibrary.org/obo/pato/releases/2024-03-28/pato.owl"
+  ontology_version_iri: "http://purl.obolibrary.org/obo/pato/releases/2022-12-15/pato.owl"
   owl2: true
   owl2_dl: false
   owl2_el: false
@@ -37,13 +37,13 @@ metrics:
   rdfs: false
   rule_count: 0
   rule_count_incl: 0
-  signature_entity_count: 2913
-  signature_entity_count_incl: 2913
+  signature_entity_count: 2914
+  signature_entity_count_incl: 2914
   syntax: "RDF/XML Syntax"
-  tbox_axiom_count: 2632
-  tbox_axiom_count_incl: 2632
-  tboxrbox_axiom_count: 2632
-  tboxrbox_axiom_count_incl: 2632
+  tbox_axiom_count: 2628
+  tbox_axiom_count_incl: 2628
+  tboxrbox_axiom_count: 2628
+  tboxrbox_axiom_count_incl: 2628
   unsatisfiable_class_count: 0
   axiom_types:
   - "AnnotationAssertion"
@@ -67,24 +67,24 @@ metrics:
   valid_imports_incl: []
   axiom_type_count:
     AnnotationAssertion: 17184
-    EquivalentClasses: 314
+    EquivalentClasses: 312
     DisjointClasses: 69
     Declaration: 2860
-    SubClassOf: 2249
+    SubClassOf: 2247
   axiom_type_count_incl:
     AnnotationAssertion: 17184
-    EquivalentClasses: 314
+    EquivalentClasses: 312
     DisjointClasses: 69
     Declaration: 2860
-    SubClassOf: 2249
+    SubClassOf: 2247
   class_expression_count:
-    Class: 8440
+    Class: 8430
     ObjectSomeValuesFrom: 369
-    ObjectIntersectionOf: 316
+    ObjectIntersectionOf: 314
   class_expression_count_incl:
-    Class: 8440
+    Class: 8430
     ObjectSomeValuesFrom: 369
-    ObjectIntersectionOf: 316
+    ObjectIntersectionOf: 314
   curie_map:
     oboInOwl: "http://www.geneontology.org/formats/oboInOwl#"
     owl: "http://www.w3.org/2002/07/owl#"
@@ -102,10 +102,10 @@ metrics:
     obo: "http://purl.obolibrary.org/obo/"
     dc: "http://purl.org/dc/terms/"
   namespace_axiom_count:
-    oboInOwl: 11788
+    oboInOwl: 11791
     owl: 982
     GO: 3
-    PATO: 8428
+    PATO: 8418
     CL: 3
     rdfs: 2899
     BFO: 14
@@ -114,12 +114,12 @@ metrics:
     UBERON: 5
     RO: 779
     obo: 5
-    dc: 758
+    dc: 754
   namespace_axiom_count_incl:
-    oboInOwl: 11788
+    oboInOwl: 11791
     owl: 982
     GO: 3
-    PATO: 8428
+    PATO: 8418
     CL: 3
     rdfs: 2899
     BFO: 14
@@ -128,12 +128,12 @@ metrics:
     UBERON: 5
     RO: 779
     obo: 5
-    dc: 758
+    dc: 754
   namespace_entity_count:
     oboInOwl: 14
     owl: 2
     GO: 2
-    xsd: 2
+    xsd: 3
     CL: 1
     PATO: 2860
     BFO: 3
@@ -149,7 +149,7 @@ metrics:
     oboInOwl: 14
     owl: 2
     GO: 2
-    xsd: 2
+    xsd: 3
     CL: 1
     PATO: 2860
     BFO: 3

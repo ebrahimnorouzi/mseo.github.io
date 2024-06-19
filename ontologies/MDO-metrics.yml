@@ -1,32 +1,32 @@
 metrics:
   abox_axiom_count: 2
   abox_axiom_count_incl: 2
-  annotation_property_count: 12
-  annotation_property_count_incl: 12
-  axiom_count: 458
-  axiom_count_incl: 458
-  class_count: 37
-  class_count_incl: 37
+  annotation_property_count: 13
+  annotation_property_count_incl: 13
+  axiom_count: 574
+  axiom_count_incl: 574
+  class_count: 38
+  class_count_incl: 38
   consistent: true
   dataproperty_count: 32
   dataproperty_count_incl: 32
-  datatypes_count: 8
-  datatypes_count_incl: 8
-  dt_builtin_count: 6
-  dt_builtin_count_incl: 6
+  datatypes_count: 7
+  datatypes_count_incl: 7
+  dt_builtin_count: 5
+  dt_builtin_count_incl: 5
   dt_notbuiltin_count: 2
   dt_notbuiltin_count_incl: 2
   expressivity: "ALCQ(D)"
   expressivity_incl: "ALCQ(D)"
   individual_count: 2
   individual_count_incl: 2
-  logical_axiom_count: 168
-  logical_axiom_count_incl: 168
+  logical_axiom_count: 192
+  logical_axiom_count_incl: 192
   obj_property_count: 32
   obj_property_count_incl: 32
-  ontology_anno_count: 11
-  ontology_iri: "https://w3id.org/mdo/full/"
-  ontology_version_iri: "https://w3id.org/mdo/full/1.1/"
+  ontology_anno_count: 28
+  ontology_iri: "anonymousId"
+  ontology_version_iri: "anonymousId"
   owl2: true
   owl2_dl: true
   owl2_el: false
@@ -37,13 +37,13 @@ metrics:
   rdfs: false
   rule_count: 0
   rule_count_incl: 0
-  signature_entity_count: 123
-  signature_entity_count_incl: 123
+  signature_entity_count: 124
+  signature_entity_count_incl: 124
   syntax: "RDF/XML Syntax"
-  tbox_axiom_count: 166
-  tbox_axiom_count_incl: 166
-  tboxrbox_axiom_count: 166
-  tboxrbox_axiom_count_incl: 166
+  tbox_axiom_count: 190
+  tbox_axiom_count_incl: 190
+  tboxrbox_axiom_count: 190
+  tboxrbox_axiom_count_incl: 190
   unsatisfiable_class_count: 0
   axiom_types:
   - "AnnotationAssertion"
@@ -78,30 +78,30 @@ metrics:
   valid_imports: []
   valid_imports_incl: []
   axiom_type_count:
-    AnnotationAssertion: 177
+    AnnotationAssertion: 268
     ObjectPropertyDomain: 26
     DisjointClasses: 1
     DataPropertyDomain: 30
     DataPropertyRange: 31
-    Declaration: 113
-    SubClassOf: 49
+    Declaration: 114
+    SubClassOf: 73
     ObjectPropertyRange: 29
     ClassAssertion: 2
   axiom_type_count_incl:
-    AnnotationAssertion: 177
+    AnnotationAssertion: 268
     ObjectPropertyDomain: 26
     DisjointClasses: 1
     DataPropertyDomain: 30
     DataPropertyRange: 31
-    Declaration: 113
-    SubClassOf: 49
+    Declaration: 114
+    SubClassOf: 73
     ObjectPropertyRange: 29
     ClassAssertion: 2
   class_expression_count:
     ObjectAllValuesFrom: 19
     DataExactCardinality: 14
     ObjectExactCardinality: 15
-    Class: 219
+    Class: 267
     ObjectUnionOf: 5
     ObjectSomeValuesFrom: 11
     ObjectIntersectionOf: 19
@@ -110,46 +110,58 @@ metrics:
     ObjectAllValuesFrom: 19
     DataExactCardinality: 14
     ObjectExactCardinality: 15
-    Class: 219
+    Class: 267
     ObjectUnionOf: 5
     ObjectSomeValuesFrom: 11
     ObjectIntersectionOf: 19
     ObjectMaxCardinality: 2
   curie_map:
-    rdf: "http://www.w3.org/1999/02/22-rdf-syntax-ns#"
     owl: "http://www.w3.org/2002/07/owl#"
+    rdf: "http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    CHEBI: "http://purl.obolibrary.org/obo/CHEBI_"
     xsd: "http://www.w3.org/2001/XMLSchema#"
     rdfs: "http://www.w3.org/2000/01/rdf-schema#"
     prov: "http://www.w3.org/ns/prov#"
+    obo: "http://purl.obolibrary.org/obo/"
     dc: "http://purl.org/dc/terms/"
   namespace_axiom_count:
-    prefix_unknown: 437
+    prefix_unknown: 500
+    owl: 30
     rdf: 1
+    CHEBI: 5
     xsd: 47
-    rdfs: 177
-    prov: 13
-    dc: 5
+    rdfs: 186
+    prov: 14
+    obo: 2
+    dc: 35
   namespace_axiom_count_incl:
-    prefix_unknown: 437
+    prefix_unknown: 500
+    owl: 30
     rdf: 1
+    CHEBI: 5
     xsd: 47
-    rdfs: 177
-    prov: 13
-    dc: 5
+    rdfs: 186
+    prov: 14
+    obo: 2
+    dc: 35
   namespace_entity_count:
-    prefix_unknown: 101
-    owl: 1
+    prefix_unknown: 100
+    owl: 2
     rdf: 2
-    xsd: 7
+    CHEBI: 1
+    xsd: 6
     rdfs: 3
     prov: 4
+    obo: 1
     dc: 5
   namespace_entity_count_incl:
-    prefix_unknown: 101
-    owl: 1
+    prefix_unknown: 100
+    owl: 2
     rdf: 2
-    xsd: 7
+    CHEBI: 1
+    xsd: 6
     rdfs: 3
     prov: 4
+    obo: 1
     dc: 5
   owl2dl_profile_violation: {}

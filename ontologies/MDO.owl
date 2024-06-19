@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
-<rdf:RDF xmlns="https://w3id.org/mdo/full/"
-     xml:base="https://w3id.org/mdo/full/"
+<rdf:RDF xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.w3.org/2002/07/owl"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
@@ -8,20 +8,36 @@
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:vann="http://purl.org/vocab/vann/"
      xmlns:terms="http://purl.org/dc/terms/">
-    <owl:Ontology rdf:about="https://w3id.org/mdo/full/">
-        <owl:versionIRI rdf:resource="https://w3id.org/mdo/full/1.1/"/>
+    <Ontology>
         <terms:contributor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Patrick Lambrix</terms:contributor>
         <terms:contributor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Rickard Armiento</terms:contributor>
         <terms:created>2019-11-07</terms:created>
+        <terms:created>2020-04-02</terms:created>
         <terms:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Huanyu Li</terms:creator>
-        <terms:license>https://github.com/LiUSemWeb/Materials-Design-Ontology/blob/master/LICENSE</terms:license>
+        <terms:license>https://github.com/huanyu-li/Materials-Design-Ontology/blob/master/LICENSE</terms:license>
+        <terms:title xml:lang="en">Materials Design Ontology - Calculation Module</terms:title>
+        <terms:title xml:lang="en">Materials Design Ontology - Core Module</terms:title>
         <terms:title xml:lang="en">Materials Design Ontology - Full</terms:title>
+        <terms:title xml:lang="en">Materials Design Ontology - Provenance Module</terms:title>
+        <terms:title xml:lang="en">Materials Design Ontology - Structure Module</terms:title>
+        <vann:preferredNamespacePrefix>calculation</vann:preferredNamespacePrefix>
+        <vann:preferredNamespacePrefix>core</vann:preferredNamespacePrefix>
         <vann:preferredNamespacePrefix>mdo</vann:preferredNamespacePrefix>
-        <vann:preferredNamespaceUri>https://w3id.org/mdo/full/1.1/</vann:preferredNamespaceUri>
+        <vann:preferredNamespacePrefix>provenance</vann:preferredNamespacePrefix>
+        <vann:preferredNamespacePrefix>structure</vann:preferredNamespacePrefix>
+        <vann:preferredNamespaceUri>https://w3id.org/mdo/calculation/1.0/</vann:preferredNamespaceUri>
+        <vann:preferredNamespaceUri>https://w3id.org/mdo/core/1.0/</vann:preferredNamespaceUri>
+        <vann:preferredNamespaceUri>https://w3id.org/mdo/full/1.0/</vann:preferredNamespaceUri>
+        <vann:preferredNamespaceUri>https://w3id.org/mdo/provenance/1.0/</vann:preferredNamespaceUri>
+        <vann:preferredNamespaceUri>https://w3id.org/mdo/structure/1.0/</vann:preferredNamespaceUri>
         <rdfs:comment xml:lang="en">This is the Materials Design Ontology.</rdfs:comment>
-        <rdfs:seeAlso>https://github.com/LiUSemWeb/Materials-Design-Ontology</rdfs:seeAlso>
-        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1.1</owl:versionInfo>
-    </owl:Ontology>
+        <rdfs:comment xml:lang="en">This is the calculation module of Materials Design Ontology.</rdfs:comment>
+        <rdfs:comment xml:lang="en">This is the core module in Materials Design Ontology.</rdfs:comment>
+        <rdfs:comment xml:lang="en">This is the provenance module of Materials Design Ontology.</rdfs:comment>
+        <rdfs:comment xml:lang="en">This is the structure module in Materials Design Ontology.</rdfs:comment>
+        <rdfs:seeAlso>https://github.com/huanyu-li/Materials-Design-Ontology</rdfs:seeAlso>
+        <versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1.0</versionInfo>
+    </Ontology>
 </rdf:RDF>
 
 

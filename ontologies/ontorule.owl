@@ -12,7 +12,7 @@
         <terms:contributor>Diego Berrueta</terms:contributor>
         <terms:contributor>Emilio Rubiera</terms:contributor>
         <terms:contributor>Pablo Valledor</terms:contributor>
-        <terms:creator>Diego D�az</terms:creator>
+        <terms:creator>Diego Daz</terms:creator>
         <terms:creator>Luis Polo</terms:creator>
         <terms:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2010-05-31</terms:date>
         <terms:publisher rdf:resource="http://ontorule-project.eu/"/>
