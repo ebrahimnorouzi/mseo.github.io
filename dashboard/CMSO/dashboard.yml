@@ -1,0 +1,101 @@
+base_generated: true
+base_prefixes:
+- CMSO
+- CMSOALT
+changed: true
+date: 2024-06-19 11:10:20.707889
+metrics:
+  'Axioms: Breakdown of axiom types':
+    AnnotationAssertion: 270
+    AnnotationPropertyRangeOf: 1
+    DataPropertyDomain: 28
+    DataPropertyRange: 28
+    Declaration: 109
+    InverseObjectProperties: 3
+    ObjectPropertyDomain: 16
+    ObjectPropertyRange: 16
+    SubAnnotationPropertyOf: 12
+    SubClassOf: 22
+    SubDataPropertyOf: 3
+  'Axioms: Number of axioms': 508
+  'Entities: % of entities reused': 100.0
+  'Entities: Number of annotation properties': 26
+  'Entities: Number of classes': 40
+  'Entities: Number of data properties': 28
+  'Entities: Number of individuals': 0
+  'Entities: Number of object properties': 19
+  'Entities: Number of unsatisfiable classes': 0
+  'Info: Breakdown of OWL class expressions used':
+    Class: 153
+    ObjectUnionOf: 7
+  'Info: Does the ontology fall under OWL 2 DL?': true
+  'Info: Experimental OBO score':
+    _dashboard: 0.4
+    _formula: (1*impact+1*dashboard)/2
+    _impact: 0.0
+    _impact_external: 0
+    _reuse: 1.0
+    oboscore: 0.2
+  'Info: How many externally documented uses?': 0
+  'Info: How many ontologies use it?': 0
+  'Info: Logical consistency': true
+  'Info: Syntax': RDF/XML Syntax
+  'Info: Usage of namespaces in axioms':
+    IAO: 106
+    dc: 21
+    dc11: 8
+    owl: 5
+    prefix_unknown: 296
+    rdfs: 121
+    skos: 61
+    xsd: 28
+  'Info: Which ontologies use it?': []
+mirror_from: https://raw.githubusercontent.com/ebrahimnorouzi/mseo.github.io/master/Ontology_files/cmso.owl
+namespace: CMSO
+results:
+  FP01 Open:
+    comment: Missing ontology license. Missing registry license.
+    status: ERROR
+  FP02 Common Format:
+    status: PASS
+  FP03 URIs:
+    comment: 0 invalid IRIs. The Ontology IRI is not valid.
+    file: fp3
+    status: ERROR
+  FP04 Versioning:
+    comment: Missing version IRI
+    status: ERROR
+  FP05 Scope:
+    comment: Missing domain (scope)
+    status: ERROR
+  FP06 Textual Definitions:
+    status: PASS
+  FP07 Relations:
+    status: PASS
+  FP08 Documented:
+    status: PASS
+  FP09 Plurality of Users:
+    comment: Missing tracker and usages
+    status: ERROR
+  FP11 Locus of Authority:
+    comment: Missing contact information
+    status: ERROR
+  FP12 Naming Conventions:
+    status: PASS
+  FP16 Maintenance:
+    comment: Missing version IRI to check date
+    status: ERROR
+  FP20 Responsiveness:
+    comment: Missing tracker and usages
+    status: ERROR
+  ROBOT Report:
+    status: PASS
+sha256_hash: e52145054f1bf032b935286ef1ec6b2c5e3aeaa5cf5d422af28fe57d1666b460
+summary:
+  comment: 8 errors
+  status: ERROR
+  summary_count:
+    ERROR: 8
+    INFO: 0
+    WARN: 0
+version: null

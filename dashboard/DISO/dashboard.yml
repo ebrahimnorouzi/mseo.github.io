@@ -3,7 +3,7 @@ base_prefixes:
 - diso
 - DISOALT
 changed: true
-date: 2024-06-19 10:08:15.378102
+date: 2024-06-19 11:08:43.571017
 metrics:
   'Axioms: Breakdown of axiom types':
     AnnotationAssertion: 147

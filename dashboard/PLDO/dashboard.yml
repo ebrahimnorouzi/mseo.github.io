@@ -1,0 +1,98 @@
+base_generated: true
+base_prefixes:
+- PLDO
+- PLDOALT
+changed: true
+date: 2024-06-19 11:11:27.587728
+metrics:
+  'Axioms: Breakdown of axiom types':
+    AnnotationAssertion: 126
+    AnnotationPropertyRangeOf: 2
+    DataPropertyDomain: 7
+    DataPropertyRange: 4
+    Declaration: 42
+    ObjectPropertyDomain: 2
+    ObjectPropertyRange: 2
+    SubAnnotationPropertyOf: 12
+    SubClassOf: 10
+    SubDataPropertyOf: 5
+  'Axioms: Number of axioms': 212
+  'Entities: % of entities reused': 100.0
+  'Entities: Number of annotation properties': 26
+  'Entities: Number of classes': 11
+  'Entities: Number of data properties': 7
+  'Entities: Number of individuals': 0
+  'Entities: Number of object properties': 2
+  'Entities: Number of unsatisfiable classes': 0
+  'Info: Breakdown of OWL class expressions used':
+    Class: 42
+  'Info: Does the ontology fall under OWL 2 DL?': true
+  'Info: Experimental OBO score':
+    _dashboard: 0.4
+    _formula: (1*impact+1*dashboard)/2
+    _impact: 0.0
+    _impact_external: 0
+    _reuse: 1.0
+    oboscore: 0.2
+  'Info: How many externally documented uses?': 0
+  'Info: How many ontologies use it?': 0
+  'Info: Logical consistency': true
+  'Info: Syntax': RDF/XML Syntax
+  'Info: Usage of namespaces in axioms':
+    IAO: 43
+    dc: 21
+    dc11: 8
+    prefix_unknown: 76
+    rdfs: 47
+    skos: 55
+    xsd: 4
+  'Info: Which ontologies use it?': []
+mirror_from: https://raw.githubusercontent.com/ebrahimnorouzi/mseo.github.io/master/Ontology_files/pldo.owl
+namespace: PLDO
+results:
+  FP01 Open:
+    comment: Missing ontology license. Missing registry license.
+    status: ERROR
+  FP02 Common Format:
+    status: PASS
+  FP03 URIs:
+    comment: 0 invalid IRIs. The Ontology IRI is not valid.
+    file: fp3
+    status: ERROR
+  FP04 Versioning:
+    comment: Missing version IRI
+    status: ERROR
+  FP05 Scope:
+    comment: Missing domain (scope)
+    status: ERROR
+  FP06 Textual Definitions:
+    status: PASS
+  FP07 Relations:
+    status: PASS
+  FP08 Documented:
+    status: PASS
+  FP09 Plurality of Users:
+    comment: Missing tracker and usages
+    status: ERROR
+  FP11 Locus of Authority:
+    comment: Missing contact information
+    status: ERROR
+  FP12 Naming Conventions:
+    status: PASS
+  FP16 Maintenance:
+    comment: Missing version IRI to check date
+    status: ERROR
+  FP20 Responsiveness:
+    comment: Missing tracker and usages
+    status: ERROR
+  ROBOT Report:
+    status: PASS
+sha256_hash: e847218b9843a2182ac1362deb615832cf9c1b26273a65f49b2dde06d422acb3
+summary:
+  comment: 8 errors
+  status: ERROR
+  summary_count:
+    ERROR: 8
+    INFO: 0
+    WARN: 0
+version: null

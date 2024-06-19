@@ -1,0 +1,110 @@
+metrics:
+  abox_axiom_count: 0
+  abox_axiom_count_incl: 0
+  annotation_property_count: 16
+  annotation_property_count_incl: 16
+  axiom_count: 60
+  axiom_count_incl: 60
+  class_count: 3
+  class_count_incl: 3
+  consistent: true
+  dataproperty_count: 0
+  dataproperty_count_incl: 0
+  datatypes_count: 1
+  datatypes_count_incl: 1
+  dt_builtin_count: 1
+  dt_builtin_count_incl: 1
+  dt_notbuiltin_count: 0
+  dt_notbuiltin_count_incl: 0
+  expressivity: "AL"
+  expressivity_incl: "AL"
+  individual_count: 0
+  individual_count_incl: 0
+  logical_axiom_count: 0
+  logical_axiom_count_incl: 0
+  obj_property_count: 0
+  obj_property_count_incl: 0
+  ontology_anno_count: 3
+  ontology_iri: "http://purls.helmholtz-metadaten.de/cdos/cdco"
+  ontology_version_iri: "no.iri"
+  owl2: true
+  owl2_dl: true
+  owl2_el: true
+  owl2_ql: true
+  owl2_rl: true
+  rbox_axiom_count: 0
+  rbox_axiom_count_incl: 0
+  rdfs: true
+  rule_count: 0
+  rule_count_incl: 0
+  signature_entity_count: 20
+  signature_entity_count_incl: 20
+  syntax: "RDF/XML Syntax"
+  tbox_axiom_count: 0
+  tbox_axiom_count_incl: 0
+  tboxrbox_axiom_count: 0
+  tboxrbox_axiom_count_incl: 0
+  unsatisfiable_class_count: 0
+  axiom_types:
+  - "AnnotationAssertion"
+  - "SubAnnotationPropertyOf"
+  - "AnnotationPropertyRangeOf"
+  - "Declaration"
+  axiom_types_incl:
+  - "AnnotationAssertion"
+  - "SubAnnotationPropertyOf"
+  - "AnnotationPropertyRangeOf"
+  - "Declaration"
+  constructs:
+  - "AL"
+  constructs_incl:
+  - "AL"
+  valid_imports: []
+  valid_imports_incl: []
+  axiom_type_count:
+    AnnotationAssertion: 34
+    SubAnnotationPropertyOf: 9
+    AnnotationPropertyRangeOf: 1
+    Declaration: 16
+  axiom_type_count_incl:
+    AnnotationAssertion: 34
+    SubAnnotationPropertyOf: 9
+    AnnotationPropertyRangeOf: 1
+    Declaration: 16
+  class_expression_count:
+    Class: 3
+  class_expression_count_incl:
+    Class: 3
+  curie_map:
+    dc11: "http://purl.org/dc/elements/1.1/"
+    rdf: "http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    skos: "http://www.w3.org/2004/02/skos/core#"
+    rdfs: "http://www.w3.org/2000/01/rdf-schema#"
+    dc: "http://purl.org/dc/terms/"
+  namespace_axiom_count:
+    dc11: 8
+    prefix_unknown: 3
+    skos: 22
+    rdfs: 25
+    dc: 11
+  namespace_axiom_count_incl:
+    dc11: 8
+    prefix_unknown: 3
+    skos: 22
+    rdfs: 25
+    dc: 11
+  namespace_entity_count:
+    dc11: 4
+    prefix_unknown: 3
+    rdf: 1
+    skos: 5
+    rdfs: 3
+    dc: 4
+  namespace_entity_count_incl:
+    dc11: 4
+    prefix_unknown: 3
+    rdf: 1
+    skos: 5
+    rdfs: 3
+    dc: 4
+  owl2dl_profile_violation: {}

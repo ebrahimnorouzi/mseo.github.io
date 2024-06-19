@@ -45,11 +45,11 @@ metrics:
     ObjectUnionOf: 9
   'Info: Does the ontology fall under OWL 2 DL?': false
   'Info: Experimental OBO score':
-    _impact: 0.127
+    _impact: 0.107
     _impact_external: 0
     _reuse: 0.743
   'Info: How many externally documented uses?': 0
-  'Info: How many ontologies use it?': 8
+  'Info: How many ontologies use it?': 9
   'Info: Logical consistency': true
   'Info: Syntax': RDF/XML Syntax
   'Info: Usage of namespaces in axioms':
@@ -83,6 +83,7 @@ metrics:
     xsd: 1122
   'Info: Which ontologies use it?':
   - A
+  - CHEMINF
   - IAO
   - O
   - P

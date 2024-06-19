@@ -1,0 +1,124 @@
+metrics:
+  abox_axiom_count: 0
+  abox_axiom_count_incl: 0
+  annotation_property_count: 2
+  annotation_property_count_incl: 2
+  axiom_count: 2067
+  axiom_count_incl: 2067
+  class_count: 325
+  class_count_incl: 325
+  consistent: true
+  dataproperty_count: 0
+  dataproperty_count_incl: 0
+  datatypes_count: 1
+  datatypes_count_incl: 1
+  dt_builtin_count: 1
+  dt_builtin_count_incl: 1
+  dt_notbuiltin_count: 0
+  dt_notbuiltin_count_incl: 0
+  expressivity: "ALCHN"
+  expressivity_incl: "ALCHN"
+  individual_count: 0
+  individual_count_incl: 0
+  logical_axiom_count: 1019
+  logical_axiom_count_incl: 1019
+  obj_property_count: 78
+  obj_property_count_incl: 78
+  ontology_anno_count: 1
+  ontology_iri: "http://www.hozo.jp/owl/EXPOApr19.xml/"
+  ontology_version_iri: "no.iri"
+  owl2: true
+  owl2_dl: true
+  owl2_el: false
+  owl2_ql: false
+  owl2_rl: false
+  rbox_axiom_count: 76
+  rbox_axiom_count_incl: 76
+  rdfs: false
+  rule_count: 0
+  rule_count_incl: 0
+  signature_entity_count: 406
+  signature_entity_count_incl: 406
+  syntax: "RDF/XML Syntax"
+  tbox_axiom_count: 943
+  tbox_axiom_count_incl: 943
+  tboxrbox_axiom_count: 1019
+  tboxrbox_axiom_count_incl: 1019
+  unsatisfiable_class_count: 0
+  axiom_types:
+  - "AnnotationAssertion"
+  - "SubObjectPropertyOf"
+  - "ObjectPropertyDomain"
+  - "DisjointClasses"
+  - "Declaration"
+  - "ObjectPropertyRange"
+  - "SubClassOf"
+  axiom_types_incl:
+  - "AnnotationAssertion"
+  - "SubObjectPropertyOf"
+  - "ObjectPropertyDomain"
+  - "DisjointClasses"
+  - "Declaration"
+  - "ObjectPropertyRange"
+  - "SubClassOf"
+  constructs:
+  - "C"
+  - "H"
+  - "AL"
+  - "N"
+  constructs_incl:
+  - "C"
+  - "H"
+  - "AL"
+  - "N"
+  valid_imports: []
+  valid_imports_incl: []
+  axiom_type_count:
+    AnnotationAssertion: 646
+    SubObjectPropertyOf: 76
+    ObjectPropertyDomain: 75
+    DisjointClasses: 363
+    Declaration: 402
+    ObjectPropertyRange: 73
+    SubClassOf: 432
+  axiom_type_count_incl:
+    AnnotationAssertion: 646
+    SubObjectPropertyOf: 76
+    ObjectPropertyDomain: 75
+    DisjointClasses: 363
+    Declaration: 402
+    ObjectPropertyRange: 73
+    SubClassOf: 432
+  class_expression_count:
+    ObjectAllValuesFrom: 88
+    ObjectExactCardinality: 21
+    Class: 2098
+    ObjectUnionOf: 23
+  class_expression_count_incl:
+    ObjectAllValuesFrom: 88
+    ObjectExactCardinality: 21
+    Class: 2098
+    ObjectUnionOf: 23
+  curie_map:
+    owl: "http://www.w3.org/2002/07/owl#"
+    xsd: "http://www.w3.org/2001/XMLSchema#"
+    rdfs: "http://www.w3.org/2000/01/rdf-schema#"
+  namespace_axiom_count:
+    prefix_unknown: 2564
+    owl: 21
+    rdfs: 646
+  namespace_axiom_count_incl:
+    prefix_unknown: 2564
+    owl: 21
+    rdfs: 646
+  namespace_entity_count:
+    prefix_unknown: 402
+    owl: 1
+    xsd: 1
+    rdfs: 2
+  namespace_entity_count_incl:
+    prefix_unknown: 402
+    owl: 1
+    xsd: 1
+    rdfs: 2
+  owl2dl_profile_violation: {}

@@ -1,0 +1,163 @@
+metrics:
+  abox_axiom_count: 0
+  abox_axiom_count_incl: 0
+  annotation_property_count: 26
+  annotation_property_count_incl: 26
+  axiom_count: 508
+  axiom_count_incl: 508
+  class_count: 40
+  class_count_incl: 40
+  consistent: true
+  dataproperty_count: 28
+  dataproperty_count_incl: 28
+  datatypes_count: 6
+  datatypes_count_incl: 6
+  dt_builtin_count: 5
+  dt_builtin_count_incl: 5
+  dt_notbuiltin_count: 1
+  dt_notbuiltin_count_incl: 1
+  expressivity: "ALUHI(D)"
+  expressivity_incl: "ALUHI(D)"
+  individual_count: 0
+  individual_count_incl: 0
+  logical_axiom_count: 116
+  logical_axiom_count_incl: 116
+  obj_property_count: 19
+  obj_property_count_incl: 19
+  ontology_anno_count: 8
+  ontology_iri: "http://purls.helmholtz-metadaten.de/cmso/"
+  ontology_version_iri: "no.iri"
+  owl2: true
+  owl2_dl: true
+  owl2_el: false
+  owl2_ql: false
+  owl2_rl: false
+  rbox_axiom_count: 6
+  rbox_axiom_count_incl: 6
+  rdfs: false
+  rule_count: 0
+  rule_count_incl: 0
+  signature_entity_count: 119
+  signature_entity_count_incl: 119
+  syntax: "RDF/XML Syntax"
+  tbox_axiom_count: 110
+  tbox_axiom_count_incl: 110
+  tboxrbox_axiom_count: 116
+  tboxrbox_axiom_count_incl: 116
+  unsatisfiable_class_count: 0
+  axiom_types:
+  - "AnnotationAssertion"
+  - "SubAnnotationPropertyOf"
+  - "ObjectPropertyDomain"
+  - "SubDataPropertyOf"
+  - "DataPropertyRange"
+  - "DataPropertyDomain"
+  - "AnnotationPropertyRangeOf"
+  - "Declaration"
+  - "SubClassOf"
+  - "ObjectPropertyRange"
+  - "InverseObjectProperties"
+  axiom_types_incl:
+  - "AnnotationAssertion"
+  - "SubAnnotationPropertyOf"
+  - "ObjectPropertyDomain"
+  - "SubDataPropertyOf"
+  - "DataPropertyRange"
+  - "DataPropertyDomain"
+  - "AnnotationPropertyRangeOf"
+  - "Declaration"
+  - "SubClassOf"
+  - "ObjectPropertyRange"
+  - "InverseObjectProperties"
+  constructs:
+  - "D"
+  - "U"
+  - "H"
+  - "I"
+  - "AL"
+  constructs_incl:
+  - "D"
+  - "U"
+  - "H"
+  - "I"
+  - "AL"
+  valid_imports: []
+  valid_imports_incl: []
+  axiom_type_count:
+    AnnotationAssertion: 270
+    SubAnnotationPropertyOf: 12
+    ObjectPropertyDomain: 16
+    SubDataPropertyOf: 3
+    DataPropertyRange: 28
+    DataPropertyDomain: 28
+    AnnotationPropertyRangeOf: 1
+    Declaration: 109
+    SubClassOf: 22
+    ObjectPropertyRange: 16
+    InverseObjectProperties: 3
+  axiom_type_count_incl:
+    AnnotationAssertion: 270
+    SubAnnotationPropertyOf: 12
+    ObjectPropertyDomain: 16
+    SubDataPropertyOf: 3
+    DataPropertyRange: 28
+    DataPropertyDomain: 28
+    AnnotationPropertyRangeOf: 1
+    Declaration: 109
+    SubClassOf: 22
+    ObjectPropertyRange: 16
+    InverseObjectProperties: 3
+  class_expression_count:
+    Class: 153
+    ObjectUnionOf: 7
+  class_expression_count_incl:
+    Class: 153
+    ObjectUnionOf: 7
+  curie_map:
+    dc11: "http://purl.org/dc/elements/1.1/"
+    owl: "http://www.w3.org/2002/07/owl#"
+    rdf: "http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    IAO: "http://purl.obolibrary.org/obo/IAO_"
+    xsd: "http://www.w3.org/2001/XMLSchema#"
+    skos: "http://www.w3.org/2004/02/skos/core#"
+    rdfs: "http://www.w3.org/2000/01/rdf-schema#"
+    dc: "http://purl.org/dc/terms/"
+  namespace_axiom_count:
+    dc11: 8
+    prefix_unknown: 296
+    owl: 5
+    IAO: 106
+    xsd: 28
+    skos: 61
+    rdfs: 121
+    dc: 21
+  namespace_axiom_count_incl:
+    dc11: 8
+    prefix_unknown: 296
+    owl: 5
+    IAO: 106
+    xsd: 28
+    skos: 61
+    rdfs: 121
+    dc: 21
+  namespace_entity_count:
+    dc11: 4
+    prefix_unknown: 87
+    owl: 2
+    rdf: 1
+    IAO: 6
+    xsd: 4
+    skos: 5
+    rdfs: 3
+    dc: 7
+  namespace_entity_count_incl:
+    dc11: 4
+    prefix_unknown: 87
+    owl: 2
+    rdf: 1
+    IAO: 6
+    xsd: 4
+    skos: 5
+    rdfs: 3
+    dc: 7
+  owl2dl_profile_violation: {}

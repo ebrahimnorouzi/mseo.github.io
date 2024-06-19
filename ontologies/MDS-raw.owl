@@ -1,0 +1,2005 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix mds: <https://cwrusdle.bitbucket.io/mds#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pmd: <https://w3id.org/pmd/co/> .
+@prefix qudt: <http://qudt.org/2.1/vocab/unit#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+mds:ACOutputs a owl:Class ;
+    rdfs:label "ACOutputs" ;
+    rdfs:subClassOf mds:InverterOutput ;
+    skos:altLabel "" ;
+    skos:definition "AC output of inverter" .
+
+mds:CECNotes a owl:Class ;
+    rdfs:label "CECNotes" ;
+    rdfs:subClassOf mds:PhotovoltaicInverterProperty ;
+    skos:altLabel "" ;
+    skos:definition "Notes from CEC testing of the inverter" .
+
+mds:CellCutType a owl:Class ;
+    rdfs:label "CellCutType" ;
+    rdfs:subClassOf mds:PhotovoltaicCellProperty ;
+    skos:altLabel "" .
+
+mds:CellTechnologyType a owl:Class ;
+    rdfs:label "CellTechnologyType" ;
+    rdfs:subClassOf mds:PhotovoltaicCellProperty ;
+    skos:altLabel "" ;
+    skos:definition "Cell technology (PERC, TOPCon, Al-BSF, CdTe, CIGS, etc)" .
+
+mds:EncapsulantMaterial a owl:Class ;
+    rdfs:label "EncapsulantMaterial" ;
+    rdfs:subClassOf mds:PhotovoltaicModuleProperty ;
+    skos:altLabel "" ;
+    skos:definition "Material of the polymer encapsulant" .
+
+mds:GridInterfaceType a owl:Class ;
+    rdfs:label "GridInterfaceType" ;
+    rdfs:subClassOf mds:PhotovoltaicInverterProperty ;
+    skos:altLabel "" ;
+    skos:definition "Grid interface phase (monophase, biphase, triphase)" .
+
+mds:InterconnectionLineCount a owl:Class ;
+    rdfs:label "InterconnectionLineCount" ;
+    rdfs:subClassOf mds:InverterOutput ;
+    skos:altLabel "" ;
+    skos:definition "Number of interconnection lines" .
+
+mds:InterconnectionPhaseType a owl:Class ;
+    rdfs:label "InterconnectionPhaseType" ;
+    rdfs:subClassOf mds:InverterOutput ;
+    skos:altLabel "" ;
+    skos:definition "Interconnection phase type" .
+
+mds:InverterSwitchoverTime a owl:Class ;
+    rdfs:label "InverterSwitchoverTime" ;
+    rdfs:subClassOf mds:InverterOutput ;
+    skos:altLabel "" ;
+    skos:definition "Switch over time between grid import and inverter export to grid" .
+
+mds:ModuleCountParallel a owl:Class ;
+    rdfs:label "ModuleCountParallel" ;
+    rdfs:subClassOf mds:PhotovoltaicInverterProperty ;
+    skos:altLabel "" ;
+    skos:definition "Number of strings of modules connected in parallel" .
+
+mds:ModuleEncapsulant a owl:Class ;
+    rdfs:label "ModuleEncapsulant" ;
+    rdfs:subClassOf mds:PhotovoltaicModuleProperty ;
+    skos:altLabel "" ;
+    skos:definition "Polymer encapsulant of a module" .
+
+mds:ModuleJunctionBox a owl:Class ;
+    rdfs:label "ModuleJunctionBox" ;
+    rdfs:subClassOf mds:PhotovoltaicModuleProperty ;
+    skos:altLabel "" ;
+    skos:definition "Electrical junction box for connection to the module" .
+
+mds:NightTare a owl:Class ;
+    rdfs:label "NightTare" ;
+    rdfs:subClassOf mds:PhotovoltaicInverterProperty ;
+    skos:altLabel "" ;
+    skos:definition "Power consumption of the device during nighttime" .
+
+mds:Ontology a owl:Ontology ;
+    rdfs:label "mds" ;
+    dcterms:creator "Alexander C. Harding Bradley",
+        "Balashanmuga Priyan Rajamohan",
+        "Erika I. Barcelos",
+        "Finley Holt",
+        "Frank Ernst",
+        "Matthew Willard",
+        "Mohommad Redad Mehdi",
+        "Pawan K. Tripathi",
+        "Roger H. French",
+        "Weiqi Yue" ;
+    dcterms:description "The Materials Data Science Ontology" ;
+    owl:versionInfo "0.2.0.5" ;
+    dcterms:title "mds" .
+
+mds:PowerFactorMax a owl:Class ;
+    rdfs:label "PowerFactorMax" ;
+    rdfs:subClassOf mds:InverterOutput ;
+    skos:altLabel "" ;
+    skos:definition "Maximum power factor" ;
+    pmd:unit qudt:KiloW .
+
+mds:PowerFactorMin a owl:Class ;
+    rdfs:label "PowerFactorMin" ;
+    rdfs:subClassOf mds:InverterOutput ;
+    skos:altLabel "" ;
+    skos:definition "Minimum power factor" ;
+    pmd:unit qudt:KiloW .
+
+mds:RevenueGrade a owl:Class ;
+    rdfs:label "RevenueGrade" ;
+    rdfs:subClassOf mds:PhotovoltaicInverterProperty ;
+    skos:altLabel "" ;
+    skos:definition "Is the inverter revenue grade? (accuracy of 0.5% or better)" .
+
+mds:TotalHarmonicDistortionCurrent a owl:Class ;
+    rdfs:label "TotalHarmonicDistortionCurrent" ;
+    rdfs:subClassOf mds:InverterOutput ;
+    skos:altLabel "" ;
+    skos:definition "Harmonic distortion of current" .
+
+mds:TotalHarmonicDistortionPower a owl:Class ;
+    rdfs:label "TotalHarmonicDistortionPower" ;
+    rdfs:subClassOf mds:InverterOutput ;
+    skos:altLabel "" ;
+    skos:definition "Total harmonic distortion of power" ;
+    pmd:unit qudt:KiloW .
+
+mds:VoltageACNom a owl:Class ;
+    rdfs:label "VoltageACNom" ;
+    rdfs:subClassOf mds:InverterOutput ;
+    skos:altLabel "" ;
+    skos:definition "Nominal AC voltage" ;
+    pmd:unit qudt:V .
+
+mds:VoltageDCInverterStart a owl:Class ;
+    rdfs:label "VoltageDCInverterStart" ;
+    rdfs:subClassOf mds:PhotovoltaicInverterProperty ;
+    skos:altLabel "" ;
+    skos:definition "Turn-on input DC voltage required for inverter to output AC power" ;
+    pmd:unit qudt:V .
+
+pmd:characteristicOf a owl:ObjectProperty ;
+    rdfs:label "characteristic of"@en ;
+    rdfs:domain mds:BeamlineConfiguration,
+        mds:DarkCorrectionMethod1,
+        mds:DarkCorrectionMethod2,
+        mds:DetectorCalibration,
+        mds:DetectorParameters,
+        mds:DiffractionFrame,
+        mds:HeatTreatmentProcess,
+        mds:Integration,
+        mds:Modeling,
+        mds:PhotovoltaicBacksheet,
+        mds:PhotovoltaicCell,
+        mds:PhotovoltaicInverter,
+        mds:PhotovoltaicModule,
+        mds:PhotovoltaicRacking,
+        mds:PhotovoltaicSite,
+        mds:RingSamplingMethod,
+        mds:SampleAlignment,
+        mds:TextureMeasurement,
+        mds:XrayDetector,
+        mds:XrayRecipe,
+        mds:XrayResult,
+        mds:XraySample,
+        mds:XrayTool ;
+    rdfs:range mds:Architecture,
+        mds:BeamConvergence,
+        mds:BeamSize,
+        mds:BeamlineConfiguration,
+        mds:BitDepth,
+        mds:Calibration,
+        mds:DAQFrequency,
+        mds:DarkPatternUsed,
+        mds:DetectorLength,
+        mds:DetectorResolution,
+        mds:DetectorWidth,
+        mds:DistanceBetweenTwoRings,
+        mds:DistanceFromSample,
+        mds:EnergyRange,
+        mds:EnergyUsed,
+        mds:Epochs,
+        mds:ExposureTime,
+        mds:Facility,
+        mds:FramesPerFile,
+        mds:ImageSequence,
+        mds:IntegrationOptions,
+        mds:Length,
+        mds:LogFile,
+        mds:MaskFile,
+        mds:MaterialName,
+        mds:MaxBeamSize,
+        mds:MaxFrameRate,
+        mds:MountingType,
+        mds:NumberOfRings,
+        mds:PhotovoltaicBacksheetProperty,
+        mds:PhotovoltaicCellProperty,
+        mds:PhotovoltaicInverterProperty,
+        mds:PhotovoltaicModuleProperty,
+        mds:PhotovoltaicSite,
+        mds:PhotovoltaicSiteParameter,
+        mds:PixelSize,
+        mds:ProcessingMethod,
+        mds:RackingType,
+        mds:ReadOutTime,
+        mds:RingPointFile,
+        mds:RmsFitQuality,
+        mds:SampleToLabAlignment,
+        mds:StackNumber,
+        mds:StartEndTimeStamp,
+        mds:Station,
+        mds:TestingSplit,
+        mds:Thickness,
+        mds:TrackingAlgorithm,
+        mds:TrainingSplit,
+        mds:VersionNumber,
+        mds:WavelengthRange,
+        mds:WavelengthUsed,
+        mds:Width,
+        pmd:Length,
+        pmd:MaterialDesignation,
+        pmd:Medium,
+        pmd:Thickness,
+        pmd:Width ;
+    skos:altLabel "is characteristic of" .
+
+pmd:component a owl:ObjectProperty ;
+    rdfs:label "component"@en ;
+    rdfs:domain mds:Calibration,
+        mds:XrayRecipe,
+        mds:XrayTool ;
+    rdfs:range mds:DetectorCalibration,
+        mds:SampleAlignment,
+        mds:XrayDetector,
+        mds:XrayTool,
+        pmd:Sample ;
+    skos:altLabel "has component"@en ;
+    skos:definition "Die Objekt-Eigenschaft Komponente, die in Verbindung mit ProzessKnoten und seinen (modularen) Elementen verwendet wird. Sie ermöglicht die Darstellung der einzelnen, unterschiedlichen Teile von ProzessKnoten. Im Wesentlichen ist die  \"Komponenten-Eigenschaft\" eine Möglichkeit, ein komplexes System in überschaubare und eindeutige Teile zu zerlegen, um die Rolle der einzelnen Teile innerhalb des Gesamtsystems zu verstehen und zu verwalten."@de,
+        "The object property component, which is used in connection with ProcessingNode and its (modular) elements. It enables the representation of the individual, different parts of processing nodes. Essentially, the 'component property' is a way of breaking down a complex system into manageable and distinct parts in order to understand and manage the role of each part within the overall system."@en .
+
+pmd:composedOf a owl:ObjectProperty ;
+    rdfs:label "composed of"@en ;
+    rdfs:domain mds:BeamlineConfiguration,
+        mds:DetectorResolution,
+        mds:DiffractionFrame,
+        mds:PhotovoltaicModule,
+        mds:XrayRecipe,
+        pmd:Furnace ;
+    rdfs:range mds:BeamlineConfiguration,
+        mds:Calibration,
+        mds:DataCollection,
+        mds:DetectorParameters,
+        mds:ExperimentType,
+        mds:PhotovoltaicBacksheet,
+        mds:PhotovoltaicCell,
+        mds:PhotovoltaicInverter,
+        mds:PixelHeight,
+        mds:PixelWidth,
+        mds:XrayRecipeParameters,
+        pmd:Medium ;
+    skos:definition """This property is used to describe the fact that and which objects are composed of other objects, i.e. it is used to describe the specific constituents or ingredients that form a particular entity or object. 
+As a prepositional phrase, it indicates the elements, parts, or components that make up a whole."""@en,
+        "This property is used to describe which voxels and materials an object is composed of."@en .
+
+pmd:composes a owl:ObjectProperty ;
+    rdfs:label "composes"@en ;
+    rdfs:domain pmd:Furnace ;
+    rdfs:range mds:Design ;
+    skos:definition """Diese Eigenschaft wird verwendet, um die Tatsache zu beschreiben, dass und welche Objekte andere Objekte zusammensetzen, d. h. sie wird verwendet, um die spezifischen Bestandteile oder Zutaten zu beschreiben, aus denen ein bestimmtes Gebilde oder Objekt besteht. 
+Als Präpositionalphrase bezeichnet sie die Elemente, Teile oder Komponenten, aus denen sich ein anderes Objekt zusammensetzt."""@de,
+        """This property is used to describe the fact that and which objects compose other objects, i.e. it is used to describe the specific constituents or ingredients forming a particular entity or object. 
+As a prepositional phrase, it indicates the elements, parts, or components that make up a whole of another object."""@en,
+        "This property is used to describe which objects a voxel or a material contributes to compose."@en .
+
+pmd:executedBy a owl:ObjectProperty ;
+    rdfs:label "executed by"@en ;
+    rdfs:domain mds:AzimuthalRegrouping,
+        mds:HeatTreatmentProcess ;
+    rdfs:range mds:Integration,
+        pmd:Furnace ;
+    skos:definition "This property represents which process is executed by which process node."@en .
+
+pmd:hasIdentifier a owl:ObjectProperty ;
+    rdfs:domain mds:BeamlineConfiguration,
+        mds:CroppingMethod,
+        mds:DarkCorrectionMethod1,
+        mds:DarkCorrectionMethod2,
+        mds:DetectorCalibration,
+        mds:DiffractionFrame,
+        mds:GravityMethod,
+        mds:Integration,
+        mds:Modeling,
+        mds:PhotovoltaicBacksheet,
+        mds:PhotovoltaicCell,
+        mds:PhotovoltaicInverter,
+        mds:PhotovoltaicModule,
+        mds:PhotovoltaicSite,
+        mds:PixelwiseCorrelation,
+        mds:RingSamplingMethod,
+        mds:RollingMethod,
+        mds:SampleAlignment,
+        mds:XrayDetector,
+        mds:XrayRecipe,
+        mds:XrayResult,
+        mds:XraySample,
+        mds:XrayTool ;
+    rdfs:range mds:DetectorName,
+        mds:FrameID,
+        mds:IntegrationID,
+        mds:MethodName,
+        mds:ModelID,
+        mds:PhotovoltaicBacksheetID,
+        mds:PhotovoltaicCellID,
+        mds:PhotovoltaicInverterID,
+        mds:PhotovoltaicModuleID,
+        mds:PhotovoltaicSiteID,
+        mds:RecipeID,
+        mds:ResultID,
+        mds:SampleID,
+        mds:ToolID .
+
+pmd:hasSource a owl:ObjectProperty ;
+    rdfs:domain mds:InverterEfficiency,
+        mds:InverterOutput,
+        mds:ModuleRatingAtReference ;
+    rdfs:range mds:OrangeButtonTerm .
+
+pmd:input a owl:ObjectProperty ;
+    rdfs:label "input"@en ;
+    rdfs:domain mds:PostProcessing ;
+    rdfs:range mds:XrayResult ;
+    skos:altLabel "has input" ;
+    skos:definition "This property is used to link the processes to their input objects."@en .
+
+pmd:inputOf a owl:ObjectProperty ;
+    rdfs:label "input of"@en ;
+    rdfs:domain mds:AzimuthalRegrouping,
+        mds:DataReduction,
+        mds:Integration,
+        mds:PostProcessing,
+        mds:XraySample ;
+    rdfs:range mds:DiffractionImage,
+        mds:ImageStack,
+        mds:Modeling,
+        mds:PoniFile,
+        mds:PostProcessing,
+        mds:XrayTool ;
+    skos:altLabel "is input of" .
+
+pmd:isPartOf a owl:ObjectProperty ;
+    rdfs:domain mds:ImageStack ;
+    rdfs:range mds:DarkField,
+        mds:Frame .
+
+pmd:outputOf a owl:ObjectProperty ;
+    rdfs:label "output of"@en ;
+    rdfs:domain mds:DataReduction,
+        mds:DetectorCalibration,
+        mds:XrayResult ;
+    rdfs:range mds:AzimuthalRegrouping,
+        mds:PoniFile,
+        mds:XrayRecipe ;
+    skos:altLabel "is output of"@en .
+
+pmd:value a owl:DatatypeProperty ;
+    rdfs:label "hat Wert"@de,
+        "value"@en ;
+    rdfs:domain mds:2-theta-pos,
+        mds:AngularRangeX,
+        mds:AngularRangeY,
+        mds:Architecture,
+        mds:AzimuthRange,
+        mds:AzmVal,
+        mds:BacksheetManufacturer,
+        mds:BacksheetMaterial,
+        mds:BacksheetVintage,
+        mds:Bank-id,
+        mds:BankNo,
+        mds:BeamConvergence,
+        mds:BeamSize,
+        mds:BitDepth,
+        mds:Btm_rota,
+        mds:CECListingDate,
+        mds:CellCount,
+        mds:Cesr_,
+        mds:ChiDiscontinuity,
+        mds:Crys_rtrn,
+        mds:Crys_sply,
+        mds:CurrentACMax,
+        mds:CurrentAtMaximumPower,
+        mds:CurrentShortCircuit,
+        mds:DAQFrequency,
+        mds:DetectorLength,
+        mds:DetectorName,
+        mds:DetectorWidth,
+        mds:Diod,
+        mds:DistanceBetweenTwoRings,
+        mds:DistanceFromSample,
+        mds:DoPolarizationCorrection,
+        mds:DoRemoveNAN,
+        mds:DoSolidAngleCorrection,
+        mds:EfficiencyCECWtdVoltageMax,
+        mds:EfficiencyCECWtdVoltageMin,
+        mds:EfficiencyCECWtdVoltageNom,
+        mds:Elevation,
+        mds:EnergyRange,
+        mds:EnergyUsed,
+        mds:Epochs,
+        mds:ErrorModel,
+        mds:ExposureTime,
+        mds:Facility,
+        mds:File-format,
+        mds:FirstName,
+        mds:FluorescencePattern,
+        mds:FrequenciesAC,
+        mds:Fst_shtr,
+        mds:Fxn,
+        mds:FxyeGSASFileEntry,
+        mds:HasMeter,
+        mds:Htype,
+        mds:Ic0,
+        mds:Ic1,
+        mds:Ic2,
+        mds:Ic3,
+        mds:ImageSequence,
+        mds:Init-delta,
+        mds:Init-theta,
+        mds:IntegrationMethod,
+        mds:IntegrationType,
+        mds:Intensity,
+        mds:IntensityUnc,
+        mds:InverterEfficiency,
+        mds:InverterEfficiencyCEC,
+        mds:InverterEfficiencyIEC,
+        mds:InverterEfficiencyMax,
+        mds:InverterOutput,
+        mds:Irads,
+        mds:IsHybrid,
+        mds:IsPVInputCapable,
+        mds:Latitude,
+        mds:Length,
+        mds:Load_cll,
+        mds:Load_scrw,
+        mds:Longitude,
+        mds:MaterialName,
+        mds:MaxBeamSize,
+        mds:MaxFrameRate,
+        mds:MethodName,
+        mds:Mo_stab,
+        mds:ModelID,
+        mds:ModuleCountSeries,
+        mds:ModuleEfficiency,
+        mds:ModuleRatingAtReference,
+        mds:ModuleRatingCondition,
+        mds:MountingType,
+        mds:NptAzimuth,
+        mds:Nptradial,
+        mds:NumberInverters,
+        mds:NumberOfRings,
+        mds:OpenCLDevice,
+        mds:PhotovoltaicBacksheetID,
+        mds:PhotovoltaicCellID,
+        mds:PhotovoltaicCellProperty,
+        mds:PhotovoltaicInverterID,
+        mds:PhotovoltaicModuleID,
+        mds:PhotovoltaicSiteID,
+        mds:PixelHeight,
+        mds:PixelSize,
+        mds:PixelWidth,
+        mds:PolarizationFactor,
+        mds:PowerACMax,
+        mds:PowerACNom,
+        mds:PowerDC,
+        mds:PowerDCOut,
+        mds:PowerSTC,
+        mds:ProcessingMethod,
+        mds:RackingType,
+        mds:RadialRange,
+        mds:ReadOutTime,
+        mds:RecipeID,
+        mds:ResultID,
+        mds:SampleID,
+        mds:StackNumber,
+        mds:StartEndTimeStamp,
+        mds:Station,
+        mds:Sync_cnt,
+        mds:TestingSplit,
+        mds:Thickness,
+        mds:ToolID,
+        mds:Top_pzo,
+        mds:Top_rota,
+        mds:TrackingAlgorithm,
+        mds:TrainingSplit,
+        mds:VersionNumber,
+        mds:VoltageACMax,
+        mds:VoltageACMin,
+        mds:VoltageAtMaximumPower,
+        mds:VoltageOpenCircuit,
+        mds:WavelengthRange,
+        mds:WavelengthUsed,
+        mds:Weight,
+        mds:Width,
+        pmd:Length,
+        pmd:MaterialDesignation,
+        pmd:Thickness,
+        pmd:Width ;
+    rdfs:range xsd:Sequence,
+        xsd:boolean,
+        xsd:float,
+        xsd:integer,
+        xsd:string ;
+    skos:definition "Provides the actual value a value object is referring to."@en .
+
+mds:2-theta-pos a owl:Class ;
+    rdfs:label "2-theta-pos" ;
+    rdfs:subClassOf mds:Parameters1ID ;
+    skos:altLabel "" .
+
+mds:AngularRangeX a owl:Class ;
+    rdfs:label "AngularRangeX" ;
+    rdfs:subClassOf mds:Parameters1ID ;
+    skos:altLabel "" .
+
+mds:AngularRangeY a owl:Class ;
+    rdfs:label "AngularRangeY" ;
+    rdfs:subClassOf mds:Parameters1ID ;
+    skos:altLabel "" .
+
+mds:AzimuthRange a owl:Class ;
+    rdfs:label "AzimuthRange" ;
+    rdfs:subClassOf mds:IntegrationOptions ;
+    skos:altLabel "" ;
+    skos:definition "The azimuthal integration range." .
+
+mds:AzmVal a owl:Class ;
+    rdfs:label "AzmVal" ;
+    rdfs:subClassOf mds:Parameters1ID ;
+    skos:altLabel "" .
+
+mds:BacksheetManufacturer a owl:Class ;
+    rdfs:label "BacksheetManufacturer" ;
+    rdfs:subClassOf mds:PhotovoltaicBacksheetProperty ;
+    skos:altLabel "" ;
+    skos:definition "Manufacturer (if known) of the backsheet" .
+
+mds:BacksheetMaterial a owl:Class ;
+    rdfs:label "BacksheetMaterial" ;
+    rdfs:subClassOf mds:PhotovoltaicBacksheetProperty ;
+    skos:altLabel "" ;
+    skos:definition "Material (polymer) the PV backsheet is comprised of (EVA, POE, PET, etc)" .
+
+mds:BacksheetVintage a owl:Class ;
+    rdfs:label "BacksheetVintage" ;
+    rdfs:subClassOf mds:PhotovoltaicBacksheetProperty ;
+    skos:altLabel "" ;
+    skos:definition "Vintage (year of manufacture) of the backsheet" .
+
+mds:Bank-id a owl:Class ;
+    rdfs:label "Bank-id" ;
+    rdfs:subClassOf mds:Parameters1ID ;
+    skos:altLabel "" .
+
+mds:BankNo a owl:Class ;
+    rdfs:label "BankNo" ;
+    rdfs:subClassOf mds:Parameters1ID ;
+    skos:altLabel "" .
+
+mds:Btm_rota a owl:Class ;
+    rdfs:label "Btm_rota" ;
+    rdfs:subClassOf mds:ParametersFAST ;
+    skos:altLabel "" .
+
+mds:CECListingDate a owl:Class ;
+    rdfs:label "CECListingDate" ;
+    rdfs:subClassOf mds:PhotovoltaicInverterProperty ;
+    skos:altLabel "" ;
+    skos:definition "Date module measurements listed by CEC" .
+
+mds:CellCount a owl:Class ;
+    rdfs:label "CellCount" ;
+    rdfs:subClassOf mds:PhotovoltaicModuleProperty ;
+    skos:altLabel "" ;
+    skos:definition "Number of cells in a module" .
+
+mds:Centering a owl:Class ;
+    rdfs:label "Centering" ;
+    rdfs:subClassOf mds:PostProcessing ;
+    skos:altLabel "" ;
+    skos:definition "Centering algorithm to center the images." .
+
+mds:Cesr_ a owl:Class ;
+    rdfs:label "Cesr_" ;
+    rdfs:subClassOf mds:ParametersFAST ;
+    skos:altLabel "" .
+
+mds:ChiDiscontinuity a owl:Class ;
+    rdfs:label "ChiDiscontinuity" ;
+    rdfs:subClassOf mds:IntegrationOptions ;
+    skos:altLabel "" .
+
+mds:CroppingMethod a owl:Class ;
+    rdfs:label "CroppingMethod" ;
+    rdfs:subClassOf mds:Registration ;
+    skos:altLabel "" ;
+    skos:definition "The cropping method." .
+
+mds:Crys_rtrn a owl:Class ;
+    rdfs:label "Crys_rtrn" ;
+    rdfs:subClassOf mds:ParametersFAST ;
+    skos:altLabel "" .
+
+mds:Crys_sply a owl:Class ;
+    rdfs:label "Crys_sply" ;
+    rdfs:subClassOf mds:ParametersFAST ;
+    skos:altLabel "" .
+
+mds:CurrentACMax a owl:Class ;
+    rdfs:label "CurrentACMax" ;
+    rdfs:subClassOf mds:InverterOutput ;
+    skos:altLabel "" ;
+    skos:definition "Current at maximum AC power" ;
+    pmd:unit qudt:A .
+
+mds:CurrentAtMaximumPower a owl:Class ;
+    rdfs:label "CurrentAtMaximumPower" ;
+    rdfs:subClassOf mds:PhotovoltaicCellProperty ;
+    skos:altLabel "" ;
+    skos:definition "DC current at maximum power point" ;
+    pmd:unit qudt:A .
+
+mds:CurrentShortCircuit a owl:Class ;
+    rdfs:label "CurrentShortCircuit" ;
+    rdfs:subClassOf mds:PhotovoltaicCellProperty ;
+    skos:altLabel "" ;
+    skos:definition "Short-circuit current of the cell" ;
+    pmd:unit qudt:A .
+
+mds:DarkField a owl:Class ;
+    rdfs:label "DarkField" ;
+    rdfs:subClassOf pmd:Image ;
+    skos:altLabel "" ;
+    skos:definition "The dark field image." .
+
+mds:DarkPatternUsed a owl:Class ;
+    rdfs:label "DarkPatternUsed" ;
+    rdfs:subClassOf pmd:PrimaryData ;
+    skos:altLabel "" ;
+    skos:definition "The dark image used to perform dark correction." .
+
+mds:Depth a owl:Class ;
+    rdfs:label "Depth" ;
+    rdfs:subClassOf pmd:ValueObject ;
+    skos:altLabel "" ;
+    skos:definition "the distance from the top or surface to the bottom of something" .
+
+mds:Design a owl:Class ;
+    rdfs:label "Design" ;
+    rdfs:subClassOf pmd:Description ;
+    skos:altLabel "" ;
+    skos:definition "Design of the furnace." .
+
+mds:DiffractionImage a owl:Class ;
+    rdfs:label "DiffractionImage" ;
+    rdfs:subClassOf pmd:Image ;
+    skos:altLabel "" ;
+    skos:definition "The diffraction image being integrated." .
+
+mds:Diod a owl:Class ;
+    rdfs:label "Diod" ;
+    rdfs:subClassOf mds:ParametersFAST ;
+    skos:altLabel "" ;
+    pmd:unit qudt:V .
+
+mds:DoPolarizationCorrection a owl:Class ;
+    rdfs:label "DoPolarizationCorrection" ;
+    rdfs:subClassOf mds:IntegrationOptions ;
+    skos:altLabel "" ;
+    skos:definition "Is polarization correction required." .
+
+mds:DoRemoveNAN a owl:Class ;
+    rdfs:label "DoRemoveNAN" ;
+    rdfs:subClassOf mds:IntegrationOptions ;
+    skos:altLabel "" ;
+    skos:definition "Is NAN removal required." .
+
+mds:DoSolidAngleCorrection a owl:Class ;
+    rdfs:label "DoSolidAngleCorrection" ;
+    rdfs:subClassOf mds:IntegrationOptions ;
+    skos:altLabel "" ;
+    skos:definition "Is solid angle correction required." .
+
+mds:EfficiencyCECWtdVoltageMax a owl:Class ;
+    rdfs:label "EfficiencyCECWtdVoltageMax" ;
+    rdfs:subClassOf mds:InverterEfficiency ;
+    skos:altLabel "" ;
+    skos:definition "CEC measured voltage maximum" ;
+    pmd:unit qudt:V .
+
+mds:EfficiencyCECWtdVoltageMin a owl:Class ;
+    rdfs:label "EfficiencyCECWtdVoltageMin" ;
+    rdfs:subClassOf mds:InverterEfficiency ;
+    skos:altLabel "" ;
+    skos:definition "CEC measured voltage minimum" ;
+    pmd:unit qudt:V .
+
+mds:EfficiencyCECWtdVoltageNom a owl:Class ;
+    rdfs:label "EfficiencyCECWtdVoltageNom" ;
+    rdfs:subClassOf mds:InverterEfficiency ;
+    skos:altLabel "" ;
+    skos:definition "CEC measured nominal operating voltage" ;
+    pmd:unit qudt:V .
+
+mds:Elevation a owl:Class ;
+    rdfs:label "Elevation" ;
+    rdfs:subClassOf mds:PhotovoltaicSiteParameter ;
+    skos:altLabel "" ;
+    skos:definition "Elevation above sea level" ;
+    pmd:unit qudt:M .
+
+mds:ErrorModel a owl:Class ;
+    rdfs:label "ErrorModel" ;
+    rdfs:subClassOf mds:IntegrationOptions ;
+    skos:altLabel "" ;
+    skos:definition "The error model used." .
+
+mds:File-format a owl:Class ;
+    rdfs:label "File-format" ;
+    rdfs:subClassOf mds:Parameters1ID ;
+    skos:altLabel "" .
+
+mds:FirstName a owl:Class ;
+    rdfs:label "FirstName" ;
+    rdfs:subClassOf mds:Parameters1ID ;
+    skos:altLabel "" .
+
+mds:FluorescencePattern a owl:Class ;
+    rdfs:label "FluorescencePattern" ;
+    rdfs:subClassOf mds:PhotovoltaicModuleProperty ;
+    skos:altLabel "" ;
+    skos:definition "A UVF fluorescence pattern of a module" .
+
+mds:Frame a owl:Class ;
+    rdfs:label "Frame" ;
+    rdfs:subClassOf pmd:Image ;
+    skos:altLabel "" ;
+    skos:definition "The frame of diffraction." .
+
+mds:FrameID a owl:Class ;
+    rdfs:label "FrameID" ;
+    rdfs:subClassOf pmd:ProvidedIdentifier ;
+    skos:altLabel "" ;
+    skos:definition "Identifier of the frame." .
+
+mds:FramesPerFile a owl:Class ;
+    rdfs:label "FramesPerFile" ;
+    rdfs:subClassOf pmd:DataAcquisitionRate ;
+    skos:altLabel "" ;
+    skos:definition "Number of frames per file." .
+
+mds:FrequenciesAC a owl:Class ;
+    rdfs:label "FrequenciesAC" ;
+    rdfs:subClassOf mds:InverterOutput ;
+    skos:altLabel "" ;
+    skos:definition "AC frequency, typically 60Hz (Americas) or 50Hz (elsewhere)" ;
+    pmd:unit qudt:Hertz .
+
+mds:Fst_shtr a owl:Class ;
+    rdfs:label "Fst_shtr" ;
+    rdfs:subClassOf mds:ParametersFAST ;
+    skos:altLabel "" .
+
+mds:Fxn a owl:Class ;
+    rdfs:label "Fxn" ;
+    rdfs:subClassOf mds:Parameters1ID ;
+    skos:altLabel "" .
+
+mds:FxyeGSASFileEntry a owl:Class ;
+    rdfs:label "FxyeGSASFileEntry" ;
+    rdfs:subClassOf mds:Parameters1ID ;
+    skos:altLabel "" .
+
+mds:GravityMethod a owl:Class ;
+    rdfs:label "GravityMethod" ;
+    rdfs:subClassOf mds:Centering ;
+    skos:altLabel "" ;
+    skos:definition "The gravity centering method." .
+
+mds:HasMeter a owl:Class ;
+    rdfs:label "HasMeter" ;
+    rdfs:subClassOf mds:PhotovoltaicInverterProperty ;
+    skos:altLabel "" ;
+    skos:definition "Does the inverter measure output AC power and input DC power?" .
+
+mds:Htype a owl:Class ;
+    rdfs:label "Htype" ;
+    rdfs:subClassOf mds:Parameters1ID ;
+    skos:altLabel "" .
+
+mds:Ic0 a owl:Class ;
+    rdfs:label "Ic0" ;
+    rdfs:subClassOf mds:ParametersFAST ;
+    skos:altLabel "" ;
+    pmd:unit qudt:S .
+
+mds:Ic1 a owl:Class ;
+    rdfs:label "Ic1" ;
+    rdfs:subClassOf mds:ParametersFAST ;
+    skos:altLabel "" ;
+    pmd:unit qudt:S .
+
+mds:Ic2 a owl:Class ;
+    rdfs:label "Ic2" ;
+    rdfs:subClassOf mds:ParametersFAST ;
+    skos:altLabel "" ;
+    pmd:unit qudt:S .
+
+mds:Ic3 a owl:Class ;
+    rdfs:label "Ic3" ;
+    rdfs:subClassOf mds:ParametersFAST ;
+    skos:altLabel "" ;
+    pmd:unit qudt:S .
+
+mds:Init-delta a owl:Class ;
+    rdfs:label "Init-delta" ;
+    rdfs:subClassOf mds:Parameters1ID ;
+    skos:altLabel "" .
+
+mds:Init-theta a owl:Class ;
+    rdfs:label "Init-theta" ;
+    rdfs:subClassOf mds:Parameters1ID ;
+    skos:altLabel "" .
+
+mds:IntegrationID a owl:Class ;
+    rdfs:label "IntegrationID" ;
+    rdfs:subClassOf pmd:ProvidedIdentifier ;
+    skos:altLabel "" ;
+    skos:definition "Identifier for the integration process." .
+
+mds:IntegrationMethod a owl:Class ;
+    rdfs:label "IntegrationMethod" ;
+    rdfs:subClassOf mds:IntegrationOptions ;
+    skos:altLabel "" ;
+    skos:definition "The method used for integration." .
+
+mds:IntegrationType a owl:Class ;
+    rdfs:label "IntegrationType" ;
+    rdfs:subClassOf mds:IntegrationOptions ;
+    skos:altLabel "" ;
+    skos:definition "Type of integration, either 1 or 2D." .
+
+mds:Intensity a owl:Class ;
+    rdfs:label "Intensity" ;
+    rdfs:subClassOf mds:Parameters1ID ;
+    skos:altLabel "" .
+
+mds:IntensityUnc a owl:Class ;
+    rdfs:label "IntensityUnc" ;
+    rdfs:subClassOf mds:Parameters1ID ;
+    skos:altLabel "" .
+
+mds:InverterEfficiencyCEC a owl:Class ;
+    rdfs:label "InverterEfficiencyCEC" ;
+    rdfs:subClassOf mds:InverterEfficiency ;
+    skos:altLabel "" ;
+    skos:definition "CEC measured inverter efficency" .
+
+mds:InverterEfficiencyIEC a owl:Class ;
+    rdfs:label "InverterEfficiencyIEC" ;
+    rdfs:subClassOf mds:InverterEfficiency ;
+    skos:altLabel "" ;
+    skos:definition "IEC inverter efficency" .
+
+mds:InverterEfficiencyMax a owl:Class ;
+    rdfs:label "InverterEfficiencyMax" ;
+    rdfs:subClassOf mds:InverterEfficiency ;
+    skos:altLabel "" ;
+    skos:definition "Theoretical maximum inverter efficency (nameplate)" .
+
+mds:Irads a owl:Class ;
+    rdfs:label "Irads" ;
+    rdfs:subClassOf mds:Parameters1ID ;
+    skos:altLabel "" .
+
+mds:IsHybrid a owl:Class ;
+    rdfs:label "IsHybrid" ;
+    rdfs:subClassOf mds:PhotovoltaicInverterProperty ;
+    skos:altLabel "" ;
+    skos:definition "System connected only to grid, or also to batteries?" .
+
+mds:IsPVInputCapable a owl:Class ;
+    rdfs:label "IsPVInputCapable" ;
+    rdfs:subClassOf mds:PhotovoltaicInverterProperty ;
+    skos:altLabel "" ;
+    skos:definition "Is inverter capable of directly accepting PV input?" .
+
+mds:Latitude a owl:Class ;
+    rdfs:label "Latitude" ;
+    rdfs:subClassOf mds:PhotovoltaicSiteParameter ;
+    skos:altLabel "" ;
+    skos:definition "North/south position of a point on the Earth, decimal format" .
+
+mds:Load_cll a owl:Class ;
+    rdfs:label "Load_cll" ;
+    rdfs:subClassOf mds:ParametersFAST ;
+    skos:altLabel "" .
+
+mds:Load_scrw a owl:Class ;
+    rdfs:label "Load_scrw" ;
+    rdfs:subClassOf mds:ParametersFAST ;
+    skos:altLabel "" .
+
+mds:LogFile a owl:Class ;
+    rdfs:label "LogFile" ;
+    rdfs:subClassOf pmd:Metadata ;
+    skos:altLabel "" .
+
+mds:Longitude a owl:Class ;
+    rdfs:label "Longitude" ;
+    rdfs:subClassOf mds:PhotovoltaicSiteParameter ;
+    skos:altLabel "" ;
+    skos:definition "East/west position of a point on the Earth, decimal format" .
+
+mds:MaskFile a owl:Class ;
+    rdfs:label "MaskFile" ;
+    rdfs:subClassOf pmd:CalibrationDocument ;
+    skos:altLabel "" ;
+    skos:definition "Mask file of the detector." .
+
+mds:Mo_stab a owl:Class ;
+    rdfs:label "Mo_stab" ;
+    rdfs:subClassOf mds:ParametersFAST ;
+    skos:altLabel "" .
+
+mds:ModuleCountSeries a owl:Class ;
+    rdfs:label "ModuleCountSeries" ;
+    rdfs:subClassOf mds:PhotovoltaicInverterProperty ;
+    skos:altLabel "" ;
+    skos:definition "Number of modules per string connected in series" .
+
+mds:ModuleEfficiency a owl:Class ;
+    rdfs:label "ModuleEfficiency" ;
+    rdfs:subClassOf mds:ModuleRatingAtReference ;
+    skos:altLabel "" ;
+    skos:definition "Theoretical efficency of a module" .
+
+mds:ModuleRatingCondition a owl:Class ;
+    rdfs:label "ModuleRatingCondition" ;
+    rdfs:subClassOf mds:PhotovoltaicCellProperty ;
+    skos:altLabel "" ;
+    skos:definition "Condition of the cell" .
+
+mds:NptAzimuth a owl:Class ;
+    rdfs:label "NptAzimuth" ;
+    rdfs:subClassOf mds:IntegrationOptions ;
+    skos:altLabel "" .
+
+mds:Nptradial a owl:Class ;
+    rdfs:label "Nptradial" ;
+    rdfs:subClassOf mds:IntegrationOptions ;
+    skos:altLabel "" .
+
+mds:NumberInverters a owl:Class ;
+    rdfs:label "NumberInverters" ;
+    rdfs:subClassOf mds:PhotovoltaicSiteParameter ;
+    skos:altLabel "" ;
+    skos:definition "Number of inverters located at the site" .
+
+mds:OpenCLDevice a owl:Class ;
+    rdfs:label "OpenCLDevice" ;
+    rdfs:subClassOf mds:IntegrationOptions ;
+    skos:altLabel "" ;
+    skos:definition "The device used. Either CPU or GPU." .
+
+mds:OrangeButtonTerm a owl:Class ;
+    rdfs:label "OrangeButtonTerm" ;
+    rdfs:subClassOf pmd:ValueObject ;
+    skos:altLabel "" ;
+    skos:definition "Term from the OrangeButton Taxonomy" .
+
+mds:PhotovoltaicRacking a owl:Class ;
+    rdfs:label "PhotovoltaicRacking" ;
+    rdfs:subClassOf mds:PhotovoltaicSiteParameter ;
+    skos:altLabel "" ;
+    skos:definition "How PV modules are arranged within the system" .
+
+mds:PixelwiseCorrelation a owl:Class ;
+    rdfs:label "PixelwiseCorrelation" ;
+    rdfs:subClassOf mds:Rescaling ;
+    skos:altLabel "" ;
+    skos:definition "Pixelwise correlation for rescaling." .
+
+mds:PolarizationFactor a owl:Class ;
+    rdfs:label "PolarizationFactor" ;
+    rdfs:subClassOf mds:IntegrationOptions ;
+    skos:altLabel "" ;
+    skos:definition "Polarization factor of the diffractometer." ;
+    pmd:unit qudt:Degree .
+
+mds:PowerACMax a owl:Class ;
+    rdfs:label "PowerACMax" ;
+    rdfs:subClassOf mds:InverterOutput ;
+    skos:altLabel "" ;
+    skos:definition "Maximum AC power" ;
+    pmd:unit qudt:KiloW .
+
+mds:PowerACNom a owl:Class ;
+    rdfs:label "PowerACNom" ;
+    rdfs:subClassOf mds:InverterOutput ;
+    skos:altLabel "" ;
+    skos:definition "Nominal AC power" ;
+    pmd:unit qudt:KiloW .
+
+mds:PowerDC a owl:Class ;
+    rdfs:label "PowerDC" ;
+    rdfs:subClassOf mds:ModuleRatingAtReference ;
+    skos:altLabel "" ;
+    skos:definition "DC power at STC, 1 sun of irradiance" ;
+    pmd:unit qudt:KiloW .
+
+mds:PowerDCOut a owl:Class ;
+    rdfs:label "PowerDCOut" ;
+    rdfs:subClassOf mds:InverterOutput ;
+    skos:altLabel "" ;
+    skos:definition "DC power output of PV array" .
+
+mds:PowerSTC a owl:Class ;
+    rdfs:label "PowerSTC" ;
+    rdfs:subClassOf mds:ModuleRatingAtReference ;
+    skos:altLabel "" ;
+    skos:definition "Power at refrence conditions" ;
+    pmd:unit qudt:KiloW .
+
+mds:RadialRange a owl:Class ;
+    rdfs:label "RadialRange" ;
+    rdfs:subClassOf mds:IntegrationOptions ;
+    skos:altLabel "" ;
+    skos:definition "The radial range." .
+
+mds:Rescaling a owl:Class ;
+    rdfs:label "Rescaling" ;
+    rdfs:subClassOf mds:PostProcessing ;
+    skos:altLabel "" ;
+    skos:definition "Rescaling of images." .
+
+mds:Resolution a owl:Class ;
+    rdfs:label "Resolution" ;
+    rdfs:subClassOf pmd:ValueObject ;
+    skos:altLabel "" ;
+    skos:definition "the smallest interval measurable by a scientific (especially optical) instrument" .
+
+mds:RingPointFile a owl:Class ;
+    rdfs:label "RingPointFile" ;
+    rdfs:subClassOf pmd:CalibrationDocument ;
+    skos:altLabel "" ;
+    skos:definition "Ring point file of the detector." .
+
+mds:RmsFitQuality a owl:Class ;
+    rdfs:label "RmsFitQuality" ;
+    rdfs:subClassOf pmd:ValueObject ;
+    skos:altLabel "" ;
+    skos:definition "RMS fit quality of the detector." .
+
+mds:RollingMethod a owl:Class ;
+    rdfs:label "RollingMethod" ;
+    rdfs:subClassOf mds:Registration ;
+    skos:altLabel "" ;
+    skos:definition "The rolling method." .
+
+mds:SampleToLabAlignment a owl:Class ;
+    rdfs:label "SampleToLabAlignment" ;
+    rdfs:subClassOf mds:SampleAlignment ;
+    skos:altLabel "" ;
+    skos:definition "Alignment of the sample in lab coordinates." .
+
+mds:Sync_cnt a owl:Class ;
+    rdfs:label "Sync_cnt" ;
+    rdfs:subClassOf mds:ParametersFAST ;
+    skos:altLabel "" .
+
+mds:TextureMeasurement a owl:Class ;
+    rdfs:label "TextureMeasurement" ;
+    rdfs:subClassOf mds:ExperimentType ;
+    skos:altLabel "" ;
+    skos:definition "An experiment to measure texture in a sample." .
+
+mds:Top_pzo a owl:Class ;
+    rdfs:label "Top_pzo" ;
+    rdfs:subClassOf mds:ParametersFAST ;
+    skos:altLabel "" .
+
+mds:Top_rota a owl:Class ;
+    rdfs:label "Top_rota" ;
+    rdfs:subClassOf mds:ParametersFAST ;
+    skos:altLabel "" .
+
+mds:VoltageACMax a owl:Class ;
+    rdfs:label "VoltageACMax" ;
+    rdfs:subClassOf mds:InverterOutput ;
+    skos:altLabel "" ;
+    skos:definition "Maximum AC voltage " ;
+    pmd:unit qudt:V .
+
+mds:VoltageACMin a owl:Class ;
+    rdfs:label "VoltageACMin" ;
+    rdfs:subClassOf mds:InverterOutput ;
+    skos:altLabel "" ;
+    skos:definition "Minimum AC voltage" ;
+    pmd:unit qudt:V .
+
+mds:VoltageAtMaximumPower a owl:Class ;
+    rdfs:label "VoltageAtMaximumPower" ;
+    rdfs:subClassOf mds:ModuleRatingAtReference ;
+    skos:altLabel "" ;
+    skos:definition "DC voltage at the maximum power point under STC" ;
+    pmd:unit qudt:V .
+
+mds:VoltageOpenCircuit a owl:Class ;
+    rdfs:label "VoltageOpenCircuit" ;
+    rdfs:subClassOf mds:ModuleRatingAtReference ;
+    skos:altLabel "" ;
+    skos:definition "Module open circuit voltage, maximum voltage the module can provide" ;
+    pmd:unit qudt:V .
+
+mds:Weight a owl:Class ;
+    rdfs:label "Weight" ;
+    rdfs:subClassOf mds:PhotovoltaicModuleProperty ;
+    skos:altLabel "" ;
+    skos:definition "Module weight" ;
+    pmd:unit qudt:LB .
+
+pmd:Department a owl:Class ;
+    rdfs:label "Department",
+        "Abteilung"@de,
+        "Department"@en ;
+    skos:altLabel "" ;
+    skos:definition "A sub section of an organization."@en .
+
+pmd:Description a owl:Class ;
+    rdfs:label "Description",
+        "Beschreibung"@de,
+        "Description"@en ;
+    skos:altLabel "" ;
+    skos:definition "A descriptive text qualifying the nature of a thing (e.g. agent, activity, entity, object, ...).",
+        "Ein beschreibender Text, der die Natur / Beschaffenheit / Informationen zu einer Entität qualifiziert (z.B. Aktivitäten, Entitäten, Objekten, ...)."@de .
+
+pmd:Force a owl:Class ;
+    rdfs:label "Force",
+        "Kraft"@de,
+        "Force"@en ;
+    skos:altLabel "" ;
+    skos:definition "Strength or energy exerted or brought to bear : cause of motion or change : active power."@en .
+
+pmd:Identifier a owl:Class ;
+    rdfs:label "Identifier",
+        "Identifikator"@de,
+        "Identifier"@en ;
+    skos:altLabel "" ;
+    skos:definition "A named value intended to distinguish between entities."@en .
+
+pmd:Laboratory a owl:Class ;
+    rdfs:label "Laboratory",
+        "Labor"@de,
+        "Laboratory"@en ;
+    skos:altLabel "" ;
+    skos:definition "A place equipped for experimental study in a science or for testing and analysis."@en .
+
+pmd:Location a owl:Class ;
+    rdfs:label "Location",
+        "Ort"@de,
+        "Location"@en ;
+    skos:altLabel "" ;
+    skos:definition "Eine Position oder ein Ort, der besetzt ist oder besetzt werden kann oder durch ein bestimmtes Merkmal gekennzeichnet ist."@de,
+        "A position or site occupied or available for occupancy or marked by some distinguishing feature."@en .
+
+pmd:ManufacturingProcess a owl:Class ;
+    rdfs:label "ManufacturingProcess",
+        "Herstellungsprozess"@de,
+        "Manufacture Process"@en ;
+    skos:altLabel "" ;
+    skos:definition "A process that is driven by the primary intent to transform objects."@en .
+
+pmd:MaterialProperty a owl:Class ;
+    rdfs:label "MaterialProperty",
+        "Materialeigenschaft"@de,
+        "Material Property"@en ;
+    skos:altLabel "" ;
+    skos:definition "Eine Materialeigenschaft ist eine intensive Eigenschaft eines Materials, d. h. eine physikalische Eigenschaft, die nicht von der Menge des Materials abhängt. Diese quantitativen Eigenschaften können als Maßstab verwendet werden, um die Vorteile eines Materials mit denen eines anderen zu vergleichen und so die Materialauswahl zu erleichtern."@de,
+        "A materials property is an intensive property of a material, i.e., a physical property that does not depend on the amount of the material. These quantitative properties may be used as a metric by which the benefits of one material versus another can be compared, thereby aiding in materials selection."@en .
+
+pmd:MeasuringDevice a owl:Class ;
+    rdfs:label "MeasuringDevice",
+        "Messgerät"@de,
+        "Measuring Device"@en ;
+    skos:altLabel "" ;
+    skos:definition "A processing node capable of determining a specific quality." .
+
+pmd:MeasuringProcess a owl:Class ;
+    rdfs:label "MeasuringProcess",
+        "Messprozess"@de,
+        "Measuring Process"@en ;
+    skos:altLabel "" ;
+    skos:definition "A measurement process is an analysis process that acquires data (usually expressed in numbers) by using tools."@en .
+
+pmd:Metadata a owl:Class ;
+    rdfs:label "Metadata",
+        "Metadaten"@de,
+        "Metadata"@en ;
+    skos:altLabel "" ;
+    skos:definition "Die DataScope Metadaten umfassen Attribute und zusätzliche Daten (Provenienz), die z.B. die Fabrik, das Labor, das Prozesssystem und die Objekte betreffen und die eine Bewertung der Qualität / Zuverlässigkeit der Messungen und eine systematische Suche in einer Datenbank ermöglichen."@de,
+        "This data scope expresses that a :ValueObject refers to attributes and additional data (provenance) on production, laboratory, process system and objects that enable an evaluation of the quality/reliability of the measurements and a systematic search task in a database."@en .
+
+pmd:NodeSeries a owl:Class ;
+    rdfs:label "NodeSeries",
+        "Serie"@de,
+        "Node Series"@en ;
+    skos:altLabel "",
+        "Knotentyp"@de,
+        "Node Type"@en ;
+    skos:definition "Processing Node typename, e.g. \"ProTherm500\""@en .
+
+pmd:ProjectIdentifier a owl:Class ;
+    rdfs:label "ProjectIdentifier",
+        "Projektidentifikator"@de,
+        "Project Identifier"@en ;
+    skos:altLabel "" ;
+    skos:definition "Ein umgangssprachlicher, von Menschen erstellter, beschreibender Text, der die Art eines Projekts qualifiziert."@de,
+        "A colloquial, human-generated, descriptive text qualifying the nature of a project."@en .
+
+pmd:SpecimenName a owl:Class ;
+    rdfs:label "SpecimenName",
+        "Prüfstück Name"@de,
+        "Specimen Name"@en ;
+    skos:altLabel "" ;
+    skos:definition "Diese Eigenschaft beschreibt die Bezeichnung eines Prüfstücks, die in der Regel von Menschen als von Menschen lesbarer Identifikator vergeben wird."@de,
+        "This property describes the designation of a specimen, usually given as human-readable identifier by humans."@de .
+
+mds:Architecture a owl:Class ;
+    rdfs:label "Architecture" ;
+    rdfs:subClassOf mds:ModelingParameters ;
+    skos:altLabel "" ;
+    skos:definition "Architecture of the model." .
+
+mds:BeamConvergence a owl:Class ;
+    rdfs:label "BeamConvergence" ;
+    rdfs:subClassOf pmd:Optical ;
+    skos:altLabel "" ;
+    skos:definition "Beam convergence of the incident beam." .
+
+mds:BeamSize a owl:Class ;
+    rdfs:label "BeamSize" ;
+    rdfs:subClassOf pmd:Optical ;
+    skos:altLabel "" ;
+    skos:definition "Size of the incident beam." ;
+    pmd:unit qudt:MilliM .
+
+mds:BitDepth a owl:Class ;
+    rdfs:label "BitDepth" ;
+    rdfs:subClassOf mds:Depth ;
+    skos:altLabel "" ;
+    skos:definition "Bit depth of the resulting image." .
+
+mds:DAQFrequency a owl:Class ;
+    rdfs:label "DAQFrequency" ;
+    rdfs:subClassOf pmd:ValueObject ;
+    skos:altLabel "" ;
+    skos:definition "DAQ frequency of the detector." .
+
+mds:DarkCorrection a owl:Class ;
+    rdfs:label "DarkCorrection" ;
+    rdfs:subClassOf mds:PostProcessing ;
+    skos:altLabel "" ;
+    skos:definition "Dark correction of raw images." .
+
+mds:DarkCorrectionMethod1 a owl:Class ;
+    rdfs:label "DarkCorrectionMethod1" ;
+    rdfs:subClassOf mds:DarkCorrection ;
+    skos:altLabel "" ;
+    skos:definition "Method 1 to perform dark correction." .
+
+mds:DarkCorrectionMethod2 a owl:Class ;
+    rdfs:label "DarkCorrectionMethod2" ;
+    rdfs:subClassOf mds:DarkCorrection ;
+    skos:altLabel "" ;
+    skos:definition "Method 2 to perform dark correction." .
+
+mds:DataCollection a owl:Class ;
+    rdfs:label "DataCollection" ;
+    rdfs:subClassOf pmd:PrimaryData ;
+    skos:altLabel "" ;
+    skos:definition "Data collection stage of the experiment." .
+
+mds:DataReduction a owl:Class ;
+    rdfs:label "DataReduction" ;
+    rdfs:subClassOf pmd:ComputingNode ;
+    skos:altLabel "" ;
+    skos:definition "The data reduction of X-Ray diffraction data." .
+
+mds:DetectorLength a owl:Class ;
+    rdfs:label "DetectorLength" ;
+    rdfs:subClassOf pmd:Length ;
+    skos:altLabel "" ;
+    skos:definition "Length of the detector." ;
+    pmd:unit qudt:MilliM .
+
+mds:DetectorName a owl:Class ;
+    rdfs:label "DetectorName" ;
+    rdfs:subClassOf pmd:NodeSeries ;
+    skos:altLabel "" ;
+    skos:definition "Name of the detector." .
+
+mds:DetectorParameters a owl:Class ;
+    rdfs:label "DetectorParameters" ;
+    rdfs:subClassOf mds:DiffractionFrame ;
+    skos:altLabel "" ;
+    skos:definition "Detector parameters for the frame." .
+
+mds:DetectorResolution a owl:Class ;
+    rdfs:label "DetectorResolution" ;
+    rdfs:subClassOf mds:Resolution ;
+    skos:altLabel "" ;
+    skos:definition "The resolution of the detector." .
+
+mds:DetectorWidth a owl:Class ;
+    rdfs:label "DetectorWidth" ;
+    rdfs:subClassOf pmd:Width ;
+    skos:altLabel "" ;
+    skos:definition "Width of the detector." ;
+    pmd:unit qudt:MilliM .
+
+mds:DistanceBetweenTwoRings a owl:Class ;
+    rdfs:label "DistanceBetweenTwoRings" ;
+    rdfs:subClassOf pmd:Distance ;
+    skos:altLabel "" ;
+    skos:definition "Distance between two rings." .
+
+mds:DistanceFromSample a owl:Class ;
+    rdfs:label "DistanceFromSample" ;
+    rdfs:subClassOf pmd:Distance ;
+    skos:altLabel "" ;
+    skos:definition "Distance of the detector from the sample. " ;
+    pmd:unit qudt:MilliM .
+
+mds:EnergyRange a owl:Class ;
+    rdfs:label "EnergyRange" ;
+    rdfs:subClassOf pmd:WorkingRange ;
+    skos:altLabel "" ;
+    skos:definition "The energy range the tool can operate in. " ;
+    pmd:unit qudt:KiloEV .
+
+mds:EnergyUsed a owl:Class ;
+    rdfs:label "EnergyUsed" ;
+    rdfs:subClassOf pmd:Force ;
+    skos:altLabel "" ;
+    skos:definition "The energy of the incident beam." ;
+    pmd:unit qudt:KiloEV .
+
+mds:Epochs a owl:Class ;
+    rdfs:label "Epochs" ;
+    rdfs:subClassOf mds:ModelingParameters ;
+    skos:altLabel "" ;
+    skos:definition "Number of epochs the model was trained for." .
+
+mds:ExposureTime a owl:Class ;
+    rdfs:label "ExposureTime" ;
+    rdfs:subClassOf pmd:Time ;
+    skos:altLabel "" ;
+    skos:definition "Exposure time for the detector." ;
+    pmd:unit qudt:SEC .
+
+mds:Facility a owl:Class ;
+    rdfs:label "Facility" ;
+    rdfs:subClassOf pmd:Laboratory ;
+    skos:altLabel "" ;
+    skos:definition "Facility where the experiment was performed." .
+
+mds:HeatTreatmentProcess a owl:Class ;
+    rdfs:label "HeatTreatmentProcess" ;
+    rdfs:subClassOf mds:ExperimentType ;
+    skos:altLabel "" ;
+    skos:definition "Heat treatment experiment." .
+
+mds:ImageSequence a owl:Class ;
+    rdfs:label "ImageSequence" ;
+    rdfs:subClassOf pmd:SequenceNumber ;
+    skos:altLabel "" ;
+    skos:definition "Running sequence of the image taken." .
+
+mds:ImageStack a owl:Class ;
+    rdfs:label "ImageStack" ;
+    rdfs:subClassOf pmd:Image ;
+    skos:altLabel "" ;
+    skos:definition "The image stack." .
+
+mds:Length a owl:Class ;
+    rdfs:label "Length" ;
+    rdfs:subClassOf mds:PhotovoltaicModuleProperty ;
+    skos:altLabel "" ;
+    skos:definition "Length of the module along longest side" ;
+    pmd:unit qudt:CentiM .
+
+mds:MaterialName a owl:Class ;
+    rdfs:label "MaterialName" ;
+    rdfs:subClassOf pmd:MaterialDesignation ;
+    skos:altLabel "" ;
+    skos:definition "Name of the material." .
+
+mds:MaxBeamSize a owl:Class ;
+    rdfs:label "MaxBeamSize" ;
+    rdfs:subClassOf pmd:Optical ;
+    skos:altLabel "" ;
+    skos:definition "Maximum beam size." ;
+    pmd:unit qudt:DEG .
+
+mds:MaxFrameRate a owl:Class ;
+    rdfs:label "MaxFrameRate" ;
+    rdfs:subClassOf pmd:DataAcquisitionRate ;
+    skos:altLabel "" ;
+    skos:definition "Maximum frame rate the detector can capture." ;
+    pmd:unit qudt:HZ .
+
+mds:MethodName a owl:Class ;
+    rdfs:label "MethodName" ;
+    rdfs:subClassOf pmd:Identifier ;
+    skos:altLabel "" ;
+    skos:definition "Name of the method." .
+
+mds:ModelID a owl:Class ;
+    rdfs:label "ModelID" ;
+    rdfs:subClassOf pmd:ProvidedIdentifier ;
+    skos:altLabel "" ;
+    skos:definition "An identifier for the model." .
+
+mds:MountingType a owl:Class ;
+    rdfs:label "MountingType" ;
+    rdfs:subClassOf pmd:MaterialProperty ;
+    skos:altLabel "" ;
+    skos:definition "How the arrays are mounted (fixed, one axis tracker, two axis tracker, vertical, etc)" .
+
+mds:NumberOfRings a owl:Class ;
+    rdfs:label "NumberOfRings" ;
+    rdfs:subClassOf pmd:ValueObject ;
+    skos:altLabel "" ;
+    skos:definition "Number of rings in the diffractogram." .
+
+mds:PhotovoltaicBacksheetID a owl:Class ;
+    rdfs:label "PhotovoltaicBacksheetID" ;
+    rdfs:subClassOf pmd:ProvidedIdentifier ;
+    skos:altLabel "" ;
+    skos:definition "Identifier for a PV backsheet" .
+
+mds:PhotovoltaicCellID a owl:Class ;
+    rdfs:label "PhotovoltaicCellID" ;
+    rdfs:subClassOf pmd:ProvidedIdentifier ;
+    skos:altLabel "" ;
+    skos:definition "Identifier for the PV cell" .
+
+mds:PhotovoltaicInverterID a owl:Class ;
+    rdfs:label "PhotovoltaicInverterID" ;
+    rdfs:subClassOf pmd:ProvidedIdentifier ;
+    skos:altLabel "" ;
+    skos:definition "Identifier for a PV inverter" .
+
+mds:PhotovoltaicModuleID a owl:Class ;
+    rdfs:label "PhotovoltaicModuleID" ;
+    rdfs:subClassOf pmd:ProvidedIdentifier ;
+    skos:altLabel "" ;
+    skos:definition "Module identifier" .
+
+mds:PhotovoltaicSiteID a owl:Class ;
+    rdfs:label "PhotovoltaicSiteID" ;
+    rdfs:subClassOf pmd:ProvidedIdentifier ;
+    skos:altLabel "" ;
+    skos:definition "Site identifier" .
+
+mds:PixelHeight a owl:Class ;
+    rdfs:label "PixelHeight" ;
+    rdfs:subClassOf pmd:Length ;
+    skos:altLabel "" ;
+    skos:definition "Pixel height of the detector." .
+
+mds:PixelSize a owl:Class ;
+    rdfs:label "PixelSize" ;
+    rdfs:subClassOf pmd:Length ;
+    skos:altLabel "" ;
+    skos:definition "Pixel size of the detector." ;
+    pmd:unit qudt:MicroM .
+
+mds:PixelWidth a owl:Class ;
+    rdfs:label "PixelWidth" ;
+    rdfs:subClassOf pmd:Width ;
+    skos:altLabel "" ;
+    skos:definition "Pixel width of the detector." .
+
+mds:PoniFile a owl:Class ;
+    rdfs:label "PoniFile" ;
+    rdfs:subClassOf pmd:CalibrationDocument ;
+    skos:altLabel "" ;
+    skos:definition "PONI file of the detector." .
+
+mds:ProcessingMethod a owl:Class ;
+    rdfs:label "ProcessingMethod" ;
+    rdfs:subClassOf pmd:ManufacturingProcess ;
+    skos:altLabel "" ;
+    skos:definition "The manufacturing method by ehich the sample was created." .
+
+mds:RackingType a owl:Class ;
+    rdfs:label "RackingType" ;
+    rdfs:subClassOf pmd:MaterialDesignation ;
+    skos:altLabel "" ;
+    skos:definition "Type of racking used (open, closed, roof, etc)" .
+
+mds:ReadOutTime a owl:Class ;
+    rdfs:label "ReadOutTime" ;
+    rdfs:subClassOf pmd:Time ;
+    skos:altLabel "" ;
+    skos:definition "Time to read out the data." ;
+    pmd:unit qudt:MilliSEC .
+
+mds:RecipeID a owl:Class ;
+    rdfs:label "RecipeID" ;
+    rdfs:subClassOf pmd:ProvidedIdentifier ;
+    skos:altLabel "" ;
+    skos:definition "An identifier for the recipe." .
+
+mds:Registration a owl:Class ;
+    rdfs:label "Registration" ;
+    rdfs:subClassOf mds:PostProcessing ;
+    skos:altLabel "" ;
+    skos:definition "Registration of an image." .
+
+mds:ResultID a owl:Class ;
+    rdfs:label "ResultID" ;
+    rdfs:subClassOf pmd:ProvidedIdentifier ;
+    skos:altLabel "" ;
+    skos:definition "An identifier for the results." .
+
+mds:RingSamplingMethod a owl:Class ;
+    rdfs:label "RingSamplingMethod" ;
+    rdfs:subClassOf mds:PostProcessing ;
+    skos:altLabel "" ;
+    skos:definition "The ring sampling method." .
+
+mds:SampleID a owl:Class ;
+    rdfs:label "SampleID" ;
+    rdfs:subClassOf pmd:SpecimenName ;
+    skos:altLabel "" ;
+    skos:definition "A human-labeled sample identifier." .
+
+mds:StackNumber a owl:Class ;
+    rdfs:label "StackNumber" ;
+    rdfs:subClassOf pmd:ProjectIdentifier ;
+    skos:altLabel "" ;
+    skos:definition "The stack of the data." .
+
+mds:StartEndTimeStamp a owl:Class ;
+    rdfs:label "StartEndTimeStamp" ;
+    rdfs:subClassOf pmd:Time ;
+    skos:altLabel "" ;
+    skos:definition "Start and end time stamp. " ;
+    pmd:unit qudt:SEC .
+
+mds:Station a owl:Class ;
+    rdfs:label "Station" ;
+    rdfs:subClassOf pmd:Department ;
+    skos:altLabel "" ;
+    skos:definition "Particular beamline within the facility." .
+
+mds:TestingSplit a owl:Class ;
+    rdfs:label "TestingSplit" ;
+    rdfs:subClassOf mds:ModelingParameters ;
+    skos:altLabel "" ;
+    skos:definition "The testing split." .
+
+mds:Thickness a owl:Class ;
+    rdfs:label "Thickness" ;
+    rdfs:subClassOf mds:PhotovoltaicModuleProperty ;
+    skos:altLabel "" ;
+    skos:definition "Thickness of the module, not counting the framing" ;
+    pmd:unit qudt:CentiM .
+
+mds:ToolID a owl:Class ;
+    rdfs:label "ToolID" ;
+    rdfs:subClassOf pmd:ProvidedIdentifier ;
+    skos:altLabel "" ;
+    skos:definition "An identifier for the instrument." .
+
+mds:TrackingAlgorithm a owl:Class ;
+    rdfs:label "TrackingAlgorithm" ;
+    rdfs:subClassOf pmd:Algorithm ;
+    skos:altLabel "" ;
+    skos:definition "If system is tracking, method used (truetracking, backtracking, diffuse tracking, etc)" .
+
+mds:TrainingSplit a owl:Class ;
+    rdfs:label "TrainingSplit" ;
+    rdfs:subClassOf mds:ModelingParameters ;
+    skos:altLabel "" ;
+    skos:definition "The training split." .
+
+mds:VersionNumber a owl:Class ;
+    rdfs:label "VersionNumber" ;
+    rdfs:subClassOf pmd:SequenceNumber ;
+    skos:altLabel "" ;
+    skos:definition "Version number of the method." .
+
+mds:WavelengthRange a owl:Class ;
+    rdfs:label "WavelengthRange" ;
+    rdfs:subClassOf pmd:WorkingRange ;
+    skos:altLabel "" ;
+    skos:definition "The wavelength range the given beamline can operate in." .
+
+mds:WavelengthUsed a owl:Class ;
+    rdfs:label "WavelengthUsed" ;
+    rdfs:subClassOf pmd:Length ;
+    skos:altLabel "" ;
+    skos:definition "The wavelength used for the experiment." ;
+    pmd:unit qudt:ANGSTROM .
+
+mds:Width a owl:Class ;
+    rdfs:label "Width" ;
+    rdfs:subClassOf mds:PhotovoltaicModuleProperty ;
+    skos:altLabel "" ;
+    skos:definition "Width of module along shortest side" ;
+    pmd:unit qudt:CentiM .
+
+pmd:ComputingNode a owl:Class ;
+    rdfs:label "ComputingNode",
+        "Computerknoten"@de,
+        "Computing Node"@en ;
+    skos:altLabel "" ;
+    skos:definition """Ein Rechnersystem, das eine Ausführungsumgebung bspw. für Simulationsprozesse oder Vorhersagemodelle bereitstellt.
+Ein Rechenknoten kann virtuell (bspw. ein Container oder eine virtuelle Maschine) oder physisch (z. B. ein Bare-Metal-Server) ausgestaltet sein und verwendet in der Regel digitale Repräsentationen von Objekten als Eingaben und erzeugt digitale Messungen, wie z.B. Simulationsergebnisse oder Vorhersagen, als Ausgaben."""@de,
+        """A computing system that provides an execution environment for, e.g., simulation processes or prediction models.
+A Computing Node can be virtual (e.g., a container or virtual machine) or physical (e.g., a bare-metal servers), uses digital represenations of objects as inputs and produces digital measurements, such as simulation results or predictions, as outputs."""@en .
+
+pmd:DataAcquisitionRate a owl:Class ;
+    rdfs:label "DataAcquisitionRate",
+        "Datenerfassungsrate"@de,
+        "Data Acquisition Rate"@en ;
+    skos:altLabel "" ;
+    skos:definition "Diese Eigenschaft bezeichnet die Anzahl der Messungen / Abfragen pro Zeiteinheit bei einer betrachteten Messung einer Messgröße (Abtast-/Abfragerate bei der Datenerfassung)."@de,
+        "This property denotes the number of measurements / queries per time period for a considered measurement of a measurement parameter (sampling / query rate during data acquisition)."@en .
+
+pmd:Distance a owl:Class ;
+    rdfs:label "Distance",
+        "Abstand"@de,
+        "Distance"@en ;
+    skos:altLabel "" ;
+    skos:definition "Spatial remoteness."@en .
+
+pmd:Medium a owl:Class ;
+    rdfs:label "Medium",
+        "Medium"@de,
+        "Medium"@en ;
+    skos:altLabel "" ;
+    skos:definition "Substance that surrounds an object inside the system boundaries of a processing node."@en .
+
+pmd:Process a owl:Class ;
+    rdfs:label "Process",
+        "Prozess"@de,
+        "Process"@en ;
+    skos:altLabel "" ;
+    skos:definition "A process is an activity including a series of actions or operations conducing to an end. In PMD, a process is conducted via processing nodes and has a discernable duration as part of a workflow. A process consumes objects and parameters. A process potentially generates new objects and measurements."@en .
+
+pmd:Sample a owl:Class ;
+    rdfs:label "Sample",
+        "Probe"@de,
+        "Sample"@en ;
+    skos:altLabel "" ;
+    skos:definition "Portion of material, usually selected from a larger quantity of material, collected and taken away for testing"@en .
+
+pmd:SequenceNumber a owl:Class ;
+    rdfs:label "SequenceNumber",
+        "Sequenznummer"@de,
+        "Sequence Number"@en ;
+    skos:altLabel "" ;
+    skos:definition "Strict monotonically increasing integer that indicates the position in an ordered list."@en .
+
+pmd:Thickness a owl:Class ;
+    rdfs:label "Thickness",
+        "Dicke"@de,
+        "Thickness"@en ;
+    skos:altLabel "" ;
+    skos:definition "Thickness of the sample.",
+        "Diese Entität beschreibt die gemessene Dimension in einer Richtung eines Prüfstücks."@de,
+        "This entity describes the measured dimension in one direction of a test piece."@en ;
+    pmd:unit qudt:MilliM .
+
+pmd:WorkingRange a owl:Class ;
+    rdfs:label "WorkingRange",
+        "Arbeitsbereich"@de,
+        "Working Range"@en ;
+    skos:altLabel "" ;
+    skos:definition "Diese Eigenschaft beschreibt den Bereich zwischen den Grenzen, innerhalb derer ein Prozessknoten (z. B. eine Maschine) für ihren vorgesehenen Zweck verwendet werden kann, ausgedrückt durch die Angabe der in Rede stehenden unteren und oberen Bereichswerte."@de,
+        "This property describes the region between the limits within which a processing node (e.g., a machine) is capable of being used for its intended purpose, expressed by stating the lower and upper range values of interest."@en .
+
+mds:AzimuthalRegrouping a owl:Class ;
+    rdfs:label "AzimuthalRegrouping" ;
+    rdfs:subClassOf pmd:Algorithm ;
+    skos:altLabel "" ;
+    skos:definition "The azimuthal regrouping of XRD data." .
+
+mds:ExperimentType a owl:Class ;
+    rdfs:label "ExperimentType" ;
+    rdfs:subClassOf pmd:Process ;
+    skos:altLabel "" ;
+    skos:definition "Type of the experiment performed." .
+
+mds:Modeling a owl:Class ;
+    rdfs:label "Modeling" ;
+    rdfs:subClassOf pmd:ComputingNode ;
+    skos:altLabel "" ;
+    skos:definition "Modeling applied to the collected or modified data." .
+
+mds:PhotovoltaicBacksheet a owl:Class ;
+    rdfs:label "PhotovoltaicBacksheet" ;
+    rdfs:subClassOf pmd:ProcessingNode ;
+    skos:altLabel "" ;
+    skos:definition "Polymer backsheet of a PV cell or module" .
+
+mds:PhotovoltaicCell a owl:Class ;
+    rdfs:label "PhotovoltaicCell" ;
+    rdfs:subClassOf pmd:ProcessingNode ;
+    skos:altLabel "" ;
+    skos:definition "PV cell that composes a module" .
+
+mds:PhotovoltaicInverter a owl:Class ;
+    rdfs:label "PhotovoltaicInverter" ;
+    rdfs:subClassOf pmd:ProcessingNode ;
+    skos:altLabel "" ;
+    skos:definition "An inverter for a PV system" .
+
+mds:PhotovoltaicModule a owl:Class ;
+    rdfs:label "PhotovoltaicModule" ;
+    rdfs:subClassOf pmd:ProcessingNode ;
+    skos:altLabel "" ;
+    skos:definition "A PV module, comprised of cells, for field deployment" .
+
+mds:PhotovoltaicSite a owl:Class ;
+    rdfs:label "PhotovoltaicSite" ;
+    rdfs:subClassOf pmd:Location ;
+    skos:altLabel "" ;
+    skos:definition "Physical location of a PV site" .
+
+mds:XrayDetector a owl:Class ;
+    rdfs:label "XrayDetector" ;
+    rdfs:subClassOf pmd:MeasuringDevice ;
+    skos:altLabel "" ;
+    skos:definition "The detector used to capture the transmitted X-rays." .
+
+mds:XrayRecipeParameters a owl:Class ;
+    rdfs:label "XrayRecipeParameters" ;
+    rdfs:subClassOf pmd:ValueObject ;
+    skos:altLabel "" ;
+    skos:definition "Various parmeters of the testing equipment." .
+
+mds:XraySample a owl:Class ;
+    rdfs:label "XraySample" ;
+    rdfs:subClassOf pmd:Sample ;
+    skos:altLabel "" ;
+    pmd:unit qudt:MilliM .
+
+pmd:CalibrationDocument a owl:Class ;
+    rdfs:label "CalibrationDocument",
+        "Kalibrierschein"@de,
+        "Kalibrierungsdokument"@de,
+        "Calibration Document"@en ;
+    skos:altLabel "" ;
+    skos:definition "Diese Entität beschreibt ein Dokument, welches Abweichungen eines Messgerätes oder einer Maßverkörperung gegenüber einem anderen Gerät oder einer anderen Maßverkörperung feststellt und dokumentiert. Typischerweise ist die Person, welche die Kalibrierung durchführte, angegeben."@de,
+        "This entity describes a document used to state that a set of graduations to indicate values or positions has been performed. Typically, the calibration operator is included."@en .
+
+pmd:Furnace a owl:Class ;
+    rdfs:label "Furnace",
+        "Ofen"@de,
+        "Furnace"@en ;
+    skos:altLabel "" ;
+    skos:definition "Eine geschlossene Struktur, in der Wärme erzeugt wird (z. B. zum Heizen eines Hauses oder zum Einschmelzen von Erz)."@de,
+        "An enclosed structure in which heat is produced (as for heating a house or for reducing ore)."@en .
+
+pmd:Optical a owl:Class ;
+    rdfs:label "Optical",
+        "Optisch"@de,
+        "Optical"@en ;
+    skos:altLabel "" ;
+    skos:definition "Optisch bezieht sich auf die Wissenschaft der Optik. Hier speziell auf die optischen Eigenschaften eines Materials."@de,
+        "Optical is relating to the science of optics. Here specifically to the optical properties of a material."@en .
+
+pmd:PrimaryData a owl:Class ;
+    rdfs:label "PrimaryData",
+        "Primärdaten"@de,
+        "Primary Data"@en ;
+    skos:altLabel "" ;
+    skos:definition "Die Datenkategorie Primärdaten umfasst Daten, die vor / nach einem Prozess erfasst werden, entweder bezogen auf die Geometrie des Objekts (z.B. ao, bo, do, au, bu, du, Lu) oder als Register des gesamten Aufbaus (z.B. Skizzen, Fotos oder Videos)"@de,
+        "This data scope expresses that a ValueObject refers to data that is directly acquired during a process by sensors (time, force, length, temperature)"@en .
+
+pmd:Time a owl:Class ;
+    rdfs:label "Time",
+        "Zeit"@de,
+        "Time"@en ;
+    skos:altLabel "" ;
+    skos:definition "A nonspatial continuum that is measured in terms of events which succeed one another from past through present to future."@en .
+
+mds:DetectorCalibration a owl:Class ;
+    rdfs:label "DetectorCalibration" ;
+    rdfs:subClassOf mds:Calibration ;
+    skos:altLabel "" .
+
+mds:DiffractionFrame a owl:Class ;
+    rdfs:label "DiffractionFrame" ;
+    rdfs:subClassOf mds:DataCollection ;
+    skos:altLabel "" ;
+    skos:definition "The frame of diffraction." .
+
+mds:Integration a owl:Class ;
+    rdfs:label "Integration" ;
+    rdfs:subClassOf pmd:Algorithm ;
+    skos:altLabel "" ;
+    skos:definition "Integration of diffraction patterns azimuthally." .
+
+mds:ModelingParameters a owl:Class ;
+    rdfs:label "ModelingParameters" ;
+    rdfs:subClassOf pmd:ValueObject ;
+    skos:altLabel "" ;
+    skos:definition "Parameters of the model." .
+
+mds:PhotovoltaicBacksheetProperty a owl:Class ;
+    rdfs:label "PhotovoltaicBacksheetProperty" ;
+    rdfs:subClassOf pmd:ValueObject ;
+    skos:altLabel "" ;
+    skos:definition "Property of a PV backsheet" .
+
+mds:SampleAlignment a owl:Class ;
+    rdfs:label "SampleAlignment" ;
+    rdfs:subClassOf mds:Calibration ;
+    skos:altLabel "" ;
+    skos:definition "Alignment of the sample and stage." .
+
+mds:XrayResult a owl:Class ;
+    rdfs:label "XrayResult" ;
+    rdfs:subClassOf pmd:PrimaryData ;
+    skos:altLabel "" .
+
+pmd:Algorithm a owl:Class ;
+    rdfs:label "Algorithm",
+        "Algorithmus"@de,
+        "Algorithm"@en ;
+    skos:altLabel "" ;
+    skos:definition "A procedure for solving a mathematical problem (as of finding the greatest common divisor) in a finite number of steps that frequently involves repetition of an operation."@en .
+
+pmd:Image a owl:Class ;
+    rdfs:label "Image",
+        "Bild"@de,
+        "Image"@en ;
+    skos:altLabel "" ;
+    skos:definition "A visual representation of something"@en .
+
+pmd:MaterialDesignation a owl:Class ;
+    rdfs:label "MaterialDesignation",
+        "Materialbezeichnung"@de,
+        "Material Designation"@en ;
+    skos:altLabel "" ;
+    skos:definition """It is a name or identifier of a material type. It designates a material. 
+E.g. "steel", "aluminium", "wood", "plastic", "rubber".""" .
+
+pmd:Width a owl:Class ;
+    rdfs:label "Width",
+        "Breite"@de,
+        "Width"@en ;
+    skos:altLabel "" ;
+    skos:definition "Diese Entität bezeichnet eine horizontale Messung, die im rechten Winkel zur Länge eines Objekts vorgenommen wird."@de,
+        "This entity describes a horizontal measurement of an object taken at right angles to the length of the object."@en .
+
+mds:BeamlineConfiguration a owl:Class ;
+    rdfs:label "BeamlineConfiguration" ;
+    rdfs:subClassOf pmd:ValueObject ;
+    skos:altLabel "" ;
+    skos:definition "Configuration of the beamline after the calibration. " .
+
+mds:Calibration a owl:Class ;
+    rdfs:label "Calibration" ;
+    rdfs:subClassOf pmd:Process ;
+    skos:altLabel "" .
+
+mds:XrayRecipe a owl:Class ;
+    rdfs:label "XrayRecipe" ;
+    rdfs:subClassOf pmd:MeasuringProcess ;
+    skos:altLabel "" ;
+    skos:definition "Th experimental setttings used to get a set of data." .
+
+mds:XrayTool a owl:Class ;
+    rdfs:label "XrayTool" ;
+    rdfs:subClassOf pmd:ProcessingNode ;
+    skos:altLabel "" ;
+    skos:definition "The instrument used to perform the experiment." .
+
+pmd:ProcessingNode a owl:Class ;
+    rdfs:label "ProcessingNode",
+        "Prozessknoten"@de,
+        "Processing Node"@en ;
+    skos:altLabel "" ;
+    skos:definition "Prozessknoten sind Werkzeuge, Geräte und Zubehör sowie Software, die für die Durchführung von Prozessen relevant sind, wie z. B. mechanische und chemische Tests sowie Simulationen, Vorhersagen und maschinelles Lernen. Dementsprechend können Prozessknoten Maschinen, Teile von Maschinen und Softwareanwendungen sein."@de,
+        "Processing nodes are tools, equipment and accessories as well as software that are relevant for the performance of processes, such as e.g. mechanical and chemical test as well as simulation, prediction, and machine learning. Accordingly, processing nodes may be machines, parts of machines, and software applications."@en .
+
+mds:PhotovoltaicSiteParameter a owl:Class ;
+    rdfs:label "PhotovoltaicSiteParameter" ;
+    rdfs:subClassOf pmd:ValueObject ;
+    skos:altLabel "" ;
+    skos:definition "Parameter or property a PV site has" .
+
+pmd:Length a owl:Class ;
+    rdfs:label "Length",
+        "Länge"@de,
+        "Length"@en ;
+    skos:altLabel "" ;
+    skos:definition "Eine gemessene Entfernung oder Abmessung eines Objekts, normalerweise die längere oder längste Abmessung des Objekts."@de,
+        "A measured distance or dimension of an object, usually the longer or longest dimension of the object."@en .
+
+mds:ModuleRatingAtReference a owl:Class ;
+    rdfs:label "ModuleRatingAtReference" ;
+    rdfs:subClassOf mds:PhotovoltaicModuleProperty ;
+    skos:altLabel "" ;
+    skos:definition "Measurements of a module taken at STC and 1000 W/m^2 irradiance" .
+
+mds:PhotovoltaicCellProperty a owl:Class ;
+    rdfs:label "PhotovoltaicCellProperty" ;
+    rdfs:subClassOf pmd:ValueObject ;
+    skos:altLabel "" ;
+    skos:definition "A property of a PV cell" .
+
+mds:InverterEfficiency a owl:Class ;
+    rdfs:label "InverterEfficiency" ;
+    rdfs:subClassOf mds:PhotovoltaicInverterProperty ;
+    skos:altLabel "" ;
+    skos:definition "Inverter efficency from DC to AC power" .
+
+mds:PostProcessing a owl:Class ;
+    rdfs:label "PostProcessing" ;
+    rdfs:subClassOf pmd:Algorithm ;
+    skos:altLabel "" ;
+    skos:definition "Post processing appplied to the original collected data." .
+
+mds:PhotovoltaicModuleProperty a owl:Class ;
+    rdfs:label "PhotovoltaicModuleProperty" ;
+    rdfs:subClassOf pmd:ValueObject ;
+    skos:altLabel "" ;
+    skos:definition "A property of a PV module" .
+
+pmd:ProvidedIdentifier a owl:Class ;
+    rdfs:label "ProvidedIdentifier",
+        "Bereitgestellter Identifikator"@de,
+        "Provided Identifier"@en ;
+    skos:altLabel "" ;
+    skos:definition "A colloquial, human-generated descriptor."@en .
+
+mds:IntegrationOptions a owl:Class ;
+    rdfs:label "IntegrationOptions" ;
+    rdfs:subClassOf pmd:ValueObject ;
+    skos:altLabel "" ;
+    skos:definition "The various optoins used for integration." .
+
+mds:PhotovoltaicInverterProperty a owl:Class ;
+    rdfs:label "PhotovoltaicInverterProperty" ;
+    rdfs:subClassOf pmd:ValueObject ;
+    skos:altLabel "" ;
+    skos:definition "Property of a PV inverter" .
+
+pmd:ValueObject a owl:Class ;
+    rdfs:label "ValueObject",
+        "Wertobjekt"@de,
+        "Value Object"@en ;
+    skos:altLabel "" ;
+    skos:definition """A :ValueObject is an entity which represents a specific value. This value can be a numerical, textual, or a more complex data structure. If a literal value is to be specified, the :value datatype property has to be used. In cases where the value is represented by a resource (e.g. URI), the :resource object property has to be used.
+
+A value object, respectively its value, is always associated with an entity of type :Process, :ProcessingNode, :Object (e.g. :Specimen), :DigitalEntity, :Project, or other :ValueObject. The value is meant to be a charactaristic of the associated entity. To express this association it is indended to use the :characteristic object property if the value decribes some \\"quality\\", or the :participant (:input,:output) if it is participating a process.
+
+A value object might also refer to a unit. The :unit property might be used (e.g. with QUDT ontology).
+
+Instances of a value object might also be a type of :ValueScope, namely a :SetPoint (nominal value), or :Measurement (measured value). With :Setpoint the intend is to express, that the value is meant to be some preset, setting or nominal value. :Measurement expresses, that the value has been measured or determined somehow (see example).
+
+Instances of a value object might also be specified in a specific :DataScope (:Metadata, :PrimaryData, :SecondaryData)."""@en .
+
+mds:Parameters1ID a owl:Class ;
+    rdfs:label "Parameters1ID" ;
+    rdfs:subClassOf mds:XrayRecipeParameters ;
+    skos:altLabel "" .
+
+mds:ParametersFAST a owl:Class ;
+    rdfs:label "ParametersFAST" ;
+    rdfs:subClassOf mds:XrayRecipeParameters ;
+    skos:altLabel "" .
+
+mds:InverterOutput a owl:Class ;
+    rdfs:label "InverterOutput" ;
+    rdfs:subClassOf mds:PhotovoltaicInverterProperty ;
+    skos:altLabel "" ;
+    skos:definition "Output AC power of the inverter" ;
+    pmd:unit qudt:KiloW .
+

@@ -1,0 +1,96 @@
+base_generated: true
+base_prefixes:
+- PRIMA
+- PRIMAALT
+changed: true
+date: 2024-06-19 11:11:30.259954
+metrics:
+  'Axioms: Breakdown of axiom types':
+    AnnotationAssertion: 44
+    Declaration: 47
+    ObjectPropertyDomain: 6
+    ObjectPropertyRange: 9
+    SubAnnotationPropertyOf: 1
+    SubClassOf: 38
+    SubObjectPropertyOf: 1
+  'Axioms: Number of axioms': 146
+  'Entities: % of entities reused': 100.0
+  'Entities: Number of annotation properties': 14
+  'Entities: Number of classes': 21
+  'Entities: Number of data properties': 2
+  'Entities: Number of individuals': 0
+  'Entities: Number of object properties': 15
+  'Entities: Number of unsatisfiable classes': 0
+  'Info: Breakdown of OWL class expressions used':
+    Class: 114
+    ObjectSomeValuesFrom: 21
+    ObjectUnionOf: 2
+  'Info: Does the ontology fall under OWL 2 DL?': true
+  'Info: Experimental OBO score':
+    _dashboard: 0.378
+    _formula: (1*impact+1*dashboard)/2
+    _impact: 0.0
+    _impact_external: 0
+    _reuse: 1.0
+    oboscore: 0.189
+  'Info: How many externally documented uses?': 0
+  'Info: How many ontologies use it?': 0
+  'Info: Logical consistency': true
+  'Info: Syntax': Turtle
+  'Info: Usage of namespaces in axioms':
+    dc: 6
+    prefix_unknown: 158
+    prov: 26
+    rdfs: 32
+    skos: 2
+  'Info: Which ontologies use it?': []
+mirror_from: https://raw.githubusercontent.com/ebrahimnorouzi/mseo.github.io/master/Ontology_files/prima-core.ttl
+namespace: PRIMA
+results:
+  FP01 Open:
+    comment: Missing registry license.
+    status: ERROR
+  FP02 Common Format:
+    comment: OWL syntax (Turtle), but should be RDF/XML
+    status: WARN
+  FP03 URIs:
+    comment: 0 invalid IRIs. The Ontology IRI is not valid.
+    file: fp3
+    status: ERROR
+  FP04 Versioning:
+    comment: Missing version IRI
+    status: ERROR
+  FP05 Scope:
+    comment: Missing domain (scope)
+    status: ERROR
+  FP06 Textual Definitions:
+    status: PASS
+  FP07 Relations:
+    status: PASS
+  FP08 Documented:
+    status: PASS
+  FP09 Plurality of Users:
+    comment: Missing tracker and usages
+    status: ERROR
+  FP11 Locus of Authority:
+    comment: Missing contact information
+    status: ERROR
+  FP12 Naming Conventions:
+    status: PASS
+  FP16 Maintenance:
+    comment: Missing version IRI to check date
+    status: ERROR
+  FP20 Responsiveness:
+    comment: Missing tracker and usages
+    status: ERROR
+  ROBOT Report:
+    status: PASS
+sha256_hash: cd1293da2d7c87e8a5a9aa0d65386e72190c06dae5e1134a17673ca010005572
+summary:
+  comment: 8 errors
+  status: ERROR
+  summary_count:
+    ERROR: 8
+    INFO: 0
+    WARN: 1
+version: null

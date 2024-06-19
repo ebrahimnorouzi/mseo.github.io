@@ -1,0 +1,1560 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="https://purls.helmholtz-metadaten.de/disos/sim"
+     xml:base="https://purls.helmholtz-metadaten.de/disos/sim"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:qudt="http://qudt.org/schema/qudt/"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+     xmlns:vann="http://purl.org/vocab/vann/"
+     xmlns:terms="http://purl.org/dc/terms/">
+    <owl:Ontology rdf:about="https://purls.helmholtz-metadaten.de/disos/sim">
+        <terms:contributor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Said Fathalla</terms:contributor>
+        <terms:contributor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Stefan Sandfeld</terms:contributor>
+        <terms:created xml:lang="en">17.08.2023</terms:created>
+        <terms:creator xml:lang="en">Ahmad Zainul Ihsan</terms:creator>
+        <terms:license rdf:resource="http://creativecommons.org/licenses/by/3.0/"/>
+        <terms:title xml:lang="en">Dislocation Simulation and Model Ontology</terms:title>
+        <vann:preferredNamespacePrefix xml:lang="en">SIM</vann:preferredNamespacePrefix>
+        <rdfs:label xml:lang="en">Dislocation Simulation and Model Ontology</rdfs:label>
+        <owl:versionInfo xml:lang="en">1.0</owl:versionInfo>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/dc/terms/contributor -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/contributor"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/created -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/created"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/creator -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/creator"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/license -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/license"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/title -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/title"/>
+    
+
+
+    <!-- http://purl.org/vocab/vann/preferredNamespacePrefix -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/vocab/vann/preferredNamespacePrefix"/>
+    
+
+
+    <!-- http://qudt.org/schema/qudt/description -->
+
+    <owl:AnnotationProperty rdf:about="http://qudt.org/schema/qudt/description"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#defintion -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#defintion"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#prefLabel -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#prefLabel"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Datatypes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.w3.org/1999/02/22-rdf-syntax-ns#HTML -->
+
+    <rdfs:Datatype rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#HTML"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://qudt.org/schema/qudt/hasQuantityKind -->
+
+    <owl:ObjectProperty rdf:about="http://qudt.org/schema/qudt/hasQuantityKind"/>
+    
+
+
+    <!-- http://qudt.org/schema/qudt/quantityValue -->
+
+    <owl:ObjectProperty rdf:about="http://qudt.org/schema/qudt/quantityValue"/>
+    
+
+
+    <!-- http://qudt.org/schema/qudt/unit -->
+
+    <owl:ObjectProperty rdf:about="http://qudt.org/schema/qudt/unit"/>
+    
+
+
+    <!-- http://www.w3.org/ns/prov#wasAssociatedWith -->
+
+    <owl:ObjectProperty rdf:about="http://www.w3.org/ns/prov#wasAssociatedWith"/>
+    
+
+
+    <!-- https://purls.helmholtz-metadaten.de/disos/cdo#hasCrystallographicDefect -->
+
+    <owl:ObjectProperty rdf:about="https://purls.helmholtz-metadaten.de/disos/cdo#hasCrystallographicDefect">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://purls.helmholtz-metadaten.de/disos/cdo#CrystallineMaterial"/>
+                    <rdf:Description rdf:about="https://purls.helmholtz-metadaten.de/disos/sim#DislocationStructure"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="https://purls.helmholtz-metadaten.de/disos/diso#Dislocation"/>
+        <rdfs:label>has crystallographic defect</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://purls.helmholtz-metadaten.de/disos/cso#hasPositionVector -->
+
+    <owl:ObjectProperty rdf:about="https://purls.helmholtz-metadaten.de/disos/cso#hasPositionVector">
+        <rdfs:range rdf:resource="https://purls.helmholtz-metadaten.de/disos/cso#PositionVector"/>
+        <rdfs:comment xml:lang="en">hasPositionVector represents the relationship between entity and position vector.</rdfs:comment>
+        <rdfs:label xml:lang="en">has position vector</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://purls.helmholtz-metadaten.de/disos/diso#hasMathematicalRepresentation -->
+
+    <owl:ObjectProperty rdf:about="https://purls.helmholtz-metadaten.de/disos/diso#hasMathematicalRepresentation">
+        <rdfs:subPropertyOf rdf:resource="https://purls.helmholtz-metadaten.de/disos/diso#hasRepresentation"/>
+        <owl:inverseOf rdf:resource="https://purls.helmholtz-metadaten.de/disos/diso#isMathematicalRepresentationOf"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="https://purls.helmholtz-metadaten.de/disos/diso#Dislocation"/>
+        <rdfs:range rdf:resource="https://purls.helmholtz-metadaten.de/disos/diso#Line"/>
+        <rdfs:comment xml:lang="en">hasMathematicalRepresentation relates the entity with its mathematical representation.</rdfs:comment>
+        <rdfs:label xml:lang="en">has mathematical representation</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://purls.helmholtz-metadaten.de/disos/diso#hasRepresentation -->
+
+    <owl:ObjectProperty rdf:about="https://purls.helmholtz-metadaten.de/disos/diso#hasRepresentation">
+        <owl:inverseOf rdf:resource="https://purls.helmholtz-metadaten.de/disos/diso#isRepresentationOf"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://purls.helmholtz-metadaten.de/disos/diso#Line"/>
+                    <rdf:Description rdf:about="https://purls.helmholtz-metadaten.de/disos/sim#DiscretizedLine"/>
+                    <rdf:Description rdf:about="https://purls.helmholtz-metadaten.de/disos/sim#Pixel"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+        <rdfs:comment xml:lang="en">hasRepresentation relates the entity to another representation of entity.</rdfs:comment>
+        <rdfs:label xml:lang="en">has representation</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://purls.helmholtz-metadaten.de/disos/diso#isMathematicalRepresentationOf -->
+
+    <owl:ObjectProperty rdf:about="https://purls.helmholtz-metadaten.de/disos/diso#isMathematicalRepresentationOf">
+        <rdfs:comment xml:lang="en">Inverse property of hasMathematicalRepresentation</rdfs:comment>
+        <rdfs:label xml:lang="en">is mathematical representation of</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://purls.helmholtz-metadaten.de/disos/diso#isRepresentationOf -->
+
+    <owl:ObjectProperty rdf:about="https://purls.helmholtz-metadaten.de/disos/diso#isRepresentationOf">
+        <rdfs:comment xml:lang="en">Inverse property of hasRepresentation</rdfs:comment>
+        <rdfs:label xml:lang="en">is representation of</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://purls.helmholtz-metadaten.de/disos/sim#hasCube -->
+
+    <owl:ObjectProperty rdf:about="https://purls.helmholtz-metadaten.de/disos/sim#hasCube">
+        <rdfs:subPropertyOf rdf:resource="https://purls.helmholtz-metadaten.de/disos/sim#hasShape"/>
+        <owl:inverseOf rdf:resource="https://purls.helmholtz-metadaten.de/disos/sim#isCubeOf"/>
+        <rdfs:domain rdf:resource="https://purls.helmholtz-metadaten.de/disos/sim#DislocationStructure"/>
+        <rdfs:range rdf:resource="https://purls.helmholtz-metadaten.de/disos/sim#Cube"/>
+        <rdfs:comment xml:lang="en">hasCube represents the relationship between dislocation strcture and cube shape specimen.</rdfs:comment>
+        <rdfs:label xml:lang="en">has cube</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://purls.helmholtz-metadaten.de/disos/sim#hasEndNode -->
+
+    <owl:ObjectProperty rdf:about="https://purls.helmholtz-metadaten.de/disos/sim#hasEndNode">
+        <rdfs:subPropertyOf rdf:resource="https://purls.helmholtz-metadaten.de/disos/sim#hasNode"/>
+        <owl:inverseOf rdf:resource="https://purls.helmholtz-metadaten.de/disos/sim#isEndNodeOf"/>
+        <rdfs:domain rdf:resource="https://purls.helmholtz-metadaten.de/disos/sim#Segment"/>
+        <rdfs:range rdf:resource="https://purls.helmholtz-metadaten.de/disos/sim#Node"/>
+        <rdfs:comment xml:lang="en">Sub-property of hasNode that relates the segment with the end node.</rdfs:comment>
+        <rdfs:label xml:lang="en">has end node</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://purls.helmholtz-metadaten.de/disos/sim#hasInputDislocationStructure -->
+
+    <owl:ObjectProperty rdf:about="https://purls.helmholtz-metadaten.de/disos/sim#hasInputDislocationStructure">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/mdo/core/hasInputStructure"/>
+        <owl:inverseOf rdf:resource="https://purls.helmholtz-metadaten.de/disos/sim#isInputDislocationStructureOf"/>
+        <rdfs:domain rdf:resource="https://purls.helmholtz-metadaten.de/disos/sim#DDDSimulation"/>
+        <rdfs:range rdf:resource="https://purls.helmholtz-metadaten.de/disos/sim#DislocationStructure"/>
+        <rdfs:comment xml:lang="en">hasInputDislocationStructure represents the relationship between DDD simulation and its input of dislocation structure.</rdfs:comment>
+        <rdfs:label xml:lang="en">has input dislocation structure</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://purls.helmholtz-metadaten.de/disos/sim#hasLength -->
+
+    <owl:ObjectProperty rdf:about="https://purls.helmholtz-metadaten.de/disos/sim#hasLength">
+        <owl:inverseOf rdf:resource="https://purls.helmholtz-metadaten.de/disos/sim#isLengthOf"/>
+        <rdfs:range rdf:resource="https://purls.helmholtz-metadaten.de/disos/sim#Length"/>
+        <rdfs:comment xml:lang="en">hasLength represents the relationship between 1-D, 2-D, and 3-D shape to length.</rdfs:comment>
+        <rdfs:label>has length</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://purls.helmholtz-metadaten.de/disos/sim#hasNode -->
+
+    <owl:ObjectProperty rdf:about="https://purls.helmholtz-metadaten.de/disos/sim#hasNode">
+        <owl:inverseOf rdf:resource="https://purls.helmholtz-metadaten.de/disos/sim#isNodeOf"/>
+        <rdfs:domain rdf:resource="https://purls.helmholtz-metadaten.de/disos/sim#Segment"/>
+        <rdfs:range rdf:resource="https://purls.helmholtz-metadaten.de/disos/sim#Node"/>
+        <rdfs:comment xml:lang="en">hasNode represents the relationship between segment and node.</rdfs:comment>
+        <rdfs:label xml:lang="en">has node</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://purls.helmholtz-metadaten.de/disos/sim#hasNumericalRepresentation -->
+
+    <owl:ObjectProperty rdf:about="https://purls.helmholtz-metadaten.de/disos/sim#hasNumericalRepresentation">
+        <rdfs:subPropertyOf rdf:resource="https://purls.helmholtz-metadaten.de/disos/diso#hasRepresentation"/>
+        <owl:inverseOf rdf:resource="https://purls.helmholtz-metadaten.de/disos/sim#isNumericalRepresentationOf"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="https://purls.helmholtz-metadaten.de/disos/diso#Line"/>
+        <rdfs:range rdf:resource="https://purls.helmholtz-metadaten.de/disos/sim#DiscretizedLine"/>
+        <rdfs:comment xml:lang="en">hasNumericalRepresentation relates the entity with its numerical representation.</rdfs:comment>
+        <rdfs:label xml:lang="en">has numerical representation</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://purls.helmholtz-metadaten.de/disos/sim#hasOutputDislocationStructure -->
+
+    <owl:ObjectProperty rdf:about="https://purls.helmholtz-metadaten.de/disos/sim#hasOutputDislocationStructure">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/mdo/core/hasOutputStructure"/>
+        <owl:inverseOf rdf:resource="https://purls.helmholtz-metadaten.de/disos/sim#isOutputDislocationStructureOf"/>
+        <rdfs:domain rdf:resource="https://purls.helmholtz-metadaten.de/disos/sim#DDDSimulation"/>
+        <rdfs:range rdf:resource="https://purls.helmholtz-metadaten.de/disos/sim#DislocationStructure"/>
+        <rdfs:comment xml:lang="en">hasOutputDislocationStructure represents the relationship between DDD simulation and its output of dislocation structure.</rdfs:comment>
+        <rdfs:label xml:lang="en">has output dislocation structure</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://purls.helmholtz-metadaten.de/disos/sim#hasPixelRepresentation -->
+
+    <owl:ObjectProperty rdf:about="https://purls.helmholtz-metadaten.de/disos/sim#hasPixelRepresentation">
+        <rdfs:subPropertyOf rdf:resource="https://purls.helmholtz-metadaten.de/disos/diso#hasRepresentation"/>
+        <owl:inverseOf rdf:resource="https://purls.helmholtz-metadaten.de/disos/sim#isPixelRepresentationOf"/>
+        <rdfs:domain rdf:resource="https://purls.helmholtz-metadaten.de/disos/diso#Line"/>
+        <rdfs:range rdf:resource="https://purls.helmholtz-metadaten.de/disos/sim#Pixel"/>
+        <rdfs:comment xml:lang="en">hasPixelRepresentation represents the relationship between mathematical line and Pixel.</rdfs:comment>
+        <rdfs:label xml:lang="en">has pixel representation</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://purls.helmholtz-metadaten.de/disos/sim#hasSegment -->
+
+    <owl:ObjectProperty rdf:about="https://purls.helmholtz-metadaten.de/disos/sim#hasSegment">
+        <owl:inverseOf rdf:resource="https://purls.helmholtz-metadaten.de/disos/sim#isSegmentOf"/>
+        <rdfs:domain rdf:resource="https://purls.helmholtz-metadaten.de/disos/sim#DiscretizedLine"/>
+        <rdfs:range rdf:resource="https://purls.helmholtz-metadaten.de/disos/sim#Segment"/>
+        <rdfs:comment xml:lang="en">hasSegment represents the relationship between discretized line and segment.</rdfs:comment>
+        <rdfs:label xml:lang="en">has segment</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://purls.helmholtz-metadaten.de/disos/sim#hasShape -->
+
+    <owl:ObjectProperty rdf:about="https://purls.helmholtz-metadaten.de/disos/sim#hasShape">
+        <owl:inverseOf rdf:resource="https://purls.helmholtz-metadaten.de/disos/sim#isShapeOf"/>
+        <rdfs:domain rdf:resource="https://purls.helmholtz-metadaten.de/disos/sim#DislocationStructure"/>
+        <rdfs:label xml:lang="en">has shape</rdfs:label>
+        <rdfs:label xml:lang="en">hasShape represents the relationship between dislocation structure to geometrical shape.</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://purls.helmholtz-metadaten.de/disos/sim#hasShapeFunction -->
+
+    <owl:ObjectProperty rdf:about="https://purls.helmholtz-metadaten.de/disos/sim#hasShapeFunction">
+        <owl:inverseOf rdf:resource="https://purls.helmholtz-metadaten.de/disos/sim#isShapeFunctionOf"/>
+        <rdfs:domain rdf:resource="https://purls.helmholtz-metadaten.de/disos/sim#DiscretizedLine"/>
+        <rdfs:range rdf:resource="https://purls.helmholtz-metadaten.de/disos/sim#ShapeFunction"/>
+        <rdfs:comment xml:lang="en">hasShapeFunction represents the relationship between discretized line and shape function.</rdfs:comment>
+        <rdfs:label xml:lang="en">has shape function</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://purls.helmholtz-metadaten.de/disos/sim#hasSimulationParameter -->
+
+    <owl:ObjectProperty rdf:about="https://purls.helmholtz-metadaten.de/disos/sim#hasSimulationParameter">
+        <owl:inverseOf rdf:resource="https://purls.helmholtz-metadaten.de/disos/sim#isSimulationParameterOf"/>
+        <rdfs:domain rdf:resource="https://purls.helmholtz-metadaten.de/disos/sim#DDDSimulation"/>
+        <rdfs:range rdf:resource="https://purls.helmholtz-metadaten.de/disos/sim#DDDSimulationParameter"/>
+        <rdfs:comment xml:lang="en">hasSimulationParameter represents the relationship between DDD simulation and simulation parameter.</rdfs:comment>
+        <rdfs:label xml:lang="en">has simulation parameter</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://purls.helmholtz-metadaten.de/disos/sim#hasStartNode -->
+
+    <owl:ObjectProperty rdf:about="https://purls.helmholtz-metadaten.de/disos/sim#hasStartNode">
+        <rdfs:subPropertyOf rdf:resource="https://purls.helmholtz-metadaten.de/disos/sim#hasNode"/>
+        <owl:inverseOf rdf:resource="https://purls.helmholtz-metadaten.de/disos/sim#isStartNodeOf"/>
+        <rdfs:domain rdf:resource="https://purls.helmholtz-metadaten.de/disos/sim#Segment"/>
+        <rdfs:range rdf:resource="https://purls.helmholtz-metadaten.de/disos/sim#Node"/>
+        <rdfs:comment xml:lang="en">Sub-property of hasNode that relates the segment with the start node.</rdfs:comment>
+        <rdfs:label xml:lang="en">has start node</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://purls.helmholtz-metadaten.de/disos/sim#isCubeOf -->
+
+    <owl:ObjectProperty rdf:about="https://purls.helmholtz-metadaten.de/disos/sim#isCubeOf">
+        <rdfs:comment xml:lang="en">Inverse property of hasCube</rdfs:comment>
+        <rdfs:label xml:lang="en">is cube of</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://purls.helmholtz-metadaten.de/disos/sim#isEndNodeOf -->
+
+    <owl:ObjectProperty rdf:about="https://purls.helmholtz-metadaten.de/disos/sim#isEndNodeOf">
+        <rdfs:comment xml:lang="en">Inverse property of hasEndNode</rdfs:comment>
+        <rdfs:label xml:lang="en">is end node of</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://purls.helmholtz-metadaten.de/disos/sim#isInputDislocationStructureOf -->
+
+    <owl:ObjectProperty rdf:about="https://purls.helmholtz-metadaten.de/disos/sim#isInputDislocationStructureOf">
+        <rdfs:comment xml:lang="en">Inverse property of hasInputDislocationStructure</rdfs:comment>
+        <rdfs:label xml:lang="en">is input dislocation structure of</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://purls.helmholtz-metadaten.de/disos/sim#isLengthOf -->
+
+    <owl:ObjectProperty rdf:about="https://purls.helmholtz-metadaten.de/disos/sim#isLengthOf">
+        <rdfs:comment xml:lang="en">Inverse property of hasLength</rdfs:comment>
+        <rdfs:label xml:lang="en">is length of</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://purls.helmholtz-metadaten.de/disos/sim#isNodeOf -->
+
+    <owl:ObjectProperty rdf:about="https://purls.helmholtz-metadaten.de/disos/sim#isNodeOf">
+        <rdfs:comment xml:lang="en">Inverse property of hasNode</rdfs:comment>
+        <rdfs:label xml:lang="en">is node of</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://purls.helmholtz-metadaten.de/disos/sim#isNumericalRepresentationOf -->
+
+    <owl:ObjectProperty rdf:about="https://purls.helmholtz-metadaten.de/disos/sim#isNumericalRepresentationOf">
+        <rdfs:comment xml:lang="en">Inverse property of hasNumericalRepresentation</rdfs:comment>
+        <rdfs:label xml:lang="en">is numerical representation of</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://purls.helmholtz-metadaten.de/disos/sim#isOutputDislocationStructureOf -->
+
+    <owl:ObjectProperty rdf:about="https://purls.helmholtz-metadaten.de/disos/sim#isOutputDislocationStructureOf">
+        <rdfs:comment xml:lang="en">Inverse property of hasOutputDislocationStructure</rdfs:comment>
+        <rdfs:label xml:lang="en">is output dislocation structure of</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://purls.helmholtz-metadaten.de/disos/sim#isPixelRepresentationOf -->
+
+    <owl:ObjectProperty rdf:about="https://purls.helmholtz-metadaten.de/disos/sim#isPixelRepresentationOf">
+        <rdfs:comment xml:lang="en">Inverse property of hasPixelRepresentation</rdfs:comment>
+        <rdfs:label xml:lang="en">is pixel representation of</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://purls.helmholtz-metadaten.de/disos/sim#isRelatedToStructure -->
+
+    <owl:ObjectProperty rdf:about="https://purls.helmholtz-metadaten.de/disos/sim#isRelatedToStructure">
+        <owl:inverseOf rdf:resource="https://purls.helmholtz-metadaten.de/disos/sim#relatesToCrystallineMaterial"/>
+        <rdfs:comment xml:lang="en">Inverse property of relatesToCrystallineMaterial</rdfs:comment>
+        <rdfs:label xml:lang="en">is related to structure</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://purls.helmholtz-metadaten.de/disos/sim#isSegmentOf -->
+
+    <owl:ObjectProperty rdf:about="https://purls.helmholtz-metadaten.de/disos/sim#isSegmentOf">
+        <rdfs:comment xml:lang="en">Inverse of hasSegment</rdfs:comment>
+        <rdfs:label xml:lang="en">is segment of</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://purls.helmholtz-metadaten.de/disos/sim#isShapeFunctionOf -->
+
+    <owl:ObjectProperty rdf:about="https://purls.helmholtz-metadaten.de/disos/sim#isShapeFunctionOf">
+        <rdfs:comment xml:lang="en">Inverse property of hasShapeFunction</rdfs:comment>
+        <rdfs:label xml:lang="en">is shape function of</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://purls.helmholtz-metadaten.de/disos/sim#isShapeOf -->
+
+    <owl:ObjectProperty rdf:about="https://purls.helmholtz-metadaten.de/disos/sim#isShapeOf">
+        <rdfs:comment xml:lang="en">Inverse property of hasShape</rdfs:comment>
+        <rdfs:label xml:lang="en">is shape of</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://purls.helmholtz-metadaten.de/disos/sim#isSimulationParameterOf -->
+
+    <owl:ObjectProperty rdf:about="https://purls.helmholtz-metadaten.de/disos/sim#isSimulationParameterOf">
+        <rdfs:comment xml:lang="en">Inverse property of hasSimulationParameter</rdfs:comment>
+        <rdfs:label xml:lang="en">is simulation parameter of</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://purls.helmholtz-metadaten.de/disos/sim#isStartNodeOf -->
+
+    <owl:ObjectProperty rdf:about="https://purls.helmholtz-metadaten.de/disos/sim#isStartNodeOf">
+        <rdfs:comment xml:lang="en">Inverse property of hasStartNode</rdfs:comment>
+        <rdfs:label xml:lang="en">is start node of</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://purls.helmholtz-metadaten.de/disos/sim#relatesToCrystallineMaterial -->
+
+    <owl:ObjectProperty rdf:about="https://purls.helmholtz-metadaten.de/disos/sim#relatesToCrystallineMaterial">
+        <rdfs:domain rdf:resource="https://purls.helmholtz-metadaten.de/disos/sim#DislocationStructure"/>
+        <rdfs:range rdf:resource="https://purls.helmholtz-metadaten.de/disos/cdo#CrystallineMaterial"/>
+        <rdfs:label xml:lang="en">relates to crystalline material</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/mdo/core/hasInputProperty -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/mdo/core/hasInputProperty"/>
+    
+
+
+    <!-- https://w3id.org/mdo/core/hasInputStructure -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/mdo/core/hasInputStructure"/>
+    
+
+
+    <!-- https://w3id.org/mdo/core/hasOutputCalculatedProperty -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/mdo/core/hasOutputCalculatedProperty"/>
+    
+
+
+    <!-- https://w3id.org/mdo/core/hasOutputStructure -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/mdo/core/hasOutputStructure"/>
+    
+
+
+    <!-- https://w3id.org/mdo/core/hasQuantityValue -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/mdo/core/hasQuantityValue"/>
+    
+
+
+    <!-- https://w3id.org/mdo/core/relatesToStructure -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/mdo/core/relatesToStructure"/>
+    
+
+
+    <!-- https://w3id.org/mdo/structure/hasComposition -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/mdo/structure/hasComposition"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purls.helmholtz-metadaten.de/mwo/hasORCID -->
+
+    <owl:DatatypeProperty rdf:about="http://purls.helmholtz-metadaten.de/mwo/hasORCID"/>
+    
+
+
+    <!-- http://qudt.org/schema/qudt/numericalValue -->
+
+    <owl:DatatypeProperty rdf:about="http://qudt.org/schema/qudt/numericalValue"/>
+    
+
+
+    <!-- http://www.w3.org/ns/prov#endedAtTime -->
+
+    <owl:DatatypeProperty rdf:about="http://www.w3.org/ns/prov#endedAtTime"/>
+    
+
+
+    <!-- http://www.w3.org/ns/prov#startedAtTime -->
+
+    <owl:DatatypeProperty rdf:about="http://www.w3.org/ns/prov#startedAtTime"/>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/family_name -->
+
+    <owl:DatatypeProperty rdf:about="http://xmlns.com/foaf/0.1/family_name"/>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/firstName -->
+
+    <owl:DatatypeProperty rdf:about="http://xmlns.com/foaf/0.1/firstName"/>
+    
+
+
+    <!-- https://purls.helmholtz-metadaten.de/disos/sim#DDDSimulationID -->
+
+    <owl:DatatypeProperty rdf:about="https://purls.helmholtz-metadaten.de/disos/sim#DDDSimulationID">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/mdo/core/ID"/>
+        <rdfs:domain rdf:resource="https://purls.helmholtz-metadaten.de/disos/sim#DDDSimulation"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="en">DDDSimulationID represents the ID of a DDD simulation</rdfs:comment>
+        <rdfs:label xml:lang="en">DDD Simulation ID</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://purls.helmholtz-metadaten.de/disos/sim#FEMParameterActivation -->
+
+    <owl:DatatypeProperty rdf:about="https://purls.helmholtz-metadaten.de/disos/sim#FEMParameterActivation">
+        <rdfs:subPropertyOf rdf:resource="https://purls.helmholtz-metadaten.de/disos/sim#parameterActivation"/>
+        <rdfs:label xml:lang="en">FEM parameter activation</rdfs:label>
+        <rdfs:label xml:lang="en">FEMParameterActivation represents the boolean value of whether the FEM method is active.</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://purls.helmholtz-metadaten.de/disos/sim#Lmax -->
+
+    <owl:DatatypeProperty rdf:about="https://purls.helmholtz-metadaten.de/disos/sim#Lmax">
+        <rdfs:domain rdf:resource="https://purls.helmholtz-metadaten.de/disos/sim#RemeshParameter"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+        <rdfs:comment xml:lang="en">Remesh parameter of maximum segment length so that the segment will be remeshed.</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://purls.helmholtz-metadaten.de/disos/sim#Lmin -->
+
+    <owl:DatatypeProperty rdf:about="https://purls.helmholtz-metadaten.de/disos/sim#Lmin">
+        <rdfs:domain rdf:resource="https://purls.helmholtz-metadaten.de/disos/sim#RemeshParameter"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+        <rdfs:comment xml:lang="en">Remesh parameter of minimum segment length  so that the node in the dislocation network will be removed.</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://purls.helmholtz-metadaten.de/disos/sim#crossSlipParameterActivation -->
+
+    <owl:DatatypeProperty rdf:about="https://purls.helmholtz-metadaten.de/disos/sim#crossSlipParameterActivation">
+        <rdfs:subPropertyOf rdf:resource="https://purls.helmholtz-metadaten.de/disos/sim#parameterActivation"/>
+        <rdfs:domain rdf:resource="https://purls.helmholtz-metadaten.de/disos/sim#CrossSlip"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+        <rdfs:label xml:lang="en">cross slip parameter activation</rdfs:label>
+        <rdfs:label xml:lang="en">crossSlipParameterActivation represents the boolean value of whether the cross slip is active.</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://purls.helmholtz-metadaten.de/disos/sim#discretizedLineID -->
+
+    <owl:DatatypeProperty rdf:about="https://purls.helmholtz-metadaten.de/disos/sim#discretizedLineID">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/mdo/core/ID"/>
+        <rdfs:domain rdf:resource="https://purls.helmholtz-metadaten.de/disos/sim#DiscretizedLine"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+        <rdfs:comment xml:lang="en">DiscretizedLineID represents the ID of a discretized (mathematical) line.</rdfs:comment>
+        <rdfs:label xml:lang="en">discretized line ID</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://purls.helmholtz-metadaten.de/disos/sim#externalLoadParameterActivation -->
+
+    <owl:DatatypeProperty rdf:about="https://purls.helmholtz-metadaten.de/disos/sim#externalLoadParameterActivation">
+        <rdfs:subPropertyOf rdf:resource="https://purls.helmholtz-metadaten.de/disos/sim#parameterActivation"/>
+        <rdfs:domain rdf:resource="https://purls.helmholtz-metadaten.de/disos/sim#ExternalLoadParameter"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+        <rdfs:comment xml:lang="en">externalLoadParameterActivation represents the boolean value of whether the external load is active.</rdfs:comment>
+        <rdfs:label xml:lang="en">external load parameter activation</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://purls.helmholtz-metadaten.de/disos/sim#isRelaxed -->
+
+    <owl:DatatypeProperty rdf:about="https://purls.helmholtz-metadaten.de/disos/sim#isRelaxed">
+        <rdfs:domain rdf:resource="https://purls.helmholtz-metadaten.de/disos/sim#DislocationStructure"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+        <rdfs:comment xml:lang="en">isRelaxed represents a boolean value whether a dislocation structure in the relaxed condition or no.</rdfs:comment>
+        <rdfs:label xml:lang="en">is relaxed</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://purls.helmholtz-metadaten.de/disos/sim#junctionFormationParameterActivation -->
+
+    <owl:DatatypeProperty rdf:about="https://purls.helmholtz-metadaten.de/disos/sim#junctionFormationParameterActivation">
+        <rdfs:subPropertyOf rdf:resource="https://purls.helmholtz-metadaten.de/disos/sim#parameterActivation"/>
+        <rdfs:domain rdf:resource="https://purls.helmholtz-metadaten.de/disos/sim#JunctionFormation"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+        <rdfs:comment xml:lang="en">JunctinoFormationParameterActivation represents the boolean value of whether the junction formation is active.</rdfs:comment>
+        <rdfs:label xml:lang="en">junction formation parameter activation</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://purls.helmholtz-metadaten.de/disos/sim#meshFormat -->
+
+    <owl:DatatypeProperty rdf:about="https://purls.helmholtz-metadaten.de/disos/sim#meshFormat">
+        <rdfs:domain rdf:resource="https://purls.helmholtz-metadaten.de/disos/sim#DDDSimulation"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="en">meshFormat represents the format of mesh file, e.g., gmsh, mesh, etc.</rdfs:comment>
+        <rdfs:label xml:lang="en">mesh format</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://purls.helmholtz-metadaten.de/disos/sim#nodeID -->
+
+    <owl:DatatypeProperty rdf:about="https://purls.helmholtz-metadaten.de/disos/sim#nodeID">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/mdo/core/ID"/>
+        <rdfs:domain rdf:resource="https://purls.helmholtz-metadaten.de/disos/sim#Node"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+        <rdfs:comment xml:lang="en">nodeID represents the ID of a segment node.</rdfs:comment>
+        <rdfs:label xml:lang="en">node ID</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://purls.helmholtz-metadaten.de/disos/sim#parameterActivation -->
+
+    <owl:DatatypeProperty rdf:about="https://purls.helmholtz-metadaten.de/disos/sim#parameterActivation">
+        <rdfs:domain rdf:resource="https://purls.helmholtz-metadaten.de/disos/sim#DDDSimulationParameter"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+        <rdfs:label xml:lang="en">parameter activation</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://purls.helmholtz-metadaten.de/disos/sim#remeshFrequency -->
+
+    <owl:DatatypeProperty rdf:about="https://purls.helmholtz-metadaten.de/disos/sim#remeshFrequency">
+        <rdfs:domain rdf:resource="https://purls.helmholtz-metadaten.de/disos/sim#RemeshParameter"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+        <rdfs:comment xml:lang="en">remeshFrequency represents the number of steps has to pass before doing the dislocation network remeshing.</rdfs:comment>
+        <rdfs:label xml:lang="en">remesh frequency</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://purls.helmholtz-metadaten.de/disos/sim#remeshParameterActivation -->
+
+    <owl:DatatypeProperty rdf:about="https://purls.helmholtz-metadaten.de/disos/sim#remeshParameterActivation">
+        <rdfs:subPropertyOf rdf:resource="https://purls.helmholtz-metadaten.de/disos/sim#parameterActivation"/>
+        <rdfs:domain rdf:resource="https://purls.helmholtz-metadaten.de/disos/sim#RemeshParameter"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+        <rdfs:comment xml:lang="en">remeshParameterActivation represents the boolean value of whether the network remeshing is active.</rdfs:comment>
+        <rdfs:label xml:lang="en">remesh parameter activation</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://purls.helmholtz-metadaten.de/disos/sim#segmentID -->
+
+    <owl:DatatypeProperty rdf:about="https://purls.helmholtz-metadaten.de/disos/sim#segmentID">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/mdo/core/ID"/>
+        <rdfs:domain rdf:resource="https://purls.helmholtz-metadaten.de/disos/sim#Segment"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+        <rdfs:comment xml:lang="en">segmentID represents the ID of a discretized line segment.</rdfs:comment>
+        <rdfs:label xml:lang="en">segment ID</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://purls.helmholtz-metadaten.de/disos/sim#shapeFunctionType -->
+
+    <owl:DatatypeProperty rdf:about="https://purls.helmholtz-metadaten.de/disos/sim#shapeFunctionType">
+        <rdfs:domain rdf:resource="https://purls.helmholtz-metadaten.de/disos/sim#ShapeFunction"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label xml:lang="en">shape function type</rdfs:label>
+        <rdfs:label xml:lang="en">shapeFunctionType represents the string of shape function type, e.g., linear, quadratic, spline of n-order, etc.</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://purls.helmholtz-metadaten.de/disos/sim#simulationBoundaryType -->
+
+    <owl:DatatypeProperty rdf:about="https://purls.helmholtz-metadaten.de/disos/sim#simulationBoundaryType">
+        <rdfs:domain rdf:resource="https://purls.helmholtz-metadaten.de/disos/sim#DDDSimulation"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label xml:lang="en">simulation boundary type</rdfs:label>
+        <rdfs:label xml:lang="en">simulationBoundaryType represents the string of boundary type used by the DDD simulation, e.g., periodic, mirrored, open boundaries, etc.</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://purls.helmholtz-metadaten.de/disos/sim#simulationDescription -->
+
+    <owl:DatatypeProperty rdf:about="https://purls.helmholtz-metadaten.de/disos/sim#simulationDescription">
+        <rdfs:domain rdf:resource="https://purls.helmholtz-metadaten.de/disos/sim#DDDSimulation"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="en">simulation description of DDD simulation</rdfs:comment>
+        <rdfs:label xml:lang="en">simulation description</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://purls.helmholtz-metadaten.de/disos/sim#simulationLoadingCondition -->
+
+    <owl:DatatypeProperty rdf:about="https://purls.helmholtz-metadaten.de/disos/sim#simulationLoadingCondition">
+        <rdfs:domain rdf:resource="https://purls.helmholtz-metadaten.de/disos/sim#DDDSimulation"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label xml:lang="en">simulation loading condition</rdfs:label>
+        <rdfs:label xml:lang="en">simulationLoadingCondition represents the string of loading condition exposed to a DDD simulation, e.g., stress-controlled, strain-controlled, or both (stress- and strain-controlled).</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://purls.helmholtz-metadaten.de/disos/sim#simulationStepNumber -->
+
+    <owl:DatatypeProperty rdf:about="https://purls.helmholtz-metadaten.de/disos/sim#simulationStepNumber">
+        <rdfs:domain rdf:resource="https://purls.helmholtz-metadaten.de/disos/sim#DDDSimulation"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+        <rdfs:comment xml:lang="en">simulationStepNumber represents the step number of a DDD simulation.</rdfs:comment>
+        <rdfs:label xml:lang="en">simulation step number</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://purls.helmholtz-metadaten.de/disos/sim#simulationTemperature -->
+
+    <owl:DatatypeProperty rdf:about="https://purls.helmholtz-metadaten.de/disos/sim#simulationTemperature">
+        <rdfs:domain rdf:resource="https://purls.helmholtz-metadaten.de/disos/sim#DDDSimulation"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+        <rdfs:label xml:lang="en">simulation temperature</rdfs:label>
+        <rdfs:label xml:lang="en">simulationTemperature represents the temperature of a DDD simulation.</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://purls.helmholtz-metadaten.de/disos/sim#slipArea -->
+
+    <owl:DatatypeProperty rdf:about="https://purls.helmholtz-metadaten.de/disos/sim#slipArea">
+        <rdfs:domain rdf:resource="https://purls.helmholtz-metadaten.de/disos/sim#DiscretizedLine"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+        <rdfs:comment xml:lang="en">slipArea represents the slip area of discretized line in double.</rdfs:comment>
+        <rdfs:label xml:lang="en">slip area</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://purls.helmholtz-metadaten.de/disos/sim#softwareRepository -->
+
+    <owl:DatatypeProperty rdf:about="https://purls.helmholtz-metadaten.de/disos/sim#softwareRepository">
+        <rdfs:domain rdf:resource="http://www.w3.org/ns/prov#SoftwareAgent"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#anyURI"/>
+        <rdfs:comment xml:lang="en">softwareRepository represents the URI/link to the software repository, e.g., GitHub, GitLab, etc.</rdfs:comment>
+        <rdfs:label xml:lang="en">software repository</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://purls.helmholtz-metadaten.de/disos/sim#softwareVersion -->
+
+    <owl:DatatypeProperty rdf:about="https://purls.helmholtz-metadaten.de/disos/sim#softwareVersion">
+        <rdfs:label xml:lang="en">software version</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/mdo/core/ID -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/mdo/core/ID"/>
+    
+
+
+    <!-- https://w3id.org/mdo/provenance/SoftwareName -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/mdo/provenance/SoftwareName">
+        <rdfs:label xml:lang="en">software name</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/mdo/structure/DescriptiveFormula -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/mdo/structure/DescriptiveFormula">
+        <rdfs:domain rdf:resource="https://w3id.org/mdo/structure/Composition"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://emmo.info/emmo#EMMO_4ce76d7f_03f8_45b6_9003_90052a79bfaa -->
+
+    <owl:Class rdf:about="http://emmo.info/emmo#EMMO_4ce76d7f_03f8_45b6_9003_90052a79bfaa">
+        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo#EMMO_54ee6b5e_5261_44a8_86eb_5717e7fdb9d0"/>
+        <skos:prefLabel xml:lang="en">Numerical</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://emmo.info/emmo#EMMO_54ee6b5e_5261_44a8_86eb_5717e7fdb9d0 -->
+
+    <owl:Class rdf:about="http://emmo.info/emmo#EMMO_54ee6b5e_5261_44a8_86eb_5717e7fdb9d0">
+        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo#EMMO_d8d2144e_5c8d_455d_a643_5caf4d8d9df8"/>
+        <skos:prefLabel xml:lang="en">Mathematical</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://emmo.info/emmo#EMMO_d8d2144e_5c8d_455d_a643_5caf4d8d9df8 -->
+
+    <owl:Class rdf:about="http://emmo.info/emmo#EMMO_d8d2144e_5c8d_455d_a643_5caf4d8d9df8">
+        <skos:prefLabel xml:lang="en">Language</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://emmo.info/emmo#EMMO_f7ed665b_c2e1_42bc_889b_6b42ed3a36f0 -->
+
+    <owl:Class rdf:about="http://emmo.info/emmo#EMMO_f7ed665b_c2e1_42bc_889b_6b42ed3a36f0">
+        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo#EMMO_54ee6b5e_5261_44a8_86eb_5717e7fdb9d0"/>
+        <skos:prefLabel xml:lang="en">MathematicalModel</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://emmo.info/emmo/middle/perceptual#EMMO_1da53c06_9577_4008_8652_272fa3b62be7 -->
+
+    <owl:Class rdf:about="http://emmo.info/emmo/middle/perceptual#EMMO_1da53c06_9577_4008_8652_272fa3b62be7">
+        <skos:prefLabel xml:lang="en">Pictorial</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://qudt.org/schema/qudt/Quantity -->
+
+    <owl:Class rdf:about="http://qudt.org/schema/qudt/Quantity">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://qudt.org/schema/qudt/hasQuantityKind"/>
+                <owl:allValuesFrom rdf:resource="http://qudt.org/schema/qudt/QuantityKind"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://qudt.org/schema/qudt/quantityValue"/>
+                <owl:allValuesFrom rdf:resource="http://qudt.org/schema/qudt/QuantityValue"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <qudt:description rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#HTML">&lt;p class=&quot;lm-para&quot;&gt;A quantity is the measurement of an observable property of a particular object, event, or physical system. A quantity is always associated with the context of measurement (i.e. the thing measured, the measured value, the accuracy of measurement, etc.) whereas the underlying quantity kind is independent of any particular measurement. Thus, length is a quantity kind while the height of a rocket is a specific quantity of length; its magnitude that may be expressed in meters, feet, inches, etc. Examples of physical quantities include physical constants, such as the speed of light in a vacuum, Planck&apos;s constant, the electric permittivity of free space, and the fine structure constant. &lt;/p&gt;
+
+&lt;p class=&quot;lm-para&quot;&gt;In other words, quantities are quantifiable aspects of the world, such as time, distance, velocity, mass, momentum, energy, and weight, and units are used to describe their measure. Many of which are related to each other by various physical laws, and as a result the units of some of the quantities can be expressed as products (or ratios) of powers of other units (e.g., momentum is mass times velocity and velocity is measured in distance divided by time). These relationships are discussed in dimensional analysis. Those that cannot be so expressed can be regarded as &quot;fundamental&quot; in this sense.&lt;/p&gt;
+&lt;p class=&quot;lm-para&quot;&gt;A quantity is distinguished from a &quot;quantity kind&quot; in that the former carries a value and the latter is a type specifier.&lt;/p&gt;</qudt:description>
+        <rdfs:isDefinedBy rdf:resource="http://qudt.org/2.0/schema/qudt"/>
+        <rdfs:isDefinedBy rdf:resource="http://qudt.org/schema/qudt"/>
+        <rdfs:label>Quantity</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://qudt.org/schema/qudt/QuantityKind -->
+
+    <owl:Class rdf:about="http://qudt.org/schema/qudt/QuantityKind">
+        <qudt:description rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#HTML">A &lt;b&gt;Quantity Kind&lt;/b&gt; is any observable property that can be  measured and quantified numerically. Familiar examples include physical properties such as length, mass, time, force, energy, power, electric charge, etc. Less familiar examples include currency, interest rate, price to earning ratio, and information capacity.</qudt:description>
+        <rdfs:isDefinedBy rdf:resource="http://qudt.org/2.0/schema/qudt"/>
+        <rdfs:isDefinedBy rdf:resource="http://qudt.org/schema/qudt"/>
+        <rdfs:label>Quantity Kind</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://qudt.org/schema/qudt/QuantityValue -->
+
+    <owl:Class rdf:about="http://qudt.org/schema/qudt/QuantityValue">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://qudt.org/schema/qudt/unit"/>
+                <owl:allValuesFrom rdf:resource="http://qudt.org/schema/qudt/Unit"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://qudt.org/schema/qudt/numericalValue"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <qudt:description rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#HTML">A &lt;i&gt;Quantity Value&lt;/i&gt; expresses the magnitude and kind of a quantity and is given by the product of a numerical value &lt;code&gt;n&lt;/code&gt; and a unit of measure &lt;code&gt;U&lt;/code&gt;. The number multiplying the unit is referred to as the numerical value of the quantity expressed in that unit. Refer to &lt;a href=&quot;http://physics.nist.gov/Pubs/SP811/sec07.html&quot;&gt;NIST SP 811 section 7&lt;/a&gt; for more on quantity values.</qudt:description>
+        <rdfs:isDefinedBy rdf:resource="http://qudt.org/2.0/schema/qudt"/>
+        <rdfs:isDefinedBy rdf:resource="http://qudt.org/schema/qudt"/>
+        <rdfs:label>Quantity value</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://qudt.org/schema/qudt/Unit -->
+
+    <owl:Class rdf:about="http://qudt.org/schema/qudt/Unit">
+        <qudt:description rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#HTML">A unit of measure, or unit, is a particular quantity value that has been chosen as a scale for measuring other quantities the same kind (more generally of equivalent dimension). For example, the meter is a quantity of length that has been rigorously defined and standardized by the BIPM (International Board of Weights and Measures). Any measurement of the length can be expressed as a number multiplied by the unit meter. More formally, the value of a physical quantity Q with respect to a unit (U) is expressed as the scalar multiple of a real number (n) and U, as  \(Q = nU\).</qudt:description>
+        <rdfs:isDefinedBy rdf:resource="http://qudt.org/2.0/schema/qudt"/>
+        <rdfs:isDefinedBy rdf:resource="http://qudt.org/schema/qudt"/>
+        <rdfs:label>Unit</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/ns/prov#Activity -->
+
+    <owl:Class rdf:about="http://www.w3.org/ns/prov#Activity">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/ns/prov#endedAtTime"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/ns/prov#startedAtTime"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/ns/prov#Agent -->
+
+    <owl:Class rdf:about="http://www.w3.org/ns/prov#Agent"/>
+    
+
+
+    <!-- http://www.w3.org/ns/prov#Person -->
+
+    <owl:Class rdf:about="http://www.w3.org/ns/prov#Person">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#Agent"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purls.helmholtz-metadaten.de/mwo/hasORCID"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://xmlns.com/foaf/0.1/family_name"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://xmlns.com/foaf/0.1/firstName"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/ns/prov#SoftwareAgent -->
+
+    <owl:Class rdf:about="http://www.w3.org/ns/prov#SoftwareAgent">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#Agent"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://purls.helmholtz-metadaten.de/disos/sim#softwareRepository"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#anyURI"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://purls.helmholtz-metadaten.de/disos/sim#softwareVersion"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/mdo/provenance/SoftwareName"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- https://purls.helmholtz-metadaten.de/disos/cdo#CrystallineMaterial -->
+
+    <owl:Class rdf:about="https://purls.helmholtz-metadaten.de/disos/cdo#CrystallineMaterial">
+        <rdfs:label xml:lang="en">Crystalline Material</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://purls.helmholtz-metadaten.de/disos/cso#Point -->
+
+    <owl:Class rdf:about="https://purls.helmholtz-metadaten.de/disos/cso#Point"/>
+    
+
+
+    <!-- https://purls.helmholtz-metadaten.de/disos/cso#PositionVector -->
+
+    <owl:Class rdf:about="https://purls.helmholtz-metadaten.de/disos/cso#PositionVector">
+        <rdfs:subClassOf rdf:resource="https://purls.helmholtz-metadaten.de/disos/cso#Vector"/>
+        <rdfs:comment xml:lang="en">Euclidean vector that represents the position of a point P in space in relation to an arbitrary reference origin O.</rdfs:comment>
+        <rdfs:label xml:lang="en">Position Vector</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://purls.helmholtz-metadaten.de/disos/cso#Vector -->
+
+    <owl:Class rdf:about="https://purls.helmholtz-metadaten.de/disos/cso#Vector">
+        <rdfs:comment xml:lang="en">(Euclidean) vector is used to represent quantities that both magnitude and direction.</rdfs:comment>
+        <rdfs:label xml:lang="en">Vector</rdfs:label>
+        <skos:defintion xml:lang="en">(Euclidean) vector used to represent quantities that both magnitude and direction.</skos:defintion>
+    </owl:Class>
+    
+
+
+    <!-- https://purls.helmholtz-metadaten.de/disos/diso#Dislocation -->
+
+    <owl:Class rdf:about="https://purls.helmholtz-metadaten.de/disos/diso#Dislocation">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://purls.helmholtz-metadaten.de/disos/diso#hasMathematicalRepresentation"/>
+                <owl:someValuesFrom rdf:resource="https://purls.helmholtz-metadaten.de/disos/diso#Line"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="de">Ein linearer oder eindimensionaler Defekt, um den herum einige der Atome falsch ausgerichtet sind. Im Mesoscale ist eine Versetzung ein linienförmiges Objekt, das eine Grenze darstellt, die die Regionen auf der Gleitebene, in denen ein Gleiten stattgefunden hat, von denen trennt, in denen dies nicht der Fall war.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Linear or one-dimensional defect around which some of the atoms are misaligned. In the mesoscale, a dislocation is a line object that is a boundary separating the regions on the slip plane which have undergone slip from those that have not.</rdfs:comment>
+        <rdfs:comment xml:lang="en">The presence of dislocation introduces local disturbance of the atomic-level geometry.</rdfs:comment>
+        <rdfs:label xml:lang="en">Dislocation</rdfs:label>
+        <rdfs:label xml:lang="de">die Versetzung</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://purls.helmholtz-metadaten.de/disos/diso#Line -->
+
+    <owl:Class rdf:about="https://purls.helmholtz-metadaten.de/disos/diso#Line">
+        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo#EMMO_f7ed665b_c2e1_42bc_889b_6b42ed3a36f0"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://purls.helmholtz-metadaten.de/disos/sim#hasNumericalRepresentation"/>
+                <owl:someValuesFrom rdf:resource="https://purls.helmholtz-metadaten.de/disos/sim#DiscretizedLine"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <owl:disjointWith rdf:resource="https://purls.helmholtz-metadaten.de/disos/sim#DiscretizedLine"/>
+        <owl:disjointWith rdf:resource="https://purls.helmholtz-metadaten.de/disos/sim#Node"/>
+        <rdfs:comment xml:lang="en">Mathematical representation of dislocation as &apos;Line&apos;. An instance of mathematical representation of a dislocation line is an oriented curve parameterized by its arc length.</rdfs:comment>
+        <rdfs:comment xml:lang="de">Mathematische Darstellung der Versetzung als &quot;Linie&quot;. Ein Beispiel für die mathematische Darstellung einer Versetzungslinie ist eine orientierte Kurve, die durch ihre Bogenlänge parametrisiert ist.</rdfs:comment>
+        <rdfs:label xml:lang="en">Line</rdfs:label>
+        <rdfs:label xml:lang="de">die Linie</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://purls.helmholtz-metadaten.de/disos/sim#CrossSlip -->
+
+    <owl:Class rdf:about="https://purls.helmholtz-metadaten.de/disos/sim#CrossSlip">
+        <rdfs:subClassOf rdf:resource="https://purls.helmholtz-metadaten.de/disos/sim#DDDSimulationParameter"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://purls.helmholtz-metadaten.de/disos/sim#crossSlipParameterActivation"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <owl:disjointWith rdf:resource="https://purls.helmholtz-metadaten.de/disos/sim#ExternalLoadParameter"/>
+        <owl:disjointWith rdf:resource="https://purls.helmholtz-metadaten.de/disos/sim#JunctionFormation"/>
+        <rdfs:comment xml:lang="en">A simulation parameter to enable the cross slip process of dislocation network/structure.</rdfs:comment>
+        <rdfs:label xml:lang="en">Cross Slip</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://purls.helmholtz-metadaten.de/disos/sim#Cube -->
+
+    <owl:Class rdf:about="https://purls.helmholtz-metadaten.de/disos/sim#Cube">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://purls.helmholtz-metadaten.de/disos/sim#hasLength"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="https://purls.helmholtz-metadaten.de/disos/sim#Length"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">A three-dimensional solid object bounded by six square faces, facets or sides, with three meeting at each vertex.</rdfs:comment>
+        <rdfs:label xml:lang="en">Cube</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://purls.helmholtz-metadaten.de/disos/sim#DDDSimulation -->
+
+    <owl:Class rdf:about="https://purls.helmholtz-metadaten.de/disos/sim#DDDSimulation">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#Activity"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/mdo/core/Calculation"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://purls.helmholtz-metadaten.de/disos/sim#hasInputDislocationStructure"/>
+                        <owl:someValuesFrom rdf:resource="https://purls.helmholtz-metadaten.de/disos/sim#DislocationStructure"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://purls.helmholtz-metadaten.de/disos/sim#hasInputDislocationStructure"/>
+                        <owl:allValuesFrom rdf:resource="https://purls.helmholtz-metadaten.de/disos/sim#DislocationStructure"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://purls.helmholtz-metadaten.de/disos/sim#hasOutputDislocationStructure"/>
+                        <owl:allValuesFrom rdf:resource="https://purls.helmholtz-metadaten.de/disos/sim#DislocationStructure"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://purls.helmholtz-metadaten.de/disos/sim#hasSimulationParameter"/>
+                        <owl:someValuesFrom rdf:resource="https://purls.helmholtz-metadaten.de/disos/sim#DDDSimulationParameter"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://purls.helmholtz-metadaten.de/disos/sim#hasSimulationParameter"/>
+                        <owl:allValuesFrom rdf:resource="https://purls.helmholtz-metadaten.de/disos/sim#DDDSimulationParameter"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/ns/prov#wasAssociatedWith"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/ns/prov#Person"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://purls.helmholtz-metadaten.de/disos/sim#simulationDescription"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">Discrete dislocation dynamics (DDD) simulation is a simulation that is used to determine individual dislocation properties and study the distribution, arrangement, and density of dislocations in crystalline materials. The simulation observes the collective motion of many dislocations that links the relationship between the microstructure, loading conditions, and the mechanical properties of a crystalline material.</rdfs:comment>
+        <rdfs:label xml:lang="en">DDD Simulation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://purls.helmholtz-metadaten.de/disos/sim#DDDSimulationParameter -->
+
+    <owl:Class rdf:about="https://purls.helmholtz-metadaten.de/disos/sim#DDDSimulationParameter">
+        <rdfs:comment xml:lang="en">A Parameter that is used to run a DDD simulation.</rdfs:comment>
+        <rdfs:label xml:lang="en">DDD Simulation Parameter</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://purls.helmholtz-metadaten.de/disos/sim#DiscretizedLine -->
+
+    <owl:Class rdf:about="https://purls.helmholtz-metadaten.de/disos/sim#DiscretizedLine">
+        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo#EMMO_4ce76d7f_03f8_45b6_9003_90052a79bfaa"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://purls.helmholtz-metadaten.de/disos/sim#hasSegment"/>
+                <owl:allValuesFrom rdf:resource="https://purls.helmholtz-metadaten.de/disos/sim#Segment"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://purls.helmholtz-metadaten.de/disos/sim#hasShapeFunction"/>
+                <owl:allValuesFrom rdf:resource="https://purls.helmholtz-metadaten.de/disos/sim#ShapeFunction"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://purls.helmholtz-metadaten.de/disos/sim#slipArea"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="de">Die numerische Darstellung der Versetzungslinie, die in die Anzahl der Segmente diskretisiert ist.</rdfs:comment>
+        <rdfs:comment xml:lang="en">The numerical representation of the dislocation line that is discretized into the number of segments.</rdfs:comment>
+        <rdfs:label xml:lang="en">Discretized Line</rdfs:label>
+        <rdfs:label xml:lang="de">die Diskretisierte Linie</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://purls.helmholtz-metadaten.de/disos/sim#DislocationDensity -->
+
+    <owl:Class rdf:about="https://purls.helmholtz-metadaten.de/disos/sim#DislocationDensity">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/mdo/core/CalculatedProperty"/>
+        <rdfs:comment xml:lang="en">A quantifiable of the total length of dislocation line per unit volume of a crystalline material.</rdfs:comment>
+        <rdfs:label xml:lang="en">Dislocation Density</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://purls.helmholtz-metadaten.de/disos/sim#DislocationStructure -->
+
+    <owl:Class rdf:about="https://purls.helmholtz-metadaten.de/disos/sim#DislocationStructure">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/mdo/core/Structure"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://purls.helmholtz-metadaten.de/disos/cdo#hasCrystallographicDefect"/>
+                        <owl:someValuesFrom rdf:resource="https://purls.helmholtz-metadaten.de/disos/diso#Dislocation"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://purls.helmholtz-metadaten.de/disos/cdo#hasCrystallographicDefect"/>
+                        <owl:allValuesFrom rdf:resource="https://purls.helmholtz-metadaten.de/disos/diso#Dislocation"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://purls.helmholtz-metadaten.de/disos/sim#hasCube"/>
+                        <owl:someValuesFrom rdf:resource="https://purls.helmholtz-metadaten.de/disos/sim#Cube"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://purls.helmholtz-metadaten.de/disos/sim#hasCube"/>
+                        <owl:allValuesFrom rdf:resource="https://purls.helmholtz-metadaten.de/disos/sim#Cube"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://purls.helmholtz-metadaten.de/disos/sim#relatesToCrystallineMaterial"/>
+                        <owl:someValuesFrom rdf:resource="https://purls.helmholtz-metadaten.de/disos/cdo#CrystallineMaterial"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://purls.helmholtz-metadaten.de/disos/sim#relatesToCrystallineMaterial"/>
+                        <owl:allValuesFrom rdf:resource="https://purls.helmholtz-metadaten.de/disos/cdo#CrystallineMaterial"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">Structure that describes a dislocation (micro)structure, which is a virtual specimen used by a DDD simulation to study the mechanical properties of a crystalline materials.</rdfs:comment>
+        <rdfs:label xml:lang="en">Dislocation Structure</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://purls.helmholtz-metadaten.de/disos/sim#ExternalLoadParameter -->
+
+    <owl:Class rdf:about="https://purls.helmholtz-metadaten.de/disos/sim#ExternalLoadParameter">
+        <rdfs:subClassOf rdf:resource="https://purls.helmholtz-metadaten.de/disos/sim#DDDSimulationParameter"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://purls.helmholtz-metadaten.de/disos/sim#externalLoadParameterActivation"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <owl:disjointWith rdf:resource="https://purls.helmholtz-metadaten.de/disos/sim#JunctionFormation"/>
+        <rdfs:comment xml:lang="en">A simulation parameter to enable the external load imposed on dislocation network.</rdfs:comment>
+        <rdfs:label xml:lang="en">External Load Parameter</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://purls.helmholtz-metadaten.de/disos/sim#JunctionFormation -->
+
+    <owl:Class rdf:about="https://purls.helmholtz-metadaten.de/disos/sim#JunctionFormation">
+        <rdfs:subClassOf rdf:resource="https://purls.helmholtz-metadaten.de/disos/sim#DDDSimulationParameter"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://purls.helmholtz-metadaten.de/disos/sim#junctionFormationParameterActivation"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">A simulation parameter to enable the junction formation of a dislocation network/structure.</rdfs:comment>
+        <rdfs:label xml:lang="en">Junction Formation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://purls.helmholtz-metadaten.de/disos/sim#Length -->
+
+    <owl:Class rdf:about="https://purls.helmholtz-metadaten.de/disos/sim#Length">
+        <rdfs:subClassOf rdf:resource="http://qudt.org/schema/qudt/Quantity"/>
+        <rdfs:comment xml:lang="en">A magnitude of line that has a unit.</rdfs:comment>
+        <rdfs:label xml:lang="en">Length</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://purls.helmholtz-metadaten.de/disos/sim#Node -->
+
+    <owl:Class rdf:about="https://purls.helmholtz-metadaten.de/disos/sim#Node">
+        <rdfs:subClassOf rdf:resource="https://purls.helmholtz-metadaten.de/disos/cso#Point"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://purls.helmholtz-metadaten.de/disos/cso#hasPositionVector"/>
+                <owl:someValuesFrom rdf:resource="https://purls.helmholtz-metadaten.de/disos/cso#PositionVector"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <owl:disjointWith rdf:resource="https://purls.helmholtz-metadaten.de/disos/sim#Segment"/>
+        <rdfs:comment xml:lang="en">A point of a segment.</rdfs:comment>
+        <rdfs:comment xml:lang="de">Ein Punkt eines Segments.</rdfs:comment>
+        <rdfs:label xml:lang="en">Node</rdfs:label>
+        <rdfs:label xml:lang="de">der Knoten</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://purls.helmholtz-metadaten.de/disos/sim#Pixel -->
+
+    <owl:Class rdf:about="https://purls.helmholtz-metadaten.de/disos/sim#Pixel">
+        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/middle/perceptual#EMMO_1da53c06_9577_4008_8652_272fa3b62be7"/>
+        <rdfs:comment xml:lang="en">Pictorial that isthe smallest addressable element in a raster image, or the smallest addressable element in a dot matrix display device</rdfs:comment>
+        <rdfs:label xml:lang="en">Pixel</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://purls.helmholtz-metadaten.de/disos/sim#RemeshParameter -->
+
+    <owl:Class rdf:about="https://purls.helmholtz-metadaten.de/disos/sim#RemeshParameter">
+        <rdfs:subClassOf rdf:resource="https://purls.helmholtz-metadaten.de/disos/sim#DDDSimulationParameter"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://purls.helmholtz-metadaten.de/disos/sim#remeshFrequency"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://purls.helmholtz-metadaten.de/disos/sim#remeshParameterActivation"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">A simulation parameter related to remeshing the dislocation network.</rdfs:comment>
+        <rdfs:label xml:lang="en">Remesh Parameter</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://purls.helmholtz-metadaten.de/disos/sim#Segment -->
+
+    <owl:Class rdf:about="https://purls.helmholtz-metadaten.de/disos/sim#Segment">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://purls.helmholtz-metadaten.de/disos/sim#hasEndNode"/>
+                <owl:allValuesFrom rdf:resource="https://purls.helmholtz-metadaten.de/disos/sim#Node"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://purls.helmholtz-metadaten.de/disos/sim#hasStartNode"/>
+                <owl:allValuesFrom rdf:resource="https://purls.helmholtz-metadaten.de/disos/sim#Node"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://purls.helmholtz-metadaten.de/disos/sim#isSegmentOf"/>
+                <owl:allValuesFrom rdf:resource="https://purls.helmholtz-metadaten.de/disos/sim#DiscretizedLine"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="de">Das Segment ist ein Teil einer Linie, der von zwei bestimmten Endpunkten begrenzt wird und Punkte auf der Linie zwischen den Endpunkten enthalten kann.</rdfs:comment>
+        <rdfs:comment xml:lang="en">The segment is a part of a line bounded by two distinct end points and may contain points on the line between its endpoints.</rdfs:comment>
+        <rdfs:label xml:lang="en">Segment</rdfs:label>
+        <rdfs:label xml:lang="de">die Strecke</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://purls.helmholtz-metadaten.de/disos/sim#ShapeFunction -->
+
+    <owl:Class rdf:about="https://purls.helmholtz-metadaten.de/disos/sim#ShapeFunction">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://purls.helmholtz-metadaten.de/disos/sim#shapeFunctionType"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="de">Die Formfunktion ist die Funktion, die die Lösung zwischen den an den Netzknoten erhaltenen diskreten Werten interpoliert. Bei der diskretisierten Versetzung bestimmt die Formfunktion die Form eines Segments und letztlich die Form der Linie. Beispiele für Formfunktionen, die zur Diskretisierung der Versetzung verwendet werden, sind kreisförmig, elliptisch, spiralförmig, linear, kubisch und quintisch.</rdfs:comment>
+        <rdfs:comment xml:lang="en">The shape function is the function that interpolates the solution between the discrete values obtained at the mesh nodes. In discretized dislocation, the shape function determines the shape of a segment and ultimately determines the shape of the line. Examples of shape function that is used to discretize the dislocation are circular, elliptic, spiral, linear, cubic, and quintic.</rdfs:comment>
+        <rdfs:label xml:lang="en">Shape Function</rdfs:label>
+        <rdfs:label xml:lang="de">die Formfunktion</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/mdo/core/CalculatedProperty -->
+
+    <owl:Class rdf:about="https://w3id.org/mdo/core/CalculatedProperty">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/mdo/core/Property"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/mdo/core/Calculation -->
+
+    <owl:Class rdf:about="https://w3id.org/mdo/core/Calculation">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/ns/prov#wasAssociatedWith"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/ns/prov#SoftwareAgent"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/mdo/core/PhysicalProperty -->
+
+    <owl:Class rdf:about="https://w3id.org/mdo/core/PhysicalProperty">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/mdo/core/Property"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/mdo/core/Property -->
+
+    <owl:Class rdf:about="https://w3id.org/mdo/core/Property">
+        <rdfs:subClassOf rdf:resource="http://qudt.org/schema/qudt/Quantity"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/mdo/core/Structure -->
+
+    <owl:Class rdf:about="https://w3id.org/mdo/core/Structure"/>
+    
+
+
+    <!-- https://w3id.org/mdo/structure/Composition -->
+
+    <owl:Class rdf:about="https://w3id.org/mdo/structure/Composition"/>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+

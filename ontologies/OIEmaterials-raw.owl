@@ -1,0 +1,963 @@
+@prefix emmo: <http://emmo.info/emmo#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix materials: <http://emmo.info/emmo/domain/oie/materials#> .
+@base <http://emmo.info/emmo/domain/oie/materials> .
+
+<http://emmo.info/emmo/domain/oie/materials> rdf:type owl:Ontology ;
+                                          owl:versionIRI <http://emmo.info/emmo/domain/oie/materials> ;
+                                          owl:imports <http://emmo.info/emmo/1.0.0-beta3/middle/physicalistic> ,
+                                                      <http://emmo.info/emmo/1.0.0-beta3/top> ;
+                                          dcterms:abstract "The materials module populates the physicalistic perspective with materials subclasses categorised according to modern applied physical sciences."@en ;
+                                          dcterms:contributor "Access Technology (DE)" ,
+                                                              "Fraunhofer IWM (DE)" ,
+                                                              "Goldbeck Consulting Ltd (UK)" ,
+                                                              "SINTEF (NO)" ,
+                                                              "University of Bologna (IT)" ;
+                                          dcterms:creator "Adham Hashibon" ,
+                                                          "Daniele Toti" ,
+                                                          "Emanuele Ghedini" ,
+                                                          "Georg J. Schmitz" ,
+                                                          "Gerhard Goldbeck" ,
+                                                          "Jesper Friis" ,
+                                                          "Pierluigi Del Nostro" ;
+                                          dcterms:license "https://creativecommons.org/licenses/by/4.0/legalcode" ;
+                                          dcterms:publisher "EMMC ASBL" ;
+                                          dcterms:title "Materials"@en ;
+                                          rdfs:comment """Contacts:
+Gerhard Goldbeck
+Goldbeck Consulting Ltd (UK)
+email: gerhard@goldbeck-consulting.com
+
+Emanuele Ghedini
+University of Bologna (IT)
+email: emanuele.ghedini@unibo.it"""@en ,
+                                                       "The EMMO requires FacT++ reasoner plugin in order to visualize all inferences and class hierarchy (ctrl+R hotkey in Protege)."@en ;
+                                          owl:versionInfo "1.0.0-beta3" .
+
+####### EMMO mapping:
+### Atom               -> middle-physicalistic       emmo:EMMO_eb77076b_a104_42ac_a065_798b2d2809ad
+### Matter             -> middle-physicalistic       emmo:EMMO_5b2222df_4da6_442f_8244_96e9e45887d1
+### MolecularEntity    -> middle-physicalistic       emmo:EMMO_21205421_5783_4d3e_81e5_10c5d894a88a
+### etymology          -> top                        emmo:EMMO_705f27ae_954c_4f13_98aa_18473fc52b25
+### wikipediaReference -> top                        emmo:EMMO_c84c6752_6d64_48cc_9500_e54a3c34898d
+
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://www.w3.org/2002/07/owl#minQualifiedCardinality
+owl:minQualifiedCardinality rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2002/07/owl#qualifiedCardinality
+owl:qualifiedCardinality rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://emmo.info/emmo/domain/oie/materials#Gas
+materials:Gas rdf:type owl:Class ;
+                                           rdfs:subClassOf materials:Fluid ;
+                                           rdfs:comment "Gas is a compressible fluid, a state of matter that has no fixed shape and no fixed volume."@en ;
+                                           skos:prefLabel "Gas"@en .
+
+
+###  http://emmo.info/emmo/domain/oie/materials#Dispersion
+materials:Dispersion rdf:type owl:Class ;
+										   rdfs:subClassOf materials:LiquidSolid ;
+                                           owl:disjointUnionOf ( materials:Solution
+                                                                 materials:Suspension
+                                                                 materials:Colloid
+                                                               ) ;
+                                           rdfs:comment "A material in which distributed particles of one phase are dispersed in a different continuous phase."@en ;
+                                           skos:prefLabel "Dispersion"@en .
+
+
+###  http://emmo.info/emmo/domain/oie/materials#PhaseHeterogeneousMixture
+materials:PhaseHeterogeneousMixture rdf:type owl:Class ;
+                                           rdfs:subClassOf materials:Mixture ,
+                                                           [ rdf:type owl:Restriction ;
+                                                             owl:onProperty materials:EMMO_9380ab64_0363_4804_b13f_3a8a94119a76 ;
+                                                             owl:someValuesFrom materials:PhaseOfMatter
+                                                           ] ;
+                                           rdfs:comment "A mixture in which more than one phases of matter cohexists."@en ;
+                                           rdfs:comment """Phase heterogenous mixture may share the same state of matter.
+
+For example, immiscibile liquid phases (e.g. oil and water) constitute a mixture whose phases are clearly separated but share the same state of matter."""@en ;
+                                           skos:prefLabel "PhaseHeterogeneousMixture"@en .
+
+
+###  http://emmo.info/emmo/domain/oie/materials#PhaseHomogeneousMixture
+materials:PhaseHomogeneousMixture rdf:type owl:Class ;
+                                           rdfs:subClassOf materials:Mixture ;
+                                           rdfs:comment "A single phase mixture."@en ;
+                                           skos:prefLabel "PhaseHomogeneousMixture"@en .
+
+
+###  http://emmo.info/emmo/domain/oie/materials#Foam
+materials:Foam rdf:type owl:Class ;
+                                           rdfs:subClassOf materials:Colloid ,
+										                   materials:SolidGas ;
+                                           rdfs:comment "A colloid formed by trapping pockets of gas in a liquid or solid."@en ;
+                                           skos:prefLabel "Foam"@en .
+
+
+###  http://emmo.info/emmo/domain/oie/materials#Solution
+materials:Solution rdf:type owl:Class ;
+                                           rdfs:subClassOf materials:PhaseHomogeneousMixture ;
+                                           rdfs:comment "A solution is a homogeneous mixture composed of two or more substances."@en ;
+                                           rdfs:comment "Solutions are characterized by the occurrence of Rayleigh scattering on light,"@en ;
+                                           skos:prefLabel "Solution"@en .
+
+
+###  http://emmo.info/emmo/domain/oie/materials#SolidSolidSuspension
+materials:SolidSolidSuspension rdf:type owl:Class ;
+                                           rdfs:subClassOf materials:Solid ;
+                                           rdfs:comment "A coarse dispersion of solid in a solid continuum phase."@en ;
+                                           rdfs:comment "Granite, sand, dried concrete."@en ;
+                                           skos:prefLabel "SolidSolidSuspension"@en .
+
+
+###  http://emmo.info/emmo/domain/oie/materials#StandaloneAtom
+materials:StandaloneAtom rdf:type owl:Class ;
+                                           rdfs:subClassOf emmo:EMMO_eb77076b_a104_42ac_a065_798b2d2809ad ;
+                                           owl:disjointUnionOf ( materials:NeutralAtom
+                                                                 materials:IonAtom
+                                                               ) ;
+                                           rdfs:comment "An atom that does not share electrons with other atoms."@en ;
+                                           rdfs:comment "A standalone atom can be bonded with other atoms by intermolecular forces (i.e. dipole–dipole, London dispersion force, hydrogen bonding), since this bonds does not involve electron sharing."@en ;
+                                           skos:prefLabel "StandaloneAtom"@en .
+
+
+###  http://emmo.info/emmo/domain/oie/materials#Sol
+materials:Sol rdf:type owl:Class ;
+                                           rdfs:subClassOf materials:Colloid ;
+                                           rdfs:comment "A colloid in which small particles (1 nm to 100 nm) are suspended in a continuum phase."@en ;
+                                           skos:prefLabel "Sol"@en .
+
+
+###  http://emmo.info/emmo/domain/oie/materials#SolidLiquidSuspension
+materials:SolidLiquidSuspension rdf:type owl:Class ;
+                                           rdfs:subClassOf materials:Solid ;
+                                           rdfs:comment "A coarse dispersion of liquid in a solid continuum phase."@en ;
+                                           skos:prefLabel "SolidLiquidSuspension"@en .
+
+
+###  http://emmo.info/emmo/domain/oie/materials#Gel
+materials:Gel rdf:type owl:Class ;
+                                           rdfs:subClassOf materials:Colloid ,
+                                                           materials:Solid ;
+                                           rdfs:comment "A soft, solid or solid-like colloid consisting of two or more components, one of which is a liquid, present in substantial quantity."@en ;
+                                           skos:prefLabel "Gel"@en .
+
+
+###  http://emmo.info/emmo/domain/oie/materials#Emulsion
+materials:Emulsion rdf:type owl:Class ;
+                                           rdfs:subClassOf materials:Colloid ,
+                                                           materials:Liquid ,
+														   materials:LiquidLiquid ;
+                                           rdfs:comment "An emulsion is a mixture of two or more liquids that are normally immiscible (a liquid-liquid heterogeneous mixture)."@en ;
+                                           rdfs:comment "Mayonnaise, milk."@en ;
+                                           skos:prefLabel "Emulsion"@en .
+
+
+###  http://emmo.info/emmo/domain/oie/materials#Material
+materials:Material rdf:type owl:Class ;
+                                           rdfs:subClassOf emmo:EMMO_5b2222df_4da6_442f_8244_96e9e45887d1 ;
+                                           rdfs:comment "A matter individual that stands for a real world object representing an amount of a physical substance (or mixture of substances) in different states of matter or phases."@en ;
+                                           rdfs:comment "A instance of a material (e.g. nitrogen) can represent different states of matter. The fact that the individual also belongs to other classes (e.g. Gas) would reveal the actual form in which the material is found."@en ,
+                                                        "Material usually means some definite kind, quality, or quantity of matter, especially as intended for use."@en ;
+                                           skos:prefLabel "Material"@en .
+
+
+###  http://emmo.info/emmo/domain/oie/materials#LiquidGasSuspension
+materials:LiquidGasSuspension rdf:type owl:Class ;
+                                           rdfs:subClassOf materials:Liquid ;
+                                           rdfs:comment "A coarse dispersion of gas in a liquid continuum phase."@en ;
+                                           rdfs:comment "Sparkling water"@en ;
+                                           skos:prefLabel "LiquidGasSuspension"@en .
+
+
+###  http://emmo.info/emmo/domain/oie/materials#LiquidSol
+materials:LiquidSol rdf:type owl:Class ;
+                                           rdfs:subClassOf materials:Sol ,
+                                                           materials:Liquid ;
+                                           rdfs:comment "A type of sol in the form of one solid dispersed in liquid."@en ;
+                                           skos:prefLabel "LiquidSol"@en .
+
+
+###  http://emmo.info/emmo/domain/oie/materials#NeutralAtom
+materials:NeutralAtom rdf:type owl:Class ;
+                                           rdfs:subClassOf emmo:EMMO_eb77076b_a104_42ac_a065_798b2d2809ad ;
+                                           rdfs:comment "A standalone atom that has no net charge."@en ;
+                                           skos:prefLabel "NeutralAtom"@en .
+
+
+###  http://emmo.info/emmo/domain/oie/materials#LiquidLiquidSuspension
+materials:LiquidLiquidSuspension rdf:type owl:Class ;
+                                           rdfs:subClassOf materials:Liquid ;
+                                           rdfs:comment "A coarse dispersion of liquid in a liquid continuum phase."@en ;
+                                           skos:prefLabel "LiquidLiquidSuspension"@en .
+
+
+###  http://emmo.info/emmo/domain/oie/materials#Spray
+materials:Spray rdf:type owl:Class ;
+                                           rdfs:subClassOf materials:GasLiquidSuspension ;
+                                           rdfs:comment "A suspension of liquid droplets dispersed in a gas through an atomization process."@en ;
+                                           skos:prefLabel "Spray"@en .
+
+
+###  http://emmo.info/emmo/domain/oie/materials#Suspension
+materials:Suspension rdf:type owl:Class ;
+                                           rdfs:subClassOf materials:PhaseHeterogeneousMixture ;
+                                           owl:disjointUnionOf ( materials:SolidSolidSuspension
+                                                                 materials:SolidLiquidSuspension
+                                                                 materials:LiquidGasSuspension
+                                                                 materials:LiquidLiquidSuspension
+                                                                 materials:SolidGasSuspension
+                                                                 materials:GasSolidSuspension
+                                                                 materials:GasLiquidSuspension
+                                                                 materials:LiquidSolidSuspension
+                                                               ) ;
+                                           rdfs:comment "An heterogeneous mixture that contains coarsly dispersed particles (no Tyndall effect), that generally tend to separate in time to the dispersion medium phase."@en ;
+                                           rdfs:comment "Suspensions show no significant effect on light."@en ;
+                                           skos:prefLabel "Suspension"@en .
+
+
+###  http://emmo.info/emmo/domain/oie/materials#LiquidSolution
+materials:LiquidSolution rdf:type owl:Class ;
+                                           rdfs:subClassOf materials:Solution ,
+                                                           materials:Liquid ;
+                                           rdfs:comment "A liquid solution made of two or more component substances."@en ;
+                                           skos:prefLabel "LiquidSolution"@en .
+
+
+###  http://emmo.info/emmo/domain/oie/materials#Plasma
+materials:Plasma rdf:type owl:Class ;
+                                           rdfs:subClassOf materials:Fluid ;
+                                           rdfs:comment "A fluid in which a gas is ionized to a level where its electrical conductivity allows long-range electric and magnetic fields to dominate its behaviour."@en ;
+                                           skos:prefLabel "Plasma"@en .
+
+
+###  http://emmo.info/emmo/domain/oie/materials#Vapor
+materials:Vapor rdf:type owl:Class ;
+                                           rdfs:subClassOf materials:LiquidAerosol ;
+                                           rdfs:comment "A liquid aerosol composed of water droplets in air or another gas."@en ;
+                                           skos:prefLabel "Vapor"@en .
+
+
+###  http://emmo.info/emmo/domain/oie/materials#Aerosol
+materials:Aerosol rdf:type owl:Class ;
+                                           rdfs:subClassOf materials:Gas ,
+                                                           materials:Colloid ;
+                                           rdfs:comment "A colloid composed of fine solid particles or liquid droplets in air or another gas."@en ;
+                                           skos:prefLabel "Aerosol"@en .
+
+
+###  http://emmo.info/emmo/domain/oie/materials#Smoke
+materials:Smoke rdf:type owl:Class ;
+                                           rdfs:subClassOf materials:SolidAerosol ;
+                                           rdfs:comment "Smoke is a solid aerosol made of particles emitted when a material undergoes combustion or pyrolysis."@en ;
+                                           skos:prefLabel "Smoke"@en .
+
+
+###  http://emmo.info/emmo/domain/oie/materials#SolidSol
+materials:SolidSol rdf:type owl:Class ;
+                                           rdfs:subClassOf materials:Sol ,
+                                                           materials:Solid ;
+                                           rdfs:comment "A type of sol in the form of one solid dispersed in another continuous solid."@en ;
+                                           skos:prefLabel "SolidSol"@en .
+
+
+###  http://emmo.info/emmo/domain/oie/materials#GasSolution
+materials:GasSolution rdf:type owl:Class ;
+                                           owl:equivalentClass [ owl:intersectionOf ( materials:Gas
+                                                                                      materials:Solution
+                                                                                    ) ;
+                                                                 rdf:type owl:Class
+                                                               ] ;
+                                           rdfs:comment "A gaseous solution made of more than one component type."@en ;
+                                           skos:altLabel "GasMixture"@en ;
+                                           skos:prefLabel "GasSolution"@en .
+
+
+###  http://emmo.info/emmo/domain/oie/materials#AqueousSolution
+materials:AqueousSolution rdf:type owl:Class ;
+                                           rdfs:subClassOf materials:LiquidSolution ;
+                                           rdfs:comment "A liquid solution in which the solvent is water."@en ;
+                                           skos:prefLabel "AqueousSolution"@en .
+
+
+###  http://emmo.info/emmo/domain/oie/materials#NanoMaterial
+materials:NanoMaterial rdf:type owl:Class ;
+                                           rdfs:subClassOf materials:Material ;
+                                           rdfs:comment "Nanomaterials are Materials possessing, at minimum, one external dimension measuring 1-100nm"@en ;
+                                           skos:prefLabel "NanoMaterial"@en .
+
+
+###  http://emmo.info/emmo/domain/oie/materials#SolidSolution
+materials:SolidSolution rdf:type owl:Class ;
+                                           rdfs:subClassOf materials:Solution ,
+                                                           materials:Solid ;
+                                           rdfs:comment "A solid solution made of two or more component substances."@en ;
+                                           skos:prefLabel "SolidSolution"@en .
+
+
+###  http://emmo.info/emmo/domain/oie/materials#PhaseOfMatter
+materials:PhaseOfMatter rdf:type owl:Class ;
+                                           rdfs:subClassOf materials:Continuum ;
+                                           rdfs:comment "A matter object throughout which all physical properties of a material are essentially uniform."@en ;
+                                           rdfs:comment """In the physical sciences, a phase is a region of space (a thermodynamic system), throughout which all physical properties of a material are essentially uniform. Examples of physical properties include density, index of refraction, magnetization and chemical composition. A simple description is that a phase is a region of material that is chemically uniform, physically distinct, and (often) mechanically separable. In a system consisting of ice and water in a glass jar, the ice cubes are one phase, the water is a second phase, and the humid air is a third phase over the ice and water. The glass of the jar is another separate phase.
+
+The term phase is sometimes used as a synonym for state of matter, but there can be several immiscible phases of the same state of matter. Also, the term phase is sometimes used to refer to a set of equilibrium states demarcated in terms of state variables such as pressure and temperature by a phase boundary on a phase diagram. Because phase boundaries relate to changes in the organization of matter, such as a change from liquid to solid or a more subtle change from one crystal structure to another, this latter usage is similar to the use of \"phase\" as a synonym for state of matter. However, the state of matter and phase diagram usages are not commensurate with the formal definition given above and the intended meaning must be determined in part from the context in which the term is used."""@en ;
+                                           skos:prefLabel "PhaseOfMatter"@en .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource materials:PhaseOfMatter ;
+   owl:annotatedProperty rdfs:comment ;
+   owl:annotatedTarget """In the physical sciences, a phase is a region of space (a thermodynamic system), throughout which all physical properties of a material are essentially uniform. Examples of physical properties include density, index of refraction, magnetization and chemical composition. A simple description is that a phase is a region of material that is chemically uniform, physically distinct, and (often) mechanically separable. In a system consisting of ice and water in a glass jar, the ice cubes are one phase, the water is a second phase, and the humid air is a third phase over the ice and water. The glass of the jar is another separate phase.
+
+The term phase is sometimes used as a synonym for state of matter, but there can be several immiscible phases of the same state of matter. Also, the term phase is sometimes used to refer to a set of equilibrium states demarcated in terms of state variables such as pressure and temperature by a phase boundary on a phase diagram. Because phase boundaries relate to changes in the organization of matter, such as a change from liquid to solid or a more subtle change from one crystal structure to another, this latter usage is similar to the use of \"phase\" as a synonym for state of matter. However, the state of matter and phase diagram usages are not commensurate with the formal definition given above and the intended meaning must be determined in part from the context in which the term is used."""@en ;
+   emmo:EMMO_c84c6752_6d64_48cc_9500_e54a3c34898d "https://en.wikipedia.org/wiki/Phase_(matter)"@en
+ ] .
+
+
+###  http://emmo.info/emmo/domain/oie/materials#ReactiveMaterial
+materials:ReactiveMaterial rdf:type owl:Class ;
+                                           rdfs:subClassOf materials:Material ;
+                                           rdfs:comment "A material that undergoes chemical changes."@en ;
+                                           skos:prefLabel "ReactiveMaterial"@en .
+
+
+###  http://emmo.info/emmo/domain/oie/materials#Colloid
+materials:Colloid rdf:type owl:Class ;
+                                           rdfs:subClassOf materials:PhaseHeterogeneousMixture ;
+                                           rdfs:comment "A mixture in which one substance of microscopically dispersed insoluble or soluble particles (from 1 nm to 1 μm) is suspended throughout another substance and that does not settle, or would take a very long time to settle appreciably."@en ;
+                                           rdfs:comment "Colloids are characterized by the occurring of the Tyndall effect on light."@en ;
+                                           skos:prefLabel "Colloid"@en .
+
+
+###  http://emmo.info/emmo/domain/oie/materials#Liquid
+materials:Liquid rdf:type owl:Class ;
+                                           rdfs:subClassOf materials:Fluid ;
+                                           rdfs:comment "A liquid is a nearly incompressible fluid that conforms to the shape of its container but retains a (nearly) constant volume independent of pressure."@en ;
+                                           skos:prefLabel "Liquid"@en .
+
+
+###  http://emmo.info/emmo/domain/oie/materials#NaturalMaterial
+materials:NaturalMaterial rdf:type owl:Class ;
+                                           rdfs:subClassOf materials:Material ;
+                                           rdfs:comment "A Material occurring in nature, without the need of human intervention."@en ;
+                                           skos:prefLabel "NaturalMaterial"@en .
+
+
+###  http://emmo.info/emmo/domain/oie/materials#BondedAtom
+materials:BondedAtom rdf:type owl:Class ;
+                                           rdfs:subClassOf emmo:EMMO_eb77076b_a104_42ac_a065_798b2d2809ad ;
+                                           rdfs:comment "An bonded atom that shares at least one electron to the atom-based entity of which is part of."@en ;
+                                           rdfs:comment """A real bond between atoms is always something hybrid between covalent, metallic and ionic.
+
+In general, metallic and ionic bonds have atoms sharing electrons."""@en ,
+                                                        "The bond types that are covered by this definition are the strong electonic bonds: covalent, metallic and ionic."@en ,
+                                                        "This class can be used to represent molecules as simplified quantum systems, in which outer molecule shared electrons are un-entangled with the inner shells of the atoms composing the molecule."@en ;
+                                           skos:prefLabel "BondedAtom"@en .
+
+
+###  http://emmo.info/emmo/domain/oie/materials#Fluid
+materials:Fluid rdf:type owl:Class ;
+                                           rdfs:subClassOf materials:Continuum ,
+										                   materials:SinglePhaseMaterial ;
+                                           owl:disjointUnionOf ( materials:Gas
+                                                                 materials:Plasma
+                                                                 materials:Liquid
+                                                               ) ;
+                                           rdfs:comment "A continuum that has no fixed shape and yields easily to external pressure."@en ;
+                                           rdfs:comment "Gas, liquid, plasma,"@en ;
+                                           skos:prefLabel "Fluid"@en .
+
+
+###  http://emmo.info/emmo/domain/oie/materials#Continuum
+materials:Continuum rdf:type owl:Class ;
+                                           rdfs:subClassOf emmo:EMMO_5b2222df_4da6_442f_8244_96e9e45887d1 ;
+                                           rdfs:comment """A state that is a collection of sufficiently large number of other parts such that:
+- it is the bearer of qualities that can exists only by the fact that it is a sum of parts
+- the smallest partition dV of the state volume in which we are interested in, contains enough parts to be statistically consistent: n [#/m3] x dV [m3] >> 1"""@en ;
+                                           rdfs:comment "A continuum is made of a sufficient number of parts that it continues to exists as continuum individual even after the loss of one of them i.e. a continuum is a redundant."@en ,
+                                                        """A continuum is not necessarily small (i.e. composed by the minimum amount of sates to fulfill the definition).
+
+A single continuum individual can be the whole fluid in a pipe."""@en ,
+                                                        "A continuum is the bearer of properties that are generated by the interactions of parts such as viscosity and thermal or electrical conductivity."@en ;
+                                           skos:prefLabel "Continuum"@en .
+
+
+###  http://emmo.info/emmo/domain/oie/materials#LiquidAerosol
+materials:LiquidAerosol rdf:type owl:Class ;
+                                           rdfs:subClassOf materials:Aerosol ,
+										                   materials:GasLiquid ;
+                                           rdfs:comment "An aerosol composed of liquid droplets in air or another gas."@en ;
+                                           skos:prefLabel "LiquidAerosol"@en .
+
+
+###  http://emmo.info/emmo/domain/oie/materials#SolidAerosol
+materials:SolidAerosol rdf:type owl:Class ;
+                                           rdfs:subClassOf materials:Aerosol ,
+										                   materials:GasSolid ;
+                                           rdfs:comment "An aerosol composed of fine solid particles in air or another gas."@en ;
+                                           skos:prefLabel "SolidAerosol"@en .
+
+
+###  http://emmo.info/emmo/domain/oie/materials#SolidFoam
+materials:SolidFoam rdf:type owl:Class ;
+                                           rdfs:subClassOf materials:Foam ,
+                                                           materials:Solid ;
+                                           rdfs:comment "A foam of trapped gas in a solid."@en ;
+                                           rdfs:comment "Aerogel"@en ;
+                                           skos:prefLabel "SolidFoam"@en .
+
+
+###  http://emmo.info/emmo/domain/oie/materials#Solid
+materials:Solid rdf:type owl:Class ;
+                                           rdfs:subClassOf materials:Continuum ,
+										                   materials:SinglePhaseMaterial ;
+                                           rdfs:comment "A continuum characterized by structural rigidity and resistance to changes of shape or volume, that retains its shape and density when not confined."@en ;
+                                           skos:prefLabel "Solid"@en .
+
+
+###  http://emmo.info/emmo/domain/oie/materials#StateOfMatter
+materials:StateOfMatter rdf:type owl:Class ;
+                                           owl:disjointUnionOf ( materials:Gas
+                                                                 materials:Plasma
+                                                                 materials:Liquid
+                                                                 materials:Solid
+                                                               ) ;
+                                           rdfs:comment "A superclass made as the disjoint union of all the form under which matter can exist."@en ;
+                                           rdfs:comment """In physics, a state of matter is one of the distinct forms in which matter can exist. Four states of matter are observable in everyday life: solid, liquid, gas, and plasma.
+
+https://en.wikipedia.org/wiki/State_of_matter"""@en ;
+                                           skos:prefLabel "StateOfMatter"@en .
+
+
+###  http://emmo.info/emmo/domain/oie/materials#SolidGasSuspension
+materials:SolidGasSuspension rdf:type owl:Class ;
+                                           rdfs:subClassOf materials:Solid ;
+                                           rdfs:comment "A coarse dispersion of gas in a solid continuum phase."@en ;
+                                           skos:prefLabel "SolidGasSuspension"@en .
+
+
+###  http://emmo.info/emmo/domain/oie/materials#GasSolidSuspension
+materials:GasSolidSuspension rdf:type owl:Class ;
+                                           rdfs:subClassOf materials:Gas ;
+                                           rdfs:comment "A coarse dispersion of solid in a gas continuum phase."@en ;
+                                           rdfs:comment "Dust, sand storm."@en ;
+                                           skos:prefLabel "GasSolidSuspension"@en .
+
+
+###  http://emmo.info/emmo/domain/oie/materials#LiquidFoam
+materials:LiquidFoam rdf:type owl:Class ;
+                                           rdfs:subClassOf materials:Foam ,
+                                                           materials:Liquid ;
+                                           rdfs:comment "A foam of trapped gas in a liquid."@en ;
+                                           skos:prefLabel "LiquidFoam"@en .
+
+
+###  http://emmo.info/emmo/domain/oie/materials#IonAtom
+materials:IonAtom rdf:type owl:Class ;
+                                           rdfs:subClassOf emmo:EMMO_eb77076b_a104_42ac_a065_798b2d2809ad ;
+                                           rdfs:comment "A standalone atom with an unbalanced number of electrons with respect to its atomic number."@en ;
+                                           rdfs:comment "The ion_atom is the basic part of a pure ionic bonded compound i.e. without eclectron sharing,"@en ;
+                                           skos:prefLabel "IonAtom"@en .
+
+
+###  http://emmo.info/emmo/domain/oie/materials#GasLiquidSuspension
+materials:GasLiquidSuspension rdf:type owl:Class ;
+                                           rdfs:subClassOf materials:Gas ;
+                                           rdfs:comment "A coarse dispersion of liquid in a gas continuum phase."@en ;
+                                           rdfs:comment "Rain, spray."@en ;
+                                           skos:prefLabel "GasLiquidSuspension"@en .
+
+
+###  http://emmo.info/emmo/domain/oie/materials#Dust
+materials:Dust rdf:type owl:Class ;
+                                           rdfs:subClassOf materials:GasSolidSuspension ;
+                                           rdfs:comment "A suspension of fine particles in the atmosphere."@en ;
+                                           skos:prefLabel "Dust"@en .
+
+
+###  http://emmo.info/emmo/domain/oie/materials#LiquidSolidSuspension
+materials:LiquidSolidSuspension rdf:type owl:Class ;
+                                           rdfs:subClassOf materials:Liquid ;
+                                           rdfs:comment "A coarse dispersion of solids in a liquid continuum phase."@en ;
+                                           rdfs:comment "Mud"@en ;
+                                           skos:prefLabel "LiquidSolidSuspension"@en .
+
+
+###  http://emmo.info/emmo/domain/oie/materials#Mixture
+materials:Mixture rdf:type owl:Class ;
+                                           rdfs:subClassOf materials:Continuum ;
+                                           rdfs:comment "A Miixture is a material made up of two or more different substances which are physically (not chemically) combined."@en ;
+                                           skos:prefLabel "Mixture"@en .
+
+
+###  http://emmo.info/emmo/domain/oie/materials#CrystallineMaterial
+materials:CrystallineMaterial rdf:type owl:Class ;
+                                      rdfs:subClassOf materials:Material ;
+                                      rdfs:comment "Suggestion of Rickard Armiento" ;
+                                      skos:prefLabel "CrystallineMaterial"@en .
+
+
+###  http://emmo.info/emmo/domain/oie/materials#Crystal
+materials:Crystal rdf:type owl:Class ;
+                                                             rdfs:subClassOf materials:Solid ,
+                                                             materials:CrystallineMaterial ;
+                                                             rdfs:comment """A material is a crystal if it has essentially a sharp diffraction pattern.
+
+A solid is a crystal if it has essentially a sharp diffraction pattern. The word essentially means that most of the intensity of the diffraction is concentrated in relatively sharp Bragg peaks, besides the always present diffuse scattering. In all cases, the positions of the diffraction peaks can be expressed by
+
+
+H=∑ni=1hia∗i  (n≥3)""" ;
+                                                             skos:prefLabel "Crystal"@en .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource <http://emmo.info/emmo#Crystal> ;
+   owl:annotatedProperty rdfs:comment ;
+   owl:annotatedTarget """A material is a crystal if it has essentially a sharp diffraction pattern.
+
+A solid is a crystal if it has essentially a sharp diffraction pattern. The word essentially means that most of the intensity of the diffraction is concentrated in relatively sharp Bragg peaks, besides the always present diffuse scattering. In all cases, the positions of the diffraction peaks can be expressed by
+
+
+H=∑ni=1hia∗i  (n≥3)""" ;
+   rdfs:isDefinedBy "https://dictionary.iucr.org/Crystal"^^xsd:anyURI
+ ] .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource <http://emmo.info/emmo#Crystal> ;
+   owl:annotatedProperty skos:prefLabel ;
+   owl:annotatedTarget "Crystal"@en ;
+   emmo:EMMO_705f27ae_954c_4f13_98aa_18473fc52b25 "From Ancient Greek κρύσταλλος (krústallos, “clear ice”), from κρύος (krúos, “frost”)."@en
+ ] .
+
+
+###  http://emmo.info/emmo/domain/oie/materials#GasMixture
+materials:GasMixture rdf:type owl:Class ;
+                                                             owl:equivalentClass [ owl:intersectionOf ( materials:Gas
+                                                                                                        materials:Mixture
+                                                                                                      ) ;
+                                                                                   rdf:type owl:Class
+                                                                                 ] ;
+                                                             skos:prefLabel "GasMixture"@en .
+
+
+###  http://emmo.info/emmo/domain/oie/materials#Mesoscopic
+materials:Mesoscopic rdf:type owl:Class ;
+                                                             rdfs:subClassOf emmo:EMMO_5b2222df_4da6_442f_8244_96e9e45887d1 ;
+                                                             skos:prefLabel "Mesoscopic"@en .
+
+
+###  http://emmo.info/emmo/domain/oie/materials#SolidMixture
+materials:SolidMixture rdf:type owl:Class ;
+                                                             owl:equivalentClass [ owl:intersectionOf ( materials:Solid
+                                                                                                        materials:Mixture
+                                                                                                      ) ;
+                                                                                   rdf:type owl:Class
+                                                                                 ] ;
+                                                             skos:prefLabel "SolidMixture"@en .
+
+
+[ owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger
+] .
+
+[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:minQualifiedCardinality "2"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+#################################################################
+#    General axioms
+#################################################################
+
+[ rdf:type owl:AllDisjointClasses ;
+   owl:members ( emmo:EMMO_21205421_5783_4d3e_81e5_10c5d894a88a
+                 materials:Continuum
+                 materials:Mesoscopic
+               )
+ ] .
+
+########################################################################################################################################################
+### From OIE access-emmo-material.owl ******************************************************************************************************************
+########################################################################################################################################################
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://emmo.info/emmo/domain/oie/materials#Al_Based
+materials:Al_Based rdf:type owl:Class ;
+          rdfs:subClassOf materials:MultiPhaseAlloy ;
+          skos:prefLabel "Al_Based"@en .
+
+
+###  http://emmo.info/emmo/domain/oie/materials#Bubbles
+materials:Bubbles rdf:type owl:Class ;
+         rdfs:subClassOf materials:LiquidGas ;
+         skos:prefLabel "Bubbles"@en .
+
+
+###  http://emmo.info/emmo/domain/oie/materials#Ceramic
+materials:Ceramic rdf:type owl:Class ;
+         rdfs:subClassOf materials:MultiPhaseSolid ;
+         skos:prefLabel "Ceramic"@en .
+
+
+###  http://emmo.info/emmo/domain/oie/materials#CompositeMaterial
+materials:CompositeMaterial rdf:type owl:Class ;
+                   rdfs:subClassOf materials:SolidSolid ;
+                   skos:prefLabel "CompositeMaterial"@en .
+
+
+###  http://emmo.info/emmo/domain/oie/materials#ContinuumMaterial
+materials:ContinuumMaterial rdf:type owl:Class ;
+                   rdfs:subClassOf materials:Material ;
+                   skos:prefLabel "ContinuumMaterial"@en .
+
+
+###  http://emmo.info/emmo/domain/oie/materials#Cu_Based
+materials:Cu_Based rdf:type owl:Class ;
+          rdfs:subClassOf materials:MultiPhaseAlloy ;
+          skos:prefLabel "Cu_Based"@en .
+
+###  http://emmo.info/emmo/domain/oie/materials#Droplet
+materials:Droplet rdf:type owl:Class ;
+         rdfs:subClassOf materials:GasLiquid ;
+         skos:prefLabel "Droplet"@en .
+
+###  http://emmo.info/emmo/domain/oie/materials#Fe_Based
+materials:Fe_Based rdf:type owl:Class ;
+          rdfs:subClassOf materials:MultiPhaseAlloy ;
+          skos:prefLabel "Fe_Based"@en .
+
+
+###  http://emmo.info/emmo/domain/oie/materials#FiberReinforcedComposite
+materials:FiberReinforcedComposite rdf:type owl:Class ;
+                          rdfs:subClassOf materials:CompositeMaterial ;
+                          skos:prefLabel "FiberReinforcedComposite"@en .
+
+###  http://emmo.info/emmo/domain/oie/materials#Fog
+materials:Fog rdf:type owl:Class ;
+     rdfs:subClassOf materials:Vapor ;
+     skos:prefLabel "Fog"@en .
+
+
+###  http://emmo.info/emmo/domain/oie/materials#GasLiquid
+materials:GasLiquid rdf:type owl:Class ;
+           rdfs:subClassOf materials:MultiPhaseMaterial ;
+           skos:prefLabel "GasLiquid"@en .
+
+
+###  http://emmo.info/emmo/domain/oie/materials#GasSolid
+materials:GasSolid rdf:type owl:Class ;
+          rdfs:subClassOf materials:MultiPhaseMaterial ;
+          rdfs:comment "disconected solid particles being dispersed/embedded in a gas" ;
+          skos:prefLabel "GasSolid"@en .
+
+###  http://emmo.info/emmo/domain/oie/materials#LiquidGas
+materials:LiquidGas rdf:type owl:Class ;
+           rdfs:subClassOf materials:MultiPhaseMaterial ;
+           skos:prefLabel "LiquidGas"@en .
+
+
+###  http://emmo.info/emmo/domain/oie/materials#LiquidLiquid
+materials:LiquidLiquid rdf:type owl:Class ;
+              rdfs:subClassOf materials:MultiPhaseMaterial ;
+              skos:prefLabel "LiquidLiquid"@en .
+
+
+###  http://emmo.info/emmo/domain/oie/materials#LiquidSolid
+materials:LiquidSolid rdf:type owl:Class ;
+             rdfs:subClassOf materials:MultiPhaseMaterial ;
+             skos:prefLabel "LiquidSolid"@en .
+
+###  http://emmo.info/emmo/domain/oie/materials#Melt
+materials:Melt rdf:type owl:Class ;
+      rdfs:subClassOf materials:Liquid ;
+      skos:prefLabel "Melt"@en .
+
+
+###  http://emmo.info/emmo/domain/oie/materials#MultiPhaseAlloy
+materials:MultiPhaseAlloy rdf:type owl:Class ;
+               rdfs:subClassOf materials:MultiPhaseSolid ;
+               rdfs:comment "" ;
+               skos:prefLabel "MultiPhaseAlloy"@en .
+
+
+###  http://emmo.info/emmo/domain/oie/materials#MetallicMelt
+materials:MetallicMelt rdf:type owl:Class ;
+              rdfs:subClassOf materials:Melt ;
+              skos:prefLabel "MetallicMelt"@en .
+
+
+###  http://emmo.info/emmo/domain/oie/materials#Mg_Based
+materials:Mg_Based rdf:type owl:Class ;
+          rdfs:subClassOf materials:MultiPhaseAlloy ;
+          skos:prefLabel "Mg_Based"@en .
+
+
+###  http://emmo.info/emmo/domain/oie/materials#Mn_Based
+materials:Mn_Based rdf:type owl:Class ;
+          rdfs:subClassOf materials:MultiPhaseAlloy ;
+          skos:prefLabel "Mn_Based"@en .
+
+
+###  http://emmo.info/emmo/domain/oie/materials#MultiPhaseMaterial
+materials:MultiPhaseMaterial rdf:type owl:Class ;
+                    rdfs:subClassOf materials:ContinuumMaterial ;
+                    skos:prefLabel "MultiPhaseMaterial"@en .
+
+
+###  http://emmo.info/emmo/domain/oie/materials#MultiPhaseSolid
+materials:MultiPhaseSolid rdf:type owl:Class ;
+                 rdfs:subClassOf materials:SolidSolid ;
+                 skos:prefLabel "MultiPhaseSolid"@en .
+
+
+###  http://emmo.info/emmo/domain/oie/materials#Mush
+materials:Mush rdf:type owl:Class ;
+      rdfs:subClassOf materials:LiquidSolid ;
+      skos:prefLabel "Mush"@en .
+
+
+###  http://emmo.info/emmo/domain/oie/materials#Ni_Based
+materials:Ni_Based rdf:type owl:Class ;
+          rdfs:subClassOf materials:MultiPhaseAlloy ;
+          skos:prefLabel "Ni_Based"@en .
+
+
+###  http://emmo.info/emmo/domain/oie/materials#ParticleReinforcedComposite
+materials:ParticleReinforcedComposite rdf:type owl:Class ;
+                             rdfs:subClassOf materials:CompositeMaterial ;
+                             skos:prefLabel "ParticleReinforcedComposite"@en .
+
+
+###  http://emmo.info/emmo/domain/oie/materials#Paste
+materials:Paste rdf:type owl:Class ;
+       rdfs:subClassOf materials:LiquidSolid ;
+       skos:prefLabel "Paste"@en .
+
+
+###  http://emmo.info/emmo/domain/oie/materials#Plasma
+#materials:Plasma rdf:type owl:Class ;
+#        rdfs:subClassOf materials:ContinuumMaterial ;
+#        skos:prefLabel "Plasma"@en .
+
+
+###  http://emmo.info/emmo/domain/oie/materials#Polymer
+materials:Polymer rdf:type owl:Class ;
+         rdfs:subClassOf materials:Solid ;
+         skos:prefLabel "Polymer"@en .
+
+
+###  http://emmo.info/emmo/domain/oie/materials#PolymerMelt
+materials:PolymerMelt rdf:type owl:Class ;
+             rdfs:subClassOf materials:Melt ;
+             skos:prefLabel "PolymerMelt"@en .
+
+
+###  http://emmo.info/emmo/domain/oie/materials#Powder
+materials:Powder rdf:type owl:Class ;
+        rdfs:subClassOf materials:GasSolid ;
+        skos:prefLabel "Powder"@en .
+
+
+###  http://emmo.info/emmo/domain/oie/materials#Salt
+materials:Salt rdf:type owl:Class ;
+      rdfs:subClassOf materials:Ceramic ;
+      skos:prefLabel "Salt"@en .
+
+
+###  http://emmo.info/emmo/domain/oie/materials#Si_Based
+materials:Si_Based rdf:type owl:Class ;
+          rdfs:subClassOf materials:MultiPhaseAlloy ;
+          skos:prefLabel "Si_Based"@en .
+
+
+###  http://emmo.info/emmo/domain/oie/materials#SingleCrystal
+materials:SingleCrystal rdf:type owl:Class ;
+               rdfs:subClassOf materials:Solid ;
+               skos:prefLabel "SingleCrystal"@en .
+
+
+###  http://emmo.info/emmo/domain/oie/materials#SinglePhaseMaterial
+materials:SinglePhaseMaterial rdf:type owl:Class ;
+                     rdfs:subClassOf materials:ContinuumMaterial ;
+                     skos:prefLabel "SinglePhaseMaterial"@en .
+
+
+###  http://emmo.info/emmo/domain/oie/materials#Slurry
+materials:Slurry rdf:type owl:Class ;
+        rdfs:subClassOf materials:LiquidSolid ;
+        skos:prefLabel "Slurry"@en .
+
+###  http://emmo.info/emmo/domain/oie/materials#SolidGas
+materials:SolidGas rdf:type owl:Class ;
+          rdfs:subClassOf materials:MultiPhaseMaterial ;
+          skos:prefLabel "SolidGas"@en .
+
+###  http://emmo.info/emmo/domain/oie/materials#SolidLiquid
+materials:SolidLiquid rdf:type owl:Class ;
+             rdfs:subClassOf materials:MultiPhaseMaterial ;
+             skos:prefLabel "SolidLiquid"@en .
+
+###  http://emmo.info/emmo/domain/oie/materials#SolidSolid
+materials:SolidSolid rdf:type owl:Class ;
+            rdfs:subClassOf materials:MultiPhaseMaterial ;
+            skos:prefLabel "SolidSolid"@en .
+
+
+###  http://emmo.info/emmo/domain/oie/materials#Sponge
+materials:Sponge rdf:type owl:Class ;
+        rdfs:subClassOf materials:SolidGas ;
+        skos:prefLabel "Sponge"@en .
+
+
+###  http://emmo.info/emmo/domain/oie/materials#TextileReinforcedComposite
+materials:TextileReinforcedComposite rdf:type owl:Class ;
+                            rdfs:subClassOf materials:CompositeMaterial ;
+                            skos:prefLabel "TextileReinforcedComposite"@en .
+
+
+###  http://emmo.info/emmo/domain/oie/materials#Ti_Based
+materials:Ti_Based rdf:type owl:Class ;
+          rdfs:subClassOf materials:MultiPhaseAlloy ;
+          skos:prefLabel "Ti_Based"@en .
+
+### From OIE materials.ttl ******************************************************************************************************************
+
+###  http://emmo.info/emmo/domain/oie/materials#Elastomeric
+materials:Elastomeric rdf:type owl:Class ;
+skos:prefLabel "Elastomeric"@en ;
+             rdfs:subClassOf materials:Polymer .		 
+
+###  http://emmo.info/emmo/domain/oie/materials#Natural
+materials:Natural rdf:type owl:Class ;
+skos:prefLabel "Natural"@en ;
+         rdfs:subClassOf materials:Polymer .			 
+
+###  http://emmo.info/emmo/domain/oie/materials#SyntheticPolymer
+materials:SyntheticPolymer rdf:type owl:Class ;
+skos:prefLabel "SyntheticPolymer"@en ;
+                  rdfs:subClassOf materials:Polymer .
+
+###  http://emmo.info/emmo/domain/oie/materials#Thermoplastic
+materials:Thermoplastic rdf:type owl:Class ;
+skos:prefLabel "Thermoplastic"@en ;
+               rdfs:subClassOf materials:SyntheticPolymer .
+
+###  http://emmo.info/emmo/domain/oie/materials#ThermosettingPolymer
+materials:ThermosettingPolymer rdf:type owl:Class ;
+skos:prefLabel "ThermosettingPolymer"@en ;
+                      rdfs:subClassOf materials:SyntheticPolymer .
+					  
+###  http://emmo.info/emmo/domain/oie/materials#CrystallineSolidTermoplastic
+materials:CrystallineSolidTermoplastic rdf:type owl:Class ;
+skos:prefLabel "CrystallineSolidTermoplastic"@en ;
+                              rdfs:subClassOf materials:Thermoplastic .
+							  
+###  http://emmo.info/emmo/domain/oie/materials#AmorphousThermoplastic
+materials:AmorphousThermoplastic rdf:type owl:Class ;
+skos:prefLabel "AmorphousThermoplastic"@en ;
+                        rdfs:subClassOf materials:Thermoplastic .
+						
+###  http://emmo.info/emmo/domain/oie/materials#CeramicAmorphous
+materials:CeramicAmorphous rdf:type owl:Class ;
+skos:prefLabel "CeramicAmorphous"@en ;
+                  rdfs:subClassOf materials:MonoliticCeramic .
+
+###  http://emmo.info/emmo/domain/oie/materials#CeramicCrystallineSolid
+materials:CeramicCrystallineSolid rdf:type owl:Class ;
+skos:prefLabel "CeramicCrystallineSolid"@en ;
+                         rdfs:subClassOf materials:MonoliticCeramic .
+
+###  http://emmo.info/emmo/domain/oie/materials#CeramicPolyCrystal
+materials:CeramicPolyCrystal rdf:type owl:Class ;
+skos:prefLabel "CeramicPolyCrystal"@en ;
+                    rdfs:subClassOf materials:CeramicCrystallineSolid .
+
+###  http://emmo.info/emmo/domain/oie/materials#CeramicSingleCrystal
+materials:CeramicSingleCrystal rdf:type owl:Class ;
+skos:prefLabel "CeramicSingleCrystal"@en ;
+                      rdfs:subClassOf materials:CeramicCrystallineSolid .
+
+###  http://emmo.info/emmo/domain/oie/materials#CompositeCeramic
+materials:CompositeCeramic rdf:type owl:Class ;
+skos:prefLabel "CompositeCeramic"@en ;
+                  rdfs:subClassOf materials:Ceramic .
+				  
+###  http://emmo.info/emmo/domain/oie/materials#MonoliticCeramic
+materials:MonoliticCeramic rdf:type owl:Class ;
+skos:prefLabel "MonoliticCeramic"@en ;
+                  rdfs:subClassOf materials:Ceramic .
+				  
+###  http://emmo.info/emmo/domain/oie/materials#SinglePhaseAlloy
+materials:SinglePhaseAlloy rdf:type owl:Class ;
+skos:prefLabel "SinglePhaseAlloy"@en ;
+                  rdfs:subClassOf materials:Solid .
+				  
+###  http://emmo.info/emmo/domain/oie/materials#MetallicAmorphous
+materials:MetallicAmorphous rdf:type owl:Class ;
+skos:prefLabel "MetallicAmorphous"@en ;
+                   rdfs:subClassOf materials:SinglePhaseAlloy .
+				   
+###  http://emmo.info/emmo/domain/oie/materials#MetallicCrystallineSolid
+materials:MetallicCrystallineSolid rdf:type owl:Class ;
+skos:prefLabel "MetallicCrystallineSolid"@en ;
+                   rdfs:subClassOf materials:SinglePhaseAlloy .
+				   
+###  http://emmo.info/emmo/domain/oie/materials#FiberReinforcedMetalPolymer
+materials:FiberReinforcedMetalPolymer rdf:type owl:Class ;
+skos:prefLabel "FiberReinforcedMetalPolymer"@en ;
+                             rdfs:subClassOf materials:FiberReinforcedComposite .
+
+
+###  http://emmo.info/emmo/domain/oie/materials#FiberReinforcedPolymerMatrix
+materials:FiberReinforcedPolymerMatrix rdf:type owl:Class ;
+skos:prefLabel "FiberReinforcedPolymerMatrix"@en ;
+                              rdfs:subClassOf materials:FiberReinforcedComposite .
+
+
+###  http://emmo.info/emmo/domain/oie/materials#ParticleReinforcedCeramicMatrix
+materials:ParticleReinforcedCeramicMatrix rdf:type owl:Class ;
+skos:prefLabel "ParticleReinforcedCeramicMatrix"@en ;
+                                 rdfs:subClassOf materials:ParticleReinforcedComposite .
+
+
+###  http://emmo.info/emmo/domain/oie/materials#ParticleReinforcedMetalMatrix
+materials:ParticleReinforcedMetalMatrix rdf:type owl:Class ;
+skos:prefLabel "ParticleReinforcedMetalMatrix"@en ;
+                               rdfs:subClassOf materials:ParticleReinforcedComposite .
+
+
+###  http://emmo.info/emmo/domain/oie/materials#ParticleReinforcedPolymerMatrix
+materials:ParticleReinforcedPolymerMatrix rdf:type owl:Class ;
+skos:prefLabel "ParticleReinforcedPolymerMatrix"@en ;
+                                 rdfs:subClassOf materials:ParticleReinforcedComposite .
