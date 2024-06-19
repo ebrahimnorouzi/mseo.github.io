@@ -1,0 +1,140 @@
+<?xml version="1.0"?>
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:process="https://raw.githubusercontent.com/ebrahimnorouzi/mseo.github.io/master/Ontology_files/matinfo/OML-Process.owl#"
+    xmlns:protege="http://protege.stanford.edu/plugins/owl/protege#"
+    xmlns="https://raw.githubusercontent.com/ebrahimnorouzi/mseo.github.io/master/Ontology_files/matinfo/OML-MaterialInformation.owl#"
+    xmlns:substance="https://raw.githubusercontent.com/ebrahimnorouzi/mseo.github.io/master/Ontology_files/matinfo/OML-Substance.owl#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+    xmlns:environment="https://raw.githubusercontent.com/ebrahimnorouzi/mseo.github.io/master/Ontology_files/matinfo/OML-Environment.owl#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:geometry="https://raw.githubusercontent.com/ebrahimnorouzi/mseo.github.io/master/Ontology_files/matinfo/OML-Geometry.owl#"
+  xml:base="https://raw.githubusercontent.com/ebrahimnorouzi/mseo.github.io/master/Ontology_files/matinfo/OML-MaterialInformation.owl">
+  <owl:Ontology rdf:about="">
+    <owl:imports rdf:resource="https://raw.githubusercontent.com/ebrahimnorouzi/mseo.github.io/master/Ontology_files/matinfo/OML-Substance.owl"/>
+    <owl:imports rdf:resource="https://raw.githubusercontent.com/ebrahimnorouzi/mseo.github.io/master/Ontology_files/matinfo/OML-Geometry.owl"/>
+    <owl:imports rdf:resource="https://raw.githubusercontent.com/ebrahimnorouzi/mseo.github.io/master/Ontology_files/matinfo/OML-Environment.owl"/>
+    <owl:imports rdf:resource="https://raw.githubusercontent.com/ebrahimnorouzi/mseo.github.io/master/Ontology_files/matinfo/OML-Process.owl"/>
+    <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    ></owl:versionInfo>
+  </owl:Ontology>
+  <owl:Class rdf:ID="MaterialInformation"/>
+  <owl:Class rdf:ID="EngineeringMaterial">
+    <rdfs:subClassOf rdf:resource="#MaterialInformation"/>
+  </owl:Class>
+  <owl:Class rdf:ID="InformationSource">
+    <rdfs:subClassOf rdf:resource="#MaterialInformation"/>
+  </owl:Class>
+  <owl:Class rdf:ID="MaterialProperty">
+    <rdfs:subClassOf rdf:resource="#MaterialInformation"/>
+  </owl:Class>
+  <owl:ObjectProperty rdf:ID="ChemicalComposition">
+    <rdfs:domain rdf:resource="#EngineeringMaterial"/>
+    <rdfs:range rdf:resource="https://raw.githubusercontent.com/ebrahimnorouzi/mseo.github.io/master/Ontology_files/matinfo/OML-Substance.owl#Atom"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:ID="ManufacturingCondition">
+    <rdfs:range rdf:resource="https://raw.githubusercontent.com/ebrahimnorouzi/mseo.github.io/master/Ontology_files/matinfo/OML-Process.owl#ManufacturingProcess"/>
+    <rdfs:domain rdf:resource="#EngineeringMaterial"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:ID="Property">
+    <rdfs:range rdf:resource="https://raw.githubusercontent.com/ebrahimnorouzi/mseo.github.io/master/Ontology_files/matinfo/OML-Property.owl#Property"/>
+    <rdfs:domain rdf:resource="#MaterialProperty"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:ID="MeasurementMethod">
+    <rdfs:domain rdf:resource="#MaterialProperty"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:ID="Environment">
+    <rdfs:range rdf:resource="https://raw.githubusercontent.com/ebrahimnorouzi/mseo.github.io/master/Ontology_files/matinfo/OML-Environment.owl#Environment"/>
+    <rdfs:domain rdf:resource="#MaterialProperty"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:ID="SubstanceClass">
+    <rdfs:domain rdf:resource="#EngineeringMaterial"/>
+    <rdfs:range rdf:resource="https://raw.githubusercontent.com/ebrahimnorouzi/mseo.github.io/master/Ontology_files/matinfo/OML-Substance.owl#Substance"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:ID="Specimen">
+    <rdfs:domain rdf:resource="#MaterialProperty"/>
+    <rdfs:range rdf:resource="#EngineeringMaterial"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:ID="Equation">
+    <rdfs:range rdf:resource="https://raw.githubusercontent.com/ebrahimnorouzi/mseo.github.io/master/Ontology_files/matinfo/OML-Property.owl#Equation"/>
+    <rdfs:domain rdf:resource="#MaterialProperty"/>
+  </owl:ObjectProperty>
+  <owl:DatatypeProperty rdf:ID="Application">
+    <rdfs:domain rdf:resource="#EngineeringMaterial"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:ID="CuttingPosition">
+    <rdfs:domain rdf:resource="#EngineeringMaterial"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:ID="Standard">
+    <rdfs:domain rdf:resource="#EngineeringMaterial"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:ID="Geometry">
+    <rdfs:domain rdf:resource="#EngineeringMaterial"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:ID="Orientation">
+    <rdfs:domain rdf:resource="#EngineeringMaterial"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:ID="SpecimenSize">
+    <rdfs:domain rdf:resource="#EngineeringMaterial"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:ID="CommonName">
+    <rdfs:domain rdf:resource="#EngineeringMaterial"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:ID="Project">
+    <rdfs:domain rdf:resource="#EngineeringMaterial"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:ID="Form">
+    <rdfs:domain rdf:resource="#EngineeringMaterial"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:ID="DataCategory">
+    <rdfs:range>
+      <owl:DataRange>
+        <owl:oneOf rdf:parseType="Resource">
+          <rdf:rest rdf:parseType="Resource">
+            <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+            >Calculated</rdf:first>
+            <rdf:rest rdf:parseType="Resource">
+              <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+              >Theoretical</rdf:first>
+              <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:rest>
+          </rdf:rest>
+          <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+          >ActualMeasurement</rdf:first>
+        </owl:oneOf>
+      </owl:DataRange>
+    </rdfs:range>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:ID="MaterialCharacteristics">
+    <rdfs:domain rdf:resource="#EngineeringMaterial"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:ID="ChemicalFormula">
+    <rdfs:domain rdf:resource="#EngineeringMaterial"/>
+  </owl:DatatypeProperty>
+  <owl:AnnotationProperty rdf:ID="Source">
+    <rdfs:domain rdf:resource="#InformationSource"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </owl:AnnotationProperty>
+  <owl:DataRange>
+    <owl:oneOf rdf:parseType="Resource">
+      <rdf:rest rdf:parseType="Resource">
+        <rdf:rest rdf:parseType="Resource">
+          <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+          >composition%</rdf:first>
+          <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+        </rdf:rest>
+        <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >wt%</rdf:first>
+      </rdf:rest>
+      <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+      >at%</rdf:first>
+    </owl:oneOf>
+  </owl:DataRange>
+  <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#Thing">
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    ></rdfs:comment>
+  </rdf:Description>
+</rdf:RDF>
+
+<!-- Created with Protege (with OWL Plugin 3.2.1, Build 365)  http://protege.stanford.edu -->

@@ -1,0 +1,1979 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="./mambo.owl#"
+     xml:base="./mambo.owl"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:mambo="file:/home/fabio/Projects/MAMBO/mambo.owl#"
+     xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
+    <owl:Ontology rdf:about="file:/home/fabio/Projects/MAMBO/mambo.owl">
+        <!-- <dc:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MAMBO, the Materials And Molecules Basic Ontology, describes chemical and physical entities related to materials where molecules and their mutual displacement are crucial to the final property of the material itself.</dc:description> -->
+        <!-- <dc:title rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Materials And Molecules Basic Ontology</dc:title> -->
+        <!-- <terms:license rdf:resource="http://creativecommons.org/licenses/by/4.0/"/> -->
+        <!-- <oboInOwl:saved-by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">egolep</oboInOwl:saved-by> -->
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#id -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#id"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- file:/home/fabio/Projects/MAMBO/mambo.owl#corresponds_to_angle -->
+
+    <owl:ObjectProperty rdf:about="file:/home/fabio/Projects/MAMBO/mambo.owl#corresponds_to_angle">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="file:/home/fabio/Projects/MAMBO/mambo.owl#ThreeBody"/>
+        <rdfs:range rdf:resource="file:/home/fabio/Projects/MAMBO/mambo.owl#Angle"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- file:/home/fabio/Projects/MAMBO/mambo.owl#corresponds_to_bond -->
+
+    <owl:ObjectProperty rdf:about="file:/home/fabio/Projects/MAMBO/mambo.owl#corresponds_to_bond">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="file:/home/fabio/Projects/MAMBO/mambo.owl#TwoBody"/>
+        <rdfs:range rdf:resource="file:/home/fabio/Projects/MAMBO/mambo.owl#Bond"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- file:/home/fabio/Projects/MAMBO/mambo.owl#corresponds_to_dihedral -->
+
+    <owl:ObjectProperty rdf:about="file:/home/fabio/Projects/MAMBO/mambo.owl#corresponds_to_dihedral">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="file:/home/fabio/Projects/MAMBO/mambo.owl#FourBody"/>
+        <rdfs:range rdf:resource="file:/home/fabio/Projects/MAMBO/mambo.owl#Dihedral"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- file:/home/fabio/Projects/MAMBO/mambo.owl#first_atom -->
+
+    <owl:ObjectProperty rdf:about="file:/home/fabio/Projects/MAMBO/mambo.owl#first_atom">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="file:/home/fabio/Projects/MAMBO/mambo.owl#Angle"/>
+                    <rdf:Description rdf:about="file:/home/fabio/Projects/MAMBO/mambo.owl#Bond"/>
+                    <rdf:Description rdf:about="file:/home/fabio/Projects/MAMBO/mambo.owl#Dihedral"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="file:/home/fabio/Projects/MAMBO/mambo.owl#Atom"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- file:/home/fabio/Projects/MAMBO/mambo.owl#fourth_atom -->
+
+    <owl:ObjectProperty rdf:about="file:/home/fabio/Projects/MAMBO/mambo.owl#fourth_atom">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="file:/home/fabio/Projects/MAMBO/mambo.owl#Dihedral"/>
+        <rdfs:range rdf:resource="file:/home/fabio/Projects/MAMBO/mambo.owl#Atom"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- file:/home/fabio/Projects/MAMBO/mambo.owl#has_COM_coordinates -->
+
+    <owl:ObjectProperty rdf:about="file:/home/fabio/Projects/MAMBO/mambo.owl#has_COM_coordinates">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="file:/home/fabio/Projects/MAMBO/mambo.owl#MolecularSystem"/>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="file:/home/fabio/Projects/MAMBO/mambo.owl#CartesianCoordinates"/>
+                    <rdf:Description rdf:about="file:/home/fabio/Projects/MAMBO/mambo.owl#SphericalCoordinates"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- file:/home/fabio/Projects/MAMBO/mambo.owl#has_angle -->
+
+    <owl:ObjectProperty rdf:about="file:/home/fabio/Projects/MAMBO/mambo.owl#has_angle">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="file:/home/fabio/Projects/MAMBO/mambo.owl#MolecularSystem"/>
+                    <rdf:Description rdf:about="file:/home/fabio/Projects/MAMBO/mambo.owl#StructuralUnit"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="file:/home/fabio/Projects/MAMBO/mambo.owl#Angle"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- file:/home/fabio/Projects/MAMBO/mambo.owl#has_barostat -->
+
+    <owl:ObjectProperty rdf:about="file:/home/fabio/Projects/MAMBO/mambo.owl#has_barostat">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="file:/home/fabio/Projects/MAMBO/mambo.owl#Algorithm"/>
+        <rdfs:range rdf:resource="file:/home/fabio/Projects/MAMBO/mambo.owl#Barostat"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- file:/home/fabio/Projects/MAMBO/mambo.owl#has_bond -->
+
+    <owl:ObjectProperty rdf:about="file:/home/fabio/Projects/MAMBO/mambo.owl#has_bond">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="file:/home/fabio/Projects/MAMBO/mambo.owl#MolecularSystem"/>
+                    <rdf:Description rdf:about="file:/home/fabio/Projects/MAMBO/mambo.owl#StructuralUnit"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="file:/home/fabio/Projects/MAMBO/mambo.owl#Bond"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- file:/home/fabio/Projects/MAMBO/mambo.owl#has_component -->
+
+    <owl:ObjectProperty rdf:about="file:/home/fabio/Projects/MAMBO/mambo.owl#has_component">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="file:/home/fabio/Projects/MAMBO/mambo.owl#BondedPotential"/>
+                    <rdf:Description rdf:about="file:/home/fabio/Projects/MAMBO/mambo.owl#NonBondedPotential"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="file:/home/fabio/Projects/MAMBO/mambo.owl#PotentialComponents"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- file:/home/fabio/Projects/MAMBO/mambo.owl#has_computational_input -->
+
+    <owl:ObjectProperty rdf:about="file:/home/fabio/Projects/MAMBO/mambo.owl#has_computational_input">
+        <rdfs:domain rdf:resource="file:/home/fabio/Projects/MAMBO/mambo.owl#Simulation"/>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="file:/home/fabio/Projects/MAMBO/mambo.owl#Property"/>
+                    <rdf:Description rdf:about="file:/home/fabio/Projects/MAMBO/mambo.owl#Structure"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- file:/home/fabio/Projects/MAMBO/mambo.owl#has_computational_output -->
+
+    <owl:ObjectProperty rdf:about="file:/home/fabio/Projects/MAMBO/mambo.owl#has_computational_output">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <owl:inverseOf rdf:resource="file:/home/fabio/Projects/MAMBO/mambo.owl#is_computed_by"/>
+        <rdfs:domain rdf:resource="file:/home/fabio/Projects/MAMBO/mambo.owl#Simulation"/>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="file:/home/fabio/Projects/MAMBO/mambo.owl#Property"/>
+                    <rdf:Description rdf:about="file:/home/fabio/Projects/MAMBO/mambo.owl#Structure"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- file:/home/fabio/Projects/MAMBO/mambo.owl#has_coordinates -->
+
+    <owl:ObjectProperty rdf:about="file:/home/fabio/Projects/MAMBO/mambo.owl#has_coordinates">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="file:/home/fabio/Projects/MAMBO/mambo.owl#Atom"/>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="file:/home/fabio/Projects/MAMBO/mambo.owl#CartesianCoordinates"/>
+                    <rdf:Description rdf:about="file:/home/fabio/Projects/MAMBO/mambo.owl#SphericalCoordinates"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- file:/home/fabio/Projects/MAMBO/mambo.owl#has_dihedral -->
+
+    <owl:ObjectProperty rdf:about="file:/home/fabio/Projects/MAMBO/mambo.owl#has_dihedral">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="file:/home/fabio/Projects/MAMBO/mambo.owl#MolecularSystem"/>
+                    <rdf:Description rdf:about="file:/home/fabio/Projects/MAMBO/mambo.owl#StructuralUnit"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="file:/home/fabio/Projects/MAMBO/mambo.owl#Dihedral"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- file:/home/fabio/Projects/MAMBO/mambo.owl#has_ensemble -->
+
+    <owl:ObjectProperty rdf:about="file:/home/fabio/Projects/MAMBO/mambo.owl#has_ensemble">
+        <rdfs:domain rdf:resource="file:/home/fabio/Projects/MAMBO/mambo.owl#MolecularDynamics"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- file:/home/fabio/Projects/MAMBO/mambo.owl#has_experimental_input -->
+
+    <owl:ObjectProperty rdf:about="file:/home/fabio/Projects/MAMBO/mambo.owl#has_experimental_input">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+        <rdfs:domain rdf:resource="file:/home/fabio/Projects/MAMBO/mambo.owl#Experiment"/>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="file:/home/fabio/Projects/MAMBO/mambo.owl#Property"/>
+                    <rdf:Description rdf:about="file:/home/fabio/Projects/MAMBO/mambo.owl#Structure"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- file:/home/fabio/Projects/MAMBO/mambo.owl#has_experimental_output -->
+
+    <owl:ObjectProperty rdf:about="file:/home/fabio/Projects/MAMBO/mambo.owl#has_experimental_output">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <owl:inverseOf rdf:resource="file:/home/fabio/Projects/MAMBO/mambo.owl#is_measured_by"/>
+        <rdfs:domain rdf:resource="file:/home/fabio/Projects/MAMBO/mambo.owl#Experiment"/>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="file:/home/fabio/Projects/MAMBO/mambo.owl#Property"/>
+                    <rdf:Description rdf:about="file:/home/fabio/Projects/MAMBO/mambo.owl#Structure"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- file:/home/fabio/Projects/MAMBO/mambo.owl#has_integrated_atom -->
+
+    <owl:ObjectProperty rdf:about="file:/home/fabio/Projects/MAMBO/mambo.owl#has_integrated_atom">
+        <rdfs:domain rdf:resource="file:/home/fabio/Projects/MAMBO/mambo.owl#ExternalCoupling"/>
+        <rdfs:range rdf:resource="file:/home/fabio/Projects/MAMBO/mambo.owl#Atom"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- file:/home/fabio/Projects/MAMBO/mambo.owl#has_integrator -->
+
+    <owl:ObjectProperty rdf:about="file:/home/fabio/Projects/MAMBO/mambo.owl#has_integrator">
+        <rdfs:domain rdf:resource="file:/home/fabio/Projects/MAMBO/mambo.owl#MolecularDynamics"/>
+        <rdfs:range rdf:resource="file:/home/fabio/Projects/MAMBO/mambo.owl#Integrator"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- file:/home/fabio/Projects/MAMBO/mambo.owl#has_interaction_potential -->
+
+    <owl:ObjectProperty rdf:about="file:/home/fabio/Projects/MAMBO/mambo.owl#has_interaction_potential">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="file:/home/fabio/Projects/MAMBO/mambo.owl#ComputationalMethod"/>
+        <rdfs:range rdf:resource="file:/home/fabio/Projects/MAMBO/mambo.owl#InteractionPotential"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- file:/home/fabio/Projects/MAMBO/mambo.owl#has_property -->
+
+    <owl:ObjectProperty rdf:about="file:/home/fabio/Projects/MAMBO/mambo.owl#has_property">
+        <rdfs:domain rdf:resource="file:/home/fabio/Projects/MAMBO/mambo.owl#Material"/>
+        <rdfs:range rdf:resource="file:/home/fabio/Projects/MAMBO/mambo.owl#Property"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- file:/home/fabio/Projects/MAMBO/mambo.owl#has_structural_entity -->
+
+    <owl:ObjectProperty rdf:about="file:/home/fabio/Projects/MAMBO/mambo.owl#has_structural_entity">
+        <owl:inverseOf rdf:resource="file:/home/fabio/Projects/MAMBO/mambo.owl#is_structural_entity_of"/>
+        <rdfs:domain rdf:resource="file:/home/fabio/Projects/MAMBO/mambo.owl#Structure"/>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="file:/home/fabio/Projects/MAMBO/mambo.owl#Atom"/>
+                    <rdf:Description rdf:about="file:/home/fabio/Projects/MAMBO/mambo.owl#MolecularAggregate"/>
+                    <rdf:Description rdf:about="file:/home/fabio/Projects/MAMBO/mambo.owl#MolecularSystem"/>
+                    <rdf:Description rdf:about="file:/home/fabio/Projects/MAMBO/mambo.owl#Particle"/>
+                    <rdf:Description rdf:about="file:/home/fabio/Projects/MAMBO/mambo.owl#StructuralEntity"/>
+                    <rdf:Description rdf:about="file:/home/fabio/Projects/MAMBO/mambo.owl#StructuralUnit"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- file:/home/fabio/Projects/MAMBO/mambo.owl#has_structure -->
+
+    <owl:ObjectProperty rdf:about="file:/home/fabio/Projects/MAMBO/mambo.owl#has_structure">
+        <rdfs:domain rdf:resource="file:/home/fabio/Projects/MAMBO/mambo.owl#Material"/>
+        <rdfs:range rdf:resource="file:/home/fabio/Projects/MAMBO/mambo.owl#Structure"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- file:/home/fabio/Projects/MAMBO/mambo.owl#has_subunit -->
+
+    <owl:ObjectProperty rdf:about="file:/home/fabio/Projects/MAMBO/mambo.owl#has_subunit">
+        <owl:inverseOf rdf:resource="file:/home/fabio/Projects/MAMBO/mambo.owl#is_part_of"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="file:/home/fabio/Projects/MAMBO/mambo.owl#MolecularAggregate"/>
+                    <rdf:Description rdf:about="file:/home/fabio/Projects/MAMBO/mambo.owl#MolecularSystem"/>
+                    <rdf:Description rdf:about="file:/home/fabio/Projects/MAMBO/mambo.owl#Particle"/>
+                    <rdf:Description rdf:about="file:/home/fabio/Projects/MAMBO/mambo.owl#StructuralUnit"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="file:/home/fabio/Projects/MAMBO/mambo.owl#Atom"/>
+                    <rdf:Description rdf:about="file:/home/fabio/Projects/MAMBO/mambo.owl#MolecularSystem"/>
+                    <rdf:Description rdf:about="file:/home/fabio/Projects/MAMBO/mambo.owl#Particle"/>
+                    <rdf:Description rdf:about="file:/home/fabio/Projects/MAMBO/mambo.owl#StructuralUnit"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- file:/home/fabio/Projects/MAMBO/mambo.owl#has_thermostat -->
+
+    <owl:ObjectProperty rdf:about="file:/home/fabio/Projects/MAMBO/mambo.owl#has_thermostat">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="file:/home/fabio/Projects/MAMBO/mambo.owl#Algorithm"/>
+        <rdfs:range rdf:resource="file:/home/fabio/Projects/MAMBO/mambo.owl#Thermostat"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- file:/home/fabio/Projects/MAMBO/mambo.owl#is_computed_by -->
+
+    <owl:ObjectProperty rdf:about="file:/home/fabio/Projects/MAMBO/mambo.owl#is_computed_by">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="file:/home/fabio/Projects/MAMBO/mambo.owl#Property"/>
+                    <rdf:Description rdf:about="file:/home/fabio/Projects/MAMBO/mambo.owl#Structure"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="file:/home/fabio/Projects/MAMBO/mambo.owl#Simulation"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- file:/home/fabio/Projects/MAMBO/mambo.owl#is_measured_by -->
+
+    <owl:ObjectProperty rdf:about="file:/home/fabio/Projects/MAMBO/mambo.owl#is_measured_by">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="file:/home/fabio/Projects/MAMBO/mambo.owl#Property"/>
+                    <rdf:Description rdf:about="file:/home/fabio/Projects/MAMBO/mambo.owl#Structure"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="file:/home/fabio/Projects/MAMBO/mambo.owl#Experiment"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- file:/home/fabio/Projects/MAMBO/mambo.owl#is_part_of -->
+
+    <owl:ObjectProperty rdf:about="file:/home/fabio/Projects/MAMBO/mambo.owl#is_part_of">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="file:/home/fabio/Projects/MAMBO/mambo.owl#Atom"/>
+                    <rdf:Description rdf:about="file:/home/fabio/Projects/MAMBO/mambo.owl#MolecularSystem"/>
+                    <rdf:Description rdf:about="file:/home/fabio/Projects/MAMBO/mambo.owl#Particle"/>
+                    <rdf:Description rdf:about="file:/home/fabio/Projects/MAMBO/mambo.owl#StructuralUnit"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="file:/home/fabio/Projects/MAMBO/mambo.owl#MolecularAggregate"/>
+                    <rdf:Description rdf:about="file:/home/fabio/Projects/MAMBO/mambo.owl#MolecularSystem"/>
+                    <rdf:Description rdf:about="file:/home/fabio/Projects/MAMBO/mambo.owl#Particle"/>
+                    <rdf:Description rdf:about="file:/home/fabio/Projects/MAMBO/mambo.owl#StructuralUnit"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- file:/home/fabio/Projects/MAMBO/mambo.owl#is_structural_entity_of -->
+
+    <owl:ObjectProperty rdf:about="file:/home/fabio/Projects/MAMBO/mambo.owl#is_structural_entity_of">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="file:/home/fabio/Projects/MAMBO/mambo.owl#Atom"/>
+                    <rdf:Description rdf:about="file:/home/fabio/Projects/MAMBO/mambo.owl#MolecularAggregate"/>
+                    <rdf:Description rdf:about="file:/home/fabio/Projects/MAMBO/mambo.owl#MolecularSystem"/>
+                    <rdf:Description rdf:about="file:/home/fabio/Projects/MAMBO/mambo.owl#Particle"/>
+                    <rdf:Description rdf:about="file:/home/fabio/Projects/MAMBO/mambo.owl#StructuralEntity"/>
+                    <rdf:Description rdf:about="file:/home/fabio/Projects/MAMBO/mambo.owl#StructuralUnit"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="file:/home/fabio/Projects/MAMBO/mambo.owl#Structure"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- file:/home/fabio/Projects/MAMBO/mambo.owl#second_atom -->
+
+    <owl:ObjectProperty rdf:about="file:/home/fabio/Projects/MAMBO/mambo.owl#second_atom">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="file:/home/fabio/Projects/MAMBO/mambo.owl#Angle"/>
+                    <rdf:Description rdf:about="file:/home/fabio/Projects/MAMBO/mambo.owl#Bond"/>
+                    <rdf:Description rdf:about="file:/home/fabio/Projects/MAMBO/mambo.owl#Dihedral"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="file:/home/fabio/Projects/MAMBO/mambo.owl#Atom"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- file:/home/fabio/Projects/MAMBO/mambo.owl#third_atom -->
+
+    <owl:ObjectProperty rdf:about="file:/home/fabio/Projects/MAMBO/mambo.owl#third_atom">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="file:/home/fabio/Projects/MAMBO/mambo.owl#Angle"/>
+                    <rdf:Description rdf:about="file:/home/fabio/Projects/MAMBO/mambo.owl#Dihedral"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="file:/home/fabio/Projects/MAMBO/mambo.owl#Atom"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- file:/home/fabio/Projects/MAMBO/mambo.owl#use_algorithm -->
+
+    <owl:ObjectProperty rdf:about="file:/home/fabio/Projects/MAMBO/mambo.owl#use_algorithm">
+        <rdfs:domain rdf:resource="file:/home/fabio/Projects/MAMBO/mambo.owl#ComputationalMethod"/>
+        <rdfs:range rdf:resource="file:/home/fabio/Projects/MAMBO/mambo.owl#Algorithm"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- file:/home/fabio/Projects/MAMBO/mambo.owl#use_computational_method -->
+
+    <owl:ObjectProperty rdf:about="file:/home/fabio/Projects/MAMBO/mambo.owl#use_computational_method">
+        <rdfs:domain rdf:resource="file:/home/fabio/Projects/MAMBO/mambo.owl#Simulation"/>
+        <rdfs:range rdf:resource="file:/home/fabio/Projects/MAMBO/mambo.owl#ComputationalMethod"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- file:/home/fabio/Projects/MAMBO/mambo.owl#use_experimental_method -->
+
+    <owl:ObjectProperty rdf:about="file:/home/fabio/Projects/MAMBO/mambo.owl#use_experimental_method">
+        <rdfs:domain rdf:resource="file:/home/fabio/Projects/MAMBO/mambo.owl#Experiment"/>
+        <rdfs:range rdf:resource="file:/home/fabio/Projects/MAMBO/mambo.owl#ExperimentalMethod"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- file:/home/fabio/Projects/MAMBO/mambo.owl#ID -->
+
+    <owl:DatatypeProperty rdf:about="file:/home/fabio/Projects/MAMBO/mambo.owl#ID">
+        <rdfs:domain rdf:resource="file:/home/fabio/Projects/MAMBO/mambo.owl#Simulation"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- file:/home/fabio/Projects/MAMBO/mambo.owl#X -->
+
+    <owl:DatatypeProperty rdf:about="file:/home/fabio/Projects/MAMBO/mambo.owl#X">
+        <rdfs:domain rdf:resource="file:/home/fabio/Projects/MAMBO/mambo.owl#CartesianCoordinates"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- file:/home/fabio/Projects/MAMBO/mambo.owl#Y -->
+
+    <owl:DatatypeProperty rdf:about="file:/home/fabio/Projects/MAMBO/mambo.owl#Y">
+        <rdfs:domain rdf:resource="file:/home/fabio/Projects/MAMBO/mambo.owl#CartesianCoordinates"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- file:/home/fabio/Projects/MAMBO/mambo.owl#Z -->
+
+    <owl:DatatypeProperty rdf:about="file:/home/fabio/Projects/MAMBO/mambo.owl#Z">
+        <rdfs:domain rdf:resource="file:/home/fabio/Projects/MAMBO/mambo.owl#CartesianCoordinates"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- file:/home/fabio/Projects/MAMBO/mambo.owl#algorithm_type -->
+
+    <owl:DatatypeProperty rdf:about="file:/home/fabio/Projects/MAMBO/mambo.owl#algorithm_type">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="file:/home/fabio/Projects/MAMBO/mambo.owl#Algorithm"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- file:/home/fabio/Projects/MAMBO/mambo.owl#atomic_number -->
+
+    <owl:DatatypeProperty rdf:about="file:/home/fabio/Projects/MAMBO/mambo.owl#atomic_number">
+        <rdfs:domain rdf:resource="file:/home/fabio/Projects/MAMBO/mambo.owl#Atom"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- file:/home/fabio/Projects/MAMBO/mambo.owl#azimuthal_angle -->
+
+    <owl:DatatypeProperty rdf:about="file:/home/fabio/Projects/MAMBO/mambo.owl#azimuthal_angle">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="file:/home/fabio/Projects/MAMBO/mambo.owl#SphericalCoordinates"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- file:/home/fabio/Projects/MAMBO/mambo.owl#bond_type -->
+
+    <owl:DatatypeProperty rdf:about="file:/home/fabio/Projects/MAMBO/mambo.owl#bond_type">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="file:/home/fabio/Projects/MAMBO/mambo.owl#TwoBody"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- file:/home/fabio/Projects/MAMBO/mambo.owl#box_dimension -->
+
+    <owl:DatatypeProperty rdf:about="file:/home/fabio/Projects/MAMBO/mambo.owl#box_dimension">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- file:/home/fabio/Projects/MAMBO/mambo.owl#charge -->
+
+    <owl:DatatypeProperty rdf:about="file:/home/fabio/Projects/MAMBO/mambo.owl#charge">
+        <rdfs:domain rdf:resource="file:/home/fabio/Projects/MAMBO/mambo.owl#Atom"/>
+        <rdfs:domain rdf:resource="file:/home/fabio/Projects/MAMBO/mambo.owl#MolecularSystem"/>
+        <rdfs:domain rdf:resource="file:/home/fabio/Projects/MAMBO/mambo.owl#Particle"/>
+        <rdfs:domain rdf:resource="file:/home/fabio/Projects/MAMBO/mambo.owl#StructuralUnit"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- file:/home/fabio/Projects/MAMBO/mambo.owl#composition -->
+
+    <owl:DatatypeProperty rdf:about="file:/home/fabio/Projects/MAMBO/mambo.owl#composition">
+        <rdfs:domain rdf:resource="file:/home/fabio/Projects/MAMBO/mambo.owl#MolecularSystem"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- file:/home/fabio/Projects/MAMBO/mambo.owl#coulomb_cutoff -->
+
+    <owl:DatatypeProperty rdf:about="file:/home/fabio/Projects/MAMBO/mambo.owl#coulomb_cutoff">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- file:/home/fabio/Projects/MAMBO/mambo.owl#dihedral_coefficient_1 -->
+
+    <owl:DatatypeProperty rdf:about="file:/home/fabio/Projects/MAMBO/mambo.owl#dihedral_coefficient_1">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="file:/home/fabio/Projects/MAMBO/mambo.owl#FourBody"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- file:/home/fabio/Projects/MAMBO/mambo.owl#dihedral_coefficient_2 -->
+
+    <owl:DatatypeProperty rdf:about="file:/home/fabio/Projects/MAMBO/mambo.owl#dihedral_coefficient_2">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="file:/home/fabio/Projects/MAMBO/mambo.owl#FourBody"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- file:/home/fabio/Projects/MAMBO/mambo.owl#dihedral_coefficient_3 -->
+
+    <owl:DatatypeProperty rdf:about="file:/home/fabio/Projects/MAMBO/mambo.owl#dihedral_coefficient_3">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="file:/home/fabio/Projects/MAMBO/mambo.owl#FourBody"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- file:/home/fabio/Projects/MAMBO/mambo.owl#dihedral_coefficient_4 -->
+
+    <owl:DatatypeProperty rdf:about="file:/home/fabio/Projects/MAMBO/mambo.owl#dihedral_coefficient_4">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="file:/home/fabio/Projects/MAMBO/mambo.owl#FourBody"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- file:/home/fabio/Projects/MAMBO/mambo.owl#dihedral_coefficient_5 -->
+
+    <owl:DatatypeProperty rdf:about="file:/home/fabio/Projects/MAMBO/mambo.owl#dihedral_coefficient_5">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="file:/home/fabio/Projects/MAMBO/mambo.owl#FourBody"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- file:/home/fabio/Projects/MAMBO/mambo.owl#dihedral_coefficient_6 -->
+
+    <owl:DatatypeProperty rdf:about="file:/home/fabio/Projects/MAMBO/mambo.owl#dihedral_coefficient_6">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="file:/home/fabio/Projects/MAMBO/mambo.owl#FourBody"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- file:/home/fabio/Projects/MAMBO/mambo.owl#element_11 -->
+
+    <owl:DatatypeProperty rdf:about="file:/home/fabio/Projects/MAMBO/mambo.owl#element_11">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="file:/home/fabio/Projects/MAMBO/mambo.owl#RotationMatrix"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- file:/home/fabio/Projects/MAMBO/mambo.owl#element_12 -->
+
+    <owl:DatatypeProperty rdf:about="file:/home/fabio/Projects/MAMBO/mambo.owl#element_12">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="file:/home/fabio/Projects/MAMBO/mambo.owl#RotationMatrix"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- file:/home/fabio/Projects/MAMBO/mambo.owl#element_13 -->
+
+    <owl:DatatypeProperty rdf:about="file:/home/fabio/Projects/MAMBO/mambo.owl#element_13">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="file:/home/fabio/Projects/MAMBO/mambo.owl#RotationMatrix"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- file:/home/fabio/Projects/MAMBO/mambo.owl#element_21 -->
+
+    <owl:DatatypeProperty rdf:about="file:/home/fabio/Projects/MAMBO/mambo.owl#element_21">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="file:/home/fabio/Projects/MAMBO/mambo.owl#RotationMatrix"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- file:/home/fabio/Projects/MAMBO/mambo.owl#element_22 -->
+
+    <owl:DatatypeProperty rdf:about="file:/home/fabio/Projects/MAMBO/mambo.owl#element_22">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="file:/home/fabio/Projects/MAMBO/mambo.owl#RotationMatrix"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- file:/home/fabio/Projects/MAMBO/mambo.owl#element_23 -->
+
+    <owl:DatatypeProperty rdf:about="file:/home/fabio/Projects/MAMBO/mambo.owl#element_23">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="file:/home/fabio/Projects/MAMBO/mambo.owl#RotationMatrix"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- file:/home/fabio/Projects/MAMBO/mambo.owl#element_31 -->
+
+    <owl:DatatypeProperty rdf:about="file:/home/fabio/Projects/MAMBO/mambo.owl#element_31">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="file:/home/fabio/Projects/MAMBO/mambo.owl#RotationMatrix"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- file:/home/fabio/Projects/MAMBO/mambo.owl#element_32 -->
+
+    <owl:DatatypeProperty rdf:about="file:/home/fabio/Projects/MAMBO/mambo.owl#element_32">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="file:/home/fabio/Projects/MAMBO/mambo.owl#RotationMatrix"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- file:/home/fabio/Projects/MAMBO/mambo.owl#element_33 -->
+
+    <owl:DatatypeProperty rdf:about="file:/home/fabio/Projects/MAMBO/mambo.owl#element_33">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="file:/home/fabio/Projects/MAMBO/mambo.owl#RotationMatrix"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- file:/home/fabio/Projects/MAMBO/mambo.owl#energy_threshold -->
+
+    <owl:DatatypeProperty rdf:about="file:/home/fabio/Projects/MAMBO/mambo.owl#energy_threshold">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="file:/home/fabio/Projects/MAMBO/mambo.owl#Algorithm"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- file:/home/fabio/Projects/MAMBO/mambo.owl#epsilon -->
+
+    <owl:DatatypeProperty rdf:about="file:/home/fabio/Projects/MAMBO/mambo.owl#epsilon">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="file:/home/fabio/Projects/MAMBO/mambo.owl#TwoBody"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- file:/home/fabio/Projects/MAMBO/mambo.owl#equilibrium_distance -->
+
+    <owl:DatatypeProperty rdf:about="file:/home/fabio/Projects/MAMBO/mambo.owl#equilibrium_distance">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="file:/home/fabio/Projects/MAMBO/mambo.owl#TwoBody"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- file:/home/fabio/Projects/MAMBO/mambo.owl#equilibrium_value -->
+
+    <owl:DatatypeProperty rdf:about="file:/home/fabio/Projects/MAMBO/mambo.owl#equilibrium_value">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="file:/home/fabio/Projects/MAMBO/mambo.owl#ThreeBody"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- file:/home/fabio/Projects/MAMBO/mambo.owl#force_constant -->
+
+    <owl:DatatypeProperty rdf:about="file:/home/fabio/Projects/MAMBO/mambo.owl#force_constant">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="file:/home/fabio/Projects/MAMBO/mambo.owl#TwoBody"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- file:/home/fabio/Projects/MAMBO/mambo.owl#force_threshold -->
+
+    <owl:DatatypeProperty rdf:about="file:/home/fabio/Projects/MAMBO/mambo.owl#force_threshold">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="file:/home/fabio/Projects/MAMBO/mambo.owl#Algorithm"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- file:/home/fabio/Projects/MAMBO/mambo.owl#formula -->
+
+    <owl:DatatypeProperty rdf:about="file:/home/fabio/Projects/MAMBO/mambo.owl#formula">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="file:/home/fabio/Projects/MAMBO/mambo.owl#MolecularSystem"/>
+        <rdfs:domain rdf:resource="file:/home/fabio/Projects/MAMBO/mambo.owl#Particle"/>
+        <rdfs:domain rdf:resource="file:/home/fabio/Projects/MAMBO/mambo.owl#StructuralUnit"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- file:/home/fabio/Projects/MAMBO/mambo.owl#function_type -->
+
+    <owl:DatatypeProperty rdf:about="file:/home/fabio/Projects/MAMBO/mambo.owl#function_type">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- file:/home/fabio/Projects/MAMBO/mambo.owl#i -->
+
+    <owl:DatatypeProperty rdf:about="file:/home/fabio/Projects/MAMBO/mambo.owl#i">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="file:/home/fabio/Projects/MAMBO/mambo.owl#Quaternion"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- file:/home/fabio/Projects/MAMBO/mambo.owl#interaction_potential_type -->
+
+    <owl:DatatypeProperty rdf:about="file:/home/fabio/Projects/MAMBO/mambo.owl#interaction_potential_type">
+        <rdfs:domain rdf:resource="file:/home/fabio/Projects/MAMBO/mambo.owl#InteractionPotential"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- file:/home/fabio/Projects/MAMBO/mambo.owl#j -->
+
+    <owl:DatatypeProperty rdf:about="file:/home/fabio/Projects/MAMBO/mambo.owl#j">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="file:/home/fabio/Projects/MAMBO/mambo.owl#Quaternion"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- file:/home/fabio/Projects/MAMBO/mambo.owl#k -->
+
+    <owl:DatatypeProperty rdf:about="file:/home/fabio/Projects/MAMBO/mambo.owl#k">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="file:/home/fabio/Projects/MAMBO/mambo.owl#Quaternion"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- file:/home/fabio/Projects/MAMBO/mambo.owl#log -->
+
+    <owl:DatatypeProperty rdf:about="file:/home/fabio/Projects/MAMBO/mambo.owl#log">
+        <rdfs:domain rdf:resource="file:/home/fabio/Projects/MAMBO/mambo.owl#Experiment"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- file:/home/fabio/Projects/MAMBO/mambo.owl#mass -->
+
+    <owl:DatatypeProperty rdf:about="file:/home/fabio/Projects/MAMBO/mambo.owl#mass">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- file:/home/fabio/Projects/MAMBO/mambo.owl#max_number_of_steps -->
+
+    <owl:DatatypeProperty rdf:about="file:/home/fabio/Projects/MAMBO/mambo.owl#max_number_of_steps">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="file:/home/fabio/Projects/MAMBO/mambo.owl#Algorithm"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- file:/home/fabio/Projects/MAMBO/mambo.owl#number_of_atoms -->
+
+    <owl:DatatypeProperty rdf:about="file:/home/fabio/Projects/MAMBO/mambo.owl#number_of_atoms">
+        <rdfs:domain rdf:resource="file:/home/fabio/Projects/MAMBO/mambo.owl#MolecularSystem"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- file:/home/fabio/Projects/MAMBO/mambo.owl#number_of_molecules -->
+
+    <owl:DatatypeProperty rdf:about="file:/home/fabio/Projects/MAMBO/mambo.owl#number_of_molecules">
+        <rdfs:domain rdf:resource="file:/home/fabio/Projects/MAMBO/mambo.owl#MolecularAggregate"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- file:/home/fabio/Projects/MAMBO/mambo.owl#number_of_timesteps -->
+
+    <owl:DatatypeProperty rdf:about="file:/home/fabio/Projects/MAMBO/mambo.owl#number_of_timesteps">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="file:/home/fabio/Projects/MAMBO/mambo.owl#Algorithm"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- file:/home/fabio/Projects/MAMBO/mambo.owl#pair_type -->
+
+    <owl:DatatypeProperty rdf:about="file:/home/fabio/Projects/MAMBO/mambo.owl#pair_type">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- file:/home/fabio/Projects/MAMBO/mambo.owl#polar_angle -->
+
+    <owl:DatatypeProperty rdf:about="file:/home/fabio/Projects/MAMBO/mambo.owl#polar_angle">
+        <rdfs:domain rdf:resource="file:/home/fabio/Projects/MAMBO/mambo.owl#SphericalCoordinates"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- file:/home/fabio/Projects/MAMBO/mambo.owl#pressure -->
+
+    <owl:DatatypeProperty rdf:about="file:/home/fabio/Projects/MAMBO/mambo.owl#pressure">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="file:/home/fabio/Projects/MAMBO/mambo.owl#Barostat"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- file:/home/fabio/Projects/MAMBO/mambo.owl#purpose -->
+
+    <owl:DatatypeProperty rdf:about="file:/home/fabio/Projects/MAMBO/mambo.owl#purpose">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="file:/home/fabio/Projects/MAMBO/mambo.owl#Material"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- file:/home/fabio/Projects/MAMBO/mambo.owl#radial_distance -->
+
+    <owl:DatatypeProperty rdf:about="file:/home/fabio/Projects/MAMBO/mambo.owl#radial_distance">
+        <rdfs:domain rdf:resource="file:/home/fabio/Projects/MAMBO/mambo.owl#SphericalCoordinates"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- file:/home/fabio/Projects/MAMBO/mambo.owl#real_part -->
+
+    <owl:DatatypeProperty rdf:about="file:/home/fabio/Projects/MAMBO/mambo.owl#real_part">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="file:/home/fabio/Projects/MAMBO/mambo.owl#Quaternion"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- file:/home/fabio/Projects/MAMBO/mambo.owl#short_range_cutoff -->
+
+    <owl:DatatypeProperty rdf:about="file:/home/fabio/Projects/MAMBO/mambo.owl#short_range_cutoff">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- file:/home/fabio/Projects/MAMBO/mambo.owl#sigma -->
+
+    <owl:DatatypeProperty rdf:about="file:/home/fabio/Projects/MAMBO/mambo.owl#sigma">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="file:/home/fabio/Projects/MAMBO/mambo.owl#TwoBody"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- file:/home/fabio/Projects/MAMBO/mambo.owl#spacegroup -->
+
+    <owl:DatatypeProperty rdf:about="file:/home/fabio/Projects/MAMBO/mambo.owl#spacegroup">
+        <rdfs:domain rdf:resource="file:/home/fabio/Projects/MAMBO/mambo.owl#Structure"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- file:/home/fabio/Projects/MAMBO/mambo.owl#symbol -->
+
+    <owl:DatatypeProperty rdf:about="file:/home/fabio/Projects/MAMBO/mambo.owl#symbol">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="file:/home/fabio/Projects/MAMBO/mambo.owl#Atom"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- file:/home/fabio/Projects/MAMBO/mambo.owl#target_pressure -->
+
+    <owl:DatatypeProperty rdf:about="file:/home/fabio/Projects/MAMBO/mambo.owl#target_pressure">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="file:/home/fabio/Projects/MAMBO/mambo.owl#Barostat"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- file:/home/fabio/Projects/MAMBO/mambo.owl#target_temperature -->
+
+    <owl:DatatypeProperty rdf:about="file:/home/fabio/Projects/MAMBO/mambo.owl#target_temperature">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="file:/home/fabio/Projects/MAMBO/mambo.owl#Thermostat"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- file:/home/fabio/Projects/MAMBO/mambo.owl#temperature -->
+
+    <owl:DatatypeProperty rdf:about="file:/home/fabio/Projects/MAMBO/mambo.owl#temperature">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="file:/home/fabio/Projects/MAMBO/mambo.owl#Thermostat"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- file:/home/fabio/Projects/MAMBO/mambo.owl#time_constant -->
+
+    <owl:DatatypeProperty rdf:about="file:/home/fabio/Projects/MAMBO/mambo.owl#time_constant">
+        <rdfs:domain rdf:resource="file:/home/fabio/Projects/MAMBO/mambo.owl#ExternalCoupling"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- file:/home/fabio/Projects/MAMBO/mambo.owl#timestep -->
+
+    <owl:DatatypeProperty rdf:about="file:/home/fabio/Projects/MAMBO/mambo.owl#timestep">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="file:/home/fabio/Projects/MAMBO/mambo.owl#Algorithm"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- file:/home/fabio/Projects/MAMBO/mambo.owl#unit -->
+
+    <owl:DatatypeProperty rdf:about="file:/home/fabio/Projects/MAMBO/mambo.owl#unit">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="file:/home/fabio/Projects/MAMBO/mambo.owl#Property"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- file:/home/fabio/Projects/MAMBO/mambo.owl#value -->
+
+    <owl:DatatypeProperty rdf:about="file:/home/fabio/Projects/MAMBO/mambo.owl#value">
+        <rdfs:domain rdf:resource="file:/home/fabio/Projects/MAMBO/mambo.owl#Property"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- file:/home/fabio/Projects/MAMBO/mambo.owl#Algorithm -->
+
+    <owl:Class rdf:about="file:/home/fabio/Projects/MAMBO/mambo.owl#Algorithm">
+        <rdfs:comment>The algorithm used in a computational method</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- file:/home/fabio/Projects/MAMBO/mambo.owl#Angle -->
+
+    <owl:Class rdf:about="file:/home/fabio/Projects/MAMBO/mambo.owl#Angle">
+        <rdfs:subClassOf rdf:resource="file:/home/fabio/Projects/MAMBO/mambo.owl#TopologicalEntities"/>
+        <rdfs:comment>The angle between two atoms</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- file:/home/fabio/Projects/MAMBO/mambo.owl#Atom -->
+
+    <owl:Class rdf:about="file:/home/fabio/Projects/MAMBO/mambo.owl#Atom">
+        <rdfs:subClassOf rdf:resource="file:/home/fabio/Projects/MAMBO/mambo.owl#StructuralEntity"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="file:/home/fabio/Projects/MAMBO/mambo.owl#atomic_number"/>
+                        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                        <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="file:/home/fabio/Projects/MAMBO/mambo.owl#symbol"/>
+                        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                        <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <owl:disjointWith rdf:resource="file:/home/fabio/Projects/MAMBO/mambo.owl#MolecularAggregate"/>
+        <owl:disjointWith rdf:resource="file:/home/fabio/Projects/MAMBO/mambo.owl#MolecularSystem"/>
+        <owl:disjointWith rdf:resource="file:/home/fabio/Projects/MAMBO/mambo.owl#Particle"/>
+        <owl:disjointWith rdf:resource="file:/home/fabio/Projects/MAMBO/mambo.owl#StructuralUnit"/>
+        <owl:disjointWith rdf:resource="file:/home/fabio/Projects/MAMBO/mambo.owl#Structure"/>
+        <rdfs:comment>An elementary constituent of matter, made of a nucleus and electrons</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- file:/home/fabio/Projects/MAMBO/mambo.owl#Barostat -->
+
+    <owl:Class rdf:about="file:/home/fabio/Projects/MAMBO/mambo.owl#Barostat">
+        <rdfs:subClassOf rdf:resource="file:/home/fabio/Projects/MAMBO/mambo.owl#ExternalCoupling"/>
+        <owl:disjointWith rdf:resource="file:/home/fabio/Projects/MAMBO/mambo.owl#Thermostat"/>
+        <rdfs:comment>A method for coupling the particles in a molecular dynamics simulation to an external barostat for controlling pressure</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- file:/home/fabio/Projects/MAMBO/mambo.owl#Bond -->
+
+    <owl:Class rdf:about="file:/home/fabio/Projects/MAMBO/mambo.owl#Bond">
+        <rdfs:subClassOf rdf:resource="file:/home/fabio/Projects/MAMBO/mambo.owl#TopologicalEntities"/>
+    </owl:Class>
+    
+
+
+    <!-- file:/home/fabio/Projects/MAMBO/mambo.owl#BondedPotential -->
+
+    <owl:Class rdf:about="file:/home/fabio/Projects/MAMBO/mambo.owl#BondedPotential">
+        <rdfs:subClassOf rdf:resource="file:/home/fabio/Projects/MAMBO/mambo.owl#MolecularMechanics"/>
+        <owl:disjointWith rdf:resource="file:/home/fabio/Projects/MAMBO/mambo.owl#NonBondedPotential"/>
+        <rdfs:comment>The bonded terms of an interaction potential in simulations</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- file:/home/fabio/Projects/MAMBO/mambo.owl#CartesianCoordinates -->
+
+    <owl:Class rdf:about="file:/home/fabio/Projects/MAMBO/mambo.owl#CartesianCoordinates">
+        <rdfs:subClassOf rdf:resource="file:/home/fabio/Projects/MAMBO/mambo.owl#Coordinates"/>
+        <owl:disjointWith rdf:resource="file:/home/fabio/Projects/MAMBO/mambo.owl#SphericalCoordinates"/>
+        <rdfs:comment>The cartesian coordinates of an object in 3D space with respect to a reference system</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- file:/home/fabio/Projects/MAMBO/mambo.owl#ChemicalProperty -->
+
+    <owl:Class rdf:about="file:/home/fabio/Projects/MAMBO/mambo.owl#ChemicalProperty">
+        <rdfs:subClassOf rdf:resource="file:/home/fabio/Projects/MAMBO/mambo.owl#Property"/>
+        <rdfs:comment>A chemical property of a material</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- file:/home/fabio/Projects/MAMBO/mambo.owl#ComputationalMethod -->
+
+    <owl:Class rdf:about="file:/home/fabio/Projects/MAMBO/mambo.owl#ComputationalMethod">
+        <rdfs:comment>A specific computational method for simulating the properties or the behavior of a material or materials</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- file:/home/fabio/Projects/MAMBO/mambo.owl#Coordinates -->
+
+    <owl:Class rdf:about="file:/home/fabio/Projects/MAMBO/mambo.owl#Coordinates">
+        <rdfs:comment>The spatial coordinates of a structural entity</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- file:/home/fabio/Projects/MAMBO/mambo.owl#Crystal -->
+
+    <owl:Class rdf:about="file:/home/fabio/Projects/MAMBO/mambo.owl#Crystal">
+        <rdfs:subClassOf rdf:resource="file:/home/fabio/Projects/MAMBO/mambo.owl#Structure"/>
+        <rdfs:comment>A material structure with periodicity in space in one, two or three dimensions</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- file:/home/fabio/Projects/MAMBO/mambo.owl#DFT -->
+
+    <owl:Class rdf:about="file:/home/fabio/Projects/MAMBO/mambo.owl#DFT">
+        <rdfs:subClassOf rdf:resource="file:/home/fabio/Projects/MAMBO/mambo.owl#QuantumMechanics"/>
+        <rdfs:comment>A computational method for evaluating interaction  potentials based on density functional theory</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- file:/home/fabio/Projects/MAMBO/mambo.owl#Dihedral -->
+
+    <owl:Class rdf:about="file:/home/fabio/Projects/MAMBO/mambo.owl#Dihedral">
+        <rdfs:subClassOf rdf:resource="file:/home/fabio/Projects/MAMBO/mambo.owl#TopologicalEntities"/>
+    </owl:Class>
+    
+
+
+    <!-- file:/home/fabio/Projects/MAMBO/mambo.owl#ElectricalMethod -->
+
+    <owl:Class rdf:about="file:/home/fabio/Projects/MAMBO/mambo.owl#ElectricalMethod">
+        <rdfs:subClassOf rdf:resource="file:/home/fabio/Projects/MAMBO/mambo.owl#ExperimentalMethod"/>
+        <rdfs:comment>An electrical experimental method or procedure</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- file:/home/fabio/Projects/MAMBO/mambo.owl#ElectroMagneticProperty -->
+
+    <owl:Class rdf:about="file:/home/fabio/Projects/MAMBO/mambo.owl#ElectroMagneticProperty">
+        <rdfs:subClassOf rdf:resource="file:/home/fabio/Projects/MAMBO/mambo.owl#Property"/>
+        <rdfs:comment>An electromagnetic property of a material</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- file:/home/fabio/Projects/MAMBO/mambo.owl#Experiment -->
+
+    <owl:Class rdf:about="file:/home/fabio/Projects/MAMBO/mambo.owl#Experiment">
+        <rdfs:comment>An experimental operation/procedure or a set of experimental operations/procedures for determining or measuring the properties or the behavior of a material or materials</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- file:/home/fabio/Projects/MAMBO/mambo.owl#ExperimentalMethod -->
+
+    <owl:Class rdf:about="file:/home/fabio/Projects/MAMBO/mambo.owl#ExperimentalMethod">
+        <rdfs:comment>A specific experimental method for determining or measuring the properties or the behavior of a material or materials</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- file:/home/fabio/Projects/MAMBO/mambo.owl#ExternalCoupling -->
+
+    <owl:Class rdf:about="file:/home/fabio/Projects/MAMBO/mambo.owl#ExternalCoupling">
+        <rdfs:comment>A method used to couple particles in a molecular dynamics simulation to an external reference systems</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- file:/home/fabio/Projects/MAMBO/mambo.owl#FourBody -->
+
+    <owl:Class rdf:about="file:/home/fabio/Projects/MAMBO/mambo.owl#FourBody">
+        <rdfs:subClassOf rdf:resource="file:/home/fabio/Projects/MAMBO/mambo.owl#PotentialComponents"/>
+        <rdfs:comment>A 4-body interaction potential term</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- file:/home/fabio/Projects/MAMBO/mambo.owl#HarteeFock -->
+
+    <owl:Class rdf:about="file:/home/fabio/Projects/MAMBO/mambo.owl#HarteeFock">
+        <rdfs:subClassOf rdf:resource="file:/home/fabio/Projects/MAMBO/mambo.owl#QuantumMechanics"/>
+        <rdfs:comment>A computational method for evaluating interaction potentials based on the Hartree-Fock theory</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- file:/home/fabio/Projects/MAMBO/mambo.owl#Integrator -->
+
+    <owl:Class rdf:about="file:/home/fabio/Projects/MAMBO/mambo.owl#Integrator">
+        <rdfs:comment>The integrator of the equation of motions in molecular dynamics simulations</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- file:/home/fabio/Projects/MAMBO/mambo.owl#InteractionPotential -->
+
+    <owl:Class rdf:about="file:/home/fabio/Projects/MAMBO/mambo.owl#InteractionPotential">
+        <rdfs:comment>The interaction potential used in a specific computational method</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- file:/home/fabio/Projects/MAMBO/mambo.owl#LatticeParameters -->
+
+    <owl:Class rdf:about="file:/home/fabio/Projects/MAMBO/mambo.owl#LatticeParameters">
+        <rdfs:comment>The parameters of a lattice in a periodic structure</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- file:/home/fabio/Projects/MAMBO/mambo.owl#Material -->
+
+    <owl:Class rdf:about="file:/home/fabio/Projects/MAMBO/mambo.owl#Material">
+        <rdfs:comment>A portion of physical matter</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- file:/home/fabio/Projects/MAMBO/mambo.owl#MechanicalProperty -->
+
+    <owl:Class rdf:about="file:/home/fabio/Projects/MAMBO/mambo.owl#MechanicalProperty">
+        <rdfs:subClassOf rdf:resource="file:/home/fabio/Projects/MAMBO/mambo.owl#Property"/>
+        <rdfs:comment>A mechanical property of a material</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- file:/home/fabio/Projects/MAMBO/mambo.owl#MolecularAggregate -->
+
+    <owl:Class rdf:about="file:/home/fabio/Projects/MAMBO/mambo.owl#MolecularAggregate">
+        <rdfs:subClassOf rdf:resource="file:/home/fabio/Projects/MAMBO/mambo.owl#Structure"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="file:/home/fabio/Projects/MAMBO/mambo.owl#has_subunit"/>
+                <owl:someValuesFrom rdf:resource="file:/home/fabio/Projects/MAMBO/mambo.owl#MolecularSystem"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <owl:disjointWith rdf:resource="file:/home/fabio/Projects/MAMBO/mambo.owl#MolecularSystem"/>
+        <owl:disjointWith rdf:resource="file:/home/fabio/Projects/MAMBO/mambo.owl#Particle"/>
+        <owl:disjointWith rdf:resource="file:/home/fabio/Projects/MAMBO/mambo.owl#StructuralUnit"/>
+        <rdfs:comment>A material composed of aggregates of molecules of the same kind or of different kind</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- file:/home/fabio/Projects/MAMBO/mambo.owl#MolecularDynamics -->
+
+    <owl:Class rdf:about="file:/home/fabio/Projects/MAMBO/mambo.owl#MolecularDynamics">
+        <rdfs:subClassOf rdf:resource="file:/home/fabio/Projects/MAMBO/mambo.owl#Algorithm"/>
+        <rdfs:comment>A computational tool or algorithm for molecular dynamics simulation</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- file:/home/fabio/Projects/MAMBO/mambo.owl#MolecularMechanics -->
+
+    <owl:Class rdf:about="file:/home/fabio/Projects/MAMBO/mambo.owl#MolecularMechanics">
+        <rdfs:subClassOf rdf:resource="file:/home/fabio/Projects/MAMBO/mambo.owl#InteractionPotential"/>
+        <rdfs:comment>A potential based on molecular mechanics</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- file:/home/fabio/Projects/MAMBO/mambo.owl#MolecularSystem -->
+
+    <owl:Class rdf:about="file:/home/fabio/Projects/MAMBO/mambo.owl#MolecularSystem">
+        <rdfs:subClassOf rdf:resource="file:/home/fabio/Projects/MAMBO/mambo.owl#StructuralEntity"/>
+        <owl:disjointWith rdf:resource="file:/home/fabio/Projects/MAMBO/mambo.owl#Particle"/>
+        <owl:disjointWith rdf:resource="file:/home/fabio/Projects/MAMBO/mambo.owl#StructuralUnit"/>
+        <owl:disjointWith rdf:resource="file:/home/fabio/Projects/MAMBO/mambo.owl#Structure"/>
+        <rdfs:comment>A chemically well-defined system made up of atoms kept together by chemical bonds</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- file:/home/fabio/Projects/MAMBO/mambo.owl#NPT -->
+
+    <owl:Class rdf:about="file:/home/fabio/Projects/MAMBO/mambo.owl#NPT">
+        <rdfs:subClassOf rdf:resource="file:/home/fabio/Projects/MAMBO/mambo.owl#SimulationEnsembles"/>
+        <rdfs:comment>The constant-pressure constant-temperature (isothermal-isobaric) simulation ensemble in molecular dynamics</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- file:/home/fabio/Projects/MAMBO/mambo.owl#NVE -->
+
+    <owl:Class rdf:about="file:/home/fabio/Projects/MAMBO/mambo.owl#NVE">
+        <rdfs:subClassOf rdf:resource="file:/home/fabio/Projects/MAMBO/mambo.owl#SimulationEnsembles"/>
+        <rdfs:comment>The constant-energy (microcanonical) simulation ensemble in molecular dynamics</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- file:/home/fabio/Projects/MAMBO/mambo.owl#NVT -->
+
+    <owl:Class rdf:about="file:/home/fabio/Projects/MAMBO/mambo.owl#NVT">
+        <rdfs:subClassOf rdf:resource="file:/home/fabio/Projects/MAMBO/mambo.owl#SimulationEnsembles"/>
+        <rdfs:comment>The constant-temperature (canonical) simulation ensemble in molecular dynamics</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- file:/home/fabio/Projects/MAMBO/mambo.owl#NonBondedPotential -->
+
+    <owl:Class rdf:about="file:/home/fabio/Projects/MAMBO/mambo.owl#NonBondedPotential">
+        <rdfs:subClassOf rdf:resource="file:/home/fabio/Projects/MAMBO/mambo.owl#MolecularMechanics"/>
+        <rdfs:comment>The non bonded terms of an interaction potential in simulations</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- file:/home/fabio/Projects/MAMBO/mambo.owl#OpticalMethod -->
+
+    <owl:Class rdf:about="file:/home/fabio/Projects/MAMBO/mambo.owl#OpticalMethod">
+        <rdfs:subClassOf rdf:resource="file:/home/fabio/Projects/MAMBO/mambo.owl#ExperimentalMethod"/>
+        <rdfs:comment>An optical experimental method or procedure</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- file:/home/fabio/Projects/MAMBO/mambo.owl#Optimizer -->
+
+    <owl:Class rdf:about="file:/home/fabio/Projects/MAMBO/mambo.owl#Optimizer">
+        <rdfs:subClassOf rdf:resource="file:/home/fabio/Projects/MAMBO/mambo.owl#Algorithm"/>
+        <rdfs:comment>A computational tool or algorithm for structural optimization</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- file:/home/fabio/Projects/MAMBO/mambo.owl#Orientation -->
+
+    <owl:Class rdf:about="file:/home/fabio/Projects/MAMBO/mambo.owl#Orientation">
+        <rdfs:comment>The orientation of a system in 3D space with respect to a reference orientation</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- file:/home/fabio/Projects/MAMBO/mambo.owl#Particle -->
+
+    <owl:Class rdf:about="file:/home/fabio/Projects/MAMBO/mambo.owl#Particle">
+        <rdfs:subClassOf rdf:resource="file:/home/fabio/Projects/MAMBO/mambo.owl#StructuralEntity"/>
+        <owl:disjointWith rdf:resource="file:/home/fabio/Projects/MAMBO/mambo.owl#StructuralUnit"/>
+        <owl:disjointWith rdf:resource="file:/home/fabio/Projects/MAMBO/mambo.owl#Structure"/>
+        <rdfs:comment>A pseudo-particle used in simulations</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- file:/home/fabio/Projects/MAMBO/mambo.owl#PotentialComponents -->
+
+    <owl:Class rdf:about="file:/home/fabio/Projects/MAMBO/mambo.owl#PotentialComponents">
+        <rdfs:comment>The components of an interaction potentials</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- file:/home/fabio/Projects/MAMBO/mambo.owl#Property -->
+
+    <owl:Class rdf:about="file:/home/fabio/Projects/MAMBO/mambo.owl#Property">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="file:/home/fabio/Projects/MAMBO/mambo.owl#unit"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="file:/home/fabio/Projects/MAMBO/mambo.owl#value"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>A chemico-physical property of a material or materials</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- file:/home/fabio/Projects/MAMBO/mambo.owl#QuantumMechanics -->
+
+    <owl:Class rdf:about="file:/home/fabio/Projects/MAMBO/mambo.owl#QuantumMechanics">
+        <rdfs:subClassOf rdf:resource="file:/home/fabio/Projects/MAMBO/mambo.owl#InteractionPotential"/>
+        <rdfs:comment>A potential based on quantum mechanics</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- file:/home/fabio/Projects/MAMBO/mambo.owl#Quaternion -->
+
+    <owl:Class rdf:about="file:/home/fabio/Projects/MAMBO/mambo.owl#Quaternion">
+        <rdfs:subClassOf rdf:resource="file:/home/fabio/Projects/MAMBO/mambo.owl#Orientation"/>
+        <owl:disjointWith rdf:resource="file:/home/fabio/Projects/MAMBO/mambo.owl#RotationMatrix"/>
+        <rdfs:comment>The quaternion coordinate vector of a system in 3D space with respect to a reference orientation</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- file:/home/fabio/Projects/MAMBO/mambo.owl#RotationMatrix -->
+
+    <owl:Class rdf:about="file:/home/fabio/Projects/MAMBO/mambo.owl#RotationMatrix">
+        <rdfs:subClassOf rdf:resource="file:/home/fabio/Projects/MAMBO/mambo.owl#Orientation"/>
+        <rdfs:comment>The matrix representing the rotation of a system in 3D space with respect to a reference orientation</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- file:/home/fabio/Projects/MAMBO/mambo.owl#Simulation -->
+
+    <owl:Class rdf:about="file:/home/fabio/Projects/MAMBO/mambo.owl#Simulation">
+        <rdfs:comment>A computational operation/procedure or a set of computational operations/procedures for simulating the properties or the behavior of a material or materials</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- file:/home/fabio/Projects/MAMBO/mambo.owl#SimulationEnsembles -->
+
+    <owl:Class rdf:about="file:/home/fabio/Projects/MAMBO/mambo.owl#SimulationEnsembles">
+        <rdfs:comment>The thermodynamic ensemble in which a molecular dynamics simulation is performed</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- file:/home/fabio/Projects/MAMBO/mambo.owl#SphericalCoordinates -->
+
+    <owl:Class rdf:about="file:/home/fabio/Projects/MAMBO/mambo.owl#SphericalCoordinates">
+        <rdfs:subClassOf rdf:resource="file:/home/fabio/Projects/MAMBO/mambo.owl#Coordinates"/>
+        <rdfs:comment>The spherical coordinates of an object in 3D space with respect to a reference system</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- file:/home/fabio/Projects/MAMBO/mambo.owl#StructuralEntity -->
+
+    <owl:Class rdf:about="file:/home/fabio/Projects/MAMBO/mambo.owl#StructuralEntity">
+        <rdfs:comment>A structural unit in which a structure can be decomposed into</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- file:/home/fabio/Projects/MAMBO/mambo.owl#StructuralUnit -->
+
+    <owl:Class rdf:about="file:/home/fabio/Projects/MAMBO/mambo.owl#StructuralUnit">
+        <rdfs:subClassOf rdf:resource="file:/home/fabio/Projects/MAMBO/mambo.owl#StructuralEntity"/>
+        <owl:disjointWith rdf:resource="file:/home/fabio/Projects/MAMBO/mambo.owl#Structure"/>
+        <rdfs:comment>A chemically well-defined structural unit, for example a functional group, constituting</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- file:/home/fabio/Projects/MAMBO/mambo.owl#Structure -->
+
+    <owl:Class rdf:about="file:/home/fabio/Projects/MAMBO/mambo.owl#Structure">
+        <rdfs:comment>The structure of a material or materials</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- file:/home/fabio/Projects/MAMBO/mambo.owl#StructureManipulation -->
+
+    <owl:Class rdf:about="file:/home/fabio/Projects/MAMBO/mambo.owl#StructureManipulation">
+        <rdfs:subClassOf rdf:resource="file:/home/fabio/Projects/MAMBO/mambo.owl#Algorithm"/>
+        <rdfs:comment>An algorithm or tool for the manipulation of a structure</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- file:/home/fabio/Projects/MAMBO/mambo.owl#TOF -->
+
+    <owl:Class rdf:about="file:/home/fabio/Projects/MAMBO/mambo.owl#TOF">
+        <rdfs:subClassOf rdf:resource="file:/home/fabio/Projects/MAMBO/mambo.owl#ElectricalMethod"/>
+        <rdfs:comment>A time-of-flight experimental method</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- file:/home/fabio/Projects/MAMBO/mambo.owl#Thermostat -->
+
+    <owl:Class rdf:about="file:/home/fabio/Projects/MAMBO/mambo.owl#Thermostat">
+        <rdfs:subClassOf rdf:resource="file:/home/fabio/Projects/MAMBO/mambo.owl#ExternalCoupling"/>
+        <rdfs:comment>A method for coupling the particles in a molecular dynamics simulation to an external thermostat for controlling temperature</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- file:/home/fabio/Projects/MAMBO/mambo.owl#ThreeBody -->
+
+    <owl:Class rdf:about="file:/home/fabio/Projects/MAMBO/mambo.owl#ThreeBody">
+        <rdfs:subClassOf rdf:resource="file:/home/fabio/Projects/MAMBO/mambo.owl#PotentialComponents"/>
+        <rdfs:comment>A 3-body interaction potential term</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- file:/home/fabio/Projects/MAMBO/mambo.owl#TopologicalEntities -->
+
+    <owl:Class rdf:about="file:/home/fabio/Projects/MAMBO/mambo.owl#TopologicalEntities"/>
+    
+
+
+    <!-- file:/home/fabio/Projects/MAMBO/mambo.owl#TwoBody -->
+
+    <owl:Class rdf:about="file:/home/fabio/Projects/MAMBO/mambo.owl#TwoBody">
+        <rdfs:subClassOf rdf:resource="file:/home/fabio/Projects/MAMBO/mambo.owl#PotentialComponents"/>
+        <rdfs:comment>A 2-body interaction potential term</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000002 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000002">
+        <rdfs:subClassOf rdf:resource="file:/home/fabio/Projects/MAMBO/mambo.owl#Experiment"/>
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BFO:0000002</oboInOwl:id>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">continuant</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000015 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000015">
+        <rdfs:subClassOf rdf:resource="file:/home/fabio/Projects/MAMBO/mambo.owl#Experiment"/>
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BFO:0000015</oboInOwl:id>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">process</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000140 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000140">
+        <rdfs:subClassOf rdf:resource="file:/home/fabio/Projects/MAMBO/mambo.owl#Experiment"/>
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BFO:0000140</oboInOwl:id>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">continuant fiat boundary</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- file:/home/fabio/Projects/MAMBO/mambo.owl#hydrogen1 -->
+
+    <owl:NamedIndividual rdf:about="file:/home/fabio/Projects/MAMBO/mambo.owl#hydrogen1">
+        <rdf:type rdf:resource="file:/home/fabio/Projects/MAMBO/mambo.owl#Atom"/>
+        <mambo:has_coordinates rdf:resource="file:/home/fabio/Projects/MAMBO/mambo.owl#hydrogen1_cartesian_coordinates"/>
+        <mambo:has_coordinates rdf:resource="file:/home/fabio/Projects/MAMBO/mambo.owl#hydrogen1_spherical_coordinates"/>
+        <mambo:is_part_of rdf:resource="file:/home/fabio/Projects/MAMBO/mambo.owl#water_molecule1"/>
+        <mambo:atomic_number rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</mambo:atomic_number>
+        <mambo:symbol>H</mambo:symbol>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- file:/home/fabio/Projects/MAMBO/mambo.owl#hydrogen1_cartesian_coordinates -->
+
+    <owl:NamedIndividual rdf:about="file:/home/fabio/Projects/MAMBO/mambo.owl#hydrogen1_cartesian_coordinates">
+        <rdf:type rdf:resource="file:/home/fabio/Projects/MAMBO/mambo.owl#CartesianCoordinates"/>
+        <mambo:X rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.0</mambo:X>
+        <mambo:Y rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.0</mambo:Y>
+        <mambo:Z rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.0</mambo:Z>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- file:/home/fabio/Projects/MAMBO/mambo.owl#hydrogen1_spherical_coordinates -->
+
+    <owl:NamedIndividual rdf:about="file:/home/fabio/Projects/MAMBO/mambo.owl#hydrogen1_spherical_coordinates">
+        <rdf:type rdf:resource="file:/home/fabio/Projects/MAMBO/mambo.owl#SphericalCoordinates"/>
+        <mambo:azimuthal_angle rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.1</mambo:azimuthal_angle>
+        <mambo:polar_angle rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.1</mambo:polar_angle>
+        <mambo:radial_distance rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.0</mambo:radial_distance>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- file:/home/fabio/Projects/MAMBO/mambo.owl#hydrogen2 -->
+
+    <owl:NamedIndividual rdf:about="file:/home/fabio/Projects/MAMBO/mambo.owl#hydrogen2">
+        <rdf:type rdf:resource="file:/home/fabio/Projects/MAMBO/mambo.owl#Atom"/>
+        <mambo:has_coordinates rdf:resource="file:/home/fabio/Projects/MAMBO/mambo.owl#hydrogen2_cartesian_coordinates"/>
+        <mambo:has_coordinates rdf:resource="file:/home/fabio/Projects/MAMBO/mambo.owl#hydrogen2_spherical_coordinates"/>
+        <mambo:is_part_of rdf:resource="file:/home/fabio/Projects/MAMBO/mambo.owl#water_molecule1"/>
+        <mambo:atomic_number rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</mambo:atomic_number>
+        <mambo:symbol>H</mambo:symbol>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- file:/home/fabio/Projects/MAMBO/mambo.owl#hydrogen2_cartesian_coordinates -->
+
+    <owl:NamedIndividual rdf:about="file:/home/fabio/Projects/MAMBO/mambo.owl#hydrogen2_cartesian_coordinates">
+        <rdf:type rdf:resource="file:/home/fabio/Projects/MAMBO/mambo.owl#CartesianCoordinates"/>
+        <mambo:X rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2.0</mambo:X>
+        <mambo:Y rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2.0</mambo:Y>
+        <mambo:Z rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2.0</mambo:Z>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- file:/home/fabio/Projects/MAMBO/mambo.owl#hydrogen2_spherical_coordinates -->
+
+    <owl:NamedIndividual rdf:about="file:/home/fabio/Projects/MAMBO/mambo.owl#hydrogen2_spherical_coordinates">
+        <rdf:type rdf:resource="file:/home/fabio/Projects/MAMBO/mambo.owl#SphericalCoordinates"/>
+        <mambo:azimuthal_angle rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.2</mambo:azimuthal_angle>
+        <mambo:polar_angle rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.2</mambo:polar_angle>
+        <mambo:radial_distance rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.0</mambo:radial_distance>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- file:/home/fabio/Projects/MAMBO/mambo.owl#hydrogen3 -->
+
+    <owl:NamedIndividual rdf:about="file:/home/fabio/Projects/MAMBO/mambo.owl#hydrogen3">
+        <rdf:type rdf:resource="file:/home/fabio/Projects/MAMBO/mambo.owl#Atom"/>
+        <mambo:has_coordinates rdf:resource="file:/home/fabio/Projects/MAMBO/mambo.owl#hydrogen3_cartesian_coordinates"/>
+        <mambo:is_part_of rdf:resource="file:/home/fabio/Projects/MAMBO/mambo.owl#water_molecule2"/>
+        <mambo:atomic_number rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</mambo:atomic_number>
+        <mambo:symbol>H</mambo:symbol>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- file:/home/fabio/Projects/MAMBO/mambo.owl#hydrogen3_cartesian_coordinates -->
+
+    <owl:NamedIndividual rdf:about="file:/home/fabio/Projects/MAMBO/mambo.owl#hydrogen3_cartesian_coordinates">
+        <rdf:type rdf:resource="file:/home/fabio/Projects/MAMBO/mambo.owl#CartesianCoordinates"/>
+        <mambo:X rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">11.0</mambo:X>
+        <mambo:Y rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">11.0</mambo:Y>
+        <mambo:Z rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">11.0</mambo:Z>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- file:/home/fabio/Projects/MAMBO/mambo.owl#hydrogen4 -->
+
+    <owl:NamedIndividual rdf:about="file:/home/fabio/Projects/MAMBO/mambo.owl#hydrogen4">
+        <rdf:type rdf:resource="file:/home/fabio/Projects/MAMBO/mambo.owl#Atom"/>
+        <mambo:has_coordinates rdf:resource="file:/home/fabio/Projects/MAMBO/mambo.owl#hydrogen4_cartesian_coordinates"/>
+        <mambo:is_part_of rdf:resource="file:/home/fabio/Projects/MAMBO/mambo.owl#water_molecule2"/>
+        <mambo:atomic_number rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</mambo:atomic_number>
+        <mambo:symbol>H</mambo:symbol>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- file:/home/fabio/Projects/MAMBO/mambo.owl#hydrogen4_cartesian_coordinates -->
+
+    <owl:NamedIndividual rdf:about="file:/home/fabio/Projects/MAMBO/mambo.owl#hydrogen4_cartesian_coordinates">
+        <rdf:type rdf:resource="file:/home/fabio/Projects/MAMBO/mambo.owl#CartesianCoordinates"/>
+        <mambo:X rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">12.0</mambo:X>
+        <mambo:Y rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">12.0</mambo:Y>
+        <mambo:Z rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">12.0</mambo:Z>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- file:/home/fabio/Projects/MAMBO/mambo.owl#oxygen1 -->
+
+    <owl:NamedIndividual rdf:about="file:/home/fabio/Projects/MAMBO/mambo.owl#oxygen1">
+        <rdf:type rdf:resource="file:/home/fabio/Projects/MAMBO/mambo.owl#Atom"/>
+        <mambo:has_coordinates rdf:resource="file:/home/fabio/Projects/MAMBO/mambo.owl#oxygen1_cartesian_coordinates"/>
+        <mambo:has_coordinates rdf:resource="file:/home/fabio/Projects/MAMBO/mambo.owl#oxygen1_spherical_coordinates"/>
+        <mambo:is_part_of rdf:resource="file:/home/fabio/Projects/MAMBO/mambo.owl#water_molecule1"/>
+        <mambo:atomic_number rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">8</mambo:atomic_number>
+        <mambo:symbol>O</mambo:symbol>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- file:/home/fabio/Projects/MAMBO/mambo.owl#oxygen1_cartesian_coordinates -->
+
+    <owl:NamedIndividual rdf:about="file:/home/fabio/Projects/MAMBO/mambo.owl#oxygen1_cartesian_coordinates">
+        <rdf:type rdf:resource="file:/home/fabio/Projects/MAMBO/mambo.owl#CartesianCoordinates"/>
+        <mambo:X rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.0</mambo:X>
+        <mambo:Y rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.0</mambo:Y>
+        <mambo:Z rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.0</mambo:Z>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- file:/home/fabio/Projects/MAMBO/mambo.owl#oxygen1_spherical_coordinates -->
+
+    <owl:NamedIndividual rdf:about="file:/home/fabio/Projects/MAMBO/mambo.owl#oxygen1_spherical_coordinates">
+        <rdf:type rdf:resource="file:/home/fabio/Projects/MAMBO/mambo.owl#SphericalCoordinates"/>
+        <mambo:azimuthal_angle rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.0</mambo:azimuthal_angle>
+        <mambo:polar_angle rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.0</mambo:polar_angle>
+        <mambo:radial_distance rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.0</mambo:radial_distance>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- file:/home/fabio/Projects/MAMBO/mambo.owl#oxygen2 -->
+
+    <owl:NamedIndividual rdf:about="file:/home/fabio/Projects/MAMBO/mambo.owl#oxygen2">
+        <rdf:type rdf:resource="file:/home/fabio/Projects/MAMBO/mambo.owl#Atom"/>
+        <mambo:has_coordinates rdf:resource="file:/home/fabio/Projects/MAMBO/mambo.owl#oxygen2_cartesian_coordinates"/>
+        <mambo:is_part_of rdf:resource="file:/home/fabio/Projects/MAMBO/mambo.owl#water_molecule2"/>
+        <mambo:atomic_number rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">8</mambo:atomic_number>
+        <mambo:symbol>O</mambo:symbol>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- file:/home/fabio/Projects/MAMBO/mambo.owl#oxygen2_cartesian_coordinates -->
+
+    <owl:NamedIndividual rdf:about="file:/home/fabio/Projects/MAMBO/mambo.owl#oxygen2_cartesian_coordinates">
+        <rdf:type rdf:resource="file:/home/fabio/Projects/MAMBO/mambo.owl#CartesianCoordinates"/>
+        <mambo:X rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">10.0</mambo:X>
+        <mambo:Y rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">10.0</mambo:Y>
+        <mambo:Z rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">10.0</mambo:Z>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- file:/home/fabio/Projects/MAMBO/mambo.owl#water1 -->
+
+    <owl:NamedIndividual rdf:about="file:/home/fabio/Projects/MAMBO/mambo.owl#water1">
+        <rdf:type rdf:resource="file:/home/fabio/Projects/MAMBO/mambo.owl#Material"/>
+        <mambo:purpose>Solvent</mambo:purpose>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- file:/home/fabio/Projects/MAMBO/mambo.owl#water1_structure -->
+
+    <owl:NamedIndividual rdf:about="file:/home/fabio/Projects/MAMBO/mambo.owl#water1_structure">
+        <rdf:type rdf:resource="file:/home/fabio/Projects/MAMBO/mambo.owl#Structure"/>
+        <mambo:has_structural_entity rdf:resource="file:/home/fabio/Projects/MAMBO/mambo.owl#water_aggregate1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- file:/home/fabio/Projects/MAMBO/mambo.owl#water_aggregate1 -->
+
+    <owl:NamedIndividual rdf:about="file:/home/fabio/Projects/MAMBO/mambo.owl#water_aggregate1">
+        <rdf:type rdf:resource="file:/home/fabio/Projects/MAMBO/mambo.owl#MolecularAggregate"/>
+        <mambo:has_subunit rdf:resource="file:/home/fabio/Projects/MAMBO/mambo.owl#water_molecule1"/>
+        <mambo:has_subunit rdf:resource="file:/home/fabio/Projects/MAMBO/mambo.owl#water_molecule2"/>
+        <mambo:number_of_molecules rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</mambo:number_of_molecules>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- file:/home/fabio/Projects/MAMBO/mambo.owl#water_molecule1 -->
+
+    <owl:NamedIndividual rdf:about="file:/home/fabio/Projects/MAMBO/mambo.owl#water_molecule1">
+        <rdf:type rdf:resource="file:/home/fabio/Projects/MAMBO/mambo.owl#MolecularSystem"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- file:/home/fabio/Projects/MAMBO/mambo.owl#water_molecule1_cartesian_coordinates -->
+
+    <owl:NamedIndividual rdf:about="file:/home/fabio/Projects/MAMBO/mambo.owl#water_molecule1_cartesian_coordinates">
+        <rdf:type rdf:resource="file:/home/fabio/Projects/MAMBO/mambo.owl#CartesianCoordinates"/>
+        <mambo:X rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.5</mambo:X>
+        <mambo:Y rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.5</mambo:Y>
+        <mambo:Z rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.5</mambo:Z>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- file:/home/fabio/Projects/MAMBO/mambo.owl#water_molecule2 -->
+
+    <owl:NamedIndividual rdf:about="file:/home/fabio/Projects/MAMBO/mambo.owl#water_molecule2">
+        <rdf:type rdf:resource="file:/home/fabio/Projects/MAMBO/mambo.owl#MolecularSystem"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="file:/home/fabio/Projects/MAMBO/mambo.owl#FourBody"/>
+            <rdf:Description rdf:about="file:/home/fabio/Projects/MAMBO/mambo.owl#ThreeBody"/>
+            <rdf:Description rdf:about="file:/home/fabio/Projects/MAMBO/mambo.owl#TwoBody"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="file:/home/fabio/Projects/MAMBO/mambo.owl#NPT"/>
+            <rdf:Description rdf:about="file:/home/fabio/Projects/MAMBO/mambo.owl#NVE"/>
+            <rdf:Description rdf:about="file:/home/fabio/Projects/MAMBO/mambo.owl#NVT"/>
+        </owl:members>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+

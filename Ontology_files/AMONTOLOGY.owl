@@ -1,0 +1,1075 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+
+<rdf:RDF xmlns="http://www.semanticweb.org/ina3/ontologies/2016/2/untitled-ontology-122#"
+     xml:base="http://www.semanticweb.org/ina3/ontologies/2016/2/untitled-ontology-122"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/ina3/ontologies/2016/2/untitled-ontology-122">
+        <owl:imports rdf:resource="https://raw.githubusercontent.com/iassouroko/AMontology/master/AMOntology_v2.ttl"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://siam.nist.gov/AM-Ontology-v2#BedRadiation -->
+
+    <rdf:Description rdf:about="http://siam.nist.gov/AM-Ontology-v2#BedRadiation">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/administrator/ontologies/2015/6/PennState-Ontology#functionOf"/>
+                <owl:someValuesFrom rdf:resource="http://siam.nist.gov/AM-Ontology-v2#BoltzmannConstant"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </rdf:Description>
+    
+
+
+    <!-- http://siam.nist.gov/AM-Ontology-v2#BoltzmannConstant -->
+
+    <rdf:Description rdf:about="http://siam.nist.gov/AM-Ontology-v2#BoltzmannConstant">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://siam.nist.gov/AM-Ontology_v2#influences"/>
+                <owl:someValuesFrom rdf:resource="http://siam.nist.gov/AM-Ontology-v2#BedRadiation"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </rdf:Description>
+    
+
+
+    <!-- http://siam.nist.gov/AM-Ontology-v2#CoolingRate -->
+
+    <rdf:Description rdf:about="http://siam.nist.gov/AM-Ontology-v2#CoolingRate">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/administrator/ontologies/2015/6/PennState-Ontology#Influences"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/administrator/ontologies/2015/6/PennState-Ontology#Crystal"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/administrator/ontologies/2015/6/PennState-Ontology#functionOf"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/administrator/ontologies/2015/6/PennState-Ontology#SolidificationRate"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://siam.nist.gov/AM-Ontology_v2#influences"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/administrator/ontologies/2015/6/PennState-Ontology#PhaseComposition"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/administrator/ontologies/2015/6/PennState-Ontology#functionOf"/>
+                <owl:someValuesFrom rdf:resource="http://siam.nist.gov/AM-Ontology-v2#ThermalGradientDistribution"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </rdf:Description>
+    
+
+
+    <!-- http://siam.nist.gov/AM-Ontology-v2#HeatFluxBC -->
+
+    <rdf:Description rdf:about="http://siam.nist.gov/AM-Ontology-v2#HeatFluxBC">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://siam.nist.gov/AM-Ontology_v2#influences"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/administrator/ontologies/2015/6/PennState-Ontology#TemperatureAtTime_t"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://siam.nist.gov/AM-Ontology_v2#influences"/>
+                <owl:someValuesFrom rdf:resource="http://siam.nist.gov/AM-Ontology-v2#LatentHeat"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://siam.nist.gov/AM-Ontology_v2#influences"/>
+                <owl:someValuesFrom rdf:resource="http://siam.nist.gov/AM-Ontology-v2#BedRadiation"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://siam.nist.gov/AM-Ontology_v2#influences"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/administrator/ontologies/2015/6/PennState-Ontology#HeatFluxVector"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://siam.nist.gov/AM-Ontology_v2#influences"/>
+                <owl:someValuesFrom rdf:resource="http://siam.nist.gov/AM-Ontology-v2#SurfaceConvection"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </rdf:Description>
+    
+
+
+    <!-- http://siam.nist.gov/AM-Ontology-v2#InitialDistributionOfTemperature -->
+
+    <rdf:Description rdf:about="http://siam.nist.gov/AM-Ontology-v2#InitialDistributionOfTemperature">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://siam.nist.gov/AM-Ontology_v2#influences"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/administrator/ontologies/2015/6/PennState-Ontology#TemperatureAtTime_t"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </rdf:Description>
+    
+
+
+    <!-- http://siam.nist.gov/AM-Ontology-v2#LatentHeat -->
+
+    <rdf:Description rdf:about="http://siam.nist.gov/AM-Ontology-v2#LatentHeat">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/administrator/ontologies/2015/6/PennState-Ontology#functionOf"/>
+                <owl:someValuesFrom rdf:resource="http://siam.nist.gov/AM-Ontology-v2#SurfaceConvection"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/administrator/ontologies/2015/6/PennState-Ontology#functionOf"/>
+                <owl:someValuesFrom rdf:resource="http://siam.nist.gov/AM-Ontology-v2#BedRadiation"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </rdf:Description>
+    
+
+
+    <!-- http://siam.nist.gov/AM-Ontology-v2#MarangoniEffect -->
+
+    <rdf:Description rdf:about="http://siam.nist.gov/AM-Ontology-v2#MarangoniEffect">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://siam.nist.gov/AM-Ontology_v2#influencedBy"/>
+                <owl:someValuesFrom rdf:resource="http://siam.nist.gov/AM-Ontology-v2#SurfaceTension"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://siam.nist.gov/AM-Ontology_v2#influencedBy"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/administrator/ontologies/2015/6/PennState-Ontology#MaximumFluidVelocity"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </rdf:Description>
+    
+
+
+    <!-- http://siam.nist.gov/AM-Ontology-v2#PowderDensity -->
+
+    <rdf:Description rdf:about="http://siam.nist.gov/AM-Ontology-v2#PowderDensity">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://siam.nist.gov/AM-Ontology_v2#influencedBy"/>
+                <owl:someValuesFrom rdf:resource="http://siam.nist.gov/AM-Ontology_v2#ScanningSpeed"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://siam.nist.gov/AM-Ontology_v2#influencedBy"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/administrator/ontologies/2015/6/PennState-Ontology#AbsorbedLaserPower"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </rdf:Description>
+    
+
+
+    <!-- http://siam.nist.gov/AM-Ontology-v2#SpecificHeat -->
+
+    <rdf:Description rdf:about="http://siam.nist.gov/AM-Ontology-v2#SpecificHeat">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://siam.nist.gov/AM-Ontology_v2#influences"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/administrator/ontologies/2015/6/PennState-Ontology#TemperatureAtTime_t"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://siam.nist.gov/AM-Ontology_v2#influences"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/administrator/ontologies/2015/6/PennState-Ontology#ConservationEquationForEnergy"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://siam.nist.gov/AM-Ontology_v2#influences"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/administrator/ontologies/2015/6/PennState-Ontology#ConductionModel"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </rdf:Description>
+    
+
+
+    <!-- http://siam.nist.gov/AM-Ontology-v2#SurfaceTension -->
+
+    <rdf:Description rdf:about="http://siam.nist.gov/AM-Ontology-v2#SurfaceTension">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/administrator/ontologies/2015/6/PennState-Ontology#functionOf"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/administrator/ontologies/2015/6/PennState-Ontology#MaterialDensity"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/administrator/ontologies/2015/6/PennState-Ontology#functionOf"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/administrator/ontologies/2015/6/PennState-Ontology#TemperatureDifference"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/administrator/ontologies/2015/6/PennState-Ontology#functionOf"/>
+                <owl:someValuesFrom rdf:resource="http://siam.nist.gov/AM-Ontology-v2#SurfaceTensionCoefficient"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://siam.nist.gov/AM-Ontology_v2#influences"/>
+                <owl:someValuesFrom rdf:resource="http://siam.nist.gov/AM-Ontology-v2#MarangoniEffect"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/administrator/ontologies/2015/6/PennState-Ontology#functionOf"/>
+                <owl:someValuesFrom rdf:resource="http://siam.nist.gov/AM-Ontology-v2#InterfaceCurvature"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </rdf:Description>
+    
+
+
+    <!-- http://siam.nist.gov/AM-Ontology-v2#SurfaceTensionEffect -->
+
+    <rdf:Description rdf:about="http://siam.nist.gov/AM-Ontology-v2#SurfaceTensionEffect">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/administrator/ontologies/2015/6/PennState-Ontology#FluidFlowEffect"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://siam.nist.gov/AM-Ontology-v2#Temperature -->
+
+    <rdf:Description rdf:about="http://siam.nist.gov/AM-Ontology-v2#Temperature">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://siam.nist.gov/AM-Ontology_v2#influences"/>
+                <owl:someValuesFrom rdf:resource="http://siam.nist.gov/AM-Ontology-v2#BedRadiation"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://siam.nist.gov/AM-Ontology_v2#influences"/>
+                <owl:someValuesFrom rdf:resource="http://siam.nist.gov/AM-Ontology-v2#SurfaceConvection"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://siam.nist.gov/AM-Ontology_v2#influences"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/administrator/ontologies/2015/6/PennState-Ontology#ConductionModel"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/administrator/ontologies/2015/6/PennState-Ontology#functionOf"/>
+                <owl:someValuesFrom rdf:resource="http://siam.nist.gov/AM-Ontology_v2#Absorptivity"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://siam.nist.gov/AM-Ontology_v2#influences"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/administrator/ontologies/2015/6/PennState-Ontology#TemperatureAtTime_t"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/administrator/ontologies/2015/6/PennState-Ontology#functionOf"/>
+                <owl:someValuesFrom rdf:resource="http://siam.nist.gov/AM-Ontology-v2#ThermalDiffusivity"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/administrator/ontologies/2015/6/PennState-Ontology#functionOf"/>
+                <owl:someValuesFrom rdf:resource="http://siam.nist.gov/AM-Ontology-v2#ThermalConductivityInPowderBed"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/administrator/ontologies/2015/6/PennState-Ontology#functionOf"/>
+                <owl:someValuesFrom rdf:resource="http://siam.nist.gov/AM-Ontology_v2#BeamSize"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/administrator/ontologies/2015/6/PennState-Ontology#functionOf"/>
+                <owl:someValuesFrom rdf:resource="http://siam.nist.gov/AM-Ontology_v2#ScanningSpeed"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </rdf:Description>
+    
+
+
+    <!-- http://siam.nist.gov/AM-Ontology-v2#ThermalConductivityInPowderBed -->
+
+    <rdf:Description rdf:about="http://siam.nist.gov/AM-Ontology-v2#ThermalConductivityInPowderBed">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/administrator/ontologies/2015/6/PennState-Ontology#Influences"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/administrator/ontologies/2015/6/PennState-Ontology#ConservationEquationForEnergy"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://siam.nist.gov/AM-Ontology_v2#influences"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/administrator/ontologies/2015/6/PennState-Ontology#TemperatureAtTime_t"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://siam.nist.gov/AM-Ontology_v2#influences"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/administrator/ontologies/2015/6/PennState-Ontology#HeatFluxVector"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://siam.nist.gov/AM-Ontology_v2#influences"/>
+                <owl:someValuesFrom rdf:resource="http://siam.nist.gov/AM-Ontology-v2#Temperature"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </rdf:Description>
+    
+
+
+    <!-- http://siam.nist.gov/AM-Ontology-v2#ThermalGradientDistribution -->
+
+    <rdf:Description rdf:about="http://siam.nist.gov/AM-Ontology-v2#ThermalGradientDistribution">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://siam.nist.gov/AM-Ontology_v2#influences"/>
+                <owl:someValuesFrom rdf:resource="http://siam.nist.gov/AM-Ontology-v2#CoolingRate"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </rdf:Description>
+    
+
+
+    <!-- http://siam.nist.gov/AM-Ontology_v2#Absorptivity -->
+
+    <rdf:Description rdf:about="http://siam.nist.gov/AM-Ontology_v2#Absorptivity">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://siam.nist.gov/AM-Ontology_v2#influences"/>
+                <owl:someValuesFrom rdf:resource="http://siam.nist.gov/AM-Ontology-v2#Temperature"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://siam.nist.gov/AM-Ontology_v2#influences"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/administrator/ontologies/2015/6/PennState-Ontology#TemperatureAtTime_t"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </rdf:Description>
+    
+
+
+    <!-- http://siam.nist.gov/AM-Ontology_v2#BeamSize -->
+
+    <rdf:Description rdf:about="http://siam.nist.gov/AM-Ontology_v2#BeamSize">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://siam.nist.gov/AM-Ontology_v2#influences"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/administrator/ontologies/2015/6/PennState-Ontology#LaserIntensity"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://siam.nist.gov/AM-Ontology_v2#influences"/>
+                <owl:someValuesFrom rdf:resource="http://siam.nist.gov/AM-Ontology-v2#Temperature"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </rdf:Description>
+    
+
+
+    <!-- http://siam.nist.gov/AM-Ontology_v2#BeamWavelength -->
+
+    <rdf:Description rdf:about="http://siam.nist.gov/AM-Ontology_v2#BeamWavelength">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://siam.nist.gov/AM-Ontology_v2#influences"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/administrator/ontologies/2015/6/PennState-Ontology#EffectiveRadiusOfLaserBeam"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://siam.nist.gov/AM-Ontology_v2#influences"/>
+                <owl:someValuesFrom rdf:resource="http://siam.nist.gov/AM-Ontology_v2#ExtinctionCoefficient"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://siam.nist.gov/AM-Ontology_v2#influences"/>
+                <owl:someValuesFrom rdf:resource="http://siam.nist.gov/AM-Ontology_v2#Absorptivity"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </rdf:Description>
+    
+
+
+    <!-- http://siam.nist.gov/AM-Ontology_v2#BedEmissivity -->
+
+    <rdf:Description rdf:about="http://siam.nist.gov/AM-Ontology_v2#BedEmissivity">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://siam.nist.gov/AM-Ontology_v2#influences"/>
+                <owl:someValuesFrom rdf:resource="http://siam.nist.gov/AM-Ontology-v2#BedRadiation"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </rdf:Description>
+    
+
+
+    <!-- http://siam.nist.gov/AM-Ontology_v2#ChamberTemperature -->
+
+    <rdf:Description rdf:about="http://siam.nist.gov/AM-Ontology_v2#ChamberTemperature">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://siam.nist.gov/AM-Ontology_v2#influences"/>
+                <owl:someValuesFrom rdf:resource="http://siam.nist.gov/AM-Ontology-v2#BedRadiation"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://siam.nist.gov/AM-Ontology_v2#influences"/>
+                <owl:someValuesFrom rdf:resource="http://siam.nist.gov/AM-Ontology-v2#SurfaceConvection"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </rdf:Description>
+    
+
+
+    <!-- http://siam.nist.gov/AM-Ontology_v2#ConvectionCoefficient -->
+
+    <rdf:Description rdf:about="http://siam.nist.gov/AM-Ontology_v2#ConvectionCoefficient">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://siam.nist.gov/AM-Ontology_v2#influences"/>
+                <owl:someValuesFrom rdf:resource="http://siam.nist.gov/AM-Ontology-v2#SurfaceConvection"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </rdf:Description>
+    
+
+
+    <!-- http://siam.nist.gov/AM-Ontology_v2#GaussianDistribution -->
+
+    <rdf:Description rdf:about="http://siam.nist.gov/AM-Ontology_v2#GaussianDistribution">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/administrator/ontologies/2015/6/PennState-Ontology#functionOf"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/administrator/ontologies/2015/6/PennState-Ontology#Beam_distribution_parameter(d)"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/administrator/ontologies/2015/6/PennState-Ontology#functionOf"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/administrator/ontologies/2015/6/PennState-Ontology#EffectiveRadiusOfLaserBeam"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://siam.nist.gov/AM-Ontology_v2#requiresAssumption"/>
+                <owl:someValuesFrom rdf:resource="http://siam.nist.gov/AM-Ontology_v2#TwoDimensional"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/administrator/ontologies/2015/6/PennState-Ontology#functionOf"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/administrator/ontologies/2015/6/PennState-Ontology#AbsorbedLaserPower"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </rdf:Description>
+    
+
+
+    <!-- http://siam.nist.gov/AM-Ontology_v2#HeatSourcePower -->
+
+    <rdf:Description rdf:about="http://siam.nist.gov/AM-Ontology_v2#HeatSourcePower">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://siam.nist.gov/AM-Ontology_v2#influences"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/administrator/ontologies/2015/6/PennState-Ontology#TemperatureAtTime_t"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://siam.nist.gov/AM-Ontology_v2#influences"/>
+                <owl:someValuesFrom rdf:resource="http://siam.nist.gov/AM-Ontology_v2#SurfaceDistributionOfAbsorbedHeat"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://siam.nist.gov/AM-Ontology_v2#influences"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/administrator/ontologies/2015/6/PennState-Ontology#LaserIntensity"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </rdf:Description>
+    
+
+
+    <!-- http://siam.nist.gov/AM-Ontology_v2#MeltPoolWidth -->
+
+    <rdf:Description rdf:about="http://siam.nist.gov/AM-Ontology_v2#MeltPoolWidth">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://siam.nist.gov/AM-Ontology_v2#influences"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/administrator/ontologies/2015/6/PennState-Ontology#MaximumFluidVelocity"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </rdf:Description>
+    
+
+
+    <!-- http://siam.nist.gov/AM-Ontology_v2#ScanningSpeed -->
+
+    <rdf:Description rdf:about="http://siam.nist.gov/AM-Ontology_v2#ScanningSpeed">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://siam.nist.gov/AM-Ontology_v2#influences"/>
+                <owl:someValuesFrom rdf:resource="http://siam.nist.gov/AM-Ontology-v2#Temperature"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://siam.nist.gov/AM-Ontology_v2#influences"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/administrator/ontologies/2015/6/PennState-Ontology#TemperatureAtTime_t"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://siam.nist.gov/AM-Ontology_v2#influences"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/administrator/ontologies/2015/6/PennState-Ontology#HeatFluxOfDoubleEllipsoidDensity"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://siam.nist.gov/AM-Ontology_v2#influences"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/administrator/ontologies/2015/6/PennState-Ontology#Crystal"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.semanticweb.org/administrator/ontologies/2015/6/PennState-Ontology#AbsorbedLaserPower -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/administrator/ontologies/2015/6/PennState-Ontology#AbsorbedLaserPower">
+        <rdfs:subClassOf rdf:resource="http://siam.nist.gov/AM-Ontology_v2#DimensionalityOfAbsorbedHeat"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.semanticweb.org/administrator/ontologies/2015/6/PennState-Ontology#BuoyancyEffect -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/administrator/ontologies/2015/6/PennState-Ontology#BuoyancyEffect">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/administrator/ontologies/2015/6/PennState-Ontology#FluidFlowEffect"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.semanticweb.org/administrator/ontologies/2015/6/PennState-Ontology#Crystal -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/administrator/ontologies/2015/6/PennState-Ontology#Crystal">
+        <rdfs:subClassOf rdf:resource="http://siam.nist.gov/AM-Ontology-v2#MicrostructuralCharacteristic"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.semanticweb.org/administrator/ontologies/2015/6/PennState-Ontology#DefocusedRadiusOfLaserBeam -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/administrator/ontologies/2015/6/PennState-Ontology#DefocusedRadiusOfLaserBeam">
+        <rdfs:subClassOf rdf:resource="http://siam.nist.gov/AM-Ontology_v2#OpticalParameter"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://siam.nist.gov/AM-Ontology_v2#influences"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/administrator/ontologies/2015/6/PennState-Ontology#EffectiveRadiusOfLaserBeam"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.semanticweb.org/administrator/ontologies/2015/6/PennState-Ontology#EffectiveRadiusOfLaserBeam -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/administrator/ontologies/2015/6/PennState-Ontology#EffectiveRadiusOfLaserBeam">
+        <rdfs:subClassOf rdf:resource="http://siam.nist.gov/AM-Ontology_v2#OpticalParameter"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://siam.nist.gov/AM-Ontology_v2#influences"/>
+                <owl:someValuesFrom rdf:resource="http://siam.nist.gov/AM-Ontology_v2#GaussianDistribution"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.semanticweb.org/administrator/ontologies/2015/6/PennState-Ontology#Elongation -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/administrator/ontologies/2015/6/PennState-Ontology#Elongation">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://siam.nist.gov/AM-Ontology_v2#influencedBy"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/administrator/ontologies/2015/6/PennState-Ontology#PhaseComposition"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://siam.nist.gov/AM-Ontology_v2#influencedBy"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/administrator/ontologies/2015/6/PennState-Ontology#Crystal"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.semanticweb.org/administrator/ontologies/2015/6/PennState-Ontology#FluidFlowEffect -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/administrator/ontologies/2015/6/PennState-Ontology#FluidFlowEffect">
+        <rdfs:subClassOf rdf:resource="http://siam.nist.gov/AM-Ontology-v2#FluidMechanicsCharacteristic"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.semanticweb.org/administrator/ontologies/2015/6/PennState-Ontology#GravitationalAcceleration -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/administrator/ontologies/2015/6/PennState-Ontology#GravitationalAcceleration">
+        <rdfs:subClassOf rdf:resource="http://siam.nist.gov/AM-Ontology-v2#ModelInput"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.semanticweb.org/administrator/ontologies/2015/6/PennState-Ontology#HardnessVickers -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/administrator/ontologies/2015/6/PennState-Ontology#HardnessVickers">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://siam.nist.gov/AM-Ontology_v2#influencedBy"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/administrator/ontologies/2015/6/PennState-Ontology#Crystal"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://siam.nist.gov/AM-Ontology_v2#influencedBy"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/administrator/ontologies/2015/6/PennState-Ontology#PhaseComposition"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.semanticweb.org/administrator/ontologies/2015/6/PennState-Ontology#HeatFluxOfConstantDensity -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/administrator/ontologies/2015/6/PennState-Ontology#HeatFluxOfConstantDensity">
+        <rdfs:subClassOf rdf:resource="http://siam.nist.gov/AM-Ontology_v2#SurfaceDistributionOfHeat"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.semanticweb.org/administrator/ontologies/2015/6/PennState-Ontology#HeatFluxOfDoubleEllipsoidDensity -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/administrator/ontologies/2015/6/PennState-Ontology#HeatFluxOfDoubleEllipsoidDensity">
+        <rdfs:subClassOf rdf:resource="http://siam.nist.gov/AM-Ontology_v2#SurfaceDistributionOfHeat"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://siam.nist.gov/AM-Ontology_v2#requiresAssumption"/>
+                <owl:someValuesFrom rdf:resource="http://siam.nist.gov/AM-Ontology_v2#ThreeDimensional"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.semanticweb.org/administrator/ontologies/2015/6/PennState-Ontology#HeatFluxVector -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/administrator/ontologies/2015/6/PennState-Ontology#HeatFluxVector">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://siam.nist.gov/AM-Ontology_v2#influences"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/administrator/ontologies/2015/6/PennState-Ontology#ConductionModel"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.semanticweb.org/administrator/ontologies/2015/6/PennState-Ontology#LagFactor -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/administrator/ontologies/2015/6/PennState-Ontology#LagFactor">
+        <rdfs:subClassOf rdf:resource="http://siam.nist.gov/AM-Ontology-v2#ModelInput"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://siam.nist.gov/AM-Ontology_v2#influences"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/administrator/ontologies/2015/6/PennState-Ontology#HeatFluxOfDoubleEllipsoidDensity"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.semanticweb.org/administrator/ontologies/2015/6/PennState-Ontology#LaserIntensity -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/administrator/ontologies/2015/6/PennState-Ontology#LaserIntensity">
+        <rdfs:subClassOf rdf:resource="http://siam.nist.gov/AM-Ontology_v2#PowderBedFusionProcessParameter"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.semanticweb.org/administrator/ontologies/2015/6/PennState-Ontology#LengthForSurfaceTension -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/administrator/ontologies/2015/6/PennState-Ontology#LengthForSurfaceTension">
+        <rdfs:subClassOf rdf:resource="http://siam.nist.gov/AM-Ontology-v2#ModelInput"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://siam.nist.gov/AM-Ontology_v2#influences"/>
+                <owl:someValuesFrom rdf:resource="http://siam.nist.gov/AM-Ontology-v2#SurfaceTension"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.semanticweb.org/administrator/ontologies/2015/6/PennState-Ontology#LengthForTheBuoyancyForce -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/administrator/ontologies/2015/6/PennState-Ontology#LengthForTheBuoyancyForce">
+        <rdfs:subClassOf rdf:resource="http://siam.nist.gov/AM-Ontology-v2#ModelInput"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.semanticweb.org/administrator/ontologies/2015/6/PennState-Ontology#LengthOfLaserBeam -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/administrator/ontologies/2015/6/PennState-Ontology#LengthOfLaserBeam">
+        <rdfs:subClassOf rdf:resource="http://siam.nist.gov/AM-Ontology_v2#OpticalParameter"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.semanticweb.org/administrator/ontologies/2015/6/PennState-Ontology#MaterialDensity -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/administrator/ontologies/2015/6/PennState-Ontology#MaterialDensity">
+        <rdfs:subClassOf rdf:resource="http://siam.nist.gov/AM-Ontology-v2#ConsolidationStateVariable"/>
+        <rdfs:subClassOf rdf:resource="http://siam.nist.gov/AM-Ontology-v2#HeatTransferProperty"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/administrator/ontologies/2015/6/PennState-Ontology#MaximumFluidVelocity -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/administrator/ontologies/2015/6/PennState-Ontology#MaximumFluidVelocity">
+        <rdfs:subClassOf rdf:resource="http://siam.nist.gov/AM-Ontology_v2#ProcessSignature"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.semanticweb.org/administrator/ontologies/2015/6/PennState-Ontology#MechanicalProperty -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/administrator/ontologies/2015/6/PennState-Ontology#MechanicalProperty">
+        <rdfs:subClassOf rdf:resource="http://siam.nist.gov/AM-Ontology_v2#Characteristic"/>
+        <rdfs:comment>Mechanical properties of the produced part</rdfs:comment>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.semanticweb.org/administrator/ontologies/2015/6/PennState-Ontology#MeltPoolAreal -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/administrator/ontologies/2015/6/PennState-Ontology#MeltPoolAreal">
+        <rdfs:subClassOf rdf:resource="http://siam.nist.gov/AM-Ontology_v2#MeltPoolShape"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.semanticweb.org/administrator/ontologies/2015/6/PennState-Ontology#ParticleDensity -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/administrator/ontologies/2015/6/PennState-Ontology#ParticleDensity">
+        <rdfs:subClassOf rdf:resource="http://siam.nist.gov/AM-Ontology-v2#ConsolidationStateVariable"/>
+        <rdfs:subClassOf rdf:resource="http://siam.nist.gov/AM-Ontology-v2#HeatTransferProperty"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://siam.nist.gov/AM-Ontology_v2#influences"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/administrator/ontologies/2015/6/PennState-Ontology#MaximumFluidVelocity"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://siam.nist.gov/AM-Ontology_v2#influences"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/administrator/ontologies/2015/6/PennState-Ontology#TemperatureAtTime_t"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://siam.nist.gov/AM-Ontology_v2#influences"/>
+                <owl:someValuesFrom rdf:resource="http://siam.nist.gov/AM-Ontology-v2#SurfaceTension"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.semanticweb.org/administrator/ontologies/2015/6/PennState-Ontology#PhaseComposition -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/administrator/ontologies/2015/6/PennState-Ontology#PhaseComposition">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://siam.nist.gov/AM-Ontology_v2#influencedBy"/>
+                <owl:someValuesFrom rdf:resource="http://siam.nist.gov/AM-Ontology-v2#CoolingRate"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.semanticweb.org/administrator/ontologies/2015/6/PennState-Ontology#SensibleHeat -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/administrator/ontologies/2015/6/PennState-Ontology#SensibleHeat">
+        <rdfs:subClassOf rdf:resource="http://siam.nist.gov/AM-Ontology_v2#FusionCharacteristic"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.semanticweb.org/administrator/ontologies/2015/6/PennState-Ontology#SolidificationRate -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/administrator/ontologies/2015/6/PennState-Ontology#SolidificationRate">
+        <rdfs:subClassOf rdf:resource="http://siam.nist.gov/AM-Ontology-v2#ModelVariable"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/administrator/ontologies/2015/6/PennState-Ontology#Influences"/>
+                <owl:someValuesFrom rdf:resource="http://siam.nist.gov/AM-Ontology-v2#CoolingRate"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.semanticweb.org/administrator/ontologies/2015/6/PennState-Ontology#TemperatureAtTime_t -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/administrator/ontologies/2015/6/PennState-Ontology#TemperatureAtTime_t">
+        <rdfs:subClassOf rdf:resource="http://siam.nist.gov/AM-Ontology-v2#ConsolidationPhysicalProperty"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/administrator/ontologies/2015/6/PennState-Ontology#functionOf"/>
+                <owl:someValuesFrom rdf:resource="http://siam.nist.gov/AM-Ontology-v2#SurfaceConvection"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.semanticweb.org/administrator/ontologies/2015/6/PennState-Ontology#TemperatureDifference -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/administrator/ontologies/2015/6/PennState-Ontology#TemperatureDifference">
+        <rdfs:subClassOf rdf:resource="http://siam.nist.gov/AM-Ontology-v2#ConsolidationPhysicalProperty"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://siam.nist.gov/AM-Ontology_v2#influences"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/administrator/ontologies/2015/6/PennState-Ontology#MaximumFluidVelocity"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://siam.nist.gov/AM-Ontology_v2#influences"/>
+                <owl:someValuesFrom rdf:resource="http://siam.nist.gov/AM-Ontology-v2#SurfaceTension"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>Difference between temperature on the top of the melt pool and the solidus temperature</rdfs:comment>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.semanticweb.org/administrator/ontologies/2015/6/PennState-Ontology#TensileStrength -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/administrator/ontologies/2015/6/PennState-Ontology#TensileStrength">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://siam.nist.gov/AM-Ontology_v2#influencedBy"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/administrator/ontologies/2015/6/PennState-Ontology#Crystal"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://siam.nist.gov/AM-Ontology_v2#influencedBy"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/administrator/ontologies/2015/6/PennState-Ontology#PhaseComposition"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://siam.nist.gov/AM-Ontology_v2#influencedBy"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/administrator/ontologies/2015/6/PennState-Ontology#AbsorbedLaserPower"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.semanticweb.org/administrator/ontologies/2015/6/PennState-Ontology#ThermalExpansionCoefficient -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/administrator/ontologies/2015/6/PennState-Ontology#ThermalExpansionCoefficient">
+        <rdfs:subClassOf rdf:resource="http://siam.nist.gov/AM-Ontology-v2#ModelInput"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.semanticweb.org/administrator/ontologies/2015/6/PennState-Ontology#WidthOfLaserBeam -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/administrator/ontologies/2015/6/PennState-Ontology#WidthOfLaserBeam">
+        <rdfs:subClassOf rdf:resource="http://siam.nist.gov/AM-Ontology_v2#OpticalParameter"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://siam.nist.gov/AM-Ontology_v2#influences"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/administrator/ontologies/2015/6/PennState-Ontology#HeatFluxOfConstantDensity"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.semanticweb.org/administrator/ontologies/2015/6/PennState-Ontology#YieldStrength -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/administrator/ontologies/2015/6/PennState-Ontology#YieldStrength">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://siam.nist.gov/AM-Ontology_v2#influencedBy"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/administrator/ontologies/2015/6/PennState-Ontology#PhaseComposition"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://siam.nist.gov/AM-Ontology_v2#influencedBy"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/administrator/ontologies/2015/6/PennState-Ontology#Crystal"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://siam.nist.gov/AM-Ontology_v2#influencedBy"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/administrator/ontologies/2015/6/PennState-Ontology#AbsorbedLaserPower"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.semanticweb.org/administrator/ontologies/2015/6/PennState-Ontology#Beam_distribution_parameter(d) -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/administrator/ontologies/2015/6/PennState-Ontology#Beam_distribution_parameter(d)">
+        <rdfs:subClassOf rdf:resource="http://siam.nist.gov/AM-Ontology-v2#ModelVariable"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://siam.nist.gov/AM-Ontology_v2#influences"/>
+                <owl:someValuesFrom rdf:resource="http://siam.nist.gov/AM-Ontology_v2#GaussianDistribution"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.semanticweb.org/administrator/ontologies/2015/6/PennState-Ontology#Radius_of_flux_distribution(Ra) -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/administrator/ontologies/2015/6/PennState-Ontology#Radius_of_flux_distribution(Ra)">
+        <rdfs:subClassOf rdf:resource="http://siam.nist.gov/AM-Ontology-v2#ModelVariable"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://siam.nist.gov/AM-Ontology_v2#influences"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/administrator/ontologies/2015/6/PennState-Ontology#HeatFluxOfDoubleEllipsoidDensity"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.semanticweb.org/administrator/ontologies/2015/6/PennState-Ontology#Radius_of_flux_distribution(Rb) -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/administrator/ontologies/2015/6/PennState-Ontology#Radius_of_flux_distribution(Rb)">
+        <rdfs:subClassOf rdf:resource="http://siam.nist.gov/AM-Ontology-v2#ModelVariable"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://siam.nist.gov/AM-Ontology_v2#influences"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/administrator/ontologies/2015/6/PennState-Ontology#HeatFluxOfDoubleEllipsoidDensity"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.semanticweb.org/administrator/ontologies/2015/6/PennState-Ontology#Radius_of_flux_distribution(Rc) -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/administrator/ontologies/2015/6/PennState-Ontology#Radius_of_flux_distribution(Rc)">
+        <rdfs:subClassOf rdf:resource="http://siam.nist.gov/AM-Ontology-v2#ModelVariable"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://siam.nist.gov/AM-Ontology_v2#influences"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/administrator/ontologies/2015/6/PennState-Ontology#HeatFluxOfDoubleEllipsoidDensity"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </rdf:Description>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/administrator/ontologies/2015/6/untitled-ontology-28#Ti6Al4V -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/administrator/ontologies/2015/6/untitled-ontology-28#Ti6Al4V">
+        <rdf:type rdf:resource="http://siam.nist.gov/AM-Ontology-v2#MetalAlloy"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotations
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/administrator/ontologies/2015/6/untitled-ontology-28#Keyhole-mode_laser_melting">
+        <rdfs:comment>Laser powder-bed fusion additive manufacturing of metals employs high-power focused laser beams. 
+
+Typically, the depth of the molten pool is controlled by conduction of heat in the underlying solid material. But, under certain conditions, the mechanism of melting can change from conduction to so-called "keyhole-mode" laser melting.
+
+In this mode, the depth of the molten pool is controlled by evaporation of the metal. Keyhole-mode laser melting results in melt pool depths that can be much deeper than observed in conduction mode. In addition, the collapse of the vapor cavity that is formed by the evaporation of the metal can result in a trail of voids in the wake of the laser beam. 
+
+In the following paper (Observation of keyhole-mode laser melting in laser powder-bed fusion additive manufacturing), the experimental observation of keyhole-mode laser melting in a laser powder-bed fusion additive manufacturing setting for 316L stainless steel is presented. The conditions required to transition from conduction controlled melting to keyhole-mode melting are identified.</rdfs:comment>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 3.5.1) http://owlapi.sourceforge.net -->
+

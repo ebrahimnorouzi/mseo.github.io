@@ -1,0 +1,967 @@
+@prefix bto: <https://gitlab.com/kupferdigital/process-graphs/brinell-hardness-test/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/ns/prov#> .
+@prefix ns2: <http://qudt.org/schema/qudt/> .
+@prefix ns3: <http://www.w3.org/2004/02/skos/core#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pmd: <https://w3id.org/pmd/co/> .
+@prefix prov: <https://w3.org/ns/prov#> .
+@prefix qudt: <https://qudt.org/2.1/schema/qudt/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+xsd:string a rdfs:Datatype .
+
+ns3:definition a owl:AnnotationProperty .
+
+ns1:Organization a owl:Class ;
+    rdfs:subClassOf ns1:Agent .
+
+ns1:value a owl:DatatypeProperty .
+
+bto: a owl:Ontology ;
+    dcterms:biblographicCitation "Hossein Beygi Nasrabadi. (2024.02.13) Brinell Test Ontology (BTO). Version 4.0.2, www.gitlab.com/kupferdigital/process-graphs/brinell-hardness-test" ;
+    dcterms:created "2024.02.13" ;
+    dcterms:creator "Hossein Beygi Nasrabadi (www.orcid.org/0000-0002-3092-0532)" ;
+    dcterms:licence "www.creativecommons.org/licenses/by/4.0/" ;
+    dcterms:title "Brinell Test Ontology (BTO)" ;
+    rdfs:comment "Brinell Test Ontology (BTO) has developed for representing the Brinell testing process, testing equipment requirements, test pieces charactristics, and related testing parameters and their measurement procedure according to DIN EN ISO 6506-1 standard.",
+        "KuferDigital project (www.materialdigital.de/project/1)" ;
+    owl:imports "https://raw.githubusercontent.com/materialdigital/core-ontology/main/pmd_core.ttl" ;
+    owl:versionInfo "4.0.2 (PROV, PMDco)" .
+
+bto:ReferenceBlock a owl:Class ;
+    rdfs:subClassOf bto:CalibrationAccessory ;
+    ns3:definition "The certified reference material is equivalent to the hardness reference block, i.e. a piece of material with a certified value and associated uncertainty." ;
+    bto:definitionSource "ISO 6506-1:2015-02" .
+
+bto:achivedBy a owl:ObjectProperty .
+
+bto:definitionSource a owl:AnnotationProperty .
+
+prov:actedOnBehalfOf a owl:ObjectProperty .
+
+prov:atLocation a owl:ObjectProperty .
+
+prov:hasAssociatedWith a owl:ObjectProperty .
+
+prov:influenced a owl:ObjectProperty .
+
+prov:qualifiedInfluenceOf a owl:ObjectProperty .
+
+prov:wasActivityOfInfluence a owl:ObjectProperty .
+
+prov:wasAssociatedWith a owl:ObjectProperty .
+
+prov:wasDrivedFrom a owl:ObjectProperty .
+
+pmd:MeasuringDevice a owl:Class ;
+    rdfs:subClassOf pmd:ProcessingNode .
+
+pmd:characteristic a owl:ObjectProperty .
+
+pmd:component a owl:ObjectProperty .
+
+pmd:composedOf a owl:ObjectProperty .
+
+pmd:executedBy a owl:ObjectProperty .
+
+pmd:hasFunction a owl:ObjectProperty .
+
+pmd:hasIdentifier a owl:ObjectProperty .
+
+pmd:input a owl:ObjectProperty .
+
+pmd:nextProcess a owl:ObjectProperty .
+
+pmd:output a owl:ObjectProperty .
+
+pmd:participant a owl:ObjectProperty .
+
+pmd:process a owl:ObjectProperty .
+
+pmd:resource a owl:ObjectProperty .
+
+pmd:subordinateProcess a owl:ObjectProperty .
+
+pmd:unit a owl:ObjectProperty .
+
+ns1:Activity a owl:Class .
+
+ns1:Person a owl:Class ;
+    rdfs:subClassOf ns1:Agent .
+
+bto:BrinellHardnessTest1 a owl:NamedIndividual,
+        bto:BrinellHardnessTest ;
+    prov:atLocation bto:TestingLaboratory ;
+    prov:wasAssociatedWith bto:TestingOperator ;
+    pmd:characteristic bto:TestingDate,
+        bto:TestingStandard ;
+    pmd:executedBy bto:HardnessTestingEquipment ;
+    pmd:input bto:BrinellTestPiece ;
+    pmd:process bto:BrinellTestMeasurment .
+
+bto:BrinellHardnessTest10 a owl:NamedIndividual,
+        bto:BrinellHardnessTest ;
+    prov:atLocation bto:TestingLaboratory ;
+    prov:wasAssociatedWith bto:TestingOperator ;
+    pmd:characteristic bto:TestingDate,
+        bto:TestingStandard ;
+    pmd:executedBy bto:HardnessTestingEquipment ;
+    pmd:input bto:BrinellTestPiece ;
+    pmd:process bto:BrinellTestMeasurment .
+
+bto:BrinellHardnessTest11 a owl:NamedIndividual,
+        bto:BrinellHardnessTest ;
+    prov:atLocation bto:TestingLaboratory ;
+    prov:wasAssociatedWith bto:TestingOperator ;
+    pmd:characteristic bto:TestingDate,
+        bto:TestingStandard ;
+    pmd:executedBy bto:HardnessTestingEquipment ;
+    pmd:input bto:BrinellTestPiece ;
+    pmd:process bto:BrinellTestMeasurment .
+
+bto:BrinellHardnessTest12 a owl:NamedIndividual,
+        bto:BrinellHardnessTest ;
+    prov:atLocation bto:TestingLaboratory ;
+    prov:wasAssociatedWith bto:TestingOperator ;
+    pmd:characteristic bto:TestingDate,
+        bto:TestingStandard ;
+    pmd:executedBy bto:HardnessTestingEquipment ;
+    pmd:input bto:BrinellTestPiece ;
+    pmd:process bto:BrinellTestMeasurment .
+
+bto:BrinellHardnessTest13 a owl:NamedIndividual,
+        bto:BrinellHardnessTest ;
+    prov:atLocation bto:TestingLaboratory ;
+    prov:wasAssociatedWith bto:TestingOperator ;
+    pmd:characteristic bto:TestingDate,
+        bto:TestingStandard ;
+    pmd:executedBy bto:HardnessTestingEquipment ;
+    pmd:input bto:BrinellTestPiece ;
+    pmd:process bto:BrinellTestMeasurment .
+
+bto:BrinellHardnessTest14 a owl:NamedIndividual,
+        bto:BrinellHardnessTest ;
+    prov:atLocation bto:TestingLaboratory ;
+    prov:wasAssociatedWith bto:TestingOperator ;
+    pmd:characteristic bto:TestingDate,
+        bto:TestingStandard ;
+    pmd:executedBy bto:HardnessTestingEquipment ;
+    pmd:input bto:BrinellTestPiece ;
+    pmd:process bto:BrinellTestMeasurment .
+
+bto:BrinellHardnessTest15 a owl:NamedIndividual,
+        bto:BrinellHardnessTest ;
+    prov:atLocation bto:TestingLaboratory ;
+    prov:wasAssociatedWith bto:TestingOperator ;
+    pmd:characteristic bto:TestingDate,
+        bto:TestingStandard ;
+    pmd:executedBy bto:HardnessTestingEquipment ;
+    pmd:input bto:BrinellTestPiece ;
+    pmd:process bto:BrinellTestMeasurment .
+
+bto:BrinellHardnessTest16 a owl:NamedIndividual,
+        bto:BrinellHardnessTest ;
+    prov:atLocation bto:TestingLaboratory ;
+    prov:wasAssociatedWith bto:TestingOperator ;
+    pmd:characteristic bto:TestingDate,
+        bto:TestingStandard ;
+    pmd:executedBy bto:HardnessTestingEquipment ;
+    pmd:input bto:BrinellTestPiece ;
+    pmd:process bto:BrinellTestMeasurment .
+
+bto:BrinellHardnessTest17 a owl:NamedIndividual,
+        bto:BrinellHardnessTest ;
+    prov:atLocation bto:TestingLaboratory ;
+    prov:wasAssociatedWith bto:TestingOperator ;
+    pmd:characteristic bto:TestingDate,
+        bto:TestingStandard ;
+    pmd:executedBy bto:HardnessTestingEquipment ;
+    pmd:input bto:BrinellTestPiece ;
+    pmd:process bto:BrinellTestMeasurment .
+
+bto:BrinellHardnessTest18 a owl:NamedIndividual,
+        bto:BrinellHardnessTest ;
+    prov:atLocation bto:TestingLaboratory ;
+    prov:wasAssociatedWith bto:TestingOperator ;
+    pmd:characteristic bto:TestingDate,
+        bto:TestingStandard ;
+    pmd:executedBy bto:HardnessTestingEquipment ;
+    pmd:input bto:BrinellTestPiece ;
+    pmd:process bto:BrinellTestMeasurment .
+
+bto:BrinellHardnessTest19 a owl:NamedIndividual,
+        bto:BrinellHardnessTest ;
+    prov:atLocation bto:TestingLaboratory ;
+    prov:wasAssociatedWith bto:TestingOperator ;
+    pmd:characteristic bto:TestingDate,
+        bto:TestingStandard ;
+    pmd:executedBy bto:HardnessTestingEquipment ;
+    pmd:input bto:BrinellTestPiece ;
+    pmd:process bto:BrinellTestMeasurment .
+
+bto:BrinellHardnessTest2 a owl:NamedIndividual,
+        bto:BrinellHardnessTest ;
+    prov:atLocation bto:TestingLaboratory ;
+    prov:wasAssociatedWith bto:TestingOperator ;
+    pmd:characteristic bto:TestingDate,
+        bto:TestingStandard ;
+    pmd:executedBy bto:HardnessTestingEquipment ;
+    pmd:input bto:BrinellTestPiece ;
+    pmd:process bto:BrinellTestMeasurment .
+
+bto:BrinellHardnessTest20 a owl:NamedIndividual,
+        bto:BrinellHardnessTest ;
+    prov:atLocation bto:TestingLaboratory ;
+    prov:wasAssociatedWith bto:TestingOperator ;
+    pmd:characteristic bto:TestingDate,
+        bto:TestingStandard ;
+    pmd:executedBy bto:HardnessTestingEquipment ;
+    pmd:input bto:BrinellTestPiece ;
+    pmd:process bto:BrinellTestMeasurment .
+
+bto:BrinellHardnessTest21 a owl:NamedIndividual,
+        bto:BrinellHardnessTest ;
+    prov:atLocation bto:TestingLaboratory ;
+    prov:wasAssociatedWith bto:TestingOperator ;
+    pmd:characteristic bto:TestingDate,
+        bto:TestingStandard ;
+    pmd:executedBy bto:HardnessTestingEquipment ;
+    pmd:input bto:BrinellTestPiece ;
+    pmd:process bto:BrinellTestMeasurment .
+
+bto:BrinellHardnessTest22 a owl:NamedIndividual,
+        bto:BrinellHardnessTest ;
+    prov:atLocation bto:TestingLaboratory ;
+    prov:wasAssociatedWith bto:TestingOperator ;
+    pmd:characteristic bto:TestingDate,
+        bto:TestingStandard ;
+    pmd:executedBy bto:HardnessTestingEquipment ;
+    pmd:input bto:BrinellTestPiece ;
+    pmd:process bto:BrinellTestMeasurment .
+
+bto:BrinellHardnessTest23 a owl:NamedIndividual,
+        bto:BrinellHardnessTest ;
+    prov:atLocation bto:TestingLaboratory ;
+    prov:wasAssociatedWith bto:TestingOperator ;
+    pmd:characteristic bto:TestingDate,
+        bto:TestingStandard ;
+    pmd:executedBy bto:HardnessTestingEquipment ;
+    pmd:input bto:BrinellTestPiece ;
+    pmd:process bto:BrinellTestMeasurment .
+
+bto:BrinellHardnessTest24 a owl:NamedIndividual,
+        bto:BrinellHardnessTest ;
+    prov:atLocation bto:TestingLaboratory ;
+    prov:wasAssociatedWith bto:TestingOperator ;
+    pmd:characteristic bto:TestingDate,
+        bto:TestingStandard ;
+    pmd:executedBy bto:HardnessTestingEquipment ;
+    pmd:input bto:BrinellTestPiece ;
+    pmd:process bto:BrinellTestMeasurment .
+
+bto:BrinellHardnessTest25 a owl:NamedIndividual,
+        bto:BrinellHardnessTest ;
+    prov:atLocation bto:TestingLaboratory ;
+    prov:wasAssociatedWith bto:TestingOperator ;
+    pmd:characteristic bto:TestingDate,
+        bto:TestingStandard ;
+    pmd:executedBy bto:HardnessTestingEquipment ;
+    pmd:input bto:BrinellTestPiece ;
+    pmd:process bto:BrinellTestMeasurment .
+
+bto:BrinellHardnessTest26 a owl:NamedIndividual,
+        bto:BrinellHardnessTest ;
+    prov:atLocation bto:TestingLaboratory ;
+    prov:wasAssociatedWith bto:TestingOperator ;
+    pmd:characteristic bto:TestingDate,
+        bto:TestingStandard ;
+    pmd:executedBy bto:HardnessTestingEquipment ;
+    pmd:input bto:BrinellTestPiece ;
+    pmd:process bto:BrinellTestMeasurment .
+
+bto:BrinellHardnessTest27 a owl:NamedIndividual,
+        bto:BrinellHardnessTest ;
+    prov:atLocation bto:TestingLaboratory ;
+    prov:wasAssociatedWith bto:TestingOperator ;
+    pmd:characteristic bto:TestingDate,
+        bto:TestingStandard ;
+    pmd:executedBy bto:HardnessTestingEquipment ;
+    pmd:input bto:BrinellTestPiece ;
+    pmd:process bto:BrinellTestMeasurment .
+
+bto:BrinellHardnessTest28 a owl:NamedIndividual,
+        bto:BrinellHardnessTest ;
+    prov:atLocation bto:TestingLaboratory ;
+    prov:wasAssociatedWith bto:TestingOperator ;
+    pmd:characteristic bto:TestingDate,
+        bto:TestingStandard ;
+    pmd:executedBy bto:HardnessTestingEquipment ;
+    pmd:input bto:BrinellTestPiece ;
+    pmd:process bto:BrinellTestMeasurment .
+
+bto:BrinellHardnessTest29 a owl:NamedIndividual,
+        bto:BrinellHardnessTest ;
+    prov:atLocation bto:TestingLaboratory ;
+    prov:wasAssociatedWith bto:TestingOperator ;
+    pmd:characteristic bto:TestingDate,
+        bto:TestingStandard ;
+    pmd:executedBy bto:HardnessTestingEquipment ;
+    pmd:input bto:BrinellTestPiece ;
+    pmd:process bto:BrinellTestMeasurment .
+
+bto:BrinellHardnessTest3 a owl:NamedIndividual,
+        bto:BrinellHardnessTest ;
+    prov:atLocation bto:TestingLaboratory ;
+    prov:wasAssociatedWith bto:TestingOperator ;
+    pmd:characteristic bto:TestingDate,
+        bto:TestingStandard ;
+    pmd:executedBy bto:HardnessTestingEquipment ;
+    pmd:input bto:BrinellTestPiece ;
+    pmd:process bto:BrinellTestMeasurment .
+
+bto:BrinellHardnessTest30 a owl:NamedIndividual,
+        bto:BrinellHardnessTest ;
+    prov:atLocation bto:TestingLaboratory ;
+    prov:wasAssociatedWith bto:TestingOperator ;
+    pmd:characteristic bto:TestingDate,
+        bto:TestingStandard ;
+    pmd:executedBy bto:HardnessTestingEquipment ;
+    pmd:input bto:BrinellTestPiece ;
+    pmd:process bto:BrinellTestMeasurment .
+
+bto:BrinellHardnessTest4 a owl:NamedIndividual,
+        bto:BrinellHardnessTest ;
+    prov:atLocation bto:TestingLaboratory ;
+    prov:wasAssociatedWith bto:TestingOperator ;
+    pmd:characteristic bto:TestingDate,
+        bto:TestingStandard ;
+    pmd:executedBy bto:HardnessTestingEquipment ;
+    pmd:input bto:BrinellTestPiece ;
+    pmd:process bto:BrinellTestMeasurment .
+
+bto:BrinellHardnessTest5 a owl:NamedIndividual,
+        bto:BrinellHardnessTest ;
+    prov:atLocation bto:TestingLaboratory ;
+    prov:wasAssociatedWith bto:TestingOperator ;
+    pmd:characteristic bto:TestingDate,
+        bto:TestingStandard ;
+    pmd:executedBy bto:HardnessTestingEquipment ;
+    pmd:input bto:BrinellTestPiece ;
+    pmd:process bto:BrinellTestMeasurment .
+
+bto:BrinellHardnessTest6 a owl:NamedIndividual,
+        bto:BrinellHardnessTest ;
+    prov:atLocation bto:TestingLaboratory ;
+    prov:wasAssociatedWith bto:TestingOperator ;
+    pmd:characteristic bto:TestingDate,
+        bto:TestingStandard ;
+    pmd:executedBy bto:HardnessTestingEquipment ;
+    pmd:input bto:BrinellTestPiece ;
+    pmd:process bto:BrinellTestMeasurment .
+
+bto:BrinellHardnessTest7 a owl:NamedIndividual,
+        bto:BrinellHardnessTest ;
+    prov:atLocation bto:TestingLaboratory ;
+    prov:wasAssociatedWith bto:TestingOperator ;
+    pmd:characteristic bto:TestingDate,
+        bto:TestingStandard ;
+    pmd:executedBy bto:HardnessTestingEquipment ;
+    pmd:input bto:BrinellTestPiece ;
+    pmd:process bto:BrinellTestMeasurment .
+
+bto:BrinellHardnessTest8 a owl:NamedIndividual,
+        bto:BrinellHardnessTest ;
+    prov:atLocation bto:TestingLaboratory ;
+    prov:wasAssociatedWith bto:TestingOperator ;
+    pmd:characteristic bto:TestingDate,
+        bto:TestingStandard ;
+    pmd:executedBy bto:HardnessTestingEquipment ;
+    pmd:input bto:BrinellTestPiece ;
+    pmd:process bto:BrinellTestMeasurment .
+
+bto:BrinellHardnessTest9 a owl:NamedIndividual,
+        bto:BrinellHardnessTest ;
+    prov:atLocation bto:TestingLaboratory ;
+    prov:wasAssociatedWith bto:TestingOperator ;
+    pmd:characteristic bto:TestingDate,
+        bto:TestingStandard ;
+    pmd:executedBy bto:HardnessTestingEquipment ;
+    pmd:input bto:BrinellTestPiece ;
+    pmd:process bto:BrinellTestMeasurment .
+
+bto:BrinellHardnessTestEquipment a owl:Class ;
+    rdfs:subClassOf bto:HardnessMeasurementDevice ;
+    ns3:definition "equipment for measuring the Brinell indentation hardness of a material" ;
+    bto:definitionSource "" .
+
+bto:BrinellIndenter a owl:NamedIndividual,
+        bto:Indenter ;
+    prov:qualifiedInfluenceOf bto:BrinellIndentation ;
+    pmd:characteristic bto:IndenterDiameter,
+        bto:IndenterTipShape ;
+    pmd:composedOf bto:IndenterMaterial .
+
+bto:CalculatingHardness a owl:NamedIndividual,
+        pmd:AnalysingProcess ;
+    prov:actedOnBehalfOf bto:TestingOperator ;
+    prov:hasAssociatedWith bto:HardnessTestingEquipment ;
+    pmd:subordinateProcess bto:CalculatingAverageDiameter,
+        bto:CalculatingBrinellHardness .
+
+bto:CalibrationAccessory a owl:Class ;
+    rdfs:subClassOf pmd:ProcessingNode ;
+    ns3:definition "the artifact that uses for calibration of a machine or device" ;
+    bto:definitionSource "ISO 24131-1:2023" .
+
+bto:CheckingTemperature a owl:NamedIndividual,
+        pmd:ConditioningProcess ;
+    pmd:characteristic bto:TestTemperature ;
+    pmd:nextProcess bto:CheckingTestingMachine .
+
+bto:CollibrationProcess a owl:Class ;
+    rdfs:subClassOf pmd:Process ;
+    ns3:definition "process of determining the capacity of a tank, or the partial capacities corresponding to different levels" ;
+    bto:definitionSource "ISO 7507-1:2003" .
+
+bto:Hardness a owl:Class ;
+    rdfs:subClassOf pmd:Mechanical ;
+    ns3:definition "resistance of the lining to the penetration of a ball under defined test conditions" ;
+    bto:definitionSource "" .
+
+bto:HardnessMeasurementDevice a owl:Class ;
+    rdfs:subClassOf pmd:TestingMachine ;
+    ns3:definition "an indentation testing machine used for performing indentation hardness tests" ;
+    bto:definitionSource "ISO 23718:2007(en)" .
+
+bto:HardnessTest a owl:Class ;
+    rdfs:subClassOf pmd:MechanicalTestingProcess ;
+    ns3:definition "indentation test carried out using a hardness testing machine to measure the hardness of a material" ;
+    bto:definitionSource "ISO 17918:2015(en)" .
+
+bto:IndentationAverageDiameter a owl:NamedIndividual,
+        bto:Diameter,
+        pmd:Measurement,
+        pmd:SecondaryData ;
+    ns1:value "0.6137"^^xsd:string,
+        "0.6199"^^xsd:string,
+        "0.6276"^^xsd:string,
+        "0.6284"^^xsd:string,
+        "0.6307"^^xsd:string,
+        "0.6356"^^xsd:string,
+        "0.6377"^^xsd:string,
+        "0.6423"^^xsd:string,
+        "0.6493"^^xsd:string,
+        "0.6764"^^xsd:string,
+        "0.7911"^^xsd:string,
+        "0.8043"^^xsd:string,
+        "0.8074"^^xsd:string,
+        "0.812"^^xsd:string,
+        "0.8128"^^xsd:string,
+        "0.8213"^^xsd:string,
+        "0.8345"^^xsd:string,
+        "0.85"^^xsd:string,
+        "0.8647"^^xsd:string,
+        "0.8748"^^xsd:string,
+        "0.9264"^^xsd:string,
+        "0.936"^^xsd:string,
+        "0.9399"^^xsd:string,
+        "0.9515"^^xsd:string,
+        "1.0181"^^xsd:string,
+        "1.0499"^^xsd:string,
+        "1.0824"^^xsd:string,
+        "1.084"^^xsd:string,
+        "1.1003"^^xsd:string,
+        "1.1041"^^xsd:string ;
+    pmd:input bto:CalculatingBrinellHardness ;
+    pmd:unit qudt:MiliM .
+
+bto:IndentationHorizontalDiameter a owl:NamedIndividual,
+        bto:Diameter,
+        pmd:Measurement,
+        pmd:PrimaryData ;
+    ns1:value "0.6168"^^xsd:string,
+        "0.6199"^^xsd:string,
+        "0.6245"^^xsd:string,
+        "0.6261"^^xsd:string,
+        "0.6307"^^xsd:string,
+        "0.6416"^^xsd:string,
+        "0.6431"^^xsd:string,
+        "0.6478"^^xsd:string,
+        "0.6819"^^xsd:string,
+        "0.7934"^^xsd:string,
+        "0.8027"^^xsd:string,
+        "0.8089"^^xsd:string,
+        "0.8105"^^xsd:string,
+        "0.8151"^^xsd:string,
+        "0.8275"^^xsd:string,
+        "0.8461"^^xsd:string,
+        "0.8616"^^xsd:string,
+        "0.8632"^^xsd:string,
+        "0.8926"^^xsd:string,
+        "0.9298"^^xsd:string,
+        "0.9344"^^xsd:string,
+        "0.9437"^^xsd:string,
+        "0.9499"^^xsd:string,
+        "1.0119"^^xsd:string,
+        "1.046"^^xsd:string,
+        "1.0739"^^xsd:string,
+        "1.0832"^^xsd:string,
+        "1.1113"^^xsd:string,
+        "1.1127"^^xsd:string ;
+    pmd:characteristic bto:BrinellIndentation ;
+    pmd:input bto:CalculatingAverageDiameter ;
+    pmd:unit qudt:MiliM .
+
+bto:IndentationVerticalDiameter a owl:NamedIndividual,
+        bto:Diameter,
+        pmd:Measurement,
+        pmd:PrimaryData ;
+    ns1:value "0.6106"^^xsd:string,
+        "0.6152"^^xsd:string,
+        "0.6199"^^xsd:string,
+        "0.6235"^^xsd:string,
+        "0.6245"^^xsd:string,
+        "0.6369"^^xsd:string,
+        "0.6493"^^xsd:string,
+        "0.6555"^^xsd:string,
+        "0.671"^^xsd:string,
+        "0.7795"^^xsd:string,
+        "0.7996"^^xsd:string,
+        "0.8151"^^xsd:string,
+        "0.8229"^^xsd:string,
+        "0.8368"^^xsd:string,
+        "0.857"^^xsd:string,
+        "0.8678"^^xsd:string,
+        "0.923"^^xsd:string,
+        "0.9283"^^xsd:string,
+        "0.9453"^^xsd:string,
+        "0.953"^^xsd:string,
+        "1.0243"^^xsd:string,
+        "1.0538"^^xsd:string,
+        "1.0848"^^xsd:string,
+        "1.0894"^^xsd:string,
+        "1.091"^^xsd:string,
+        "1.0956"^^xsd:string ;
+    pmd:characteristic bto:BrinellIndentation ;
+    pmd:input bto:CalculatingAverageDiameter ;
+    pmd:unit qudt:MiliM .
+
+bto:Indenter a owl:Class ;
+    rdfs:subClassOf pmd:ProcessingNode ;
+    ns3:definition "body with a hard tip, typically of diamond, hardmetal (tungsten carbide alloy), or, in special cases, steel, of specified geometry through which the test force is applied in the course of an indentation test" ;
+    bto:definitionSource "ISO 23718:2007(en)" .
+
+bto:IndenterDiameter a owl:NamedIndividual,
+        bto:Diameter,
+        pmd:Metadata ;
+    ns1:value "2.5"^^xsd:string ;
+    pmd:input bto:CalculatingBrinellHardness ;
+    pmd:unit qudt:MiliM .
+
+bto:Loading a owl:NamedIndividual,
+        pmd:MeasuringProcess ;
+    prov:wasActivityOfInfluence bto:BrinellIndentation ;
+    pmd:characteristic bto:LoadingTime,
+        bto:MaintainingTime ;
+    pmd:nextProcess bto:PlacingTestPiece,
+        bto:Unloading ;
+    pmd:participant bto:HardnessTestingEquipment .
+
+bto:LoadingTime a owl:NamedIndividual,
+        bto:TestForceApplicationTime,
+        pmd:PrimaryData,
+        pmd:SetPoint ;
+    ns1:value "7"^^xsd:string ;
+    pmd:unit qudt:SEC .
+
+bto:MaintainingTime a owl:NamedIndividual,
+        bto:TestForceDuration,
+        pmd:Metadata,
+        pmd:SetPoint ;
+    ns1:value "14"^^xsd:string,
+        "15"^^xsd:string ;
+    pmd:unit qudt:SEC .
+
+bto:TestForce a owl:NamedIndividual,
+        pmd:Force,
+        pmd:PrimaryData,
+        pmd:SetPoint ;
+    ns1:value "612.9156"^^xsd:string ;
+    pmd:input bto:CalculatingBrinellHardness ;
+    pmd:unit qudt:N .
+
+bto:TestForceApplicationTime a owl:Class ;
+    rdfs:subClassOf pmd:Duration ;
+    ns3:definition "period from the start of application of force to the material until the test force is reached" ;
+    bto:definitionSource "ISO 23718_2007(en)" .
+
+bto:TestForceDuration a owl:Class ;
+    rdfs:subClassOf pmd:Duration ;
+    ns3:definition "period during which the test force is held constant during a hardness test, beginning when the test force is fully applied and ending either at the start of its removal or at the start of the application of an additional force" ;
+    bto:definitionSource "ISO 23718_2007(en)" .
+
+bto:TestPieceID a owl:NamedIndividual,
+        pmd:Metadata,
+        pmd:TestPieceName ;
+    ns1:value "A"^^xsd:string,
+        "B"^^xsd:string,
+        "C"^^xsd:string,
+        "D"^^xsd:string,
+        "E"^^xsd:string,
+        "F"^^xsd:string .
+
+bto:TestPieceMaterialComposition a owl:NamedIndividual,
+        pmd:ChemicalComposition,
+        pmd:Metadata ;
+    ns1:value "CuNi12Al3"^^xsd:string,
+        "CuNiSi"^^xsd:string,
+        "CuSn12"^^xsd:string,
+        "CuSn6"^^xsd:string,
+        "CuZn21Si3P"^^xsd:string,
+        "CuZn38As"^^xsd:string .
+
+bto:TestTemperature a owl:NamedIndividual,
+        pmd:Measurement,
+        pmd:Metadata,
+        pmd:Temperature ;
+    ns1:value "22.7"^^xsd:string ;
+    pmd:unit qudt:DEG_C .
+
+bto:TestingMachineID a owl:NamedIndividual,
+        pmd:Identifier,
+        pmd:Metadata ;
+    ns1:value "Emco_Test_M4C_025_G3"^^xsd:string .
+
+bto:indentation a owl:Class ;
+    rdfs:subClassOf pmd:Location ;
+    ns3:definition "impression made in the surface of the material by the indenter in an indentation test" ;
+    bto:definitionSource "ISO 23718_2007(en)" .
+
+qudt:DEG_C a ns2:Unit,
+        owl:NamedIndividual .
+
+qudt:HBW a ns2:Unit,
+        owl:NamedIndividual .
+
+qudt:N a ns2:Unit,
+        owl:NamedIndividual .
+
+pmd:Algorithm a owl:Class ;
+    rdfs:subClassOf pmd:Method .
+
+pmd:AssemblingProcess a owl:Class ;
+    rdfs:subClassOf pmd:Process .
+
+pmd:Date a owl:Class ;
+    rdfs:subClassOf pmd:Time .
+
+pmd:EngineeredMaterial a owl:Class ;
+    rdfs:subClassOf pmd:Object .
+
+pmd:Force a owl:Class ;
+    rdfs:subClassOf pmd:ValueObject .
+
+pmd:MaterialProperty a owl:Class ;
+    rdfs:subClassOf pmd:MaterialRelated .
+
+pmd:MaterialRelated a owl:Class ;
+    rdfs:subClassOf pmd:ValueObject .
+
+pmd:Mechanical a owl:Class ;
+    rdfs:subClassOf pmd:MaterialProperty .
+
+pmd:MechanicalTestingProcess a owl:Class ;
+    rdfs:subClassOf pmd:AnalysingProcess .
+
+pmd:NodeInfo a owl:Class ;
+    rdfs:subClassOf pmd:ValueObject .
+
+pmd:Norm a owl:Class ;
+    rdfs:subClassOf pmd:Method .
+
+pmd:Object a owl:Class ;
+    rdfs:subClassOf ns1:Entity .
+
+pmd:Operator a owl:Class ;
+    rdfs:subClassOf ns1:Person .
+
+pmd:Sample a owl:Class ;
+    rdfs:subClassOf pmd:EngineeredMaterial .
+
+pmd:Shape a owl:Class ;
+    rdfs:subClassOf pmd:ValueObject .
+
+pmd:Temperature a owl:Class ;
+    rdfs:subClassOf pmd:ValueObject .
+
+pmd:TestPiece a owl:Class ;
+    rdfs:subClassOf pmd:Sample .
+
+pmd:TestPieceName a owl:Class ;
+    rdfs:subClassOf pmd:Identifier .
+
+pmd:TestingMachine a owl:Class ;
+    rdfs:subClassOf pmd:ProcessingNode .
+
+bto:BrinellHardnessEquation a owl:NamedIndividual,
+        pmd:Algorithm,
+        pmd:Metadata ;
+    bto:achivedBy bto:BrinellHardness .
+
+bto:IndenterMaterial a owl:NamedIndividual,
+        pmd:ChemicalComposition,
+        pmd:Metadata ;
+    ns1:value "TungstenCarbideComposite"^^xsd:string .
+
+bto:IndenterTipShape a owl:NamedIndividual,
+        pmd:Metadata,
+        pmd:Shape ;
+    ns1:value "Spherical"^^xsd:string .
+
+qudt:SEC a ns2:Unit,
+        owl:NamedIndividual .
+
+pmd:ChemicalComposition a owl:Class ;
+    rdfs:subClassOf pmd:ValueObject .
+
+pmd:ConditioningProcess a owl:Class ;
+    rdfs:subClassOf pmd:Process .
+
+pmd:Duration a owl:Class ;
+    rdfs:subClassOf pmd:Time .
+
+pmd:Identifier a owl:Class ;
+    rdfs:subClassOf pmd:ValueObject .
+
+pmd:Location a owl:Class ;
+    rdfs:subClassOf pmd:ValueObject .
+
+pmd:Method a owl:Class ;
+    rdfs:subClassOf pmd:ValueObject .
+
+pmd:SecondaryData a owl:Class ;
+    rdfs:subClassOf pmd:DataScope .
+
+pmd:Time a owl:Class ;
+    rdfs:subClassOf pmd:ValueObject .
+
+pmd:ValueScope a owl:Class ;
+    rdfs:subClassOf ns1:Entity .
+
+ns1:Agent a owl:Class .
+
+bto:BrinellHardness a owl:Class,
+        owl:NamedIndividual,
+        bto:BrinellHardness,
+        pmd:Measurement,
+        pmd:SecondaryData ;
+    rdfs:subClassOf bto:Hardness ;
+    ns3:definition "The Brinell hardness is proportional to the quotient obtained by dividing the test force by the curved surface area of the indentation." ;
+    ns1:value "100.73"^^xsd:string,
+        "103.17"^^xsd:string,
+        "106.89"^^xsd:string,
+        "111.03"^^xsd:string,
+        "114.73"^^xsd:string,
+        "117.22"^^xsd:string,
+        "117.45"^^xsd:string,
+        "118.84"^^xsd:string,
+        "119.78"^^xsd:string,
+        "123.92"^^xsd:string,
+        "170.72"^^xsd:string,
+        "185.56"^^xsd:string,
+        "189.68"^^xsd:string,
+        "192.51"^^xsd:string,
+        "193.78"^^xsd:string,
+        "196.87"^^xsd:string,
+        "198.35"^^xsd:string,
+        "198.85"^^xsd:string,
+        "203.93"^^xsd:string,
+        "208.14"^^xsd:string,
+        "61.94"^^xsd:string,
+        "62.39"^^xsd:string,
+        "64.39"^^xsd:string,
+        "64.59"^^xsd:string,
+        "68.88"^^xsd:string,
+        "73.46"^^xsd:string,
+        "84.61"^^xsd:string,
+        "86.81"^^xsd:string,
+        "87.55"^^xsd:string,
+        "89.45"^^xsd:string ;
+    bto:definitionSource "ISO 6506-1:2015-02" ;
+    pmd:characteristic bto:BrinellTestPiece ;
+    pmd:output bto:BrinellHardnessTest1,
+        bto:BrinellHardnessTest10,
+        bto:BrinellHardnessTest11,
+        bto:BrinellHardnessTest12,
+        bto:BrinellHardnessTest13,
+        bto:BrinellHardnessTest14,
+        bto:BrinellHardnessTest15,
+        bto:BrinellHardnessTest16,
+        bto:BrinellHardnessTest17,
+        bto:BrinellHardnessTest18,
+        bto:BrinellHardnessTest19,
+        bto:BrinellHardnessTest2,
+        bto:BrinellHardnessTest20,
+        bto:BrinellHardnessTest21,
+        bto:BrinellHardnessTest22,
+        bto:BrinellHardnessTest23,
+        bto:BrinellHardnessTest24,
+        bto:BrinellHardnessTest25,
+        bto:BrinellHardnessTest26,
+        bto:BrinellHardnessTest27,
+        bto:BrinellHardnessTest28,
+        bto:BrinellHardnessTest29,
+        bto:BrinellHardnessTest3,
+        bto:BrinellHardnessTest30,
+        bto:BrinellHardnessTest4,
+        bto:BrinellHardnessTest5,
+        bto:BrinellHardnessTest6,
+        bto:BrinellHardnessTest7,
+        bto:BrinellHardnessTest8,
+        bto:BrinellHardnessTest9 ;
+    pmd:unit qudt:HBW .
+
+bto:CheckingTestingMachine a owl:NamedIndividual,
+        bto:CollibrationProcess ;
+    pmd:nextProcess bto:ChoosingTestForce .
+
+bto:ChoosingTestForce a owl:NamedIndividual,
+        pmd:ConditioningProcess ;
+    pmd:characteristic bto:TestForce ;
+    pmd:nextProcess bto:PlacingTestPiece .
+
+bto:OpticalMeasuringOfIndentation a owl:NamedIndividual,
+        pmd:MeasuringProcess ;
+    pmd:executedBy bto:HardnessTestingEquipment ;
+    pmd:nextProcess bto:CalculatingAverageDiameter ;
+    pmd:output bto:IndentationHorizontalDiameter,
+        bto:IndentationVerticalDiameter .
+
+bto:Unloading a owl:NamedIndividual,
+        pmd:MeasuringProcess ;
+    pmd:nextProcess bto:OpticalMeasuringOfIndentation .
+
+pmd:DataScope a owl:Class ;
+    rdfs:subClassOf ns1:Entity .
+
+pmd:SetPoint a owl:Class ;
+    rdfs:subClassOf pmd:ValueScope .
+
+ns1:Entity a owl:Class .
+
+bto:BrinellIndentation a owl:NamedIndividual,
+        bto:indentation ;
+    ns1:value "1"^^xsd:string,
+        "2"^^xsd:string,
+        "3"^^xsd:string,
+        "4"^^xsd:string,
+        "5"^^xsd:string ;
+    prov:influenced bto:BrinellTestPiece .
+
+bto:CalculatingAverageDiameter a owl:NamedIndividual,
+        pmd:AnalysingProcess ;
+    pmd:nextProcess bto:CalculatingBrinellHardness ;
+    pmd:output bto:IndentationAverageDiameter .
+
+bto:Diameter a owl:Class ;
+    rdfs:subClassOf pmd:ValueObject .
+
+bto:PlacingTestPiece a owl:NamedIndividual,
+        pmd:AssemblingProcess ;
+    pmd:participant bto:HardnessTestingEquipment .
+
+qudt:MiliM a ns2:Unit,
+        owl:NamedIndividual .
+
+pmd:MeasuringProcess a owl:Class ;
+    rdfs:subClassOf pmd:AnalysingProcess .
+
+pmd:PrimaryData a owl:Class ;
+    rdfs:subClassOf pmd:DataScope .
+
+pmd:Process a owl:Class ;
+    rdfs:subClassOf ns1:Activity .
+
+pmd:ProcessingNode a owl:Class ;
+    rdfs:subClassOf ns1:Agent .
+
+ns2:Unit a owl:Class .
+
+bto:CalculatingBrinellHardness a owl:NamedIndividual,
+        pmd:AnalysingProcess ;
+    pmd:hasFunction bto:BrinellHardnessEquation ;
+    pmd:output bto:BrinellHardness .
+
+pmd:AnalysingProcess a owl:Class ;
+    rdfs:subClassOf pmd:Process .
+
+pmd:Measurement a owl:Class ;
+    rdfs:subClassOf pmd:ValueScope .
+
+pmd:ValueObject a owl:Class ;
+    rdfs:subClassOf ns1:Entity .
+
+pmd:Metadata a owl:Class ;
+    rdfs:subClassOf pmd:DataScope .
+
+bto:BrinellHardnessTest a owl:Class ;
+    rdfs:subClassOf bto:HardnessTest ;
+    ns3:definition "hardness value of a material measured normally using a 10 mm diameter tungsten carbide ball indenter with a force of 29,42 kN" ;
+    bto:definitionSource "ISO 15156-2:2020(en)" .
+
+bto:BrinellTestMeasurment a owl:NamedIndividual,
+        pmd:MeasuringProcess ;
+    prov:actedOnBehalfOf bto:TestingOperator ;
+    pmd:executedBy bto:HardnessTestingEquipment ;
+    pmd:nextProcess bto:CalculatingHardness ;
+    pmd:participant bto:BrinellTestPiece ;
+    pmd:subordinateProcess bto:CheckingTemperature,
+        bto:CheckingTestingMachine,
+        bto:ChoosingTestForce,
+        bto:Loading,
+        bto:OpticalMeasuringOfIndentation,
+        bto:PlacingTestPiece,
+        bto:Unloading .
+
+bto:TestingDate a owl:NamedIndividual,
+        pmd:Date,
+        pmd:Metadata ;
+    ns1:value "21.04.2022"^^xsd:string .
+
+bto:TestingStandard a owl:NamedIndividual,
+        pmd:Metadata,
+        pmd:Norm ;
+    ns1:value "DIN EN ISO 6506-1:2015-02"^^xsd:string ;
+    prov:wasDrivedFrom bto:BrinellHardnessEquation,
+        bto:IndenterMaterial,
+        bto:IndenterTipShape ;
+    pmd:resource bto:CheckingTestingMachine,
+        bto:ChoosingTestForce,
+        bto:OpticalMeasuringOfIndentation,
+        bto:PlacingTestPiece,
+        bto:Unloading .
+
+bto:TestingLaboratory a owl:NamedIndividual,
+        pmd:Location,
+        pmd:Metadata,
+        pmd:NodeInfo ;
+    ns1:value "Bam_Berlin"^^xsd:string .
+
+bto:TestingOperator a owl:NamedIndividual,
+        pmd:Metadata,
+        pmd:Operator ;
+    ns1:value "NN"^^xsd:string .
+
+bto:BrinellTestPiece a owl:NamedIndividual,
+        pmd:TestPiece ;
+    pmd:composedOf bto:TestPieceMaterialComposition ;
+    pmd:hasIdentifier bto:TestPieceID .
+
+bto:HardnessTestingEquipment a owl:NamedIndividual,
+        bto:BrinellHardnessTestEquipment ;
+    prov:atLocation bto:TestingLaboratory ;
+    pmd:component bto:BrinellIndenter ;
+    pmd:hasIdentifier bto:TestingMachineID .
+
