@@ -147,17 +147,6 @@
 <Classinstancescount>0</Classinstancescount>
 <Classpropertiescount>0</Classpropertiescount>
 </Class>
-<Class iri="http://emmo.info/domains/emmo-models.owl#EMMO_84cadc45_6758_46f2_ba2a_5ead65c70213">
-<Classconnectivity>0</Classconnectivity>
-<Classfulness>0.0</Classfulness>
-<Classimportance>0.0</Classimportance>
-<Classinheritancerichness>219.0</Classinheritancerichness>
-<Classreadability>0</Classreadability>
-<Classrelationshiprichness>0</Classrelationshiprichness>
-<Classchildrencount>1</Classchildrencount>
-<Classinstancescount>0</Classinstancescount>
-<Classpropertiescount>0</Classpropertiescount>
-</Class>
 <Class iri="http://www.semanticweb.org/friisj/ontologies/2019/11/untitled-ontology-48#EMMO_d1917609_db5e_4b8a_9b76_ef1d6f860a81">
 <Classconnectivity>0</Classconnectivity>
 <Classfulness>0.0</Classfulness>
@@ -287,6 +276,17 @@
 <Classreadability>1</Classreadability>
 <Classrelationshiprichness>0</Classrelationshiprichness>
 <Classchildrencount>0</Classchildrencount>
+<Classinstancescount>0</Classinstancescount>
+<Classpropertiescount>0</Classpropertiescount>
+</Class>
+<Class iri="http://emmo.info/domains/emmo-models.owl#EMMO_53935db0_af45_4426_b9e9_244a0d77db00">
+<Classconnectivity>0</Classconnectivity>
+<Classfulness>0.0</Classfulness>
+<Classimportance>0.0</Classimportance>
+<Classinheritancerichness>219.0</Classinheritancerichness>
+<Classreadability>0</Classreadability>
+<Classrelationshiprichness>0</Classrelationshiprichness>
+<Classchildrencount>1</Classchildrencount>
 <Classinstancescount>0</Classinstancescount>
 <Classpropertiescount>0</Classpropertiescount>
 </Class>
@@ -466,14 +466,14 @@
 <Classinstancescount>0</Classinstancescount>
 <Classpropertiescount>0</Classpropertiescount>
 </Class>
-<Class iri="http://emmo.info/domains/emmo-units.owl#EMMO_cd2cd0de_e0cc_4ef1_b27e_2e88db027bac">
+<Class iri="http://org.semanticweb.owlapi/error#Error9">
 <Classconnectivity>0</Classconnectivity>
 <Classfulness>0.0</Classfulness>
 <Classimportance>0.0</Classimportance>
-<Classinheritancerichness>24.333333</Classinheritancerichness>
+<Classinheritancerichness>219.0</Classinheritancerichness>
 <Classreadability>0</Classreadability>
 <Classrelationshiprichness>0</Classrelationshiprichness>
-<Classchildrencount>9</Classchildrencount>
+<Classchildrencount>1</Classchildrencount>
 <Classinstancescount>0</Classinstancescount>
 <Classpropertiescount>0</Classpropertiescount>
 </Class>
@@ -499,7 +499,7 @@
 <Classinstancescount>0</Classinstancescount>
 <Classpropertiescount>0</Classpropertiescount>
 </Class>
-<Class iri="http://org.semanticweb.owlapi/error#Error5">
+<Class iri="http://emmo.info/domains/emmo-models.owl#EMMO_84cadc45_6758_46f2_ba2a_5ead65c70213">
 <Classconnectivity>0</Classconnectivity>
 <Classfulness>0.0</Classfulness>
 <Classimportance>0.0</Classimportance>
@@ -521,36 +521,25 @@
 <Classinstancescount>0</Classinstancescount>
 <Classpropertiescount>0</Classpropertiescount>
 </Class>
-<Class iri="http://org.semanticweb.owlapi/error#Error3">
+<Class iri="http://www.semanticweb.org/jesperf/ontologies/2019/11/untitled-ontology-9#EMMO_c790454f_fe29_4f79_98c5_a368cb890817">
 <Classconnectivity>0</Classconnectivity>
 <Classfulness>0.0</Classfulness>
 <Classimportance>0.0</Classimportance>
-<Classinheritancerichness>73.0</Classinheritancerichness>
-<Classreadability>0</Classreadability>
+<Classinheritancerichness>0.0</Classinheritancerichness>
+<Classreadability>1</Classreadability>
 <Classrelationshiprichness>0</Classrelationshiprichness>
-<Classchildrencount>3</Classchildrencount>
+<Classchildrencount>0</Classchildrencount>
 <Classinstancescount>0</Classinstancescount>
 <Classpropertiescount>0</Classpropertiescount>
 </Class>
-<Class iri="http://org.semanticweb.owlapi/error#Error2">
+<Class iri="http://www.semanticweb.org/jesperf/ontologies/2019/11/untitled-ontology-9#EMMO_f039fbff_05ab_4a5f_a390_2d2188dad1fd">
 <Classconnectivity>0</Classconnectivity>
 <Classfulness>0.0</Classfulness>
 <Classimportance>0.0</Classimportance>
-<Classinheritancerichness>219.0</Classinheritancerichness>
-<Classreadability>0</Classreadability>
+<Classinheritancerichness>0.0</Classinheritancerichness>
+<Classreadability>1</Classreadability>
 <Classrelationshiprichness>0</Classrelationshiprichness>
-<Classchildrencount>1</Classchildrencount>
-<Classinstancescount>0</Classinstancescount>
-<Classpropertiescount>0</Classpropertiescount>
-</Class>
-<Class iri="http://org.semanticweb.owlapi/error#Error1">
-<Classconnectivity>0</Classconnectivity>
-<Classfulness>0.0</Classfulness>
-<Classimportance>0.0</Classimportance>
-<Classinheritancerichness>219.0</Classinheritancerichness>
-<Classreadability>0</Classreadability>
-<Classrelationshiprichness>0</Classrelationshiprichness>
-<Classchildrencount>1</Classchildrencount>
+<Classchildrencount>0</Classchildrencount>
 <Classinstancescount>0</Classinstancescount>
 <Classpropertiescount>0</Classpropertiescount>
 </Class>
@@ -609,7 +598,7 @@
 <Classinstancescount>0</Classinstancescount>
 <Classpropertiescount>0</Classpropertiescount>
 </Class>
-<Class iri="http://www.semanticweb.org/jesperf/ontologies/2019/11/untitled-ontology-9#EMMO_c790454f_fe29_4f79_98c5_a368cb890817">
+<Class iri="http://www.semanticweb.org/jesperf/ontologies/2019/11/untitled-ontology-9#EMMO_7511edeb_fd34_41c8_a63c_9c7c8317fe4a">
 <Classconnectivity>0</Classconnectivity>
 <Classfulness>0.0</Classfulness>
 <Classimportance>0.0</Classimportance>
@@ -642,29 +631,18 @@
 <Classinstancescount>0</Classinstancescount>
 <Classpropertiescount>0</Classpropertiescount>
 </Class>
-<Class iri="http://www.semanticweb.org/jesperf/ontologies/2019/11/untitled-ontology-9#EMMO_f039fbff_05ab_4a5f_a390_2d2188dad1fd">
+<Class iri="http://org.semanticweb.owlapi/error#Error12">
 <Classconnectivity>0</Classconnectivity>
 <Classfulness>0.0</Classfulness>
 <Classimportance>0.0</Classimportance>
-<Classinheritancerichness>0.0</Classinheritancerichness>
-<Classreadability>1</Classreadability>
+<Classinheritancerichness>219.0</Classinheritancerichness>
+<Classreadability>0</Classreadability>
 <Classrelationshiprichness>0</Classrelationshiprichness>
-<Classchildrencount>0</Classchildrencount>
+<Classchildrencount>1</Classchildrencount>
 <Classinstancescount>0</Classinstancescount>
 <Classpropertiescount>0</Classpropertiescount>
 </Class>
 <Class iri="http://www.semanticweb.org/jesperf/ontologies/2019/11/untitled-ontology-9#EMMO_54b076c0_c35c_4bdc_8262_91e6ab7372a9">
-<Classconnectivity>0</Classconnectivity>
-<Classfulness>0.0</Classfulness>
-<Classimportance>0.0</Classimportance>
-<Classinheritancerichness>0.0</Classinheritancerichness>
-<Classreadability>1</Classreadability>
-<Classrelationshiprichness>0</Classrelationshiprichness>
-<Classchildrencount>0</Classchildrencount>
-<Classinstancescount>0</Classinstancescount>
-<Classpropertiescount>0</Classpropertiescount>
-</Class>
-<Class iri="http://www.semanticweb.org/jesperf/ontologies/2019/11/untitled-ontology-9#EMMO_7511edeb_fd34_41c8_a63c_9c7c8317fe4a">
 <Classconnectivity>0</Classconnectivity>
 <Classfulness>0.0</Classfulness>
 <Classimportance>0.0</Classimportance>
@@ -697,17 +675,6 @@
 <Classinstancescount>0</Classinstancescount>
 <Classpropertiescount>0</Classpropertiescount>
 </Class>
-<Class iri="http://org.semanticweb.owlapi/error#Error4">
-<Classconnectivity>0</Classconnectivity>
-<Classfulness>0.0</Classfulness>
-<Classimportance>0.0</Classimportance>
-<Classinheritancerichness>219.0</Classinheritancerichness>
-<Classreadability>0</Classreadability>
-<Classrelationshiprichness>0</Classrelationshiprichness>
-<Classchildrencount>1</Classchildrencount>
-<Classinstancescount>0</Classinstancescount>
-<Classpropertiescount>0</Classpropertiescount>
-</Class>
 <Class iri="http://www.semanticweb.org/jesperf/ontologies/2019/11/untitled-ontology-9#EMMO_1fb11dd6_ebf0_4a5d_a093_b25e9e91ff7e">
 <Classconnectivity>0</Classconnectivity>
 <Classfulness>0.0</Classfulness>
@@ -719,7 +686,18 @@
 <Classinstancescount>0</Classinstancescount>
 <Classpropertiescount>0</Classpropertiescount>
 </Class>
-<Class iri="http://emmo.info/domains/emmo-models.owl#EMMO_53935db0_af45_4426_b9e9_244a0d77db00">
+<Class iri="http://emmo.info/domains/emmo-units.owl#EMMO_cd2cd0de_e0cc_4ef1_b27e_2e88db027bac">
+<Classconnectivity>0</Classconnectivity>
+<Classfulness>0.0</Classfulness>
+<Classimportance>0.0</Classimportance>
+<Classinheritancerichness>24.333333</Classinheritancerichness>
+<Classreadability>0</Classreadability>
+<Classrelationshiprichness>0</Classrelationshiprichness>
+<Classchildrencount>9</Classchildrencount>
+<Classinstancescount>0</Classinstancescount>
+<Classpropertiescount>0</Classpropertiescount>
+</Class>
+<Class iri="http://org.semanticweb.owlapi/error#Error13">
 <Classconnectivity>0</Classconnectivity>
 <Classfulness>0.0</Classfulness>
 <Classimportance>0.0</Classimportance>
@@ -738,6 +716,28 @@
 <Classreadability>1</Classreadability>
 <Classrelationshiprichness>0</Classrelationshiprichness>
 <Classchildrencount>0</Classchildrencount>
+<Classinstancescount>0</Classinstancescount>
+<Classpropertiescount>0</Classpropertiescount>
+</Class>
+<Class iri="http://org.semanticweb.owlapi/error#Error11">
+<Classconnectivity>0</Classconnectivity>
+<Classfulness>0.0</Classfulness>
+<Classimportance>0.0</Classimportance>
+<Classinheritancerichness>73.0</Classinheritancerichness>
+<Classreadability>0</Classreadability>
+<Classrelationshiprichness>0</Classrelationshiprichness>
+<Classchildrencount>3</Classchildrencount>
+<Classinstancescount>0</Classinstancescount>
+<Classpropertiescount>0</Classpropertiescount>
+</Class>
+<Class iri="http://org.semanticweb.owlapi/error#Error10">
+<Classconnectivity>0</Classconnectivity>
+<Classfulness>0.0</Classfulness>
+<Classimportance>0.0</Classimportance>
+<Classinheritancerichness>219.0</Classinheritancerichness>
+<Classreadability>0</Classreadability>
+<Classrelationshiprichness>0</Classrelationshiprichness>
+<Classchildrencount>1</Classchildrencount>
 <Classinstancescount>0</Classinstancescount>
 <Classpropertiescount>0</Classpropertiescount>
 </Class>

@@ -244,7 +244,7 @@ ontologies:
       tracker: https://github.com/enanomapper/ontologies/issues
       repository: https://github.com/enanomapper/ontologies
       preferredPrefix: enanomapper
-      mirror_from: https://raw.githubusercontent.com/ebrahimnorouzi/mseo.github.io/master/Ontology_files/enanomapper.owl
+      mirror_from: https://raw.githubusercontent.com/ebrahimnorouzi/mseo.github.io/master/Ontology_files/enanomapper.ttl
     - id: MAMBO
       description: Molecular materials
       homepage: https://github.com/daimoners/MAMBO
@@ -318,7 +318,7 @@ ontologies:
       description: An Ontology for Materials representation
       homepage: https://emmc.info/taxonda/metal-alloy/ 
       preferredPrefix: metal-alloy
-      mirror_from: https://raw.githubusercontent.com/ebrahimnorouzi/mseo.github.io/master/Ontology_files/metal-alloy.owl
+      mirror_from: https://raw.githubusercontent.com/ebrahimnorouzi/mseo.github.io/master/Ontology_files/metal-alloy.ttl
     - id: vimmp
       description: Linked data and Ontologies for Semantic Interoperability, BIM4EEB
       homepage: https://matportal.org/ontologies/VIMMP_ONTOLOGIES

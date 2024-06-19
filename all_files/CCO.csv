@@ -1,0 +1,205 @@
+metric,metric_value,metric_type
+abox_axiom_count,0,single_value
+abox_axiom_count_incl,360,single_value
+abox_nominals,false,single_value
+abox_nominals_incl,false,single_value
+annotation_property_count,5,single_value
+annotation_property_count_incl,47,single_value
+assert_n_subclass_avg,NaN,single_value
+assert_n_subclass_avg_incl,0.0,single_value
+assert_n_superclass_avg,NaN,single_value
+assert_n_superclass_avg_incl,1.0,single_value
+ax_complexrhs_count,0,single_value
+ax_complexrhs_count_incl,160,single_value
+axiom_count,0,single_value
+axiom_count_incl,12334,single_value
+axiom_length_max,0,single_value
+axiom_length_max_incl,5,single_value
+axiom_type_count_incl,AnnotationAssertion 7612,map_value
+axiom_type_count_incl,ClassAssertion 360,map_value
+axiom_type_count_incl,DataPropertyDomain 8,map_value
+axiom_type_count_incl,DataPropertyRange 9,map_value
+axiom_type_count_incl,Declaration 2083,map_value
+axiom_type_count_incl,DisjointClasses 26,map_value
+axiom_type_count_incl,DisjointObjectProperties 5,map_value
+axiom_type_count_incl,EquivalentClasses 49,map_value
+axiom_type_count_incl,FunctionalObjectProperty 6,map_value
+axiom_type_count_incl,InverseFunctionalObjectProperty 1,map_value
+axiom_type_count_incl,InverseObjectProperties 126,map_value
+axiom_type_count_incl,IrrefexiveObjectProperty 2,map_value
+axiom_type_count_incl,ObjectPropertyDomain 152,map_value
+axiom_type_count_incl,ObjectPropertyRange 153,map_value
+axiom_type_count_incl,SubAnnotationPropertyOf 12,map_value
+axiom_type_count_incl,SubClassOf 1527,map_value
+axiom_type_count_incl,SubObjectPropertyOf 187,map_value
+axiom_type_count_incl,SubPropertyChainOf 2,map_value
+axiom_type_count_incl,SymmetricObjectProperty 6,map_value
+axiom_type_count_incl,TransitiveObjectProperty 8,map_value
+axiom_types_incl,AnnotationAssertion,list_value
+axiom_types_incl,ClassAssertion,list_value
+axiom_types_incl,DataPropertyDomain,list_value
+axiom_types_incl,DataPropertyRange,list_value
+axiom_types_incl,Declaration,list_value
+axiom_types_incl,DisjointClasses,list_value
+axiom_types_incl,DisjointObjectProperties,list_value
+axiom_types_incl,EquivalentClasses,list_value
+axiom_types_incl,FunctionalObjectProperty,list_value
+axiom_types_incl,InverseFunctionalObjectProperty,list_value
+axiom_types_incl,InverseObjectProperties,list_value
+axiom_types_incl,IrrefexiveObjectProperty,list_value
+axiom_types_incl,ObjectPropertyDomain,list_value
+axiom_types_incl,ObjectPropertyRange,list_value
+axiom_types_incl,SubAnnotationPropertyOf,list_value
+axiom_types_incl,SubClassOf,list_value
+axiom_types_incl,SubObjectPropertyOf,list_value
+axiom_types_incl,SubPropertyChainOf,list_value
+axiom_types_incl,SymmetricObjectProperty,list_value
+axiom_types_incl,TransitiveObjectProperty,list_value
+certain_cycle,false,single_value
+certain_cycle_incl,true,single_value
+class_count,0,single_value
+class_count_incl,1417,single_value
+class_expression_count_incl,Class 5379,map_value
+class_expression_count_incl,ObjectAllValuesFrom 34,map_value
+class_expression_count_incl,ObjectComplementOf 13,map_value
+class_expression_count_incl,ObjectIntersectionOf 70,map_value
+class_expression_count_incl,ObjectSomeValuesFrom 134,map_value
+class_expression_count_incl,ObjectUnionOf 29,map_value
+class_sgl_subcl_count,0,single_value
+class_sgl_subcl_count_incl,0,single_value
+constructs_incl,CONCEPT_COMPLEX_NEGATION,list_value
+constructs_incl,CONCEPT_INTERSECTION,list_value
+constructs_incl,CONCEPT_UNION,list_value
+constructs_incl,D,list_value
+constructs_incl,F,list_value
+constructs_incl,FULL_EXISTENTIAL,list_value
+constructs_incl,ROLE_COMPLEX,list_value
+constructs_incl,ROLE_DOMAIN_RANGE,list_value
+constructs_incl,ROLE_INVERSE,list_value
+constructs_incl,UNIVERSAL_RESTRICTION,list_value
+curie_map,BFO http://purl.obolibrary.org/obo/BFO_,map_value
+curie_map,IAO http://purl.obolibrary.org/obo/IAO_,map_value
+curie_map,dc http://purl.org/dc/terms/,map_value
+curie_map,dc11 http://purl.org/dc/elements/1.1/,map_value
+curie_map,owl http://www.w3.org/2002/07/owl#,map_value
+curie_map,rdf http://www.w3.org/1999/02/22-rdf-syntax-ns#,map_value
+curie_map,rdfs http://www.w3.org/2000/01/rdf-schema#,map_value
+curie_map,skos http://www.w3.org/2004/02/skos/core#,map_value
+curie_map,xsd http://www.w3.org/2001/XMLSchema#,map_value
+dataproperty_count,0,single_value
+dataproperty_count_incl,12,single_value
+datatypes_axiom_count_incl,XSD_ANY_URI 1,map_value
+datatypes_axiom_count_incl,XSD_BOOLEAN 1,map_value
+datatypes_axiom_count_incl,XSD_DATE_TIME 1,map_value
+datatypes_axiom_count_incl,XSD_DECIMAL 3,map_value
+datatypes_axiom_count_incl,XSD_DOUBLE 1,map_value
+datatypes_axiom_count_incl,XSD_INTEGER 1,map_value
+datatypes_axiom_count_incl,XSD_STRING 1,map_value
+datatypes_builtin,RDF_PLAIN_LITERAL,list_value
+datatypes_builtin_incl,RDF_PLAIN_LITERAL,list_value
+datatypes_builtin_incl,XSD_ANY_URI,list_value
+datatypes_builtin_incl,XSD_BOOLEAN,list_value
+datatypes_builtin_incl,XSD_DATE_TIME,list_value
+datatypes_builtin_incl,XSD_DECIMAL,list_value
+datatypes_builtin_incl,XSD_DOUBLE,list_value
+datatypes_builtin_incl,XSD_INTEGER,list_value
+datatypes_builtin_incl,XSD_STRING,list_value
+datatypes_count,1,single_value
+datatypes_count_incl,8,single_value
+dt_builtin_count,1,single_value
+dt_builtin_count_incl,8,single_value
+dt_notbuiltin_count,0,single_value
+dt_notbuiltin_count_incl,0,single_value
+expressivity,,single_value
+expressivity_incl,RRESTRCUCINTUNIVRESTRERIF(D),single_value
+gci_count,0,single_value
+gci_count_incl,0,single_value
+gci_hidden_count,0,single_value
+gci_hidden_count_incl,49,single_value
+individual_count,0,single_value
+individual_count_incl,348,single_value
+instance_per_class_avg,NaN,single_value
+instance_per_class_avg_incl,0.0,single_value
+logical_axiom_count,0,single_value
+logical_axiom_count_incl,2627,single_value
+most_freq_concept,,single_value
+most_freq_concept_incl,http://www.ontologyrepository.com/CommonCoreOntologies/SolarTimeReferenceSystem,single_value
+multiple_inheritance_count,0,single_value
+multiple_inheritance_count_incl,45,single_value
+named_supercl_count_max,0,single_value
+named_supercl_count_max_incl,1,single_value
+namespace_axiom_count_incl,BFO 916,map_value
+namespace_axiom_count_incl,IAO 2,map_value
+namespace_axiom_count_incl,dc 45,map_value
+namespace_axiom_count_incl,dc11 79,map_value
+namespace_axiom_count_incl,owl 1,map_value
+namespace_axiom_count_incl,prefix_unknown 11677,map_value
+namespace_axiom_count_incl,rdfs 2244,map_value
+namespace_axiom_count_incl,skos 223,map_value
+namespace_axiom_count_incl,xsd 9,map_value
+namespace_entity_count,BFO 77,map_value
+namespace_entity_count,IAO 1,map_value
+namespace_entity_count,dc 6,map_value
+namespace_entity_count,dc11 3,map_value
+namespace_entity_count,owl 2,map_value
+namespace_entity_count,prefix_unknown 1990,map_value
+namespace_entity_count,rdf 1,map_value
+namespace_entity_count,rdfs 2,map_value
+namespace_entity_count,skos 6,map_value
+namespace_entity_count,xsd 7,map_value
+namespace_entity_count_incl,BFO 77,map_value
+namespace_entity_count_incl,IAO 1,map_value
+namespace_entity_count_incl,dc 6,map_value
+namespace_entity_count_incl,dc11 3,map_value
+namespace_entity_count_incl,owl 2,map_value
+namespace_entity_count_incl,prefix_unknown 1990,map_value
+namespace_entity_count_incl,rdf 1,map_value
+namespace_entity_count_incl,rdfs 2,map_value
+namespace_entity_count_incl,skos 6,map_value
+namespace_entity_count_incl,xsd 7,map_value
+obj_property_count,0,single_value
+obj_property_count_incl,263,single_value
+ontology_anno_count,5,single_value
+ontology_iri,http://www.ontologyrepository.com/CommonCoreOntologies/Mid/AllCoreOntology,single_value
+ontology_version_iri,http://www.ontologyrepository.com/CommonCoreOntologies/Mid/2021-03-01/AllCoreOntology,single_value
+owl2,true,single_value
+owl2_dl,true,single_value
+owl2_el,false,single_value
+owl2_ql,false,single_value
+owl2_rl,false,single_value
+rbox_axiom_count,0,single_value
+rbox_axiom_count_incl,336,single_value
+rdfs,false,single_value
+rule_count,0,single_value
+rule_count_incl,0,single_value
+signature_entity_count,2095,single_value
+signature_entity_count_incl,2095,single_value
+syntax,Turtle,single_value
+tautology_count,0,single_value
+tautology_count_incl,1,single_value
+tbox_axiom_count,0,single_value
+tbox_axiom_count_incl,1931,single_value
+tbox_nominals,false,single_value
+tbox_nominals_incl,false,single_value
+tboxrbox_axiom_count,0,single_value
+tboxrbox_axiom_count_incl,2267,single_value
+undecl_entity_count,2095,single_value
+undecl_entity_count_incl,2095,single_value
+valid_imports,http://purl.obolibrary.org/obo/bfo/2020/bfo-core.ttl,list_value
+valid_imports,http://www.ontologyrepository.com/CommonCoreOntologies/Mid/AgentOntology,list_value
+valid_imports,http://www.ontologyrepository.com/CommonCoreOntologies/Mid/ArtifactOntology,list_value
+valid_imports,http://www.ontologyrepository.com/CommonCoreOntologies/Mid/CurrencyUnitOntology,list_value
+valid_imports,http://www.ontologyrepository.com/CommonCoreOntologies/Mid/EventOntology,list_value
+valid_imports,http://www.ontologyrepository.com/CommonCoreOntologies/Mid/ExtendedRelationOntology,list_value
+valid_imports,http://www.ontologyrepository.com/CommonCoreOntologies/Mid/FacilityOntology,list_value
+valid_imports,http://www.ontologyrepository.com/CommonCoreOntologies/Mid/GeospatialOntology,list_value
+valid_imports,http://www.ontologyrepository.com/CommonCoreOntologies/Mid/InformationEntityOntology,list_value
+valid_imports,http://www.ontologyrepository.com/CommonCoreOntologies/Mid/QualityOntology,list_value
+valid_imports,http://www.ontologyrepository.com/CommonCoreOntologies/Mid/TimeOntology,list_value
+valid_imports,http://www.ontologyrepository.com/CommonCoreOntologies/Mid/UnitsOfMeasureOntology,list_value
+valid_imports_incl,http://www.ontologyrepository.com/CommonCoreOntologies/Mid/AgentOntology,list_value
+valid_imports_incl,http://www.ontologyrepository.com/CommonCoreOntologies/Mid/CurrencyUnitOntology,list_value
+valid_imports_incl,http://www.ontologyrepository.com/CommonCoreOntologies/Mid/EventOntology,list_value
+valid_imports_incl,http://www.ontologyrepository.com/CommonCoreOntologies/Mid/FacilityOntology,list_value
+valid_imports_incl,http://www.ontologyrepository.com/CommonCoreOntologies/Mid/QualityOntology,list_value
+valid_imports_incl,http://www.ontologyrepository.com/CommonCoreOntologies/Mid/UnitsOfMeasureOntology,list_value

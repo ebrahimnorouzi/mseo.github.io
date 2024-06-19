@@ -1,0 +1,243 @@
+metric,metric_value,metric_type
+abox_axiom_count,0,single_value
+abox_axiom_count_incl,5,single_value
+abox_nominals,false,single_value
+abox_nominals_incl,false,single_value
+annotation_property_count,5,single_value
+annotation_property_count_incl,66,single_value
+assert_n_subclass_avg,0.9545454545454546,single_value
+assert_n_subclass_avg_incl,0.024837374334713187,single_value
+assert_n_superclass_avg,1.0,single_value
+assert_n_superclass_avg_incl,1.2779420461265523,single_value
+ax_complexrhs_count,0,single_value
+ax_complexrhs_count_incl,621,single_value
+axiom_count,129,single_value
+axiom_count_incl,11901,single_value
+axiom_length_max,2,single_value
+axiom_length_max_incl,10,single_value
+axiom_type_count,AnnotationAssertion 44,map_value
+axiom_type_count,Declaration 42,map_value
+axiom_type_count,EquivalentClasses 1,map_value
+axiom_type_count,SubClassOf 42,map_value
+axiom_type_count_incl,AnnotationAssertion 6687,map_value
+axiom_type_count_incl,AnnotationPropertyDomain 2,map_value
+axiom_type_count_incl,AnnotationPropertyRangeOf 17,map_value
+axiom_type_count_incl,AsymmetricObjectProperty 22,map_value
+axiom_type_count_incl,ClassAssertion 5,map_value
+axiom_type_count_incl,DataPropertyDomain 5,map_value
+axiom_type_count_incl,DataPropertyRange 5,map_value
+axiom_type_count_incl,Declaration 1954,map_value
+axiom_type_count_incl,DisjointClasses 30,map_value
+axiom_type_count_incl,DisjointObjectProperties 12,map_value
+axiom_type_count_incl,DisjointUnion 79,map_value
+axiom_type_count_incl,EquivalentClasses 279,map_value
+axiom_type_count_incl,FunctionalDataProperty 3,map_value
+axiom_type_count_incl,InverseFunctionalObjectProperty 2,map_value
+axiom_type_count_incl,InverseObjectProperties 9,map_value
+axiom_type_count_incl,IrrefexiveObjectProperty 35,map_value
+axiom_type_count_incl,ObjectPropertyDomain 97,map_value
+axiom_type_count_incl,ObjectPropertyRange 123,map_value
+axiom_type_count_incl,Rule 12,map_value
+axiom_type_count_incl,SubAnnotationPropertyOf 35,map_value
+axiom_type_count_incl,SubClassOf 2226,map_value
+axiom_type_count_incl,SubDataPropertyOf 8,map_value
+axiom_type_count_incl,SubObjectPropertyOf 235,map_value
+axiom_type_count_incl,SymmetricObjectProperty 14,map_value
+axiom_type_count_incl,TransitiveObjectProperty 5,map_value
+axiom_types,AnnotationAssertion,list_value
+axiom_types,Declaration,list_value
+axiom_types,EquivalentClasses,list_value
+axiom_types,SubClassOf,list_value
+axiom_types_incl,AnnotationAssertion,list_value
+axiom_types_incl,AnnotationPropertyDomain,list_value
+axiom_types_incl,AnnotationPropertyRangeOf,list_value
+axiom_types_incl,AsymmetricObjectProperty,list_value
+axiom_types_incl,ClassAssertion,list_value
+axiom_types_incl,DataPropertyDomain,list_value
+axiom_types_incl,DataPropertyRange,list_value
+axiom_types_incl,Declaration,list_value
+axiom_types_incl,DisjointClasses,list_value
+axiom_types_incl,DisjointObjectProperties,list_value
+axiom_types_incl,DisjointUnion,list_value
+axiom_types_incl,EquivalentClasses,list_value
+axiom_types_incl,FunctionalDataProperty,list_value
+axiom_types_incl,InverseFunctionalObjectProperty,list_value
+axiom_types_incl,InverseObjectProperties,list_value
+axiom_types_incl,IrrefexiveObjectProperty,list_value
+axiom_types_incl,ObjectPropertyDomain,list_value
+axiom_types_incl,ObjectPropertyRange,list_value
+axiom_types_incl,Rule,list_value
+axiom_types_incl,SubAnnotationPropertyOf,list_value
+axiom_types_incl,SubClassOf,list_value
+axiom_types_incl,SubDataPropertyOf,list_value
+axiom_types_incl,SubObjectPropertyOf,list_value
+axiom_types_incl,SymmetricObjectProperty,list_value
+axiom_types_incl,TransitiveObjectProperty,list_value
+certain_cycle,true,single_value
+certain_cycle_incl,true,single_value
+class_count,44,single_value
+class_count_incl,1691,single_value
+class_expression_count,Class 128,map_value
+class_expression_count_incl,Class 7228,map_value
+class_expression_count_incl,DataAllValuesFrom 3,map_value
+class_expression_count_incl,DataExactCardinality 2,map_value
+class_expression_count_incl,DataHasValue 203,map_value
+class_expression_count_incl,DataSomeValuesFrom 3,map_value
+class_expression_count_incl,ObjectAllValuesFrom 18,map_value
+class_expression_count_incl,ObjectComplementOf 3,map_value
+class_expression_count_incl,ObjectExactCardinality 11,map_value
+class_expression_count_incl,ObjectHasValue 2,map_value
+class_expression_count_incl,ObjectIntersectionOf 17,map_value
+class_expression_count_incl,ObjectMinCardinality 1,map_value
+class_expression_count_incl,ObjectSomeValuesFrom 316,map_value
+class_expression_count_incl,ObjectUnionOf 68,map_value
+class_sgl_subcl_count,1,single_value
+class_sgl_subcl_count_incl,1,single_value
+constructs_incl,CONCEPT_COMPLEX_NEGATION,list_value
+constructs_incl,CONCEPT_INTERSECTION,list_value
+constructs_incl,CONCEPT_UNION,list_value
+constructs_incl,D,list_value
+constructs_incl,FULL_EXISTENTIAL,list_value
+constructs_incl,NOMINALS,list_value
+constructs_incl,Q,list_value
+constructs_incl,ROLE_COMPLEX,list_value
+constructs_incl,ROLE_DOMAIN_RANGE,list_value
+constructs_incl,ROLE_INVERSE,list_value
+constructs_incl,UNIVERSAL_RESTRICTION,list_value
+curie_map,dc http://purl.org/dc/terms/,map_value
+curie_map,foaf http://xmlns.com/foaf/0.1/,map_value
+curie_map,owl http://www.w3.org/2002/07/owl#,map_value
+curie_map,rdf http://www.w3.org/1999/02/22-rdf-syntax-ns#,map_value
+curie_map,rdfs http://www.w3.org/2000/01/rdf-schema#,map_value
+curie_map,skos http://www.w3.org/2004/02/skos/core#,map_value
+curie_map,xsd http://www.w3.org/2001/XMLSchema#,map_value
+dataproperty_count,0,single_value
+dataproperty_count_incl,10,single_value
+datatypes_axiom_count_incl,RDFS_LITERAL 2,map_value
+datatypes_axiom_count_incl,RDF_PLAIN_LITERAL 109,map_value
+datatypes_axiom_count_incl,XSD_ANY_URI 27,map_value
+datatypes_axiom_count_incl,XSD_BOOLEAN 2,map_value
+datatypes_axiom_count_incl,XSD_DATE_TIME 1,map_value
+datatypes_axiom_count_incl,XSD_DOUBLE 3,map_value
+datatypes_axiom_count_incl,XSD_INTEGER 3,map_value
+datatypes_axiom_count_incl,XSD_STRING 265,map_value
+datatypes_builtin,RDF_PLAIN_LITERAL,list_value
+datatypes_builtin,XSD_STRING,list_value
+datatypes_builtin_incl,RDFS_LITERAL,list_value
+datatypes_builtin_incl,RDF_PLAIN_LITERAL,list_value
+datatypes_builtin_incl,XSD_ANY_URI,list_value
+datatypes_builtin_incl,XSD_BOOLEAN,list_value
+datatypes_builtin_incl,XSD_DATE_TIME,list_value
+datatypes_builtin_incl,XSD_DOUBLE,list_value
+datatypes_builtin_incl,XSD_INTEGER,list_value
+datatypes_builtin_incl,XSD_NON_NEGATIVE_INTEGER,list_value
+datatypes_builtin_incl,XSD_STRING,list_value
+datatypes_count,2,single_value
+datatypes_count_incl,9,single_value
+dt_builtin_count,2,single_value
+dt_builtin_count_incl,9,single_value
+dt_notbuiltin_count,0,single_value
+dt_notbuiltin_count_incl,0,single_value
+expressivity,,single_value
+expressivity_incl,RRESTRCUCINTUNIVRESTREROIQ(D),single_value
+gci_count,0,single_value
+gci_count_incl,0,single_value
+gci_hidden_count,1,single_value
+gci_hidden_count_incl,249,single_value
+individual_count,0,single_value
+individual_count_incl,5,single_value
+instance_per_class_avg,0.0,single_value
+instance_per_class_avg_incl,0.0,single_value
+logical_axiom_count,43,single_value
+logical_axiom_count_incl,3194,single_value
+most_freq_concept,http://emmo.info/emmo/domain/oie/characterisation-methods#SpectroscopyBasedMethod,single_value
+most_freq_concept_incl,https://w3id.org/emmo#EMMO_57d977ab_0036_4779_b59a_e47620afdb9c,single_value
+multiple_inheritance_count,2,single_value
+multiple_inheritance_count_incl,18,single_value
+named_supercl_count_max,1,single_value
+named_supercl_count_max_incl,4,single_value
+namespace_axiom_count,prefix_unknown 128,map_value
+namespace_axiom_count,rdfs 1,map_value
+namespace_axiom_count,skos 43,map_value
+namespace_axiom_count_incl,dc 27,map_value
+namespace_axiom_count_incl,foaf 9,map_value
+namespace_axiom_count_incl,owl 25,map_value
+namespace_axiom_count_incl,prefix_unknown 12559,map_value
+namespace_axiom_count_incl,rdf 109,map_value
+namespace_axiom_count_incl,rdfs 952,map_value
+namespace_axiom_count_incl,skos 2318,map_value
+namespace_axiom_count_incl,xsd 301,map_value
+namespace_entity_count,dc 15,map_value
+namespace_entity_count,foaf 5,map_value
+namespace_entity_count,owl 9,map_value
+namespace_entity_count,prefix_unknown 1937,map_value
+namespace_entity_count,rdf 1,map_value
+namespace_entity_count,rdfs 5,map_value
+namespace_entity_count,skos 3,map_value
+namespace_entity_count,xsd 7,map_value
+namespace_entity_count_incl,dc 15,map_value
+namespace_entity_count_incl,foaf 5,map_value
+namespace_entity_count_incl,owl 9,map_value
+namespace_entity_count_incl,prefix_unknown 1937,map_value
+namespace_entity_count_incl,rdf 1,map_value
+namespace_entity_count_incl,rdfs 5,map_value
+namespace_entity_count_incl,skos 3,map_value
+namespace_entity_count_incl,xsd 7,map_value
+obj_property_count,0,single_value
+obj_property_count_incl,201,single_value
+ontology_anno_count,4,single_value
+ontology_iri,http://emmo.info/emmo/domain/oie/characterisation-methods,single_value
+ontology_version_iri,no.iri,single_value
+owl2,true,single_value
+owl2_dl,false,single_value
+owl2_el,false,single_value
+owl2_ql,false,single_value
+owl2_rl,false,single_value
+owl2dl_profile_violation,UseOfReservedVocabularyForAnnotationPropertyIRI 20,map_value
+owl2dl_profile_violation,UseOfUndeclaredAnnotationProperty 4,map_value
+owl2dl_profile_violation,UseOfUndeclaredClass 5,map_value
+rbox_axiom_count,0,single_value
+rbox_axiom_count_incl,340,single_value
+rdfs,false,single_value
+rule_count,0,single_value
+rule_count_incl,0,single_value
+signature_entity_count,1982,single_value
+signature_entity_count_incl,1982,single_value
+syntax,Turtle,single_value
+tautology_count,0,single_value
+tautology_count_incl,4,single_value
+tbox_axiom_count,43,single_value
+tbox_axiom_count_incl,2849,single_value
+tbox_nominals,false,single_value
+tbox_nominals_incl,true,single_value
+tboxrbox_axiom_count,43,single_value
+tboxrbox_axiom_count_incl,3189,single_value
+undecl_entity_count,1940,single_value
+undecl_entity_count_incl,1940,single_value
+valid_imports,http://emmo.info/emmo/1.0.0-beta3/middle/perspective,list_value
+valid_imports,http://emmo.info/emmo/1.0.0-beta3/middle/semiotics,list_value
+valid_imports,http://emmo.info/emmo/1.0.0-beta3/top,list_value
+valid_imports,http://emmo.info/emmo/domain/chameo/chameo,list_value
+valid_imports,https://w3id.org/emmo/1.0.0-beta7/disciplines/computerscience,list_value
+valid_imports,https://w3id.org/emmo/1.0.0-beta7/disciplines/isq,list_value
+valid_imports,https://w3id.org/emmo/1.0.0-beta7/disciplines/manufacturing,list_value
+valid_imports,https://w3id.org/emmo/1.0.0-beta7/disciplines/materials,list_value
+valid_imports,https://w3id.org/emmo/1.0.0-beta7/disciplines/math,list_value
+valid_imports,https://w3id.org/emmo/1.0.0-beta7/disciplines/metrology,list_value
+valid_imports,https://w3id.org/emmo/1.0.0-beta7/disciplines/models,list_value
+valid_imports,https://w3id.org/emmo/1.0.0-beta7/disciplines/units/sidimensionalunits,list_value
+valid_imports,https://w3id.org/emmo/1.0.0-beta7/mereocausality,list_value
+valid_imports,https://w3id.org/emmo/1.0.0-beta7/multiperspective/persholistic,list_value
+valid_imports,https://w3id.org/emmo/1.0.0-beta7/multiperspective/properties,list_value
+valid_imports,https://w3id.org/emmo/1.0.0-beta7/multiperspective/symbolic,list_value
+valid_imports,https://w3id.org/emmo/1.0.0-beta7/multiperspective/workflow,list_value
+valid_imports,https://w3id.org/emmo/1.0.0-beta7/perspectives/data,list_value
+valid_imports,https://w3id.org/emmo/1.0.0-beta7/perspectives/holistic,list_value
+valid_imports,https://w3id.org/emmo/1.0.0-beta7/perspectives/persistence,list_value
+valid_imports,https://w3id.org/emmo/1.0.0-beta7/perspectives/perspective,list_value
+valid_imports,https://w3id.org/emmo/1.0.0-beta7/perspectives/physicalistic,list_value
+valid_imports,https://w3id.org/emmo/1.0.0-beta7/perspectives/reductionistic,list_value
+valid_imports,https://w3id.org/emmo/1.0.0-beta7/perspectives/semiotics,list_value
+valid_imports,https://w3id.org/emmo/1.0.0-beta7/perspectives/standardmodel,list_value
+valid_imports_incl,http://emmo.info/emmo/1.0.0-beta3/middle/semiotics,list_value
+valid_imports_incl,http://emmo.info/emmo/domain/chameo/chameo,list_value

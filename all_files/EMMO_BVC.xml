@@ -1,2099 +1,409 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<OntologyMetrics>
-<BaseMetrics>
-<Basemetrics>
-<Axioms>568</Axioms>
-<Logicalaxiomscount>276</Logicalaxiomscount>
-<Classcount>182</Classcount>
-<Totalclassescount>1342</Totalclassescount>
-<Objectpropertycount>11</Objectpropertycount>
-<Totalobjectpropertiescount>106</Totalobjectpropertiescount>
-<Datapropertycount>0</Datapropertycount>
-<Totaldatapropertiescount>3</Totaldatapropertiescount>
-<Propertiescount>11</Propertiescount>
-<Individualcount>0</Individualcount>
-<Totalindividualscount>1</Totalindividualscount>
-<DLexpressivity>ALCH</DLexpressivity>
-</Basemetrics>
-<Classaxioms>
-<SubClassOfaxiomscount>2194</SubClassOfaxiomscount>
-<Equivalentclassesaxiomscount>121</Equivalentclassesaxiomscount>
-<Disjointclassesaxiomscount>6</Disjointclassesaxiomscount>
-<GCICount>0</GCICount>
-<HiddenGCICount>4</HiddenGCICount>
-</Classaxioms>
-<Objectpropertyaxioms>
-<SubObjectPropertyOfaxiomscount>155</SubObjectPropertyOfaxiomscount>
-<Equivalentobjectpropertiesaxiomscount>7</Equivalentobjectpropertiesaxiomscount>
-<Inverseobjectpropertiesaxiomscount>13</Inverseobjectpropertiesaxiomscount>
-<Disjointobjectpropertiesaxiomscount>0</Disjointobjectpropertiesaxiomscount>
-<Functionalobjectpropertiesaxiomscount>9</Functionalobjectpropertiesaxiomscount>
-<Inversefunctionalobjectpropertiesaxiomscount>8</Inversefunctionalobjectpropertiesaxiomscount>
-<Transitiveobjectpropertyaxiomscount>14</Transitiveobjectpropertyaxiomscount>
-<Symmetricobjectpropertyaxiomscount>16</Symmetricobjectpropertyaxiomscount>
-<Asymmetricobjectpropertyaxiomscount>21</Asymmetricobjectpropertyaxiomscount>
-<Reflexiveobjectpropertyaxiomscount>1</Reflexiveobjectpropertyaxiomscount>
-<Irreflexiveobjectpropertyaxiomscount>30</Irreflexiveobjectpropertyaxiomscount>
-<Objectpropertydomainaxiomscount>67</Objectpropertydomainaxiomscount>
-<Objectpropertyrangeaxiomscount>77</Objectpropertyrangeaxiomscount>
-<SubPropertyChainOfaxiomscount>0</SubPropertyChainOfaxiomscount>
-</Objectpropertyaxioms>
-<Datapropertyaxioms>
-<SubDataPropertyOfaxiomscount>2</SubDataPropertyOfaxiomscount>
-<Equivalentdatapropertiesaxiomscount>0</Equivalentdatapropertiesaxiomscount>
-<Disjointdatapropertiesaxiomscount>0</Disjointdatapropertiesaxiomscount>
-<Functionaldatapropertyaxiomscount>3</Functionaldatapropertyaxiomscount>
-<Datapropertydomainaxiomscount>3</Datapropertydomainaxiomscount>
-<DataPropertyrangeaxiomscount>2</DataPropertyrangeaxiomscount>
-</Datapropertyaxioms>
-<Individualaxioms>
-<Classassertionaxiomscount>2</Classassertionaxiomscount>
-<Objectpropertyassertionaxiomscount>0</Objectpropertyassertionaxiomscount>
-<Datapropertyassertionaxiomscount>0</Datapropertyassertionaxiomscount>
-<Negativeobjectpropertyassertionaxiomscount>0</Negativeobjectpropertyassertionaxiomscount>
-<Negativedatapropertyassertionaxiomscount>0</Negativedatapropertyassertionaxiomscount>
-<Sameindividualsaxiomscount>0</Sameindividualsaxiomscount>
-<Differentindividualsaxiomscount>0</Differentindividualsaxiomscount>
-</Individualaxioms>
-<Annotationaxioms>
-<Annotationaxiomscount>4</Annotationaxiomscount>
-<Annotationassertionaxiomscount>131</Annotationassertionaxiomscount>
-<Annotationpropertydomainaxiomscount>0</Annotationpropertydomainaxiomscount>
-<Annotationpropertyrangeaxiomscount>29</Annotationpropertyrangeaxiomscount>
-</Annotationaxioms>
-<Schemametrics>
-<Attributerichness>0.002235</Attributerichness>
-<Inheritancerichness>1.634873</Inheritancerichness>
-<Relationshiprichness>0.096003</Relationshiprichness>
-<Attributeclassratio>0.0</Attributeclassratio>
-<Equivalenceratio>0.090164</Equivalenceratio>
-<Axiomclassratio>0.423249</Axiomclassratio>
-<Inverserelationsratio>0.192661</Inverserelationsratio>
-<Classrelationratio>0.552946</Classrelationratio>
-</Schemametrics>
-<Knowledgebasemetrics>
-<Averagepopulation>7.45E-4</Averagepopulation>
-<Classrichness>0.0</Classrichness>
-</Knowledgebasemetrics>
-<Graphmetrics>
-<Absoluterootcardinality>43</Absoluterootcardinality>
-<Absoluteleafcardinality>100</Absoluteleafcardinality>
-<Absolutesiblingcardinality>169</Absolutesiblingcardinality>
-<Absolutedepth>1757</Absolutedepth>
-<Averagedepth>1.292862</Averagedepth>
-<Maximaldepth>7</Maximaldepth>
-<Absolutebreadth>1359</Absolutebreadth>
-<Averagebreadth>18.12</Averagebreadth>
-<Maximalbreadth>1203</Maximalbreadth>
-<Ratioofleaffanoutness>0.074516</Ratioofleaffanoutness>
-<Ratioofsiblingfanoutness>0.125931</Ratioofsiblingfanoutness>
-<Tangledness>0.046945</Tangledness>
-<Totalnumberofpaths>1359</Totalnumberofpaths>
-<Averagenumberofpaths>194.142857</Averagenumberofpaths>
-</Graphmetrics>
-<ClassMetrics>
-<Class iri="https://bvco.ontology.link/BVCO_643f0b32_2aca_4efa_9f1c_8f802cbc7228">
-<Classconnectivity>0</Classconnectivity>
-<Classfulness>0.0</Classfulness>
-<Classimportance>0.0</Classimportance>
-<Classinheritancerichness>1342.0</Classinheritancerichness>
-<Classreadability>1</Classreadability>
-<Classrelationshiprichness>0</Classrelationshiprichness>
-<Classchildrencount>1</Classchildrencount>
-<Classinstancescount>0</Classinstancescount>
-<Classpropertiescount>0</Classpropertiescount>
-</Class>
-<Class iri="https://bvco.ontology.link/BVCO_60bee84b_4501_4c3e_ad19_692f52080a46">
-<Classconnectivity>0</Classconnectivity>
-<Classfulness>0.0</Classfulness>
-<Classimportance>0.0</Classimportance>
-<Classinheritancerichness>0.0</Classinheritancerichness>
-<Classreadability>0</Classreadability>
-<Classrelationshiprichness>0</Classrelationshiprichness>
-<Classchildrencount>0</Classchildrencount>
-<Classinstancescount>0</Classinstancescount>
-<Classpropertiescount>0</Classpropertiescount>
-</Class>
-<Class iri="https://bvco.ontology.link/BVCO_f519aa12_2f6d_4d70_86ec_fb769f2a31e3">
-<Classconnectivity>0</Classconnectivity>
-<Classfulness>0.0</Classfulness>
-<Classimportance>0.0</Classimportance>
-<Classinheritancerichness>0.0</Classinheritancerichness>
-<Classreadability>0</Classreadability>
-<Classrelationshiprichness>0</Classrelationshiprichness>
-<Classchildrencount>0</Classchildrencount>
-<Classinstancescount>0</Classinstancescount>
-<Classpropertiescount>0</Classpropertiescount>
-</Class>
-<Class iri="https://bvco.ontology.link/BVCO_0effce43_6179_49f6_903f_b3e27091b6d0">
-<Classconnectivity>0</Classconnectivity>
-<Classfulness>0.0</Classfulness>
-<Classimportance>0.0</Classimportance>
-<Classinheritancerichness>0.0</Classinheritancerichness>
-<Classreadability>0</Classreadability>
-<Classrelationshiprichness>0</Classrelationshiprichness>
-<Classchildrencount>0</Classchildrencount>
-<Classinstancescount>0</Classinstancescount>
-<Classpropertiescount>0</Classpropertiescount>
-</Class>
-<Class iri="https://bvco.ontology.link/BVCO_d3b247b2_cfe8_4c99_bf18_117e57c7b84b">
-<Classconnectivity>0</Classconnectivity>
-<Classfulness>0.0</Classfulness>
-<Classimportance>0.0</Classimportance>
-<Classinheritancerichness>0.0</Classinheritancerichness>
-<Classreadability>1</Classreadability>
-<Classrelationshiprichness>0</Classrelationshiprichness>
-<Classchildrencount>0</Classchildrencount>
-<Classinstancescount>0</Classinstancescount>
-<Classpropertiescount>0</Classpropertiescount>
-</Class>
-<Class iri="https://bvco.ontology.link/BVCO_fad51013_990b_411a_abfc_577e4ed9ab93">
-<Classconnectivity>0</Classconnectivity>
-<Classfulness>0.0</Classfulness>
-<Classimportance>0.0</Classimportance>
-<Classinheritancerichness>0.0</Classinheritancerichness>
-<Classreadability>0</Classreadability>
-<Classrelationshiprichness>0</Classrelationshiprichness>
-<Classchildrencount>0</Classchildrencount>
-<Classinstancescount>0</Classinstancescount>
-<Classpropertiescount>0</Classpropertiescount>
-</Class>
-<Class iri="http://emmo.info/emmo#EMMO_c46f091c_0420_4c1a_af30_0a2c8ebcf7d7">
-<Classconnectivity>0</Classconnectivity>
-<Classfulness>0.0</Classfulness>
-<Classimportance>0.0</Classimportance>
-<Classinheritancerichness>0.0</Classinheritancerichness>
-<Classreadability>0</Classreadability>
-<Classrelationshiprichness>0</Classrelationshiprichness>
-<Classchildrencount>0</Classchildrencount>
-<Classinstancescount>0</Classinstancescount>
-<Classpropertiescount>0</Classpropertiescount>
-</Class>
-<Class iri="https://bvco.ontology.link/BVCO_6afe6cee_8b5e_4f25_84c6_705428e04054">
-<Classconnectivity>0</Classconnectivity>
-<Classfulness>0.0</Classfulness>
-<Classimportance>0.0</Classimportance>
-<Classinheritancerichness>0.0</Classinheritancerichness>
-<Classreadability>1</Classreadability>
-<Classrelationshiprichness>0</Classrelationshiprichness>
-<Classchildrencount>0</Classchildrencount>
-<Classinstancescount>0</Classinstancescount>
-<Classpropertiescount>0</Classpropertiescount>
-</Class>
-<Class iri="http://emmo.info/emmo#EMMO_31ec09ba_1713_42cb_83c7_b38bf6f9ced2">
-<Classconnectivity>0</Classconnectivity>
-<Classfulness>0.0</Classfulness>
-<Classimportance>0.0</Classimportance>
-<Classinheritancerichness>0.0</Classinheritancerichness>
-<Classreadability>0</Classreadability>
-<Classrelationshiprichness>0</Classrelationshiprichness>
-<Classchildrencount>0</Classchildrencount>
-<Classinstancescount>0</Classinstancescount>
-<Classpropertiescount>0</Classpropertiescount>
-</Class>
-<Class iri="https://bvco.ontology.link/BVCO_8f81a6c8_532d_459d_ba5a_969d02face9c">
-<Classconnectivity>0</Classconnectivity>
-<Classfulness>0.0</Classfulness>
-<Classimportance>0.0</Classimportance>
-<Classinheritancerichness>0.0</Classinheritancerichness>
-<Classreadability>0</Classreadability>
-<Classrelationshiprichness>0</Classrelationshiprichness>
-<Classchildrencount>0</Classchildrencount>
-<Classinstancescount>0</Classinstancescount>
-<Classpropertiescount>0</Classpropertiescount>
-</Class>
-<Class iri="https://big-map.github.io/BattINFO/ontology/electrochemistry#EMMO_6f2c88c9_5c04_4953_a298_032cc3ab9b77">
-<Classconnectivity>0</Classconnectivity>
-<Classfulness>0.0</Classfulness>
-<Classimportance>0.0</Classimportance>
-<Classinheritancerichness>191.714286</Classinheritancerichness>
-<Classreadability>0</Classreadability>
-<Classrelationshiprichness>0</Classrelationshiprichness>
-<Classchildrencount>7</Classchildrencount>
-<Classinstancescount>0</Classinstancescount>
-<Classpropertiescount>0</Classpropertiescount>
-</Class>
-<Class iri="https://bvco.ontology.link/BVCO_12664712_cdf1_43c9_b102_1691db16d37f">
-<Classconnectivity>0</Classconnectivity>
-<Classfulness>0.0</Classfulness>
-<Classimportance>0.0</Classimportance>
-<Classinheritancerichness>0.0</Classinheritancerichness>
-<Classreadability>0</Classreadability>
-<Classrelationshiprichness>0</Classrelationshiprichness>
-<Classchildrencount>0</Classchildrencount>
-<Classinstancescount>0</Classinstancescount>
-<Classpropertiescount>0</Classpropertiescount>
-</Class>
-<Class iri="https://bvco.ontology.link/BVCO_454eb9d2_d541_4bbe_932f_27a77dc7c370">
-<Classconnectivity>0</Classconnectivity>
-<Classfulness>0.0</Classfulness>
-<Classimportance>0.0</Classimportance>
-<Classinheritancerichness>0.0</Classinheritancerichness>
-<Classreadability>0</Classreadability>
-<Classrelationshiprichness>0</Classrelationshiprichness>
-<Classchildrencount>0</Classchildrencount>
-<Classinstancescount>0</Classinstancescount>
-<Classpropertiescount>0</Classpropertiescount>
-</Class>
-<Class iri="https://bvco.ontology.link/BVCO_72f3c7f8_0747_46d8_a694_f9a757a12c18">
-<Classconnectivity>0</Classconnectivity>
-<Classfulness>0.0</Classfulness>
-<Classimportance>0.0</Classimportance>
-<Classinheritancerichness>0.0</Classinheritancerichness>
-<Classreadability>0</Classreadability>
-<Classrelationshiprichness>0</Classrelationshiprichness>
-<Classchildrencount>0</Classchildrencount>
-<Classinstancescount>0</Classinstancescount>
-<Classpropertiescount>0</Classpropertiescount>
-</Class>
-<Class iri="https://bvco.ontology.link/BVCO_e549077e_68db_4da3_9c2d_3875efaa8291">
-<Classconnectivity>0</Classconnectivity>
-<Classfulness>0.0</Classfulness>
-<Classimportance>0.0</Classimportance>
-<Classinheritancerichness>0.0</Classinheritancerichness>
-<Classreadability>0</Classreadability>
-<Classrelationshiprichness>0</Classrelationshiprichness>
-<Classchildrencount>0</Classchildrencount>
-<Classinstancescount>0</Classinstancescount>
-<Classpropertiescount>0</Classpropertiescount>
-</Class>
-<Class iri="https://bvco.ontology.link/BVCO_adeeea10_13a2_48b1_93f5_e54290d73e32">
-<Classconnectivity>0</Classconnectivity>
-<Classfulness>0.0</Classfulness>
-<Classimportance>0.0</Classimportance>
-<Classinheritancerichness>61.0</Classinheritancerichness>
-<Classreadability>0</Classreadability>
-<Classrelationshiprichness>0</Classrelationshiprichness>
-<Classchildrencount>22</Classchildrencount>
-<Classinstancescount>0</Classinstancescount>
-<Classpropertiescount>0</Classpropertiescount>
-</Class>
-<Class iri="https://bvco.ontology.link/BVCO_d7f05f2d_a352_4a60_bc80_5e9624b28b43">
-<Classconnectivity>0</Classconnectivity>
-<Classfulness>0.0</Classfulness>
-<Classimportance>0.0</Classimportance>
-<Classinheritancerichness>0.0</Classinheritancerichness>
-<Classreadability>0</Classreadability>
-<Classrelationshiprichness>0</Classrelationshiprichness>
-<Classchildrencount>0</Classchildrencount>
-<Classinstancescount>0</Classinstancescount>
-<Classpropertiescount>0</Classpropertiescount>
-</Class>
-<Class iri="https://bvco.ontology.link/BVCO_f986191d_8d5b_4313_97e1_b8c9bcea1aa9">
-<Classconnectivity>0</Classconnectivity>
-<Classfulness>0.0</Classfulness>
-<Classimportance>0.0</Classimportance>
-<Classinheritancerichness>0.0</Classinheritancerichness>
-<Classreadability>1</Classreadability>
-<Classrelationshiprichness>0</Classrelationshiprichness>
-<Classchildrencount>0</Classchildrencount>
-<Classinstancescount>0</Classinstancescount>
-<Classpropertiescount>0</Classpropertiescount>
-</Class>
-<Class iri="https://bvco.ontology.link/BVCO_8d754c83_be62_49d0_9e11_51a9d16b93a0">
-<Classconnectivity>0</Classconnectivity>
-<Classfulness>0.0</Classfulness>
-<Classimportance>0.0</Classimportance>
-<Classinheritancerichness>134.2</Classinheritancerichness>
-<Classreadability>0</Classreadability>
-<Classrelationshiprichness>0</Classrelationshiprichness>
-<Classchildrencount>10</Classchildrencount>
-<Classinstancescount>0</Classinstancescount>
-<Classpropertiescount>0</Classpropertiescount>
-</Class>
-<Class iri="https://bvco.ontology.link/BVCO_a2b509d5_32a0_404b_80b6_3f5ec39b851f">
-<Classconnectivity>0</Classconnectivity>
-<Classfulness>0.0</Classfulness>
-<Classimportance>0.0</Classimportance>
-<Classinheritancerichness>0.0</Classinheritancerichness>
-<Classreadability>0</Classreadability>
-<Classrelationshiprichness>0</Classrelationshiprichness>
-<Classchildrencount>0</Classchildrencount>
-<Classinstancescount>0</Classinstancescount>
-<Classpropertiescount>0</Classpropertiescount>
-</Class>
-<Class iri="https://bvco.ontology.link/BVCO_a7741503_f235_459e_954b_2c8317567bd4">
-<Classconnectivity>0</Classconnectivity>
-<Classfulness>0.0</Classfulness>
-<Classimportance>0.0</Classimportance>
-<Classinheritancerichness>335.5</Classinheritancerichness>
-<Classreadability>0</Classreadability>
-<Classrelationshiprichness>0</Classrelationshiprichness>
-<Classchildrencount>4</Classchildrencount>
-<Classinstancescount>0</Classinstancescount>
-<Classpropertiescount>0</Classpropertiescount>
-</Class>
-<Class iri="https://bvco.ontology.link/BVCO_1fb417ef_3f78_4c72_a51e_c0657b2a870e">
-<Classconnectivity>0</Classconnectivity>
-<Classfulness>0.0</Classfulness>
-<Classimportance>0.0</Classimportance>
-<Classinheritancerichness>0.0</Classinheritancerichness>
-<Classreadability>0</Classreadability>
-<Classrelationshiprichness>0</Classrelationshiprichness>
-<Classchildrencount>0</Classchildrencount>
-<Classinstancescount>0</Classinstancescount>
-<Classpropertiescount>0</Classpropertiescount>
-</Class>
-<Class iri="https://bvco.ontology.link/BVCO_fa85bf30_d342_45a7_b662_975d58c4f35a">
-<Classconnectivity>0</Classconnectivity>
-<Classfulness>0.0</Classfulness>
-<Classimportance>0.0</Classimportance>
-<Classinheritancerichness>0.0</Classinheritancerichness>
-<Classreadability>0</Classreadability>
-<Classrelationshiprichness>0</Classrelationshiprichness>
-<Classchildrencount>0</Classchildrencount>
-<Classinstancescount>0</Classinstancescount>
-<Classpropertiescount>0</Classpropertiescount>
-</Class>
-<Class iri="https://bvco.ontology.link/BVCO_67c6a44c_7f7c_4000_a0e4_6cfc9a857b0c">
-<Classconnectivity>0</Classconnectivity>
-<Classfulness>0.0</Classfulness>
-<Classimportance>0.0</Classimportance>
-<Classinheritancerichness>0.0</Classinheritancerichness>
-<Classreadability>0</Classreadability>
-<Classrelationshiprichness>0</Classrelationshiprichness>
-<Classchildrencount>0</Classchildrencount>
-<Classinstancescount>0</Classinstancescount>
-<Classpropertiescount>0</Classpropertiescount>
-</Class>
-<Class iri="https://bvco.ontology.link/BVCO_56eaa4c7_8d17_4215_9e93_ac3f7da036de">
-<Classconnectivity>0</Classconnectivity>
-<Classfulness>0.0</Classfulness>
-<Classimportance>0.0</Classimportance>
-<Classinheritancerichness>0.0</Classinheritancerichness>
-<Classreadability>0</Classreadability>
-<Classrelationshiprichness>0</Classrelationshiprichness>
-<Classchildrencount>0</Classchildrencount>
-<Classinstancescount>0</Classinstancescount>
-<Classpropertiescount>0</Classpropertiescount>
-</Class>
-<Class iri="http://emmo.info/emmo#EMMO_70dac51e_bddd_48c2_8a98_7d8395e91fc2">
-<Classconnectivity>0</Classconnectivity>
-<Classfulness>0.0</Classfulness>
-<Classimportance>0.0</Classimportance>
-<Classinheritancerichness>0.0</Classinheritancerichness>
-<Classreadability>0</Classreadability>
-<Classrelationshiprichness>0</Classrelationshiprichness>
-<Classchildrencount>0</Classchildrencount>
-<Classinstancescount>0</Classinstancescount>
-<Classpropertiescount>0</Classpropertiescount>
-</Class>
-<Class iri="https://gpo.ontology.link/GPO_13cf7fc2_c0d4_4060_97c8_93e929870f5b">
-<Classconnectivity>0</Classconnectivity>
-<Classfulness>0.0</Classfulness>
-<Classimportance>0.0</Classimportance>
-<Classinheritancerichness>1342.0</Classinheritancerichness>
-<Classreadability>0</Classreadability>
-<Classrelationshiprichness>0</Classrelationshiprichness>
-<Classchildrencount>1</Classchildrencount>
-<Classinstancescount>0</Classinstancescount>
-<Classpropertiescount>0</Classpropertiescount>
-</Class>
-<Class iri="https://gpo.ontology.link/GPO_65e00d30_9d66_4018_a7b9_a671729a1794">
-<Classconnectivity>0</Classconnectivity>
-<Classfulness>0.0</Classfulness>
-<Classimportance>0.0</Classimportance>
-<Classinheritancerichness>1342.0</Classinheritancerichness>
-<Classreadability>0</Classreadability>
-<Classrelationshiprichness>0</Classrelationshiprichness>
-<Classchildrencount>1</Classchildrencount>
-<Classinstancescount>0</Classinstancescount>
-<Classpropertiescount>0</Classpropertiescount>
-</Class>
-<Class iri="https://bvco.ontology.link/BVCO_9c661622_6258_46bd_8f53_85d531a39f0b">
-<Classconnectivity>0</Classconnectivity>
-<Classfulness>0.0</Classfulness>
-<Classimportance>0.0</Classimportance>
-<Classinheritancerichness>671.0</Classinheritancerichness>
-<Classreadability>1</Classreadability>
-<Classrelationshiprichness>0</Classrelationshiprichness>
-<Classchildrencount>2</Classchildrencount>
-<Classinstancescount>0</Classinstancescount>
-<Classpropertiescount>0</Classpropertiescount>
-</Class>
-<Class iri="https://bvco.ontology.link/BVCO_b8a4a9ea_b171_468d_8c91_fdd865610c09">
-<Classconnectivity>0</Classconnectivity>
-<Classfulness>0.0</Classfulness>
-<Classimportance>0.0</Classimportance>
-<Classinheritancerichness>0.0</Classinheritancerichness>
-<Classreadability>0</Classreadability>
-<Classrelationshiprichness>0</Classrelationshiprichness>
-<Classchildrencount>0</Classchildrencount>
-<Classinstancescount>0</Classinstancescount>
-<Classpropertiescount>0</Classpropertiescount>
-</Class>
-<Class iri="https://bvco.ontology.link/BVCO_a4495da3_5a64_47d3_9979_d7beda4500cd">
-<Classconnectivity>0</Classconnectivity>
-<Classfulness>0.0</Classfulness>
-<Classimportance>0.0</Classimportance>
-<Classinheritancerichness>191.714286</Classinheritancerichness>
-<Classreadability>0</Classreadability>
-<Classrelationshiprichness>0</Classrelationshiprichness>
-<Classchildrencount>7</Classchildrencount>
-<Classinstancescount>0</Classinstancescount>
-<Classpropertiescount>0</Classpropertiescount>
-</Class>
-<Class iri="https://gpo.ontology.link/GPO_aa217fba_9840_4176_98a6_e247cf0181c8">
-<Classconnectivity>0</Classconnectivity>
-<Classfulness>0.0</Classfulness>
-<Classimportance>0.0</Classimportance>
-<Classinheritancerichness>671.0</Classinheritancerichness>
-<Classreadability>0</Classreadability>
-<Classrelationshiprichness>0</Classrelationshiprichness>
-<Classchildrencount>2</Classchildrencount>
-<Classinstancescount>0</Classinstancescount>
-<Classpropertiescount>0</Classpropertiescount>
-</Class>
-<Class iri="https://gpo.ontology.link/GPO_c7c1e32d_025b_4e30_8e8f_5b16e14a8190">
-<Classconnectivity>0</Classconnectivity>
-<Classfulness>0.0</Classfulness>
-<Classimportance>0.0</Classimportance>
-<Classinheritancerichness>1342.0</Classinheritancerichness>
-<Classreadability>0</Classreadability>
-<Classrelationshiprichness>0</Classrelationshiprichness>
-<Classchildrencount>1</Classchildrencount>
-<Classinstancescount>0</Classinstancescount>
-<Classpropertiescount>0</Classpropertiescount>
-</Class>
-<Class iri="http://emmo.info/emmo#EMMO_2565210a_bbcc_4c00_a122_6a608faa355b">
-<Classconnectivity>0</Classconnectivity>
-<Classfulness>0.0</Classfulness>
-<Classimportance>0.0</Classimportance>
-<Classinheritancerichness>671.0</Classinheritancerichness>
-<Classreadability>0</Classreadability>
-<Classrelationshiprichness>0</Classrelationshiprichness>
-<Classchildrencount>2</Classchildrencount>
-<Classinstancescount>0</Classinstancescount>
-<Classpropertiescount>0</Classpropertiescount>
-</Class>
-<Class iri="https://bvco.ontology.link/BVCO_40941813_6ae7_4e59_a18b_12ff6f3319c3">
-<Classconnectivity>0</Classconnectivity>
-<Classfulness>0.0</Classfulness>
-<Classimportance>0.0</Classimportance>
-<Classinheritancerichness>0.0</Classinheritancerichness>
-<Classreadability>1</Classreadability>
-<Classrelationshiprichness>0</Classrelationshiprichness>
-<Classchildrencount>0</Classchildrencount>
-<Classinstancescount>0</Classinstancescount>
-<Classpropertiescount>0</Classpropertiescount>
-</Class>
-<Class iri="http://emmo.info/emmo#EMMO_494b372c_cfdf_47d3_a4de_5e037c540de8">
-<Classconnectivity>0</Classconnectivity>
-<Classfulness>0.0</Classfulness>
-<Classimportance>0.0</Classimportance>
-<Classinheritancerichness>671.0</Classinheritancerichness>
-<Classreadability>0</Classreadability>
-<Classrelationshiprichness>0</Classrelationshiprichness>
-<Classchildrencount>2</Classchildrencount>
-<Classinstancescount>0</Classinstancescount>
-<Classpropertiescount>0</Classpropertiescount>
-</Class>
-<Class iri="https://bvco.ontology.link/BVCO_74f80b71_eb10_4e5d_a951_c90e0edbbad6">
-<Classconnectivity>0</Classconnectivity>
-<Classfulness>0.0</Classfulness>
-<Classimportance>0.0</Classimportance>
-<Classinheritancerichness>0.0</Classinheritancerichness>
-<Classreadability>1</Classreadability>
-<Classrelationshiprichness>0</Classrelationshiprichness>
-<Classchildrencount>0</Classchildrencount>
-<Classinstancescount>0</Classinstancescount>
-<Classpropertiescount>0</Classpropertiescount>
-</Class>
-<Class iri="https://bvco.ontology.link/BVCO_9d2ab44d_d3b5_4481_8eee_3097150e1cb4">
-<Classconnectivity>0</Classconnectivity>
-<Classfulness>0.0</Classfulness>
-<Classimportance>0.0</Classimportance>
-<Classinheritancerichness>0.0</Classinheritancerichness>
-<Classreadability>0</Classreadability>
-<Classrelationshiprichness>0</Classrelationshiprichness>
-<Classchildrencount>0</Classchildrencount>
-<Classinstancescount>0</Classinstancescount>
-<Classpropertiescount>0</Classpropertiescount>
-</Class>
-<Class iri="http://emmo.info/emmo#EMMO_43e9a05d_98af_41b4_92f6_00f79a09bfce">
-<Classconnectivity>0</Classconnectivity>
-<Classfulness>0.0</Classfulness>
-<Classimportance>0.0</Classimportance>
-<Classinheritancerichness>1342.0</Classinheritancerichness>
-<Classreadability>0</Classreadability>
-<Classrelationshiprichness>0</Classrelationshiprichness>
-<Classchildrencount>1</Classchildrencount>
-<Classinstancescount>0</Classinstancescount>
-<Classpropertiescount>0</Classpropertiescount>
-</Class>
-<Class iri="https://big-map.github.io/BattINFO/ontology/electrochemistry#EMMO_efc38420_ecbb_42e4_bb3f_208e7c417098">
-<Classconnectivity>0</Classconnectivity>
-<Classfulness>0.0</Classfulness>
-<Classimportance>0.0</Classimportance>
-<Classinheritancerichness>0.0</Classinheritancerichness>
-<Classreadability>0</Classreadability>
-<Classrelationshiprichness>0</Classrelationshiprichness>
-<Classchildrencount>0</Classchildrencount>
-<Classinstancescount>0</Classinstancescount>
-<Classpropertiescount>0</Classpropertiescount>
-</Class>
-<Class iri="https://bvco.ontology.link/BVCO_bc4de725_c820_458d_99d2_8dbee3378152">
-<Classconnectivity>0</Classconnectivity>
-<Classfulness>0.0</Classfulness>
-<Classimportance>0.0</Classimportance>
-<Classinheritancerichness>0.0</Classinheritancerichness>
-<Classreadability>0</Classreadability>
-<Classrelationshiprichness>0</Classrelationshiprichness>
-<Classchildrencount>0</Classchildrencount>
-<Classinstancescount>0</Classinstancescount>
-<Classpropertiescount>0</Classpropertiescount>
-</Class>
-<Class iri="https://gpo.ontology.link/GPO_cc903d23_0d06_49f8_81e4_b7511d2587e9">
-<Classconnectivity>0</Classconnectivity>
-<Classfulness>0.0</Classfulness>
-<Classimportance>0.0</Classimportance>
-<Classinheritancerichness>1342.0</Classinheritancerichness>
-<Classreadability>0</Classreadability>
-<Classrelationshiprichness>0</Classrelationshiprichness>
-<Classchildrencount>1</Classchildrencount>
-<Classinstancescount>0</Classinstancescount>
-<Classpropertiescount>0</Classpropertiescount>
-</Class>
-<Class iri="https://big-map.github.io/BattINFO/ontology/electrochemistry#EMMO_0f007072-a8dd-4798-b865-1bf9363be627">
-<Classconnectivity>0</Classconnectivity>
-<Classfulness>0.0</Classfulness>
-<Classimportance>0.0</Classimportance>
-<Classinheritancerichness>0.0</Classinheritancerichness>
-<Classreadability>0</Classreadability>
-<Classrelationshiprichness>0</Classrelationshiprichness>
-<Classchildrencount>0</Classchildrencount>
-<Classinstancescount>0</Classinstancescount>
-<Classpropertiescount>0</Classpropertiescount>
-</Class>
-<Class iri="https://bvco.ontology.link/BVCO_db4d4d99_4056_46a0_8339_476db375c4a6">
-<Classconnectivity>0</Classconnectivity>
-<Classfulness>0.0</Classfulness>
-<Classimportance>0.0</Classimportance>
-<Classinheritancerichness>0.0</Classinheritancerichness>
-<Classreadability>0</Classreadability>
-<Classrelationshiprichness>0</Classrelationshiprichness>
-<Classchildrencount>0</Classchildrencount>
-<Classinstancescount>0</Classinstancescount>
-<Classpropertiescount>0</Classpropertiescount>
-</Class>
-<Class iri="http://emmo.info/emmo#EMMO_86ca9b93_1183_4b65_81b8_c0fcd3bba5ad">
-<Classconnectivity>0</Classconnectivity>
-<Classfulness>0.0</Classfulness>
-<Classimportance>0.0</Classimportance>
-<Classinheritancerichness>0.0</Classinheritancerichness>
-<Classreadability>0</Classreadability>
-<Classrelationshiprichness>0</Classrelationshiprichness>
-<Classchildrencount>0</Classchildrencount>
-<Classinstancescount>0</Classinstancescount>
-<Classpropertiescount>0</Classpropertiescount>
-</Class>
-<Class iri="https://bvco.ontology.link/BVCO_f1660730_8c38_42b9_b9e3_348691a5b4b7">
-<Classconnectivity>0</Classconnectivity>
-<Classfulness>0.0</Classfulness>
-<Classimportance>0.0</Classimportance>
-<Classinheritancerichness>0.0</Classinheritancerichness>
-<Classreadability>0</Classreadability>
-<Classrelationshiprichness>0</Classrelationshiprichness>
-<Classchildrencount>0</Classchildrencount>
-<Classinstancescount>0</Classinstancescount>
-<Classpropertiescount>0</Classpropertiescount>
-</Class>
-<Class iri="https://bvco.ontology.link/BVCO_330f8958_ad34_41e7_b119_25d03b1e0761">
-<Classconnectivity>0</Classconnectivity>
-<Classfulness>0.0</Classfulness>
-<Classimportance>0.0</Classimportance>
-<Classinheritancerichness>1342.0</Classinheritancerichness>
-<Classreadability>0</Classreadability>
-<Classrelationshiprichness>0</Classrelationshiprichness>
-<Classchildrencount>1</Classchildrencount>
-<Classinstancescount>0</Classinstancescount>
-<Classpropertiescount>0</Classpropertiescount>
-</Class>
-<Class iri="https://bvco.ontology.link/BVCO_1d7cc67a_a753_4242_ac87_de846b4132b8">
-<Classconnectivity>0</Classconnectivity>
-<Classfulness>0.0</Classfulness>
-<Classimportance>0.0</Classimportance>
-<Classinheritancerichness>0.0</Classinheritancerichness>
-<Classreadability>0</Classreadability>
-<Classrelationshiprichness>0</Classrelationshiprichness>
-<Classchildrencount>0</Classchildrencount>
-<Classinstancescount>0</Classinstancescount>
-<Classpropertiescount>0</Classpropertiescount>
-</Class>
-<Class iri="https://gpo.ontology.link/GPO_a32722d5_42c1_446f_a071_05071047831f">
-<Classconnectivity>0</Classconnectivity>
-<Classfulness>0.0</Classfulness>
-<Classimportance>0.0</Classimportance>
-<Classinheritancerichness>1342.0</Classinheritancerichness>
-<Classreadability>0</Classreadability>
-<Classrelationshiprichness>0</Classrelationshiprichness>
-<Classchildrencount>1</Classchildrencount>
-<Classinstancescount>0</Classinstancescount>
-<Classpropertiescount>0</Classpropertiescount>
-</Class>
-<Class iri="https://gpo.ontology.link/GPO_a7003b69_ce78_48fe_a717_e04e1266c6cd">
-<Classconnectivity>0</Classconnectivity>
-<Classfulness>0.0</Classfulness>
-<Classimportance>0.0</Classimportance>
-<Classinheritancerichness>0.0</Classinheritancerichness>
-<Classreadability>0</Classreadability>
-<Classrelationshiprichness>0</Classrelationshiprichness>
-<Classchildrencount>0</Classchildrencount>
-<Classinstancescount>0</Classinstancescount>
-<Classpropertiescount>0</Classpropertiescount>
-</Class>
-<Class iri="https://big-map.github.io/BattINFO/ontology/electrochemistry#EMMO_0508a114_544a_4f54_a7de_9b947fb4b618">
-<Classconnectivity>0</Classconnectivity>
-<Classfulness>0.0</Classfulness>
-<Classimportance>0.0</Classimportance>
-<Classinheritancerichness>0.0</Classinheritancerichness>
-<Classreadability>0</Classreadability>
-<Classrelationshiprichness>0</Classrelationshiprichness>
-<Classchildrencount>0</Classchildrencount>
-<Classinstancescount>0</Classinstancescount>
-<Classpropertiescount>0</Classpropertiescount>
-</Class>
-<Class iri="https://bvco.ontology.link/BVCO_c109aceb_4104_41ab_b2bc_8a8438f9dbd9">
-<Classconnectivity>0</Classconnectivity>
-<Classfulness>0.0</Classfulness>
-<Classimportance>0.0</Classimportance>
-<Classinheritancerichness>0.0</Classinheritancerichness>
-<Classreadability>0</Classreadability>
-<Classrelationshiprichness>0</Classrelationshiprichness>
-<Classchildrencount>0</Classchildrencount>
-<Classinstancescount>0</Classinstancescount>
-<Classpropertiescount>0</Classpropertiescount>
-</Class>
-<Class iri="https://gpo.ontology.link/GPO_23f6e14f_b0fa_4140_b915_767131ac9b7f">
-<Classconnectivity>0</Classconnectivity>
-<Classfulness>0.0</Classfulness>
-<Classimportance>0.0</Classimportance>
-<Classinheritancerichness>191.714286</Classinheritancerichness>
-<Classreadability>0</Classreadability>
-<Classrelationshiprichness>0</Classrelationshiprichness>
-<Classchildrencount>7</Classchildrencount>
-<Classinstancescount>0</Classinstancescount>
-<Classpropertiescount>0</Classpropertiescount>
-</Class>
-<Class iri="https://bvco.ontology.link/BVCO_a4f4339f_a17c_4531_9c71_e3a4e0bdcdb2">
-<Classconnectivity>0</Classconnectivity>
-<Classfulness>0.0</Classfulness>
-<Classimportance>0.0</Classimportance>
-<Classinheritancerichness>0.0</Classinheritancerichness>
-<Classreadability>1</Classreadability>
-<Classrelationshiprichness>0</Classrelationshiprichness>
-<Classchildrencount>0</Classchildrencount>
-<Classinstancescount>0</Classinstancescount>
-<Classpropertiescount>0</Classpropertiescount>
-</Class>
-<Class iri="https://bvco.ontology.link/BVCO_c3403541_0fb7_4a2b_b432_3860bc89848a">
-<Classconnectivity>0</Classconnectivity>
-<Classfulness>0.0</Classfulness>
-<Classimportance>0.0</Classimportance>
-<Classinheritancerichness>0.0</Classinheritancerichness>
-<Classreadability>0</Classreadability>
-<Classrelationshiprichness>0</Classrelationshiprichness>
-<Classchildrencount>0</Classchildrencount>
-<Classinstancescount>0</Classinstancescount>
-<Classpropertiescount>0</Classpropertiescount>
-</Class>
-<Class iri="https://bvco.ontology.link/BVCO_787f689a_f40e_40cf_b368_49cab6f0a69f">
-<Classconnectivity>0</Classconnectivity>
-<Classfulness>0.0</Classfulness>
-<Classimportance>0.0</Classimportance>
-<Classinheritancerichness>0.0</Classinheritancerichness>
-<Classreadability>1</Classreadability>
-<Classrelationshiprichness>0</Classrelationshiprichness>
-<Classchildrencount>0</Classchildrencount>
-<Classinstancescount>0</Classinstancescount>
-<Classpropertiescount>0</Classpropertiescount>
-</Class>
-<Class iri="http://emmo.info/emmo#EMMO_89a0c87c_0804_4013_937a_6fe234d9499c">
-<Classconnectivity>0</Classconnectivity>
-<Classfulness>0.0</Classfulness>
-<Classimportance>0.0</Classimportance>
-<Classinheritancerichness>0.0</Classinheritancerichness>
-<Classreadability>0</Classreadability>
-<Classrelationshiprichness>0</Classrelationshiprichness>
-<Classchildrencount>0</Classchildrencount>
-<Classinstancescount>0</Classinstancescount>
-<Classpropertiescount>0</Classpropertiescount>
-</Class>
-<Class iri="https://bvco.ontology.link/BVCO_ad24cf92_0975_45bb_b259_f55c66586be2">
-<Classconnectivity>0</Classconnectivity>
-<Classfulness>0.0</Classfulness>
-<Classimportance>0.0</Classimportance>
-<Classinheritancerichness>0.0</Classinheritancerichness>
-<Classreadability>1</Classreadability>
-<Classrelationshiprichness>0</Classrelationshiprichness>
-<Classchildrencount>0</Classchildrencount>
-<Classinstancescount>0</Classinstancescount>
-<Classpropertiescount>0</Classpropertiescount>
-</Class>
-<Class iri="https://gpo.ontology.link/GPO_033b9632_cfc2_40fe_97c4_4e0587ab4ec8">
-<Classconnectivity>0</Classconnectivity>
-<Classfulness>0.0</Classfulness>
-<Classimportance>0.0</Classimportance>
-<Classinheritancerichness>1342.0</Classinheritancerichness>
-<Classreadability>0</Classreadability>
-<Classrelationshiprichness>0</Classrelationshiprichness>
-<Classchildrencount>1</Classchildrencount>
-<Classinstancescount>0</Classinstancescount>
-<Classpropertiescount>0</Classpropertiescount>
-</Class>
-<Class iri="https://bvco.ontology.link/BVCO_17c60644_b415_4fad_b4da_ef68137e4766">
-<Classconnectivity>0</Classconnectivity>
-<Classfulness>0.0</Classfulness>
-<Classimportance>0.0</Classimportance>
-<Classinheritancerichness>268.4</Classinheritancerichness>
-<Classreadability>0</Classreadability>
-<Classrelationshiprichness>0</Classrelationshiprichness>
-<Classchildrencount>5</Classchildrencount>
-<Classinstancescount>0</Classinstancescount>
-<Classpropertiescount>0</Classpropertiescount>
-</Class>
-<Class iri="https://bvco.ontology.link/BVCO_99397341_1db2_48f1_9288_04cbbce1de25">
-<Classconnectivity>0</Classconnectivity>
-<Classfulness>0.0</Classfulness>
-<Classimportance>0.0</Classimportance>
-<Classinheritancerichness>0.0</Classinheritancerichness>
-<Classreadability>0</Classreadability>
-<Classrelationshiprichness>0</Classrelationshiprichness>
-<Classchildrencount>0</Classchildrencount>
-<Classinstancescount>0</Classinstancescount>
-<Classpropertiescount>0</Classpropertiescount>
-</Class>
-<Class iri="https://bvco.ontology.link/BVCO_962e42e6_099d_4ae7_8a95_7ad5cf25bf4a">
-<Classconnectivity>0</Classconnectivity>
-<Classfulness>0.0</Classfulness>
-<Classimportance>0.0</Classimportance>
-<Classinheritancerichness>0.0</Classinheritancerichness>
-<Classreadability>0</Classreadability>
-<Classrelationshiprichness>0</Classrelationshiprichness>
-<Classchildrencount>0</Classchildrencount>
-<Classinstancescount>0</Classinstancescount>
-<Classpropertiescount>0</Classpropertiescount>
-</Class>
-<Class iri="https://gpo.ontology.link/GPO_9471e306_144f_4310_82bf_1415d23326e0">
-<Classconnectivity>0</Classconnectivity>
-<Classfulness>0.0</Classfulness>
-<Classimportance>0.0</Classimportance>
-<Classinheritancerichness>1342.0</Classinheritancerichness>
-<Classreadability>0</Classreadability>
-<Classrelationshiprichness>0</Classrelationshiprichness>
-<Classchildrencount>1</Classchildrencount>
-<Classinstancescount>0</Classinstancescount>
-<Classpropertiescount>0</Classpropertiescount>
-</Class>
-<Class iri="https://bvco.ontology.link/BVCO_d69137ff_e9b5_4d75_8949_26a7e0a854cf">
-<Classconnectivity>0</Classconnectivity>
-<Classfulness>0.0</Classfulness>
-<Classimportance>0.0</Classimportance>
-<Classinheritancerichness>0.0</Classinheritancerichness>
-<Classreadability>0</Classreadability>
-<Classrelationshiprichness>0</Classrelationshiprichness>
-<Classchildrencount>0</Classchildrencount>
-<Classinstancescount>0</Classinstancescount>
-<Classpropertiescount>0</Classpropertiescount>
-</Class>
-<Class iri="https://big-map.github.io/BattINFO/ontology/BattINFO#EMMO_d9ebf2cd_a020_46b4_b91a_9a6402736b9e">
-<Classconnectivity>0</Classconnectivity>
-<Classfulness>0.0</Classfulness>
-<Classimportance>0.0</Classimportance>
-<Classinheritancerichness>0.0</Classinheritancerichness>
-<Classreadability>0</Classreadability>
-<Classrelationshiprichness>0</Classrelationshiprichness>
-<Classchildrencount>0</Classchildrencount>
-<Classinstancescount>0</Classinstancescount>
-<Classpropertiescount>0</Classpropertiescount>
-</Class>
-<Class iri="http://emmo.info/emmo#EMMO_057e7d57_aff0_49de_911a_8861d85cef40">
-<Classconnectivity>0</Classconnectivity>
-<Classfulness>0.0</Classfulness>
-<Classimportance>0.0</Classimportance>
-<Classinheritancerichness>0.0</Classinheritancerichness>
-<Classreadability>0</Classreadability>
-<Classrelationshiprichness>0</Classrelationshiprichness>
-<Classchildrencount>0</Classchildrencount>
-<Classinstancescount>0</Classinstancescount>
-<Classpropertiescount>0</Classpropertiescount>
-</Class>
-<Class iri="https://gpo.ontology.link/GPO_39cf2373_f414_4295_92b8_7d60a91d7803">
-<Classconnectivity>0</Classconnectivity>
-<Classfulness>0.0</Classfulness>
-<Classimportance>0.0</Classimportance>
-<Classinheritancerichness>191.714286</Classinheritancerichness>
-<Classreadability>0</Classreadability>
-<Classrelationshiprichness>0</Classrelationshiprichness>
-<Classchildrencount>7</Classchildrencount>
-<Classinstancescount>0</Classinstancescount>
-<Classpropertiescount>0</Classpropertiescount>
-</Class>
-<Class iri="https://bvco.ontology.link/BVCO_5ef5f201_0347_47f5_af45_d3cace7dc960">
-<Classconnectivity>0</Classconnectivity>
-<Classfulness>0.0</Classfulness>
-<Classimportance>0.0</Classimportance>
-<Classinheritancerichness>1342.0</Classinheritancerichness>
-<Classreadability>0</Classreadability>
-<Classrelationshiprichness>0</Classrelationshiprichness>
-<Classchildrencount>1</Classchildrencount>
-<Classinstancescount>0</Classinstancescount>
-<Classpropertiescount>0</Classpropertiescount>
-</Class>
-<Class iri="https://big-map.github.io/BattINFO/ontology/electrochemistry#EMMO_9da958fc_f76d_4654_8a78_99b5f98c118c">
-<Classconnectivity>0</Classconnectivity>
-<Classfulness>0.0</Classfulness>
-<Classimportance>0.0</Classimportance>
-<Classinheritancerichness>0.0</Classinheritancerichness>
-<Classreadability>0</Classreadability>
-<Classrelationshiprichness>0</Classrelationshiprichness>
-<Classchildrencount>0</Classchildrencount>
-<Classinstancescount>0</Classinstancescount>
-<Classpropertiescount>0</Classpropertiescount>
-</Class>
-<Class iri="https://bvco.ontology.link/BVCO_29fd86b7_3977_4fd2_ae8a_9a9208578e0b">
-<Classconnectivity>0</Classconnectivity>
-<Classfulness>0.0</Classfulness>
-<Classimportance>0.0</Classimportance>
-<Classinheritancerichness>223.666667</Classinheritancerichness>
-<Classreadability>0</Classreadability>
-<Classrelationshiprichness>0</Classrelationshiprichness>
-<Classchildrencount>6</Classchildrencount>
-<Classinstancescount>0</Classinstancescount>
-<Classpropertiescount>0</Classpropertiescount>
-</Class>
-<Class iri="https://bvco.ontology.link/BVCO_ae6e7bc6_4da3_4e01_9828_6b58d7b3b14d">
-<Classconnectivity>0</Classconnectivity>
-<Classfulness>0.0</Classfulness>
-<Classimportance>0.0</Classimportance>
-<Classinheritancerichness>0.0</Classinheritancerichness>
-<Classreadability>0</Classreadability>
-<Classrelationshiprichness>0</Classrelationshiprichness>
-<Classchildrencount>0</Classchildrencount>
-<Classinstancescount>0</Classinstancescount>
-<Classpropertiescount>0</Classpropertiescount>
-</Class>
-<Class iri="https://bvco.ontology.link/BVCO_52ab68fa_78e8_4947_92d9_106eff49940b">
-<Classconnectivity>0</Classconnectivity>
-<Classfulness>0.0</Classfulness>
-<Classimportance>0.0</Classimportance>
-<Classinheritancerichness>0.0</Classinheritancerichness>
-<Classreadability>1</Classreadability>
-<Classrelationshiprichness>0</Classrelationshiprichness>
-<Classchildrencount>0</Classchildrencount>
-<Classinstancescount>0</Classinstancescount>
-<Classpropertiescount>0</Classpropertiescount>
-</Class>
-<Class iri="https://bvco.ontology.link/BVCO_a1703e95_4fc4_4b92_a615_0c4ebb95de8f">
-<Classconnectivity>0</Classconnectivity>
-<Classfulness>0.0</Classfulness>
-<Classimportance>0.0</Classimportance>
-<Classinheritancerichness>0.0</Classinheritancerichness>
-<Classreadability>1</Classreadability>
-<Classrelationshiprichness>0</Classrelationshiprichness>
-<Classchildrencount>0</Classchildrencount>
-<Classinstancescount>0</Classinstancescount>
-<Classpropertiescount>0</Classpropertiescount>
-</Class>
-<Class iri="https://bvco.ontology.link/BVCO_e9d98522_9bf2_41dc_bc4c_6f10348b6a6e">
-<Classconnectivity>0</Classconnectivity>
-<Classfulness>0.0</Classfulness>
-<Classimportance>0.0</Classimportance>
-<Classinheritancerichness>0.0</Classinheritancerichness>
-<Classreadability>0</Classreadability>
-<Classrelationshiprichness>0</Classrelationshiprichness>
-<Classchildrencount>0</Classchildrencount>
-<Classinstancescount>0</Classinstancescount>
-<Classpropertiescount>0</Classpropertiescount>
-</Class>
-<Class iri="https://big-map.github.io/BattINFO/ontology/electrochemistry#EMMO_3b0b0d6e_8b0e_4491_885e_8421d3eb3b69">
-<Classconnectivity>0</Classconnectivity>
-<Classfulness>0.0</Classfulness>
-<Classimportance>0.0</Classimportance>
-<Classinheritancerichness>0.0</Classinheritancerichness>
-<Classreadability>0</Classreadability>
-<Classrelationshiprichness>0</Classrelationshiprichness>
-<Classchildrencount>0</Classchildrencount>
-<Classinstancescount>0</Classinstancescount>
-<Classpropertiescount>0</Classpropertiescount>
-</Class>
-<Class iri="https://big-map.github.io/BattINFO/ontology/electrochemistry#EMMO_670360fd_7cf9_4fe7_a9b5_c966f668ec88">
-<Classconnectivity>0</Classconnectivity>
-<Classfulness>0.0</Classfulness>
-<Classimportance>0.0</Classimportance>
-<Classinheritancerichness>0.0</Classinheritancerichness>
-<Classreadability>0</Classreadability>
-<Classrelationshiprichness>0</Classrelationshiprichness>
-<Classchildrencount>0</Classchildrencount>
-<Classinstancescount>0</Classinstancescount>
-<Classpropertiescount>0</Classpropertiescount>
-</Class>
-<Class iri="https://bvco.ontology.link/BVCO_1a46d865_0eae_45e9_bc45_379c0aec5af6">
-<Classconnectivity>0</Classconnectivity>
-<Classfulness>0.0</Classfulness>
-<Classimportance>0.0</Classimportance>
-<Classinheritancerichness>1342.0</Classinheritancerichness>
-<Classreadability>0</Classreadability>
-<Classrelationshiprichness>0</Classrelationshiprichness>
-<Classchildrencount>1</Classchildrencount>
-<Classinstancescount>0</Classinstancescount>
-<Classpropertiescount>0</Classpropertiescount>
-</Class>
-<Class iri="https://big-map.github.io/BattINFO/ontology/electrochemistry#EMMO_331e6cca_f260_4bf8_af55_35304fe1bbe0">
-<Classconnectivity>0</Classconnectivity>
-<Classfulness>0.0</Classfulness>
-<Classimportance>0.0</Classimportance>
-<Classinheritancerichness>0.0</Classinheritancerichness>
-<Classreadability>0</Classreadability>
-<Classrelationshiprichness>0</Classrelationshiprichness>
-<Classchildrencount>0</Classchildrencount>
-<Classinstancescount>0</Classinstancescount>
-<Classpropertiescount>0</Classpropertiescount>
-</Class>
-<Class iri="https://bvco.ontology.link/BVCO_d8492642_3761_4d84_b4d9_cb34ad7d368f">
-<Classconnectivity>0</Classconnectivity>
-<Classfulness>0.0</Classfulness>
-<Classimportance>0.0</Classimportance>
-<Classinheritancerichness>0.0</Classinheritancerichness>
-<Classreadability>0</Classreadability>
-<Classrelationshiprichness>0</Classrelationshiprichness>
-<Classchildrencount>0</Classchildrencount>
-<Classinstancescount>0</Classinstancescount>
-<Classpropertiescount>0</Classpropertiescount>
-</Class>
-<Class iri="https://bvco.ontology.link/BVCO_5c7a41ee_0947_4210_9994_17fc9695b3d1">
-<Classconnectivity>0</Classconnectivity>
-<Classfulness>0.0</Classfulness>
-<Classimportance>0.0</Classimportance>
-<Classinheritancerichness>0.0</Classinheritancerichness>
-<Classreadability>0</Classreadability>
-<Classrelationshiprichness>0</Classrelationshiprichness>
-<Classchildrencount>0</Classchildrencount>
-<Classinstancescount>0</Classinstancescount>
-<Classpropertiescount>0</Classpropertiescount>
-</Class>
-<Class iri="https://bvco.ontology.link/BVCO_abf969da_21b3_4aeb_9a91_77f316c0aeec">
-<Classconnectivity>0</Classconnectivity>
-<Classfulness>0.0</Classfulness>
-<Classimportance>0.0</Classimportance>
-<Classinheritancerichness>0.0</Classinheritancerichness>
-<Classreadability>1</Classreadability>
-<Classrelationshiprichness>0</Classrelationshiprichness>
-<Classchildrencount>0</Classchildrencount>
-<Classinstancescount>0</Classinstancescount>
-<Classpropertiescount>0</Classpropertiescount>
-</Class>
-<Class iri="https://bvco.ontology.link/BVCO_0a4c9fc1_e5c4_4e15_9d14_9e64092b2bb6">
-<Classconnectivity>0</Classconnectivity>
-<Classfulness>0.0</Classfulness>
-<Classimportance>0.0</Classimportance>
-<Classinheritancerichness>0.0</Classinheritancerichness>
-<Classreadability>0</Classreadability>
-<Classrelationshiprichness>0</Classrelationshiprichness>
-<Classchildrencount>0</Classchildrencount>
-<Classinstancescount>0</Classinstancescount>
-<Classpropertiescount>0</Classpropertiescount>
-</Class>
-<Class iri="https://bvco.ontology.link/BVCO_a44d7752_c6db_4271_9dcd_882c0ef4c988">
-<Classconnectivity>0</Classconnectivity>
-<Classfulness>0.0</Classfulness>
-<Classimportance>0.0</Classimportance>
-<Classinheritancerichness>0.0</Classinheritancerichness>
-<Classreadability>0</Classreadability>
-<Classrelationshiprichness>0</Classrelationshiprichness>
-<Classchildrencount>0</Classchildrencount>
-<Classinstancescount>0</Classinstancescount>
-<Classpropertiescount>0</Classpropertiescount>
-</Class>
-<Class iri="https://bvco.ontology.link/BVCO_63bfada0_9872_4d1c_a005_34adfed849c3">
-<Classconnectivity>0</Classconnectivity>
-<Classfulness>0.0</Classfulness>
-<Classimportance>0.0</Classimportance>
-<Classinheritancerichness>447.333333</Classinheritancerichness>
-<Classreadability>0</Classreadability>
-<Classrelationshiprichness>0</Classrelationshiprichness>
-<Classchildrencount>3</Classchildrencount>
-<Classinstancescount>0</Classinstancescount>
-<Classpropertiescount>0</Classpropertiescount>
-</Class>
-<Class iri="https://bvco.ontology.link/BVCO_7e3e13ab_617e_41f8_94bf_134f50d34292">
-<Classconnectivity>0</Classconnectivity>
-<Classfulness>0.0</Classfulness>
-<Classimportance>0.0</Classimportance>
-<Classinheritancerichness>0.0</Classinheritancerichness>
-<Classreadability>0</Classreadability>
-<Classrelationshiprichness>0</Classrelationshiprichness>
-<Classchildrencount>0</Classchildrencount>
-<Classinstancescount>0</Classinstancescount>
-<Classpropertiescount>0</Classpropertiescount>
-</Class>
-<Class iri="https://bvco.ontology.link/BVCO_3f79367b_9fb5_4d39_887d_7a99667547bb">
-<Classconnectivity>0</Classconnectivity>
-<Classfulness>0.0</Classfulness>
-<Classimportance>0.0</Classimportance>
-<Classinheritancerichness>0.0</Classinheritancerichness>
-<Classreadability>0</Classreadability>
-<Classrelationshiprichness>0</Classrelationshiprichness>
-<Classchildrencount>0</Classchildrencount>
-<Classinstancescount>0</Classinstancescount>
-<Classpropertiescount>0</Classpropertiescount>
-</Class>
-<Class iri="http://emmo.info/emmo#EMMO_5b2222df_4da6_442f_8244_96e9e45887d1">
-<Classconnectivity>0</Classconnectivity>
-<Classfulness>0.0</Classfulness>
-<Classimportance>0.0</Classimportance>
-<Classinheritancerichness>0.0</Classinheritancerichness>
-<Classreadability>0</Classreadability>
-<Classrelationshiprichness>0</Classrelationshiprichness>
-<Classchildrencount>0</Classchildrencount>
-<Classinstancescount>0</Classinstancescount>
-<Classpropertiescount>0</Classpropertiescount>
-</Class>
-<Class iri="https://gpo.ontology.link/GPO_aa602472_ba16_4375_b8b3_868f84324ec7">
-<Classconnectivity>0</Classconnectivity>
-<Classfulness>0.0</Classfulness>
-<Classimportance>0.0</Classimportance>
-<Classinheritancerichness>447.333333</Classinheritancerichness>
-<Classreadability>0</Classreadability>
-<Classrelationshiprichness>0</Classrelationshiprichness>
-<Classchildrencount>3</Classchildrencount>
-<Classinstancescount>0</Classinstancescount>
-<Classpropertiescount>0</Classpropertiescount>
-</Class>
-<Class iri="https://gpo.ontology.link/GPO_2680e8c9_b5d0_4d50_9a33_52e4270669d8">
-<Classconnectivity>0</Classconnectivity>
-<Classfulness>0.0</Classfulness>
-<Classimportance>0.0</Classimportance>
-<Classinheritancerichness>26.313725</Classinheritancerichness>
-<Classreadability>0</Classreadability>
-<Classrelationshiprichness>0</Classrelationshiprichness>
-<Classchildrencount>51</Classchildrencount>
-<Classinstancescount>0</Classinstancescount>
-<Classpropertiescount>0</Classpropertiescount>
-</Class>
-<Class iri="https://bvco.ontology.link/BVCO_c30690e7_35fe_4b4f_a0d2_02a2f1eac6f0">
-<Classconnectivity>0</Classconnectivity>
-<Classfulness>0.0</Classfulness>
-<Classimportance>0.0</Classimportance>
-<Classinheritancerichness>268.4</Classinheritancerichness>
-<Classreadability>0</Classreadability>
-<Classrelationshiprichness>0</Classrelationshiprichness>
-<Classchildrencount>5</Classchildrencount>
-<Classinstancescount>0</Classinstancescount>
-<Classpropertiescount>0</Classpropertiescount>
-</Class>
-<Class iri="https://bvco.ontology.link/BVCO_460ffa05_c39d_4059_98b6_babf112f152b">
-<Classconnectivity>0</Classconnectivity>
-<Classfulness>0.0</Classfulness>
-<Classimportance>0.0</Classimportance>
-<Classinheritancerichness>0.0</Classinheritancerichness>
-<Classreadability>0</Classreadability>
-<Classrelationshiprichness>0</Classrelationshiprichness>
-<Classchildrencount>0</Classchildrencount>
-<Classinstancescount>0</Classinstancescount>
-<Classpropertiescount>0</Classpropertiescount>
-</Class>
-<Class iri="https://bvco.ontology.link/BVCO_14f7394f_0474_44fe_96eb_426e9b94a279">
-<Classconnectivity>0</Classconnectivity>
-<Classfulness>0.0</Classfulness>
-<Classimportance>0.0</Classimportance>
-<Classinheritancerichness>0.0</Classinheritancerichness>
-<Classreadability>0</Classreadability>
-<Classrelationshiprichness>0</Classrelationshiprichness>
-<Classchildrencount>0</Classchildrencount>
-<Classinstancescount>0</Classinstancescount>
-<Classpropertiescount>0</Classpropertiescount>
-</Class>
-<Class iri="https://bvco.ontology.link/BVCO_b14a9d69_d2a3_4d76_94b5_4f0225b557fc">
-<Classconnectivity>0</Classconnectivity>
-<Classfulness>0.0</Classfulness>
-<Classimportance>0.0</Classimportance>
-<Classinheritancerichness>0.0</Classinheritancerichness>
-<Classreadability>0</Classreadability>
-<Classrelationshiprichness>0</Classrelationshiprichness>
-<Classchildrencount>0</Classchildrencount>
-<Classinstancescount>0</Classinstancescount>
-<Classpropertiescount>0</Classpropertiescount>
-</Class>
-<Class iri="https://bvco.ontology.link/BVCO_d63c8f09_2b26_4e4e_9ee1_3a30ec5a8c93">
-<Classconnectivity>0</Classconnectivity>
-<Classfulness>0.0</Classfulness>
-<Classimportance>0.0</Classimportance>
-<Classinheritancerichness>0.0</Classinheritancerichness>
-<Classreadability>1</Classreadability>
-<Classrelationshiprichness>0</Classrelationshiprichness>
-<Classchildrencount>0</Classchildrencount>
-<Classinstancescount>0</Classinstancescount>
-<Classpropertiescount>0</Classpropertiescount>
-</Class>
-<Class iri="http://emmo.info/emmo#EMMO_a2b006f2_bbfd_4dba_bcaa_3fca20cd6be1">
-<Classconnectivity>0</Classconnectivity>
-<Classfulness>0.0</Classfulness>
-<Classimportance>0.0</Classimportance>
-<Classinheritancerichness>1342.0</Classinheritancerichness>
-<Classreadability>0</Classreadability>
-<Classrelationshiprichness>0</Classrelationshiprichness>
-<Classchildrencount>1</Classchildrencount>
-<Classinstancescount>0</Classinstancescount>
-<Classpropertiescount>0</Classpropertiescount>
-</Class>
-<Class iri="https://bvco.ontology.link/BVCO_a21be399_113f_40bf_8497_2d199785c5b3">
-<Classconnectivity>0</Classconnectivity>
-<Classfulness>0.0</Classfulness>
-<Classimportance>0.0</Classimportance>
-<Classinheritancerichness>0.0</Classinheritancerichness>
-<Classreadability>0</Classreadability>
-<Classrelationshiprichness>0</Classrelationshiprichness>
-<Classchildrencount>0</Classchildrencount>
-<Classinstancescount>0</Classinstancescount>
-<Classpropertiescount>0</Classpropertiescount>
-</Class>
-<Class iri="https://bvco.ontology.link/BVCO_3cdb3b65_3628_4a7b_84ec_bec843612cf4">
-<Classconnectivity>0</Classconnectivity>
-<Classfulness>0.0</Classfulness>
-<Classimportance>0.0</Classimportance>
-<Classinheritancerichness>0.0</Classinheritancerichness>
-<Classreadability>0</Classreadability>
-<Classrelationshiprichness>0</Classrelationshiprichness>
-<Classchildrencount>0</Classchildrencount>
-<Classinstancescount>0</Classinstancescount>
-<Classpropertiescount>0</Classpropertiescount>
-</Class>
-<Class iri="https://bvco.ontology.link/BVCO_d8dbd8a5_cb8e_455a_ad78_720dd9713303">
-<Classconnectivity>0</Classconnectivity>
-<Classfulness>0.0</Classfulness>
-<Classimportance>0.0</Classimportance>
-<Classinheritancerichness>0.0</Classinheritancerichness>
-<Classreadability>0</Classreadability>
-<Classrelationshiprichness>0</Classrelationshiprichness>
-<Classchildrencount>0</Classchildrencount>
-<Classinstancescount>0</Classinstancescount>
-<Classpropertiescount>0</Classpropertiescount>
-</Class>
-<Class iri="http://emmo.info/emmo#EMMO_3967de47_343f_4bab_aada_b4bec73d11da">
-<Classconnectivity>0</Classconnectivity>
-<Classfulness>0.0</Classfulness>
-<Classimportance>0.0</Classimportance>
-<Classinheritancerichness>1342.0</Classinheritancerichness>
-<Classreadability>0</Classreadability>
-<Classrelationshiprichness>0</Classrelationshiprichness>
-<Classchildrencount>1</Classchildrencount>
-<Classinstancescount>0</Classinstancescount>
-<Classpropertiescount>0</Classpropertiescount>
-</Class>
-<Class iri="http://emmo.info/emmo#EMMO_68390bfb_e307_479d_8f78_d66d8773cb1d">
-<Classconnectivity>0</Classconnectivity>
-<Classfulness>0.0</Classfulness>
-<Classimportance>0.0</Classimportance>
-<Classinheritancerichness>111.833333</Classinheritancerichness>
-<Classreadability>0</Classreadability>
-<Classrelationshiprichness>0</Classrelationshiprichness>
-<Classchildrencount>12</Classchildrencount>
-<Classinstancescount>0</Classinstancescount>
-<Classpropertiescount>0</Classpropertiescount>
-</Class>
-<Class iri="https://bvco.ontology.link/BVCO_695d9aec_02ee_4fcc_b665_5d80e6219a05">
-<Classconnectivity>0</Classconnectivity>
-<Classfulness>0.0</Classfulness>
-<Classimportance>0.0</Classimportance>
-<Classinheritancerichness>0.0</Classinheritancerichness>
-<Classreadability>1</Classreadability>
-<Classrelationshiprichness>0</Classrelationshiprichness>
-<Classchildrencount>0</Classchildrencount>
-<Classinstancescount>0</Classinstancescount>
-<Classpropertiescount>0</Classpropertiescount>
-</Class>
-<Class iri="https://bvco.ontology.link/BVCO_a6a786aa_0cf9_4748_ab36_825044cec043">
-<Classconnectivity>0</Classconnectivity>
-<Classfulness>0.0</Classfulness>
-<Classimportance>0.0</Classimportance>
-<Classinheritancerichness>0.0</Classinheritancerichness>
-<Classreadability>0</Classreadability>
-<Classrelationshiprichness>0</Classrelationshiprichness>
-<Classchildrencount>0</Classchildrencount>
-<Classinstancescount>0</Classinstancescount>
-<Classpropertiescount>0</Classpropertiescount>
-</Class>
-<Class iri="https://bvco.ontology.link/BVCO_df812b11_dac3_4483_a288_0ad49ad56a34">
-<Classconnectivity>0</Classconnectivity>
-<Classfulness>0.0</Classfulness>
-<Classimportance>0.0</Classimportance>
-<Classinheritancerichness>0.0</Classinheritancerichness>
-<Classreadability>0</Classreadability>
-<Classrelationshiprichness>0</Classrelationshiprichness>
-<Classchildrencount>0</Classchildrencount>
-<Classinstancescount>0</Classinstancescount>
-<Classpropertiescount>0</Classpropertiescount>
-</Class>
-<Class iri="https://bvco.ontology.link/BVCO_18cd985e_49c4_4dd5_996a_73b730fcccda">
-<Classconnectivity>0</Classconnectivity>
-<Classfulness>0.0</Classfulness>
-<Classimportance>0.0</Classimportance>
-<Classinheritancerichness>1342.0</Classinheritancerichness>
-<Classreadability>1</Classreadability>
-<Classrelationshiprichness>0</Classrelationshiprichness>
-<Classchildrencount>1</Classchildrencount>
-<Classinstancescount>0</Classinstancescount>
-<Classpropertiescount>0</Classpropertiescount>
-</Class>
-<Class iri="https://bvco.ontology.link/BVCO_e180eaa0_f66f_4b49_8370_ef574d5a77dc">
-<Classconnectivity>0</Classconnectivity>
-<Classfulness>0.0</Classfulness>
-<Classimportance>0.0</Classimportance>
-<Classinheritancerichness>447.333333</Classinheritancerichness>
-<Classreadability>0</Classreadability>
-<Classrelationshiprichness>0</Classrelationshiprichness>
-<Classchildrencount>3</Classchildrencount>
-<Classinstancescount>0</Classinstancescount>
-<Classpropertiescount>0</Classpropertiescount>
-</Class>
-<Class iri="https://bvco.ontology.link/BVCO_c0688b2e_bc3d_4a4b_bf54_3779204f4c37">
-<Classconnectivity>0</Classconnectivity>
-<Classfulness>0.0</Classfulness>
-<Classimportance>0.0</Classimportance>
-<Classinheritancerichness>0.0</Classinheritancerichness>
-<Classreadability>0</Classreadability>
-<Classrelationshiprichness>0</Classrelationshiprichness>
-<Classchildrencount>0</Classchildrencount>
-<Classinstancescount>0</Classinstancescount>
-<Classpropertiescount>0</Classpropertiescount>
-</Class>
-<Class iri="https://bvco.ontology.link/BVCO_813609a2_35e3_4d85_b902_5f1aebb97ab0">
-<Classconnectivity>0</Classconnectivity>
-<Classfulness>0.0</Classfulness>
-<Classimportance>0.0</Classimportance>
-<Classinheritancerichness>671.0</Classinheritancerichness>
-<Classreadability>0</Classreadability>
-<Classrelationshiprichness>0</Classrelationshiprichness>
-<Classchildrencount>2</Classchildrencount>
-<Classinstancescount>0</Classinstancescount>
-<Classpropertiescount>0</Classpropertiescount>
-</Class>
-<Class iri="https://bvco.ontology.link/BVCO_82e61ef5_13ce_4c7d_9e66_9bfe740eb82d">
-<Classconnectivity>0</Classconnectivity>
-<Classfulness>0.0</Classfulness>
-<Classimportance>0.0</Classimportance>
-<Classinheritancerichness>0.0</Classinheritancerichness>
-<Classreadability>1</Classreadability>
-<Classrelationshiprichness>0</Classrelationshiprichness>
-<Classchildrencount>0</Classchildrencount>
-<Classinstancescount>0</Classinstancescount>
-<Classpropertiescount>0</Classpropertiescount>
-</Class>
-<Class iri="https://bvco.ontology.link/BVCO_f25eeb2f_54b0_4c4a_ada8_c7e53b11d49e">
-<Classconnectivity>0</Classconnectivity>
-<Classfulness>0.0</Classfulness>
-<Classimportance>0.0</Classimportance>
-<Classinheritancerichness>122.0</Classinheritancerichness>
-<Classreadability>1</Classreadability>
-<Classrelationshiprichness>0</Classrelationshiprichness>
-<Classchildrencount>11</Classchildrencount>
-<Classinstancescount>0</Classinstancescount>
-<Classpropertiescount>0</Classpropertiescount>
-</Class>
-<Class iri="https://bvco.ontology.link/BVCO_1f4d6016_890f_4e51_a2d0_1a2d0978f689">
-<Classconnectivity>0</Classconnectivity>
-<Classfulness>0.0</Classfulness>
-<Classimportance>0.0</Classimportance>
-<Classinheritancerichness>0.0</Classinheritancerichness>
-<Classreadability>0</Classreadability>
-<Classrelationshiprichness>0</Classrelationshiprichness>
-<Classchildrencount>0</Classchildrencount>
-<Classinstancescount>0</Classinstancescount>
-<Classpropertiescount>0</Classpropertiescount>
-</Class>
-<Class iri="http://emmo.info/emmo#EMMO_71d1c8f0_c6e3_44b5_a4b6_1b74ff35698a">
-<Classconnectivity>0</Classconnectivity>
-<Classfulness>0.0</Classfulness>
-<Classimportance>0.0</Classimportance>
-<Classinheritancerichness>0.0</Classinheritancerichness>
-<Classreadability>0</Classreadability>
-<Classrelationshiprichness>0</Classrelationshiprichness>
-<Classchildrencount>0</Classchildrencount>
-<Classinstancescount>0</Classinstancescount>
-<Classpropertiescount>0</Classpropertiescount>
-</Class>
-<Class iri="https://bvco.ontology.link/BVCO_28f1502b_14d2_436d_a294_bf372a13a39f">
-<Classconnectivity>0</Classconnectivity>
-<Classfulness>0.0</Classfulness>
-<Classimportance>0.0</Classimportance>
-<Classinheritancerichness>0.0</Classinheritancerichness>
-<Classreadability>0</Classreadability>
-<Classrelationshiprichness>0</Classrelationshiprichness>
-<Classchildrencount>0</Classchildrencount>
-<Classinstancescount>0</Classinstancescount>
-<Classpropertiescount>0</Classpropertiescount>
-</Class>
-<Class iri="https://bvco.ontology.link/BVCO_d5b065df_dae3_4416_beb8_c9eaa6a97a9a">
-<Classconnectivity>0</Classconnectivity>
-<Classfulness>0.0</Classfulness>
-<Classimportance>0.0</Classimportance>
-<Classinheritancerichness>0.0</Classinheritancerichness>
-<Classreadability>0</Classreadability>
-<Classrelationshiprichness>0</Classrelationshiprichness>
-<Classchildrencount>0</Classchildrencount>
-<Classinstancescount>0</Classinstancescount>
-<Classpropertiescount>0</Classpropertiescount>
-</Class>
-<Class iri="https://bvco.ontology.link/BVCO_4a2286b3_d823_4705_b9e4_302b85ab6657">
-<Classconnectivity>0</Classconnectivity>
-<Classfulness>0.0</Classfulness>
-<Classimportance>0.0</Classimportance>
-<Classinheritancerichness>0.0</Classinheritancerichness>
-<Classreadability>1</Classreadability>
-<Classrelationshiprichness>0</Classrelationshiprichness>
-<Classchildrencount>0</Classchildrencount>
-<Classinstancescount>0</Classinstancescount>
-<Classpropertiescount>0</Classpropertiescount>
-</Class>
-<Class iri="https://bvco.ontology.link/BVCO_82f0ea86_5e2b_47c0_977a_d610c6f1f836">
-<Classconnectivity>0</Classconnectivity>
-<Classfulness>0.0</Classfulness>
-<Classimportance>0.0</Classimportance>
-<Classinheritancerichness>29.173913</Classinheritancerichness>
-<Classreadability>0</Classreadability>
-<Classrelationshiprichness>0</Classrelationshiprichness>
-<Classchildrencount>46</Classchildrencount>
-<Classinstancescount>0</Classinstancescount>
-<Classpropertiescount>0</Classpropertiescount>
-</Class>
-<Class iri="https://bvco.ontology.link/BVCO_c53b0482_0153_4695_9cf4_741fe1685933">
-<Classconnectivity>0</Classconnectivity>
-<Classfulness>0.0</Classfulness>
-<Classimportance>0.0</Classimportance>
-<Classinheritancerichness>89.466667</Classinheritancerichness>
-<Classreadability>0</Classreadability>
-<Classrelationshiprichness>0</Classrelationshiprichness>
-<Classchildrencount>15</Classchildrencount>
-<Classinstancescount>0</Classinstancescount>
-<Classpropertiescount>0</Classpropertiescount>
-</Class>
-<Class iri="https://bvco.ontology.link/BVCO_7ea8dd89_4576_4ce4_b045_8b2d0c2e0b2d">
-<Classconnectivity>0</Classconnectivity>
-<Classfulness>0.0</Classfulness>
-<Classimportance>0.0</Classimportance>
-<Classinheritancerichness>0.0</Classinheritancerichness>
-<Classreadability>1</Classreadability>
-<Classrelationshiprichness>0</Classrelationshiprichness>
-<Classchildrencount>0</Classchildrencount>
-<Classinstancescount>0</Classinstancescount>
-<Classpropertiescount>0</Classpropertiescount>
-</Class>
-<Class iri="https://bvco.ontology.link/BVCO_925d92f8_5a11_4434_a9ab_a2541ca34d53">
-<Classconnectivity>0</Classconnectivity>
-<Classfulness>0.0</Classfulness>
-<Classimportance>0.0</Classimportance>
-<Classinheritancerichness>1342.0</Classinheritancerichness>
-<Classreadability>0</Classreadability>
-<Classrelationshiprichness>0</Classrelationshiprichness>
-<Classchildrencount>1</Classchildrencount>
-<Classinstancescount>0</Classinstancescount>
-<Classpropertiescount>0</Classpropertiescount>
-</Class>
-<Class iri="https://bvco.ontology.link/BVCO_55eb9c4b_3fe3_413c_bf18_3cf3b50281f7">
-<Classconnectivity>0</Classconnectivity>
-<Classfulness>0.0</Classfulness>
-<Classimportance>0.0</Classimportance>
-<Classinheritancerichness>223.666667</Classinheritancerichness>
-<Classreadability>1</Classreadability>
-<Classrelationshiprichness>0</Classrelationshiprichness>
-<Classchildrencount>6</Classchildrencount>
-<Classinstancescount>0</Classinstancescount>
-<Classpropertiescount>0</Classpropertiescount>
-</Class>
-<Class iri="https://bvco.ontology.link/BVCO_1c325086_be16_4556_9d2d_222cccf6a4b7">
-<Classconnectivity>0</Classconnectivity>
-<Classfulness>0.0</Classfulness>
-<Classimportance>0.0</Classimportance>
-<Classinheritancerichness>223.666667</Classinheritancerichness>
-<Classreadability>0</Classreadability>
-<Classrelationshiprichness>0</Classrelationshiprichness>
-<Classchildrencount>6</Classchildrencount>
-<Classinstancescount>0</Classinstancescount>
-<Classpropertiescount>0</Classpropertiescount>
-</Class>
-<Class iri="https://big-map.github.io/BattINFO/ontology/electrochemistry#EMMO_757eae08_4d43_42d4_8b4e_8a0bfd2f9a1c">
-<Classconnectivity>0</Classconnectivity>
-<Classfulness>0.0</Classfulness>
-<Classimportance>0.0</Classimportance>
-<Classinheritancerichness>0.0</Classinheritancerichness>
-<Classreadability>0</Classreadability>
-<Classrelationshiprichness>0</Classrelationshiprichness>
-<Classchildrencount>0</Classchildrencount>
-<Classinstancescount>0</Classinstancescount>
-<Classpropertiescount>0</Classpropertiescount>
-</Class>
-<Class iri="https://bvco.ontology.link/BVCO_68d629c8_6da0_4ac3_b5b5_bffb827ec8ae">
-<Classconnectivity>0</Classconnectivity>
-<Classfulness>0.0</Classfulness>
-<Classimportance>0.0</Classimportance>
-<Classinheritancerichness>0.0</Classinheritancerichness>
-<Classreadability>0</Classreadability>
-<Classrelationshiprichness>0</Classrelationshiprichness>
-<Classchildrencount>0</Classchildrencount>
-<Classinstancescount>0</Classinstancescount>
-<Classpropertiescount>0</Classpropertiescount>
-</Class>
-<Class iri="https://bvco.ontology.link/BVCO_ae621373_d7f6_4d65_85e2_62c1052c4207">
-<Classconnectivity>0</Classconnectivity>
-<Classfulness>0.0</Classfulness>
-<Classimportance>0.0</Classimportance>
-<Classinheritancerichness>671.0</Classinheritancerichness>
-<Classreadability>0</Classreadability>
-<Classrelationshiprichness>0</Classrelationshiprichness>
-<Classchildrencount>2</Classchildrencount>
-<Classinstancescount>0</Classinstancescount>
-<Classpropertiescount>0</Classpropertiescount>
-</Class>
-<Class iri="https://gpo.ontology.link/GPO_3af46bf2_9857_4102_a183_ab08d7cd6523">
-<Classconnectivity>0</Classconnectivity>
-<Classfulness>0.0</Classfulness>
-<Classimportance>0.0</Classimportance>
-<Classinheritancerichness>1342.0</Classinheritancerichness>
-<Classreadability>0</Classreadability>
-<Classrelationshiprichness>0</Classrelationshiprichness>
-<Classchildrencount>1</Classchildrencount>
-<Classinstancescount>0</Classinstancescount>
-<Classpropertiescount>0</Classpropertiescount>
-</Class>
-<Class iri="https://bvco.ontology.link/BVCO_9c8c538f_f67a_4e01_9bd4_1448935a7f46">
-<Classconnectivity>0</Classconnectivity>
-<Classfulness>0.0</Classfulness>
-<Classimportance>0.0</Classimportance>
-<Classinheritancerichness>0.0</Classinheritancerichness>
-<Classreadability>1</Classreadability>
-<Classrelationshiprichness>0</Classrelationshiprichness>
-<Classchildrencount>0</Classchildrencount>
-<Classinstancescount>0</Classinstancescount>
-<Classpropertiescount>0</Classpropertiescount>
-</Class>
-<Class iri="https://gpo.ontology.link/GPO_a1839bf6_9b67_48ca_a5a4_069b6e7fc0e9">
-<Classconnectivity>0</Classconnectivity>
-<Classfulness>0.0</Classfulness>
-<Classimportance>0.0</Classimportance>
-<Classinheritancerichness>191.714286</Classinheritancerichness>
-<Classreadability>0</Classreadability>
-<Classrelationshiprichness>0</Classrelationshiprichness>
-<Classchildrencount>7</Classchildrencount>
-<Classinstancescount>0</Classinstancescount>
-<Classpropertiescount>0</Classpropertiescount>
-</Class>
-<Class iri="https://bvco.ontology.link/BVCO_6034399e_63ab_41c2_9101_1d5883b384b3">
-<Classconnectivity>0</Classconnectivity>
-<Classfulness>0.0</Classfulness>
-<Classimportance>0.0</Classimportance>
-<Classinheritancerichness>0.0</Classinheritancerichness>
-<Classreadability>1</Classreadability>
-<Classrelationshiprichness>0</Classrelationshiprichness>
-<Classchildrencount>0</Classchildrencount>
-<Classinstancescount>0</Classinstancescount>
-<Classpropertiescount>0</Classpropertiescount>
-</Class>
-<Class iri="https://gpo.ontology.link/GPO_70b20870_3beb_414a_b91f_2b6d234fda1a">
-<Classconnectivity>0</Classconnectivity>
-<Classfulness>0.0</Classfulness>
-<Classimportance>0.0</Classimportance>
-<Classinheritancerichness>671.0</Classinheritancerichness>
-<Classreadability>0</Classreadability>
-<Classrelationshiprichness>0</Classrelationshiprichness>
-<Classchildrencount>2</Classchildrencount>
-<Classinstancescount>0</Classinstancescount>
-<Classpropertiescount>0</Classpropertiescount>
-</Class>
-<Class iri="http://emmo.info/emmo#EMMO_7509da43_56b1_4d7f_887a_65d1663df4ba">
-<Classconnectivity>0</Classconnectivity>
-<Classfulness>0.0</Classfulness>
-<Classimportance>0.0</Classimportance>
-<Classinheritancerichness>1342.0</Classinheritancerichness>
-<Classreadability>0</Classreadability>
-<Classrelationshiprichness>0</Classrelationshiprichness>
-<Classchildrencount>1</Classchildrencount>
-<Classinstancescount>0</Classinstancescount>
-<Classpropertiescount>0</Classpropertiescount>
-</Class>
-<Class iri="https://bvco.ontology.link/BVCO_6adf6955_529b_4ac4_889d_e2aaf56a49a1">
-<Classconnectivity>0</Classconnectivity>
-<Classfulness>0.0</Classfulness>
-<Classimportance>0.0</Classimportance>
-<Classinheritancerichness>1342.0</Classinheritancerichness>
-<Classreadability>0</Classreadability>
-<Classrelationshiprichness>0</Classrelationshiprichness>
-<Classchildrencount>1</Classchildrencount>
-<Classinstancescount>0</Classinstancescount>
-<Classpropertiescount>0</Classpropertiescount>
-</Class>
-<Class iri="https://bvco.ontology.link/BVCO_f0e29a4f_d749_436c_9a89_ae0ca1cd305c">
-<Classconnectivity>0</Classconnectivity>
-<Classfulness>0.0</Classfulness>
-<Classimportance>0.0</Classimportance>
-<Classinheritancerichness>0.0</Classinheritancerichness>
-<Classreadability>1</Classreadability>
-<Classrelationshiprichness>0</Classrelationshiprichness>
-<Classchildrencount>0</Classchildrencount>
-<Classinstancescount>0</Classinstancescount>
-<Classpropertiescount>0</Classpropertiescount>
-</Class>
-<Class iri="https://bvco.ontology.link/BVCO_3dd86b1f_2c1d_4267_9d48_12d868497179">
-<Classconnectivity>0</Classconnectivity>
-<Classfulness>0.0</Classfulness>
-<Classimportance>0.0</Classimportance>
-<Classinheritancerichness>0.0</Classinheritancerichness>
-<Classreadability>0</Classreadability>
-<Classrelationshiprichness>0</Classrelationshiprichness>
-<Classchildrencount>0</Classchildrencount>
-<Classinstancescount>0</Classinstancescount>
-<Classpropertiescount>0</Classpropertiescount>
-</Class>
-<Class iri="https://bvco.ontology.link/BVCO_3a7bf591_548a_42d3_bcae_59a6a672b9c8">
-<Classconnectivity>0</Classconnectivity>
-<Classfulness>0.0</Classfulness>
-<Classimportance>0.0</Classimportance>
-<Classinheritancerichness>0.0</Classinheritancerichness>
-<Classreadability>0</Classreadability>
-<Classrelationshiprichness>0</Classrelationshiprichness>
-<Classchildrencount>0</Classchildrencount>
-<Classinstancescount>0</Classinstancescount>
-<Classpropertiescount>0</Classpropertiescount>
-</Class>
-<Class iri="http://emmo.info/emmo#EMMO_b21a56ed_f969_4612_a6ec_cb7766f7f31d">
-<Classconnectivity>0</Classconnectivity>
-<Classfulness>0.0</Classfulness>
-<Classimportance>0.0</Classimportance>
-<Classinheritancerichness>0.0</Classinheritancerichness>
-<Classreadability>0</Classreadability>
-<Classrelationshiprichness>0</Classrelationshiprichness>
-<Classchildrencount>0</Classchildrencount>
-<Classinstancescount>0</Classinstancescount>
-<Classpropertiescount>0</Classpropertiescount>
-</Class>
-<Class iri="https://bvco.ontology.link/BVCO_1f5c3335_565a_4feb_b0aa_024962850b5d">
-<Classconnectivity>0</Classconnectivity>
-<Classfulness>0.0</Classfulness>
-<Classimportance>0.0</Classimportance>
-<Classinheritancerichness>0.0</Classinheritancerichness>
-<Classreadability>0</Classreadability>
-<Classrelationshiprichness>0</Classrelationshiprichness>
-<Classchildrencount>0</Classchildrencount>
-<Classinstancescount>0</Classinstancescount>
-<Classpropertiescount>0</Classpropertiescount>
-</Class>
-<Class iri="https://bvco.ontology.link/BVCO_4d1fb581_9d54_4014_891f_9f10d8a24475">
-<Classconnectivity>0</Classconnectivity>
-<Classfulness>0.0</Classfulness>
-<Classimportance>0.0</Classimportance>
-<Classinheritancerichness>0.0</Classinheritancerichness>
-<Classreadability>0</Classreadability>
-<Classrelationshiprichness>0</Classrelationshiprichness>
-<Classchildrencount>0</Classchildrencount>
-<Classinstancescount>0</Classinstancescount>
-<Classpropertiescount>0</Classpropertiescount>
-</Class>
-<Class iri="https://bvco.ontology.link/BVCO_b0ac1214_0351_47fe_8da2_c058fffd3238">
-<Classconnectivity>0</Classconnectivity>
-<Classfulness>0.0</Classfulness>
-<Classimportance>0.0</Classimportance>
-<Classinheritancerichness>0.0</Classinheritancerichness>
-<Classreadability>1</Classreadability>
-<Classrelationshiprichness>0</Classrelationshiprichness>
-<Classchildrencount>0</Classchildrencount>
-<Classinstancescount>0</Classinstancescount>
-<Classpropertiescount>0</Classpropertiescount>
-</Class>
-<Class iri="https://bvco.ontology.link/BVCO_e19c619b_a6df_4c77_8bbc_574f51682280">
-<Classconnectivity>0</Classconnectivity>
-<Classfulness>0.0</Classfulness>
-<Classimportance>0.0</Classimportance>
-<Classinheritancerichness>0.0</Classinheritancerichness>
-<Classreadability>0</Classreadability>
-<Classrelationshiprichness>0</Classrelationshiprichness>
-<Classchildrencount>0</Classchildrencount>
-<Classinstancescount>0</Classinstancescount>
-<Classpropertiescount>0</Classpropertiescount>
-</Class>
-<Class iri="https://bvco.ontology.link/BVCO_81ac30cc_b8b9_4cd6_9f41_4d32d1d9097e">
-<Classconnectivity>0</Classconnectivity>
-<Classfulness>0.0</Classfulness>
-<Classimportance>0.0</Classimportance>
-<Classinheritancerichness>0.0</Classinheritancerichness>
-<Classreadability>1</Classreadability>
-<Classrelationshiprichness>0</Classrelationshiprichness>
-<Classchildrencount>0</Classchildrencount>
-<Classinstancescount>0</Classinstancescount>
-<Classpropertiescount>0</Classpropertiescount>
-</Class>
-<Class iri="https://bvco.ontology.link/BVCO_38ce2e41_8b62_4851_a5ac_47d77a6ffa3c">
-<Classconnectivity>0</Classconnectivity>
-<Classfulness>0.0</Classfulness>
-<Classimportance>0.0</Classimportance>
-<Classinheritancerichness>95.857143</Classinheritancerichness>
-<Classreadability>0</Classreadability>
-<Classrelationshiprichness>0</Classrelationshiprichness>
-<Classchildrencount>14</Classchildrencount>
-<Classinstancescount>0</Classinstancescount>
-<Classpropertiescount>0</Classpropertiescount>
-</Class>
-<Class iri="https://bvco.ontology.link/BVCO_97409fc6_e62e_4c4f_a1ca_67c41e5dd263">
-<Classconnectivity>0</Classconnectivity>
-<Classfulness>0.0</Classfulness>
-<Classimportance>0.0</Classimportance>
-<Classinheritancerichness>0.0</Classinheritancerichness>
-<Classreadability>0</Classreadability>
-<Classrelationshiprichness>0</Classrelationshiprichness>
-<Classchildrencount>0</Classchildrencount>
-<Classinstancescount>0</Classinstancescount>
-<Classpropertiescount>0</Classpropertiescount>
-</Class>
-<Class iri="https://gpo.ontology.link/GPO_6167332b_8416_46c9_90d1_49ee7416ae24">
-<Classconnectivity>0</Classconnectivity>
-<Classfulness>0.0</Classfulness>
-<Classimportance>0.0</Classimportance>
-<Classinheritancerichness>1342.0</Classinheritancerichness>
-<Classreadability>0</Classreadability>
-<Classrelationshiprichness>0</Classrelationshiprichness>
-<Classchildrencount>1</Classchildrencount>
-<Classinstancescount>0</Classinstancescount>
-<Classpropertiescount>0</Classpropertiescount>
-</Class>
-<Class iri="https://gpo.ontology.link/GPO_f97d2d4d_86db_4fd5_9e35_5bb363cd91c9">
-<Classconnectivity>0</Classconnectivity>
-<Classfulness>0.0</Classfulness>
-<Classimportance>0.0</Classimportance>
-<Classinheritancerichness>1342.0</Classinheritancerichness>
-<Classreadability>0</Classreadability>
-<Classrelationshiprichness>0</Classrelationshiprichness>
-<Classchildrencount>1</Classchildrencount>
-<Classinstancescount>0</Classinstancescount>
-<Classpropertiescount>0</Classpropertiescount>
-</Class>
-<Class iri="http://emmo.info/emmo#EMMO_a4d66059_5dd3_4b90_b4cb_10960559441b">
-<Classconnectivity>0</Classconnectivity>
-<Classfulness>0.0</Classfulness>
-<Classimportance>0.0</Classimportance>
-<Classinheritancerichness>167.75</Classinheritancerichness>
-<Classreadability>0</Classreadability>
-<Classrelationshiprichness>0</Classrelationshiprichness>
-<Classchildrencount>8</Classchildrencount>
-<Classinstancescount>0</Classinstancescount>
-<Classpropertiescount>0</Classpropertiescount>
-</Class>
-<Class iri="https://bvco.ontology.link/BVCO_9c9de930_4395_44f5_bba5_8f46cfaa1c2e">
-<Classconnectivity>0</Classconnectivity>
-<Classfulness>0.0</Classfulness>
-<Classimportance>0.0</Classimportance>
-<Classinheritancerichness>1342.0</Classinheritancerichness>
-<Classreadability>1</Classreadability>
-<Classrelationshiprichness>0</Classrelationshiprichness>
-<Classchildrencount>1</Classchildrencount>
-<Classinstancescount>0</Classinstancescount>
-<Classpropertiescount>0</Classpropertiescount>
-</Class>
-<Class iri="https://bvco.ontology.link/BVCO_4c35ddd6_9ec7_463a_be42_e734b496fd9a">
-<Classconnectivity>0</Classconnectivity>
-<Classfulness>0.0</Classfulness>
-<Classimportance>0.0</Classimportance>
-<Classinheritancerichness>0.0</Classinheritancerichness>
-<Classreadability>1</Classreadability>
-<Classrelationshiprichness>0</Classrelationshiprichness>
-<Classchildrencount>0</Classchildrencount>
-<Classinstancescount>0</Classinstancescount>
-<Classpropertiescount>0</Classpropertiescount>
-</Class>
-<Class iri="https://bvco.ontology.link/BVCO_2ba21032_cd96_4cb1_9b7e_c009532ccd37">
-<Classconnectivity>0</Classconnectivity>
-<Classfulness>0.0</Classfulness>
-<Classimportance>0.0</Classimportance>
-<Classinheritancerichness>1342.0</Classinheritancerichness>
-<Classreadability>0</Classreadability>
-<Classrelationshiprichness>0</Classrelationshiprichness>
-<Classchildrencount>1</Classchildrencount>
-<Classinstancescount>0</Classinstancescount>
-<Classpropertiescount>0</Classpropertiescount>
-</Class>
-<Class iri="https://gpo.ontology.link/GPO_2c787420_067a_483a_b565_a9a55898210e">
-<Classconnectivity>0</Classconnectivity>
-<Classfulness>0.0</Classfulness>
-<Classimportance>0.0</Classimportance>
-<Classinheritancerichness>223.666667</Classinheritancerichness>
-<Classreadability>0</Classreadability>
-<Classrelationshiprichness>0</Classrelationshiprichness>
-<Classchildrencount>6</Classchildrencount>
-<Classinstancescount>0</Classinstancescount>
-<Classpropertiescount>0</Classpropertiescount>
-</Class>
-<Class iri="https://bvco.ontology.link/BVCO_578186e7_4fd2_4c66_bf80_53146fa97f49">
-<Classconnectivity>0</Classconnectivity>
-<Classfulness>0.0</Classfulness>
-<Classimportance>0.0</Classimportance>
-<Classinheritancerichness>335.5</Classinheritancerichness>
-<Classreadability>0</Classreadability>
-<Classrelationshiprichness>0</Classrelationshiprichness>
-<Classchildrencount>4</Classchildrencount>
-<Classinstancescount>0</Classinstancescount>
-<Classpropertiescount>0</Classpropertiescount>
-</Class>
-<Class iri="https://big-map.github.io/BattINFO/ontology/electrochemistry#EMMO_609b340f_3450_4a10_95c2_c457e3eb8a89">
-<Classconnectivity>0</Classconnectivity>
-<Classfulness>0.0</Classfulness>
-<Classimportance>0.0</Classimportance>
-<Classinheritancerichness>0.0</Classinheritancerichness>
-<Classreadability>0</Classreadability>
-<Classrelationshiprichness>0</Classrelationshiprichness>
-<Classchildrencount>0</Classchildrencount>
-<Classinstancescount>0</Classinstancescount>
-<Classpropertiescount>0</Classpropertiescount>
-</Class>
-<Class iri="https://bvco.ontology.link/BVCO_95e958ca_b2f4_4a5a_a6ba_9491e7b97c8a">
-<Classconnectivity>0</Classconnectivity>
-<Classfulness>0.0</Classfulness>
-<Classimportance>0.0</Classimportance>
-<Classinheritancerichness>0.0</Classinheritancerichness>
-<Classreadability>0</Classreadability>
-<Classrelationshiprichness>0</Classrelationshiprichness>
-<Classchildrencount>0</Classchildrencount>
-<Classinstancescount>0</Classinstancescount>
-<Classpropertiescount>0</Classpropertiescount>
-</Class>
-<Class iri="https://bvco.ontology.link/BVCO_83388326_362e_407a_92db_3235b35844f1">
-<Classconnectivity>0</Classconnectivity>
-<Classfulness>0.0</Classfulness>
-<Classimportance>0.0</Classimportance>
-<Classinheritancerichness>335.5</Classinheritancerichness>
-<Classreadability>0</Classreadability>
-<Classrelationshiprichness>0</Classrelationshiprichness>
-<Classchildrencount>4</Classchildrencount>
-<Classinstancescount>0</Classinstancescount>
-<Classpropertiescount>0</Classpropertiescount>
-</Class>
-<Class iri="https://gpo.ontology.link/GPO_b10580a1_fb72_4151_a573_bbef22bae02b">
-<Classconnectivity>0</Classconnectivity>
-<Classfulness>0.0</Classfulness>
-<Classimportance>0.0</Classimportance>
-<Classinheritancerichness>1342.0</Classinheritancerichness>
-<Classreadability>0</Classreadability>
-<Classrelationshiprichness>0</Classrelationshiprichness>
-<Classchildrencount>1</Classchildrencount>
-<Classinstancescount>0</Classinstancescount>
-<Classpropertiescount>0</Classpropertiescount>
-</Class>
-<Class iri="http://emmo.info/emmo#EMMO_49804605_c0fe_4538_abda_f70ba1dc8a5d">
-<Classconnectivity>0</Classconnectivity>
-<Classfulness>0.0</Classfulness>
-<Classimportance>0.0</Classimportance>
-<Classinheritancerichness>0.0</Classinheritancerichness>
-<Classreadability>0</Classreadability>
-<Classrelationshiprichness>0</Classrelationshiprichness>
-<Classchildrencount>0</Classchildrencount>
-<Classinstancescount>0</Classinstancescount>
-<Classpropertiescount>0</Classpropertiescount>
-</Class>
-<Class iri="https://big-map.github.io/BattINFO/ontology/electrochemistry#EMMO_fb0d9eef_92af_4628_8814_e065ca255d59">
-<Classconnectivity>0</Classconnectivity>
-<Classfulness>0.0</Classfulness>
-<Classimportance>0.0</Classimportance>
-<Classinheritancerichness>0.0</Classinheritancerichness>
-<Classreadability>0</Classreadability>
-<Classrelationshiprichness>0</Classrelationshiprichness>
-<Classchildrencount>0</Classchildrencount>
-<Classinstancescount>0</Classinstancescount>
-<Classpropertiescount>0</Classpropertiescount>
-</Class>
-<Class iri="https://bvco.ontology.link/BVCO_2748579f_0cb7_42b5_988b_3b8719856a20">
-<Classconnectivity>0</Classconnectivity>
-<Classfulness>0.0</Classfulness>
-<Classimportance>0.0</Classimportance>
-<Classinheritancerichness>0.0</Classinheritancerichness>
-<Classreadability>0</Classreadability>
-<Classrelationshiprichness>0</Classrelationshiprichness>
-<Classchildrencount>0</Classchildrencount>
-<Classinstancescount>0</Classinstancescount>
-<Classpropertiescount>0</Classpropertiescount>
-</Class>
-<Class iri="https://bvco.ontology.link/BVCO_58431cb6_463b_4924_af05_97de2af5f415">
-<Classconnectivity>0</Classconnectivity>
-<Classfulness>0.0</Classfulness>
-<Classimportance>0.0</Classimportance>
-<Classinheritancerichness>0.0</Classinheritancerichness>
-<Classreadability>1</Classreadability>
-<Classrelationshiprichness>0</Classrelationshiprichness>
-<Classchildrencount>0</Classchildrencount>
-<Classinstancescount>0</Classinstancescount>
-<Classpropertiescount>0</Classpropertiescount>
-</Class>
-<Class iri="https://bvco.ontology.link/BVCO_a79ee6cc_24a3_4cc3_a0d2_097022ba5952">
-<Classconnectivity>0</Classconnectivity>
-<Classfulness>0.0</Classfulness>
-<Classimportance>0.0</Classimportance>
-<Classinheritancerichness>0.0</Classinheritancerichness>
-<Classreadability>0</Classreadability>
-<Classrelationshiprichness>0</Classrelationshiprichness>
-<Classchildrencount>0</Classchildrencount>
-<Classinstancescount>0</Classinstancescount>
-<Classpropertiescount>0</Classpropertiescount>
-</Class>
-<Class iri="https://bvco.ontology.link/BVCO_dbda1d6a_b1f5_4c5a_9f8d_8c44011b5648">
-<Classconnectivity>0</Classconnectivity>
-<Classfulness>0.0</Classfulness>
-<Classimportance>0.0</Classimportance>
-<Classinheritancerichness>0.0</Classinheritancerichness>
-<Classreadability>1</Classreadability>
-<Classrelationshiprichness>0</Classrelationshiprichness>
-<Classchildrencount>0</Classchildrencount>
-<Classinstancescount>0</Classinstancescount>
-<Classpropertiescount>0</Classpropertiescount>
-</Class>
-<Class iri="https://bvco.ontology.link/BVCO_45ddffbd_d4fa_496d_a4d8_5521194b5674">
-<Classconnectivity>0</Classconnectivity>
-<Classfulness>0.0</Classfulness>
-<Classimportance>0.0</Classimportance>
-<Classinheritancerichness>447.333333</Classinheritancerichness>
-<Classreadability>0</Classreadability>
-<Classrelationshiprichness>0</Classrelationshiprichness>
-<Classchildrencount>3</Classchildrencount>
-<Classinstancescount>0</Classinstancescount>
-<Classpropertiescount>0</Classpropertiescount>
-</Class>
-<Class iri="https://bvco.ontology.link/BVCO_1a0c38ce_2cc2_4245_898c_89df57e30fd6">
-<Classconnectivity>0</Classconnectivity>
-<Classfulness>0.0</Classfulness>
-<Classimportance>0.0</Classimportance>
-<Classinheritancerichness>0.0</Classinheritancerichness>
-<Classreadability>0</Classreadability>
-<Classrelationshiprichness>0</Classrelationshiprichness>
-<Classchildrencount>0</Classchildrencount>
-<Classinstancescount>0</Classinstancescount>
-<Classpropertiescount>0</Classpropertiescount>
-</Class>
-<Class iri="https://bvco.ontology.link/BVCO_8c53f4eb_7053_4e80_b5b3_dbca1e900810">
-<Classconnectivity>0</Classconnectivity>
-<Classfulness>0.0</Classfulness>
-<Classimportance>0.0</Classimportance>
-<Classinheritancerichness>335.5</Classinheritancerichness>
-<Classreadability>1</Classreadability>
-<Classrelationshiprichness>0</Classrelationshiprichness>
-<Classchildrencount>4</Classchildrencount>
-<Classinstancescount>0</Classinstancescount>
-<Classpropertiescount>0</Classpropertiescount>
-</Class>
-<Class iri="https://big-map.github.io/BattINFO/ontology/BattINFO#EMMO_74ed2670_657d_4f0b_b0a6_3f13bc2e9c17">
-<Classconnectivity>0</Classconnectivity>
-<Classfulness>0.0</Classfulness>
-<Classimportance>0.0</Classimportance>
-<Classinheritancerichness>0.0</Classinheritancerichness>
-<Classreadability>0</Classreadability>
-<Classrelationshiprichness>0</Classrelationshiprichness>
-<Classchildrencount>0</Classchildrencount>
-<Classinstancescount>0</Classinstancescount>
-<Classpropertiescount>0</Classpropertiescount>
-</Class>
-<Class iri="http://emmo.info/emmo#EMMO_ec7464a9_d99d_45f8_965b_4e9230ea8356">
-<Classconnectivity>0</Classconnectivity>
-<Classfulness>0.0</Classfulness>
-<Classimportance>0.0</Classimportance>
-<Classinheritancerichness>111.833333</Classinheritancerichness>
-<Classreadability>0</Classreadability>
-<Classrelationshiprichness>0</Classrelationshiprichness>
-<Classchildrencount>12</Classchildrencount>
-<Classinstancescount>0</Classinstancescount>
-<Classpropertiescount>0</Classpropertiescount>
-</Class>
-<Class iri="https://bvco.ontology.link/BVCO_7551b995_40e6_42e7_8da5_83d18ab41453">
-<Classconnectivity>0</Classconnectivity>
-<Classfulness>0.0</Classfulness>
-<Classimportance>0.0</Classimportance>
-<Classinheritancerichness>0.0</Classinheritancerichness>
-<Classreadability>0</Classreadability>
-<Classrelationshiprichness>0</Classrelationshiprichness>
-<Classchildrencount>0</Classchildrencount>
-<Classinstancescount>0</Classinstancescount>
-<Classpropertiescount>0</Classpropertiescount>
-</Class>
-<Class iri="https://gpo.ontology.link/GPO_995475ba_f196_4b19_a7c7_38d032c59270">
-<Classconnectivity>0</Classconnectivity>
-<Classfulness>0.0</Classfulness>
-<Classimportance>0.0</Classimportance>
-<Classinheritancerichness>83.875</Classinheritancerichness>
-<Classreadability>0</Classreadability>
-<Classrelationshiprichness>0</Classrelationshiprichness>
-<Classchildrencount>16</Classchildrencount>
-<Classinstancescount>0</Classinstancescount>
-<Classpropertiescount>0</Classpropertiescount>
-</Class>
-<Class iri="https://bvco.ontology.link/BVCO_f4334e05_4b43_4aa5_a01e_f829c32aca16">
-<Classconnectivity>0</Classconnectivity>
-<Classfulness>0.0</Classfulness>
-<Classimportance>0.0</Classimportance>
-<Classinheritancerichness>111.833333</Classinheritancerichness>
-<Classreadability>0</Classreadability>
-<Classrelationshiprichness>0</Classrelationshiprichness>
-<Classchildrencount>12</Classchildrencount>
-<Classinstancescount>0</Classinstancescount>
-<Classpropertiescount>0</Classpropertiescount>
-</Class>
-<Class iri="https://gpo.ontology.link/GPO_5f02dbb0_2803_4aaa_9104_ba39f17a4c8d">
-<Classconnectivity>0</Classconnectivity>
-<Classfulness>0.0</Classfulness>
-<Classimportance>0.0</Classimportance>
-<Classinheritancerichness>1342.0</Classinheritancerichness>
-<Classreadability>0</Classreadability>
-<Classrelationshiprichness>0</Classrelationshiprichness>
-<Classchildrencount>1</Classchildrencount>
-<Classinstancescount>0</Classinstancescount>
-<Classpropertiescount>0</Classpropertiescount>
-</Class>
-<Class iri="https://gpo.ontology.link/GPO_680078b4_e669_407d_a9a5_902c1f55031a">
-<Classconnectivity>0</Classconnectivity>
-<Classfulness>0.0</Classfulness>
-<Classimportance>0.0</Classimportance>
-<Classinheritancerichness>671.0</Classinheritancerichness>
-<Classreadability>0</Classreadability>
-<Classrelationshiprichness>0</Classrelationshiprichness>
-<Classchildrencount>2</Classchildrencount>
-<Classinstancescount>0</Classinstancescount>
-<Classpropertiescount>0</Classpropertiescount>
-</Class>
-<Class iri="https://bvco.ontology.link/BVCO_dd4dec74_28b4_4929_b442_ee4d962a3d01">
-<Classconnectivity>0</Classconnectivity>
-<Classfulness>0.0</Classfulness>
-<Classimportance>0.0</Classimportance>
-<Classinheritancerichness>0.0</Classinheritancerichness>
-<Classreadability>1</Classreadability>
-<Classrelationshiprichness>0</Classrelationshiprichness>
-<Classchildrencount>0</Classchildrencount>
-<Classinstancescount>0</Classinstancescount>
-<Classpropertiescount>0</Classpropertiescount>
-</Class>
-<Class iri="https://bvco.ontology.link/BVCO_f9b18c3c_2eae_4f73_bc12_64acd1d927dc">
-<Classconnectivity>0</Classconnectivity>
-<Classfulness>0.0</Classfulness>
-<Classimportance>0.0</Classimportance>
-<Classinheritancerichness>0.0</Classinheritancerichness>
-<Classreadability>0</Classreadability>
-<Classrelationshiprichness>0</Classrelationshiprichness>
-<Classchildrencount>0</Classchildrencount>
-<Classinstancescount>0</Classinstancescount>
-<Classpropertiescount>0</Classpropertiescount>
-</Class>
-<Class iri="https://bvco.ontology.link/BVCO_d3462dc8_ec3c_4c60_b965_cb147b55a419">
-<Classconnectivity>0</Classconnectivity>
-<Classfulness>0.0</Classfulness>
-<Classimportance>0.0</Classimportance>
-<Classinheritancerichness>223.666667</Classinheritancerichness>
-<Classreadability>0</Classreadability>
-<Classrelationshiprichness>0</Classrelationshiprichness>
-<Classchildrencount>6</Classchildrencount>
-<Classinstancescount>0</Classinstancescount>
-<Classpropertiescount>0</Classpropertiescount>
-</Class>
-<Class iri="https://bvco.ontology.link/BVCO_1f9ffbd0_9c82_4a65_9f57_bc88712fa0fe">
-<Classconnectivity>0</Classconnectivity>
-<Classfulness>0.0</Classfulness>
-<Classimportance>0.0</Classimportance>
-<Classinheritancerichness>671.0</Classinheritancerichness>
-<Classreadability>0</Classreadability>
-<Classrelationshiprichness>0</Classrelationshiprichness>
-<Classchildrencount>2</Classchildrencount>
-<Classinstancescount>0</Classinstancescount>
-<Classpropertiescount>0</Classpropertiescount>
-</Class>
-<Class iri="https://bvco.ontology.link/BVCO_e17ca59d_f674_472b_88c7_2aeef210a038">
-<Classconnectivity>0</Classconnectivity>
-<Classfulness>0.0</Classfulness>
-<Classimportance>0.0</Classimportance>
-<Classinheritancerichness>1342.0</Classinheritancerichness>
-<Classreadability>0</Classreadability>
-<Classrelationshiprichness>0</Classrelationshiprichness>
-<Classchildrencount>1</Classchildrencount>
-<Classinstancescount>0</Classinstancescount>
-<Classpropertiescount>0</Classpropertiescount>
-</Class>
-<Class iri="https://bvco.ontology.link/BVCO_7a42039d_b485_4476_a543_f8c75c25fbd9">
-<Classconnectivity>0</Classconnectivity>
-<Classfulness>0.0</Classfulness>
-<Classimportance>0.0</Classimportance>
-<Classinheritancerichness>0.0</Classinheritancerichness>
-<Classreadability>0</Classreadability>
-<Classrelationshiprichness>0</Classrelationshiprichness>
-<Classchildrencount>0</Classchildrencount>
-<Classinstancescount>0</Classinstancescount>
-<Classpropertiescount>0</Classpropertiescount>
-</Class>
-<Class iri="https://bvco.ontology.link/BVCO_7811a6ff_e51c_4355_86d1_ba1f7abd35b4">
-<Classconnectivity>0</Classconnectivity>
-<Classfulness>0.0</Classfulness>
-<Classimportance>0.0</Classimportance>
-<Classinheritancerichness>0.0</Classinheritancerichness>
-<Classreadability>1</Classreadability>
-<Classrelationshiprichness>0</Classrelationshiprichness>
-<Classchildrencount>0</Classchildrencount>
-<Classinstancescount>0</Classinstancescount>
-<Classpropertiescount>0</Classpropertiescount>
-</Class>
-<Class iri="https://bvco.ontology.link/BVCO_f1b9383c_d427_4f34_8121_e0dc7ee766bc">
-<Classconnectivity>0</Classconnectivity>
-<Classfulness>0.0</Classfulness>
-<Classimportance>0.0</Classimportance>
-<Classinheritancerichness>0.0</Classinheritancerichness>
-<Classreadability>0</Classreadability>
-<Classrelationshiprichness>0</Classrelationshiprichness>
-<Classchildrencount>0</Classchildrencount>
-<Classinstancescount>0</Classinstancescount>
-<Classpropertiescount>0</Classpropertiescount>
-</Class>
-<Class iri="https://bvco.ontology.link/BVCO_1ebe8a18_c6bb_43ff_a7e5_776901907a53">
-<Classconnectivity>0</Classconnectivity>
-<Classfulness>0.0</Classfulness>
-<Classimportance>0.0</Classimportance>
-<Classinheritancerichness>1342.0</Classinheritancerichness>
-<Classreadability>0</Classreadability>
-<Classrelationshiprichness>0</Classrelationshiprichness>
-<Classchildrencount>1</Classchildrencount>
-<Classinstancescount>0</Classinstancescount>
-<Classpropertiescount>0</Classpropertiescount>
-</Class>
-<Class iri="https://bvco.ontology.link/BVCO_dcd25690_db51_4280_a94d_49737ab415b7">
-<Classconnectivity>0</Classconnectivity>
-<Classfulness>0.0</Classfulness>
-<Classimportance>0.0</Classimportance>
-<Classinheritancerichness>671.0</Classinheritancerichness>
-<Classreadability>0</Classreadability>
-<Classrelationshiprichness>0</Classrelationshiprichness>
-<Classchildrencount>2</Classchildrencount>
-<Classinstancescount>0</Classinstancescount>
-<Classpropertiescount>0</Classpropertiescount>
-</Class>
-<Class iri="https://gpo.ontology.link/GPO_0658b91d_0b48_4302_9065_e3b5fad4815e">
-<Classconnectivity>0</Classconnectivity>
-<Classfulness>0.0</Classfulness>
-<Classimportance>0.0</Classimportance>
-<Classinheritancerichness>1342.0</Classinheritancerichness>
-<Classreadability>0</Classreadability>
-<Classrelationshiprichness>0</Classrelationshiprichness>
-<Classchildrencount>1</Classchildrencount>
-<Classinstancescount>0</Classinstancescount>
-<Classpropertiescount>0</Classpropertiescount>
-</Class>
-<Class iri="https://bvco.ontology.link/BVCO_6f1f861d_5b6f_46a6_b4e7_b8a213cd1a6f">
-<Classconnectivity>0</Classconnectivity>
-<Classfulness>0.0</Classfulness>
-<Classimportance>0.0</Classimportance>
-<Classinheritancerichness>0.0</Classinheritancerichness>
-<Classreadability>0</Classreadability>
-<Classrelationshiprichness>0</Classrelationshiprichness>
-<Classchildrencount>0</Classchildrencount>
-<Classinstancescount>0</Classinstancescount>
-<Classpropertiescount>0</Classpropertiescount>
-</Class>
-<Class iri="https://bvco.ontology.link/BVCO_1ba6fc78_d12b_475d_b3ff_0220fe614ed9">
-<Classconnectivity>0</Classconnectivity>
-<Classfulness>0.0</Classfulness>
-<Classimportance>0.0</Classimportance>
-<Classinheritancerichness>0.0</Classinheritancerichness>
-<Classreadability>0</Classreadability>
-<Classrelationshiprichness>0</Classrelationshiprichness>
-<Classchildrencount>0</Classchildrencount>
-<Classinstancescount>0</Classinstancescount>
-<Classpropertiescount>0</Classpropertiescount>
-</Class>
-</ClassMetrics>
-</BaseMetrics>
-</OntologyMetrics>
+<!doctype html><html lang="en"><head><title>HTTP Status 500 – Internal Server Error</title><style type="text/css">body {font-family:Tahoma,Arial,sans-serif;} h1, h2, h3, b {color:white;background-color:#525D76;} h1 {font-size:22px;} h2 {font-size:16px;} h3 {font-size:14px;} p {font-size:12px;} a {color:black;} .line {height:1px;background-color:#525D76;border:none;}</style></head><body><h1>HTTP Status 500 – Internal Server Error</h1><hr class="line" /><p><b>Type</b> Exception Report</p><p><b>Message</b> org.semanticweb.owlapi.model.UnloadableImportException: Could not load imported ontology: &lt;https:&#47;&#47;big-map.github.io&#47;BattINFO&#47;ontology&#47;BattINFO&#47;0.1.0&#47;batteryquantities&#47;batteryquantities.ttl&gt; Cause: https:&#47;&#47;big-map.github.io&#47;BattINFO&#47;ontology&#47;BattINFO&#47;0.1.0&#47;batteryquantities&#47;batteryquantities.ttl</p><p><b>Description</b> The server encountered an unexpected condition that prevented it from fulfilling the request.</p><p><b>Exception</b></p><pre>javax.servlet.ServletException: org.semanticweb.owlapi.model.UnloadableImportException: Could not load imported ontology: &lt;https:&#47;&#47;big-map.github.io&#47;BattINFO&#47;ontology&#47;BattINFO&#47;0.1.0&#47;batteryquantities&#47;batteryquantities.ttl&gt; Cause: https:&#47;&#47;big-map.github.io&#47;BattINFO&#47;ontology&#47;BattINFO&#47;0.1.0&#47;batteryquantities&#47;batteryquantities.ttl
+	org.glassfish.jersey.servlet.WebComponent.serviceImpl(WebComponent.java:408)
+	org.glassfish.jersey.servlet.WebComponent.service(WebComponent.java:346)
+	org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:365)
+	org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:318)
+	org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:205)
+	org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+</pre><p><b>Root Cause</b></p><pre>org.semanticweb.owlapi.model.UnloadableImportException: Could not load imported ontology: &lt;https:&#47;&#47;big-map.github.io&#47;BattINFO&#47;ontology&#47;BattINFO&#47;0.1.0&#47;batteryquantities&#47;batteryquantities.ttl&gt; Cause: https:&#47;&#47;big-map.github.io&#47;BattINFO&#47;ontology&#47;BattINFO&#47;0.1.0&#47;batteryquantities&#47;batteryquantities.ttl
+	uk.ac.manchester.cs.owl.owlapi.OWLOntologyManagerImpl.makeLoadImportRequest(OWLOntologyManagerImpl.java:1652)
+	org.semanticweb.owlapi.rdf.rdfxml.parser.TripleHandlers$TPImportsHandler.handleTriple(TripleHandlers.java:1558)
+	org.semanticweb.owlapi.rdf.rdfxml.parser.TripleHandlers$HandlerAccessor.handleStreaming(TripleHandlers.java:194)
+	org.semanticweb.owlapi.rdf.rdfxml.parser.OWLRDFConsumer.statementWithResourceValue(OWLRDFConsumer.java:1501)
+	org.semanticweb.owlapi.rio.RioOWLRDFConsumerAdapter.handleStatement(RioOWLRDFConsumerAdapter.java:122)
+	org.semanticweb.owlapi.rio.RioParserImpl$RioParserRDFHandler.handleStatement(RioParserImpl.java:341)
+	org.openrdf.rio.turtle.TurtleParser.reportStatement(TurtleParser.java:1157)
+	org.openrdf.rio.turtle.TurtleParser.parseObject(TurtleParser.java:504)
+	org.openrdf.rio.turtle.TurtleParser.parseObjectList(TurtleParser.java:427)
+	org.openrdf.rio.turtle.TurtleParser.parsePredicateObjectList(TurtleParser.java:420)
+	org.openrdf.rio.turtle.TurtleParser.parseTriples(TurtleParser.java:384)
+	org.openrdf.rio.turtle.TurtleParser.parseStatement(TurtleParser.java:260)
+	org.openrdf.rio.turtle.TurtleParser.parse(TurtleParser.java:215)
+	org.openrdf.rio.turtle.TurtleParser.parse(TurtleParser.java:159)
+	org.semanticweb.owlapi.rio.RioParserImpl.parseDocumentSource(RioParserImpl.java:257)
+	org.semanticweb.owlapi.rio.RioParserImpl.parse(RioParserImpl.java:191)
+	uk.ac.manchester.cs.owl.owlapi.OWLOntologyFactoryImpl.loadOWLOntology(OWLOntologyFactoryImpl.java:197)
+	uk.ac.manchester.cs.owl.owlapi.OWLOntologyManagerImpl.actualParse(OWLOntologyManagerImpl.java:1061)
+	uk.ac.manchester.cs.owl.owlapi.OWLOntologyManagerImpl.loadOntology(OWLOntologyManagerImpl.java:1017)
+	uk.ac.manchester.cs.owl.owlapi.OWLOntologyManagerImpl.loadOntology(OWLOntologyManagerImpl.java:935)
+	uk.ac.manchester.cs.owl.owlapi.OWLOntologyManagerImpl.loadImports(OWLOntologyManagerImpl.java:1610)
+	uk.ac.manchester.cs.owl.owlapi.OWLOntologyManagerImpl.makeLoadImportRequest(OWLOntologyManagerImpl.java:1646)
+	org.semanticweb.owlapi.rdf.rdfxml.parser.TripleHandlers$TPImportsHandler.handleTriple(TripleHandlers.java:1558)
+	org.semanticweb.owlapi.rdf.rdfxml.parser.TripleHandlers$HandlerAccessor.handleStreaming(TripleHandlers.java:194)
+	org.semanticweb.owlapi.rdf.rdfxml.parser.OWLRDFConsumer.statementWithResourceValue(OWLRDFConsumer.java:1501)
+	org.semanticweb.owlapi.rio.RioOWLRDFConsumerAdapter.handleStatement(RioOWLRDFConsumerAdapter.java:122)
+	org.semanticweb.owlapi.rio.RioParserImpl$RioParserRDFHandler.handleStatement(RioParserImpl.java:341)
+	org.openrdf.rio.turtle.TurtleParser.reportStatement(TurtleParser.java:1157)
+	org.openrdf.rio.turtle.TurtleParser.parseObject(TurtleParser.java:504)
+	org.openrdf.rio.turtle.TurtleParser.parseObjectList(TurtleParser.java:427)
+	org.openrdf.rio.turtle.TurtleParser.parsePredicateObjectList(TurtleParser.java:420)
+	org.openrdf.rio.turtle.TurtleParser.parseTriples(TurtleParser.java:384)
+	org.openrdf.rio.turtle.TurtleParser.parseStatement(TurtleParser.java:260)
+	org.openrdf.rio.turtle.TurtleParser.parse(TurtleParser.java:215)
+	org.openrdf.rio.turtle.TurtleParser.parse(TurtleParser.java:159)
+	org.semanticweb.owlapi.rio.RioParserImpl.parseDocumentSource(RioParserImpl.java:257)
+	org.semanticweb.owlapi.rio.RioParserImpl.parse(RioParserImpl.java:191)
+	uk.ac.manchester.cs.owl.owlapi.OWLOntologyFactoryImpl.loadOWLOntology(OWLOntologyFactoryImpl.java:197)
+	uk.ac.manchester.cs.owl.owlapi.OWLOntologyManagerImpl.actualParse(OWLOntologyManagerImpl.java:1061)
+	uk.ac.manchester.cs.owl.owlapi.OWLOntologyManagerImpl.loadOntology(OWLOntologyManagerImpl.java:1017)
+	uk.ac.manchester.cs.owl.owlapi.OWLOntologyManagerImpl.loadOntology(OWLOntologyManagerImpl.java:935)
+	uk.ac.manchester.cs.owl.owlapi.OWLOntologyManagerImpl.loadImports(OWLOntologyManagerImpl.java:1610)
+	uk.ac.manchester.cs.owl.owlapi.OWLOntologyManagerImpl.makeLoadImportRequest(OWLOntologyManagerImpl.java:1646)
+	org.semanticweb.owlapi.rdf.rdfxml.parser.TripleHandlers$TPImportsHandler.handleTriple(TripleHandlers.java:1558)
+	org.semanticweb.owlapi.rdf.rdfxml.parser.TripleHandlers$HandlerAccessor.handleStreaming(TripleHandlers.java:194)
+	org.semanticweb.owlapi.rdf.rdfxml.parser.OWLRDFConsumer.statementWithResourceValue(OWLRDFConsumer.java:1501)
+	org.semanticweb.owlapi.rio.RioOWLRDFConsumerAdapter.handleStatement(RioOWLRDFConsumerAdapter.java:122)
+	org.semanticweb.owlapi.rio.RioParserImpl$RioParserRDFHandler.handleStatement(RioParserImpl.java:341)
+	org.openrdf.rio.turtle.TurtleParser.reportStatement(TurtleParser.java:1157)
+	org.openrdf.rio.turtle.TurtleParser.parseObject(TurtleParser.java:504)
+	org.openrdf.rio.turtle.TurtleParser.parseObjectList(TurtleParser.java:432)
+	org.openrdf.rio.turtle.TurtleParser.parsePredicateObjectList(TurtleParser.java:420)
+	org.openrdf.rio.turtle.TurtleParser.parseTriples(TurtleParser.java:384)
+	org.openrdf.rio.turtle.TurtleParser.parseStatement(TurtleParser.java:260)
+	org.openrdf.rio.turtle.TurtleParser.parse(TurtleParser.java:215)
+	org.openrdf.rio.turtle.TurtleParser.parse(TurtleParser.java:159)
+	org.semanticweb.owlapi.rio.RioParserImpl.parseDocumentSource(RioParserImpl.java:257)
+	org.semanticweb.owlapi.rio.RioParserImpl.parse(RioParserImpl.java:191)
+	uk.ac.manchester.cs.owl.owlapi.OWLOntologyFactoryImpl.loadOWLOntology(OWLOntologyFactoryImpl.java:197)
+	uk.ac.manchester.cs.owl.owlapi.OWLOntologyManagerImpl.actualParse(OWLOntologyManagerImpl.java:1061)
+	uk.ac.manchester.cs.owl.owlapi.OWLOntologyManagerImpl.loadOntology(OWLOntologyManagerImpl.java:1017)
+	uk.ac.manchester.cs.owl.owlapi.OWLOntologyManagerImpl.loadOntologyFromOntologyDocument(OWLOntologyManagerImpl.java:973)
+	de.edu.rostock.ontologymetrics.owlapi.ontology.OntologyMetricManagerImpl.loadOntologyFromIRI(OntologyMetricManagerImpl.java:63)
+	de.edu.rostock.ontologymetrics.api.ApiController.getBaseMetricFromURL(ApiController.java:66)
+	sun.reflect.GeneratedMethodAccessor26.invoke(Unknown Source)
+	sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	java.lang.reflect.Method.invoke(Method.java:498)
+	org.glassfish.jersey.server.model.internal.ResourceMethodInvocationHandlerFactory.lambda$static$0(ResourceMethodInvocationHandlerFactory.java:52)
+	org.glassfish.jersey.server.model.internal.AbstractJavaResourceMethodDispatcher$1.run(AbstractJavaResourceMethodDispatcher.java:124)
+	org.glassfish.jersey.server.model.internal.AbstractJavaResourceMethodDispatcher.invoke(AbstractJavaResourceMethodDispatcher.java:167)
+	org.glassfish.jersey.server.model.internal.JavaResourceMethodDispatcherProvider$ResponseOutInvoker.doDispatch(JavaResourceMethodDispatcherProvider.java:176)
+	org.glassfish.jersey.server.model.internal.AbstractJavaResourceMethodDispatcher.dispatch(AbstractJavaResourceMethodDispatcher.java:79)
+	org.glassfish.jersey.server.model.ResourceMethodInvoker.invoke(ResourceMethodInvoker.java:469)
+	org.glassfish.jersey.server.model.ResourceMethodInvoker.apply(ResourceMethodInvoker.java:391)
+	org.glassfish.jersey.server.model.ResourceMethodInvoker.apply(ResourceMethodInvoker.java:80)
+	org.glassfish.jersey.server.ServerRuntime$1.run(ServerRuntime.java:253)
+	org.glassfish.jersey.internal.Errors$1.call(Errors.java:248)
+	org.glassfish.jersey.internal.Errors$1.call(Errors.java:244)
+	org.glassfish.jersey.internal.Errors.process(Errors.java:292)
+	org.glassfish.jersey.internal.Errors.process(Errors.java:274)
+	org.glassfish.jersey.internal.Errors.process(Errors.java:244)
+	org.glassfish.jersey.process.internal.RequestScope.runInScope(RequestScope.java:265)
+	org.glassfish.jersey.server.ServerRuntime.process(ServerRuntime.java:232)
+	org.glassfish.jersey.server.ApplicationHandler.handle(ApplicationHandler.java:680)
+	org.glassfish.jersey.servlet.WebComponent.serviceImpl(WebComponent.java:392)
+	org.glassfish.jersey.servlet.WebComponent.service(WebComponent.java:346)
+	org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:365)
+	org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:318)
+	org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:205)
+	org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+</pre><p><b>Root Cause</b></p><pre>org.semanticweb.owlapi.io.OWLOntologyCreationIOException: https:&#47;&#47;big-map.github.io&#47;BattINFO&#47;ontology&#47;BattINFO&#47;0.1.0&#47;batteryquantities&#47;batteryquantities.ttl
+	uk.ac.manchester.cs.owl.owlapi.OWLOntologyFactoryImpl.loadOWLOntology(OWLOntologyFactoryImpl.java:207)
+	uk.ac.manchester.cs.owl.owlapi.OWLOntologyManagerImpl.actualParse(OWLOntologyManagerImpl.java:1061)
+	uk.ac.manchester.cs.owl.owlapi.OWLOntologyManagerImpl.loadOntology(OWLOntologyManagerImpl.java:1017)
+	uk.ac.manchester.cs.owl.owlapi.OWLOntologyManagerImpl.loadOntology(OWLOntologyManagerImpl.java:935)
+	uk.ac.manchester.cs.owl.owlapi.OWLOntologyManagerImpl.loadImports(OWLOntologyManagerImpl.java:1610)
+	uk.ac.manchester.cs.owl.owlapi.OWLOntologyManagerImpl.makeLoadImportRequest(OWLOntologyManagerImpl.java:1646)
+	org.semanticweb.owlapi.rdf.rdfxml.parser.TripleHandlers$TPImportsHandler.handleTriple(TripleHandlers.java:1558)
+	org.semanticweb.owlapi.rdf.rdfxml.parser.TripleHandlers$HandlerAccessor.handleStreaming(TripleHandlers.java:194)
+	org.semanticweb.owlapi.rdf.rdfxml.parser.OWLRDFConsumer.statementWithResourceValue(OWLRDFConsumer.java:1501)
+	org.semanticweb.owlapi.rio.RioOWLRDFConsumerAdapter.handleStatement(RioOWLRDFConsumerAdapter.java:122)
+	org.semanticweb.owlapi.rio.RioParserImpl$RioParserRDFHandler.handleStatement(RioParserImpl.java:341)
+	org.openrdf.rio.turtle.TurtleParser.reportStatement(TurtleParser.java:1157)
+	org.openrdf.rio.turtle.TurtleParser.parseObject(TurtleParser.java:504)
+	org.openrdf.rio.turtle.TurtleParser.parseObjectList(TurtleParser.java:427)
+	org.openrdf.rio.turtle.TurtleParser.parsePredicateObjectList(TurtleParser.java:420)
+	org.openrdf.rio.turtle.TurtleParser.parseTriples(TurtleParser.java:384)
+	org.openrdf.rio.turtle.TurtleParser.parseStatement(TurtleParser.java:260)
+	org.openrdf.rio.turtle.TurtleParser.parse(TurtleParser.java:215)
+	org.openrdf.rio.turtle.TurtleParser.parse(TurtleParser.java:159)
+	org.semanticweb.owlapi.rio.RioParserImpl.parseDocumentSource(RioParserImpl.java:257)
+	org.semanticweb.owlapi.rio.RioParserImpl.parse(RioParserImpl.java:191)
+	uk.ac.manchester.cs.owl.owlapi.OWLOntologyFactoryImpl.loadOWLOntology(OWLOntologyFactoryImpl.java:197)
+	uk.ac.manchester.cs.owl.owlapi.OWLOntologyManagerImpl.actualParse(OWLOntologyManagerImpl.java:1061)
+	uk.ac.manchester.cs.owl.owlapi.OWLOntologyManagerImpl.loadOntology(OWLOntologyManagerImpl.java:1017)
+	uk.ac.manchester.cs.owl.owlapi.OWLOntologyManagerImpl.loadOntology(OWLOntologyManagerImpl.java:935)
+	uk.ac.manchester.cs.owl.owlapi.OWLOntologyManagerImpl.loadImports(OWLOntologyManagerImpl.java:1610)
+	uk.ac.manchester.cs.owl.owlapi.OWLOntologyManagerImpl.makeLoadImportRequest(OWLOntologyManagerImpl.java:1646)
+	org.semanticweb.owlapi.rdf.rdfxml.parser.TripleHandlers$TPImportsHandler.handleTriple(TripleHandlers.java:1558)
+	org.semanticweb.owlapi.rdf.rdfxml.parser.TripleHandlers$HandlerAccessor.handleStreaming(TripleHandlers.java:194)
+	org.semanticweb.owlapi.rdf.rdfxml.parser.OWLRDFConsumer.statementWithResourceValue(OWLRDFConsumer.java:1501)
+	org.semanticweb.owlapi.rio.RioOWLRDFConsumerAdapter.handleStatement(RioOWLRDFConsumerAdapter.java:122)
+	org.semanticweb.owlapi.rio.RioParserImpl$RioParserRDFHandler.handleStatement(RioParserImpl.java:341)
+	org.openrdf.rio.turtle.TurtleParser.reportStatement(TurtleParser.java:1157)
+	org.openrdf.rio.turtle.TurtleParser.parseObject(TurtleParser.java:504)
+	org.openrdf.rio.turtle.TurtleParser.parseObjectList(TurtleParser.java:427)
+	org.openrdf.rio.turtle.TurtleParser.parsePredicateObjectList(TurtleParser.java:420)
+	org.openrdf.rio.turtle.TurtleParser.parseTriples(TurtleParser.java:384)
+	org.openrdf.rio.turtle.TurtleParser.parseStatement(TurtleParser.java:260)
+	org.openrdf.rio.turtle.TurtleParser.parse(TurtleParser.java:215)
+	org.openrdf.rio.turtle.TurtleParser.parse(TurtleParser.java:159)
+	org.semanticweb.owlapi.rio.RioParserImpl.parseDocumentSource(RioParserImpl.java:257)
+	org.semanticweb.owlapi.rio.RioParserImpl.parse(RioParserImpl.java:191)
+	uk.ac.manchester.cs.owl.owlapi.OWLOntologyFactoryImpl.loadOWLOntology(OWLOntologyFactoryImpl.java:197)
+	uk.ac.manchester.cs.owl.owlapi.OWLOntologyManagerImpl.actualParse(OWLOntologyManagerImpl.java:1061)
+	uk.ac.manchester.cs.owl.owlapi.OWLOntologyManagerImpl.loadOntology(OWLOntologyManagerImpl.java:1017)
+	uk.ac.manchester.cs.owl.owlapi.OWLOntologyManagerImpl.loadOntology(OWLOntologyManagerImpl.java:935)
+	uk.ac.manchester.cs.owl.owlapi.OWLOntologyManagerImpl.loadImports(OWLOntologyManagerImpl.java:1610)
+	uk.ac.manchester.cs.owl.owlapi.OWLOntologyManagerImpl.makeLoadImportRequest(OWLOntologyManagerImpl.java:1646)
+	org.semanticweb.owlapi.rdf.rdfxml.parser.TripleHandlers$TPImportsHandler.handleTriple(TripleHandlers.java:1558)
+	org.semanticweb.owlapi.rdf.rdfxml.parser.TripleHandlers$HandlerAccessor.handleStreaming(TripleHandlers.java:194)
+	org.semanticweb.owlapi.rdf.rdfxml.parser.OWLRDFConsumer.statementWithResourceValue(OWLRDFConsumer.java:1501)
+	org.semanticweb.owlapi.rio.RioOWLRDFConsumerAdapter.handleStatement(RioOWLRDFConsumerAdapter.java:122)
+	org.semanticweb.owlapi.rio.RioParserImpl$RioParserRDFHandler.handleStatement(RioParserImpl.java:341)
+	org.openrdf.rio.turtle.TurtleParser.reportStatement(TurtleParser.java:1157)
+	org.openrdf.rio.turtle.TurtleParser.parseObject(TurtleParser.java:504)
+	org.openrdf.rio.turtle.TurtleParser.parseObjectList(TurtleParser.java:432)
+	org.openrdf.rio.turtle.TurtleParser.parsePredicateObjectList(TurtleParser.java:420)
+	org.openrdf.rio.turtle.TurtleParser.parseTriples(TurtleParser.java:384)
+	org.openrdf.rio.turtle.TurtleParser.parseStatement(TurtleParser.java:260)
+	org.openrdf.rio.turtle.TurtleParser.parse(TurtleParser.java:215)
+	org.openrdf.rio.turtle.TurtleParser.parse(TurtleParser.java:159)
+	org.semanticweb.owlapi.rio.RioParserImpl.parseDocumentSource(RioParserImpl.java:257)
+	org.semanticweb.owlapi.rio.RioParserImpl.parse(RioParserImpl.java:191)
+	uk.ac.manchester.cs.owl.owlapi.OWLOntologyFactoryImpl.loadOWLOntology(OWLOntologyFactoryImpl.java:197)
+	uk.ac.manchester.cs.owl.owlapi.OWLOntologyManagerImpl.actualParse(OWLOntologyManagerImpl.java:1061)
+	uk.ac.manchester.cs.owl.owlapi.OWLOntologyManagerImpl.loadOntology(OWLOntologyManagerImpl.java:1017)
+	uk.ac.manchester.cs.owl.owlapi.OWLOntologyManagerImpl.loadOntologyFromOntologyDocument(OWLOntologyManagerImpl.java:973)
+	de.edu.rostock.ontologymetrics.owlapi.ontology.OntologyMetricManagerImpl.loadOntologyFromIRI(OntologyMetricManagerImpl.java:63)
+	de.edu.rostock.ontologymetrics.api.ApiController.getBaseMetricFromURL(ApiController.java:66)
+	sun.reflect.GeneratedMethodAccessor26.invoke(Unknown Source)
+	sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	java.lang.reflect.Method.invoke(Method.java:498)
+	org.glassfish.jersey.server.model.internal.ResourceMethodInvocationHandlerFactory.lambda$static$0(ResourceMethodInvocationHandlerFactory.java:52)
+	org.glassfish.jersey.server.model.internal.AbstractJavaResourceMethodDispatcher$1.run(AbstractJavaResourceMethodDispatcher.java:124)
+	org.glassfish.jersey.server.model.internal.AbstractJavaResourceMethodDispatcher.invoke(AbstractJavaResourceMethodDispatcher.java:167)
+	org.glassfish.jersey.server.model.internal.JavaResourceMethodDispatcherProvider$ResponseOutInvoker.doDispatch(JavaResourceMethodDispatcherProvider.java:176)
+	org.glassfish.jersey.server.model.internal.AbstractJavaResourceMethodDispatcher.dispatch(AbstractJavaResourceMethodDispatcher.java:79)
+	org.glassfish.jersey.server.model.ResourceMethodInvoker.invoke(ResourceMethodInvoker.java:469)
+	org.glassfish.jersey.server.model.ResourceMethodInvoker.apply(ResourceMethodInvoker.java:391)
+	org.glassfish.jersey.server.model.ResourceMethodInvoker.apply(ResourceMethodInvoker.java:80)
+	org.glassfish.jersey.server.ServerRuntime$1.run(ServerRuntime.java:253)
+	org.glassfish.jersey.internal.Errors$1.call(Errors.java:248)
+	org.glassfish.jersey.internal.Errors$1.call(Errors.java:244)
+	org.glassfish.jersey.internal.Errors.process(Errors.java:292)
+	org.glassfish.jersey.internal.Errors.process(Errors.java:274)
+	org.glassfish.jersey.internal.Errors.process(Errors.java:244)
+	org.glassfish.jersey.process.internal.RequestScope.runInScope(RequestScope.java:265)
+	org.glassfish.jersey.server.ServerRuntime.process(ServerRuntime.java:232)
+	org.glassfish.jersey.server.ApplicationHandler.handle(ApplicationHandler.java:680)
+	org.glassfish.jersey.servlet.WebComponent.serviceImpl(WebComponent.java:392)
+	org.glassfish.jersey.servlet.WebComponent.service(WebComponent.java:346)
+	org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:365)
+	org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:318)
+	org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:205)
+	org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+</pre><p><b>Root Cause</b></p><pre>java.io.FileNotFoundException: https:&#47;&#47;big-map.github.io&#47;BattINFO&#47;ontology&#47;BattINFO&#47;0.1.0&#47;batteryquantities&#47;batteryquantities.ttl
+	sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	sun.net.www.protocol.http.HttpURLConnection$10.run(HttpURLConnection.java:1950)
+	sun.net.www.protocol.http.HttpURLConnection$10.run(HttpURLConnection.java:1945)
+	java.security.AccessController.doPrivileged(Native Method)
+	sun.net.www.protocol.http.HttpURLConnection.getChainedException(HttpURLConnection.java:1944)
+	sun.net.www.protocol.http.HttpURLConnection.getInputStream0(HttpURLConnection.java:1514)
+	sun.net.www.protocol.http.HttpURLConnection.getInputStream(HttpURLConnection.java:1498)
+	sun.net.www.protocol.https.HttpsURLConnectionImpl.getInputStream(HttpsURLConnectionImpl.java:268)
+	org.semanticweb.owlapi.io.AbstractOWLParser.getInputStreamFromContentEncoding(AbstractOWLParser.java:165)
+	org.semanticweb.owlapi.io.AbstractOWLParser.getInputStream(AbstractOWLParser.java:127)
+	org.semanticweb.owlapi.io.AbstractOWLParser.getInputSource(AbstractOWLParser.java:232)
+	org.semanticweb.owlapi.rdf.rdfxml.parser.RDFXMLParser.parse(RDFXMLParser.java:72)
+	uk.ac.manchester.cs.owl.owlapi.OWLOntologyFactoryImpl.loadOWLOntology(OWLOntologyFactoryImpl.java:197)
+	uk.ac.manchester.cs.owl.owlapi.OWLOntologyManagerImpl.actualParse(OWLOntologyManagerImpl.java:1061)
+	uk.ac.manchester.cs.owl.owlapi.OWLOntologyManagerImpl.loadOntology(OWLOntologyManagerImpl.java:1017)
+	uk.ac.manchester.cs.owl.owlapi.OWLOntologyManagerImpl.loadOntology(OWLOntologyManagerImpl.java:935)
+	uk.ac.manchester.cs.owl.owlapi.OWLOntologyManagerImpl.loadImports(OWLOntologyManagerImpl.java:1610)
+	uk.ac.manchester.cs.owl.owlapi.OWLOntologyManagerImpl.makeLoadImportRequest(OWLOntologyManagerImpl.java:1646)
+	org.semanticweb.owlapi.rdf.rdfxml.parser.TripleHandlers$TPImportsHandler.handleTriple(TripleHandlers.java:1558)
+	org.semanticweb.owlapi.rdf.rdfxml.parser.TripleHandlers$HandlerAccessor.handleStreaming(TripleHandlers.java:194)
+	org.semanticweb.owlapi.rdf.rdfxml.parser.OWLRDFConsumer.statementWithResourceValue(OWLRDFConsumer.java:1501)
+	org.semanticweb.owlapi.rio.RioOWLRDFConsumerAdapter.handleStatement(RioOWLRDFConsumerAdapter.java:122)
+	org.semanticweb.owlapi.rio.RioParserImpl$RioParserRDFHandler.handleStatement(RioParserImpl.java:341)
+	org.openrdf.rio.turtle.TurtleParser.reportStatement(TurtleParser.java:1157)
+	org.openrdf.rio.turtle.TurtleParser.parseObject(TurtleParser.java:504)
+	org.openrdf.rio.turtle.TurtleParser.parseObjectList(TurtleParser.java:427)
+	org.openrdf.rio.turtle.TurtleParser.parsePredicateObjectList(TurtleParser.java:420)
+	org.openrdf.rio.turtle.TurtleParser.parseTriples(TurtleParser.java:384)
+	org.openrdf.rio.turtle.TurtleParser.parseStatement(TurtleParser.java:260)
+	org.openrdf.rio.turtle.TurtleParser.parse(TurtleParser.java:215)
+	org.openrdf.rio.turtle.TurtleParser.parse(TurtleParser.java:159)
+	org.semanticweb.owlapi.rio.RioParserImpl.parseDocumentSource(RioParserImpl.java:257)
+	org.semanticweb.owlapi.rio.RioParserImpl.parse(RioParserImpl.java:191)
+	uk.ac.manchester.cs.owl.owlapi.OWLOntologyFactoryImpl.loadOWLOntology(OWLOntologyFactoryImpl.java:197)
+	uk.ac.manchester.cs.owl.owlapi.OWLOntologyManagerImpl.actualParse(OWLOntologyManagerImpl.java:1061)
+	uk.ac.manchester.cs.owl.owlapi.OWLOntologyManagerImpl.loadOntology(OWLOntologyManagerImpl.java:1017)
+	uk.ac.manchester.cs.owl.owlapi.OWLOntologyManagerImpl.loadOntology(OWLOntologyManagerImpl.java:935)
+	uk.ac.manchester.cs.owl.owlapi.OWLOntologyManagerImpl.loadImports(OWLOntologyManagerImpl.java:1610)
+	uk.ac.manchester.cs.owl.owlapi.OWLOntologyManagerImpl.makeLoadImportRequest(OWLOntologyManagerImpl.java:1646)
+	org.semanticweb.owlapi.rdf.rdfxml.parser.TripleHandlers$TPImportsHandler.handleTriple(TripleHandlers.java:1558)
+	org.semanticweb.owlapi.rdf.rdfxml.parser.TripleHandlers$HandlerAccessor.handleStreaming(TripleHandlers.java:194)
+	org.semanticweb.owlapi.rdf.rdfxml.parser.OWLRDFConsumer.statementWithResourceValue(OWLRDFConsumer.java:1501)
+	org.semanticweb.owlapi.rio.RioOWLRDFConsumerAdapter.handleStatement(RioOWLRDFConsumerAdapter.java:122)
+	org.semanticweb.owlapi.rio.RioParserImpl$RioParserRDFHandler.handleStatement(RioParserImpl.java:341)
+	org.openrdf.rio.turtle.TurtleParser.reportStatement(TurtleParser.java:1157)
+	org.openrdf.rio.turtle.TurtleParser.parseObject(TurtleParser.java:504)
+	org.openrdf.rio.turtle.TurtleParser.parseObjectList(TurtleParser.java:427)
+	org.openrdf.rio.turtle.TurtleParser.parsePredicateObjectList(TurtleParser.java:420)
+	org.openrdf.rio.turtle.TurtleParser.parseTriples(TurtleParser.java:384)
+	org.openrdf.rio.turtle.TurtleParser.parseStatement(TurtleParser.java:260)
+	org.openrdf.rio.turtle.TurtleParser.parse(TurtleParser.java:215)
+	org.openrdf.rio.turtle.TurtleParser.parse(TurtleParser.java:159)
+	org.semanticweb.owlapi.rio.RioParserImpl.parseDocumentSource(RioParserImpl.java:257)
+	org.semanticweb.owlapi.rio.RioParserImpl.parse(RioParserImpl.java:191)
+	uk.ac.manchester.cs.owl.owlapi.OWLOntologyFactoryImpl.loadOWLOntology(OWLOntologyFactoryImpl.java:197)
+	uk.ac.manchester.cs.owl.owlapi.OWLOntologyManagerImpl.actualParse(OWLOntologyManagerImpl.java:1061)
+	uk.ac.manchester.cs.owl.owlapi.OWLOntologyManagerImpl.loadOntology(OWLOntologyManagerImpl.java:1017)
+	uk.ac.manchester.cs.owl.owlapi.OWLOntologyManagerImpl.loadOntology(OWLOntologyManagerImpl.java:935)
+	uk.ac.manchester.cs.owl.owlapi.OWLOntologyManagerImpl.loadImports(OWLOntologyManagerImpl.java:1610)
+	uk.ac.manchester.cs.owl.owlapi.OWLOntologyManagerImpl.makeLoadImportRequest(OWLOntologyManagerImpl.java:1646)
+	org.semanticweb.owlapi.rdf.rdfxml.parser.TripleHandlers$TPImportsHandler.handleTriple(TripleHandlers.java:1558)
+	org.semanticweb.owlapi.rdf.rdfxml.parser.TripleHandlers$HandlerAccessor.handleStreaming(TripleHandlers.java:194)
+	org.semanticweb.owlapi.rdf.rdfxml.parser.OWLRDFConsumer.statementWithResourceValue(OWLRDFConsumer.java:1501)
+	org.semanticweb.owlapi.rio.RioOWLRDFConsumerAdapter.handleStatement(RioOWLRDFConsumerAdapter.java:122)
+	org.semanticweb.owlapi.rio.RioParserImpl$RioParserRDFHandler.handleStatement(RioParserImpl.java:341)
+	org.openrdf.rio.turtle.TurtleParser.reportStatement(TurtleParser.java:1157)
+	org.openrdf.rio.turtle.TurtleParser.parseObject(TurtleParser.java:504)
+	org.openrdf.rio.turtle.TurtleParser.parseObjectList(TurtleParser.java:432)
+	org.openrdf.rio.turtle.TurtleParser.parsePredicateObjectList(TurtleParser.java:420)
+	org.openrdf.rio.turtle.TurtleParser.parseTriples(TurtleParser.java:384)
+	org.openrdf.rio.turtle.TurtleParser.parseStatement(TurtleParser.java:260)
+	org.openrdf.rio.turtle.TurtleParser.parse(TurtleParser.java:215)
+	org.openrdf.rio.turtle.TurtleParser.parse(TurtleParser.java:159)
+	org.semanticweb.owlapi.rio.RioParserImpl.parseDocumentSource(RioParserImpl.java:257)
+	org.semanticweb.owlapi.rio.RioParserImpl.parse(RioParserImpl.java:191)
+	uk.ac.manchester.cs.owl.owlapi.OWLOntologyFactoryImpl.loadOWLOntology(OWLOntologyFactoryImpl.java:197)
+	uk.ac.manchester.cs.owl.owlapi.OWLOntologyManagerImpl.actualParse(OWLOntologyManagerImpl.java:1061)
+	uk.ac.manchester.cs.owl.owlapi.OWLOntologyManagerImpl.loadOntology(OWLOntologyManagerImpl.java:1017)
+	uk.ac.manchester.cs.owl.owlapi.OWLOntologyManagerImpl.loadOntologyFromOntologyDocument(OWLOntologyManagerImpl.java:973)
+	de.edu.rostock.ontologymetrics.owlapi.ontology.OntologyMetricManagerImpl.loadOntologyFromIRI(OntologyMetricManagerImpl.java:63)
+	de.edu.rostock.ontologymetrics.api.ApiController.getBaseMetricFromURL(ApiController.java:66)
+	sun.reflect.GeneratedMethodAccessor26.invoke(Unknown Source)
+	sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	java.lang.reflect.Method.invoke(Method.java:498)
+	org.glassfish.jersey.server.model.internal.ResourceMethodInvocationHandlerFactory.lambda$static$0(ResourceMethodInvocationHandlerFactory.java:52)
+	org.glassfish.jersey.server.model.internal.AbstractJavaResourceMethodDispatcher$1.run(AbstractJavaResourceMethodDispatcher.java:124)
+	org.glassfish.jersey.server.model.internal.AbstractJavaResourceMethodDispatcher.invoke(AbstractJavaResourceMethodDispatcher.java:167)
+	org.glassfish.jersey.server.model.internal.JavaResourceMethodDispatcherProvider$ResponseOutInvoker.doDispatch(JavaResourceMethodDispatcherProvider.java:176)
+	org.glassfish.jersey.server.model.internal.AbstractJavaResourceMethodDispatcher.dispatch(AbstractJavaResourceMethodDispatcher.java:79)
+	org.glassfish.jersey.server.model.ResourceMethodInvoker.invoke(ResourceMethodInvoker.java:469)
+	org.glassfish.jersey.server.model.ResourceMethodInvoker.apply(ResourceMethodInvoker.java:391)
+	org.glassfish.jersey.server.model.ResourceMethodInvoker.apply(ResourceMethodInvoker.java:80)
+	org.glassfish.jersey.server.ServerRuntime$1.run(ServerRuntime.java:253)
+	org.glassfish.jersey.internal.Errors$1.call(Errors.java:248)
+	org.glassfish.jersey.internal.Errors$1.call(Errors.java:244)
+	org.glassfish.jersey.internal.Errors.process(Errors.java:292)
+	org.glassfish.jersey.internal.Errors.process(Errors.java:274)
+	org.glassfish.jersey.internal.Errors.process(Errors.java:244)
+	org.glassfish.jersey.process.internal.RequestScope.runInScope(RequestScope.java:265)
+	org.glassfish.jersey.server.ServerRuntime.process(ServerRuntime.java:232)
+	org.glassfish.jersey.server.ApplicationHandler.handle(ApplicationHandler.java:680)
+	org.glassfish.jersey.servlet.WebComponent.serviceImpl(WebComponent.java:392)
+	org.glassfish.jersey.servlet.WebComponent.service(WebComponent.java:346)
+	org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:365)
+	org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:318)
+	org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:205)
+	org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+</pre><p><b>Root Cause</b></p><pre>java.io.FileNotFoundException: https:&#47;&#47;big-map.github.io&#47;BattINFO&#47;ontology&#47;BattINFO&#47;0.1.0&#47;batteryquantities&#47;batteryquantities.ttl
+	sun.net.www.protocol.http.HttpURLConnection.getInputStream0(HttpURLConnection.java:1896)
+	sun.net.www.protocol.http.HttpURLConnection.getInputStream(HttpURLConnection.java:1498)
+	java.net.HttpURLConnection.getResponseCode(HttpURLConnection.java:480)
+	sun.net.www.protocol.https.HttpsURLConnectionImpl.getResponseCode(HttpsURLConnectionImpl.java:352)
+	org.semanticweb.owlapi.io.AbstractOWLParser.getInputStream(AbstractOWLParser.java:103)
+	org.semanticweb.owlapi.io.AbstractOWLParser.getInputSource(AbstractOWLParser.java:232)
+	org.semanticweb.owlapi.rdf.rdfxml.parser.RDFXMLParser.parse(RDFXMLParser.java:72)
+	uk.ac.manchester.cs.owl.owlapi.OWLOntologyFactoryImpl.loadOWLOntology(OWLOntologyFactoryImpl.java:197)
+	uk.ac.manchester.cs.owl.owlapi.OWLOntologyManagerImpl.actualParse(OWLOntologyManagerImpl.java:1061)
+	uk.ac.manchester.cs.owl.owlapi.OWLOntologyManagerImpl.loadOntology(OWLOntologyManagerImpl.java:1017)
+	uk.ac.manchester.cs.owl.owlapi.OWLOntologyManagerImpl.loadOntology(OWLOntologyManagerImpl.java:935)
+	uk.ac.manchester.cs.owl.owlapi.OWLOntologyManagerImpl.loadImports(OWLOntologyManagerImpl.java:1610)
+	uk.ac.manchester.cs.owl.owlapi.OWLOntologyManagerImpl.makeLoadImportRequest(OWLOntologyManagerImpl.java:1646)
+	org.semanticweb.owlapi.rdf.rdfxml.parser.TripleHandlers$TPImportsHandler.handleTriple(TripleHandlers.java:1558)
+	org.semanticweb.owlapi.rdf.rdfxml.parser.TripleHandlers$HandlerAccessor.handleStreaming(TripleHandlers.java:194)
+	org.semanticweb.owlapi.rdf.rdfxml.parser.OWLRDFConsumer.statementWithResourceValue(OWLRDFConsumer.java:1501)
+	org.semanticweb.owlapi.rio.RioOWLRDFConsumerAdapter.handleStatement(RioOWLRDFConsumerAdapter.java:122)
+	org.semanticweb.owlapi.rio.RioParserImpl$RioParserRDFHandler.handleStatement(RioParserImpl.java:341)
+	org.openrdf.rio.turtle.TurtleParser.reportStatement(TurtleParser.java:1157)
+	org.openrdf.rio.turtle.TurtleParser.parseObject(TurtleParser.java:504)
+	org.openrdf.rio.turtle.TurtleParser.parseObjectList(TurtleParser.java:427)
+	org.openrdf.rio.turtle.TurtleParser.parsePredicateObjectList(TurtleParser.java:420)
+	org.openrdf.rio.turtle.TurtleParser.parseTriples(TurtleParser.java:384)
+	org.openrdf.rio.turtle.TurtleParser.parseStatement(TurtleParser.java:260)
+	org.openrdf.rio.turtle.TurtleParser.parse(TurtleParser.java:215)
+	org.openrdf.rio.turtle.TurtleParser.parse(TurtleParser.java:159)
+	org.semanticweb.owlapi.rio.RioParserImpl.parseDocumentSource(RioParserImpl.java:257)
+	org.semanticweb.owlapi.rio.RioParserImpl.parse(RioParserImpl.java:191)
+	uk.ac.manchester.cs.owl.owlapi.OWLOntologyFactoryImpl.loadOWLOntology(OWLOntologyFactoryImpl.java:197)
+	uk.ac.manchester.cs.owl.owlapi.OWLOntologyManagerImpl.actualParse(OWLOntologyManagerImpl.java:1061)
+	uk.ac.manchester.cs.owl.owlapi.OWLOntologyManagerImpl.loadOntology(OWLOntologyManagerImpl.java:1017)
+	uk.ac.manchester.cs.owl.owlapi.OWLOntologyManagerImpl.loadOntology(OWLOntologyManagerImpl.java:935)
+	uk.ac.manchester.cs.owl.owlapi.OWLOntologyManagerImpl.loadImports(OWLOntologyManagerImpl.java:1610)
+	uk.ac.manchester.cs.owl.owlapi.OWLOntologyManagerImpl.makeLoadImportRequest(OWLOntologyManagerImpl.java:1646)
+	org.semanticweb.owlapi.rdf.rdfxml.parser.TripleHandlers$TPImportsHandler.handleTriple(TripleHandlers.java:1558)
+	org.semanticweb.owlapi.rdf.rdfxml.parser.TripleHandlers$HandlerAccessor.handleStreaming(TripleHandlers.java:194)
+	org.semanticweb.owlapi.rdf.rdfxml.parser.OWLRDFConsumer.statementWithResourceValue(OWLRDFConsumer.java:1501)
+	org.semanticweb.owlapi.rio.RioOWLRDFConsumerAdapter.handleStatement(RioOWLRDFConsumerAdapter.java:122)
+	org.semanticweb.owlapi.rio.RioParserImpl$RioParserRDFHandler.handleStatement(RioParserImpl.java:341)
+	org.openrdf.rio.turtle.TurtleParser.reportStatement(TurtleParser.java:1157)
+	org.openrdf.rio.turtle.TurtleParser.parseObject(TurtleParser.java:504)
+	org.openrdf.rio.turtle.TurtleParser.parseObjectList(TurtleParser.java:427)
+	org.openrdf.rio.turtle.TurtleParser.parsePredicateObjectList(TurtleParser.java:420)
+	org.openrdf.rio.turtle.TurtleParser.parseTriples(TurtleParser.java:384)
+	org.openrdf.rio.turtle.TurtleParser.parseStatement(TurtleParser.java:260)
+	org.openrdf.rio.turtle.TurtleParser.parse(TurtleParser.java:215)
+	org.openrdf.rio.turtle.TurtleParser.parse(TurtleParser.java:159)
+	org.semanticweb.owlapi.rio.RioParserImpl.parseDocumentSource(RioParserImpl.java:257)
+	org.semanticweb.owlapi.rio.RioParserImpl.parse(RioParserImpl.java:191)
+	uk.ac.manchester.cs.owl.owlapi.OWLOntologyFactoryImpl.loadOWLOntology(OWLOntologyFactoryImpl.java:197)
+	uk.ac.manchester.cs.owl.owlapi.OWLOntologyManagerImpl.actualParse(OWLOntologyManagerImpl.java:1061)
+	uk.ac.manchester.cs.owl.owlapi.OWLOntologyManagerImpl.loadOntology(OWLOntologyManagerImpl.java:1017)
+	uk.ac.manchester.cs.owl.owlapi.OWLOntologyManagerImpl.loadOntology(OWLOntologyManagerImpl.java:935)
+	uk.ac.manchester.cs.owl.owlapi.OWLOntologyManagerImpl.loadImports(OWLOntologyManagerImpl.java:1610)
+	uk.ac.manchester.cs.owl.owlapi.OWLOntologyManagerImpl.makeLoadImportRequest(OWLOntologyManagerImpl.java:1646)
+	org.semanticweb.owlapi.rdf.rdfxml.parser.TripleHandlers$TPImportsHandler.handleTriple(TripleHandlers.java:1558)
+	org.semanticweb.owlapi.rdf.rdfxml.parser.TripleHandlers$HandlerAccessor.handleStreaming(TripleHandlers.java:194)
+	org.semanticweb.owlapi.rdf.rdfxml.parser.OWLRDFConsumer.statementWithResourceValue(OWLRDFConsumer.java:1501)
+	org.semanticweb.owlapi.rio.RioOWLRDFConsumerAdapter.handleStatement(RioOWLRDFConsumerAdapter.java:122)
+	org.semanticweb.owlapi.rio.RioParserImpl$RioParserRDFHandler.handleStatement(RioParserImpl.java:341)
+	org.openrdf.rio.turtle.TurtleParser.reportStatement(TurtleParser.java:1157)
+	org.openrdf.rio.turtle.TurtleParser.parseObject(TurtleParser.java:504)
+	org.openrdf.rio.turtle.TurtleParser.parseObjectList(TurtleParser.java:432)
+	org.openrdf.rio.turtle.TurtleParser.parsePredicateObjectList(TurtleParser.java:420)
+	org.openrdf.rio.turtle.TurtleParser.parseTriples(TurtleParser.java:384)
+	org.openrdf.rio.turtle.TurtleParser.parseStatement(TurtleParser.java:260)
+	org.openrdf.rio.turtle.TurtleParser.parse(TurtleParser.java:215)
+	org.openrdf.rio.turtle.TurtleParser.parse(TurtleParser.java:159)
+	org.semanticweb.owlapi.rio.RioParserImpl.parseDocumentSource(RioParserImpl.java:257)
+	org.semanticweb.owlapi.rio.RioParserImpl.parse(RioParserImpl.java:191)
+	uk.ac.manchester.cs.owl.owlapi.OWLOntologyFactoryImpl.loadOWLOntology(OWLOntologyFactoryImpl.java:197)
+	uk.ac.manchester.cs.owl.owlapi.OWLOntologyManagerImpl.actualParse(OWLOntologyManagerImpl.java:1061)
+	uk.ac.manchester.cs.owl.owlapi.OWLOntologyManagerImpl.loadOntology(OWLOntologyManagerImpl.java:1017)
+	uk.ac.manchester.cs.owl.owlapi.OWLOntologyManagerImpl.loadOntologyFromOntologyDocument(OWLOntologyManagerImpl.java:973)
+	de.edu.rostock.ontologymetrics.owlapi.ontology.OntologyMetricManagerImpl.loadOntologyFromIRI(OntologyMetricManagerImpl.java:63)
+	de.edu.rostock.ontologymetrics.api.ApiController.getBaseMetricFromURL(ApiController.java:66)
+	sun.reflect.GeneratedMethodAccessor26.invoke(Unknown Source)
+	sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	java.lang.reflect.Method.invoke(Method.java:498)
+	org.glassfish.jersey.server.model.internal.ResourceMethodInvocationHandlerFactory.lambda$static$0(ResourceMethodInvocationHandlerFactory.java:52)
+	org.glassfish.jersey.server.model.internal.AbstractJavaResourceMethodDispatcher$1.run(AbstractJavaResourceMethodDispatcher.java:124)
+	org.glassfish.jersey.server.model.internal.AbstractJavaResourceMethodDispatcher.invoke(AbstractJavaResourceMethodDispatcher.java:167)
+	org.glassfish.jersey.server.model.internal.JavaResourceMethodDispatcherProvider$ResponseOutInvoker.doDispatch(JavaResourceMethodDispatcherProvider.java:176)
+	org.glassfish.jersey.server.model.internal.AbstractJavaResourceMethodDispatcher.dispatch(AbstractJavaResourceMethodDispatcher.java:79)
+	org.glassfish.jersey.server.model.ResourceMethodInvoker.invoke(ResourceMethodInvoker.java:469)
+	org.glassfish.jersey.server.model.ResourceMethodInvoker.apply(ResourceMethodInvoker.java:391)
+	org.glassfish.jersey.server.model.ResourceMethodInvoker.apply(ResourceMethodInvoker.java:80)
+	org.glassfish.jersey.server.ServerRuntime$1.run(ServerRuntime.java:253)
+	org.glassfish.jersey.internal.Errors$1.call(Errors.java:248)
+	org.glassfish.jersey.internal.Errors$1.call(Errors.java:244)
+	org.glassfish.jersey.internal.Errors.process(Errors.java:292)
+	org.glassfish.jersey.internal.Errors.process(Errors.java:274)
+	org.glassfish.jersey.internal.Errors.process(Errors.java:244)
+	org.glassfish.jersey.process.internal.RequestScope.runInScope(RequestScope.java:265)
+	org.glassfish.jersey.server.ServerRuntime.process(ServerRuntime.java:232)
+	org.glassfish.jersey.server.ApplicationHandler.handle(ApplicationHandler.java:680)
+	org.glassfish.jersey.servlet.WebComponent.serviceImpl(WebComponent.java:392)
+	org.glassfish.jersey.servlet.WebComponent.service(WebComponent.java:346)
+	org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:365)
+	org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:318)
+	org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:205)
+	org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+</pre><p><b>Note</b> The full stack trace of the root cause is available in the server logs.</p><hr class="line" /><h3>Apache Tomcat/8.5.50</h3></body></html>

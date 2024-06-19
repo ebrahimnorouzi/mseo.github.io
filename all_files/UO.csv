@@ -1,0 +1,145 @@
+metric,metric_value,metric_type
+abox_axiom_count,0,single_value
+abox_axiom_count_incl,0,single_value
+abox_nominals,false,single_value
+abox_nominals_incl,false,single_value
+annotation_property_count,4,single_value
+annotation_property_count_incl,4,single_value
+assert_n_subclass_avg,1.2298850574712643,single_value
+assert_n_subclass_avg_incl,1.2298850574712643,single_value
+assert_n_superclass_avg,1.3119868637110017,single_value
+assert_n_superclass_avg_incl,1.3119868637110017,single_value
+ax_complexrhs_count,394,single_value
+ax_complexrhs_count_incl,394,single_value
+axiom_count,3397,single_value
+axiom_count_incl,3397,single_value
+axiom_length_max,4,single_value
+axiom_length_max_incl,4,single_value
+axiom_type_count,AnnotationAssertion 1369,map_value
+axiom_type_count,Declaration 885,map_value
+axiom_type_count,EquivalentClasses 350,map_value
+axiom_type_count,SubClassOf 793,map_value
+axiom_type_count_incl,AnnotationAssertion 1369,map_value
+axiom_type_count_incl,Declaration 885,map_value
+axiom_type_count_incl,EquivalentClasses 350,map_value
+axiom_type_count_incl,SubClassOf 793,map_value
+axiom_types,AnnotationAssertion,list_value
+axiom_types,Declaration,list_value
+axiom_types,EquivalentClasses,list_value
+axiom_types,SubClassOf,list_value
+axiom_types_incl,AnnotationAssertion,list_value
+axiom_types_incl,Declaration,list_value
+axiom_types_incl,EquivalentClasses,list_value
+axiom_types_incl,SubClassOf,list_value
+certain_cycle,false,single_value
+certain_cycle_incl,false,single_value
+class_count,609,single_value
+class_count_incl,609,single_value
+class_expression_count,Class 2705,map_value
+class_expression_count,ObjectAllValuesFrom 44,map_value
+class_expression_count,ObjectIntersectionOf 78,map_value
+class_expression_count,ObjectOneOf 272,map_value
+class_expression_count,ObjectSomeValuesFrom 78,map_value
+class_expression_count,ObjectUnionOf 44,map_value
+class_expression_count_incl,Class 2705,map_value
+class_expression_count_incl,ObjectAllValuesFrom 44,map_value
+class_expression_count_incl,ObjectIntersectionOf 78,map_value
+class_expression_count_incl,ObjectOneOf 272,map_value
+class_expression_count_incl,ObjectSomeValuesFrom 78,map_value
+class_expression_count_incl,ObjectUnionOf 44,map_value
+class_sgl_subcl_count,170,single_value
+class_sgl_subcl_count_incl,170,single_value
+constructs,CONCEPT_INTERSECTION,list_value
+constructs,CONCEPT_UNION,list_value
+constructs,FULL_EXISTENTIAL,list_value
+constructs,NOMINALS,list_value
+constructs,UNIVERSAL_RESTRICTION,list_value
+constructs_incl,CONCEPT_INTERSECTION,list_value
+constructs_incl,CONCEPT_UNION,list_value
+constructs_incl,FULL_EXISTENTIAL,list_value
+constructs_incl,NOMINALS,list_value
+constructs_incl,UNIVERSAL_RESTRICTION,list_value
+curie_map,PATO http://purl.obolibrary.org/obo/PATO_,map_value
+curie_map,UO http://purl.obolibrary.org/obo/UO_,map_value
+curie_map,obo http://purl.obolibrary.org/obo/,map_value
+curie_map,rdfs http://www.w3.org/2000/01/rdf-schema#,map_value
+curie_map,xsd http://www.w3.org/2001/XMLSchema#,map_value
+dataproperty_count,0,single_value
+dataproperty_count_incl,0,single_value
+datatypes_builtin,XSD_STRING,list_value
+datatypes_builtin_incl,XSD_STRING,list_value
+datatypes_count,1,single_value
+datatypes_count_incl,1,single_value
+dt_builtin_count,1,single_value
+dt_builtin_count_incl,1,single_value
+dt_notbuiltin_count,0,single_value
+dt_notbuiltin_count_incl,0,single_value
+expressivity,UCINTUNIVRESTREO,single_value
+expressivity_incl,UCINTUNIVRESTREO,single_value
+gci_count,0,single_value
+gci_count_incl,0,single_value
+gci_hidden_count,272,single_value
+gci_hidden_count_incl,272,single_value
+individual_count,272,single_value
+individual_count_incl,272,single_value
+instance_per_class_avg,0.0,single_value
+instance_per_class_avg_incl,0.0,single_value
+logical_axiom_count,1143,single_value
+logical_axiom_count_incl,1143,single_value
+most_freq_concept,http://purl.obolibrary.org/obo/UO_1000281,single_value
+most_freq_concept_incl,http://purl.obolibrary.org/obo/UO_1000281,single_value
+multiple_inheritance_count,78,single_value
+multiple_inheritance_count_incl,78,single_value
+named_supercl_count_max,3,single_value
+named_supercl_count_max_incl,3,single_value
+namespace_axiom_count,PATO 96,map_value
+namespace_axiom_count,UO 3153,map_value
+namespace_axiom_count,obo 124,map_value
+namespace_axiom_count,prefix_unknown 415,map_value
+namespace_axiom_count,rdfs 956,map_value
+namespace_axiom_count_incl,PATO 96,map_value
+namespace_axiom_count_incl,UO 3153,map_value
+namespace_axiom_count_incl,obo 124,map_value
+namespace_axiom_count_incl,prefix_unknown 415,map_value
+namespace_axiom_count_incl,rdfs 956,map_value
+namespace_entity_count,PATO 48,map_value
+namespace_entity_count,UO 833,map_value
+namespace_entity_count,obo 2,map_value
+namespace_entity_count,prefix_unknown 2,map_value
+namespace_entity_count,rdfs 2,map_value
+namespace_entity_count,xsd 1,map_value
+namespace_entity_count_incl,PATO 48,map_value
+namespace_entity_count_incl,UO 833,map_value
+namespace_entity_count_incl,obo 2,map_value
+namespace_entity_count_incl,prefix_unknown 2,map_value
+namespace_entity_count_incl,rdfs 2,map_value
+namespace_entity_count_incl,xsd 1,map_value
+obj_property_count,2,single_value
+obj_property_count_incl,2,single_value
+ontology_anno_count,0,single_value
+ontology_iri,http://purl.obolibrary.org/obo/uo.owl,single_value
+ontology_version_iri,no.iri,single_value
+owl2,true,single_value
+owl2_dl,false,single_value
+owl2_el,false,single_value
+owl2_ql,false,single_value
+owl2_rl,false,single_value
+owl2dl_profile_violation,InsufficientOperands 40,map_value
+rbox_axiom_count,0,single_value
+rbox_axiom_count_incl,0,single_value
+rdfs,false,single_value
+rule_count,0,single_value
+rule_count_incl,0,single_value
+signature_entity_count,888,single_value
+signature_entity_count_incl,888,single_value
+syntax,RDF/XML Syntax,single_value
+tautology_count,0,single_value
+tautology_count_incl,0,single_value
+tbox_axiom_count,1143,single_value
+tbox_axiom_count_incl,1143,single_value
+tbox_nominals,true,single_value
+tbox_nominals_incl,true,single_value
+tboxrbox_axiom_count,1143,single_value
+tboxrbox_axiom_count_incl,1143,single_value
+undecl_entity_count,3,single_value
+undecl_entity_count_incl,3,single_value

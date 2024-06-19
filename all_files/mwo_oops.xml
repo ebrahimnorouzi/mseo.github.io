@@ -340,7 +340,16 @@
 <oops:Importance>Important</oops:Importance>
 <oops:NumberAffectedElements>1</oops:NumberAffectedElements>
 <oops:Affects>
-<oops:AffectedElement>85b70a7:18967af406c:-1750</oops:AffectedElement>
+<oops:AffectedElement>16d85d9b:19030ab4245:6182</oops:AffectedElement>
+</oops:Affects>
+</oops:Pitfall>
+<oops:Pitfall>
+<oops:Code>P36</oops:Code><oops:Name>URI contains file extension</oops:Name>
+<oops:Description>This pitfall occurs if file extensions such as &quot;.owl&quot;, &quot;.rdf&quot;, &quot;.ttl&quot;, &quot;.n3&quot; and &quot;.rdfxml&quot; are included in an ontology URI. This pitfall is related with the recommendations provided in [9].	</oops:Description>
+<oops:Importance>Minor</oops:Importance>
+<oops:NumberAffectedElements>1</oops:NumberAffectedElements>
+<oops:Affects>
+<oops:AffectedElement>https://raw.githubusercontent.com/ebrahimnorouzi/mseo.github.io/master/Ontology_files/mwo.owl</oops:AffectedElement>
 </oops:Affects>
 </oops:Pitfall>
 <oops:Suggestion>

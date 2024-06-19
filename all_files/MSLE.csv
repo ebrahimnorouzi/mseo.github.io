@@ -1,0 +1,170 @@
+metric,metric_value,metric_type
+abox_axiom_count,0,single_value
+abox_axiom_count_incl,6,single_value
+abox_nominals,false,single_value
+abox_nominals_incl,false,single_value
+annotation_property_count,3,single_value
+annotation_property_count_incl,21,single_value
+assert_n_subclass_avg,0.9634146341463414,single_value
+assert_n_subclass_avg_incl,0.7669902912621359,single_value
+assert_n_superclass_avg,1.024390243902439,single_value
+assert_n_superclass_avg_incl,1.0194174757281553,single_value
+ax_complexrhs_count,0,single_value
+ax_complexrhs_count_incl,73,single_value
+axiom_count,181,single_value
+axiom_count_incl,706,single_value
+axiom_length_max,11,single_value
+axiom_length_max_incl,11,single_value
+axiom_type_count,Declaration 84,map_value
+axiom_type_count,DisjointClasses 18,map_value
+axiom_type_count,SubClassOf 79,map_value
+axiom_type_count_incl,AnnotationAssertion 341,map_value
+axiom_type_count_incl,ClassAssertion 6,map_value
+axiom_type_count_incl,DataPropertyRange 1,map_value
+axiom_type_count_incl,Declaration 160,map_value
+axiom_type_count_incl,DisjointClasses 18,map_value
+axiom_type_count_incl,FunctionalObjectProperty 2,map_value
+axiom_type_count_incl,InverseFunctionalObjectProperty 1,map_value
+axiom_type_count_incl,InverseObjectProperties 13,map_value
+axiom_type_count_incl,SubClassOf 159,map_value
+axiom_type_count_incl,SubObjectPropertyOf 1,map_value
+axiom_type_count_incl,SubPropertyChainOf 4,map_value
+axiom_types,Declaration,list_value
+axiom_types,DisjointClasses,list_value
+axiom_types,SubClassOf,list_value
+axiom_types_incl,AnnotationAssertion,list_value
+axiom_types_incl,ClassAssertion,list_value
+axiom_types_incl,DataPropertyRange,list_value
+axiom_types_incl,Declaration,list_value
+axiom_types_incl,DisjointClasses,list_value
+axiom_types_incl,FunctionalObjectProperty,list_value
+axiom_types_incl,InverseFunctionalObjectProperty,list_value
+axiom_types_incl,InverseObjectProperties,list_value
+axiom_types_incl,SubClassOf,list_value
+axiom_types_incl,SubObjectPropertyOf,list_value
+axiom_types_incl,SubPropertyChainOf,list_value
+certain_cycle,false,single_value
+certain_cycle_incl,true,single_value
+class_count,82,single_value
+class_count_incl,103,single_value
+class_expression_count,Class 319,map_value
+class_expression_count_incl,Class 502,map_value
+class_expression_count_incl,DataExactCardinality 3,map_value
+class_expression_count_incl,ObjectAllValuesFrom 48,map_value
+class_expression_count_incl,ObjectExactCardinality 9,map_value
+class_expression_count_incl,ObjectMinCardinality 13,map_value
+class_sgl_subcl_count,3,single_value
+class_sgl_subcl_count_incl,3,single_value
+constructs,CONCEPT_COMPLEX_NEGATION,list_value
+constructs_incl,CONCEPT_COMPLEX_NEGATION,list_value
+constructs_incl,D,list_value
+constructs_incl,N,list_value
+constructs_incl,ROLE_COMPLEX,list_value
+constructs_incl,ROLE_DOMAIN_RANGE,list_value
+constructs_incl,ROLE_INVERSE,list_value
+constructs_incl,UNIVERSAL_RESTRICTION,list_value
+curie_map,dc http://purl.org/dc/terms/,map_value
+curie_map,dc11 http://purl.org/dc/elements/1.1/,map_value
+curie_map,foaf http://xmlns.com/foaf/0.1/,map_value
+curie_map,owl http://www.w3.org/2002/07/owl#,map_value
+curie_map,rdf http://www.w3.org/1999/02/22-rdf-syntax-ns#,map_value
+curie_map,rdfs http://www.w3.org/2000/01/rdf-schema#,map_value
+curie_map,schema http://schema.org/,map_value
+curie_map,skos http://www.w3.org/2004/02/skos/core#,map_value
+curie_map,xsd http://www.w3.org/2001/XMLSchema#,map_value
+dataproperty_count,2,single_value
+dataproperty_count_incl,4,single_value
+datatypes_axiom_count_incl,RDFS_LITERAL 3,map_value
+datatypes_axiom_count_incl,XSD_DATE_TIME 1,map_value
+datatypes_builtin,RDFS_LITERAL,list_value
+datatypes_builtin_incl,RDFS_LITERAL,list_value
+datatypes_builtin_incl,RDF_PLAIN_LITERAL,list_value
+datatypes_builtin_incl,XSD_DATE_TIME,list_value
+datatypes_count,1,single_value
+datatypes_count_incl,4,single_value
+datatypes_not_built_in_incl,xsd:date,list_value
+dt_builtin_count,1,single_value
+dt_builtin_count_incl,3,single_value
+dt_notbuiltin_count,0,single_value
+dt_notbuiltin_count_incl,1,single_value
+expressivity,C,single_value
+expressivity_incl,RRESTRCUNIVRESTRRIN(D),single_value
+gci_count,0,single_value
+gci_count_incl,0,single_value
+gci_hidden_count,0,single_value
+gci_hidden_count_incl,0,single_value
+individual_count,0,single_value
+individual_count_incl,2,single_value
+instance_per_class_avg,0.0,single_value
+instance_per_class_avg_incl,0.0,single_value
+logical_axiom_count,97,single_value
+logical_axiom_count_incl,205,single_value
+most_freq_concept,http://www.semanticweb.org/mehrdad/ontologies/2021/5/MSLE#Liquid_Chromatography,single_value
+most_freq_concept_incl,http://www.w3.org/2002/07/owl#Thing,single_value
+multiple_inheritance_count,0,single_value
+multiple_inheritance_count_incl,0,single_value
+named_supercl_count_max,2,single_value
+named_supercl_count_max_incl,2,single_value
+namespace_axiom_count,dc 1,map_value
+namespace_axiom_count,dc11 1,map_value
+namespace_axiom_count,prefix_unknown 321,map_value
+namespace_axiom_count_incl,dc 7,map_value
+namespace_axiom_count_incl,dc11 1,map_value
+namespace_axiom_count_incl,foaf 10,map_value
+namespace_axiom_count_incl,owl 22,map_value
+namespace_axiom_count_incl,prefix_unknown 638,map_value
+namespace_axiom_count_incl,rdfs 177,map_value
+namespace_axiom_count_incl,schema 72,map_value
+namespace_axiom_count_incl,skos 96,map_value
+namespace_axiom_count_incl,xsd 1,map_value
+namespace_entity_count,dc 7,map_value
+namespace_entity_count,dc11 1,map_value
+namespace_entity_count,foaf 2,map_value
+namespace_entity_count,owl 2,map_value
+namespace_entity_count,prefix_unknown 145,map_value
+namespace_entity_count,rdf 1,map_value
+namespace_entity_count,rdfs 5,map_value
+namespace_entity_count,schema 2,map_value
+namespace_entity_count,skos 3,map_value
+namespace_entity_count,xsd 2,map_value
+namespace_entity_count_incl,dc 7,map_value
+namespace_entity_count_incl,dc11 1,map_value
+namespace_entity_count_incl,foaf 2,map_value
+namespace_entity_count_incl,owl 2,map_value
+namespace_entity_count_incl,prefix_unknown 145,map_value
+namespace_entity_count_incl,rdf 1,map_value
+namespace_entity_count_incl,rdfs 5,map_value
+namespace_entity_count_incl,schema 2,map_value
+namespace_entity_count_incl,skos 3,map_value
+namespace_entity_count_incl,xsd 2,map_value
+obj_property_count,0,single_value
+obj_property_count_incl,36,single_value
+ontology_anno_count,3,single_value
+ontology_iri,http://www.semanticweb.org/mehrdad/ontologies/2021/5/MSLE,single_value
+ontology_version_iri,no.iri,single_value
+owl2,true,single_value
+owl2_dl,true,single_value
+owl2_el,false,single_value
+owl2_ql,false,single_value
+owl2_rl,false,single_value
+rbox_axiom_count,0,single_value
+rbox_axiom_count_incl,18,single_value
+rdfs,false,single_value
+rule_count,0,single_value
+rule_count_incl,0,single_value
+signature_entity_count,170,single_value
+signature_entity_count_incl,170,single_value
+syntax,OWL/XML Syntax,single_value
+tautology_count,0,single_value
+tautology_count_incl,0,single_value
+tbox_axiom_count,97,single_value
+tbox_axiom_count_incl,181,single_value
+tbox_nominals,false,single_value
+tbox_nominals_incl,false,single_value
+tboxrbox_axiom_count,97,single_value
+tboxrbox_axiom_count_incl,199,single_value
+undecl_entity_count,86,single_value
+undecl_entity_count_incl,86,single_value
+valid_imports,http://www.w3.org/ns/sosa/,list_value
+valid_imports,http://www.w3.org/ns/ssn/,list_value
+valid_imports_incl,http://www.w3.org/ns/ssn/,list_value

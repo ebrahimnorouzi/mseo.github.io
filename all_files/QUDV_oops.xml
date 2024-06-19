@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<oops:OOPSResponse xmlns:oops="http://www.oeg-upm.net/oops">
+<oops:Pitfall>
+<oops:Code>P04</oops:Code><oops:Name>Creating unconnected ontology elements</oops:Name>
+<oops:Description>Ontology elements (classes, object properties and datatype properties) are created isolated, with no relation to the rest of the ontology.	</oops:Description>
+<oops:Importance>Minor</oops:Importance>
+<oops:NumberAffectedElements>1</oops:NumberAffectedElements>
+<oops:Affects>
+<oops:AffectedElement>http://www.example.org/SysML-QUDV.owl#Quantity</oops:AffectedElement>
+</oops:Affects>
+</oops:Pitfall>
+<oops:Pitfall>
+<oops:Code>P08</oops:Code><oops:Name>Missing annotations</oops:Name>
+<oops:Description>This pitfall consists in creating an ontology element and failing to provide human readable annotations attached to it. Consequently, ontology elements lack annotation properties that label them (e.g. rdfs:label, lemon:LexicalEntry, skos:prefLabel or skos:altLabel) or that define them (e.g. rdfs:comment or dc:description). This pitfall is related to the guidelines provided in [5].	</oops:Description>
+<oops:Importance>Minor</oops:Importance>
+<oops:NumberAffectedElements>43</oops:NumberAffectedElements>
+<oops:Affects>
+<oops:AffectedElement>http://www.example.org/SysML-QUDV.owl#QuantityKindFactor</oops:AffectedElement>
+<oops:AffectedElement>http://www.example.org/SysML-QUDV.owl#PrefixedUnit</oops:AffectedElement>
+<oops:AffectedElement>http://www.example.org/SysML-QUDV.owl#Unit</oops:AffectedElement>
+<oops:AffectedElement>http://www.example.org/SysML-QUDV.owl#GeneralConversionUnit</oops:AffectedElement>
+<oops:AffectedElement>http://www.example.org/SysML-QUDV.owl#Prefix</oops:AffectedElement>
+<oops:AffectedElement>http://www.example.org/SysML-QUDV.owl#SimpleUnit</oops:AffectedElement>
+<oops:AffectedElement>http://www.example.org/SysML-QUDV.owl#ScaleValueDefinition</oops:AffectedElement>
+<oops:AffectedElement>http://www.example.org/SysML-QUDV.owl#LinearConversionUnit</oops:AffectedElement>
+<oops:AffectedElement>http://www.example.org/SysML-QUDV.owl#QuantityKind</oops:AffectedElement>
+<oops:AffectedElement>http://www.example.org/SysML-QUDV.owl#Quantity</oops:AffectedElement>
+<oops:AffectedElement>http://www.example.org/SysML-QUDV.owl#DerivedQuantityKind</oops:AffectedElement>
+<oops:AffectedElement>http://www.example.org/SysML-QUDV.owl#SimpleQuantityKind</oops:AffectedElement>
+<oops:AffectedElement>http://www.example.org/SysML-QUDV.owl#SpecializedQuantityKind</oops:AffectedElement>
+<oops:AffectedElement>http://www.example.org/SysML-QUDV.owl#DerivedUnit</oops:AffectedElement>
+<oops:AffectedElement>http://www.example.org/SysML-QUDV.owl#ConversionBasedUnit</oops:AffectedElement>
+<oops:AffectedElement>http://www.example.org/SysML-QUDV.owl#Scale</oops:AffectedElement>
+<oops:AffectedElement>http://www.example.org/SysML-QUDV.owl#DimensionFactor</oops:AffectedElement>
+<oops:AffectedElement>http://www.example.org/SysML-QUDV.owl#UnitFactor</oops:AffectedElement>
+<oops:AffectedElement>http://www.example.org/SysML-QUDV.owl#referenceUnit</oops:AffectedElement>
+<oops:AffectedElement>http://www.example.org/SysML-QUDV.owl#unit</oops:AffectedElement>
+<oops:AffectedElement>http://www.example.org/SysML-QUDV.owl#specificQuantityKind</oops:AffectedElement>
+<oops:AffectedElement>http://www.example.org/SysML-QUDV.owl#prefix</oops:AffectedElement>
+<oops:AffectedElement>http://www.example.org/SysML-QUDV.owl#baseUnit</oops:AffectedElement>
+<oops:AffectedElement>http://www.example.org/SysML-QUDV.owl#baseDimension</oops:AffectedElement>
+<oops:AffectedElement>http://www.example.org/SysML-QUDV.owl#baseQuantityKind</oops:AffectedElement>
+<oops:AffectedElement>http://www.example.org/SysML-QUDV.owl#quantityKind</oops:AffectedElement>
+<oops:AffectedElement>http://www.example.org/SysML-QUDV.owl#generalQuantityKind</oops:AffectedElement>
+<oops:AffectedElement>http://www.example.org/SysML-QUDV.owl#dimension</oops:AffectedElement>
+<oops:AffectedElement>http://www.example.org/SysML-QUDV.owl#scaleValueDefinition</oops:AffectedElement>
+<oops:AffectedElement>http://www.example.org/SysML-QUDV.owl#systemOfQuantities</oops:AffectedElement>
+<oops:AffectedElement>http://www.example.org/SysML-QUDV.owl#scale</oops:AffectedElement>
+<oops:AffectedElement>http://www.example.org/SysML-QUDV.owl#factor</oops:AffectedElement>
+<oops:AffectedElement>http://www.example.org/SysML-QUDV.owl#unitMultipleFactor</oops:AffectedElement>
+<oops:AffectedElement>http://www.example.org/SysML-QUDV.owl#definitionURI</oops:AffectedElement>
+<oops:AffectedElement>http://www.example.org/SysML-QUDV.owl#expression</oops:AffectedElement>
+<oops:AffectedElement>http://www.example.org/SysML-QUDV.owl#conversionFactor</oops:AffectedElement>
+<oops:AffectedElement>http://www.example.org/SysML-QUDV.owl#numericalValue</oops:AffectedElement>
+<oops:AffectedElement>http://www.example.org/SysML-QUDV.owl#symbol</oops:AffectedElement>
+<oops:AffectedElement>http://www.example.org/SysML-QUDV.owl#description</oops:AffectedElement>
+<oops:AffectedElement>http://www.example.org/SysML-QUDV.owl#exponent</oops:AffectedElement>
+<oops:AffectedElement>http://www.example.org/SysML-QUDV.owl#name</oops:AffectedElement>
+<oops:AffectedElement>http://www.example.org/SysML-QUDV.owl#symbolicExpression</oops:AffectedElement>
+<oops:AffectedElement>http://www.example.org/SysML-QUDV.owl#conversionOffset</oops:AffectedElement>
+</oops:Affects>
+</oops:Pitfall>
+<oops:Pitfall>
+<oops:Code>P11</oops:Code><oops:Name>Missing domain or range in properties</oops:Name>
+<oops:Description>Object and/or datatype properties without domain or range (or none of them) are included in the ontology. 	</oops:Description>
+<oops:Importance>Important</oops:Importance>
+<oops:NumberAffectedElements>25</oops:NumberAffectedElements>
+<oops:Affects>
+<oops:AffectedElement>http://www.example.org/SysML-QUDV.owl#factor</oops:AffectedElement>
+<oops:AffectedElement>http://www.example.org/SysML-QUDV.owl#scale</oops:AffectedElement>
+<oops:AffectedElement>http://www.example.org/SysML-QUDV.owl#systemOfQuantities</oops:AffectedElement>
+<oops:AffectedElement>http://www.example.org/SysML-QUDV.owl#scaleValueDefinition</oops:AffectedElement>
+<oops:AffectedElement>http://www.example.org/SysML-QUDV.owl#dimension</oops:AffectedElement>
+<oops:AffectedElement>http://www.example.org/SysML-QUDV.owl#generalQuantityKind</oops:AffectedElement>
+<oops:AffectedElement>http://www.example.org/SysML-QUDV.owl#quantityKind</oops:AffectedElement>
+<oops:AffectedElement>http://www.example.org/SysML-QUDV.owl#baseQuantityKind</oops:AffectedElement>
+<oops:AffectedElement>http://www.example.org/SysML-QUDV.owl#baseDimension</oops:AffectedElement>
+<oops:AffectedElement>http://www.example.org/SysML-QUDV.owl#baseUnit</oops:AffectedElement>
+<oops:AffectedElement>http://www.example.org/SysML-QUDV.owl#prefix</oops:AffectedElement>
+<oops:AffectedElement>http://www.example.org/SysML-QUDV.owl#specificQuantityKind</oops:AffectedElement>
+<oops:AffectedElement>http://www.example.org/SysML-QUDV.owl#unit</oops:AffectedElement>
+<oops:AffectedElement>http://www.example.org/SysML-QUDV.owl#referenceUnit</oops:AffectedElement>
+<oops:AffectedElement>http://www.example.org/SysML-QUDV.owl#conversionOffset</oops:AffectedElement>
+<oops:AffectedElement>http://www.example.org/SysML-QUDV.owl#symbolicExpression</oops:AffectedElement>
+<oops:AffectedElement>http://www.example.org/SysML-QUDV.owl#name</oops:AffectedElement>
+<oops:AffectedElement>http://www.example.org/SysML-QUDV.owl#exponent</oops:AffectedElement>
+<oops:AffectedElement>http://www.example.org/SysML-QUDV.owl#description</oops:AffectedElement>
+<oops:AffectedElement>http://www.example.org/SysML-QUDV.owl#symbol</oops:AffectedElement>
+<oops:AffectedElement>http://www.example.org/SysML-QUDV.owl#numericalValue</oops:AffectedElement>
+<oops:AffectedElement>http://www.example.org/SysML-QUDV.owl#conversionFactor</oops:AffectedElement>
+<oops:AffectedElement>http://www.example.org/SysML-QUDV.owl#expression</oops:AffectedElement>
+<oops:AffectedElement>http://www.example.org/SysML-QUDV.owl#definitionURI</oops:AffectedElement>
+<oops:AffectedElement>http://www.example.org/SysML-QUDV.owl#unitMultipleFactor</oops:AffectedElement>
+</oops:Affects>
+</oops:Pitfall>
+<oops:Pitfall>
+<oops:Code>P13</oops:Code><oops:Name>Inverse relationships not explicitly declared</oops:Name>
+<oops:Description>This pitfall appears when any relationship (except for those that are defined as symmetric properties using owl:SymmetricProperty) does not have an inverse relationship (owl:inverseOf) defined within the ontology.	</oops:Description>
+<oops:Importance>Minor</oops:Importance>
+<oops:NumberAffectedElements>12</oops:NumberAffectedElements>
+<oops:Affects>
+<oops:NoInverseSuggestion>
+<oops:AffectedElement>http://www.example.org/SysML-QUDV.owl#referenceUnit</oops:AffectedElement>
+<oops:AffectedElement>http://www.example.org/SysML-QUDV.owl#unit</oops:AffectedElement>
+<oops:AffectedElement>http://www.example.org/SysML-QUDV.owl#prefix</oops:AffectedElement>
+<oops:AffectedElement>http://www.example.org/SysML-QUDV.owl#baseUnit</oops:AffectedElement>
+<oops:AffectedElement>http://www.example.org/SysML-QUDV.owl#baseDimension</oops:AffectedElement>
+<oops:AffectedElement>http://www.example.org/SysML-QUDV.owl#baseQuantityKind</oops:AffectedElement>
+<oops:AffectedElement>http://www.example.org/SysML-QUDV.owl#quantityKind</oops:AffectedElement>
+<oops:AffectedElement>http://www.example.org/SysML-QUDV.owl#dimension</oops:AffectedElement>
+<oops:AffectedElement>http://www.example.org/SysML-QUDV.owl#scaleValueDefinition</oops:AffectedElement>
+<oops:AffectedElement>http://www.example.org/SysML-QUDV.owl#systemOfQuantities</oops:AffectedElement>
+<oops:AffectedElement>http://www.example.org/SysML-QUDV.owl#scale</oops:AffectedElement>
+<oops:AffectedElement>http://www.example.org/SysML-QUDV.owl#factor</oops:AffectedElement>
+</oops:NoInverseSuggestion>
+</oops:Affects>
+</oops:Pitfall>
+<oops:Pitfall>
+<oops:Code>P36</oops:Code><oops:Name>URI contains file extension</oops:Name>
+<oops:Description>This pitfall occurs if file extensions such as &quot;.owl&quot;, &quot;.rdf&quot;, &quot;.ttl&quot;, &quot;.n3&quot; and &quot;.rdfxml&quot; are included in an ontology URI. This pitfall is related with the recommendations provided in [9].	</oops:Description>
+<oops:Importance>Minor</oops:Importance>
+<oops:NumberAffectedElements>1</oops:NumberAffectedElements>
+<oops:Affects>
+<oops:AffectedElement>https://raw.githubusercontent.com/ebrahimnorouzi/mseo.github.io/master/Ontology_files/QUDV.owl</oops:AffectedElement>
+</oops:Affects>
+</oops:Pitfall>
+<oops:Pitfall>
+<oops:Code>P38</oops:Code><oops:Name>No OWL ontology declaration</oops:Name>
+<oops:Description>This pitfall consists in not declaring the owl:Ontology tag, which provides the ontology metadata. The owl:Ontology tag aims at gathering metadata about a given ontology such as version information, license, provenance, creation date, and so on. It is also used to declare the inclusion of other ontologies.	</oops:Description>
+<oops:Importance>Important</oops:Importance>
+<oops:NumberAffectedElements>1</oops:NumberAffectedElements>
+</oops:Pitfall>
+</oops:OOPSResponse>

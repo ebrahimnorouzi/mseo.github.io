@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<oops:OOPSResponse xmlns:oops="http://www.oeg-upm.net/oops">
+<oops:Pitfall>
+<oops:Code>P08</oops:Code><oops:Name>Missing annotations</oops:Name>
+<oops:Description>This pitfall consists in creating an ontology element and failing to provide human readable annotations attached to it. Consequently, ontology elements lack annotation properties that label them (e.g. rdfs:label, lemon:LexicalEntry, skos:prefLabel or skos:altLabel) or that define them (e.g. rdfs:comment or dc:description). This pitfall is related to the guidelines provided in [5].	</oops:Description>
+<oops:Importance>Minor</oops:Importance>
+<oops:NumberAffectedElements>23</oops:NumberAffectedElements>
+<oops:Affects>
+<oops:AffectedElement>http://www.w3.org/ns/prov#Agent</oops:AffectedElement>
+<oops:AffectedElement>http://www.w3.org/ns/prov#Role</oops:AffectedElement>
+<oops:AffectedElement>http://www.w3.org/ns/prov#Collection</oops:AffectedElement>
+<oops:AffectedElement>http://www.w3.org/ns/prov#SoftwareAgent</oops:AffectedElement>
+<oops:AffectedElement>http://www.w3.org/ns/prov#Organization</oops:AffectedElement>
+<oops:AffectedElement>http://www.w3.org/ns/prov#Entity</oops:AffectedElement>
+<oops:AffectedElement>http://www.w3.org/ns/prov#EmptyCollection</oops:AffectedElement>
+<oops:AffectedElement>http://www.w3.org/ns/prov#Activity</oops:AffectedElement>
+<oops:AffectedElement>http://www.w3.org/ns/prov#Location</oops:AffectedElement>
+<oops:AffectedElement>http://www.w3.org/ns/prov#Person</oops:AffectedElement>
+<oops:AffectedElement>http://www.w3.org/ns/prov#generated</oops:AffectedElement>
+<oops:AffectedElement>http://www.w3.org/ns/prov#invalidated</oops:AffectedElement>
+<oops:AffectedElement>http://www.w3.org/ns/prov#influenced</oops:AffectedElement>
+<oops:AffectedElement>http://www.w3.org/ns/prov#wasInvalidatedBy</oops:AffectedElement>
+<oops:AffectedElement>http://www.w3.org/ns/prov#specializationOf</oops:AffectedElement>
+<oops:AffectedElement>http://www.w3.org/ns/prov#entity</oops:AffectedElement>
+<oops:AffectedElement>http://www.w3.org/ns/prov#alternateOf</oops:AffectedElement>
+<oops:AffectedElement>http://www.w3.org/ns/prov#activity</oops:AffectedElement>
+<oops:AffectedElement>http://www.w3.org/ns/prov#wasGeneratedBy</oops:AffectedElement>
+<oops:AffectedElement>http://www.w3.org/ns/prov#hadPrimarySource</oops:AffectedElement>
+<oops:AffectedElement>http://www.w3.org/ns/prov#hadMember</oops:AffectedElement>
+<oops:AffectedElement>http://www.w3.org/ns/prov#agent</oops:AffectedElement>
+<oops:AffectedElement>http://www.w3.org/ns/prov#value</oops:AffectedElement>
+</oops:Affects>
+</oops:Pitfall>
+<oops:Pitfall>
+<oops:Code>P11</oops:Code><oops:Name>Missing domain or range in properties</oops:Name>
+<oops:Description>Object and/or datatype properties without domain or range (or none of them) are included in the ontology. 	</oops:Description>
+<oops:Importance>Important</oops:Importance>
+<oops:NumberAffectedElements>2</oops:NumberAffectedElements>
+<oops:Affects>
+<oops:AffectedElement>http://www.w3.org/ns/prov#influenced</oops:AffectedElement>
+<oops:AffectedElement>http://www.w3.org/ns/prov#value</oops:AffectedElement>
+</oops:Affects>
+</oops:Pitfall>
+<oops:Pitfall>
+<oops:Code>P13</oops:Code><oops:Name>Inverse relationships not explicitly declared</oops:Name>
+<oops:Description>This pitfall appears when any relationship (except for those that are defined as symmetric properties using owl:SymmetricProperty) does not have an inverse relationship (owl:inverseOf) defined within the ontology.	</oops:Description>
+<oops:Importance>Minor</oops:Importance>
+<oops:NumberAffectedElements>42</oops:NumberAffectedElements>
+<oops:Affects>
+<oops:MightBeInverse>
+<oops:AffectedElement>http://www.w3.org/ns/prov#specializationOf</oops:AffectedElement>
+<oops:AffectedElement>http://www.w3.org/ns/prov#alternateOf</oops:AffectedElement>
+</oops:MightBeInverse>
+<oops:MightBeInverse>
+<oops:AffectedElement>http://www.w3.org/ns/prov#alternateOf</oops:AffectedElement>
+<oops:AffectedElement>http://www.w3.org/ns/prov#wasQuotedFrom</oops:AffectedElement>
+</oops:MightBeInverse>
+<oops:MightBeInverse>
+<oops:AffectedElement>http://www.w3.org/ns/prov#wasQuotedFrom</oops:AffectedElement>
+<oops:AffectedElement>http://www.w3.org/ns/prov#hadPrimarySource</oops:AffectedElement>
+</oops:MightBeInverse>
+<oops:MightBeInverse>
+<oops:AffectedElement>http://www.w3.org/ns/prov#hadPrimarySource</oops:AffectedElement>
+<oops:AffectedElement>http://www.w3.org/ns/prov#wasDerivedFrom</oops:AffectedElement>
+</oops:MightBeInverse>
+<oops:MightBeInverse>
+<oops:AffectedElement>http://www.w3.org/ns/prov#wasDerivedFrom</oops:AffectedElement>
+<oops:AffectedElement>http://www.w3.org/ns/prov#wasRevisionOf</oops:AffectedElement>
+</oops:MightBeInverse>
+<oops:NoInverseSuggestion>
+<oops:AffectedElement>http://www.w3.org/ns/prov#qualifiedQuotation</oops:AffectedElement>
+<oops:AffectedElement>http://www.w3.org/ns/prov#qualifiedAssociation</oops:AffectedElement>
+<oops:AffectedElement>http://www.w3.org/ns/prov#atLocation</oops:AffectedElement>
+<oops:AffectedElement>http://www.w3.org/ns/prov#hadRole</oops:AffectedElement>
+<oops:AffectedElement>http://www.w3.org/ns/prov#hadGeneration</oops:AffectedElement>
+<oops:AffectedElement>http://www.w3.org/ns/prov#hadUsage</oops:AffectedElement>
+<oops:AffectedElement>http://www.w3.org/ns/prov#qualifiedGeneration</oops:AffectedElement>
+<oops:AffectedElement>http://www.w3.org/ns/prov#wasStartedBy</oops:AffectedElement>
+<oops:AffectedElement>http://www.w3.org/ns/prov#qualifiedPrimarySource</oops:AffectedElement>
+<oops:AffectedElement>http://www.w3.org/ns/prov#entity</oops:AffectedElement>
+<oops:AffectedElement>http://www.w3.org/ns/prov#qualifiedAttribution</oops:AffectedElement>
+<oops:AffectedElement>http://www.w3.org/ns/prov#influencer</oops:AffectedElement>
+<oops:AffectedElement>http://www.w3.org/ns/prov#activity</oops:AffectedElement>
+<oops:AffectedElement>http://www.w3.org/ns/prov#used</oops:AffectedElement>
+<oops:AffectedElement>http://www.w3.org/ns/prov#hadPlan</oops:AffectedElement>
+<oops:AffectedElement>http://www.w3.org/ns/prov#wasAssociatedWith</oops:AffectedElement>
+<oops:AffectedElement>http://www.w3.org/ns/prov#qualifiedDelegation</oops:AffectedElement>
+<oops:AffectedElement>http://www.w3.org/ns/prov#wasInformedBy</oops:AffectedElement>
+<oops:AffectedElement>http://www.w3.org/ns/prov#qualifiedCommunication</oops:AffectedElement>
+<oops:AffectedElement>http://www.w3.org/ns/prov#qualifiedEnd</oops:AffectedElement>
+<oops:AffectedElement>http://www.w3.org/ns/prov#wasEndedBy</oops:AffectedElement>
+<oops:AffectedElement>http://www.w3.org/ns/prov#qualifiedInvalidation</oops:AffectedElement>
+<oops:AffectedElement>http://www.w3.org/ns/prov#hadActivity</oops:AffectedElement>
+<oops:AffectedElement>http://www.w3.org/ns/prov#qualifiedInfluence</oops:AffectedElement>
+<oops:AffectedElement>http://www.w3.org/ns/prov#qualifiedUsage</oops:AffectedElement>
+<oops:AffectedElement>http://www.w3.org/ns/prov#qualifiedStart</oops:AffectedElement>
+<oops:AffectedElement>http://www.w3.org/ns/prov#wasAttributedTo</oops:AffectedElement>
+<oops:AffectedElement>http://www.w3.org/ns/prov#qualifiedRevision</oops:AffectedElement>
+<oops:AffectedElement>http://www.w3.org/ns/prov#actedOnBehalfOf</oops:AffectedElement>
+<oops:AffectedElement>http://www.w3.org/ns/prov#hadMember</oops:AffectedElement>
+<oops:AffectedElement>http://www.w3.org/ns/prov#agent</oops:AffectedElement>
+<oops:AffectedElement>http://www.w3.org/ns/prov#qualifiedDerivation</oops:AffectedElement>
+</oops:NoInverseSuggestion>
+</oops:Affects>
+</oops:Pitfall>
+<oops:Pitfall>
+<oops:Code>P19</oops:Code><oops:Name>Defining multiple domains or ranges in properties</oops:Name>
+<oops:Description>The domain or range (or both) of a property (relationships and attributes) is defined by stating more than one rdfs:domain or rdfs:range statements. In OWL multiple rdfs:domain or rdfs:range axioms are allowed, but they are interpreted as conjunction, being, therefore, equivalent to the construct owl:intersectionOf. This pitfall is related to the common error that appears when defining domains and ranges described in [7].	</oops:Description>
+<oops:Importance>Critical</oops:Importance>
+<oops:NumberAffectedElements>2</oops:NumberAffectedElements>
+<oops:Affects>
+<oops:AffectedElement>http://www.w3.org/ns/prov#hadActivity</oops:AffectedElement>
+<oops:AffectedElement>http://www.w3.org/ns/prov#hadRole</oops:AffectedElement>
+</oops:Affects>
+</oops:Pitfall>
+<oops:Pitfall>
+<oops:Code>P36</oops:Code><oops:Name>URI contains file extension</oops:Name>
+<oops:Description>This pitfall occurs if file extensions such as &quot;.owl&quot;, &quot;.rdf&quot;, &quot;.ttl&quot;, &quot;.n3&quot; and &quot;.rdfxml&quot; are included in an ontology URI. This pitfall is related with the recommendations provided in [9].	</oops:Description>
+<oops:Importance>Minor</oops:Importance>
+<oops:NumberAffectedElements>1</oops:NumberAffectedElements>
+<oops:Affects>
+<oops:AffectedElement>http://www.w3.org/ns/prov-o.owl</oops:AffectedElement>
+</oops:Affects>
+</oops:Pitfall>
+<oops:Pitfall>
+<oops:Code>P39</oops:Code><oops:Name>Ambiguous namespace</oops:Name>
+<oops:Description>This pitfall consists in declaring neither the ontology URI nor the xml:base namespace. If this is the case, the ontology namespace is matched to the file location. This situation is not desirable, as the location of a file might change while the ontology should remain stable, as proposed in [12].	</oops:Description>
+<oops:Importance>Critical</oops:Importance>
+<oops:NumberAffectedElements>1</oops:NumberAffectedElements>
+</oops:Pitfall>
+<oops:Suggestion>
+<oops:Name>SUGGESTION: symmetric or transitive object properties.</oops:Name>
+<oops:Description>The domain and range axioms are equal for each of the following object properties. Could they be symmetric or transitive?</oops:Description>
+<oops:NumberAffectedElements>9</oops:NumberAffectedElements>
+<oops:Affects>
+<oops:AffectedElement>http://www.w3.org/ns/prov#specializationOf</oops:AffectedElement>
+<oops:AffectedElement>http://www.w3.org/ns/prov#alternateOf</oops:AffectedElement>
+<oops:AffectedElement>http://www.w3.org/ns/prov#wasQuotedFrom</oops:AffectedElement>
+<oops:AffectedElement>http://www.w3.org/ns/prov#wasInformedBy</oops:AffectedElement>
+<oops:AffectedElement>http://www.w3.org/ns/prov#hadPrimarySource</oops:AffectedElement>
+<oops:AffectedElement>http://www.w3.org/ns/prov#wasDerivedFrom</oops:AffectedElement>
+<oops:AffectedElement>http://www.w3.org/ns/prov#actedOnBehalfOf</oops:AffectedElement>
+<oops:AffectedElement>http://www.w3.org/ns/prov#wasInfluencedBy</oops:AffectedElement>
+<oops:AffectedElement>http://www.w3.org/ns/prov#wasRevisionOf</oops:AffectedElement>
+</oops:Affects>
+</oops:Suggestion>
+</oops:OOPSResponse>

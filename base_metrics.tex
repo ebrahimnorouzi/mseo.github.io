@@ -6,48 +6,73 @@
 \toprule
 {} &         0 &                 1 &          2 &                    3 &                      4 &                        5 &                6 \\
 \midrule
-metric name             &  Number of axioms &  Number of logical axioms &  Number of classes &  Number of object properties &  Number of datatype properties &  Number of annotation assertions &  DL expressivity \\
-AMONTOLOGY              &       130 &               125 &         85 &                    5 &                      0 &                        3 &              ALE \\
-BWMD-DOMAIN             &      1800 &               424 &        459 &                    0 &                      0 &                      917 &               AL \\
-BWMD-MID                &      1546 &               399 &        336 &                   27 &                     12 &                      771 &         ALCHI(D) \\
-CHAMEO                  &       491 &               156 &         74 &                   44 &                      2 &                      234 &          ALCH(D) \\
-CIF-core                &       321 &                87 &         31 &                    1 &                      1 &                      176 &            AL(D) \\
-DEB                     &      2135 &              1110 &        601 &                   12 &                    109 &                      296 &           ALH(D) \\
-DISO                    &       373 &               135 &         38 &                   33 &                     12 &                      147 &        ALCHIQ(D) \\
-EMMO                    &      8224 &              2319 &       1191 &                  107 &                     10 &                     4541 &       ALCROIQ(D) \\
-EMMO BVC                &       568 &               276 &        182 &                   11 &                      0 &                      131 &             ALCH \\
-EMMO BattINFO           &       442 &               143 &        137 &                   10 &                      0 &                      203 &             ALEI \\
-EMMO Datamodel          &        89 &                28 &         11 &                    5 &                      5 &                       34 &         ALCHQ(D) \\
-EMMO atomistic          &        64 &                19 &         18 &                    3 &                      1 &                       34 &          ALEH(D) \\
-EMMO crystallography    &       357 &               106 &         61 &                    5 &                      1 &                      175 &         ALCIQ(D) \\
-EMMO mappings           &        73 &                27 &          9 &                    5 &                      3 &                       28 &         ALEHQ(D) \\
-EMMO mechanical testing &      1740 &               725 &        393 &                   13 &                      6 &                      657 &        ALCHIQ(D) \\
-EMMO microstructure     &       183 &                80 &         61 &                    2 &                      0 &                       60 &              ALE \\
-GPO                     &      6249 &              2640 &        963 &                   86 &                      5 &                     2532 &         SROIQ(D) \\
-LPBFO                   &       663 &               151 &        179 &                    2 &                      0 &                      346 &             ALCH \\
-MAMBO                   &       632 &               400 &         57 &                   35 &                     63 &                       57 &          SHIQ(D) \\
-MDO                     &       457 &               168 &         37 &                   32 &                     32 &                      176 &          ALCQ(D) \\
-MOL BRINELL             &     16349 &             12818 &         37 &                   17 &                      4 &                      191 &            AL(D) \\
-MOL TENSILE             &       354 &               127 &         35 &                   61 &                      7 &                      120 &         ALCHF(D) \\
-MSEO                    &       890 &               126 &        150 &                    2 &                      0 &                      618 &              ALH \\
-MatOnto                 &      5235 &              2320 &        848 &                   83 &                     13 &                     1841 &         SHOIQ(D) \\
-NPO                     &     28924 &             15560 &       1906 &                   65 &                     22 &                    11343 &          SHIN(D) \\
-NanoMine                &       815 &               229 &        172 &                    1 &                      0 &                      429 &             ALEO \\
-OEO                     &     14788 &              3474 &       1445 &                  122 &                      1 &                     9388 &         SROIQ(D) \\
-PMDCO                   &      2154 &               384 &        264 &                   36 &                      9 &                     1454 &        ALCHIF(D) \\
-SAREF                   &       631 &               226 &         81 &                   35 &                      5 &                      264 &         ALCIQ(D) \\
-SEMMD                   &     14827 &              8723 &        689 &                  108 &                     42 &                     5238 &         SROIN(D) \\
-SP                      &      2999 &               724 &        399 &                   43 &                      0 &                     1781 &              SHI \\
-SSN                     &       313 &                12 &         16 &                   21 &                      2 &                      248 &           ALI(D) \\
-bmo                     &       362 &               210 &         26 &                   56 &                      7 &                       44 &         ALCRI(D) \\
-enanomapper             &      2809 &               727 &        772 &                    2 &                      0 &                     1341 &              ALE \\
-mat                     &       549 &               180 &        140 &                   13 &                      8 &                      202 &           ALQ(D) \\
-matinfo                 &        58 &                30 &         10 &                    8 &                     13 &                        1 &            AL(D) \\
-mvc                     &       154 &                50 &         28 &                   12 &                      3 &                       75 &           ALI(D) \\
-mwo                     &      1122 &               287 &        116 &                   74 &                     30 &                      561 &        ALCHIF(D) \\
-periodictable           &      1756 &              1735 &          7 &                    6 &                      7 &                        2 &         ALUON(D) \\
-ssos                    &       244 &                89 &         27 &                   19 &                     21 &                       79 &           SHI(D) \\
-vimmp                   &     11863 &              7252 &       1082 &                  580 &                    191 &                     1848 &         SROIQ(D) \\
+metric name                 &  \# axioms &  \# logical axioms &  \# classes &  \# object properties &  \# datatype properties &  \# annotation assertions &  DL expressivity \\
+AMONTOLOGY                  &       130 &               125 &         85 &                    5 &                      0 &                        3 &              ALE \\
+ASMO                        &       519 &                85 &         36 &                   18 &                      4 &                      327 &         ALCHI(D) \\
+BWMD-DOMAIN                 &      1800 &               424 &        459 &                    0 &                      0 &                      917 &               AL \\
+BWMD-MID                    &      1546 &               399 &        336 &                   27 &                     12 &                      771 &         ALCHI(D) \\
+CDCO                        &        60 &                 0 &          3 &                    0 &                      0 &                       34 &               AL \\
+CIF-core                    &       321 &                87 &         31 &                    1 &                      1 &                      176 &            AL(D) \\
+CMSO                        &       508 &               116 &         40 &                   19 &                     28 &                      270 &         ALUHI(D) \\
+CSO                         &       374 &               136 &         30 &                   25 &                     19 &                      154 &         ALCIQ(D) \\
+DEB                         &      2135 &              1110 &        601 &                   12 &                    109 &                      296 &           ALH(D) \\
+DISO                        &       373 &               135 &         38 &                   33 &                     12 &                      147 &        ALCHIQ(D) \\
+DSIM                        &       492 &               179 &         41 &                   45 &                     33 &                      185 &          SHIQ(D) \\
+EMMO\_Datamodel              &        89 &                28 &         11 &                    5 &                      5 &                       34 &         ALCHQ(D) \\
+EMMO\_atomistic              &        64 &                19 &         18 &                    3 &                      1 &                       34 &          ALEH(D) \\
+EMMO\_crystallography        &       357 &               106 &         61 &                    5 &                      1 &                      175 &         ALCIQ(D) \\
+EMMO\_mappings               &        73 &                27 &          9 &                    5 &                      3 &                       28 &         ALEHQ(D) \\
+EMMO\_mechanical\_testing     &      1740 &               725 &        393 &                   13 &                      6 &                      657 &        ALCHIQ(D) \\
+EMMO\_microstructure         &       183 &                80 &         61 &                    2 &                      0 &                       60 &              ALE \\
+EXPO                        &      2067 &              1019 &        325 &                   78 &                      0 &                      646 &            ALCHN \\
+FOAF                        &       393 &                73 &          1 &                   42 &                     27 &                      245 &         ALHIF(D) \\
+GPO                         &       673 &               268 &        200 &                   24 &                      0 &                      216 &            ALCHI \\
+IAO                         &      3718 &               523 &        264 &                   53 &                      4 &                     2777 &         SROIN(D) \\
+LDO                         &        69 &                 3 &          6 &                    0 &                      0 &                       37 &               AL \\
+LPBFO                       &       663 &               151 &        179 &                    2 &                      0 &                      346 &             ALCH \\
+MAMBO                       &       632 &               400 &         57 &                   35 &                     63 &                       57 &          SHIQ(D) \\
+MDO                         &       574 &               192 &         38 &                   32 &                     32 &                      268 &          ALCQ(D) \\
+MDS                         &      1698 &               540 &        256 &                   11 &                      1 &                      890 &            AL(D) \\
+MOL\_BRINELL                 &     16349 &             12818 &         37 &                   17 &                      4 &                      191 &            AL(D) \\
+MOL\_TENSILE                 &       354 &               127 &         35 &                   61 &                      7 &                      120 &         ALCHF(D) \\
+MSEO                        &       890 &               126 &        150 &                    2 &                      0 &                      618 &              ALH \\
+MSLE                        &       181 &                97 &         82 &                    0 &                      2 &                        0 &              ALC \\
+MaterialsMine               &       427 &               178 &         26 &                   27 &                     39 &                      159 &         ALUHI(D) \\
+NanoMine                    &       815 &               229 &        172 &                    1 &                      0 &                      429 &             ALEO \\
+OA                          &       295 &                64 &         25 &                    8 &                     11 &                      204 &            AL(D) \\
+OBO                         &       602 &               192 &         36 &                   40 &                      0 &                      323 &             SHIF \\
+OEO                         &         5 &                 0 &          0 &                    0 &                      0 &                        0 &               AL \\
+OIEcharacterisation-methods &       129 &                43 &         44 &                    0 &                      0 &                       44 &               AL \\
+OIEmanufacturing            &       763 &               236 &        228 &                    5 &                      0 &                      304 &            ALEHI \\
+OIEmaterials                &       460 &               138 &        119 &                    1 &                      0 &                      204 &              ALC \\
+OIEmodels                   &       353 &               115 &        114 &                    5 &                      0 &                      130 &            ALEHI \\
+OIEsoftware                 &       479 &               168 &        159 &                    0 &                      0 &                      156 &               AL \\
+OSMO                        &      1786 &              1110 &        173 &                  152 &                     46 &                      360 &         SROIN(D) \\
+P-Plan                      &       101 &                29 &         11 &                    9 &                      0 &                       45 &            ALIF+ \\
+PLDO                        &       212 &                30 &         11 &                    2 &                      7 &                      126 &           ALH(D) \\
+PMDCO                       &      2240 &               390 &        265 &                   36 &                      8 &                     1518 &        ALCHIF(D) \\
+PODO                        &       176 &                16 &         10 &                    0 &                      5 &                      109 &            AL(D) \\
+PRIMA                       &       146 &                54 &         21 &                   15 &                      2 &                       44 &             ALCH \\
+PROVO                       &       973 &               181 &         31 &                   44 &                      6 &                      678 &        ALCRIN(D) \\
+QUDT                        &      1681 &               595 &        125 &                  118 &                     85 &                      823 &      ALUHOIQ+(D) \\
+QUDV                        &       187 &                87 &         22 &                   14 &                     11 &                       52 &        ALCRIQ(D) \\
+SAREF                       &       631 &               226 &         81 &                   35 &                      5 &                      264 &         ALCIQ(D) \\
+SKOS\_MDO                    &      5500 &               994 &          2 &                    0 &                      0 &                     3491 &               AL \\
+SO                          &        74 &                21 &          7 &                    6 &                      2 &                       41 &           ALI(D) \\
+SP                          &      2999 &               724 &        399 &                   43 &                      0 &                     1781 &              SHI \\
+SSN                         &       313 &                12 &         16 &                   21 &                      2 &                      248 &           ALI(D) \\
+WILD                        &        73 &                52 &         19 &                   13 &                      1 &                        2 &            SH(D) \\
+bmo                         &       362 &               210 &         26 &                   56 &                      7 &                       44 &         ALCRI(D) \\
+m4i                         &      1203 &               262 &         38 &                   57 &                     37 &                      751 &          SRIN(D) \\
+mat                         &       549 &               180 &        140 &                   13 &                      8 &                      202 &           ALQ(D) \\
+matinfo                     &        58 &                30 &         10 &                    8 &                     13 &                        1 &            AL(D) \\
+mvc                         &       154 &                50 &         28 &                   12 &                      3 &                       75 &           ALI(D) \\
+mwo                         &      1113 &               278 &        116 &                   74 &                     28 &                      557 &        ALCHIF(D) \\
+nfdicore                    &       779 &               195 &         68 &                   67 &                      8 &                      445 &         ALCHI(D) \\
+ontorule                    &       361 &               175 &         24 &                   11 &                     26 &                      108 &        ALCHIF(D) \\
+opmw                        &       202 &                96 &         21 &                   22 &                     18 &                       68 &         ALUHF(D) \\
+periodictable               &      1756 &              1735 &          7 &                    6 &                      7 &                        2 &         ALUON(D) \\
+ssos                        &       244 &                89 &         27 &                   19 &                     21 &                       79 &           SHI(D) \\
 \bottomrule
 \end{tabular}
 \end{table}

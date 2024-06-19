@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<oops:OOPSResponse xmlns:oops="http://www.oeg-upm.net/oops">
+<oops:Pitfall>
+<oops:Code>P04</oops:Code><oops:Name>Creating unconnected ontology elements</oops:Name>
+<oops:Description>Ontology elements (classes, object properties and datatype properties) are created isolated, with no relation to the rest of the ontology.	</oops:Description>
+<oops:Importance>Minor</oops:Importance>
+<oops:NumberAffectedElements>3</oops:NumberAffectedElements>
+<oops:Affects>
+<oops:AffectedElement>http://purls.helmholtz-metadaten.de/cdos/ldo/LineDefect</oops:AffectedElement>
+<oops:AffectedElement>http://purls.helmholtz-metadaten.de/cdos/ldo/AngularVector</oops:AffectedElement>
+<oops:AffectedElement>http://purls.helmholtz-metadaten.de/cdos/ldo/DisclinationLine</oops:AffectedElement>
+</oops:Affects>
+</oops:Pitfall>
+<oops:Pitfall>
+<oops:Code>P08</oops:Code><oops:Name>Missing annotations</oops:Name>
+<oops:Description>This pitfall consists in creating an ontology element and failing to provide human readable annotations attached to it. Consequently, ontology elements lack annotation properties that label them (e.g. rdfs:label, lemon:LexicalEntry, skos:prefLabel or skos:altLabel) or that define them (e.g. rdfs:comment or dc:description). This pitfall is related to the guidelines provided in [5].	</oops:Description>
+<oops:Importance>Minor</oops:Importance>
+<oops:NumberAffectedElements>6</oops:NumberAffectedElements>
+<oops:Affects>
+<oops:AffectedElement>http://purls.helmholtz-metadaten.de/cdos/ldo/WedgeDisclination</oops:AffectedElement>
+<oops:AffectedElement>http://purls.helmholtz-metadaten.de/cdos/ldo/TwistDisclination</oops:AffectedElement>
+<oops:AffectedElement>http://purls.helmholtz-metadaten.de/cdos/ldo/LineDefect</oops:AffectedElement>
+<oops:AffectedElement>http://purls.helmholtz-metadaten.de/cdos/ldo/DisclinationLine</oops:AffectedElement>
+<oops:AffectedElement>http://purls.helmholtz-metadaten.de/cdos/ldo/Disclination</oops:AffectedElement>
+<oops:AffectedElement>http://purls.helmholtz-metadaten.de/cdos/ldo/AngularVector</oops:AffectedElement>
+</oops:Affects>
+</oops:Pitfall>
+<oops:Pitfall>
+<oops:Code>P10</oops:Code><oops:Name>Missing disjointness</oops:Name>
+<oops:Description>The ontology lacks disjoint axioms between classes or between properties that should be defined as disjoint. This pitfall is related with the guidelines provided in [6], [2] and [7].	</oops:Description>
+<oops:Importance>Important</oops:Importance>
+</oops:Pitfall>
+<oops:NumberAffectedElements>1</oops:NumberAffectedElements>
+<oops:Pitfall>
+<oops:Code>P34</oops:Code><oops:Name>Untyped class</oops:Name>
+<oops:Description>An ontology element is used as a class without having been explicitly declared as such using the primitives owl:Class or rdfs:Class. This pitfall is related with the common problems listed in [8].	</oops:Description>
+<oops:Importance>Important</oops:Importance>
+<oops:NumberAffectedElements>1</oops:NumberAffectedElements>
+<oops:Affects>
+<oops:AffectedElement>http://purl.org/dc/terms/Agent</oops:AffectedElement>
+<oops:AffectedElement>http://purl.org/dc/terms/Agent</oops:AffectedElement>
+</oops:Affects>
+</oops:Pitfall>
+<oops:Pitfall>
+<oops:Code>P36</oops:Code><oops:Name>URI contains file extension</oops:Name>
+<oops:Description>This pitfall occurs if file extensions such as &quot;.owl&quot;, &quot;.rdf&quot;, &quot;.ttl&quot;, &quot;.n3&quot; and &quot;.rdfxml&quot; are included in an ontology URI. This pitfall is related with the recommendations provided in [9].	</oops:Description>
+<oops:Importance>Minor</oops:Importance>
+<oops:NumberAffectedElements>1</oops:NumberAffectedElements>
+<oops:Affects>
+<oops:AffectedElement>https://raw.githubusercontent.com/ebrahimnorouzi/mseo.github.io/master/Ontology_files/ldo.owl</oops:AffectedElement>
+</oops:Affects>
+</oops:Pitfall>
+</oops:OOPSResponse>

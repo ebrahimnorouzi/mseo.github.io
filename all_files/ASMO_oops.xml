@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<oops:OOPSResponse xmlns:oops="http://www.oeg-upm.net/oops">
+<oops:Pitfall>
+<oops:Code>P08</oops:Code><oops:Name>Missing annotations</oops:Name>
+<oops:Description>This pitfall consists in creating an ontology element and failing to provide human readable annotations attached to it. Consequently, ontology elements lack annotation properties that label them (e.g. rdfs:label, lemon:LexicalEntry, skos:prefLabel or skos:altLabel) or that define them (e.g. rdfs:comment or dc:description). This pitfall is related to the guidelines provided in [5].	</oops:Description>
+<oops:Importance>Minor</oops:Importance>
+<oops:NumberAffectedElements>33</oops:NumberAffectedElements>
+<oops:Affects>
+<oops:AffectedElement>http://purls.helmholtz-metadaten.de/asmo/KineticMonteCarloMethod</oops:AffectedElement>
+<oops:AffectedElement>http://purls.helmholtz-metadaten.de/asmo/EnergyDifferenceCalculation</oops:AffectedElement>
+<oops:AffectedElement>http://www.w3.org/ns/prov#Activity</oops:AffectedElement>
+<oops:AffectedElement>http://www.w3.org/ns/prov#Organization</oops:AffectedElement>
+<oops:AffectedElement>http://purls.helmholtz-metadaten.de/asmo/DensityFunctionalTheory</oops:AffectedElement>
+<oops:AffectedElement>http://purls.helmholtz-metadaten.de/asmo/MonteCarloMethod</oops:AffectedElement>
+<oops:AffectedElement>http://purls.helmholtz-metadaten.de/asmo/MolecularDynamics</oops:AffectedElement>
+<oops:AffectedElement>http://www.w3.org/ns/prov#Person</oops:AffectedElement>
+<oops:AffectedElement>http://purls.helmholtz-metadaten.de/asmo/AbInitioMolecularDynamics</oops:AffectedElement>
+<oops:AffectedElement>http://purls.helmholtz-metadaten.de/asmo/Lennard-JonesPotential</oops:AffectedElement>
+<oops:AffectedElement>http://www.w3.org/ns/prov#Agent</oops:AffectedElement>
+<oops:AffectedElement>http://purls.helmholtz-metadaten.de/asmo/StillingerWeberPotential</oops:AffectedElement>
+<oops:AffectedElement>http://purls.helmholtz-metadaten.de/asmo/StatisticalEnsemble</oops:AffectedElement>
+<oops:AffectedElement>http://purls.helmholtz-metadaten.de/asmo/MolecularForceField</oops:AffectedElement>
+<oops:AffectedElement>http://purls.helmholtz-metadaten.de/asmo/InteratomicPotential</oops:AffectedElement>
+<oops:AffectedElement>http://purls.helmholtz-metadaten.de/asmo/MolecularStatics</oops:AffectedElement>
+<oops:AffectedElement>http://purls.helmholtz-metadaten.de/asmo/InputParameter</oops:AffectedElement>
+<oops:AffectedElement>http://purls.helmholtz-metadaten.de/asmo/ComputationalMethod</oops:AffectedElement>
+<oops:AffectedElement>http://www.w3.org/ns/prov#SoftwareAgent</oops:AffectedElement>
+<oops:AffectedElement>http://purls.helmholtz-metadaten.de/asmo/EmbeddedAtomModel</oops:AffectedElement>
+<oops:AffectedElement>http://www.w3.org/ns/prov#Entity</oops:AffectedElement>
+<oops:AffectedElement>http://purls.helmholtz-metadaten.de/asmo/ModifiedEmbeddedAtomModel</oops:AffectedElement>
+<oops:AffectedElement>http://purls.helmholtz-metadaten.de/asmo/hasRelaxationDOF</oops:AffectedElement>
+<oops:AffectedElement>http://purls.helmholtz-metadaten.de/asmo/hasInputParameter</oops:AffectedElement>
+<oops:AffectedElement>http://www.w3.org/ns/prov#generated</oops:AffectedElement>
+<oops:AffectedElement>http://purls.helmholtz-metadaten.de/asmo/hasInteratomicPotential</oops:AffectedElement>
+<oops:AffectedElement>http://purls.helmholtz-metadaten.de/asmo/hasComputationalMethod</oops:AffectedElement>
+<oops:AffectedElement>http://www.w3.org/ns/prov#wasGeneratedBy</oops:AffectedElement>
+<oops:AffectedElement>http://purls.helmholtz-metadaten.de/asmo/hasUnit</oops:AffectedElement>
+<oops:AffectedElement>http://purls.helmholtz-metadaten.de/asmo/hasStatisticalEnsemble</oops:AffectedElement>
+<oops:AffectedElement>http://www.w3.org/ns/prov#influenced</oops:AffectedElement>
+<oops:AffectedElement>http://purls.helmholtz-metadaten.de/asmo/wasCalculatedBy</oops:AffectedElement>
+<oops:AffectedElement>http://purls.helmholtz-metadaten.de/asmo/hasValue</oops:AffectedElement>
+</oops:Affects>
+</oops:Pitfall>
+<oops:Pitfall>
+<oops:Code>P11</oops:Code><oops:Name>Missing domain or range in properties</oops:Name>
+<oops:Description>Object and/or datatype properties without domain or range (or none of them) are included in the ontology. 	</oops:Description>
+<oops:Importance>Important</oops:Importance>
+<oops:NumberAffectedElements>2</oops:NumberAffectedElements>
+<oops:Affects>
+<oops:AffectedElement>http://www.w3.org/ns/prov#influenced</oops:AffectedElement>
+<oops:AffectedElement>http://purls.helmholtz-metadaten.de/asmo/hasValue</oops:AffectedElement>
+</oops:Affects>
+</oops:Pitfall>
+<oops:Pitfall>
+<oops:Code>P13</oops:Code><oops:Name>Inverse relationships not explicitly declared</oops:Name>
+<oops:Description>This pitfall appears when any relationship (except for those that are defined as symmetric properties using owl:SymmetricProperty) does not have an inverse relationship (owl:inverseOf) defined within the ontology.	</oops:Description>
+<oops:Importance>Minor</oops:Importance>
+<oops:NumberAffectedElements>14</oops:NumberAffectedElements>
+<oops:Affects>
+<oops:NoInverseSuggestion>
+<oops:AffectedElement>http://www.w3.org/ns/prov#used</oops:AffectedElement>
+<oops:AffectedElement>http://purls.helmholtz-metadaten.de/asmo/hasRelaxationDOF</oops:AffectedElement>
+<oops:AffectedElement>http://purls.helmholtz-metadaten.de/asmo/hasInputParameter</oops:AffectedElement>
+<oops:AffectedElement>http://www.w3.org/ns/prov#wasDerivedFrom</oops:AffectedElement>
+<oops:AffectedElement>http://www.w3.org/ns/prov#wasAttributedTo</oops:AffectedElement>
+<oops:AffectedElement>http://purls.helmholtz-metadaten.de/asmo/hasInteratomicPotential</oops:AffectedElement>
+<oops:AffectedElement>http://purls.helmholtz-metadaten.de/asmo/hasComputationalMethod</oops:AffectedElement>
+<oops:AffectedElement>http://www.w3.org/ns/prov#wasAssociatedWith</oops:AffectedElement>
+<oops:AffectedElement>http://www.w3.org/ns/prov#actedOnBehalfOf</oops:AffectedElement>
+<oops:AffectedElement>http://purls.helmholtz-metadaten.de/asmo/hasUnit</oops:AffectedElement>
+<oops:AffectedElement>https://w3id.org/mdo/calculation/hasXCFunctional</oops:AffectedElement>
+<oops:AffectedElement>http://purls.helmholtz-metadaten.de/asmo/hasStatisticalEnsemble</oops:AffectedElement>
+<oops:AffectedElement>http://www.w3.org/ns/prov#wasInformedBy</oops:AffectedElement>
+<oops:AffectedElement>http://purls.helmholtz-metadaten.de/asmo/wasCalculatedBy</oops:AffectedElement>
+</oops:NoInverseSuggestion>
+</oops:Affects>
+</oops:Pitfall>
+<oops:Pitfall>
+<oops:Code>P22</oops:Code><oops:Name>Using different naming conventions in the ontology</oops:Name>
+<oops:Description>The ontology elements are not named following the same convention (for example CamelCase or use of delimiters as &quot;-&quot; or &quot;_&quot;) . Some notions about naming conventions are provided in [2].	</oops:Description>
+<oops:Importance>Minor</oops:Importance>
+<oops:NumberAffectedElements>1</oops:NumberAffectedElements>
+<oops:Affects>
+<oops:AffectedElement>http://purls.helmholtz-metadaten.de/asmo/Lennard-JonesPotential</oops:AffectedElement>
+<oops:AffectedElement>http://purls.helmholtz-metadaten.de/asmo/AbInitioMolecularDynamics</oops:AffectedElement>
+</oops:Affects>
+</oops:Pitfall>
+<oops:Pitfall>
+<oops:Code>P34</oops:Code><oops:Name>Untyped class</oops:Name>
+<oops:Description>An ontology element is used as a class without having been explicitly declared as such using the primitives owl:Class or rdfs:Class. This pitfall is related with the common problems listed in [8].	</oops:Description>
+<oops:Importance>Important</oops:Importance>
+<oops:NumberAffectedElements>1</oops:NumberAffectedElements>
+<oops:Affects>
+<oops:AffectedElement>http://purl.org/dc/terms/Agent</oops:AffectedElement>
+<oops:AffectedElement>http://purl.org/dc/terms/Agent</oops:AffectedElement>
+</oops:Affects>
+</oops:Pitfall>
+<oops:Pitfall>
+<oops:Code>P36</oops:Code><oops:Name>URI contains file extension</oops:Name>
+<oops:Description>This pitfall occurs if file extensions such as &quot;.owl&quot;, &quot;.rdf&quot;, &quot;.ttl&quot;, &quot;.n3&quot; and &quot;.rdfxml&quot; are included in an ontology URI. This pitfall is related with the recommendations provided in [9].	</oops:Description>
+<oops:Importance>Minor</oops:Importance>
+<oops:NumberAffectedElements>1</oops:NumberAffectedElements>
+<oops:Affects>
+<oops:AffectedElement>https://raw.githubusercontent.com/ebrahimnorouzi/mseo.github.io/master/Ontology_files/asmo.owl</oops:AffectedElement>
+</oops:Affects>
+</oops:Pitfall>
+<oops:Suggestion>
+<oops:Name>SUGGESTION: symmetric or transitive object properties.</oops:Name>
+<oops:Description>The domain and range axioms are equal for each of the following object properties. Could they be symmetric or transitive?</oops:Description>
+<oops:NumberAffectedElements>4</oops:NumberAffectedElements>
+<oops:Affects>
+<oops:AffectedElement>http://www.w3.org/ns/prov#wasDerivedFrom</oops:AffectedElement>
+<oops:AffectedElement>http://www.w3.org/ns/prov#wasInfluencedBy</oops:AffectedElement>
+<oops:AffectedElement>http://www.w3.org/ns/prov#actedOnBehalfOf</oops:AffectedElement>
+<oops:AffectedElement>http://www.w3.org/ns/prov#wasInformedBy</oops:AffectedElement>
+</oops:Affects>
+</oops:Suggestion>
+</oops:OOPSResponse>

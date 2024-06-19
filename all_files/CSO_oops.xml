@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<oops:OOPSResponse xmlns:oops="http://www.oeg-upm.net/oops">
+<oops:Pitfall>
+<oops:Code>P08</oops:Code><oops:Name>Missing annotations</oops:Name>
+<oops:Description>This pitfall consists in creating an ontology element and failing to provide human readable annotations attached to it. Consequently, ontology elements lack annotation properties that label them (e.g. rdfs:label, lemon:LexicalEntry, skos:prefLabel or skos:altLabel) or that define them (e.g. rdfs:comment or dc:description). This pitfall is related to the guidelines provided in [5].	</oops:Description>
+<oops:Importance>Minor</oops:Importance>
+<oops:NumberAffectedElements>31</oops:NumberAffectedElements>
+<oops:Affects>
+<oops:AffectedElement>http://purl.obolibrary.org/obo/chebi/formula</oops:AffectedElement>
+<oops:AffectedElement>https://purls.helmholtz-metadaten.de/disos/cso#Monoclinic</oops:AffectedElement>
+<oops:AffectedElement>https://purls.helmholtz-metadaten.de/disos/cso#Vector</oops:AffectedElement>
+<oops:AffectedElement>https://purls.helmholtz-metadaten.de/disos/cso#LatticeParameterLength</oops:AffectedElement>
+<oops:AffectedElement>https://purls.helmholtz-metadaten.de/disos/cso#Cubic</oops:AffectedElement>
+<oops:AffectedElement>https://purls.helmholtz-metadaten.de/disos/cso#UnitCell</oops:AffectedElement>
+<oops:AffectedElement>https://purls.helmholtz-metadaten.de/disos/cso#Tetragonal</oops:AffectedElement>
+<oops:AffectedElement>https://w3id.org/mdo/structure/Site</oops:AffectedElement>
+<oops:AffectedElement>https://purls.helmholtz-metadaten.de/disos/cso#Hexagonal</oops:AffectedElement>
+<oops:AffectedElement>https://w3id.org/mdo/structure/Occupancy</oops:AffectedElement>
+<oops:AffectedElement>https://purls.helmholtz-metadaten.de/disos/cso#CrystalSystem</oops:AffectedElement>
+<oops:AffectedElement>http://qudt.org/schema/qudt/QuantityValue</oops:AffectedElement>
+<oops:AffectedElement>https://purls.helmholtz-metadaten.de/disos/cso#PositionVector</oops:AffectedElement>
+<oops:AffectedElement>https://purls.helmholtz-metadaten.de/disos/cso#CrystalStructure</oops:AffectedElement>
+<oops:AffectedElement>http://qudt.org/schema/qudt/Unit</oops:AffectedElement>
+<oops:AffectedElement>http://qudt.org/schema/qudt/Quantity</oops:AffectedElement>
+<oops:AffectedElement>https://purls.helmholtz-metadaten.de/disos/cso#Orthorhombic</oops:AffectedElement>
+<oops:AffectedElement>https://w3id.org/mdo/structure/Species</oops:AffectedElement>
+<oops:AffectedElement>https://purls.helmholtz-metadaten.de/disos/cso#Trigonal</oops:AffectedElement>
+<oops:AffectedElement>http://qudt.org/schema/qudt/QuantityKind</oops:AffectedElement>
+<oops:AffectedElement>https://purls.helmholtz-metadaten.de/disos/cso#LatticeParameterAngle</oops:AffectedElement>
+<oops:AffectedElement>http://purl.obolibrary.org/obo/CHEBI_33250</oops:AffectedElement>
+<oops:AffectedElement>https://purls.helmholtz-metadaten.de/disos/cso#Lattice</oops:AffectedElement>
+<oops:AffectedElement>https://w3id.org/mdo/structure/CoordinateVector</oops:AffectedElement>
+<oops:AffectedElement>https://purls.helmholtz-metadaten.de/disos/cso#Triclinic</oops:AffectedElement>
+<oops:AffectedElement>https://purls.helmholtz-metadaten.de/disos/cso#hasLatticeParameterAngle</oops:AffectedElement>
+<oops:AffectedElement>http://qudt.org/schema/qudt/unit</oops:AffectedElement>
+<oops:AffectedElement>http://qudt.org/schema/qudt/hasQuantityKind</oops:AffectedElement>
+<oops:AffectedElement>http://qudt.org/schema/qudt/quantityValue</oops:AffectedElement>
+<oops:AffectedElement>https://purls.helmholtz-metadaten.de/disos/cso#hasLatticeParameterLength</oops:AffectedElement>
+<oops:AffectedElement>https://purls.helmholtz-metadaten.de/disos/cso#vectorMagnitude</oops:AffectedElement>
+</oops:Affects>
+</oops:Pitfall>
+<oops:Pitfall>
+<oops:Code>P11</oops:Code><oops:Name>Missing domain or range in properties</oops:Name>
+<oops:Description>Object and/or datatype properties without domain or range (or none of them) are included in the ontology. 	</oops:Description>
+<oops:Importance>Important</oops:Importance>
+<oops:NumberAffectedElements>4</oops:NumberAffectedElements>
+<oops:Affects>
+<oops:AffectedElement>https://purls.helmholtz-metadaten.de/disos/cso#isBasisOf</oops:AffectedElement>
+<oops:AffectedElement>http://qudt.org/schema/qudt/quantityValue</oops:AffectedElement>
+<oops:AffectedElement>http://qudt.org/schema/qudt/hasQuantityKind</oops:AffectedElement>
+<oops:AffectedElement>http://qudt.org/schema/qudt/unit</oops:AffectedElement>
+</oops:Affects>
+</oops:Pitfall>
+<oops:Pitfall>
+<oops:Code>P13</oops:Code><oops:Name>Inverse relationships not explicitly declared</oops:Name>
+<oops:Description>This pitfall appears when any relationship (except for those that are defined as symmetric properties using owl:SymmetricProperty) does not have an inverse relationship (owl:inverseOf) defined within the ontology.	</oops:Description>
+<oops:Importance>Minor</oops:Importance>
+<oops:NumberAffectedElements>19</oops:NumberAffectedElements>
+<oops:Affects>
+<oops:NoInverseSuggestion>
+<oops:AffectedElement>https://purls.helmholtz-metadaten.de/disos/cso#hasSecondAxisVector</oops:AffectedElement>
+<oops:AffectedElement>https://w3id.org/mdo/structure/hasSite</oops:AffectedElement>
+<oops:AffectedElement>https://w3id.org/mdo/structure/hasFractionalCoordinates</oops:AffectedElement>
+<oops:AffectedElement>https://w3id.org/mdo/structure/hasCartesianCoordinates</oops:AffectedElement>
+<oops:AffectedElement>https://purls.helmholtz-metadaten.de/disos/cso#hasFirstAxisVector</oops:AffectedElement>
+<oops:AffectedElement>https://purls.helmholtz-metadaten.de/disos/cso#hasLatticeParameterAngle</oops:AffectedElement>
+<oops:AffectedElement>https://purls.helmholtz-metadaten.de/disos/cso#hasPositionVector</oops:AffectedElement>
+<oops:AffectedElement>http://qudt.org/schema/qudt/unit</oops:AffectedElement>
+<oops:AffectedElement>http://qudt.org/schema/qudt/hasQuantityKind</oops:AffectedElement>
+<oops:AffectedElement>https://w3id.org/mdo/structure/hasElement</oops:AffectedElement>
+<oops:AffectedElement>https://purls.helmholtz-metadaten.de/disos/cso#hasVectorComponent</oops:AffectedElement>
+<oops:AffectedElement>http://qudt.org/schema/qudt/quantityValue</oops:AffectedElement>
+<oops:AffectedElement>https://w3id.org/mdo/structure/hasSpecies</oops:AffectedElement>
+<oops:AffectedElement>https://purls.helmholtz-metadaten.de/disos/cso#hasLattice</oops:AffectedElement>
+<oops:AffectedElement>https://purls.helmholtz-metadaten.de/disos/cso#hasThirdAxisVector</oops:AffectedElement>
+<oops:AffectedElement>https://purls.helmholtz-metadaten.de/disos/cso#hasCrystalSystem</oops:AffectedElement>
+<oops:AffectedElement>https://purls.helmholtz-metadaten.de/disos/cso#hasUnitCell</oops:AffectedElement>
+<oops:AffectedElement>https://w3id.org/mdo/structure/hasOccupancy</oops:AffectedElement>
+<oops:AffectedElement>https://purls.helmholtz-metadaten.de/disos/cso#hasLatticeParameterLength</oops:AffectedElement>
+</oops:NoInverseSuggestion>
+</oops:Affects>
+</oops:Pitfall>
+<oops:Pitfall>
+<oops:Code>P22</oops:Code><oops:Name>Using different naming conventions in the ontology</oops:Name>
+<oops:Description>The ontology elements are not named following the same convention (for example CamelCase or use of delimiters as &quot;-&quot; or &quot;_&quot;) . Some notions about naming conventions are provided in [2].	</oops:Description>
+<oops:Importance>Minor</oops:Importance>
+<oops:NumberAffectedElements>1</oops:NumberAffectedElements>
+<oops:Affects>
+<oops:AffectedElement>http://purl.obolibrary.org/obo/CHEBI_33250</oops:AffectedElement>
+<oops:AffectedElement>https://purls.helmholtz-metadaten.de/disos/cso#LatticeParameterAngle</oops:AffectedElement>
+</oops:Affects>
+</oops:Pitfall>
+<oops:Pitfall>
+<oops:Code>P36</oops:Code><oops:Name>URI contains file extension</oops:Name>
+<oops:Description>This pitfall occurs if file extensions such as &quot;.owl&quot;, &quot;.rdf&quot;, &quot;.ttl&quot;, &quot;.n3&quot; and &quot;.rdfxml&quot; are included in an ontology URI. This pitfall is related with the recommendations provided in [9].	</oops:Description>
+<oops:Importance>Minor</oops:Importance>
+<oops:NumberAffectedElements>1</oops:NumberAffectedElements>
+<oops:Affects>
+<oops:AffectedElement>https://raw.githubusercontent.com/ebrahimnorouzi/mseo.github.io/master/Ontology_files/CSO.owl</oops:AffectedElement>
+</oops:Affects>
+</oops:Pitfall>
+</oops:OOPSResponse>

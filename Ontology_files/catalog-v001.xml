@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
+    <group id="Folder Repository, directory=, recursive=true, Auto-Update=true, version=2" prefer="public" xml:base="">
+        <uri id="Automatically generated entry, Timestamp=1718797626140" name="./mambo.owl" uri="MAMBO.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1718797626140" name="http://emmo.info/datamodel" uri="datamodel.ttl"/>
+        <uri id="Automatically generated entry, Timestamp=1718797626140" name="duplicate:http://emmo.info/emmo/domain/mechanical-testing" uri="emmo-mechanical-testing.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1718797626140" name="duplicate:http://emmo.info/emmo/domain/mechanical-testing" uri="EMMO_mechanical_testing.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1718797626140" name="http://enanomapper.github.io/ontologies/enanomapper-auto.owl" uri="enanomapper.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1718797626140" name="http://http://home.agh.edu.pl/~pmaciol/metal-alloy" uri="metal-alloy.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1718797626140" name="http://openenergy-platform.org/ontology/oeo/" uri="oeo.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1718797626140" name="http://purl.bioontology.org/ontology/npo" uri="NPO.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1718797626140" name="http://purl.obolibrary.org/obo/chmo.owl" uri="chmo.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1718797626140" name="http://purl.obolibrary.org/obo/iao.owl" uri="IAO.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1718797626140" name="http://purl.obolibrary.org/obo/pato.owl" uri="PATO.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1718797626140" name="http://purl.obolibrary.org/obo/uo.owl" uri="UO.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1718797626140" name="http://purl.org/net/SMARTprotocol" uri="SP.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1718797626140" name="http://purl.org/net/p-plan" uri="P-Plan.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1718797626140" name="http://purls.helmholtz-metadaten.de/asmo/" uri="asmo.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1718797626140" name="http://purls.helmholtz-metadaten.de/cdos/cdco" uri="cdco.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1718797626140" name="http://purls.helmholtz-metadaten.de/cmso/" uri="cmso.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1718797626140" name="http://purls.helmholtz-metadaten.de/ldo" uri="ldo.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1718797626140" name="http://purls.helmholtz-metadaten.de/mwo/" uri="mwo.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1718797626140" name="http://purls.helmholtz-metadaten.de/pldo/" uri="pldo.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1718797626140" name="http://purls.helmholtz-metadaten.de/podo/" uri="podo.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1718797626140" name="http://www.daml.org/2003/01/periodictable/PeriodicTable" uri="periodictable.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1718797626140" name="duplicate:http://www.example.org/SysML-QUDV.owl" uri="QUDV.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1718797626140" name="duplicate:http://www.example.org/SysML-QUDV.owl" uri="sysml-qudv.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1718797626140" name="http://www.hozo.jp/owl/EXPOApr19.xml/" uri="EXPO.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1718797626140" name="http://www.ontology-of-units-of-measure.org/resource/om-2/" uri="OM.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1718797626140" name="http://www.opmw.org/ontology/" uri="opmw.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1718797626140" name="http://www.owl-ontologies.com/Ontology1195612079.owl" uri="matinfo/OM-structure.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1718797626140" name="http://www.semanticweb.org/ina3/ontologies/2016/2/untitled-ontology-122" uri="AMONTOLOGY.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1718797626140" name="duplicate:http://www.semanticweb.org/jesperf/ontologies/2019/11/untitled-ontology-9" uri="emmo-microstructure.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1718797626140" name="duplicate:http://www.semanticweb.org/jesperf/ontologies/2019/11/untitled-ontology-9" uri="EMMO_microstructure.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1718797626140" name="http://www.semanticweb.org/mehrdad/ontologies/2021/5/MSLE" uri="MSLE.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1718797626140" name="http://www.semanticweb.org/ontologies/cheminf.owl" uri="cheminf.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1718797626140" name="http://www.semanticweb.org/osnathakimi/ontologies/deb" uri="DEB.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1718797626140" name="http://www.w3.org/2002/07/owl" uri="MDO.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1718797626140" name="http://www.w3.org/ns/prov" uri="PROVO.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1718797626140" name="http://xmlns.com/foaf/0.1/" uri="FOAF.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1718797626140" name="https://purl.vimmp.eu/semantics/combined/combined-vimmp-ontologies.ttl" uri="vimmp.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1718797626140" name="https://purls.helmholtz-metadaten.de/disos/cso" uri="CSO.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1718797626140" name="https://purls.helmholtz-metadaten.de/disos/sim" uri="DSIM.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1718797626140" name="https://raw.githubusercontent.com/ebrahimnorouzi/mseo.github.io/master/Ontology_files/matinfo/OML-Environment.owl" uri="matinfo/OML-Environment.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1718797626140" name="https://raw.githubusercontent.com/ebrahimnorouzi/mseo.github.io/master/Ontology_files/matinfo/OML-Geometry.owl" uri="matinfo/OML-Geometry.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1718797626140" name="https://raw.githubusercontent.com/ebrahimnorouzi/mseo.github.io/master/Ontology_files/matinfo/OML-MaterialInformation.owl" uri="matinfo.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1718797626140" name="https://raw.githubusercontent.com/ebrahimnorouzi/mseo.github.io/master/Ontology_files/matinfo/OML-Process.owl" uri="matinfo/OML-Process.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1718797626140" name="https://raw.githubusercontent.com/ebrahimnorouzi/mseo.github.io/master/Ontology_files/matinfo/OML-Property.owl" uri="matinfo/OML-Property.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1718797626140" name="https://raw.githubusercontent.com/ebrahimnorouzi/mseo.github.io/master/Ontology_files/matinfo/OML-Substance.owl" uri="matinfo/OML-Substance.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1718797626140" name="https://raw.githubusercontent.com/ebrahimnorouzi/mseo.github.io/master/Ontology_files/matinfo/OML-UnitDimension.owl" uri="matinfo/OML-UnitDimension.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1718797626140" name="https://raw.githubusercontent.com/ebrahimnorouzi/mseo.github.io/master/Ontology_files/matinfo/PhysicalConstant.owl" uri="matinfo/PhysicalConstant.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1718797626140" name="https://www.emi.fraunhofer.de/ontologies/LPBFO" uri="LPBFO.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1718797626140" name="duplicate:https://www.materials.fraunhofer.de/ontologies/BWMD_ontology/domain" uri="BWMD-DOMAIN.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1718797626140" name="duplicate:https://www.materials.fraunhofer.de/ontologies/BWMD_ontology/domain" uri="BWMD_domain.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1718797626140" name="duplicate:https://www.materials.fraunhofer.de/ontologies/BWMD_ontology/mid" uri="BWMD-MID.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1718797626140" name="duplicate:https://www.materials.fraunhofer.de/ontologies/BWMD_ontology/mid" uri="BWMD_mid.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1718797626140" name="https://www.materials.fraunhofer.de/ontologies/MoL_TensileTest" uri="MOL_TENSILE.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1718797626140" name="https://www.niso.org/standards-committees/ssos/ssos01.owl" uri="ssos.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1718797626140" name="shadowed:https://raw.githubusercontent.com/ebrahimnorouzi/mseo.github.io/master/Ontology_files/matinfo/OML-MaterialInformation.owl" uri="matinfo/OML-MaterialInformation.owl"/>
+    </group>
+</catalog>

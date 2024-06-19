@@ -35,22 +35,22 @@ def add_metrics(df_metrics: pd.DataFrame, df_new_metrics: pd.DataFrame) -> pd.Da
     df_new_table = df_metrics.merge(df_new_metrics[selected_columns],how='left', on= "metric_code")
     return df_new_table
 
-df_all = pd.read_csv("output2_mse.csv")
+df_all = pd.read_csv("output.csv")
 df_metrics_table = pd.read_excel("metrics_labels.xlsx")
 df_metrics_table = df_metrics_table[["metric_name","metric_code","ontometrics_name","evaluation_criteria"]]
 evaluated_ontologies = []
 
 for index, row in df_all.iterrows():
-    url = df_all['mirror_from'][index]
-    filename = 'all_files/' + df_all['namespace'][index] + '.' + df_all['mirror_from'][index][-3:]
-    print(filename)
     try:
+        url = df_all['mirror_from'][index]
+        filename = 'all_files/' + df_all['namespace'][index] + '.' + df_all['mirror_from'][index][-3:]
+        print(filename)
         df_ = load_metrics('all_files/' + df_all['namespace'][index] + '.xml', df_all['namespace'][index])
 
         df_metrics_table = add_metrics(df_metrics_table, df_)
         evaluated_ontologies.append(df_all['namespace'][index]) 
     except:# KeyError as e:
-        #print(e)
+        print(url)
         continue
 
 df_metrics_table.drop(["metric_code"], axis=1, inplace=True)
@@ -101,9 +101,9 @@ df_schema_and_graph_metrics = pd.concat([df_schema_and_graph_metrics.loc[7:12],n
 
 ### update NoR and NoL metrics with relative values inside parenthesis
 num_classes = [ int(v) for v in df_base_metrics.iloc[2:3, 1:].values.flatten().tolist()]
-nor = [ int(v) for v in df_schema_and_graph_metrics.iloc[5:6,2:].values.flatten().tolist()]
-nol = [ int(v) for v in df_schema_and_graph_metrics.iloc[7:8,2:].values.flatten().tolist()]
-noc = [ int(v) for v in df_schema_and_graph_metrics.iloc[6:7,2:].values.flatten().tolist()]
+nor = [int(v) if not pd.isna(v) else 0 for v in df_schema_and_graph_metrics.iloc[7:8, 2:].values.flatten().tolist()]
+nol = [int(v) if not pd.isna(v) else 0 for v in df_schema_and_graph_metrics.iloc[8:9,2:].values.flatten().tolist() if v!=None]
+noc = [int(v) if not pd.isna(v) else 0 for v in df_schema_and_graph_metrics.iloc[6:7,2:].values.flatten().tolist() if v!=None]
 print(new_row_s)
 #print(df_base_metrics.iloc[2:3, 1:].values.flatten().tolist())
 for i,v in enumerate(num_classes):
@@ -142,7 +142,7 @@ with pd.option_context("max_colwidth", 1000):
 df_metrics_table.drop(["metric_name"], axis=1, inplace=True)
 df_metrics_table.drop(["evaluation_criteria"], axis=1, inplace=True)
 df_metrics_table = df_metrics_table[df_metrics_table['ontometrics_name'].isin(["Absolute root cardinality", "Absolute leaf cardinality", "Absolute depth", "Average depth", "Maximal depth", "Absolute breadth", "Average breadth", "Maximal breadth", "Tangledness"])]
-df_metrics_table.transpose().applymap(lambda x: "%1.4f" % (float(x)) if isinstance(x, (str)) and '.' in x and not ' ' in x else x).to_latex("validation_metrics_table.tex")#, index=False)
+df_metrics_table.transpose().applymap(lambda x: "%1.2f" % (float(x)) if isinstance(x, (str)) and '.' in x and not ' ' in x else x).to_latex("validation_metrics_table.tex")#, index=False)
 
 df_general_table = pd.read_csv("general_table.csv")
 
@@ -150,9 +150,9 @@ empty_df = pd.DataFrame()
 
 # Define the list of dataframes to add
 for ontology in df_metrics_table.transpose().index:
-    if ontology in list(df_general_table["Short name"]):
+    if ontology in list(df_general_table["Short Name"]):
         
-        empty_df = empty_df.append(df_general_table[df_general_table["Short name"]==ontology], ignore_index=True)
+        empty_df = empty_df.append(df_general_table[df_general_table["Short Name"]==ontology], ignore_index=True)
     else:
         print(ontology)
 
@@ -165,19 +165,19 @@ with pd.option_context("max_colwidth", 1000):
 with open("dic_pitfalls.pkl", "rb") as f:
     dic_pitfalls = pickle.load(f)
 
-empty_df = pd.DataFrame(columns=["Ontology name", "Critical", "Important", "Minor" ])
+empty_df = pd.DataFrame(columns=["Ontology Name", "Critical", "Important", "Minor" ])
 for ontology in df_metrics_table.transpose().index:
-    if ontology in list(df_general_table["Short name"]):
+    if ontology in list(df_general_table["Short Name"]):
         try:
             critical = dic_pitfalls[ontology]['Critical']
             important = dic_pitfalls[ontology]['Important']
             minor = dic_pitfalls[ontology]['Minor']
-            empty_df = empty_df.append({'Ontology name': ontology,
+            empty_df = empty_df.append({'Ontology Name': ontology,
                                         'Critical': '-' if not critical else ', '.join([f"{item[0]}: {item[1]}" for item in critical]),
                                         'Important': '-' if not important else ', '.join([f"{item[0]}: {item[1]}" for item in important]),
                                         'Minor': '-' if not minor else ', '.join([f"{item[0]}: {item[1]}" for item in minor])}, ignore_index=True)
         except:
-            empty_df = empty_df.append({'Ontology name': ontology,
+            empty_df = empty_df.append({'Ontology Name': ontology,
                                         'Critical': '-' ,
                                         'Important': '-',
                                         'Minor': '-' }, ignore_index=True)

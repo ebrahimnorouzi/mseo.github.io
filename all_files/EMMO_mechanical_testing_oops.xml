@@ -1,24 +1,11 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<oops:OOPSResponse xmlns:oops="http://www.oeg-upm.net/oops">
-<oops:Pitfall>
-<oops:Code>P36</oops:Code><oops:Name>URI contains file extension</oops:Name>
-<oops:Description>This pitfall occurs if file extensions such as ".owl", ".rdf", ".ttl", ".n3" and ".rdfxml" are included in an ontology URI. This pitfall is related with the recommendations provided in [9].</oops:Description>
-<oops:Importance>Minor</oops:Importance>
-<oops:NumberAffectedElements>1</oops:NumberAffectedElements>
-<oops:Affects>
-<oops:AffectedElement>https://raw.githubusercontent.com/emmo-repo/domain-mechanical-testing/master/emmo-mechanical-testing.owl</oops:AffectedElement>
-</oops:Affects>
-</oops:Pitfall>
-<oops:Pitfall>
-<oops:Code>P40</oops:Code><oops:Name>Defining multiple domains or ranges in properties</oops:Name>
-<oops:Description>The domain or range (or both) of a property (relationships and attributes) is defined by stating more than one rdfs:domain or rdfs:range statements. In OWL multiple rdfs:domain or rdfs:range axioms are allowed, but they are interpreted as conjunction, being, therefore, equivalent to the construct owl:intersectionOf. This pitfall is related to the common error that appears when defining domains and ranges described in [7].	</oops:Description>
-<oops:Importance>Critical</oops:Importance>
-<oops:NumberAffectedElements>4</oops:NumberAffectedElements>
-<oops:Affects>
-<oops:AffectedElement>http://emmo.info/emmo/middle/isq#physicalDimension</oops:AffectedElement>
-<oops:AffectedElement>http://emmo.info/emmo/top/annotations#EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9</oops:AffectedElement>
-<oops:AffectedElement>http://emmo.info/emmo/top/annotations#EMMO_1f1b164d_ec6a_4faa_8d5e_88bda62316cc</oops:AffectedElement>
-<oops:AffectedElement>http://emmo.info/emmo/top/annotations#elucidation</oops:AffectedElement>
-</oops:Affects>
-</oops:Pitfall>
-</oops:OOPSResponse>
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
+<html><head>
+<title>502 Proxy Error</title>
+</head><body>
+<h1>Proxy Error</h1>
+<p>The proxy server received an invalid
+response from an upstream server.<br />
+The proxy server could not handle the request<p>Reason: <strong>Error reading from remote server</strong></p></p>
+<hr>
+<address>Apache Server at oops.linkeddata.es Port 443</address>
+</body></html>

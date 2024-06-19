@@ -1,0 +1,187 @@
+metric,metric_value,metric_type
+abox_axiom_count,0,single_value
+abox_axiom_count_incl,0,single_value
+abox_nominals,false,single_value
+abox_nominals_incl,false,single_value
+annotation_property_count,4,single_value
+annotation_property_count_incl,4,single_value
+assert_n_subclass_avg,0.5,single_value
+assert_n_subclass_avg_incl,0.5,single_value
+assert_n_superclass_avg,1.0,single_value
+assert_n_superclass_avg_incl,1.0,single_value
+ax_complexrhs_count,0,single_value
+ax_complexrhs_count_incl,0,single_value
+axiom_count,427,single_value
+axiom_count_incl,427,single_value
+axiom_length_max,4,single_value
+axiom_length_max_incl,4,single_value
+axiom_type_count,AnnotationAssertion 159,map_value
+axiom_type_count,DataPropertyDomain 35,map_value
+axiom_type_count,DataPropertyRange 35,map_value
+axiom_type_count,Declaration 90,map_value
+axiom_type_count,InverseObjectProperties 1,map_value
+axiom_type_count,ObjectPropertyDomain 26,map_value
+axiom_type_count,ObjectPropertyRange 26,map_value
+axiom_type_count,SubClassOf 13,map_value
+axiom_type_count,SubDataPropertyOf 30,map_value
+axiom_type_count,SubObjectPropertyOf 12,map_value
+axiom_type_count_incl,AnnotationAssertion 159,map_value
+axiom_type_count_incl,DataPropertyDomain 35,map_value
+axiom_type_count_incl,DataPropertyRange 35,map_value
+axiom_type_count_incl,Declaration 90,map_value
+axiom_type_count_incl,InverseObjectProperties 1,map_value
+axiom_type_count_incl,ObjectPropertyDomain 26,map_value
+axiom_type_count_incl,ObjectPropertyRange 26,map_value
+axiom_type_count_incl,SubClassOf 13,map_value
+axiom_type_count_incl,SubDataPropertyOf 30,map_value
+axiom_type_count_incl,SubObjectPropertyOf 12,map_value
+axiom_types,AnnotationAssertion,list_value
+axiom_types,DataPropertyDomain,list_value
+axiom_types,DataPropertyRange,list_value
+axiom_types,Declaration,list_value
+axiom_types,InverseObjectProperties,list_value
+axiom_types,ObjectPropertyDomain,list_value
+axiom_types,ObjectPropertyRange,list_value
+axiom_types,SubClassOf,list_value
+axiom_types,SubDataPropertyOf,list_value
+axiom_types,SubObjectPropertyOf,list_value
+axiom_types_incl,AnnotationAssertion,list_value
+axiom_types_incl,DataPropertyDomain,list_value
+axiom_types_incl,DataPropertyRange,list_value
+axiom_types_incl,Declaration,list_value
+axiom_types_incl,InverseObjectProperties,list_value
+axiom_types_incl,ObjectPropertyDomain,list_value
+axiom_types_incl,ObjectPropertyRange,list_value
+axiom_types_incl,SubClassOf,list_value
+axiom_types_incl,SubDataPropertyOf,list_value
+axiom_types_incl,SubObjectPropertyOf,list_value
+certain_cycle,false,single_value
+certain_cycle_incl,false,single_value
+class_count,26,single_value
+class_count_incl,26,single_value
+class_expression_count,Class 164,map_value
+class_expression_count,ObjectUnionOf 23,map_value
+class_expression_count_incl,Class 164,map_value
+class_expression_count_incl,ObjectUnionOf 23,map_value
+class_sgl_subcl_count,2,single_value
+class_sgl_subcl_count_incl,2,single_value
+constructs,CONCEPT_UNION,list_value
+constructs,D,list_value
+constructs,ROLE_DOMAIN_RANGE,list_value
+constructs,ROLE_HIERARCHY,list_value
+constructs,ROLE_INVERSE,list_value
+constructs_incl,CONCEPT_UNION,list_value
+constructs_incl,D,list_value
+constructs_incl,ROLE_DOMAIN_RANGE,list_value
+constructs_incl,ROLE_HIERARCHY,list_value
+constructs_incl,ROLE_INVERSE,list_value
+curie_map,dc11 http://purl.org/dc/elements/1.1/,map_value
+curie_map,owl http://www.w3.org/2002/07/owl#,map_value
+curie_map,rdf http://www.w3.org/1999/02/22-rdf-syntax-ns#,map_value
+curie_map,rdfs http://www.w3.org/2000/01/rdf-schema#,map_value
+curie_map,xsd http://www.w3.org/2001/XMLSchema#,map_value
+dataproperty_count,39,single_value
+dataproperty_count_incl,39,single_value
+datatypes_axiom_count,RDFS_LITERAL 15,map_value
+datatypes_axiom_count,XSD_ANY_URI 1,map_value
+datatypes_axiom_count,XSD_BOOLEAN 2,map_value
+datatypes_axiom_count,XSD_DECIMAL 1,map_value
+datatypes_axiom_count,XSD_FLOAT 1,map_value
+datatypes_axiom_count,XSD_POSITIVE_INTEGER 3,map_value
+datatypes_axiom_count,XSD_STRING 12,map_value
+datatypes_axiom_count_incl,RDFS_LITERAL 15,map_value
+datatypes_axiom_count_incl,XSD_ANY_URI 1,map_value
+datatypes_axiom_count_incl,XSD_BOOLEAN 2,map_value
+datatypes_axiom_count_incl,XSD_DECIMAL 1,map_value
+datatypes_axiom_count_incl,XSD_FLOAT 1,map_value
+datatypes_axiom_count_incl,XSD_POSITIVE_INTEGER 3,map_value
+datatypes_axiom_count_incl,XSD_STRING 12,map_value
+datatypes_builtin,RDFS_LITERAL,list_value
+datatypes_builtin,RDF_PLAIN_LITERAL,list_value
+datatypes_builtin,XSD_ANY_URI,list_value
+datatypes_builtin,XSD_BOOLEAN,list_value
+datatypes_builtin,XSD_DECIMAL,list_value
+datatypes_builtin,XSD_FLOAT,list_value
+datatypes_builtin,XSD_POSITIVE_INTEGER,list_value
+datatypes_builtin,XSD_STRING,list_value
+datatypes_builtin_incl,RDFS_LITERAL,list_value
+datatypes_builtin_incl,RDF_PLAIN_LITERAL,list_value
+datatypes_builtin_incl,XSD_ANY_URI,list_value
+datatypes_builtin_incl,XSD_BOOLEAN,list_value
+datatypes_builtin_incl,XSD_DECIMAL,list_value
+datatypes_builtin_incl,XSD_FLOAT,list_value
+datatypes_builtin_incl,XSD_POSITIVE_INTEGER,list_value
+datatypes_builtin_incl,XSD_STRING,list_value
+datatypes_count,8,single_value
+datatypes_count_incl,8,single_value
+dt_builtin_count,8,single_value
+dt_builtin_count_incl,8,single_value
+dt_notbuiltin_count,0,single_value
+dt_notbuiltin_count_incl,0,single_value
+expressivity,RRESTRUHI(D),single_value
+expressivity_incl,RRESTRUHI(D),single_value
+gci_count,0,single_value
+gci_count_incl,0,single_value
+gci_hidden_count,0,single_value
+gci_hidden_count_incl,0,single_value
+individual_count,0,single_value
+individual_count_incl,0,single_value
+instance_per_class_avg,0.0,single_value
+instance_per_class_avg_incl,0.0,single_value
+logical_axiom_count,178,single_value
+logical_axiom_count_incl,178,single_value
+most_freq_concept,https://material-digital.de/pmdco/Process,single_value
+most_freq_concept_incl,https://material-digital.de/pmdco/Process,single_value
+multiple_inheritance_count,0,single_value
+multiple_inheritance_count_incl,0,single_value
+named_supercl_count_max,1,single_value
+named_supercl_count_max_incl,1,single_value
+namespace_axiom_count,owl 2,map_value
+namespace_axiom_count,prefix_unknown 434,map_value
+namespace_axiom_count,rdfs 174,map_value
+namespace_axiom_count,xsd 20,map_value
+namespace_axiom_count_incl,owl 2,map_value
+namespace_axiom_count_incl,prefix_unknown 434,map_value
+namespace_axiom_count_incl,rdfs 174,map_value
+namespace_axiom_count_incl,xsd 20,map_value
+namespace_entity_count,dc11 1,map_value
+namespace_entity_count,owl 3,map_value
+namespace_entity_count,prefix_unknown 90,map_value
+namespace_entity_count,rdf 1,map_value
+namespace_entity_count,rdfs 3,map_value
+namespace_entity_count,xsd 6,map_value
+namespace_entity_count_incl,dc11 1,map_value
+namespace_entity_count_incl,owl 3,map_value
+namespace_entity_count_incl,prefix_unknown 90,map_value
+namespace_entity_count_incl,rdf 1,map_value
+namespace_entity_count_incl,rdfs 3,map_value
+namespace_entity_count_incl,xsd 6,map_value
+obj_property_count,27,single_value
+obj_property_count_incl,27,single_value
+ontology_anno_count,2,single_value
+ontology_iri,https://material-digital.de/pmdco,single_value
+ontology_version_iri,no.iri,single_value
+owl2,true,single_value
+owl2_dl,false,single_value
+owl2_el,false,single_value
+owl2_ql,false,single_value
+owl2_rl,false,single_value
+owl2dl_profile_violation,UseOfUndeclaredAnnotationProperty 1,map_value
+rbox_axiom_count,43,single_value
+rbox_axiom_count_incl,43,single_value
+rdfs,false,single_value
+rule_count,0,single_value
+rule_count_incl,0,single_value
+signature_entity_count,104,single_value
+signature_entity_count_incl,104,single_value
+syntax,Turtle,single_value
+tautology_count,17,single_value
+tautology_count_incl,17,single_value
+tbox_axiom_count,135,single_value
+tbox_axiom_count_incl,135,single_value
+tbox_nominals,false,single_value
+tbox_nominals_incl,false,single_value
+tboxrbox_axiom_count,178,single_value
+tboxrbox_axiom_count_incl,178,single_value
+undecl_entity_count,14,single_value
+undecl_entity_count_incl,14,single_value

@@ -1,0 +1,199 @@
+metric,metric_value,metric_type
+abox_axiom_count,35,single_value
+abox_axiom_count_incl,35,single_value
+abox_nominals,false,single_value
+abox_nominals_incl,false,single_value
+annotation_property_count,8,single_value
+annotation_property_count_incl,8,single_value
+assert_n_subclass_avg,0.6666666666666666,single_value
+assert_n_subclass_avg_incl,0.6666666666666666,single_value
+assert_n_superclass_avg,1.0,single_value
+assert_n_superclass_avg_incl,1.0,single_value
+ax_complexrhs_count,0,single_value
+ax_complexrhs_count_incl,0,single_value
+axiom_count,361,single_value
+axiom_count_incl,361,single_value
+axiom_length_max,2,single_value
+axiom_length_max_incl,2,single_value
+axiom_type_count,AnnotationAssertion 108,map_value
+axiom_type_count,ClassAssertion 26,map_value
+axiom_type_count,DataPropertyAssertion 9,map_value
+axiom_type_count,DataPropertyDomain 14,map_value
+axiom_type_count,DataPropertyRange 22,map_value
+axiom_type_count,Declaration 78,map_value
+axiom_type_count,DisjointClasses 2,map_value
+axiom_type_count,FunctionalDataProperty 22,map_value
+axiom_type_count,FunctionalObjectProperty 6,map_value
+axiom_type_count,InverseObjectProperties 3,map_value
+axiom_type_count,ObjectPropertyDomain 10,map_value
+axiom_type_count,ObjectPropertyRange 10,map_value
+axiom_type_count,SubClassOf 16,map_value
+axiom_type_count,SubDataPropertyOf 25,map_value
+axiom_type_count,SubObjectPropertyOf 10,map_value
+axiom_type_count_incl,AnnotationAssertion 108,map_value
+axiom_type_count_incl,ClassAssertion 26,map_value
+axiom_type_count_incl,DataPropertyAssertion 9,map_value
+axiom_type_count_incl,DataPropertyDomain 14,map_value
+axiom_type_count_incl,DataPropertyRange 22,map_value
+axiom_type_count_incl,Declaration 78,map_value
+axiom_type_count_incl,DisjointClasses 2,map_value
+axiom_type_count_incl,FunctionalDataProperty 22,map_value
+axiom_type_count_incl,FunctionalObjectProperty 6,map_value
+axiom_type_count_incl,InverseObjectProperties 3,map_value
+axiom_type_count_incl,ObjectPropertyDomain 10,map_value
+axiom_type_count_incl,ObjectPropertyRange 10,map_value
+axiom_type_count_incl,SubClassOf 16,map_value
+axiom_type_count_incl,SubDataPropertyOf 25,map_value
+axiom_type_count_incl,SubObjectPropertyOf 10,map_value
+axiom_types,AnnotationAssertion,list_value
+axiom_types,ClassAssertion,list_value
+axiom_types,DataPropertyAssertion,list_value
+axiom_types,DataPropertyDomain,list_value
+axiom_types,DataPropertyRange,list_value
+axiom_types,Declaration,list_value
+axiom_types,DisjointClasses,list_value
+axiom_types,FunctionalDataProperty,list_value
+axiom_types,FunctionalObjectProperty,list_value
+axiom_types,InverseObjectProperties,list_value
+axiom_types,ObjectPropertyDomain,list_value
+axiom_types,ObjectPropertyRange,list_value
+axiom_types,SubClassOf,list_value
+axiom_types,SubDataPropertyOf,list_value
+axiom_types,SubObjectPropertyOf,list_value
+axiom_types_incl,AnnotationAssertion,list_value
+axiom_types_incl,ClassAssertion,list_value
+axiom_types_incl,DataPropertyAssertion,list_value
+axiom_types_incl,DataPropertyDomain,list_value
+axiom_types_incl,DataPropertyRange,list_value
+axiom_types_incl,Declaration,list_value
+axiom_types_incl,DisjointClasses,list_value
+axiom_types_incl,FunctionalDataProperty,list_value
+axiom_types_incl,FunctionalObjectProperty,list_value
+axiom_types_incl,InverseObjectProperties,list_value
+axiom_types_incl,ObjectPropertyDomain,list_value
+axiom_types_incl,ObjectPropertyRange,list_value
+axiom_types_incl,SubClassOf,list_value
+axiom_types_incl,SubDataPropertyOf,list_value
+axiom_types_incl,SubObjectPropertyOf,list_value
+certain_cycle,false,single_value
+certain_cycle_incl,false,single_value
+class_count,24,single_value
+class_count_incl,24,single_value
+class_expression_count,Class 120,map_value
+class_expression_count_incl,Class 120,map_value
+class_sgl_subcl_count,0,single_value
+class_sgl_subcl_count_incl,0,single_value
+constructs,CONCEPT_COMPLEX_NEGATION,list_value
+constructs,D,list_value
+constructs,F,list_value
+constructs,ROLE_DOMAIN_RANGE,list_value
+constructs,ROLE_HIERARCHY,list_value
+constructs,ROLE_INVERSE,list_value
+constructs_incl,CONCEPT_COMPLEX_NEGATION,list_value
+constructs_incl,D,list_value
+constructs_incl,F,list_value
+constructs_incl,ROLE_DOMAIN_RANGE,list_value
+constructs_incl,ROLE_HIERARCHY,list_value
+constructs_incl,ROLE_INVERSE,list_value
+curie_map,dc http://purl.org/dc/terms/,map_value
+curie_map,owl http://www.w3.org/2002/07/owl#,map_value
+curie_map,rdf http://www.w3.org/1999/02/22-rdf-syntax-ns#,map_value
+curie_map,rdfs http://www.w3.org/2000/01/rdf-schema#,map_value
+curie_map,xsd http://www.w3.org/2001/XMLSchema#,map_value
+dataproperty_count,26,single_value
+dataproperty_count_incl,26,single_value
+datatypes_axiom_count,RDF_PLAIN_LITERAL 9,map_value
+datatypes_axiom_count,XSD_FLOAT 20,map_value
+datatypes_axiom_count,XSD_INTEGER 1,map_value
+datatypes_axiom_count,XSD_STRING 1,map_value
+datatypes_axiom_count_incl,RDF_PLAIN_LITERAL 9,map_value
+datatypes_axiom_count_incl,XSD_FLOAT 20,map_value
+datatypes_axiom_count_incl,XSD_INTEGER 1,map_value
+datatypes_axiom_count_incl,XSD_STRING 1,map_value
+datatypes_builtin,RDF_PLAIN_LITERAL,list_value
+datatypes_builtin,XSD_FLOAT,list_value
+datatypes_builtin,XSD_INTEGER,list_value
+datatypes_builtin,XSD_STRING,list_value
+datatypes_builtin_incl,RDF_PLAIN_LITERAL,list_value
+datatypes_builtin_incl,XSD_FLOAT,list_value
+datatypes_builtin_incl,XSD_INTEGER,list_value
+datatypes_builtin_incl,XSD_STRING,list_value
+datatypes_count,5,single_value
+datatypes_count_incl,5,single_value
+datatypes_not_built_in,xsd:date,list_value
+datatypes_not_built_in_incl,xsd:date,list_value
+dt_builtin_count,4,single_value
+dt_builtin_count_incl,4,single_value
+dt_notbuiltin_count,1,single_value
+dt_notbuiltin_count_incl,1,single_value
+expressivity,RRESTRCHIF(D),single_value
+expressivity_incl,RRESTRCHIF(D),single_value
+gci_count,0,single_value
+gci_count_incl,0,single_value
+gci_hidden_count,0,single_value
+gci_hidden_count_incl,0,single_value
+individual_count,13,single_value
+individual_count_incl,13,single_value
+instance_per_class_avg,1.0833333333333333,single_value
+instance_per_class_avg_incl,1.0833333333333333,single_value
+logical_axiom_count,175,single_value
+logical_axiom_count_incl,175,single_value
+most_freq_concept,http://ontorule-project.eu/resources/steel#ProductType,single_value
+most_freq_concept_incl,http://ontorule-project.eu/resources/steel#ProductType,single_value
+multiple_inheritance_count,0,single_value
+multiple_inheritance_count_incl,0,single_value
+named_supercl_count_max,1,single_value
+named_supercl_count_max_incl,1,single_value
+namespace_axiom_count,dc 2,map_value
+namespace_axiom_count,owl 30,map_value
+namespace_axiom_count,prefix_unknown 344,map_value
+namespace_axiom_count,rdf 9,map_value
+namespace_axiom_count,rdfs 110,map_value
+namespace_axiom_count,xsd 22,map_value
+namespace_axiom_count_incl,dc 2,map_value
+namespace_axiom_count_incl,owl 30,map_value
+namespace_axiom_count_incl,prefix_unknown 344,map_value
+namespace_axiom_count_incl,rdf 9,map_value
+namespace_axiom_count_incl,rdfs 110,map_value
+namespace_axiom_count_incl,xsd 22,map_value
+namespace_entity_count,dc 4,map_value
+namespace_entity_count,owl 4,map_value
+namespace_entity_count,prefix_unknown 72,map_value
+namespace_entity_count,rdf 1,map_value
+namespace_entity_count,rdfs 2,map_value
+namespace_entity_count,xsd 4,map_value
+namespace_entity_count_incl,dc 4,map_value
+namespace_entity_count_incl,owl 4,map_value
+namespace_entity_count_incl,prefix_unknown 72,map_value
+namespace_entity_count_incl,rdf 1,map_value
+namespace_entity_count_incl,rdfs 2,map_value
+namespace_entity_count_incl,xsd 4,map_value
+obj_property_count,11,single_value
+obj_property_count_incl,11,single_value
+ontology_anno_count,10,single_value
+ontology_iri,http://ontorule-project.eu/resources/steel,single_value
+ontology_version_iri,no.iri,single_value
+owl2,true,single_value
+owl2_dl,false,single_value
+owl2_el,false,single_value
+owl2_ql,false,single_value
+owl2_rl,false,single_value
+owl2dl_profile_violation,UseOfUndeclaredAnnotationProperty 5,map_value
+rbox_axiom_count,38,single_value
+rbox_axiom_count_incl,38,single_value
+rdfs,false,single_value
+rule_count,0,single_value
+rule_count_incl,0,single_value
+signature_entity_count,87,single_value
+signature_entity_count_incl,87,single_value
+syntax,Turtle Syntax,single_value
+tautology_count,27,single_value
+tautology_count_incl,27,single_value
+tbox_axiom_count,102,single_value
+tbox_axiom_count_incl,102,single_value
+tbox_nominals,false,single_value
+tbox_nominals_incl,false,single_value
+tboxrbox_axiom_count,140,single_value
+tboxrbox_axiom_count_incl,140,single_value
+undecl_entity_count,9,single_value
+undecl_entity_count_incl,9,single_value

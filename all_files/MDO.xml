@@ -2,10 +2,10 @@
 <OntologyMetrics>
 <BaseMetrics>
 <Basemetrics>
-<Axioms>457</Axioms>
-<Logicalaxiomscount>168</Logicalaxiomscount>
-<Classcount>37</Classcount>
-<Totalclassescount>37</Totalclassescount>
+<Axioms>574</Axioms>
+<Logicalaxiomscount>192</Logicalaxiomscount>
+<Classcount>38</Classcount>
+<Totalclassescount>38</Totalclassescount>
 <Objectpropertycount>32</Objectpropertycount>
 <Totalobjectpropertiescount>32</Totalobjectpropertiescount>
 <Datapropertycount>32</Datapropertycount>
@@ -16,7 +16,7 @@
 <DLexpressivity>ALCQ(D)</DLexpressivity>
 </Basemetrics>
 <Classaxioms>
-<SubClassOfaxiomscount>49</SubClassOfaxiomscount>
+<SubClassOfaxiomscount>73</SubClassOfaxiomscount>
 <Equivalentclassesaxiomscount>0</Equivalentclassesaxiomscount>
 <Disjointclassesaxiomscount>1</Disjointclassesaxiomscount>
 <GCICount>0</GCICount>
@@ -56,51 +56,51 @@
 <Differentindividualsaxiomscount>0</Differentindividualsaxiomscount>
 </Individualaxioms>
 <Annotationaxioms>
-<Annotationaxiomscount>30</Annotationaxiomscount>
-<Annotationassertionaxiomscount>176</Annotationassertionaxiomscount>
+<Annotationaxiomscount>28</Annotationaxiomscount>
+<Annotationassertionaxiomscount>268</Annotationassertionaxiomscount>
 <Annotationpropertydomainaxiomscount>0</Annotationpropertydomainaxiomscount>
 <Annotationpropertyrangeaxiomscount>0</Annotationpropertyrangeaxiomscount>
 </Annotationaxioms>
 <Schemametrics>
-<Attributerichness>0.864865</Attributerichness>
-<Inheritancerichness>1.324324</Inheritancerichness>
-<Relationshiprichness>0.402439</Relationshiprichness>
+<Attributerichness>0.842105</Attributerichness>
+<Inheritancerichness>1.921053</Inheritancerichness>
+<Relationshiprichness>0.311321</Relationshiprichness>
 <Attributeclassratio>0.0</Attributeclassratio>
 <Equivalenceratio>0.0</Equivalenceratio>
-<Axiomclassratio>12.351351</Axiomclassratio>
+<Axiomclassratio>15.105263</Axiomclassratio>
 <Inverserelationsratio>0.0</Inverserelationsratio>
-<Classrelationratio>0.45122</Classrelationratio>
+<Classrelationratio>0.358491</Classrelationratio>
 </Schemametrics>
 <Knowledgebasemetrics>
-<Averagepopulation>0.054054</Averagepopulation>
-<Classrichness>0.027027</Classrichness>
+<Averagepopulation>0.052632</Averagepopulation>
+<Classrichness>0.026316</Classrichness>
 </Knowledgebasemetrics>
 <Graphmetrics>
-<Absoluterootcardinality>9</Absoluterootcardinality>
-<Absoluteleafcardinality>15</Absoluteleafcardinality>
-<Absolutesiblingcardinality>20</Absolutesiblingcardinality>
-<Absolutedepth>35</Absolutedepth>
-<Averagedepth>1.75</Averagedepth>
-<Maximaldepth>3</Maximaldepth>
-<Absolutebreadth>20</Absolutebreadth>
-<Averagebreadth>3.333333</Averagebreadth>
-<Maximalbreadth>9</Maximalbreadth>
-<Ratioofleaffanoutness>0.405405</Ratioofleaffanoutness>
-<Ratioofsiblingfanoutness>0.540541</Ratioofsiblingfanoutness>
-<Tangledness>0.054054</Tangledness>
-<Totalnumberofpaths>20</Totalnumberofpaths>
-<Averagenumberofpaths>6.666667</Averagenumberofpaths>
+<Absoluterootcardinality>1</Absoluterootcardinality>
+<Absoluteleafcardinality>31</Absoluteleafcardinality>
+<Absolutesiblingcardinality>38</Absolutesiblingcardinality>
+<Absolutedepth>92</Absolutedepth>
+<Averagedepth>2.421053</Averagedepth>
+<Maximaldepth>4</Maximaldepth>
+<Absolutebreadth>38</Absolutebreadth>
+<Averagebreadth>4.75</Averagebreadth>
+<Maximalbreadth>24</Maximalbreadth>
+<Ratioofleaffanoutness>0.815789</Ratioofleaffanoutness>
+<Ratioofsiblingfanoutness>1.0</Ratioofsiblingfanoutness>
+<Tangledness>0.473684</Tangledness>
+<Totalnumberofpaths>38</Totalnumberofpaths>
+<Averagenumberofpaths>9.5</Averagenumberofpaths>
 </Graphmetrics>
 <ClassMetrics>
-<Class iri="http://purl.obolibrary.org/obo/CHEBI_33250">
+<Class iri="http://www.w3.org/2002/07/owl#Thing">
 <Classconnectivity>0</Classconnectivity>
 <Classfulness>0.0</Classfulness>
-<Classimportance>0.0</Classimportance>
-<Classinheritancerichness>0.0</Classinheritancerichness>
-<Classreadability>1</Classreadability>
+<Classimportance>1.0</Classimportance>
+<Classinheritancerichness>1.027027</Classinheritancerichness>
+<Classreadability>0</Classreadability>
 <Classrelationshiprichness>0</Classrelationshiprichness>
-<Classchildrencount>0</Classchildrencount>
-<Classinstancescount>0</Classinstancescount>
+<Classchildrencount>37</Classchildrencount>
+<Classinstancescount>2</Classinstancescount>
 <Classpropertiescount>0</Classpropertiescount>
 </Class>
 <Class iri="https://w3id.org/mdo/calculation/HybridmetaGeneralizedGradientApproximation">
@@ -140,7 +140,7 @@
 <Classconnectivity>0</Classconnectivity>
 <Classfulness>0.0</Classfulness>
 <Classimportance>0.0</Classimportance>
-<Classinheritancerichness>6.166667</Classinheritancerichness>
+<Classinheritancerichness>6.333333</Classinheritancerichness>
 <Classreadability>2</Classreadability>
 <Classrelationshiprichness>0</Classrelationshiprichness>
 <Classchildrencount>6</Classchildrencount>
@@ -151,7 +151,7 @@
 <Classconnectivity>0</Classconnectivity>
 <Classfulness>0.0</Classfulness>
 <Classimportance>0.0</Classimportance>
-<Classinheritancerichness>18.5</Classinheritancerichness>
+<Classinheritancerichness>19.0</Classinheritancerichness>
 <Classreadability>2</Classreadability>
 <Classrelationshiprichness>0</Classrelationshiprichness>
 <Classchildrencount>2</Classchildrencount>
@@ -195,10 +195,21 @@
 <Classconnectivity>0</Classconnectivity>
 <Classfulness>0.0</Classfulness>
 <Classimportance>0.0</Classimportance>
-<Classinheritancerichness>18.5</Classinheritancerichness>
+<Classinheritancerichness>19.0</Classinheritancerichness>
 <Classreadability>2</Classreadability>
 <Classrelationshiprichness>0</Classrelationshiprichness>
 <Classchildrencount>2</Classchildrencount>
+<Classinstancescount>0</Classinstancescount>
+<Classpropertiescount>0</Classpropertiescount>
+</Class>
+<Class iri="https://w3id.org/mdo/structure/AxisVectors">
+<Classconnectivity>0</Classconnectivity>
+<Classfulness>0.0</Classfulness>
+<Classimportance>0.0</Classimportance>
+<Classinheritancerichness>0.0</Classinheritancerichness>
+<Classreadability>2</Classreadability>
+<Classrelationshiprichness>0</Classrelationshiprichness>
+<Classchildrencount>0</Classchildrencount>
 <Classinstancescount>0</Classinstancescount>
 <Classpropertiescount>0</Classpropertiescount>
 </Class>
@@ -244,17 +255,6 @@
 <Classrelationshiprichness>0</Classrelationshiprichness>
 <Classchildrencount>0</Classchildrencount>
 <Classinstancescount>0</Classinstancescount>
-<Classpropertiescount>0</Classpropertiescount>
-</Class>
-<Class iri="http://qudt.org/schema/qudt/Unit">
-<Classconnectivity>0</Classconnectivity>
-<Classfulness>0.0</Classfulness>
-<Classimportance>1.0</Classimportance>
-<Classinheritancerichness>0.0</Classinheritancerichness>
-<Classreadability>0</Classreadability>
-<Classrelationshiprichness>0</Classrelationshiprichness>
-<Classchildrencount>0</Classchildrencount>
-<Classinstancescount>2</Classinstancescount>
 <Classpropertiescount>0</Classpropertiescount>
 </Class>
 <Class iri="https://w3id.org/mdo/calculation/LocalDensityApproximation">
@@ -316,7 +316,7 @@
 <Classconnectivity>0</Classconnectivity>
 <Classfulness>0.0</Classfulness>
 <Classimportance>0.0</Classimportance>
-<Classinheritancerichness>18.5</Classinheritancerichness>
+<Classinheritancerichness>19.0</Classinheritancerichness>
 <Classreadability>0</Classreadability>
 <Classrelationshiprichness>0</Classrelationshiprichness>
 <Classchildrencount>2</Classchildrencount>
@@ -389,12 +389,12 @@
 <Classinstancescount>0</Classinstancescount>
 <Classpropertiescount>0</Classpropertiescount>
 </Class>
-<Class iri="https://w3id.org/mdo/structure/AxisVectors">
+<Class iri="http://purl.obolibrary.org/obo/CHEBI_33250">
 <Classconnectivity>0</Classconnectivity>
 <Classfulness>0.0</Classfulness>
 <Classimportance>0.0</Classimportance>
 <Classinheritancerichness>0.0</Classinheritancerichness>
-<Classreadability>2</Classreadability>
+<Classreadability>1</Classreadability>
 <Classrelationshiprichness>0</Classrelationshiprichness>
 <Classchildrencount>0</Classchildrencount>
 <Classinstancescount>0</Classinstancescount>
@@ -409,6 +409,17 @@
 <Classrelationshiprichness>0</Classrelationshiprichness>
 <Classchildrencount>0</Classchildrencount>
 <Classinstancescount>0</Classinstancescount>
+<Classpropertiescount>0</Classpropertiescount>
+</Class>
+<Class iri="http://qudt.org/vocab/unit/Unit">
+<Classconnectivity>0</Classconnectivity>
+<Classfulness>0.0</Classfulness>
+<Classimportance>1.0</Classimportance>
+<Classinheritancerichness>0.0</Classinheritancerichness>
+<Classreadability>0</Classreadability>
+<Classrelationshiprichness>0</Classrelationshiprichness>
+<Classchildrencount>0</Classchildrencount>
+<Classinstancescount>2</Classinstancescount>
 <Classpropertiescount>0</Classpropertiescount>
 </Class>
 <Class iri="https://w3id.org/mdo/core/Calculation">
@@ -448,7 +459,7 @@
 <Classconnectivity>0</Classconnectivity>
 <Classfulness>0.0</Classfulness>
 <Classimportance>0.0</Classimportance>
-<Classinheritancerichness>18.5</Classinheritancerichness>
+<Classinheritancerichness>19.0</Classinheritancerichness>
 <Classreadability>2</Classreadability>
 <Classrelationshiprichness>0</Classrelationshiprichness>
 <Classchildrencount>2</Classchildrencount>
@@ -470,7 +481,7 @@
 <Classconnectivity>0</Classconnectivity>
 <Classfulness>0.0</Classfulness>
 <Classimportance>0.0</Classimportance>
-<Classinheritancerichness>12.333333</Classinheritancerichness>
+<Classinheritancerichness>12.666667</Classinheritancerichness>
 <Classreadability>0</Classreadability>
 <Classrelationshiprichness>0</Classrelationshiprichness>
 <Classchildrencount>3</Classchildrencount>

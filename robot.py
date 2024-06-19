@@ -9,13 +9,8 @@ def run(cmd):
 
 df_all = pd.read_csv("output.csv")
 
-df_mse = pd.read_csv("MSE_ontologies_2.csv", usecols=['Short Name', 'Used in project/s']).dropna()
 onts = []
 onts_robot = []
-
-for ont in df_mse['Short Name']:
-    ont_list = [nspace.lower().strip() for nspace in ont.split(',')]
-    onts.extend(ont_list)
 
 for index, row in df_all.iterrows():
     ont_list = [nspace.lower().strip() for nspace in df_all['namespace'][index].split(',')]
@@ -27,9 +22,9 @@ for ont in onts:
         
 
 for index, row in df_all.iterrows():
-    if df_all['namespace'][index].lower() in onts:
-        url = df_all['mirror_from'][index]
-        namespace = df_all['namespace'][index]
+    url = df_all['mirror_from'][index]
+    namespace = df_all['namespace'][index]
+    try:
         filename = df_all['namespace'][index] + '.' + df_all['mirror_from'][index][-3:]
         print(filename)
         if not os.path.isfile('all_files/' +  filename):
@@ -45,9 +40,11 @@ for index, row in df_all.iterrows():
                 print("The error is for ", namespace)
             else:
                 print("Hello command executed successfully!")
-        
-    else:
-        print(df_all['namespace'][index], index)
-        df_all.drop(index, inplace=True)
+            
+        else:
+            print(df_all['namespace'][index], index)
+            df_all.drop(index, inplace=True)
+    except:
+        print('failed',url)
 
-df_all.to_csv("output1_mse.csv")
+df_all.to_csv("output_robot.csv")

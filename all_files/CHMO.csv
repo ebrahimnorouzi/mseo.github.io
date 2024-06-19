@@ -1,0 +1,229 @@
+metric,metric_value,metric_type
+abox_axiom_count,0,single_value
+abox_axiom_count_incl,0,single_value
+abox_nominals,false,single_value
+abox_nominals_incl,false,single_value
+annotation_property_count,37,single_value
+annotation_property_count_incl,37,single_value
+assert_n_subclass_avg,0.9922580645161291,single_value
+assert_n_subclass_avg_incl,0.9922580645161291,single_value
+assert_n_superclass_avg,1.032258064516129,single_value
+assert_n_superclass_avg_incl,1.032258064516129,single_value
+ax_complexrhs_count,384,single_value
+ax_complexrhs_count_incl,384,single_value
+axiom_count,27842,single_value
+axiom_count_incl,27842,single_value
+axiom_length_max,6,single_value
+axiom_length_max_incl,6,single_value
+axiom_type_count,AnnotationAssertion 21198,map_value
+axiom_type_count,Declaration 3164,map_value
+axiom_type_count,DisjointClasses 1,map_value
+axiom_type_count,EquivalentClasses 102,map_value
+axiom_type_count,ObjectPropertyDomain 4,map_value
+axiom_type_count,ObjectPropertyRange 4,map_value
+axiom_type_count,SubAnnotationPropertyOf 1,map_value
+axiom_type_count,SubClassOf 3358,map_value
+axiom_type_count,SubObjectPropertyOf 9,map_value
+axiom_type_count,TransitiveObjectProperty 1,map_value
+axiom_type_count_incl,AnnotationAssertion 21198,map_value
+axiom_type_count_incl,Declaration 3164,map_value
+axiom_type_count_incl,DisjointClasses 1,map_value
+axiom_type_count_incl,EquivalentClasses 102,map_value
+axiom_type_count_incl,ObjectPropertyDomain 4,map_value
+axiom_type_count_incl,ObjectPropertyRange 4,map_value
+axiom_type_count_incl,SubAnnotationPropertyOf 1,map_value
+axiom_type_count_incl,SubClassOf 3358,map_value
+axiom_type_count_incl,SubObjectPropertyOf 9,map_value
+axiom_type_count_incl,TransitiveObjectProperty 1,map_value
+axiom_types,AnnotationAssertion,list_value
+axiom_types,Declaration,list_value
+axiom_types,DisjointClasses,list_value
+axiom_types,EquivalentClasses,list_value
+axiom_types,ObjectPropertyDomain,list_value
+axiom_types,ObjectPropertyRange,list_value
+axiom_types,SubAnnotationPropertyOf,list_value
+axiom_types,SubClassOf,list_value
+axiom_types,SubObjectPropertyOf,list_value
+axiom_types,TransitiveObjectProperty,list_value
+axiom_types_incl,AnnotationAssertion,list_value
+axiom_types_incl,Declaration,list_value
+axiom_types_incl,DisjointClasses,list_value
+axiom_types_incl,EquivalentClasses,list_value
+axiom_types_incl,ObjectPropertyDomain,list_value
+axiom_types_incl,ObjectPropertyRange,list_value
+axiom_types_incl,SubAnnotationPropertyOf,list_value
+axiom_types_incl,SubClassOf,list_value
+axiom_types_incl,SubObjectPropertyOf,list_value
+axiom_types_incl,TransitiveObjectProperty,list_value
+certain_cycle,true,single_value
+certain_cycle_incl,true,single_value
+class_count,3100,single_value
+class_count_incl,3100,single_value
+class_expression_count,Class 10136,map_value
+class_expression_count,ObjectIntersectionOf 102,map_value
+class_expression_count,ObjectSomeValuesFrom 388,map_value
+class_expression_count_incl,Class 10136,map_value
+class_expression_count_incl,ObjectIntersectionOf 102,map_value
+class_expression_count_incl,ObjectSomeValuesFrom 388,map_value
+class_sgl_subcl_count,408,single_value
+class_sgl_subcl_count_incl,408,single_value
+constructs,CONCEPT_COMPLEX_NEGATION,list_value
+constructs,CONCEPT_INTERSECTION,list_value
+constructs,FULL_EXISTENTIAL,list_value
+constructs,ROLE_DOMAIN_RANGE,list_value
+constructs,ROLE_HIERARCHY,list_value
+constructs,ROLE_TRANSITIVE,list_value
+constructs_incl,CONCEPT_COMPLEX_NEGATION,list_value
+constructs_incl,CONCEPT_INTERSECTION,list_value
+constructs_incl,FULL_EXISTENTIAL,list_value
+constructs_incl,ROLE_DOMAIN_RANGE,list_value
+constructs_incl,ROLE_HIERARCHY,list_value
+constructs_incl,ROLE_TRANSITIVE,list_value
+curie_map,BFO http://purl.obolibrary.org/obo/BFO_,map_value
+curie_map,CHEBI http://purl.obolibrary.org/obo/CHEBI_,map_value
+curie_map,CHMO http://purl.obolibrary.org/obo/CHMO_,map_value
+curie_map,FIX http://purl.obolibrary.org/obo/FIX_,map_value
+curie_map,IAO http://purl.obolibrary.org/obo/IAO_,map_value
+curie_map,MS http://purl.obolibrary.org/obo/MS_,map_value
+curie_map,OBCS http://purl.obolibrary.org/obo/OBCS_,map_value
+curie_map,OBI http://purl.obolibrary.org/obo/OBI_,map_value
+curie_map,REX http://purl.obolibrary.org/obo/REX_,map_value
+curie_map,RO http://purl.obolibrary.org/obo/RO_,map_value
+curie_map,dc http://purl.org/dc/terms/,map_value
+curie_map,dc11 http://purl.org/dc/elements/1.1/,map_value
+curie_map,obo http://purl.obolibrary.org/obo/,map_value
+curie_map,oboInOwl http://www.geneontology.org/formats/oboInOwl#,map_value
+curie_map,owl http://www.w3.org/2002/07/owl#,map_value
+curie_map,rdf http://www.w3.org/1999/02/22-rdf-syntax-ns#,map_value
+curie_map,rdfs http://www.w3.org/2000/01/rdf-schema#,map_value
+curie_map,xsd http://www.w3.org/2001/XMLSchema#,map_value
+dataproperty_count,0,single_value
+dataproperty_count_incl,0,single_value
+datatypes_axiom_count,RDF_PLAIN_LITERAL 2910,map_value
+datatypes_axiom_count_incl,RDF_PLAIN_LITERAL 2910,map_value
+datatypes_builtin,RDF_PLAIN_LITERAL,list_value
+datatypes_builtin,XSD_BOOLEAN,list_value
+datatypes_builtin_incl,RDF_PLAIN_LITERAL,list_value
+datatypes_builtin_incl,XSD_BOOLEAN,list_value
+datatypes_count,2,single_value
+datatypes_count_incl,2,single_value
+dt_builtin_count,2,single_value
+dt_builtin_count_incl,2,single_value
+dt_notbuiltin_count,0,single_value
+dt_notbuiltin_count_incl,0,single_value
+expressivity,RRESTRCCINTEH+,single_value
+expressivity_incl,RRESTRCCINTEH+,single_value
+gci_count,0,single_value
+gci_count_incl,0,single_value
+gci_hidden_count,102,single_value
+gci_hidden_count_incl,102,single_value
+individual_count,0,single_value
+individual_count_incl,0,single_value
+instance_per_class_avg,0.0,single_value
+instance_per_class_avg_incl,0.0,single_value
+logical_axiom_count,3479,single_value
+logical_axiom_count_incl,3479,single_value
+most_freq_concept,http://purl.obolibrary.org/obo/CHMO_0002916,single_value
+most_freq_concept_incl,http://purl.obolibrary.org/obo/CHMO_0002916,single_value
+multiple_inheritance_count,102,single_value
+multiple_inheritance_count_incl,102,single_value
+named_supercl_count_max,3,single_value
+named_supercl_count_max_incl,3,single_value
+namespace_axiom_count,BFO 361,map_value
+namespace_axiom_count,CHEBI 107,map_value
+namespace_axiom_count,CHMO 9614,map_value
+namespace_axiom_count,FIX 81,map_value
+namespace_axiom_count,IAO 3220,map_value
+namespace_axiom_count,MS 7,map_value
+namespace_axiom_count,OBCS 4,map_value
+namespace_axiom_count,OBI 356,map_value
+namespace_axiom_count,REX 1,map_value
+namespace_axiom_count,RO 7,map_value
+namespace_axiom_count,dc 1,map_value
+namespace_axiom_count,dc11 2,map_value
+namespace_axiom_count,obo 5,map_value
+namespace_axiom_count,oboInOwl 17820,map_value
+namespace_axiom_count,owl 122,map_value
+namespace_axiom_count,rdf 2910,map_value
+namespace_axiom_count,rdfs 3065,map_value
+namespace_axiom_count_incl,BFO 361,map_value
+namespace_axiom_count_incl,CHEBI 107,map_value
+namespace_axiom_count_incl,CHMO 9614,map_value
+namespace_axiom_count_incl,FIX 81,map_value
+namespace_axiom_count_incl,IAO 3220,map_value
+namespace_axiom_count_incl,MS 7,map_value
+namespace_axiom_count_incl,OBCS 4,map_value
+namespace_axiom_count_incl,OBI 356,map_value
+namespace_axiom_count_incl,REX 1,map_value
+namespace_axiom_count_incl,RO 7,map_value
+namespace_axiom_count_incl,dc 1,map_value
+namespace_axiom_count_incl,dc11 2,map_value
+namespace_axiom_count_incl,obo 5,map_value
+namespace_axiom_count_incl,oboInOwl 17820,map_value
+namespace_axiom_count_incl,owl 122,map_value
+namespace_axiom_count_incl,rdf 2910,map_value
+namespace_axiom_count_incl,rdfs 3065,map_value
+namespace_entity_count,BFO 29,map_value
+namespace_entity_count,CHEBI 22,map_value
+namespace_entity_count,CHMO 2958,map_value
+namespace_entity_count,FIX 81,map_value
+namespace_entity_count,IAO 20,map_value
+namespace_entity_count,MS 1,map_value
+namespace_entity_count,OBCS 2,map_value
+namespace_entity_count,OBI 26,map_value
+namespace_entity_count,REX 1,map_value
+namespace_entity_count,RO 2,map_value
+namespace_entity_count,dc 1,map_value
+namespace_entity_count,dc11 2,map_value
+namespace_entity_count,obo 2,map_value
+namespace_entity_count,oboInOwl 14,map_value
+namespace_entity_count,owl 1,map_value
+namespace_entity_count,rdf 1,map_value
+namespace_entity_count,rdfs 2,map_value
+namespace_entity_count,xsd 1,map_value
+namespace_entity_count_incl,BFO 29,map_value
+namespace_entity_count_incl,CHEBI 22,map_value
+namespace_entity_count_incl,CHMO 2958,map_value
+namespace_entity_count_incl,FIX 81,map_value
+namespace_entity_count_incl,IAO 20,map_value
+namespace_entity_count_incl,MS 1,map_value
+namespace_entity_count_incl,OBCS 2,map_value
+namespace_entity_count_incl,OBI 26,map_value
+namespace_entity_count_incl,REX 1,map_value
+namespace_entity_count_incl,RO 2,map_value
+namespace_entity_count_incl,dc 1,map_value
+namespace_entity_count_incl,dc11 2,map_value
+namespace_entity_count_incl,obo 2,map_value
+namespace_entity_count_incl,oboInOwl 14,map_value
+namespace_entity_count_incl,owl 1,map_value
+namespace_entity_count_incl,rdf 1,map_value
+namespace_entity_count_incl,rdfs 2,map_value
+namespace_entity_count_incl,xsd 1,map_value
+obj_property_count,27,single_value
+obj_property_count_incl,27,single_value
+ontology_anno_count,5,single_value
+ontology_iri,http://purl.obolibrary.org/obo/chmo.owl,single_value
+ontology_version_iri,http://purl.obolibrary.org/obo/chmo/releases/2022-04-19/chmo.owl,single_value
+owl2,true,single_value
+owl2_dl,true,single_value
+owl2_el,true,single_value
+owl2_ql,false,single_value
+owl2_rl,false,single_value
+rbox_axiom_count,10,single_value
+rbox_axiom_count_incl,10,single_value
+rdfs,false,single_value
+rule_count,0,single_value
+rule_count_incl,0,single_value
+signature_entity_count,3166,single_value
+signature_entity_count_incl,3166,single_value
+syntax,RDF/XML Syntax,single_value
+tautology_count,0,single_value
+tautology_count_incl,0,single_value
+tbox_axiom_count,3469,single_value
+tbox_axiom_count_incl,3469,single_value
+tbox_nominals,false,single_value
+tbox_nominals_incl,false,single_value
+tboxrbox_axiom_count,3479,single_value
+tboxrbox_axiom_count_incl,3479,single_value
+undecl_entity_count,2,single_value
+undecl_entity_count_incl,2,single_value

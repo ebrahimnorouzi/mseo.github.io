@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<oops:OOPSResponse xmlns:oops="http://www.oeg-upm.net/oops">
+<oops:Pitfall>
+<oops:Code>P34</oops:Code><oops:Name>Untyped class</oops:Name>
+<oops:Description>An ontology element is used as a class without having been explicitly declared as such using the primitives owl:Class or rdfs:Class. This pitfall is related with the common problems listed in [8].	</oops:Description>
+<oops:Importance>Important</oops:Importance>
+<oops:NumberAffectedElements>3</oops:NumberAffectedElements>
+<oops:Affects>
+<oops:AffectedElement>http://xmlns.com/foaf/0.1/Person</oops:AffectedElement>
+<oops:AffectedElement>http://www.w3.org/2004/02/skos/core#Concept</oops:AffectedElement>
+<oops:AffectedElement>http://www.w3.org/ns/activitystreams#OrderedCollection</oops:AffectedElement>
+<oops:AffectedElement>http://xmlns.com/foaf/0.1/Person</oops:AffectedElement>
+<oops:AffectedElement>http://www.w3.org/2004/02/skos/core#Concept</oops:AffectedElement>
+<oops:AffectedElement>http://www.w3.org/ns/activitystreams#OrderedCollection</oops:AffectedElement>
+</oops:Affects>
+</oops:Pitfall>
+<oops:Pitfall>
+<oops:Code>P36</oops:Code><oops:Name>URI contains file extension</oops:Name>
+<oops:Description>This pitfall occurs if file extensions such as &quot;.owl&quot;, &quot;.rdf&quot;, &quot;.ttl&quot;, &quot;.n3&quot; and &quot;.rdfxml&quot; are included in an ontology URI. This pitfall is related with the recommendations provided in [9].	</oops:Description>
+<oops:Importance>Minor</oops:Importance>
+<oops:NumberAffectedElements>1</oops:NumberAffectedElements>
+<oops:Affects>
+<oops:AffectedElement>https://raw.githubusercontent.com/ebrahimnorouzi/mseo.github.io/master/Ontology_files/OA.ttl</oops:AffectedElement>
+</oops:Affects>
+</oops:Pitfall>
+</oops:OOPSResponse>

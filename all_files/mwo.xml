@@ -2,21 +2,21 @@
 <OntologyMetrics>
 <BaseMetrics>
 <Basemetrics>
-<Axioms>1122</Axioms>
-<Logicalaxiomscount>287</Logicalaxiomscount>
+<Axioms>1113</Axioms>
+<Logicalaxiomscount>278</Logicalaxiomscount>
 <Classcount>116</Classcount>
 <Totalclassescount>116</Totalclassescount>
 <Objectpropertycount>74</Objectpropertycount>
 <Totalobjectpropertiescount>74</Totalobjectpropertiescount>
-<Datapropertycount>30</Datapropertycount>
-<Totaldatapropertiescount>30</Totaldatapropertiescount>
-<Propertiescount>104</Propertiescount>
+<Datapropertycount>28</Datapropertycount>
+<Totaldatapropertiescount>28</Totaldatapropertiescount>
+<Propertiescount>102</Propertiescount>
 <Individualcount>5</Individualcount>
 <Totalindividualscount>5</Totalindividualscount>
 <DLexpressivity>ALCHIF(D)</DLexpressivity>
 </Basemetrics>
 <Classaxioms>
-<SubClassOfaxiomscount>93</SubClassOfaxiomscount>
+<SubClassOfaxiomscount>92</SubClassOfaxiomscount>
 <Equivalentclassesaxiomscount>7</Equivalentclassesaxiomscount>
 <Disjointclassesaxiomscount>0</Disjointclassesaxiomscount>
 <GCICount>0</GCICount>
@@ -39,12 +39,12 @@
 <SubPropertyChainOfaxiomscount>0</SubPropertyChainOfaxiomscount>
 </Objectpropertyaxioms>
 <Datapropertyaxioms>
-<SubDataPropertyOfaxiomscount>11</SubDataPropertyOfaxiomscount>
+<SubDataPropertyOfaxiomscount>6</SubDataPropertyOfaxiomscount>
 <Equivalentdatapropertiesaxiomscount>0</Equivalentdatapropertiesaxiomscount>
 <Disjointdatapropertiesaxiomscount>0</Disjointdatapropertiesaxiomscount>
 <Functionaldatapropertyaxiomscount>1</Functionaldatapropertyaxiomscount>
-<Datapropertydomainaxiomscount>26</Datapropertydomainaxiomscount>
-<DataPropertyrangeaxiomscount>4</DataPropertyrangeaxiomscount>
+<Datapropertydomainaxiomscount>24</Datapropertydomainaxiomscount>
+<DataPropertyrangeaxiomscount>3</DataPropertyrangeaxiomscount>
 </Datapropertyaxioms>
 <Individualaxioms>
 <Classassertionaxiomscount>4</Classassertionaxiomscount>
@@ -57,42 +57,42 @@
 </Individualaxioms>
 <Annotationaxioms>
 <Annotationaxiomscount>14</Annotationaxiomscount>
-<Annotationassertionaxiomscount>561</Annotationassertionaxiomscount>
-<Annotationpropertydomainaxiomscount>0</Annotationpropertydomainaxiomscount>
+<Annotationassertionaxiomscount>557</Annotationassertionaxiomscount>
+<Annotationpropertydomainaxiomscount>1</Annotationpropertydomainaxiomscount>
 <Annotationpropertyrangeaxiomscount>2</Annotationpropertyrangeaxiomscount>
 </Annotationaxioms>
 <Schemametrics>
-<Attributerichness>0.258621</Attributerichness>
-<Inheritancerichness>0.801724</Inheritancerichness>
-<Relationshiprichness>0.465517</Relationshiprichness>
+<Attributerichness>0.241379</Attributerichness>
+<Inheritancerichness>0.793103</Inheritancerichness>
+<Relationshiprichness>0.468208</Relationshiprichness>
 <Attributeclassratio>0.0</Attributeclassratio>
 <Equivalenceratio>0.060345</Equivalenceratio>
-<Axiomclassratio>9.672414</Axiomclassratio>
+<Axiomclassratio>9.594828</Axiomclassratio>
 <Inverserelationsratio>0.28</Inverserelationsratio>
-<Classrelationratio>0.666667</Classrelationratio>
+<Classrelationratio>0.67052</Classrelationratio>
 </Schemametrics>
 <Knowledgebasemetrics>
 <Averagepopulation>0.043103</Averagepopulation>
 <Classrichness>0.008621</Classrichness>
 </Knowledgebasemetrics>
 <Graphmetrics>
-<Absoluterootcardinality>27</Absoluterootcardinality>
-<Absoluteleafcardinality>63</Absoluteleafcardinality>
+<Absoluterootcardinality>28</Absoluterootcardinality>
+<Absoluteleafcardinality>64</Absoluteleafcardinality>
 <Absolutesiblingcardinality>88</Absolutesiblingcardinality>
-<Absolutedepth>182</Absolutedepth>
-<Averagedepth>2.022222</Averagedepth>
+<Absolutedepth>180</Absolutedepth>
+<Averagedepth>2.0</Averagedepth>
 <Maximaldepth>4</Maximaldepth>
 <Absolutebreadth>90</Absolutebreadth>
-<Averagebreadth>3.461538</Averagebreadth>
-<Maximalbreadth>27</Maximalbreadth>
-<Ratioofleaffanoutness>0.543103</Ratioofleaffanoutness>
+<Averagebreadth>3.6</Averagebreadth>
+<Maximalbreadth>28</Maximalbreadth>
+<Ratioofleaffanoutness>0.551724</Ratioofleaffanoutness>
 <Ratioofsiblingfanoutness>0.758621</Ratioofsiblingfanoutness>
 <Tangledness>0.017241</Tangledness>
 <Totalnumberofpaths>90</Totalnumberofpaths>
 <Averagenumberofpaths>22.5</Averagenumberofpaths>
 </Graphmetrics>
 <ClassMetrics>
-<Class iri="http://purls.helmholtz-metadaten.de/mwo/SoftwareRepository">
+<Class iri="http://purls.helmholtz-metadaten.de/mwo/LargeScaleFacility">
 <Classconnectivity>0</Classconnectivity>
 <Classfulness>0.0</Classfulness>
 <Classimportance>0.0</Classimportance>
@@ -122,17 +122,6 @@
 <Classreadability>2</Classreadability>
 <Classrelationshiprichness>0</Classrelationshiprichness>
 <Classchildrencount>2</Classchildrencount>
-<Classinstancescount>0</Classinstancescount>
-<Classpropertiescount>0</Classpropertiescount>
-</Class>
-<Class iri="http://purls.helmholtz-metadaten.de/mwo/LargeScaleFacility">
-<Classconnectivity>0</Classconnectivity>
-<Classfulness>0.0</Classfulness>
-<Classimportance>0.0</Classimportance>
-<Classinheritancerichness>0.0</Classinheritancerichness>
-<Classreadability>1</Classreadability>
-<Classrelationshiprichness>0</Classrelationshiprichness>
-<Classchildrencount>0</Classchildrencount>
 <Classinstancescount>0</Classinstancescount>
 <Classpropertiescount>0</Classpropertiescount>
 </Class>
@@ -169,18 +158,7 @@
 <Classinstancescount>0</Classinstancescount>
 <Classpropertiescount>0</Classpropertiescount>
 </Class>
-<Class iri="http://nfdi.fiz-karlsruhe.de/ontology/Person">
-<Classconnectivity>0</Classconnectivity>
-<Classfulness>0.0</Classfulness>
-<Classimportance>0.0</Classimportance>
-<Classinheritancerichness>58.0</Classinheritancerichness>
-<Classreadability>2</Classreadability>
-<Classrelationshiprichness>0</Classrelationshiprichness>
-<Classchildrencount>2</Classchildrencount>
-<Classinstancescount>0</Classinstancescount>
-<Classpropertiescount>0</Classpropertiescount>
-</Class>
-<Class iri="http://purls.helmholtz-metadaten.de/mwo/TrainingCourse">
+<Class iri="http://purls.helmholtz-metadaten.de/mwo/SoftwareRepository">
 <Classconnectivity>0</Classconnectivity>
 <Classfulness>0.0</Classfulness>
 <Classimportance>0.0</Classimportance>
@@ -191,7 +169,7 @@
 <Classinstancescount>0</Classinstancescount>
 <Classpropertiescount>0</Classpropertiescount>
 </Class>
-<Class iri="http://purls.helmholtz-metadaten.de/mwo/SemanticResource">
+<Class iri="http://purls.helmholtz-metadaten.de/mwo/TrainingCourse">
 <Classconnectivity>0</Classconnectivity>
 <Classfulness>0.0</Classfulness>
 <Classimportance>0.0</Classimportance>
@@ -279,6 +257,17 @@
 <Classinstancescount>0</Classinstancescount>
 <Classpropertiescount>0</Classpropertiescount>
 </Class>
+<Class iri="http://www.w3.org/2002/07/owl#Thing">
+<Classconnectivity>0</Classconnectivity>
+<Classfulness>0.0</Classfulness>
+<Classimportance>0.0</Classimportance>
+<Classinheritancerichness>0.0</Classinheritancerichness>
+<Classreadability>0</Classreadability>
+<Classrelationshiprichness>0</Classrelationshiprichness>
+<Classchildrencount>0</Classchildrencount>
+<Classinstancescount>0</Classinstancescount>
+<Classpropertiescount>0</Classpropertiescount>
+</Class>
 <Class iri="http://purls.helmholtz-metadaten.de/mwo/Method">
 <Classconnectivity>0</Classconnectivity>
 <Classfulness>0.0</Classfulness>
@@ -302,6 +291,17 @@
 <Classpropertiescount>0</Classpropertiescount>
 </Class>
 <Class iri="http://nfdi.fiz-karlsruhe.de/ontology/ProvidedResource">
+<Classconnectivity>0</Classconnectivity>
+<Classfulness>0.0</Classfulness>
+<Classimportance>0.0</Classimportance>
+<Classinheritancerichness>0.0</Classinheritancerichness>
+<Classreadability>2</Classreadability>
+<Classrelationshiprichness>0</Classrelationshiprichness>
+<Classchildrencount>0</Classchildrencount>
+<Classinstancescount>0</Classinstancescount>
+<Classpropertiescount>0</Classpropertiescount>
+</Class>
+<Class iri="https://w3id.org/seo#KeynoteSpeaker">
 <Classconnectivity>0</Classconnectivity>
 <Classfulness>0.0</Classfulness>
 <Classimportance>0.0</Classimportance>
@@ -393,10 +393,10 @@
 <Classconnectivity>0</Classconnectivity>
 <Classfulness>0.0</Classfulness>
 <Classimportance>0.0</Classimportance>
-<Classinheritancerichness>38.666667</Classinheritancerichness>
+<Classinheritancerichness>58.0</Classinheritancerichness>
 <Classreadability>0</Classreadability>
 <Classrelationshiprichness>0</Classrelationshiprichness>
-<Classchildrencount>3</Classchildrencount>
+<Classchildrencount>2</Classchildrencount>
 <Classinstancescount>0</Classinstancescount>
 <Classpropertiescount>0</Classpropertiescount>
 </Class>
@@ -466,14 +466,14 @@
 <Classinstancescount>0</Classinstancescount>
 <Classpropertiescount>0</Classpropertiescount>
 </Class>
-<Class iri="http://www.ebi.ac.uk/swo/interface/SWO_9000051">
+<Class iri="http://www.ebi.ac.uk/swo/SWO_0000021">
 <Classconnectivity>0</Classconnectivity>
 <Classfulness>0.0</Classfulness>
 <Classimportance>0.0</Classimportance>
-<Classinheritancerichness>0.0</Classinheritancerichness>
+<Classinheritancerichness>29.0</Classinheritancerichness>
 <Classreadability>1</Classreadability>
 <Classrelationshiprichness>0</Classrelationshiprichness>
-<Classchildrencount>0</Classchildrencount>
+<Classchildrencount>4</Classchildrencount>
 <Classinstancescount>0</Classinstancescount>
 <Classpropertiescount>0</Classpropertiescount>
 </Class>
@@ -554,14 +554,14 @@
 <Classinstancescount>0</Classinstancescount>
 <Classpropertiescount>0</Classpropertiescount>
 </Class>
-<Class iri="http://www.ebi.ac.uk/swo/SWO_0000002">
+<Class iri="http://nfdi.fiz-karlsruhe.de/ontology/ProgrammingLanguage">
 <Classconnectivity>0</Classconnectivity>
 <Classfulness>0.0</Classfulness>
 <Classimportance>0.0</Classimportance>
-<Classinheritancerichness>9.666667</Classinheritancerichness>
+<Classinheritancerichness>0.0</Classinheritancerichness>
 <Classreadability>2</Classreadability>
 <Classrelationshiprichness>0</Classrelationshiprichness>
-<Classchildrencount>12</Classchildrencount>
+<Classchildrencount>0</Classchildrencount>
 <Classinstancescount>0</Classinstancescount>
 <Classpropertiescount>0</Classpropertiescount>
 </Class>
@@ -686,6 +686,17 @@
 <Classinstancescount>0</Classinstancescount>
 <Classpropertiescount>0</Classpropertiescount>
 </Class>
+<Class iri="http://nfdi.fiz-karlsruhe.de/ontology/Person">
+<Classconnectivity>0</Classconnectivity>
+<Classfulness>0.0</Classfulness>
+<Classimportance>0.0</Classimportance>
+<Classinheritancerichness>58.0</Classinheritancerichness>
+<Classreadability>2</Classreadability>
+<Classrelationshiprichness>0</Classrelationshiprichness>
+<Classchildrencount>2</Classchildrencount>
+<Classinstancescount>0</Classinstancescount>
+<Classpropertiescount>0</Classpropertiescount>
+</Class>
 <Class iri="http://schema.org/Project">
 <Classconnectivity>0</Classconnectivity>
 <Classfulness>0.0</Classfulness>
@@ -719,14 +730,14 @@
 <Classinstancescount>0</Classinstancescount>
 <Classpropertiescount>0</Classpropertiescount>
 </Class>
-<Class iri="http://www.ebi.ac.uk/swo/SWO_0000021">
+<Class iri="http://www.ebi.ac.uk/swo/SWO_0000022">
 <Classconnectivity>0</Classconnectivity>
 <Classfulness>0.0</Classfulness>
 <Classimportance>0.0</Classimportance>
-<Classinheritancerichness>29.0</Classinheritancerichness>
+<Classinheritancerichness>0.0</Classinheritancerichness>
 <Classreadability>1</Classreadability>
 <Classrelationshiprichness>0</Classrelationshiprichness>
-<Classchildrencount>4</Classchildrencount>
+<Classchildrencount>0</Classchildrencount>
 <Classinstancescount>0</Classinstancescount>
 <Classpropertiescount>0</Classpropertiescount>
 </Class>
@@ -741,7 +752,7 @@
 <Classinstancescount>0</Classinstancescount>
 <Classpropertiescount>0</Classpropertiescount>
 </Class>
-<Class iri="http://nfdi.fiz-karlsruhe.de/ontology/ProgrammingLanguage">
+<Class iri="http://www.ebi.ac.uk/swo/license/SWO_1000137">
 <Classconnectivity>0</Classconnectivity>
 <Classfulness>0.0</Classfulness>
 <Classimportance>0.0</Classimportance>
@@ -774,7 +785,7 @@
 <Classinstancescount>0</Classinstancescount>
 <Classpropertiescount>0</Classpropertiescount>
 </Class>
-<Class iri="https://w3id.org/seo#KeynoteSpeaker">
+<Class iri="http://www.ebi.ac.uk/swo/SWO_9000072">
 <Classconnectivity>0</Classconnectivity>
 <Classfulness>0.0</Classfulness>
 <Classimportance>0.0</Classimportance>
@@ -829,17 +840,6 @@
 <Classinstancescount>0</Classinstancescount>
 <Classpropertiescount>0</Classpropertiescount>
 </Class>
-<Class iri="http://purl.org/dc/terms/FileFormat">
-<Classconnectivity>0</Classconnectivity>
-<Classfulness>0.0</Classfulness>
-<Classimportance>0.0</Classimportance>
-<Classinheritancerichness>0.0</Classinheritancerichness>
-<Classreadability>2</Classreadability>
-<Classrelationshiprichness>0</Classrelationshiprichness>
-<Classchildrencount>0</Classchildrencount>
-<Classinstancescount>0</Classinstancescount>
-<Classpropertiescount>0</Classpropertiescount>
-</Class>
 <Class iri="http://purls.helmholtz-metadaten.de/mwo/Lecture">
 <Classconnectivity>0</Classconnectivity>
 <Classfulness>0.0</Classfulness>
@@ -862,12 +862,12 @@
 <Classinstancescount>0</Classinstancescount>
 <Classpropertiescount>0</Classpropertiescount>
 </Class>
-<Class iri="http://purls.helmholtz-metadaten.de/mwo/ReferenceDataset">
+<Class iri="_:genid345259">
 <Classconnectivity>0</Classconnectivity>
 <Classfulness>0.0</Classfulness>
 <Classimportance>0.0</Classimportance>
 <Classinheritancerichness>0.0</Classinheritancerichness>
-<Classreadability>2</Classreadability>
+<Classreadability>0</Classreadability>
 <Classrelationshiprichness>0</Classrelationshiprichness>
 <Classchildrencount>0</Classchildrencount>
 <Classinstancescount>0</Classinstancescount>
@@ -929,17 +929,6 @@
 <Classpropertiescount>0</Classpropertiescount>
 </Class>
 <Class iri="http://purls.helmholtz-metadaten.de/mwo/MetadataSchema">
-<Classconnectivity>0</Classconnectivity>
-<Classfulness>0.0</Classfulness>
-<Classimportance>0.0</Classimportance>
-<Classinheritancerichness>0.0</Classinheritancerichness>
-<Classreadability>1</Classreadability>
-<Classrelationshiprichness>0</Classrelationshiprichness>
-<Classchildrencount>0</Classchildrencount>
-<Classinstancescount>0</Classinstancescount>
-<Classpropertiescount>0</Classpropertiescount>
-</Class>
-<Class iri="http://purls.helmholtz-metadaten.de/mwo/CrystallographyDatabase">
 <Classconnectivity>0</Classconnectivity>
 <Classfulness>0.0</Classfulness>
 <Classimportance>0.0</Classimportance>
@@ -1027,7 +1016,7 @@
 <Classinstancescount>0</Classinstancescount>
 <Classpropertiescount>0</Classpropertiescount>
 </Class>
-<Class iri="http://www.ebi.ac.uk/swo/SWO_0000022">
+<Class iri="http://purls.helmholtz-metadaten.de/mwo/CrystallographyDatabase">
 <Classconnectivity>0</Classconnectivity>
 <Classfulness>0.0</Classfulness>
 <Classimportance>0.0</Classimportance>
@@ -1064,10 +1053,10 @@
 <Classconnectivity>0</Classconnectivity>
 <Classfulness>0.0</Classfulness>
 <Classimportance>0.0</Classimportance>
-<Classinheritancerichness>116.0</Classinheritancerichness>
+<Classinheritancerichness>0.0</Classinheritancerichness>
 <Classreadability>2</Classreadability>
 <Classrelationshiprichness>0</Classrelationshiprichness>
-<Classchildrencount>1</Classchildrencount>
+<Classchildrencount>0</Classchildrencount>
 <Classinstancescount>0</Classinstancescount>
 <Classpropertiescount>0</Classpropertiescount>
 </Class>
@@ -1104,12 +1093,12 @@
 <Classinstancescount>0</Classinstancescount>
 <Classpropertiescount>0</Classpropertiescount>
 </Class>
-<Class iri="http://www.w3.org/2002/07/owl#Thing">
+<Class iri="http://www.ebi.ac.uk/swo/interface/SWO_9000051">
 <Classconnectivity>0</Classconnectivity>
 <Classfulness>0.0</Classfulness>
 <Classimportance>0.0</Classimportance>
 <Classinheritancerichness>0.0</Classinheritancerichness>
-<Classreadability>0</Classreadability>
+<Classreadability>1</Classreadability>
 <Classrelationshiprichness>0</Classrelationshiprichness>
 <Classchildrencount>0</Classchildrencount>
 <Classinstancescount>0</Classinstancescount>
@@ -1123,6 +1112,17 @@
 <Classreadability>3</Classreadability>
 <Classrelationshiprichness>0</Classrelationshiprichness>
 <Classchildrencount>0</Classchildrencount>
+<Classinstancescount>0</Classinstancescount>
+<Classpropertiescount>0</Classpropertiescount>
+</Class>
+<Class iri="http://www.ebi.ac.uk/swo/SWO_0000002">
+<Classconnectivity>0</Classconnectivity>
+<Classfulness>0.0</Classfulness>
+<Classimportance>0.0</Classimportance>
+<Classinheritancerichness>9.666667</Classinheritancerichness>
+<Classreadability>2</Classreadability>
+<Classrelationshiprichness>0</Classrelationshiprichness>
+<Classchildrencount>12</Classchildrencount>
 <Classinstancescount>0</Classinstancescount>
 <Classpropertiescount>0</Classpropertiescount>
 </Class>
@@ -1170,7 +1170,7 @@
 <Classinstancescount>0</Classinstancescount>
 <Classpropertiescount>0</Classpropertiescount>
 </Class>
-<Class iri="http://www.ebi.ac.uk/swo/license/SWO_1000137">
+<Class iri="http://purls.helmholtz-metadaten.de/mwo/ProcessingSoftware">
 <Classconnectivity>0</Classconnectivity>
 <Classfulness>0.0</Classfulness>
 <Classimportance>0.0</Classimportance>
@@ -1280,7 +1280,7 @@
 <Classinstancescount>0</Classinstancescount>
 <Classpropertiescount>0</Classpropertiescount>
 </Class>
-<Class iri="http://purls.helmholtz-metadaten.de/mwo/ProcessingSoftware">
+<Class iri="http://purl.org/dc/terms/FileFormat">
 <Classconnectivity>0</Classconnectivity>
 <Classfulness>0.0</Classfulness>
 <Classimportance>0.0</Classimportance>
@@ -1302,12 +1302,12 @@
 <Classinstancescount>0</Classinstancescount>
 <Classpropertiescount>0</Classpropertiescount>
 </Class>
-<Class iri="http://www.ebi.ac.uk/swo/SWO_9000072">
+<Class iri="http://purls.helmholtz-metadaten.de/mwo/SemanticResource">
 <Classconnectivity>0</Classconnectivity>
 <Classfulness>0.0</Classfulness>
 <Classimportance>0.0</Classimportance>
 <Classinheritancerichness>0.0</Classinheritancerichness>
-<Classreadability>2</Classreadability>
+<Classreadability>1</Classreadability>
 <Classrelationshiprichness>0</Classrelationshiprichness>
 <Classchildrencount>0</Classchildrencount>
 <Classinstancescount>0</Classinstancescount>

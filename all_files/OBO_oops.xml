@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<oops:OOPSResponse xmlns:oops="http://www.oeg-upm.net/oops">
+<oops:Pitfall>
+<oops:Code>P05</oops:Code><oops:Name>Defining wrong inverse relationships</oops:Name>
+<oops:Description>Two relationships are defined as inverse relations when they are not necessarily inverse.	</oops:Description>
+<oops:Importance>Critical</oops:Importance>
+<oops:NumberAffectedElements>5</oops:NumberAffectedElements>
+<oops:Affects>
+<oops:MightNotBeInverseOf>
+<oops:AffectedElement>http://purl.obolibrary.org/obo/BFO_0000084</oops:AffectedElement>
+<oops:AffectedElement>http://purl.obolibrary.org/obo/BFO_0000101</oops:AffectedElement>
+</oops:MightNotBeInverseOf>
+<oops:MightNotBeInverseOf>
+<oops:AffectedElement>http://purl.obolibrary.org/obo/BFO_0000124</oops:AffectedElement>
+<oops:AffectedElement>http://purl.obolibrary.org/obo/BFO_0000171</oops:AffectedElement>
+</oops:MightNotBeInverseOf>
+<oops:MightNotBeInverseOf>
+<oops:AffectedElement>http://purl.obolibrary.org/obo/BFO_0000056</oops:AffectedElement>
+<oops:AffectedElement>http://purl.obolibrary.org/obo/BFO_0000057</oops:AffectedElement>
+</oops:MightNotBeInverseOf>
+<oops:MightNotBeInverseOf>
+<oops:AffectedElement>http://purl.obolibrary.org/obo/BFO_0000194</oops:AffectedElement>
+<oops:AffectedElement>http://purl.obolibrary.org/obo/BFO_0000195</oops:AffectedElement>
+</oops:MightNotBeInverseOf>
+<oops:MightNotBeInverseOf>
+<oops:AffectedElement>http://purl.obolibrary.org/obo/BFO_0000196</oops:AffectedElement>
+<oops:AffectedElement>http://purl.obolibrary.org/obo/BFO_0000197</oops:AffectedElement>
+</oops:MightNotBeInverseOf>
+</oops:Affects>
+</oops:Pitfall>
+<oops:Pitfall>
+<oops:Code>P13</oops:Code><oops:Name>Inverse relationships not explicitly declared</oops:Name>
+<oops:Description>This pitfall appears when any relationship (except for those that are defined as symmetric properties using owl:SymmetricProperty) does not have an inverse relationship (owl:inverseOf) defined within the ontology.	</oops:Description>
+<oops:Importance>Minor</oops:Importance>
+<oops:NumberAffectedElements>6</oops:NumberAffectedElements>
+<oops:Affects>
+<oops:NoInverseSuggestion>
+<oops:AffectedElement>http://purl.obolibrary.org/obo/BFO_0000199</oops:AffectedElement>
+<oops:AffectedElement>http://purl.obolibrary.org/obo/BFO_0000210</oops:AffectedElement>
+<oops:AffectedElement>http://purl.obolibrary.org/obo/BFO_0000153</oops:AffectedElement>
+<oops:AffectedElement>http://purl.obolibrary.org/obo/BFO_0000108</oops:AffectedElement>
+<oops:AffectedElement>http://purl.obolibrary.org/obo/BFO_0000200</oops:AffectedElement>
+<oops:AffectedElement>http://purl.obolibrary.org/obo/BFO_0000216</oops:AffectedElement>
+</oops:NoInverseSuggestion>
+</oops:Affects>
+</oops:Pitfall>
+<oops:Pitfall>
+<oops:Code>P24</oops:Code><oops:Name>Using recursive definitions</oops:Name>
+<oops:Description>An ontology element (a class, an object property or a datatype property) is used in its own definition. Some examples of this would be: (a) the definition of a class as the enumeration of several classes including itself;  (b) the appearance of a class within its owl:equivalentClass or rdfs:subClassOf axioms; (c) the appearance of an object property in its rdfs:domain or range rdfs:range definitions; or (d) the appearance of a datatype property in its rdfs:domain definition.	</oops:Description>
+<oops:Importance>Important</oops:Importance>
+<oops:NumberAffectedElements>17</oops:NumberAffectedElements>
+<oops:Affects>
+<oops:AffectedElement>http://purl.obolibrary.org/obo/BFO_0000008</oops:AffectedElement>
+<oops:AffectedElement>http://purl.obolibrary.org/obo/BFO_0000029</oops:AffectedElement>
+<oops:AffectedElement>http://purl.obolibrary.org/obo/BFO_0000035</oops:AffectedElement>
+<oops:AffectedElement>http://purl.obolibrary.org/obo/BFO_0000011</oops:AffectedElement>
+<oops:AffectedElement>http://purl.obolibrary.org/obo/BFO_0000009</oops:AffectedElement>
+<oops:AffectedElement>http://purl.obolibrary.org/obo/BFO_0000038</oops:AffectedElement>
+<oops:AffectedElement>http://purl.obolibrary.org/obo/BFO_0000018</oops:AffectedElement>
+<oops:AffectedElement>http://purl.obolibrary.org/obo/BFO_0000140</oops:AffectedElement>
+<oops:AffectedElement>http://purl.obolibrary.org/obo/BFO_0000142</oops:AffectedElement>
+<oops:AffectedElement>http://purl.obolibrary.org/obo/BFO_0000002</oops:AffectedElement>
+<oops:AffectedElement>http://purl.obolibrary.org/obo/BFO_0000026</oops:AffectedElement>
+<oops:AffectedElement>http://purl.obolibrary.org/obo/BFO_0000147</oops:AffectedElement>
+<oops:AffectedElement>http://purl.obolibrary.org/obo/BFO_0000040</oops:AffectedElement>
+<oops:AffectedElement>http://purl.obolibrary.org/obo/BFO_0000004</oops:AffectedElement>
+<oops:AffectedElement>http://purl.obolibrary.org/obo/BFO_0000148</oops:AffectedElement>
+<oops:AffectedElement>http://purl.obolibrary.org/obo/BFO_0000006</oops:AffectedElement>
+<oops:AffectedElement>http://purl.obolibrary.org/obo/BFO_0000015</oops:AffectedElement>
+</oops:Affects>
+</oops:Pitfall>
+<oops:Pitfall>
+<oops:Code>P30</oops:Code><oops:Name>Equivalent classes not explicitly declared</oops:Name>
+<oops:Description>This pitfall consists in missing the definition of equivalent classes (owl:equivalentClass) in case of duplicated concepts. When an ontology reuses terms from other ontologies, classes that have the same meaning should be defined as equivalent in order to benefit the interoperability between both ontologies.	</oops:Description>
+<oops:Importance>Important</oops:Importance>
+<oops:NumberAffectedElements>1</oops:NumberAffectedElements>
+<oops:Affects>
+<oops:MightBeEquivalentClass>
+<oops:AffectedElement>http://purl.obolibrary.org/obo/BFO_0000034</oops:AffectedElement>
+<oops:AffectedElement>http://purl.obolibrary.org/obo/BFO_0000023</oops:AffectedElement>
+</oops:MightBeEquivalentClass>
+</oops:Affects>
+</oops:Pitfall>
+<oops:Pitfall>
+<oops:Code>P36</oops:Code><oops:Name>URI contains file extension</oops:Name>
+<oops:Description>This pitfall occurs if file extensions such as &quot;.owl&quot;, &quot;.rdf&quot;, &quot;.ttl&quot;, &quot;.n3&quot; and &quot;.rdfxml&quot; are included in an ontology URI. This pitfall is related with the recommendations provided in [9].	</oops:Description>
+<oops:Importance>Minor</oops:Importance>
+<oops:NumberAffectedElements>1</oops:NumberAffectedElements>
+<oops:Affects>
+<oops:AffectedElement>https://raw.githubusercontent.com/ebrahimnorouzi/mseo.github.io/master/Ontology_files/OBO.ttl</oops:AffectedElement>
+</oops:Affects>
+</oops:Pitfall>
+<oops:Suggestion>
+<oops:Name>SUGGESTION: symmetric or transitive object properties.</oops:Name>
+<oops:Description>The domain and range axioms are equal for each of the following object properties. Could they be symmetric or transitive?</oops:Description>
+<oops:NumberAffectedElements>4</oops:NumberAffectedElements>
+<oops:Affects>
+<oops:AffectedElement>http://purl.obolibrary.org/obo/BFO_0000115</oops:AffectedElement>
+<oops:AffectedElement>http://purl.obolibrary.org/obo/BFO_0000129</oops:AffectedElement>
+<oops:AffectedElement>http://purl.obolibrary.org/obo/BFO_0000176</oops:AffectedElement>
+<oops:AffectedElement>http://purl.obolibrary.org/obo/BFO_0000178</oops:AffectedElement>
+</oops:Affects>
+</oops:Suggestion>
+</oops:OOPSResponse>

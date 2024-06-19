@@ -3,7 +3,7 @@ import subprocess
 import urllib.request
 import os.path
 
-df_all = pd.read_csv("output2_mse.csv")
+df_all = pd.read_csv("output.csv")
 
 with open('OntoMetrics.sh', 'w') as f:
     

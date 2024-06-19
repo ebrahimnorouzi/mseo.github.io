@@ -267,8 +267,8 @@
 <oops:AffectedElement>http://ontology.dumontierlab.com/Bohrium</oops:AffectedElement>
 <oops:AffectedElement>http://ontology.dumontierlab.com/QuarkGluonPlasmaPhase</oops:AffectedElement>
 <oops:AffectedElement>http://ontology.dumontierlab.com/Silver</oops:AffectedElement>
-<oops:AffectedElement>http://ontology.dumontierlab.com/Carbon</oops:AffectedElement>
 <oops:AffectedElement>http://ontology.dumontierlab.com/Einsteinium</oops:AffectedElement>
+<oops:AffectedElement>http://ontology.dumontierlab.com/Carbon</oops:AffectedElement>
 <oops:AffectedElement>http://ontology.dumontierlab.com/Magnesium</oops:AffectedElement>
 <oops:AffectedElement>http://ontology.dumontierlab.com/SeaborgiumAtom</oops:AffectedElement>
 <oops:AffectedElement>http://ontology.dumontierlab.com/Ununoctium</oops:AffectedElement>
@@ -345,8 +345,8 @@
 <oops:AffectedElement>http://ontology.dumontierlab.com/Sodium</oops:AffectedElement>
 <oops:AffectedElement>http://ontology.dumontierlab.com/SecondaryAmineGroup</oops:AffectedElement>
 <oops:AffectedElement>http://ontology.dumontierlab.com/PalladiumAtom</oops:AffectedElement>
-<oops:AffectedElement>http://ontology.dumontierlab.com/Rubidium</oops:AffectedElement>
 <oops:AffectedElement>http://ontology.dumontierlab.com/NegativeCharge</oops:AffectedElement>
+<oops:AffectedElement>http://ontology.dumontierlab.com/Rubidium</oops:AffectedElement>
 <oops:AffectedElement>http://ontology.dumontierlab.com/Fluorine</oops:AffectedElement>
 <oops:AffectedElement>http://ontology.dumontierlab.com/HalogenCompound</oops:AffectedElement>
 <oops:AffectedElement>http://ontology.dumontierlab.com/CarbonylCompound</oops:AffectedElement>
@@ -477,7 +477,7 @@
 <oops:NumberAffectedElements>1</oops:NumberAffectedElements>
 <oops:Affects>
 <oops:AffectedElement>http://ontology.dumontierlab.com/pHUnit</oops:AffectedElement>
-<oops:AffectedElement>http://matonto.org/ontologies/matonto#FractureToughness</oops:AffectedElement>
+<oops:AffectedElement>http://ontology.dumontierlab.com/PartsPerNotation</oops:AffectedElement>
 </oops:Affects>
 </oops:Pitfall>
 <oops:Pitfall>
@@ -607,7 +607,7 @@
 <oops:Importance>Minor</oops:Importance>
 <oops:NumberAffectedElements>1</oops:NumberAffectedElements>
 <oops:Affects>
-<oops:AffectedElement>https://raw.githubusercontent.com/inovexcorp/MatOnto-Ontologies/master/matonto-release.ttl</oops:AffectedElement>
+<oops:AffectedElement>https://raw.githubusercontent.com/ebrahimnorouzi/mseo.github.io/master/Ontology_files/MatOnto.ttl</oops:AffectedElement>
 </oops:Affects>
 </oops:Pitfall>
 <oops:Suggestion>

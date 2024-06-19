@@ -29,8 +29,9 @@ def oops(owl_file):
 
 if __name__ == "__main__":
 	# read arguments
-     df_all = pd.read_csv("output2_mse.csv")    
+     df_all = pd.read_csv("output.csv")    
      for index, row in df_all.iterrows():
+        try:
           url = df_all['mirror_from'][index]
           filename = 'all_files/' + df_all['namespace'][index] + '.' + df_all['mirror_from'][index][-3:]
     
@@ -43,6 +44,8 @@ if __name__ == "__main__":
           f = open(out_file, "w")
           f.write(xml_data)
           f.close()
+        except:
+            print('failed',url)
 	
 
 

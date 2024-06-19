@@ -1,0 +1,442 @@
+<!DOCTYPE html><html><head><title>Apache Tomcat/8.5.8 - Error report</title><style type="text/css">H1 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:22px;} H2 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:16px;} H3 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:14px;} BODY {font-family:Tahoma,Arial,sans-serif;color:black;background-color:white;} B {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;} P {font-family:Tahoma,Arial,sans-serif;background:white;color:black;font-size:12px;}A {color : black;}A.name {color : black;}.line {height: 1px; background-color: #525D76; border: none;}</style> </head><body><h1>HTTP Status 500 - org.coode.owlapi.rdfxml.parser.TranslatedUnloadedImportException: Could not load imported ontology: &lt;http://emmo.info/emmo/domain/oie/manufacturing&gt; Cause: Problem parsing http://emmo.info/emmo/domain/oie/manufacturing</h1><div class="line"></div><p><b>type</b> Exception report</p><p><b>message</b> <u>org.coode.owlapi.rdfxml.parser.TranslatedUnloadedImportException: Could not load imported ontology: &lt;http://emmo.info/emmo/domain/oie/manufacturing&gt; Cause: Problem parsing http://emmo.info/emmo/domain/oie/manufacturing</u></p><p><b>description</b> <u>The server encountered an internal error that prevented it from fulfilling this request.</u></p><p><b>exception</b></p><pre>org.semanticweb.owlapi.model.OWLRuntimeException: org.coode.owlapi.rdfxml.parser.TranslatedUnloadedImportException: Could not load imported ontology: &lt;http://emmo.info/emmo/domain/oie/manufacturing&gt; Cause: Problem parsing http://emmo.info/emmo/domain/oie/manufacturing
+Could not parse ontology.  Either a suitable parser could not be found, or parsing failed.  See parser logs below for explanation.
+The following parsers were tried:
+1) RDFXMLParser
+2) OWLXMLParser
+3) OWLFunctionalSyntaxOWLParser
+4) TurtleOntologyParser
+5) OWLOBOParser
+6) KRSS2OWLParser
+7) ManchesterOWLSyntaxOntologyParser
+
+
+Detailed logs:
+--------------------------------------------------------------------------------
+Parser: RDFXMLParser
+org.xml.sax.SAXParseException; systemId: http://emmo.info/emmo/domain/oie/manufacturing; lineNumber: 1; columnNumber: 1; Content is not allowed in prolog.
+
+--------------------------------------------------------------------------------
+Parser: OWLXMLParser
+org.xml.sax.SAXParseException; systemId: http://emmo.info/emmo/domain/oie/manufacturing; lineNumber: 1; columnNumber: 1; Content is not allowed in prolog.
+
+--------------------------------------------------------------------------------
+Parser: OWLFunctionalSyntaxOWLParser
+Encountered &quot; &quot;@&quot; &quot;@ &quot;&quot; at line 1, column 1.
+Was expecting:
+    &quot;Ontology&quot; ...
+     (Line 0)
+
+--------------------------------------------------------------------------------
+Parser: TurtleOntologyParser
+uk.ac.manchester.cs.owl.owlapi.turtle.parser.ParseException: Encountered &quot;&quot; at line 1, column 1.
+Was expecting one of:
+    
+
+--------------------------------------------------------------------------------
+Parser: OWLOBOParser
+org.coode.owlapi.obo.parser.TokenMgrError: Lexical error at line 22, column 89.  Encountered: &quot;\n&quot; (10), after : &quot;&quot;
+
+--------------------------------------------------------------------------------
+Parser: KRSS2OWLParser
+de.uulm.ecs.ai.owlapi.krssparser.ParseException: Encountered &quot; &lt;ERROR&gt; &quot;@ &quot;&quot; at line 1, column 1.
+Was expecting:
+    &lt;EOF&gt; 
+    
+
+--------------------------------------------------------------------------------
+Parser: ManchesterOWLSyntaxOntologyParser
+Encountered '@prefix emmo: &lt;http://emmo.info/emmo#&gt; .' at line 1 column 1.  Expected either 'Ontology:' or 'Prefix:' (Line 1)
+
+
+org.semanticweb.owlapi.model.UnloadableImportException: Could not load imported ontology: &lt;http://emmo.info/emmo/domain/oie/manufacturing&gt; Cause: Problem parsing http://emmo.info/emmo/domain/oie/manufacturing
+Could not parse ontology.  Either a suitable parser could not be found, or parsing failed.  See parser logs below for explanation.
+The following parsers were tried:
+1) RDFXMLParser
+2) OWLXMLParser
+3) OWLFunctionalSyntaxOWLParser
+4) TurtleOntologyParser
+5) OWLOBOParser
+6) KRSS2OWLParser
+7) ManchesterOWLSyntaxOntologyParser
+
+
+Detailed logs:
+--------------------------------------------------------------------------------
+Parser: RDFXMLParser
+org.xml.sax.SAXParseException; systemId: http://emmo.info/emmo/domain/oie/manufacturing; lineNumber: 1; columnNumber: 1; Content is not allowed in prolog.
+
+--------------------------------------------------------------------------------
+Parser: OWLXMLParser
+org.xml.sax.SAXParseException; systemId: http://emmo.info/emmo/domain/oie/manufacturing; lineNumber: 1; columnNumber: 1; Content is not allowed in prolog.
+
+--------------------------------------------------------------------------------
+Parser: OWLFunctionalSyntaxOWLParser
+Encountered &quot; &quot;@&quot; &quot;@ &quot;&quot; at line 1, column 1.
+Was expecting:
+    &quot;Ontology&quot; ...
+     (Line 0)
+
+--------------------------------------------------------------------------------
+Parser: TurtleOntologyParser
+uk.ac.manchester.cs.owl.owlapi.turtle.parser.ParseException: Encountered &quot;&quot; at line 1, column 1.
+Was expecting one of:
+    
+
+--------------------------------------------------------------------------------
+Parser: OWLOBOParser
+org.coode.owlapi.obo.parser.TokenMgrError: Lexical error at line 22, column 89.  Encountered: &quot;\n&quot; (10), after : &quot;&quot;
+
+--------------------------------------------------------------------------------
+Parser: KRSS2OWLParser
+de.uulm.ecs.ai.owlapi.krssparser.ParseException: Encountered &quot; &lt;ERROR&gt; &quot;@ &quot;&quot; at line 1, column 1.
+Was expecting:
+    &lt;EOF&gt; 
+    
+
+--------------------------------------------------------------------------------
+Parser: ManchesterOWLSyntaxOntologyParser
+Encountered '@prefix emmo: &lt;http://emmo.info/emmo#&gt; .' at line 1 column 1.  Expected either 'Ontology:' or 'Prefix:' (Line 1)
+
+
+	uk.ac.manchester.cs.owl.owlapi.turtle.parser.OWLRDFConsumerAdapter.handleTriple(OWLRDFConsumerAdapter.java:92)
+	uk.ac.manchester.cs.owl.owlapi.turtle.parser.TurtleParser.parseObject(TurtleParser.java:383)
+	uk.ac.manchester.cs.owl.owlapi.turtle.parser.TurtleParser.parseObjectList(TurtleParser.java:358)
+	uk.ac.manchester.cs.owl.owlapi.turtle.parser.TurtleParser.parsePredicateObjectList(TurtleParser.java:298)
+	uk.ac.manchester.cs.owl.owlapi.turtle.parser.TurtleParser.parseTriples(TurtleParser.java:175)
+	uk.ac.manchester.cs.owl.owlapi.turtle.parser.TurtleParser.parseStatement(TurtleParser.java:168)
+	uk.ac.manchester.cs.owl.owlapi.turtle.parser.TurtleParser.parseDocument(TurtleParser.java:120)
+	uk.ac.manchester.cs.owl.owlapi.turtle.parser.TurtleOntologyParser.parse(TurtleOntologyParser.java:100)
+	uk.ac.manchester.cs.owl.owlapi.ParsableOWLOntologyFactory.loadOWLOntology(ParsableOWLOntologyFactory.java:206)
+	uk.ac.manchester.cs.owl.owlapi.OWLOntologyManagerImpl.loadOntology(OWLOntologyManagerImpl.java:829)
+	uk.ac.manchester.cs.owl.owlapi.OWLOntologyManagerImpl.loadOntologyFromOntologyDocument(OWLOntologyManagerImpl.java:767)
+	Objetos.ModelOWLExt.&lt;init&gt;(ModelOWLExt.java:80)
+	Objetos.WebServiceOOPS.webServiceOOPSPost(WebServiceOOPS.java:260)
+	sun.reflect.GeneratedMethodAccessor46.invoke(Unknown Source)
+	sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	java.lang.reflect.Method.invoke(Method.java:498)
+	com.sun.jersey.spi.container.JavaMethodInvokerFactory$1.invoke(JavaMethodInvokerFactory.java:60)
+	com.sun.jersey.server.impl.model.method.dispatch.AbstractResourceMethodDispatchProvider$TypeOutInvoker._dispatch(AbstractResourceMethodDispatchProvider.java:185)
+	com.sun.jersey.server.impl.model.method.dispatch.ResourceJavaMethodDispatcher.dispatch(ResourceJavaMethodDispatcher.java:75)
+	com.sun.jersey.server.impl.uri.rules.HttpMethodRule.accept(HttpMethodRule.java:302)
+	com.sun.jersey.server.impl.uri.rules.ResourceClassRule.accept(ResourceClassRule.java:108)
+	com.sun.jersey.server.impl.uri.rules.RightHandPathRule.accept(RightHandPathRule.java:147)
+	com.sun.jersey.server.impl.uri.rules.RootResourceClassesRule.accept(RootResourceClassesRule.java:84)
+	com.sun.jersey.server.impl.application.WebApplicationImpl._handleRequest(WebApplicationImpl.java:1511)
+	com.sun.jersey.server.impl.application.WebApplicationImpl._handleRequest(WebApplicationImpl.java:1442)
+	com.sun.jersey.server.impl.application.WebApplicationImpl.handleRequest(WebApplicationImpl.java:1391)
+	com.sun.jersey.server.impl.application.WebApplicationImpl.handleRequest(WebApplicationImpl.java:1381)
+	com.sun.jersey.spi.container.servlet.WebComponent.service(WebComponent.java:416)
+	com.sun.jersey.spi.container.servlet.ServletContainer.service(ServletContainer.java:538)
+	com.sun.jersey.spi.container.servlet.ServletContainer.service(ServletContainer.java:716)
+	javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
+	org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+</pre><p><b>root cause</b></p><pre>org.coode.owlapi.rdfxml.parser.TranslatedUnloadedImportException: Could not load imported ontology: &lt;http://emmo.info/emmo/domain/oie/manufacturing&gt; Cause: Problem parsing http://emmo.info/emmo/domain/oie/manufacturing
+Could not parse ontology.  Either a suitable parser could not be found, or parsing failed.  See parser logs below for explanation.
+The following parsers were tried:
+1) RDFXMLParser
+2) OWLXMLParser
+3) OWLFunctionalSyntaxOWLParser
+4) TurtleOntologyParser
+5) OWLOBOParser
+6) KRSS2OWLParser
+7) ManchesterOWLSyntaxOntologyParser
+
+
+Detailed logs:
+--------------------------------------------------------------------------------
+Parser: RDFXMLParser
+org.xml.sax.SAXParseException; systemId: http://emmo.info/emmo/domain/oie/manufacturing; lineNumber: 1; columnNumber: 1; Content is not allowed in prolog.
+
+--------------------------------------------------------------------------------
+Parser: OWLXMLParser
+org.xml.sax.SAXParseException; systemId: http://emmo.info/emmo/domain/oie/manufacturing; lineNumber: 1; columnNumber: 1; Content is not allowed in prolog.
+
+--------------------------------------------------------------------------------
+Parser: OWLFunctionalSyntaxOWLParser
+Encountered &quot; &quot;@&quot; &quot;@ &quot;&quot; at line 1, column 1.
+Was expecting:
+    &quot;Ontology&quot; ...
+     (Line 0)
+
+--------------------------------------------------------------------------------
+Parser: TurtleOntologyParser
+uk.ac.manchester.cs.owl.owlapi.turtle.parser.ParseException: Encountered &quot;&quot; at line 1, column 1.
+Was expecting one of:
+    
+
+--------------------------------------------------------------------------------
+Parser: OWLOBOParser
+org.coode.owlapi.obo.parser.TokenMgrError: Lexical error at line 22, column 89.  Encountered: &quot;\n&quot; (10), after : &quot;&quot;
+
+--------------------------------------------------------------------------------
+Parser: KRSS2OWLParser
+de.uulm.ecs.ai.owlapi.krssparser.ParseException: Encountered &quot; &lt;ERROR&gt; &quot;@ &quot;&quot; at line 1, column 1.
+Was expecting:
+    &lt;EOF&gt; 
+    
+
+--------------------------------------------------------------------------------
+Parser: ManchesterOWLSyntaxOntologyParser
+Encountered '@prefix emmo: &lt;http://emmo.info/emmo#&gt; .' at line 1 column 1.  Expected either 'Ontology:' or 'Prefix:' (Line 1)
+
+
+org.semanticweb.owlapi.model.UnloadableImportException: Could not load imported ontology: &lt;http://emmo.info/emmo/domain/oie/manufacturing&gt; Cause: Problem parsing http://emmo.info/emmo/domain/oie/manufacturing
+Could not parse ontology.  Either a suitable parser could not be found, or parsing failed.  See parser logs below for explanation.
+The following parsers were tried:
+1) RDFXMLParser
+2) OWLXMLParser
+3) OWLFunctionalSyntaxOWLParser
+4) TurtleOntologyParser
+5) OWLOBOParser
+6) KRSS2OWLParser
+7) ManchesterOWLSyntaxOntologyParser
+
+
+Detailed logs:
+--------------------------------------------------------------------------------
+Parser: RDFXMLParser
+org.xml.sax.SAXParseException; systemId: http://emmo.info/emmo/domain/oie/manufacturing; lineNumber: 1; columnNumber: 1; Content is not allowed in prolog.
+
+--------------------------------------------------------------------------------
+Parser: OWLXMLParser
+org.xml.sax.SAXParseException; systemId: http://emmo.info/emmo/domain/oie/manufacturing; lineNumber: 1; columnNumber: 1; Content is not allowed in prolog.
+
+--------------------------------------------------------------------------------
+Parser: OWLFunctionalSyntaxOWLParser
+Encountered &quot; &quot;@&quot; &quot;@ &quot;&quot; at line 1, column 1.
+Was expecting:
+    &quot;Ontology&quot; ...
+     (Line 0)
+
+--------------------------------------------------------------------------------
+Parser: TurtleOntologyParser
+uk.ac.manchester.cs.owl.owlapi.turtle.parser.ParseException: Encountered &quot;&quot; at line 1, column 1.
+Was expecting one of:
+    
+
+--------------------------------------------------------------------------------
+Parser: OWLOBOParser
+org.coode.owlapi.obo.parser.TokenMgrError: Lexical error at line 22, column 89.  Encountered: &quot;\n&quot; (10), after : &quot;&quot;
+
+--------------------------------------------------------------------------------
+Parser: KRSS2OWLParser
+de.uulm.ecs.ai.owlapi.krssparser.ParseException: Encountered &quot; &lt;ERROR&gt; &quot;@ &quot;&quot; at line 1, column 1.
+Was expecting:
+    &lt;EOF&gt; 
+    
+
+--------------------------------------------------------------------------------
+Parser: ManchesterOWLSyntaxOntologyParser
+Encountered '@prefix emmo: &lt;http://emmo.info/emmo#&gt; .' at line 1 column 1.  Expected either 'Ontology:' or 'Prefix:' (Line 1)
+
+
+	org.coode.owlapi.rdfxml.parser.OWLRDFConsumer.statementWithResourceValue(OWLRDFConsumer.java:1712)
+	uk.ac.manchester.cs.owl.owlapi.turtle.parser.OWLRDFConsumerAdapter.handleTriple(OWLRDFConsumerAdapter.java:89)
+	uk.ac.manchester.cs.owl.owlapi.turtle.parser.TurtleParser.parseObject(TurtleParser.java:383)
+	uk.ac.manchester.cs.owl.owlapi.turtle.parser.TurtleParser.parseObjectList(TurtleParser.java:358)
+	uk.ac.manchester.cs.owl.owlapi.turtle.parser.TurtleParser.parsePredicateObjectList(TurtleParser.java:298)
+	uk.ac.manchester.cs.owl.owlapi.turtle.parser.TurtleParser.parseTriples(TurtleParser.java:175)
+	uk.ac.manchester.cs.owl.owlapi.turtle.parser.TurtleParser.parseStatement(TurtleParser.java:168)
+	uk.ac.manchester.cs.owl.owlapi.turtle.parser.TurtleParser.parseDocument(TurtleParser.java:120)
+	uk.ac.manchester.cs.owl.owlapi.turtle.parser.TurtleOntologyParser.parse(TurtleOntologyParser.java:100)
+	uk.ac.manchester.cs.owl.owlapi.ParsableOWLOntologyFactory.loadOWLOntology(ParsableOWLOntologyFactory.java:206)
+	uk.ac.manchester.cs.owl.owlapi.OWLOntologyManagerImpl.loadOntology(OWLOntologyManagerImpl.java:829)
+	uk.ac.manchester.cs.owl.owlapi.OWLOntologyManagerImpl.loadOntologyFromOntologyDocument(OWLOntologyManagerImpl.java:767)
+	Objetos.ModelOWLExt.&lt;init&gt;(ModelOWLExt.java:80)
+	Objetos.WebServiceOOPS.webServiceOOPSPost(WebServiceOOPS.java:260)
+	sun.reflect.GeneratedMethodAccessor46.invoke(Unknown Source)
+	sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	java.lang.reflect.Method.invoke(Method.java:498)
+	com.sun.jersey.spi.container.JavaMethodInvokerFactory$1.invoke(JavaMethodInvokerFactory.java:60)
+	com.sun.jersey.server.impl.model.method.dispatch.AbstractResourceMethodDispatchProvider$TypeOutInvoker._dispatch(AbstractResourceMethodDispatchProvider.java:185)
+	com.sun.jersey.server.impl.model.method.dispatch.ResourceJavaMethodDispatcher.dispatch(ResourceJavaMethodDispatcher.java:75)
+	com.sun.jersey.server.impl.uri.rules.HttpMethodRule.accept(HttpMethodRule.java:302)
+	com.sun.jersey.server.impl.uri.rules.ResourceClassRule.accept(ResourceClassRule.java:108)
+	com.sun.jersey.server.impl.uri.rules.RightHandPathRule.accept(RightHandPathRule.java:147)
+	com.sun.jersey.server.impl.uri.rules.RootResourceClassesRule.accept(RootResourceClassesRule.java:84)
+	com.sun.jersey.server.impl.application.WebApplicationImpl._handleRequest(WebApplicationImpl.java:1511)
+	com.sun.jersey.server.impl.application.WebApplicationImpl._handleRequest(WebApplicationImpl.java:1442)
+	com.sun.jersey.server.impl.application.WebApplicationImpl.handleRequest(WebApplicationImpl.java:1391)
+	com.sun.jersey.server.impl.application.WebApplicationImpl.handleRequest(WebApplicationImpl.java:1381)
+	com.sun.jersey.spi.container.servlet.WebComponent.service(WebComponent.java:416)
+	com.sun.jersey.spi.container.servlet.ServletContainer.service(ServletContainer.java:538)
+	com.sun.jersey.spi.container.servlet.ServletContainer.service(ServletContainer.java:716)
+	javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
+	org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+</pre><p><b>root cause</b></p><pre>org.semanticweb.owlapi.model.UnloadableImportException: Could not load imported ontology: &lt;http://emmo.info/emmo/domain/oie/manufacturing&gt; Cause: Problem parsing http://emmo.info/emmo/domain/oie/manufacturing
+Could not parse ontology.  Either a suitable parser could not be found, or parsing failed.  See parser logs below for explanation.
+The following parsers were tried:
+1) RDFXMLParser
+2) OWLXMLParser
+3) OWLFunctionalSyntaxOWLParser
+4) TurtleOntologyParser
+5) OWLOBOParser
+6) KRSS2OWLParser
+7) ManchesterOWLSyntaxOntologyParser
+
+
+Detailed logs:
+--------------------------------------------------------------------------------
+Parser: RDFXMLParser
+org.xml.sax.SAXParseException; systemId: http://emmo.info/emmo/domain/oie/manufacturing; lineNumber: 1; columnNumber: 1; Content is not allowed in prolog.
+
+--------------------------------------------------------------------------------
+Parser: OWLXMLParser
+org.xml.sax.SAXParseException; systemId: http://emmo.info/emmo/domain/oie/manufacturing; lineNumber: 1; columnNumber: 1; Content is not allowed in prolog.
+
+--------------------------------------------------------------------------------
+Parser: OWLFunctionalSyntaxOWLParser
+Encountered &quot; &quot;@&quot; &quot;@ &quot;&quot; at line 1, column 1.
+Was expecting:
+    &quot;Ontology&quot; ...
+     (Line 0)
+
+--------------------------------------------------------------------------------
+Parser: TurtleOntologyParser
+uk.ac.manchester.cs.owl.owlapi.turtle.parser.ParseException: Encountered &quot;&quot; at line 1, column 1.
+Was expecting one of:
+    
+
+--------------------------------------------------------------------------------
+Parser: OWLOBOParser
+org.coode.owlapi.obo.parser.TokenMgrError: Lexical error at line 22, column 89.  Encountered: &quot;\n&quot; (10), after : &quot;&quot;
+
+--------------------------------------------------------------------------------
+Parser: KRSS2OWLParser
+de.uulm.ecs.ai.owlapi.krssparser.ParseException: Encountered &quot; &lt;ERROR&gt; &quot;@ &quot;&quot; at line 1, column 1.
+Was expecting:
+    &lt;EOF&gt; 
+    
+
+--------------------------------------------------------------------------------
+Parser: ManchesterOWLSyntaxOntologyParser
+Encountered '@prefix emmo: &lt;http://emmo.info/emmo#&gt; .' at line 1 column 1.  Expected either 'Ontology:' or 'Prefix:' (Line 1)
+
+
+	uk.ac.manchester.cs.owl.owlapi.OWLOntologyManagerImpl.makeLoadImportRequest(OWLOntologyManagerImpl.java:1264)
+	org.coode.owlapi.rdfxml.parser.TPImportsHandler.handleTriple(TPImportsHandler.java:89)
+	org.coode.owlapi.rdfxml.parser.OWLRDFConsumer.handleStreaming(OWLRDFConsumer.java:1750)
+	org.coode.owlapi.rdfxml.parser.OWLRDFConsumer.statementWithResourceValue(OWLRDFConsumer.java:1709)
+	uk.ac.manchester.cs.owl.owlapi.turtle.parser.OWLRDFConsumerAdapter.handleTriple(OWLRDFConsumerAdapter.java:89)
+	uk.ac.manchester.cs.owl.owlapi.turtle.parser.TurtleParser.parseObject(TurtleParser.java:383)
+	uk.ac.manchester.cs.owl.owlapi.turtle.parser.TurtleParser.parseObjectList(TurtleParser.java:358)
+	uk.ac.manchester.cs.owl.owlapi.turtle.parser.TurtleParser.parsePredicateObjectList(TurtleParser.java:298)
+	uk.ac.manchester.cs.owl.owlapi.turtle.parser.TurtleParser.parseTriples(TurtleParser.java:175)
+	uk.ac.manchester.cs.owl.owlapi.turtle.parser.TurtleParser.parseStatement(TurtleParser.java:168)
+	uk.ac.manchester.cs.owl.owlapi.turtle.parser.TurtleParser.parseDocument(TurtleParser.java:120)
+	uk.ac.manchester.cs.owl.owlapi.turtle.parser.TurtleOntologyParser.parse(TurtleOntologyParser.java:100)
+	uk.ac.manchester.cs.owl.owlapi.ParsableOWLOntologyFactory.loadOWLOntology(ParsableOWLOntologyFactory.java:206)
+	uk.ac.manchester.cs.owl.owlapi.OWLOntologyManagerImpl.loadOntology(OWLOntologyManagerImpl.java:829)
+	uk.ac.manchester.cs.owl.owlapi.OWLOntologyManagerImpl.loadOntologyFromOntologyDocument(OWLOntologyManagerImpl.java:767)
+	Objetos.ModelOWLExt.&lt;init&gt;(ModelOWLExt.java:80)
+	Objetos.WebServiceOOPS.webServiceOOPSPost(WebServiceOOPS.java:260)
+	sun.reflect.GeneratedMethodAccessor46.invoke(Unknown Source)
+	sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	java.lang.reflect.Method.invoke(Method.java:498)
+	com.sun.jersey.spi.container.JavaMethodInvokerFactory$1.invoke(JavaMethodInvokerFactory.java:60)
+	com.sun.jersey.server.impl.model.method.dispatch.AbstractResourceMethodDispatchProvider$TypeOutInvoker._dispatch(AbstractResourceMethodDispatchProvider.java:185)
+	com.sun.jersey.server.impl.model.method.dispatch.ResourceJavaMethodDispatcher.dispatch(ResourceJavaMethodDispatcher.java:75)
+	com.sun.jersey.server.impl.uri.rules.HttpMethodRule.accept(HttpMethodRule.java:302)
+	com.sun.jersey.server.impl.uri.rules.ResourceClassRule.accept(ResourceClassRule.java:108)
+	com.sun.jersey.server.impl.uri.rules.RightHandPathRule.accept(RightHandPathRule.java:147)
+	com.sun.jersey.server.impl.uri.rules.RootResourceClassesRule.accept(RootResourceClassesRule.java:84)
+	com.sun.jersey.server.impl.application.WebApplicationImpl._handleRequest(WebApplicationImpl.java:1511)
+	com.sun.jersey.server.impl.application.WebApplicationImpl._handleRequest(WebApplicationImpl.java:1442)
+	com.sun.jersey.server.impl.application.WebApplicationImpl.handleRequest(WebApplicationImpl.java:1391)
+	com.sun.jersey.server.impl.application.WebApplicationImpl.handleRequest(WebApplicationImpl.java:1381)
+	com.sun.jersey.spi.container.servlet.WebComponent.service(WebComponent.java:416)
+	com.sun.jersey.spi.container.servlet.ServletContainer.service(ServletContainer.java:538)
+	com.sun.jersey.spi.container.servlet.ServletContainer.service(ServletContainer.java:716)
+	javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
+	org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+</pre><p><b>root cause</b></p><pre>org.semanticweb.owlapi.io.UnparsableOntologyException: Problem parsing http://emmo.info/emmo/domain/oie/manufacturing
+Could not parse ontology.  Either a suitable parser could not be found, or parsing failed.  See parser logs below for explanation.
+The following parsers were tried:
+1) RDFXMLParser
+2) OWLXMLParser
+3) OWLFunctionalSyntaxOWLParser
+4) TurtleOntologyParser
+5) OWLOBOParser
+6) KRSS2OWLParser
+7) ManchesterOWLSyntaxOntologyParser
+
+
+Detailed logs:
+--------------------------------------------------------------------------------
+Parser: RDFXMLParser
+org.xml.sax.SAXParseException; systemId: http://emmo.info/emmo/domain/oie/manufacturing; lineNumber: 1; columnNumber: 1; Content is not allowed in prolog.
+
+--------------------------------------------------------------------------------
+Parser: OWLXMLParser
+org.xml.sax.SAXParseException; systemId: http://emmo.info/emmo/domain/oie/manufacturing; lineNumber: 1; columnNumber: 1; Content is not allowed in prolog.
+
+--------------------------------------------------------------------------------
+Parser: OWLFunctionalSyntaxOWLParser
+Encountered &quot; &quot;@&quot; &quot;@ &quot;&quot; at line 1, column 1.
+Was expecting:
+    &quot;Ontology&quot; ...
+     (Line 0)
+
+--------------------------------------------------------------------------------
+Parser: TurtleOntologyParser
+uk.ac.manchester.cs.owl.owlapi.turtle.parser.ParseException: Encountered &quot;&quot; at line 1, column 1.
+Was expecting one of:
+    
+
+--------------------------------------------------------------------------------
+Parser: OWLOBOParser
+org.coode.owlapi.obo.parser.TokenMgrError: Lexical error at line 22, column 89.  Encountered: &quot;\n&quot; (10), after : &quot;&quot;
+
+--------------------------------------------------------------------------------
+Parser: KRSS2OWLParser
+de.uulm.ecs.ai.owlapi.krssparser.ParseException: Encountered &quot; &lt;ERROR&gt; &quot;@ &quot;&quot; at line 1, column 1.
+Was expecting:
+    &lt;EOF&gt; 
+    
+
+--------------------------------------------------------------------------------
+Parser: ManchesterOWLSyntaxOntologyParser
+Encountered '@prefix emmo: &lt;http://emmo.info/emmo#&gt; .' at line 1 column 1.  Expected either 'Ontology:' or 'Prefix:' (Line 1)
+
+
+	uk.ac.manchester.cs.owl.owlapi.ParsableOWLOntologyFactory.loadOWLOntology(ParsableOWLOntologyFactory.java:236)
+	uk.ac.manchester.cs.owl.owlapi.OWLOntologyManagerImpl.loadOntology(OWLOntologyManagerImpl.java:829)
+	uk.ac.manchester.cs.owl.owlapi.OWLOntologyManagerImpl.loadOntology(OWLOntologyManagerImpl.java:749)
+	uk.ac.manchester.cs.owl.owlapi.OWLOntologyManagerImpl.loadImports(OWLOntologyManagerImpl.java:1224)
+	uk.ac.manchester.cs.owl.owlapi.OWLOntologyManagerImpl.makeLoadImportRequest(OWLOntologyManagerImpl.java:1257)
+	org.coode.owlapi.rdfxml.parser.TPImportsHandler.handleTriple(TPImportsHandler.java:89)
+	org.coode.owlapi.rdfxml.parser.OWLRDFConsumer.handleStreaming(OWLRDFConsumer.java:1750)
+	org.coode.owlapi.rdfxml.parser.OWLRDFConsumer.statementWithResourceValue(OWLRDFConsumer.java:1709)
+	uk.ac.manchester.cs.owl.owlapi.turtle.parser.OWLRDFConsumerAdapter.handleTriple(OWLRDFConsumerAdapter.java:89)
+	uk.ac.manchester.cs.owl.owlapi.turtle.parser.TurtleParser.parseObject(TurtleParser.java:383)
+	uk.ac.manchester.cs.owl.owlapi.turtle.parser.TurtleParser.parseObjectList(TurtleParser.java:358)
+	uk.ac.manchester.cs.owl.owlapi.turtle.parser.TurtleParser.parsePredicateObjectList(TurtleParser.java:298)
+	uk.ac.manchester.cs.owl.owlapi.turtle.parser.TurtleParser.parseTriples(TurtleParser.java:175)
+	uk.ac.manchester.cs.owl.owlapi.turtle.parser.TurtleParser.parseStatement(TurtleParser.java:168)
+	uk.ac.manchester.cs.owl.owlapi.turtle.parser.TurtleParser.parseDocument(TurtleParser.java:120)
+	uk.ac.manchester.cs.owl.owlapi.turtle.parser.TurtleOntologyParser.parse(TurtleOntologyParser.java:100)
+	uk.ac.manchester.cs.owl.owlapi.ParsableOWLOntologyFactory.loadOWLOntology(ParsableOWLOntologyFactory.java:206)
+	uk.ac.manchester.cs.owl.owlapi.OWLOntologyManagerImpl.loadOntology(OWLOntologyManagerImpl.java:829)
+	uk.ac.manchester.cs.owl.owlapi.OWLOntologyManagerImpl.loadOntologyFromOntologyDocument(OWLOntologyManagerImpl.java:767)
+	Objetos.ModelOWLExt.&lt;init&gt;(ModelOWLExt.java:80)
+	Objetos.WebServiceOOPS.webServiceOOPSPost(WebServiceOOPS.java:260)
+	sun.reflect.GeneratedMethodAccessor46.invoke(Unknown Source)
+	sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	java.lang.reflect.Method.invoke(Method.java:498)
+	com.sun.jersey.spi.container.JavaMethodInvokerFactory$1.invoke(JavaMethodInvokerFactory.java:60)
+	com.sun.jersey.server.impl.model.method.dispatch.AbstractResourceMethodDispatchProvider$TypeOutInvoker._dispatch(AbstractResourceMethodDispatchProvider.java:185)
+	com.sun.jersey.server.impl.model.method.dispatch.ResourceJavaMethodDispatcher.dispatch(ResourceJavaMethodDispatcher.java:75)
+	com.sun.jersey.server.impl.uri.rules.HttpMethodRule.accept(HttpMethodRule.java:302)
+	com.sun.jersey.server.impl.uri.rules.ResourceClassRule.accept(ResourceClassRule.java:108)
+	com.sun.jersey.server.impl.uri.rules.RightHandPathRule.accept(RightHandPathRule.java:147)
+	com.sun.jersey.server.impl.uri.rules.RootResourceClassesRule.accept(RootResourceClassesRule.java:84)
+	com.sun.jersey.server.impl.application.WebApplicationImpl._handleRequest(WebApplicationImpl.java:1511)
+	com.sun.jersey.server.impl.application.WebApplicationImpl._handleRequest(WebApplicationImpl.java:1442)
+	com.sun.jersey.server.impl.application.WebApplicationImpl.handleRequest(WebApplicationImpl.java:1391)
+	com.sun.jersey.server.impl.application.WebApplicationImpl.handleRequest(WebApplicationImpl.java:1381)
+	com.sun.jersey.spi.container.servlet.WebComponent.service(WebComponent.java:416)
+	com.sun.jersey.spi.container.servlet.ServletContainer.service(ServletContainer.java:538)
+	com.sun.jersey.spi.container.servlet.ServletContainer.service(ServletContainer.java:716)
+	javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
+	org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+</pre><p><b>note</b> <u>The full stack trace of the root cause is available in the Apache Tomcat/8.5.8 logs.</u></p><hr class="line"><h3>Apache Tomcat/8.5.8</h3></body></html>

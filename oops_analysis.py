@@ -102,15 +102,15 @@ def run(xml_file):
     return pitfalls
 
 if __name__ == "__main__":
-    df_all = pd.read_csv("output2_mse.csv")
+    df_all = pd.read_csv("output.csv")
     df_metrics_table = pd.read_excel("metrics_labels.xlsx")
     df_metrics_table = df_metrics_table[["metric_name","metric_code","ontometrics_name","evaluation_criteria"]]
     dic_pitfalls = {}
     
     for index, row in df_all.iterrows():
-        url = df_all['mirror_from'][index]
-        filename = 'all_files/' + df_all['namespace'][index] + '_oops.xml'
         try:
+            url = df_all['mirror_from'][index]
+            filename = 'all_files/' + df_all['namespace'][index] + '_oops.xml'
             #print(filename)
             dic_pitfalls[df_all['namespace'][index]] = run(filename)
         

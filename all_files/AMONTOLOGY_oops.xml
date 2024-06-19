@@ -101,8 +101,8 @@
 <oops:AffectedElement>http://siam.nist.gov/AM-Ontology_v2#MeltPoolSignature</oops:AffectedElement>
 <oops:AffectedElement>http://siam.nist.gov/AM-Ontology_v2#ElectronBeamMelting</oops:AffectedElement>
 <oops:AffectedElement>http://siam.nist.gov/AM-Ontology_v2#RayTracingModel</oops:AffectedElement>
-<oops:AffectedElement>http://siam.nist.gov/AM-Ontology_v2#ConvectionCoefficient</oops:AffectedElement>
 <oops:AffectedElement>http://siam.nist.gov/AM-Ontology_v2#Continuum</oops:AffectedElement>
+<oops:AffectedElement>http://siam.nist.gov/AM-Ontology_v2#ConvectionCoefficient</oops:AffectedElement>
 <oops:AffectedElement>http://siam.nist.gov/AM-Ontology-v2#IsoThermalBC</oops:AffectedElement>
 <oops:AffectedElement>http://siam.nist.gov/AM-Ontology_v2#AtConstantMeltingTemperature</oops:AffectedElement>
 <oops:AffectedElement>http://siam.nist.gov/AM-Ontology_v2#PackingDensity</oops:AffectedElement>
@@ -125,8 +125,8 @@
 <oops:AffectedElement>http://siam.nist.gov/AM-Ontology-v2#MovingFrame</oops:AffectedElement>
 <oops:AffectedElement>http://siam.nist.gov/AM-Ontology-v2#LawOfPhysicsForConsolidation</oops:AffectedElement>
 <oops:AffectedElement>http://siam.nist.gov/AM-Ontology-v2#ThermalModelingAssumption</oops:AffectedElement>
-<oops:AffectedElement>http://siam.nist.gov/AM-Ontology-v2#FouriersLaw</oops:AffectedElement>
 <oops:AffectedElement>http://siam.nist.gov/AM-Ontology-v2#NonNewtonianFlow</oops:AffectedElement>
+<oops:AffectedElement>http://siam.nist.gov/AM-Ontology-v2#FouriersLaw</oops:AffectedElement>
 <oops:AffectedElement>http://siam.nist.gov/AM-Ontology_v2#StochasticIrradiation</oops:AffectedElement>
 <oops:AffectedElement>http://siam.nist.gov/AM-Ontology-v2#ConsolidationModelingAssumption</oops:AffectedElement>
 <oops:AffectedElement>http://siam.nist.gov/AM-Ontology-v2#InitialVolume</oops:AffectedElement>
@@ -464,6 +464,15 @@
 <oops:AffectedElement>http://www.semanticweb.org/administrator/ontologies/2015/6/PennState-Ontology#Radius_of_flux_distribution(Ra)</oops:AffectedElement>
 <oops:AffectedElement>http://www.semanticweb.org/administrator/ontologies/2015/6/PennState-Ontology#GravitationalAcceleration</oops:AffectedElement>
 <oops:AffectedElement>http://www.semanticweb.org/administrator/ontologies/2015/6/PennState-Ontology#LengthForSurfaceTension</oops:AffectedElement>
+</oops:Affects>
+</oops:Pitfall>
+<oops:Pitfall>
+<oops:Code>P36</oops:Code><oops:Name>URI contains file extension</oops:Name>
+<oops:Description>This pitfall occurs if file extensions such as &quot;.owl&quot;, &quot;.rdf&quot;, &quot;.ttl&quot;, &quot;.n3&quot; and &quot;.rdfxml&quot; are included in an ontology URI. This pitfall is related with the recommendations provided in [9].	</oops:Description>
+<oops:Importance>Minor</oops:Importance>
+<oops:NumberAffectedElements>1</oops:NumberAffectedElements>
+<oops:Affects>
+<oops:AffectedElement>https://raw.githubusercontent.com/ebrahimnorouzi/mseo.github.io/master/Ontology_files/AMONTOLOGY.owl</oops:AffectedElement>
 </oops:Affects>
 </oops:Pitfall>
 <oops:Suggestion>

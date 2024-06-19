@@ -1,21 +1,11 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<oops:OOPSResponse xmlns:oops="http://www.oeg-upm.net/oops">
-<oops:Pitfall>
-<oops:Code>P36</oops:Code><oops:Name>URI contains file extension</oops:Name>
-<oops:Description>This pitfall occurs if file extensions such as &quot;.owl&quot;, &quot;.rdf&quot;, &quot;.ttl&quot;, &quot;.n3&quot; and &quot;.rdfxml&quot; are included in an ontology URI. This pitfall is related with the recommendations provided in [9].	</oops:Description>
-<oops:Importance>Minor</oops:Importance>
-<oops:NumberAffectedElements>1</oops:NumberAffectedElements>
-<oops:Affects>
-<oops:AffectedElement>https://raw.githubusercontent.com/ebrahimnorouzi/mseo.github.io/master/all_files/EMMO_Datamodel.ttl</oops:AffectedElement>
-</oops:Affects>
-</oops:Pitfall>
-<oops:Pitfall>
-<oops:Code>P37</oops:Code><oops:Name>P37. Ontology not available on the Web</oops:Name>
-<oops:Description>This pitfall occurs when the ontology code (OWL encoding) or its documentation (HTML document) is missing when looking up its URI. This pitfall deals with the first point from the Linked Data star system that states "On the web" ([10] and [11]). Guidelines in [12] also recommends to "Publish your vocabulary on the Web at a stable URI". This pitfall is also related to the problems listed in [8] and [5]. </oops:Description>
-<oops:Importance>Critical</oops:Importance>
-<oops:NumberAffectedElements>1</oops:NumberAffectedElements>
-<oops:Affects>
-<oops:AffectedElement>https://raw.githubusercontent.com/ebrahimnorouzi/mseo.github.io/master/all_files/EMMO_Datamodel.ttl</oops:AffectedElement>
-</oops:Affects>
-</oops:Pitfall>
-</oops:OOPSResponse>
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
+<html><head>
+<title>502 Proxy Error</title>
+</head><body>
+<h1>Proxy Error</h1>
+<p>The proxy server received an invalid
+response from an upstream server.<br />
+The proxy server could not handle the request<p>Reason: <strong>Error reading from remote server</strong></p></p>
+<hr>
+<address>Apache Server at oops.linkeddata.es Port 443</address>
+</body></html>

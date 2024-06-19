@@ -1,42 +1,109 @@
-Ontology name,Short name,Domain,Competency Questions,License,Top-level Ontology Alignment,Reused ontologies,Modularity,Adoption of ODPs
-PMD Core Ontology \cite{pmdco},PMDCO,Materials Science experiment,Available,Unknown,PROVO,PROVO,modular,no
-Elementary Multiperspective Material Ontology \cite{emmo},EMMO,A multidisciplinary ontology for applied sciences,Unknown,CC BY 4.0,EMMO,EMMO,modular,no
-EMMO Mechanical Testing,EMMO_mechanical_testing,Mechanical testing,Unknown,CC BY 4.0,EMMO,EMMO,Unknown,no
-EMMO Microstructure,EMMO_microstructure,Metallic microstructures,Unknown,Unknown,EMMO,EMMO,Unknown,no
-Semantic Sensor Network Ontology \cite{ssn_ontology},SSN,Describing sensors and their observations,Unknown,OGC software,DOLCE-UltraLite (DUL),Unknown,modular,SSO
-SMART-Protocols \cite{sp_ontology},SP,Experimental protocols,Available,CC BY 4.0,BFO,NPO,modular,no
-Material Science and Engineering Ontology \cite{mseo},MSEO,Material Sience and Engineering,Unknown,Unknown,CCO,Unknown,Unknown,no
-Baden Württemberg Material Digital Domain Mid Level Ontology \cite{bwmd_review},BWMD-MID,"Material Digital Ontology, GlasDigital",Unknown,Unknown,BFO,Unknown,Unknown,no
-Baden Württemberg Material Digital Domain Ontology \cite{bwmd_review},BWMD-DOMAIN,"Material Digital Ontology, GlasDigital",Unknown,Unknown,BFO,BWMD-MID,Unknown,no
-Matolab Tensile Test Ontology,MOL_TENSILE,Tensile test,Unknown,Unknown,Unknown,BWMD-MID,Unknown,no
-Laser Powder Bed Fusion Ontology \cite{lpbf_ontology},LPBFO,Additive manufacturing,Unknown,Unknown,BFO,BWMD-MID,Unknown,no
-EMMO General Process Ontology,GPO,Model processes,Unknown,CC BY 4.0,EMMO,EMMO,Unknown,no
-Battery INterFace Ontology,EMMO_BVC,Model processes along the Battery value chain,Unknown,CC BY 4.0,EMMO,"EMMO, GPO",Unknown,no
-EMMO Crystallography,EMMO_crystallography,Crystallography,Unknown,CC BY 4.0,EMMO,"EMMO, CIF core ",Unknown,no
-CIF Core Ontology,CIF-core,Crystallography,Unknown,CC BY 4.0,EMMO,EMMO,Unknown,no
-EMMO Datamodel ontology \cite{emmo_datamodel},EMMO_Datamodel,Ontology-Based Data Modelling,Unknown,CC BY 4.0,EMMO,EMMO,modular,no
-EMMO Mappings ontology,EMMO_mappings,Mapping to domains and ontological concepts,Unknown,CC BY 4.0,EMMO,EMMO,Unknown,no
-EMMO Atomistic and Electronic Modelling,EMMO_atomistic,Atomistic and electronic modelling,Unknown,CC BY 4.0,EMMO,EMMO,Unknown,no
-MatOnto,MatOnto,Materials discovery,Unknown,MIT ,DOLCE,Unknown,modular,no
-Materials Ontology \cite{matinfo},matinfo,Exchanging Materials Information and Knowledge,Unknown,Unknown,Unknown,Unknown,modular,no
-"Semantic Materials, Manufacturing, and Design",SEMMD,"Materials, Manufacturing",Unknown,CC BY-SA 4.0,BFO,QUDT,Unknown,no
-NanoParticle Ontology \cite{npo_ontology},NPO,Cancer nanotechnology research,Unknown,BSD-3-Clause,BFO,Unknown,Unknown,no
-eNanoMapper \cite{enanomapper},enanomapper,Nanomaterial safety assessment,Unknown,CC-BY 3.0,BFO,NPO,Unknown,no
-Materials And Molecules Basic Ontology \cite{mambo_ontology},MAMBO,Molecular materials,Unknown,Unknown,Unknown,"MDO, EMMO, QUDT",modular,no
-Dislocation Ontology \cite{diso_ontology},DISO,Defects in crystalline materials,Available,MIT ,EMMO,"EMMO, QUDT",Unknown,no
-Materials Design Ontology \cite{mdo},MDO,Materials design,Available,MIT ,Unknown,Unknown,modular,Provenance
-NanoMine \cite{nanomine_ontology},NanoMine,Polymer nanocomposites,Unknown,CC BY 4.0,Unknown,Unknown,Unknown,no
-"The Devices, Experimental scaffolds and Biomaterials Ontology \cite{deb_ontology}",DEB,"Medical devices, experimental scaffolds and biomaterials",Unknown,GPL-3.0  ,Unknown,Unknown,Unknown,no
-Periodic table ontology,periodictable,Representation of the Periodic Table of the Elements,Unknown,Unknown,Unknown,Unknown,Unknown,no
-EMMO Battery Interface Ontology,EMMO_BattINFO,Batteries and their interfaces,Unknown,CC BY 4.0,EMMO,Unknown,Unknown,no
-Open Energy Ontology \cite{oeo_ontology},OEO,energy modelling domain,Available,CC0 1.0,BFO,"IAO, RO, UO, OMO",Unknown,no
-Smart Applications REFerence \cite{saref_ontology},SAREF,Energy,Unknown,ETSI Forge,Unknown,Unknown,Unknown,no
-Virtual Materials Marketplace Ontology \cite{vimmp_ontology},vimmp,Open platform for providing and accessing services related to materials modelling,Unknown,LGPL 3,EMMO,EMMO,Unknown,no
-Building Material Ontology,bmo,Materials Science,Unknown,CC BY 4.0,Unknown,Unknown,Unknown,no
-MatoLab Brinell Test Ontology,MOL_BRINELL,Mechanical testing,Unknown,Unknown,Unknown,Unknown,Unknown,no
-Aditive Manufacturing Ontology,AMONTOLOGY,Additive Manufacturing,Unknown,Unknown,Unknown,Unknown,Unknown,no
-Standards-Specific Ontology Standard \cite{ssos_ontology},ssos,Life cycle information,Unknown,Unknown,Unknown,Unknown,Unknown,no
-Characterisation Methodology Domain Ontology \cite{CHAMEO},CHAMEO,Materials characterization,Unknown,CC BY 4.0,Unknown,Unknown,Unknown,no
-Materials Vocabulary,mvc,Materials Science,Unknown,MIT ,Unknown,SSN,Unknown,no
-Material properties ontology,mat,Materials Science,Unknown,CC BY 4.0,Unknown,Unknown,Unknown,no
-MatWerk Ontology,mwo,Research data description,Unknown,CC BY 4.0,Unknown,NFDIcore,modular,no
+Ontology Name,Short Name,Domain,Used in Project(s),Purpose,Competency Questions,License,Homepage,Ontology category
+PMD Core Ontology,PMDCO,Materials Science,"Know-Now, KupferDigital, StahlDigital, DiProgMag, DigiBatMat, GlasDigital, SensoTwin, LeBeDigital",knowledge transfer between MSE experts and ontologists,https://git.material-digital.de/ontologies/pmd-ontologies/-/tree/main/Partner%20project%20CQs,Unknown,https://github.com/materialdigital/core-ontology ,mid-level
+Elementary Multiperspective Material Ontology,EMMO,A multidisciplinary ontology for applied sciences,"EMMC-CSA, SimDOME , MarketPlace, VIMMP,  OntoTrans, ReaxPro, OntoCommons, OYSTER, NanoMECommons ,OpenModel, Know-Now, iBain, KupferDigital, StahlDigital, SmaDi, DiProgMag, SensoTwin",represet current materials modelling knowledge,Unknown,CC BY 4.0,https://github.com/emmo-repo/EMMO ,top-level
+EMMO Mechanical Testing,EMMO_mechanical_testing,Mechanical Testing,"MarketPlace, Oyster, UrWerk, iBain, StahlDigital",represent mechanical testing,Unknown,CC BY 4.0,https://github.com/emmo-repo/domain-mechanical-testing ,domain-level
+EMMO Microstructure,EMMO_microstructure,Metallic Microstructures,"iBain, StahlDigital","covering composition, particles, both stable (primary) and metastable (precipitates), grains, subgrains, grain boundaries & particle free zones (PFZs),texture, dislocations",Unknown,Unknown,https://github.com/jesper-friis/emmo-microstructure ,domain-level
+Basic Formal Ontology,OBO,,"300 ontologies, 50 organizations, PubChem, ODE_AM, DIGITRUBBER","information retrieval, analysis and integration",Unknown,CC BY 4.0,https://github.com/BFO-ontology/BFO-2020 ,top-level
+Suggested Upper Merged Ontology,SUMO,,,,Unknown,Unknown,,top-level
+"Descriptive Ontology for Linguistic and Cog-
+nitive Engineering",DOLCE,,,,Unknown,GNU Public License,http://www.loa.istc.cnr.it/dolce/overview.html,top-level
+Semantic Sensor Network Ontology,SSN,Sensors,"SENSEI, SmartProducts, SPITFIRE FP7, SemsorGrid4Env, Exalted, CSIRO, https://w3c.github.io/sdw/ssn-usage/",describe sensors,Unknown,http://www.opengeospatial.org/ogc/Software,https://w3c.github.io/sdw/ssn/,domain-level
+SMART-Protocols,SP,Experiments,Unknown,reporting an experimental protocol,https://smartprotocols.github.io/queries/,CC BY 4.0,https://github.com/SMARTProtocols/SMART-Protocols,domain-level
+Material Science and Engineering Ontology,MSEO,Material Sience and Engineering,"Materials Open Laboratory, LeBeDigital, KupferDigital",create machine and human readable sematic data which can be easily digested by other science domains,Unknown,Unknown,https://github.com/Mat-O-Lab/MSEO,middle-level
+Common Core Ontology,CCO,,"KupferDigital, ODE_AM, DiStAl, LeBeDigital, Materials Open Laboratory, JIDO, CERDEC I2WD, ARL, AFRL Wright Patterson, AFRL Rome, OSD","represent the most generic categories of entity and the most generic types of relations that hold between them, by defining a small number of classes and relations",Unknown,CC BY 3.0,https://github.com/CommonCoreOntology/CommonCoreOntologies,middle-level
+Baden Württemberg Material Digital Domain Mid Level Ontology,BWMD-MID,Materials Science,"Materials Open Laboratory, AluTrace, DMD4Future, KMU-akut: ADAM",implementing a process chain,Unknown,Unknown,https://gitlab.cc-asp.fraunhofer.de/EMI_datamanagement/bwmd_ontology,mid-level
+Baden Württemberg Material Digital Domain Ontology,BWMD-DOMAIN,Materials Science,"Materials Open Laboratory, AluTrace, DMD4Future, KMU-akut: ADAM",implementing a process chain,Unknown,Unknown,https://gitlab.cc-asp.fraunhofer.de/EMI_datamanagement/bwmd_ontology,domain-level
+Matolab Tensile Test Ontology,MOL_TENSILE,Tensile Test,Materials Open Laboratory,"An ontology for describing the tensile test process, made in the Materials Open Lab Project.",Unknown,Unknown,https://matportal.org/ontologies/MOL_TENSILE,application-level
+Laser Powder Bed Fusion Ontology,LPBFO,Additive Manufacturing,"Materials Open Laboratory, AluTrace, DMD4Future, KMU-akut: ADAM",describe the additive manufacturing of a component via Laser Powder Bed Fusion (LPBF) / Selective Laser Melting (SLM),Unknown,Unknown,https://matportal.org/ontologies/LPBFO,domain-level
+PROV Ontology,PROV,Provenance Information,"39 datasets, KupferDigital, StahlDigital",represent and interchange provenance information,,Unknown,https://www.w3.org/TR/prov-o/ ,Unknown
+EMMO General Process Ontology,GPO,Process Modeling,"KIproBatt, OpenSemanticLab, Battery Value Chain Ontology",model processes,Unknown,CC BY 4.0,https://github.com/General-Process-Ontology/ontology ,domain-level
+Battery INterFace Ontology,EMMO_BVC,Batteries,"eLi /eLi-PLUS, KiProBatt",higher-level process chains for material processing and manufacturing,Unknown,CC BY 4.0,https://github.com/Battery-Value-Chain-Ontology/ontology ,domain-level
+EMMO Crystallography,EMMO_crystallography,Crystallography,"Demystify ontologies, OntoTrans, MarketPlace, BIG-MAP",describe crystallography,Unknown,CC BY 4.0,https://github.com/emmo-repo/domain-crystallography ,domain-level
+CIF Core Ontology,CIF-core,Crystallography,"Demystify ontologies, OntoTrans, MarketPlace, BIG-MAP",describe crystallography,Unknown,CC BY 4.0,https://github.com/emmo-repo/CIF-ontology,domain-level
+EMMO Datamodel ontology,EMMO_datamodel,Ontology-Based Data Modelling,"MarketPlace, OntoTrans, OpenModel, VIPCOAT",make application specific data semantic interoperabel,Unknown,CC BY 4.0,https://github.com/emmo-repo/datamodel-ontology ,mid-level
+EMMO Mappings ontology,EMMO_mappings,Mapping to domains and ontological concepts,"MarketPlace, OntoTrans, OpenModel","maps domains with workflows, applications, experts etc and enable discoverability",Unknown,CC BY 4.0,https://github.com/emmo-repo/domain-mappings ,mid-level
+EMMO Atomistic and Electronic Modelling,EMMO_atomistic,Computational Materials Science,MarketPlace,atomistic and electronic modelling,Unknown,CC BY 4.0,https://github.com/emmo-repo/domain-atomistic ,domain-level
+MatOnto,MatOnto,Materials Discovery,Unknown,,Unknown,MIT License,https://github.com/inovexcorp/MatOnto-Ontologies ,domain-level
+MatOWL,MatOWL,Materials Discovery,"the Key Technologies Research and Development Program of China under, the R&D Infrastructure and Facility Development Program, the Hi-Tech Research and Development Program of China",,Unknown,Unknown,,domain-level
+Materials Ontology,MATINFO,Exchanging Materials Information and Knowledge,"Data exchange of AIST, NIMS, MatDB",,Unknown,Unknown,https://www.researchgate.net/publication/262004148_MaterialOntology,domain-level
+Plinius ontology,Plinius,Ceramic,Unknown,Knowledge extracting from document abstracts,Unknown,Unknown,,application-level
+PREMAP ontology,PREMAP,Materials Science,Unknown,Knowledge guided process design,Unknown,Unknown,,domain-level
+ONTORULE steel ontology,ONTORULE,Steel Industry,ontorule project,"Quality control system for galvanizing process of the coilcoils, defects, phenomena",Unknown,Unknown,,domain-level
+SLACKS ontology,SLACKS,Composites,Unknown,Materials selection for laminated composites product,Unknown,Unknown,,domain-level
+ELSSI-EMD ontology,ELSSI-EMD,Material Data,Unknown,,Unknown,Unknown,,domain-level
+"Semantic Materials, Manufacturing, and Design",SEMMD,"Materials, Manufacturing",Unknown,have human-understandable definitions,Unknown,CC BY-SA 4.0,https://github.com/cpauloh/semmd,domain-level
+NanoParticle Ontology,NPO,Cancer Nanotechnology,"
+caB2B, eNanoMapper, nano-TAB","represent the knowledge underlying the description, preparation, and 
+characterization of nanomaterials in cancer nanotechnology research",Unknown,"BSD-3-Clause license
+    ",https://github.com/sobolevnrm/npo ,domain-level
+eNanoMapper,eNanomapper,Nanomaterial,"NanoSolveIT, NanoCommons, OpenRiskNet, eNanoMapper, NANoREG, NanoReg2, GRACIOUS",data integration for nanomaterial,Unknown,CC-BY 3.0,https://github.com/enanomapper/ontologies ,domain-level
+MaterialsMine,MaterialsMine,Materials Science,,A materials ontology to support data publication involving nanomaterials and metamaterials,Unknown,MIT License,https://github.com/tetherless-world/materialsmine,domain-level
+MMOY,MMOY,Metallic materials,Unknown,,Unknown,Unknown,,domain-level
+Materials And Molecules Basic Ontology,MAMBO,Molecular Materials,Unknown,"Allowing the retrieval of structured information regarding molecular materials and related applications (i.e. devices based on molecular, materials), Supporting the development of new, complex workflows for modelling systems based on molecular materials (computational modelling and data-driven techniques), Integrating data generated via computational simulations and empirical experiments",Unknown,Unknown,https://github.com/daimoners/MAMBO ,domain-level
+Dislocation Ontology,DISO,Materials Characterization,"European Research Council through the ERC Grant Agreement No. 759419  MuDiLingo (”A Multiscale Dislocation Language for Data-Driven Materials 
+Science”), Helmholtz Metadata Collaboration (HMC) within the Hub Information at the Forschungszentrum Jülich","defines the linear defect, in particular dislocation concepts and relations between them in crystalline materials",https://github.com/Materials-Data-Science-and-Informatics/dislocation-ontology/blob/master/CQs/CQs.md,MIT License,https://github.com/Materials-Data-Science-and-Informatics/dislocation-ontology ,domain-level
+Materials Design Ontology,MDO,Materials Design,Materials Design (OPTIMADE) project,the domain knowledge specifically related to solid-state physics and computational materials science,https://github.com/LiUSemWeb/Materials-Design-Ontology/blob/master/requirements.md,MIT License,https://github.com/LiUSemWeb/Materials-Design-Ontology ,domain-level
+NanoMine,NanoMine,Polymer Nanocomposites,Nanomine,"enable researchers to develop and test broad-reaching hypotheses about how inter-relationships
+between different materials processing methods and composition result in specific changes in material properties",Unknown,CC BY 4.0,https://github.com/tetherless-world/nanomine-ontology ,domain-level
+"The Devices, Experimental scaffolds and Biomaterials Ontology",DEB,"Medical Eevices, Biomaterials",Database of Experimental Biomaterials and their Biological Effect,"organizing information about biomaterials, their design, manufacture, and biological testing",Unknown,GPL-3.0 license ,https://github.com/ProjectDebbie/Ontology_DEB ,domain-level
+Simple Knowledge Organization System (SKOS) version of Materials Data Vocabulary ,SKOS_MDO,Materials Science,Unknown,,Unknown,Unknown,https://data.nist.gov/od/id/67C783D4BA814C8EE05324570681708A1899,domain-level
+FreeClassOWL Ontology,FreeClass,Construction and building materials and services provides,Unknown,,Unknown,CC-BY 3.0,http://smartcity.linkeddata.es/ontologies/www.freeclass.eufreeclass_v1.owl.html,domain-level
+Periodic Table Ontology,Periodictable,Representation of the Periodic Table of the Elements,Unknown,,Unknown,Unknown,http://www.daml.org/2003/01/periodictable/ ,domain-level
+Metal Alloy,MetalAlloy,Materials representation,Unknown,,Unknown,Unknown,https://emmc.info/taxonda/metal-alloy/ ,domain-level
+EMMO Battery Interface Ontology,EMMO_BattINFO,Batteries,BIG-MAP,formalize the current state of knowledge on battery interfaces to support the development of computational tools and the deployment of interoperable data in the BIG-MAP project and beyond,Unknown,CC BY 4.0,https://github.com/BIG-MAP/BattINFO ,domain-level
+Information Artifact Ontology,IAO,Information artifacts,"Adverse Event Reporting Ontology, An Ontology for Drug Discovery Investigations, Beta Cell Genomics database, Bioinformatics Web Service Ontology, Blood Ontology, eagle-i, eNanoMapper, Influenza Research Database, ISA software suite, Knowledge Grid, Neural ElectroMagnetic Ontologies, Ontology for the obstetric and neonatal domain, Ontology of Data Mining",model the most tangible aspect of research in computing disciplines – the research artifacts,https://openreview.net/forum?id=zd32pf6RLng,CC BY 4.0,https://github.com/information-artifact-ontology/IAO,domain-level
+Chemical Entities of Biological Interest,CheBi,Chemistry,"An Ontology for Drug Discovery Investigations, Beta Cell Genomics database, Cellosaurus, Children's Health Exposure Analysis Resource, Electrophysiology Ontology, eNanoMapper, Epidemic Marketplace, eTOX, ISA software suite, MASYMOS, MeRy-B, Neuroscience Information Framework, Open PHACTS, PubChem, SemGen, The MACiE Database, a database of enzyme reaction mechanisms, The Structure Function Linkage Database, Virtual Imaging Platform project",,Unknown,CC-BY 4.0,https://ftp.ebi.ac.uk/pub/databases/chebi/ontology/,domain-level
+Open Energy Ontology,OEO,Energy Modelling,SzenarienDB,represent the context of energy system analysis based on standard terminologies used by human experts in this field of research,https://github.com/OpenEnergyPlatform/ontology/tree/dev/tests/competency_questions,CC0 1.0,https://github.com/OpenEnergyPlatform/ontology,domain-level
+Phenotype And Trait Ontology,PATO,"Phenotypic, Physical Qualities","OBO Foundry, Allotrope™","An ontology of phenotypic qualities (properties, attributes or characteristics).",Unknown,CC-BY 3.0,https://github.com/pato-ontology/pato,domain-level
+Units of measurement ontology,UO,Units,Unknown,,Unknown,CC-BY,https://github.com/bio-ontology-research-group/unit-ontology,domain-level
+Ontology of units of Measure,OM,Units,Unknown,models concepts and relations important to scientific research,Unknown,CC BY 4.0,https://github.com/HajoRijgersberg/OM,domain-level
+"Quantities, Units, Dimensions, Values",QUDV,Units,Unknown,"conceptual model for Quantities, Units, Dimensions, Values (QUDV) to 
+define systems of units and quantities for use in system models",Unknown,Unknown,https://www.omgwiki.org/OMGSysML/lib/exe/fetch.php?media=sysml-qudv:qudv-owl:sysml-qudv.owl,domain-level
+Ontology for Biomedical Investigations,OBI,Biomedicine,"OBO Foundry, Allotrope™, PubChem","a resource for annotating biomedical investigations, including the study design, protocols and instrumentation used, the data generated and the types of analysis performed on the data.",Unknown,CC-BY 4.0,https://github.com/obi-ontology/obi,domain-level
+NCI Thesaurus OBO Edition,NCIT,Reference Terminology,Unknown,,https://github.com/NCI-Thesaurus/thesaurus-obo-edition/blob/master/docs/queries/D6.MolecularSubtypingQueries.txt,Unknown,https://github.com/NCI-Thesaurus/thesaurus-obo-edition,domain-level
+"Quantities, Units, Dimensions, and Types Ontology",QUDT,Units,"Open PHACTS, StahlDigital, DigiBatMat, KupferDigital","define the base classes properties, and restrictions used for modeling 
+physical quantities, units of measure, and their dimensions in various 
+measurement systems",Unknown,CC BY 4.0,https://github.com/qudt/qudt-public-repo,domain-level
+Web Annotation Ontology,OA,Annotations,Unknown,,Unknown,Unknown,https://github.com/w3c/web-annotation,domain-level
+Ontology to describe Workflows in Linked Data,WILD,Process Modeling,DigiBatMat,describe workflow,Unknown,Unknown,https://databus.dbpedia.org/ontologies/purl.org/wild--vocab/2022.03.04-103146,domain-level
+P-PLAN Ontology,P-PLAN,Plan and Process,StahlDigital,,Unknown,Unknown,http://vocab.linkeddata.es/p-plan/index.html,domain-level
+Smart Applications REFerence,SAREF,Energy,"EEBus, SmartM2M","enable interoperability between solutions from different providers and among various activity sectors in the Internet of Things (IoT), thus contributing to the development of the global digital market",Unknown,https://forge.etsi.org/etsi-software-license,https://labs.etsi.org/rep/saref/saref-core/-/tree/develop-v3.1.1,domain-level
+"Ontology for Simulation, Modelling, and Optimization",OSMO,Materials modeling and simulation,VIMMP Marketplace,workflow metadata standard,Unknown,LGPL v3,https://zenodo.org/record/5084394#.Y-DOjK3MJPY,domain-level
+Virtual Materials Marketplace (VIMMP) Ontology,VIMMP,"Open Platform, Materials Modelling",VIMMP Marketplace,"characterize services, models, and interactions between users",Unknown,LGPL 3,https://matportal.org/ontologies/VIMMP_ONTOLOGIES,domain-level
+Building Material Ontology,BMO,Materials Science,"Linked data and Ontologies for Semantic Interoperability, BIM4EEB","defines the main concepts of building material, types, layers, and properties",Unknown,CC BY 4.0,https://matportal.org/ontologies/BUILDMAT,domain-level
+MatoLab Brinell Test Ontology,MOL_BRINELL,Mechanical Testing,Unknown,Brinell Hardness method modelling,Unknown,Unknown,https://matportal.org/ontologies/MOL_BRINELL,application-level
+Additive Manufacturing Ontology,AMONTOLOGY,Additive Manufacturing,NIST's Systems Integration  for Additive Manufacturing project,knowledge about additive manufacturing processes,Unknown,Unknown,https://github.com/iassouroko/AMontology,domain-level
+Standards-Specific Ontology Standard,SSOS,Life Cycle Information,Unknown,describes the life cycle of consensus-based standardization projects and published standardization deliverables,Unknown,Unknown,https://www.niso.org/standards-committees/ssos,domain-level
+Characterisation Methodology Domain Ontology (CHAMEO),CHAMEO,Materials Characterization,"NanoMECommons, OYSTER, Big-Map, OntoTran",model the common aspects across the different characterisation methodologies,Unknown,CC BY 4.0,https://github.com/emmo-repo/domain-characterisation-methodology,domain-level
+Materials Vocabulary,MatVoc,,STREAM project,described using W3C RDF Schema and the Web Ontology Language to satisfy the requirements of the STREAM project,Unknown,MIT License,https://github.com/stream-project/ontology,domain-level
+Metadata4Ing Ontology,M4I,Process Modeling,NFDI4Ing ,describing engineering results and their corresponding workflow,https://git.rwth-aachen.de/nfdi4ing/metadata4ing/kompetenzfragen/-/tree/master,"
+CC BY 4.0",https://git.rwth-aachen.de/nfdi4ing/metadata4ing/metadata4ing,domain-level
+The Open Provenance Model for Workflows,OPMW,Process Modeling,Unknown,represent  workflow specifications in addition to their workflow execution traces,Unknown,Unknown,https://www.opmw.org/model/OPMW/,mid-level
+Material properties ontology,MAT,Materials Science,H2020 BIMERR Project,description of building components and materials,Unknown,"
+CC BY 4.0",https://bimerr.iot.linkeddata.es/def/material-properties/,domain-level
+NFDI Core Ontology,NFDIcore,Research Data Description,"NFDI4Culture, NFDI MatWerk","describes resouces (datasets, data providers, persons, projects and other entities) in the data domain of NFDI (https://www.nfdi.de/)",Unknown,CC0 1.0,https://github.com/ISE-FIZKarlsruhe/nfdicore,mid-level
+MatWerk Ontology,MWO,Research Data Description,NFDI MatWerk,represent the scientific and infrastructural status of the Materials Science and Engineering (MSE) community,Unknown,"
+CC BY 4.0",https://git.rwth-aachen.de/nfdi-matwerk/ta-oms/mwo,mid-level
+Computational Material Sample Ontology,CMSO,Computational Materials Science,NFDI MatWerk,"computational materials science samples (or structures), including crystalline defects",https://github.com/Materials-Data-Science-and-Informatics/cmso-ontology/tree/main/requirements,,https://github.com/Materials-Data-Science-and-Informatics/cmso-ontology/tree/main,domain-level
+tribAIn Ontology,tribAIn,tribology ,,"formalize knowledge gained from tribological experiments for reuse, comparison and documentation",Unknown,CC BY 4.0,https://github.com/snow0815/tribAIn,domain-level
+Ontology of Scientific Experiments,EXPO,Scientific Experiments,,"formalise generic knowledge about scientific experimental design, methodology, and results representation",Unknown,Unknown,https://expo.sourceforge.net/,mid-level
+Chemical Methods Ontology,CHMO,Materials Characterization,,"describes methods used to collect data in chemical experiments, such as mass spectrometry and electron microscopy prepare and separate material for further analysis, such as sample ionisation, chromatography, and electrophoresis synthesise materials, such as epitaxy and continuous vapour deposition It also describes the instruments used in these experiments, such as mass spectrometers and chromatography columns.",Unknown,CC BY 4.0,https://github.com/rsc-ontologies/rsc-cmo,domain-level
+Chemical Information Ontology,CHEMINF,Chemistry,,terms for the descriptors commonly used in cheminformatics software applications and the algorithms which generate them,Unknown,CC BY 3.0,https://github.com/egonw/semanticchemistry,domain-level
+"Open Innovation Environment domain ontologies, ",OIE characterisation-methods,Materials Characterization,,OYSTER,Unknown,CC BY 4.0,https://github.com/emmo-repo/OIE-Ontologies/,domain-level
+"Open Innovation Environment domain ontologies, manufacturing processes module",OIE manufacturing,Manufacturing Processes,,OYSTER,Unknown,CC BY 4.0,https://github.com/emmo-repo/OIE-Ontologies/,domain-level
+"Open Innovation Environment domain ontologies, materials models module",OIE materials,Materials Models,,OYSTER,Unknown,CC BY 4.0,https://github.com/emmo-repo/OIE-Ontologies/,domain-level
+"Open Innovation Environment domain ontologies, software products module",OIE software,Software,,OYSTER,Unknown,CC BY 4.0,https://github.com/emmo-repo/OIE-Ontologies/,domain-level
+"Open Innovation Environment domain ontologies, models module",OIE models,Modelling,,OYSTER,Unknown,CC BY 4.0,https://github.com/emmo-repo/OIE-Ontologies/,domain-level
+Photovoltaics Ontology,Photovoltaics,Perovskite Solar Cells,,,Unknown,CC BY 4.0,https://github.com/emmo-repo/domain-photovoltaics,domain-level
+Materials Data Science Ontology,MDS,Materials Science,"
+
+Materials Data Science for Stockpile Stewardship: Center of Excellence, SDLE Research Center","Materials Data Science(MDS) is an ontology encompassing multiple domains relevant to materials science, chemical synthesis and characterizations, photovoltaics and geospatial datasets. The terms used for classes, subclasses and instances are mapped to PMDCo and BFO Ontologies.",Unknown,Unknown,https://matportal.org/ontologies/MDS,mid-level
+Dislocation Simulation and Model Ontology,DSIM,Computational Materials Science,NFDI-MatWerk,model various concepts and relationships in the discrete dislocation dynamics domain and microscopy techniques used in the dislocation domain,Unknown,CC BY 3.0,https://github.com/OCDO/DSIM,domain-level
+Crystal Structure Ontology,CSO,Materials Characterization,"MuDiLingo, Helmholtz Metadata Collaboration (HMC)",represent crystallographic information needed to describe the dislocation,https://github.com/Materials-Data-Science-and-Informatics/Dislocation-Ontology-Suite/blob/main/CSO/CQs.md,CC BY 3.0,https://github.com/Materials-Data-Science-and-Informatics/Dislocation-Ontology-Suite/tree/main/CSO,domain-level
+Atomistic Simulation Methods Ontology,ASMO,Computational Materials Science,NFDI-MatWerk,describe commonly used atomic scale simulation methods,Unknown,CC BY 4.0,https://github.com/OCDO/asmo,domain-level
+Point Defects Ontology,PODO,Materials Characterization,NFDI-MatWerk,description of point defects in crystalline materials,Unknown,CC BY 4.0,https://github.com/OCDO/podo,domain-level
+Crystallographic Defect Core Ontology,CDCO,Materials Characterization,,description of defects in crystalline materials,Unknown,Unknown,https://github.com/OCDO/cdco,domain-level
+Line Defect Ontology,LDO,Materials Characterization,,description of linear defects in crystalline materials,Unknown,Unknown,https://github.com/OCDO/ldo,domain-level
+Planar Defects Ontology,PLDO,Materials Characterization,NFDI-MatWerk,description of planar defects in crystalline materials,Unknown,CC BY 4.0,https://github.com/OCDO/pldo,domain-level
+PRovenance Information in MAterials science,PRIMA,Materials Science,"EOSC-Pillar project, Helmholtz Metadata Collaboration (HMC), NFFA-Europe Pilot",captures the provenance information in the materials science domain,https://github.com/Materials-Data-Science-and-Informatics/MDMC-NEP-top-level-ontology/blob/master/CQs/v_2_0/CQs.md,CC BY 3.0,https://github.com/Materials-Data-Science-and-Informatics/MDMC-NEP-top-level-ontology,top-level
+Material Science Lab Equipment Ontology,MSLE,Materials Characterization,,describing Materials Science Laboratory Equipment,Unknown,Unknown,https://github.com/MehrdadJalali-KIT/MSLE-Ontology,domain-level
