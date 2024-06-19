@@ -3,7 +3,7 @@ base_prefixes:
 - service
 - SOALT
 changed: true
-date: 2024-06-18 15:07:35.463856
+date: 2024-06-18 16:21:22.371880
 metrics:
   'Axioms: Breakdown of axiom types':
     AnnotationAssertion: 41
