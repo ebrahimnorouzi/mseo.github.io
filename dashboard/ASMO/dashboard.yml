@@ -3,7 +3,7 @@ base_prefixes:
 - ASMO
 - ASMOALT
 changed: true
-date: 2024-06-19 11:35:17.698829
+date: 2024-06-19 14:13:20.416728
 metrics:
   'Axioms: Breakdown of axiom types':
     AnnotationAssertion: 327

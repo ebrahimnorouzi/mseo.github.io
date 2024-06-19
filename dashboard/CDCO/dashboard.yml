@@ -3,7 +3,7 @@ base_prefixes:
 - CDCO
 - CDCOALT
 changed: true
-date: 2024-06-19 11:35:22.781280
+date: 2024-06-19 14:13:25.695494
 metrics:
   'Axioms: Breakdown of axiom types':
     AnnotationAssertion: 34

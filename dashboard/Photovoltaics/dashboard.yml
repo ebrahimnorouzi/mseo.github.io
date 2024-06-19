@@ -3,4 +3,4 @@ changed: true
 failure: failed_robot_base
 mirror_from: https://raw.githubusercontent.com/ebrahimnorouzi/mseo.github.io/master/Ontology_files/photovoltaics.ttl
 namespace: Photovoltaics
-sha256_hash: 5a0bfc4defad0c1ac772e0935608afb365db94324330c1013a873800a1057735
+sha256_hash: 16e6a77cb413dc5d78df163e1c7a9bbe3e976e80ab30389a3130cf13062857d7
