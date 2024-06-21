@@ -11,7 +11,9 @@ A very basic analysis of the results can be found [here](https://ebrahimnorouzi.
 
 [Dashboard based on the OBO Foundry](dashboard/index.html)
 
-[Some general metrics](general.html)
+[List of the ontologies](All_ontologies.html)
+
+[List of the ontologies categorized by sub-domains](Summary.html)
 
 [Base Metrics results based on the OntoMetrics](base_metrics.html)
 
