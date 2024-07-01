@@ -3,7 +3,7 @@ base_prefixes:
 - matinfo
 - MATINFOALT
 changed: true
-date: 2024-06-19 14:10:49.535784
+date: 2024-07-01 13:33:27.137760
 metrics:
   'Axioms: Breakdown of axiom types':
     AnnotationAssertion: 104

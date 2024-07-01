@@ -3,7 +3,7 @@ base_prefixes:
 - emmo_mechanical_testing
 - EMMO_MECHANICAL_TESTINGALT
 changed: true
-date: 2024-06-19 14:07:20.128708
+date: 2024-07-01 13:30:00.108557
 metrics:
   'Axioms: Breakdown of axiom types':
     AnnotationAssertion: 2538

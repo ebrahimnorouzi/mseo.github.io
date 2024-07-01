@@ -3,7 +3,7 @@ base_prefixes:
 - emmo_datamodel
 - EMMO_DATAMODELALT
 changed: true
-date: 2024-06-19 14:10:24.442477
+date: 2024-07-01 13:33:02.142220
 metrics:
   'Axioms: Breakdown of axiom types':
     AnnotationAssertion: 94

@@ -3,7 +3,7 @@ base_prefixes:
 - CMSO
 - TRIBAINALT
 changed: true
-date: 2024-06-19 14:12:31.354965
+date: 2024-07-01 13:35:07.133464
 metrics:
   'Axioms: Breakdown of axiom types':
     AnnotationAssertion: 256
